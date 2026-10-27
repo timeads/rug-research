@@ -3601,7 +3601,10 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "dateStart": 1950,
-    "dateEnd": 1952
+    "dateEnd": 1952,
+    "image": "https://www.hagley.org/sites/default/files/pictures/2012.8.2-sv.jpg",
+    "imageCredit": "Hagley Museum and Library",
+    "imageSource": "auto"
   },
   {
     "id": "hagley-dichter-954a",
@@ -3850,7 +3853,10 @@ window.RUG_ITEMS = [
       "Antron",
       "advertising"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "image": "http://static1.squarespace.com/static/58a21c1486e6c0e601e74867/5d6831971d99db000174179f/647ff318a47016534da12aaf/1688419952009/Screen+Shot+2023-07-03+at+5.08.07+PM.png?format=1500w",
+    "imageCredit": "sarah-archer.com",
+    "imageSource": "auto"
   },
   {
     "id": "duke-adviews-caprolan",
@@ -3935,7 +3941,10 @@ window.RUG_ITEMS = [
       "nylon origin",
       "claim support"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "image": "https://www.hagley.org/sites/default/files/styles/large/public/1984259_58917.jpg?itok=OaNen2yI",
+    "imageCredit": "hagley.org",
+    "imageSource": "auto"
   },
   {
     "id": "book-hounshell-smith",
