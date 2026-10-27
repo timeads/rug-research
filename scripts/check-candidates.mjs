@@ -11,7 +11,7 @@ async function look(url) {
     const r = await fetch(url, { headers: { "User-Agent": UA, Accept: "text/html,application/json;q=0.9,*/*;q=0.8" }, redirect: "follow", signal: AbortSignal.timeout(30000) });
     const type = r.headers.get("content-type") || "", body = await r.text();
     const title = ((body.match(/<title>([\s\S]*?)<\/title>/i) || [])[1] || "").replace(/\s+/g, " ").trim().slice(0, 140);
-    return { status: r.status, final: r.url !== url ? r.url : undefined, type: type.split(";")[0], title, sample: body.replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>/gi, " ").replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").slice(0, 1500) };
+    return { status: r.status, final: r.url !== url ? r.url : undefined, type: type.split(";")[0], title, sample: body.replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>/gi, " ").replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").slice(0, 6000) };
   } catch (e) { return { error: (e.cause?.code || e.message).slice(0, 80) }; }
 }
 const out = {};
