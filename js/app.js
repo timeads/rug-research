@@ -872,11 +872,11 @@
     const all = runs.map(r => r.status === "fulfilled" ? r.value.filter(x => x.image && !x.image.startsWith("idb:")) : []);
     // Loose matches (a painting for "Brussels carpet") go last: titles sharing a word with the search come first.
     const fits = x => !words.length || words.some(w => (x.title || "").toLowerCase().includes(w));
-    const lists = [...all.map(l => l.filter(fits)), ...all.map(l => l.filter(x => !fits(x)))];
+    const ordered = [...interleave(all.map(l => l.filter(fits))), ...interleave(all.map(l => l.filter(x => !fits(x))))];
     const seen = new Set();
-    imgResults = [...suggested, ...interleave(lists)].filter(r => !seen.has(r.image) && seen.add(r.image)).slice(0, 60);
+    imgResults = [...suggested, ...ordered].filter(r => !seen.has(r.image) && seen.add(r.image)).slice(0, 60);
     renderImgResults();
-    const n = lists.filter(l => l.length).length;
+    const n = all.filter(l => l.length).length;
     st.textContent = imgResults.length ? `${imgResults.length} images${suggested.length ? `, ${suggested.length} suggested ahead of time,` : ""} from ${n + (suggested.length ? 1 : 0)} sources. Pick one, or change the words and search again.` : `No images for “${q}”. Try fewer or broader words, e.g. just the kind of carpet.`;
   };
   const openImageFinder = id => {
