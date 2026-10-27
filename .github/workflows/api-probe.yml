@@ -36,7 +36,7 @@ jobs:
           git config user.email "41898+github-actions[bot]@users.noreply.github.com"
           for attempt in 1 2 3; do
             node scripts/probe-apis.mjs "${{ inputs.only }}" "${{ inputs.sample }}"
-            git add research/fetched/api-probe.json
+            git add research/fetched/api-probe.json research/fetched/sources-probe.json 2>/dev/null || git add research/fetched/api-probe.json
             if git diff --cached --quiet; then echo "Nothing new."; exit 0; fi
             git commit -q -m "Save API probe results"
             if git push origin "HEAD:${GITHUB_REF_NAME}"; then exit 0; fi
