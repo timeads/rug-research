@@ -16,7 +16,7 @@ It serves two projects:
 | Tab | Use it to |
 |---|---|
 | **Browse** | Search everything. Filter by flag, type, theme, institution and verification status. Switch between grid and list views. Click a card for full details, notes and a citation. |
-| **Timeline** | See your current results grouped by decade, so gaps in the history of tufting stand out. |
+| **Timeline** | See your current results grouped into seven eras and then by decade, so gaps in the history of tufting stand out. Each era opens with a short summary of why the period matters (`data/eras.js`). Edit a summary in place on the page; your edit is kept in your browser and in backups, and **Restore draft** brings back the default. |
 | **Compile** | Build named lists (e.g. "Winterthur fellowship application"), put them in order, write an intro, and export as Markdown, CSV or JSON, or print to PDF. |
 | **Discover** | Search the Met, the Art Institute of Chicago and Open Library live. Add results, with images, in one click. |
 | **Search elsewhere** | One-click searches of Winterthur (museum, library, trade catalogs), Hagley (Digital Archives, finding aids), HathiTrust, Internet Archive, Google Patents, Digital Library of Georgia, the Bandy Heritage Center and more. |
@@ -38,12 +38,14 @@ There are five flags: Winterthur fellowship ★, History of tufting ⚑, Follow 
 ### Real images
 Records show the institution's own photograph where one exists. The **Fetch images** GitHub Action (`.github/workflows/fetch-images.yml`) runs whenever `data/items.js` changes, every Monday, and on demand from the repo's **Actions** tab. It looks up each record's source page (Winterthur, the Met, the Art Institute of Chicago, Open Library covers, Google Patents drawings, eMuseum sites) and records the image link plus a credit. Images are **linked, not copied**, so rights stay with the institution. If it picks a wrong image, remove it in `data/items.js` and add `"imageSource": "rejected"` to that record. Records without an image show a plain label plate.
 
+Patent records get their actual drawing sheets from the **Patent drawings** Action (`scripts/patent-drawings.mjs`), stored in `images/patents/`. US patents come from the USPTO and are public domain. Patents from other offices (DE, EP, GB, CN, CH, FR, JP and more; use the Google Patents number, e.g. `DE202015001234U1`) come from the PDF Google Patents mirrors. Those are credited to the issuing office and not marked public domain, so check that office's terms before publishing them beyond the database.
+
 ### Adding your own things
 Click **+ Add item**. For yarn samples, tools and your own photos, upload a picture straight from your phone or computer. Photos are resized and stored in the browser.
 
 ## Writing the history of tufting
 
-The **Write** tab is where the book gets written. It opens with a nine-chapter outline (`data/chapters.js`), from colonial bed rugs through Dalton, the machine, nylon, tufting's spread abroad, China, the Hong Kong gun, India and the hobby revival. Each chapter has:
+The **Write** tab is where the book gets written. It opens with a chapter outline (`data/chapters.js`), from colonial bed rugs through Dalton, the machine, nylon, tufting's spread abroad, China, the Hong Kong gun, India and the hobby revival. Each chapter has:
 - a **draft** you write in (saved as you type, with a word count), seeded with working notes from the research so far;
 - its **evidence**: records you attach from any record's detail panel (*Add to a chapter or list*), numbered so the draft can cite them as [3]. You can reorder or remove them.
 

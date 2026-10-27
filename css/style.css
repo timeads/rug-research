@@ -322,9 +322,19 @@ mark { background: color-mix(in srgb, var(--cloth-ochre) 32%, transparent); colo
 
 /* ---------- timeline ---------- */
 .decade { display: grid; grid-template-columns: 100px minmax(0, 1fr); gap: 20px; padding: 22px 0; border-top: 1px solid var(--line); }
-.decade-label { position: sticky; top: 84px; align-self: start; font-size: var(--t-2xl); font-weight: 700; font-variation-settings: "wdth" 115; font-variant-numeric: tabular-nums; color: var(--ink); }
+.decade-label { position: sticky; top: 84px; align-self: start; font-size: var(--t-xl); font-weight: 700; font-variation-settings: "wdth" 115; font-variant-numeric: tabular-nums; color: var(--ink); }
 .decade-label small { display: block; font-size: var(--t-xs); font-weight: 500; color: var(--ink-3); font-variation-settings: "wdth" 100; }
 .decade .grid { grid-template-columns: repeat(auto-fill, minmax(176px, 1fr)); gap: 22px 16px; }
+.era { margin-top: 28px; }
+.era:first-child { margin-top: 0; }
+.era-head { padding: 22px 0 18px; border-top: 2px solid var(--ink); display: grid; gap: 10px; }
+.era-head h2 { font-size: var(--t-2xl); font-weight: 700; line-height: 1.2; text-wrap: balance; }
+.era-years { font-weight: 500; color: var(--ink-3); font-variant-numeric: tabular-nums; white-space: nowrap; margin-left: 6px; }
+.era-summary { margin: 0; max-width: 72ch; color: var(--ink-2); font-size: var(--t-md); line-height: 1.6; text-wrap: pretty; }
+.era-meta { display: flex; justify-content: flex-start; align-items: center; gap: 12px; flex-wrap: wrap; font-size: var(--t-sm); color: var(--ink-3); max-width: 72ch; }
+.era-meta .btns { display: flex; gap: 8px; flex-wrap: wrap; }
+.era-input { width: 100%; max-width: 72ch; min-height: 120px; padding: 12px 14px; border: 1px solid var(--line-strong); border-radius: var(--r-lg); background: var(--surface); color: var(--ink); font: inherit; font-size: var(--t-md); line-height: 1.6; resize: vertical; }
+.era-input:focus { outline: none; border-color: var(--focus); box-shadow: 0 0 0 3px color-mix(in srgb, var(--focus) 20%, transparent); }
 .gap-note { margin: 0; padding: 10px 0; color: var(--ink-3); font-size: var(--t-sm); border-top: 1px dashed var(--line); }
 
 /* ---------- compile ---------- */

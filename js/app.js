@@ -410,20 +410,50 @@
   };
 
   // ---------- timeline ----------
+  const ERAS = window.RUG_ERAS || [];
+  S.eraNotes = S.eraNotes || {};
+  const eraSummary = e => S.eraNotes[e.id] ?? e.summary;
+  const eraYears = e => e.from < 0 ? `before ${e.to + 1}` : e.to > 3000 ? `${e.from}–today` : `${e.from}–${e.to}`;
+  const decadeHTML = (d, items) => `<section class="decade"><h3 class="decade-label">${d}s<small>${items.length} record${items.length > 1 ? "s" : ""}</small></h3><div class="grid">${items.map(it => cardHTML(it)).join("")}</div></section>`;
+  const eraHeadHTML = (e, n) => `<header class="era-head" data-era="${esc(e.id)}">
+      <h2>${esc(e.title)} <span class="era-years">${esc(eraYears(e))}</span></h2>
+      <p class="era-summary">${esc(eraSummary(e))}</p>
+      <div class="era-meta"><span>${n} record${n === 1 ? "" : "s"}${S.eraNotes[e.id] != null ? " · your edited summary" : ""}</span><button class="btn sm" data-era-edit="${esc(e.id)}">${icon("edit")}Edit summary</button></div>
+    </header>`;
   const renderTimeline = () => {
     const dated = lastResults.filter(it => it.dateStart != null).sort((a, b) => a.dateStart - b.dateStart);
     const undated = lastResults.length - dated.length;
     const groups = new Map();
     for (const it of dated) { const d = Math.floor(it.dateStart / 10) * 10; if (!groups.has(d)) groups.set(d, []); groups.get(d).push(it); }
     const decades = [...groups.keys()];
+    const eraOf = d => ERAS.find(e => d >= e.from && d <= e.to);
     const out = [];
+    let era = null, opened = false;
     decades.forEach((d, i) => {
-      if (i && d - decades[i - 1] > 20) out.push(`<p class="gap-note">No records from ${decades[i - 1] + 10} to ${d - 1}.</p>`);
-      const items = groups.get(d);
-      out.push(`<section class="decade"><h2 class="decade-label">${d}s<small>${items.length} record${items.length > 1 ? "s" : ""}</small></h2><div class="grid">${items.map(it => cardHTML(it)).join("")}</div></section>`);
+      const e = eraOf(d);
+      if (!opened || e !== era) {
+        if (opened) out.push(`</section>`);
+        era = e; opened = true;
+        if (e) { const n = decades.filter(x => eraOf(x) === e).reduce((t, x) => t + groups.get(x).length, 0); out.push(`<section class="era">${eraHeadHTML(e, n)}`); }
+        else out.push(`<section class="era">`);
+      } else if (i && d - decades[i - 1] > 20) out.push(`<p class="gap-note">No records from ${decades[i - 1] + 10} to ${d - 1}.</p>`);
+      out.push(decadeHTML(d, groups.get(d)));
     });
+    if (opened) out.push(`</section>`);
     $("#timeline").innerHTML = (out.length ? out.join("") : `<div class="empty"><h2>No dated records match</h2><p>Change your search in Browse, or add start years to your records.</p></div>`)
       + (undated ? `<p class="gap-note">${undated} matching record${undated > 1 ? "s have" : " has"} no start year, so ${undated > 1 ? "they aren't" : "it isn't"} shown. Add a start year to place ${undated > 1 ? "them" : "it"} here.</p>` : "");
+  };
+  // Edit an era summary in place. Saved to this browser; "Restore draft" goes back to data/eras.js.
+  const editEra = id => {
+    const e = ERAS.find(x => x.id === id), head = $(`.era-head[data-era="${CSS.escape(id)}"]`);
+    if (!e || !head) return;
+    head.querySelector(".era-summary").outerHTML = `<textarea class="era-input" aria-label="Summary for ${esc(e.title)}">${esc(eraSummary(e))}</textarea>`;
+    head.querySelector(".era-meta").innerHTML = `<span></span><div class="btns"><button class="btn sm" data-era-reset>Restore draft</button><button class="btn sm" data-era-cancel>Cancel</button><button class="btn sm primary" data-era-save>${icon("check")}Save</button></div>`;
+    const ta = head.querySelector(".era-input");
+    ta.style.height = ta.scrollHeight + 4 + "px"; ta.focus();
+    head.querySelector("[data-era-save]").onclick = () => { const v = ta.value.trim(); if (v && v !== e.summary) S.eraNotes[id] = v; else delete S.eraNotes[id]; save(); renderTimeline(); toast("Summary saved"); };
+    head.querySelector("[data-era-reset]").onclick = () => { delete S.eraNotes[id]; save(); renderTimeline(); toast("Draft summary restored"); };
+    head.querySelector("[data-era-cancel]").onclick = renderTimeline;
   };
 
   // ---------- drawer ----------
@@ -859,7 +889,7 @@
     if (e.target.closest("[data-open]")) openDrawer(id);
   };
   $("#results").addEventListener("click", onCardClick);
-  $("#timeline").addEventListener("click", onCardClick);
+  $("#timeline").addEventListener("click", e => { const b = e.target.closest("[data-era-edit]"); if (b) return editEra(b.dataset.eraEdit); if (!e.target.closest(".era-head")) onCardClick(e); });
   $("#foreedge").addEventListener("click", e => { const b = e.target.closest("[data-open]"); if (b) openDrawer(b.dataset.open); });
   document.addEventListener("keydown", e => {
     if (e.key === "Escape" && !$("#export-menu").hidden) { $("#export-menu").hidden = true; $("#btn-export").setAttribute("aria-expanded", "false"); $("#btn-export").focus(); return; }
