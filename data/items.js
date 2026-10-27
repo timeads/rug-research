@@ -9426,5 +9426,79 @@ window.RUG_ITEMS = [
     "image": "images/patents/US4029031-01.png",
     "imageCredit": "USPTO via Google Patents (public domain)",
     "imageSource": "uspto"
+  },
+  {
+    "id": "co-tuft-the-world",
+    "type": "company",
+    "title": "Tuft the World",
+    "creator": "Tiernan Alexander and Tim Eads (founders)",
+    "place": "West Philadelphia, Pennsylvania",
+    "region": "United States",
+    "date": "founded 2018",
+    "dateStart": 2018,
+    "sourceUrl": "https://www.chroniclebooks.com/products/tuft-the-world",
+    "institution": "Tuft the World",
+    "description": "Tufting supply company and studio founded in 2018 by Tiernan Alexander and Tim Eads, artists who live and work in West Philadelphia. It sells tufting tools, materials and instruction, runs workshops, and says its aim is to make tufting accessible, with a focus on equity and sustainability. Alexander holds an MA from the Winterthur Program in American Material Culture and an MFA from the University of the Arts; Eads is a master printer with an MFA from Cranbrook.\n\nWhy it matters for the history: part of the hand-gun revival after 2018. In this database's citation check (see ner-cn-pokepoke), 2022 Chinese press reports credit overseas social media and the artist Tim Eads (2018) as sparks for China's 戳戳秀 (\"poke-poke\") tufting trend. That attribution is the press's, not a measured influence.\n\nAlso: the book Tuft the World (Chronicle Books, 2024); the TTW Editions show at Paradigm Gallery (2023), where a large robotic tufting machine made rugs; a lecture and workshop at The Fabric Workshop and Museum (March 2024).\n\nThis is the database author's own firm: note the interest when citing it.\n\nSources: https://papress.com/products/tuft-the-world · https://fabricworkshopandmuseum.org/event/tuft-the-world-lecture-and-rug-tufting-workshop/ · https://www.paradigmarts.org/blogs/news/tuft-the-world-ttf-editions",
+    "themes": [
+      "Companies & modern tufting",
+      "Hand-tufting tools & the gun"
+    ],
+    "tags": [
+      "company",
+      "hand-tufted studio",
+      "hobby revival",
+      "own firm"
+    ],
+    "status": "unverified",
+    "confidence": "solid",
+    "rights": "own"
+  },
+  {
+    "id": "book-tuft-the-world-2024",
+    "type": "book",
+    "title": "Tuft the World: An Illustrated Manual to Tufting Gorgeous Rugs, Decor, and More",
+    "creator": "Tiernan Alexander and Tim Eads",
+    "publisher": "Chronicle Books",
+    "place": "San Francisco",
+    "date": "2024 (published 16 April 2024)",
+    "dateStart": 2024,
+    "region": "United States",
+    "sourceUrl": "https://www.chroniclebooks.com/products/tuft-the-world",
+    "description": "Illustrated how-to manual for tufting with a hand gun, by the founders of Tuft the World. A primary document of the post-2018 hobby revival.",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "hobby revival",
+      "manual",
+      "own firm"
+    ],
+    "status": "unverified",
+    "confidence": "solid",
+    "imageSource": "auto"
+  },
+  {
+    "id": "event-ttw-editions-2023",
+    "type": "event",
+    "title": "TTW Editions at Paradigm Gallery: rugs made by a large robotic tufting machine (2023)",
+    "creator": "Tuft the World",
+    "place": "Philadelphia, Pennsylvania",
+    "region": "United States",
+    "date": "2023",
+    "dateStart": 2023,
+    "institution": "Paradigm Gallery + Studio",
+    "sourceUrl": "https://www.paradigmarts.org/blogs/news/tuft-the-world-ttf-editions",
+    "description": "Exhibition of editioned rugs made on a large robotic tufting machine. Eads: the company had been \"innovating ways to push the boundaries of what is possible with tufting and textiles.\" Pairs with the robot-gun patents (CN104562491A, Wilcom EP2077348B1): the hand gun mounted on a machine again.",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "robotic tufting",
+      "own firm"
+    ],
+    "status": "unverified",
+    "confidence": "solid"
   }
 ];

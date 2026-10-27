@@ -67,6 +67,6 @@ window.RUG_CHAPTERS = [
     id: "ch-hobby", kind: "chapter",
     name: "The hand tool returns: hobby tufting and poke-poke",
     intro: "Working notes:\n\nThe hand gun Tai Ping motorised in Hong Kong by 1973 (motorised handheld tools were patented in the US from 1932) re-entered mainland China around 2021 as an imported social-media craze, 戳戳秀 (\"poke-poke\"). Tie back to the hand tools of the first chapters.",
-    items: ["ner-cn-pokepoke", "pat-cn111441143a", "pat-cn111705448a", "pat-cn111876919a", "ner-hk-taiping-1973", "ner-in-sheru", "ttw-susan-burr"]
+    items: ["ner-cn-pokepoke", "co-tuft-the-world", "book-tuft-the-world-2024", "event-ttw-editions-2023", "pat-cn111441143a", "pat-cn111705448a", "pat-cn111876919a", "ner-hk-taiping-1973", "ner-in-sheru", "ttw-susan-burr"]
   }
 ];
