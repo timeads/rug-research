@@ -25,7 +25,7 @@ window.RUG_CHAPTERS = [
     id: "ch-nylon", kind: "chapter",
     name: "Nylon and the broadloom boom",
     intro: "Working notes:\n\nDuPont's bulked continuous filament (BCF) nylon, dated 1957 or 1959 by different sources; carpet nylon developed at Seaford in 1958. Tufted sales rose from near zero in the late 1940s to over 100 million square yards by 1958. Hagley holds the advertising, photography and consumer research. Do not repeat the Longlife 1952 nylon claim.",
-    items: ["event-bcf-nylon", "hagley-seaford-nylon", "hagley-textile-fibers-album", "hagley-textile-fibers-product-info", "hagley-dupont-advertising-1803", "hagley-dichter-nylon-carpets", "hagley-hull-papers", "ner-de-longlife-refuted"]
+    items: ["event-bcf-nylon", "hagley-seaford-nylon", "hagley-textile-fibers-album", "hagley-textile-fibers-product-info", "hagley-dupont-advertising-1803", "hagley-dichter-nylon-carpets", "hagley-hull-papers", "ner-de-longlife-refuted", "hagley-nylon-hooked-rug", "hagley-pam-20160208", "hagley-dpads-1803-00680", "hagley-dpads-1803-00709", "hagley-dpads-1803-00712", "hagley-film-fc319", "hagley-film-opening-door-1959", "hagley-vid-1995300-b10", "hagley-1972430-1080", "hagley-1972341-ludox", "hagley-oh-mcandrews", "ttw-finding-501-1958", "hagley-dichter-954a", "hagley-bbdo-nylon", "hagley-pahlmann-samples", "hagley-film-fc249-02", "article-archer-luxury-underfoot", "duke-adviews-caprolan"]
   },
   {
     id: "ch-abroad", kind: "chapter",

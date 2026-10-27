@@ -3315,5 +3315,540 @@ window.RUG_ITEMS = [
       "Claude research Aug 2026"
     ],
     "status": "verified"
+  },
+  {
+    "id": "hagley-dpads-1803-00680",
+    "type": "image",
+    "title": "\"Meet Antron: The New Carpet Fiber for Enduring Elegance\"",
+    "date": "1967",
+    "institution": "Hagley Museum and Library",
+    "collection": "DuPont Advertising Dept. records (Acc. 1803), Series I, Box 43, Folder 42, Advertising tearsheets 1967",
+    "identifier": "dpads_1803_00680",
+    "sourceUrl": "https://digital.hagley.org/dpads_1803_00680",
+    "description": "Magazine advertisement launching Antron as a carpet fiber. Found via search-engine results (Hagley's site blocks automated reading): open the link to confirm and see the image.",
+    "region": "United States",
+    "themes": [
+      "Nylon & synthetic fibers (DuPont)",
+      "Trade catalogs & marketing"
+    ],
+    "tags": [
+      "Hagley nylon deep dive",
+      "Antron",
+      "advertisement",
+      "priority"
+    ],
+    "status": "unverified",
+    "dateStart": 1967
+  },
+  {
+    "id": "hagley-dpads-1803-00709",
+    "type": "image",
+    "title": "\"Antron Is the Luxury Carpet Fiber from DuPont\"",
+    "date": "1969",
+    "institution": "Hagley Museum and Library",
+    "collection": "DuPont Advertising Dept. records (Acc. 1803), Box 43, Advertising tearsheets 1969",
+    "identifier": "dpads_1803_00709",
+    "sourceUrl": "https://digital.hagley.org/dpads_1803_00709",
+    "description": "Magazine tear sheet; subjects include interior decoration, floor coverings and nylon. Found via search-engine results (Hagley's site blocks automated reading): open the link to confirm and see the image.",
+    "region": "United States",
+    "themes": [
+      "Nylon & synthetic fibers (DuPont)",
+      "Trade catalogs & marketing"
+    ],
+    "tags": [
+      "Hagley nylon deep dive",
+      "Antron",
+      "advertisement"
+    ],
+    "status": "unverified",
+    "dateStart": 1969
+  },
+  {
+    "id": "hagley-dpads-1803-00712",
+    "type": "image",
+    "title": "\"Antron Nylon Is the Luxury Carpet Fiber from DuPont\"",
+    "date": "1969",
+    "institution": "Hagley Museum and Library",
+    "collection": "DuPont Advertising Dept. records (Acc. 1803), Series I, Box 43, Folder 44, Advertising tearsheets 1969",
+    "identifier": "dpads_1803_00712",
+    "sourceUrl": "https://digital.hagley.org/dpads_1803_00712",
+    "description": "Magazine tear sheet advertising \"DuPont Antron Carpet Nylon\". Found via search-engine results (Hagley's site blocks automated reading): open the link to confirm and see the image.",
+    "region": "United States",
+    "themes": [
+      "Nylon & synthetic fibers (DuPont)",
+      "Trade catalogs & marketing"
+    ],
+    "tags": [
+      "Hagley nylon deep dive",
+      "Antron",
+      "advertisement"
+    ],
+    "status": "unverified",
+    "dateStart": 1969
+  },
+  {
+    "id": "hagley-pam-20160208",
+    "type": "trade-catalog",
+    "title": "\"Antron nylon… for carpet classics of enduring elegance\"",
+    "date": "c. 1965",
+    "institution": "Hagley Museum and Library",
+    "collection": "Pamphlets Collection (DuPont Textile Fibers Dept. trade catalog)",
+    "identifier": "Pam 2016.0208",
+    "sourceUrl": "https://digital.hagley.org/PAM_20160208",
+    "description": "Trade catalog for Antron carpet nylon. Subjects: carpets; nylon; rug and carpet industry. Found via search-engine results (Hagley's site blocks automated reading): open the link to confirm and see the image.",
+    "region": "United States",
+    "themes": [
+      "Nylon & synthetic fibers (DuPont)",
+      "Trade catalogs & marketing"
+    ],
+    "tags": [
+      "Hagley nylon deep dive",
+      "Antron",
+      "trade catalog",
+      "priority"
+    ],
+    "status": "unverified",
+    "dateStart": 1965
+  },
+  {
+    "id": "hagley-film-fc319",
+    "type": "film",
+    "title": "\"The DuPont Show of the Month: The Way Home\", with a DuPont Carpet Nylon commercial",
+    "date": "1960",
+    "institution": "Hagley Museum and Library",
+    "collection": "DuPont Company films and commercials (Acc. 1995.300)",
+    "identifier": "FC 319",
+    "sourceUrl": "https://digital.hagley.org/FILM_1995300_FC319",
+    "description": "16 mm, black and white, 700 ft. TV program starring Ronald Reagan, hosted by June Allyson, with a DuPont Carpet Nylon commercial at intermission. Strongest lead for a 1960 nylon-carpet film. Found via search-engine results (Hagley's site blocks automated reading): open the link to confirm and see the image.",
+    "region": "United States",
+    "themes": [
+      "Nylon & synthetic fibers (DuPont)",
+      "Trade catalogs & marketing"
+    ],
+    "tags": [
+      "Hagley nylon deep dive",
+      "film",
+      "commercial",
+      "priority"
+    ],
+    "status": "unverified",
+    "dateStart": 1960
+  },
+  {
+    "id": "hagley-vid-1995300-b10",
+    "type": "film",
+    "title": "\"DuPont commercials circa 1950s–1990s\" (includes an Antron Carpet Fiber spot)",
+    "date": "c. 1950s–1990s",
+    "institution": "Hagley Museum and Library",
+    "collection": "DuPont Company films and commercials (Acc. 1995.300), Series I, Box 10",
+    "identifier": "VID-1995300-B10",
+    "sourceUrl": "https://digital.hagley.org/VID-1995300-B10",
+    "description": "Compilation tape including an Antron carpet fiber commercial (\"Caveman/Dancers\") and later Stainmaster spots. Also on DPLA: https://dp.la/item/6ff88b835132efaa68ffe21d5406e4eb. Found via search-engine results (Hagley's site blocks automated reading): open the link to confirm and see the image.",
+    "region": "United States",
+    "themes": [
+      "Nylon & synthetic fibers (DuPont)",
+      "Trade catalogs & marketing"
+    ],
+    "tags": [
+      "Hagley nylon deep dive",
+      "film",
+      "commercial",
+      "Antron",
+      "Stainmaster"
+    ],
+    "status": "unverified",
+    "dateStart": 1950,
+    "dateEnd": 1999
+  },
+  {
+    "id": "hagley-film-fc249-02",
+    "type": "film",
+    "title": "\"New York City Marathon 1977\": Antron carpet laid on a bridge for runners",
+    "date": "1977 (record dated 1980–81)",
+    "institution": "Hagley Museum and Library",
+    "collection": "DuPont Company films and commercials (Acc. 1995.300)",
+    "identifier": "FC 249",
+    "sourceUrl": "https://digital.hagley.org/FILM_1995300_FC249_02",
+    "description": "Abstract mentions an Antron nylon carpet DuPont laid on the bridge for runners. A promotional stunt. Found via search-engine results (Hagley's site blocks automated reading): open the link to confirm and see the image.",
+    "region": "United States",
+    "themes": [
+      "Nylon & synthetic fibers (DuPont)",
+      "Trade catalogs & marketing"
+    ],
+    "tags": [
+      "Hagley nylon deep dive",
+      "film",
+      "Antron",
+      "publicity"
+    ],
+    "status": "unverified",
+    "dateStart": 1977
+  },
+  {
+    "id": "hagley-film-opening-door-1959",
+    "type": "film",
+    "title": "DuPont-sponsored TV program with DuPont Carpet Nylon commercials (probably \"The Opening Door\", 1959)",
+    "date": "1959?",
+    "institution": "Hagley Museum and Library",
+    "collection": "DuPont Company films and commercials (Acc. 1995.300)",
+    "identifier": "",
+    "sourceUrl": "https://digital.hagley.org/islandora/search?page=9&type=dismax&f[0]=mods_relatedItem_host_titleInfo_title_ms:DuPont\\ Company\\ films\\ and\\ commercials\\ \\(Accession\\ 1995.300\\)",
+    "description": "Snippet: starring Virginia Christine and Irene Dunne, with commercials for Dacron and \"DuPont Carpet Nylon\". The cast matches \"The Opening Door\" (DuPont Show with June Allyson, 5 Oct 1959). Item page not yet identified. Found via search-engine results (Hagley's site blocks automated reading): open the link to confirm and see the image.",
+    "region": "United States",
+    "themes": [
+      "Nylon & synthetic fibers (DuPont)",
+      "Trade catalogs & marketing"
+    ],
+    "tags": [
+      "Hagley nylon deep dive",
+      "film",
+      "commercial",
+      "identify item"
+    ],
+    "status": "unverified",
+    "dateStart": 1959
+  },
+  {
+    "id": "hagley-1972341-ludox",
+    "type": "image",
+    "title": "Carpet test strip partly treated with Ludox colloidal silica",
+    "date": "1955",
+    "institution": "Hagley Museum and Library",
+    "collection": "DuPont Product Information photographs (Acc. 1972.341)",
+    "identifier": "1972341_1003 (inferred)",
+    "sourceUrl": "https://digital.hagley.org/1972341?display=list&page=60",
+    "description": "Photograph: treated carpet clean after vacuuming, untreated part \"dirty and dingy\". An early soil-resistance image for carpet (DuPont Ludox). Found via search-engine results (Hagley's site blocks automated reading): open the link to confirm and see the image.",
+    "region": "United States",
+    "themes": [
+      "Nylon & synthetic fibers (DuPont)",
+      "Woven carpet"
+    ],
+    "tags": [
+      "Hagley nylon deep dive",
+      "soil resistance",
+      "photograph"
+    ],
+    "status": "unverified",
+    "dateStart": 1955
+  },
+  {
+    "id": "hagley-1972430-1080",
+    "type": "image",
+    "title": "William Pahlmann Associates sitting area, 1962 Decoration & Design Show, New York: continuous filament nylon carpet",
+    "date": "1962",
+    "institution": "Hagley Museum and Library",
+    "collection": "Acc. 1972.430 (photographs)",
+    "identifier": "1972430_1080",
+    "sourceUrl": "https://digital.hagley.org/1972430_1080",
+    "description": "Room photograph. Wall-to-wall carpet of \"continuous filament nylon in white and beige\" by James Lees & Sons, named \"Happy Day\". Best image found of an installed nylon carpet; fiber maker not named. Found via search-engine results (Hagley's site blocks automated reading): open the link to confirm and see the image.",
+    "region": "United States",
+    "themes": [
+      "Nylon & synthetic fibers (DuPont)",
+      "Trade catalogs & marketing"
+    ],
+    "tags": [
+      "Hagley nylon deep dive",
+      "photograph",
+      "interior",
+      "priority",
+      "James Lees"
+    ],
+    "status": "unverified",
+    "dateStart": 1962
+  },
+  {
+    "id": "hagley-nylon-hooked-rug",
+    "type": "object",
+    "title": "Nylon hooked rug made by Nancy du Pont Reynolds Cooch (Mrs. Edward W. Cooch Jr.)",
+    "date": "c. 1950–1952",
+    "institution": "Hagley Museum and Library",
+    "collection": "Hagley museum collection",
+    "identifier": "2012.8",
+    "sourceUrl": "https://www.hagley.org/librarynews/museum-collections-du-pont-story-hooked-rug",
+    "description": "10 × 12 ft hooked rug in nylon, linked to DuPont's wear-testing of nylon for floor coverings; it frayed and pilled when walked on. Shown in the 2015 \"Unraveling Stories\" exhibit. Probably the only nylon hooked rug: a direct bridge between handmade rugs and nylon carpet. Found via search-engine results (Hagley's site blocks automated reading): open the link to confirm and see the image.",
+    "region": "United States",
+    "themes": [
+      "Nylon & synthetic fibers (DuPont)",
+      "Hooked & handmade rugs"
+    ],
+    "tags": [
+      "Hagley nylon deep dive",
+      "priority",
+      "object",
+      "wear testing",
+      "fellowship anchor"
+    ],
+    "status": "unverified",
+    "dateStart": 1950,
+    "dateEnd": 1952
+  },
+  {
+    "id": "hagley-dichter-954a",
+    "type": "archive",
+    "title": "Dichter report 954A: proposal for a motivational research study of nylon carpet sales and advertising",
+    "date": "1950s",
+    "institution": "Hagley Museum and Library",
+    "collection": "Ernest Dichter papers (Acc. 2407), Box 42",
+    "identifier": "954A",
+    "sourceUrl": "https://www.marketresearch.amdigital.co.uk/Documents/Details/Hagley_Dichter_BX042_954A",
+    "description": "Proposal preceding study 954C (already in the database). Hagley digital ID for 954C: MSS_2407_042_0954C. Found via search-engine results (Hagley's site blocks automated reading): open the link to confirm and see the image.",
+    "region": "United States",
+    "themes": [
+      "Nylon & synthetic fibers (DuPont)",
+      "Trade catalogs & marketing"
+    ],
+    "tags": [
+      "Hagley nylon deep dive",
+      "consumer research"
+    ],
+    "status": "unverified"
+  },
+  {
+    "id": "hagley-bbdo-nylon",
+    "type": "film",
+    "title": "BBDO records: \"DuPont – Nylon, 1941–1966\"",
+    "date": "1941–1966",
+    "institution": "Hagley Museum and Library",
+    "collection": "BBDO records (DuPont's advertising agency)",
+    "identifier": "archival object 578303",
+    "sourceUrl": "https://findingaids.hagley.org/repositories/3/archival_objects/578303",
+    "description": "Film reels in cold storage. Carpet content unverified, but the range covers the carpet-nylon launch years. Found via search-engine results (Hagley's site blocks automated reading): open the link to confirm and see the image.",
+    "region": "United States",
+    "themes": [
+      "Nylon & synthetic fibers (DuPont)",
+      "Trade catalogs & marketing"
+    ],
+    "tags": [
+      "Hagley nylon deep dive",
+      "film",
+      "advertising agency",
+      "request"
+    ],
+    "status": "unverified",
+    "dateStart": 1941,
+    "dateEnd": 1966
+  },
+  {
+    "id": "hagley-pahlmann-samples",
+    "type": "archive",
+    "title": "William Pahlmann papers: carpet and floor-mat samples",
+    "date": "1961–1975",
+    "institution": "Hagley Museum and Library",
+    "collection": "William Pahlmann papers (Acc. 2388)",
+    "identifier": "archival objects 439206, 439210, 439909–439937",
+    "sourceUrl": "https://findingaids.hagley.org/repositories/3/archival_objects/439206",
+    "description": "Physical swatches, swatch books and sample cards (e.g. James Lees 1964, wool). Check fiber labels for nylon, Antron, Acrilan. Found via search-engine results (Hagley's site blocks automated reading): open the link to confirm and see the image.",
+    "region": "United States",
+    "themes": [
+      "Nylon & synthetic fibers (DuPont)",
+      "Trade catalogs & marketing",
+      "Yarn & materials"
+    ],
+    "tags": [
+      "Hagley nylon deep dive",
+      "samples",
+      "visit"
+    ],
+    "status": "unverified",
+    "dateStart": 1961,
+    "dateEnd": 1975
+  },
+  {
+    "id": "hagley-oh-mcandrews",
+    "type": "oral-history",
+    "title": "Oral history: Tom McAndrews (DuPont Textile Fibers)",
+    "date": "2018",
+    "institution": "Hagley Museum and Library",
+    "collection": "Textile Fibers Department oral histories",
+    "identifier": "",
+    "sourceUrl": "https://digital.hagley.org/system/files/2025-06/islandora_2599141_obj.pdf",
+    "description": "Gives carpet filament from 1952, the launch of \"501\" carpet nylon in 1958 with its special crimp, changes to 501 in 1972, and the soil-hiding properties of BCF. Found via search-engine results (Hagley's site blocks automated reading): open the link to confirm and see the image.",
+    "region": "United States",
+    "themes": [
+      "Nylon & synthetic fibers (DuPont)",
+      "Trade catalogs & marketing"
+    ],
+    "tags": [
+      "Hagley nylon deep dive",
+      "oral history",
+      "501",
+      "BCF",
+      "dating anchor",
+      "priority"
+    ],
+    "status": "unverified",
+    "dateStart": 2018
+  },
+  {
+    "id": "hagley-oh-culley",
+    "type": "oral-history",
+    "title": "Oral history: Jim Culley (DuPont Textile Fibers)",
+    "date": "",
+    "institution": "Hagley Museum and Library",
+    "collection": "Textile Fibers Department oral histories",
+    "identifier": "",
+    "sourceUrl": "https://digital.hagley.org/system/files/2025-06/islandora_2615416_obj.pdf",
+    "description": "Textile Fibers Department interview; check for carpet content. Found via search-engine results (Hagley's site blocks automated reading): open the link to confirm and see the image.",
+    "region": "United States",
+    "themes": [
+      "Nylon & synthetic fibers (DuPont)",
+      "Trade catalogs & marketing"
+    ],
+    "tags": [
+      "Hagley nylon deep dive",
+      "oral history"
+    ],
+    "status": "unverified"
+  },
+  {
+    "id": "hagley-oh-axtell",
+    "type": "oral-history",
+    "title": "Oral history: Bob Axtell (DuPont carpet market research)",
+    "date": "2018",
+    "institution": "Hagley Museum and Library",
+    "collection": "Textile Fibers Department oral histories",
+    "identifier": "",
+    "sourceUrl": "https://findingaids.hagley.org/repositories/2/archival_objects/108095",
+    "description": "Interview covering carpet market research. Found via search-engine results (Hagley's site blocks automated reading): open the link to confirm and see the image.",
+    "region": "United States",
+    "themes": [
+      "Nylon & synthetic fibers (DuPont)",
+      "Trade catalogs & marketing"
+    ],
+    "tags": [
+      "Hagley nylon deep dive",
+      "oral history",
+      "market research"
+    ],
+    "status": "unverified",
+    "dateStart": 2018
+  },
+  {
+    "id": "hagley-seaford-records",
+    "type": "archive",
+    "title": "Seaford Plant records",
+    "date": "",
+    "institution": "Hagley Museum and Library",
+    "collection": "Seaford Plant records",
+    "identifier": "",
+    "sourceUrl": "https://findingaids.hagley.org/repositories/3/resources/1864",
+    "description": "Historical note: carpet nylon was developed at Seaford in 1958. Found via search-engine results (Hagley's site blocks automated reading): open the link to confirm and see the image.",
+    "region": "United States",
+    "themes": [
+      "Nylon & synthetic fibers (DuPont)",
+      "Trade catalogs & marketing"
+    ],
+    "tags": [
+      "Hagley nylon deep dive",
+      "Seaford"
+    ],
+    "status": "unverified"
+  },
+  {
+    "id": "hagley-magee-1936",
+    "type": "image",
+    "title": "\"Magee Carpet Company\", aerial view",
+    "date": "1936",
+    "institution": "Hagley Museum and Library",
+    "collection": "Acc. 1970.200",
+    "identifier": "70_200_09067",
+    "sourceUrl": "https://digital.hagley.org/70_200_09067",
+    "description": "Aerial photograph of a woven-carpet mill (Bloomsburg, Pa.). Context for the pre-tufting industry. Found via search-engine results (Hagley's site blocks automated reading): open the link to confirm and see the image.",
+    "region": "United States",
+    "themes": [
+      "Woven carpet"
+    ],
+    "tags": [
+      "Hagley nylon deep dive",
+      "photograph",
+      "mill"
+    ],
+    "status": "unverified",
+    "dateStart": 1936
+  },
+  {
+    "id": "hagley-gay-sons-1900",
+    "type": "image",
+    "title": "\"John Gay's Sons carpet mill in Philadelphia, Pa.\"",
+    "date": "c. 1900",
+    "institution": "Hagley Museum and Library",
+    "collection": "Acc. 2002.251",
+    "identifier": "2002251_069",
+    "sourceUrl": "https://digital.hagley.org/2002251_069",
+    "description": "Photograph of a Philadelphia woven-carpet mill. Context for the pre-tufting industry. Found via search-engine results (Hagley's site blocks automated reading): open the link to confirm and see the image.",
+    "region": "United States",
+    "themes": [
+      "Woven carpet"
+    ],
+    "tags": [
+      "Hagley nylon deep dive",
+      "photograph",
+      "mill"
+    ],
+    "status": "unverified",
+    "dateStart": 1900
+  },
+  {
+    "id": "ttw-finding-501-1958",
+    "type": "finding",
+    "title": "DuPont \"501\" carpet nylon launched in 1958 with a special crimp",
+    "region": "United States",
+    "confidence": "suggestive",
+    "description": "From the Tom McAndrews oral history (Hagley): carpet filament from 1952, 501 launched 1958, changed in 1972; BCF praised for hiding soil. Helps resolve the BCF 1957/1959 date question; check the transcript.",
+    "sourceUrl": "https://digital.hagley.org/system/files/2025-06/islandora_2599141_obj.pdf",
+    "publisher": "Hagley oral history (McAndrews, 2018)",
+    "date": "1958",
+    "dateStart": 1958,
+    "themes": [
+      "Nylon & synthetic fibers (DuPont)",
+      "Machine tufting & Dalton"
+    ],
+    "tags": [
+      "dating anchor",
+      "501",
+      "BCF"
+    ],
+    "status": "unverified"
+  },
+  {
+    "id": "article-archer-luxury-underfoot",
+    "type": "article",
+    "title": "Luxury Underfoot",
+    "creator": "Sarah Archer",
+    "publisher": "Material Intelligence",
+    "date": "2023",
+    "dateStart": 2023,
+    "description": "On DuPont's Antron carpet advertising: a secondary source for the Hagley ads.",
+    "sourceUrl": "https://www.sarah-archer.com/writing/luxury-underfoot",
+    "region": "United States",
+    "themes": [
+      "Nylon & synthetic fibers (DuPont)",
+      "Trade catalogs & marketing"
+    ],
+    "tags": [
+      "Antron",
+      "advertising"
+    ],
+    "status": "unverified"
+  },
+  {
+    "id": "duke-adviews-caprolan",
+    "type": "image",
+    "title": "Caprolan carpet nylon advertisement (Allied Chemical), Duke AdViews",
+    "institution": "Duke University Libraries (AdViews)",
+    "identifier": "dmbb00804",
+    "description": "Non-Hagley comparison: a competitor's nylon carpet fiber advertising.",
+    "sourceUrl": "https://repository.duke.edu/dc/adviews/dmbb00804",
+    "region": "United States",
+    "themes": [
+      "Nylon & synthetic fibers (DuPont)",
+      "Trade catalogs & marketing"
+    ],
+    "tags": [
+      "Caprolan",
+      "advertisement",
+      "comparison"
+    ],
+    "status": "unverified"
   }
 ];
