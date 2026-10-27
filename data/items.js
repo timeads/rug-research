@@ -10805,7 +10805,10 @@ window.RUG_ITEMS = [
       "checked from search results"
     ],
     "status": "unverified",
-    "confidence": "solid"
+    "confidence": "solid",
+    "image": "https://patentimages.storage.googleapis.com/d1/b4/eb/aa521eac9c2c9a/US08141505-20120327-D00000.png",
+    "imageCredit": "Patent drawing via Google Patents (public domain)",
+    "imageSource": "auto"
   },
   {
     "id": "event-cmc-v-tuftco-2017",
@@ -11057,7 +11060,10 @@ window.RUG_ITEMS = [
       "checked from search results"
     ],
     "status": "unverified",
-    "confidence": "suggestive"
+    "confidence": "suggestive",
+    "image": "http://img2.chinadaily.com.cn/images/202505/12/682169dda310a04a96783487.jpeg",
+    "imageCredit": "China Daily",
+    "imageSource": "auto"
   },
   {
     "id": "finding-cnc-delos-robotic-2013",
@@ -11114,7 +11120,10 @@ window.RUG_ITEMS = [
       "checked from search results"
     ],
     "status": "unverified",
-    "confidence": "suggestive"
+    "confidence": "suggestive",
+    "image": "https://heimtextil.messefrankfurt.com/content/dam/messefrankfurt-redaktion/texpertisenetwork/images/stages-teaser/stage-texpertise.jpg",
+    "imageCredit": "EFAB GmbH",
+    "imageSource": "auto"
   },
   {
     "id": "co-carpet-sign",
@@ -11141,7 +11150,10 @@ window.RUG_ITEMS = [
       "checked from search results"
     ],
     "status": "unverified",
-    "confidence": "solid"
+    "confidence": "solid",
+    "image": "https://interiordesign.net/wp-content/uploads/2021/06/special_k_main_image.jpg",
+    "imageCredit": "Carpet Sign",
+    "imageSource": "auto"
   },
   {
     "id": "finding-cnc-european-robotufting-studios",
@@ -11196,7 +11208,10 @@ window.RUG_ITEMS = [
       "checked from search results"
     ],
     "status": "unverified",
-    "confidence": "solid"
+    "confidence": "solid",
+    "image": "https://cdn.hackaday.io/images/9350651645120696026.png",
+    "imageCredit": "Hackaday.io",
+    "imageSource": "auto"
   },
   {
     "id": "finding-cnc-diy-robot-arm-experiments",
@@ -11280,6 +11295,9 @@ window.RUG_ITEMS = [
       "checked from search results"
     ],
     "status": "unverified",
-    "confidence": "suggestive"
+    "confidence": "suggestive",
+    "image": "https://www.kicktraq.com/projects/207408103/craftphilia-worlds-first-fully-automated-tufting-machine/dailychart.png",
+    "imageCredit": "Craftphilia",
+    "imageSource": "auto"
   }
 ];
