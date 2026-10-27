@@ -8146,7 +8146,10 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "solid",
-    "rights": "not-requested"
+    "rights": "not-requested",
+    "image": "https://welspunflooring.com/images/about/banner.webp",
+    "imageCredit": "Welspun Flooring",
+    "imageSource": "auto"
   },
   {
     "id": "co-cobble",
@@ -9653,7 +9656,9 @@ window.RUG_ITEMS = [
     "themes": [
       "Woven carpet"
     ],
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "image": "https://framemark.vam.ac.uk/collections/2006AT3471/full/!600,/0/default.jpg",
+    "imageCredit": "Victoria and Albert Museum"
   },
   {
     "id": "woven-scotch-kilmarnock",
@@ -9782,8 +9787,7 @@ window.RUG_ITEMS = [
     "status": "unverified",
     "themes": [
       "Woven carpet"
-    ],
-    "imageSource": "auto"
+    ]
   },
   {
     "id": "cw-1976-609-4-scotch",
@@ -9810,8 +9814,7 @@ window.RUG_ITEMS = [
     "status": "unverified",
     "themes": [
       "Woven carpet"
-    ],
-    "imageSource": "auto"
+    ]
   },
   {
     "id": "woven-brussels-wire-loop",
@@ -10019,7 +10022,9 @@ window.RUG_ITEMS = [
     "themes": [
       "Woven carpet"
     ],
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "image": "https://framemark.vam.ac.uk/collections/2021MY5392/full/!600,/0/default.jpg",
+    "imageCredit": "Victoria and Albert Museum"
   },
   {
     "id": "book-christie-1800-carpet-sale",
@@ -10124,8 +10129,7 @@ window.RUG_ITEMS = [
     "status": "unverified",
     "themes": [
       "Woven carpet"
-    ],
-    "imageSource": "auto"
+    ]
   },
   {
     "id": "fulham-parisot-1750",
@@ -10287,8 +10291,7 @@ window.RUG_ITEMS = [
     "status": "unverified",
     "themes": [
       "Woven carpet"
-    ],
-    "imageSource": "auto"
+    ]
   },
   {
     "id": "drawloom-to-jacquard-carpet",
