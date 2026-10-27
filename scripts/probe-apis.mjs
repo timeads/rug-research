@@ -82,6 +82,8 @@ const APIS = {
   cwf: `https://emuseum.history.org/search/bed%20rug/objects/json`,
   hne: `https://www.historicnewengland.org/explore/collections-access/?s=hooked+rug`,
   qxDocList: `https://digitalcollections.winterthur.org/sitemap_urls?type=DOCUMENT&skip=0&take=10000`,
+  uwPazyryk: `https://depts.washington.edu/silkroad/museums/shm/shmpazyryk.html`,
+  hermitagePazyryk: `https://www.hermitagemuseum.org/digital-collection/25.+archaeological+artifacts/879870`,
   cooperHewitt: `https://api.collection.cooperhewitt.org/rest/?method=cooperhewitt.search.objects&query=rug`,
 };
 // "sources" mode: try every Other archives search link with a sample query.
