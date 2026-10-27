@@ -444,7 +444,17 @@ dialog::backdrop { background: rgb(12 15 13 / .5); }
 
 @media print {
   .shell, .export-row, .list-actions, .citem .cact, .intro-label, .list-intro, #view-browse, #view-timeline, #view-discover, #view-sources, .drawer, .scrim, .toast, .skip { display: none !important; }
-  #view-compile { display: block !important; }
+  body:not(.print-ms) #view-compile { display: block !important; }
+  body:not(.print-ms) #view-manuscript, body.print-ms #view-compile { display: none !important; }
+  body.print-ms #view-manuscript { display: block !important; }
+  .ms-toc, .ms-actions, .ms-ch-meta .linkish { display: none !important; }
+  .ms-layout { display: block; }
+  .ms { max-width: none; font-size: 11pt; }
+  .ms-chapter { break-before: page; border: 0; }
+  .ms-sources[open] summary, .ms-sources summary { list-style: none; }
+  .ms-sources { display: block; }
+  .ms-sources > ol { display: block; }
+  .ms-cite { color: #000; }
   body { background: #fff; color: #000; font-size: 11pt; }
   main { padding: 0; }
   .print-only { display: block; }
@@ -522,3 +532,43 @@ input[type="search"]::-webkit-search-cancel-button:hover { background: var(--ink
 .credit.rights { color: var(--cloth-ochre); font-weight: 550; }
 .credit.rights-granted { color: var(--cloth-moss); }
 .credit.rights-declined { color: var(--danger); }
+
+/* ---------- manuscript ---------- */
+.ms-layout { display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: 48px; align-items: start; }
+.ms-toc { position: sticky; top: 84px; max-height: calc(100vh - 110px); overflow: auto; padding-top: 8px; }
+.ms-toc-title { margin: 0 0 8px; font-size: var(--t-sm); font-weight: 650; color: var(--ink-2); }
+.ms-toc ol { list-style: none; margin: 0; padding: 0; counter-reset: ch; }
+.ms-toc li { counter-increment: ch; }
+.ms-toc a { display: grid; grid-template-columns: 22px minmax(0, 1fr) auto; gap: 6px; padding: 6px 8px; border-radius: var(--r); color: var(--ink-2); text-decoration: none; font-size: var(--t-sm); line-height: 1.35; }
+.ms-toc a::before { content: counter(ch) "."; color: var(--ink-3); font-variant-numeric: tabular-nums; }
+.ms-toc a:hover { background: var(--surface); color: var(--ink); }
+.ms-toc small { color: var(--ink-3); font-variant-numeric: tabular-nums; }
+.ms { max-width: 68ch; }
+.ms-head { padding-bottom: 20px; border-bottom: 2px solid var(--ink); margin-bottom: 8px; }
+.ms-head h1 { font-size: 2.25rem; font-weight: 700; line-height: 1.1; font-variation-settings: "wdth" 112; }
+.ms-sub { margin: 8px 0 14px; color: var(--ink-2); }
+.ms-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+.ms-chapter { padding: 36px 0 28px; border-bottom: 1px solid var(--line); scroll-margin-top: 80px; }
+.ms-ch-num { margin: 0 0 4px; font-size: var(--t-sm); font-weight: 650; color: var(--ink-3); font-variant-numeric: tabular-nums; }
+.ms-ch-head h2 { font-size: var(--t-2xl); line-height: 1.2; }
+.ms-ch-meta { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; margin: 8px 0 22px; font-size: var(--t-sm); color: var(--ink-3); }
+.linkish { display: inline-flex; align-items: center; gap: 4px; border: 0; background: none; padding: 0; color: var(--focus); cursor: pointer; font-size: inherit; text-decoration: underline; text-underline-offset: .18em; }
+.ms-prose { font-size: 1.0625rem; line-height: 1.72; }
+.ms-prose p { margin: 0 0 1.05em; }
+.ms-prose ul { margin: 0 0 1.05em; padding-left: 1.2em; }
+.ms-prose li { margin-bottom: .35em; }
+.ms-todo { margin: 1.4em 0 0; padding: 14px 18px; border-radius: var(--r-lg); background: var(--surface); border: 1px solid var(--line); font-size: var(--t-md); line-height: 1.55; color: var(--ink-2); }
+.ms-todo h4 { margin: 0 0 6px; font-size: var(--t-sm); font-weight: 650; color: var(--ink); }
+.ms-todo ul { margin: 0; padding-left: 1.1em; }
+.ms-empty { color: var(--ink-3); font-style: italic; }
+.ms-sources { margin-top: 22px; }
+.ms-sources summary { cursor: pointer; font-size: var(--t-sm); font-weight: 650; color: var(--ink-2); }
+.ms-sources ol { margin: 12px 0 0; padding-left: 1.6em; font-size: var(--t-sm); line-height: 1.5; color: var(--ink-2); }
+.ms-sources li { margin-bottom: 8px; }
+.ms-cite { border: 0; background: none; padding: 0; text-align: left; font: inherit; color: inherit; cursor: pointer; overflow-wrap: anywhere; }
+.ms-cite:hover { color: var(--ink); text-decoration: underline; text-underline-offset: .18em; }
+@media (max-width: 860px) {
+  .ms-layout { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  .ms-toc { position: static; max-height: none; margin-bottom: 18px; padding: 12px; border: 1px solid var(--line); border-radius: var(--r-lg); background: var(--surface); }
+  .ms-head h1 { font-size: 1.75rem; }
+}

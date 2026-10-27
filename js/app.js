@@ -575,6 +575,7 @@
     rebuild();
     if (currentView === "browse" || currentView === "timeline") renderBrowse();
     if (currentView === "compile") renderCompile();
+    if (currentView === "manuscript") renderManuscript();
     if (currentView === "discover") renderDiscover();
     if (drawerId && BY_ID[drawerId]) {
       const scroll = $("#drawer").scrollTop; openDrawer(drawerId); $("#drawer").scrollTop = scroll;
@@ -718,6 +719,49 @@
     out.push("## Bibliography", "", ...[...all].sort((a, b) => citation(a).localeCompare(citation(b))).map(it => `- ${citation(it)}`));
     download("history-of-tufting-manuscript.md", out.join("\n").replace(/\n{3,}/g, "\n\n"), "text/markdown");
   };
+  // ---------- manuscript (read the whole book in the page) ----------
+  // Chapter drafts are plain text: blank lines separate paragraphs, "- " starts a list item,
+  // and a short line ending in ":" heads the list after it (e.g. "Still to find:").
+  const DRAFT_LEAD = /^Draft \([^)]*\):\s*$/;
+  const proseHTML = text => {
+    const blocks = String(text || "").replace(/\r/g, "").trim().split(/\n\s*\n/);
+    return blocks.map(b => {
+      const lines = b.split("\n").filter(x => x.trim());
+      if (!lines.length || (lines.length === 1 && DRAFT_LEAD.test(lines[0]))) return "";
+      let head = "";
+      if (lines.length > 1 && /:\s*$/.test(lines[0]) && lines[0].length < 60 && lines.slice(1).every(x => /^\s*[-•]\s+/.test(x))) head = lines.shift().replace(/:\s*$/, "");
+      if (lines.every(x => /^\s*[-•]\s+/.test(x))) {
+        const ul = `<ul>${lines.map(x => `<li>${mdInline(x.replace(/^\s*[-•]\s+/, ""))}</li>`).join("")}</ul>`;
+        return head ? `<aside class="ms-todo"><h4>${esc(head)}</h4>${ul}</aside>` : ul;
+      }
+      return `<p>${lines.map(mdInline).join("<br>")}</p>`;
+    }).join("");
+  };
+  const wordsIn = t => String(t || "").replace(DRAFT_LEAD, "").trim().split(/\s+/).filter(Boolean).length;
+  const renderManuscript = () => {
+    const chapters = S.lists.filter(isChapter);
+    const total = chapters.reduce((n, l) => n + wordsIn(l.intro), 0);
+    $("#ms-sub").textContent = chapters.length
+      ? `Working manuscript · ${chapters.length} chapter${chapters.length === 1 ? "" : "s"} · ${total.toLocaleString()} words · updates as you write`
+      : "No chapters yet.";
+    $("#ms-toc").innerHTML = chapters.map((l, i) => `<li><a href="#ms-${esc(l.id)}" data-ms-jump="${esc(l.id)}"><span>${esc(l.name)}</span><small>${wordsIn(l.intro).toLocaleString()}</small></a></li>`).join("");
+    $("#ms-body").innerHTML = chapters.length ? chapters.map((l, i) => {
+      const items = l.items.map(id => BY_ID[id]).filter(Boolean);
+      return `<section class="ms-chapter" id="ms-${esc(l.id)}">
+        <header class="ms-ch-head">
+          <p class="ms-ch-num">Chapter ${i + 1}</p>
+          <h2>${esc(l.name)}</h2>
+          <p class="ms-ch-meta">${wordsIn(l.intro).toLocaleString()} words · ${items.length} source${items.length === 1 ? "" : "s"} <button class="linkish" data-ms-edit="${esc(l.id)}">${icon("edit", "sm")}Edit in Write</button></p>
+        </header>
+        <div class="ms-prose">${(l.intro || "").trim() ? proseHTML(l.intro) : `<p class="ms-empty">No draft yet. Write this chapter in the Write tab.</p>`}</div>
+        ${items.length ? `<details class="ms-sources"><summary>Sources (${items.length})</summary><ol>${items.map(it => {
+          const conf = it.confidence && CONFIDENCE[it.confidence] ? ` <span class="conf conf-${it.confidence}">${esc(CONFIDENCE[it.confidence].label)}</span>` : "";
+          return `<li><button class="ms-cite" data-ms-open="${esc(it.id)}">${mdInline(citation(it))}</button>${conf}</li>`;
+        }).join("")}</ol></details>` : ""}
+      </section>`;
+    }).join("") : `<div class="empty"><h2>No chapters yet</h2><p>Create a chapter in the Write tab and it appears here.</p><div class="btns"><a class="btn" href="#compile">Go to Write</a></div></div>`;
+  };
+
   const compileExport = fmt => {
     const l = activeList();
     const items = l.items.map(id => BY_ID[id]).filter(Boolean);
@@ -860,6 +904,7 @@
     $$(".view").forEach(s => (s.hidden = s.id !== "view-" + v));
     if (v === "browse" || v === "timeline") renderBrowse();
     if (v === "compile") renderCompile();
+    if (v === "manuscript") renderManuscript();
     if (v === "sources") { if (!$("#sq").value) $("#sq").value = parseQuery(S.ui.q).terms.join(" "); renderSources(); }
     if (v === "discover" && !$("#dq").value) $("#dq").value = parseQuery(S.ui.q).terms.join(" ");
     try { history.replaceState(null, "", "#" + v); } catch {}
@@ -983,6 +1028,15 @@
   $("#btn-chapter-up").onclick = () => moveChapter(-1);
   $("#btn-chapter-down").onclick = () => moveChapter(1);
   $("#btn-manuscript").onclick = exportManuscript;
+  $("#ms-download").onclick = exportManuscript;
+  $("#ms-print").onclick = () => { document.body.classList.add("print-ms"); window.print(); };
+  addEventListener("afterprint", () => document.body.classList.remove("print-ms"));
+  $("#view-manuscript").addEventListener("click", e => {
+    const open = e.target.closest("[data-ms-open]"); if (open) return openDrawer(open.dataset.msOpen);
+    const edit = e.target.closest("[data-ms-edit]"); if (edit) { S.activeList = edit.dataset.msEdit; save(); setView("compile"); return; }
+    const jump = e.target.closest("[data-ms-jump]");
+    if (jump) { e.preventDefault(); document.getElementById("ms-" + jump.dataset.msJump)?.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" }); }
+  });
   $("#btn-rename-list").onclick = () => { const l = activeList(); const n = prompt("Rename list:", l.name); if (n) { l.name = n; save(); renderCompile(); } };
   $("#btn-delete-list").onclick = () => {
     const l = activeList();
@@ -1056,7 +1110,7 @@
   }
   save();
   rebuild();
-  const VIEWS = ["browse", "timeline", "compile", "discover", "sources"];
+  const VIEWS = ["browse", "timeline", "compile", "manuscript", "discover", "sources"];
   const viewFromHash = () => { const v = (location.hash || "").slice(1); return VIEWS.includes(v) ? v : "browse"; };
   window.addEventListener("hashchange", () => { if (viewFromHash() !== currentView) setView(viewFromHash()); });
   setView(viewFromHash());

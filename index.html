@@ -47,6 +47,7 @@
         <a class="tab" href="#browse" data-view="browse">Browse</a>
         <a class="tab" href="#timeline" data-view="timeline">Timeline</a>
         <a class="tab" href="#compile" data-view="compile">Write <span class="count-pill" id="list-count"></span></a>
+        <a class="tab" href="#manuscript" data-view="manuscript">Manuscript</a>
         <a class="tab" href="#discover" data-view="discover">Discover</a>
         <a class="tab" href="#sources" data-view="sources">Other archives</a>
       </nav>
@@ -150,6 +151,27 @@
     </section>
 
     <!-- DISCOVER -->
+    <!-- MANUSCRIPT -->
+    <section class="view" id="view-manuscript" hidden>
+      <div class="ms-layout">
+        <nav class="ms-toc" aria-label="Chapters">
+          <p class="ms-toc-title">Contents</p>
+          <ol id="ms-toc"></ol>
+        </nav>
+        <article class="ms">
+          <header class="ms-head">
+            <h1>A History of Tufting</h1>
+            <p class="ms-sub" id="ms-sub"></p>
+            <div class="ms-actions">
+              <button class="btn" id="ms-print"><svg class="ic"><use href="#i-print"/></svg>Print or PDF</button>
+              <button class="btn" id="ms-download"><svg class="ic"><use href="#i-download"/></svg>Download Markdown</button>
+            </div>
+          </header>
+          <div id="ms-body"></div>
+        </article>
+      </div>
+    </section>
+
     <section class="view" id="view-discover" hidden>
       <header class="view-head">
         <h1>Discover</h1>
