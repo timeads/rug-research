@@ -1,0 +1,290 @@
+{
+ "Winterthur / Museum collection": {
+  "url": "https://www.google.com/search?q=site%3Amuseumcollection.winterthur.org+yarn%20samples",
+  "status": 200,
+  "final": "https://www.google.com/search?q=site%3Amuseumcollection.winterthur.org+yarn%20samples",
+  "title": "Google Search",
+  "mentionsQuery": true,
+  "bytes": 92648
+ },
+ "Winterthur / Library catalog": {
+  "url": "https://www.google.com/search?q=site%3Alibrary.winterthur.org+yarn%20samples",
+  "status": 200,
+  "final": "https://www.google.com/search?q=site%3Alibrary.winterthur.org+yarn%20samples",
+  "title": "Google Search",
+  "mentionsQuery": true,
+  "bytes": 92563
+ },
+ "Winterthur / Trade catalogs on Internet Archive": {
+  "url": "https://archive.org/search?query=yarn%20samples+AND+contributor%3A%28Winterthur%29",
+  "status": 200,
+  "final": "https://archive.org/search?query=yarn%20samples+AND+contributor%3A%28Winterthur%29",
+  "title": "Internet Archive: Digital Library of Free &amp; Borrowable Texts, Movies, Music &amp; Wayback Machine",
+  "mentionsQuery": false,
+  "bytes": 1951
+ },
+ "Hagley / Digital Archives (images)": {
+  "url": "https://www.google.com/search?q=site%3Adigital.hagley.org+yarn%20samples",
+  "status": 200,
+  "final": "https://www.google.com/search?q=site%3Adigital.hagley.org+yarn%20samples",
+  "title": "Google Search",
+  "mentionsQuery": true,
+  "bytes": 92517
+ },
+ "Hagley / Finding aids (manuscripts)": {
+  "url": "https://findingaids.hagley.org/search?q[]=yarn%20samples",
+  "status": 202,
+  "final": "https://findingaids.hagley.org/search?q[]=yarn%20samples",
+  "title": "",
+  "mentionsQuery": false,
+  "bytes": 1991
+ },
+ "Hagley / Research home": {
+  "url": "https://www.google.com/search?q=site%3Ahagley.org+yarn%20samples",
+  "status": 200,
+  "final": "https://www.google.com/search?q=site%3Ahagley.org+yarn%20samples",
+  "title": "Google Search",
+  "mentionsQuery": true,
+  "bytes": 92479
+ },
+ "Museums / The Met": {
+  "url": "https://www.metmuseum.org/art/collection/search?q=yarn%20samples",
+  "status": 429,
+  "final": "https://www.metmuseum.org/art/collection/search?q=yarn%20samples",
+  "title": "Vercel Security Checkpoint",
+  "mentionsQuery": false,
+  "bytes": 31431
+ },
+ "Museums / Cooper Hewitt": {
+  "url": "https://collection.cooperhewitt.org/search/collection?query=yarn%20samples",
+  "status": 403,
+  "final": "https://www.si.edu/collections/cooper-hewitt",
+  "title": "Smithsonian request verification",
+  "mentionsQuery": false,
+  "bytes": 46661
+ },
+ "Museums / Smithsonian collections": {
+  "url": "https://collections.si.edu/search/results.htm?q=yarn%20samples",
+  "status": 403,
+  "final": "https://collections.si.edu/search/results.htm?q=yarn%20samples",
+  "title": "Smithsonian request verification",
+  "mentionsQuery": true,
+  "bytes": 46778
+ },
+ "Museums / V&A": {
+  "url": "https://collections.vam.ac.uk/search/?q=yarn%20samples",
+  "status": 200,
+  "final": "https://collections.vam.ac.uk/search/?q=yarn%20samples",
+  "title": "Search Results | V&A Explore the Collections",
+  "mentionsQuery": false,
+  "bytes": 34963
+ },
+ "Museums / Henry Ford (Ford Museum)": {
+  "url": "https://www.thehenryford.org/collections-and-research/digital-collections/search-results#advancedSearch=1&tab=artifact-results&s.0=yarn%20samples",
+  "status": 404,
+  "final": "https://www.thehenryford.org/collections/digital-collections/search-results",
+  "title": "404 Not Found",
+  "mentionsQuery": false,
+  "bytes": 319671
+ },
+ "Books & texts / HathiTrust": {
+  "url": "https://babel.hathitrust.org/cgi/ls?q1=yarn%20samples;anyall1=phrase;lmt=all",
+  "status": 403,
+  "final": "https://babel.hathitrust.org/cgi/ls?q1=yarn%20samples;anyall1=phrase;lmt=all",
+  "title": "Just a moment...",
+  "mentionsQuery": true,
+  "bytes": 5918
+ },
+ "Books & texts / Internet Archive": {
+  "url": "https://archive.org/search?query=yarn%20samples",
+  "status": 200,
+  "final": "https://archive.org/search?query=yarn%20samples",
+  "title": "Internet Archive: Digital Library of Free &amp; Borrowable Texts, Movies, Music &amp; Wayback Machine",
+  "mentionsQuery": false,
+  "bytes": 1951
+ },
+ "Books & texts / Google Books": {
+  "url": "https://www.google.com/search?tbm=bks&q=yarn%20samples",
+  "status": 200,
+  "final": "https://www.google.com/search?tbm=bks&q=yarn%20samples",
+  "title": "Google Search",
+  "mentionsQuery": true,
+  "bytes": 92324
+ },
+ "Books & texts / WorldCat": {
+  "url": "https://search.worldcat.org/search?q=yarn%20samples",
+  "status": 429,
+  "final": "https://search.worldcat.org/search?q=yarn%20samples",
+  "title": "Access denied | search.worldcat.org used Cloudflare to restrict access | search.worldcat.org | Cloudflare",
+  "mentionsQuery": false,
+  "bytes": 8030
+ },
+ "Books & texts / Library of Congress": {
+  "url": "https://www.loc.gov/search/?q=yarn%20samples",
+  "status": 403,
+  "final": "https://www.loc.gov/search/?q=yarn%20samples",
+  "title": "Just a moment...",
+  "mentionsQuery": true,
+  "bytes": 5798
+ },
+ "Books & texts / DPLA": {
+  "url": "https://dp.la/search?q=yarn%20samples",
+  "status": 202,
+  "final": "https://dp.la/search?q=yarn%20samples",
+  "title": "",
+  "mentionsQuery": false,
+  "bytes": 2034
+ },
+ "Early tufted & pile textiles / Historic Deerfield": {
+  "url": "https://www.google.com/search?q=site%3Ahistoric-deerfield.org+yarn%20samples",
+  "status": 200,
+  "final": "https://www.google.com/search?q=site%3Ahistoric-deerfield.org+yarn%20samples",
+  "title": "Google Search",
+  "mentionsQuery": true,
+  "bytes": 92623
+ },
+ "Early tufted & pile textiles / Connecticut Historical Society": {
+  "url": "https://www.google.com/search?q=site%3Aemuseum.chs.org+yarn%20samples",
+  "status": 200,
+  "final": "https://www.google.com/search?q=site%3Aemuseum.chs.org+yarn%20samples",
+  "title": "Google Search",
+  "mentionsQuery": true,
+  "bytes": 92434
+ },
+ "Early tufted & pile textiles / American Folk Art Museum": {
+  "url": "https://www.google.com/search?q=site%3Acollection.folkartmuseum.org+yarn%20samples",
+  "status": 200,
+  "final": "https://www.google.com/search?q=site%3Acollection.folkartmuseum.org+yarn%20samples",
+  "title": "Google Search",
+  "mentionsQuery": true,
+  "bytes": 92509
+ },
+ "Early tufted & pile textiles / Historic New England": {
+  "url": "https://www.google.com/search?q=site%3Ahistoricnewengland.org+yarn%20samples",
+  "status": 200,
+  "final": "https://www.google.com/search?q=site%3Ahistoricnewengland.org+yarn%20samples",
+  "title": "Google Search",
+  "mentionsQuery": true,
+  "bytes": 92732
+ },
+ "Early tufted & pile textiles / Wadsworth Atheneum": {
+  "url": "https://www.google.com/search?q=site%3Athewadsworth.org+yarn%20samples",
+  "status": 200,
+  "final": "https://www.google.com/search?q=site%3Athewadsworth.org+yarn%20samples",
+  "title": "Google Search",
+  "mentionsQuery": true,
+  "bytes": 92738
+ },
+ "Early tufted & pile textiles / MFA Boston": {
+  "url": "https://collections.mfa.org/search/objects/*/yarn%20samples",
+  "status": 202,
+  "final": "https://collections.mfa.org/search/objects/*/yarn%20samples",
+  "title": "",
+  "mentionsQuery": false,
+  "bytes": 2387
+ },
+ "Early tufted & pile textiles / MFA Houston / Bayou Bend": {
+  "url": "https://www.google.com/search?q=site%3Aemuseum.mfah.org+yarn%20samples",
+  "status": 200,
+  "final": "https://www.google.com/search?q=site%3Aemuseum.mfah.org+yarn%20samples",
+  "title": "Google Search",
+  "mentionsQuery": true,
+  "bytes": 92515
+ },
+ "Early tufted & pile textiles / LACMA": {
+  "url": "https://collections.lacma.org/search/site/yarn%20samples",
+  "status": 404,
+  "final": "https://collections.lacma.org/search/site/yarn%20samples",
+  "title": "LACMA Collections",
+  "mentionsQuery": false,
+  "bytes": 35401
+ },
+ "Early tufted & pile textiles / Shelburne Museum": {
+  "url": "https://www.google.com/search?q=site%3Ashelburnemuseum.org+yarn%20samples",
+  "status": 200,
+  "final": "https://www.google.com/search?q=site%3Ashelburnemuseum.org+yarn%20samples",
+  "title": "Google Search",
+  "mentionsQuery": true,
+  "bytes": 92616
+ },
+ "Early tufted & pile textiles / DAR Museum": {
+  "url": "https://www.google.com/search?q=DAR+Museum+yarn%20samples",
+  "status": 200,
+  "final": "https://www.google.com/search?q=DAR+Museum+yarn%20samples",
+  "title": "Google Search",
+  "mentionsQuery": true,
+  "bytes": 92591
+ },
+ "Early tufted & pile textiles / Colonial Williamsburg": {
+  "url": "https://www.google.com/search?q=site%3Aemuseum.history.org+yarn%20samples",
+  "status": 200,
+  "final": "https://www.google.com/search?q=site%3Aemuseum.history.org+yarn%20samples",
+  "title": "Google Search",
+  "mentionsQuery": true,
+  "bytes": 92624
+ },
+ "Early tufted & pile textiles / Old Sturbridge Village": {
+  "url": "https://www.google.com/search?q=site%3Aosv.org+yarn%20samples",
+  "status": 200,
+  "final": "https://www.google.com/search?q=site%3Aosv.org+yarn%20samples",
+  "title": "Google Search",
+  "mentionsQuery": true,
+  "bytes": 92688
+ },
+ "Early tufted & pile textiles / Georgia Museum of Art": {
+  "url": "https://www.google.com/search?q=site%3Ageorgiamuseum.org+yarn%20samples",
+  "status": 200,
+  "final": "https://www.google.com/search?q=site%3Ageorgiamuseum.org+yarn%20samples",
+  "title": "Google Search",
+  "mentionsQuery": true,
+  "bytes": 92518
+ },
+ "Early tufted & pile textiles / Atlanta History Center": {
+  "url": "https://www.google.com/search?q=site%3Aatlantahistorycenter.com+yarn%20samples",
+  "status": 200,
+  "final": "https://www.google.com/search?q=site%3Aatlantahistorycenter.com+yarn%20samples",
+  "title": "Google Search",
+  "mentionsQuery": true,
+  "bytes": 92509
+ },
+ "Early tufted & pile textiles / Vanishing Georgia (photos)": {
+  "url": "https://www.google.com/search?q=%22Vanishing+Georgia%22+yarn%20samples",
+  "status": 200,
+  "final": "https://www.google.com/search?q=%22Vanishing+Georgia%22+yarn%20samples",
+  "title": "Google Search",
+  "mentionsQuery": true,
+  "bytes": 92700
+ },
+ "Tufting & industry / Google Patents": {
+  "url": "https://patents.google.com/?q=%22yarn%20samples%22",
+  "status": 200,
+  "final": "https://patents.google.com/?q=%22yarn%20samples%22",
+  "title": "Google Patents",
+  "mentionsQuery": false,
+  "bytes": 4168
+ },
+ "Tufting & industry / Digital Library of Georgia": {
+  "url": "https://dlg.usg.edu/search?q=yarn%20samples",
+  "status": 200,
+  "final": "https://dlg.usg.edu/turnstile/access?return_to=%2Fsearch%3Fq%3Dyarn%2520samples",
+  "title": "Digital Library of Georgia",
+  "mentionsQuery": true,
+  "bytes": 15517
+ },
+ "Tufting & industry / Bandy Heritage Center (Dalton)": {
+  "url": "https://bandyheritagecenter.pastperfectonline.com/search?search_criteria=yarn%20samples",
+  "status": 200,
+  "final": "https://bandyheritagecenter.pastperfectonline.com/search?search_criteria=yarn%20samples",
+  "title": "Search Results for yarn samples | Bandy Heritage Center for Northwest Georgia",
+  "mentionsQuery": true,
+  "bytes": 27278
+ },
+ "Tufting & industry / Chronicling America (newspapers)": {
+  "url": "https://chroniclingamerica.loc.gov/search/pages/results/?andtext=yarn%20samples",
+  "status": 404,
+  "final": "https://www.loc.gov/chroniclingamerica/search/pages/results/?andtext=yarn%20samples",
+  "title": "Page Not Found -- 404 -- Library of Congress",
+  "mentionsQuery": false,
+  "bytes": 85015
+ }
+}
