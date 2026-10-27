@@ -8115,7 +8115,10 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "unverified",
-    "rights": "not-requested"
+    "rights": "not-requested",
+    "image": "https://www.hdcarpets.com/u_file/1808/photo/725c28caed.jpg",
+    "imageCredit": "Huade Carpet Group",
+    "imageSource": "auto"
   },
   {
     "id": "co-welspun-flooring",
