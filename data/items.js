@@ -939,7 +939,10 @@ window.RUG_ITEMS = [
       "date to confirm"
     ],
     "status": "unverified",
-    "region": "United States"
+    "region": "United States",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Shirt_MET_1980.447_F.jpg/1280px-Shirt_MET_1980.447_F.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageCredit": "Wikimedia Commons (CC0)",
+    "imageSource": "auto"
   },
   {
     "id": "mfah-157589",
@@ -2595,7 +2598,11 @@ window.RUG_ITEMS = [
     "date": "2008",
     "dateStart": 2008,
     "creator": "日本カーペット工業組合",
-    "sourceUrl": "http://www.carpet.or.jp/publics/index/95/detail=1/c_id=524/page524=1"
+    "sourceUrl": "http://www.carpet.or.jp/publics/index/95/detail=1/c_id=524/page524=1",
+    "image": "https://carpet.or.jp/mg/wp-content/uploads/2026/03/ogp.png",
+    "imageCredit": "carpet.or.jp (image from carpet.or.jp)",
+    "imagePage": "https://carpet.or.jp/aboutus/",
+    "imageSource": "auto"
   },
   {
     "id": "ner-de-outsiders-1959",
@@ -2646,7 +2653,11 @@ window.RUG_ITEMS = [
     "dateStart": 2009,
     "creator": "Stefan Mecheels, Herbert Vogler, Josef Kurz",
     "identifier": "ISBN 978-3-9812485-3-1",
-    "sourceUrl": "https://dewiki.de/Lexikon/Tufting"
+    "sourceUrl": "https://dewiki.de/Lexikon/Tufting",
+    "image": "https://www.baunetzwissen.de/imgs/4/0/0/0/1/tufting_3-1a00d36f2c9dbae6.jpg",
+    "imageCredit": "baunetzwissen.de (image from baunetzwissen.de)",
+    "imagePage": "https://www.baunetzwissen.de/glossar/t/tufting-teppichboden-49677",
+    "imageSource": "auto"
   },
   {
     "id": "ner-de-longlife-refuted",
@@ -2783,7 +2794,11 @@ window.RUG_ITEMS = [
     "status": "unverified",
     "collection": "Tuft the World research brief: The Non-English Record",
     "publisher": "Author: 方显廷 (H. D. Fong), Nankai 工业丛刊 no. 1; Wikimedia Commons copy not located",
-    "sourceUrl": "https://nkie.nankai.edu.cn/2017/0502/c11716a121465/page.htm"
+    "sourceUrl": "https://nkie.nankai.edu.cn/2017/0502/c11716a121465/page.htm",
+    "image": "https://q8.itc.cn/q_70/images03/20250326/aebca72820a14722b26a11ffb3ed4529.jpeg",
+    "imageCredit": "m.sohu.com (image from m.sohu.com)",
+    "imagePage": "https://m.sohu.com/a/875737930_121123801/",
+    "imageSource": "auto"
   },
   {
     "id": "ner-chase-sohu-series",
@@ -4444,7 +4459,11 @@ window.RUG_ITEMS = [
       "Dalton",
       "broadloom"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "image": "https://shawfloors.widen.net/content/x2u53obpom/webp/Intricate%20Trace-5E587-00106-River%20Birch-model-v-1.webp?w=2048&position=c&color=ffffffff&quality=80&u=k2mbls",
+    "imageCredit": "shawfloors.com (image from shawfloors.com)",
+    "imagePage": "https://shawfloors.com/why-shaw/about-us/shaw-timeline",
+    "imageSource": "auto"
   },
   {
     "id": "co-mohawk",
@@ -4572,7 +4591,11 @@ window.RUG_ITEMS = [
       "hand-tufted",
       "social media"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "image": "https://monocle.com/wp-content/uploads/legacy/article/1_rugs-to-riches_kramis-509bfa77c5ab3.jpg?fit=3307%2C2268",
+    "imageCredit": "monocle.com (image from monocle.com)",
+    "imagePage": "https://monocle.com/business/manufacturing/swiss-carpet-kramis-rugs/",
+    "imageSource": "auto"
   },
   {
     "id": "co-jaipur",
@@ -4624,7 +4647,11 @@ window.RUG_ITEMS = [
       "hand-tufted",
       "tufting gun"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "image": "https://taiping-development.sgp1.digitaloceanspaces.com/images/image_2022-04-24-123453_pukq.jpg",
+    "imageCredit": "taipingcarpets.com (image from taipingcarpets.com)",
+    "imagePage": "https://www.taipingcarpets.com/collections/atelier-by-fang-collection",
+    "imageSource": "auto"
   },
   {
     "id": "wilton-1741",
@@ -6957,7 +6984,11 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "suggestive",
-    "rights": "not-requested"
+    "rights": "not-requested",
+    "image": "https://nehomemag.com/wp-content/uploads/2016/06/john-costa-working.jpg",
+    "imageCredit": "nehomemag.com (image from nehomemag.com)",
+    "imagePage": "https://nehomemag.com/the-merida-mystique/",
+    "imageSource": "auto"
   },
   {
     "id": "wint-lib-tariff-brussels",
@@ -7313,7 +7344,11 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "solid",
-    "rights": "not-requested"
+    "rights": "not-requested",
+    "image": "https://www.ceadogan.ie/wp-content/uploads/2024/04/Ceadogan-Alpaca-Rug-Cushions-Feb-2024-WEB-27.jpg",
+    "imageCredit": "ceadogan.ie (image from ceadogan.ie)",
+    "imagePage": "https://www.ceadogan.ie/neadaithe/",
+    "imageSource": "auto"
   },
   {
     "id": "co-pinton",
@@ -7375,7 +7410,11 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "solid",
-    "rights": "not-requested"
+    "rights": "not-requested",
+    "image": "https://tlmagazine.com/wp-content/uploads/2017/07/12-tomas-libertiny_continuous-linetapestry__margauxnieto1-1015x1024.jpg",
+    "imageCredit": "tlmagazine.com (image from tlmagazine.com)",
+    "imagePage": "https://tlmagazine.com/limited-edition-art-of-the-rug/",
+    "imageSource": "auto"
   },
   {
     "id": "co-yamagata-dantsu",
@@ -7562,7 +7601,11 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "suggestive",
-    "rights": "not-requested"
+    "rights": "not-requested",
+    "image": "https://georgiaencyclopedia.org/wp-content/uploads/2021/02/carpet_machine_001-1200x630.jpg",
+    "imageCredit": "georgiaencyclopedia.org (image from georgiaencyclopedia.org)",
+    "imagePage": "https://georgiaencyclopedia.org/articles/business-economy/carpet-industry",
+    "imageSource": "auto"
   },
   {
     "id": "co-world-carpets",
@@ -7621,7 +7664,11 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "solid",
-    "rights": "not-requested"
+    "rights": "not-requested",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/About-us-family-owned-british-made.jpg/250px-About-us-family-owned-british-made.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+    "imageCredit": "en.wikipedia.org (image from en.wikipedia.org)",
+    "imagePage": "https://en.wikipedia.org/wiki/Cormar_Carpets",
+    "imageSource": "auto"
   },
   {
     "id": "co-interface",
@@ -7836,7 +7883,11 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "unverified",
-    "rights": "not-requested"
+    "rights": "not-requested",
+    "image": "https://www.wirtschaftsforum.de/_assets/9d9b53411ff12ef18caa5118c8180b7a/Images/wifo_og_banner.jpg",
+    "imageCredit": "wirtschaftsforum.de (image from wirtschaftsforum.de)",
+    "imagePage": "https://www.wirtschaftsforum.de/interviews/hamelner-teppichwerke-gmbh-co-kg/auf-dem-teppich-geblieben",
+    "imageSource": "auto"
   },
   {
     "id": "co-desso",
@@ -8059,7 +8110,11 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "solid",
-    "rights": "not-requested"
+    "rights": "not-requested",
+    "image": "https://www.fcnews.net/wp-content/webpc-passthru.php?src=https://www.fcnews.net/wp-content/uploads/2020/09/Mohamed-Farid-Khamis-Oriental-Weavers-founder.jpg&nocache=1",
+    "imageCredit": "fcnews.net (image from fcnews.net)",
+    "imagePage": "https://www.fcnews.net/2020/09/obituary-mohamed-farid-khamis-oriental-weavers-founder/",
+    "imageSource": "auto"
   },
   {
     "id": "co-merinos",
@@ -8178,7 +8233,11 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "solid",
-    "rights": "not-requested"
+    "rights": "not-requested",
+    "image": "https://vandewiele.com/public/shared/offices/_1200x630_crop_center-center_82_none/17.52.jpg?mtime=1685024426",
+    "imageCredit": "vandewiele.com (image from vandewiele.com)",
+    "imagePage": "https://vandewiele.com/about-vandewiele-group/history-of-vandewiele",
+    "imageSource": "auto"
   },
   {
     "id": "co-tuftco",
@@ -10115,7 +10174,7 @@ window.RUG_ITEMS = [
     "dateStart": 1680,
     "institution": "The Metropolitan Museum of Art",
     "identifier": "1976.155.114",
-    "sourceUrl": "https://www.metmuseum.org/exhibitions/a-kings-carpet-louis-xiv-and-the-savonnerie",
+    "sourceUrl": "https://www.metmuseum.org/art/collection/search/206403",
     "description": "Knotted and cut wool pile (symmetrical knot), 896.6 × 325.1 cm. Gift of Mr. and Mrs. Charles Wrightsman, 1976. One of the series woven for the Louvre's Grande Galerie, nearly all between 1670 and 1689; Dupont's workshop made 32 and the Lourdet workshops 60, per Sotheby's. Featured in the Met exhibition 'A King's Carpet: Louis XIV and the Savonnerie' (8 Sept 2026 – 5 March 2028). Shows the hand-knotted luxury standard that loom-woven Wilton and Brussels were cheaper alternatives to. Sources: https://www.metmuseum.org/press-releases/kings-carpet · https://www.metmuseum.org/exhibitions/a-kings-carpet-louis-xiv-and-the-savonnerie · https://www.sothebys.com/en/auctions/ecatalogue/2016/treasures-l16303/lot.11.html\n\nResearch note (Oct 2026): from search results; pages not opened.",
     "tags": [
       "pre-Wilton",
@@ -10129,7 +10188,10 @@ window.RUG_ITEMS = [
     "status": "unverified",
     "themes": [
       "Woven carpet"
-    ]
+    ],
+    "image": "https://images.metmuseum.org/CRDImages/es/original/DP-36820-001.jpg",
+    "imageCredit": "The Metropolitan Museum of Art (Open Access, public domain)",
+    "imageSource": "auto"
   },
   {
     "id": "fulham-parisot-1750",
@@ -10237,7 +10299,11 @@ window.RUG_ITEMS = [
     "status": "unverified",
     "themes": [
       "Woven carpet"
-    ]
+    ],
+    "image": "https://axminsterheritage.org/wp/wp-content/uploads/2015/01/a-turkey-carpet.png",
+    "imageCredit": "axminsterheritage.org (image from axminsterheritage.org)",
+    "imagePage": "https://axminsterheritage.org/the-birth-of-axminster-carpets/",
+    "imageSource": "auto"
   },
   {
     "id": "moorfields-moore",
@@ -10664,7 +10730,10 @@ window.RUG_ITEMS = [
       "checked from search results"
     ],
     "status": "unverified",
-    "confidence": "solid"
+    "confidence": "solid",
+    "image": "https://images.chattanoogan.com/2026/10/article.525283.jpg",
+    "imageCredit": "Tapistron International, Inc.",
+    "imageSource": "auto"
   },
   {
     "id": "pat-us4991523a",
@@ -10779,7 +10848,11 @@ window.RUG_ITEMS = [
       "checked from search results"
     ],
     "status": "unverified",
-    "confidence": "solid"
+    "confidence": "solid",
+    "image": "https://patentimages.storage.googleapis.com/d1/b4/eb/aa521eac9c2c9a/US08141505-20120327-D00000.png",
+    "imageCredit": "Patent drawing via Google Patents (public domain)",
+    "imagePage": "https://patents.google.com/patent/US8141505B2/en",
+    "imageSource": "auto"
   },
   {
     "id": "pat-us8141505b2",
@@ -10866,7 +10939,11 @@ window.RUG_ITEMS = [
       "checked from search results"
     ],
     "status": "unverified",
-    "confidence": "solid"
+    "confidence": "solid",
+    "image": "https://innovationintextiles.com/wp-content/uploads/2026/02/Cobble-1.jpg",
+    "imageCredit": "innovationintextiles.com (image from innovationintextiles.com)",
+    "imagePage": "https://innovationintextiles.com/interiors/cobbles-combinations-for-advanced-tufting-at-itma-2019",
+    "imageSource": "auto"
   },
   {
     "id": "pat-us12180632b2",
@@ -11006,7 +11083,11 @@ window.RUG_ITEMS = [
       "checked from search results"
     ],
     "status": "unverified",
-    "confidence": "solid"
+    "confidence": "solid",
+    "image": "https://patentimages.storage.googleapis.com/be/0f/b5/8c71ec5024f14a/US08225727-20120724-D00000.png",
+    "imageCredit": "Patent drawing via Google Patents (public domain)",
+    "imagePage": "https://patents.google.com/patent/US8225727B2/en",
+    "imageSource": "auto"
   },
   {
     "id": "finding-cnc-chongqing-pmac-2011",
