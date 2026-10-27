@@ -4861,7 +4861,7 @@ window.RUG_ITEMS = [
     "sourceUrl": "https://americanainsights.org/essays/hooked-rugs/"
   },
   {
-    "id": "pat-251381a",
+    "id": "pat-us251381a",
     "type": "patent",
     "title": "Ebenezer Ross, \"Embroidery Machine\" (US251381A)",
     "creator": "Ebenezer Ross",
@@ -4887,7 +4887,7 @@ window.RUG_ITEMS = [
     "status": "unverified"
   },
   {
-    "id": "pat-340189a",
+    "id": "pat-us340189a",
     "type": "patent",
     "title": "Samuel W. Bailey & Harry P. Vigars (US340189A)",
     "creator": "Samuel W. Bailey & Harry P. Vigars",
@@ -4912,7 +4912,7 @@ window.RUG_ITEMS = [
     "status": "unverified"
   },
   {
-    "id": "pat-897200a",
+    "id": "pat-us897200a",
     "type": "patent",
     "title": "Samuel Henry Perrier, \"Turfing Needle\" (US897200A)",
     "creator": "Samuel Henry Perrier",
@@ -4936,7 +4936,7 @@ window.RUG_ITEMS = [
     "status": "unverified"
   },
   {
-    "id": "pat-1605711a",
+    "id": "pat-us1605711a",
     "type": "patent",
     "title": "John E. Garrett, \"Rug Hooker\" (US1605711A)",
     "creator": "John E. Garrett",
@@ -4963,7 +4963,7 @@ window.RUG_ITEMS = [
     "status": "unverified"
   },
   {
-    "id": "pat-1941346a",
+    "id": "pat-us1941346a",
     "type": "patent",
     "title": "John E. Garrett, \"Rug Hooker\" (US1941346A)",
     "creator": "John E. Garrett",
@@ -4989,7 +4989,7 @@ window.RUG_ITEMS = [
     "status": "unverified"
   },
   {
-    "id": "pat-1912977a",
+    "id": "pat-us1912977a",
     "type": "patent",
     "title": "E. J. Gearhart, \"Semiautomatic Turfing Device\" (US1912977A)",
     "creator": "E. J. Gearhart",
@@ -5013,7 +5013,7 @@ window.RUG_ITEMS = [
     "status": "unverified"
   },
   {
-    "id": "pat-2077719a",
+    "id": "pat-us2077719a",
     "type": "patent",
     "title": "Foster K. Solliday, \"Hooked Rug Making Device\" (US2077719A)",
     "creator": "Foster K. Solliday",
@@ -5037,7 +5037,7 @@ window.RUG_ITEMS = [
     "status": "unverified"
   },
   {
-    "id": "pat-2605727a",
+    "id": "pat-us2605727a",
     "type": "patent",
     "title": "Melvin S. Hurley, \"Hand Tool for Making Rugs, Carpets and the Like with a Cut Pile\" (US2605727A)",
     "creator": "Melvin S. Hurley",
@@ -5062,7 +5062,7 @@ window.RUG_ITEMS = [
     "status": "unverified"
   },
   {
-    "id": "pat-2591939a",
+    "id": "pat-us2591939a",
     "type": "patent",
     "title": "Torleif K. Holmen, \"Carpet Tufting and Pile Cutting Device\" (US2591939A)",
     "creator": "Torleif K. Holmen",
@@ -5087,7 +5087,7 @@ window.RUG_ITEMS = [
     "status": "unverified"
   },
   {
-    "id": "pat-2578038a",
+    "id": "pat-us2578038a",
     "type": "patent",
     "title": "Joseph A. Bolger, \"Hooked Rug Making Device\" (US2578038A)",
     "creator": "Joseph A. Bolger",
@@ -5110,7 +5110,7 @@ window.RUG_ITEMS = [
     "status": "unverified"
   },
   {
-    "id": "pat-1485213a",
+    "id": "pat-us1485213a",
     "type": "patent",
     "title": "August J. Carter, \"Tufting-Attachment Mechanism for Sewing Machines\" (US1485213A)",
     "creator": "August J. Carter",
@@ -5137,7 +5137,7 @@ window.RUG_ITEMS = [
     "status": "unverified"
   },
   {
-    "id": "pat-1452632a",
+    "id": "pat-us1452632a",
     "type": "patent",
     "title": "William H. Barnett, \"Sewing Machine\" (US1452632A)",
     "creator": "William H. Barnett",
@@ -5163,7 +5163,7 @@ window.RUG_ITEMS = [
     "status": "unverified"
   },
   {
-    "id": "pat-1800522a",
+    "id": "pat-us1800522a",
     "type": "patent",
     "title": "John M. Gladish, \"Tufting Attachment Mechanism for Sewing Machines\" (US1800522A)",
     "creator": "John M. Gladish",
@@ -5189,7 +5189,7 @@ window.RUG_ITEMS = [
     "status": "unverified"
   },
   {
-    "id": "pat-2042503a",
+    "id": "pat-us2042503a",
     "type": "patent",
     "title": "August J. Carter, \"Tufted Rug\" (US2042503A)",
     "creator": "August J. Carter",
@@ -5216,7 +5216,7 @@ window.RUG_ITEMS = [
     "status": "unverified"
   },
   {
-    "id": "pat-2224866a",
+    "id": "pat-us2224866a",
     "type": "patent",
     "title": "John M. Gladish, \"Tufting Machine\" (US2224866A)",
     "creator": "John M. Gladish",
@@ -5241,7 +5241,7 @@ window.RUG_ITEMS = [
     "status": "unverified"
   },
   {
-    "id": "pat-2123114a",
+    "id": "pat-us2123114a",
     "type": "patent",
     "title": "Glenn Looper, \"Tufting Machine\" (US2123114A)",
     "creator": "Glenn Looper",
@@ -5267,7 +5267,7 @@ window.RUG_ITEMS = [
     "status": "unverified"
   },
   {
-    "id": "pat-2311802a",
+    "id": "pat-us2311802a",
     "type": "patent",
     "title": "Roy H. Windham, \"Tufting Machine and Method\" (US2311802A)",
     "creator": "Roy H. Windham",
@@ -5292,7 +5292,7 @@ window.RUG_ITEMS = [
     "status": "unverified"
   },
   {
-    "id": "pat-2335487a",
+    "id": "pat-us2335487a",
     "type": "patent",
     "title": "Joe C. Cobble, \"Multiple Needle Tufting Machine\" (US2335487A)",
     "creator": "Joe C. Cobble & George B. Muse",
@@ -5320,7 +5320,7 @@ window.RUG_ITEMS = [
     "status": "unverified"
   },
   {
-    "id": "pat-2389914a",
+    "id": "pat-us2389914a",
     "type": "patent",
     "title": "Jess Spencer Kile, \"Machine and Method for Making Tufted Articles\" (US2389914A)",
     "creator": "Jess Spencer Kile",
@@ -5346,7 +5346,7 @@ window.RUG_ITEMS = [
     "status": "unverified"
   },
   {
-    "id": "pat-2411267a",
+    "id": "pat-us2411267a",
     "type": "patent",
     "title": "Lyman Hamrick, \"Multiple Needle Tufting Machine\" (US2411267A)",
     "creator": "Lyman Hamrick",
@@ -5371,7 +5371,7 @@ window.RUG_ITEMS = [
     "status": "unverified"
   },
   {
-    "id": "pat-2595355a",
+    "id": "pat-us2595355a",
     "type": "patent",
     "title": "Walter W. Hamby, \"Multiple Needle Tufting Machine\" (US2595355A)",
     "creator": "Walter W. Hamby",
@@ -5397,7 +5397,7 @@ window.RUG_ITEMS = [
     "status": "unverified"
   },
   {
-    "id": "pat-1963441a",
+    "id": "pat-us1963441a",
     "type": "patent",
     "title": "Maples, \"Tufting machine\" (US1963441A)",
     "creator": "Maples & Weaver",
@@ -5421,7 +5421,7 @@ window.RUG_ITEMS = [
     "status": "unverified"
   },
   {
-    "id": "pat-1903946a",
+    "id": "pat-us1903946a",
     "type": "patent",
     "title": "L. A. Smith, \"Tufting machine\" (US1903946A)",
     "creator": "L. A. Smith",
@@ -5446,7 +5446,7 @@ window.RUG_ITEMS = [
     "status": "unverified"
   },
   {
-    "id": "pat-2112512a",
+    "id": "pat-us2112512a",
     "type": "patent",
     "title": "Windham et al., \"Tufting machine\" (US2112512A)",
     "creator": "Windham et al.",
@@ -5470,7 +5470,7 @@ window.RUG_ITEMS = [
     "status": "unverified"
   },
   {
-    "id": "pat-2058047a",
+    "id": "pat-us2058047a",
     "type": "patent",
     "title": "Warren, \"Tufting machine\" (US2058047A)",
     "creator": "Warren",
@@ -5493,7 +5493,7 @@ window.RUG_ITEMS = [
     "status": "unverified"
   },
   {
-    "id": "pat-2346467a",
+    "id": "pat-us2346467a",
     "type": "patent",
     "title": "Bills, \"Tufting machine\" (US2346467A)",
     "creator": "Bills & Patey",
@@ -5517,7 +5517,7 @@ window.RUG_ITEMS = [
     "status": "unverified"
   },
   {
-    "id": "pat-2679218a",
+    "id": "pat-us2679218a",
     "type": "patent",
     "title": "C. M. Jones, \"Tufting machine\" (US2679218A)",
     "creator": "C. M. Jones",
@@ -5541,7 +5541,7 @@ window.RUG_ITEMS = [
     "status": "unverified"
   },
   {
-    "id": "pat-1907292a",
+    "id": "pat-us1907292a",
     "type": "patent",
     "title": "John M. Gladish, \"Loop and Pile Forming Machine\" (US1907292A)",
     "creator": "John M. Gladish",
@@ -5566,7 +5566,7 @@ window.RUG_ITEMS = [
     "status": "unverified"
   },
   {
-    "id": "pat-1909530a",
+    "id": "pat-us1909530a",
     "type": "patent",
     "title": "John M. Gladish, \"Tufting Machine Looper and Cutter\" (US1909530A)",
     "creator": "John M. Gladish",
@@ -5592,7 +5592,7 @@ window.RUG_ITEMS = [
     "status": "unverified"
   },
   {
-    "id": "pat-1909531a",
+    "id": "pat-us1909531a",
     "type": "patent",
     "title": "John M. Gladish, \"Tufting Machine\" (US1909531A)",
     "creator": "John M. Gladish",
@@ -5617,7 +5617,7 @@ window.RUG_ITEMS = [
     "status": "unverified"
   },
   {
-    "id": "pat-1831485a",
+    "id": "pat-us1831485a",
     "type": "patent",
     "title": "Harry E. Dykeman, \"Rug Tufting Machine\" (US1831485A)",
     "creator": "Harry E. Dykeman",
@@ -5642,7 +5642,7 @@ window.RUG_ITEMS = [
     "status": "unverified"
   },
   {
-    "id": "pat-1970703a",
+    "id": "pat-us1970703a",
     "type": "patent",
     "title": "Walter Loos, \"Machine for Making Rugs, Carpets, and the Like\" (US1970703A)",
     "creator": "Walter Loos",
@@ -5664,7 +5664,7 @@ window.RUG_ITEMS = [
     "status": "unverified"
   },
   {
-    "id": "pat-2070287a",
+    "id": "pat-us2070287a",
     "type": "patent",
     "title": "Walter Loos, \"Tufting Machine\" (US2070287A)",
     "creator": "Walter Loos",
@@ -5686,7 +5686,7 @@ window.RUG_ITEMS = [
     "status": "unverified"
   },
   {
-    "id": "pat-2600993a",
+    "id": "pat-us2600993a",
     "type": "patent",
     "title": "Richard C. Kline, \"Carpet Tufting Machine\" (US2600993A)",
     "creator": "Richard C. Kline & Joseph Miller",
@@ -5711,7 +5711,7 @@ window.RUG_ITEMS = [
     "status": "unverified"
   },
   {
-    "id": "pat-2837045a",
+    "id": "pat-us2837045a",
     "type": "patent",
     "title": "Theron F. Gifford, \"Portable Tufting Machine\" (US2837045A)",
     "creator": "Theron F. Gifford",
@@ -5737,7 +5737,7 @@ window.RUG_ITEMS = [
     "status": "unverified"
   },
   {
-    "id": "pat-2935037a",
+    "id": "pat-us2935037a",
     "type": "patent",
     "title": "Joseph L. Card, \"Apparatus for Making Patterned Tufted Pile Fabric\" (US2935037A)",
     "creator": "Joseph L. Card",
@@ -5764,7 +5764,7 @@ window.RUG_ITEMS = [
     "status": "unverified"
   },
   {
-    "id": "pat-2862465a",
+    "id": "pat-us2862465a",
     "type": "patent",
     "title": "J. L. Card, \"Thread Feed Mechanism and Pattern Control\" (US2862465A)",
     "creator": "J. L. Card",
@@ -5788,7 +5788,7 @@ window.RUG_ITEMS = [
     "status": "unverified"
   },
   {
-    "id": "pat-2975736a",
+    "id": "pat-us2975736a",
     "type": "patent",
     "title": "Joseph Lewis Card, \"Loop Shedder\" (US2975736A)",
     "creator": "Joseph Lewis Card",
@@ -5813,7 +5813,7 @@ window.RUG_ITEMS = [
     "status": "unverified"
   },
   {
-    "id": "pat-2879731a",
+    "id": "pat-us2879731a",
     "type": "patent",
     "title": "M. L. Ward, \"Tufting Implement for Producing High and Low Pile\" (US2879731A)",
     "creator": "M. L. Ward & Lewis Teal",
@@ -5838,7 +5838,7 @@ window.RUG_ITEMS = [
     "status": "unverified"
   },
   {
-    "id": "pat-2887076a",
+    "id": "pat-us2887076a",
     "type": "patent",
     "title": "Russell L. Sterner, \"Tufting Machine\" (US2887076A)",
     "creator": "Russell L. Sterner",
@@ -5863,7 +5863,7 @@ window.RUG_ITEMS = [
     "status": "unverified"
   },
   {
-    "id": "pat-3144844a",
+    "id": "pat-us3144844a",
     "type": "patent",
     "title": "Charles D. Elliott, \"Portable Machine for Tufting Cut Pile\" (US3144844A)",
     "creator": "Charles D. Elliott, Robert F. Hackney & Lewis C. La Duke",
@@ -5889,7 +5889,7 @@ window.RUG_ITEMS = [
     "status": "unverified"
   },
   {
-    "id": "pat-3229653a",
+    "id": "pat-us3229653a",
     "type": "patent",
     "title": "O. J. Roberts et al., \"Portable Tufting Machine\" (US3229653A)",
     "creator": "O. J. Roberts et al.",
@@ -5914,7 +5914,7 @@ window.RUG_ITEMS = [
     "status": "unverified"
   },
   {
-    "id": "pat-3389667a",
+    "id": "pat-us3389667a",
     "type": "patent",
     "title": "Helmut C. Mueller, \"Method and Apparatus for Cutting Pile Yarns\" (US3389667A)",
     "creator": "Helmut C. Mueller",
