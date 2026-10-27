@@ -18,7 +18,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: data-commits
+  group: fetch-images
   cancel-in-progress: false
 
 jobs:
@@ -32,14 +32,17 @@ jobs:
         with:
           node-version: 22
       - name: Look up images
-        run: node scripts/fetch-images.mjs ${{ inputs.refresh && '--refresh' || '' }}
-      - name: Commit image links
         run: |
-          if git diff --quiet data/items.js; then echo "No new images."; exit 0; fi
           git config user.name "github-actions[bot]"
           git config user.email "41898+github-actions[bot]@users.noreply.github.com"
-          git add data/items.js
-          git commit -m "Add image links found by image lookup"
-          # Another run or a person may have pushed meanwhile; replay this commit on top.
-          git pull --rebase origin "${GITHUB_REF_NAME}"
-          git push origin "HEAD:${GITHUB_REF_NAME}"
+          # The data file may change while this runs (people or other jobs push). On a
+          # rejected push, start again from the latest version; the script skips work already done.
+          for attempt in 1 2 3; do
+            node scripts/fetch-images.mjs ${{ inputs.refresh && '--refresh' || '' }}
+            git add data/items.js
+            if git diff --cached --quiet; then echo "Nothing new."; exit 0; fi
+            git commit -q -m "Add image links found by image lookup"
+            if git push origin "HEAD:${GITHUB_REF_NAME}"; then exit 0; fi
+            git fetch -q origin "${GITHUB_REF_NAME}" && git reset -q --hard "origin/${GITHUB_REF_NAME}"
+          done
+          exit 1

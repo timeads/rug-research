@@ -34,7 +34,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: data-commits
+  group: research-fetch
   cancel-in-progress: false
 
 jobs:

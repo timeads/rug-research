@@ -16,7 +16,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: data-commits
+  group: patent-drawings
   cancel-in-progress: false
 
 jobs:
@@ -32,13 +32,17 @@ jobs:
       - name: Install PDF renderer
         run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils
       - name: Render patent drawings
-        run: node scripts/patent-drawings.mjs ${{ inputs.refresh && '--refresh' || '' }}
-      - name: Commit drawings
         run: |
-          git add data/items.js images/patents
-          if git diff --cached --quiet; then echo "No new drawings."; exit 0; fi
           git config user.name "github-actions[bot]"
           git config user.email "41898+github-actions[bot]@users.noreply.github.com"
-          git commit -m "Add patent drawings from the USPTO"
-          git pull --rebase origin "${GITHUB_REF_NAME}"
-          git push origin "HEAD:${GITHUB_REF_NAME}"
+          # The data file may change while this runs (people or other jobs push). On a
+          # rejected push, start again from the latest version; the script skips work already done.
+          for attempt in 1 2 3; do
+            node scripts/patent-drawings.mjs ${{ inputs.refresh && '--refresh' || '' }}
+            git add data/items.js images/patents
+            if git diff --cached --quiet; then echo "Nothing new."; exit 0; fi
+            git commit -q -m "Add patent drawings from the USPTO"
+            if git push origin "HEAD:${GITHUB_REF_NAME}"; then exit 0; fi
+            git fetch -q origin "${GITHUB_REF_NAME}" && git reset -q --hard "origin/${GITHUB_REF_NAME}"
+          done
+          exit 1
