@@ -87,6 +87,12 @@ const APIS = {
   uwImg1: `https://depts.washington.edu/silkroad/museums/shm/hermitagepazyryk15a.jpg`,
   uwImg2: `https://depts.washington.edu/silkroad/museums/shm/hermitagepazyryk6a.jpg`,
   qxDetail: `https://digitalcollections.winterthur.org/Documents/Detail/letter-samples-of-netting/29271`,
+  fsSheppard: `https://www.thedesignsheppard.com/interviews/interview-simon-goff-of-floor_story`,
+  fsLdf: `https://londondesignfestival.com/partners/floor_story-e070ab27-1d93-4eb6-a6d4-c2f1d1dcf54b`,
+  fsStep: `https://label-step.org/dealers/floor-story/`,
+  fsStir: `https://www.stirworld.com/stirpad/news/stir-news/floor-story-presents-rugs-designed-by-amechi-mandi-and-gill-thorpe-at-ldf-2023/`,
+  fsSite: `https://www.floorstory.co.uk/`,
+  fsAbout: `https://www.floorstory.co.uk/pages/about-us`,
   cooperHewitt: `https://api.collection.cooperhewitt.org/rest/?method=cooperhewitt.search.objects&query=rug`,
 };
 // "sources" mode: try every Other archives search link with a sample query.
