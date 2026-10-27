@@ -6984,5 +6984,1129 @@ window.RUG_ITEMS = [
     "rights": "own",
     "collection": "Photo: Tuft the World, taken at Shaw Industries, Dalton, Georgia. The photograph is yours; the loom is Shaw's, so check with Shaw before publishing outside the database.",
     "place": "Dalton, Georgia"
+  },
+  {
+    "id": "co-vsoske",
+    "type": "company",
+    "title": "V'Soske",
+    "creator": "Stanislav V'Soske with his brothers (incl. Thadius) and Vesta V'Soske",
+    "place": "Grand Rapids, Michigan (later New York)",
+    "region": "United States",
+    "date": "workshop c. 1920 (Grand Rapids); hand-tufting dated 1924",
+    "dateStart": 1920,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Stanislav_V%27Soske",
+    "institution": "V'Soske",
+    "description": "Polish-born brothers Stanislav (an artist, trained at the Pennsylvania Academy) and Thadius (an engineer) V'Soske set up a carpet workshop in Grand Rapids, Michigan; a local-history account dates the factory to 1920. Trade sources say Stanislav developed \"the modern hand-tufting technique\" in 1924; treat that as an attributed claim, since hand-tufting tools were being patented in the US in the same period. In 1941 MoMA commissioned V'Soske to make rugs from designs by American artists (Stuart Davis's \"Flying Carpet\" and Arshile Gorky's \"Bull in the Sun\" are in MoMA's collection). From 1979 to 1993 V'Soske commissioned 23 architects to design 38 rugs. In 1957 Vesta V'Soske set up a European base in Galway, Ireland, as V'Soske Joyce; one listing says that factory became the Dixon Carpet Company after Michael Dixon bought it in 1979. Stanislav died in 1983. The V&A holds 18 V'Soske objects (mostly 1970 samples). Scott Group's PWV Studios (hand-tufted, 1983) descends from V'Soske (see co-scott-group).\n\nWhy it matters: the founding American hand-tufted studio and the source of the US art-rug tradition; the Irish venture is an early export of the technique to Europe.\n\nDates: workshop 1920 (Oughterard Heritage) vs \"mid-1920s\" (dealer listings); 1924 \"invention\" is a trade-press claim, not established fact. Irish factory location (Moycullen vs Oughterard) and partners' names (Jimmy Joyce/Bart Monaghan vs James Joyce/Burke Monaghan) conflict. A Puerto Rico factory is sometimes mentioned but no source was found. No official company history page found.\n\nOther pages with images: https://collections.vam.ac.uk/context/organisation/A38742/vsoske · https://www.architectmagazine.com/practice/exhibition-of-rugs-designed-by-architects_o/\n\nIndependent sources: https://www.oughterardheritage.org/?p=19595 · https://www.architectmagazine.com/?p=182334 · https://www.moma.org/documents/moma_press-release_325325.pdf · https://antiquesandartireland.com/?p=45729\n\nResearch note (Oct 2026): facts taken from search-result summaries; the pages themselves weren't opened. Check the cited pages before quoting.",
+    "themes": [
+      "Companies & modern tufting",
+      "Hand-tufting tools & the gun",
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "company",
+      "hand-tufted studio",
+      "custom",
+      "art rugs",
+      "United States",
+      "Ireland",
+      "global companies 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "solid",
+    "rights": "not-requested"
+  },
+  {
+    "id": "co-edward-fields",
+    "type": "company",
+    "title": "Edward Fields",
+    "creator": "Edward Fields and his wife",
+    "place": "New York, New York",
+    "region": "United States",
+    "date": "founded 1935",
+    "dateStart": 1935,
+    "sourceUrl": "https://www.edwardfields.com/about/heritage",
+    "institution": "Edward Fields",
+    "description": "New York custom carpet house. The company says Edward Fields developed a hand-tufting tool, the \"Magic Needle\", in the mid-1930s, which gave its rugs their signature hand-tufted texture. The company also says Fields coined the term \"area rug\", tied to a 1952 series of five rugs by Raymond Loewy (another company page says the term came with its first collection at Lord & Taylor in the 1950s). Clients cited by the company include Philip Johnson's Glass House and the White House. Jack Fields sold the firm to Tai Ping in 2005 (confirmed by Rug News); it now operates as a Tai Ping brand (see co-tai-ping).\n\nWhy it matters: a second American founding studio of hand-tufting alongside V'Soske, and the origin of the \"area rug\" as a marketing idea that broke with wall-to-wall carpet.\n\nDates: 1935 founding and 2005 sale agree across company site and Rug News; a 1stdibs listing's \"since 1929\" and \"acquired 2015\" are wrong. \"Coined area rug\" and the Magic Needle story are company claims.\n\nOther pages with images: https://www.edwardfields.com/about/craftmanship · https://www.edwardfields.com/designers/raymond-loewy-edward-fields · https://www.edwardfields.com/area\n\nIndependent sources: https://www.rugnews.com/news-archives/04052005-taiping-acquires-edward-fields-7317 · https://metropolismag.com/programs/area-of-influence/ · https://modernismweek.com/2026/films-lectures/filmthe-fifth-wall-edward-fields-story/\n\nResearch note (Oct 2026): facts taken from search-result summaries; the pages themselves weren't opened. Check the cited pages before quoting.",
+    "themes": [
+      "Companies & modern tufting",
+      "Hand-tufting tools & the gun"
+    ],
+    "tags": [
+      "company",
+      "hand-tufted studio",
+      "custom",
+      "area rug",
+      "Tai Ping",
+      "global companies 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "solid",
+    "rights": "not-requested"
+  },
+  {
+    "id": "co-kasthall",
+    "type": "company",
+    "title": "Kasthall",
+    "creator": "Ludvig Anderson (Andersson)",
+    "place": "Kinna, Västra Götaland",
+    "region": "Sweden",
+    "date": "founded 1889; Kinna factory 1901",
+    "dateStart": 1889,
+    "sourceUrl": "https://www.kasthall.com/about",
+    "institution": "Kasthall",
+    "description": "Founded in 1889 as \"Ludvig Anderssons mattor\", which the company calls Sweden's first industrial rug company; production moved in 1901 to a new factory in Kinna on a site called Kasthall, where all rugs are still made. Makes woven and hand-tufted rugs to order (the company describes wool or linen punched through a backing with a tufting tool). Designers linked to it include Ingrid Dessau, Viola Gråsten, Astrid Sampe and Gunilla Lagerhem Ullberg.\n\nWhy it matters: a 19th-century Scandinavian weaving mill that added hand-tufting and kept production at home; a European peer of Scott Group and Kramis.\n\nDates: 1889 and 1901 from the company; independent design press repeats 1889. When Kasthall began hand-tufting was not found—don't imply tufting since 1889. Founder's name spelled Anderson/Andersson.\n\nOther pages with images: https://www.kasthall.com/tufted-rugs · https://www.kasthall.com/en-global/pages/inspiration-stories-tufted-originals\n\nIndependent sources: https://scandinaviandesign.com/130-years-of-design-kasthall/ · https://www.skandium.com/blogs/news/kasthall-quality-never-goes-out-of-style · https://scanmagazine.co.uk/kasthall/\n\nResearch note (Oct 2026): facts taken from search-result summaries; the pages themselves weren't opened. Check the cited pages before quoting.",
+    "themes": [
+      "Companies & modern tufting",
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "company",
+      "hand-tufted studio",
+      "custom",
+      "woven",
+      "Sweden",
+      "global companies 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "solid",
+    "rights": "not-requested"
+  },
+  {
+    "id": "co-ceadogan",
+    "type": "company",
+    "title": "Ceadogán Rugmakers",
+    "creator": "Denis Kenny and Fiona Gilboy (from a business started by Tom Ceadogán); now Colm Kenny and Martina Navrátilová",
+    "place": "Wellingtonbridge, County Wexford",
+    "region": "Ireland",
+    "date": "founded 1981 or 1989 (sources conflict)",
+    "dateStart": 1981,
+    "sourceUrl": "https://www.ceadogan.ie/",
+    "institution": "Ceadogán Rugmakers",
+    "description": "Family hand-tufting studio on Bannow Bay. The Irish Times says Denis Kenny and Fiona Gilboy took over a small hearth-rug business in Wexford in 1981 that had been founded by Tom Ceadogán, a dyehouse master. Makes hand-tufted rugs in wool and other natural yarns; long association with designs by the modernist painter Mainie Jellett; 2022 artist-rug auction (Sean Scully and others) to fund a regenerative project; a rug in Ireland's 2025 Venice Biennale pavilion. Second generation took over in 2020.\n\nWhy it matters: a small-scale European hand-tufting studio of the Kramis type, with art collaborations in the V'Soske tradition.\n\nDates conflict: 1981 (Irish Times, Image.ie) vs 1989 (Homo Faber, Wexford County Council). The company's own site gives no founding history page.\n\nOther pages with images: https://www.ceadogan.ie/neadaithe/ · https://www.ceadogan.ie/f-a-q/\n\nIndependent sources: https://irishtimes-irishtimes-prod.cdn.arcpublishing.com/life-and-style/homes-and-property/the-specialists-fiona-gilboy-and-denis-kenny-of-ceadogan-rugs-1.2191980 · https://2022.homofaber.com/en/experience/discover-the-handmade-rugs-8oab4 · https://wexfordcountycouncilartcollection.com/artist/ceadogan/\n\nResearch note (Oct 2026): facts taken from search-result summaries; the pages themselves weren't opened. Check the cited pages before quoting.",
+    "themes": [
+      "Companies & modern tufting",
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "company",
+      "hand-tufted studio",
+      "custom",
+      "art rugs",
+      "Ireland",
+      "global companies 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "solid",
+    "rights": "not-requested"
+  },
+  {
+    "id": "co-pinton",
+    "type": "company",
+    "title": "Pinton (Ateliers Pinton)",
+    "creator": "Pinton family (Jean Pinton; now Lucas Pinton, fifth generation)",
+    "place": "Felletin / Croze, Creuse (near Aubusson)",
+    "region": "France",
+    "date": "founded 1867; hand-tufting specialism from the early 1990s",
+    "dateStart": 1867,
+    "sourceUrl": "https://www.pinton1867.com/en/history/",
+    "institution": "Pinton (Ateliers Pinton)",
+    "description": "Aubusson-Felletin tapestry manufacture. The French culture ministry's inventory lists Pinton as founded in 1867 at Felletin, making contemporary tapestries and tufted rugs. Jean Pinton built new workshops in 1912 and later added fitted carpet (company says from the 1940s) and tufted-rug departments. The company says it was \"one of the first manufactories\" to use gun tufting and has specialised in hand-tufted rugs since the early 1990s. Lucas Pinton took over in 2002 when the firm was near bankruptcy; it bought Art de Lys (2021), took control of the Manufacture Royale du Parc d'Aubusson (2023) and opened an 1,800 m² tufting plant at Croze (May 2024). Roughly 110–120 staff.\n\nWhy it matters: shows a centuries-old European tapestry centre adopting the tufting gun, with tufting now its main volume business.\n\nDates: 1867 confirmed by the culture ministry; the \"one of the first to use gun tufting\" and early-1990s dates are company claims only.\n\nOther pages with images: https://www.pinton1867.com/en/techniques/hand-tufted/ · https://www.pinton1867.com/en/historical-master-aubusson-tapestry-makers/\n\nIndependent sources: https://www.culture.gouv.fr/Media/Medias-creation-rapide/Les-savoir-faire-des-lissiers-d-Aubusson-Felletin.pdf · https://www.lejournaldesentreprises.com/article/pinton-la-minutieuse-renaissance-du-tapissier-creusois-2118379 · https://www.thesocialitefamily.com/en-ww/media/article/immersive-visit-to-pinton-factory-creuse-felletin\n\nResearch note (Oct 2026): facts taken from search-result summaries; the pages themselves weren't opened. Check the cited pages before quoting.",
+    "themes": [
+      "Companies & modern tufting",
+      "Global diffusion of tufting",
+      "Hand-tufting tools & the gun"
+    ],
+    "tags": [
+      "company",
+      "hand-tufted studio",
+      "custom",
+      "tapestry",
+      "Aubusson",
+      "France",
+      "global companies 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "solid",
+    "rights": "not-requested"
+  },
+  {
+    "id": "co-limited-edition",
+    "type": "company",
+    "title": "Limited Edition",
+    "creator": "Katia Dewitte (with Philippe Hanet and James Dewitte)",
+    "place": "Mouscron, Hainaut",
+    "region": "Belgium",
+    "date": "founded 1991",
+    "dateStart": 1991,
+    "sourceUrl": "https://materialbank.eu/partner/limitededition",
+    "institution": "Limited Edition",
+    "description": "Family company founded in 1991 that began with sisal rug borders and edge finishes, then (per the founder) bought struggling weaving and tufting companies and renovated their collections. Says it spins and dyes yarn, weaves, tufts and finishes in Mouscron, with hand-tufted rugs as a main category alongside flatweaves and braids, all \"100% designed and produced in Belgium\". About 100 staff in an older interview, 200+ in later articles.\n\nWhy it matters: a vertically integrated European hand-tufter in Belgium, the country of Balta and Beaulieu's machine-made output—useful contrast of hand and machine tufting in one region.\n\nDates: 1991 consistent across sources (TLmag interview and retailers); headcounts vary by date. No official history page was found in search; sourceUrl is a partner profile.\n\nIndependent sources: https://tlmagazine.com/limited-edition-art-of-the-rug/ · https://livingedge.com.au/inspiration/blog-news/blog-limited-edition-inside-the-atelier.html · https://grshop.com/blog/wall-floor-coverings/new-floor-coverings-with-a-story-limited-edition-rugs-100-made-in-belgium.html\n\nResearch note (Oct 2026): facts taken from search-result summaries; the pages themselves weren't opened. Check the cited pages before quoting.",
+    "themes": [
+      "Companies & modern tufting",
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "company",
+      "hand-tufted studio",
+      "custom",
+      "Belgium",
+      "global companies 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "solid",
+    "rights": "not-requested"
+  },
+  {
+    "id": "co-yamagata-dantsu",
+    "type": "company",
+    "title": "Yamagata Dantsu (Oriental Carpet Mills)",
+    "creator": "Junnosuke Watanabe",
+    "place": "Yamanobe, Yamagata Prefecture",
+    "region": "Japan",
+    "date": "founded 1935; hand-tufting from 1965",
+    "dateStart": 1935,
+    "sourceUrl": "https://yamagatadantsu.co.jp/history/",
+    "institution": "Yamagata Dantsu (Oriental Carpet Mills)",
+    "description": "Founded in 1935 by Junnosuke Watanabe, a cotton weaver, to create work in a region hit by bad harvests; he brought seven carpet technicians from Beijing, and after about two years the team produced what the company calls Japan's first wool Chinese-style dantsu (hand-woven carpet). Incorporated 1946. The company says it added hand-tufted rugs (\"tesashi dantsu\", nicknamed \"Craftons\") in 1965 to cut cost and time; Wallpaper also dates its tufting-gun experiments to 1965. Commissions cited include the Imperial Palace, Imperial Hotel, Hotel Okura and Kabukiza.\n\nWhy it matters: the main Japanese case of a hand-knotting workshop switching to the tufting gun, a parallel to Tai Ping's switch in Hong Kong.\n\nDates: 1935 founding agreed; 1965 tufting from company and Wallpaper; the company elsewhere says \"the 1960s\". Number of Chinese instructors varies (seven vs one).\n\nOther pages with images: https://yamagatadantsu.co.jp/column/1880/ · https://yamagatadantsu.co.jp/column/1334/ · https://yamagatadantsu.co.jp/en/\n\nIndependent sources: https://react.magzter.com/stories/Fashion/Wallpaper/Wave-Culture · https://nihonmono.jp/en/article/18572/ · https://monocle.com/magazine/issues/181/rugs-to-riches\n\nResearch note (Oct 2026): facts taken from search-result summaries; the pages themselves weren't opened. Check the cited pages before quoting.",
+    "themes": [
+      "Companies & modern tufting",
+      "Global diffusion of tufting",
+      "Hand-tufting tools & the gun"
+    ],
+    "tags": [
+      "company",
+      "hand-tufted studio",
+      "custom",
+      "hand-knotted",
+      "Japan",
+      "global companies 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "solid",
+    "rights": "not-requested"
+  },
+  {
+    "id": "co-designer-rugs",
+    "type": "company",
+    "title": "Designer Rugs",
+    "creator": "Eli, Nurit and Yosi Tal",
+    "place": "Marrickville, Sydney, New South Wales",
+    "region": "Australia",
+    "date": "founded 1986",
+    "dateStart": 1986,
+    "sourceUrl": "https://designerrugs.com.au/pages/about-designer-rugs",
+    "institution": "Designer Rugs",
+    "description": "Family firm with no prior rug experience that began hand-tufting in a Marrickville factory to offer designs that imported rugs lacked. Early commissions: a rug for St Patrick's Cathedral marking Pope John Paul II's 1986 visit and one for Parliament House for the 1988 Bicentennial royal visit. By the 1990s it worked with architects and artists including Harry Seidler and John Coburn; a 1993 Linda Jackson rug is in the Powerhouse Museum. Showrooms in Sydney, Melbourne, Brisbane and Auckland; marked 40 years in 2026.\n\nWhy it matters: the main Australian hand-tufted studio and an example of local hand-tufting replacing imports.\n\nDates: 1986 agreed; the cathedral rug is dated 1986 in one source and 1988 in a caption elsewhere (company page has a placeholder).\n\nOther pages with images: https://designerrugs.com.au/blogs/journal/designer-rugs-marks-40-years\n\nIndependent sources: https://habitusliving.com/articles/30-years-designer-rugs · https://indesignlive.com/advertorials/three-decades-design-designer-rugs\n\nResearch note (Oct 2026): facts taken from search-result summaries; the pages themselves weren't opened. Check the cited pages before quoting.",
+    "themes": [
+      "Companies & modern tufting",
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "company",
+      "hand-tufted studio",
+      "custom",
+      "art rugs",
+      "Australia",
+      "global companies 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "solid",
+    "rights": "not-requested"
+  },
+  {
+    "id": "co-roger-oates",
+    "type": "company",
+    "title": "Roger Oates Design",
+    "creator": "Roger Oates and Fay Morgan",
+    "place": "Eastnor, near Ledbury, Herefordshire (tufting workshop in Devon)",
+    "region": "United Kingdom",
+    "date": "founded 1989",
+    "dateStart": 1989,
+    "sourceUrl": "https://www.rogeroates.com/explore-hand-tufted/",
+    "institution": "Roger Oates Design",
+    "description": "Founded in 1989 as Roger Oates Design Associates, a studio that employed handloom weavers and hand-tufters; moved to the Long Barn on the Eastnor Castle estate in 1993–94, London showroom 1999, Ledbury showroom 2022. Best known for flatweave runners; its hand-tufted rugs (British wool) are made in a company workshop in Devon.\n\nWhy it matters: one of few UK firms documented as hand-tufting domestically; most British carpet history is woven (Axminster, Wilton).\n\nDates: 1989 (Wikipedia); 1993 vs 1994 for the Eastnor move. The Devon workshop's start date not found.\n\nOther pages with images: https://www.rogeroates.com/blog/behind-the-scenes-hand-tufted-rugs/\n\nIndependent sources: https://en.wikipedia.org/wiki/Roger_Oates · https://biid.org.uk/hand-tufted-rugs-made-uk-using-100-british-wool\n\nResearch note (Oct 2026): facts taken from search-result summaries; the pages themselves weren't opened. Check the cited pages before quoting.",
+    "themes": [
+      "Companies & modern tufting",
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "company",
+      "hand-tufted studio",
+      "custom",
+      "United Kingdom",
+      "global companies 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "solid",
+    "rights": "not-requested"
+  },
+  {
+    "id": "co-royal-thai",
+    "type": "company",
+    "title": "Royal Thai (Thailand Carpet Manufacturing / TCM Corporation)",
+    "creator": "Srivikorn family",
+    "place": "Bangkok",
+    "region": "Thailand",
+    "date": "founded 1967",
+    "dateStart": 1967,
+    "sourceUrl": "https://www.royalthai.com/our-heritage",
+    "institution": "Royal Thai (Thailand Carpet Manufacturing / TCM Corporation)",
+    "description": "Set up in 1967 by the Srivikorn family with Hong Kong and Philippine carpet makers; according to its parent's timeline it first sold carpets in Thailand under the \"Tai Ping\" brand, began exporting as \"Royal Thai\" in 1972, listed on the Stock Exchange of Thailand in 1978 (TCMC) and later bought Tai Ping's commercial carpet business, including the factory of Carpets International Thailand (CIT), Tai Ping's Thai hand-tufting plant. Makes hand-tufted (tufting gun) and Axminster carpet, mainly for hotels.\n\nWhy it matters: shows the Tai Ping hand-tufting model spreading to Southeast Asia; Tai Ping's own filings list CIT as one of its two hand-tufted production sites.\n\nDates: 1967 consistent; year of the Tai Ping commercial-business purchase not found. Mostly company sources.\n\nOther pages with images: https://www.royalthai.com/blogs/chronicle-a24\n\nIndependent sources: https://tcm-corporation.com/en/corporate-our-history (parent company) · https://eboss.co.nz/library/jacobsen/royal-thai-axminster-carpets · https://www.hkexnews.hk/listedco/listconews/sehk/2002/0514/00146/F106.pdf (Tai Ping filing naming CIT)\n\nResearch note (Oct 2026): facts taken from search-result summaries; the pages themselves weren't opened. Check the cited pages before quoting.",
+    "themes": [
+      "Companies & modern tufting",
+      "Global diffusion of tufting",
+      "Woven carpet"
+    ],
+    "tags": [
+      "company",
+      "hand-tufted studio",
+      "hospitality",
+      "Tai Ping",
+      "Thailand",
+      "global companies 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "suggestive",
+    "rights": "not-requested"
+  },
+  {
+    "id": "co-cabin-crafts",
+    "type": "company",
+    "title": "Cabin Crafts",
+    "creator": "Frederick R. Westcott and G. Lamar Westcott",
+    "place": "Dalton, Georgia",
+    "region": "United States",
+    "date": "1930s (founding year not found)",
+    "sourceUrl": "https://www.georgiaencyclopedia.org/articles/arts-culture/chenille-bedspreads",
+    "institution": "Cabin Crafts",
+    "description": "Dalton chenille-bedspread firm founded by the Westcott brothers (archival photo records), one of the companies that moved bedspread-making from hand to machine. Its Jess Spencer Kile filed a tufting-machine patent in 1939 (issued 1945; see pat-us2389914a). Around 1950 bedspread firms such as Cabin Crafts, and newcomers like Barwick, began using tufting machines to make room-size carpet.\n\nWhy it matters: a textbook example of the bedspread-to-broadloom path. The repo already holds a photo of Cabin Crafts executives (photo-cabin-crafts-arnall).\n\nDates: founding year not found; a 1941 photo shows it operating. Later ownership (often linked to West Point-Pepperell, whose carpet business Shaw bought in 1987) not confirmed in searches. No company site exists; sourceUrl is the Georgia Encyclopedia.\n\nOther pages with images: https://dlg.usg.edu/record/dlg_vang_wtf229 · https://bandyheritagecenter.pastperfectonline.com/photo/95EA3F4C-3D88-4C76-8BE6-581372259612\n\nIndependent sources: https://www.hmdb.org/m.asp?m=171571 · https://westgatextiletrail.com/?p=3235\n\nResearch note (Oct 2026): facts taken from search-result summaries; the pages themselves weren't opened. Check the cited pages before quoting.",
+    "themes": [
+      "Machine tufting & Dalton",
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "machine-tufted manufacturer",
+      "chenille",
+      "Dalton",
+      "global companies 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "solid",
+    "rights": "not-requested"
+  },
+  {
+    "id": "co-barwick",
+    "type": "company",
+    "title": "E. T. Barwick Mills",
+    "creator": "Eugene Thomas Barwick",
+    "place": "Dalton and LaFayette, Georgia",
+    "region": "United States",
+    "date": "founded 1949",
+    "dateStart": 1949,
+    "sourceUrl": "https://westgatextiletrail.com/?p=3323",
+    "institution": "E. T. Barwick Mills",
+    "description": "After Coast Guard service, Eugene Barwick sold tufted goods for Sears and in 1949 formed Barwick Mills. One local history says sales doubled in 1950 and passed $26 million by 1954; by 1971 it ran large plants in LaFayette and Dalton; it closed by the mid-1980s. The book \"Carpet Capital\" uses it as a key case of the tufted-carpet boom; the Georgia Encyclopedia names it among the \"maverick\" newcomers who used tufting machines for room-size carpet around 1950.\n\nWhy it matters: the archetypal 1950s start-up that turned tufting into a broadloom carpet business, rather than a bedspread one.\n\nDates: 1949 rests mainly on one local-history site; check against \"Carpet Capital\". The defunct firm has no official site.\n\nIndependent sources: https://georgiaencyclopedia.org/articles/business-economy/carpet-industry · https://portersquarebooks.com/book/9780820324647 · https://trademark.justia.com/owners/e-t-barwick-industries-inc-109940\n\nResearch note (Oct 2026): facts taken from search-result summaries; the pages themselves weren't opened. Check the cited pages before quoting.",
+    "themes": [
+      "Machine tufting & Dalton",
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "machine-tufted manufacturer",
+      "Dalton",
+      "broadloom",
+      "global companies 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "suggestive",
+    "rights": "not-requested"
+  },
+  {
+    "id": "co-world-carpets",
+    "type": "company",
+    "title": "World Carpets",
+    "creator": "Shaheen and Piera Shaheen",
+    "place": "Dalton, Georgia",
+    "region": "United States",
+    "date": "founded 1954",
+    "dateStart": 1954,
+    "sourceUrl": "https://www.georgiaencyclopedia.org/articles/business-economy/world-carpets/",
+    "institution": "World Carpets",
+    "description": "Founded in 1954 by Shaheen Shaheen (a former chenille-company salesman) and his wife Piera. One of the first carpet firms to integrate from spinning to delivery, with the industry's first in-house trucking division; in 1968 it was the first to run a Küster continuous dyeing range. Merged with Mohawk in November 1998 (see co-mohawk).\n\nWhy it matters: a major independent Dalton tufter of the boom years and an innovator in dyeing tufted carpet.\n\nDates: 1954 and 1998 confirmed by Georgia Encyclopedia and WFCA Hall of Fame. \"First\" claims come from those biographies.\n\nOther pages with images: https://dlg.usg.edu/record/nge_ngen_world-carpets\n\nIndependent sources: https://wfca.org/?p=989\n\nResearch note (Oct 2026): facts taken from search-result summaries; the pages themselves weren't opened. Check the cited pages before quoting.",
+    "themes": [
+      "Machine tufting & Dalton",
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "machine-tufted manufacturer",
+      "Dalton",
+      "dyeing",
+      "global companies 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "solid",
+    "rights": "not-requested"
+  },
+  {
+    "id": "co-cormar",
+    "type": "company",
+    "title": "Cormar Carpets",
+    "creator": "Neville Cormack",
+    "place": "Rossendale Valley; Greenmount, near Bury, Lancashire",
+    "region": "United Kingdom",
+    "date": "founded 1956",
+    "dateStart": 1956,
+    "sourceUrl": "https://cormarcarpets.co.uk/about-us/our-history",
+    "institution": "Cormar Carpets",
+    "description": "Neville Cormack, aged 26, bought two tufting machines at a Manchester machinery exhibition in 1955 and in 1956 founded Cormar Carpets, the company says \"with the advent of a new method of making carpet, called tufted\". Production began at Nunn Hills Mill, moved to Brookhouse Mill, Greenmount in 1959, and added Holme Mill, Ramsbottom in 1973. Still family-run (son David from 1987; Helen and Edward Polito now).\n\nWhy it matters: an early British adopter of American tufting machines in the heartland of woven carpet; dates the arrival of tufting in UK manufacturing.\n\nDates: 1955/1956 consistent (company, Wikipedia, The Manufacturer). Headcount 280 vs 400+.\n\nIndependent sources: https://en.wikipedia.org/wiki/Cormar_Carpets · https://www.themanufacturer.com/articles/cormar-carpets-marks-70-years-of-british-manufacturing/ · https://ramsbottomheritage.org.uk/holme-mill/\n\nResearch note (Oct 2026): facts taken from search-result summaries; the pages themselves weren't opened. Check the cited pages before quoting.",
+    "themes": [
+      "Machine tufting & Dalton",
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "company",
+      "machine-tufted manufacturer",
+      "broadloom",
+      "United Kingdom",
+      "global companies 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "solid",
+    "rights": "not-requested"
+  },
+  {
+    "id": "co-interface",
+    "type": "company",
+    "title": "Interface",
+    "creator": "Ray C. Anderson",
+    "place": "LaGrange / Atlanta, Georgia",
+    "region": "United States",
+    "date": "founded 1973 (as Carpets International-Georgia)",
+    "dateStart": 1973,
+    "sourceUrl": "https://www.interface.com/US/en-US/sustainability/our-history.html",
+    "institution": "Interface",
+    "description": "Ray Anderson left Milliken in 1973 to bring European free-lay carpet tiles to the US, in a joint venture with the British firm Carpets International (Carpets International-Georgia); first plant in LaGrange, Georgia. Renamed Interface after going public; acquisitions included Heuga (1988). Known since 1994 for Anderson's sustainability programme; he died in 2011. The company says it made \"America's first modular carpet tile\".\n\nWhy it matters: carried the carpet tile into US commercial flooring, now a major format for machine-tufted carpet.\n\nDates: LaGrange plant 1973 (Interface) vs 1974 (encyclopedia sources); IPO/renaming dates differ across sources. \"First\"/\"largest carpet-tile maker\" are company or press claims.\n\nOther pages with images: https://www.interface.com/US/en-US/more-from-interface/about.html · https://blog.interface.com/celebrating-50-years/\n\nIndependent sources: https://www.georgiaencyclopedia.org/articles/business-economy/interface-inc · https://en.wikipedia.org/wiki/Interface,_Inc. · https://www.fundinguniverse.com/company-histories/interface-inc-history/\n\nResearch note (Oct 2026): facts taken from search-result summaries; the pages themselves weren't opened. Check the cited pages before quoting.",
+    "themes": [
+      "Machine tufting & Dalton",
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "machine-tufted manufacturer",
+      "carpet tiles",
+      "commercial",
+      "global companies 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "solid",
+    "rights": "not-requested"
+  },
+  {
+    "id": "co-milliken",
+    "type": "company",
+    "title": "Milliken & Company (floor covering)",
+    "creator": "Milliken family firm; carpet entry via Callaway Mills",
+    "place": "LaGrange, Georgia (carpet); Spartanburg, South Carolina (HQ)",
+    "region": "United States",
+    "date": "company 1865; carpet from 1968",
+    "dateStart": 1968,
+    "sourceUrl": "https://www.milliken.com/en-us/about-us/history",
+    "institution": "Milliken & Company (floor covering)",
+    "description": "A textile company founded in 1865 that entered carpet in 1968 by buying Callaway Mills (LaGrange, Nichols and Pine Mountain, Georgia). Its timeline lists the Millitron digital carpet printer in 1973 (now described as digital dye-injection patterning of carpet tiles). The LaGrange Live Oak plant, destroyed by fire in 1995, was rebuilt as its main flooring plant. UK carpet-tile production from 1986. Ray Anderson (Interface) was a Milliken executive before 1973.\n\nWhy it matters: Milliken's printing technology is a major chapter in patterning tufted carpet without coloured yarn.\n\nDates: 1968 entry confirmed by company and press; the company's FAQ misspells \"Calloway\". Millitron 1973 is a company date.\n\nOther pages with images: https://www.milliken.com/en-us/blogs/then-and-now-live-oak-fire\n\nIndependent sources: https://www.textileworld.com/textile-world/features/2004/04/milliken-company-covering-all-bases/ · https://www.iands.design/materials-and-products/article/10170630/millitron\n\nResearch note (Oct 2026): facts taken from search-result summaries; the pages themselves weren't opened. Check the cited pages before quoting.",
+    "themes": [
+      "Machine tufting & Dalton",
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "machine-tufted manufacturer",
+      "carpet tiles",
+      "printing",
+      "global companies 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "solid",
+    "rights": "not-requested"
+  },
+  {
+    "id": "co-dixie-group",
+    "type": "company",
+    "title": "The Dixie Group",
+    "creator": "Chattanooga hosiery-mill owners (backed by John T. Lupton)",
+    "place": "Chattanooga, Tennessee / Dalton, Georgia",
+    "region": "United States",
+    "date": "founded 1920 (Dixie Mercerizing); carpet from 1951/1993",
+    "dateStart": 1920,
+    "sourceUrl": "https://www.dixiegroup.com/About/Heritage",
+    "institution": "The Dixie Group",
+    "description": "Founded 1920 as Dixie Mercerizing Co. to treat cotton yarn for hosiery. The company says it entered carpet in 1951 by buying Dalton Candlewick, a specialty yarn maker; renamed Dixie Yarns in 1965 on moving into high-volume tufting yarns; from 1993 it became a carpet maker by buying Carriage Industries (tufted broadloom) and Masland Carpets; renamed The Dixie Group 1997. Today high-end residential brands (Fabrica, Masland, Dixie Home).\n\nWhy it matters: shows the yarn-supply side of Dalton's tufting boom and a supplier becoming a manufacturer.\n\nDates: 1920 and 1993 confirmed (company, encyclopedia.com, annual reports); \"carpet entry 1951\" is the company's framing for a yarn acquisition.\n\nOther pages with images: https://www.dixiegroup.com/About/Timeline\n\nIndependent sources: https://floordaily.net/?p=21672 · https://encyclopedia.com/books/politics-and-business-magazines/dixie-group-inc\n\nResearch note (Oct 2026): facts taken from search-result summaries; the pages themselves weren't opened. Check the cited pages before quoting.",
+    "themes": [
+      "Machine tufting & Dalton",
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "machine-tufted manufacturer",
+      "yarn",
+      "Dalton",
+      "global companies 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "solid",
+    "rights": "not-requested"
+  },
+  {
+    "id": "co-engineered-floors",
+    "type": "company",
+    "title": "Engineered Floors",
+    "creator": "Robert E. (Bob) Shaw",
+    "place": "Dalton / Calhoun, Georgia",
+    "region": "United States",
+    "date": "founded 2009 (plant 2009–10)",
+    "dateStart": 2009,
+    "sourceUrl": "https://www.engineeredfloors.com/about/",
+    "institution": "Engineered Floors",
+    "description": "Founded by Bob Shaw, former CEO of Shaw Industries (see co-shaw), after leaving Shaw. Broke ground on a Calhoun plant in 2009, operating 2010, built around solution-dyed polyester (\"PureColor\"). Bought Dream Weaver Carpet, merged with J+J Flooring and bought assets of Beaulieu of America after its 2017 bankruptcy; about 12 plants, all in the Dalton area (2019).\n\nWhy it matters: a 21st-century Dalton tufter founded by an industry pioneer; part of the shift from nylon to polyester.\n\nDates: 2009 (company, FCW 2019) vs 2010 (FCW 2017).\n\nIndependent sources: https://bt.e-ditionsbyfry.com/article/Engineered+Floors+Bullish+On+Carpet+%26+Dalton/3532179/635191/article.html · https://wfca.org/hall-of-fame/robert-shaw · https://www.fcnews.net/wp-content/uploads/2021/01/EF-Profile.pdf\n\nResearch note (Oct 2026): facts taken from search-result summaries; the pages themselves weren't opened. Check the cited pages before quoting.",
+    "themes": [
+      "Machine tufting & Dalton",
+      "Companies & modern tufting",
+      "Nylon & synthetic fibers (DuPont)"
+    ],
+    "tags": [
+      "company",
+      "machine-tufted manufacturer",
+      "polyester",
+      "Dalton",
+      "global companies 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "solid",
+    "rights": "not-requested"
+  },
+  {
+    "id": "co-ege",
+    "type": "company",
+    "title": "Ege Carpets (Egetæpper)",
+    "creator": "Mads Eg Damgaard",
+    "place": "Herning",
+    "region": "Denmark",
+    "date": "founded 1938; tufting factory early 1970s",
+    "dateStart": 1938,
+    "sourceUrl": "https://www.egecarpets.com/en-gb/about-ege/history",
+    "institution": "Ege Carpets (Egetæpper)",
+    "description": "Started in 1938 in Herning with two looms; registered first as Herning Bomuldsvæveri, a cotton mill (lex.dk); public company 1951. The company says it built a 25,000 m² tufting factory in Herning in the early 1970s, followed by a \"Multicolour\" plant for commercial carpet. Founder sat in the Danish parliament from 1964; died 1999. Makes woven and tufted carpet; known in the 1960s–70s for rya rugs.\n\nWhy it matters: Scandinavia's main industrial carpet maker and a clear example of a weaving mill moving to tufting around 1970.\n\nDates: 1938 confirmed (company and lex.dk); tufting date is from the company. \"One of Europe's largest\" is a company claim.\n\nOther pages with images: https://egecarpets.com/about-ege-carpets/facts\n\nIndependent sources: https://lex.dk/Eget%C3%A6pper · https://www.classic-modern.co.uk/ege_rya\n\nResearch note (Oct 2026): facts taken from search-result summaries; the pages themselves weren't opened. Check the cited pages before quoting.",
+    "themes": [
+      "Machine tufting & Dalton",
+      "Global diffusion of tufting",
+      "Woven carpet"
+    ],
+    "tags": [
+      "company",
+      "machine-tufted manufacturer",
+      "woven",
+      "Denmark",
+      "global companies 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "solid",
+    "rights": "not-requested"
+  },
+  {
+    "id": "co-object-carpet",
+    "type": "company",
+    "title": "Object Carpet",
+    "creator": "Roland Butz and Winfried Loskant",
+    "place": "Denkendorf, near Stuttgart (production Krefeld)",
+    "region": "Germany",
+    "date": "founded 1972",
+    "dateStart": 1972,
+    "sourceUrl": "https://website.oc.prod.de.ymc.host/en/company/about-object-carpet/forever-young",
+    "institution": "Object Carpet",
+    "description": "Founded in 1972 by textile engineer Roland Butz (d. 2023) with Winfried Loskant, aimed at contract carpet for hotels and offices with bold colour. Its Krefeld site tufts broadloom and carpet tiles (cut and loop pile) and since 2022 runs Europe's first Niaga plant for recyclable carpet; absorbed sister firm Toucan-T in 2021. Led by Daniel Butz.\n\nWhy it matters: a design-led German contract tufter; with Vorwerk, evidence that Germany made tufted carpet even though it built no tufting machines (see ner-de-no-machines).\n\nDates: 1972 consistent; Stuttgart vs Denkendorf as founding place. Mostly company sources.\n\nOther pages with images: https://www.object-carpet.com/en/company/objectcarpet-and-toucant-unite\n\nIndependent sources: https://www.lovethatdesign.com/news/object-carpet-gmbh-mourns-the-death-of-its-founder-and-visionary-roland-butz/ · https://pdf.archiexpo.com/pdf/object-carpet/object-carpet-company/88500-316922.html\n\nResearch note (Oct 2026): facts taken from search-result summaries; the pages themselves weren't opened. Check the cited pages before quoting.",
+    "themes": [
+      "Machine tufting & Dalton",
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "company",
+      "machine-tufted manufacturer",
+      "contract",
+      "carpet tiles",
+      "Germany",
+      "global companies 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "suggestive",
+    "rights": "not-requested"
+  },
+  {
+    "id": "co-vorwerk",
+    "type": "company",
+    "title": "Vorwerk Teppichwerke (now Hamelner Teppichwerke)",
+    "creator": "Carl and Adolf Vorwerk",
+    "place": "Barmen (Wuppertal); Hameln, Lower Saxony",
+    "region": "Germany",
+    "date": "founded 1883",
+    "dateStart": 1883,
+    "sourceUrl": "https://museumhameln.de/dauerausstellung_engl_20jh67/",
+    "institution": "Vorwerk Teppichwerke (now Hamelner Teppichwerke)",
+    "description": "Founded in 1883 in Barmen as a carpet and upholstery-fabric maker (the same group later made the Kobold vacuum, 1929). The Hameln carpet mill was founded separately in 1889 by Otto Kuhlmann, sold to the Preis family in 1934 and bought by Vorwerk in 1986; designer carpets from the 1980s. A company interview names weaving and tufting among its production techniques. The carpet business now operates as Hamelner Teppichwerke after a management buyout.\n\nWhy it matters: Germany's best-known branded carpet maker; useful for dating tufting in West Germany, but that date is still missing.\n\nDates: 1883 confirmed; Wuppertal-to-Hannover move 1950 per one interview; when Vorwerk began tufting not found.\n\nIndependent sources: https://encyclopedia.com/books/politics-and-business-magazines/vorwerk-co · https://www.wirtschaftsforum.de/interviews/hamelner-teppichwerke-gmbh-co-kg/auf-dem-teppich-geblieben · https://www.wirtschaftsforum.de/interviews/vorwerk-co-teppichwerke-gmbh-co-kg/ein-markt-der-wohncharakter-verleiht\n\nResearch note (Oct 2026): facts taken from search-result summaries; the pages themselves weren't opened. Check the cited pages before quoting.",
+    "themes": [
+      "Machine tufting & Dalton",
+      "Global diffusion of tufting",
+      "Woven carpet"
+    ],
+    "tags": [
+      "company",
+      "machine-tufted manufacturer",
+      "woven",
+      "Germany",
+      "global companies 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "unverified",
+    "rights": "not-requested"
+  },
+  {
+    "id": "co-desso",
+    "type": "company",
+    "title": "Desso (Tarkett)",
+    "creator": "(founder not found)",
+    "place": "Oss (origin); now Waalwijk, Netherlands and Dendermonde, Belgium",
+    "region": "Netherlands",
+    "date": "founded 1930 (woven carpet)",
+    "dateStart": 1930,
+    "sourceUrl": "https://professionals.tarkett.co.uk/en_GB/node/desso-carpet-16235",
+    "institution": "Desso (Tarkett)",
+    "description": "Tarkett says Desso was founded in Oss as a maker of woven carpets; a Desso brochure says its origins were a Belgian manufacturer that began weaving in Oss. Synthetic-turf division from 1980. Owned at times by DLW, Armstrong, NPM Capital (2007–11) and Bencis; Tarkett agreed to buy it on 30 October 2014. Now known for commercial carpet tiles and rolls.\n\nWhy it matters: a Dutch woven-carpet firm that became a European commercial tufter (carpet tiles); a European counterpart to Interface.\n\nDates: acquisition completion 31 Dec 2014 vs 2 Jan 2015 vs \"2015\". When Desso began tufting not found.\n\nIndependent sources: https://www.textileworld.com/?p=10224 · https://www.npm-capital.com/en/former-investments/desso · https://www.tarkett-group.com/app/uploads/2021/12/23113044/31-10-2014-tarkett-to-acquire-desso-one-of-the-leaders-in-commercial-carpets.pdf\n\nResearch note (Oct 2026): facts taken from search-result summaries; the pages themselves weren't opened. Check the cited pages before quoting.",
+    "themes": [
+      "Machine tufting & Dalton",
+      "Global diffusion of tufting",
+      "Woven carpet"
+    ],
+    "tags": [
+      "company",
+      "machine-tufted manufacturer",
+      "carpet tiles",
+      "woven",
+      "Netherlands",
+      "global companies 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "solid",
+    "rights": "not-requested"
+  },
+  {
+    "id": "co-balta",
+    "type": "company",
+    "title": "Balta (Belysse / Victoria)",
+    "creator": "Balcaen family (name from Balcaen + tapijt)",
+    "place": "Sint-Baafs-Vijve, West Flanders",
+    "region": "Belgium",
+    "date": "founded 1964 (woven rugs); tufting from 1974 (ITC)",
+    "dateStart": 1964,
+    "sourceUrl": "https://www.belysse.com/en/about-us/history-and-group",
+    "institution": "Balta (Belysse / Victoria)",
+    "description": "Balta nv was set up in 1964 to make woven area rugs; Imperial Tufting Company (ITC) followed in Tielt in 1974 for tufted carpet. Grew into a major European soft-flooring group (rugs, broadloom, carpet tiles, non-wovens); listed on Euronext Brussels 2017. In 2022 the rugs and residential businesses were sold to Victoria PLC and the remaining group renamed Belysse.\n\nWhy it matters: Belgium's machine-made rug and carpet cluster, combining woven and tufted output.\n\nDates: 1964 and 1974 from company/filings; ownership after 2022 split between Victoria (Balta rugs) and Belysse (carpet).\n\nOther pages with images: https://baltarugs.com/pages/about-us\n\nIndependent sources: https://www.belysse.com/public/ANNUAL_REPORT_LSF9_BALTA_ISSUER_S.a_r.l._2017-ENG.pdf · https://inpractise.com/articles/victoria-plc-balta-and-flooring-manufacturing\n\nResearch note (Oct 2026): facts taken from search-result summaries; the pages themselves weren't opened. Check the cited pages before quoting.",
+    "themes": [
+      "Machine tufting & Dalton",
+      "Global diffusion of tufting",
+      "Woven carpet"
+    ],
+    "tags": [
+      "company",
+      "machine-tufted manufacturer",
+      "woven",
+      "rugs",
+      "Belgium",
+      "global companies 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "solid",
+    "rights": "not-requested"
+  },
+  {
+    "id": "co-beaulieu",
+    "type": "company",
+    "title": "Beaulieu International Group",
+    "creator": "Roger De Clerck",
+    "place": "Waregem, West Flanders",
+    "region": "Belgium",
+    "date": "founded 1959",
+    "dateStart": 1959,
+    "sourceUrl": "https://www.beaulieu.com/en/who-we-are/history",
+    "institution": "Beaulieu International Group",
+    "description": "Roger De Clerck began in 1959 with an upholstery-fabric workshop on the family farm (Ter Lembeek, near Kortrijk/Wielsbeke). The group expanded and integrated vertically; in 1991 it was split among De Clerck and his six children, and in 2005 five branches merged as Beaulieu International Group. Beaulieu of America was founded in 1978 by son-in-law Carl Bouckaert and daughter Mieke De Clerck, became a large Dalton tufted-carpet maker, went bankrupt in 2017, and its assets went to Engineered Floors.\n\nWhy it matters: a Belgian family group that planted a major tufter in Dalton—tufting flowing back from Europe to the US.\n\nDates: 1959 consistent; Wikipedia calls it a fabric business and De Clerck's biography a carpet company; FCNews obituary misdates Beaulieu of America to 1959 (it was 1978).\n\nOther pages with images: https://beaulieu.bintg.com/history-growth\n\nIndependent sources: https://en.wikipedia.org/wiki/Beaulieu_International_Group · https://www.georgiaencyclopedia.org/articles/business-economy/beaulieu-of-america/ · https://www.fcnews.net/2015/11/obituary-beaulieu-founder-de-clerck/\n\nResearch note (Oct 2026): facts taken from search-result summaries; the pages themselves weren't opened. Check the cited pages before quoting.",
+    "themes": [
+      "Machine tufting & Dalton",
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "company",
+      "machine-tufted manufacturer",
+      "Belgium",
+      "Dalton",
+      "global companies 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "solid",
+    "rights": "not-requested"
+  },
+  {
+    "id": "co-victoria",
+    "type": "company",
+    "title": "Victoria PLC (Victoria Carpets)",
+    "creator": "George Anton and two partners",
+    "place": "Kirkcaldy, Scotland; Kidderminster (from 1900); now Worcester",
+    "region": "United Kingdom",
+    "date": "founded 1895",
+    "dateStart": 1895,
+    "sourceUrl": "https://www.victoriacarpets.com/about/us/our-history",
+    "institution": "Victoria PLC (Victoria Carpets)",
+    "description": "Founded in 1895 in Kirkcaldy and moved in 1900 to Kidderminster, the centre of British carpet weaving; listed 1963, AIM 2013. From 2012 Geoff Wilding turned it into an acquisitive flooring group (Victoria Carpets Australia 2014, Abingdon Flooring, Balta rugs 2022 and others). Products include tufted and woven broadloom and carpet tiles; it describes itself as the UK's largest carpet manufacturer.\n\nWhy it matters: a Kidderminster weaver that now consolidates much of Europe's and Australia's machine-made carpet, tufted and woven.\n\nDates: 1895 consistent; founder given as George Anton (company) vs a weaver from Halifax named John Bamber (one analyst article). \"UK's largest\" is a company claim (2021).\n\nIndependent sources: https://www.gracesguide.co.uk/Victoria_Carpets · https://inpractise.com/articles/newsletter-20220426\n\nResearch note (Oct 2026): facts taken from search-result summaries; the pages themselves weren't opened. Check the cited pages before quoting.",
+    "themes": [
+      "Machine tufting & Dalton",
+      "Global diffusion of tufting",
+      "Woven carpet"
+    ],
+    "tags": [
+      "company",
+      "machine-tufted manufacturer",
+      "woven",
+      "Kidderminster",
+      "United Kingdom",
+      "global companies 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "solid",
+    "rights": "not-requested"
+  },
+  {
+    "id": "co-godfrey-hirst",
+    "type": "company",
+    "title": "Godfrey Hirst",
+    "creator": "Godfrey Hirst",
+    "place": "Geelong, Victoria",
+    "region": "Australia",
+    "date": "roots 1865; carpet focus from 1966",
+    "dateStart": 1865,
+    "sourceUrl": "https://www.godfreyhirst.com/au/about-us",
+    "institution": "Godfrey Hirst",
+    "description": "Traces itself to the Victorian Woollen and Cloth Manufacturing Co., set up in Geelong in 1865. Godfrey Hirst, an English migrant, began making flannel around 1888 and took the business over; incorporated 1909. Made blankets, rugs, tweeds and flannel until it narrowed to carpet in 1966. Bought Feltex (NZ) in 2006; acquired by Mohawk in 2018 (see co-mohawk). Tufts wool carpet in Auckland and Australia.\n\nWhy it matters: Australasia's main carpet maker and an example of a wool-textile mill turning to tufted carpet in the 1960s.\n\nDates: Hirst's arrival given as 1880, 1883 or 1885. Whether the 1966 carpet start was tufted from the outset not found. \"World's largest wool carpet manufacturer\" is a company claim.\n\nOther pages with images: https://www.godfreyhirst.com/au/resources/news/strength-strength-160-years-local-manufacturing\n\nIndependent sources: https://camd.org.au/?p=36561 · https://architectureanddesign.com.au/suppliers/gh-commercial/celebrating-150-years-of-australian-manufacturing\n\nResearch note (Oct 2026): facts taken from search-result summaries; the pages themselves weren't opened. Check the cited pages before quoting.",
+    "themes": [
+      "Machine tufting & Dalton",
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "company",
+      "machine-tufted manufacturer",
+      "wool",
+      "Australia",
+      "New Zealand",
+      "global companies 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "solid",
+    "rights": "not-requested"
+  },
+  {
+    "id": "co-suminoe",
+    "type": "company",
+    "title": "Suminoe (Suminoe Textile Co.)",
+    "creator": "Denshichi Murata",
+    "place": "Osaka",
+    "region": "Japan",
+    "date": "founded 1883; incorporated 1913",
+    "dateStart": 1883,
+    "sourceUrl": "https://suminoe.jp/en/pages/company",
+    "institution": "Suminoe (Suminoe Textile Co.)",
+    "description": "Founded in 1883 by Denshichi Murata, a rice merchant who bought looms to weave carpets; incorporated as Suminoe Textile in 1913. Its corporate history says production was concentrated at its Nara plant in 1977, Japan's first domestic carpet tiles were made there in August 1980, and the Nara plant received JIS certification for tufted carpet in March 1983. The company claims Japan's first domestically produced tufted carpet (year not given). Renamed SUMINOE Co., Ltd. in December 2024.\n\nWhy it matters: Japan's main machine-made carpet maker and the route by which tufting and carpet tiles were industrialised there.\n\nDates: 1883 and 1980 from corporate history; first-tufted-carpet year not found.\n\nIndependent sources: https://edinetdb.jp/company/E00574/history · https://sharedresearch.jp/en/companies/3501\n\nResearch note (Oct 2026): facts taken from search-result summaries; the pages themselves weren't opened. Check the cited pages before quoting.",
+    "themes": [
+      "Machine tufting & Dalton",
+      "Global diffusion of tufting",
+      "Woven carpet"
+    ],
+    "tags": [
+      "company",
+      "machine-tufted manufacturer",
+      "carpet tiles",
+      "Japan",
+      "global companies 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "suggestive",
+    "rights": "not-requested"
+  },
+  {
+    "id": "co-oriental-weavers",
+    "type": "company",
+    "title": "Oriental Weavers",
+    "creator": "Mohamed Farid Khamis",
+    "place": "10th of Ramadan City, near Cairo",
+    "region": "Egypt",
+    "date": "founded 1979; tufted arm MAC from 1981",
+    "dateStart": 1979,
+    "sourceUrl": "https://orientalweavers.com/history/",
+    "institution": "Oriental Weavers",
+    "description": "Khamis returned to Egypt in 1978 at the invitation of Sadat's privatising government and started with a single loom in 1979. Mainly machine-woven rugs; its tufted arm is MAC Carpet (Misr American Carpets), established 1981. US arm in Dalton from 1993; listed on the Egyptian Exchange 1997; China unit 2006. Khamis died in 2020.\n\nWhy it matters: described as the Middle East's largest machine-made rug producer; mostly woven, with tufting as a separate line.\n\nDates: 1979 (company, Forbes ME) vs 1980 (Domotex). \"Largest producer of machine-woven and tufted rugs\" and \"global leader in tufted\" are company claims.\n\nOther pages with images: https://orientalweavers.com/en/about/founder\n\nIndependent sources: https://www.fcnews.net/2020/09/obituary-mohamed-farid-khamis-oriental-weavers-founder/ · https://www.forbesmiddleeast.com/lists/top-100-arab-family-businesses-2023/oriental-weavers-group/\n\nResearch note (Oct 2026): facts taken from search-result summaries; the pages themselves weren't opened. Check the cited pages before quoting.",
+    "themes": [
+      "Woven carpet",
+      "Global diffusion of tufting",
+      "Machine tufting & Dalton"
+    ],
+    "tags": [
+      "company",
+      "machine-tufted manufacturer",
+      "woven",
+      "Egypt",
+      "global companies 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "solid",
+    "rights": "not-requested"
+  },
+  {
+    "id": "co-merinos",
+    "type": "company",
+    "title": "Merinos (Erdemoğlu)",
+    "creator": "Mehmet Erdemoğlu",
+    "place": "Gaziantep",
+    "region": "Turkey",
+    "date": "1970 (kilim looms); carpet from 1983",
+    "dateStart": 1970,
+    "sourceUrl": "https://www.merinos.com.tr/kurumsal-hakkimizda",
+    "institution": "Merinos (Erdemoğlu)",
+    "description": "The Erdemoğlu family began in 1970 with two kilim looms in Gaziantep, moved to carpet looms in 1983, formed Erdemoğlu Halı A.Ş. in 1990, renamed Merinos Halı in 1998, made its own yarn from 1992 and grouped its firms as Erdemoğlu Holding in 2010. Says it makes about 40 million m² of machine-made rugs a year.\n\nWhy it matters: included for contrast—Merinos is a machine-WOVEN (cut-pile) giant, not a tufter; tufting in the group is attributed to sister brand Dinarsu, not confirmed here.\n\nDates: 1990 vs 1998 for corporate name; rankings (\"world's largest woven rug maker\", \"third-largest\") are company or press claims.\n\nIndependent sources: https://www.capital.com.tr/listeler/capital-500/merinos-hali · https://www.hurriyet.com.tr/ekonomi/rusya-da-merinos-uretecegiz-300-milyon-dolara-kosuyoruz-4270061\n\nResearch note (Oct 2026): facts taken from search-result summaries; the pages themselves weren't opened. Check the cited pages before quoting.",
+    "themes": [
+      "Woven carpet",
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "company",
+      "machine-tufted manufacturer",
+      "woven",
+      "not tufted",
+      "Turkey",
+      "global companies 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "suggestive",
+    "rights": "not-requested"
+  },
+  {
+    "id": "co-huade",
+    "type": "company",
+    "title": "Huade Carpet Group",
+    "creator": "(founder not found)",
+    "place": "Zhengzhou, Henan (also Guangzhou)",
+    "region": "China",
+    "date": "founded 1986",
+    "dateStart": 1986,
+    "sourceUrl": "https://www.hdcarpets.com/pages/about-us-1",
+    "institution": "Huade Carpet Group",
+    "description": "Says it was established in 1986 and has three manufacturing bases; the Zhengzhou plant makes machine-tufted, printed carpet and carpet tiles. Claims over 5,000 workers and 15 million m² a year, with machinery from Germany, Britain and Belgium. A Chinese brand-ranking site names it among the drafters of China's national standard for tufted carpet.\n\nWhy it matters: a candidate for the large mainland Chinese tufters that appeared after China's first domestic tufting machine (see ner-cn-dht200).\n\nDates: company pages give 1986 and also \"since 1997\"; Zhengzhou vs Guangzhou entities may be different companies. Sources are company pages, supplier directories and a ranking site; treat as weak.\n\nIndependent sources: https://www.cnpp.cn/china/list_980.html?ispc=1 · https://www.sourcifychina.com/tufted-carpet-guide-in-depth/\n\nResearch note (Oct 2026): facts taken from search-result summaries; the pages themselves weren't opened. Check the cited pages before quoting.",
+    "themes": [
+      "Machine tufting & Dalton",
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "company",
+      "machine-tufted manufacturer",
+      "China",
+      "global companies 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "unverified",
+    "rights": "not-requested"
+  },
+  {
+    "id": "co-welspun-flooring",
+    "type": "company",
+    "title": "Welspun Flooring",
+    "creator": "Welspun group (subsidiary of Welspun India)",
+    "place": "Hyderabad, Telangana",
+    "region": "India",
+    "date": "entity 2016; plant from about 2019",
+    "dateStart": 2016,
+    "sourceUrl": "https://welspunflooring.com/about-us",
+    "institution": "Welspun Flooring",
+    "description": "Welspun Flooring Ltd was formed in March 2016 as a subsidiary of the home-textile maker Welspun India. A Hyderabad plant (Rs 1,100 crore, initially 200 acres) was under construction in 2018 for a 2019 start; it makes carpet tiles, broadloom, artificial grass and click vinyl. The company now calls it a 300-acre, 27 million m²/year plant and \"Asia's largest\".\n\nWhy it matters: India's main entry into industrial machine-tufted carpet, distinct from its handmade (Bhadohi/Jaipur) export trade.\n\nDates: commissioning date not confirmed. \"Asia's largest\" is a company claim.\n\nIndependent sources: https://www.furnituretoday.com/business-news/welspuns-new-focus-flooring-flooring-flooring · https://indiantextilemagazine.in/welspun-flooring-inaugurates-its-state-of-the-art-manufacturing-facility-in-telangana · https://www.acuite.in/documents/ratings/revised/28180-RR-20201110.pdf\n\nResearch note (Oct 2026): facts taken from search-result summaries; the pages themselves weren't opened. Check the cited pages before quoting.",
+    "themes": [
+      "Machine tufting & Dalton",
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "company",
+      "machine-tufted manufacturer",
+      "carpet tiles",
+      "India",
+      "global companies 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "solid",
+    "rights": "not-requested"
+  },
+  {
+    "id": "co-cobble",
+    "type": "company",
+    "title": "Cobble (Cobble Brothers / Singer-Cobble / Vandewiele)",
+    "creator": "Joe C. Cobble and brothers; later Spencer H. Wright",
+    "place": "Chattanooga, Tennessee; Blackburn, England; Dalton, Georgia",
+    "region": "United States",
+    "date": "1930s (Cobble brothers); UK subsidiary 1955",
+    "dateStart": 1930,
+    "sourceUrl": "https://www.cobble.co.uk/en",
+    "institution": "Cobble (Cobble Brothers / Singer-Cobble / Vandewiele)",
+    "description": "Card-Monroe's history says the Cobble brothers began making tufting equipment for chenille bedspreads in the 1930s; Joe Cobble and George Muse's multi-needle patent (see pat-us2335487a) is credited locally as the basis of modern tufting machines. Grace's Guide: Cobble Brothers Machinery opened a British subsidiary in 1955; by 1960 the US parent was taken over by Singer, making Singer-Cobble, which also absorbed British Tufting Machinery of Blackburn. Spencer H. Wright led Cobble for 30+ years (Spencer Wright Industries; died 2010), with plants in Blackburn and Dalton. Vandewiele (Belgium) bought Cobble in 2013.\n\nWhy it matters: the founding machine-maker lineage of tufting, and how it moved from Chattanooga to Britain and then into a Belgian group. Lewis and Roy Card (Tuftco, Card-Monroe) started at Cobble.\n\nDates: Chattanooga location is from Card-Monroe and local history; Grace's Guide does not name the town. 2013 acquisition from Vandewiele's timeline.\n\nOther pages with images: https://vandewiele.com/about-vandewiele-group/history-of-vandewiele · https://bandyheritagecenter.pastperfectonline.com/photo/15D19585-9771-4D81-93B8-316203478586\n\nIndependent sources: https://www.gracesguide.co.uk/Singer-Cobble · https://www.texdata.com/news/Associations/5514.Death-of-tufting-machinery-poineer-Spencer-H--Whright.html · https://www.hmdb.org/m.asp?m=171571\n\nResearch note (Oct 2026): facts taken from search-result summaries; the pages themselves weren't opened. Check the cited pages before quoting.",
+    "themes": [
+      "Tools & equipment",
+      "Machine tufting & Dalton"
+    ],
+    "tags": [
+      "company",
+      "machine maker",
+      "Chattanooga",
+      "Blackburn",
+      "Singer",
+      "global companies 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "solid",
+    "rights": "not-requested"
+  },
+  {
+    "id": "co-tuftco",
+    "type": "company",
+    "title": "Tuftco",
+    "creator": "Card family (Lewis Sr. and Roy Card), per one obituary",
+    "place": "Chattanooga, Tennessee",
+    "region": "United States",
+    "date": "founded 1960 (as Southern Machine Company)",
+    "dateStart": 1960,
+    "sourceUrl": "https://www.tuftco.com/about",
+    "institution": "Tuftco",
+    "description": "Tuftco says its business was founded in 1960 as Southern Machine Company to build and sell tufting machines; it sold abroad (Europe, Asia, South America) in the 1960s and added finishing and yarn-delivery equipment; ownership passed in 1985 to the family on its current board. An obituary of Lewis Card Sr. says he and his brother Roy, after working at Cobble, founded Tuftco \"in the late 1950s\" and later Card-Monroe, and lists Southern Machine among their firms.\n\nWhy it matters: one of the three Chattanooga machine builders (with Cobble and Card-Monroe) whose machines equipped tufting worldwide.\n\nDates: 1960 (company) vs late 1950s (obituary); Card family link not stated by Tuftco itself. Whether Tuftco made hand guns not found.\n\nIndependent sources: https://madeintn.org/node/331 · https://floordaily.net/?p=25974 · https://floortrendsmag.com/articles/101963-in-memory-of-carpet-industry-pioneer-lewis-card-sr\n\nResearch note (Oct 2026): facts taken from search-result summaries; the pages themselves weren't opened. Check the cited pages before quoting.",
+    "themes": [
+      "Tools & equipment",
+      "Machine tufting & Dalton"
+    ],
+    "tags": [
+      "company",
+      "machine maker",
+      "Chattanooga",
+      "global companies 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "solid",
+    "rights": "not-requested"
+  },
+  {
+    "id": "co-card-monroe",
+    "type": "company",
+    "title": "Card-Monroe Corp. (CMC)",
+    "creator": "Charles Monroe and Lewis Card Jr.; joined by Lewis Card Sr. and Roy Card",
+    "place": "Chattanooga, Tennessee",
+    "region": "United States",
+    "date": "founded 1981 (as Charles Monroe Company); Card-Monroe 1983",
+    "dateStart": 1981,
+    "sourceUrl": "https://www.cardmonroe.com/about-us",
+    "institution": "Card-Monroe Corp. (CMC)",
+    "description": "Company history: roots in the Cobble brothers' 1930s bedspread machinery; Roy Card and Lewis Card Sr., the Cobbles' nephews, started at Cobble in the 1940s (an obituary says Lewis joined in 1939). Charles Monroe Company was founded in 1981 by Charles Monroe and Lewis Card Jr.; it became Card-Monroe in 1983 when Lewis and Roy Card invested. Milestones: 300th machine 1987, Command Performance 1989, Infinity 2002, ColorPoint 2009, Tailored Loop 2019, Hollow Needle 2023; says 2,500+ machines in 38 countries. The Card brothers hold 100+ tufting patents; Lewis Sr. died in 2017 aged 96.\n\nWhy it matters: a major current US builder of broadloom tufting machines and the carrier of the Cobble–Card family line (see pat-us2935037a, pat-us2975736a).\n\nDates: 1981 (company, Textile Excellence) agrees; milestone counts are company figures.\n\nOther pages with images: https://www.cardmonroe.com/innovation · https://www.cardmonroe.com/machines\n\nIndependent sources: https://floordaily.net/?p=25974 · https://www.utc.edu/gary-w-rollins-college-of-business/news-and-events/entrepreneurship-hall-of-fame/2010 · https://textileexcellence.com/single-news/5676/card-monroe-corp-the-undisputed-world-leader-in-tufting-technology\n\nResearch note (Oct 2026): facts taken from search-result summaries; the pages themselves weren't opened. Check the cited pages before quoting.",
+    "themes": [
+      "Tools & equipment",
+      "Machine tufting & Dalton"
+    ],
+    "tags": [
+      "company",
+      "machine maker",
+      "Chattanooga",
+      "CMC",
+      "global companies 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "solid",
+    "rights": "not-requested"
+  },
+  {
+    "id": "co-groz-beckert",
+    "type": "company",
+    "title": "Groz-Beckert (tufting needles)",
+    "creator": "Theodor Groz; Ernst Beckert",
+    "place": "Ebingen (Albstadt), Baden-Württemberg",
+    "region": "Germany",
+    "date": "founded 1852; tufting needles from 1998",
+    "dateStart": 1852,
+    "sourceUrl": "https://www.groz-beckert.com/en/company/history/",
+    "institution": "Groz-Beckert (tufting needles)",
+    "description": "Theodor Groz opened a shop with a needle workshop in Ebingen in 1852; Ernst Beckert's needle factory (1871) merged with it in 1937. Until 1980 it made only knitting needles. In 1998 it bought the tufting-needle business (brand \"Eisbär\") of Josef Zimmermann, Aachen, then added tufting knives, loopers and reed fingers via SNF, Schlemper and Schmetz (1998–2004). Now a major supplier of needles and gauge parts for tufting machines.\n\nWhy it matters: Germany's real contribution to tufting machinery is components (see ner-de-no-machines); the Zimmermann/Eisbär line is an older German tufting-needle maker worth tracing.\n\nDates: 1852 and 1998 agree (company, Wikipedia); whether all of Zimmermann or only its tufting division was bought differs.\n\nOther pages with images: https://www.groz-beckert.com/en/products/tufting/\n\nIndependent sources: https://en.wikipedia.org/wiki/Groz-Beckert · https://www.fundinguniverse.com/company-histories/groz-beckert-group-history/\n\nResearch note (Oct 2026): facts taken from search-result summaries; the pages themselves weren't opened. Check the cited pages before quoting.",
+    "themes": [
+      "Tools & equipment"
+    ],
+    "tags": [
+      "company",
+      "machine maker",
+      "needles",
+      "Germany",
+      "global companies 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "solid",
+    "rights": "not-requested"
+  },
+  {
+    "id": "co-obeetee",
+    "type": "company",
+    "title": "Obeetee",
+    "creator": "F. H. Oakley, F. H. Bowden and J. A. L. Taylor",
+    "place": "Mirzapur, Uttar Pradesh",
+    "region": "India",
+    "date": "founded 1920",
+    "dateStart": 1920,
+    "sourceUrl": "https://www.obeetee.in/pages/legacy",
+    "institution": "Obeetee",
+    "description": "Founded in 1920 in Mirzapur by three Britons (the name is their initials, O-B-T); the partnership was dissolved in 1932 and replaced by a company named Obeetee. O'Ganj factory 1955; the company says it was the world's first Woolmark licensee for hand-knotted rugs (dated 1969) and the first handmade-rug firm with SA8000 (2004). Makes hand-knotted and hand-tufted rugs (it describes yarn punched into canvas with a tufting gun, then glued to a backing). Commissions include rugs for the new Parliament (Lok Sabha, Rajya Sabha).\n\nWhy it matters: one of the oldest colonial-era exporters in the Mirzapur–Bhadohi belt (see ner-in-colonial-bhadohi), now also a hand-tufted producer.\n\nDates: 1920 confirmed (Wikipedia, YourStory). When it began hand-tufting not found. Artisan counts vary (10,000–25,000); \"India's largest carpet-maker\" (Wikipedia) is unsourced there.\n\nOther pages with images: https://www.obeetee.in/blogs/know-your-carpet/things-to-know-before-you-buy-a-hand-tufted-rug-from-obeetee · https://obeetee.com/trade/history.aspx\n\nIndependent sources: https://en.wikipedia.org/wiki/Obeetee · https://yourstory.com/smbstory/obeetee-rugs-carpets-brand · https://www.thebetterindia.com/326637/carpet-in-parliament-rashtrapati-bhawan-obeetee-century-old-heirloom-brand-empowers-women/\n\nResearch note (Oct 2026): facts taken from search-result summaries; the pages themselves weren't opened. Check the cited pages before quoting.",
+    "themes": [
+      "Companies & modern tufting",
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "company",
+      "exporter",
+      "hand-knotted",
+      "hand-tufted",
+      "Mirzapur",
+      "India",
+      "global companies 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "solid",
+    "rights": "not-requested"
+  },
+  {
+    "id": "co-hands",
+    "type": "company",
+    "title": "Hands (Hands Carpets / Patodia Exports)",
+    "creator": "A. Tellery (founder); Patodia family (owners from c. 1980)",
+    "place": "Bhadohi, Uttar Pradesh",
+    "region": "India",
+    "date": "founded 1881 (as A. Tellery's business)",
+    "dateStart": 1881,
+    "sourceUrl": "https://handscarpets.com/pages/the-story",
+    "institution": "Hands (Hands Carpets / Patodia Exports)",
+    "description": "Claims descent from the carpet business set up in 1881 by A. Tellery, a European entrepreneur who organised Bhadohi's weavers (Tellery's son Otto later became first president of the All India Carpet Manufacturers Association; see ner-in-colonial-bhadohi). After Independence the business was sold to a Calcutta Marwari house; the Patodia family took control around 1980 and built the Hands brand (Ravi, Apurva and Pranay Patodia). Makes hand-knotted and hand-tufted carpets; credited with a very large carpet for the Grand Mosque in Nur-Sultan (Astana).\n\nWhy it matters: links the colonial founding of Bhadohi's export trade to a present-day hand-tufted exporter.\n\nDates: 1881 consistent across company and design press; Patodia takeover \"1980\" vs \"end of the Raj\". \"World's largest handmade carpet\" is a company/press claim. Continuity from Tellery to Hands is asserted by the company, not independently documented.\n\nIndependent sources: https://www.downtowndesign.com/news/fine-handmade-carpets-since-1881 · https://designandarchitecture.com/article/discovering-hands-144-year-living-legacy-of-craft.html · https://marwar.com/the-flying-carpet.php\n\nResearch note (Oct 2026): facts taken from search-result summaries; the pages themselves weren't opened. Check the cited pages before quoting.",
+    "themes": [
+      "Companies & modern tufting",
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "company",
+      "exporter",
+      "hand-knotted",
+      "hand-tufted",
+      "Bhadohi",
+      "India",
+      "global companies 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "suggestive",
+    "rights": "not-requested"
+  },
+  {
+    "id": "co-kaleen-india",
+    "type": "company",
+    "title": "Kaleen India",
+    "creator": "Radhe Rathi (joined by Monty Rathi, 2000)",
+    "place": "Jaipur / Mumbai (plants in Panipat, Mirzapur, Bikaner)",
+    "region": "India",
+    "date": "founded 1996",
+    "dateStart": 1996,
+    "sourceUrl": "https://www.kaleen.com/about/",
+    "institution": "Kaleen India",
+    "description": "Radhe Rathi left his family's textile export business and in 1996 started trading rugs abroad (reportedly selling from a van in the US), then moved into manufacturing; a US distribution arm, Kaleen Rugs & Broadloom, followed in 1997. With his brother Monty he set up plants in Panipat, Mirzapur and Bikaner, making hand-knotted, hand-tufted, flatweave and power-loom rugs. Group turnover Rs 250 crore (FY20).\n\nWhy it matters: a modern exporter-importer of the Jaipur Living type, spanning the main Indian tufting centres (Panipat and Mirzapur–Bhadohi).\n\nDates: 1996 agreed (YourStory, Domotex); family business start given as early 1980s (company) vs 1966 (Domotex).\n\nIndependent sources: https://yourstory.com/smbstory/jaipur-carpet-manufacturer-kaleen-india-rugs-textiles-industry · https://www.domotex.de/aussteller/kaleen-lifestyle-pvt-ltd/N1532659\n\nResearch note (Oct 2026): facts taken from search-result summaries; the pages themselves weren't opened. Check the cited pages before quoting.",
+    "themes": [
+      "Companies & modern tufting",
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "company",
+      "exporter",
+      "hand-tufted",
+      "Panipat",
+      "India",
+      "global companies 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "solid",
+    "rights": "not-requested"
+  },
+  {
+    "id": "co-surya",
+    "type": "company",
+    "title": "Surya",
+    "creator": "Surya Tiwari (founder); son Satya Tiwari (president from 2004/2006)",
+    "place": "Ugapur, India; Calhoun then Cartersville, Georgia",
+    "region": "India",
+    "date": "founded 1976",
+    "dateStart": 1976,
+    "sourceUrl": "https://www.homeaccentstoday.com/rugs/surya-at-50-honoring-craft-community-and-continued-growth",
+    "institution": "Surya",
+    "description": "Began in 1976 in Ugapur (Bhadohi area) as a small supplier of hand-knotted rugs after a meeting with a Federated Group buyer. Moved into the US (first office 1986 per one account; Calhoun, Georgia, 2001; new Cartersville headquarters 2016). Now a large US supplier of hand-knotted, hand-tufted and flatweave rugs and a multi-brand home company (Global Views, Mitchell Gold + Bob Williams).\n\nWhy it matters: the closest peer to Jaipur Living—an Indian rug supplier that moved its head office to north Georgia, beside the Dalton machine industry.\n\nDates: US office 1986 vs Calhoun 2001; Satya Tiwari presidency 2004 vs 2006. No company history page found in search; sourceUrl is trade press.\n\nIndependent sources: https://www.homeaccentstoday.com/people/portrait-satya-tiwari-surya · https://www.hfndigital.com/industry-news/surya-the-skys-the-limit · https://www.homeaccentstoday.com/industry-news/surya-celebrating-milestone-new-facility-2016\n\nResearch note (Oct 2026): facts taken from search-result summaries; the pages themselves weren't opened. Check the cited pages before quoting.",
+    "themes": [
+      "Companies & modern tufting",
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "company",
+      "exporter",
+      "hand-tufted",
+      "importer",
+      "India",
+      "United States",
+      "global companies 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "solid",
+    "rights": "not-requested"
   }
 ];
