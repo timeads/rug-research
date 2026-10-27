@@ -227,6 +227,11 @@
         <h2 id="edit-title">Add item</h2>
         <button type="button" class="icon-btn" id="btn-x-edit" aria-label="Close"><svg class="ic"><use href="#i-x"/></svg></button>
       </header>
+      <section class="quick" id="quick-add">
+        <label for="quick-text"><strong>Drop in what you found</strong><span>Paste the page link, any image links and the caption or citation, or drop image files here. Fill in reads them into the form below; check it, then save.</span></label>
+        <textarea id="quick-text" rows="4" placeholder="https://depts.washington.edu/silkroad/museums/shm/shmpazyryk.html&#10;Pile carpet. Pazyryk barrow no. 5, 252–238 BCE. Wool. 183 x 200 cm.&#10;Pub.: Rudenko 1953, pp. 351–356"></textarea>
+        <div class="quick-row"><button type="button" class="btn sm primary" id="btn-quick">Fill in the form</button><span id="quick-status" class="quick-status" role="status"></span></div>
+      </section>
       <div class="form-grid">
         <label>Type <select name="type" required></select></label>
         <label>Status
@@ -266,7 +271,9 @@
         <label class="span2">Translation <textarea name="translation" rows="2"></textarea></label>
         <label class="span2">Source link <input name="sourceUrl" type="url" placeholder="https://"><small>The museum or library page. The image lookup reads it to find the photo.</small></label>
         <label class="span2">Image link <input name="image" placeholder="https://… or images/my-photo.jpg"></label>
+        <label class="span2">More images <textarea name="imagesText" rows="3" placeholder="One image link per line. Add a caption after a | if you like."></textarea><small>Shown as a strip of photos under the main image, e.g. details of the same rug.</small></label>
         <label>Image credit <input name="imageCredit" placeholder="Winterthur Museum"></label>
+        <label>Image page <input name="imagePage" type="url" placeholder="https://"><small>Where the image itself is published, if not the source link.</small></label>
         <label>Image permission
           <select name="rights">
             <option value="">Not set</option>

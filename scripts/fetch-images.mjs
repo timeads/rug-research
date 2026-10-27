@@ -20,7 +20,7 @@ const args = process.argv.slice(2);
 const REFRESH = args.includes("--refresh");
 const ONLY = (args[args.indexOf("--only") + 1] || "").split(",").filter(Boolean);
 const UA = "Mozilla/5.0 (compatible; RugResearchImageBot/1.0; +https://github.com/timeads/rug-research)";
-const BAD = /logo|favicon|sprite|placeholder|default[-_]?image|no[-_ ]?image|image[-_ ]?not[-_ ]?available|coming[-_]?soon|blank\.|spacer|icon[-_.]|social[-_]?share|og[-_]default|share[-_]image|\/themes?\/|\/assets\/img/i;
+const BAD = /logo|favicon|sprite|placeholder|default[-_]?image|no[-_ ]?image|image[-_ ]?not[-_ ]?available|coming[-_]?soon|blank\.|spacer|icon[-_.]|social[-_]?share|og[-_]default|share[-_]image|\/themes?\/|\/assets\/img|\bogp\b|og[-_]?banner|banner|menu[-_]image|[-_]hdr\b|header|_site-config|img\.youtube\.com|ytimg\.com|\bmap[-_ (]/i;
 // Stock-photo filenames (Pixabay "macro-2573557_1920", Shutterstock, iStock…) are illustrations, not evidence.
 const STOCK = /(shutterstock|istock|adobestock|gettyimages|pexels|unsplash|pixabay|dreamstime|depositphotos)|[a-z]-\d{6,8}_(640|960|1280|1920)\b/i;
 
@@ -187,6 +187,9 @@ async function coverByTitle(item) {
 }
 // Other pages the record cites: their collection image or og:image.
 async function fromOtherPages(item) {
+  // Another page's picture can illustrate a company, an event or a book, but an object or archive
+  // record must show that object: a similar rug from elsewhere would be misleading.
+  if (!["company", "event", "book", "trade-catalog"].includes(item.type)) return null;
   for (const u of urlsIn(item).filter(u => !skipPage(u)).slice(0, 6)) {
     try {
       const alt = { ...item, sourceUrl: u };

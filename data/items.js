@@ -2602,10 +2602,7 @@ window.RUG_ITEMS = [
     "dateStart": 2008,
     "creator": "日本カーペット工業組合",
     "sourceUrl": "http://www.carpet.or.jp/publics/index/95/detail=1/c_id=524/page524=1",
-    "image": "https://carpet.or.jp/mg/wp-content/uploads/2026/03/ogp.png",
-    "imageCredit": "carpet.or.jp (image from carpet.or.jp)",
-    "imagePage": "https://carpet.or.jp/aboutus/",
-    "imageSource": "auto"
+    "imageSource": "rejected"
   },
   {
     "id": "ner-de-outsiders-1959",
@@ -2657,10 +2654,7 @@ window.RUG_ITEMS = [
     "creator": "Stefan Mecheels, Herbert Vogler, Josef Kurz",
     "identifier": "ISBN 978-3-9812485-3-1",
     "sourceUrl": "https://dewiki.de/Lexikon/Tufting",
-    "image": "https://www.baunetzwissen.de/imgs/4/0/0/0/1/tufting_3-1a00d36f2c9dbae6.jpg",
-    "imageCredit": "baunetzwissen.de (image from baunetzwissen.de)",
-    "imagePage": "https://www.baunetzwissen.de/glossar/t/tufting-teppichboden-49677",
-    "imageSource": "auto"
+    "imageSource": "rejected"
   },
   {
     "id": "ner-de-longlife-refuted",
@@ -2798,10 +2792,7 @@ window.RUG_ITEMS = [
     "collection": "Tuft the World research brief: The Non-English Record",
     "publisher": "Author: 方显廷 (H. D. Fong), Nankai 工业丛刊 no. 1; Wikimedia Commons copy not located",
     "sourceUrl": "https://nkie.nankai.edu.cn/2017/0502/c11716a121465/page.htm",
-    "image": "https://q8.itc.cn/q_70/images03/20250326/aebca72820a14722b26a11ffb3ed4529.jpeg",
-    "imageCredit": "m.sohu.com (image from m.sohu.com)",
-    "imagePage": "https://m.sohu.com/a/875737930_121123801/",
-    "imageSource": "auto"
+    "imageSource": "rejected"
   },
   {
     "id": "ner-chase-sohu-series",
@@ -7413,11 +7404,7 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "solid",
-    "rights": "not-requested",
-    "image": "https://tlmagazine.com/wp-content/uploads/2017/07/12-tomas-libertiny_continuous-linetapestry__margauxnieto1-1015x1024.jpg",
-    "imageCredit": "tlmagazine.com (image from tlmagazine.com)",
-    "imagePage": "https://tlmagazine.com/limited-edition-art-of-the-rug/",
-    "imageSource": "auto"
+    "imageSource": "rejected"
   },
   {
     "id": "co-yamagata-dantsu",
@@ -7604,11 +7591,7 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "suggestive",
-    "rights": "not-requested",
-    "image": "https://georgiaencyclopedia.org/wp-content/uploads/2021/02/carpet_machine_001-1200x630.jpg",
-    "imageCredit": "georgiaencyclopedia.org (image from georgiaencyclopedia.org)",
-    "imagePage": "https://georgiaencyclopedia.org/articles/business-economy/carpet-industry",
-    "imageSource": "auto"
+    "imageSource": "rejected"
   },
   {
     "id": "co-world-carpets",
@@ -7886,11 +7869,7 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "unverified",
-    "rights": "not-requested",
-    "image": "https://www.wirtschaftsforum.de/_assets/9d9b53411ff12ef18caa5118c8180b7a/Images/wifo_og_banner.jpg",
-    "imageCredit": "wirtschaftsforum.de (image from wirtschaftsforum.de)",
-    "imagePage": "https://www.wirtschaftsforum.de/interviews/hamelner-teppichwerke-gmbh-co-kg/auf-dem-teppich-geblieben",
-    "imageSource": "auto"
+    "imageSource": "rejected"
   },
   {
     "id": "co-desso",
@@ -10303,10 +10282,7 @@ window.RUG_ITEMS = [
     "themes": [
       "Woven carpet"
     ],
-    "image": "https://axminsterheritage.org/wp/wp-content/uploads/2015/01/a-turkey-carpet.png",
-    "imageCredit": "axminsterheritage.org (image from axminsterheritage.org)",
-    "imagePage": "https://axminsterheritage.org/the-birth-of-axminster-carpets/",
-    "imageSource": "auto"
+    "imageSource": "rejected"
   },
   {
     "id": "moorfields-moore",
@@ -11435,7 +11411,7 @@ window.RUG_ITEMS = [
       "wool felt",
       "dyed fur"
     ],
-    "description": "What it shows: the earliest firm, well-known group of decorated felts. Britannica (Scythian art) says felt appliqué wall hangings were found at Pazyryk, some with the Great Goddess or part-human beasts and others with geometric or animal motifs. Wikipedia says the best-known figural hangings (an investiture scene and a part-human, part-bird creature) are in the Hermitage. The University of Washington Silk Road page on the Hermitage notes saddlecloths and cushions with appliqué felt, dyed fur and embroidery. A Hermitage curator's tour report also mentions felt swan figures. Felt here is cut and sewn appliqué on felt grounds, not woven. Conflicts: the Hermitage listing dates Barrow 5 to 252–238 BCE, which is later than Rudenko's original dates, and other sources give 5th–4th or 4th–3rd century BCE. An Art Resource image calls the Hermitage 'Horseman' felt a 'carpet detail', but a blog calls it a wall hanging. Sources: https://www.britannica.com/art/Scythian-art · https://en.wikipedia.org/wiki/Pazyryk_culture · https://depts.washington.edu/silkroad/museums/shm/shmpazyryk.html · https://www.artres.com/archive/Horseman--Pazyryk-felt-artifact--Carpet-Detail---5th-4th-century-BC--Artist--Ancient-Altaian--Pazyryk-Burial-Mounds-2UN86IV293G.html\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "description": "What it shows: the earliest firm, well-known group of decorated felts. Britannica (Scythian art) says felt appliqué wall hangings were found at Pazyryk, some with the Great Goddess or part-human beasts and others with geometric or animal motifs. Wikipedia says the best-known figural hangings (an investiture scene and a part-human, part-bird creature) are in the Hermitage. The University of Washington Silk Road page on the Hermitage notes saddlecloths and cushions with appliqué felt, dyed fur and embroidery. A Hermitage curator's tour report also mentions felt swan figures. Felt here is cut and sewn appliqué on felt grounds, not woven. Conflicts: the Hermitage listing dates Barrow 5 to 252–238 BCE, which is later than Rudenko's original dates, and other sources give 5th–4th or 4th–3rd century BCE. An Art Resource image calls the Hermitage 'Horseman' felt a 'carpet detail', but a blog calls it a wall hanging. Sources: https://www.britannica.com/art/Scythian-art · https://en.wikipedia.org/wiki/Pazyryk_culture · https://depts.washington.edu/silkroad/museums/shm/shmpazyryk.html · https://www.artres.com/archive/Horseman--Pazyryk-felt-artifact--Carpet-Detail---5th-4th-century-BC--Artist--Ancient-Altaian--Pazyryk-Burial-Mounds-2UN86IV293G.html\n\nChecked at source (Oct 2026): the University of Washington Silk Road page was read in full. It shows a felt appliqué fragment with a bird (Barrow no. 5, 252–238 BCE; Rudenko 1953, pl. XC) and a drawing of a felt appliqué hanging with a sphinx and a fantastic bird (Inv. 1687/1, preserved piece 110 × 80 cm); those are the two images here. The other sources above are still from search results only.",
     "tags": [
       "process history",
       "felt",
@@ -11447,10 +11423,21 @@ window.RUG_ITEMS = [
     "themes": [
       "Rug-making techniques"
     ],
-    "imageSource": "auto",
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Map_Asia_physical_%28continental%29.png/330px-Map_Asia_physical_%28continental%29.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
-    "imageCredit": "en.wikipedia.org (image from en.wikipedia.org)",
-    "imagePage": "https://en.wikipedia.org/wiki/Pazyryk_culture"
+    "imageSource": "manual",
+    "image": "https://depts.washington.edu/silkroad/museums/shm/hermitagepazyryk6a.jpg",
+    "imageCredit": "Silk Road Seattle, University of Washington (photographs of objects in the State Hermitage Museum)",
+    "imagePage": "https://depts.washington.edu/silkroad/museums/shm/shmpazyryk.html",
+    "rights": "not-requested",
+    "images": [
+      {
+        "src": "https://depts.washington.edu/silkroad/museums/shm/hermitagepazyryk6a.jpg",
+        "caption": "Fragment of appliqué decoration for a carpet or wall hanging, depicting a bird. Barrow no. 5, 252–238 BCE. Felt. Rudenko 1953, pl. XC"
+      },
+      {
+        "src": "https://depts.washington.edu/silkroad/museums/shm/hermitagepazyryk7a.jpg",
+        "caption": "Drawing of felt appliqué decoration for a carpet or wall hanging: sphinx (\"stag-demon\") and fantastic bird. Barrow no. 5, excavated 1949; preserved piece 110 × 80 cm; Inv. 1687/1"
+      }
+    ]
   },
   {
     "id": "process-felt-shyrdak",
@@ -11485,10 +11472,7 @@ window.RUG_ITEMS = [
     "themes": [
       "Rug-making techniques"
     ],
-    "imageSource": "auto",
-    "image": "https://img.youtube.com/vi/mO2VxDmy4y4/0.jpg",
-    "imageCredit": "ich.unesco.org (image from ich.unesco.org)",
-    "imagePage": "https://ich.unesco.org/en/RL/ala-kiyiz-and-shyrdak-art-of-kyrgyz-traditional-felt-carpets-00693"
+    "imageSource": "rejected"
   },
   {
     "id": "process-felt-turkmen-cooperhewitt",
@@ -11586,10 +11570,7 @@ window.RUG_ITEMS = [
     "themes": [
       "Rug-making techniques"
     ],
-    "imageSource": "auto",
-    "image": "https://archive.artic.edu/divineart/images/Divine_Arts_hdr.jpg",
-    "imageCredit": "archive.artic.edu (image from archive.artic.edu)",
-    "imagePage": "https://archive.artic.edu/divineart/weavingstruc"
+    "imageSource": "rejected"
   },
   {
     "id": "process-flatweave-soumak-tm",
@@ -11623,10 +11604,7 @@ window.RUG_ITEMS = [
     "themes": [
       "Rug-making techniques"
     ],
-    "imageSource": "auto",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/7/76/Borchaliu_Soumak_Mafrash.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail_unscaled",
-    "imageCredit": "en.wikipedia.org (image from en.wikipedia.org)",
-    "imagePage": "https://en.wikipedia.org/wiki/Soumak"
+    "imageSource": "rejected"
   },
   {
     "id": "process-flatweave-navajo",
@@ -11783,12 +11761,12 @@ window.RUG_ITEMS = [
     "materials": [
       "wool"
     ],
-    "description": "How hand-knotting works: on a warped loom, the weaver ties short lengths of yarn around warp pairs, one row at a time. Each row is cut to height and locked with one or more ground wefts, and the knot ends form the pile (Wikipedia, 'Knotted-pile carpet'). What it shows: the earliest firm evidence of knotted pile. It is all wool with symmetric (Turkish/Ghiordes) knots. The field has a cross-like motif and the borders have deer and mounted horsemen. It is about 1.83 × 1.98 m (Schürmann 1982, from a Hermitage viewing). It was found in 1949 in Barrow 5, frozen in ice after looters left the tomb open. Conflicts: (1) Date: radiocarbon gives 5th–4th century BCE or 2,400–2,500 years old (Guinness; Wikipedia). The Hermitage listing dates Barrow 5 to 252–238 BCE, and other accounts put the main barrows in the 4th–3rd century BCE. A 2019 Hali article suggests even earlier pile weaving may exist. (2) Knot density varies by source: about 3,600 per dm² or 360,000 per m² (232 per in²), 250 per in², 278 per in². (3) Origin: Achaemenid Persian, 'Armenia or Persia' (Guinness), or unknown. Sources: https://guinnessworldrecords.com/world-records/652074-oldest-carpet · https://en.wikipedia.org/wiki/Pazyryk_burials · https://depts.washington.edu/silkroad/museums/shm/shmpazyryk.html · https://ia800204.us.archive.org/26/items/ThePazyrykItsUseAndOrigin/Schurmann_1982_Pazyryk.pdf\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "description": "How hand-knotting works: on a warped loom, the weaver ties short lengths of yarn around warp pairs, one row at a time. Each row is cut to height and locked with one or more ground wefts, and the knot ends form the pile (Wikipedia, 'Knotted-pile carpet'). What it shows: the earliest firm evidence of knotted pile. It is all wool with symmetric (Turkish/Ghiordes) knots. The field has a cross-like motif and the borders have deer and mounted horsemen. It is about 1.83 × 1.98 m (Schürmann 1982, from a Hermitage viewing). It was found in 1949 in Barrow 5, frozen in ice after looters left the tomb open. Conflicts: (1) Date: radiocarbon gives 5th–4th century BCE or 2,400–2,500 years old (Guinness; Wikipedia). The Hermitage listing dates Barrow 5 to 252–238 BCE, and other accounts put the main barrows in the 4th–3rd century BCE. A 2019 Hali article suggests even earlier pile weaving may exist. (2) Knot density varies by source: about 3,600 per dm² or 360,000 per m² (232 per in²), 250 per in², 278 per in². (3) Origin: Achaemenid Persian, 'Armenia or Persia' (Guinness), or unknown. Sources: https://guinnessworldrecords.com/world-records/652074-oldest-carpet · https://en.wikipedia.org/wiki/Pazyryk_burials · https://depts.washington.edu/silkroad/museums/shm/shmpazyryk.html · https://ia800204.us.archive.org/26/items/ThePazyrykItsUseAndOrigin/Schurmann_1982_Pazyryk.pdf\n\nChecked at source (Oct 2026): the University of Washington Silk Road page on the Hermitage was read in full. Its caption: \"Pile carpet. Pazyryk barrow no. 5, 252-238 BCE. Wool. 183 x 200 cm.\", with the publications listed in the citation. The eight photographs here are from that page. Its link to the Hermitage (http://www.hermitagemuseum.org/html_En/03/hm3_2_7d.html) is on the museum's old website and no longer exists; the Internet Archive may hold a copy: https://web.archive.org/web/2*/http://www.hermitagemuseum.org/html_En/03/hm3_2_7d.html. The other sources above are still from search results only.",
     "tags": [
       "process history",
       "knotting",
       "Pazyryk",
-      "checked from search results"
+      "checked at source 2026"
     ],
     "confidence": "solid",
     "themes": [
@@ -11796,10 +11774,39 @@ window.RUG_ITEMS = [
       "Woven carpet"
     ],
     "status": "unverified",
-    "imageSource": "auto",
-    "image": "https://www.guinnessworldrecords.com/_site-config/images/latest-news-menu-image.jpg",
-    "imageCredit": "guinnessworldrecords.com (image from guinnessworldrecords.com)",
-    "imagePage": "https://guinnessworldrecords.com/world-records/652074-oldest-carpet"
+    "imageSource": "manual",
+    "image": "https://depts.washington.edu/silkroad/museums/shm/hermitagepazyryk15a.jpg",
+    "imageCredit": "Silk Road Seattle, University of Washington (photographs of the carpet in the State Hermitage Museum)",
+    "imagePage": "https://depts.washington.edu/silkroad/museums/shm/shmpazyryk.html",
+    "rights": "not-requested",
+    "dimensions": "183 × 200 cm (University of Washington caption)",
+    "citation": "Rudenko 1953, pp. 351–356, pl. CXV–CXVI; Rudenko 1968, ch. 2; Rudenko 1970, pp. 298–304, pl. 174–175; Opie, Tribal Rugs, ch. 3 (publications listed in the University of Washington Silk Road caption).",
+    "images": [
+      {
+        "src": "https://depts.washington.edu/silkroad/museums/shm/hermitagepazyryk15a.jpg"
+      },
+      {
+        "src": "https://depts.washington.edu/silkroad/museums/shm/hermitagepazyryk16a.jpg"
+      },
+      {
+        "src": "https://depts.washington.edu/silkroad/museums/shm/shm06221.jpg"
+      },
+      {
+        "src": "https://depts.washington.edu/silkroad/museums/shm/hermitagepazyryk17a.jpg"
+      },
+      {
+        "src": "https://depts.washington.edu/silkroad/museums/shm/hermitagepazyryk21a.jpg"
+      },
+      {
+        "src": "https://depts.washington.edu/silkroad/museums/shm/shm06222.jpg"
+      },
+      {
+        "src": "https://depts.washington.edu/silkroad/museums/shm/hermitagepazyryk20a.jpg"
+      },
+      {
+        "src": "https://depts.washington.edu/silkroad/museums/shm/hermitagepazyryk19a.jpg"
+      }
+    ]
   },
   {
     "id": "process-knotted-knot-types",
@@ -11866,10 +11873,7 @@ window.RUG_ITEMS = [
       "Woven carpet"
     ],
     "status": "unverified",
-    "imageSource": "auto",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Noeud_turc.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail_unscaled",
-    "imageCredit": "en.wikipedia.org (image from en.wikipedia.org)",
-    "imagePage": "https://en.wikipedia.org/wiki/Knotted-pile_carpet"
+    "imageSource": "rejected"
   },
   {
     "id": "process-knotted-tibetan",
@@ -12287,10 +12291,7 @@ window.RUG_ITEMS = [
       "Hooked & handmade rugs"
     ],
     "status": "unverified",
-    "imageSource": "auto",
-    "image": "https://www.capelrugs.com/cdn/shop/files/0210-910-Xb.jpg?v=1621535235&width=300",
-    "imageCredit": "capelrugs.com (image from capelrugs.com)",
-    "imagePage": "https://capelrugs.com/pages/braided-info"
+    "imageSource": "rejected"
   },
   {
     "id": "process-rag-woven-shaker",
@@ -12327,10 +12328,7 @@ window.RUG_ITEMS = [
       "Hooked & handmade rugs"
     ],
     "status": "unverified",
-    "imageSource": "auto",
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Swedish-carpet-Fjetterstrom-by-doris-leslie-blau.jpg/960px-Swedish-carpet-Fjetterstrom-by-doris-leslie-blau.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
-    "imageCredit": "en.wikipedia.org (image from en.wikipedia.org)",
-    "imagePage": "https://en.wikipedia.org/wiki/Swedish_carpets_and_rugs"
+    "imageSource": "rejected"
   },
   {
     "id": "process-crochet-knit-afam",

@@ -510,7 +510,7 @@
         <h2 id="drawer-title">${esc(it.title)}</h2>
         <p class="sub">${esc(metaLine(it))}</p>
         <div class="btn-row">
-          ${it.sourceUrl && safeUrl(it.sourceUrl) ? `<a class="btn primary" href="${esc(safeUrl(it.sourceUrl))}" target="_blank" rel="noopener">View at source${icon("external")}</a>` : ""}
+          ${it.sourceUrl && safeUrl(it.sourceUrl) ? `<a class="btn primary" href="${esc(safeUrl(it.sourceUrl))}" target="_blank" rel="noopener">View at source${icon("external")}</a><a class="btn" href="https://web.archive.org/web/2*/${esc(safeUrl(it.sourceUrl))}" target="_blank" rel="noopener" title="If the source link is broken, the Internet Archive may have saved copies">Archived copies${icon("external")}</a>` : ""}
           <button class="btn" id="copy-cite">${icon("copy")}Copy citation</button>
         </div>
         ${it.originalText ? `<figure class="quote"><blockquote lang="${esc(it.language || "")}">${esc(it.originalText)}</blockquote>${it.translation ? `<figcaption>${esc(it.translation)}</figcaption>` : ""}</figure>` : it.translation ? `<p class="desc">${esc(it.translation)}</p>` : ""}
@@ -614,6 +614,8 @@
       el.value = Array.isArray(v) ? v.join(", ") : (v ?? "");
     }
     form.elements.imageFile.value = "";
+    form.elements.imagesText.value = (Array.isArray(it.images) ? it.images : []).filter(g => g && g.src && g.src !== it.image).map(g => g.src + (g.caption ? " | " + g.caption : "")).join("\n");
+    $("#quick-add").hidden = !!id; $("#quick-text").value = preset._drop || ""; $("#quick-status").textContent = "";
     if (it.image && it.image.startsWith("idb:")) form.elements.image.value = it.image;
     if (it._borrowed) { form.elements.image.value = ""; if (form.elements.imageCredit) form.elements.imageCredit.value = ""; } // a related record's image isn't this record's own
     $("#btn-delete-item").hidden = !id;
@@ -621,14 +623,21 @@
     $("#dl-region").innerHTML = [...new Set(ITEMS.map(x => x.region).filter(Boolean))].map(v => `<option value="${esc(v)}">`).join("");
     $("#dl-themes").innerHTML = [...new Set([...DEFAULT_THEMES, ...ITEMS.flatMap(x => x.themes)])].map(v => `<option value="${esc(v)}">`).join("");
     dlg.showModal();
+    if (preset._drop || preset._files) quickFill(preset._files || []);
   };
   form.addEventListener("submit", async e => {
     e.preventDefault();
     const fd = new FormData(form);
     const id = editingId || uid();
     const prev = editingId ? BY_ID[editingId] : {};
+    // Keep what the form doesn't show (e.g. imageSource, language notes), so editing never drops it.
+    const shown = new Set([...form.elements].map(el => el.name).filter(Boolean));
     const rec = { id };
-    for (const [k, v] of fd.entries()) if (k !== "imageFile") rec[k] = typeof v === "string" ? v.trim() : v;
+    for (const [k, v] of Object.entries(prev || {})) if (!k.startsWith("_") && !shown.has(k) && k !== "images") rec[k] = v;
+    for (const [k, v] of fd.entries()) if (k !== "imageFile" && k !== "imagesText") rec[k] = typeof v === "string" ? v.trim() : v;
+    const more = String(fd.get("imagesText") || "").split("\n").map(l => l.trim()).filter(Boolean).map(l => { const [src, ...c] = l.split("|"); return { src: src.trim(), caption: c.join("|").trim() }; }).filter(g => safeUrl(g.src));
+    if (more.length && !rec.image) rec.image = more.shift().src;
+    if (more.length) rec.images = [{ src: rec.image, caption: "" }, ...more].map(g => g.caption ? g : { src: g.src });
     for (const k of ["materials", "techniques", "themes", "tags"]) rec[k] = arr(rec[k]);
     for (const k of ["dateStart", "dateEnd"]) rec[k] = rec[k] === "" ? null : Number(rec[k]);
     if (rec.dateStart == null && rec.date) { const m = String(rec.date).match(/\b(1[0-9]{3}|20[0-9]{2})\b/g); if (m) { rec.dateStart = +m[0]; if (m[1]) rec.dateEnd = +m[1]; } }
@@ -661,6 +670,140 @@
     for (const l of S.lists) l.items = l.items.filter(x => x !== id);
     save(); dlg.close(); closeDrawer(); refresh(); toast("Deleted");
   };
+
+  // ---------- drop in what you found ----------
+  // Reads pasted links and caption text (and dropped image files) into the Add form. Pages from
+  // collections with open APIs fill in from the API; anything else is read from the pasted text.
+  // [page host, institution, words in a caption that name it]
+  const HOSTS = [
+    [/hermitagemuseum\.org/, "State Hermitage Museum, St Petersburg", /hermitage/i], [/metmuseum\.org/, "The Metropolitan Museum of Art", /metropolitan museum/i],
+    [/vam\.ac\.uk/, "Victoria and Albert Museum", /victoria and albert|\bV&A\b/i], [/artic\.edu/, "Art Institute of Chicago", /art institute of chicago/i],
+    [/clevelandart\.org/, "Cleveland Museum of Art", /cleveland museum/i], [/winterthur\.org/, "Winterthur Museum, Garden & Library", /winterthur/i],
+    [/si\.edu/, "Smithsonian Institution", /smithsonian/i], [/hagley\.org/, "Hagley Museum and Library", /hagley/i],
+    [/britishmuseum\.org/, "British Museum", /british museum/i], [/mfa\.org/, "Museum of Fine Arts, Boston", /museum of fine arts, boston/i],
+    [/lacma\.org/, "Los Angeles County Museum of Art", /lacma|los angeles county museum/i], [/bandyheritagecenter/, "Bandy Heritage Center, Dalton State College", /bandy heritage/i],
+    [/thehenryford\.org/, "The Henry Ford", /henry ford museum/i], [/cooperhewitt\.org/, "Cooper Hewitt, Smithsonian Design Museum", /cooper hewitt/i]
+  ];
+  const MATERIALS = ["wool", "silk", "cotton", "linen", "jute", "burlap", "hessian", "hemp", "felt", "nylon", "rayon", "polyester", "polypropylene", "acrylic", "chenille", "goat hair", "camel hair", "horsehair", "mohair", "worsted", "flax", "paper", "leather"];
+  const parseDrop = text => {
+    const urls = [...new Set(text.match(/https?:\/\/[^\s<>"'()\[\]]+[^\s<>"'()\[\].,;]/g) || [])];
+    const isImg = u => /\.(jpe?g|png|gif|webp|tiff?|avif)([?#]|$)/i.test(u) || /\/iiif\/|\/full\/[^/]+\/0\/default|upload\.wikimedia\.org|\/services\/img\//i.test(u);
+    const images = urls.filter(isImg), pages = urls.filter(u => !isImg(u));
+    const rest = urls.reduce((t, u) => t.split(u).join(" "), text).split("\n").map(l => l.replace(/\s+/g, " ").trim()).filter(Boolean);
+    const all = rest.join(" ");
+    // Dates and sizes come from the caption, not from the publications listed after it.
+    const pub = all.match(/\b(?:Pub\.|Published|Publication|Literature|Bibliography|References?)\s*:\s*(.+)$/i);
+    const body = pub ? all.slice(0, pub.index) : all;
+    const r = { images, pages };
+    if (rest.length) r.title = rest[0].replace(/[.;:]\s*$/, "").slice(0, 160);
+    const bce = body.match(/(?:c\.|ca\.|circa)?\s*(\d{1,5})(?:\s*(?:BCE|BC))?\s*[-–—]\s*(\d{1,5})\s*(BCE|BC|B\.C\.)/i) || body.match(/(?:c\.|ca\.|circa)?\s*(\d{1,5})\s*(BCE|BC|B\.C\.)/i);
+    if (bce) { r.date = bce[0].trim(); r.dateStart = -Number(bce[1]); r.dateEnd = bce[3] ? -Number(bce[2]) : null; }
+    else {
+      const ce = body.match(/(?:\b(?:c\.|ca\.|circa)\s*)?\b(1[0-9]{3}|20[0-2][0-9])s?(?:\s*[-–—]\s*(1[0-9]{3}|20[0-2][0-9]|[0-9]{2}))?\b/);
+      if (ce) { r.date = ce[0].trim(); r.dateStart = +ce[1]; if (ce[2]) r.dateEnd = ce[2].length === 2 ? +(ce[1].slice(0, 2) + ce[2]) : +ce[2]; }
+    }
+    const dim = body.match(/\d+(?:[.,]\d+)?\s*(?:cm|mm|m|in\.?|inches|ft)?\s*[x×]\s*\d+(?:[.,]\d+)?\s*(?:cm|mm|m|in\.?|inches|ft)\b\.?/i);
+    if (dim) r.dimensions = dim[0].replace(/\.$/, "");
+    r.materials = MATERIALS.filter(m => new RegExp(`\\b${m}\\b`, "i").test(body));
+    if (pub) r.citation = pub[1].trim();
+    r.description = body.trim();
+    // The institution named in the text (where the object is) beats the host of the page it was found on.
+    const named = HOSTS.find(([, , words]) => words.test(all)), host = HOSTS.find(([re]) => pages.some(u => re.test(u)));
+    if (named || host) r.institution = (named || host)[1];
+    return r;
+  };
+  // Collections whose object pages can be read straight from the browser.
+  const fromApi = async url => {
+    let m;
+    if ((m = url.match(/metmuseum\.org\/art\/collection\/search\/(\d+)/))) {
+      const o = await (await fetch(`https://collectionapi.metmuseum.org/public/collection/v1/objects/${m[1]}`)).json();
+      return { type: "object", title: o.title || o.objectName, creator: o.artistDisplayName || o.culture || "", date: o.objectDate, dateStart: o.objectBeginDate ?? null, dateEnd: o.objectEndDate ?? null, place: [o.city, o.state, o.country].filter(Boolean).join(", "), institution: "The Metropolitan Museum of Art", collection: o.department, identifier: o.accessionNumber, materials: o.medium, dimensions: o.dimensions, image: o.primaryImage || o.primaryImageSmall, more: o.additionalImages || [], imageCredit: "The Metropolitan Museum of Art", status: "verified" };
+    }
+    if ((m = url.match(/artic\.edu\/artworks\/(\d+)/))) {
+      const { data: o, config } = await (await fetch(`https://api.artic.edu/api/v1/artworks/${m[1]}?fields=id,title,artist_display,date_display,date_start,date_end,medium_display,image_id,place_of_origin,main_reference_number,dimensions,credit_line`)).json();
+      return { type: "object", title: o.title, creator: o.artist_display, date: o.date_display, dateStart: o.date_start, dateEnd: o.date_end, place: o.place_of_origin, institution: "Art Institute of Chicago", identifier: o.main_reference_number, materials: o.medium_display, dimensions: o.dimensions, image: o.image_id ? `${config.iiif_url}/${o.image_id}/full/843,/0/default.jpg` : "", imageCredit: "Art Institute of Chicago", status: "verified" };
+    }
+    if ((m = url.match(/archive\.org\/details\/([^/?#]+)/))) {
+      const { metadata: d = {} } = await (await fetch(`https://archive.org/metadata/${m[1]}`)).json();
+      const one = v => Array.isArray(v) ? v[0] : v || "";
+      return { type: d.mediatype === "texts" ? "book" : "other", title: one(d.title), creator: one(d.creator), date: one(d.date), publisher: one(d.publisher), institution: "Internet Archive", collection: one(d.contributor), identifier: m[1], description: one(d.description).replace(/<[^>]+>/g, " ").slice(0, 600), image: `https://archive.org/services/img/${m[1]}` };
+    }
+    if ((m = url.match(/museumcollection\.winterthur\.org\/object\/(\d+)/))) {
+      const idx = await winterthurIndex(), row = idx.rows.find(r => r[0] === m[1]);
+      if (row) return winterthurRecord(row, idx);
+    }
+    if ((m = url.match(/digitalcollections\.winterthur\.org\/Documents\/Detail\/([^/\s]+)\/(\d+)/i))) {
+      const idx = await loadIndex("winterthur-library-index.json"), row = idx.rows.find(r => r[0] === m[2]);
+      if (row) return libraryRecord(row, idx);
+    }
+    return null;
+  };
+  const quickFill = async (files = []) => {
+    const text = $("#quick-text").value, st = $("#quick-status"), el = form.elements;
+    if (!text.trim() && !files.length) { st.textContent = "Paste a link or some text first."; return; }
+    const d = parseDrop(text);
+    const notes = [];
+    let api = null;
+    if (d.pages[0]) { st.textContent = "Reading the page details…"; try { api = await fromApi(d.pages[0]); } catch {} }
+    const set = (k, v, force) => { if (v == null || v === "" || (Array.isArray(v) && !v.length) || !el[k]) return; if (force || !el[k].value) el[k].value = Array.isArray(v) ? v.join(", ") : v; };
+    if (api) {
+      for (const k of ["type", "title", "creator", "date", "dateStart", "dateEnd", "place", "institution", "collection", "identifier", "materials", "dimensions", "publisher", "description", "image", "imageCredit", "status"]) set(k, api[k], true);
+      if (api.more?.length) d.images.push(...api.more);
+      notes.push("Filled in from the collection's own data");
+    }
+    set("sourceUrl", d.pages[0]);
+    for (const k of ["title", "date", "dateStart", "dateEnd", "dimensions", "materials", "institution", "citation", "description"]) set(k, d[k]);
+    if (d.pages.length > 1) set("description", [el.description.value, "See also: " + d.pages.slice(1).join(" ")].filter(Boolean).join("\n"), true);
+    if (/\b(rug|carpet|bedspread|coverlet|textile|mat|runner|sample)\b/i.test(d.title || "") && !api) el.type.value = "object";
+    const imgs = d.images.filter(u => u !== el.image.value);
+    if (imgs.length && !el.image.value) el.image.value = imgs.shift();
+    if (imgs.length) el.imagesText.value = [el.imagesText.value, ...imgs].filter(Boolean).join("\n");
+    // Credit the site the photos came from: an institution's own page, or else the website's address.
+    if (el.image.value && !el.imageCredit.value) {
+      const from = d.pages[0] || el.image.value, known = HOSTS.find(([re]) => re.test(from));
+      try { el.imageCredit.value = known ? known[1] : new URL(from).hostname.replace(/^www\./, ""); } catch {}
+    }
+    if (el.image.value && !el.imagePage.value && d.pages[0] && !api) el.imagePage.value = d.pages[0];
+    if (el.image.value && !el.rights.value) el.rights.value = "not-requested";
+    if (files.length) {
+      const dt = new DataTransfer(); dt.items.add(files[0]); el.imageFile.files = dt.files;
+      notes.push(files.length > 1 ? `Attached the first photo; add the other ${files.length - 1} after saving` : "Attached your photo");
+    }
+    const n = 1 + (el.imagesText.value ? el.imagesText.value.split("\n").filter(Boolean).length : 0);
+    if (el.image.value) notes.push(n > 1 ? `${n} images` : "1 image");
+    if (d.dateStart != null && !api) notes.push(`date read as ${fmtYear(d.dateStart)}${d.dateEnd != null ? "–" + fmtYear(d.dateEnd) : ""}`);
+    st.textContent = (notes.length ? notes.join("; ") + ". " : "") + "Check the fields, then save.";
+    el.title.focus();
+  };
+  $("#btn-quick").onclick = () => quickFill();
+  // Image files dropped on the panel attach to the form.
+  const quick = $("#quick-add");
+  quick.addEventListener("dragover", e => { e.preventDefault(); quick.classList.add("over"); });
+  quick.addEventListener("dragleave", () => quick.classList.remove("over"));
+  quick.addEventListener("drop", e => {
+    e.preventDefault(); e.stopPropagation(); quick.classList.remove("over");
+    const files = [...e.dataTransfer.files].filter(f => f.type.startsWith("image/"));
+    const t = e.dataTransfer.getData("text/uri-list") || e.dataTransfer.getData("text/plain");
+    if (t) $("#quick-text").value = [$("#quick-text").value, t].filter(Boolean).join("\n");
+    quickFill(files);
+  });
+  // Anywhere else on the site: paste a link or drop files/links to start a new record with them.
+  const editable = el => el && el.closest && el.closest("input, textarea, select, [contenteditable='true'], dialog[open]");
+  document.addEventListener("paste", e => {
+    if (editable(e.target) || dlg.open) return;
+    const files = [...e.clipboardData.files].filter(f => f.type.startsWith("image/"));
+    const t = e.clipboardData.getData("text/plain");
+    if (!files.length && !/https?:\/\//.test(t)) return;
+    e.preventDefault(); openEdit(null, { _drop: t, _files: files });
+  });
+  document.addEventListener("dragover", e => { if (!dlg.open && [...e.dataTransfer.types].some(t => t === "Files" || t === "text/uri-list")) e.preventDefault(); });
+  document.addEventListener("drop", e => {
+    if (dlg.open || editable(e.target)) return;
+    const files = [...e.dataTransfer.files].filter(f => f.type.startsWith("image/"));
+    const t = e.dataTransfer.getData("text/uri-list") || e.dataTransfer.getData("text/plain");
+    if (!files.length && !t) return;
+    e.preventDefault(); openEdit(null, { _drop: t, _files: files });
+  });
 
   // ---------- compile ----------
   // The tab badge counts the active list (e.g. the fellowship list), not chapter evidence.
