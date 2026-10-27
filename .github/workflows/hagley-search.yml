@@ -1,0 +1,42 @@
+name: Hagley search
+
+# Searches the Hagley Digital Archives and saves the results to
+# research/hagley/search-results.json for review before anything enters the database.
+on:
+  workflow_dispatch:
+    inputs:
+      terms:
+        description: 'Search terms, each in double quotes, e.g. "nylon carpet" "Antron"'
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-commits
+  cancel-in-progress: false
+
+jobs:
+  search:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Search Hagley
+        env:
+          TERMS: ${{ inputs.terms }}
+        run: printf "%s" "$TERMS" | xargs node scripts/hagley-search.mjs
+      - name: Commit results
+        run: |
+          git add research/hagley
+          if git diff --cached --quiet; then echo "Nothing new."; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Save Hagley Digital Archives search results"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
