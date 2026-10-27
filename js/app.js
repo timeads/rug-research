@@ -821,8 +821,21 @@
 
   // ---------- discover (open APIs) ----------
   let discoverResults = [];
-  let WT_INDEX = null;
-  const winterthurIndex = () => WT_INDEX || (WT_INDEX = fetch("data/winterthur-index.json").then(r => { if (!r.ok) throw new Error("Winterthur index not built yet"); return r.json(); }).catch(e => { WT_INDEX = null; throw e; }));
+  const INDEXES = {};
+  const loadIndex = file => INDEXES[file] || (INDEXES[file] = fetch("data/" + file).then(r => { if (!r.ok) throw new Error(file + " not built yet"); return r.json(); }).catch(e => { delete INDEXES[file]; throw e; }));
+  const winterthurIndex = () => loadIndex("winterthur-index.json");
+  // Rows: [id, slug, title, date, creator, collection, image, detailRead, keywordHit, description]
+  const libraryRecord = (row, idx) => {
+    const [id, slug, title, date, creator, collection, image, , , description] = row;
+    const y = (String(date).match(/\b(1[5-9]\d\d|20\d\d)\b/g) || []).map(Number);
+    const type = /catalog|catalogue|price list|pattern book|sample book/i.test(title + " " + collection) ? "trade-catalog" : /photograph|postcard|print|drawing|design/i.test(title + " " + collection) ? "image" : "archive";
+    return {
+      id: "wlib-" + id, type, title, creator: creator || "", date: date || "", dateStart: y.length ? Math.min(...y) : null, dateEnd: y.length ? Math.max(...y) : null,
+      institution: "Winterthur Library", collection: collection || "Winterthur Library digital collections", description: description || "",
+      image: image || "", imageCredit: image ? "Winterthur Library" : "", sourceUrl: idx.page.replace("{slug}", slug).replace("{id}", id),
+      status: "verified", tags: ["via Winterthur library index"]
+    };
+  };
   const winterthurRecord = (row, idx) => {
     const [irn, title, name, num, cat, creator, d1, d2, img] = row;
     const date = d1 == null ? "" : d2 != null && d2 !== d1 ? `${d1}–${d2}` : String(d1);
@@ -876,6 +889,17 @@
         hits.push([inTitle * 3 + row[9] * 2 + row[8] * 2, row]);
       }
       return hits.sort((a, b) => b[0] - a[0]).slice(0, 48).map(([, r]) => winterthurRecord(r, idx));
+    },
+    async winterthurLib(q) {
+      const idx = await loadIndex("winterthur-library-index.json");
+      const terms = q.toLowerCase().split(/\s+/).filter(Boolean);
+      const hits = [];
+      for (const row of idx.rows) {
+        const hay = (row[2] + " " + row[1] + " " + row[4] + " " + row[5] + " " + row[9]).toLowerCase().replace(/-/g, " ");
+        if (!terms.every(t => hay.includes(t))) continue;
+        hits.push([(row[6] ? 3 : 0) + row[7] + row[8] * 2, row]);
+      }
+      return hits.sort((a, b) => b[0] - a[0]).slice(0, 48).map(([, r]) => libraryRecord(r, idx));
     },
     async vam(q) {
       const r = await (await fetch(`https://api.vam.ac.uk/v2/objects/search?q=${encodeURIComponent(q)}&page_size=24&images_exist=1`)).json();
@@ -956,7 +980,7 @@
     }
   };
   const LIVE = [
-    ["winterthur", "Winterthur Museum"], ["met", "The Met"], ["vam", "V&A"], ["aic", "Art Institute of Chicago"], ["cleveland", "Cleveland Museum of Art"],
+    ["winterthur", "Winterthur Museum"], ["winterthurLib", "Winterthur Library digital collections"], ["met", "The Met"], ["vam", "V&A"], ["aic", "Art Institute of Chicago"], ["cleveland", "Cleveland Museum of Art"],
     ["smithsonian", "Smithsonian"], ["europeana", "Europeana (European museums)"], ["archive", "Internet Archive"],
     ["winterthurIA", "Winterthur trade catalogs (Internet Archive)"], ["commons", "Wikimedia Commons"], ["openlibrary", "Open Library (books)"]
   ];
@@ -1008,7 +1032,7 @@
         // One retry per collection: a busy API often answers the second time.
         const tryTwice = k => DISCOVER[k](q).catch(() => new Promise(r => setTimeout(r, 800)).then(() => DISCOVER[k](q)));
         const runs = await Promise.allSettled(LIVE.map(([k]) => tryTwice(k)));
-        const ok = runs.map((r, i) => [LIVE[i][1], r.status === "fulfilled" ? r.value.filter(x => x.image || x.type === "book") : null]);
+        const ok = runs.map((r, i) => [LIVE[i][1], r.status === "fulfilled" ? r.value.filter(x => x.image || x.type === "book" || x.id.startsWith("wlib-")) : null]);
         const lists = ok.filter(([, v]) => v && v.length).map(([, v]) => v);
         const failed = ok.filter(([, v]) => !v).map(([n]) => n);
         discoverResults = interleave(lists);
@@ -1017,15 +1041,15 @@
       } else {
         discoverResults = await DISCOVER[src](q).catch(() => new Promise(r => setTimeout(r, 800)).then(() => DISCOVER[src](q)));
         status.textContent = discoverResults.length ? `${discoverResults.length} results. Add the ones you want to keep.` : `No results for “${q}”. Try a broader word, another collection, or the archive links below.`;
-        if (src === "winterthur") {
-          const idx = await winterthurIndex();
-          status.textContent += ` Searched ${idx.count.toLocaleString()} Winterthur objects (copy saved ${new Date(idx.builtAt).toLocaleDateString(undefined, { day: "numeric", month: "short", year: "numeric" })}; it updates weekly).`;
+        if (src === "winterthur" || src === "winterthurLib") {
+          const idx = await loadIndex(src === "winterthur" ? "winterthur-index.json" : "winterthur-library-index.json");
+          status.textContent += ` Searched ${idx.count.toLocaleString()} ${src === "winterthur" ? "Winterthur objects" : "library documents"} (copy saved ${new Date(idx.builtAt).toLocaleDateString(undefined, { day: "numeric", month: "short", year: "numeric" })}; it updates weekly).`;
         }
       }
     } catch (err) {
       console.error(err); discoverResults = [];
       status.className = "status error";
-      status.textContent = src === "winterthur" ? "The Winterthur index isn't available yet (it's rebuilt weekly). Use the Museum collection link below meanwhile." : "That collection couldn't be reached. Try again, choose All live collections, or use the archive links below.";
+      status.textContent = src === "winterthur" || src === "winterthurLib" ? "This Winterthur copy isn't available yet (a job builds it; see Updates in the header). Use the Winterthur links below meanwhile." : "That collection couldn't be reached. Try again, choose All live collections, or use the archive links below.";
     }
     $("#btn-discover").disabled = false;
     renderDiscover();
@@ -1181,6 +1205,7 @@
   const REPO = "timeads/rug-research";
   const JOBS = {
     "winterthur-index.yml": ["Winterthur collection copy", "Saves Winterthur's textiles and rug-related objects for Discover. Runs weekly."],
+    "winterthur-library-index.yml": ["Winterthur library copy", "Saves the list of the Winterthur Library's digital collections for Discover. Runs weekly."],
     "fetch-images.yml": ["Image lookup", "Finds images for records at their institutions. Runs after records change."],
     "patent-drawings.yml": ["Patent drawings", "Fetches drawings for patent records."],
     "research-fetch.yml": ["Research fetch", "Saves source pages for checking citations."],
@@ -1369,7 +1394,8 @@
   // Paste Winterthur object links (from their own site) to add them in one step.
   const addWinterthurLinks = async () => {
     const box = $("#dlink"), irns = [...new Set([...box.value.matchAll(/winterthur\.org\/object\/(\d+)/g)].map(m => m[1]))];
-    if (!irns.length) { toast("Paste a Winterthur object link, e.g. museumcollection.winterthur.org/object/16695"); box.focus(); return; }
+    const libs = [...new Map([...box.value.matchAll(/digitalcollections\.winterthur\.org\/Documents\/Detail\/([^/\s]+)\/(\d+)/gi)].map(m => [m[2], m[1]]))];
+    if (!irns.length && !libs.length) { toast("Paste a Winterthur museum or library link, e.g. museumcollection.winterthur.org/object/16695"); box.focus(); return; }
     let idx = null; try { idx = await winterthurIndex(); } catch {}
     const rows = idx ? Object.fromEntries(idx.rows.map(r => [r[0], r])) : {};
     let added = 0, skipped = 0, bare = 0;
@@ -1384,6 +1410,17 @@
       if (haveRecord(r)) { skipped++; continue; }
       if (!row) bare++;
       const rec = clean(norm(r)); rec.themes = []; S.items[rec.id] = rec; touch(rec.id); added++;
+    }
+    if (libs.length) {
+      let lidx = null; try { lidx = await loadIndex("winterthur-library-index.json"); } catch {}
+      const lrows = lidx ? Object.fromEntries(lidx.rows.map(r => [r[0], r])) : {};
+      for (const [id, slug] of libs) {
+        const row = lrows[id] || [id, slug, slug.replace(/-/g, " ").replace(/^./, c => c.toUpperCase()), "", "", "", "", 0, 0, ""];
+        const r = libraryRecord(row, lidx || { page: "https://digitalcollections.winterthur.org/Documents/Detail/{slug}/{id}" });
+        if (!lrows[id] || !row[7]) { bare++; r.status = "unverified"; }
+        if (haveRecord(r)) { skipped++; continue; }
+        const rec = clean(norm(r)); rec.themes = []; S.items[rec.id] = rec; touch(rec.id); added++;
+      }
     }
     save(); refresh(); box.value = "";
     toast(`${added} added${skipped ? `, ${skipped} already in the database` : ""}${bare ? `; ${bare} need their title filled in` : ""}.`);
