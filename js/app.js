@@ -1461,6 +1461,7 @@
     "winterthur-index.yml": ["Winterthur collection copy", "Saves Winterthur's textiles and rug-related objects for Discover. Runs weekly."],
     "winterthur-library-index.yml": ["Winterthur library copy", "Saves the list of the Winterthur Library's digital collections for Discover. Runs weekly."],
     "suggest-images.yml": ["Image suggestions", "Gathers candidate pictures for records without one, for Find an image. Runs weekly."],
+    "access-check.yml": ["Access check", "Checks which archive and record links work, have moved, or block automated tools. Runs monthly."],
     "fetch-images.yml": ["Image lookup", "Finds images for records at their institutions. Runs after records change."],
     "patent-drawings.yml": ["Patent drawings", "Fetches drawings for patent records."],
     "research-fetch.yml": ["Research fetch", "Saves source pages for checking citations."],
