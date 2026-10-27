@@ -940,9 +940,7 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "region": "United States",
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Shirt_MET_1980.447_F.jpg/1280px-Shirt_MET_1980.447_F.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "imageCredit": "Wikimedia Commons (CC0)",
-    "imageSource": "auto"
+    "imageSource": "rejected"
   },
   {
     "id": "mfah-157589",
