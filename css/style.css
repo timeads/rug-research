@@ -492,7 +492,7 @@ input[type="search"]::-webkit-search-cancel-button:hover { background: var(--ink
 .write-kicker { font-size: var(--t-sm); color: var(--ink-3); font-weight: 550; font-variant-numeric: tabular-nums; }
 .intro-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 6px; }
 .intro-head .intro-label { margin: 0; }
-.list-intro.draft { min-height: 340px; font-size: 1.0625rem; line-height: 1.7; padding: 18px 20px; max-width: 78ch; display: block; }
+.list-intro.draft { min-height: 340px; overflow: hidden; font-size: 1.0625rem; line-height: 1.7; padding: 18px 20px; max-width: 78ch; display: block; }
 .evidence-label { font-size: var(--t-lg); margin: 8px 0 4px; }
 .list-actions { flex-wrap: wrap; gap: 6px 14px; }
 .link-btn:disabled { opacity: .4; cursor: not-allowed; }

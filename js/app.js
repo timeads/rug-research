@@ -646,6 +646,14 @@
   // ---------- compile ----------
   // The tab badge counts the active list (e.g. the fellowship list), not chapter evidence.
   const renderListBadge = () => { const l = activeList(), n = isChapter(l) ? 0 : l.items.filter(id => BY_ID[id]).length; $("#list-count").textContent = n || ""; };
+  // Chapter drafts grow with their text instead of scrolling inside a small box.
+  const fitIntro = () => {
+    const ta = $("#list-intro");
+    if (!ta.classList.contains("draft")) { ta.style.height = ""; return; }
+    if (!ta.offsetParent) return; // hidden view: fitted when Write is shown
+    ta.style.height = "auto"; ta.style.height = ta.scrollHeight + 2 + "px";
+  };
+  addEventListener("resize", debounce(fitIntro, 150));
   const renderCompile = () => {
     const l = activeList();
     const ch = isChapter(l), chapters = S.lists.filter(isChapter), ci = chapters.indexOf(l);
@@ -658,6 +666,7 @@
     $("#list-intro").placeholder = ch ? "Write this chapter here. Saved as you type. Cite evidence by its number below, e.g. [3]." : "Your working argument for this list, e.g. a draft research statement. Saved as you type.";
     $("#evidence-label").textContent = ch ? `Evidence (${l.items.length})` : `Records (${l.items.length})`;
     if (document.activeElement !== $("#list-intro")) $("#list-intro").value = l.intro || "";
+    fitIntro();
     const words = (l.intro || "").trim().split(/\s+/).filter(Boolean).length;
     $("#word-count").textContent = words ? `${words.toLocaleString()} word${words === 1 ? "" : "s"}` : "";
     $("#print-title").textContent = l.name;
@@ -981,6 +990,7 @@
     if (!confirm(`Delete the list "${l.name}"? Items stay in the database.`)) return;
     S.lists = S.lists.filter(x => x !== l); S.activeList = S.lists[0].id; save(); renderCompile();
   };
+  $("#list-intro").addEventListener("input", fitIntro);
   $("#list-intro").addEventListener("input", debounce(e => {
     activeList().intro = e.target.value; $("#print-intro").textContent = e.target.value; save();
     const w = e.target.value.trim().split(/\s+/).filter(Boolean).length;
@@ -1025,6 +1035,17 @@
     S.lists.splice(prev === undefined ? 0 : prev + 1, 0, { ...c, items: [...c.items] });
     S.seedSeen = S.seedSeen || {}; S.seedSeen[c.id] = [...c.items];
   });
+  // Chapter notes you haven't edited follow the outline: notes still matching the version this browser
+  // was given (or any earlier outline version) are replaced by the current draft; anything you wrote stays.
+  const introHash = s => { let h = 0x811c9dc5; for (let i = 0; i < s.length; i++) { h ^= s.charCodeAt(i); h = Math.imul(h, 0x01000193) >>> 0; } return h.toString(36); };
+  const RETIRED_INTROS = window.RUG_RETIRED_INTROS || {};
+  S.seedIntro = S.seedIntro || {};
+  for (const c of SEED_CHAPTERS) {
+    const l = S.lists.find(x => x.id === c.id); if (!l) continue;
+    const untouched = l.intro === S.seedIntro[c.id] || (RETIRED_INTROS[c.id] || []).includes(introHash(l.intro || ""));
+    if (untouched && l.intro !== c.intro) l.intro = c.intro;
+    if (l.intro === c.intro) S.seedIntro[c.id] = c.intro;
+  }
   // Evidence added to a seeded chapter in later releases reaches existing browsers once; anything you removed stays removed.
   S.seedSeen = S.seedSeen || {};
   for (const c of SEED_CHAPTERS) {
