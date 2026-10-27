@@ -10,6 +10,13 @@ const ONLY = process.argv[2] ? process.argv[2].split(",") : null;
 const SAMPLE = Number(process.argv[3]) || 2500;
 const APIS = {
   wtMuseumHome: `https://museumcollection.winterthur.org/`,
+  wtR_q: `https://museumcollection.winterthur.org/search-results?q=bed%20rug`,
+  wtR_keyword: `https://museumcollection.winterthur.org/search-results?keyword=bed%20rug`,
+  wtR_search: `https://museumcollection.winterthur.org/search-results?search=bed%20rug`,
+  wtR_query: `https://museumcollection.winterthur.org/search-results?query=bed%20rug`,
+  wtR_kw: `https://museumcollection.winterthur.org/search-results?kw=bed%20rug`,
+  wtR_none: `https://museumcollection.winterthur.org/search-results`,
+  wtLib8001: `http://library.winterthur.org:8001/`,
   wtMuseumHelp: `https://museumcollection.winterthur.org/help`,
   wtMuseumObject: `https://museumcollection.winterthur.org/object/16695`,
   wtMuseumSearch: `https://museumcollection.winterthur.org/search?q=${e}`,
