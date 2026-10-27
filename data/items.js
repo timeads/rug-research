@@ -1551,7 +1551,10 @@ window.RUG_ITEMS = [
     "sourceUrl": "https://patents.google.com/patent/CN113584750A/en",
     "date": "1992–2017",
     "dateStart": 1992,
-    "dateEnd": 2017
+    "dateEnd": 2017,
+    "image": "https://patentimages.storage.googleapis.com/38/0e/76/5c15e00f816479/HDA0003205608580000011.png",
+    "imageCredit": "Patent drawing via Google Patents (public domain)",
+    "imageSource": "auto"
   },
   {
     "id": "ner-cn-tibet-1860",
