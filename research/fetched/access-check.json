@@ -1,0 +1,5431 @@
+{
+ "checkedAt": "2026-10-27T21:31:39.196Z",
+ "robots": {
+  "https://museumcollection.winterthur.org": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://digitalcollections.winterthur.org": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://library.winterthur.org": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://archive.org": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://digital.hagley.org": {
+   "status": "allows",
+   "aiBlocks": true
+  },
+  "https://findingaids.hagley.org": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://www.metmuseum.org": {
+   "status": "none (429)",
+   "aiBlocks": false
+  },
+  "https://collection.cooperhewitt.org": {
+   "status": "none (403)",
+   "aiBlocks": false
+  },
+  "https://collections.si.edu": {
+   "status": "allows",
+   "aiBlocks": true
+  },
+  "https://collections.vam.ac.uk": {
+   "status": "allows",
+   "aiBlocks": true
+  },
+  "https://www.thehenryford.org": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://babel.hathitrust.org": {
+   "status": "none (403)",
+   "aiBlocks": false
+  },
+  "https://www.google.com": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://search.worldcat.org": {
+   "status": "allows",
+   "aiBlocks": true
+  },
+  "https://www.loc.gov": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://dp.la": {
+   "status": "allows",
+   "aiBlocks": true
+  },
+  "https://collections.mfa.org": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://patents.google.com": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://dlg.usg.edu": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://bandyheritagecenter.pastperfectonline.com": {
+   "status": "allows",
+   "aiBlocks": true
+  },
+  "https://www.tradecatalogues.amdigital.co.uk": {
+   "status": "none (403)",
+   "aiBlocks": false
+  },
+  "https://origin-www.alibris.com": {
+   "status": "unreachable",
+   "error": "fetch failed"
+  },
+  "https://ugapress.org": {
+   "status": "disallows all tools",
+   "aiBlocks": true
+  },
+  "https://eh.net": {
+   "status": "none (403)",
+   "aiBlocks": false
+  },
+  "https://dcp-production-container.library.cornell.edu": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://www.marketresearch.amdigital.co.uk": {
+   "status": "none (403)",
+   "aiBlocks": false
+  },
+  "https://www.georgiaencyclopedia.org": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://carpet-rug.org": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://www.rughookingmagazine.com": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://www.historic-deerfield.org": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://randomhouse.com": {
+   "status": "none (503)",
+   "aiBlocks": false
+  },
+  "https://mfaboston6.emuseum.com": {
+   "status": "allows",
+   "aiBlocks": true
+  },
+  "https://emuseum.mfah.org": {
+   "status": "allows",
+   "aiBlocks": true
+  },
+  "https://collections.lacma.org": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://emuseum.chs.org": {
+   "status": "none (404)",
+   "aiBlocks": false
+  },
+  "https://collection.folkartmuseum.org": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://folkartmuseum.org": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://enfilade18thc.com": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://discovery.nypl.org": {
+   "status": "unreachable",
+   "error": "fetch failed"
+  },
+  "https://asme.org": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://www.hmdb.org": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://www.bandyheritagecenter.org": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://www.boden-wand-decke.de": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://k.sina.cn": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://std.samr.gov.cn": {
+   "status": "none (404)",
+   "aiBlocks": false
+  },
+  "https://mag.ctax.org.cn": {
+   "status": "none (404)",
+   "aiBlocks": false
+  },
+  "https://baike.baidu.com": {
+   "status": "disallows all tools",
+   "aiBlocks": false
+  },
+  "https://www.dhu.edu.cn": {
+   "status": "unreachable",
+   "error": "fetch failed"
+  },
+  "https://m.chinabgao.com": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://www.163.com": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://www.ihchina.cn": {
+   "status": "unreachable",
+   "error": "fetch failed"
+  },
+  "https://epaper.tianjinwe.com": {
+   "status": "none (404)",
+   "aiBlocks": false
+  },
+  "https://www.tianjiangcarpet.com": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://finance.sina.com.cn": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "http://www.news.cn": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://epaper.oeeee.com": {
+   "status": "unreachable",
+   "error": "fetch failed"
+  },
+  "https://www.hongkongheritage.org": {
+   "status": "none (403)",
+   "aiBlocks": false
+  },
+  "https://www.granthaalayahpublication.org": {
+   "status": "allows",
+   "aiBlocks": true
+  },
+  "https://hi.wikipedia.org": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://cuts-citee.org": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://www.tribuneindia.com": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://www.iict.ac.in": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://www.indiamart.com": {
+   "status": "allows",
+   "aiBlocks": true
+  },
+  "https://tienda.elsevier.com": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://www.aajtak.in": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://en.wikipedia.org": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://www.amarujala.com": {
+   "status": "allows",
+   "aiBlocks": true
+  },
+  "https://suminoe.co.jp": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://ja.wikipedia.org": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://japancarpet.co.jp": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://online.ibnewsnet.com": {
+   "status": "none (404)",
+   "aiBlocks": false
+  },
+  "https://www.city.sakai.lg.jp": {
+   "status": "none (404)",
+   "aiBlocks": false
+  },
+  "https://www.pref.saga.lg.jp": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://carpet.or.jp": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://www.jstage.jst.go.jp": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "http://www.carpet.or.jp": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://dewiki.de": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://de.wikipedia.org": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://fr.wikipedia.org": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://www.canonvannederland.nl": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://carpetyourlife.com": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://nkie.nankai.edu.cn": {
+   "status": "unreachable",
+   "error": "fetch failed"
+  },
+  "https://m.sohu.com": {
+   "status": "disallows all tools",
+   "aiBlocks": true
+  },
+  "https://www.thepaper.cn": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://www.cnki.net": {
+   "status": "disallows all tools",
+   "aiBlocks": false
+  },
+  "https://shop.elsevier.com": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://docs.google.com": {
+   "status": "disallows all tools",
+   "aiBlocks": false
+  },
+  "https://digitalcommons.unl.edu": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://drive.google.com": {
+   "status": "disallows all tools",
+   "aiBlocks": false
+  },
+  "https://www.hagley.org": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://www.sarah-archer.com": {
+   "status": "allows",
+   "aiBlocks": true
+  },
+  "https://repository.duke.edu": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://shawinc.com": {
+   "status": "none (404)",
+   "aiBlocks": false
+  },
+  "https://mohawkind.com": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://thedeloscompany.com": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://www.thedesignsheppard.com": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://scottgroupstudio.com": {
+   "status": "none (404)",
+   "aiBlocks": false
+  },
+  "https://creativeaccents.com": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://www.kramis-teppich.ch": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://www.jaipurliving.com": {
+   "status": "allows",
+   "aiBlocks": true
+  },
+  "https://www.taipingcarpets.com": {
+   "status": "none (403)",
+   "aiBlocks": false
+  },
+  "https://wiltoncarpets.com": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://gracesguide.co.uk": {
+   "status": "unreachable",
+   "error": "fetch failed"
+  },
+  "https://www.nps.gov": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://www.britannica.com": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://www.si.edu": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://daltoncarpet.com": {
+   "status": "allows",
+   "aiBlocks": true
+  },
+  "https://kids.britannica.com": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://philadelphiaencyclopedia.org": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://www.christies.com.cn": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://www.artic.edu": {
+   "status": "none (403)",
+   "aiBlocks": false
+  },
+  "http://findingaid.winterthur.org": {
+   "status": "none (404)",
+   "aiBlocks": false
+  },
+  "https://www.ebth.com": {
+   "status": "allows",
+   "aiBlocks": true
+  },
+  "https://americanainsights.org": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://meridastudio.com": {
+   "status": "none (404)",
+   "aiBlocks": false
+  },
+  "https://museumcollection.hagley.org": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://www.edwardfields.com": {
+   "status": "none (404)",
+   "aiBlocks": false
+  },
+  "https://www.kasthall.com": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://www.ceadogan.ie": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://www.pinton1867.com": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://materialbank.eu": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://yamagatadantsu.co.jp": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://designerrugs.com.au": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://www.rogeroates.com": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://www.royalthai.com": {
+   "status": "allows",
+   "aiBlocks": true
+  },
+  "https://westgatextiletrail.com": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://cormarcarpets.co.uk": {
+   "status": "unreachable",
+   "error": "fetch failed"
+  },
+  "https://www.interface.com": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://www.milliken.com": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://www.dixiegroup.com": {
+   "status": "none (404)",
+   "aiBlocks": false
+  },
+  "https://www.engineeredfloors.com": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://www.egecarpets.com": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://website.oc.prod.de.ymc.host": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://museumhameln.de": {
+   "status": "none (423)",
+   "aiBlocks": false
+  },
+  "https://professionals.tarkett.co.uk": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://www.belysse.com": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://www.beaulieu.com": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://www.victoriacarpets.com": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://www.godfreyhirst.com": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://suminoe.jp": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://orientalweavers.com": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://www.merinos.com.tr": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://www.hdcarpets.com": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://welspunflooring.com": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://www.cobble.co.uk": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://www.tuftco.com": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://www.cardmonroe.com": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://www.groz-beckert.com": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://www.obeetee.in": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://handscarpets.com": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://www.kaleen.com": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://www.homeaccentstoday.com": {
+   "status": "allows",
+   "aiBlocks": true
+  },
+  "https://hofmann-handtuft.de": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://www.chroniclebooks.com": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://www.paradigmarts.org": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://revolutionaryplayers.org.uk": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://www.futuremuseum.co.uk": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://journals.socantscot.org": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://connecticuthistory.org": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://www.historicnewengland.org": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://emuseum.colonialwilliamsburg.org": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://www.british-history.ac.uk": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://www.wiltontowncouncil.gov.uk": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://jimclifford.ca": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://buildingconservation.com": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://www.nypl.org": {
+   "status": "allows",
+   "aiBlocks": true
+  },
+  "https://prod.british-history.ac.uk": {
+   "status": "none (401)",
+   "aiBlocks": false
+  },
+  "https://www.huguenotsofspitalfields.org": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://axminsterheritage.org": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://collections.soane.org": {
+   "status": "allows",
+   "aiBlocks": true
+  },
+  "https://udspace.udel.edu": {
+   "status": "allows",
+   "aiBlocks": true
+  },
+  "https://assets.cambridge.org": {
+   "status": "none (404)",
+   "aiBlocks": false
+  },
+  "https://www.chattanoogan.com": {
+   "status": "allows",
+   "aiBlocks": true
+  },
+  "https://floordaily.net": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://www.textileworld.com": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://highlights.paper.edu.cn": {
+   "status": "none (502)",
+   "aiBlocks": false
+  },
+  "https://global.chinadaily.com.cn": {
+   "status": "none (404)",
+   "aiBlocks": false
+  },
+  "https://backend.ainonline.com": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://heimtextil.messefrankfurt.com": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://interiordesign.net": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://cc-tapis.com": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://hackaday.io": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://builds.openbuilds.com": {
+   "status": "unreachable",
+   "error": "fetch failed"
+  },
+  "https://technical.ly": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://www.kicktraq.com": {
+   "status": "allows",
+   "aiBlocks": true
+  },
+  "https://depts.washington.edu": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://www.britishmuseum.org": {
+   "status": "allows",
+   "aiBlocks": true
+  },
+  "https://britannica.com": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://www.famsf.org": {
+   "status": "none (403)",
+   "aiBlocks": false
+  },
+  "https://collectionstories.museum.gwu.edu": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://statemuseum.arizona.edu": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://collections.penn.museum": {
+   "status": "none (404)",
+   "aiBlocks": false
+  },
+  "https://digitaltmuseum.org": {
+   "status": "allows",
+   "aiBlocks": true
+  },
+  "https://collections-gwu.zetcom.net": {
+   "status": "none (404)",
+   "aiBlocks": false
+  },
+  "https://www.iranicaonline.org": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://historymuseum.ca": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://textilemuseum.ca": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://collection.artbma.org": {
+   "status": "unreachable",
+   "error": "fetch failed"
+  },
+  "https://shakermuseum.us": {
+   "status": "allows",
+   "aiBlocks": true
+  },
+  "https://www.apparelsearch.com": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://www.bdonline.co.uk": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://zimmer-austria.com": {
+   "status": "allows",
+   "aiBlocks": false
+  }
+ },
+ "archives": [
+  {
+   "name": "Winterthur / Museum collection",
+   "url": "https://museumcollection.winterthur.org/search-results?s=carpet",
+   "verdict": "ok",
+   "status": 200,
+   "title": "Search Results | Winterthur Museum Collection",
+   "robots": "allows"
+  },
+  {
+   "name": "Winterthur / Library digital collections",
+   "url": "https://digitalcollections.winterthur.org/documents/search?search=carpet",
+   "verdict": "ok (redirected)",
+   "status": 200,
+   "title": "Browse All - Winterthur Library Digital Collections",
+   "moved": "https://digitalcollections.winterthur.org/documents?returning=true",
+   "robots": "allows"
+  },
+  {
+   "name": "Winterthur / Library catalog (WinterCat)",
+   "url": "https://library.winterthur.org/",
+   "verdict": "ok",
+   "status": 202,
+   "title": "",
+   "robots": "allows"
+  },
+  {
+   "name": "Winterthur / Trade catalogs on Internet Archive",
+   "url": "https://archive.org/search?query=carpet+AND+contributor%3A%28Winterthur%29",
+   "verdict": "ok",
+   "status": 200,
+   "title": "Internet Archive: Digital Library of Free &amp; Borrowable Texts, Movies, Music &amp; Wayback Machin",
+   "robots": "allows"
+  },
+  {
+   "name": "Hagley / Digital Archives (images)",
+   "url": "https://digital.hagley.org/",
+   "verdict": "bot check",
+   "status": 200,
+   "title": "Verifying Connection",
+   "moved": "https://digital.hagley.org/challenge?destination=%2F",
+   "robots": "allows"
+  },
+  {
+   "name": "Hagley / Finding aids (manuscripts)",
+   "url": "https://findingaids.hagley.org/search?q[]=carpet",
+   "verdict": "ok",
+   "status": 202,
+   "title": "",
+   "robots": "allows"
+  },
+  {
+   "name": "Hagley / Research home",
+   "url": "https://www.google.com/search?q=site%3Ahagley.org+{q}",
+   "verdict": "via Google (not checked)"
+  },
+  {
+   "name": "Museums / The Met",
+   "url": "https://www.metmuseum.org/art/collection/search?q=carpet",
+   "verdict": "bot check",
+   "status": 429,
+   "title": "Vercel Security Checkpoint",
+   "robots": "none (429)"
+  },
+  {
+   "name": "Museums / Cooper Hewitt",
+   "url": "https://collection.cooperhewitt.org/search/collection?query=carpet",
+   "verdict": "bot check",
+   "status": 403,
+   "title": "Smithsonian request verification",
+   "moved": "https://www.si.edu/collections/cooper-hewitt",
+   "robots": "none (403)"
+  },
+  {
+   "name": "Museums / Smithsonian collections",
+   "url": "https://collections.si.edu/search/results.htm?q=carpet",
+   "verdict": "bot check",
+   "status": 403,
+   "title": "Smithsonian request verification",
+   "robots": "allows"
+  },
+  {
+   "name": "Museums / V&A",
+   "url": "https://collections.vam.ac.uk/search/?q=carpet",
+   "verdict": "ok",
+   "status": 200,
+   "title": "Search Results | V&A Explore the Collections",
+   "robots": "allows"
+  },
+  {
+   "name": "Museums / Henry Ford (Ford Museum)",
+   "url": "https://www.thehenryford.org/search?q=carpet",
+   "verdict": "ok",
+   "status": 200,
+   "title": "",
+   "robots": "allows"
+  },
+  {
+   "name": "Books & texts / HathiTrust",
+   "url": "https://babel.hathitrust.org/cgi/ls?q1=carpet;anyall1=phrase;lmt=all",
+   "verdict": "bot check",
+   "status": 403,
+   "title": "Just a moment...",
+   "robots": "none (403)"
+  },
+  {
+   "name": "Books & texts / Internet Archive",
+   "url": "https://archive.org/search?query=carpet",
+   "verdict": "ok",
+   "status": 200,
+   "title": "Internet Archive: Digital Library of Free &amp; Borrowable Texts, Movies, Music &amp; Wayback Machin",
+   "robots": "allows"
+  },
+  {
+   "name": "Books & texts / Google Books",
+   "url": "https://www.google.com/search?tbm=bks&q=carpet",
+   "verdict": "ok",
+   "status": 200,
+   "title": "Google Search",
+   "robots": "allows"
+  },
+  {
+   "name": "Books & texts / WorldCat",
+   "url": "https://search.worldcat.org/search?q=carpet",
+   "verdict": "bot check",
+   "status": 429,
+   "title": "Access denied | search.worldcat.org used Cloudflare to restrict access | search.worldcat.org | Cloud",
+   "robots": "allows"
+  },
+  {
+   "name": "Books & texts / Library of Congress",
+   "url": "https://www.loc.gov/search/?q=carpet",
+   "verdict": "bot check",
+   "status": 403,
+   "title": "Just a moment...",
+   "robots": "allows"
+  },
+  {
+   "name": "Books & texts / DPLA",
+   "url": "https://dp.la/search?q=carpet",
+   "verdict": "ok",
+   "status": 202,
+   "title": "",
+   "robots": "allows"
+  },
+  {
+   "name": "Early tufted & pile textiles / Historic Deerfield",
+   "url": "https://www.google.com/search?q=site%3Ahistoric-deerfield.org+{q}",
+   "verdict": "via Google (not checked)"
+  },
+  {
+   "name": "Early tufted & pile textiles / Connecticut Historical Society",
+   "url": "https://www.google.com/search?q=site%3Aemuseum.chs.org+{q}",
+   "verdict": "via Google (not checked)"
+  },
+  {
+   "name": "Early tufted & pile textiles / American Folk Art Museum",
+   "url": "https://www.google.com/search?q=site%3Acollection.folkartmuseum.org+{q}",
+   "verdict": "via Google (not checked)"
+  },
+  {
+   "name": "Early tufted & pile textiles / Historic New England",
+   "url": "https://www.google.com/search?q=site%3Ahistoricnewengland.org+{q}",
+   "verdict": "via Google (not checked)"
+  },
+  {
+   "name": "Early tufted & pile textiles / Wadsworth Atheneum",
+   "url": "https://www.google.com/search?q=site%3Athewadsworth.org+{q}",
+   "verdict": "via Google (not checked)"
+  },
+  {
+   "name": "Early tufted & pile textiles / MFA Boston",
+   "url": "https://collections.mfa.org/search/objects/*/carpet",
+   "verdict": "ok",
+   "status": 202,
+   "title": "",
+   "robots": "allows"
+  },
+  {
+   "name": "Early tufted & pile textiles / MFA Houston / Bayou Bend",
+   "url": "https://www.google.com/search?q=site%3Aemuseum.mfah.org+{q}",
+   "verdict": "via Google (not checked)"
+  },
+  {
+   "name": "Early tufted & pile textiles / LACMA",
+   "url": "https://www.google.com/search?q=site%3Acollections.lacma.org+{q}",
+   "verdict": "via Google (not checked)"
+  },
+  {
+   "name": "Early tufted & pile textiles / Shelburne Museum",
+   "url": "https://www.google.com/search?q=site%3Ashelburnemuseum.org+{q}",
+   "verdict": "via Google (not checked)"
+  },
+  {
+   "name": "Early tufted & pile textiles / DAR Museum",
+   "url": "https://www.google.com/search?q=DAR+Museum+{q}",
+   "verdict": "via Google (not checked)"
+  },
+  {
+   "name": "Early tufted & pile textiles / Colonial Williamsburg",
+   "url": "https://www.google.com/search?q=site%3Aemuseum.history.org+{q}",
+   "verdict": "via Google (not checked)"
+  },
+  {
+   "name": "Early tufted & pile textiles / Old Sturbridge Village",
+   "url": "https://www.google.com/search?q=site%3Aosv.org+{q}",
+   "verdict": "via Google (not checked)"
+  },
+  {
+   "name": "Early tufted & pile textiles / Georgia Museum of Art",
+   "url": "https://www.google.com/search?q=site%3Ageorgiamuseum.org+{q}",
+   "verdict": "via Google (not checked)"
+  },
+  {
+   "name": "Early tufted & pile textiles / Atlanta History Center",
+   "url": "https://www.google.com/search?q=site%3Aatlantahistorycenter.com+{q}",
+   "verdict": "via Google (not checked)"
+  },
+  {
+   "name": "Early tufted & pile textiles / Vanishing Georgia (photos)",
+   "url": "https://www.google.com/search?q=%22Vanishing+Georgia%22+{q}",
+   "verdict": "via Google (not checked)"
+  },
+  {
+   "name": "Tufting & industry / Google Patents",
+   "url": "https://patents.google.com/?q=%22carpet%22",
+   "verdict": "ok",
+   "status": 200,
+   "title": "Google Patents",
+   "robots": "allows"
+  },
+  {
+   "name": "Tufting & industry / Digital Library of Georgia",
+   "url": "https://dlg.usg.edu/search?q=carpet",
+   "verdict": "bot check",
+   "status": 200,
+   "title": "Digital Library of Georgia",
+   "moved": "https://dlg.usg.edu/turnstile/access?return_to=%2Fsearch%3Fq%3Dcarpet",
+   "robots": "allows"
+  },
+  {
+   "name": "Tufting & industry / Bandy Heritage Center (Dalton)",
+   "url": "https://bandyheritagecenter.pastperfectonline.com/search?search_criteria=carpet",
+   "verdict": "ok",
+   "status": 200,
+   "title": "Search Results for carpet | Bandy Heritage Center for Northwest Georgia",
+   "robots": "allows"
+  },
+  {
+   "name": "Tufting & industry / Chronicling America (newspapers)",
+   "url": "https://www.loc.gov/collections/chronicling-america/?q=carpet",
+   "verdict": "bot check",
+   "status": 403,
+   "title": "Just a moment...",
+   "robots": "allows"
+  }
+ ],
+ "links": [
+  {
+   "id": "wint-1964-0804",
+   "title": "Rug (Hooked rug), 1870-1925 | Winterthur Museum Collection",
+   "url": "https://museumcollection.winterthur.org/object/25734",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "wint-1964-1355",
+   "title": "Rug (Hooked rug), 1870-1925 | Winterthur Museum Collection",
+   "url": "https://museumcollection.winterthur.org/object/26610",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "wint-1965-0685",
+   "title": "Rug (Hooked rug), 1825-1875 | Winterthur Museum Collection",
+   "url": "https://museumcollection.winterthur.org/object/28352",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "wint-1964-0808",
+   "title": "Rug (Hooked rug), 1830-1870 | Winterthur Museum Collection",
+   "url": "https://museumcollection.winterthur.org/object/25738",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "wint-1967-1451",
+   "title": "Rug (Hooked rug), 1800-1875 | Winterthur Museum Collection",
+   "url": "https://museumcollection.winterthur.org/object/42781",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "wint-1955-0048-045",
+   "title": "Rug (Hooked rug), 1850-1900 | Winterthur Museum Collection",
+   "url": "https://museumcollection.winterthur.org/object/1923",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "wint-lib-olson-1920",
+   "title": "Page Not Available",
+   "url": "https://www.tradecatalogues.amdigital.co.uk/Documents/Details/Olson-Velvety-Rugs/WL_NK2799O521920TC_103354",
+   "verdict": "bot check",
+   "status": 403,
+   "robots": "none (403)"
+  },
+  {
+   "id": "wint-lib-olson-1922",
+   "title": "Page Not Available",
+   "url": "https://www.tradecatalogues.amdigital.co.uk/Documents/Details/Olson-Velvety-Rugs--for-Modern-Homes/WL_NK2799O521922TC_96286",
+   "verdict": "bot check",
+   "status": 403,
+   "robots": "none (403)"
+  },
+  {
+   "id": "wint-lib-household-1915",
+   "title": "Page Not Available",
+   "url": "https://www.tradecatalogues.amdigital.co.uk/Documents/Details/Illustrated-Catalogue--Household-Furnishing-Goods/WL_TX299S66TC_1072",
+   "verdict": "bot check",
+   "status": 403,
+   "robots": "none (403)"
+  },
+  {
+   "id": "book-mckinstry-trade-catalogues",
+   "title": "Trade Catalogues at Winterthur: A Guide to the Literature of Merchandising, 1750 to 1980",
+   "url": "https://origin-www.alibris.com/Trade-Catlgs-Winterthur-Richard-E-McKinstry/book/11606707",
+   "verdict": "unreachable",
+   "error": "UND_ERR_CONNECT_TIMEOUT",
+   "robots": "unreachable"
+  },
+  {
+   "id": "book-patton-carpet-capital",
+   "title": "Carpet Capital: The Rise of a New South Industry",
+   "url": "https://ugapress.org/book/9780820324647/carpet-capital",
+   "verdict": "robots: keep out",
+   "robots": "disallows all tools"
+  },
+  {
+   "id": "article-patton-ehnet",
+   "title": "403 - Forbidden",
+   "url": "https://eh.net/encyclopedia/a-history-of-the-u-s-carpet-industry/",
+   "verdict": "bot check",
+   "status": 403,
+   "robots": "none (403)"
+  },
+  {
+   "id": "archive-bandy-deaton",
+   "title": "2010.003.0107 - Documents | Bandy Heritage Center for Northwest Georgia",
+   "url": "https://bandyheritagecenter.pastperfectonline.com/archive/2349F571-3AF7-4957-BDA1-373971530010",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "book-bigelow-century",
+   "title": "A century of carpet and rug making in America: Home Economics Archive: Research, Tradition and Histo",
+   "url": "https://dcp-production-container.library.cornell.edu/catalog/hearth4306128",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "ucsb-bigelow-sample-book",
+   "title": "Page Not Available",
+   "url": "https://www.tradecatalogues.amdigital.co.uk/Documents/Details/-Bigelow-Carpet-Company-sample-book-/cusb_mss107_g02129",
+   "verdict": "bot check",
+   "status": 403,
+   "robots": "none (403)"
+  },
+  {
+   "id": "hagley-dupont-advertising-1803",
+   "title": "",
+   "url": "https://findingaids.hagley.org/repositories/2/archival_objects/91963",
+   "verdict": "ok",
+   "status": 202,
+   "robots": "allows"
+  },
+  {
+   "id": "hagley-dupont-records",
+   "title": "",
+   "url": "https://findingaids.hagley.org/repositories/3/archival_objects/610909",
+   "verdict": "ok",
+   "status": 202,
+   "robots": "allows"
+  },
+  {
+   "id": "hagley-seaford-nylon",
+   "title": "",
+   "url": "https://findingaids.hagley.org/1990_266",
+   "verdict": "ok",
+   "status": 202,
+   "robots": "allows"
+  },
+  {
+   "id": "hagley-textile-fibers-album",
+   "title": "",
+   "url": "https://findingaids.hagley.org/repositories/2/resources/2162",
+   "verdict": "ok",
+   "status": 202,
+   "robots": "allows"
+  },
+  {
+   "id": "hagley-textile-fibers-product-info",
+   "title": "Verifying Connection",
+   "url": "https://digital.hagley.org/",
+   "verdict": "bot check",
+   "status": 200,
+   "moved": "https://digital.hagley.org/challenge?destination=%2F",
+   "robots": "allows"
+  },
+  {
+   "id": "hagley-dichter-nylon-carpets",
+   "title": "Page Not Available",
+   "url": "https://www.marketresearch.amdigital.co.uk/Documents/Details/A-motivational-research-study-of-the-sales-and-advertising-problems-of-nylon-carpets-on-the-retail/Hagley_Dichter_BX042_954C",
+   "verdict": "bot check",
+   "status": 403,
+   "robots": "none (403)"
+  },
+  {
+   "id": "hagley-hull-papers",
+   "title": "",
+   "url": "https://findingaids.hagley.org/repositories/3/resources/965",
+   "verdict": "ok",
+   "status": 202,
+   "robots": "allows"
+  },
+  {
+   "id": "event-bcf-nylon",
+   "title": "Carpet Industry - New Georgia Encyclopedia",
+   "url": "https://www.georgiaencyclopedia.org/articles/business-economy/carpet-industry/",
+   "verdict": "bot check",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "event-whitener-bedspread",
+   "title": "Chenille Bedspreads - New Georgia Encyclopedia",
+   "url": "https://www.georgiaencyclopedia.org/articles/arts-culture/chenille-bedspreads",
+   "verdict": "bot check",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "event-looper-tufting-machine",
+   "title": "History of Carpet - The Carpet and Rug Institute",
+   "url": "https://carpet-rug.org/about-us/history-of-carpet/",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "article-nge-chenille",
+   "title": "Chenille Bedspreads - New Georgia Encyclopedia",
+   "url": "https://www.georgiaencyclopedia.org/articles/arts-culture/chenille-bedspreads",
+   "verdict": "bot check",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "article-nge-carpet-industry",
+   "title": "Carpet Industry - New Georgia Encyclopedia",
+   "url": "https://www.georgiaencyclopedia.org/articles/business-economy/carpet-industry/",
+   "verdict": "bot check",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "article-rughooking-winterthur",
+   "title": "Readers Gallery: Hooked Rugs of Winterthur - We Like Rug Hooking",
+   "url": "https://www.rughookingmagazine.com/Rug-Hooking-Articles/Hooked-Rugs-of-Winterthur",
+   "verdict": "ok (redirected)",
+   "status": 200,
+   "moved": "https://welikerughooking.com/readers-gallery/hooked-rugs-of-winterthur/",
+   "robots": "allows"
+  },
+  {
+   "id": "wint-1960-0594",
+   "title": "Bedcover (Bedspread) | Winterthur Museum Collection",
+   "url": "https://museumcollection.winterthur.org/object/16695",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "wint-1964-1641",
+   "title": "Bedcover (Bed rug) | Winterthur Museum Collection",
+   "url": "https://museumcollection.winterthur.org/object/27031",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "wint-1958-0062-003b",
+   "title": "Bedcover fragment (Bed rug fragment), 1700-1775 | Winterthur Museum Collection",
+   "url": "https://museumcollection.winterthur.org/object/7307",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "met-13-207",
+   "title": "Vercel Security Checkpoint",
+   "url": "https://www.metmuseum.org/art/collection/search?q=13.207",
+   "verdict": "bot check",
+   "status": 429,
+   "robots": "none (429)"
+  },
+  {
+   "id": "met-caswell-carpet",
+   "title": "Vercel Security Checkpoint",
+   "url": "https://www.metmuseum.org/art/collection/search/13576",
+   "verdict": "bot check",
+   "status": 429,
+   "robots": "none (429)"
+  },
+  {
+   "id": "hd-packard-1801",
+   "title": "Going to the Sources: Researching the Esther Packard (1801) Bed Rug - Historic Deerfield",
+   "url": "https://www.historic-deerfield.org/2017-7-21-going-to-the-sources-researching-the-esther-packard-1801-bed-rug",
+   "verdict": "ok (redirected)",
+   "status": 200,
+   "moved": "https://www.historic-deerfield.org/2017-7-21-going-to-the-sources-researching-the-esther-packard-1801-bed-rug/",
+   "robots": "allows"
+  },
+  {
+   "id": "hd-blue-white-bed-rug",
+   "title": "PRH SelfService",
+   "url": "https://randomhouse.com/knopf/authors/ulrich/desktopflowercloth.html",
+   "verdict": "bot check",
+   "status": 503,
+   "robots": "none (503)"
+  },
+  {
+   "id": "chs-foote-bed-rug",
+   "title": "PRH SelfService",
+   "url": "https://randomhouse.com/knopf/authors/ulrich/desktopflowercloth.html",
+   "verdict": "bot check",
+   "status": 503,
+   "robots": "none (503)"
+  },
+  {
+   "id": "mfa-1980-447",
+   "title": "Just a moment...",
+   "url": "https://mfaboston6.emuseum.com/objects/126054/bed-rugg",
+   "verdict": "bot check",
+   "status": 403,
+   "robots": "allows"
+  },
+  {
+   "id": "mfah-157589",
+   "title": "Just a moment...",
+   "url": "https://emuseum.mfah.org/objects/157589/bed-rug",
+   "verdict": "bot check",
+   "status": 403,
+   "robots": "allows"
+  },
+  {
+   "id": "lacma-m-74-48",
+   "title": "Mary Smith, Candlewick Bedspread, 1821 | LACMA Collections",
+   "url": "https://collections.lacma.org/object/33639",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "chs-candlewick-group",
+   "title": "Candlewick Bedcovering – Works – eMuseum",
+   "url": "https://emuseum.chs.org/emuseum/objects/13443/candlewick-bedcovering",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "none (404)"
+  },
+  {
+   "id": "afam-1995-13-2",
+   "title": "",
+   "url": "https://collection.folkartmuseum.org/objects/2249/eagle-candlewick-spread",
+   "verdict": "ok",
+   "status": 202,
+   "robots": "allows"
+  },
+  {
+   "id": "afam-concentric-circles",
+   "title": "",
+   "url": "https://collection.folkartmuseum.org/objects/210/concentric-circles-candlewick-spread",
+   "verdict": "ok",
+   "status": 202,
+   "robots": "allows"
+  },
+  {
+   "id": "afam-great-cover-up",
+   "title": "The Great Cover-up: American Rugs on Beds, Tables, and Floors | American Folk Art Museum",
+   "url": "https://folkartmuseum.org/exhibitions/the-great-cover-up-american-rugs-on-beds-tables-and-floors",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "wadsworth-bed-furnishings-2018",
+   "title": "Exhibition | Bed Furnishings in Early America | Enfilade",
+   "url": "https://enfilade18thc.com/2018/11/30/exhibition-bed-furnishings-in-early-america/",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "book-bed-ruggs-1972",
+   "title": "Bed Ruggs/1722–1833",
+   "url": "https://discovery.nypl.org/research/research-catalog/bib/b10248634",
+   "verdict": "unreachable",
+   "error": "ENOTFOUND",
+   "robots": "unreachable"
+  },
+  {
+   "id": "book-ulrich-age-of-homespun",
+   "title": "PRH SelfService",
+   "url": "https://randomhouse.com/knopf/authors/ulrich/desktopflowercloth.html",
+   "verdict": "bot check",
+   "status": 503,
+   "robots": "none (503)"
+  },
+  {
+   "id": "book-callahan-southern-tufts",
+   "title": "Southern Tufts: The Regional Origins and National Craze for Chenille Fashion",
+   "url": "https://ugapress.org/book/9780820345161/southern-tufts",
+   "verdict": "robots: keep out",
+   "robots": "disallows all tools"
+  },
+  {
+   "id": "hf-00-1510-19",
+   "title": "",
+   "url": "https://www.thehenryford.org/collections-and-research/digital-collections/artifact/66143/",
+   "verdict": "gone (not found)",
+   "status": 404,
+   "moved": "https://www.thehenryford.org/collections/digital-collections/artifact/66143",
+   "robots": "allows"
+  },
+  {
+   "id": "tool-moench-1928",
+   "title": "",
+   "url": "https://asme.org/wwwasmeorg/media/ResourceFiles/AboutASME/Who We Are/Engineering History/Landmarks/266-CarpetTuftingApparatus.pdf",
+   "verdict": "ok (redirected)",
+   "status": 200,
+   "moved": "https://www.asme.org/wwwasmeorg/media/resourcefiles/aboutasme/who%20we%20are/engineering%20history/landmarks/266-carpettuftingapparatus.pdf",
+   "robots": "allows"
+  },
+  {
+   "id": "patent-us2977905",
+   "title": "US2977905A - Tufting machine - Google Patents",
+   "url": "https://patents.google.com/patent/US2977905A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "marker-mechanization-bedspread",
+   "title": "Just a moment...",
+   "url": "https://www.hmdb.org/m.asp?m=171571",
+   "verdict": "bot check",
+   "status": 403,
+   "robots": "allows"
+  },
+  {
+   "id": "bandy-mahs-chenille",
+   "title": "Museum Collection | Bandy Heritage Center",
+   "url": "https://www.bandyheritagecenter.org/collection/museum-collection",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "photo-green-burton-1933",
+   "title": "Chenille Bedspreads - New Georgia Encyclopedia",
+   "url": "https://www.georgiaencyclopedia.org/articles/arts-culture/chenille-bedspreads/m-2383/",
+   "verdict": "bot check",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "photo-cabin-crafts-arnall",
+   "title": "2010.003.0001 - Photograph | Bandy Heritage Center for Northwest Georgia",
+   "url": "https://bandyheritagecenter.pastperfectonline.com/photo/95EA3F4C-3D88-4C76-8BE6-581372259612",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "ner-outsiders",
+   "title": "50er Jahre: Tischler verlegen Parkett, die Tuftingtechnologie ebnet dem Teppichboden den Weg - boden",
+   "url": "https://www.boden-wand-decke.de/tischler-verlegen-parkett-und-die-tuftingtechnologie-ebnet-dem-teppichboden-den-weg-337678/",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "ner-art-deco-not-chinese",
+   "title": "1920年代的美国设计师设计的中国地毯|梅花_新浪新闻",
+   "url": "https://k.sina.cn/article_6124936604_p16d131d9c02700xz3t.html",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "ner-cn-1970s",
+   "title": "个性定制地毯现在整个行业是个什么情况？地毯企业必懂_新浪新闻",
+   "url": "https://k.sina.cn/article_5778422960_1586bbcb0001003iso.html",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "ner-cn-gbt11746",
+   "title": "国家标准 - 全国标准信息公共服务平台",
+   "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=71F772D7665FD3A7E05397BE0A0AB82A",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "none (404)"
+  },
+  {
+   "id": "ner-cn-yanshan",
+   "title": "燕山地毯：与时代同发展",
+   "url": "https://mag.ctax.org.cn/Article/Detail?id=44119",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "none (404)"
+  },
+  {
+   "id": "ner-cn-dht200",
+   "title": "China built its first domestic tufting machine in 2004 (DHT-200)",
+   "url": "https://baike.baidu.com/item/%E5%8D%8E%E6%BA%90%E9%9B%86%E5%9B%A2%E5%9C%B0%E6%AF%AF%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/2302392",
+   "verdict": "robots: keep out",
+   "robots": "disallows all tools"
+  },
+  {
+   "id": "ner-cn-sun-yize",
+   "title": "Donghua team wins 2010 National Science and Technology Progress Award for digital tufting looms",
+   "url": "https://www.dhu.edu.cn/2015/0309/c18935a59358/page.htm",
+   "verdict": "unreachable",
+   "error": "ETIMEDOUT",
+   "robots": "unreachable"
+  },
+  {
+   "id": "ner-cn-imports-2025",
+   "title": "2025年03月份簇绒地毯织机进口数据统计(84479011)_报告大厅",
+   "url": "https://m.chinabgao.com/stat/stats/67490776.html",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "ner-cn-patents",
+   "title": "CN113584750A - Tufting machine, tufting method and gauge member assembly - Google Patents",
+   "url": "https://patents.google.com/patent/CN113584750A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "ner-cn-tibet-1860",
+   "title": "北京记忆丨解放前的北京地毯行业_网易订阅",
+   "url": "https://www.163.com/dy/article/EUGOOS4L05434VBG.html",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "ner-cn-palace-carpet",
+   "title": "Beijing palace carpet weaving: state-listed heritage \"in danger of being lost\"",
+   "url": "https://www.ihchina.cn/project_details/14500",
+   "verdict": "unreachable",
+   "error": "UND_ERR_CONNECT_TIMEOUT",
+   "robots": "unreachable"
+  },
+  {
+   "id": "ner-cn-beijing-export",
+   "title": "北京记忆丨解放前的北京地毯行业_网易订阅",
+   "url": "https://www.163.com/dy/article/EUGOOS4L05434VBG.html",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "ner-cn-tianjin",
+   "title": "天津日报数字报刊平台-“天津地毯”：辉煌百年 始终向前",
+   "url": "https://epaper.tianjinwe.com/tjrb/html/2026-03/20/content_143098_3242680.htm",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "none (404)"
+  },
+  {
+   "id": "ner-cn-handmade-label",
+   "title": "手工打结地毯和枪刺地毯的区别",
+   "url": "https://www.tianjiangcarpet.com/news/2017-11-02/217.html",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "ner-cn-cuihuangkou",
+   "title": "天津百年地毯小镇：中小产业带穿越周期的经济样本|天津_新浪财经_新浪网",
+   "url": "https://finance.sina.com.cn/roll/2020-09-04/doc-iivhuipp2390936.shtml",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "ner-cn-exports-iraq",
+   "title": "一张地毯的全球化之旅：去东南亚，收割新时代？_新浪财经_新浪网",
+   "url": "https://finance.sina.com.cn/jjxw/2024-12-18/doc-inczxeun0741548.shtml",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "ner-cn-heat-transfer",
+   "title": "一张地毯的全球化之旅：去东南亚，收割新时代？_新浪财经_新浪网",
+   "url": "https://finance.sina.com.cn/jjxw/2024-12-18/doc-inczxeun0741548.shtml",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "ner-cn-ningxia",
+   "title": "",
+   "url": "http://www.news.cn/politics/20240727/8e047280b8fa4fb8967301515e44d6b0/c.html",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "ner-cn-pokepoke",
+   "title": "帆板、露营之后，年轻人又开始戳戳秀了-南方都市报·奥一网",
+   "url": "https://epaper.oeeee.com/epaper/G/html/2022-11/14/content_27066.htm",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "unreachable"
+  },
+  {
+   "id": "ner-hk-taiping-needle",
+   "title": "Access Denied",
+   "url": "https://www.hongkongheritage.org/",
+   "verdict": "bot check",
+   "status": 403,
+   "robots": "none (403)"
+  },
+  {
+   "id": "ner-hk-taiping-1973",
+   "title": "Access Denied",
+   "url": "https://www.hongkongheritage.org/",
+   "verdict": "bot check",
+   "status": 403,
+   "robots": "none (403)"
+  },
+  {
+   "id": "ner-hk-taiping-1992",
+   "title": "Access Denied",
+   "url": "https://www.hongkongheritage.org/",
+   "verdict": "bot check",
+   "status": 403,
+   "robots": "none (403)"
+  },
+  {
+   "id": "ner-in-jain",
+   "title": "Just a moment...",
+   "url": "https://www.granthaalayahpublication.org/journals/granthaalayah/article/download/IJRG19_ARTS11_08/794/4631",
+   "verdict": "bot check",
+   "status": 403,
+   "robots": "allows"
+  },
+  {
+   "id": "ner-in-hindi-wiki",
+   "title": "कालीन - विकिपीडिया",
+   "url": "https://hi.wikipedia.org/wiki/%E0%A4%95%E0%A4%BC%E0%A4%BE%E0%A4%B2%E0%A5%80%E0%A4%A8",
+   "verdict": "bot check",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "ner-in-panipat-migration",
+   "title": "",
+   "url": "https://cuts-citee.org/pdf/Case_Study-Carpet_Industry_of_India_Weaving_Growth_of_Rural_Economy-India.pdf",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "ner-in-panipat-recycling",
+   "title": "‘Handloom city’ Panipat weaves world’s largest recycling empire - The Tribune",
+   "url": "https://www.tribuneindia.com/news/haryana/handloom-city-panipat-weaves-worlds-largest-recycling-empire/amp",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "ner-in-unpowered-tool",
+   "title": "",
+   "url": "https://cuts-citee.org/pdf/Case_Study-Carpet_Industry_of_India_Weaving_Growth_of_Rural_Economy-India.pdf",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "ner-in-iict-syllabus",
+   "title": "",
+   "url": "https://www.iict.ac.in/carpet_textile_technology_Old_Syllabus.pdf",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "ner-in-sheru",
+   "title": "429",
+   "url": "https://www.indiamart.com/sherubrosengineeringworks/tufting-gun-machine.html",
+   "verdict": "bot check",
+   "status": 429,
+   "robots": "allows"
+  },
+  {
+   "id": "ner-in-backing-patents",
+   "title": "",
+   "url": "https://tienda.elsevier.com/books/advances-in-carpet-manufacture/goswami/978-1-84569-333-6",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "ner-in-vocabulary",
+   "title": "कालीन - विकिपीडिया",
+   "url": "https://hi.wikipedia.org/wiki/%E0%A4%95%E0%A4%BC%E0%A4%BE%E0%A4%B2%E0%A5%80%E0%A4%A8",
+   "verdict": "bot check",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "ner-in-guinness-2025",
+   "title": "कजाकिस्तान की मस्जिद में भदोही की कालीन, गिनीज वर्ल्ड रिकॉर्ड में दर्ज हो गया नाम - bhadohi largest ",
+   "url": "https://www.aajtak.in/uttar-pradesh/story/bhadohi-largest-hand-tufted-carpet-guinness-world-record-kazakhstan-mosque-ntc-rpti-2350681-2025-10-08",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "ner-in-colonial-bhadohi",
+   "title": "Obeetee - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Obeetee",
+   "verdict": "bot check",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "ner-in-tariff-2025",
+   "title": "",
+   "url": "https://www.amarujala.com/uttar-pradesh/bhadohi/430-importers-and-146-stalls-46-american-buyers-will-come-this-year-bhadohi-news-c-191-1-svns1017-132910-2025-10-08",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "ner-jp-suminoe-1954",
+   "title": "沿革 | 企業情報 | SUMINOE株式会社",
+   "url": "https://suminoe.co.jp/company/history/",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "ner-jp-tufton-1957",
+   "title": "SUMINOE - Wikipedia",
+   "url": "https://ja.wikipedia.org/wiki/SUMINOE",
+   "verdict": "bot check",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "ner-jp-carpet-day",
+   "title": "11月1日 - Wikipedia",
+   "url": "https://ja.wikipedia.org/wiki/11%E6%9C%881%E6%97%A5",
+   "verdict": "bot check",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "ner-jp-slow-diffusion",
+   "title": "沿革・歴史 | 日本絨氈株式会社",
+   "url": "https://japancarpet.co.jp/about/history/",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "ner-jp-dust-mite",
+   "title": "404 Not Found",
+   "url": "https://online.ibnewsnet.com/sp/hn250526-05.html",
+   "verdict": "gone (not found)",
+   "status": 404,
+   "robots": "none (404)"
+  },
+  {
+   "id": "ner-jp-sakai-dantsu",
+   "title": "堺の手織緞通 堺市",
+   "url": "https://www.city.sakai.lg.jp/kanko/rekishi/bunkazai/bunkazai/shokai/bunya/minzoku/teoridantsu.html",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "none (404)"
+  },
+  {
+   "id": "ner-jp-nabeshima",
+   "title": "鍋島緞通（なべしま だんつう） / 佐賀県",
+   "url": "https://www.pref.saga.lg.jp/kiji00325321/index.html",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "ner-jp-trade-body-1895",
+   "title": "組合について | 日本カーペット工業組合",
+   "url": "https://carpet.or.jp/aboutus/",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "ner-jp-osumi",
+   "title": "",
+   "url": "https://www.jstage.jst.go.jp/article/japaninteriorsociety/11/0/11_103/_pdf/-char/ja",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "ner-jp-maruyama-1987",
+   "title": "タフティング・マシンの変遷と今後の開発課題",
+   "url": "https://www.jstage.jst.go.jp/article/fiber1944/43/1/43_1_P22/_article/-char/ja/",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "ner-jp-study-missions",
+   "title": "組合について | 日本カーペット工業組合",
+   "url": "https://carpet.or.jp/aboutus/",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "ner-jp-industry-history-2008",
+   "title": "ページが見つかりませんでした &#8211; 日本カーペット工業組合",
+   "url": "http://www.carpet.or.jp/publics/index/95/detail=1/c_id=524/page524=1",
+   "verdict": "gone (not found)",
+   "status": 404,
+   "moved": "https://carpet.or.jp/publics/index/95/detail=1/c_id=524/page524=1",
+   "robots": "allows"
+  },
+  {
+   "id": "ner-de-outsiders-1959",
+   "title": "50er Jahre: Tischler verlegen Parkett, die Tuftingtechnologie ebnet dem Teppichboden den Weg - boden",
+   "url": "https://www.boden-wand-decke.de/tischler-verlegen-parkett-und-die-tuftingtechnologie-ebnet-dem-teppichboden-den-weg-337678/",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "ner-de-1956-mecheels",
+   "title": "DeWiki &gt; Tufting",
+   "url": "https://dewiki.de/Lexikon/Tufting",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "ner-de-longlife-refuted",
+   "title": "Teppichboden – Wikipedia",
+   "url": "https://de.wikipedia.org/wiki/Teppichboden",
+   "verdict": "bot check",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "ner-de-no-machines",
+   "title": "DeWiki &gt; Tufting",
+   "url": "https://dewiki.de/Lexikon/Tufting",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "ner-fr-balsan-1954",
+   "title": "Louis Balsan (1911-1982) — Wikipédia",
+   "url": "https://fr.wikipedia.org/wiki/Louis_Balsan_(1911-1982)",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "ner-nl-genemuiden-1967",
+   "title": "De tapijtindustrie van Genemuiden - Canon van Nederland",
+   "url": "https://www.canonvannederland.nl/nl/overijssel/salland/zwartewaterland/de-tapijtindustrie-",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "ner-be-gap",
+   "title": "Homepage | Associated Weavers",
+   "url": "https://carpetyourlife.com/en/about-us/associated-weavers/milestones",
+   "verdict": "ok (redirected)",
+   "status": 200,
+   "moved": "https://associated-weavers.com/en/",
+   "robots": "allows"
+  },
+  {
+   "id": "ner-chase-tianjin-primary",
+   "title": "《天津地毯工業》 Republican-era Chinese primary source (scan)",
+   "url": "https://nkie.nankai.edu.cn/2017/0502/c11716a121465/page.htm",
+   "verdict": "unreachable",
+   "error": "ETIMEDOUT",
+   "robots": "unreachable"
+  },
+  {
+   "id": "ner-chase-sohu-series",
+   "title": "「文献里的天津」之天津地毯故事 (Sohu archival documentary series)",
+   "url": "https://m.sohu.com/a/875737930_121123801/",
+   "verdict": "robots: keep out",
+   "robots": "disallows all tools"
+  },
+  {
+   "id": "ner-chase-gazetteers",
+   "title": "地方文献丨《北京工业志·燕山石化志》_澎湃号·湃客_澎湃新闻-The Paper",
+   "url": "https://www.thepaper.cn/newsDetail_forward_7818157",
+   "verdict": "bot check",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "ner-chase-cnki",
+   "title": "CNKI (知网) master's theses on the Tianjin carpet industry",
+   "url": "https://www.cnki.net/",
+   "verdict": "robots: keep out",
+   "robots": "disallows all tools"
+  },
+  {
+   "id": "ner-chase-goswami",
+   "title": "",
+   "url": "https://shop.elsevier.com/books/advances-in-carpet-manufacture/goswami/978-0-08-101131-7",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "ttw-susan-burr",
+   "title": "Ye \"Susan Burr\" Hooked Rug Machine",
+   "url": "https://docs.google.com/spreadsheets/d/1cj3lVGl_GaLrJt1FuzGKVGMVO3G6xLL3V6MIDF-iERM/edit",
+   "verdict": "robots: keep out",
+   "robots": "disallows all tools"
+  },
+  {
+   "id": "pat-us463548a",
+   "title": "US463548A - Turfing implement - Google Patents",
+   "url": "https://patents.google.com/patent/US463548A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us1917162a",
+   "title": "US1917162A - Motor operated tufting machine - Google Patents",
+   "url": "https://patents.google.com/patent/US1917162A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us2422126a",
+   "title": "US2422126A - Tufting device - Google Patents",
+   "url": "https://patents.google.com/patent/US2422126A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us2442906a",
+   "title": "US2442906A - Hooked rug machine - Google Patents",
+   "url": "https://patents.google.com/patent/US2442906A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us2753820a",
+   "title": "US2753820A - Carpet forming device - Google Patents",
+   "url": "https://patents.google.com/patent/US2753820A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us3142276a",
+   "title": "US3142276A - Device for forming cut pile fabrics and the like - Google Patents",
+   "url": "https://patents.google.com/patent/US3142276A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us5090341a",
+   "title": "US5090341A - Hand-held tufting mending gun - Google Patents",
+   "url": "https://patents.google.com/patent/US5090341A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "ttw-evans-1895-1900",
+   "title": "\"Peacock Alley: Highway 41 and the Growth of the Chenille Bedspread Ind\" by Ashley Callahan",
+   "url": "https://digitalcommons.unl.edu/tsaconf/506/",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "wint-photo-bucilla-tools",
+   "title": "Bucilla rug materials catalog page: Bluenose Rug Hooker and tools",
+   "url": "https://drive.google.com/file/d/12T-GDkDIbkotAMbExH7aS_Lk6B9fQDTo/view",
+   "verdict": "robots: keep out",
+   "robots": "disallows all tools"
+  },
+  {
+   "id": "wint-photo-bucilla-02",
+   "title": "Bucilla catalog, second photo",
+   "url": "https://drive.google.com/file/d/1MErZC-yjUhSuoTVG079Uf-JjPQtDb1ml/view",
+   "verdict": "robots: keep out",
+   "robots": "disallows all tools"
+  },
+  {
+   "id": "wint-photo-fleisher",
+   "title": "Fleisher rug accessories and yarns: the Bluenose Hooker",
+   "url": "https://drive.google.com/file/d/1NFkIyCj1KckouerwPPWjHNetm-3jMgX5/view",
+   "verdict": "robots: keep out",
+   "robots": "disallows all tools"
+  },
+  {
+   "id": "wint-photo-olson-02",
+   "title": "Hooked rug pattern pages: So. E. Z. Chenille Yarn and the \"Automatic Hook Rug Needle\" (filed as Olson Rug Co.)",
+   "url": "https://drive.google.com/file/d/1u8tvZItnhNvvfPwxYYn6m4tX51ZnL_Vv/view",
+   "verdict": "robots: keep out",
+   "robots": "disallows all tools"
+  },
+  {
+   "id": "wint-photo-olson-03",
+   "title": "Hooked rug pattern page 11: New England Rug Creation, Buttercup Bathroom Set (filed as Olson Rug Co.)",
+   "url": "https://drive.google.com/file/d/1jFInSaSH8bL84A7JFA8IYKmGcJr7ZBgn/view",
+   "verdict": "robots: keep out",
+   "robots": "disallows all tools"
+  },
+  {
+   "id": "wint-photo-sunshine-1937",
+   "title": "Sunshine Yarns sample book, 1937",
+   "url": "https://drive.google.com/file/d/1su_4EkENLYjqAeIQVBPytjxwoEe-f89y/view",
+   "verdict": "robots: keep out",
+   "robots": "disallows all tools"
+  },
+  {
+   "id": "wint-photo-1964-1354",
+   "title": "Winterthur 1964.1354 (detail photo)",
+   "url": "https://drive.google.com/file/d/1gIn21L4kPy31xZObHePImEuxcy8Y8qiA/view",
+   "verdict": "robots: keep out",
+   "robots": "disallows all tools"
+  },
+  {
+   "id": "ttw-doc-video-script",
+   "title": "TTW: The History of Tufting (3-minute video script)",
+   "url": "https://docs.google.com/document/d/10qfRoO_DbYeXGBGG_edbrMyCbWV4XqHLWuZx6xkleto/edit",
+   "verdict": "robots: keep out",
+   "robots": "disallows all tools"
+  },
+  {
+   "id": "ttw-doc-script-bank",
+   "title": "TTW Script Bank: 109 history scripts (v4)",
+   "url": "https://docs.google.com/spreadsheets/d/11-2o0XY2V3DXwyEwXnBN8RH63xF-pBHXXo8Mq3sRMGA/edit",
+   "verdict": "robots: keep out",
+   "robots": "disallows all tools"
+  },
+  {
+   "id": "ttw-doc-script-addendum",
+   "title": "TTW Script Bank addendum, rows 110–117 (Susan Burr / hand tool lineage)",
+   "url": "https://docs.google.com/spreadsheets/d/1cj3lVGl_GaLrJt1FuzGKVGMVO3G6xLL3V6MIDF-iERM/edit",
+   "verdict": "robots: keep out",
+   "robots": "disallows all tools"
+  },
+  {
+   "id": "ttw-doc-non-english",
+   "title": "TTW: Tufting History, The Non-English Record (research brief)",
+   "url": "https://docs.google.com/document/d/1dU1bOlARhyqEsG03f6X2Rh-WvwNiRBqo4KnR9DZnzxM/edit",
+   "verdict": "robots: keep out",
+   "robots": "disallows all tools"
+  },
+  {
+   "id": "hagley-dpads-1803-00680",
+   "title": "Verifying Connection",
+   "url": "https://digital.hagley.org/dpads_1803_00680",
+   "verdict": "bot check",
+   "status": 200,
+   "moved": "https://digital.hagley.org/challenge?destination=%2Fdpads_1803_00680",
+   "robots": "allows"
+  },
+  {
+   "id": "hagley-dpads-1803-00709",
+   "title": "Verifying Connection",
+   "url": "https://digital.hagley.org/dpads_1803_00709",
+   "verdict": "bot check",
+   "status": 200,
+   "moved": "https://digital.hagley.org/challenge?destination=%2Fdpads_1803_00709",
+   "robots": "allows"
+  },
+  {
+   "id": "hagley-dpads-1803-00712",
+   "title": "Verifying Connection",
+   "url": "https://digital.hagley.org/dpads_1803_00712",
+   "verdict": "bot check",
+   "status": 200,
+   "moved": "https://digital.hagley.org/challenge?destination=%2Fdpads_1803_00712",
+   "robots": "allows"
+  },
+  {
+   "id": "hagley-pam-20160208",
+   "title": "Verifying Connection",
+   "url": "https://digital.hagley.org/PAM_20160208",
+   "verdict": "bot check",
+   "status": 200,
+   "moved": "https://digital.hagley.org/challenge?destination=%2FPAM_20160208",
+   "robots": "allows"
+  },
+  {
+   "id": "hagley-film-fc319",
+   "title": "Verifying Connection",
+   "url": "https://digital.hagley.org/FILM_1995300_FC319",
+   "verdict": "bot check",
+   "status": 200,
+   "moved": "https://digital.hagley.org/challenge?destination=%2FFILM_1995300_FC319",
+   "robots": "allows"
+  },
+  {
+   "id": "hagley-vid-1995300-b10",
+   "title": "Verifying Connection",
+   "url": "https://digital.hagley.org/VID-1995300-B10",
+   "verdict": "bot check",
+   "status": 200,
+   "moved": "https://digital.hagley.org/challenge?destination=%2FVID-1995300-B10",
+   "robots": "allows"
+  },
+  {
+   "id": "hagley-film-fc249-02",
+   "title": "Verifying Connection",
+   "url": "https://digital.hagley.org/FILM_1995300_FC249_02",
+   "verdict": "bot check",
+   "status": 200,
+   "moved": "https://digital.hagley.org/challenge?destination=%2FFILM_1995300_FC249_02",
+   "robots": "allows"
+  },
+  {
+   "id": "hagley-film-opening-door-1959",
+   "title": "Verifying Connection",
+   "url": "https://digital.hagley.org/",
+   "verdict": "bot check",
+   "status": 200,
+   "moved": "https://digital.hagley.org/challenge?destination=%2F",
+   "robots": "allows"
+  },
+  {
+   "id": "hagley-1972341-ludox",
+   "title": "Verifying Connection",
+   "url": "https://digital.hagley.org/1972341?display=list&page=60",
+   "verdict": "bot check",
+   "status": 200,
+   "moved": "https://digital.hagley.org/challenge?destination=%2F1972341%3Fdisplay%3Dlist%26page%3D60",
+   "robots": "allows"
+  },
+  {
+   "id": "hagley-1972430-1080",
+   "title": "Verifying Connection",
+   "url": "https://digital.hagley.org/1972430_1080",
+   "verdict": "bot check",
+   "status": 200,
+   "moved": "https://digital.hagley.org/challenge?destination=%2F1972430_1080",
+   "robots": "allows"
+  },
+  {
+   "id": "hagley-nylon-hooked-rug",
+   "title": "Museum Collections: The du Pont Story on a Hooked Rug | Hagley",
+   "url": "https://www.hagley.org/librarynews/museum-collections-du-pont-story-hooked-rug",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "hagley-dichter-954a",
+   "title": "Page Not Available",
+   "url": "https://www.marketresearch.amdigital.co.uk/Documents/Details/Hagley_Dichter_BX042_954A",
+   "verdict": "bot check",
+   "status": 403,
+   "robots": "none (403)"
+  },
+  {
+   "id": "hagley-bbdo-nylon",
+   "title": "",
+   "url": "https://findingaids.hagley.org/repositories/3/archival_objects/578303",
+   "verdict": "ok",
+   "status": 202,
+   "robots": "allows"
+  },
+  {
+   "id": "hagley-pahlmann-samples",
+   "title": "",
+   "url": "https://findingaids.hagley.org/repositories/3/archival_objects/439206",
+   "verdict": "ok",
+   "status": 202,
+   "robots": "allows"
+  },
+  {
+   "id": "hagley-oh-mcandrews",
+   "title": "",
+   "url": "https://digital.hagley.org/system/files/2025-06/islandora_2599141_obj.pdf",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "hagley-oh-culley",
+   "title": "",
+   "url": "https://digital.hagley.org/system/files/2025-06/islandora_2615416_obj.pdf",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "hagley-oh-axtell",
+   "title": "",
+   "url": "https://findingaids.hagley.org/repositories/2/archival_objects/108095",
+   "verdict": "ok",
+   "status": 202,
+   "robots": "allows"
+  },
+  {
+   "id": "hagley-seaford-records",
+   "title": "",
+   "url": "https://findingaids.hagley.org/repositories/3/resources/1864",
+   "verdict": "ok",
+   "status": 202,
+   "robots": "allows"
+  },
+  {
+   "id": "hagley-magee-1936",
+   "title": "Verifying Connection",
+   "url": "https://digital.hagley.org/1970200_09067",
+   "verdict": "bot check",
+   "status": 200,
+   "moved": "https://digital.hagley.org/challenge?destination=%2F1970200_09067",
+   "robots": "allows"
+  },
+  {
+   "id": "hagley-gay-sons-1900",
+   "title": "Verifying Connection",
+   "url": "https://digital.hagley.org/2002251_069",
+   "verdict": "bot check",
+   "status": 200,
+   "moved": "https://digital.hagley.org/challenge?destination=%2F2002251_069",
+   "robots": "allows"
+  },
+  {
+   "id": "ttw-finding-501-1958",
+   "title": "",
+   "url": "https://digital.hagley.org/system/files/2025-06/islandora_2599141_obj.pdf",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "article-archer-luxury-underfoot",
+   "title": "Luxury underfoot &mdash; Sarah Archer",
+   "url": "https://www.sarah-archer.com/writing/luxury-underfoot",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "duke-adviews-caprolan",
+   "title": "",
+   "url": "https://repository.duke.edu/dc/adviews/dmbb00804",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us2071250a",
+   "title": "US2071250A - Linear condensation polymers - Google Patents",
+   "url": "https://patents.google.com/patent/US2071250A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us2130948a",
+   "title": "US2130948A - Synthetic fiber - Google Patents",
+   "url": "https://patents.google.com/patent/US2130948A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "hagley-vault-1937-patent",
+   "title": "On this date, February 16, in 1937, E.I. du Pont de Nemours &amp; Co. was granted U.S. patent ... | ",
+   "url": "https://www.hagley.org/research/news/hagley-vault/date-february-16-1937-ei-du-pont-de-nemours-co-was-granted-us-patent",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "co-shaw",
+   "title": "Shaw Industries Group, Inc. | History",
+   "url": "https://shawinc.com/Our-Company/History",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "none (404)"
+  },
+  {
+   "id": "co-mohawk",
+   "title": "Our Growth Story | Mohawk Industries, Inc.",
+   "url": "https://mohawkind.com/about/our-growth-story.php",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "co-delos",
+   "title": "About - The Delos Company",
+   "url": "https://thedeloscompany.com/about/",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "co-floor-story",
+   "title": "Interview : Simon Goff of Floor_Story - The Design Sheppard",
+   "url": "https://www.thedesignsheppard.com/interviews/interview-simon-goff-of-floor_story",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "co-scott-group",
+   "title": "Our Story | Scott Group Studio",
+   "url": "https://scottgroupstudio.com/our-story/",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "none (404)"
+  },
+  {
+   "id": "co-creative-accents",
+   "title": "OUR STORY",
+   "url": "https://creativeaccents.com/our-story/",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "co-kramis",
+   "title": "Family | Kramis Teppich Design AG",
+   "url": "https://www.kramis-teppich.ch/en/about/family/",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "co-jaipur",
+   "title": "The Jaipur Living Story - Jaipur Living",
+   "url": "https://www.jaipurliving.com/the-jaipur-living-story/",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "co-tai-ping",
+   "title": "Tai Ping - Heritage",
+   "url": "https://www.taipingcarpets.com/about/heritage",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "none (403)"
+  },
+  {
+   "id": "wilton-1741",
+   "title": "Our heritage - Wilton Carpets",
+   "url": "https://wiltoncarpets.com/about-us/our-heritage/",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "grace-wilton-royal",
+   "title": "Wilton Royal Carpet Factory (Grace's Guide)",
+   "url": "https://gracesguide.co.uk/Wilton_Royal_Carpet_Factory",
+   "verdict": "unreachable",
+   "error": "ERR_TLS_CERT_ALTNAME_INVALID",
+   "robots": "unreachable"
+  },
+  {
+   "id": "nps-wilton-america",
+   "title": "Park History Program (U.S. National Park Service)",
+   "url": "https://www.nps.gov/parkhistory/online_books/inde/anderson/chap2.htm",
+   "verdict": "ok (redirected)",
+   "status": 200,
+   "moved": "https://www.nps.gov/orgs/1220/index.htm",
+   "robots": "allows"
+  },
+  {
+   "id": "bigelow-power-loom",
+   "title": "Just a moment...",
+   "url": "https://www.britannica.com/biography/Erastus-Brigham-Bigelow",
+   "verdict": "bot check",
+   "status": 403,
+   "robots": "allows"
+  },
+  {
+   "id": "si-bigelow-loom-model",
+   "title": "Smithsonian request verification",
+   "url": "https://www.si.edu/object/1838-bigelows-patent-model-loom:nmah_1070864",
+   "verdict": "bot check",
+   "status": 403,
+   "robots": "allows"
+  },
+  {
+   "id": "bigelow-mill",
+   "title": "Bigelow Carpet Mill - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Bigelow_Carpet_Mill",
+   "verdict": "bot check",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "bigelow-broadloom-1877",
+   "title": "History of the Carpet Industry in the U.S. | From Looms to Tufting | DaltonCarpet.com",
+   "url": "https://daltoncarpet.com/info-center/carpet/history-of-carpet",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "skinner-axminster-1876",
+   "title": "Just a moment...",
+   "url": "https://kids.britannica.com/students/article/rug-and-carpet/276811",
+   "verdict": "bot check",
+   "status": 403,
+   "robots": "allows"
+  },
+  {
+   "id": "woven-slump-1920s",
+   "title": "",
+   "url": "https://philadelphiaencyclopedia.org/essays/carpet-weaving-and-rug-making-2/",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "tufted-half-price",
+   "title": "Carpet Industry - New Georgia Encyclopedia",
+   "url": "https://www.georgiaencyclopedia.org/articles/business-economy/carpet-industry/",
+   "verdict": "bot check",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "chenille-widened",
+   "title": "History of Carpet - The Carpet and Rug Institute",
+   "url": "https://carpet-rug.org/about-us/history-of-carpet/",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "mohasco-1956",
+   "title": "Mohawk Industries - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Mohawk_Industries",
+   "verdict": "bot check",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "philly-encyclopedia-carpet",
+   "title": "",
+   "url": "https://philadelphiaencyclopedia.org/essays/carpet-weaving-and-rug-making-2/",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "wint-lib-ross-1891",
+   "title": "[Catalog of rug patterns] : E. Ross &amp; Co. (Toledo, Ohio) : Free Download, Borrow, and Streaming ",
+   "url": "https://archive.org/details/catalogofrugpatt00eros",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "ross-toledo",
+   "title": "A COTTON AND WOOL HOOKED RUG , AMERICAN, LATE 19TH-EARLY 20TH CENTURY | Christie&#39;s",
+   "url": "https://www.christies.com.cn/lot/lot-1709610",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "aic-71710",
+   "title": "Just a moment...",
+   "url": "https://www.artic.edu/artworks/71710/lion-with-palms-rug",
+   "verdict": "bot check",
+   "status": 403,
+   "robots": "none (403)"
+  },
+  {
+   "id": "wint-lib-allen-papers",
+   "title": "The Winterthur Library",
+   "url": "http://findingaid.winterthur.org/html/HTML_Finding_Aids/COL0979.htm",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "none (404)"
+  },
+  {
+   "id": "wint-lib-swatch-books",
+   "title": "Swatch Books and Salesmen&#x27;s Sample Books - Winterthur Library Digital Collections",
+   "url": "https://digitalcollections.winterthur.org/collections/textile-collections/swatch-books-and-salesmens-sample-books",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "wint-shaw-licensed-nylon",
+   "title": "Winterthur Collection Area Rug | EBTH",
+   "url": "https://www.ebth.com/items/5023244-winterthur-collection-area-rug",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "diamond-dye-rug-book",
+   "title": "Diamond Dye rug book [microform] : Wells &amp; Richardson Co : Free Download, Borrow, and Streaming ",
+   "url": "https://archive.org/details/cihm_01194",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "hooked-rugs-chestertown",
+   "title": "Hooked Rugs at Henry Francis du Pont’s Chestertown House | Americana Insights",
+   "url": "https://americanainsights.org/essays/hooked-rugs/",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us251381a",
+   "title": "US251381A - Embroidery-machine - Google Patents",
+   "url": "https://patents.google.com/patent/US251381A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us340189a",
+   "title": "US340189A - Rag or worsted worker - Google Patents",
+   "url": "https://patents.google.com/patent/US340189A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us897200a",
+   "title": "US897200A - Turfing-needle. - Google Patents",
+   "url": "https://patents.google.com/patent/US897200A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us1605711a",
+   "title": "US1605711A - Rug hooker - Google Patents",
+   "url": "https://patents.google.com/patent/US1605711A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us1941346a",
+   "title": "US1941346A - Rug hooker - Google Patents",
+   "url": "https://patents.google.com/patent/US1941346A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us1912977a",
+   "title": "US1912977A - Semiautomatic turfing device - Google Patents",
+   "url": "https://patents.google.com/patent/US1912977A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us2077719a",
+   "title": "US2077719A - Hooked rug making device - Google Patents",
+   "url": "https://patents.google.com/patent/US2077719A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us2605727a",
+   "title": "US2605727A - Hand tool for making rugs - Google Patents",
+   "url": "https://patents.google.com/patent/US2605727A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us2591939a",
+   "title": "US2591939A - Carpet tufting and pile cutting device - Google Patents",
+   "url": "https://patents.google.com/patent/US2591939A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us2578038a",
+   "title": "US2578038A - Hooked rug making device - Google Patents",
+   "url": "https://patents.google.com/patent/US2578038A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us1485213a",
+   "title": "US1485213A - Tufting-attachment mechanism for sewing machines - Google Patents",
+   "url": "https://patents.google.com/patent/US1485213A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us1452632a",
+   "title": "US1452632A - Sewing machine - Google Patents",
+   "url": "https://patents.google.com/patent/US1452632A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us1800522a",
+   "title": "US1800522A - Tufting-attachment mechanism for sewing machines - Google Patents",
+   "url": "https://patents.google.com/patent/US1800522A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us2042503a",
+   "title": "US2042503A - Tufted rug - Google Patents",
+   "url": "https://patents.google.com/patent/US2042503A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us2224866a",
+   "title": "US2224866A - Tufting machine - Google Patents",
+   "url": "https://patents.google.com/patent/US2224866A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us2123114a",
+   "title": "US2123114A - Tufting machine - Google Patents",
+   "url": "https://patents.google.com/patent/US2123114A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us2311802a",
+   "title": "US2311802A - Tufting machine and method - Google Patents",
+   "url": "https://patents.google.com/patent/US2311802A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us2335487a",
+   "title": "US2335487A - Multiple needle tufting machine - Google Patents",
+   "url": "https://patents.google.com/patent/US2335487A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us2389914a",
+   "title": "US2389914A - Method and machine for making tufted articles - Google Patents",
+   "url": "https://patents.google.com/patent/US2389914A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us2411267a",
+   "title": "US2411267A - Multiple needle tufting machine - Google Patents",
+   "url": "https://patents.google.com/patent/US2411267A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us2595355a",
+   "title": "US2595355A - Multiple needle tufting machine - Google Patents",
+   "url": "https://patents.google.com/patent/US2595355A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us1963441a",
+   "title": "US1963441A - Tufting attachment - Google Patents",
+   "url": "https://patents.google.com/patent/US1963441A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us1903946a",
+   "title": "US1903946A - Tufting machine attachment - Google Patents",
+   "url": "https://patents.google.com/patent/US1903946A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us2112512a",
+   "title": "US2112512A - Tufting machine - Google Patents",
+   "url": "https://patents.google.com/patent/US2112512A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us2058047a",
+   "title": "US2058047A - Tufting machine - Google Patents",
+   "url": "https://patents.google.com/patent/US2058047A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us2346467a",
+   "title": "US2346467A - Skip stitch machine - Google Patents",
+   "url": "https://patents.google.com/patent/US2346467A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us2679218a",
+   "title": "US2679218A - Chenille tufting machine - Google Patents",
+   "url": "https://patents.google.com/patent/US2679218A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us1907292a",
+   "title": "US1907292A - Loop and pile forming machine - Google Patents",
+   "url": "https://patents.google.com/patent/US1907292A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us1909530a",
+   "title": "US1909530A - Tufting machine looper and cutter - Google Patents",
+   "url": "https://patents.google.com/patent/US1909530A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us1909531a",
+   "title": "US1909531A - Tufting machine - Google Patents",
+   "url": "https://patents.google.com/patent/US1909531A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us1831485a",
+   "title": "US1831485A - Rug tufting machine - Google Patents",
+   "url": "https://patents.google.com/patent/US1831485A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us1970703a",
+   "title": "US1970703A - Machine for making rugs, carpets, and the like - Google Patents",
+   "url": "https://patents.google.com/patent/US1970703A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us2070287a",
+   "title": "US2070287A - Tufting machine - Google Patents",
+   "url": "https://patents.google.com/patent/US2070287A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us2600993a",
+   "title": "US2600993A - Carpet tufting machine - Google Patents",
+   "url": "https://patents.google.com/patent/US2600993A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us2837045a",
+   "title": "US2837045A - Portable tufting machine - Google Patents",
+   "url": "https://patents.google.com/patent/US2837045A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us2935037a",
+   "title": "US2935037A - Apparatus for making patterned tufted pile fabric - Google Patents",
+   "url": "https://patents.google.com/patent/US2935037A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us2862465a",
+   "title": "US2862465A - Thread feed mechanism and pattern control therefor - Google Patents",
+   "url": "https://patents.google.com/patent/US2862465A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us2975736a",
+   "title": "US2975736A - Loop shedder - Google Patents",
+   "url": "https://patents.google.com/patent/US2975736A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us2879731a",
+   "title": "US2879731A - Tufting implement for producing high and low pile - Google Patents",
+   "url": "https://patents.google.com/patent/US2879731A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us2887076a",
+   "title": "US2887076A - Tufting machine - Google Patents",
+   "url": "https://patents.google.com/patent/US2887076A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us3144844a",
+   "title": "US3144844A - Portable machine for tufting cut pile - Google Patents",
+   "url": "https://patents.google.com/patent/US3144844A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us3229653a",
+   "title": "US3229653A - Portable tufting machine - Google Patents",
+   "url": "https://patents.google.com/patent/US3229653A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us3389667a",
+   "title": "US3389667A - Method and apparatus for cutting pile yarns - Google Patents",
+   "url": "https://patents.google.com/patent/US3389667A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "co-merida",
+   "title": "MERIDA",
+   "url": "https://meridastudio.com/",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "none (404)"
+  },
+  {
+   "id": "wint-lib-tariff-brussels",
+   "title": "SWATCH BOOK COLLECTION Collection 50",
+   "url": "http://findingaid.winterthur.org/html/HTML_Finding_Aids/col0050.htm",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "none (404)"
+  },
+  {
+   "id": "hagley-2015-10-2",
+   "title": "",
+   "url": "https://museumcollection.hagley.org/objects/46294/hooked-rug",
+   "verdict": "ok",
+   "status": 202,
+   "robots": "allows"
+  },
+  {
+   "id": "co-vsoske",
+   "title": "Stanislav V'Soske - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Stanislav_V%27Soske",
+   "verdict": "bot check",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "co-edward-fields",
+   "title": "",
+   "url": "https://www.edwardfields.com/about/heritage",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "none (404)"
+  },
+  {
+   "id": "co-kasthall",
+   "title": "About Kasthall",
+   "url": "https://www.kasthall.com/about",
+   "verdict": "ok (redirected)",
+   "status": 200,
+   "moved": "https://www.kasthall.com/en-us/pages/about-kasthall",
+   "robots": "allows"
+  },
+  {
+   "id": "co-ceadogan",
+   "title": "Home - Ceadogán",
+   "url": "https://www.ceadogan.ie/",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "co-pinton",
+   "title": "History - Pinton",
+   "url": "https://www.pinton1867.com/en/history/",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "co-limited-edition",
+   "title": "",
+   "url": "https://materialbank.eu/partner/limitededition",
+   "verdict": "gone (not found)",
+   "status": 404,
+   "moved": "https://www.materialbank.eu/partner/limitededition",
+   "robots": "allows"
+  },
+  {
+   "id": "co-yamagata-dantsu",
+   "title": "歴史 ｜ 山形緞通",
+   "url": "https://yamagatadantsu.co.jp/history/",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "co-designer-rugs",
+   "title": "About Designer Rugs",
+   "url": "https://designerrugs.com.au/pages/about-designer-rugs",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "co-roger-oates",
+   "title": "Explore Hand Tufted Rugs - Roger Oates Design",
+   "url": "https://www.rogeroates.com/explore-hand-tufted/",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "co-royal-thai",
+   "title": "Our Heritage - Royal Thai Leading Carpet Manufacturers",
+   "url": "https://www.royalthai.com/our-heritage",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "co-cabin-crafts",
+   "title": "Chenille Bedspreads - New Georgia Encyclopedia",
+   "url": "https://www.georgiaencyclopedia.org/articles/arts-culture/chenille-bedspreads",
+   "verdict": "bot check",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "co-barwick",
+   "title": "LaFayette &#8211; West Georgia Textile Heritage Trail",
+   "url": "https://westgatextiletrail.com/?p=3323",
+   "verdict": "ok (redirected)",
+   "status": 200,
+   "moved": "https://westgatextiletrail.com/lafayette/",
+   "robots": "allows"
+  },
+  {
+   "id": "co-world-carpets",
+   "title": "World Carpets - New Georgia Encyclopedia",
+   "url": "https://www.georgiaencyclopedia.org/articles/business-economy/world-carpets/",
+   "verdict": "bot check",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "co-cormar",
+   "title": "Cormar Carpets",
+   "url": "https://cormarcarpets.co.uk/about-us/our-history",
+   "verdict": "unreachable",
+   "error": "ECONNRESET",
+   "robots": "unreachable"
+  },
+  {
+   "id": "co-interface",
+   "title": "30+ Years of Sustainability: Ray Anderson’s Innovative Impact",
+   "url": "https://www.interface.com/US/en-US/sustainability/our-history.html",
+   "verdict": "bot check",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "co-milliken",
+   "title": "History | Milliken",
+   "url": "https://www.milliken.com/en-us/about-us/history",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "co-dixie-group",
+   "title": "Our Heritage - The Dixie Group",
+   "url": "https://www.dixiegroup.com/About/Heritage",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "none (404)"
+  },
+  {
+   "id": "co-engineered-floors",
+   "title": "About Us | Engineered Floors",
+   "url": "https://www.engineeredfloors.com/about/",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "co-ege",
+   "title": "Get to know our History | Ege Carpets",
+   "url": "https://www.egecarpets.com/en-gb/about-ege/history",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "co-object-carpet",
+   "title": "FOREVER YOUNG",
+   "url": "https://website.oc.prod.de.ymc.host/en/company/about-object-carpet/forever-young",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "co-vorwerk",
+   "title": "423 Locked",
+   "url": "https://museumhameln.de/dauerausstellung_engl_20jh67/",
+   "verdict": "error (423)",
+   "status": 423,
+   "robots": "none (423)"
+  },
+  {
+   "id": "co-desso",
+   "title": "Discover DESSO carpet | Tarkett",
+   "url": "https://professionals.tarkett.co.uk/en_GB/node/desso-carpet-16235",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "co-balta",
+   "title": "History &amp; group | Belysse",
+   "url": "https://www.belysse.com/en/about-us/history-and-group",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "co-beaulieu",
+   "title": "",
+   "url": "https://www.beaulieu.com/en/who-we-are/history",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "co-victoria",
+   "title": "Victoria Carpets | Our History",
+   "url": "https://www.victoriacarpets.com/about/us/our-history",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "co-godfrey-hirst",
+   "title": "About Us - Godfrey Hirst | Australia",
+   "url": "https://www.godfreyhirst.com/au/about-us",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "co-suminoe",
+   "title": "Message from the CEO｜株式会社スミノエ インテリア プロダクツ（SUMINOE Interior Products）",
+   "url": "https://suminoe.jp/en/pages/company",
+   "verdict": "ok (redirected)",
+   "status": 200,
+   "moved": "https://suminoe.jp/en/pages/message-from-the-president",
+   "robots": "allows"
+  },
+  {
+   "id": "co-oriental-weavers",
+   "title": "Just a moment...",
+   "url": "https://orientalweavers.com/history/",
+   "verdict": "bot check",
+   "status": 403,
+   "robots": "allows"
+  },
+  {
+   "id": "co-merinos",
+   "title": "Merinos. Hakkımızda",
+   "url": "https://www.merinos.com.tr/kurumsal-hakkimizda",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "co-huade",
+   "title": "Huade Carpet Group : Leading Carpet Wholesale Supplier | hdcarpets.com",
+   "url": "https://www.hdcarpets.com/pages/about-us-1",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "co-welspun-flooring",
+   "title": "About Us - Innovations by Welspun Flooring",
+   "url": "https://welspunflooring.com/about-us",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "co-cobble",
+   "title": "Tufting | Vandewiele",
+   "url": "https://www.cobble.co.uk/en",
+   "verdict": "ok (redirected)",
+   "status": 200,
+   "moved": "https://vandewiele.com/textile-solutions/tufting",
+   "robots": "allows"
+  },
+  {
+   "id": "co-tuftco",
+   "title": "About - Tuftco",
+   "url": "https://www.tuftco.com/about",
+   "verdict": "bot check",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "co-card-monroe",
+   "title": "About Card-Monroe Corp. | World Leader in Tufting Machine Manufacturing",
+   "url": "https://www.cardmonroe.com/about-us",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "co-groz-beckert",
+   "title": "History | Groz-Beckert KG",
+   "url": "https://www.groz-beckert.com/en/company/history/",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "co-obeetee",
+   "title": "Legacy",
+   "url": "https://www.obeetee.in/pages/legacy",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "co-hands",
+   "title": "The Legacy of Hands Carpets | Crafting Excellence Since 1881",
+   "url": "https://handscarpets.com/pages/the-story",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "co-kaleen-india",
+   "title": "About Us | Kaleen Rugs",
+   "url": "https://www.kaleen.com/about/",
+   "verdict": "bot check",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "co-surya",
+   "title": "Surya at 50: Honoring craft, community and continued growth | Home Accents Today",
+   "url": "https://www.homeaccentstoday.com/rugs/surya-at-50-honoring-craft-community-and-continued-growth",
+   "verdict": "ok (redirected)",
+   "status": 200,
+   "moved": "https://www.homeaccentstoday.com/rugs/surya-at-50-honoring-craft-community-and-continued-growth/",
+   "robots": "allows"
+  },
+  {
+   "id": "pat-ch214147a",
+   "title": "CH214147A - Apparat zum Handnähen von Teppichen. - Google Patents",
+   "url": "https://patents.google.com/patent/CH214147A/de",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-gb674501a",
+   "title": "GB674501A - Improvements in devices for hand-sewing carpets - Google Patents",
+   "url": "https://patents.google.com/patent/GB674501A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-de854562c",
+   "title": "DE854562C - Handgeraet zur Teppichherstellung - Google Patents",
+   "url": "https://patents.google.com/patent/DE854562C/de",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-gb663196a",
+   "title": "GB663196A - A new or improved hand tool for making rugs, carpets and the like with a cut pile - Goog",
+   "url": "https://patents.google.com/patent/GB663196A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-de1074196b",
+   "title": "DE1074196B - Florknüpfnadel zur Herstellung von Teppichen - Google Patents",
+   "url": "https://patents.google.com/patent/DE1074196B/de",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-de2356585c2",
+   "title": "DE2356585C2 - Vorrichtung zum Tuften von Teppichen in Handarbeit - Google Patents",
+   "url": "https://patents.google.com/patent/DE2356585C2/de",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-de2511266c3",
+   "title": "DE2511266C3 - Vorrichtung zum Tuften von Hand - Google Patents",
+   "url": "https://patents.google.com/patent/DE2511266C3/de",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-ep0026492a1",
+   "title": "EP0026492A1 - Verfahren und Vorrichtung zum Tuften von Teppichen od. dgl. - Google Patents",
+   "url": "https://patents.google.com/patent/EP0026492A1/de",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-de2815801a1",
+   "title": "DE2815801A1 - tufting-vorrichtung, insbesondere handtufting-geraet - Google Patents",
+   "url": "https://patents.google.com/patent/DE2815801A1/de",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-de3410783a1",
+   "title": "DE3410783A1 - Handtuftinggeraet - Google Patents",
+   "url": "https://patents.google.com/patent/DE3410783A1/de",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-ep0534974a1",
+   "title": "EP0534974A1 - A hand-held tufting machine - Google Patents",
+   "url": "https://patents.google.com/patent/EP0534974A1/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-ep1674605a1",
+   "title": "EP1674605A1 - Tufting machine - Google Patents",
+   "url": "https://patents.google.com/patent/EP1674605A1/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-ep2077348b1",
+   "title": "EP2077348B1 - An improved tufting machine - Google Patents",
+   "url": "https://patents.google.com/patent/EP2077348B1/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-de2621360a1",
+   "title": "DE2621360A1 - Vorrichtung zur herstellung von tuftingerzeugnissen - Google Patents",
+   "url": "https://patents.google.com/patent/DE2621360A1/de",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-cn2402698y",
+   "title": "CN2402698Y - 电动地毯植绒机驱动针、剪用柱体凸轮 - Google Patents",
+   "url": "https://patents.google.com/patent/CN2402698Y/zh",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-cn2723478y",
+   "title": "CN2723478Y - 一种织地毯的手提横式电织针 - Google Patents",
+   "url": "https://patents.google.com/patent/CN2723478Y/zh",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-cn2806530y",
+   "title": "CN2806530Y - 一种织地毯的手提式高速电织针 - Google Patents",
+   "url": "https://patents.google.com/patent/CN2806530Y/zh",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-cn104562491a",
+   "title": "CN104562491A - 全电脑伺服3d枪刺簇绒地毯机 - Google Patents",
+   "url": "https://patents.google.com/patent/CN104562491A/zh",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-cn204058934u",
+   "title": "CN204058934U - 手工枪刺地毯全数字化智能机器人 - Google Patents",
+   "url": "https://patents.google.com/patent/CN204058934U/zh",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-cn111441143a",
+   "title": "CN111441143A - 一种地毯枪刺机用稳定型送线紧线设备 - Google Patents",
+   "url": "https://patents.google.com/patent/CN111441143A/zh",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-cn111705448a",
+   "title": "CN111705448A - 枪刺地毯智能机器人用气动多功能地毯簇绒枪 - Google Patents",
+   "url": "https://patents.google.com/patent/CN111705448A/zh",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-cn111876919a",
+   "title": "CN111876919A - 一种全自动地毯枪刺机机头及其工作方法 - Google Patents",
+   "url": "https://patents.google.com/patent/CN111876919A/zh",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-gb821702a",
+   "title": "GB821702A - A method of producing plush-like goods such as carpets or the like and a machine for per",
+   "url": "https://patents.google.com/patent/GB821702A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-gb853746a",
+   "title": "GB853746A - Apparatus for making patterned tufted pile fabric - Google Patents",
+   "url": "https://patents.google.com/patent/GB853746A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-gb880860a",
+   "title": "GB880860A - Improvements in machines for making tufted fabrics - Google Patents",
+   "url": "https://patents.google.com/patent/GB880860A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-gb1067502a",
+   "title": "GB1067502A - Improvements in or relating to tufting machines - Google Patents",
+   "url": "https://patents.google.com/patent/GB1067502A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-de1785451c",
+   "title": "DE1785451C - Plüschtuftingmaschine - Google Patents",
+   "url": "https://patents.google.com/patent/DE1785451C/de",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "co-hofmann-handtuft",
+   "title": "History - Hofmann Handtuft-Technik",
+   "url": "https://hofmann-handtuft.de/en/history/",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us3968758a",
+   "title": "US3968758A - Arrangement for the tufting of carpets - Google Patents",
+   "url": "https://patents.google.com/patent/US3968758A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us4029031a",
+   "title": "US4029031A - Device for providing rugs and the like with tufts - Google Patents",
+   "url": "https://patents.google.com/patent/US4029031A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "co-tuft-the-world",
+   "title": "Tuft the World &ndash; Chronicle Books",
+   "url": "https://www.chroniclebooks.com/products/tuft-the-world",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "book-tuft-the-world-2024",
+   "title": "Tuft the World &ndash; Chronicle Books",
+   "url": "https://www.chroniclebooks.com/products/tuft-the-world",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "event-ttw-editions-2023",
+   "title": "Tuft the World: TTW Editions &ndash; Paradigm Gallery + Studio",
+   "url": "https://www.paradigmarts.org/blogs/news/tuft-the-world-ttf-editions",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "woven-kidderminster-1735",
+   "title": "The Origins of Carpet Making in Kidderminster - Revolutionary Players",
+   "url": "https://revolutionaryplayers.org.uk/?p=2924",
+   "verdict": "ok (redirected)",
+   "status": 200,
+   "moved": "https://www.revolutionaryplayers.org.uk/the-origins-of-carpet-making-in-kidderminster/",
+   "robots": "allows"
+  },
+  {
+   "id": "vam-t5-1959-kidderminster-sample",
+   "title": "Sample | V&A Explore The Collections",
+   "url": "https://collections.vam.ac.uk/item/O93057",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "woven-scotch-kilmarnock",
+   "title": "Carpet and Linoleum Manufacture",
+   "url": "https://www.futuremuseum.co.uk/collections/life-work/key-industries/textiles/carpet-and-linoleum-manufacture",
+   "verdict": "bot check",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "article-habib-scotch-stirling",
+   "title": "Scotch carpets at Stirling: Thomas Gilfillan's Cash Book and Ledger 1764 - 1770 | Proceedings of the",
+   "url": "https://journals.socantscot.org/index.php/psas/article/view/9541",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "woven-scotch-carpet-america-1790",
+   "title": "Park History Program (U.S. National Park Service)",
+   "url": "https://www.nps.gov/parkhistory/online_books/inde/anderson/chap2.htm",
+   "verdict": "ok (redirected)",
+   "status": 200,
+   "moved": "https://www.nps.gov/orgs/1220/index.htm",
+   "robots": "allows"
+  },
+  {
+   "id": "woven-us-ingrain-1820s",
+   "title": "First Connecticut Carpet Mills Emerge in Simsbury and Enfield - Connecticut History | a CTHumanities",
+   "url": "https://connecticuthistory.org/first-connecticut-carpet-mills-emerge-in-simsbury-and-enfield",
+   "verdict": "ok (redirected)",
+   "status": 200,
+   "moved": "https://connecticuthistory.org/first-connecticut-carpet-mills-emerge-in-simsbury-and-enfield/",
+   "robots": "allows"
+  },
+  {
+   "id": "hne-1959-7b-ingrain",
+   "title": "Just a moment...",
+   "url": "https://www.historicnewengland.org/explore/collections-access/gusn/8721",
+   "verdict": "bot check",
+   "status": 403,
+   "robots": "allows"
+  },
+  {
+   "id": "cw-1976-609-4-scotch",
+   "title": "Attention Required! | Cloudflare",
+   "url": "https://emuseum.colonialwilliamsburg.org/objects/58853/carpet-scotch",
+   "verdict": "bot check",
+   "status": 403,
+   "robots": "allows"
+  },
+  {
+   "id": "woven-brussels-wire-loop",
+   "title": "Just a moment...",
+   "url": "https://www.britannica.com/topic/Brussels-carpet",
+   "verdict": "bot check",
+   "status": 403,
+   "robots": "allows"
+  },
+  {
+   "id": "woven-wilton-1699-charter",
+   "title": "Wilton: Industry since c.1500 | British History Online",
+   "url": "https://www.british-history.ac.uk/vch/wilts/vol6/pp24-27",
+   "verdict": "bot check",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "woven-wilton-1741-patent-moccadoes",
+   "title": "Textile industries since 1550 | British History Online",
+   "url": "https://www.british-history.ac.uk/vch/wilts/vol4/pp148-182",
+   "verdict": "bot check",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "woven-wilton-french-weavers",
+   "title": "Heritage Trail - Wilton Town Council",
+   "url": "https://www.wiltontowncouncil.gov.uk/heritage-trail/",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "woven-wilton-cutting-wire",
+   "title": "CARPET (1842) — Encyclopaedia Britannica Historical Editions",
+   "url": "https://jimclifford.ca/early_encyclopedia_britannica/articles/1842/eb_7th_1842_004597.html",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "woven-kidderminster-brussels-1749",
+   "title": "The Origins of Carpet Making in Kidderminster - Revolutionary Players",
+   "url": "https://revolutionaryplayers.org.uk/?p=2927",
+   "verdict": "ok (redirected)",
+   "status": 200,
+   "moved": "https://www.revolutionaryplayers.org.uk/the-origins-of-carpet-making-in-kidderminster-2/",
+   "robots": "allows"
+  },
+  {
+   "id": "article-tetley-18c-floor-coverings",
+   "title": "18th-century British Floor Coverings",
+   "url": "https://buildingconservation.com/articles/floor-coverings/floor-coverings.htm",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "vam-t11-1981-garthwaite-brussels",
+   "title": "Carpet Sample | Anna Maria Garthwaite | V&A Explore The Collections",
+   "url": "https://collections.vam.ac.uk/item/O258637/carpet-sample-anna-maria-garthwaite",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "book-christie-1800-carpet-sale",
+   "title": "A catalogue of 150 pieces of elegant Brussels, Wilton, V... | Item Details | Research Catalog | NYPL",
+   "url": "https://www.nypl.org/research/research-catalog/bib/b14693993",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "woven-venetian-carpet",
+   "title": "CARPET (1842) — Encyclopaedia Britannica Historical Editions",
+   "url": "https://jimclifford.ca/early_encyclopedia_britannica/articles/1842/eb_7th_1842_004597.html",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "savonnerie-1627",
+   "title": "Savonnerie manufactory - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Savonnerie_manufactory",
+   "verdict": "bot check",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "met-1976-155-114-savonnerie",
+   "title": "Vercel Security Checkpoint",
+   "url": "https://www.metmuseum.org/art/collection/search/206403",
+   "verdict": "bot check",
+   "status": 429,
+   "robots": "none (429)"
+  },
+  {
+   "id": "fulham-parisot-1750",
+   "title": "401 Unauthorized",
+   "url": "https://prod.british-history.ac.uk/node/15310",
+   "verdict": "error (401)",
+   "status": 401,
+   "robots": "none (401)"
+  },
+  {
+   "id": "exeter-passavant-1756",
+   "title": "Exeter, Devon - The Huguenots of Spitalfields",
+   "url": "https://www.huguenotsofspitalfields.org/?p=1275",
+   "verdict": "ok (redirected)",
+   "status": 200,
+   "moved": "https://www.huguenotsofspitalfields.org/huguenot-towns/exeter/",
+   "robots": "allows"
+  },
+  {
+   "id": "axminster-whitty-1755",
+   "title": "The Birth of Axminster Carpets - Axminster Heritage",
+   "url": "https://axminsterheritage.org/the-birth-of-axminster-carpets/",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "rsa-carpet-premiums-1757-59",
+   "title": "",
+   "url": "https://axminsterheritage.org/wp-content/uploads/2015/01/the-story-of-axminster-carpets.pdf",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "moorfields-moore",
+   "title": "Unfinished preliminary design for a carpet for the drawing room, c1767-79, as executed (1)",
+   "url": "https://collections.soane.org/ARC4174",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "met-57-162-axminster",
+   "title": "Vercel Security Checkpoint",
+   "url": "https://www.metmuseum.org/art/collection/search/202045",
+   "verdict": "bot check",
+   "status": 429,
+   "robots": "none (429)"
+  },
+  {
+   "id": "drawloom-to-jacquard-carpet",
+   "title": "Just a moment...",
+   "url": "https://www.britannica.com/print/article/299152",
+   "verdict": "bot check",
+   "status": 403,
+   "robots": "allows"
+  },
+  {
+   "id": "thesis-mcfadden-arbuthnot-drafts",
+   "title": "Early nineteenth-century British carpet patterns",
+   "url": "https://udspace.udel.edu/items/87a6bdac-8a10-499b-8263-a957d9a595d7",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "wint-pre-wilton-leads",
+   "title": "",
+   "url": "https://assets.cambridge.org/97805213/41073/sample/9780521341073ws.pdf",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "none (404)"
+  },
+  {
+   "id": "finding-cnc-mechanical-pattern-attachments",
+   "title": "2011.002.0263 - Photograph | Bandy Heritage Center for Northwest Georgia",
+   "url": "https://bandyheritagecenter.pastperfectonline.com/photo/8CAB4598-A255-467E-8C6F-442640452218",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us3103187a",
+   "title": "US3103187A - Photocell controlled pattern attachment for tufting machines - Google Patents",
+   "url": "https://patents.google.com/patent/US3103187A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us3375797a",
+   "title": "US3375797A - Pattern attachment for tufting machines - Google Patents",
+   "url": "https://patents.google.com/patent/US3375797A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us4106416a",
+   "title": "US4106416A - Control apparatus for textile dyeing and tufting machinery - Google Patents",
+   "url": "https://patents.google.com/patent/US4106416A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us4867080a",
+   "title": "US4867080A - Computer controlled tufting machine and a process of controlling the parameters of oper",
+   "url": "https://patents.google.com/patent/US4867080A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us5058518a",
+   "title": "US5058518A - Method and apparatus for producing enhanced graphic appearances in a tufted product and",
+   "url": "https://patents.google.com/patent/US5058518A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us6244203b1",
+   "title": "US6244203B1 - Independent servo motor controlled scroll-type pattern attachment for tufting machine ",
+   "url": "https://patents.google.com/patent/US6244203B1/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "co-tapistron",
+   "title": "Tapistron International Being Sold At Bankruptcy - Chattanoogan.com",
+   "url": "https://www.chattanoogan.com/2001/7/10/10705/Tapistron-International-Being-Sold-At.aspx",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us4991523a",
+   "title": "US4991523A - Tufting apparatus - Google Patents",
+   "url": "https://patents.google.com/patent/US4991523A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us5165352a",
+   "title": "US5165352A - Hollow needle tufting apparatus for producing patterned fabric - Google Patents",
+   "url": "https://patents.google.com/patent/US5165352A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "event-colorpoint-colortron-2009",
+   "title": "FloorTek Expo 2009 Preview - August/September 2009",
+   "url": "https://floordaily.net/?p=20362",
+   "verdict": "ok (redirected)",
+   "status": 200,
+   "moved": "https://floordaily.net/floorfocus/floortek-expo-2009-preview-augustseptember-2009/",
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us8141505b2",
+   "title": "US8141505B2 - Yarn color placement system - Google Patents",
+   "url": "https://patents.google.com/patent/US8141505B2/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "event-cmc-v-tuftco-2017",
+   "title": "Card Monroe Corp. Wins ColorPoint Patent Infringement Case",
+   "url": "https://floordaily.net/?p=26659",
+   "verdict": "ok (redirected)",
+   "status": 200,
+   "moved": "https://floordaily.net/flooring-news/card-monroe-corp-wins-colorpoint-patent-infringement-case/",
+   "robots": "allows"
+  },
+  {
+   "id": "event-cobble-colortec-icn",
+   "title": "ITMA 2019 Exhibitor Preview: Cobble, A Vandewiele Company | Textile World",
+   "url": "https://www.textileworld.com/textile-world/2019/05/itma-2019-exhibitor-preview-cobble-a-vandewiele-company/",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us12180632b2",
+   "title": "US12180632B2 - Tufting machines and methods of tufting - Google Patents",
+   "url": "https://patents.google.com/patent/US12180632B2/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us5503092a",
+   "title": "US5503092A - Method and system of tufting - Google Patents",
+   "url": "https://patents.google.com/patent/US5503092A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us5743200a",
+   "title": "US5743200A - Apparatus for manufacturing tufted rugs - Google Patents",
+   "url": "https://patents.google.com/patent/US5743200A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "co-wilcom-autotuft",
+   "title": "Wilcom&#8217;s AutoTuft Pneumatic Tufting Head Produces Special Tufting Effects | Textile World",
+   "url": "https://www.textileworld.com/textile-world/new-products/2012/07/wilcoms-autotuft-pneumatic-tufting-head-produces-special-tufting-effects",
+   "verdict": "ok (redirected)",
+   "status": 200,
+   "moved": "https://www.textileworld.com/textile-world/new-products/2012/07/wilcoms-autotuft-pneumatic-tufting-head-produces-special-tufting-effects/",
+   "robots": "allows"
+  },
+  {
+   "id": "finding-cnc-chongqing-pmac-2011",
+   "title": "502 Bad Gateway",
+   "url": "https://highlights.paper.edu.cn/index/paper_detail/4287",
+   "verdict": "server error (502)",
+   "status": 502,
+   "robots": "none (502)"
+  },
+  {
+   "id": "event-yangxin-donghua-robot",
+   "title": "Reviving a legacy: Yangxin's carpet weaving finds new life - Chinadaily.com.cn",
+   "url": "https://global.chinadaily.com.cn/a/202505/12/WS682169dda310a04af22bec34_2.html",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "none (404)"
+  },
+  {
+   "id": "finding-cnc-delos-robotic-2013",
+   "title": "Delos Rugs Launches Aircraft Carpet Division | AIN",
+   "url": "https://backend.ainonline.com/aviation-news/business-aviation/2013-10-22/delos-rugs-launches-aircraft-carpet-division",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "co-efab-etuft",
+   "title": "Heimtextil – Exhibitors &amp; Products",
+   "url": "https://heimtextil.messefrankfurt.com/frankfurt/en/exhibitor-search.detail.html/efab-gmbh/mf_1_0052756498_5034504_10000000202601.html",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "co-carpet-sign",
+   "title": "Karim Rashid Designs Carpet Sign Collection Made by 3-D Tufting Robot - Interior Design",
+   "url": "https://interiordesign.net/designwire/karim-rashid-designs-carpet-sign-collection-made-by-3-d-tufting-robot/",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "finding-cnc-european-robotufting-studios",
+   "title": "Just a moment...",
+   "url": "https://cc-tapis.com/made-in-milan",
+   "verdict": "bot check",
+   "status": 403,
+   "robots": "allows"
+  },
+  {
+   "id": "event-trueblood-robotic-tufting-2022",
+   "title": "Hacking the Tufting Gun | Details | Hackaday.io",
+   "url": "https://hackaday.io/project/184058-robotic-tufting-system/log/203292-hacking-the-tufting-gun",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "finding-cnc-diy-robot-arm-experiments",
+   "title": "DIY and academic robot tufting: CoreXY gantries, 6-axis arms and the gun-orientation problem",
+   "url": "https://builds.openbuilds.com/posts/137701/",
+   "verdict": "unreachable",
+   "error": "ENOTFOUND",
+   "robots": "unreachable"
+  },
+  {
+   "id": "finding-cnc-ttw-cnc-machine",
+   "title": "",
+   "url": "https://technical.ly/civic-news/cnc-machines-rug-making/",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "co-craftphilia",
+   "title": "Craftphilia: World's First Fully Automated Tufting Machine by Craftphilia :: Kicktraq",
+   "url": "https://www.kicktraq.com/projects/207408103/craftphilia-worlds-first-fully-automated-tufting-machine/",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "process-felt-definition",
+   "title": "Just a moment...",
+   "url": "https://www.britannica.com/technology/felt",
+   "verdict": "bot check",
+   "status": 403,
+   "robots": "allows"
+  },
+  {
+   "id": "process-felt-pazyryk-hangings",
+   "title": "' +caption+ '",
+   "url": "https://depts.washington.edu/silkroad/museums/shm/shmpazyryk.html",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "process-felt-shyrdak",
+   "title": "Just a moment...",
+   "url": "https://www.britishmuseum.org/collection/object/W_As1995-20-14",
+   "verdict": "bot check",
+   "status": 403,
+   "robots": "allows"
+  },
+  {
+   "id": "process-felt-turkmen-cooperhewitt",
+   "title": "Smithsonian request verification",
+   "url": "https://collection.cooperhewitt.org/objects/18715829",
+   "verdict": "bot check",
+   "status": 403,
+   "moved": "https://www.si.edu/collections/cooper-hewitt",
+   "robots": "none (403)"
+  },
+  {
+   "id": "process-flatweave-earliest-tapestry-egypt",
+   "title": "Just a moment...",
+   "url": "https://britannica.com/art/tapestry/Periods-and-centres-of-activity",
+   "verdict": "bot check",
+   "status": 403,
+   "moved": "https://www.britannica.com/art/tapestry/Periods-and-centres-of-activity",
+   "robots": "allows"
+  },
+  {
+   "id": "process-flatweave-kilim-famsf",
+   "title": "Just a moment...",
+   "url": "https://www.famsf.org/artworks/kilim",
+   "verdict": "bot check",
+   "status": 403,
+   "robots": "none (403)"
+  },
+  {
+   "id": "process-flatweave-soumak-tm",
+   "title": "Flatweave Rug from the Caucasus &#8211; Collection Stories",
+   "url": "https://collectionstories.museum.gwu.edu/flatweave-rug-from-the-caucasus/",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "process-flatweave-navajo",
+   "title": "Navajo Weaving Methods | Arizona State Museum",
+   "url": "https://statemuseum.arizona.edu/online-exhibit/19-century-navajo-weaving-asm/navajo-weaving-methods",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "process-flatweave-navajo-chief-asm",
+   "title": "Chief&#039;s-style Blankets | Arizona State Museum",
+   "url": "https://statemuseum.arizona.edu/online-exhibit/19-century-navajo-weaving-asm/chiefs-style-blankets",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "process-flatweave-dhurrie-penn",
+   "title": "Rug - 29-96-81 | Collections - Penn Museum",
+   "url": "https://collections.penn.museum/collections/object/72254",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "none (404)"
+  },
+  {
+   "id": "process-flatweave-rolakan",
+   "title": "Just a moment...",
+   "url": "https://digitaltmuseum.org/011025057959",
+   "verdict": "bot check",
+   "status": 403,
+   "robots": "allows"
+  },
+  {
+   "id": "process-knotted-pazyryk",
+   "title": "' +caption+ '",
+   "url": "https://depts.washington.edu/silkroad/museums/shm/shmpazyryk.html",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "process-knotted-knot-types",
+   "title": "Knotted-pile carpet - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Knotted-pile_carpet",
+   "verdict": "bot check",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "process-knotted-spanish-knot",
+   "title": "Welcome to Our Collections",
+   "url": "https://collections-gwu.zetcom.net/en/collection/item/7980/",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "none (404)"
+  },
+  {
+   "id": "process-knotted-tibetan",
+   "title": "Just a moment...",
+   "url": "https://www.britannica.com/art/Tibetan-carpet",
+   "verdict": "bot check",
+   "status": 403,
+   "robots": "allows"
+  },
+  {
+   "id": "process-knotted-rya-vam",
+   "title": "Carpet | unknown | V&A Explore The Collections",
+   "url": "https://collections.vam.ac.uk/item/O102075/carpet-unknown",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "process-knotted-looms",
+   "title": "Just a moment...",
+   "url": "https://www.iranicaonline.org/articles/carpets-xiv",
+   "verdict": "bot check",
+   "status": 403,
+   "robots": "allows"
+  },
+  {
+   "id": "process-loompile-tapestry-brussels",
+   "title": "Sample | V&A Explore The Collections",
+   "url": "https://collections.vam.ac.uk/item/O258617",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "process-loompile-chenille-axminster",
+   "title": "Carpet | V&A Explore The Collections",
+   "url": "https://collections.vam.ac.uk/item/O352290/carpet-james-templeton",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "process-hooking-origins",
+   "title": "This page has been removed | Canadian Museum of History",
+   "url": "https://historymuseum.ca/cmc/exhibitions/arts/rugs/rugs02e.html",
+   "verdict": "ok (redirected)",
+   "status": 200,
+   "moved": "https://www.historymuseum.ca/page-removed",
+   "robots": "allows"
+  },
+  {
+   "id": "process-hooking-cw-1983-611-1",
+   "title": "Attention Required! | Cloudflare",
+   "url": "https://emuseum.colonialwilliamsburg.org/objects/59028/hooked-rug",
+   "verdict": "bot check",
+   "status": 403,
+   "robots": "allows"
+  },
+  {
+   "id": "process-hooking-grenfell",
+   "title": "Hooked Rug, T84.0117 - Textile Museum of Canada",
+   "url": "https://textilemuseum.ca/collection/hooked-rug-t84-0117/",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "process-hooking-grenfell-bma",
+   "title": "Grenfell hooked mat 'Polar Bear on Ice Floe', 1929 or c. 1930 (Baltimore Museum of Art 1996.165)",
+   "url": "https://collection.artbma.org/objects/43106/polar-bear-on-ice-floe",
+   "verdict": "unreachable",
+   "error": "ENOTFOUND",
+   "robots": "unreachable"
+  },
+  {
+   "id": "process-sewn-yarn-sewn-chs",
+   "title": "Hearth Rug – Works – eMuseum",
+   "url": "https://emuseum.chs.org/emuseum/objects/13050/hearth-rug",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "none (404)"
+  },
+  {
+   "id": "process-sewn-shirred-hne",
+   "title": "Just a moment...",
+   "url": "https://www.historicnewengland.org/explore/collections-access/gusn/3034",
+   "verdict": "bot check",
+   "status": 403,
+   "robots": "allows"
+  },
+  {
+   "id": "process-braided-hne",
+   "title": "Just a moment...",
+   "url": "https://www.historicnewengland.org/explore/collections-access/gusn/18698/",
+   "verdict": "bot check",
+   "status": 403,
+   "robots": "allows"
+  },
+  {
+   "id": "process-rag-woven-shaker",
+   "title": "",
+   "url": "https://shakermuseum.us/object?id=4222",
+   "verdict": "ok (redirected)",
+   "status": 200,
+   "moved": "https://www.shakermuseum.us/object?id=4222",
+   "robots": "allows"
+  },
+  {
+   "id": "process-crochet-knit-afam",
+   "title": "",
+   "url": "https://collection.folkartmuseum.org/objects/922/crocheted-rug",
+   "verdict": "ok",
+   "status": 202,
+   "robots": "allows"
+  },
+  {
+   "id": "process-tufting-overview",
+   "title": "Just a moment...",
+   "url": "https://kids.britannica.com/students/article/rug-and-carpet/276811",
+   "verdict": "bot check",
+   "status": 403,
+   "robots": "allows"
+  },
+  {
+   "id": "process-industrial-needlepunch",
+   "title": "Education Research Nonwoven Needle Punched Nonwovens",
+   "url": "https://www.apparelsearch.com/education/research/nonwoven/2001_kermit_duckett/education_research_nonwoven_needle_punched_nonwovens.htm",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "process-industrial-knitted",
+   "title": "Just a moment...",
+   "url": "https://kids.britannica.com/students/article/rug-and-carpet/276811",
+   "verdict": "bot check",
+   "status": 403,
+   "robots": "allows"
+  },
+  {
+   "id": "process-industrial-flocked",
+   "title": "CPD 26 2013: Electrostatically flocked flooring | Features | Building Design",
+   "url": "https://www.bdonline.co.uk/cpd/cpd-26-2013-electrostatically-flocked-flooring/5063206.article",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "process-industrial-fusion-bonded",
+   "title": "Carpet Tile: 50 Years Later - Aug/Sep 2007",
+   "url": "https://floordaily.net/?p=20185",
+   "verdict": "ok (redirected)",
+   "status": 200,
+   "moved": "https://floordaily.net/floorfocus/carpet-tile-50-years-later-augsep-2007/",
+   "robots": "allows"
+  },
+  {
+   "id": "process-industrial-printed",
+   "title": "404 - Zimmer Austria",
+   "url": "https://zimmer-austria.com/en/node/6296",
+   "verdict": "gone (not found)",
+   "status": 404,
+   "moved": "https://www.zimmer-austria.com/en/node/6296/",
+   "robots": "allows"
+  },
+  {
+   "id": "process-industrial-carpet-tile",
+   "title": "Carpet Tile: 50 Years Later - Aug/Sep 2007",
+   "url": "https://floordaily.net/?p=20185",
+   "verdict": "ok (redirected)",
+   "status": 200,
+   "moved": "https://floordaily.net/floorfocus/carpet-tile-50-years-later-augsep-2007/",
+   "robots": "allows"
+  }
+ ],
+ "byHost": {
+  "museumcollection.winterthur.org": {
+   "records": 9,
+   "verdicts": {
+    "ok": 9
+   }
+  },
+  "tradecatalogues.amdigital.co.uk": {
+   "records": 4,
+   "verdicts": {
+    "bot check": 4
+   }
+  },
+  "origin-www.alibris.com": {
+   "records": 1,
+   "verdicts": {
+    "unreachable": 1
+   }
+  },
+  "ugapress.org": {
+   "records": 2,
+   "verdicts": {
+    "robots: keep out": 2
+   }
+  },
+  "eh.net": {
+   "records": 1,
+   "verdicts": {
+    "bot check": 1
+   }
+  },
+  "bandyheritagecenter.pastperfectonline.com": {
+   "records": 3,
+   "verdicts": {
+    "ok": 3
+   }
+  },
+  "dcp-production-container.library.cornell.edu": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "findingaids.hagley.org": {
+   "records": 9,
+   "verdicts": {
+    "ok": 9
+   }
+  },
+  "digital.hagley.org": {
+   "records": 16,
+   "verdicts": {
+    "bot check": 13,
+    "ok": 3
+   }
+  },
+  "marketresearch.amdigital.co.uk": {
+   "records": 2,
+   "verdicts": {
+    "bot check": 2
+   }
+  },
+  "georgiaencyclopedia.org": {
+   "records": 8,
+   "verdicts": {
+    "bot check": 8
+   }
+  },
+  "carpet-rug.org": {
+   "records": 2,
+   "verdicts": {
+    "ok": 2
+   }
+  },
+  "rughookingmagazine.com": {
+   "records": 1,
+   "verdicts": {
+    "ok (redirected)": 1
+   }
+  },
+  "metmuseum.org": {
+   "records": 4,
+   "verdicts": {
+    "bot check": 4
+   }
+  },
+  "historic-deerfield.org": {
+   "records": 1,
+   "verdicts": {
+    "ok (redirected)": 1
+   }
+  },
+  "randomhouse.com": {
+   "records": 3,
+   "verdicts": {
+    "bot check": 3
+   }
+  },
+  "mfaboston6.emuseum.com": {
+   "records": 1,
+   "verdicts": {
+    "bot check": 1
+   }
+  },
+  "emuseum.mfah.org": {
+   "records": 1,
+   "verdicts": {
+    "bot check": 1
+   }
+  },
+  "collections.lacma.org": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "emuseum.chs.org": {
+   "records": 2,
+   "verdicts": {
+    "ok": 2
+   }
+  },
+  "collection.folkartmuseum.org": {
+   "records": 3,
+   "verdicts": {
+    "ok": 3
+   }
+  },
+  "folkartmuseum.org": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "enfilade18thc.com": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "discovery.nypl.org": {
+   "records": 1,
+   "verdicts": {
+    "unreachable": 1
+   }
+  },
+  "thehenryford.org": {
+   "records": 1,
+   "verdicts": {
+    "gone (not found)": 1
+   }
+  },
+  "asme.org": {
+   "records": 1,
+   "verdicts": {
+    "ok (redirected)": 1
+   }
+  },
+  "patents.google.com": {
+   "records": 95,
+   "verdicts": {
+    "ok": 95
+   }
+  },
+  "hmdb.org": {
+   "records": 1,
+   "verdicts": {
+    "bot check": 1
+   }
+  },
+  "bandyheritagecenter.org": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "boden-wand-decke.de": {
+   "records": 2,
+   "verdicts": {
+    "ok": 2
+   }
+  },
+  "k.sina.cn": {
+   "records": 2,
+   "verdicts": {
+    "ok": 2
+   }
+  },
+  "std.samr.gov.cn": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "mag.ctax.org.cn": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "baike.baidu.com": {
+   "records": 1,
+   "verdicts": {
+    "robots: keep out": 1
+   }
+  },
+  "dhu.edu.cn": {
+   "records": 1,
+   "verdicts": {
+    "unreachable": 1
+   }
+  },
+  "m.chinabgao.com": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "163.com": {
+   "records": 2,
+   "verdicts": {
+    "ok": 2
+   }
+  },
+  "ihchina.cn": {
+   "records": 1,
+   "verdicts": {
+    "unreachable": 1
+   }
+  },
+  "epaper.tianjinwe.com": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "tianjiangcarpet.com": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "finance.sina.com.cn": {
+   "records": 3,
+   "verdicts": {
+    "ok": 3
+   }
+  },
+  "news.cn": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "epaper.oeeee.com": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "hongkongheritage.org": {
+   "records": 3,
+   "verdicts": {
+    "bot check": 3
+   }
+  },
+  "granthaalayahpublication.org": {
+   "records": 1,
+   "verdicts": {
+    "bot check": 1
+   }
+  },
+  "hi.wikipedia.org": {
+   "records": 2,
+   "verdicts": {
+    "bot check": 2
+   }
+  },
+  "cuts-citee.org": {
+   "records": 2,
+   "verdicts": {
+    "ok": 2
+   }
+  },
+  "tribuneindia.com": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "iict.ac.in": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "indiamart.com": {
+   "records": 1,
+   "verdicts": {
+    "bot check": 1
+   }
+  },
+  "tienda.elsevier.com": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "aajtak.in": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "en.wikipedia.org": {
+   "records": 6,
+   "verdicts": {
+    "bot check": 6
+   }
+  },
+  "amarujala.com": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "suminoe.co.jp": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "ja.wikipedia.org": {
+   "records": 2,
+   "verdicts": {
+    "bot check": 2
+   }
+  },
+  "japancarpet.co.jp": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "online.ibnewsnet.com": {
+   "records": 1,
+   "verdicts": {
+    "gone (not found)": 1
+   }
+  },
+  "city.sakai.lg.jp": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "pref.saga.lg.jp": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "carpet.or.jp": {
+   "records": 3,
+   "verdicts": {
+    "ok": 2,
+    "gone (not found)": 1
+   }
+  },
+  "jstage.jst.go.jp": {
+   "records": 2,
+   "verdicts": {
+    "ok": 2
+   }
+  },
+  "dewiki.de": {
+   "records": 2,
+   "verdicts": {
+    "ok": 2
+   }
+  },
+  "de.wikipedia.org": {
+   "records": 1,
+   "verdicts": {
+    "bot check": 1
+   }
+  },
+  "fr.wikipedia.org": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "canonvannederland.nl": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "carpetyourlife.com": {
+   "records": 1,
+   "verdicts": {
+    "ok (redirected)": 1
+   }
+  },
+  "nkie.nankai.edu.cn": {
+   "records": 1,
+   "verdicts": {
+    "unreachable": 1
+   }
+  },
+  "m.sohu.com": {
+   "records": 1,
+   "verdicts": {
+    "robots: keep out": 1
+   }
+  },
+  "thepaper.cn": {
+   "records": 1,
+   "verdicts": {
+    "bot check": 1
+   }
+  },
+  "cnki.net": {
+   "records": 1,
+   "verdicts": {
+    "robots: keep out": 1
+   }
+  },
+  "shop.elsevier.com": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "docs.google.com": {
+   "records": 5,
+   "verdicts": {
+    "robots: keep out": 5
+   }
+  },
+  "digitalcommons.unl.edu": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "drive.google.com": {
+   "records": 7,
+   "verdicts": {
+    "robots: keep out": 7
+   }
+  },
+  "hagley.org": {
+   "records": 2,
+   "verdicts": {
+    "ok": 2
+   }
+  },
+  "sarah-archer.com": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "repository.duke.edu": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "shawinc.com": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "mohawkind.com": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "thedeloscompany.com": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "thedesignsheppard.com": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "scottgroupstudio.com": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "creativeaccents.com": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "kramis-teppich.ch": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "jaipurliving.com": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "taipingcarpets.com": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "wiltoncarpets.com": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "gracesguide.co.uk": {
+   "records": 1,
+   "verdicts": {
+    "unreachable": 1
+   }
+  },
+  "nps.gov": {
+   "records": 2,
+   "verdicts": {
+    "ok (redirected)": 2
+   }
+  },
+  "britannica.com": {
+   "records": 6,
+   "verdicts": {
+    "bot check": 6
+   }
+  },
+  "si.edu": {
+   "records": 1,
+   "verdicts": {
+    "bot check": 1
+   }
+  },
+  "daltoncarpet.com": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "kids.britannica.com": {
+   "records": 3,
+   "verdicts": {
+    "bot check": 3
+   }
+  },
+  "philadelphiaencyclopedia.org": {
+   "records": 2,
+   "verdicts": {
+    "ok": 2
+   }
+  },
+  "archive.org": {
+   "records": 2,
+   "verdicts": {
+    "ok": 2
+   }
+  },
+  "christies.com.cn": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "artic.edu": {
+   "records": 1,
+   "verdicts": {
+    "bot check": 1
+   }
+  },
+  "findingaid.winterthur.org": {
+   "records": 2,
+   "verdicts": {
+    "ok": 2
+   }
+  },
+  "digitalcollections.winterthur.org": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "ebth.com": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "americanainsights.org": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "meridastudio.com": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "museumcollection.hagley.org": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "edwardfields.com": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "kasthall.com": {
+   "records": 1,
+   "verdicts": {
+    "ok (redirected)": 1
+   }
+  },
+  "ceadogan.ie": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "pinton1867.com": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "materialbank.eu": {
+   "records": 1,
+   "verdicts": {
+    "gone (not found)": 1
+   }
+  },
+  "yamagatadantsu.co.jp": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "designerrugs.com.au": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "rogeroates.com": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "royalthai.com": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "westgatextiletrail.com": {
+   "records": 1,
+   "verdicts": {
+    "ok (redirected)": 1
+   }
+  },
+  "cormarcarpets.co.uk": {
+   "records": 1,
+   "verdicts": {
+    "unreachable": 1
+   }
+  },
+  "interface.com": {
+   "records": 1,
+   "verdicts": {
+    "bot check": 1
+   }
+  },
+  "milliken.com": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "dixiegroup.com": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "engineeredfloors.com": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "egecarpets.com": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "website.oc.prod.de.ymc.host": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "museumhameln.de": {
+   "records": 1,
+   "verdicts": {
+    "error (423)": 1
+   }
+  },
+  "professionals.tarkett.co.uk": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "belysse.com": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "beaulieu.com": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "victoriacarpets.com": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "godfreyhirst.com": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "suminoe.jp": {
+   "records": 1,
+   "verdicts": {
+    "ok (redirected)": 1
+   }
+  },
+  "orientalweavers.com": {
+   "records": 1,
+   "verdicts": {
+    "bot check": 1
+   }
+  },
+  "merinos.com.tr": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "hdcarpets.com": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "welspunflooring.com": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "cobble.co.uk": {
+   "records": 1,
+   "verdicts": {
+    "ok (redirected)": 1
+   }
+  },
+  "tuftco.com": {
+   "records": 1,
+   "verdicts": {
+    "bot check": 1
+   }
+  },
+  "cardmonroe.com": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "groz-beckert.com": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "obeetee.in": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "handscarpets.com": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "kaleen.com": {
+   "records": 1,
+   "verdicts": {
+    "bot check": 1
+   }
+  },
+  "homeaccentstoday.com": {
+   "records": 1,
+   "verdicts": {
+    "ok (redirected)": 1
+   }
+  },
+  "hofmann-handtuft.de": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "chroniclebooks.com": {
+   "records": 2,
+   "verdicts": {
+    "ok": 2
+   }
+  },
+  "paradigmarts.org": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "revolutionaryplayers.org.uk": {
+   "records": 2,
+   "verdicts": {
+    "ok (redirected)": 2
+   }
+  },
+  "collections.vam.ac.uk": {
+   "records": 5,
+   "verdicts": {
+    "ok": 5
+   }
+  },
+  "futuremuseum.co.uk": {
+   "records": 1,
+   "verdicts": {
+    "bot check": 1
+   }
+  },
+  "journals.socantscot.org": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "connecticuthistory.org": {
+   "records": 1,
+   "verdicts": {
+    "ok (redirected)": 1
+   }
+  },
+  "historicnewengland.org": {
+   "records": 3,
+   "verdicts": {
+    "bot check": 3
+   }
+  },
+  "emuseum.colonialwilliamsburg.org": {
+   "records": 2,
+   "verdicts": {
+    "bot check": 2
+   }
+  },
+  "british-history.ac.uk": {
+   "records": 2,
+   "verdicts": {
+    "bot check": 2
+   }
+  },
+  "wiltontowncouncil.gov.uk": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "jimclifford.ca": {
+   "records": 2,
+   "verdicts": {
+    "ok": 2
+   }
+  },
+  "buildingconservation.com": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "nypl.org": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "prod.british-history.ac.uk": {
+   "records": 1,
+   "verdicts": {
+    "error (401)": 1
+   }
+  },
+  "huguenotsofspitalfields.org": {
+   "records": 1,
+   "verdicts": {
+    "ok (redirected)": 1
+   }
+  },
+  "axminsterheritage.org": {
+   "records": 2,
+   "verdicts": {
+    "ok": 2
+   }
+  },
+  "collections.soane.org": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "udspace.udel.edu": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "assets.cambridge.org": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "chattanoogan.com": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "floordaily.net": {
+   "records": 4,
+   "verdicts": {
+    "ok (redirected)": 4
+   }
+  },
+  "textileworld.com": {
+   "records": 2,
+   "verdicts": {
+    "ok": 1,
+    "ok (redirected)": 1
+   }
+  },
+  "highlights.paper.edu.cn": {
+   "records": 1,
+   "verdicts": {
+    "server error (502)": 1
+   }
+  },
+  "global.chinadaily.com.cn": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "backend.ainonline.com": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "heimtextil.messefrankfurt.com": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "interiordesign.net": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "cc-tapis.com": {
+   "records": 1,
+   "verdicts": {
+    "bot check": 1
+   }
+  },
+  "hackaday.io": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "builds.openbuilds.com": {
+   "records": 1,
+   "verdicts": {
+    "unreachable": 1
+   }
+  },
+  "technical.ly": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "kicktraq.com": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "depts.washington.edu": {
+   "records": 2,
+   "verdicts": {
+    "ok": 2
+   }
+  },
+  "britishmuseum.org": {
+   "records": 1,
+   "verdicts": {
+    "bot check": 1
+   }
+  },
+  "collection.cooperhewitt.org": {
+   "records": 1,
+   "verdicts": {
+    "bot check": 1
+   }
+  },
+  "famsf.org": {
+   "records": 1,
+   "verdicts": {
+    "bot check": 1
+   }
+  },
+  "collectionstories.museum.gwu.edu": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "statemuseum.arizona.edu": {
+   "records": 2,
+   "verdicts": {
+    "ok": 2
+   }
+  },
+  "collections.penn.museum": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "digitaltmuseum.org": {
+   "records": 1,
+   "verdicts": {
+    "bot check": 1
+   }
+  },
+  "collections-gwu.zetcom.net": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "iranicaonline.org": {
+   "records": 1,
+   "verdicts": {
+    "bot check": 1
+   }
+  },
+  "historymuseum.ca": {
+   "records": 1,
+   "verdicts": {
+    "ok (redirected)": 1
+   }
+  },
+  "textilemuseum.ca": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "collection.artbma.org": {
+   "records": 1,
+   "verdicts": {
+    "unreachable": 1
+   }
+  },
+  "shakermuseum.us": {
+   "records": 1,
+   "verdicts": {
+    "ok (redirected)": 1
+   }
+  },
+  "apparelsearch.com": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "bdonline.co.uk": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "zimmer-austria.com": {
+   "records": 1,
+   "verdicts": {
+    "gone (not found)": 1
+   }
+  }
+ }
+}
