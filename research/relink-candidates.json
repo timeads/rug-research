@@ -1,0 +1,23 @@
+{
+ "book-mckinstry-trade-catalogues": ["https://origin-www.alibris.com/Trade-Catlgs-Winterthur-Richard-E-McKinstry/book/11606707", "https://openlibrary.org/search.json?q=Trade+Catalogues+at+Winterthur&author=McKinstry", "https://catalog.hathitrust.org/api/volumes/brief/lccn/84040209.json"],
+ "book-bed-ruggs-1972": ["https://discovery.nypl.org/research/research-catalog/bib/b10248634", "https://www.nypl.org/research/research-catalog/bib/b10248634", "https://openlibrary.org/search.json?q=bed+ruggs+1722-1833"],
+ "hf-00-1510-19": ["https://www.thehenryford.org/collections-and-research/digital-collections/artifact/66143/", "https://www.thehenryford.org/collections/explore/artifact/66143"],
+ "ner-cn-sun-yize": ["https://www.dhu.edu.cn/2015/0309/c18935a59358/page.htm"],
+ "ner-cn-palace-carpet": ["https://www.ihchina.cn/project_details/14500"],
+ "ner-jp-dust-mite": ["https://online.ibnewsnet.com/sp/hn250526-05.html"],
+ "ner-jp-industry-history-2008": ["http://www.carpet.or.jp/publics/index/95/detail=1/c_id=524/page524=1", "https://carpet.or.jp/"],
+ "grace-wilton-royal": ["https://gracesguide.co.uk/Wilton_Royal_Carpet_Factory", "https://www.gracesguide.co.uk/Wilton_Royal_Carpet_Factory"],
+ "co-limited-edition": ["https://materialbank.eu/partner/limitededition", "https://www.limited-edition.be/", "https://www.limitededition.be/", "https://www.indesignlive.com/?p=45451", "https://shop.bauhaus-movement.com/limited-edition-bauhaus-rugs?v=list"],
+ "co-cormar": ["https://cormarcarpets.co.uk/about-us/our-history", "https://www.cormarcarpets.co.uk/about-us/our-history"],
+ "co-vorwerk": ["https://museumhameln.de/dauerausstellung_engl_20jh67/"],
+ "fulham-parisot-1750": ["https://prod.british-history.ac.uk/node/15310", "https://www.british-history.ac.uk/node/15310", "https://www.british-history.ac.uk/vch/middx/vol2/pp180-181"],
+ "exeter-passavant-1756": ["https://www.huguenotsofspitalfields.org/?p=1275", "https://www.huguenotsofspitalfields.org/huguenot-towns/exeter/"],
+ "finding-cnc-chongqing-pmac-2011": ["https://highlights.paper.edu.cn/index/paper_detail/4287"],
+ "finding-cnc-diy-robot-arm-experiments": ["https://builds.openbuilds.com/posts/137701/", "https://hackaday.com/2022/03/05/robotic-tufting-gun-fires-off-cnc-textiles/"],
+ "co-craftphilia": ["https://www.kicktraq.com/projects/207408103/craftphilia-worlds-first-fully-automated-tufting-machine/", "https://www.baijing.cn/article/55772"],
+ "process-hooking-origins": ["https://historymuseum.ca/cmc/exhibitions/arts/rugs/rugs02e.html", "https://historymuseum.ca/cmc/exhibitions/arts/rugs/rugs01e.html"],
+ "process-hooking-grenfell-bma": ["https://collection.artbma.org/objects/43106/polar-bear-on-ice-floe", "https://collection.artbma.org/objects/43106"],
+ "process-industrial-printed": ["https://zimmer-austria.com/en/node/6296", "https://www.zimmer-austria.com/en/node/6296", "https://www.zimmer-austria.com/de/node/6296", "https://www.zimmer-austria.com/de/node/751", "https://www.zimmer-austria.com/en/node/751"],
+ "nps-wilton-america": ["https://www.nps.gov/parkhistory/online_books/inde/anderson/chap2.htm", "https://npshistory.com/online_books/inde/anderson/chap2.htm", "https://www.nps.gov/parkhistory/online_books/inde/anderson/contents.htm"],
+ "woven-scotch-carpet-america-1790": ["https://www.nps.gov/parkhistory/online_books/inde/anderson/chap2.htm"]
+}
