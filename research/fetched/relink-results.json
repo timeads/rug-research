@@ -1,0 +1,465 @@
+{
+ "book-mckinstry-trade-catalogues": {
+  "candidates": [
+   {
+    "url": "https://origin-www.alibris.com/Trade-Catlgs-Winterthur-Richard-E-McKinstry/book/11606707",
+    "error": "UND_ERR_CONNECT_TIMEOUT"
+   },
+   {
+    "url": "https://openlibrary.org/search.json?q=Trade+Catalogues+at+Winterthur&author=McKinstry",
+    "status": 200,
+    "type": "application/json",
+    "title": "",
+    "sample": "{\"numFound\":1,\"start\":0,\"numFoundExact\":true,\"num_found\":1,\"documentation_url\":\"https://openlibrary.org/dev/docs/api/search\",\"q\":\"Trade Catalogues at Winterthur\",\"offset\":null,\"docs\":[{\"author_key\":[\"OL386207A\"],\"author_name\":[\"E. Richard McKinstry\"],\"ebook_access\":\"no_ebook\",\"edition_count\":1,\"first_publish_year\":1993,\"has_fulltext\":false,\"key\":\"/works/OL2649034W\",\"public_scan_b\":false,\"title\":\"Trade Catalogues at Winterthur\"}]}"
+   },
+   {
+    "url": "https://catalog.hathitrust.org/api/volumes/brief/lccn/84040209.json",
+    "status": 200,
+    "type": "application/json",
+    "title": "",
+    "sample": "{ \"records\": {}, \"items\": [] }"
+   }
+  ],
+  "wayback": null
+ },
+ "book-bed-ruggs-1972": {
+  "candidates": [
+   {
+    "url": "https://discovery.nypl.org/research/research-catalog/bib/b10248634",
+    "error": "ENOTFOUND"
+   },
+   {
+    "url": "https://www.nypl.org/research/research-catalog/bib/b10248634",
+    "status": 200,
+    "type": "text/html",
+    "title": "Bed ruggs/1722-1833. | Item Details | Research Catalog | NYPL",
+    "sample": " Bed ruggs/1722-1833. | Item Details | Research Catalog | NYPL Home / arrow icon Research / Research Catalog Research Catalog Search the Catalog Browse the Catalog actionLightbulb icon User guide Guide actionIdentity icon Log in Log in Bed ruggs/1722-1833. contentBookmarkOutline icon Save Title Bed ruggs/1722-1833. Author Wadsworth Atheneum - [Browse in author index] Published by [Hartford, Conn., 1972] Format Book/text Items in the library and offsite Filter by Location plus icon Schwarzman Building - Art &amp; Architecture Room 300 Status plus icon Available Displaying 1 item Status Access Call number Item location Status Available - Can be used onsite. Please visit New York Public Library - Schwarzman Building to submit a request in person. Access Use in library Call number MOT 75-1615 Item location Schwarzman Building - Art &amp; Architecture Room 300 Details Place of publication [Hartford, Conn. Description 80 p. : illus. ; 29 cm. Subject Coverlets -- United States -- Exhibitions. - [Browse in subject index] Coverlets -- New England. - [Browse in subject index] Call number MOT 75-1615 Language English Note Catalog of loan exhibition held 9 Nov.-31 Dec., 1972. LCCN 72088680 View MARC record Navigation arrow Help and Feedback "
+   },
+   {
+    "url": "https://openlibrary.org/search.json?q=bed+ruggs+1722-1833",
+    "status": 200,
+    "type": "application/json",
+    "title": "",
+    "sample": "{\"numFound\":2,\"start\":0,\"numFoundExact\":true,\"num_found\":2,\"documentation_url\":\"https://openlibrary.org/dev/docs/api/search\",\"q\":\"bed ruggs 1722-1833\",\"offset\":null,\"docs\":[{\"author_key\":[\"OL130558A\"],\"author_name\":[\"Wadsworth Atheneum.\"],\"cover_edition_key\":\"OL5305829M\",\"cover_i\":10042294,\"ebook_access\":\"no_ebook\",\"edition_count\":1,\"first_publish_year\":1972,\"has_fulltext\":false,\"key\":\"/works/OL1287478W\",\"language\":[\"eng\"],\"public_scan_b\":false,\"title\":\"Bed ruggs/1722-1833\"},{\"ebook_access\":\"no_ebook\",\"edition_count\":1,\"first_publish_year\":1972,\"has_fulltext\":false,\"key\":\"/works/OL17874842M\",\"language\":[\"eng\"],\"public_scan_b\":false,\"title\":\"Bed ruggs, 1722-1833\"}]}"
+   }
+  ],
+  "wayback": null
+ },
+ "hf-00-1510-19": {
+  "candidates": [
+   {
+    "url": "https://www.thehenryford.org/collections-and-research/digital-collections/artifact/66143/",
+    "status": 404,
+    "final": "https://www.thehenryford.org/collections/digital-collections/artifact/66143",
+    "type": "text/html",
+    "title": "404 Not Found",
+    "sample": " 404 Not Found "
+   },
+   {
+    "url": "https://www.thehenryford.org/collections/explore/artifact/66143",
+    "status": 200,
+    "type": "text/html",
+    "title": "Artifact",
+    "sample": " Artifact The Henry Ford Museum homepage Collections Explore The Henry Ford Museum homepage Open menu Explore Learn about innovation from America&#x27;s greatest makers, thinkers, and doers. Articles Popular Research Topics Curated Sets Videos Digital Collections Recipes and Cookbooks EXPLORE CONTENT BY THEME Mobility Social Transformation Agriculture &amp; the Environment Power &amp; Energy Communications &amp; Information Technology Design &amp; Making Research Services The Henry Ford Museum homepage Open menu Research Services The world&#x27;s most comprehensive resource for researching collections and stories of American innovation, ingenuity and resourcefulness. Our Collections Experts In-person Research Services Remote Research Services Research Databases The Care, Storage and Handling of Artifacts Internships Donate Gift Shop Member Login Search Buy Tickets The Henry Ford Museum homepage Open menu Home Collections Explore Chenille Rug, Gift to Henry Ford, 1936 Chenille Rug, Gift to Henry Ford, 1936 Share share Copy Link Contact Us About This THF158112 / Chenille Rug, Gift to Henry Ford, 1936 01 Artifact Overview For many women in the early 20th century, Henry Ford's affordable automobile represented freedom and financial security, especially if they were fortunate to be part of the Ford Motor Company family. Their expressions of thanks were often homemade, proud examples of their needle working skills. The embroidered motifs often represented Ford products. Artifact De"
+   }
+  ],
+  "wayback": {
+   "status": "200",
+   "available": true,
+   "url": "http://web.archive.org/web/20211202153150/https://www.thehenryford.org/collections-and-research/digital-collections/artifact/66143/",
+   "timestamp": "20211202153150"
+  }
+ },
+ "ner-cn-sun-yize": {
+  "candidates": [
+   {
+    "url": "https://www.dhu.edu.cn/2015/0309/c18935a59358/page.htm",
+    "error": "ETIMEDOUT"
+   }
+  ],
+  "wayback": null
+ },
+ "ner-cn-palace-carpet": {
+  "candidates": [
+   {
+    "url": "https://www.ihchina.cn/project_details/14500",
+    "error": "UND_ERR_CONNECT_TIMEOUT"
+   }
+  ],
+  "wayback": {
+   "status": "200",
+   "available": true,
+   "url": "http://web.archive.org/web/20250920054023/https://www.ihchina.cn/project_details/14500",
+   "timestamp": "20250920054023"
+  }
+ },
+ "ner-jp-dust-mite": {
+  "candidates": [
+   {
+    "url": "https://online.ibnewsnet.com/sp/hn250526-05.html",
+    "status": 404,
+    "type": "text/html",
+    "title": "404 Not Found",
+    "sample": " 404 Not Found Not Found The requested URL was not found on this server. Additionally, a 404 Not Found error was encountered while trying to use an ErrorDocument to handle the request. "
+   }
+  ],
+  "wayback": null
+ },
+ "ner-jp-industry-history-2008": {
+  "candidates": [
+   {
+    "url": "http://www.carpet.or.jp/publics/index/95/detail=1/c_id=524/page524=1",
+    "status": 404,
+    "final": "https://carpet.or.jp/publics/index/95/detail=1/c_id=524/page524=1",
+    "type": "text/html",
+    "title": "ページが見つかりませんでした &#8211; 日本カーペット工業組合",
+    "sample": " ページが見つかりませんでした &#8211; 日本カーペット工業組合 内容をスキップ 日本カーペット工業組合 日本カーペット工業組合 ホーム カーペットをおすすめする10の理由 すべりにくいので安全・安心 転倒時に衝撃を吸収してくれる 素足でも気持ちいい ホコリの舞い上がりは 10分の1 ストレスを緩和してくれる 足が疲れにくい 静かな歩行音でトラブル解消 照明の反射を抑えて眩しさ解消 勉強に集中できて学力アップ ペットにとっても安全・安心 組合ニュース 資料室 技術資料 一般・その他資料 カーペット生産統計 書籍案内 新訂カーペットはすばらしい カーペット辞典 新版カーペットハンドブック 日本カーペット工業史 Q&amp;A 組合について アクセス お問合せ 日本カーペット工業組合 ホーム カーペットをおすすめする10の理由 すべりにくいので安全・安心 転倒時に衝撃を吸収してくれる 素足でも気持ちいい ホコリの舞い上がりは 10分の1 ストレスを緩和してくれる 足が疲れにくい 静かな歩行音でトラブル解消 照明の反射を抑えて眩しさ解消 勉強に集中できて学力アップ ペットにとっても安全・安心 組合ニュース 資料室 カーペット生産統計 一般・その他資料 外国人技能実習制度 試験問題（例） 技術資料 書籍案内 カーペット辞典 新訂カーペットはすばらしい 新版カーペットハンドブック 日本カーペット工業史 Q&#038;A 組合について アクセス お問合せ 災害時の対応（防災協定） サイトポリシー 個人情報保護方針 Facebook Instagram YouTube 404 ページが見つかりません。お探しのページは移動または削除された可能性があります。下記の検索ボックスで検索してください。 Search Contact お問合せ 当組合へのご相談・ご質問はお電話またはメールフォームより お気軽にお問合せください。 電話でのお問合せ 06-6809-2868 受付時間：平日 10:00〜17:00 フォームからのお問合せ お問合せフォーム contact お問合せ 当組合へのご相談・ご質問は お電話またはメールフォームより お気軽にお問合せください。 電話での問い合わせ 06-6809-2868 受付時間：平日 10:00〜17:00 フォームからのお問い合わせ お問合せフォーム 〒540-0029 大阪府大阪市中央区本町橋2-5 マイドームおおさか5F TEL：06-6809-2868 FAX：06-6809-2869 アクセス ホーム 組合ニュース Q&amp;A 組合について アクセス お問合せ カーペットをおすすめする10の理由 すべりにくいので安全・安心 転倒時に衝撃を吸収してくれる 素足でも気持ちいい ホコリの舞い上がりは10分の1 ストレスを緩和してくれる 足が疲れにくい 静かな歩行音でトラブル解消 照明の反射を抑えて眩しさ解消 勉強に集中できて学力アップ ペットにとっても安全・安心 資料室 技術資料 一般・その他資料 カーペット生産統計 書籍案内 災害時の対応（防災協定） 個人情報保護方針 サイトポリシー Copyright © 日本カーペット工業組合 All rights reserved. Facebook Instagram YouTube "
+   },
+   {
+    "url": "https://carpet.or.jp/",
+    "status": 200,
+    "type": "text/html",
+    "title": "日本カーペット工業組合",
+    "sample": " 日本カーペット工業組合 内容をスキップ 日本カーペット工業組合 日本カーペット工業組合 ホーム カーペットをおすすめする10の理由 すべりにくいので安全・安心 転倒時に衝撃を吸収してくれる 素足でも気持ちいい ホコリの舞い上がりは 10分の1 ストレスを緩和してくれる 足が疲れにくい 静かな歩行音でトラブル解消 照明の反射を抑えて眩しさ解消 勉強に集中できて学力アップ ペットにとっても安全・安心 組合ニュース 資料室 技術資料 一般・その他資料 カーペット生産統計 書籍案内 新訂カーペットはすばらしい カーペット辞典 新版カーペットハンドブック 日本カーペット工業史 Q&amp;A 組合について アクセス お問合せ 日本カーペット工業組合 ホーム カーペットをおすすめする10の理由 すべりにくいので安全・安心 転倒時に衝撃を吸収してくれる 素足でも気持ちいい ホコリの舞い上がりは 10分の1 ストレスを緩和してくれる 足が疲れにくい 静かな歩行音でトラブル解消 照明の反射を抑えて眩しさ解消 勉強に集中できて学力アップ ペットにとっても安全・安心 組合ニュース 資料室 カーペット生産統計 一般・その他資料 外国人技能実習制度 試験問題（例） 技術資料 書籍案内 カーペット辞典 新訂カーペットはすばらしい 新版カーペットハンドブック 日本カーペット工業史 Q&#038;A 組合について アクセス お問合せ 災害時の対応（防災協定） サイトポリシー 個人情報保護方針 Facebook Instagram YouTube 11月1日はカーペットの日 昭和31年11月1日に昭和天皇皇后両陛下が住江織物（現：SUMINOE）の住吉工場をご視察されたことを記念し、昭和49年に制定されました。 カーペットでハウスダスト対策 カーペットでの舞い上がり量はフローリングの 10分の1。 カ ーペットはハウスダストの舞い上がりを抑え、安全な生活空間づくりに大きな力を発揮する床材です。 カーペットでリラックス 踏み心地が良く、静かで照明の反射も少ない居心地の良さなど、カーペットは人の心を落ち着かせ、リラックスさせる床 材 です。 カーペットで学力アップ 踏み心地がやわらかく、優れた吸音・静音性をもつカーペットをお部屋に敷くことで、リラックス効果がもたらされ、集中力を高められる学習環境をつくることができます。 カーペットで照明反射抑制 踏み心地が良く、静かで照明の反射も少ない居心地の良さなど、カーペットは人の心を落ち着かせ、リラックスさせる床材です。 11月1日はカーペットの日 昭和31年11月1日に昭和天皇皇后両陛下が住江織物（現：SUMINOE）の住吉工場をご視察されたことを記念し、昭和49年に制定されました 。 カーペットでハウスダスト対策 カーペットでの舞い上がり量はフローリングの 10分の1。 カ ーペットはハウスダストの舞い上がりを抑え、安全な生活空間づくりに大きな力を発揮する床材です。 カーペットでリラックス 踏み心地が良く、静かで照明の反射も少ない居心地の良さなど、カーペットは人の心を落ち着かせ、リラックスさせる床 材 です。 カーペットで学力アップ 踏み心地がやわらかく、優れた吸音・静音性をもつカーペットをお部屋に敷くことで、リラックス効果がもたらされ、集中力を高められる学習環境をつくることができます。 カーペットで照明反射抑制 踏み心地が良く、静かで照明の反射も少ない居心地の良さなど、カーペットは人の心を落ち着かせ、リラックスさせる床材です。 News"
+   }
+  ],
+  "wayback": {
+   "status": "200",
+   "available": true,
+   "url": "http://web.archive.org/web/20251017034058/http://www.carpet.or.jp/publics/index/95/detail=1/c_id=524/page524=1",
+   "timestamp": "20251017034058"
+  }
+ },
+ "grace-wilton-royal": {
+  "candidates": [
+   {
+    "url": "https://gracesguide.co.uk/Wilton_Royal_Carpet_Factory",
+    "error": "ERR_TLS_CERT_ALTNAME_INVALID"
+   },
+   {
+    "url": "https://www.gracesguide.co.uk/Wilton_Royal_Carpet_Factory",
+    "status": 200,
+    "type": "text/html",
+    "title": "Wilton Royal Carpet Factory - Graces Guide",
+    "sample": " Wilton Royal Carpet Factory - Graces Guide Grace's Guide To British Industrial History Registered UK Charity (No. 1154342) Grace's Guide is the leading source of historical information on industry and manufacturing in Britain. This web publication contains 174,148 pages of information and 250,321 images on early companies, their products and the people who designed and built them. Grace's Guide is the leading source of historical information on industry and manufacturing in Britain. This web publication contains 147,919 pages of information and 233,587 images on early companies, their products and the people who designed and built them. Navigation Home About Us Things To See Wanted What&#039;s On Contact Us View By Archives Biographies Industries Locations Timelines Wilton Royal Carpet Factory From Graces Guide Jump to: navigation , search of King Street, Wilton, Salisbury One of Britain's oldest carpet factories 1889 Yates and Co , of the Royal Carpet Factory, Wilton, was incorporated to continue and extend the carpet making industry carried on in Wilton for 2 centuries. It made Axminster and Wilton carpets. 1896 Issue of shares to pay-off the debentures; the company would then be listed on the Stock Exchange. The company had 3 factories - at Wilton, Salisbury and Southampton, as well as warehouses. Directors were Pardoe Yates, Rachel Yates and James Lander who held a personal appointment as carpet maker to the Queen &#91; 1 &#93; 1906 Carpet Manufacturers, awarded the Roya"
+   }
+  ],
+  "wayback": {
+   "status": "200",
+   "available": true,
+   "url": "http://web.archive.org/web/20260223111521/https://www.gracesguide.co.uk/Wilton_Royal_Carpet_Factory",
+   "timestamp": "20260223111521"
+  }
+ },
+ "co-limited-edition": {
+  "candidates": [
+   {
+    "url": "https://materialbank.eu/partner/limitededition",
+    "status": 404,
+    "final": "https://www.materialbank.eu/partner/limitededition",
+    "type": "text/html",
+    "title": "404 Not Found | Material Bank",
+    "sample": " 404 Not Found | Material Bank Get started Sample 45,000+ materials from 450+ brands. Always free for architects and interior designers. Sign in Create free account Design starts here. With a gift. Place your first order this week and receive an exclusive Welcome Kit: a Material Bank tote bag, an architectural city guide, and a chocolate sample. Your Welcome Kit will be included in your sample box. Order free samples now Close { highlightActiveIcon() })\" @user-login.window=\"isLoggedIn = $event.detail.loggedIn\" @keydown.window.escape=\"searchOpen = false\" @private-content-loaded.window=\"getData(event.detail.data)\"> menu Mobile Menu logo Products arrow Brands globe Join for free Sign In Welcome to the world&#039;s largest material marketplace. Please note, Material Bank is exclusively for A&amp;D professionals. As such, each registration is reviewed to verify qualifications. Login now Not a registered user? Register Business Email Keep me logged in Login Forgot Your Password? Reset Your Password See All Products See New Collections 0\"> chevron-right Menu unavailable. Please use the search bar to find items, or try again shortly. Skip to Content close Oops! Page not found. The link you followed may have taken a spill, or the page is no longer available. Contact Support Home Page Explore Products Brands Boards Collections Account My Profile Address Book Orders About How it Works Sustainability Careers Studio Support FAQ&#039;s Privacy and Legal Center Manufacturer? Let&#039;s Talk"
+   },
+   {
+    "url": "https://www.limited-edition.be/",
+    "status": 403,
+    "final": "https://domeinenbank.nl/forward/?domain=limited-edition.be",
+    "type": "text/html",
+    "title": "Just a moment...",
+    "sample": " Just a moment... Enable JavaScript and cookies to continue "
+   },
+   {
+    "url": "https://www.limitededition.be/",
+    "status": 200,
+    "final": "https://www.le.be/",
+    "type": "text/html",
+    "title": "Limited Edition: High-end &amp; custom-made rugs",
+    "sample": " Limited Edition: High-end &amp; custom-made rugs Collection Projects Made in Belgium Sustainability Contact us Outlet Retailer area en English Français Nederlands Deutsch en fr nl de Collection Projects Made in Belgium Sustainability Contact us Outlet Retailer area Mediabank Request more information Request a quote Legal &amp; privacy General conditions By combining time-honoured know-how, technology and modernity, Limited Edition develops luxurious carpets from (or?) the finest natural materials. Weaving, tufting, dyeing, wool spinning.... all stages of the manufacturing process take place in the company's own spinning mill and factories, ensuring excellent workmanship and service from start to finish. All products are handmade in Belgium. Limited Edition Rugs that feel like you ANEMONE | AM35353 Galapagos Discover the Anemone here 1 / 10 SAFARI | SR33032 Coconut Shell Discover the Safari here 2 / 10 ELIXIR | EI36728 Saffron Discover the Elixir here 3 / 10 FIJI | FI28586 Cream Discover the Fiji here 4 / 10 COSMIC GALA | CM25810 Viridian Discover the Cosmic Gala here 5 / 10 DAKAR | DK45779 Autumn Green Discover the Dakar here 6 / 10 ALLEGRO HIGH | AEOH35894 Honey Pesto Discover the Allegro High here 7 / 10 SAMOA POLKA | SM22154 Dove Wing Discover the Samoa Polka here 8 / 10 ASTRAL CHROMATIC | ARTO15H34759 Gold Flame Discover the Astral Chromatic here 9 / 10 PAMPAS HYBRID | PM43011 Cannoli Cream Pampas Hybrid – PM43011 Cannoli Cream 10 / 10 Collection 2026 Watch the presentat"
+   },
+   {
+    "url": "https://www.indesignlive.com/?p=45451",
+    "status": 200,
+    "type": "text/html",
+    "title": "Indesignlive: Interior Design and Architecture - Australian Design for Architects &amp; Interior Designers",
+    "sample": " Indesignlive: Interior Design and Architecture - Australian Design for Architects &amp; Interior Designers Articles Projects Products Brands INDE.AWARDS SATURDAY INDESIGN CPD LIVE Magazine News 27 October 2026 An Italian restaurant hidden in the heart of sandstone Sydney Florence Guild’s Spezia, set within the once-private, open-air courtyards of Sydney’s former Department of Lands building, pairs Italian cuisine with the spice of the Silk Road. View Article Ideas 15 October 2026 Beauty, style, drawing and more: Talking Architecture at the State Library of NSW A three-part series of public conversations in Sydney curated by Elizabeth Farrelly, Ed Lippmann and Sonia Blasco will address some of today’s most pertinent architectural questions. View Article Ideas 13 October 2026 Hassell leads international design lab focused on Australia’s housing crisis With the launch of the ThriveInspiration™ International Design Lab, Hassell is leading the design component of a new international initiative aimed at addressing Australia’s housing crisis through modular construction. View Article NSW 2 October 2026 Elevating legal architecture: Studio Tate’s human-centred balancing act Studio Tate’s approach to Gordon Legal’s Melbourne HQ deliberately subverts the stuffy, traditional hierarchies of the law office, instead crafting a softer and more democratic space. View Article News 7 October 2026 The kinetic buzz of Jakarta’s 25 Hours Hotel The Oddbird Rising 28 stories above Ashta Mall in th"
+   },
+   {
+    "url": "https://shop.bauhaus-movement.com/limited-edition-bauhaus-rugs?v=list",
+    "status": 403,
+    "type": "text/html",
+    "title": "Just a moment...",
+    "sample": " Just a moment... Enable JavaScript and cookies to continue "
+   }
+  ],
+  "wayback": null
+ },
+ "co-cormar": {
+  "candidates": [
+   {
+    "url": "https://cormarcarpets.co.uk/about-us/our-history",
+    "error": "ECONNRESET"
+   },
+   {
+    "url": "https://www.cormarcarpets.co.uk/about-us/our-history",
+    "status": 200,
+    "final": "https://www.cormarcarpets.co.uk/about-us/our-history/",
+    "type": "text/html",
+    "title": "History of Cormar Carpets | Cormar Carpets",
+    "sample": " History of Cormar Carpets | Cormar Carpets Menu Samples 0 SEARCH SEARCH Home Inspiration Back Inspiration Stair Runners Soft, Deep Pile Carpets Beige Carpets Contemporary Carpets Greige Carpets Stairs &amp; Hallways Modern Carpets Light Brown Carpets Light Grey Carpets Brown Carpets Home Office Carpets Cream Carpets Ivory Carpets Light Colours Dark Carpets Grey Carpets Bedroom Carpets Lounge Carpets Blue Carpets Striped Carpets Carpet Ranges Back Carpet Ranges Easy Clean Soft Deep Pile Wool Twist Wool Loop Easy Clean Loop All Carpets Order Samples Find a Retailer Advice Back Advice Choosing Carpet Benefits of Wool Carpet Carpet Types Planning &amp; Measuring Carpet Care Underlay Underfloor Heating FAQs Your Guarantee + More About Us Blog Our History News Cormar Careers Reviews Journey to Sustainability Contact Us History of Cormar Carpet Company We’ve been going since 1924. Originally a textile supplier, based in the Rossendale Valley, we traded as Greenwood &amp; Coope Ltd. In 1956, with the advent of a new method of making carpet, called ‘tufted’, Neville Cormack set up Cormar Carpets. For over 60 years now, we’ve been making carpets right here in the UK, at our two Lancashire mills - Brookhouse Mill, in Greenmount and Holme Mill in Ramsbottom. Keeping a local, family feel to our company is important to us. So as a family-run business with family values at heart, we take great pride in understanding the home and creating the final piece of the jigsaw to make our customers'"
+   }
+  ],
+  "wayback": {
+   "status": "200",
+   "available": true,
+   "url": "http://web.archive.org/web/20260828124906/https://www.cormarcarpets.co.uk/about-us/our-history/",
+   "timestamp": "20260828124906"
+  }
+ },
+ "co-vorwerk": {
+  "candidates": [
+   {
+    "url": "https://museumhameln.de/dauerausstellung_engl_20jh67/",
+    "status": 423,
+    "type": "text/html",
+    "title": "423 Locked",
+    "sample": " 423 Locked Locked The requested resource is currently locked. The lock must be released or proper identification given before the method can be applied. "
+   }
+  ],
+  "wayback": {
+   "status": "200",
+   "available": true,
+   "url": "http://web.archive.org/web/20260520092806/https://museumhameln.de/dauerausstellung_engl_20jh67/",
+   "timestamp": "20260520092806"
+  }
+ },
+ "fulham-parisot-1750": {
+  "candidates": [
+   {
+    "url": "https://prod.british-history.ac.uk/node/15310",
+    "status": 401,
+    "type": "text/html",
+    "title": "401 Unauthorized",
+    "sample": " 401 Unauthorized Unauthorized This server could not verify that you are authorized to access the document requested. Either you supplied the wrong credentials (e.g., bad password), or your browser doesn't understand how to supply the credentials required. "
+   },
+   {
+    "url": "https://www.british-history.ac.uk/node/15310",
+    "status": 200,
+    "final": "https://www.british-history.ac.uk/vch/middx/vol2/pp138-139",
+    "type": "text/html",
+    "title": "Industries: Tapestry | British History Online",
+    "sample": " Industries: Tapestry | British History Online Skip to main content BHO | British History Online Main navigation Browse Catalogue Subject guides Using BHO About Subscribe News Login Login Register ';\" aria-label=\"breadcrumb\"> Breadcrumb Home A History of the County of Middlesex Industries: Tapestry A History of the County of Middlesex: Volume 2, General; Ashford, East Bedfont With Hatton, Feltham, Hampton With Hampton Wick, Hanworth, Laleham, Littleton . Originally published by Victoria County History, London, 1911. This free content was digitised by double rekeying . All rights reserved. Citation: BHO Chicago MLA 'Industries: Tapestry', in A History of the County of Middlesex: Volume 2, General; Ashford, East Bedfont With Hatton, Feltham, Hampton With Hampton Wick, Hanworth, Laleham, Littleton , ed. William Page (London, 1911), British History Online https://www.british-history.ac.uk/vch/middx/vol2/pp138-139 [accessed 27 October 2026]. 'Industries: Tapestry', in A History of the County of Middlesex: Volume 2, General; Ashford, East Bedfont With Hatton, Feltham, Hampton With Hampton Wick, Hanworth, Laleham, Littleton . Edited by William Page (London, 1911), British History Online , accessed October 27, 2026, https://www.british-history.ac.uk/vch/middx/vol2/pp138-139. \"Industries: Tapestry\". A History of the County of Middlesex: Volume 2, General; Ashford, East Bedfont With Hatton, Feltham, Hampton With Hampton Wick, Hanworth, Laleham, Littleton . Ed. William Page (London, 191"
+   },
+   {
+    "url": "https://www.british-history.ac.uk/vch/middx/vol2/pp180-181",
+    "status": 404,
+    "type": "text/html",
+    "title": "Page not found | British History Online",
+    "sample": " Page not found | British History Online Skip to main content BHO | British History Online Main navigation Browse Catalogue Subject guides Using BHO About Subscribe News Login Login Register ';\" aria-label=\"breadcrumb\"> Breadcrumb Home A History of the County of Middlesex Page not found The requested page could not be found. Footer menu Help About the project Terms of use Privacy and Cookies Accessibility Version 6.0. © 2024, University of London "
+   }
+  ],
+  "wayback": null
+ },
+ "exeter-passavant-1756": {
+  "candidates": [
+   {
+    "url": "https://www.huguenotsofspitalfields.org/?p=1275",
+    "error": "ECONNRESET"
+   },
+   {
+    "url": "https://www.huguenotsofspitalfields.org/huguenot-towns/exeter/",
+    "status": 200,
+    "type": "text/html",
+    "title": "Exeter, Devon - The Huguenots of Spitalfields",
+    "sample": " Exeter, Devon - The Huguenots of Spitalfields Skip to content Home Walks Menu Toggle For Group Organisers Menu Toggle Walks for Groups Talks for Groups Further Suggestions for Group Organisers Private Tours Visites pédestres à Londres Huguenot Heritage Guides Huguenot Story Menu Toggle Our First Refugees Huguenot Legacy Famous Huguenots Faith of the Huguenots Huguenot Learning Menu Toggle Primary Education Menu Toggle About The Huguenots Skills of the Huguenots Our First Refugees Living in 18th c. Spitalfields The Silk Weavers of Spitalfields Huguenots and Identity Further Resources for Teachers Secondary Education Fashion Colleges Huguenot Ancestry Menu Toggle Huguenot Names Huguenot Family Stories Huguenot Books Getting Started Huguenot Genealogy Places &#038; Traces Menu Toggle Huguenot Towns Huguenot Street Names Places to visit Huguenot Traces Archive Menu Toggle FAQs Blog Past Newsletters Scrapbook Main Menu Home Walks Menu Toggle For Group Organisers Menu Toggle Walks for Groups Talks for Groups Further Suggestions for Group Organisers Private Tours Visites pédestres à Londres Huguenot Heritage Guides Huguenot Story Menu Toggle Our First Refugees Huguenot Legacy Famous Huguenots Faith of the Huguenots Huguenot Learning Menu Toggle Primary Education Menu Toggle About The Huguenots Skills of the Huguenots Our First Refugees Living in 18th c. Spitalfields The Silk Weavers of Spitalfields Huguenots and Identity Further Resources for Teachers Secondary Education Fashion Co"
+   }
+  ],
+  "wayback": null
+ },
+ "finding-cnc-chongqing-pmac-2011": {
+  "candidates": [
+   {
+    "url": "https://highlights.paper.edu.cn/index/paper_detail/4287",
+    "error": "UND_ERR_CONNECT_TIMEOUT"
+   }
+  ],
+  "wayback": {
+   "status": "200",
+   "available": true,
+   "url": "http://web.archive.org/web/20210411192249/http://highlights.paper.edu.cn/index/paper_detail/4287",
+   "timestamp": "20210411192249"
+  }
+ },
+ "finding-cnc-diy-robot-arm-experiments": {
+  "candidates": [
+   {
+    "url": "https://builds.openbuilds.com/posts/137701/",
+    "error": "ENOTFOUND"
+   },
+   {
+    "url": "https://hackaday.com/2022/03/05/robotic-tufting-gun-fires-off-cnc-textiles/",
+    "status": 200,
+    "type": "text/html",
+    "title": "Robotic Tufting Gun Fires Off CNC Textiles | Hackaday",
+    "sample": " Robotic Tufting Gun Fires Off CNC Textiles | Hackaday Skip to content Hackaday Primary Menu Home Blog Hackaday.io Contests Submit About Search for: October 27, 2026 Robotic Tufting Gun Fires Off CNC Textiles 6 Comments by: Kristina Panos March 5, 2022 Title: Copy Short Link: Copy Often used to make rugs, tufting is a process wherein a hollow needle is used to cram thread or yarn into fabric in some kind of pattern. This can be done by hand, with a gun, or with big machines. Some machines are set up to punch the same pattern quickly over and over again, and these are difficult to retool for a new pattern. Others are made to poke arbitrary patterns and change easily, but these machines move more slowly. This robotic tufting system by [Owen Trueblood] is of the slow and arbitrary type. It will consist of a modified tufting gun strapped to a robot arm for CNC textile art. Tufting guns are manufactured with simple controls &#8212; a power switch, a knob to set the speed, and a trigger button to do the tufting. Once it&#8217;s affixed to the robot arm, [Owen] wants to remote control the thing. The gun&#8217;s motor driver is nothing fancy, just a 555 using PWM to control a half H-bridge based on input from the speed control potentiometer. [Owen] replaced the motor controller with an Arduino and added an I/O port. The latter is a 3.5 mm stereo audio jack wired to GND and two of the Arduino&#8217;s pins. One is a digital input to power the gun, and the other is used as an analog spe"
+   }
+  ],
+  "wayback": null
+ },
+ "co-craftphilia": {
+  "candidates": [
+   {
+    "url": "https://www.kicktraq.com/projects/207408103/craftphilia-worlds-first-fully-automated-tufting-machine/",
+    "error": "The operation was aborted due to timeout"
+   },
+   {
+    "url": "https://www.baijing.cn/article/55772",
+    "status": 200,
+    "type": "text/html",
+    "title": "瞄准海外用户“手搓毛毯”的爱好，国内团队改造CNC上线一周预售300万",
+    "sample": " 瞄准海外用户“手搓毛毯”的爱好，国内团队改造CNC上线一周预售300万 你的浏览器禁用了JavaScript, 请开启后刷新浏览器获得更好的体验! 白鲸出海—让中国互联网服务世界 {{user_info.user_name}} 8\"> 您当前是白鲸会员 开通VIP，享受更多服务 开通 私信 动态 通知 个人中心 退出 会员到期时间：{{user_info.expire_date*1000 | formatDatebyDay}} 合作查看次数： {{users_vip_equities.view_cooperation || 0}}次 合作发布次数： {{users_vip_equities.release_cooperation || 0}}次 公司查看次数： {{users_vip_equities.view_company || 0}}次 榜单下载次数： {{users_vip_equities.download_rank || 0}}次 --> 报告下载次数： {{users_vip_equities.download_book || 0}}次 鲸币数量：{{user_info.jingbi}} 8\" /> 发布 问题 爆料 --> 登录 注册 {{item.name}} {{item.name}} {{item2.name }} {{ch.name }} 0\"> # 热门搜索 # 0\" @click=\"search(item.content)\" >{{item.content}} 0\"> # 历史记录 # 清空 {{item}} --> --> --> 当前位置： 白鲸出海 > 资讯 > 正文 硬件 海外 瞄准海外用户“手搓毛毯”的爱好，国内团队改造CNC上线一周预售300万 Lainya &nbsp;•&nbsp; 2026-06-24 14:09 社媒上，一位美国网友表示上月去加拿大访友，作为招待行程的一环，对方提前一周抢费力到了一家 Tufting Workshop 的晚场名额，4 小时课程 178 美元。两人到店后发现 12 张操作台全满，工作台上架着的半成品地毯上有别人家猫的画像、学员自设的搞怪图，还有不少热门角色，一些学员边做边拍，随手分享到 TikTok 上。 *Tufting，原指通过簇绒机制作地毯的传统纺织工艺。该工艺经改良后演变为手工 DIY 活动，使用电动簇绒枪将毛线嵌入布料，形成图案，看起来像一簇簇的小毛线团戳在平面上组合而成。 国内外 Tufting 店铺，中间为客户正在借助投影绘制 Tufting 前的线路底图｜图源 ZuozuoStudio、小红书 这样的场景是北美不少城市周末的常态，让人不禁想起早年间流行的十字绣，选好图案，购入配套材料，自己一针针绣出成品。如今，平面的十字绣变成更立体的图案地毯。 而中国香港的一个团队，直接将 Tufting 自动化，做了全世界首个全自动 Tufting 设备「Craftphilia」，在 Kickstarter 上发起众筹，上线 5分钟便完成众筹目标，一周内筹得约 40 万美元。 Craftphilia｜图源 Kickstarter 把困难的手工操作交给机器和 AI 近一年手工活动似乎格外受欢迎，从中国女生自制捏捏走红海外，到“助攻”海外用户做编织的 App 跑出几百万的月流水，用户越来越愿意在手工活动上投入时间、金钱。（详见往期文章《 年轻人复古织毛线，助攻 App 月入百万 》） 然而，和小巧的捏捏、编织产品相比，Tufting 活动想要“个人/家庭化”并不容易。支"
+   }
+  ],
+  "wayback": null
+ },
+ "process-hooking-origins": {
+  "candidates": [
+   {
+    "url": "https://historymuseum.ca/cmc/exhibitions/arts/rugs/rugs02e.html",
+    "status": 200,
+    "final": "https://www.historymuseum.ca/page-removed",
+    "type": "text/html",
+    "title": "This page has been removed | Canadian Museum of History",
+    "sample": " This page has been removed | Canadian Museum of History Close Plus icon We use cookies This website uses cookies to measure our web statistics and to track and target marketing campaigns. Learn about cookies and your privacy options . Close Skip to main content Get tickets Become a member Shop A Visit us Get tickets Plan your visit Canada Strong Pass Hours Admission Getting here Community activities and road closures Accessibility Visitor services Visitor policies Tourism information Shopping and dining More information Museum guides Architecture and grounds Group visits What&#039;s on Exhibitions Events and programming Children’s Museum Digital on demand Featured video Videos Games and activities Virtual tours Podcasts Online exhibitions Blog Research and collections Collection Image (hidden) Column 2 Links Search the collections About the collections Collection highlights Donating objects and/or archival material Museum publications Research team Research Image (hidden) Column 4 Links Canadian History Research Centre Request a reproduction Search the library catalogue Indigenous heritage Featured story Repatriation Indigenous languages Indigenous Internship Program Features and stories Educators Teachers’ Zone Plan a school visit Join our Teachers’ Club History Box Educational resources Become a member Shop Français Get tickets Français Français A Get tickets Become a member Shop A Français Search Search the collections This page has been removed Our online exhibitions and"
+   },
+   {
+    "url": "https://historymuseum.ca/cmc/exhibitions/arts/rugs/rugs01e.html",
+    "status": 502,
+    "final": "https://www.historymuseum.ca/page-removed",
+    "type": "text/html",
+    "title": "502 Bad Gateway",
+    "sample": " 502 Bad Gateway 502 Bad Gateway "
+   }
+  ],
+  "wayback": {
+   "status": "200",
+   "available": true,
+   "url": "http://web.archive.org/web/20240319123851/https://www.historymuseum.ca/cmc/exhibitions/arts/rugs/rugs02e.html",
+   "timestamp": "20240319123851"
+  }
+ },
+ "process-hooking-grenfell-bma": {
+  "candidates": [
+   {
+    "url": "https://collection.artbma.org/objects/43106/polar-bear-on-ice-floe",
+    "error": "ENOTFOUND"
+   },
+   {
+    "url": "https://collection.artbma.org/objects/43106",
+    "error": "ENOTFOUND"
+   }
+  ],
+  "wayback": null
+ },
+ "process-industrial-printed": {
+  "candidates": [
+   {
+    "url": "https://zimmer-austria.com/en/node/6296",
+    "status": 404,
+    "final": "https://www.zimmer-austria.com/en/node/6296/",
+    "type": "text/html",
+    "title": "404 - Zimmer Austria",
+    "sample": " 404 - Zimmer Austria MENU MENU product finder career Services EN DE product finder career Services EN DE product finder career Services Application Carpet Solutions Home Textiles Apparel, Knits &amp; Clothing Terry Products Pile Fabrics Technical Textiles Military Textiles Nonwoven Glass Fibre Paper &amp; Foil Wall Covering Technology Digital Printing Screen Printing Carpet Coating &amp; Finishing Coating Machines Coating Lines Finishing Company About us Events Contact Partner Network Service Career Contract Manufacturing General Terms That page doesn&#039;t exist Sitemap Application Carpet Solutions Home Textiles Apparel, Knits &amp; Clothing Terry Products Pile Fabrics Technical Textiles Military Textiles Nonwoven Glass Fibre Paper &amp; Foil Wall Covering Technology Digital Printing Screen Printing Carpet Coating &amp; Finishing Coating Machines Coating Lines Finishing Company About us Events Contact Kufstein Klagenfurt Partner Network Partner Network Kufstein Partner Network Klagenfurt Partner Network Form Partner Network Form Kufstein Service Service Kufstein Technology Center Lifecycle Support Customer Login Services Klagenfurt Lifecycle Support Technology Center Career Career Kufstein Apprenticeship Apply now Career Klagenfurt Open Positions Apply now Success Detail Application Contract Manufacturing CM Kufstein CM Klagenfurt General Terms Digital Printing Systems J. Zimmer Maschinenbau Gesellschaft mbH Eibergstrasse 2-8 6330 Kufstein, Austria +43 (5372) 64893-0 info@"
+   },
+   {
+    "url": "https://www.zimmer-austria.com/en/node/6296",
+    "status": 404,
+    "final": "https://www.zimmer-austria.com/en/node/6296/",
+    "type": "text/html",
+    "title": "404 - Zimmer Austria",
+    "sample": " 404 - Zimmer Austria MENU MENU product finder career Services EN DE product finder career Services EN DE product finder career Services Application Carpet Solutions Home Textiles Apparel, Knits &amp; Clothing Terry Products Pile Fabrics Technical Textiles Military Textiles Nonwoven Glass Fibre Paper &amp; Foil Wall Covering Technology Digital Printing Screen Printing Carpet Coating &amp; Finishing Coating Machines Coating Lines Finishing Company About us Events Contact Partner Network Service Career Contract Manufacturing General Terms That page doesn&#039;t exist Sitemap Application Carpet Solutions Home Textiles Apparel, Knits &amp; Clothing Terry Products Pile Fabrics Technical Textiles Military Textiles Nonwoven Glass Fibre Paper &amp; Foil Wall Covering Technology Digital Printing Screen Printing Carpet Coating &amp; Finishing Coating Machines Coating Lines Finishing Company About us Events Contact Kufstein Klagenfurt Partner Network Partner Network Kufstein Partner Network Klagenfurt Partner Network Form Partner Network Form Kufstein Service Service Kufstein Technology Center Lifecycle Support Customer Login Services Klagenfurt Lifecycle Support Technology Center Career Career Kufstein Apprenticeship Apply now Career Klagenfurt Open Positions Apply now Success Detail Application Contract Manufacturing CM Kufstein CM Klagenfurt General Terms Digital Printing Systems J. Zimmer Maschinenbau Gesellschaft mbH Eibergstrasse 2-8 6330 Kufstein, Austria +43 (5372) 64893-0 info@"
+   },
+   {
+    "url": "https://www.zimmer-austria.com/de/node/6296",
+    "status": 404,
+    "final": "https://www.zimmer-austria.com/de/node/6296/",
+    "type": "text/html",
+    "title": "404 - Zimmer Austria",
+    "sample": " 404 - Zimmer Austria MENU MENU Produkt-Finder Karriere Service EN DE Produkt-Finder Karriere Service EN DE Produkt-Finder Karriere Service Anwendung Teppichlösungen Heimtextilien Bekleidung, Strickwaren und Mode Frottee-Produkte Polware Technische Textilien Militärtextilien Vliesstoff Glasfaser Papier &amp; Folie Wandverkleidung Technologie Digitaldruck Siebdruck Teppichbeschichtung und -veredelung Beschichtungsmaschinen Beschichtungsanlagen Endbearbeitung Unternehmen Über uns Events Kontakt Partnernetzwerk Service Karriere Auftragsfertigung Allgemeine Geschäftsbedingungen Diese Seite existiert nicht Sitemap Anwendung Teppichlösungen Heimtextilien Bekleidung, Strickwaren und Mode Frottee-Produkte Polware Technische Textilien Militärtextilien Vliesstoff Glasfaser Papier &amp; Folie Wandverkleidung Technologie Digitaldruck Siebdruck Teppichbeschichtung und -veredelung Beschichtungsmaschinen Beschichtungsanlagen Endbearbeitung Unternehmen Über uns Events Kontakt Kufstein Klagenfurt Partnernetzwerk Partnernetzwerk Kufstein Partnernetzwerk Klagenfurt Formular für das Partnernetzwerk Partner-Netzwerk-Formular Kufstein Service Service Kufstein Technologiezentrum Lebenszyklus Support Kunden-Login Dienstleistungen Klagenfurt Technologiezentrum Karriere Karriere Kufstein Lehre Jetzt bewerben KARRIERE KLAGENFURT JETZT BEWERBEN Erfolg Detail Anwendung Auftragsfertigung AF Kufstein CM Klagenfurt Allgemeine Geschäftsbedingungen Digital Printing Systems J. Zimmer Maschinenbau Gesellschaft "
+   },
+   {
+    "url": "https://www.zimmer-austria.com/de/node/751",
+    "status": 404,
+    "final": "https://www.zimmer-austria.com/de/node/751/",
+    "type": "text/html",
+    "title": "404 - Zimmer Austria",
+    "sample": " 404 - Zimmer Austria MENU MENU Produkt-Finder Karriere Service EN DE Produkt-Finder Karriere Service EN DE Produkt-Finder Karriere Service Anwendung Teppichlösungen Heimtextilien Bekleidung, Strickwaren und Mode Frottee-Produkte Polware Technische Textilien Militärtextilien Vliesstoff Glasfaser Papier &amp; Folie Wandverkleidung Technologie Digitaldruck Siebdruck Teppichbeschichtung und -veredelung Beschichtungsmaschinen Beschichtungsanlagen Endbearbeitung Unternehmen Über uns Events Kontakt Partnernetzwerk Service Karriere Auftragsfertigung Allgemeine Geschäftsbedingungen Diese Seite existiert nicht Sitemap Anwendung Teppichlösungen Heimtextilien Bekleidung, Strickwaren und Mode Frottee-Produkte Polware Technische Textilien Militärtextilien Vliesstoff Glasfaser Papier &amp; Folie Wandverkleidung Technologie Digitaldruck Siebdruck Teppichbeschichtung und -veredelung Beschichtungsmaschinen Beschichtungsanlagen Endbearbeitung Unternehmen Über uns Events Kontakt Kufstein Klagenfurt Partnernetzwerk Partnernetzwerk Kufstein Partnernetzwerk Klagenfurt Formular für das Partnernetzwerk Partner-Netzwerk-Formular Kufstein Service Service Kufstein Technologiezentrum Lebenszyklus Support Kunden-Login Dienstleistungen Klagenfurt Technologiezentrum Karriere Karriere Kufstein Lehre Jetzt bewerben KARRIERE KLAGENFURT JETZT BEWERBEN Erfolg Detail Anwendung Auftragsfertigung AF Kufstein CM Klagenfurt Allgemeine Geschäftsbedingungen Digital Printing Systems J. Zimmer Maschinenbau Gesellschaft "
+   },
+   {
+    "url": "https://www.zimmer-austria.com/en/node/751",
+    "status": 404,
+    "final": "https://www.zimmer-austria.com/en/node/751/",
+    "type": "text/html",
+    "title": "404 - Zimmer Austria",
+    "sample": " 404 - Zimmer Austria MENU MENU product finder career Services EN DE product finder career Services EN DE product finder career Services Application Carpet Solutions Home Textiles Apparel, Knits &amp; Clothing Terry Products Pile Fabrics Technical Textiles Military Textiles Nonwoven Glass Fibre Paper &amp; Foil Wall Covering Technology Digital Printing Screen Printing Carpet Coating &amp; Finishing Coating Machines Coating Lines Finishing Company About us Events Contact Partner Network Service Career Contract Manufacturing General Terms That page doesn&#039;t exist Sitemap Application Carpet Solutions Home Textiles Apparel, Knits &amp; Clothing Terry Products Pile Fabrics Technical Textiles Military Textiles Nonwoven Glass Fibre Paper &amp; Foil Wall Covering Technology Digital Printing Screen Printing Carpet Coating &amp; Finishing Coating Machines Coating Lines Finishing Company About us Events Contact Kufstein Klagenfurt Partner Network Partner Network Kufstein Partner Network Klagenfurt Partner Network Form Partner Network Form Kufstein Service Service Kufstein Technology Center Lifecycle Support Customer Login Services Klagenfurt Lifecycle Support Technology Center Career Career Kufstein Apprenticeship Apply now Career Klagenfurt Open Positions Apply now Success Detail Application Contract Manufacturing CM Kufstein CM Klagenfurt General Terms Digital Printing Systems J. Zimmer Maschinenbau Gesellschaft mbH Eibergstrasse 2-8 6330 Kufstein, Austria +43 (5372) 64893-0 info@"
+   }
+  ],
+  "wayback": {
+   "status": "200",
+   "available": true,
+   "url": "http://web.archive.org/web/20230616194018/https://www.zimmer-austria.com/en/node/6296",
+   "timestamp": "20230616194018"
+  }
+ },
+ "nps-wilton-america": {
+  "candidates": [
+   {
+    "url": "https://www.nps.gov/parkhistory/online_books/inde/anderson/chap2.htm",
+    "status": 200,
+    "final": "https://www.nps.gov/orgs/1220/index.htm",
+    "type": "text/html",
+    "title": "Park History Program (U.S. National Park Service)",
+    "sample": " Park History Program (U.S. National Park Service) --> An official website of the United States government Here's how you know Here's how you know Official websites use .gov A .gov website belongs to an official government organization in the United States. Secure .gov websites use HTTPS A lock ( Lock Locked padlock icon ) or https:// means you've safely connected to the .gov website. Share sensitive information only on official, secure websites. Skip to global NPS navigation Skip to the main content Skip to the footer section National Park Service Search Search This Site All NPS Open Menu Close Menu Explore This Park Explore the National Park Service Exiting nps.gov Cancel Park History Program Contact Us The National Park Service's History Program was started in 1931 and is managed by the Chief Historian of the National Park Service. It administers multiple program areas, conducts historical research, and supports National Park Service staff in all matters relating to the Service's history and mission. Administrative History Program Provides guidance to NPS parks, programs, and regions writing new administrative and legislative histories or updating existing histories. African American Civil Rights Network Commemorates, honors, and interprets the history of the African American Civil Rights movement. American World War II Heritage City Honors communities and their citizens who supported America's war effort on the home front. Classic NPS Publications Series Handbooks and pro"
+   },
+   {
+    "url": "https://npshistory.com/online_books/inde/anderson/chap2.htm",
+    "status": 404,
+    "type": "text/html",
+    "title": "404 Page Not Found",
+    "sample": " 404 Page Not Found Page Not Found We cannot locate the page you're looking for. Please check the address and make sure all letters are lowercased with no spaces. You may also move to a different page by using the links in the menu bar above. "
+   },
+   {
+    "url": "https://www.nps.gov/parkhistory/online_books/inde/anderson/contents.htm",
+    "status": 200,
+    "final": "https://www.nps.gov/orgs/1220/index.htm",
+    "type": "text/html",
+    "title": "Park History Program (U.S. National Park Service)",
+    "sample": " Park History Program (U.S. National Park Service) --> An official website of the United States government Here's how you know Here's how you know Official websites use .gov A .gov website belongs to an official government organization in the United States. Secure .gov websites use HTTPS A lock ( Lock Locked padlock icon ) or https:// means you've safely connected to the .gov website. Share sensitive information only on official, secure websites. Skip to global NPS navigation Skip to the main content Skip to the footer section National Park Service Search Search This Site All NPS Open Menu Close Menu Explore This Park Explore the National Park Service Exiting nps.gov Cancel Park History Program Contact Us The National Park Service's History Program was started in 1931 and is managed by the Chief Historian of the National Park Service. It administers multiple program areas, conducts historical research, and supports National Park Service staff in all matters relating to the Service's history and mission. Administrative History Program Provides guidance to NPS parks, programs, and regions writing new administrative and legislative histories or updating existing histories. African American Civil Rights Network Commemorates, honors, and interprets the history of the African American Civil Rights movement. American World War II Heritage City Honors communities and their citizens who supported America's war effort on the home front. Classic NPS Publications Series Handbooks and pro"
+   }
+  ],
+  "wayback": {
+   "status": "200",
+   "available": true,
+   "url": "http://web.archive.org/web/20250206041128/https://www.nps.gov/parkhistory/online_books/inde/anderson/chap2.htm",
+   "timestamp": "20250206041128"
+  }
+ },
+ "woven-scotch-carpet-america-1790": {
+  "candidates": [
+   {
+    "url": "https://www.nps.gov/parkhistory/online_books/inde/anderson/chap2.htm",
+    "status": 200,
+    "final": "https://www.nps.gov/orgs/1220/index.htm",
+    "type": "text/html",
+    "title": "Park History Program (U.S. National Park Service)",
+    "sample": " Park History Program (U.S. National Park Service) --> An official website of the United States government Here's how you know Here's how you know Official websites use .gov A .gov website belongs to an official government organization in the United States. Secure .gov websites use HTTPS A lock ( Lock Locked padlock icon ) or https:// means you've safely connected to the .gov website. Share sensitive information only on official, secure websites. Skip to global NPS navigation Skip to the main content Skip to the footer section National Park Service Search Search This Site All NPS Open Menu Close Menu Explore This Park Explore the National Park Service Exiting nps.gov Cancel Park History Program Contact Us The National Park Service's History Program was started in 1931 and is managed by the Chief Historian of the National Park Service. It administers multiple program areas, conducts historical research, and supports National Park Service staff in all matters relating to the Service's history and mission. Administrative History Program Provides guidance to NPS parks, programs, and regions writing new administrative and legislative histories or updating existing histories. African American Civil Rights Network Commemorates, honors, and interprets the history of the African American Civil Rights movement. American World War II Heritage City Honors communities and their citizens who supported America's war effort on the home front. Classic NPS Publications Series Handbooks and pro"
+   }
+  ],
+  "wayback": {
+   "status": "200",
+   "available": true,
+   "url": "http://web.archive.org/web/20250206041128/https://www.nps.gov/parkhistory/online_books/inde/anderson/chap2.htm",
+   "timestamp": "20250206041128"
+  }
+ }
+}
