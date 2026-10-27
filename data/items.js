@@ -2631,18 +2631,689 @@ window.RUG_ITEMS = [
   {
     "id": "ttw-susan-burr",
     "type": "tool",
-    "title": "Susan Burr hand tufting tool",
+    "title": "Ye \"Susan Burr\" Hooked Rug Machine",
     "institution": "Tuft the World (own collection)",
-    "description": "The hand tool in hand. The research brief places domestic hand-tufting tools like this one alongside the Dalton machine as sources for Tai Ping's 1973 Hong Kong tufting gun. Add maker, date, patent number and photographs.",
+    "description": "Boxed hand rug machine with printed instructions. Two wooden handles slide against each other: a steel needle in one, a gauge in the other that holds each loop while the needle withdraws (\"push down the gauge to hold the loop while the needle is withdrawn… alternately inserting the needle and the gauge\"). The box carries a poem ending \"Susan Burr, in the days gone by, / Fashioned rugs such as you or I / With the self-same needle / In the self-same way.\" Research notes: no record of a real Susan Burr exists (an invented grandmother, like Betty Crocker); the mechanism copies Ebenezer Ross's 1891 patent (US 463,548), which expired in 1908; Torrington was a needle-making town. Greer Heritage Museum acc. 2002.1.1&2 dates the type to the 1920s. The second moving part is the ancestor of the looper/scissor in a modern tufting gun.",
     "themes": [
       "Hand-tufting tools & the gun",
       "Tools & equipment"
     ],
     "tags": [
       "own collection",
-      "add photos"
+      "priority",
+      "Ross patent lineage",
+      "video script"
     ],
     "region": "United States",
+    "status": "verified",
+    "creator": "The Holley Associates",
+    "place": "Torrington, Connecticut",
+    "date": "c. 1920s–1930s",
+    "dateStart": 1920,
+    "dateEnd": 1939,
+    "materials": [
+      "wood",
+      "steel",
+      "brass"
+    ],
+    "techniques": [
+      "hand hooking / tufting with needle and gauge"
+    ],
+    "image": "images/tools/susan-burr-box.jpg",
+    "images": [
+      {
+        "src": "images/tools/susan-burr-box.jpg",
+        "caption": "Box front: the poem and \"Made by The Holley Associates, Torrington, Conn.\""
+      },
+      {
+        "src": "images/tools/susan-burr-instructions.jpg",
+        "caption": "\"How to Use Ye Susan Burr Hooked Rug Machine\", with the needle, ring and gauge diagram"
+      }
+    ],
+    "imageCredit": "Tuft the World",
+    "imageSource": "own",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1cj3lVGl_GaLrJt1FuzGKVGMVO3G6xLL3V6MIDF-iERM/edit"
+  },
+  {
+    "id": "ttw-shuttle-needle",
+    "type": "tool",
+    "title": "All Steel Shuttle Needle",
+    "creator": "Molter-Reinhard Co., Inc.",
+    "place": "Chicago, Illinois",
+    "date": "undated (probably 1920s–1930s)",
+    "dateStart": 1920,
+    "dateEnd": 1939,
+    "institution": "Tuft the World (own collection)",
+    "region": "United States",
+    "materials": [
+      "steel",
+      "blued steel"
+    ],
+    "techniques": [
+      "hand hooking / tufting with needle and looper"
+    ],
+    "description": "All-steel two-handled rug needle with its printed package and directions. One handle carries the needle point; the other is a \"blue steel looper\" that is inserted after each stitch: \"insert needle point as far as it will go, then insert looper (which is the other handle)… raise the needle point handle and insert it again… then raise looper and insert again.\" The directions recommend a 14 × 18 inch practice frame and say a shorter loop can be had by cutting ⅛ inch off the looper. The firm also sold yarn and rug patterns (\"Our rug yarn is the best rug yarn made\"; \"You will be pleased with our rug patterns\"). Same two-part alternating mechanism as the Susan Burr and Ross's 1891 patent. Date and firm history still to research.",
+    "image": "images/tools/shuttle-needle-molter-reinhard.jpg",
+    "images": [
+      {
+        "src": "images/tools/shuttle-needle-molter-reinhard.jpg",
+        "caption": "The tool: needle point and looper handles"
+      },
+      {
+        "src": "images/tools/shuttle-needle-detail.jpg",
+        "caption": "Needle point and eye"
+      },
+      {
+        "src": "images/tools/shuttle-needle-package.jpg",
+        "caption": "Package front: \"All Steel Shuttle Needle\", Molter-Reinhard Co., Chicago"
+      },
+      {
+        "src": "images/tools/shuttle-needle-directions.jpg",
+        "caption": "Directions printed inside the package"
+      }
+    ],
+    "imageCredit": "Tuft the World",
+    "imageSource": "own",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "own collection",
+      "priority",
+      "research maker",
+      "date unknown"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "pat-us463548a",
+    "type": "patent",
+    "title": "Ebenezer Ross, hand rug-making implement (US463548A)",
+    "creator": "Ebenezer Ross",
+    "date": "1891",
+    "dateStart": 1891,
+    "identifier": "US463548A",
+    "sourceUrl": "https://patents.google.com/patent/US463548A/en",
+    "region": "United States",
+    "description": "Two sliding handles, a needle in one and a loop-holding member in the other. Expired 1908; the Susan Burr copies it almost part for part. Cited in 1948 by Shaycraft (US2442906A).",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "patent lineage",
+      "Susan Burr",
+      "root patent"
+    ],
+    "collection": "TTW Script Bank fact-check notes (Claude research, Aug 2026)",
+    "status": "unverified",
+    "confidence": "solid"
+  },
+  {
+    "id": "pat-us1917162a",
+    "type": "patent",
+    "title": "Motor in the handle (Cabin Crafts) (US1917162A)",
+    "creator": "Cabin Crafts",
+    "date": "1932",
+    "dateStart": 1932,
+    "identifier": "US1917162A",
+    "sourceUrl": "https://patents.google.com/patent/US1917162A/en",
+    "region": "United States",
+    "description": "First handheld tufting tool with a motor inside the handle, per the script fact-check notes.",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "patent lineage",
+      "tufting gun"
+    ],
+    "collection": "TTW Script Bank fact-check notes (Claude research, Aug 2026)",
+    "status": "unverified",
+    "confidence": "solid"
+  },
+  {
+    "id": "pat-us2422126a",
+    "type": "patent",
+    "title": "Air-fed handheld tufting tool (Callaway Mills) (US2422126A)",
+    "creator": "Callaway Mills",
+    "date": "1946",
+    "dateStart": 1946,
+    "identifier": "US2422126A",
+    "sourceUrl": "https://patents.google.com/patent/US2422126A/en",
+    "region": "United States",
+    "description": "Compressed-air handheld tufting device.",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "patent lineage",
+      "tufting gun"
+    ],
+    "collection": "TTW Script Bank fact-check notes (Claude research, Aug 2026)",
+    "status": "unverified",
+    "confidence": "solid"
+  },
+  {
+    "id": "pat-us2442906a",
+    "type": "patent",
+    "title": "Compressed-air version of the Ross tool (Shaycraft) (US2442906A)",
+    "creator": "Shaycraft",
+    "date": "1948",
+    "dateStart": 1948,
+    "identifier": "US2442906A",
+    "sourceUrl": "https://patents.google.com/patent/US2442906A/en",
+    "region": "United States",
+    "description": "Cites Ross's 1891 patent: the hand-tool mechanism, powered by compressed air. Itself cited by US5090341A (1992).",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "patent lineage",
+      "citation chain"
+    ],
+    "collection": "TTW Script Bank fact-check notes (Claude research, Aug 2026)",
+    "status": "unverified",
+    "confidence": "solid"
+  },
+  {
+    "id": "pat-us2753820a",
+    "type": "patent",
+    "title": "Trigger and removable knife (US2753820A)",
+    "creator": "",
+    "date": "1952",
+    "dateStart": 1952,
+    "identifier": "US2753820A",
+    "sourceUrl": "https://patents.google.com/patent/US2753820A/en",
+    "region": "United States",
+    "description": "Handheld tufting tool with a trigger and a removable knife.",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "patent lineage",
+      "tufting gun"
+    ],
+    "collection": "TTW Script Bank fact-check notes (Claude research, Aug 2026)",
+    "status": "unverified",
+    "confidence": "solid"
+  },
+  {
+    "id": "pat-us3142276a",
+    "type": "patent",
+    "title": "\"Hand gun-type device\" (US3142276A)",
+    "creator": "",
+    "date": "1964",
+    "dateStart": 1964,
+    "identifier": "US3142276A",
+    "sourceUrl": "https://patents.google.com/patent/US3142276A/en",
+    "region": "United States",
+    "description": "The patent that literally calls it a hand gun-type device, the origin of the word \"gun\". For about sixty years these were carpet-repair tools, not art supplies.",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "patent lineage",
+      "tufting gun",
+      "terminology"
+    ],
+    "collection": "TTW Script Bank fact-check notes (Claude research, Aug 2026)",
+    "status": "unverified",
+    "confidence": "solid"
+  },
+  {
+    "id": "pat-us5090341a",
+    "type": "patent",
+    "title": "Industrial carpet mending gun (Spencer Wright, Dalton) (US5090341A)",
+    "creator": "Spencer Wright Industries",
+    "date": "1992",
+    "dateStart": 1992,
+    "identifier": "US5090341A",
+    "sourceUrl": "https://patents.google.com/patent/US5090341A/en",
+    "region": "United States",
+    "description": "Dalton, Georgia. Cites Shaycraft (1948), completing the citation chain back to Ross (1891): the hand tool did reach industry.",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "patent lineage",
+      "citation chain",
+      "Dalton"
+    ],
+    "collection": "TTW Script Bank fact-check notes (Claude research, Aug 2026)",
+    "status": "unverified",
+    "confidence": "solid"
+  },
+  {
+    "id": "ttw-evans-1895-1900",
+    "type": "finding",
+    "title": "Catherine Evans made her first spread in 1895 at 15; the first sale ($2.50) came in 1900",
+    "description": "Don't merge the two: the first spread was kept, not sold. The sale was to her brother's new sister-in-law.",
+    "confidence": "solid",
+    "region": "United States",
+    "collection": "TTW Script Bank fact-check notes (Claude research, Aug 2026)",
+    "status": "unverified",
+    "themes": [
+      "Chenille & candlewick",
+      "Machine tufting & Dalton"
+    ],
+    "tags": [
+      "script fact-check",
+      "correction"
+    ],
+    "dateStart": 1895,
+    "dateEnd": 1900,
+    "date": "1895 / 1900",
+    "sourceUrl": "https://digitalcommons.unl.edu/tsaconf/506/"
+  },
+  {
+    "id": "ttw-carter-1922",
+    "type": "finding",
+    "title": "Carter Brothers, Chattanooga, 1922: first patent claiming needle + loop former + separate cutting knife",
+    "description": "The machine line starts from sewing machines, not from the old hand tools.",
+    "confidence": "solid",
+    "region": "United States",
+    "collection": "TTW Script Bank fact-check notes (Claude research, Aug 2026)",
+    "status": "unverified",
+    "themes": [
+      "Machine tufting & Dalton",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "script fact-check",
+      "machinery",
+      "find patent number"
+    ],
+    "dateStart": 1922,
+    "date": "1922"
+  },
+  {
+    "id": "ttw-bedspreads-1941",
+    "type": "finding",
+    "title": "By 1941, all but about 1% of tufted bedspreads were machine-made",
+    "description": "",
+    "confidence": "solid",
+    "region": "United States",
+    "collection": "TTW Script Bank fact-check notes (Claude research, Aug 2026)",
+    "status": "unverified",
+    "themes": [
+      "Chenille & candlewick",
+      "Machine tufting & Dalton"
+    ],
+    "tags": [
+      "script fact-check"
+    ],
+    "dateStart": 1941,
+    "date": "1941"
+  },
+  {
+    "id": "ttw-tufted-share",
+    "type": "finding",
+    "title": "1950: 10% of US carpet was tufted; today over 90%",
+    "description": "The industry inverted once broadloom tufting machines arrived around 1950.",
+    "confidence": "solid",
+    "region": "United States",
+    "collection": "TTW Script Bank fact-check notes (Claude research, Aug 2026)",
+    "status": "unverified",
+    "themes": [
+      "Machine tufting & Dalton"
+    ],
+    "tags": [
+      "script fact-check",
+      "statistics"
+    ],
+    "dateStart": 1950,
+    "date": "1950–today"
+  },
+  {
+    "id": "ttw-dalton-share",
+    "type": "finding",
+    "title": "More than 70% of the world's carpet, and ~85% of America's, is made within about an hour of Dalton",
+    "description": "Do not say \"90% of the world's\": the industry's own figure is >70% worldwide; 85% is US-only.",
+    "confidence": "solid",
+    "region": "United States",
+    "collection": "TTW Script Bank fact-check notes (Claude research, Aug 2026)",
+    "status": "unverified",
+    "themes": [
+      "Machine tufting & Dalton"
+    ],
+    "tags": [
+      "script fact-check",
+      "statistics",
+      "careful wording"
+    ]
+  },
+  {
+    "id": "ttw-turfer-pay",
+    "type": "finding",
+    "title": "Turfers were paid 25–50¢ a spread; Sears sold them for $1.59–$2.49 as \"handmade by the southern mountain women\"",
+    "description": "Labour economics of the hand-tufted bedspread trade.",
+    "confidence": "suggestive",
+    "region": "United States",
+    "collection": "TTW Script Bank fact-check notes (Claude research, Aug 2026)",
+    "status": "unverified",
+    "themes": [
+      "Chenille & candlewick"
+    ],
+    "tags": [
+      "script fact-check",
+      "labour"
+    ]
+  },
+  {
+    "id": "ttw-excelsior-needle",
+    "type": "finding",
+    "title": "Torrington, Connecticut was a needle town: Excelsior Needle Co., founded 1866",
+    "description": "30,000 needles a day by the 1870s; later The Torrington Company. Explains why a rug tool like the Susan Burr came from Torrington.",
+    "confidence": "solid",
+    "region": "United States",
+    "collection": "TTW Script Bank fact-check notes (Claude research, Aug 2026)",
+    "status": "unverified",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "script fact-check",
+      "Susan Burr",
+      "place"
+    ],
+    "dateStart": 1866,
+    "date": "1866"
+  },
+  {
+    "id": "ttw-greer-susan-burr",
+    "type": "finding",
+    "title": "Greer Heritage Museum holds a comparable Susan Burr machine (acc. 2002.1.1&2)",
+    "description": "Dates the type to the 1920s. A museum comparison object for the Tuft the World example.",
+    "confidence": "solid",
+    "region": "United States",
+    "collection": "TTW Script Bank fact-check notes (Claude research, Aug 2026)",
+    "status": "unverified",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "script fact-check",
+      "Susan Burr",
+      "comparison object"
+    ]
+  },
+  {
+    "id": "ttw-mirzapur-manual",
+    "type": "finding",
+    "title": "Manual speed-tufting tools are still sold new in Mirzapur, India",
+    "description": "Naksh Enterprises / NakshCarpets: cut and loop pile, up to 45 mm, around ₹1,500. Same two-part alternating action. Caution: commercial pile work uses 220 V electric guns; don't claim big carpets are made with the manual tool.",
+    "confidence": "solid",
+    "region": "United States",
+    "collection": "TTW Script Bank fact-check notes (Claude research, Aug 2026)",
+    "status": "unverified",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "script fact-check",
+      "hand tools",
+      "careful wording"
+    ]
+  },
+  {
+    "id": "ttw-first-machine-1930-refuted",
+    "type": "finding",
+    "title": "DO NOT SAY: \"The first tufting machine was built in 1930\"",
+    "description": "A museum claim with no patent behind it. Say \"Dalton, the 1930s\".",
+    "confidence": "refuted",
+    "region": "United States",
+    "collection": "TTW Script Bank fact-check notes (Claude research, Aug 2026)",
+    "status": "unverified",
+    "themes": [
+      "Machine tufting & Dalton",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "script fact-check",
+      "do not cite"
+    ]
+  },
+  {
+    "id": "wint-photo-bucilla-tools",
+    "type": "image",
+    "title": "Bucilla rug materials catalog page: Bluenose Rug Hooker and tools",
+    "description": "Bucilla Rug Yarn (Art. 7112), Bluenose Rug Hooker (Art. 7152, \"the fastest rug making innovation procurable today\"), Bluenose \"De Luxe\" Hooker (Art. 7005) for extra-long loops, punch needle (7113), rug hook (7003), rug and carving shears, clamps and a standing rug frame. Photographed by Tuft the World at Winterthur, January 2023; the photo is in your Google Drive (private link).",
+    "institution": "Winterthur Library",
+    "region": "United States",
+    "sourceUrl": "https://drive.google.com/file/d/12T-GDkDIbkotAMbExH7aS_Lk6B9fQDTo/view",
+    "themes": [
+      "Trade catalogs & marketing",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "own photo",
+      "Winterthur visit 2023",
+      "permission needed to publish",
+      "Bluenose",
+      "speed hooker"
+    ],
     "status": "unverified"
+  },
+  {
+    "id": "wint-photo-bucilla-02",
+    "type": "image",
+    "title": "Bucilla catalog, second photo",
+    "description": "Second photograph from the Bucilla material. Photographed by Tuft the World at Winterthur, January 2023; the photo is in your Google Drive (private link).",
+    "institution": "Winterthur Library",
+    "region": "United States",
+    "sourceUrl": "https://drive.google.com/file/d/1MErZC-yjUhSuoTVG079Uf-JjPQtDb1ml/view",
+    "themes": [
+      "Trade catalogs & marketing",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "own photo",
+      "Winterthur visit 2023",
+      "permission needed to publish"
+    ],
+    "status": "unverified"
+  },
+  {
+    "id": "wint-photo-fleisher",
+    "type": "image",
+    "title": "Fleisher rug accessories and yarns: the Bluenose Hooker",
+    "description": "\"This almost magic hooker has completely revolutionized the making of hooked yarn rugs.\" Also the Bluenose De Luxe Hooker (cuts the time in half; extra-long loops for deep pile), a punch needle, Colonial Rugwool, Special Rug Worsted, Sylvan Yarn, shears and a reversible standing rug frame. Photographed by Tuft the World at Winterthur, January 2023; the photo is in your Google Drive (private link).",
+    "institution": "Winterthur Library",
+    "region": "United States",
+    "sourceUrl": "https://drive.google.com/file/d/1NFkIyCj1KckouerwPPWjHNetm-3jMgX5/view",
+    "themes": [
+      "Trade catalogs & marketing",
+      "Tools & equipment",
+      "Yarn & materials"
+    ],
+    "tags": [
+      "own photo",
+      "Winterthur visit 2023",
+      "permission needed to publish",
+      "Bluenose",
+      "speed hooker"
+    ],
+    "status": "unverified"
+  },
+  {
+    "id": "wint-photo-olson-02",
+    "type": "image",
+    "title": "Hooked rug pattern pages: So. E. Z. Chenille Yarn and the \"Automatic Hook Rug Needle\" (filed as Olson Rug Co.)",
+    "description": "Stamped burlap patterns (Quaint Fawn, Wild Rose Bouquet, Pleasing Cosmos, Terrier Pillow) with colour charts; \"How To Make Hook Rugs\" instructions; So. E. Z. Automatic Needle, 25¢, \"Hi-Speed works like magic\". Sold in S. S. Kresge stores; mail orders to Wonder Art, 3900 N. Claremont Ave, Chicago. Note: the pages name Wonder Art, not Olson. Photographed by Tuft the World at Winterthur, January 2023; the photo is in your Google Drive (private link).",
+    "institution": "Winterthur Library",
+    "region": "United States",
+    "sourceUrl": "https://drive.google.com/file/d/1u8tvZItnhNvvfPwxYYn6m4tX51ZnL_Vv/view",
+    "themes": [
+      "Trade catalogs & marketing",
+      "Hooked & handmade rugs",
+      "Chenille & candlewick"
+    ],
+    "tags": [
+      "own photo",
+      "Winterthur visit 2023",
+      "permission needed to publish",
+      "Wonder Art",
+      "chenille yarn",
+      "check attribution"
+    ],
+    "status": "unverified"
+  },
+  {
+    "id": "wint-photo-olson-03",
+    "type": "image",
+    "title": "Hooked rug pattern page 11: New England Rug Creation, Buttercup Bathroom Set (filed as Olson Rug Co.)",
+    "description": "So. E. Z. Chenille Yarn 22-yard skeins at 10¢; wood frames at 15¢ and 25¢; an Automatic Hook Rug Needle; patterns No. 509, 511, 515, 518. Photographed by Tuft the World at Winterthur, January 2023; the photo is in your Google Drive (private link).",
+    "institution": "Winterthur Library",
+    "region": "United States",
+    "sourceUrl": "https://drive.google.com/file/d/1jFInSaSH8bL84A7JFA8IYKmGcJr7ZBgn/view",
+    "themes": [
+      "Trade catalogs & marketing",
+      "Hooked & handmade rugs",
+      "Chenille & candlewick"
+    ],
+    "tags": [
+      "own photo",
+      "Winterthur visit 2023",
+      "permission needed to publish",
+      "Wonder Art",
+      "chenille yarn",
+      "check attribution"
+    ],
+    "status": "unverified"
+  },
+  {
+    "id": "wint-photo-sunshine-1937",
+    "type": "image",
+    "title": "Sunshine Yarns sample book, 1937",
+    "description": "\"Largest because we serve the people best… Highest quality yarns, largest assortment at cut prices.\" Photographed by Tuft the World at Winterthur, January 2023; the photo is in your Google Drive (private link).",
+    "institution": "Winterthur Library",
+    "region": "United States",
+    "sourceUrl": "https://drive.google.com/file/d/1su_4EkENLYjqAeIQVBPytjxwoEe-f89y/view",
+    "themes": [
+      "Yarn & materials",
+      "Trade catalogs & marketing"
+    ],
+    "tags": [
+      "own photo",
+      "Winterthur visit 2023",
+      "permission needed to publish",
+      "sample book"
+    ],
+    "status": "unverified",
+    "date": "1937",
+    "dateStart": 1937
+  },
+  {
+    "id": "wint-photo-1964-1354",
+    "type": "image",
+    "title": "Winterthur 1964.1354 (detail photo)",
+    "description": "Detail photograph of Winterthur object 1964.1354, next in sequence to hooked rug 1964.1355. Check the object record. Photographed by Tuft the World at Winterthur, January 2023; the photo is in your Google Drive (private link).",
+    "institution": "Winterthur Library",
+    "region": "United States",
+    "sourceUrl": "https://drive.google.com/file/d/1gIn21L4kPy31xZObHePImEuxcy8Y8qiA/view",
+    "themes": [
+      "Hooked & handmade rugs"
+    ],
+    "tags": [
+      "own photo",
+      "Winterthur visit 2023",
+      "permission needed to publish",
+      "object detail"
+    ],
+    "status": "unverified"
+  },
+  {
+    "id": "ttw-doc-video-script",
+    "type": "article",
+    "title": "TTW: The History of Tufting (3-minute video script)",
+    "creator": "Tuft the World",
+    "date": "August 2026",
+    "dateStart": 2026,
+    "institution": "Tuft the World (own work)",
+    "region": "United States",
+    "sourceUrl": "https://docs.google.com/document/d/10qfRoO_DbYeXGBGG_edbrMyCbWV4XqHLWuZx6xkleto/edit",
+    "description": "Nine-beat script built around the Susan Burr tool, with fact-check notes (\"safe to say flatly\" / \"do not say\") and ideas for expansion. Output of the August 2026 Claude research conversation. Private Google Drive link.",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Machine tufting & Dalton"
+    ],
+    "tags": [
+      "own work",
+      "Claude research Aug 2026"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "ttw-doc-script-bank",
+    "type": "article",
+    "title": "TTW Script Bank: 109 history scripts (v4)",
+    "creator": "Tuft the World",
+    "date": "August 2026",
+    "dateStart": 2026,
+    "institution": "Tuft the World (own work)",
+    "region": "United States",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/11-2o0XY2V3DXwyEwXnBN8RH63xF-pBHXXo8Mq3sRMGA/edit",
+    "description": "30-second history scripts, each with a fact-check source column. Output of the August 2026 Claude research conversation. Private Google Drive link.",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Machine tufting & Dalton"
+    ],
+    "tags": [
+      "own work",
+      "Claude research Aug 2026"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "ttw-doc-script-addendum",
+    "type": "article",
+    "title": "TTW Script Bank addendum, rows 110–117 (Susan Burr / hand tool lineage)",
+    "creator": "Tuft the World",
+    "date": "August 2026",
+    "dateStart": 2026,
+    "institution": "Tuft the World (own work)",
+    "region": "United States",
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1cj3lVGl_GaLrJt1FuzGKVGMVO3G6xLL3V6MIDF-iERM/edit",
+    "description": "The Susan Burr, Ross patent, Torrington, gauge-to-looper and Mirzapur scripts with sources. Private Google Drive link.",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Machine tufting & Dalton"
+    ],
+    "tags": [
+      "own work",
+      "Claude research Aug 2026"
+    ],
+    "status": "verified"
+  },
+  {
+    "id": "ttw-doc-non-english",
+    "type": "article",
+    "title": "TTW: Tufting History, The Non-English Record (research brief)",
+    "creator": "Tuft the World",
+    "date": "August 2026",
+    "dateStart": 2026,
+    "institution": "Tuft the World (own work)",
+    "region": "United States",
+    "sourceUrl": "https://docs.google.com/document/d/1dU1bOlARhyqEsG03f6X2Rh-WvwNiRBqo4KnR9DZnzxM/edit",
+    "description": "The Chinese, Hindi, Japanese, German, French and Dutch research brief (imported into this database as Findings). Private Google Drive link.",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Machine tufting & Dalton"
+    ],
+    "tags": [
+      "own work",
+      "Claude research Aug 2026"
+    ],
+    "status": "verified"
   }
 ];

@@ -147,6 +147,7 @@ async function resolve(item) {
   if (!item.sourceUrl) return null;
   // Research findings are statements, not objects; a site's home page shows a banner, not the record.
   if (item.type === "finding") return null;
+  if (/(^|\.)(drive|docs)\.google\.com$/.test(new URL(item.sourceUrl).hostname)) return null; // private Drive files
   try { if (new URL(item.sourceUrl).pathname.replace(/\/$/, "") === "") return null; } catch { return null; }
   const special = RESOLVERS.find(r => r.test(item.sourceUrl));
   if (special) { const r = await special.run(item); if (r && (await isImage(r.image))) return r; }

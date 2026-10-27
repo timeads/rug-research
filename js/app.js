@@ -433,6 +433,8 @@
     ].filter(([, v]) => v);
     const q = encodeURIComponent([it.title, it.creator].filter(Boolean).join(" "));
     const lists = S.lists.filter(l => l.items.includes(id));
+    // Extra photos (e.g. a tool, its box and its instructions) show as a strip under the main image.
+    const gallery = (Array.isArray(it.images) ? it.images : []).filter(g => g && safeUrl(g.src));
     const credit = it.imageCredit || (src && !src.startsWith("data:") && !src.startsWith("blob:") && it.institution) || "";
     $("#drawer").innerHTML = `
       <div class="drawer-bar">
@@ -442,7 +444,8 @@
         <button class="icon-btn" data-close aria-label="Close details">${icon("x")}</button>
       </div>
       ${src ? `<div class="drawer-plate"><a href="${esc(src)}" target="_blank" rel="noopener" aria-label="Open full image">${plateHTML(it, it.title)}</a></div>` : it.type === "finding" ? "" : `<div class="drawer-plate"><div class="plate-board">${boardPlate(it)}</div></div>`}
-      ${src && credit ? `<p class="credit">Image: ${esc(credit)}</p>` : ""}
+      ${gallery.length > 1 ? `<div class="gallery" role="group" aria-label="More photos">${gallery.map((g, i) => `<button class="gthumb" data-gsrc="${esc(g.src)}" data-gcap="${esc(g.caption || "")}" aria-label="${esc(g.caption || `Photo ${i + 1}`)}" aria-pressed="${i === 0}"><img src="${esc(g.src)}" alt="" loading="lazy" referrerpolicy="no-referrer"></button>`).join("")}</div>` : ""}
+      ${src && (credit || gallery[0]?.caption) ? `<p class="credit" id="gallery-caption">${esc([gallery[0]?.caption, credit && `Image: ${credit}`].filter(Boolean).join(" · "))}</p>` : ""}
       <div class="drawer-body">
         <h2 id="drawer-title">${esc(it.title)}</h2>
         <p class="sub">${esc(metaLine(it))}</p>
@@ -857,6 +860,15 @@
   $("#scrim").onclick = closeDrawer;
   $("#drawer").addEventListener("click", e => {
     if (e.target.closest("[data-close]")) return closeDrawer();
+    const gt = e.target.closest("[data-gsrc]");
+    if (gt) {
+      const main = $("#drawer .drawer-plate img"), link = $("#drawer .drawer-plate a");
+      if (main) main.src = gt.dataset.gsrc;
+      if (link) link.href = gt.dataset.gsrc;
+      $$("#drawer .gthumb").forEach(b => b.setAttribute("aria-pressed", String(b === gt)));
+      const cap = $("#gallery-caption"); if (cap) cap.textContent = [gt.dataset.gcap, BY_ID[drawerId]?.imageCredit && `Image: ${BY_ID[drawerId].imageCredit}`].filter(Boolean).join(" · ");
+      return;
+    }
     const ed = e.target.closest("[data-edit]"); if (ed) return openEdit(ed.dataset.edit);
     const f = e.target.closest("[data-flag]"); if (f) return toggleFlag(drawerId, f.dataset.flag);
     const ul = e.target.closest("[data-unlist]"); if (ul) return toggleInList(drawerId, ul.dataset.unlist);
@@ -952,6 +964,15 @@
 
   // ---------- boot ----------
   if (!S.chaptersSeeded) { S.lists.unshift(...SEED_CHAPTERS.map(c => ({ ...c, items: [...c.items] }))); S.chaptersSeeded = true; S.activeList = SEED_CHAPTERS[0].id; save(); }
+  // Evidence added to a seeded chapter in later releases reaches existing browsers once; anything you removed stays removed.
+  S.seedSeen = S.seedSeen || {};
+  for (const c of SEED_CHAPTERS) {
+    const l = S.lists.find(x => x.id === c.id); if (!l) continue;
+    const seen = new Set(S.seedSeen[c.id] || l.items);
+    for (const id of c.items) if (!seen.has(id)) { if (!l.items.includes(id)) l.items.push(id); seen.add(id); }
+    S.seedSeen[c.id] = [...seen];
+  }
+  save();
   rebuild();
   const VIEWS = ["browse", "timeline", "compile", "discover", "sources"];
   const viewFromHash = () => { const v = (location.hash || "").slice(1); return VIEWS.includes(v) ? v : "browse"; };

@@ -39,6 +39,20 @@ const OBJ = /href=["']((?:https?:\/\/digital\.hagley\.org)?\/(?:islandora\/objec
 
 const out = { searchedAt: new Date().toISOString(), probes: [], items: {} };
 
+// Official machine interfaces and the finding-aid catalog, which may be open where the website is not.
+for (const url of [
+  `${BASE}/oai2?verb=Identify`,
+  `${BASE}/oai?verb=Identify`,
+  `${BASE}/oai2?verb=ListSets`,
+  "https://findingaids.hagley.org/search?q[]=nylon+carpet&op[]=&field[]=&limit=",
+  "https://findingaids.hagley.org/search?q[]=Antron",
+]) {
+  const r = await get(url);
+  out.probes.push({ term: "(interface)", url, status: r.status, finalUrl: r.url, error: r.error, title: (r.text.match(/<title>([^<]*)/i) || [])[1] || "",
+    snippet: r.text.replace(/\s+/g, " ").slice(0, 1500) });
+  await sleep(500);
+}
+
 for (const term of TERMS) {
   let links = [];
   for (const mk of SEARCHES) {

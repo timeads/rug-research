@@ -13,13 +13,13 @@ window.RUG_CHAPTERS = [
     id: "ch-dalton-bedspreads", kind: "chapter",
     name: "Dalton: from candlewick spreads to the Bedspread Capital",
     intro: "Working notes:\n\nCatherine Evans Whitener's revival (c. 1895–1900), the putting-out system of spread houses and haulers, Peacock Alley on U.S. 41, and department-store chenille by the 1920s. The Henry Ford's 1936 chenille rug is a dated, homemade tufted rug from the hand era.",
-    items: ["event-whitener-bedspread", "article-nge-chenille", "book-callahan-southern-tufts", "photo-green-burton-1933", "hf-00-1510-19", "photo-cabin-crafts-arnall", "bandy-mahs-chenille", "archive-bandy-deaton"]
+    items: ["event-whitener-bedspread", "article-nge-chenille", "book-callahan-southern-tufts", "photo-green-burton-1933", "hf-00-1510-19", "photo-cabin-crafts-arnall", "bandy-mahs-chenille", "archive-bandy-deaton", "ttw-evans-1895-1900", "ttw-turfer-pay", "ttw-bedspreads-1941"]
   },
   {
     id: "ch-machine", kind: "chapter",
     name: "Building the machine",
     intro: "Working notes:\n\nMoench (1928; ASME landmark), Looper's adapted Singer (1930s), Glenn Dalton (1936 filing), Cobble and Muse's multi-needle machine. ASME and the Dalton accounts disagree about who came first. Find the patent numbers.",
-    items: ["tool-moench-1928", "event-looper-tufting-machine", "marker-mechanization-bedspread", "patent-us2977905", "book-deaton-bedspreads-broadloom", "book-patton-carpet-capital", "article-patton-ehnet"]
+    items: ["tool-moench-1928", "event-looper-tufting-machine", "marker-mechanization-bedspread", "patent-us2977905", "book-deaton-bedspreads-broadloom", "book-patton-carpet-capital", "article-patton-ehnet", "ttw-carter-1922", "ttw-first-machine-1930-refuted", "ttw-tufted-share", "ttw-dalton-share"]
   },
   {
     id: "ch-nylon", kind: "chapter",
@@ -41,9 +41,9 @@ window.RUG_CHAPTERS = [
   },
   {
     id: "ch-gun", kind: "chapter",
-    name: "Hong Kong and the tufting gun",
-    intro: "Working notes:\n\nTai Ping's Anthony Yeh built a cut-pile tufting needle from the American single-needle sewing-machine method and from domestic hand-tufting tools; in 1973 the gun was motorised. The Chinese text makes the hand-tool lineage explicit. The English version doesn't.",
-    items: ["ner-hk-taiping-needle", "ner-hk-taiping-1973", "ttw-susan-burr", "ner-hk-taiping-1992", "ner-cn-terminology", "ner-cn-handmade-label"]
+    name: "Hand tools and the tufting gun",
+    intro: "Working notes:\n\nThe hand tool comes first: Ross's 1891 two-handled needle-and-gauge patent, copied after 1908 by the Susan Burr (Torrington) and the Molter-Reinhard Shuttle Needle (Chicago), then sped up by the 1930s Bluenose hookers. Its patents run unbroken to a 1992 Dalton mending gun (Ross → Shaycraft 1948 → Spencer Wright 1992), while the gun itself gains a motor (1932), air (1946), a trigger and knife (1952) and its name (1964).\n\nTai Ping's Anthony Yeh built a cut-pile tufting needle from the American single-needle sewing-machine method and from domestic hand-tufting tools; in 1973 the gun was motorised. The Chinese text makes the hand-tool lineage explicit. The English version doesn't.",
+    items: ["ner-hk-taiping-needle", "ner-hk-taiping-1973", "ttw-susan-burr", "ner-hk-taiping-1992", "ner-cn-terminology", "ner-cn-handmade-label", "ttw-shuttle-needle", "pat-us463548a", "ttw-excelsior-needle", "ttw-greer-susan-burr", "wint-photo-bucilla-tools", "wint-photo-fleisher", "wint-photo-olson-02", "pat-us1917162a", "pat-us2422126a", "pat-us2442906a", "pat-us2753820a", "pat-us3142276a", "pat-us5090341a", "ttw-mirzapur-manual"]
   },
   {
     id: "ch-india", kind: "chapter",
