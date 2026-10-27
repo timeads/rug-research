@@ -6807,7 +6807,6 @@ window.RUG_ITEMS = [
       "object"
     ],
     "status": "unverified",
-    "confidence": "suggestive",
-    "imageSource": "auto"
+    "confidence": "suggestive"
   }
 ];
