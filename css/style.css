@@ -572,3 +572,7 @@ input[type="search"]::-webkit-search-cancel-button:hover { background: var(--ink
   .ms-toc { position: static; max-height: none; margin-bottom: 18px; padding: 12px; border: 1px solid var(--line); border-radius: var(--r-lg); background: var(--surface); }
   .ms-head h1 { font-size: 1.75rem; }
 }
+.ms-editor { display: block; width: 100%; min-height: 240px; padding: 16px 18px; border: 1px solid var(--focus); border-radius: var(--r-lg); background: var(--surface); color: var(--ink); font: inherit; font-size: 1.0625rem; line-height: 1.72; resize: vertical; overflow: hidden; box-shadow: 0 0 0 3px color-mix(in srgb, var(--focus) 18%, transparent); }
+.ms-editor:focus { outline: none; }
+.ms-hint { margin: 8px 0 0; font-size: var(--t-sm); color: var(--ink-3); }
+.ms-prose[data-ms-text] { cursor: text; }

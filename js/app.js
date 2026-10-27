@@ -737,6 +737,7 @@
       return `<p>${lines.map(mdInline).join("<br>")}</p>`;
     }).join("");
   };
+  const msEditing = new Set(); // chapters open for editing in the manuscript view
   const wordsIn = t => String(t || "").replace(DRAFT_LEAD, "").trim().split(/\s+/).filter(Boolean).length;
   const renderManuscript = () => {
     const chapters = S.lists.filter(isChapter);
@@ -751,16 +752,28 @@
         <header class="ms-ch-head">
           <p class="ms-ch-num">Chapter ${i + 1}</p>
           <h2>${esc(l.name)}</h2>
-          <p class="ms-ch-meta">${wordsIn(l.intro).toLocaleString()} words · ${items.length} source${items.length === 1 ? "" : "s"} <button class="linkish" data-ms-edit="${esc(l.id)}">${icon("edit", "sm")}Edit in Write</button></p>
+          <p class="ms-ch-meta"><span id="ms-wc-${esc(l.id)}">${wordsIn(l.intro).toLocaleString()} words</span> · ${items.length} source${items.length === 1 ? "" : "s"}
+            ${msEditing.has(l.id) ? `<button class="btn sm primary" data-ms-done="${esc(l.id)}">${icon("check")}Done</button>` : `<button class="btn sm" data-ms-text="${esc(l.id)}">${icon("edit")}Edit text</button>`}
+            <button class="linkish" data-ms-edit="${esc(l.id)}">Open in Write</button></p>
         </header>
-        <div class="ms-prose">${(l.intro || "").trim() ? proseHTML(l.intro) : `<p class="ms-empty">No draft yet. Write this chapter in the Write tab.</p>`}</div>
+        ${msEditing.has(l.id)
+          ? `<textarea class="ms-editor" data-ms-ta="${esc(l.id)}" aria-label="Text of chapter ${i + 1}" spellcheck="true">${esc(l.intro || "")}</textarea><p class="ms-hint">Saved as you type. Blank lines start new paragraphs; "- " starts a list item.</p>`
+          : `<div class="ms-prose" data-ms-text="${esc(l.id)}" title="Double-click to edit">${(l.intro || "").trim() ? proseHTML(l.intro) : `<p class="ms-empty">No draft yet. Choose Edit text to start writing.</p>`}</div>`}
         ${items.length ? `<details class="ms-sources"><summary>Sources (${items.length})</summary><ol>${items.map(it => {
           const conf = it.confidence && CONFIDENCE[it.confidence] ? ` <span class="conf conf-${it.confidence}">${esc(CONFIDENCE[it.confidence].label)}</span>` : "";
           return `<li><button class="ms-cite" data-ms-open="${esc(it.id)}">${mdInline(citation(it))}</button>${conf}</li>`;
         }).join("")}</ol></details>` : ""}
       </section>`;
     }).join("") : `<div class="empty"><h2>No chapters yet</h2><p>Create a chapter in the Write tab and it appears here.</p><div class="btns"><a class="btn" href="#compile">Go to Write</a></div></div>`;
+    $$(".ms-editor").forEach(fitMs);
   };
+  const fitMs = ta => { ta.style.height = "auto"; ta.style.height = ta.scrollHeight + 2 + "px"; };
+  const msTotals = () => {
+    const chapters = S.lists.filter(isChapter), total = chapters.reduce((n, l) => n + wordsIn(l.intro), 0);
+    $("#ms-sub").textContent = `Working manuscript · ${chapters.length} chapter${chapters.length === 1 ? "" : "s"} · ${total.toLocaleString()} words · updates as you write`;
+    $$("#ms-toc [data-ms-jump]").forEach(a => { const l = S.lists.find(x => x.id === a.dataset.msJump); if (l) a.querySelector("small").textContent = wordsIn(l.intro).toLocaleString(); });
+  };
+  const saveMsText = debounce(() => save(), 400);
 
   const compileExport = fmt => {
     const l = activeList();
@@ -1031,9 +1044,23 @@
   $("#ms-download").onclick = exportManuscript;
   $("#ms-print").onclick = () => { document.body.classList.add("print-ms"); window.print(); };
   addEventListener("afterprint", () => document.body.classList.remove("print-ms"));
+  $("#view-manuscript").addEventListener("dblclick", e => {
+    const prose = e.target.closest(".ms-prose[data-ms-text]"); if (!prose) return;
+    msEditing.add(prose.dataset.msText); renderManuscript(); $(`.ms-editor[data-ms-ta="${CSS.escape(prose.dataset.msText)}"]`)?.focus();
+  });
+  $("#view-manuscript").addEventListener("input", e => {
+    const ta = e.target.closest(".ms-editor"); if (!ta) return;
+    const l = S.lists.find(x => x.id === ta.dataset.msTa); if (!l) return;
+    l.intro = ta.value; fitMs(ta); saveMsText();
+    const wc = document.getElementById("ms-wc-" + l.id); if (wc) wc.textContent = `${wordsIn(l.intro).toLocaleString()} words`;
+    msTotals();
+  });
   $("#view-manuscript").addEventListener("click", e => {
     const open = e.target.closest("[data-ms-open]"); if (open) return openDrawer(open.dataset.msOpen);
     const edit = e.target.closest("[data-ms-edit]"); if (edit) { S.activeList = edit.dataset.msEdit; save(); setView("compile"); return; }
+    const start = e.target.closest("button[data-ms-text]");
+    if (start) { msEditing.add(start.dataset.msText); renderManuscript(); $(`.ms-editor[data-ms-ta="${CSS.escape(start.dataset.msText)}"]`)?.focus(); return; }
+    const done = e.target.closest("[data-ms-done]"); if (done) { msEditing.delete(done.dataset.msDone); save(); renderManuscript(); return; }
     const jump = e.target.closest("[data-ms-jump]");
     if (jump) { e.preventDefault(); document.getElementById("ms-" + jump.dataset.msJump)?.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" }); }
   });
