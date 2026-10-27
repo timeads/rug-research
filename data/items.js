@@ -615,7 +615,7 @@ window.RUG_ITEMS = [
     "dateStart": 1930,
     "dateEnd": 1939,
     "place": "Dalton, Georgia",
-    "description": "Adapted from a Singer sewing machine, per the Carpet and Rug Institute. Check patents and Dalton archives for primary evidence.",
+    "description": "Adapted from a Singer sewing machine, per the Carpet and Rug Institute. Check patents and Dalton archives for primary evidence. Patent found: US2123114, Glenn Looper, Dalton, \"Tufting Machine\", filed 15 Dec 1936, granted 5 Jul 1938.",
     "sourceUrl": "https://carpet-rug.org/about-us/history-of-carpet/",
     "themes": [
       "Machine tufting & Dalton",
@@ -1251,7 +1251,7 @@ window.RUG_ITEMS = [
     "dateStart": 1928,
     "place": "Displayed at Shaw Industries, Dalton, Georgia",
     "institution": "Shaw Industries",
-    "description": "Single-needle machine that punched loops of thick yarn through a backing. Moench patented a multi-needle version, and the patent was cited in improvement patents as late as 1980. Named ASME Historic Mechanical Engineering Landmark no. 266 on 31 July 2018. ASME credits Moench with the first machine; Dalton accounts credit Looper. Find the patent number.",
+    "description": "Single-needle machine that punched loops of thick yarn through a backing. Moench patented a multi-needle version, and the patent was cited in improvement patents as late as 1980. Named ASME Historic Mechanical Engineering Landmark no. 266 on 31 July 2018. ASME credits Moench with the first machine; Dalton accounts credit Looper. Find the patent number. Patent number still not found (ASME sources say both \"1928 patent\" and \"issued 1934\").",
     "sourceUrl": "https://asme.org/wwwasmeorg/media/ResourceFiles/AboutASME/Who We Are/Engineering History/Landmarks/266-CarpetTuftingApparatus.pdf",
     "themes": [
       "Machine tufting & Dalton",
@@ -1268,9 +1268,9 @@ window.RUG_ITEMS = [
   {
     "id": "patent-us2977905",
     "type": "patent",
-    "title": "Tufting machine (US 2,977,905)",
-    "creator": "James A. Cobble, Sr.",
-    "date": "filed 1958, issued 1961",
+    "title": "James A. Cobble Sr. & Jr., \"Tufting Machine\" (US2977905A)",
+    "creator": "James A. Cobble Sr. and James A. Cobble Jr.",
+    "date": "filed 4 Mar 1958, granted 4 Apr 1961",
     "dateStart": 1958,
     "dateEnd": 1961,
     "identifier": "US2977905A",
@@ -1303,14 +1303,15 @@ window.RUG_ITEMS = [
     "image": "images/patents/US2977905-01.png",
     "imageCredit": "USPTO via Google Patents (public domain)",
     "imageSource": "uspto",
-    "rights": "public-domain"
+    "rights": "public-domain",
+    "confidence": "solid"
   },
   {
     "id": "marker-mechanization-bedspread",
     "type": "article",
     "title": "The Mechanization of the Bedspread Industry (historical marker)",
     "publisher": "Historical Marker Database",
-    "description": "Names Glenn Looper, Glenn Dalton (1936 patent filing), Joe Cobble and George Muse.",
+    "description": "Names Glenn Looper, Glenn Dalton (1936 patent filing), Joe Cobble and George Muse. Patents found: Cobble & Muse US2335487 (1941/1943); Looper US2123114 (1936/1938). No separate Glenn Dalton 1936 filing has turned up.",
     "sourceUrl": "https://www.hmdb.org/m.asp?m=171571",
     "themes": [
       "Machine tufting & Dalton",
@@ -2775,7 +2776,7 @@ window.RUG_ITEMS = [
     "identifier": "US463548A",
     "sourceUrl": "https://patents.google.com/patent/US463548A/en",
     "region": "United States",
-    "description": "Checked against the USPTO document: E. Ross, \"Turfing Implement\", No. 463,548, patented November 17, 1891. The drawing shows a two-handled needle-and-gauge tool of the same form as the Susan Burr. \"Turfing\" is the patent's own word. Expired 1908; cited in 1948 by Shaycraft (US2442906A).",
+    "description": "Checked against the USPTO document: E. Ross, \"Turfing Implement\", No. 463,548, patented November 17, 1891. The drawing shows a two-handled needle-and-gauge tool of the same form as the Susan Burr. \"Turfing\" is the patent's own word. Expired 1908; cited in 1948 by Shaycraft (US2442906A). Filed 15 July 1891 by Ebenezer Ross of Toledo, Ohio, as an improvement on his own US251381 (\"Embroidery Machine\", 1881).",
     "themes": [
       "Hand-tufting tools & the gun",
       "Tools & equipment"
@@ -2817,7 +2818,7 @@ window.RUG_ITEMS = [
     "identifier": "US1917162A",
     "sourceUrl": "https://patents.google.com/patent/US1917162A/en",
     "region": "United States",
-    "description": "Checked against the USPTO document: L. P. Smith, \"Motor Operated Tufting Machine\", No. 1,917,162, filed June 23, 1932, granted July 4, 1933. A handheld tool with the motor in the body and the needle below: the earliest motorised hand tufting tool in this database. Earlier notes credited it to Cabin Crafts; the patent names Lawrence P. Smith (check for an assignee in the text).",
+    "description": "Checked against the USPTO document: L. P. Smith, \"Motor Operated Tufting Machine\", No. 1,917,162, filed June 23, 1932, granted July 4, 1933. A handheld tool with the motor in the body and the needle below: the earliest motorised hand tufting tool in this database. Inventor Lawrence P. Smith of Dalton; assigned to Cabin Crafts.",
     "themes": [
       "Hand-tufting tools & the gun",
       "Tools & equipment"
@@ -2847,19 +2848,20 @@ window.RUG_ITEMS = [
     "imageCredit": "USPTO via Google Patents (public domain)",
     "imageSource": "uspto",
     "dateEnd": 1933,
-    "rights": "public-domain"
+    "rights": "public-domain",
+    "institution": "Cabin Crafts (assignee)"
   },
   {
     "id": "pat-us2422126a",
     "type": "patent",
-    "title": "Air-fed handheld tufting tool (Callaway Mills) (US2422126A)",
-    "creator": "Callaway Mills",
-    "date": "1946",
+    "title": "Samuel P. Parker, \"Tufting Device\" (US2422126A)",
+    "creator": "Samuel P. Parker",
+    "date": "filed 9 Jul 1946, granted 10 Jun 1947",
     "dateStart": 1946,
     "identifier": "US2422126A",
     "sourceUrl": "https://patents.google.com/patent/US2422126A/en",
     "region": "United States",
-    "description": "Compressed-air handheld tufting device.",
+    "description": "Air-fed handheld tufting device. Callaway Mills, LaGrange, Georgia. Patent research (Oct 2026): number, title, names and dates read from the USPTO scan.",
     "themes": [
       "Hand-tufting tools & the gun",
       "Tools & equipment"
@@ -2888,19 +2890,22 @@ window.RUG_ITEMS = [
     "image": "images/patents/US2422126-1.png",
     "imageCredit": "USPTO via Google Patents (public domain)",
     "imageSource": "uspto",
-    "rights": "public-domain"
+    "rights": "public-domain",
+    "institution": "Callaway Mills (assignee)",
+    "place": "LaGrange, Georgia",
+    "dateEnd": 1947
   },
   {
     "id": "pat-us2442906a",
     "type": "patent",
-    "title": "Compressed-air version of the Ross tool (Shaycraft) (US2442906A)",
-    "creator": "Shaycraft",
-    "date": "1948",
-    "dateStart": 1948,
+    "title": "James H. Shay, \"Hooked Rug Machine\" (US2442906A)",
+    "creator": "James H. Shay",
+    "date": "filed 11 Jun 1946, granted 8 Jun 1948",
+    "dateStart": 1946,
     "identifier": "US2442906A",
     "sourceUrl": "https://patents.google.com/patent/US2442906A/en",
     "region": "United States",
-    "description": "Cites Ross's 1891 patent: the hand-tool mechanism, powered by compressed air. Itself cited by US5090341A (1992).",
+    "description": "Compressed-air pistons drive a hand rug tool; cites Ross 463,548 (1891), linking the 19th-century hand tool to powered guns. Patent research (Oct 2026): number, title, names and dates read from the USPTO scan.",
     "themes": [
       "Hand-tufting tools & the gun",
       "Tools & equipment"
@@ -2929,19 +2934,22 @@ window.RUG_ITEMS = [
     "image": "images/patents/US2442906-1.png",
     "imageCredit": "USPTO via Google Patents (public domain)",
     "imageSource": "uspto",
-    "rights": "public-domain"
+    "rights": "public-domain",
+    "institution": "Shaycraft Inc. (assignee)",
+    "place": "Newtown Square, Pennsylvania",
+    "dateEnd": 1948
   },
   {
     "id": "pat-us2753820a",
     "type": "patent",
-    "title": "Trigger and removable knife (US2753820A)",
-    "creator": "",
-    "date": "1952",
+    "title": "Hans G. Lustig, \"Carpet Forming Device\" (US2753820A)",
+    "creator": "Hans G. Lustig",
+    "date": "filed 10 Oct 1952, granted 10 Jul 1956",
     "dateStart": 1952,
     "identifier": "US2753820A",
     "sourceUrl": "https://patents.google.com/patent/US2753820A/en",
     "region": "United States",
-    "description": "Handheld tufting tool with a trigger and a removable knife.",
+    "description": "Handheld device with a trigger (confirmed in the text) and removable knife. One-fifth assigned to Morton Amster. Patent research (Oct 2026): number, title, names and dates read from the USPTO scan.",
     "themes": [
       "Hand-tufting tools & the gun",
       "Tools & equipment"
@@ -2970,19 +2978,21 @@ window.RUG_ITEMS = [
     "image": "images/patents/US2753820-1.png",
     "imageCredit": "USPTO via Google Patents (public domain)",
     "imageSource": "uspto",
-    "rights": "public-domain"
+    "rights": "public-domain",
+    "place": "Lake Placid, New York",
+    "dateEnd": 1956
   },
   {
     "id": "pat-us3142276a",
     "type": "patent",
-    "title": "\"Hand gun-type device\" (US3142276A)",
-    "creator": "",
-    "date": "1964",
-    "dateStart": 1964,
+    "title": "Alfred Schauer, \"Device for Forming Cut Pile Fabrics and the Like\" (US3142276A)",
+    "creator": "Alfred Schauer",
+    "date": "filed 25 Jun 1962, granted 28 Jul 1964",
+    "dateStart": 1962,
     "identifier": "US3142276A",
     "sourceUrl": "https://patents.google.com/patent/US3142276A/en",
     "region": "United States",
-    "description": "The patent that literally calls it a hand gun-type device, the origin of the word \"gun\". For about sixty years these were carpet-repair tools, not art supplies.",
+    "description": "The text calls it a \"hand gun-type device\", says such hand guns \"have been used for some time\", and uses the phrase \"tufting gun\": the earliest use of the term found so far. Patent research (Oct 2026): number, title, names and dates read from the USPTO scan.",
     "themes": [
       "Hand-tufting tools & the gun",
       "Tools & equipment"
@@ -3012,19 +3022,21 @@ window.RUG_ITEMS = [
     "image": "images/patents/US3142276-01.png",
     "imageCredit": "USPTO via Google Patents (public domain)",
     "imageSource": "uspto",
-    "rights": "public-domain"
+    "rights": "public-domain",
+    "place": "Elmhurst, New York",
+    "dateEnd": 1964
   },
   {
     "id": "pat-us5090341a",
     "type": "patent",
-    "title": "Industrial carpet mending gun (Spencer Wright, Dalton) (US5090341A)",
-    "creator": "Spencer Wright Industries",
-    "date": "1992",
-    "dateStart": 1992,
+    "title": "William H. Satterfield, \"Hand-held Tufting Mending Gun\" (US5090341A)",
+    "creator": "William H. Satterfield",
+    "date": "filed 18 Sep 1990, granted 25 Feb 1992",
+    "dateStart": 1990,
     "identifier": "US5090341A",
     "sourceUrl": "https://patents.google.com/patent/US5090341A/en",
     "region": "United States",
-    "description": "Dalton, Georgia. Cites Shaycraft (1948), completing the citation chain back to Ross (1891): the hand tool did reach industry.",
+    "description": "Dalton, Georgia. Its prior-art list cites US2753820, US2837045, US2879731, US2887076, US3142276, US3144844 and US3229653 (the pre-1970 hand guns), and the chain runs back through Shaycraft (1948) to Ross (1891). Patent research (Oct 2026): number, title, names and dates read from the USPTO scan.",
     "themes": [
       "Hand-tufting tools & the gun",
       "Tools & equipment"
@@ -3054,7 +3066,9 @@ window.RUG_ITEMS = [
     "image": "images/patents/US5090341-1.png",
     "imageCredit": "USPTO via Google Patents (public domain)",
     "imageSource": "uspto",
-    "rights": "public-domain"
+    "rights": "public-domain",
+    "institution": "Spencer Wright Industries (assignee)",
+    "dateEnd": 1992
   },
   {
     "id": "ttw-evans-1895-1900",
@@ -3082,7 +3096,7 @@ window.RUG_ITEMS = [
     "id": "ttw-carter-1922",
     "type": "finding",
     "title": "Carter Brothers, Chattanooga, 1922: first patent claiming needle + loop former + separate cutting knife",
-    "description": "The machine line starts from sewing machines, not from the old hand tools.",
+    "description": "The machine line starts from sewing machines, not from the old hand tools. Patent found: US1485213, August J. Carter, Chattanooga, \"Tufting-Attachment Mechanism for Sewing Machines\", filed 21 Jul 1922, granted 26 Feb 1924.",
     "confidence": "solid",
     "region": "United States",
     "collection": "TTW Script Bank fact-check notes (Claude research, Aug 2026)",
@@ -3093,8 +3107,7 @@ window.RUG_ITEMS = [
     ],
     "tags": [
       "script fact-check",
-      "machinery",
-      "find patent number"
+      "machinery"
     ],
     "dateStart": 1922,
     "date": "1922"
@@ -3253,7 +3266,7 @@ window.RUG_ITEMS = [
     "id": "wint-photo-bucilla-tools",
     "type": "image",
     "title": "Bucilla rug materials catalog page: Bluenose Rug Hooker and tools",
-    "description": "Bucilla Rug Yarn (Art. 7112), Bluenose Rug Hooker (Art. 7152, \"the fastest rug making innovation procurable today\"), Bluenose \"De Luxe\" Hooker (Art. 7005) for extra-long loops, punch needle (7113), rug hook (7003), rug and carving shears, clamps and a standing rug frame. Photographed by Tuft the World at Winterthur, January 2023; the photo is in your Google Drive (private link).",
+    "description": "Bucilla Rug Yarn (Art. 7112), Bluenose Rug Hooker (Art. 7152, \"the fastest rug making innovation procurable today\"), Bluenose \"De Luxe\" Hooker (Art. 7005) for extra-long loops, punch needle (7113), rug hook (7003), rug and carving shears, clamps and a standing rug frame. Photographed by Tuft the World at Winterthur, January 2023; the photo is in your Google Drive (private link). The Bluenose hooker is very likely John E. Garrett's \"Rug Hooker\" patent US1605711 (New Glasgow, Nova Scotia, 1926; see that record).",
     "institution": "Winterthur Library",
     "region": "United States",
     "sourceUrl": "https://drive.google.com/file/d/12T-GDkDIbkotAMbExH7aS_Lk6B9fQDTo/view",
@@ -3293,7 +3306,7 @@ window.RUG_ITEMS = [
     "id": "wint-photo-fleisher",
     "type": "image",
     "title": "Fleisher rug accessories and yarns: the Bluenose Hooker",
-    "description": "\"This almost magic hooker has completely revolutionized the making of hooked yarn rugs.\" Also the Bluenose De Luxe Hooker (cuts the time in half; extra-long loops for deep pile), a punch needle, Colonial Rugwool, Special Rug Worsted, Sylvan Yarn, shears and a reversible standing rug frame. Photographed by Tuft the World at Winterthur, January 2023; the photo is in your Google Drive (private link).",
+    "description": "\"This almost magic hooker has completely revolutionized the making of hooked yarn rugs.\" Also the Bluenose De Luxe Hooker (cuts the time in half; extra-long loops for deep pile), a punch needle, Colonial Rugwool, Special Rug Worsted, Sylvan Yarn, shears and a reversible standing rug frame. Photographed by Tuft the World at Winterthur, January 2023; the photo is in your Google Drive (private link). The Bluenose hooker is very likely John E. Garrett's \"Rug Hooker\" patent US1605711 (New Glasgow, Nova Scotia, 1926; see that record).",
     "institution": "Winterthur Library",
     "region": "United States",
     "sourceUrl": "https://drive.google.com/file/d/1NFkIyCj1KckouerwPPWjHNetm-3jMgX5/view",
@@ -4705,7 +4718,7 @@ window.RUG_ITEMS = [
     "id": "ross-toledo",
     "type": "finding",
     "title": "Ebenezer Ross of Toledo: a mechanical punch hook (1886) and mail-order rug patterns",
-    "description": "Christie's lot note credits Ross with a mechanical punch hook in 1886 and the 1891 pattern catalog. Very likely the same Ebenezer Ross as US patent 463,548 (1891), the tool the Susan Burr copies. Confirm the patentee's residence (Toledo) on the patent itself.",
+    "description": "Christie's lot note credits Ross with a mechanical punch hook in 1886 and the 1891 pattern catalog. Very likely the same Ebenezer Ross as US patent 463,548 (1891), the tool the Susan Burr copies. Confirm the patentee's residence (Toledo) on the patent itself. Confirmed by the patent scan: US463548 names Ebenezer Ross of Toledo, Ohio, improving his own 1881 patent US251381 (then of Wauseon, Ohio).",
     "region": "United States",
     "themes": [
       "Hand-tufting tools & the gun",
@@ -4717,7 +4730,7 @@ window.RUG_ITEMS = [
       "priority"
     ],
     "status": "unverified",
-    "confidence": "suggestive",
+    "confidence": "solid",
     "dateStart": 1886,
     "dateEnd": 1891,
     "date": "1886–1891",
@@ -4846,5 +4859,1103 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "sourceUrl": "https://americanainsights.org/essays/hooked-rugs/"
+  },
+  {
+    "id": "pat-251381a",
+    "type": "patent",
+    "title": "Ebenezer Ross, \"Embroidery Machine\" (US251381A)",
+    "creator": "Ebenezer Ross",
+    "place": "Wauseon, Ohio",
+    "identifier": "US251381A",
+    "sourceUrl": "https://patents.google.com/patent/US251381A/en",
+    "date": "filed 1881, granted 27 Dec 1881",
+    "dateStart": 1881,
+    "dateEnd": 1881,
+    "region": "United States",
+    "description": "Ross's earlier tool, which his 1891 \"Turfing Implement\" improves. Patent research (Oct 2026): number, title, names and dates read from the USPTO scan.",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Tools & equipment",
+      "Hooked & handmade rugs"
+    ],
+    "tags": [
+      "patent",
+      "Ross",
+      "root patent"
+    ],
+    "confidence": "solid",
+    "status": "unverified"
+  },
+  {
+    "id": "pat-340189a",
+    "type": "patent",
+    "title": "Samuel W. Bailey & Harry P. Vigars (US340189A)",
+    "creator": "Samuel W. Bailey & Harry P. Vigars",
+    "place": "Marquette, Michigan",
+    "identifier": "US340189A",
+    "sourceUrl": "https://patents.google.com/patent/US340189A/en",
+    "date": "filed 25 Jan 1884, granted 20 Apr 1886",
+    "dateStart": 1884,
+    "dateEnd": 1886,
+    "region": "United States",
+    "description": "19th-century rug tool cited as prior art by Shay (1948). Title not captured. Patent research (Oct 2026): number, title, names and dates read from the USPTO scan.",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Tools & equipment",
+      "Hooked & handmade rugs"
+    ],
+    "tags": [
+      "patent",
+      "19th century"
+    ],
+    "confidence": "solid",
+    "status": "unverified"
+  },
+  {
+    "id": "pat-897200a",
+    "type": "patent",
+    "title": "Samuel Henry Perrier, \"Turfing Needle\" (US897200A)",
+    "creator": "Samuel Henry Perrier",
+    "place": "Troy, Oregon",
+    "identifier": "US897200A",
+    "sourceUrl": "https://patents.google.com/patent/US897200A/en",
+    "date": "filed 17 Oct 1907, granted 25 Aug 1908",
+    "dateStart": 1907,
+    "dateEnd": 1908,
+    "region": "United States",
+    "description": "For \"tufted or pile work in embroidery and rug making\". Patent research (Oct 2026): number, title, names and dates read from the USPTO scan.",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Tools & equipment",
+      "Hooked & handmade rugs"
+    ],
+    "tags": [
+      "patent"
+    ],
+    "confidence": "solid",
+    "status": "unverified"
+  },
+  {
+    "id": "pat-1605711a",
+    "type": "patent",
+    "title": "John E. Garrett, \"Rug Hooker\" (US1605711A)",
+    "creator": "John E. Garrett",
+    "place": "New Glasgow, Nova Scotia",
+    "identifier": "US1605711A",
+    "sourceUrl": "https://patents.google.com/patent/US1605711A/en",
+    "date": "filed 1 Feb 1926, granted 2 Nov 1926",
+    "dateStart": 1926,
+    "dateEnd": 1926,
+    "region": "Canada",
+    "description": "Very likely the Bluenose Rug Hooker (Garrett's Bluenose came from New Glasgow; the grant date matches seller listings), sold by Bucilla and Fleisher. Patent research (Oct 2026): number, title, names and dates read from the USPTO scan.",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Tools & equipment",
+      "Hooked & handmade rugs"
+    ],
+    "tags": [
+      "patent",
+      "Bluenose",
+      "speed hooker",
+      "priority"
+    ],
+    "confidence": "solid",
+    "status": "unverified"
+  },
+  {
+    "id": "pat-1941346a",
+    "type": "patent",
+    "title": "John E. Garrett, \"Rug Hooker\" (US1941346A)",
+    "creator": "John E. Garrett",
+    "place": "New Glasgow, Nova Scotia",
+    "identifier": "US1941346A",
+    "sourceUrl": "https://patents.google.com/patent/US1941346A/en",
+    "date": "filed 11 Apr 1933, granted 26 Dec 1933",
+    "dateStart": 1933,
+    "dateEnd": 1933,
+    "region": "Canada",
+    "description": "Garrett's follow-up Bluenose hooker. Patent research (Oct 2026): number, title, names and dates read from the USPTO scan.",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Tools & equipment",
+      "Hooked & handmade rugs"
+    ],
+    "tags": [
+      "patent",
+      "Bluenose",
+      "speed hooker"
+    ],
+    "confidence": "solid",
+    "status": "unverified"
+  },
+  {
+    "id": "pat-1912977a",
+    "type": "patent",
+    "title": "E. J. Gearhart, \"Semiautomatic Turfing Device\" (US1912977A)",
+    "creator": "E. J. Gearhart",
+    "identifier": "US1912977A",
+    "sourceUrl": "https://patents.google.com/patent/US1912977A/en",
+    "date": "filed 11 Aug 1931, granted 6 Jun 1933",
+    "dateStart": 1931,
+    "dateEnd": 1933,
+    "region": "United States",
+    "description": "Later cited as punch-needle prior art. Patent research (Oct 2026): number, title, names and dates read from the USPTO scan.",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Tools & equipment",
+      "Hooked & handmade rugs"
+    ],
+    "tags": [
+      "patent",
+      "punch needle"
+    ],
+    "confidence": "solid",
+    "status": "unverified"
+  },
+  {
+    "id": "pat-2077719a",
+    "type": "patent",
+    "title": "Foster K. Solliday, \"Hooked Rug Making Device\" (US2077719A)",
+    "creator": "Foster K. Solliday",
+    "place": "Grand Rapids, Michigan",
+    "identifier": "US2077719A",
+    "sourceUrl": "https://patents.google.com/patent/US2077719A/en",
+    "date": "filed 27 May 1935, granted 20 Apr 1937",
+    "dateStart": 1935,
+    "dateEnd": 1937,
+    "region": "United States",
+    "description": "Patent research (Oct 2026): number, title, names and dates read from the USPTO scan.",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Tools & equipment",
+      "Hooked & handmade rugs"
+    ],
+    "tags": [
+      "patent"
+    ],
+    "confidence": "solid",
+    "status": "unverified"
+  },
+  {
+    "id": "pat-2605727a",
+    "type": "patent",
+    "title": "Melvin S. Hurley, \"Hand Tool for Making Rugs, Carpets and the Like with a Cut Pile\" (US2605727A)",
+    "creator": "Melvin S. Hurley",
+    "place": "Bridgend, England",
+    "identifier": "US2605727A",
+    "sourceUrl": "https://patents.google.com/patent/US2605727A/en",
+    "date": "filed 7 Dec 1949, granted 5 Aug 1952",
+    "dateStart": 1949,
+    "dateEnd": 1952,
+    "region": "United Kingdom",
+    "description": "Patent research (Oct 2026): number, title, names and dates read from the USPTO scan.",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Tools & equipment",
+      "Hooked & handmade rugs"
+    ],
+    "tags": [
+      "patent",
+      "cut pile"
+    ],
+    "confidence": "solid",
+    "status": "unverified"
+  },
+  {
+    "id": "pat-2591939a",
+    "type": "patent",
+    "title": "Torleif K. Holmen, \"Carpet Tufting and Pile Cutting Device\" (US2591939A)",
+    "creator": "Torleif K. Holmen",
+    "place": "Brooklyn, New York",
+    "institution": "Rugcrofters Inc. (assignee)",
+    "identifier": "US2591939A",
+    "sourceUrl": "https://patents.google.com/patent/US2591939A/en",
+    "date": "filed 12 Oct 1950, granted 8 Apr 1952",
+    "dateStart": 1950,
+    "dateEnd": 1952,
+    "region": "United States",
+    "description": "Patent research (Oct 2026): number, title, names and dates read from the USPTO scan.",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "patent",
+      "cut pile"
+    ],
+    "confidence": "solid",
+    "status": "unverified"
+  },
+  {
+    "id": "pat-2578038a",
+    "type": "patent",
+    "title": "Joseph A. Bolger, \"Hooked Rug Making Device\" (US2578038A)",
+    "creator": "Joseph A. Bolger",
+    "identifier": "US2578038A",
+    "sourceUrl": "https://patents.google.com/patent/US2578038A/en",
+    "date": "filed 27 Feb 1950, granted 11 Dec 1951",
+    "dateStart": 1950,
+    "dateEnd": 1951,
+    "region": "United States",
+    "description": "Patent research (Oct 2026): number, title, names and dates read from the USPTO scan.",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Tools & equipment",
+      "Hooked & handmade rugs"
+    ],
+    "tags": [
+      "patent"
+    ],
+    "confidence": "solid",
+    "status": "unverified"
+  },
+  {
+    "id": "pat-1485213a",
+    "type": "patent",
+    "title": "August J. Carter, \"Tufting-Attachment Mechanism for Sewing Machines\" (US1485213A)",
+    "creator": "August J. Carter",
+    "place": "Chattanooga, Tennessee",
+    "identifier": "US1485213A",
+    "sourceUrl": "https://patents.google.com/patent/US1485213A/en",
+    "date": "filed 21 Jul 1922, granted 26 Feb 1924",
+    "dateStart": 1922,
+    "dateEnd": 1924,
+    "region": "United States",
+    "description": "The Carter Brothers 1922 filing: needle, loop former and separate cutting knife on a sewing machine. Where machine tufting begins. Patent research (Oct 2026): number, title, names and dates read from the USPTO scan.",
+    "themes": [
+      "Chenille & candlewick",
+      "Machine tufting & Dalton",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "patent",
+      "priority",
+      "Carter Brothers",
+      "bedspread machine"
+    ],
+    "confidence": "solid",
+    "status": "unverified"
+  },
+  {
+    "id": "pat-1452632a",
+    "type": "patent",
+    "title": "William H. Barnett, \"Sewing Machine\" (US1452632A)",
+    "creator": "William H. Barnett",
+    "place": "Knoxville, Tennessee",
+    "identifier": "US1452632A",
+    "sourceUrl": "https://patents.google.com/patent/US1452632A/en",
+    "date": "filed 18 Sep 1920, granted 24 Apr 1923",
+    "dateStart": 1920,
+    "dateEnd": 1923,
+    "region": "United States",
+    "description": "Text says it \"may be more specifically termed a tufting machine\": a candidate for the earliest tufting-machine filing. Patent research (Oct 2026): number, title, names and dates read from the USPTO scan.",
+    "themes": [
+      "Chenille & candlewick",
+      "Machine tufting & Dalton",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "patent",
+      "bedspread machine",
+      "earliest?"
+    ],
+    "confidence": "solid",
+    "status": "unverified"
+  },
+  {
+    "id": "pat-1800522a",
+    "type": "patent",
+    "title": "John M. Gladish, \"Tufting Attachment Mechanism for Sewing Machines\" (US1800522A)",
+    "creator": "John M. Gladish",
+    "place": "Chattanooga, Tennessee",
+    "institution": "Carter Brothers Inc. (assignee)",
+    "identifier": "US1800522A",
+    "sourceUrl": "https://patents.google.com/patent/US1800522A/en",
+    "date": "filed 20 Sep 1927, granted 14 Apr 1931",
+    "dateStart": 1927,
+    "dateEnd": 1931,
+    "region": "United States",
+    "description": "Patent research (Oct 2026): number, title, names and dates read from the USPTO scan.",
+    "themes": [
+      "Chenille & candlewick",
+      "Machine tufting & Dalton",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "patent",
+      "Carter Brothers"
+    ],
+    "confidence": "solid",
+    "status": "unverified"
+  },
+  {
+    "id": "pat-2042503a",
+    "type": "patent",
+    "title": "August J. Carter, \"Tufted Rug\" (US2042503A)",
+    "creator": "August J. Carter",
+    "place": "Chattanooga, Tennessee",
+    "institution": "Carter Brothers Inc. (assignee)",
+    "identifier": "US2042503A",
+    "sourceUrl": "https://patents.google.com/patent/US2042503A/en",
+    "date": "filed 26 Aug 1933, granted 2 Jun 1936",
+    "dateStart": 1933,
+    "dateEnd": 1936,
+    "region": "United States",
+    "description": "A patent for the tufted rug itself. Patent research (Oct 2026): number, title, names and dates read from the USPTO scan.",
+    "themes": [
+      "Chenille & candlewick",
+      "Machine tufting & Dalton",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "patent",
+      "Carter Brothers",
+      "rug"
+    ],
+    "confidence": "solid",
+    "status": "unverified"
+  },
+  {
+    "id": "pat-2224866a",
+    "type": "patent",
+    "title": "John M. Gladish, \"Tufting Machine\" (US2224866A)",
+    "creator": "John M. Gladish",
+    "place": "Chattanooga, Tennessee",
+    "institution": "half to Robert Blair Cannon (assignee)",
+    "identifier": "US2224866A",
+    "sourceUrl": "https://patents.google.com/patent/US2224866A/en",
+    "date": "filed 25 May 1934, granted 17 Dec 1940",
+    "dateStart": 1934,
+    "dateEnd": 1940,
+    "region": "United States",
+    "description": "Patent research (Oct 2026): number, title, names and dates read from the USPTO scan.",
+    "themes": [
+      "Chenille & candlewick",
+      "Machine tufting & Dalton",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "patent"
+    ],
+    "confidence": "solid",
+    "status": "unverified"
+  },
+  {
+    "id": "pat-2123114a",
+    "type": "patent",
+    "title": "Glenn Looper, \"Tufting Machine\" (US2123114A)",
+    "creator": "Glenn Looper",
+    "place": "Dalton, Georgia",
+    "identifier": "US2123114A",
+    "sourceUrl": "https://patents.google.com/patent/US2123114A/en",
+    "date": "filed 15 Dec 1936, granted 5 Jul 1938",
+    "dateStart": 1936,
+    "dateEnd": 1938,
+    "region": "United States",
+    "description": "The Looper patent behind Dalton's machine-tufting story. Patent research (Oct 2026): number, title, names and dates read from the USPTO scan.",
+    "themes": [
+      "Chenille & candlewick",
+      "Machine tufting & Dalton",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "patent",
+      "Looper",
+      "priority"
+    ],
+    "confidence": "solid",
+    "status": "unverified"
+  },
+  {
+    "id": "pat-2311802a",
+    "type": "patent",
+    "title": "Roy H. Windham, \"Tufting Machine and Method\" (US2311802A)",
+    "creator": "Roy H. Windham",
+    "place": "Rome, Georgia",
+    "institution": "Burl J. Bandy, Dalton (assignee)",
+    "identifier": "US2311802A",
+    "sourceUrl": "https://patents.google.com/patent/US2311802A/en",
+    "date": "filed 6 Oct 1939, granted 23 Feb 1943",
+    "dateStart": 1939,
+    "dateEnd": 1943,
+    "region": "United States",
+    "description": "Patent research (Oct 2026): number, title, names and dates read from the USPTO scan.",
+    "themes": [
+      "Chenille & candlewick",
+      "Machine tufting & Dalton",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "patent"
+    ],
+    "confidence": "solid",
+    "status": "unverified"
+  },
+  {
+    "id": "pat-2335487a",
+    "type": "patent",
+    "title": "Joe C. Cobble, \"Multiple Needle Tufting Machine\" (US2335487A)",
+    "creator": "Joe C. Cobble & George B. Muse",
+    "place": "Chattanooga, Tennessee / Sugar Valley, Georgia",
+    "identifier": "US2335487A",
+    "sourceUrl": "https://patents.google.com/patent/US2335487A/en",
+    "date": "filed 24 Jan 1941, granted 30 Nov 1943",
+    "dateStart": 1941,
+    "dateEnd": 1943,
+    "region": "United States",
+    "description": "The Cobble–Muse multi-needle machine, seen as the foundation of modern carpet tufting machines. Patent research (Oct 2026): number, title, names and dates read from the USPTO scan.",
+    "themes": [
+      "Chenille & candlewick",
+      "Machine tufting & Dalton",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "patent",
+      "Cobble",
+      "Muse",
+      "multi-needle",
+      "priority"
+    ],
+    "confidence": "solid",
+    "status": "unverified"
+  },
+  {
+    "id": "pat-2389914a",
+    "type": "patent",
+    "title": "Jess Spencer Kile, \"Machine and Method for Making Tufted Articles\" (US2389914A)",
+    "creator": "Jess Spencer Kile",
+    "place": "Dalton, Georgia",
+    "institution": "Cabin Crafts (assignee)",
+    "identifier": "US2389914A",
+    "sourceUrl": "https://patents.google.com/patent/US2389914A/en",
+    "date": "filed 25 Jul 1939, granted 1945 (month unclear on scan)",
+    "dateStart": 1939,
+    "dateEnd": 1945,
+    "region": "United States",
+    "description": "Patent research (Oct 2026): number, title, names and dates read from the USPTO scan.",
+    "themes": [
+      "Chenille & candlewick",
+      "Machine tufting & Dalton",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "patent",
+      "Cabin Crafts"
+    ],
+    "confidence": "solid",
+    "status": "unverified"
+  },
+  {
+    "id": "pat-2411267a",
+    "type": "patent",
+    "title": "Lyman Hamrick, \"Multiple Needle Tufting Machine\" (US2411267A)",
+    "creator": "Lyman Hamrick",
+    "place": "Gaffney, South Carolina",
+    "identifier": "US2411267A",
+    "sourceUrl": "https://patents.google.com/patent/US2411267A/en",
+    "date": "filed Jul 1944, granted 19 Nov 1946",
+    "dateStart": 1944,
+    "dateEnd": 1946,
+    "region": "United States",
+    "description": "Patent research (Oct 2026): number, title, names and dates read from the USPTO scan.",
+    "themes": [
+      "Chenille & candlewick",
+      "Machine tufting & Dalton",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "patent",
+      "multi-needle"
+    ],
+    "confidence": "solid",
+    "status": "unverified"
+  },
+  {
+    "id": "pat-2595355a",
+    "type": "patent",
+    "title": "Walter W. Hamby, \"Multiple Needle Tufting Machine\" (US2595355A)",
+    "creator": "Walter W. Hamby",
+    "place": "Dalton, Georgia",
+    "institution": "one-fifth to Isaac C. Adams (assignee)",
+    "identifier": "US2595355A",
+    "sourceUrl": "https://patents.google.com/patent/US2595355A/en",
+    "date": "filed 20 May 1949, granted 6 May 1952",
+    "dateStart": 1949,
+    "dateEnd": 1952,
+    "region": "United States",
+    "description": "Patent research (Oct 2026): number, title, names and dates read from the USPTO scan.",
+    "themes": [
+      "Chenille & candlewick",
+      "Machine tufting & Dalton",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "patent",
+      "multi-needle"
+    ],
+    "confidence": "solid",
+    "status": "unverified"
+  },
+  {
+    "id": "pat-1963441a",
+    "type": "patent",
+    "title": "Maples, \"Tufting machine\" (US1963441A)",
+    "creator": "Maples & Weaver",
+    "place": "Scottsboro, Alabama",
+    "identifier": "US1963441A",
+    "sourceUrl": "https://patents.google.com/patent/US1963441A/en",
+    "date": "filed , granted 1934",
+    "dateStart": 1934,
+    "dateEnd": 1934,
+    "region": "United States",
+    "description": "Patent research (Oct 2026): number, title, names and dates read from the USPTO scan.",
+    "themes": [
+      "Chenille & candlewick",
+      "Machine tufting & Dalton",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "patent"
+    ],
+    "confidence": "solid",
+    "status": "unverified"
+  },
+  {
+    "id": "pat-1903946a",
+    "type": "patent",
+    "title": "L. A. Smith, \"Tufting machine\" (US1903946A)",
+    "creator": "L. A. Smith",
+    "place": "LaGrange, Georgia",
+    "institution": "Truline (assignee)",
+    "identifier": "US1903946A",
+    "sourceUrl": "https://patents.google.com/patent/US1903946A/en",
+    "date": "filed , granted 1933",
+    "dateStart": 1933,
+    "dateEnd": 1933,
+    "region": "United States",
+    "description": "Patent research (Oct 2026): number, title, names and dates read from the USPTO scan.",
+    "themes": [
+      "Chenille & candlewick",
+      "Machine tufting & Dalton",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "patent"
+    ],
+    "confidence": "solid",
+    "status": "unverified"
+  },
+  {
+    "id": "pat-2112512a",
+    "type": "patent",
+    "title": "Windham et al., \"Tufting machine\" (US2112512A)",
+    "creator": "Windham et al.",
+    "institution": "Polly Prentiss (assignee)",
+    "identifier": "US2112512A",
+    "sourceUrl": "https://patents.google.com/patent/US2112512A/en",
+    "date": "filed , granted 1938",
+    "dateStart": 1938,
+    "dateEnd": 1938,
+    "region": "United States",
+    "description": "Patent research (Oct 2026): number, title, names and dates read from the USPTO scan.",
+    "themes": [
+      "Chenille & candlewick",
+      "Machine tufting & Dalton",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "patent"
+    ],
+    "confidence": "solid",
+    "status": "unverified"
+  },
+  {
+    "id": "pat-2058047a",
+    "type": "patent",
+    "title": "Warren, \"Tufting machine\" (US2058047A)",
+    "creator": "Warren",
+    "identifier": "US2058047A",
+    "sourceUrl": "https://patents.google.com/patent/US2058047A/en",
+    "date": "filed , granted 1936",
+    "dateStart": 1936,
+    "dateEnd": 1936,
+    "region": "United States",
+    "description": "Patent research (Oct 2026): number, title, names and dates read from the USPTO scan.",
+    "themes": [
+      "Chenille & candlewick",
+      "Machine tufting & Dalton",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "patent"
+    ],
+    "confidence": "solid",
+    "status": "unverified"
+  },
+  {
+    "id": "pat-2346467a",
+    "type": "patent",
+    "title": "Bills, \"Tufting machine\" (US2346467A)",
+    "creator": "Bills & Patey",
+    "place": "Dalton, Georgia",
+    "identifier": "US2346467A",
+    "sourceUrl": "https://patents.google.com/patent/US2346467A/en",
+    "date": "filed , granted 1944",
+    "dateStart": 1944,
+    "dateEnd": 1944,
+    "region": "United States",
+    "description": "Patent research (Oct 2026): number, title, names and dates read from the USPTO scan.",
+    "themes": [
+      "Chenille & candlewick",
+      "Machine tufting & Dalton",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "patent"
+    ],
+    "confidence": "solid",
+    "status": "unverified"
+  },
+  {
+    "id": "pat-2679218a",
+    "type": "patent",
+    "title": "C. M. Jones, \"Tufting machine\" (US2679218A)",
+    "creator": "C. M. Jones",
+    "place": "Calhoun, Georgia",
+    "identifier": "US2679218A",
+    "sourceUrl": "https://patents.google.com/patent/US2679218A/en",
+    "date": "filed , granted 1954",
+    "dateStart": 1954,
+    "dateEnd": 1954,
+    "region": "United States",
+    "description": "Patent research (Oct 2026): number, title, names and dates read from the USPTO scan.",
+    "themes": [
+      "Chenille & candlewick",
+      "Machine tufting & Dalton",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "patent"
+    ],
+    "confidence": "solid",
+    "status": "unverified"
+  },
+  {
+    "id": "pat-1907292a",
+    "type": "patent",
+    "title": "John M. Gladish, \"Loop and Pile Forming Machine\" (US1907292A)",
+    "creator": "John M. Gladish",
+    "place": "LaGrange, Georgia",
+    "institution": "Valway Rug Mills (assignee)",
+    "identifier": "US1907292A",
+    "sourceUrl": "https://patents.google.com/patent/US1907292A/en",
+    "date": "filed 7 Jul 1928, granted 2 May 1933",
+    "dateStart": 1928,
+    "dateEnd": 1933,
+    "region": "United States",
+    "description": "Rug tufting at Valway Rug Mills. Patent research (Oct 2026): number, title, names and dates read from the USPTO scan.",
+    "themes": [
+      "Machine tufting & Dalton",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "patent",
+      "Valway"
+    ],
+    "confidence": "solid",
+    "status": "unverified"
+  },
+  {
+    "id": "pat-1909530a",
+    "type": "patent",
+    "title": "John M. Gladish, \"Tufting Machine Looper and Cutter\" (US1909530A)",
+    "creator": "John M. Gladish",
+    "place": "LaGrange, Georgia",
+    "institution": "Valway Rug Mills (assignee)",
+    "identifier": "US1909530A",
+    "sourceUrl": "https://patents.google.com/patent/US1909530A/en",
+    "date": "filed 2 Oct 1929, granted 16 May 1933",
+    "dateStart": 1929,
+    "dateEnd": 1933,
+    "region": "United States",
+    "description": "Patent research (Oct 2026): number, title, names and dates read from the USPTO scan.",
+    "themes": [
+      "Machine tufting & Dalton",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "patent",
+      "Valway",
+      "looper"
+    ],
+    "confidence": "solid",
+    "status": "unverified"
+  },
+  {
+    "id": "pat-1909531a",
+    "type": "patent",
+    "title": "John M. Gladish, \"Tufting Machine\" (US1909531A)",
+    "creator": "John M. Gladish",
+    "place": "LaGrange, Georgia",
+    "institution": "Valway Rug Mills (assignee)",
+    "identifier": "US1909531A",
+    "sourceUrl": "https://patents.google.com/patent/US1909531A/en",
+    "date": "filed 21 Jan 1930, granted 16 May 1933",
+    "dateStart": 1930,
+    "dateEnd": 1933,
+    "region": "United States",
+    "description": "Patent research (Oct 2026): number, title, names and dates read from the USPTO scan.",
+    "themes": [
+      "Machine tufting & Dalton",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "patent",
+      "Valway"
+    ],
+    "confidence": "solid",
+    "status": "unverified"
+  },
+  {
+    "id": "pat-1831485a",
+    "type": "patent",
+    "title": "Harry E. Dykeman, \"Rug Tufting Machine\" (US1831485A)",
+    "creator": "Harry E. Dykeman",
+    "place": "Chicago, Illinois",
+    "institution": "Union Special Machine Co. (assignee)",
+    "identifier": "US1831485A",
+    "sourceUrl": "https://patents.google.com/patent/US1831485A/en",
+    "date": "filed 30 Nov 1928, granted 10 Nov 1931",
+    "dateStart": 1928,
+    "dateEnd": 1931,
+    "region": "United States",
+    "description": "A sewing-machine maker's rug tufting machine. Patent research (Oct 2026): number, title, names and dates read from the USPTO scan.",
+    "themes": [
+      "Machine tufting & Dalton",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "patent",
+      "Union Special"
+    ],
+    "confidence": "solid",
+    "status": "unverified"
+  },
+  {
+    "id": "pat-1970703a",
+    "type": "patent",
+    "title": "Walter Loos, \"Machine for Making Rugs, Carpets, and the Like\" (US1970703A)",
+    "creator": "Walter Loos",
+    "identifier": "US1970703A",
+    "sourceUrl": "https://patents.google.com/patent/US1970703A/en",
+    "date": "filed 20 Sep 1932, granted 21 Aug 1934",
+    "dateStart": 1932,
+    "dateEnd": 1934,
+    "region": "United States",
+    "description": "Not the Moench patent (not attributed). Patent research (Oct 2026): number, title, names and dates read from the USPTO scan.",
+    "themes": [
+      "Machine tufting & Dalton",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "patent"
+    ],
+    "confidence": "solid",
+    "status": "unverified"
+  },
+  {
+    "id": "pat-2070287a",
+    "type": "patent",
+    "title": "Walter Loos, \"Tufting Machine\" (US2070287A)",
+    "creator": "Walter Loos",
+    "identifier": "US2070287A",
+    "sourceUrl": "https://patents.google.com/patent/US2070287A/en",
+    "date": "filed 2 Oct 1935, granted 9 Feb 1937",
+    "dateStart": 1935,
+    "dateEnd": 1937,
+    "region": "United States",
+    "description": "Patent research (Oct 2026): number, title, names and dates read from the USPTO scan.",
+    "themes": [
+      "Machine tufting & Dalton",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "patent"
+    ],
+    "confidence": "solid",
+    "status": "unverified"
+  },
+  {
+    "id": "pat-2600993a",
+    "type": "patent",
+    "title": "Richard C. Kline, \"Carpet Tufting Machine\" (US2600993A)",
+    "creator": "Richard C. Kline & Joseph Miller",
+    "institution": "Richard C. Kline (assignee)",
+    "identifier": "US2600993A",
+    "sourceUrl": "https://patents.google.com/patent/US2600993A/en",
+    "date": "filed 19 Nov 1949, granted 17 Jun 1952",
+    "dateStart": 1949,
+    "dateEnd": 1952,
+    "region": "United States",
+    "description": "\"Portable, power driven tufting mechanism\" for custom carpets. Patent research (Oct 2026): number, title, names and dates read from the USPTO scan.",
+    "themes": [
+      "Machine tufting & Dalton",
+      "Tools & equipment",
+      "Hand-tufting tools & the gun"
+    ],
+    "tags": [
+      "patent",
+      "portable"
+    ],
+    "confidence": "solid",
+    "status": "unverified"
+  },
+  {
+    "id": "pat-2837045a",
+    "type": "patent",
+    "title": "Theron F. Gifford, \"Portable Tufting Machine\" (US2837045A)",
+    "creator": "Theron F. Gifford",
+    "place": "Chattanooga, Tennessee",
+    "institution": "Ten-Tex Corp. (assignee)",
+    "identifier": "US2837045A",
+    "sourceUrl": "https://patents.google.com/patent/US2837045A/en",
+    "date": "filed 6 Nov 1953, granted 3 Jun 1958",
+    "dateStart": 1953,
+    "dateEnd": 1958,
+    "region": "United States",
+    "description": "Cited as prior art for hand guns. Patent research (Oct 2026): number, title, names and dates read from the USPTO scan.",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "patent",
+      "portable",
+      "gun lineage"
+    ],
+    "confidence": "solid",
+    "status": "unverified"
+  },
+  {
+    "id": "pat-2935037a",
+    "type": "patent",
+    "title": "Joseph L. Card, \"Apparatus for Making Patterned Tufted Pile Fabric\" (US2935037A)",
+    "creator": "Joseph L. Card",
+    "place": "Chattanooga, Tennessee",
+    "institution": "Cobble Brothers Machinery Co. (assignee)",
+    "identifier": "US2935037A",
+    "sourceUrl": "https://patents.google.com/patent/US2935037A/en",
+    "date": "filed 24 Dec 1956, granted 3 May 1960",
+    "dateStart": 1956,
+    "dateEnd": 1960,
+    "region": "United States",
+    "description": "Title per search result. Patent research (Oct 2026): number, title, names and dates read from the USPTO scan.",
+    "themes": [
+      "Machine tufting & Dalton",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "patent",
+      "Card",
+      "Cobble",
+      "patterning"
+    ],
+    "confidence": "solid",
+    "status": "unverified"
+  },
+  {
+    "id": "pat-2862465a",
+    "type": "patent",
+    "title": "J. L. Card, \"Thread Feed Mechanism and Pattern Control\" (US2862465A)",
+    "creator": "J. L. Card",
+    "identifier": "US2862465A",
+    "sourceUrl": "https://patents.google.com/patent/US2862465A/en",
+    "date": "filed 16 May 1955, granted 2 Dec 1958",
+    "dateStart": 1955,
+    "dateEnd": 1958,
+    "region": "United States",
+    "description": "Patent research (Oct 2026): number, title, names and dates read from the USPTO scan.",
+    "themes": [
+      "Machine tufting & Dalton",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "patent",
+      "Card",
+      "patterning"
+    ],
+    "confidence": "solid",
+    "status": "unverified"
+  },
+  {
+    "id": "pat-2975736a",
+    "type": "patent",
+    "title": "Joseph Lewis Card, \"Loop Shedder\" (US2975736A)",
+    "creator": "Joseph Lewis Card",
+    "institution": "Singer-Cobble Inc. (assignee)",
+    "identifier": "US2975736A",
+    "sourceUrl": "https://patents.google.com/patent/US2975736A/en",
+    "date": "filed 23 Jun 1958, granted 21 Mar 1961",
+    "dateStart": 1958,
+    "dateEnd": 1961,
+    "region": "United States",
+    "description": "Patent research (Oct 2026): number, title, names and dates read from the USPTO scan.",
+    "themes": [
+      "Machine tufting & Dalton",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "patent",
+      "Card",
+      "Singer-Cobble"
+    ],
+    "confidence": "solid",
+    "status": "unverified"
+  },
+  {
+    "id": "pat-2879731a",
+    "type": "patent",
+    "title": "M. L. Ward, \"Tufting Implement for Producing High and Low Pile\" (US2879731A)",
+    "creator": "M. L. Ward & Lewis Teal",
+    "place": "LaGrange, Georgia",
+    "institution": "Callaway Mills (assignee)",
+    "identifier": "US2879731A",
+    "sourceUrl": "https://patents.google.com/patent/US2879731A/en",
+    "date": "filed 24 Oct 1956, granted 31 Mar 1959",
+    "dateStart": 1956,
+    "dateEnd": 1959,
+    "region": "United States",
+    "description": "Patent research (Oct 2026): number, title, names and dates read from the USPTO scan.",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "patent",
+      "gun lineage"
+    ],
+    "confidence": "solid",
+    "status": "unverified"
+  },
+  {
+    "id": "pat-2887076a",
+    "type": "patent",
+    "title": "Russell L. Sterner, \"Tufting Machine\" (US2887076A)",
+    "creator": "Russell L. Sterner",
+    "place": "Downey, California",
+    "institution": "Clarence Klug (assignee)",
+    "identifier": "US2887076A",
+    "sourceUrl": "https://patents.google.com/patent/US2887076A/en",
+    "date": "filed 14 Feb 1955, granted 19 May 1959",
+    "dateStart": 1955,
+    "dateEnd": 1959,
+    "region": "United States",
+    "description": "Handheld; cited as gun prior art. Patent research (Oct 2026): number, title, names and dates read from the USPTO scan.",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "patent",
+      "gun lineage"
+    ],
+    "confidence": "solid",
+    "status": "unverified"
+  },
+  {
+    "id": "pat-3144844a",
+    "type": "patent",
+    "title": "Charles D. Elliott, \"Portable Machine for Tufting Cut Pile\" (US3144844A)",
+    "creator": "Charles D. Elliott, Robert F. Hackney & Lewis C. La Duke",
+    "place": "Dalton, Georgia",
+    "institution": "Cabin Crafts (assignee)",
+    "identifier": "US3144844A",
+    "sourceUrl": "https://patents.google.com/patent/US3144844A/en",
+    "date": "filed 11 Oct 1962, granted 18 Aug 1964",
+    "dateStart": 1962,
+    "dateEnd": 1964,
+    "region": "United States",
+    "description": "\"Hand carried and hand guided\". Patent research (Oct 2026): number, title, names and dates read from the USPTO scan.",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "patent",
+      "gun lineage",
+      "Cabin Crafts"
+    ],
+    "confidence": "solid",
+    "status": "unverified"
+  },
+  {
+    "id": "pat-3229653a",
+    "type": "patent",
+    "title": "O. J. Roberts et al., \"Portable Tufting Machine\" (US3229653A)",
+    "creator": "O. J. Roberts et al.",
+    "institution": "Bigelow-Sanford (assignee)",
+    "identifier": "US3229653A",
+    "sourceUrl": "https://patents.google.com/patent/US3229653A/en",
+    "date": "filed 15 Jan 1964, granted 18 Jan 1966",
+    "dateStart": 1964,
+    "dateEnd": 1966,
+    "region": "United States",
+    "description": "A woven-carpet giant patenting a portable tufter. Patent research (Oct 2026): number, title, names and dates read from the USPTO scan.",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "patent",
+      "gun lineage",
+      "Bigelow-Sanford"
+    ],
+    "confidence": "solid",
+    "status": "unverified"
+  },
+  {
+    "id": "pat-3389667a",
+    "type": "patent",
+    "title": "Helmut C. Mueller, \"Method and Apparatus for Cutting Pile Yarns\" (US3389667A)",
+    "creator": "Helmut C. Mueller",
+    "institution": "Bigelow-Sanford (assignee)",
+    "identifier": "US3389667A",
+    "sourceUrl": "https://patents.google.com/patent/US3389667A/en",
+    "date": "filed 23 Dec 1965, granted 25 Jun 1968",
+    "dateStart": 1965,
+    "dateEnd": 1968,
+    "region": "United States",
+    "description": "Text says \"handheld tufting gun\". Patent research (Oct 2026): number, title, names and dates read from the USPTO scan.",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "patent",
+      "gun lineage",
+      "terminology",
+      "Bigelow-Sanford"
+    ],
+    "confidence": "solid",
+    "status": "unverified"
+  },
+  {
+    "id": "ttw-tufting-gun-term",
+    "type": "finding",
+    "title": "\"Tufting gun\" in print: patents of 1964 and 1968",
+    "region": "United States",
+    "confidence": "solid",
+    "description": "The phrase \"tufting gun\" appears in Schauer's US3142276 (filed 1962, granted 1964), which also says hand guns \"have been used for some time\", and \"handheld tufting gun\" in Mueller's US3389667 (Bigelow-Sanford, 1968). \"Tufting tool\" as an exact phrase was not found before 1970.",
+    "themes": [
+      "Hand-tufting tools & the gun"
+    ],
+    "tags": [
+      "terminology",
+      "priority"
+    ],
+    "status": "unverified",
+    "date": "1964–1968",
+    "dateStart": 1964,
+    "dateEnd": 1968
   }
 ];
