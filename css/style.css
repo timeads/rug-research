@@ -492,6 +492,12 @@ input[type="search"]::-webkit-search-cancel-button:hover { background: var(--ink
 .evidence-label { font-size: var(--t-lg); margin: 8px 0 4px; }
 .list-actions { flex-wrap: wrap; gap: 6px 14px; }
 .link-btn:disabled { opacity: .4; cursor: not-allowed; }
+/* Original-language quote with its English translation beneath, on cards. */
+.bp-bi { display: flex; flex-direction: column; gap: 8px; -webkit-line-clamp: unset; min-height: 0; }
+.bp-orig, .bp-en { display: -webkit-box; -webkit-box-orient: vertical; overflow: hidden; }
+.bp-orig { font-size: var(--t-md); font-weight: 500; line-height: 1.5; -webkit-line-clamp: 4; font-variation-settings: normal; font-family: var(--font), "Noto Sans CJK SC", "Hiragino Sans", "PingFang SC", "Microsoft YaHei", "Noto Sans Devanagari", "Nirmala UI", sans-serif; }
+.bp-en { padding-top: 8px; border-top: 1px solid color-mix(in srgb, var(--c, var(--cloth-grey)) 30%, var(--line)); font-size: var(--t-sm); font-weight: 450; line-height: 1.45; color: var(--ink-2); -webkit-line-clamp: 5; }
+@media (max-width: 640px) { .bp-orig { font-size: var(--t-sm); -webkit-line-clamp: 3; } .bp-en { font-size: var(--t-xs); -webkit-line-clamp: 4; } }
 .bp-quote { font-weight: 500; font-size: var(--t-md); line-height: 1.55; -webkit-line-clamp: 7; font-variation-settings: normal; font-family: var(--font), "Noto Sans CJK SC", "Hiragino Sans", "PingFang SC", "Microsoft YaHei", "Noto Sans Devanagari", "Nirmala UI", sans-serif; }
 .h1-select { field-sizing: content; }
 .label-top { flex-wrap: wrap; row-gap: 3px; min-width: 0; }

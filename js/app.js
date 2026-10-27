@@ -276,7 +276,9 @@
   // An honest empty plate: bare bookcloth stamped with what the record is. Never a fake picture.
   const boardPlate = it => `<div class="board-plate" style="--c:${itemCloth(it)}" aria-hidden="true">
       <span class="bp-tape"><span class="bp-type">${esc(TYPES[it.type].label)}</span></span>
-      ${it.originalText ? `<span class="bp-title bp-quote" lang="${esc(it.language || "")}">${esc(it.originalText)}</span>` : `<span class="bp-title">${esc(it.title || "")}</span>`}
+      ${it.originalText && it.translation && it.language !== "en"
+        ? `<span class="bp-title bp-bi"><span class="bp-orig" lang="${esc(it.language || "")}">${esc(it.originalText)}</span><span class="bp-en" lang="en">${esc(it.translation)}</span></span>`
+        : it.originalText ? `<span class="bp-title bp-quote" lang="${esc(it.language || "")}">${esc(it.originalText)}</span>` : `<span class="bp-title">${esc(it.title || "")}</span>`}
       <span class="bp-note">${it.type === "finding" ? esc([it.region, it.language && LANGS[it.language]].filter(Boolean).join(" · ")) : it.sourceUrl ? "No image found yet" : "No image"}</span></div>`;
   const LANGS = { "zh-Hans": "Chinese", "zh-Hant": "Chinese (Hong Kong)", hi: "Hindi", ja: "Japanese", de: "German", fr: "French", nl: "Dutch", en: "English" };
   const plateHTML = (it, alt = "") => {
