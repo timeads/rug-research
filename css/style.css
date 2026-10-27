@@ -250,6 +250,8 @@ select optgroup { color: var(--ink-2); font-weight: 650; }
   transition: opacity .18s, transform .25s var(--ease);
 }
 .card:hover .card-actions, .card:focus-within .card-actions, .card-actions.has-on { opacity: 1; transform: none; }
+/* Flagged or listed cards keep a small marker, not the whole toolbar: only the "on" buttons show until hover. */
+@media (hover: hover) { .card:not(:hover):not(:focus-within) .card-actions.has-on .act:not(.on) { display: none; } }
 .act { display: grid; place-items: center; width: 30px; height: 30px; border: 0; border-radius: 6px; background: transparent; color: #3b423e; cursor: pointer; }
 .act:hover { background: rgb(0 0 0 / .07); }
 .act.on { color: #fff; background: var(--c); }
