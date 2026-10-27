@@ -1389,14 +1389,16 @@ window.RUG_ITEMS = [
     "type": "finding",
     "title": "No country claims to have invented tufting",
     "region": "Global",
-    "description": "Searched in Chinese, Japanese, German, French and Dutch (plus Hindi): every national record describes tufting as imported from America. No independent inventor turned up anywhere. A stronger claim than English sources alone can support.",
+    "description": "Searched in Chinese, Japanese, German, French and Dutch (plus Hindi): every national record describes tufting as imported from America. No independent inventor turned up anywhere. A stronger claim than English sources alone can support.\n\nCitation check (Oct 2026, from search results; pages not opened): partly confirmed.\nAs an absolute negative it can't be verified. One counter-example: Hong Kong sources credit Tai Ping's Anthony Yeh (葉元章) with inventing the tufting gun. HK articles say 1973年他發明了簇絨槍 and call it 全球首枝 ('the world's first'); one English source says the 'first electrical tufting gun' was patented in 1960. That is a claim to have invented the hand tool, not tufting itself, so 'no country claims an inventor' needs qualifying. The import-from-America accounts do hold for Japan (Suminoe imported a US machine in 1954) and are consistent for China (an equipment import is reported for 1980).\nAlso: https://www.hkrch.org/heritagethewayforward-stories/%E7%AC%AC%E4%B8%80%E9%96%93%E5%A4%A7%E5%9F%94%E7%8F%BE%E4%BB%A3%E5%8C%96%E5%B7%A5%E5%BB%A0-%E2%80%94%E2%80%94%E5%A4%AA%E5%B9%B3%E5%9C%B0%E6%B0%88 · https://suminoe.co.jp/company/history/ · http://epaper.zqcn.com.cn/content/2013-04/02/content_13896.htm",
     "themes": [
       "Global diffusion of tufting"
     ],
     "tags": [
       "synthesis",
       "headline",
-      "script idea"
+      "script idea",
+      "citation checked 2026",
+      "citation: partly confirmed"
     ],
     "status": "unverified",
     "collection": "Tuft the World research brief: The Non-English Record"
@@ -1406,24 +1408,27 @@ window.RUG_ITEMS = [
     "type": "finding",
     "title": "Everywhere, tufting was adopted by outsiders, not established weavers",
     "region": "Global",
-    "description": "Germany (trade press, 1959: \"nur durch Außenseiter\"), Japan (Nihon Jūtan: Wilton 1955, tufting only 1981; Toli came from vinyl tile) and Britain show the same pattern. A cross-cultural finding nobody seems to have written down.",
+    "description": "Germany (trade press, 1959: \"nur durch Außenseiter\"), Japan (Nihon Jūtan: Wilton 1955, tufting only 1981; Toli came from vinyl tile) and Britain show the same pattern. A cross-cultural finding nobody seems to have written down.\n\nCitation check (Oct 2026, from search results; pages not opened): partly confirmed.\nThe German 1959 'bisher nur durch Außenseiter' quote is confirmed (bwd retrospective quoting its own Sept 1959 issue, naming Tuftex Hameln, Tufton Emsdetten, Dura Tufting Fulda). Nihon Jūtan is confirmed: Wilton loom no. 1 in 1955 and a tufted-carpet machine in 1981 at the Sakai Takasago plant. But Nihon Jūtan was only founded in 1951 (as 村田織物工場, an upholstery weaver), so it is not an old weaving house. Toli is confirmed as a linoleum/vinyl-tile firm whose first carpet was a 1967 needlepunch product with Teijin. COUNTER-EXAMPLE: Japan's first tufting adopter was Suminoe (住江織物), an established carpet weaver whose origin is hand-woven dantsu in 1883; it imported a US tufting machine in 1954. That undercuts 'adopted by outsiders, not established weavers' for Japan. The Britain claim is unsourced in the brief.\nSource: 50er Jahre: Tischler verlegen Parkett, die Tuftingtechnologie ebnet dem Teppichboden den Weg (boden wand decke retrospective), Sept 1959 issue, quoted in bwd 70-year retrospective.\nFound at: https://www.boden-wand-decke.de/tischler-verlegen-parkett-und-die-tuftingtechnologie-ebnet-dem-teppichboden-den-weg-337678/\nAlso: https://japancarpet.co.jp/about/history/ · https://suminoe.co.jp/company/history/ · https://www.toli.co.jp/company/toli_history.html · https://www.boden-wand-decke.de/meilensteine-und-zaesuren-252845/",
     "themes": [
       "Global diffusion of tufting"
     ],
     "tags": [
       "synthesis",
       "headline",
-      "script idea"
+      "script idea",
+      "citation checked 2026",
+      "citation: partly confirmed"
     ],
     "status": "unverified",
-    "collection": "Tuft the World research brief: The Non-English Record"
+    "collection": "Tuft the World research brief: The Non-English Record",
+    "sourceUrl": "https://www.boden-wand-decke.de/tischler-verlegen-parkett-und-die-tuftingtechnologie-ebnet-dem-teppichboden-den-weg-337678/"
   },
   {
     "id": "ner-art-deco-not-chinese",
     "type": "finding",
-    "title": "\"Chinese Art Deco\" and \"Nichols rugs\" do not exist in Chinese",
+    "title": "REFUTED: \"Chinese Art Deco\" and \"Nichols rugs\" do not exist in Chinese",
     "region": "China",
-    "description": "Searched specifically: zero Chinese-language sources use those categories. They are Anglophone collector-market inventions. Chinese sources tell the period as industrial and labour history: factory counts, export tonnage, named merchants.",
+    "description": "REFUTED. Chinese sources do use these categories: a Sina post describes 中国装饰艺术风格的地毯 (\"Chinese Art Deco–style carpets\"), Zhihu ties 美术式 carpets to Art Deco, and Tianjin histories (including a Tianjin culture-bureau page) name Nichols as 倪克 (倪克地毯厂, founded by an American in 1923) with Fette as the two largest US firms. The brief's point that Chinese sources tell the period mainly as industrial and labour history may still hold; the absolute claim does not.\n\nSearched specifically: zero Chinese-language sources use those categories. They are Anglophone collector-market inventions. Chinese sources tell the period as industrial and labour history: factory counts, export tonnage, named merchants.\n\nCitation check (Oct 2026, from search results; pages not opened): contradicted.\nSome Chinese-language sources do use the category. A Sina post says the style 受当时欧洲的Art Deco风格的影响…形成了中国装饰艺术风格的地毯 (formed a Chinese Art Deco–style carpet). A Zhihu article ties 美术式 carpets to art deco. Chinese Tianjin histories name Nichols as 倪克 (倪克地毯厂, said to be founded by the American 倪克 in 民国十二年/1923) alongside 美古绅 (Karagheusian) and 海京. They also say Nichols and Fette were the two largest US carpet houses, whose rugs bore 'Handwoven in China by Nichols' stamps. It is fair that mainstream Chinese histories classify the period's designs as 美术式 / 彩花式 / 北京式 / 素凸式 rather than 'Art Deco', but 'zero Chinese sources' is false.\nSource: 1920年代的美国设计师设计的中国地毯 (Chinese carpets designed by 1920s American designers), Sina self-media post.\nFound at: https://k.sina.cn/article_6124936604_p16d131d9c02700xz3t.html\nAlso: https://zhuanlan.zhihu.com/p/397070921 · https://whly.tj.gov.cn/tjswlzxw/jgbn/whtj/jgzt/202407/t20240716_6676085.html · https://www.tianjiangcarpet.com/news/2021-08-06/1868.html",
     "themes": [
       "Global diffusion of tufting",
       "Woven carpet"
@@ -1431,44 +1436,54 @@ window.RUG_ITEMS = [
     "tags": [
       "synthesis",
       "historiography",
-      "script idea"
+      "script idea",
+      "citation checked 2026",
+      "citation: contradicted"
     ],
     "status": "unverified",
-    "collection": "Tuft the World research brief: The Non-English Record"
+    "collection": "Tuft the World research brief: The Non-English Record",
+    "sourceUrl": "https://k.sina.cn/article_6124936604_p16d131d9c02700xz3t.html",
+    "confidence": "refuted"
   },
   {
     "id": "ner-cn-1970s",
     "type": "finding",
     "title": "Machine-made carpet in large-scale production in China from the 1970s",
     "region": "China",
-    "description": "The only explicit dating statement found in Chinese for machine carpet. When tufting itself arrived is genuinely undocumented.",
+    "description": "WEAK SOURCE. The quotation exists, but in a promotional post by a UV-printer seller on Sina's self-media platform, not a trade article. A 2013 trade article is more careful: China began its own R&D on machine carpet in the 1970s, and imported its first tufting machine in 1980.\n\nThe only explicit dating statement found in Chinese for machine carpet. When tufting itself arrived is genuinely undocumented.\n\nCitation check (Oct 2026, from search results; pages not opened): confirmed.\nThe quote exists, but the source is a promotional post by a UV-printer seller (content-farm quality), so it carries little evidential weight. A 2013 trade article is more careful: in the 1970s China *began independent R&D* of machine-made carpet, the first tufting machine was imported in 1980, and small machine-carpet firms followed. I saw that article once in a search summary and could not re-confirm the quote.\nSource: 个性定制地毯现在整个行业是个什么情况？地毯企业必懂 (What is the state of the custom-carpet industry? Must-know for carpet firms), Sina News self-media.\nFound at: https://k.sina.cn/article_5778422960_1586bbcb0001003iso.html\nAlso: http://epaper.zqcn.com.cn/content/2013-04/02/content_13896.htm",
     "themes": [
       "Global diffusion of tufting"
     ],
-    "tags": [],
+    "tags": [
+      "citation checked 2026",
+      "citation: confirmed"
+    ],
     "status": "unverified",
     "collection": "Tuft the World research brief: The Non-English Record",
-    "confidence": "suggestive",
+    "confidence": "unverified",
     "originalText": "机制地毯自上世纪70年代在中国开始大规模生产以来",
     "language": "zh-Hans",
     "translation": "Since machine-made carpet began large-scale production in China in the 1970s…",
-    "publisher": "Sina (republished trade article)",
+    "publisher": "Sina self-media (k.sina.cn) post by a UV-printer marketing account, not a republished trade article",
     "date": "1970s",
     "dateStart": 1970,
-    "dateEnd": 1979
+    "dateEnd": 1979,
+    "sourceUrl": "https://k.sina.cn/article_5778422960_1586bbcb0001003iso.html"
   },
   {
     "id": "ner-cn-gbt11746",
     "type": "finding",
     "title": "China's national standard for tufted carpet: GB/T 11746-1989",
     "region": "China",
-    "description": "Issued 20 Oct 1989, in force 1 Jul 1990. The hardest date available: a country does not write a national standard for a novelty, so real production was running for years before 1989.",
+    "description": "Issued 20 Oct 1989, in force 1 Jul 1990. The hardest date available: a country does not write a national standard for a novelty, so real production was running for years before 1989.\n\nCitation check (Oct 2026, from search results; pages not opened): confirmed.\nDates are confirmed. Additional details: the main drafter was 天津地毯研究所 (Tianjin Carpet Research Institute), under the national technical committee for arts and crafts (TC150) and the China National Light Industry Council. It was replaced in full by GB/T 11746-2008 (issued 2008-06-16, effective 2009-03-01). The original 1989 PDF is headed 'GB 11746-89', so the '/T' was probably applied later. The 'production running for years before 1989' line is the brief's inference.\nSource: 簇绒地毯 GB/T 11746-1989 (Tufted carpet), 全国标准信息公共服务平台 (National Public Service Platform for Standards Information), Issued 1989-10-20; implemented 1990-07-01; abolished 2009-03-01.\nFound at: https://std.samr.gov.cn/gb/search/gbDetailed?id=71F772D7665FD3A7E05397BE0A0AB82A\nAlso: https://img.antpedia.com/standard/files/pdfs_ora/CN-GB/29d/GB11746-1989.pdf · https://www.chinesestandard.net/PDF.aspx/GBT11746-2008",
     "themes": [
       "Global diffusion of tufting"
     ],
     "tags": [
       "standards",
-      "dating anchor"
+      "dating anchor",
+      "citation checked 2026",
+      "citation: confirmed"
     ],
     "status": "unverified",
     "collection": "Tuft the World research brief: The Non-English Record",
@@ -1479,33 +1494,38 @@ window.RUG_ITEMS = [
     "publisher": "全国标准信息公共服务平台 (State Administration for Market Regulation)",
     "date": "1989",
     "dateStart": 1989,
-    "identifier": "GB/T 11746-1989"
+    "identifier": "GB/T 11746-1989",
+    "sourceUrl": "https://std.samr.gov.cn/gb/search/gbDetailed?id=71F772D7665FD3A7E05397BE0A0AB82A"
   },
   {
     "id": "ner-cn-yanshan",
     "type": "finding",
     "title": "China's carpet modernisation was led by an oil refinery",
     "region": "China",
-    "description": "The Beijing Yanshan Petrochemical Company Carpet Factory: a downstream petrochemical story, not a textile-mill story. Connects to the nylon/synthetics thread.",
+    "description": "The Beijing Yanshan Petrochemical Company Carpet Factory: a downstream petrochemical story, not a textile-mill story. Connects to the nylon/synthetics thread.\n\nCitation check (Oct 2026, from search results; pages not opened): confirmed.\nThe source is a promotional taxpayer profile of 北京双泉燕山地毯有限公司, whose predecessor was the Yanshan Petrochemical Co. carpet factory. The same text says its main equipment was imported: tufting lines from CMC and Tuftco (US) and Cobble (UK), Wilton looms from Belgium and Germany, BCF yarn line from Italy. It also says the firm helped draft the national woven and tufted carpet standards. Wikipedia's Yanshan entry dates the name 燕化公司化纤地毯厂 to 1 Nov 1987 (renamed from 东风化工厂). 'Led by an oil refinery' is the brief's framing. 'Earliest' is self-description, and some secondary summaries render it as 'one of the earliest'.\nSource: 燕山地毯：与时代同发展 (Yanshan Carpet: developing with the times), 《中国税务》 China Taxation magazine, 2004.\nFound at: https://mag.ctax.org.cn/Article/Detail?id=44119\nAlso: https://m.jia.com/pinpai/detail-7445/ · https://zh.wikipedia.org/zh-cn/%E7%87%95%E5%B1%B1%E7%9F%B3%E6%B2%B9%E5%8C%96%E5%B7%A5%E6%80%BB%E5%8E%82",
     "themes": [
       "Global diffusion of tufting",
       "Nylon & synthetic fibers (DuPont)"
     ],
-    "tags": [],
+    "tags": [
+      "citation checked 2026",
+      "citation: confirmed"
+    ],
     "status": "unverified",
     "collection": "Tuft the World research brief: The Non-English Record",
     "confidence": "suggestive",
     "originalText": "北京燕山石油化工公司地毯厂，是我国最早的机织地毯生产企业…中国现代化地毯工业的摇篮",
     "language": "zh-Hans",
     "translation": "The Beijing Yanshan Petrochemical Company Carpet Factory was China's earliest machine-woven carpet enterprise… the cradle of China's modernised carpet industry.",
-    "publisher": "中国税务杂志社 (company profile)"
+    "publisher": "《中国税务》 magazine (中国税务杂志社), 2004 no. 5, taxpayer-showcase (company profile) section",
+    "sourceUrl": "https://mag.ctax.org.cn/Article/Detail?id=44119"
   },
   {
     "id": "ner-cn-dht200",
     "type": "finding",
     "title": "China built its first domestic tufting machine in 2004 (DHT-200)",
     "region": "China",
-    "description": "Shanghai Huayuan Group Carpet Co. commissioned Donghua University's School of Mechanical Engineering. 填补国内空白 (\"filled a domestic blank\") is the standard formula for: nobody in China could do this before. Before that, the trade press says, tufting technology was held by American and European firms (CMC, Tuftco, Cobble). The country with the oldest carpet tradition was the last major producer to build the machine.",
+    "description": "CORRECTED source. The 2004 DHT-200 commission is supported by Donghua University's own pages and Baidu Baike. The longer quote the brief attributed to 《纺织导报》 Textile Leader was not found, and no such article was located; the quotation shown is now Donghua's own phrase. Conflict: a 2007 Donghua item names the partner as Jiangxi Huayuan Group (江西华源集团), not Shanghai.\n\nShanghai Huayuan Group Carpet Co. commissioned Donghua University's School of Mechanical Engineering. 填补国内空白 (\"filled a domestic blank\") is the standard formula for: nobody in China could do this before. Before that, the trade press says, tufting technology was held by American and European firms (CMC, Tuftco, Cobble). The country with the oldest carpet tradition was the last major producer to build the machine.\n\nCitation check (Oct 2026, from search results; pages not opened): partly confirmed.\nThe 2004 commission of DHT-200 by Huayuan Group Carpet Co. from Donghua's School of Mechanical Engineering is supported, but the wording differs. Baike says 填补了国内地毯簇绒装备产业化生产的空白 and a Donghua page says 填补了我国地毯装备业的空白. The exact quote 在整机产品设计、制造生产上均填补了国内空白 was not found, and no 《纺织导报》 article was located. A 2007 Donghua news item calls the partner 江西华源集团 (Jiangxi), not Shanghai. Baike says Huayuan Group Carpet Co. was founded in Shanghai on 1997-07-02, and the machine was appraised by Jiangxi provincial S&T authorities. Prof. Sun Yize's CV lists 'DHT-200型地毯簇绒装备研制及其关键技术研究' nominated for a 2005 MOE/national award. 'First domestic tufting machine' and 'last major producer to build the machine' are the brief's inferences. Note that CMC is Card-Monroe Corp. (US).\nSource: 华源集团地毯有限公司 (Huayuan Group Carpet Co.), Baidu Baike, 2004 (commission year per Baike).\nFound at: https://baike.baidu.com/item/%E5%8D%8E%E6%BA%90%E9%9B%86%E5%9B%A2%E5%9C%B0%E6%AF%AF%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/2302392\nAlso: https://research.dhu.edu.cn/2018/0224/c2514a251042/page.psp · https://www.dhu.edu.cn/2007/0314/c7783a106364/pagem.htm · https://www.dhu.edu.cn/2010/1115/c7783a107301/pagem.htm · https://www.dhu.edu.cn/2015/0309/c18935a59358/page.htm",
     "themes": [
       "Global diffusion of tufting",
       "Machine tufting & Dalton"
@@ -1513,78 +1533,89 @@ window.RUG_ITEMS = [
     "tags": [
       "machinery",
       "headline",
-      "script idea"
+      "script idea",
+      "citation checked 2026",
+      "citation: partly confirmed"
     ],
     "status": "unverified",
     "collection": "Tuft the World research brief: The Non-English Record",
     "confidence": "solid",
-    "originalText": "上海华源集团地毯有限公司委托东华大学机械学院研制开发了DHT－200地毯簇绒机，在整机产品设计、制造生产上均填补了国内空白",
+    "originalText": "填补了我国地毯装备业的空白",
     "language": "zh-Hans",
-    "translation": "Shanghai Huayuan Group Carpet Co. commissioned Donghua University's School of Mechanical Engineering to develop the DHT-200 carpet tufting machine, which filled a domestic blank in both whole-machine design and manufacturing.",
-    "publisher": "《纺织导报》 Textile Leader",
+    "translation": "filled a gap in China's carpet-equipment industry",
+    "publisher": "Donghua University (dhu.edu.cn) and Baidu Baike",
     "date": "2004",
-    "dateStart": 2004
+    "dateStart": 2004,
+    "sourceUrl": "https://baike.baidu.com/item/%E5%8D%8E%E6%BA%90%E9%9B%86%E5%9B%A2%E5%9C%B0%E6%AF%AF%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/2302392"
   },
   {
     "id": "ner-cn-sun-yize",
     "type": "finding",
     "title": "Donghua team wins 2010 National Science and Technology Progress Award for digital tufting looms",
     "region": "China",
-    "description": "Prof. 孙以泽 (Sun Yize), now an academician; 2nd Class award for digital tufted carpet loom equipment.",
+    "description": "Prof. 孙以泽 (Sun Yize), now an academician; 2nd Class award for digital tufted carpet loom equipment.\n\nCitation check (Oct 2026, from search results; pages not opened): confirmed.\nOfficial project title: 簇绒地毯织机系列成套装备技术及其产业化 (complete tufted-carpet loom equipment series and its industrialisation), National S&T Progress Award, 2nd class, 2010. A 2019 Donghua article calls it the 数字化簇绒地毯织机系列成套装备 project. Sun is styled 院士 (academician) in Donghua pages from 2023 onward. He won a second 2nd-class national award in 2018, for braiding equipment.\nSource: 孙以泽 (Sun Yize) profile, 东华大学 Donghua University, 2010 award.\nFound at: https://www.dhu.edu.cn/2015/0309/c18935a59358/page.htm\nAlso: https://cgzh.dhu.edu.cn/2019/0213/c13839a209285/page.htm · https://meccol.dhu.edu.cn/2023/1125/c21664a334063/page.htm · https://ictst.dhu.edu.cn/2022/0121/c12891a293216/page.htm",
     "themes": [
       "Global diffusion of tufting",
       "Machine tufting & Dalton"
     ],
     "tags": [
-      "machinery"
+      "machinery",
+      "citation checked 2026",
+      "citation: confirmed"
     ],
     "status": "unverified",
     "collection": "Tuft the World research brief: The Non-English Record",
     "confidence": "solid",
     "publisher": "东华大学 (Donghua University) official site",
     "date": "2010",
-    "dateStart": 2010
+    "dateStart": 2010,
+    "sourceUrl": "https://www.dhu.edu.cn/2015/0309/c18935a59358/page.htm"
   },
   {
     "id": "ner-cn-imports-2025",
     "type": "finding",
     "title": "China still imports high-end tufting machines",
     "region": "China",
-    "description": "Customs code HS 84479011 (簇绒地毯织机). March 2025 alone: Jiangsu imported one machine at US$665,441; Zhejiang one at US$471,660.",
+    "description": "Customs code HS 84479011 (簇绒地毯织机). March 2025 alone: Jiangsu imported one machine at US$665,441; Zhejiang one at US$471,660.\n\nCitation check (Oct 2026, from search results; pages not opened): confirmed in a different source.\nFigures match: Jiangsu, general trade, 1 unit, US$665,441, and Zhejiang, general trade, 1 unit, US$471,660. The page has 28 records for the month and only the first rows were visible, so 'alone' and per-province totals are unverified. Context: in Feb 2025 Jiangsu imported 40 units for only US$736,158, so many imports under this code are low-value. 'High-end' is an inference from the unit price.\nSource: 2025年03月份簇绒地毯织机进口数据统计(84479011) (March 2025 import statistics for tufted-carpet looms, HS 84479011), 报告大厅 chinabgao, March 2025.\nFound at: https://m.chinabgao.com/stat/stats/67490776.html\nAlso: https://m.chinabgao.com/stat/stats/67464334.html · https://www.gtradedata.com/report/84479011.html",
     "themes": [
       "Global diffusion of tufting",
       "Machine tufting & Dalton"
     ],
     "tags": [
       "machinery",
-      "trade data"
+      "trade data",
+      "citation checked 2026",
+      "citation: confirmed in a different source"
     ],
     "status": "unverified",
     "collection": "Tuft the World research brief: The Non-English Record",
     "confidence": "solid",
-    "publisher": "Chinese customs data",
+    "publisher": "报告大厅 (chinabgao.com) republishing GACC customs statistics",
     "date": "March 2025",
     "dateStart": 2025,
-    "identifier": "HS 84479011"
+    "identifier": "HS 84479011",
+    "sourceUrl": "https://m.chinabgao.com/stat/stats/67490776.html"
   },
   {
     "id": "ner-cn-patents",
     "type": "patent",
     "title": "The significant tufting-machine patents filed in China are foreign",
     "region": "China",
-    "description": "CN113584750A (Card-Monroe Corp, US, filed 2017); CN1030783C (Norddeutsche Faserwerke, Germany, 1992). The 1990s Chinese carpet patents are about improving hand looms.",
+    "description": "CORRECTED. CN1030783C (Norddeutsche Faserwerke) is a patent for a recyclable tufted carpet, not a tufting machine, so it doesn't support this claim. CN113584750A (Card-Monroe, priority 2016) is confirmed. Note too that Chinese gun and robot-tufting patents exist (see the foreign patents added in 2026, e.g. CN2723478Y, CN104562491A), so the claim holds at most for broadloom machines.\n\nCN113584750A (Card-Monroe Corp, US, filed 2017); CN1030783C (Norddeutsche Faserwerke, Germany, 1992). The 1990s Chinese carpet patents are about improving hand looms.\n\nCitation check (Oct 2026, from search results; pages not opened): partly confirmed.\nCN113584750A (Card-Monroe Corp.) is confirmed. It is a divisional application with priority 2016-03-17 and parent filing 2017-03-16. CN1030783C (Norddeutsche Faserwerke GmbH) is a tufted CARPET product patent: a mono-material, recyclable carpet. It is NOT a tufting-machine patent, so it does not support 'tufting-machine patents in China are foreign'. Its Chinese application was filed 1992 with 1991 German priority, granted 1996, and has lapsed. The claim that 1990s Chinese carpet patents concern hand looms was not verified, and some Chinese tufting-machine patents exist (e.g. CN206052345U 地毯簇绒机).\nSource: CN113584750A 簇绒机、簇绒方法和针距部件组件 (Tufting machine, tufting method and gauge part assembly), Google Patents, CN113584750A: filed 2017-03-16 (divisional of CN201780018740.X), priority 2016-03-17, published 2021-11-02; CN1030783C: filed 1992-04-09, priority 1991-04-09, granted/published 1996.\nFound at: https://patents.google.com/patent/CN113584750A/zh\nAlso: https://patents.google.com/patent/CN1067459A/zh · https://patents.google.com/patent/CN108884620B/zh · https://patents.google.com/patent/CN206052345U/zh",
     "themes": [
       "Global diffusion of tufting",
       "Machine tufting & Dalton"
     ],
     "tags": [
       "machinery",
-      "patents"
+      "patents",
+      "citation checked 2026",
+      "citation: partly confirmed"
     ],
     "status": "unverified",
     "collection": "Tuft the World research brief: The Non-English Record",
-    "confidence": "solid",
-    "publisher": "Chinese patent records",
+    "confidence": "suggestive",
+    "publisher": "Google Patents (CNIPA records)",
     "sourceUrl": "https://patents.google.com/patent/CN113584750A/en",
     "date": "1992–2017",
     "dateStart": 1992,
@@ -1599,33 +1630,39 @@ window.RUG_ITEMS = [
     "type": "finding",
     "title": "The Beijing carpet trade begins in 1860 with a Tibetan lama, not Persia",
     "region": "China",
-    "description": "A lama brought carpets to Beijing for the Xianfeng Emperor and set up production at 报国寺 (Baoguo Temple) near 广安门, founding the 「东门法」 and 「西门法」 (Eastern Gate and Western Gate) methods. Popular history, widely repeated.",
+    "description": "A lama brought carpets to Beijing for the Xianfeng Emperor and set up production at 报国寺 (Baoguo Temple) near 广安门, founding the 「东门法」 and 「西门法」 (Eastern Gate and Western Gate) methods. Popular history, widely repeated.\n\nCitation check (Oct 2026, from search results; pages not opened): partly confirmed.\nThe 1860 lama, 报国寺 and 东门/西门 story is widely repeated but disputed. A Beijing Municipal Cultural Heritage Bureau publication gives the date as either 咸丰十年 (1860) or 同治十年 (1871). Another version places it under Qianlong, with three schools (东门, 西门 and 鸡门) and teachers from Gansu. The Beijing Carpet Research Institute found no documentary basis for a lama teaching the craft in its 1960s–70s research (only records of tribute carpets). Master Kang Yusheng also rejects it. Some tellings say the Dalai Lama brought the carpets. The record should note the dispute and the alternative dates.\nSource: 北京记忆丨解放前的北京地毯行业 (Beijing Memory: the Beijing carpet trade before 1949), NetEase repost of 北京脉搏, 2019-11-21 (NetEase repost).\nFound at: https://www.163.com/dy/article/EUGOOS4L05434VBG.html\nAlso: https://wwj.beijing.gov.cn/bjww/resource/cms/article/bjww_362762/436174414/2023080311110976160.pdf · https://www.tianjiangcarpet.com/news/2020-07-29/1700.html",
     "themes": [
       "Global diffusion of tufting",
       "Woven carpet"
     ],
     "tags": [
       "origins",
-      "script idea"
+      "script idea",
+      "citation checked 2026",
+      "citation: partly confirmed"
     ],
     "status": "unverified",
     "collection": "Tuft the World research brief: The Non-English Record",
     "confidence": "suggestive",
     "date": "1860",
-    "dateStart": 1860
+    "dateStart": 1860,
+    "sourceUrl": "https://www.163.com/dy/article/EUGOOS4L05434VBG.html",
+    "publisher": "Beijing Memory (北京记忆, Capital Library) / 北京市文物局 文丛, popular history"
   },
   {
     "id": "ner-cn-palace-carpet",
     "type": "finding",
     "title": "Beijing palace carpet weaving: state-listed heritage \"in danger of being lost\"",
     "region": "China",
-    "description": "Western Han origin from the Western Regions; mature by the Tang. 1900 gold medal at the Paris Exposition; 1920: 354 workshops; 1956: Beijing No. 1 Carpet Factory (joint state-private).",
+    "description": "Western Han origin from the Western Regions; mature by the Tang. 1900 gold medal at the Paris Exposition; 1920: 354 workshops; 1956: Beijing No. 1 Carpet Factory (joint state-private).\n\nCitation check (Oct 2026, from search results; pages not opened): confirmed.\nThe quotes and facts were found on the ihchina entry: 西汉由西域传入, mature by the Tang, 1900 Paris Exposition gold medal, 1920 with 354 workshops, the 1956 joint state-private Beijing No. 1 Carpet Factory, and 后继乏人，织造技艺面临失传的危险. The 354 figure counts workshops (作坊), and the record's description is consistent with that. Listing details vary: ihchina says 2nd national batch (2008), with Beijing Huafang Carpet Art Co. as the safeguarding unit, while other sources say 2009 or 2010. Some sources say Beijing carpets won multiple expo awards, including New York 1904.\nSource: 地毯织造技艺（北京宫毯织造技艺）(Carpet weaving: Beijing palace carpet weaving), 中国非物质文化遗产网 (China Intangible Cultural Heritage Network).\nFound at: https://www.ihchina.cn/project_details/14500\nAlso: https://www.chinanews.com.cn/cul/2011/09-26/3354245.shtml · https://baike.baidu.com/item/%E5%AE%AB%E6%AF%AF/9488470",
     "themes": [
       "Global diffusion of tufting",
       "Woven carpet"
     ],
     "tags": [
-      "heritage"
+      "heritage",
+      "citation checked 2026",
+      "citation: confirmed"
     ],
     "status": "unverified",
     "collection": "Tuft the World research brief: The Non-English Record",
@@ -1633,67 +1670,73 @@ window.RUG_ITEMS = [
     "originalText": "织毯技术西汉时由西域传入我国，到唐代，中原地区的地毯织造已大致成熟 … 后继乏人，织造技艺面临失传的危险",
     "language": "zh-Hans",
     "translation": "Carpet weaving entered China from the Western Regions in the Western Han; by the Tang, weaving in the Central Plains was largely mature … No successors; the technique faces the danger of being lost.",
-    "publisher": "中国非物质文化遗产网 (state intangible heritage registry)"
+    "publisher": "中国非物质文化遗产网 (state intangible heritage registry)",
+    "sourceUrl": "https://www.ihchina.cn/project_details/14500"
   },
   {
     "id": "ner-cn-beijing-export",
     "type": "finding",
     "title": "Beijing's 1920s export boom was run by American merchants",
     "region": "China",
-    "description": "1920: 354 factories, ~5,000 workers. 1926: exports peak at 115 times 1912. F. C. Fette and A. Shoemaker dominated; Fette and merchant 李立轩 founded 仰经地毯厂, ~1/3 of output by 1924 with 1,200+ workers. Labour: 2–3 yuan a month, 9–16 hour days, apprentices unpaid and beaten.",
+    "description": "1920: 354 factories, ~5,000 workers. 1926: exports peak at 115 times 1912 [figure not found in any source]. F. C. Fette and A. Shoemaker dominated; Fette and merchant 李黎轩 (also 李梦书) founded 燕京地毯厂 [names corrected; the brief had 李立轩 and 仰经地毯厂], ~1/3 of output by 1924 with 1,200+ workers. Labour: 2–3 yuan a month, 9–16 hour days, apprentices unpaid and beaten.\n\nCitation check (Oct 2026, from search results; pages not opened): partly confirmed.\nName corrections: the Chinese partner appears as 李黎轩 (also 李梦书), not 李立轩, and the joint factory as 燕京地毯厂, not 仰经地毯厂. The source says it reached 6 workshops and 1,200+ workers, controlling about one-third to one-quarter of Beijing output by about 1924. Fette is given as an American (initials vary). The 1926 '115× 1912' export figure, the 2–3 yuan monthly wage and the Shoemaker detail were not found. The 1924 survey of 207 Beijing carpet shops found 6,834 workers, 74% of them apprentices, with 94% working 12–14 hours a day and 93% working 7 days a week. That is harsher than '9–16 hours'. The '354 factories / ~5,000 workers' figure for 1920 matches ihchina's 354 workshops; the worker count was not verified.\nSource: 北京记忆丨解放前的北京地毯行业 (The Beijing carpet trade before 1949), NetEase.\nFound at: https://www.163.com/dy/article/EUGOOS4L05434VBG.html\nAlso: https://ccj.pku.edu.cn/Article/DownLoad?id=184317073&type=ArticleFile · https://www.ihchina.cn/project_details/14500",
     "themes": [
       "Global diffusion of tufting",
       "Woven carpet"
     ],
     "tags": [
       "labour",
-      "export"
+      "export",
+      "citation checked 2026",
+      "citation: partly confirmed"
     ],
     "status": "unverified",
     "collection": "Tuft the World research brief: The Non-English Record",
     "confidence": "suggestive",
-    "publisher": "Popular history column",
+    "publisher": "Popular history (北京记忆 / NetEase); labour data from the 1924 Bao Lide (C. G. Dittmer students) & Zhu Jiquan survey",
     "date": "1912–1926",
     "dateStart": 1912,
-    "dateEnd": 1926
+    "dateEnd": 1926,
+    "sourceUrl": "https://www.163.com/dy/article/EUGOOS4L05434VBG.html"
   },
   {
     "id": "ner-cn-tianjin",
     "type": "finding",
-    "title": "Tianjin: 70–80% of China's carpet exports, killed by real estate",
+    "title": "Tianjin carried most of China's carpet exports (over 80% in 1912–27), then declined after the 1990s",
     "region": "China",
-    "description": "1930s: 303 factories and workshops, 2,749 looms, 11,568 workers. The 风船 (\"sailing ship\") brand; gold medals at Leipzig 1965 and 1986. After the 1990s, urban development displaced the major factories.",
+    "description": "CORRECTED. The factory, loom and worker counts are 1929 figures (Nankai survey). Tianjin's export share was over 80% in 1912–27 (94.1% in 1916, 97.4% in 1926), higher than the brief's \"70–80%\". Sources give both lost competitiveness and urban redevelopment for the 1990s decline, not real estate alone. The Chinese line the brief quoted (1990年代后…城市发展使主要工厂迁移) was not found in any source and looks like the brief's own paraphrase, so it is no longer shown as a quotation.\n\n1929: 303 factories and workshops, 2,749 looms, 11,568 workers. The 风船 (\"sailing ship\") brand; gold medals at Leipzig 1965 and 1986. After the 1990s, urban development displaced the major factories.\n\nCitation check (Oct 2026, from search results; pages not opened): partly confirmed.\nThe 303 shops, 2,749 looms and 11,568 workers are 1929 (some say 1930) figures from the Nankai survey, not the 1930s generally. Tianjin's export share is given as over 80% for 1912–27 (94.1% in 1916, 97.4% in 1926), which is higher than '70–80%'. Leipzig gold medals for 风船 in 1965 and 1986 are confirmed (Tianjin Daily), plus Plovdiv 1986. The quote 1990年代后…城市发展使主要工厂迁移 was not found verbatim. The closest wording is that old plants led by 地毯二厂 and 地毯三厂 were 逐步被城市建设置换 (gradually replaced by urban construction). The same passage says that from the 1990s Tianjin carpets lost their advantage in both export conditions and domestic competition. So 'killed by real estate, not competition' overstates: both are cited.\nSource: “天津地毯”：辉煌百年 始终向前 (Tianjin Carpet: a glorious century, always forward), 天津日报 Tianjin Daily, 2026-03-20.\nFound at: https://epaper.tianjinwe.com/tjrb/html/2026-03/20/content_143098_3242680.htm\nAlso: https://www.sohu.com/a/231599440_503003 · https://m.sohu.com/a/870630890_121123801/ · https://whly.tj.gov.cn/tjswlzxw/jgbn/whtj/jgzt/202407/t20240716_6676085.html · https://cj.sina.com.cn/articles/view/3314280193/c58be70102001ggys",
     "themes": [
       "Global diffusion of tufting",
       "Woven carpet"
     ],
     "tags": [
       "export",
-      "decline"
+      "decline",
+      "citation checked 2026",
+      "citation: partly confirmed"
     ],
     "status": "unverified",
     "collection": "Tuft the World research brief: The Non-English Record",
     "confidence": "suggestive",
-    "originalText": "1990年代后…城市发展使主要工厂迁移",
-    "language": "zh-Hans",
-    "translation": "After the 1990s… urban development displaced the major factories.",
-    "publisher": "天津日报 (Tianjin Daily) and trade sources",
-    "date": "1930s–1990s",
-    "dateStart": 1930,
-    "dateEnd": 1999
+    "publisher": "天津日报 (Tianjin Daily) 2026-03-20; Nankai Institute of Economics survey (via Sohu/Tianjin culture bureau)",
+    "date": "1912–1990s",
+    "dateStart": 1912,
+    "dateEnd": 1999,
+    "sourceUrl": "https://epaper.tianjinwe.com/tjrb/html/2026-03/20/content_143098_3242680.htm"
   },
   {
     "id": "ner-cn-terminology",
     "type": "finding",
     "title": "Chinese tufting vocabulary",
     "region": "China",
-    "description": "簇绒 tufting (generic) · 簇绒机 industrial tufting machine · 簇绒枪 tufting gun (HK/Cantonese) · 枪刺/刺枪 \"gun-stab\", the everyday trade word for hand-tufting · 手工枪刺地毯 hand gun-tufted carpet · 手工打结 hand-knotted · 机织 machine-woven (威尔顿 Wilton, 阿克明斯特 Axminster) · 针刺 needle-punched · 栽绒 \"planted pile\" (old term for knotted pile) · 地毯/地氈 mainland/HK forms · 戳戳绣/戳戳秀 \"poke-poke\", the social-media hobby name.",
+    "description": "簇绒 tufting (generic) · 簇绒机 industrial tufting machine · 簇绒枪 tufting gun (HK/Cantonese) · 枪刺/刺枪 \"gun-stab\", the everyday trade word for hand-tufting · 手工枪刺地毯 hand gun-tufted carpet · 手工打结 hand-knotted · 机织 machine-woven (威尔顿 Wilton, 阿克明斯特 Axminster) · 针刺 needle-punched · 栽绒 \"planted pile\" (old term for knotted pile) · 地毯/地氈 mainland/HK forms · 戳戳绣/戳戳秀 \"poke-poke\", the social-media hobby name.\n\nCitation check (Oct 2026, from search results; pages not opened): partly confirmed.\nMost terms are attested. Notes: (1) The national-standard term is 手工枪刺胶背地毯 (GB/T 27729-2011), with 手工枪刺地毯 as the short form. (2) 簇绒枪 is not HK/Cantonese-specific: it is standard mainland usage too, and the HK traditional form is 簇絨槍. (3) 'Gun-stab' is literal; 枪刺 / 刺枪 is attested in trade blogs, but I could not verify that it is 'more common than 手工簇绒'. (4) 栽绒 is attested (手工栽绒地毯), though mainly for hand-knotted pile, not only as an 'old/archaeological' term. (5) Both 戳戳秀 and 戳戳绣 are used in 2022 mainland press, and 戳戳秀 is also a registered brand (锦州润合工艺美术品有限公司). (6) In HK, 地氈 is the written form.\nAlso: https://www.tianjiangcarpet.com/news/2017-11-02/217.html · https://baike.baidu.com/item/%E6%89%8B%E5%B7%A5%E6%A0%BD%E7%BB%92%E5%9C%B0%E6%AF%AF/1835914 · https://epaper.oeeee.com/epaper/G/html/2022-11/14/content_27066.htm · https://www.baiqiang.cn/pinpai/chuochuoxiu/",
     "themes": [
       "Global diffusion of tufting",
       "Hand-tufting tools & the gun"
     ],
     "tags": [
-      "glossary"
+      "glossary",
+      "citation checked 2026",
+      "citation: partly confirmed"
     ],
     "status": "unverified",
     "collection": "Tuft the World research brief: The Non-English Record",
@@ -1704,30 +1747,36 @@ window.RUG_ITEMS = [
     "type": "finding",
     "title": "\"Hand-tufted\" sells as \"handmade\" in Chinese too",
     "region": "China",
-    "description": "Marketing drops 胶背 (\"glue-back\") and sells 手工枪刺地毯, so consumers hear 手工 (\"handmade\") and infer hand-knotted. Identical to what \"hand-tufted\" does in English.",
+    "description": "Marketing drops 胶背 (\"glue-back\") and sells 手工枪刺地毯, so consumers hear 手工 (\"handmade\") and infer hand-knotted. Identical to what \"hand-tufted\" does in English.\n\nCitation check (Oct 2026, from search results; pages not opened): confirmed in a different source.\nSupported. The official product name keeps 胶背 (手工枪刺胶背地毯, GB/T 27729-2011), while trade usage shortens it to 手工枪刺地毯. Sources say gun-tufted carpets are often marketed or perceived as 手工 (handmade), and one calls them effectively machine-assisted products 'mistakenly called handmade'. Baidu Baike nonetheless classifies them as a type of 手工地毯. The main sources are hand-knotted sellers with an interest in the distinction.\nSource: 手工打结地毯和枪刺地毯的区别 (The difference between hand-knotted and gun-tufted carpets), 天匠 Tianjiang Carpet blog.\nFound at: https://www.tianjiangcarpet.com/news/2017-11-02/217.html\nAlso: https://www.zhihu.com/column/p/30693869 · https://www.tianjiangcarpet.com/news/2022-07-30/2094.html",
     "themes": [
       "Global diffusion of tufting",
       "Hand-tufting tools & the gun"
     ],
     "tags": [
-      "marketing"
+      "marketing",
+      "citation checked 2026",
+      "citation: confirmed in a different source"
     ],
     "status": "unverified",
-    "collection": "Tuft the World research brief: The Non-English Record"
+    "collection": "Tuft the World research brief: The Non-English Record",
+    "sourceUrl": "https://www.tianjiangcarpet.com/news/2017-11-02/217.html",
+    "publisher": "Retailer blogs (天匠地毯, Zhihu); the standard name comes from GB/T 27729-2011"
   },
   {
     "id": "ner-cn-cuihuangkou",
     "type": "finding",
     "title": "Cuihuangkou, Tianjin: the Dalton of China that almost no American has heard of",
     "region": "China",
-    "description": "Officially named with Dalton and Gaziantep as one of the world's three great carpet clusters. Under 100 km², ~50,000 residents, 1,200+ carpet firms, nearly half of national output.",
+    "description": "Officially named with Dalton and Gaziantep as one of the world's three great carpet clusters. Under 100 km², ~50,000 residents, 1,200+ carpet firms, nearly half of national output.\n\nCitation check (Oct 2026, from search results; pages not opened): partly confirmed.\nThe quote 国内每十张地毯，八张来自崔黄口 appears in the 2020 business feature, which also says the town 'produced half of the country's carpets'. That is internally inconsistent, and neither figure has a statistical source. Official and Xinhua figures: 1,200+ carpet firms (23 above designated size), >100 million carpets a year, exports about 40% of the national total and 80% of Tianjin's, and once up to 50% of national exports. Population is about 50,000–52,000 and area under 100 km² (both confirmed); about 25,000 people work in carpets. 'Officially named with Dalton and Gaziantep as the world's three great clusters' appears in Chinese state media as an industry epithet. I found no official designation. 'Nearly half of national output' should be 'about 40% of national exports'.\nSource: 天津百年地毯小镇：中小产业带穿越周期的经济样本 (Tianjin's century-old carpet town: a case of an SME cluster through cycles), Sina Finance (also on NetEase), 2020-09-04.\nFound at: https://finance.sina.com.cn/roll/2020-09-04/doc-iivhuipp2390936.shtml\nAlso: http://www.news.cn/20240912/10f5bf4c04c648eabf7e9a1fd56e5f77/c.html · http://tj.people.com.cn/n2/2022/0801/c375366-40063051.html · http://tj.news.cn/20260510/ee40ba4441e2468aa1b0c99021c0991f/c.html · https://news.qq.com/rain/a/20250915A08IYR00",
     "themes": [
       "Global diffusion of tufting",
       "Machine tufting & Dalton"
     ],
     "tags": [
       "cluster",
-      "script idea"
+      "script idea",
+      "citation checked 2026",
+      "citation: partly confirmed"
     ],
     "status": "unverified",
     "collection": "Tuft the World research brief: The Non-English Record",
@@ -1735,105 +1784,121 @@ window.RUG_ITEMS = [
     "originalText": "国内每十张地毯，八张来自崔黄口",
     "language": "zh-Hans",
     "translation": "Eight of every ten carpets in China come from Cuihuangkou.",
-    "place": "Cuihuangkou (崔黄口镇), Tianjin"
+    "place": "Cuihuangkou (崔黄口镇), Tianjin",
+    "sourceUrl": "https://finance.sina.com.cn/roll/2020-09-04/doc-iivhuipp2390936.shtml",
+    "publisher": "Sina Finance / NetEase business feature (2020); Xinhua 2024"
   },
   {
     "id": "ner-cn-exports-iraq",
     "type": "finding",
-    "title": "China is the world's #1 carpet exporter, and its biggest customer is Iraq",
+    "title": "China is the world's #1 carpet exporter; Tianjin-made carpet's biggest market is Iraq",
     "region": "China",
-    "description": "23.5% of world share (2023). Tianjin, Jan–Oct 2024: Iraq 19.6%, USA 17.1%, Malaysia 11.2%.",
+    "description": "CORRECTED title: the Iraq/USA/Malaysia shares are for carpet made in Tianjin, not all Chinese exports.\n\n23.5% of world share (2023). Tianjin, Jan–Oct 2024: Iraq 19.6%, USA 17.1%, Malaysia 11.2%.\n\nCitation check (Oct 2026, from search results; pages not opened): partly confirmed.\nThe 23.5% world share (2023, #1 exporter of carpets broadly defined) is cited from ITC Trade Map. The Iraq 19.6%, USA 17.1% and Malaysia 11.2% figures cover carpets PRODUCED IN TIANJIN only, for Jan–Oct, most likely 2024 (the article says 今年; one summary rendered it as 2023). So the title 'China's biggest customer is Iraq' is wrong as stated: it should be 'Tianjin's biggest carpet market is Iraq'. No national ranking was found. The US is China's top market for home textiles overall. Total Chinese carpet exports in 2023 were US$4.0 billion (CHTA).\nSource: 一张地毯的全球化之旅：去东南亚，收割新时代？ (A carpet's globalisation journey: to Southeast Asia?), 亿邦动力 Ebrun via Sina Finance, 2024-12-18.\nFound at: https://finance.sina.com.cn/jjxw/2024-12-18/doc-inczxeun0741548.shtml\nAlso: https://www.huxiu.com/article/3807201.html · https://www.cntac.org.cn/zixun/shuju/202402/t20240207_4343242.html",
     "themes": [
       "Global diffusion of tufting"
     ],
     "tags": [
       "trade data",
-      "script idea"
+      "script idea",
+      "citation checked 2026",
+      "citation: partly confirmed"
     ],
     "status": "unverified",
     "collection": "Tuft the World research brief: The Non-English Record",
     "confidence": "solid",
-    "publisher": "Trade statistics",
+    "publisher": "亿邦动力 (Ebrun), republished by Sina Finance / Huxiu, citing ITC Trade Map and Chinese customs",
     "date": "2023–2024",
     "dateStart": 2023,
-    "dateEnd": 2024
+    "dateEnd": 2024,
+    "sourceUrl": "https://finance.sina.com.cn/jjxw/2024-12-18/doc-inczxeun0741548.shtml"
   },
   {
     "id": "ner-cn-heat-transfer",
     "type": "finding",
     "title": "What killed Chinese hand-weaving was heat-transfer printing, not tufting",
     "region": "China",
-    "description": "The Chinese arc runs hand → gun → machine → printing (热转印).",
+    "description": "The Chinese arc runs hand → gun → machine → printing (热转印).\n\nCitation check (Oct 2026, from search results; pages not opened): partly confirmed.\nThe quote is confirmed, from 白洪伟 of 凯利地毯, describing output after an equipment upgrade to heat-transfer printing. The source says nothing about hand-weaving being 'killed'. The thesis 'what killed hand-weaving was printing, not tufting' and the arc 'hand → gun → machine → printing' are the brief's inference. Add the speaker and source.\nSource: 一张地毯的全球化之旅：去东南亚，收割新时代？, 亿邦动力 Ebrun via Sina Finance, 2024-12-18 (interview c. Aug 2024).\nFound at: https://finance.sina.com.cn/jjxw/2024-12-18/doc-inczxeun0741548.shtml\nAlso: https://www.cifnews.com/article/169092 · https://www.huxiu.com/article/3807201.html",
     "themes": [
       "Global diffusion of tufting"
     ],
     "tags": [
       "decline",
-      "script idea"
+      "script idea",
+      "citation checked 2026",
+      "citation: partly confirmed"
     ],
     "status": "unverified",
     "collection": "Tuft the World research brief: The Non-English Record",
     "confidence": "solid",
     "originalText": "现在我们一个月生产五六十万平米，以前得干10年",
     "language": "zh-Hans",
-    "translation": "Now we produce 500,000–600,000 m² a month; before, that took ten years."
+    "translation": "Now we produce 500,000–600,000 m² a month; before, that took ten years.",
+    "sourceUrl": "https://finance.sina.com.cn/jjxw/2024-12-18/doc-inczxeun0741548.shtml",
+    "publisher": "亿邦动力 (Ebrun); speaker 白洪伟 of 凯利地毯 (Cuihuangkou)"
   },
   {
     "id": "ner-cn-ningxia",
     "type": "finding",
-    "title": "Ningxia carpets are over half of the Palace Museum's imperial carpets",
+    "title": "Ningxia carpets are about 300 of the Palace Museum's nearly 1,000 imperial carpets (corrected from \"over half\")",
     "region": "China",
-    "description": "Of the 1,000+ carpets in the Palace Museum collection, Ningxia carpets are more than 50%.",
+    "description": "CORRECTED. The brief said Ningxia carpets are more than 50% of the Palace Museum's 1,000+ carpets. Xinhua (2024) says 300+ of nearly 1,000 (about 30%), and that most of those Ningxia carpets came from Zhongwei. \"Over half\" looks like a misreading of 大半, which refers to Zhongwei's share. Ningxia handmade carpet weaving was listed as national intangible heritage in 2021.\n\nThe brief's original wording: \"Of the 1,000+ carpets in the Palace Museum collection, Ningxia carpets are more than 50%.\"\n\nCitation check (Oct 2026, from search results; pages not opened): contradicted.\nXinhua says that of the nearly 1,000 Ming–Qing carpets in the Palace Museum, 300+ are Ningxia carpets (about 30–33%), and that most of THOSE come from Zhongwei. '>50%' looks like a misreading of 大半 (most), which refers to the Zhongwei share of the Ningxia carpets. Ningxia handmade carpet weaving was listed as national intangible heritage in 2021. The '1,000+' total should be 'nearly 1,000'.\nSource: 故宫收藏的宁夏手工毯，原来是这样…… (The Ningxia handmade carpets in the Palace Museum collection), 新华网 Xinhua, 2024-07-27.\nFound at: http://www.news.cn/politics/20240727/8e047280b8fa4fb8967301515e44d6b0/c.html\nAlso: https://www.sohu.com/a/796389802_267106 · https://app.xinhuanet.com/news/article.html?articleId=6fbc138719284c92554301d73168cf2b",
     "themes": [
       "Global diffusion of tufting",
       "Woven carpet"
     ],
     "tags": [
-      "collections"
+      "collections",
+      "citation checked 2026",
+      "citation: contradicted"
     ],
     "status": "unverified",
     "collection": "Tuft the World research brief: The Non-English Record",
     "confidence": "solid",
-    "publisher": "State heritage registry"
+    "publisher": "新华网 Xinhua, 27 July 2024",
+    "sourceUrl": "http://www.news.cn/politics/20240727/8e047280b8fa4fb8967301515e44d6b0/c.html",
+    "date": "2024 (Xinhua report)"
   },
   {
     "id": "ner-cn-pokepoke",
     "type": "finding",
     "title": "The tufting gun came back to mainland China as a TikTok trend: 戳戳秀, \"poke-poke\"",
     "region": "China",
-    "description": "The hand tufting gun, which Tai Ping motorised in Hong Kong by 1973 (US patents for motorised handheld tools go back to 1932; see the gun-origin conflict record), re-entered the mainland around 2021 as an imported Western social-media craze.",
+    "description": "The trend and its c. 2021 arrival are supported by 2022 press (Southern Metropolis Daily, The Paper): studios opened first in Hangzhou, then Guangzhou (Sept 2021), Hefei and Jinan. Chinese press credits overseas social media (Instagram, TikTok, Xiaohongshu) and the artist Tim Eads (2018). The Chengdu shop-owner quote the brief gave was NOT found, so it is no longer shown as a quotation: \"一个月前在抖音上看到有人玩戳戳秀，觉得确实解压，立刻开起铺子\" (unverified).\n\nThe hand tufting gun, which Tai Ping motorised in Hong Kong by 1973 (US patents for motorised handheld tools go back to 1932; see the gun-origin conflict record), re-entered the mainland around 2021 as an imported Western social-media craze.\n\nCitation check (Oct 2026, from search results; pages not opened): partly confirmed.\nThe term 戳戳秀/戳戳绣 and the c. 2021 arrival are supported. Tufting studios appeared first in Hangzhou, then Guangzhou, where one shop opened in Sept 2021, with Hefei and Jinan by early 2022. Chinese press credits overseas social media (Instagram, also TikTok and Xiaohongshu) and the artist Tim Eads (2018). The Chengdu shop-owner quote (抖音…戳戳秀…立刻开起铺子) was NOT found. The 'Tai Ping motorised by 1973' framing is fine; see the HK records.\nSource: 帆板、露营之后，年轻人又开始戳戳秀了 (After paddleboarding and camping, young people turn to 'poke-poke'), 南方都市报 Southern Metropolis Daily, 2022-11-14.\nFound at: https://epaper.oeeee.com/epaper/G/html/2022-11/14/content_27066.htm\nAlso: https://www.thepaper.cn/newsDetail_forward_17373877 · https://www.cbndata.com/information/238653 · https://news.qq.com/rain/a/20220225A02VD100 · https://m.mp.oeeee.com/a/BAAFRD000020221026732980.html",
     "themes": [
       "Global diffusion of tufting",
       "Hand-tufting tools & the gun"
     ],
     "tags": [
       "hobby revival",
-      "script idea"
+      "script idea",
+      "citation checked 2026",
+      "citation: partly confirmed"
     ],
     "status": "unverified",
     "collection": "Tuft the World research brief: The Non-English Record",
     "confidence": "solid",
-    "originalText": "一个月前在抖音上看到有人玩戳戳秀，觉得确实解压，立刻开起铺子",
-    "language": "zh-Hans",
-    "translation": "A month ago I saw people doing poke-poke on Douyin, thought it really relieved stress, and immediately opened a shop. (Chengdu shop owner)",
     "date": "c. 2021",
-    "dateStart": 2021
+    "dateStart": 2021,
+    "sourceUrl": "https://epaper.oeeee.com/epaper/G/html/2022-11/14/content_27066.htm",
+    "publisher": "南方都市报 (Southern Metropolis Daily) and other 2022 press; quote source not found"
   },
   {
     "id": "ner-cn-knotters-descendant",
     "type": "finding",
     "title": "Chinese hand-knotters call machine carpet their own descendant",
     "region": "China",
-    "description": "A far more generous framing than the Western \"machines destroyed the craft\".",
+    "description": "SOURCE NOT FOUND. The quotation could not be found anywhere. The nearest is Baidu Baike's 手工打结地毯是现代地毯的雏形 (\"hand-knotted carpet is the prototype of modern carpet\"), an encyclopedia line rather than hand-knotters' own words. Don't quote this until a source turns up.\n\nA far more generous framing than the Western \"machines destroyed the craft\".\n\nCitation check (Oct 2026, from search results; pages not opened): source not found.\nNo source found. The nearest is Baidu Baike: 手工打结地毯是现代地毯的雏形 (hand-knotted carpet is the prototype of modern carpet). That is weaker than 'machine carpet technology evolved from hand-knotting', and it is an encyclopedia line, not a statement by hand-knotters.\nAlso: https://baike.baidu.com/item/%E6%89%8B%E5%B7%A5%E5%9C%B0%E6%AF%AF/5322400",
     "themes": [
       "Global diffusion of tufting"
     ],
     "tags": [
-      "historiography"
+      "historiography",
+      "citation checked 2026",
+      "citation: source not found"
     ],
     "status": "unverified",
     "collection": "Tuft the World research brief: The Non-English Record",
-    "confidence": "suggestive",
+    "confidence": "unverified",
     "originalText": "现代机械地毯技术是从手工打结技术演化而来",
     "language": "zh-Hans",
     "translation": "Modern machine carpet technology evolved out of hand-knotting."
@@ -1843,7 +1908,7 @@ window.RUG_ITEMS = [
     "type": "finding",
     "title": "Tai Ping's tufting tool drew on both the American machine and domestic hand-tufting tools",
     "region": "Hong Kong",
-    "description": "General manager Yip Yuen-cheung (Anthony Yeh), an engineer, developed a new cut-pile tufting needle. The Chinese text names domestic hand-tufting tools as a source, a link from hand tools like the Susan Burr to the Hong Kong gun that the English version doesn't make explicit.",
+    "description": "General manager Yip Yuen-cheung (Anthony Yeh), an engineer, developed a new cut-pile tufting needle. The Chinese text names domestic hand-tufting tools as a source, a link from hand tools like the Susan Burr to the Hong Kong gun that the English version doesn't make explicit.\n\nCitation check (Oct 2026, from search results; pages not opened): confirmed.\nThe quote is on the HKHP page, and the snippet shows 參考了美國用單針衣車造地氈的方法和家用簇絨工具. Translation: 家用簇絨工具 means 'household tufting tools'. 'Domestic hand-tufting tools' adds 'hand' and is ambiguous ('domestic' can read as 'made in Hong Kong/China'). I could not check whether the English version of the page leaves this out; the English snippet only says the tool 'helped boost productivity during the first few years'. Linking it to the Susan Burr is the brief's inference. One HK01 article spells the name 葉元璋.\nSource: Tai Ping Carpets: A Humble Beginning in Hong Kong 篳路藍縷：太平地氈, Hong Kong Heritage Project.\nFound at: https://www.hongkongheritage.org/nodes/view/25832\nAlso: https://www.hkrch.org/heritagethewayforward-stories/%E7%AC%AC%E4%B8%80%E9%96%93%E5%A4%A7%E5%9F%94%E7%8F%BE%E4%BB%A3%E5%8C%96%E5%B7%A5%E5%BB%A0-%E2%80%94%E2%80%94%E5%A4%AA%E5%B9%B3%E5%9C%B0%E6%B0%88 · https://industrialhistoryhk.org/tai-ping-carpets-a-brief-history/\nEarlier translation: \"Tai Ping's general manager Yip Yuen-cheung, trained as an engineer, referred to the American method of making carpet with a single-needle sewing machine and to domestic hand-tufting tools, added some innovative engineering thinking, and developed a new cut-pile tufting needle.\"",
     "themes": [
       "Global diffusion of tufting",
       "Hand-tufting tools & the gun"
@@ -1852,14 +1917,16 @@ window.RUG_ITEMS = [
       "priority",
       "Tai Ping",
       "tool lineage",
-      "script idea"
+      "script idea",
+      "citation checked 2026",
+      "citation: confirmed"
     ],
     "status": "unverified",
     "collection": "Tuft the World research brief: The Non-English Record",
     "confidence": "solid",
     "originalText": "工程師出身的太平總經理葉元章參考了美國用單針衣車造地氈的方法和家用簇絨工具，再加點創新的工程思維，開發了新的割絨織針。",
     "language": "zh-Hant",
-    "translation": "Tai Ping's general manager Yip Yuen-cheung, trained as an engineer, referred to the American method of making carpet with a single-needle sewing machine and to domestic hand-tufting tools, added some innovative engineering thinking, and developed a new cut-pile tufting needle.",
+    "translation": "Tai Ping's general manager Yip Yuen-cheung, an engineer by training, drew on the American method of making carpet with a single-needle sewing machine and on household tufting tools, added some innovative engineering thinking, and developed a new cut-pile tufting needle.",
     "publisher": "Hong Kong Heritage Project (Kadoorie family archive)",
     "sourceUrl": "https://www.hongkongheritage.org/"
   },
@@ -1868,7 +1935,7 @@ window.RUG_ITEMS = [
     "type": "finding",
     "title": "1973: Tai Ping motorises the tufting gun",
     "region": "Hong Kong",
-    "description": "The handheld tufting gun, powered and lightened.",
+    "description": "Confirmed on the Hong Kong Heritage Project page. Date conflict: a 2021 trade article (BJI) credits Yeh with a pneumatic tufting gun in 1960, and Hong Kong heritage articles call Tai Ping's 1973 gun 全球首枝 (\"the world's first\"). The US patents in this database (motor-driven hand tools from 1932; \"tufting gun\" in print by 1964) contradict any \"world's first\" claim.\n\nThe handheld tufting gun, powered and lightened.\n\nCitation check (Oct 2026, from search results; pages not opened): confirmed.\nHKHP says that in 1973 Tai Ping fitted the tufting gun with a motor and reduced its weight. The English version says a lightweight motorised tufting gun was invented that year. The exact Chinese string did not match in search, but a close paraphrase was shown. Conflicting dates exist elsewhere: a 2021 BJI trade article credits Yeh with a PNEUMATIC tufting gun in 1960, another source says Yeh's 'first electrical tufting gun' was patented in 1960, and HK articles say Yeh 'invented the tufting gun' in 1973. No Yeh patent was found.\nSource: Tai Ping Carpets: A Humble Beginning in Hong Kong 篳路藍縷：太平地氈, Hong Kong Heritage Project, 1973 (event).\nFound at: https://www.hongkongheritage.org/nodes/view/25832\nAlso: https://bji.mydigitalpublication.co.uk/september-2021/page-42 · https://www.hkrch.org/heritagethewayforward-stories/%E7%AC%AC%E4%B8%80%E9%96%93%E5%A4%A7%E5%9F%94%E7%8F%BE%E4%BB%A3%E5%8C%96%E5%B7%A5%E5%BB%A0-%E2%80%94%E2%80%94%E5%A4%AA%E5%B9%B3%E5%9C%B0%E6%B0%88",
     "themes": [
       "Global diffusion of tufting",
       "Hand-tufting tools & the gun"
@@ -1876,7 +1943,9 @@ window.RUG_ITEMS = [
     "tags": [
       "priority",
       "Tai Ping",
-      "tufting gun"
+      "tufting gun",
+      "citation checked 2026",
+      "citation: confirmed"
     ],
     "status": "unverified",
     "collection": "Tuft the World research brief: The Non-English Record",
@@ -1894,12 +1963,14 @@ window.RUG_ITEMS = [
     "type": "finding",
     "title": "July 1992: Tai Ping moves all carpet production to Nanhai, Guangdong",
     "region": "Hong Kong",
-    "description": "",
+    "description": "Citation check (Oct 2026, from search results; pages not opened): confirmed.\nThe English text seen is 'By July 1992 all carpet production was transferred to Nanhai. The Tai Po chapter, which started in 1958, had come to an end.' The Chinese wording was not seen verbatim. Nanhai is in Guangdong. HKHP gives 1958 for the start of Tai Po production; other sources say 1959 or 1960.\nSource: Tai Ping Carpets: A Humble Beginning in Hong Kong 篳路藍縷：太平地氈, Hong Kong Heritage Project, July 1992 (event).\nFound at: https://www.hongkongheritage.org/nodes/view/25832\nAlso: https://www.hkrch.org/heritagethewayforward-stories/%E7%AC%AC%E4%B8%80%E9%96%93%E5%A4%A7%E5%9F%94%E7%8F%BE%E4%BB%A3%E5%8C%96%E5%B7%A5%E5%BB%A0-%E2%80%94%E2%80%94%E5%A4%AA%E5%B9%B3%E5%9C%B0%E6%B0%88 · https://industrialhistoryhk.org/tai-ping-carpets-international-1956-early-1970s/",
     "themes": [
       "Global diffusion of tufting"
     ],
     "tags": [
-      "Tai Ping"
+      "Tai Ping",
+      "citation checked 2026",
+      "citation: confirmed"
     ],
     "status": "unverified",
     "collection": "Tuft the World research brief: The Non-English Record",
@@ -2582,7 +2653,7 @@ window.RUG_ITEMS = [
     "type": "archive",
     "title": "《天津地毯工業》 Republican-era Chinese primary source (scan)",
     "region": "China",
-    "description": "Free on Wikimedia Commons, from the National Library of China. Blocked to automated fetching; one click in a browser.",
+    "description": "Free on Wikimedia Commons, from the National Library of China. Blocked to automated fetching; one click in a browser.\n\nCitation check (Oct 2026, from search results; pages not opened): partly confirmed.\nThe work exists: 《天津地毯工业》 (Tientsin Carpet Industry) by 方显廷 / H. D. Fong, Nankai University Committee on Social and Economic Research. It was the first of his six-volume industry series, dated 1929 (Nankai) or 1930 (Sohu). It is reprinted in 《方显廷文存》 (Nankai UP, 2019), so it is also obtainable in print. I could NOT find a Wikimedia Commons file with this title. Searches restricted to commons.wikimedia.org returned only unrelated NLC scans, and direct fetch of Commons failed in this environment. The record should name the author and date, and the Commons URL still needs to be supplied by a human.\nSource: 方显廷回忆在南开大学经济研究所的事业与生活 (Fang Xianting's recollections of the Nankai Institute of Economics), Nankai University, 1929 or 1930 (sources differ).\nFound at: https://nkie.nankai.edu.cn/2017/0502/c11716a121465/page.htm\nAlso: https://m.sohu.com/a/875737930_121123801/ · https://weread.qq.com/web/bookDetail/160323f0811e344a9g0170ab · https://commons.wikimedia.org/wiki/Commons:Library_back_up_project/file_list/NLC/%E6%B0%91%E5%9C%8B%E6%96%87%E7%8D%BB/01",
     "themes": [
       "Global diffusion of tufting",
       "Woven carpet"
@@ -2590,57 +2661,68 @@ window.RUG_ITEMS = [
     "tags": [
       "to chase",
       "primary source",
-      "free online"
+      "free online",
+      "citation checked 2026",
+      "citation: partly confirmed"
     ],
     "status": "unverified",
     "collection": "Tuft the World research brief: The Non-English Record",
-    "publisher": "National Library of China via Wikimedia Commons"
+    "publisher": "Author: 方显廷 (H. D. Fong), Nankai 工业丛刊 no. 1; Wikimedia Commons copy not located",
+    "sourceUrl": "https://nkie.nankai.edu.cn/2017/0502/c11716a121465/page.htm"
   },
   {
     "id": "ner-chase-sohu-series",
     "type": "film",
     "title": "「文献里的天津」之天津地毯故事 (Sohu archival documentary series)",
     "region": "China",
-    "description": "Includes the German firm 鲁麟洋行, \"the earliest exporter of Chinese carpets\". Sohu blocks bots.",
+    "description": "Includes the German firm 鲁麟洋行, \"the earliest exporter of Chinese carpets\". Sohu blocks bots.\n\nCitation check (Oct 2026, from search results; pages not opened): confirmed.\nThe series exists, with episodes including 03：现代地毯业肇始河西 and 04：从地毯图案看天津地毯的历史变迁. 鲁麟洋行 is Wm. Pustau & Co., founded at Canton in 1845 by the Hamburg merchant Pustau; it reached Shanghai in 1855 and opened a Tianjin branch in 1890. It was an order-placing house, not a manufacturer. The 'earliest exporter' claim rests on an anecdote about a Pustau manager seeing carpets at the Yonghegong. Sohu pages appear in search results; direct fetching was not possible here.\nSource: 05：最早出口中国地毯的鲁麟洋行 (Episode 05: Pustau & Co., the earliest exporter of Chinese carpets), Sohu.\nFound at: https://m.sohu.com/a/875737930_121123801/\nAlso: https://m.sohu.com/a/870630890_121123801/ · https://www.sohu.com/a/872262854_121123801 · https://www.sohu.com/a/704707018_121123801",
     "themes": [
       "Global diffusion of tufting",
       "Woven carpet"
     ],
     "tags": [
-      "to chase"
+      "to chase",
+      "citation checked 2026",
+      "citation: confirmed"
     ],
     "status": "unverified",
     "collection": "Tuft the World research brief: The Non-English Record",
-    "publisher": "Sohu"
+    "publisher": "Sohu account 121123801 (Tianjin radio/media series 「文献里的天津」)",
+    "sourceUrl": "https://m.sohu.com/a/875737930_121123801/"
   },
   {
     "id": "ner-chase-gazetteers",
     "type": "archive",
     "title": "Chinese provincial gazetteers (地方志) on the first tufting machine imports",
     "region": "China",
-    "description": "《天津纺织工业志》, 《北京工业志·燕山石化志》, 《中国轻工业年鉴》 (early 1980s). These should name the first tufting machine imported into China, the vendor and the import approval. Print only, in Chinese libraries.",
+    "description": "《天津纺织工业志》, 《北京工业志·燕山石化志》, 《中国轻工业年鉴》 (early 1980s). These should name the first tufting machine imported into China, the vendor and the import approval. Print only, in Chinese libraries.\n\nCitation check (Oct 2026, from search results; pages not opened): partly confirmed.\n《北京工业志·燕山石化志》 exists (The Paper's 地方文献 feature). I could not locate a catalogue record for 《天津纺织工业志》 under that title. 《中国轻工业年鉴》 is a real yearbook series, but no carpet content was verified. That these 'will name the first tufting machine imported' is speculation. A 2013 trade article suggests the first tufting machine import was in 1980, and the Yanshan profile names CMC, Tuftco and Cobble as tufting suppliers, which gives a lead to check in the Yanshan volume.\nSource: 地方文献丨《北京工业志·燕山石化志》 (Local documents: Beijing Industry Gazetteer, Yanshan Petrochemical volume), The Paper.\nFound at: https://www.thepaper.cn/newsDetail_forward_7818157\nAlso: https://mag.ctax.org.cn/Article/Detail?id=44119 · http://epaper.zqcn.com.cn/content/2013-04/02/content_13896.htm",
     "themes": [
       "Global diffusion of tufting",
       "Machine tufting & Dalton"
     ],
     "tags": [
       "to chase",
-      "dating anchor"
+      "dating anchor",
+      "citation checked 2026",
+      "citation: partly confirmed"
     ],
     "status": "unverified",
-    "collection": "Tuft the World research brief: The Non-English Record"
+    "collection": "Tuft the World research brief: The Non-English Record",
+    "sourceUrl": "https://www.thepaper.cn/newsDetail_forward_7818157"
   },
   {
     "id": "ner-chase-cnki",
     "type": "archive",
     "title": "CNKI (知网) master's theses on the Tianjin carpet industry",
     "region": "China",
-    "description": "Almost certainly hold the detailed local history. Needs institutional access.",
+    "description": "Almost certainly hold the detailed local history. Needs institutional access.\n\nCitation check (Oct 2026, from search results; pages not opened): source not found.\nNo specific master's thesis on the Tianjin carpet industry's history surfaced. The only thesis found was a Nankai marketing thesis on a modern Tianjin carpet firm (TR地毯). The claim that CNKI 'almost certainly' holds such theses is unverified. Better-attested leads: Fong's 《天津地毯工业》, 《天津史志》 1986 no. 2 (cited for the 1965 Leipzig medal), and the 1924 Dittmer-school survey of Beijing carpet workers.\nSource: CNKI 中国知网.\nFound at: https://www.cnki.net/\nAlso: https://ibs.nankai.edu.cn/lib/web/student_paperinfo.asp?id=7751",
     "themes": [
       "Global diffusion of tufting"
     ],
     "tags": [
-      "to chase"
+      "to chase",
+      "citation checked 2026",
+      "citation: source not found"
     ],
     "status": "unverified",
     "collection": "Tuft the World research brief: The Non-English Record",
@@ -2650,21 +2732,24 @@ window.RUG_ITEMS = [
   {
     "id": "ner-chase-goswami",
     "type": "book",
-    "title": "K. K. Goswami, Advances in Carpet Manufacture, 2nd ed., chapters 11–12",
+    "title": "K. K. Goswami, Advances in Carpet Manufacture, 2nd ed., chapters 12–13 (handmade carpets)",
     "region": "India",
-    "description": "By the founder director of IICT Bhadohi. The most likely place a sourced Indian hand-tufting chronology exists. Paywalled (Elsevier/Woodhead).",
+    "description": "By the founder director of IICT Bhadohi. The most likely place a sourced Indian hand-tufting chronology exists. Paywalled (Elsevier/Woodhead).\n\nCitation check (Oct 2026, from search results; pages not opened): partly confirmed.\nChapter numbers are wrong. Per a ToC listing, ch. 11 is 'Functional finish for value added carpets', and the handmade-carpet chapters are 12 ('Developments in handmade carpets: introduction') and 13 ('...: design and manufacture'). Tufting has its own separate chapter. Goswami is (or was) Director of IICT Bhadohi, but 'founder director' is unconfirmed: IICT was set up by the Ministry of Textiles c. 2001. The book is edited, not single-authored.\nSource: Advances in Carpet Manufacture, 2nd ed. (ed. K. K. Goswami), Elsevier/Woodhead, 2nd ed. published 15 Sept 2017 (copyright 2018).\nFound at: https://shop.elsevier.com/books/advances-in-carpet-manufacture/goswami/978-0-08-101131-7\nAlso: https://www.lavoisier.fr/livre/industries-chimiques/advances-in-carpet-manufacture/descriptif_3771193 · https://www.textileinstitute.org/product/advances-in-carpet-manufacture/",
     "themes": [
       "Global diffusion of tufting",
       "Hand-tufting tools & the gun"
     ],
     "tags": [
       "to chase",
-      "priority"
+      "priority",
+      "citation checked 2026",
+      "citation: partly confirmed"
     ],
     "status": "unverified",
     "collection": "Tuft the World research brief: The Non-English Record",
     "creator": "K. K. Goswami (ed.)",
-    "publisher": "Woodhead Publishing / Elsevier"
+    "publisher": "Woodhead Publishing (Elsevier), The Textile Institute Book Series",
+    "sourceUrl": "https://shop.elsevier.com/books/advances-in-carpet-manufacture/goswami/978-0-08-101131-7"
   },
   {
     "id": "ttw-susan-burr",
