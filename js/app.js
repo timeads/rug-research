@@ -934,11 +934,13 @@
   // Archives on the Other archives page that a live search above already covers.
   const LIVE_COVERS = new Set(["The Met", "Internet Archive", "Trade catalogs on Internet Archive"]);
   const LINKOUT = () => (window.RUG_SOURCES || []).filter(x => !LIVE_COVERS.has(x.name));
+  // A source's search address for these words. "copy" sources have no linkable search: open the site, copy the words.
+  const sourceHref = (x, q) => q ? x.url.replace("{q}", encodeURIComponent(q)) : x.home;
   const buildDiscoverSources = () => {
     const sel = $("#dsource"), keep = sel.value || "all";
     sel.innerHTML = `<option value="all">All live collections at once</option>
       <optgroup label="Live results here">${LIVE.map(([k, n]) => `<option value="${k}">${esc(n)}</option>`).join("")}</optgroup>
-      <optgroup label="Opens the archive's own search">${LINKOUT().map((x, i) => `<option value="link:${i}">${esc(x.group === x.name ? x.name : x.group + ": " + x.name)}</option>`).join("")}</optgroup>`;
+      <optgroup label="Opens the archive's own search">${LINKOUT().map((x, i) => `<option value="link:${i}">${esc((x.group === x.name ? x.name : x.group + ": " + x.name) + (x.via ? ` (via ${x.via})` : ""))}</option>`).join("")}</optgroup>`;
     sel.value = [...sel.options].some(o => o.value === keep) ? keep : "all";
   };
   const renderLinkouts = q => {
@@ -946,13 +948,26 @@
     for (const x of LINKOUT()) (groups[x.group] = groups[x.group] || []).push(x);
     $("#discover-more").innerHTML = q ? `<h2>Search the other archives for “${esc(q)}”</h2>
       <p class="status">These collections have no open search a web page can use, so each link opens their own search with your words filled in.</p>
-      ${Object.entries(groups).map(([g, list]) => `<div class="more-group"><h3>${esc(g)}</h3><div class="chips">${list.map(x => `<a class="chip" href="${esc(x.url.replace("{q}", encodeURIComponent(q)))}" target="_blank" rel="noopener">${esc(x.name)}${icon("external", "sm")}</a>`).join("")}</div></div>`).join("")}` : "";
+      ${Object.entries(groups).map(([g, list]) => `<div class="more-group"><h3>${esc(g)}</h3><div class="chips">${list.map(x => `<a class="chip" href="${esc(sourceHref(x, q))}" target="_blank" rel="noopener"${x.copy ? ` data-copy="${esc(q)}"` : ""} title="${esc(x.copy ? "Opens the catalogue and copies your search words to paste in" : x.via ? `Searches through ${x.via}, which only finds pages it has indexed` : "Opens their own search")}">${esc(x.name)}${x.via ? `<small>via ${esc(x.via)}</small>` : x.copy ? "<small>paste</small>" : ""}${icon("external", "sm")}</a>`).join("")}</div></div>`).join("")}` : "";
   };
   // Interleave each collection's results so the first screen shows a mix.
   const interleave = lists => { const out = []; for (let i = 0; lists.some(l => i < l.length); i++) for (const l of lists) if (i < l.length) out.push(l[i]); return out; };
   const runDiscover = async () => {
     const q = $("#dq").value.trim(), src = $("#dsource").value;
-    if (q && src.startsWith("link:")) { const x = LINKOUT()[+src.slice(5)]; if (x) window.open(x.url.replace("{q}", encodeURIComponent(q)), "_blank", "noopener"); renderLinkouts(q); return; }
+    if (src.startsWith("link:")) {
+      const x = LINKOUT()[+src.slice(5)], status = $("#discover-status");
+      if (!q) { status.textContent = "Type something to search for."; $("#dq").focus(); return; }
+      if (!x) return;
+      const url = sourceHref(x, q);
+      if (x.copy) copyWords(q);
+      window.open(url, "_blank", "noopener");
+      discoverResults = []; renderDiscover(); renderLinkouts(q);
+      status.className = "status";
+      status.innerHTML = x.copy
+        ? `Opened ${esc(x.name)} in a new tab. Its search can't be linked to directly, so your words “${esc(q)}” are copied: paste them into its search box. If no tab opened, your browser blocked it: <a href="${esc(url)}" target="_blank" rel="noopener">open it</a>.`
+        : `Opened ${esc(x.name)} (${esc(x.group)}) in a new tab, searching for “${esc(q)}”${x.via ? ` through ${esc(x.via)}, which only finds pages it has indexed` : ""}. Results appear on their site, not here. If no tab opened, your browser blocked it: <a href="${esc(url)}" target="_blank" rel="noopener">open the search</a>.`;
+      return;
+    }
     const status = $("#discover-status");
     if (!q) { status.textContent = "Type something to search for."; $("#dq").focus(); return; }
     status.className = "status"; status.textContent = "Searching…";
@@ -961,7 +976,9 @@
     renderLinkouts(q);
     try {
       if (src === "all") {
-        const runs = await Promise.allSettled(LIVE.map(([k]) => DISCOVER[k](q)));
+        // One retry per collection: a busy API often answers the second time.
+        const tryTwice = k => DISCOVER[k](q).catch(() => new Promise(r => setTimeout(r, 800)).then(() => DISCOVER[k](q)));
+        const runs = await Promise.allSettled(LIVE.map(([k]) => tryTwice(k)));
         const ok = runs.map((r, i) => [LIVE[i][1], r.status === "fulfilled" ? r.value.filter(x => x.image || x.type === "book") : null]);
         const lists = ok.filter(([, v]) => v && v.length).map(([, v]) => v);
         const failed = ok.filter(([, v]) => !v).map(([n]) => n);
@@ -969,7 +986,7 @@
         const from = ok.filter(([, v]) => v && v.length).map(([n, v]) => `${n} ${v.length}`).join(", ");
         status.textContent = discoverResults.length ? `${discoverResults.length} results from ${lists.length} collections (${from}).${failed.length ? ` Didn't respond: ${failed.join(", ")}.` : ""}` : `No results for “${q}” in any live collection. Try a broader word, or the archive links below.`;
       } else {
-        discoverResults = await DISCOVER[src](q);
+        discoverResults = await DISCOVER[src](q).catch(() => new Promise(r => setTimeout(r, 800)).then(() => DISCOVER[src](q)));
         status.textContent = discoverResults.length ? `${discoverResults.length} results. Add the ones you want to keep.` : `No results for “${q}”. Try a broader word, another collection, or the archive links below.`;
       }
     } catch (err) {
@@ -1000,8 +1017,8 @@
     const groups = {};
     for (const s of window.RUG_SOURCES || []) (groups[s.group] = groups[s.group] || []).push(s);
     $("#sources").innerHTML = Object.entries(groups).map(([g, list]) => `<section class="src-group"><h2>${esc(g)}</h2><div class="src-links">${list.map(s => {
-      const href = q ? s.url.replace("{q}", encodeURIComponent(q)) : s.home;
-      return `<a class="src-link" href="${esc(href)}" target="_blank" rel="noopener"><span><strong>${esc(s.name)}</strong><small>${q ? "Search for “" + esc(q) + "”" : "Open the collection"}</small></span>${icon("external")}</a>`;
+      const href = sourceHref(s, q);
+      return `<a class="src-link" href="${esc(href)}" target="_blank" rel="noopener"${s.copy && q ? ` data-copy="${esc(q)}"` : ""}><span><strong>${esc(s.name)}</strong><small>${q ? (s.copy ? "Open and paste “" + esc(q) + "”" : "Search for “" + esc(q) + "”") : "Open the collection"}${s.via ? esc(` · via ${s.via}`) : ""}</small></span>${icon("external")}</a>`;
     }).join("")}</div></section>`).join("");
   };
 
@@ -1211,7 +1228,17 @@
   $("#btn-print").onclick = () => window.print();
 
   // discover
+  const copyWords = q => { try { navigator.clipboard.writeText(q).then(() => toast(`Copied “${q}”: paste it into their search box`), () => {}); } catch {} };
+  document.addEventListener("click", e => { const a = e.target.closest("a[data-copy]"); if (a) copyWords(a.dataset.copy); });
   buildDiscoverSources();
+  // Archives that open elsewhere get a different button and a plain-words note, so the page never looks stuck.
+  const syncDiscoverButton = () => {
+    const src = $("#dsource").value, link = src.startsWith("link:"), x = link && LINKOUT()[+src.slice(5)];
+    $("#btn-discover").innerHTML = link ? `Open search${icon("external")}` : "Search";
+    if (link && x) { discoverResults = []; renderDiscover(); const st = $("#discover-status"); st.className = "status"; st.textContent = x.copy ? `${x.group}: ${x.name} can't be searched by link, so the button opens it and copies your words to paste.` : `${x.group}: ${x.name} has no search this page can run, so the button opens ${x.via ? `a ${x.via} search of it` : "their own search"} in a new tab.`; }
+    else if (!discoverResults.length) $("#discover-status").textContent = "";
+  };
+  $("#dsource").addEventListener("change", syncDiscoverButton);
   $("#btn-discover").onclick = runDiscover;
   $("#dq").addEventListener("keydown", e => { if (e.key === "Enter") runDiscover(); });
   $("#discover-results").addEventListener("click", e => {
