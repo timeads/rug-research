@@ -65,6 +65,23 @@ const APIS = {
   hagleyFA: `https://findingaids.hagley.org/search?q[]=${e}&format=json`,
   mfa: `https://collections.mfa.org/search/objects/*/${e}/json`,
   chs: `https://emuseum.chs.org/search/${e}/objects/json`,
+  // Can these be indexed by a job, like the Winterthur museum? (October 2026)
+  qxYarn: `https://digitalcollections.winterthur.org/documents/search?search=hooked%20rug`,
+  qxApi: `https://digitalcollections.winterthur.org/api/documents/search?search=hooked%20rug`,
+  qxIiif: `https://digitalcollections.winterthur.org/iiif/collection`,
+  qxSitemap: `https://digitalcollections.winterthur.org/sitemap.xml`,
+  wintercatHome: `https://library.winterthur.org/`,
+  wintercatOai: `https://library.winterthur.org/oai?verb=Identify`,
+  hagleyOai: `https://digital.hagley.org/oai2?verb=Identify`,
+  hagleySitemap: `https://digital.hagley.org/sitemap.xml`,
+  bandySearch: `https://bandyheritagecenter.pastperfectonline.com/search?search_criteria=chenille`,
+  bandyBrowse: `https://bandyheritagecenter.pastperfectonline.com/bysearchterm?keyword=Bedspreads`,
+  dpla: `https://api.dp.la/v2/items?q=${e}`,
+  dlgRecords: `https://dlg.usg.edu/records.json?q=chenille&per_page=3`,
+  mfah: `https://emuseum.mfah.org/search/chenille/objects/json`,
+  cwf: `https://emuseum.history.org/search/bed%20rug/objects/json`,
+  hne: `https://www.historicnewengland.org/explore/collections-access/?s=hooked+rug`,
+  cooperHewitt: `https://api.collection.cooperhewitt.org/rest/?method=cooperhewitt.search.objects&query=rug`,
 };
 // "sources" mode: try every Other archives search link with a sample query.
 if (process.argv[2] === "sources") {

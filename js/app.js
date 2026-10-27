@@ -1017,6 +1017,10 @@
       } else {
         discoverResults = await DISCOVER[src](q).catch(() => new Promise(r => setTimeout(r, 800)).then(() => DISCOVER[src](q)));
         status.textContent = discoverResults.length ? `${discoverResults.length} results. Add the ones you want to keep.` : `No results for “${q}”. Try a broader word, another collection, or the archive links below.`;
+        if (src === "winterthur") {
+          const idx = await winterthurIndex();
+          status.textContent += ` Searched ${idx.count.toLocaleString()} Winterthur objects (copy saved ${new Date(idx.builtAt).toLocaleDateString(undefined, { day: "numeric", month: "short", year: "numeric" })}; it updates weekly).`;
+        }
       }
     } catch (err) {
       console.error(err); discoverResults = [];
