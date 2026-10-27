@@ -175,7 +175,7 @@
     <section class="view" id="view-discover" hidden>
       <header class="view-head">
         <h1>Discover</h1>
-        <p>Search open museum and library collections and add results, with their images, in one click.</p>
+        <p>Search ten open museum, library and archive collections at once, or one at a time, and add results with their images in one click. Every other archive is one click away below your results.</p>
       </header>
       <div class="searchbar">
         <label class="search">
@@ -184,17 +184,14 @@
         </label>
         <div class="search-tools">
           <label class="select"><span class="vh">Collection</span>
-            <select id="dsource">
-              <option value="met">The Met</option>
-              <option value="aic">Art Institute of Chicago</option>
-              <option value="openlibrary">Open Library (books)</option>
-            </select>
+            <select id="dsource"></select>
           </label>
           <button class="btn primary" id="btn-discover">Search</button>
         </div>
       </div>
       <p id="discover-status" class="status" role="status"></p>
       <div id="discover-results" class="grid"></div>
+      <section id="discover-more" class="discover-more" aria-live="polite"></section>
     </section>
 
     <!-- SOURCES -->

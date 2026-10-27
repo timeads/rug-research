@@ -576,3 +576,15 @@ input[type="search"]::-webkit-search-cancel-button:hover { background: var(--ink
 .ms-editor:focus { outline: none; }
 .ms-hint { margin: 8px 0 0; font-size: var(--t-sm); color: var(--ink-3); }
 .ms-prose[data-ms-text] { cursor: text; }
+
+/* ---------- discover: other archives ---------- */
+.discover-more:not(:empty) { margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--line); }
+.discover-more h2 { font-size: var(--t-lg); }
+.discover-more .status { margin: 6px 0 16px; min-height: 0; }
+.more-group { margin-bottom: 16px; }
+.more-group h3 { margin-bottom: 8px; font-size: var(--t-sm); font-weight: 650; color: var(--ink-2); }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; border: 1px solid var(--line-strong); border-radius: 999px; background: var(--surface); color: var(--ink); text-decoration: none; font-size: var(--t-sm); font-weight: 550; }
+.chip:hover { border-color: var(--ink-3); }
+.chip .ic { color: var(--ink-3); }
+.plate-rel { position: absolute; left: 8px; bottom: 8px; padding: 2px 8px; border-radius: 999px; background: rgb(0 0 0 / .62); color: #fff; font-size: var(--t-xs); font-weight: 550; pointer-events: none; }

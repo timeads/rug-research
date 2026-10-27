@@ -151,6 +151,18 @@
     for (const [id, x] of Object.entries(S.items)) if (!BASE_IDS.has(id) && !S.deleted[id]) list.push(x);
     ITEMS = list.map(norm);
     BY_ID = Object.fromEntries(ITEMS.map(x => [x.id, x]));
+    // Records with no image (mostly research findings) borrow one from a record their own text cites,
+    // by id ("see pat-us2335487a") or by US patent number, and say so on the card and in the credit.
+    const byPatent = {};
+    for (const x of ITEMS) if (x.image && x.type === "patent" && x.identifier) byPatent[x.identifier.replace(/[\s,]/g, "").replace(/[A-Z]\d?$/, "").toUpperCase()] = x;
+    for (const it of ITEMS) {
+      if (it.image || it.imageSource === "rejected") continue;
+      const text = [it.description, it.citation].join(" ");
+      let rel = null;
+      for (const m of text.matchAll(/\b([a-z]{2,8}(?:-[a-z0-9]+)+)\b/g)) { const x = BY_ID[m[1]]; if (x && x !== it && x.image && !x._borrowed) { rel = x; break; } }
+      if (!rel) for (const m of text.matchAll(/\bUS\s?(\d[\d,]{5,9})/g)) { const x = byPatent["US" + m[1].replace(/,/g, "")]; if (x && x !== it) { rel = x; break; } }
+      if (rel) Object.assign(it, { image: rel.image, imageCredit: `Image from related record: ${rel.title}${rel.imageCredit ? ` (${rel.imageCredit})` : ""}`, _borrowed: rel.id });
+    }
     for (const it of ITEMS) {
       it._hay = {
         title: (it.title || "").toLowerCase(),
@@ -284,7 +296,7 @@
   const plateHTML = (it, alt = "") => {
     const src = imgSrc(it);
     return src
-      ? `<img src="${esc(src)}" alt="${esc(alt)}" loading="lazy" decoding="async" referrerpolicy="no-referrer" data-fallback="${esc(boardPlate(it))}">`
+      ? `<img src="${esc(src)}" alt="${esc(alt)}" loading="lazy" decoding="async" referrerpolicy="no-referrer" data-fallback="${esc(boardPlate(it))}">${it._borrowed ? `<span class="plate-rel" title="${esc(it.imageCredit)}">Related record</span>` : ""}`
       : boardPlate(it);
   };
   // Broken remote images fall back to the board plate.
@@ -598,6 +610,7 @@
     }
     form.elements.imageFile.value = "";
     if (it.image && it.image.startsWith("idb:")) form.elements.image.value = it.image;
+    if (it._borrowed) { form.elements.image.value = ""; if (form.elements.imageCredit) form.elements.imageCredit.value = ""; } // a related record's image isn't this record's own
     $("#btn-delete-item").hidden = !id;
     $("#dl-inst").innerHTML = [...new Set(ITEMS.map(x => x.institution).filter(Boolean))].map(v => `<option value="${esc(v)}">`).join("");
     $("#dl-region").innerHTML = [...new Set(ITEMS.map(x => x.region).filter(Boolean))].map(v => `<option value="${esc(v)}">`).join("");
@@ -805,7 +818,8 @@
   let discoverResults = [];
   const DISCOVER = {
     async met(q) {
-      const s = await (await fetch(`https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&q=${encodeURIComponent(q)}`)).json();
+      // v1 search was retired on 2026-10-01; v1.1 is paginated with offset and limit.
+      const s = await (await fetch(`https://collectionapi.metmuseum.org/public/collection/v1.1/search?hasImages=true&limit=24&q=${encodeURIComponent(q)}`)).json();
       const ids = (s.objectIDs || []).slice(0, 24);
       const objs = await Promise.allSettled(ids.map(id => fetch(`https://collectionapi.metmuseum.org/public/collection/v1/objects/${id}`).then(r => r.json())));
       return objs.filter(o => o.status === "fulfilled" && o.value && o.value.objectID).map(({ value: o }) => ({
@@ -829,6 +843,73 @@
         status: "verified", tags: ["via AIC API"]
       }));
     },
+    async vam(q) {
+      const r = await (await fetch(`https://api.vam.ac.uk/v2/objects/search?q=${encodeURIComponent(q)}&page_size=24&images_exist=1`)).json();
+      return (r.records || []).map(o => ({
+        id: "vam-" + o.systemNumber, type: "object", title: o._primaryTitle || o.objectType || "Untitled", creator: o._primaryMaker?.name || "",
+        date: o._primaryDate || "", dateStart: parseInt(o._primaryDate, 10) || null, place: o._primaryPlace || "", institution: "Victoria and Albert Museum",
+        identifier: o.accessionNumber, description: o.objectType || "",
+        image: o._images?._iiif_image_base_url ? o._images._iiif_image_base_url + "full/!600,600/0/default.jpg" : (o._images?._primary_thumbnail || ""),
+        sourceUrl: `https://collections.vam.ac.uk/item/${o.systemNumber}/`, status: "verified", tags: ["via V&A API"]
+      }));
+    },
+    async cleveland(q) {
+      const r = await (await fetch(`https://openaccess-api.clevelandart.org/api/artworks/?q=${encodeURIComponent(q)}&limit=24&has_image=1`)).json();
+      return (r.data || []).map(o => ({
+        id: "cma-" + o.id, type: "object", title: o.title, creator: (o.creators || []).map(c => c.description).join("; ") || o.culture?.[0] || "",
+        date: o.creation_date, dateStart: o.creation_date_earliest ?? null, dateEnd: o.creation_date_latest ?? null, institution: "Cleveland Museum of Art",
+        collection: o.department, identifier: o.accession_number, materials: o.technique ? [o.technique] : [], description: o.type || "",
+        image: o.images?.web?.url || "", sourceUrl: o.url, status: "verified", tags: ["via Cleveland Museum of Art API"]
+      }));
+    },
+    async smithsonian(q) {
+      // Public demo key: rate-limited per visitor, fine for occasional searches.
+      const r = await (await fetch(`https://api.si.edu/openaccess/api/v1.0/search?q=${encodeURIComponent(q + " AND online_media_type:Images")}&rows=24&api_key=DEMO_KEY`)).json();
+      return (r.response?.rows || []).map(o => {
+        const d = o.content?.descriptiveNonRepeating || {}, f = o.content?.freetext || {}, ix = o.content?.indexedStructured || {};
+        const m = (d.online_media?.media || []).find(x => x.type === "Images") || {};
+        return {
+          id: "si-" + (d.record_ID || o.id), type: "object", title: o.title, creator: (f.name || []).map(n => n.content).join("; "),
+          date: (f.date || [])[0]?.content || (ix.date || [])[0] || "", dateStart: parseInt((ix.date || [])[0], 10) || null,
+          institution: d.data_source || d.unit_code || "Smithsonian Institution", identifier: (f.identifier || [])[0]?.content || "",
+          description: (f.objectType || []).map(n => n.content).join(", "), image: m.thumbnail || m.content || "",
+          sourceUrl: d.record_link || d.guid || "", status: "verified", tags: ["via Smithsonian Open Access"]
+        };
+      });
+    },
+    async europeana(q) {
+      const r = await (await fetch(`https://api.europeana.eu/record/v2/search.json?query=${encodeURIComponent(q)}&rows=24&media=true&wskey=api2demo`)).json();
+      return (r.items || []).map(o => ({
+        id: "eu-" + o.id.replace(/\W+/g, "-").replace(/^-/, ""), type: o.type === "TEXT" ? "book" : "object", title: (o.title || ["Untitled"])[0],
+        creator: (o.dcCreator || []).join("; "), date: (o.year || [])[0] || "", dateStart: parseInt((o.year || [])[0], 10) || null,
+        place: (o.country || []).join(", "), institution: (o.dataProvider || [])[0] || "Europeana",
+        description: ((o.dcDescription || [])[0] || "").slice(0, 400), image: (o.edmPreview || [])[0] || "",
+        sourceUrl: (o.guid || "").split("?")[0], status: "unverified", tags: ["via Europeana"]
+      }));
+    },
+    async archive(q, extra = "") {
+      const r = await (await fetch(`https://archive.org/advancedsearch.php?q=${encodeURIComponent("(" + q + ")" + extra)}&fl[]=identifier&fl[]=title&fl[]=creator&fl[]=year&fl[]=mediatype&fl[]=publisher&fl[]=description&rows=24&output=json`)).json();
+      return (r.response?.docs || []).map(d => ({
+        id: "ia-" + d.identifier, type: d.mediatype === "texts" ? (/catalog/i.test(d.title || "") ? "trade-catalog" : "book") : d.mediatype === "movies" ? "film" : "image",
+        title: d.title || d.identifier, creator: [].concat(d.creator || []).join("; "), date: d.year ? String(d.year) : "", dateStart: parseInt(d.year, 10) || null,
+        publisher: [].concat(d.publisher || [])[0] || "", institution: "Internet Archive",
+        description: String([].concat(d.description || [])[0] || "").replace(/<[^>]+>/g, " ").slice(0, 400),
+        image: `https://archive.org/services/img/${d.identifier}`, sourceUrl: `https://archive.org/details/${d.identifier}`, status: "unverified", tags: ["via Internet Archive"]
+      }));
+    },
+    winterthurIA(q) { return DISCOVER.archive(q, " AND contributor:(Winterthur)"); },
+    async commons(q) {
+      const r = await (await fetch(`https://commons.wikimedia.org/w/api.php?action=query&format=json&origin=*&generator=search&gsrnamespace=6&gsrsearch=${encodeURIComponent(q)}&gsrlimit=24&prop=imageinfo&iiprop=url|extmetadata&iiurlwidth=600`)).json();
+      return Object.values(r.query?.pages || {}).sort((a, b) => a.index - b.index).map(p => {
+        const ii = (p.imageinfo || [])[0] || {}, md = ii.extmetadata || {}, txt = k => (md[k]?.value || "").replace(/<[^>]+>/g, "").trim();
+        return {
+          id: "wc-" + p.pageid, type: "image", title: txt("ObjectName") || p.title.replace(/^File:/, "").replace(/\.\w+$/, ""), creator: txt("Artist"),
+          date: txt("DateTimeOriginal"), dateStart: parseInt(txt("DateTimeOriginal"), 10) || null, institution: "Wikimedia Commons",
+          description: txt("ImageDescription").slice(0, 400), rights: /public domain|cc0/i.test(txt("LicenseShortName")) ? "public-domain" : "",
+          image: ii.thumburl || ii.url || "", sourceUrl: ii.descriptionurl || "", status: "unverified", tags: ["via Wikimedia Commons"]
+        };
+      });
+    },
     async openlibrary(q) {
       const r = await (await fetch(`https://openlibrary.org/search.json?q=${encodeURIComponent(q)}&limit=24&fields=key,title,subtitle,author_name,first_publish_year,cover_i,publisher,isbn,place`)).json();
       return (r.docs || []).map(d => ({
@@ -840,20 +921,56 @@
       }));
     }
   };
+  const LIVE = [
+    ["met", "The Met"], ["vam", "V&A"], ["aic", "Art Institute of Chicago"], ["cleveland", "Cleveland Museum of Art"],
+    ["smithsonian", "Smithsonian"], ["europeana", "Europeana (European museums)"], ["archive", "Internet Archive"],
+    ["winterthurIA", "Winterthur trade catalogs (Internet Archive)"], ["commons", "Wikimedia Commons"], ["openlibrary", "Open Library (books)"]
+  ];
+  // Archives on the Other archives page that a live search above already covers.
+  const LIVE_COVERS = new Set(["The Met", "Internet Archive", "Trade catalogs on Internet Archive"]);
+  const LINKOUT = () => (window.RUG_SOURCES || []).filter(x => !LIVE_COVERS.has(x.name));
+  const buildDiscoverSources = () => {
+    const sel = $("#dsource"), keep = sel.value || "all";
+    sel.innerHTML = `<option value="all">All live collections at once</option>
+      <optgroup label="Live results here">${LIVE.map(([k, n]) => `<option value="${k}">${esc(n)}</option>`).join("")}</optgroup>
+      <optgroup label="Opens the archive's own search">${LINKOUT().map((x, i) => `<option value="link:${i}">${esc(x.group === x.name ? x.name : x.group + ": " + x.name)}</option>`).join("")}</optgroup>`;
+    sel.value = [...sel.options].some(o => o.value === keep) ? keep : "all";
+  };
+  const renderLinkouts = q => {
+    const groups = {};
+    for (const x of LINKOUT()) (groups[x.group] = groups[x.group] || []).push(x);
+    $("#discover-more").innerHTML = q ? `<h2>Search the other archives for “${esc(q)}”</h2>
+      <p class="status">These collections have no open search a web page can use, so each link opens their own search with your words filled in.</p>
+      ${Object.entries(groups).map(([g, list]) => `<div class="more-group"><h3>${esc(g)}</h3><div class="chips">${list.map(x => `<a class="chip" href="${esc(x.url.replace("{q}", encodeURIComponent(q)))}" target="_blank" rel="noopener">${esc(x.name)}${icon("external", "sm")}</a>`).join("")}</div></div>`).join("")}` : "";
+  };
+  // Interleave each collection's results so the first screen shows a mix.
+  const interleave = lists => { const out = []; for (let i = 0; lists.some(l => i < l.length); i++) for (const l of lists) if (i < l.length) out.push(l[i]); return out; };
   const runDiscover = async () => {
     const q = $("#dq").value.trim(), src = $("#dsource").value;
+    if (q && src.startsWith("link:")) { const x = LINKOUT()[+src.slice(5)]; if (x) window.open(x.url.replace("{q}", encodeURIComponent(q)), "_blank", "noopener"); renderLinkouts(q); return; }
     const status = $("#discover-status");
     if (!q) { status.textContent = "Type something to search for."; $("#dq").focus(); return; }
     status.className = "status"; status.textContent = "Searching…";
     $("#discover-results").innerHTML = Array.from({ length: 8 }, () => `<div class="card skel" aria-hidden="true"><div class="plate"></div><div class="bar"></div><div class="bar short"></div></div>`).join("");
     $("#btn-discover").disabled = true;
+    renderLinkouts(q);
     try {
-      discoverResults = await DISCOVER[src](q);
-      status.textContent = discoverResults.length ? `${discoverResults.length} results. Add the ones you want to keep.` : `No results for “${q}”. Try a broader word, or another collection.`;
+      if (src === "all") {
+        const runs = await Promise.allSettled(LIVE.map(([k]) => DISCOVER[k](q)));
+        const ok = runs.map((r, i) => [LIVE[i][1], r.status === "fulfilled" ? r.value.filter(x => x.image || x.type === "book") : null]);
+        const lists = ok.filter(([, v]) => v && v.length).map(([, v]) => v);
+        const failed = ok.filter(([, v]) => !v).map(([n]) => n);
+        discoverResults = interleave(lists);
+        const from = ok.filter(([, v]) => v && v.length).map(([n, v]) => `${n} ${v.length}`).join(", ");
+        status.textContent = discoverResults.length ? `${discoverResults.length} results from ${lists.length} collections (${from}).${failed.length ? ` Didn't respond: ${failed.join(", ")}.` : ""}` : `No results for “${q}” in any live collection. Try a broader word, or the archive links below.`;
+      } else {
+        discoverResults = await DISCOVER[src](q);
+        status.textContent = discoverResults.length ? `${discoverResults.length} results. Add the ones you want to keep.` : `No results for “${q}”. Try a broader word, another collection, or the archive links below.`;
+      }
     } catch (err) {
       console.error(err); discoverResults = [];
       status.className = "status error";
-      status.textContent = "That collection couldn't be reached. Check your connection and try again, or use Other archives.";
+      status.textContent = "That collection couldn't be reached. Try again, choose All live collections, or use the archive links below.";
     }
     $("#btn-discover").disabled = false;
     renderDiscover();
@@ -1089,6 +1206,7 @@
   $("#btn-print").onclick = () => window.print();
 
   // discover
+  buildDiscoverSources();
   $("#btn-discover").onclick = runDiscover;
   $("#dq").addEventListener("keydown", e => { if (e.key === "Enter") runDiscover(); });
   $("#discover-results").addEventListener("click", e => {
