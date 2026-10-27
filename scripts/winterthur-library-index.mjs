@@ -15,9 +15,12 @@ const BASE = "https://digitalcollections.winterthur.org";
 const OUT = new URL("../data/winterthur-library-index.json", import.meta.url);
 const UA = "Mozilla/5.0 (compatible; RugResearchIndexBot/1.0; +https://github.com/timeads/rug-research)";
 const args = process.argv.slice(2);
-const BUDGET = Number(args[args.indexOf("--details") + 1]) || 800;
+const BUDGET = Number(args[args.indexOf("--details") + 1]) || 1500;
 const sleep = ms => new Promise(r => setTimeout(r, ms));
-const KEYWORDS = /rug|carpet|hook|tuft|textile|yarn|chenille|candlewick|coverlet|weav|loom|needle|embroider|sampler|fabric|cloth|wool|worsted|cotton|silk|dye|pattern|swatch|sample|quilt|bed-?spread|bedcover|floor|upholster|curtain|drapery|linen|lace|knit|spinn|mill|nylon|du-?pont|bigelow|axminster|wilton|brussels|ingrain|kidderminster|mat\b|matting|oilcloth|tapestry|furnish/;
+// Whole words in the address (words are separated by hyphens), so "rug" doesn't match "Ruggles".
+const KEYWORDS = /\b(rugs?|carpets?|carpeting|hook(ed|ing)?|tuft(ed|ing)?|textiles?|yarns?|chenille|candlewick|coverlets?|weav\w*|looms?|needle\w*|embroider\w*|samplers?|fabrics?|cloth|wool\w*|worsted|cotton|silks?|dye\w*|patterns?|swatch\w*|samples?|quilt\w*|bed-?spreads?|bedcovers?|floor\w*|upholster\w*|curtains?|drapery|linens?|lace|knit\w*|spinn\w*|mills?|nylon|du-?pont|bigelow|axminster|wilton|brussels|ingrain|kidderminster|mats?|matting|oilcloth|tapestr\w*|furnish\w*)\b/;
+// Bump when the detail-page reader changes, so earlier detail reads are redone.
+const READER = 2;
 
 async function get(url) {
   for (let attempt = 1; attempt <= 3; attempt++) {
@@ -43,7 +46,7 @@ function field(html, ...labels) {
 }
 
 let prev = {};
-try { for (const row of JSON.parse(await readFile(OUT, "utf8")).rows) prev[row[0]] = row; } catch {}
+try { const old = JSON.parse(await readFile(OUT, "utf8")); if (old.reader === READER) for (const row of old.rows) prev[row[0]] = row; } catch {}
 
 // 1. Every document, from the sitemap.
 const index = await get(`${BASE}/sitemap.xml`);
@@ -66,31 +69,39 @@ for (const [id, slug] of wanted.slice(0, BUDGET)) {
   await sleep(400);
   if (!html) continue;
   read++;
-  const title = meta(html, "og:title") || decode((html.match(/<title>([^<]*)<\/title>/i) || [])[1]).replace(/\s*-\s*Winterthur Library Digital Collections\s*$/i, "");
+  // The page carries its catalogue fields as embedded data: {"id":"field_11","name":"Date (EDTF)","value":"1880 - 1889",...,"tags":[...]}
+  const f = {};
+  for (const m of html.matchAll(/\{"id":"field_\d+","name":"([^"]+)","value":(null|"(?:[^"\\]|\\.)*"),"fieldType":"[^"]*","tags":(\[(?:[^\]"]|"(?:[^"\\]|\\.)*")*\])/g)) {
+    try { const v = JSON.parse(m[2]) || JSON.parse(m[3]).join("; "); if (v && !f[m[1]]) f[m[1]] = String(v).replace(/\s+/g, " ").trim(); } catch {}
+  }
+  const pick = (...ks) => ks.map(k => f[k]).find(Boolean) || "";
+  const title = decode((html.match(/<h1[^>]*document-viewer__heading[^>]*>([^<]*)</) || html.match(/<title>([^<]*)<\/title>/i) || [])[1]).replace(/\s*-\s*Winterthur Library Digital Collections\s*$/i, "");
+  const pages = (html.match(/"thumbnailUrl":/g) || []).length;
   details[id] = {
-    title: title.replace(/\s*-\s*Winterthur Library Digital Collections\s*$/i, ""),
-    date: field(html, "Date", "Date Created", "Date of Publication", "Dates"),
-    creator: field(html, "Creator", "Author", "Publisher", "Maker"),
-    collection: field(html, "Collection", "Part of", "Source"),
-    image: meta(html, "og:image"),
-    description: (meta(html, "og:description") || meta(html, "description")).slice(0, 400)
+    title: pick("Title") || title,
+    date: pick("Date (EDTF)", "Date", "Date Created", "Dates"),
+    creator: pick("Creator", "Author", "Publisher", "Maker", "Manufacturer"),
+    collection: pick("Source Collection", "Collection"),
+    description: [pick("Description", "Abstract", "Summary"), pick("Subjects", "Subject") && "Subjects: " + pick("Subjects", "Subject"), pick("Place") && "Place: " + pick("Place"), pick("Format", "Type") && "Format: " + pick("Format", "Type"), pages > 1 ? `${pages} pages` : ""].filter(Boolean).join(". ").slice(0, 700),
+    identifier: pick("Identifier", "Call Number")
   };
   if (read === 1) console.log("First detail page read:", JSON.stringify(details[id]));
 }
 console.log(`Detail pages read this run: ${read}; still to read: ${Math.max(0, wanted.length - read)}`);
 
-// Compact rows: [id, slug, title, date, creator, collection, image, detailRead, keywordHit, description]
+// Compact rows: [id, slug, title, date, creator, collection, image, detailRead, keywordHit, description, identifier]
+// The scans need a short-lived access key, so they can't be linked from another site: image stays empty.
 const rows = [...docs].map(([id, slug]) => {
   const d = details[id], p = prev[id];
   const kw = KEYWORDS.test(slug) ? 1 : 0;
-  if (d) return [id, slug, d.title || fromSlug(slug), d.date, d.creator, d.collection, d.image, 1, kw, d.description];
-  if (p && p[7]) return [id, slug, ...p.slice(2, 8), kw, p[9] || ""];
-  return [id, slug, fromSlug(slug), "", "", "", "", 0, kw, ""];
+  if (d) return [id, slug, d.title || fromSlug(slug), d.date, d.creator, d.collection, "", 1, kw, d.description, d.identifier];
+  if (p && p[7]) return [id, slug, ...p.slice(2, 8), kw, p[9] || "", p[10] || ""];
+  return [id, slug, fromSlug(slug), "", "", "", "", 0, kw, "", ""];
 }).sort((a, b) => Number(a[0]) - Number(b[0]));
 
 await writeFile(OUT, JSON.stringify({
-  source: `${BASE}/sitemap.xml`, builtAt: new Date().toISOString(), count: rows.length,
-  fields: ["id", "slug", "title", "date", "creator", "collection", "image", "detailRead", "keywordHit", "description"],
+  source: `${BASE}/sitemap.xml`, builtAt: new Date().toISOString(), count: rows.length, reader: READER,
+  fields: ["id", "slug", "title", "date", "creator", "collection", "image", "detailRead", "keywordHit", "description", "identifier"],
   page: `${BASE}/Documents/Detail/{slug}/{id}`, rows
 }));
 const summary = `## Winterthur Library digital collections index\n\n${rows.length} documents (${rows.filter(r => r[8]).length} match rug and textile words); ${read} detail pages read this run, ${rows.filter(r => r[7]).length} in total.`;

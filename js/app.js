@@ -967,14 +967,15 @@
   const INDEXES = {};
   const loadIndex = file => INDEXES[file] || (INDEXES[file] = fetch("data/" + file).then(r => { if (!r.ok) throw new Error(file + " not built yet"); return r.json(); }).catch(e => { delete INDEXES[file]; throw e; }));
   const winterthurIndex = () => loadIndex("winterthur-index.json");
-  // Rows: [id, slug, title, date, creator, collection, image, detailRead, keywordHit, description]
+  // Rows: [id, slug, title, date, creator, collection, image, detailRead, keywordHit, description, identifier]
   const libraryRecord = (row, idx) => {
-    const [id, slug, title, date, creator, collection, image, , , description] = row;
+    const [id, slug, title, date, creator, collection, image, , , description, identifier] = row;
     const y = (String(date).match(/\b(1[5-9]\d\d|20\d\d)\b/g) || []).map(Number);
-    const type = /catalog|catalogue|price list|pattern book|sample book/i.test(title + " " + collection) ? "trade-catalog" : /photograph|postcard|print|drawing|design/i.test(title + " " + collection) ? "image" : "archive";
+    const about = [title, collection, description].join(" ");
+    const type = /trade catalog|catalogue|price list|pattern book|sample book/i.test(about) ? "trade-catalog" : /Format: (?:photograph|postcard|print|drawing|design)/i.test(about) ? "image" : /Format: (?:book|pamphlet|periodical)/i.test(about) ? "book" : "archive";
     return {
       id: "wlib-" + id, type, title, creator: creator || "", date: date || "", dateStart: y.length ? Math.min(...y) : null, dateEnd: y.length ? Math.max(...y) : null,
-      institution: "Winterthur Library", collection: collection || "Winterthur Library digital collections", description: description || "",
+      institution: "Winterthur Library", collection: collection || "Winterthur Library digital collections", identifier: identifier || "", description: description || "",
       image: image || "", imageCredit: image ? "Winterthur Library" : "", sourceUrl: idx.page.replace("{slug}", slug).replace("{id}", id),
       status: "verified", tags: ["via Winterthur library index"]
     };

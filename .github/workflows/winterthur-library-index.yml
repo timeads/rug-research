@@ -9,7 +9,7 @@ on:
       details:
         description: "How many document pages to read for full details this run"
         required: false
-        default: "800"
+        default: "1500"
   schedule:
     - cron: "53 8 * * 2"
 
@@ -35,7 +35,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898+github-actions[bot]@users.noreply.github.com"
-          node scripts/winterthur-library-index.mjs --details "${{ inputs.details || '800' }}"
+          node scripts/winterthur-library-index.mjs --details "${{ inputs.details || '1500' }}"
           cp data/winterthur-library-index.json "${RUNNER_TEMP}/winterthur-library-index.json"
           for attempt in 1 2 3; do
             git add data/winterthur-library-index.json
