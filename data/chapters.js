@@ -13,13 +13,13 @@ window.RUG_CHAPTERS = [
     id: "ch-woven", kind: "chapter",
     name: "Woven carpet and the race to broadloom",
     intro: "Working notes:\n\nBefore tufting, the race to cover whole floors affordably was run on looms: Wilton's cut-pile carpet (Huguenot weavers, a 1741 loom), Brussels and Wilton reaching America by the 1750s, Bigelow's power looms (ingrain c. 1839–41; Brussels and Wilton 1845–51), Skinner's Axminster power loom (1876). The woven industry slumped in the 1920s and Depression; tufted carpet arrived at about half the wholesale price, Mohawk and Alexander Smith merged as Mohasco in 1956, and production moved south. Langhorne, one of the last American Wilton mills, has closed.\n\nOpen: the 1877 \"first broadloom\" claim (single source); when the term broadloom came into use.",
-    items: ["wilton-1741", "grace-wilton-royal", "nps-wilton-america", "si-bigelow-loom-model", "bigelow-power-loom", "bigelow-mill", "book-bigelow-century", "ucsb-bigelow-sample-book", "skinner-axminster-1876", "bigelow-broadloom-1877", "woven-slump-1920s", "chenille-widened", "tufted-half-price", "mohasco-1956", "co-mohawk", "langhorne-wilton", "philly-encyclopedia-carpet", "wint-lib-swatch-books", "wint-lib-tariff-brussels", "article-patton-ehnet"]
+    items: ["wilton-1741", "grace-wilton-royal", "nps-wilton-america", "si-bigelow-loom-model", "bigelow-power-loom", "bigelow-mill", "book-bigelow-century", "ucsb-bigelow-sample-book", "skinner-axminster-1876", "own-spool-axminster-loom", "bigelow-broadloom-1877", "woven-slump-1920s", "chenille-widened", "tufted-half-price", "mohasco-1956", "co-mohawk", "langhorne-wilton", "philly-encyclopedia-carpet", "wint-lib-swatch-books", "wint-lib-tariff-brussels", "article-patton-ehnet"]
   },
   {
     id: "ch-dalton-bedspreads", kind: "chapter",
     name: "Dalton: from candlewick spreads to the Bedspread Capital",
     intro: "Working notes:\n\nCatherine Evans Whitener's revival (c. 1895–1900), the putting-out system of spread houses and haulers, Peacock Alley on U.S. 41, and department-store chenille by the 1920s. The Henry Ford's 1936 chenille rug is a dated, homemade tufted rug from the hand era.",
-    items: ["event-whitener-bedspread", "article-nge-chenille", "book-callahan-southern-tufts", "photo-green-burton-1933", "hf-00-1510-19", "photo-cabin-crafts-arnall", "bandy-mahs-chenille", "archive-bandy-deaton", "ttw-evans-1895-1900", "ttw-turfer-pay", "ttw-bedspreads-1941"]
+    items: ["event-whitener-bedspread", "article-nge-chenille", "book-callahan-southern-tufts", "photo-green-burton-1933", "hf-00-1510-19", "photo-cabin-crafts-arnall", "bandy-mahs-chenille", "archive-bandy-deaton", "ttw-evans-1895-1900", "ttw-turfer-pay", "ttw-bedspreads-1941", "own-bandy-peacock-spreads", "own-bandy-chenille-spreads", "own-bandy-sims-chenille-center"]
   },
   {
     id: "ch-machine", kind: "chapter",

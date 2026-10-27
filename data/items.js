@@ -6808,5 +6808,181 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "suggestive"
+  },
+  {
+    "id": "own-bandy-peacock-spreads",
+    "type": "object",
+    "title": "Two peacock chenille bedspreads (yellow ground; white ground with pink peacock)",
+    "institution": "Seen in Dalton, Georgia (confirm: Bandy Heritage Center / Sandra Mahs collection?)",
+    "place": "Dalton area, Georgia",
+    "region": "United States",
+    "date": "undated; peacock spreads are associated with the 1930s–1950s roadside trade",
+    "dateStart": 1930,
+    "dateEnd": 1959,
+    "materials": [
+      "cotton"
+    ],
+    "techniques": [
+      "tufting (chenille)",
+      "cut-loop tufts"
+    ],
+    "description": "Two spreads with the peacock, the motif that gave U.S. Highway 41 its nickname \"Peacock Alley\". The yellow spread is a fan-tailed peacock on a branch, worked almost entirely in rows of separate cut tufts (\"dots\") in blue, red, pink, green, brown and white, with a scalloped tufted edge. The white spread has a standing pink peacock with blue \"eyes\" in a dense tufted tail, framed by green and pink foliage. Dense areas (the bodies) are packed rows of tufts; outlines are single rows.\n\nTo record on a return visit: accession numbers, maker or label, whether hand- or machine-tufted (look at the back: even stitch length and straight rows suggest a single-needle machine), and dates.\n\nContext: https://handwovenmagazine.com/peacock-alley-once-chenille-capital-world/",
+    "themes": [
+      "Chenille & candlewick",
+      "Machine tufting & Dalton"
+    ],
+    "tags": [
+      "own photo",
+      "Bandy visit",
+      "peacock",
+      "Peacock Alley",
+      "confirm location"
+    ],
+    "status": "unverified",
+    "confidence": "suggestive",
+    "image": "images/own/bandy/chenille-peacock-pink.jpg",
+    "images": [
+      {
+        "src": "images/own/bandy/chenille-peacock-pink.jpg",
+        "caption": "Pink peacock with blue-eyed tail among green and pink foliage, white ground"
+      },
+      {
+        "src": "images/own/bandy/chenille-peacock-yellow.jpg",
+        "caption": "Fan-tailed peacock in rows of cut tufts on a yellow ground, scalloped tufted edge"
+      }
+    ],
+    "imageCredit": "Photo: Tuft the World",
+    "imageSource": "own",
+    "rights": "own",
+    "collection": "Photo: Tuft the World, taken on a visit to Dalton, Georgia (Bandy Heritage Center and local museum). The photograph is yours; the objects belong to the holding institution, so check its photo policy before publishing outside the database."
+  },
+  {
+    "id": "own-bandy-chenille-spreads",
+    "type": "object",
+    "title": "Chenille bedspreads: line-tufted tulips, dot-tufted florals and diamond lattice",
+    "institution": "Seen in Dalton, Georgia (confirm: Bandy Heritage Center / Sandra Mahs collection?)",
+    "place": "Dalton area, Georgia",
+    "region": "United States",
+    "date": "undated (mid-20th century style)",
+    "dateStart": 1930,
+    "dateEnd": 1969,
+    "materials": [
+      "cotton"
+    ],
+    "techniques": [
+      "tufting (chenille)",
+      "line tufting",
+      "cut-loop tufts"
+    ],
+    "description": "Three spreads showing the two basic chenille looks:\n- Line tufting: continuous rows of cut pile drawing a tulip and scrolls in two greens on white (beside it, a white spread with a blue diamond lattice and blue dots).\n- Dot tufting: separate tufts in rows, as in the red-and-tan floral with a diamond border, and a dense all-over yellow-orange floral (detail shows the fluffed cut ends of each tuft).\n\nUseful for showing how the same needle-and-cutter technique gives either drawn lines or stippled dots, and how close rows build solid areas. Record accession numbers, labels and dates on a return visit.",
+    "themes": [
+      "Chenille & candlewick",
+      "Machine tufting & Dalton"
+    ],
+    "tags": [
+      "own photo",
+      "Bandy visit",
+      "line vs dot tufting",
+      "confirm location"
+    ],
+    "status": "unverified",
+    "confidence": "suggestive",
+    "image": "images/own/bandy/chenille-green-tulip-blue-dots.jpg",
+    "images": [
+      {
+        "src": "images/own/bandy/chenille-green-tulip-blue-dots.jpg",
+        "caption": "Line-tufted tulips and scrolls in two greens; behind, white spread with a blue diamond lattice and dots"
+      },
+      {
+        "src": "images/own/bandy/chenille-red-tan-floral.jpg",
+        "caption": "Dot-tufted floral in red and tan with a diamond border"
+      },
+      {
+        "src": "images/own/bandy/chenille-yellow-tufts-detail.jpg",
+        "caption": "Detail: dense yellow-orange cut tufts on a white sheeting ground"
+      }
+    ],
+    "imageCredit": "Photo: Tuft the World",
+    "imageSource": "own",
+    "rights": "own",
+    "collection": "Photo: Tuft the World, taken on a visit to Dalton, Georgia (Bandy Heritage Center and local museum). The photograph is yours; the objects belong to the holding institution, so check its photo policy before publishing outside the database."
+  },
+  {
+    "id": "own-bandy-sims-chenille-center",
+    "type": "trade-catalog",
+    "title": "Sims Textile Co., \"The Chenille Center,\" Dalton, Ga.: Electric Chenille Machine sheet, yarn price list and \"Miscellaneous Information\"",
+    "creator": "Sims Textile Co.",
+    "place": "Dalton, Georgia",
+    "region": "United States",
+    "institution": "Seen in Dalton, Georgia (confirm holding institution; the sheets may be facsimiles)",
+    "date": "after 1945 (the company was founded in 1945)",
+    "dateStart": 1945,
+    "dateEnd": 1959,
+    "description": "Three mail-order sheets selling everything needed to start a home chenille business, with a small tufted sample and a yarn tassel.\n\nAs read from the photo (check against the originals):\n- \"The Electric Chenille Machine Complete With Table and Motor. Ready to plug into your light circuit and operate.\" A labelled drawing of a sewing-machine head (needle, presser foot, stitch adjuster, yarn tension, chenille yarn on a stand) on a table with motor, clutch and stop-and-start treadle. $150.00 complete, F.O.B. Dalton.\n- Heads only: 1-needle $75, 2-needle $85, 4-needle $95, 8-needle $100. Complete with table and motor: $150, $160, $170, $180.\n- Extra needles 15¢ each ($1.75 per dozen); extra \"hooks\" and \"cutters\" priced separately. $25 deposit per machine, balance C.O.D.\n- Yarn list: retail orders of any quantity; wholesale only in 200-lb case lots; direct mill shipments in 75 standard colours, minimum 300 lb per colour, F.O.B. the mill at Carrollton, Ga.\n- \"Miscellaneous Information\": advice on mark-up and profits, making good products, and the cost of producing a 1-needle bedspread (sheeting per spread, then a few cents each for tearing, hemming and stamping the pattern). It mentions the highway \"Spread Line\".\n\nWhy it matters: shows the post-war home-industry stage, when a household could buy a motorised single- or multi-needle chenille machine by mail and plug it in. This is the bridge between hand tufting and the factory multi-needle machine.\n\nCompany: per a Dalton business history, Pete Sims started Sims Textile Company in 1945, making single-needle tufting machines and selling yarn, sheeting and a mail-order catalog of bedspread patterns; it later became a warehouse (incorporated 1972). Source: https://www.fsw.cc/?p=873",
+    "themes": [
+      "Machine tufting & Dalton",
+      "Chenille & candlewick",
+      "Trade catalogs & marketing",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "own photo",
+      "Bandy visit",
+      "price list",
+      "home industry",
+      "single-needle machine",
+      "confirm location"
+    ],
+    "status": "unverified",
+    "confidence": "suggestive",
+    "image": "images/own/bandy/sims-chenille-center-sheets.jpg",
+    "images": [
+      {
+        "src": "images/own/bandy/sims-chenille-center-sheets.jpg",
+        "caption": "Sims Textile Co. sheets with a tufted sample and a yarn tassel"
+      }
+    ],
+    "imageCredit": "Photo: Tuft the World",
+    "imageSource": "own",
+    "rights": "own",
+    "collection": "Photo: Tuft the World, taken on a visit to Dalton, Georgia (Bandy Heritage Center and local museum). The photograph is yours; the objects belong to the holding institution, so check its photo policy before publishing outside the database."
+  },
+  {
+    "id": "own-spool-axminster-loom",
+    "type": "tool",
+    "title": "Spool Axminster power loom (identified from photograph)",
+    "institution": "Seen in Dalton, Georgia (confirm location and owner)",
+    "region": "United States",
+    "date": "undated; the spool Axminster type dates from Skinner's 1876 loom",
+    "dateStart": 1876,
+    "techniques": [
+      "Axminster weaving",
+      "spool Axminster"
+    ],
+    "description": "A large green cast-iron carpet loom. The tall chains overhead carry the tube frames (\"spools\"), each pre-wound with one row of coloured pile yarn. The loom takes one spool at a time, inserts a row of tufts, cuts them and weaves them in, which gives unlimited colours per row. The patterned multicolour carpet on the cloth beam is typical of Axminster. Behind it, a pegboard wall of yarn cones.\n\nWhy it matters: in Axminster weaving, cut tufts are inserted row by row, the woven industry's answer to many-coloured pile. It was the high-volume rival tufted broadloom had to undercut. Link to Halcyon Skinner's 1876 loom and to Bigelow-Sanford.\n\nIdentification is from the photo only. To record: the maker's plate and serial number (often cast on the frame), the loom width, its owner and date.",
+    "themes": [
+      "Woven carpet",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "own photo",
+      "Bandy visit",
+      "Axminster",
+      "loom",
+      "confirm location"
+    ],
+    "status": "unverified",
+    "confidence": "suggestive",
+    "image": "images/own/bandy/spool-axminster-loom.jpg",
+    "images": [
+      {
+        "src": "images/own/bandy/spool-axminster-loom.jpg",
+        "caption": "Spool Axminster loom: chains of yarn spools above, patterned carpet on the beam"
+      }
+    ],
+    "imageCredit": "Photo: Tuft the World",
+    "imageSource": "own",
+    "rights": "own",
+    "collection": "Photo: Tuft the World, taken on a visit to Dalton, Georgia (Bandy Heritage Center and local museum). The photograph is yours; the objects belong to the holding institution, so check its photo policy before publishing outside the database."
   }
 ];
