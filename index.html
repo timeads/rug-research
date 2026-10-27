@@ -228,9 +228,23 @@
         <button type="button" class="icon-btn" id="btn-x-edit" aria-label="Close"><svg class="ic"><use href="#i-x"/></svg></button>
       </header>
       <section class="quick" id="quick-add">
-        <label for="quick-text"><strong>Drop in what you found</strong><span>Paste the page link, any image links and the caption or citation, or drop image files here. Fill in reads them into the form below; check it, then save.</span></label>
+        <label for="quick-text"><strong>Drop in what you found</strong><span>Paste the page link, any image links and the caption, citation or About text, or drop image files here. Works for objects, books, and companies or institutions (paste their website). Fill in reads it all into the form below; check it, then save.</span></label>
         <textarea id="quick-text" rows="4" placeholder="https://depts.washington.edu/silkroad/museums/shm/shmpazyryk.html&#10;Pile carpet. Pazyryk barrow no. 5, 252–238 BCE. Wool. 183 x 200 cm.&#10;Pub.: Rudenko 1953, pp. 351–356"></textarea>
-        <div class="quick-row"><button type="button" class="btn sm primary" id="btn-quick">Fill in the form</button><span id="quick-status" class="quick-status" role="status"></span></div>
+        <div class="quick-row">
+          <label class="quick-kind">This is
+            <select id="quick-kind">
+              <option value="auto">worked out from what you paste</option>
+              <option value="object">an object (a rug, sample, tool…)</option>
+              <option value="company">a company or studio</option>
+              <option value="institution">an institution or archive</option>
+              <option value="book">a book</option>
+              <option value="article">an article</option>
+              <option value="trade-catalog">a trade catalog</option>
+              <option value="image">a photo or image</option>
+            </select>
+          </label>
+          <button type="button" class="btn sm primary" id="btn-quick">Fill in the form</button><span id="quick-status" class="quick-status" role="status"></span>
+        </div>
       </section>
       <div class="form-grid">
         <label>Type <select name="type" required></select></label>

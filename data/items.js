@@ -4512,6 +4512,32 @@ window.RUG_ITEMS = [
     "imageSource": "auto"
   },
   {
+    "id": "co-floor-story",
+    "type": "company",
+    "title": "FLOOR_STORY (Floor Story)",
+    "creator": "Simon Goff (founder and director)",
+    "place": "East London: a showroom in Shoreditch, later Cairo Studios, Nile Street, London N1",
+    "region": "United Kingdom",
+    "date": "founded 2014 or 2015 (sources differ)",
+    "dateStart": 2014,
+    "sourceUrl": "https://www.thedesignsheppard.com/interviews/interview-simon-goff-of-floor_story",
+    "institution": "FLOOR_STORY",
+    "description": "Designer-collaboration rug company in East London. In a 2020 interview, Simon Goff says he set it up after running a designer-rug concession at Heal's with his father for seven years. At first it did fitted carpets and wood flooring. Its first rug collection was with the print designer Kangan Arora (\"I'd never made a rug before, only ever bought them\"). After a collaboration with Kent & London led to a Shoreditch showroom (about 2016), it dropped fitted floors for designer rugs; trade customers (interior designers, hotels, offices) were then about 70% of sales. Goff's rule is to work with designers who have never made rugs, such as Camille Walala and Eley Kishimoto, and turn their work into a product.\n\nHow the rugs are made: by partner weaving centres, not in London. Label STEP says most of its hand-knotted rugs are made in Nepal and most tufted and flat-woven rugs in India, with some exceptions, and that its manufacturers are Label STEP-recognised. STIR describes a 2023 collection (Gill Thorpe's Curb) as tufted in India in New Zealand wool and viscose, and another, knotted, collection made by weavers in Afghanistan with a local NGO. The London Design Festival lists it as a B Corporation certified rug dealer.\n\nWhy it matters for the history: an example of the design-led model of the 2010s and 2020s, in which a Western brand commissions artists and has the rugs hand-tufted in India, the export industry described in the chapters on the gun and on India. Compare Delos (co-delos), which tufts by robot in Georgia as well as overseas.\n\nDates: The Design Sheppard (2020) says \"since 2014\" and dates a first collection that year; STIR (2023) says \"founded by Simon Goff in 2015\". The 2014 collection may predate the company's formal founding.\n\nSources (read Oct 2026): https://www.thedesignsheppard.com/interviews/interview-simon-goff-of-floor_story (Design Sheppard, 7 Dec 2020) · https://label-step.org/dealers/floor-story/ · https://www.stirworld.com/stirpad/news/stir-news/floor-story-presents-rugs-designed-by-amechi-mandi-and-gill-thorpe-at-ldf-2023/ · https://londondesignfestival.com/partners/floor_story-e070ab27-1d93-4eb6-a6d4-c2f1d1dcf54b · company site https://www.floorstory.co.uk/",
+    "themes": [
+      "Companies & modern tufting",
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "company",
+      "designer collaborations",
+      "hand-tufted",
+      "made in India",
+      "checked at source 2026"
+    ],
+    "status": "verified",
+    "confidence": "solid"
+  },
+  {
     "id": "co-scott-group",
     "type": "company",
     "title": "Scott Group Studio",

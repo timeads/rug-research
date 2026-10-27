@@ -25,6 +25,7 @@
     "event":         { label: "Event / milestone", plural: "Events & milestones" },
     "finding":       { label: "Finding", plural: "Research findings" },
     "company":       { label: "Company", plural: "Companies" },
+    "institution":   { label: "Institution / archive", plural: "Institutions & archives" },
     "other":         { label: "Other", plural: "Other" }
   };
 
@@ -615,7 +616,7 @@
     }
     form.elements.imageFile.value = "";
     form.elements.imagesText.value = (Array.isArray(it.images) ? it.images : []).filter(g => g && g.src && g.src !== it.image).map(g => g.src + (g.caption ? " | " + g.caption : "")).join("\n");
-    $("#quick-add").hidden = !!id; $("#quick-text").value = preset._drop || ""; $("#quick-status").textContent = "";
+    $("#quick-add").hidden = !!id; $("#quick-text").value = preset._drop || ""; $("#quick-status").textContent = ""; $("#quick-kind").value = "auto";
     if (it.image && it.image.startsWith("idb:")) form.elements.image.value = it.image;
     if (it._borrowed) { form.elements.image.value = ""; if (form.elements.imageCredit) form.elements.imageCredit.value = ""; } // a related record's image isn't this record's own
     $("#btn-delete-item").hidden = !id;
@@ -743,6 +744,28 @@
     if (!text.trim() && !files.length) { st.textContent = "Paste a link or some text first."; return; }
     const d = parseDrop(text);
     const notes = [];
+    // What kind of record: chosen in the panel, or guessed. A company or institution's own website
+    // (its home or About page), or text about founding, means a profile rather than an object.
+    let kind = $("#quick-kind").value;
+    if (kind === "auto") {
+      const page = d.pages[0] ? (() => { try { return new URL(d.pages[0]).pathname.replace(/\/$/, ""); } catch { return "x"; } })() : "x";
+      const profile = page === "" || /about|our-?story|history|heritage|who-?we-?are|company/i.test(page) || /\b(founded|established|est\.|since (?:18|19|20)\d\d|studio|company|ltd|inc\b|llc|gmbh|our story)\b/i.test(text);
+      const inst = /\b(museum|library|archives?|historical society|heritage center|university|college|gallery)\b/i.test(d.title || text.slice(0, 200));
+      kind = profile ? (inst && !/\b(company|studio|ltd|inc\b|llc|gmbh)\b/i.test(text) ? "institution" : "company") : "";
+    }
+    if (kind === "company" || kind === "institution") {
+      const founded = text.match(/\b(?:founded|established|est\.|since|opened|started)\b[^.\d]{0,40}\b((?:18|19|20)\d\d)\b/i);
+      const host = d.pages[0] ? (() => { try { return new URL(d.pages[0]).hostname.replace(/^www\./, ""); } catch { return ""; } })() : "";
+      const name = (d.title && d.title.length < 60 ? d.title : "") || host.split(".")[0].replace(/[-_]/g, " ").replace(/^./, c => c.toUpperCase());
+      el.type.value = kind;
+      if (!el.title.value) el.title.value = name;
+      if (!el.institution.value || el.institution.value === d.institution) el.institution.value = name;
+      if (founded) { el.date.value = `founded ${founded[1]}`; el.dateStart.value = founded[1]; notes.push(`founded ${founded[1]}`); }
+      if (kind === "company" && !el.themes.value) el.themes.value = "Companies & modern tufting";
+      if (!el.tags.value) el.tags.value = kind === "company" ? "company" : "institution";
+      d.date = d.dateStart = d.dateEnd = null; d.dimensions = null; d.title = null; d.institution = null;
+      notes.push(kind === "company" ? "Read as a company" : "Read as an institution");
+    } else if (kind) el.type.value = kind;
     let api = null;
     if (d.pages[0]) { st.textContent = "Reading the page details…"; try { api = await fromApi(d.pages[0]); } catch {} }
     const set = (k, v, force) => { if (v == null || v === "" || (Array.isArray(v) && !v.length) || !el[k]) return; if (force || !el[k].value) el[k].value = Array.isArray(v) ? v.join(", ") : v; };
@@ -754,7 +777,7 @@
     set("sourceUrl", d.pages[0]);
     for (const k of ["title", "date", "dateStart", "dateEnd", "dimensions", "materials", "institution", "citation", "description"]) set(k, d[k]);
     if (d.pages.length > 1) set("description", [el.description.value, "See also: " + d.pages.slice(1).join(" ")].filter(Boolean).join("\n"), true);
-    if (/\b(rug|carpet|bedspread|coverlet|textile|mat|runner|sample)\b/i.test(d.title || "") && !api) el.type.value = "object";
+    if (!kind && /\b(rug|carpet|bedspread|coverlet|textile|mat|runner|sample)\b/i.test(d.title || "") && !api) el.type.value = "object";
     const imgs = d.images.filter(u => u !== el.image.value);
     if (imgs.length && !el.image.value) el.image.value = imgs.shift();
     if (imgs.length) el.imagesText.value = [el.imagesText.value, ...imgs].filter(Boolean).join("\n");
