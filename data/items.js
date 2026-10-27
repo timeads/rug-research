@@ -89,7 +89,10 @@ window.RUG_ITEMS = [
       "tufting citation",
       "priority"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "image": "https://winocr-images.s3.us-east-1.amazonaws.com/art-objects/live/28352/multimedia/0-original.jpg",
+    "imageCredit": "Winterthur Museum",
+    "imageSource": "auto"
   },
   {
     "id": "wint-1964-0808",
@@ -287,7 +290,10 @@ window.RUG_ITEMS = [
       "Shaw",
       "Barwick"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "image": "https://covers.openlibrary.org/b/isbn/9780820324647-L.jpg?default=false",
+    "imageCredit": "Cover via Open Library",
+    "imageSource": "auto"
   },
   {
     "id": "article-patton-ehnet",
@@ -537,7 +543,10 @@ window.RUG_ITEMS = [
       "timeline",
       "date conflict"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "image": "https://georgiaencyclopedia.org/wp-content/uploads/2021/02/carpet_machine_001-1200x630.jpg",
+    "imageCredit": "georgiaencyclopedia.org",
+    "imageSource": "auto"
   },
   {
     "id": "event-whitener-bedspread",
@@ -558,7 +567,10 @@ window.RUG_ITEMS = [
       "timeline",
       "origin"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "image": "https://georgiaencyclopedia.org/wp-content/uploads/2021/02/chenille-bedspreads_004-1200x630.jpg",
+    "imageCredit": "georgiaencyclopedia.org",
+    "imageSource": "auto"
   },
   {
     "id": "event-looper-tufting-machine",
@@ -578,7 +590,10 @@ window.RUG_ITEMS = [
       "timeline",
       "machinery"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "image": "https://carpet-rug.org/wp-content/uploads/2018/06/macro-2573557_1920.jpg",
+    "imageCredit": "carpet-rug.org",
+    "imageSource": "auto"
   },
   {
     "id": "article-nge-chenille",
@@ -593,7 +608,10 @@ window.RUG_ITEMS = [
     "tags": [
       "overview"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "image": "https://georgiaencyclopedia.org/wp-content/uploads/2021/02/chenille-bedspreads_004-1200x630.jpg",
+    "imageCredit": "georgiaencyclopedia.org",
+    "imageSource": "auto"
   },
   {
     "id": "article-nge-carpet-industry",
@@ -609,7 +627,10 @@ window.RUG_ITEMS = [
     "tags": [
       "overview"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "image": "https://georgiaencyclopedia.org/wp-content/uploads/2021/02/carpet_machine_001-1200x630.jpg",
+    "imageCredit": "georgiaencyclopedia.org",
+    "imageSource": "auto"
   },
   {
     "id": "article-rughooking-winterthur",
@@ -628,7 +649,10 @@ window.RUG_ITEMS = [
       "H. F. du Pont",
       "storage"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "image": "https://welikerughooking.com/wp-content/uploads/2026/04/J-Fea1.08-scaled.jpg",
+    "imageCredit": "welikerughooking.com",
+    "imageSource": "auto"
   },
   {
     "id": "wint-1960-0594",
@@ -659,7 +683,10 @@ window.RUG_ITEMS = [
       "dated",
       "fellowship anchor"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "image": "https://winocr-images.s3.us-east-1.amazonaws.com/art-objects/live/16695/multimedia/0-original.jpg",
+    "imageCredit": "Winterthur Museum",
+    "imageSource": "auto"
   },
   {
     "id": "wint-1964-1641",
@@ -685,7 +712,10 @@ window.RUG_ITEMS = [
     "tags": [
       "dated"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "image": "https://winocr-images.s3.us-east-1.amazonaws.com/art-objects/live/27031/multimedia/0-original.jpg",
+    "imageCredit": "Winterthur Museum",
+    "imageSource": "auto"
   },
   {
     "id": "wint-1958-0062-003b",
@@ -709,7 +739,10 @@ window.RUG_ITEMS = [
       "fragment",
       "verify technique"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "image": "https://live-winocr.pantheonsite.io/wp-content/uploads/2026/06/21008-Collections-Website-No-Image-Available-Graphic-1-scaled.jpg",
+    "imageCredit": "Winterthur Museum",
+    "imageSource": "auto"
   },
   {
     "id": "met-13-207",
@@ -756,7 +789,7 @@ window.RUG_ITEMS = [
       "embroidered (chain stitch)"
     ],
     "description": "Signed with initials and dated 1835. Includes a detachable hearth rug section. The Met questions how much of the base cloth and yarn Caswell made herself. Lent to the American Folk Art Museum's 2007 \"Great Cover-Up\" exhibition.",
-    "sourceUrl": "https://metmuseum.org/art/collection/search/13576",
+    "sourceUrl": "https://www.metmuseum.org/art/collection/search/13576",
     "themes": [
       "Early tufting: bed rugs & needlework pile",
       "Hooked & handmade rugs"
@@ -766,7 +799,10 @@ window.RUG_ITEMS = [
       "floor carpet",
       "signed"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "image": "https://images.metmuseum.org/CRDImages/ad/original/DT823.jpg",
+    "imageCredit": "The Metropolitan Museum of Art (Open Access, public domain)",
+    "imageSource": "auto"
   },
   {
     "id": "hd-packard-1801",
@@ -791,7 +827,10 @@ window.RUG_ITEMS = [
     "tags": [
       "provenance research"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "image": "https://www.historic-deerfield.org/wp-content/uploads/2017/07/2017-6-web.jpg",
+    "imageCredit": "Historic Deerfield",
+    "imageSource": "auto"
   },
   {
     "id": "hd-blue-white-bed-rug",
@@ -944,7 +983,10 @@ window.RUG_ITEMS = [
       "group record",
       "dated"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "image": "https://emuseum.chs.org/emuseum/internal/media/dispatcher/17570/full",
+    "imageCredit": "Connecticut Historical Society",
+    "imageSource": "auto"
   },
   {
     "id": "afam-1995-13-2",
@@ -1030,7 +1072,10 @@ window.RUG_ITEMS = [
     "tags": [
       "exhibition"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "image": "https://enfilade18thc.com/wp-content/uploads/2018/11/1967-75.jpg?w=720",
+    "imageCredit": "Wadsworth Atheneum Museum of Art",
+    "imageSource": "auto"
   },
   {
     "id": "book-bed-ruggs-1972",
