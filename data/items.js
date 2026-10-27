@@ -4535,7 +4535,10 @@ window.RUG_ITEMS = [
       "checked at source 2026"
     ],
     "status": "verified",
-    "confidence": "solid"
+    "confidence": "solid",
+    "image": "https://www.thedesignsheppard.com/wp-content/uploads/2020/12/Camille-Walala-x-FLOOR_STORY.jpg",
+    "imageCredit": "FLOOR_STORY",
+    "imageSource": "auto"
   },
   {
     "id": "co-scott-group",
