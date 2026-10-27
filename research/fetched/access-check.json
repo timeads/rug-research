@@ -1,5 +1,5 @@
 {
- "checkedAt": "2026-10-27T21:31:39.196Z",
+ "checkedAt": "2026-10-27T21:41:47.296Z",
  "robots": {
   "https://museumcollection.winterthur.org": {
    "status": "allows",
@@ -94,7 +94,7 @@
    "aiBlocks": true
   },
   "https://eh.net": {
-   "status": "none (403)",
+   "status": "allows",
    "aiBlocks": false
   },
   "https://dcp-production-container.library.cornell.edu": {
@@ -190,8 +190,8 @@
    "aiBlocks": false
   },
   "https://www.dhu.edu.cn": {
-   "status": "unreachable",
-   "error": "fetch failed"
+   "status": "none (404)",
+   "aiBlocks": false
   },
   "https://m.chinabgao.com": {
    "status": "allows",
@@ -222,8 +222,8 @@
    "aiBlocks": false
   },
   "https://epaper.oeeee.com": {
-   "status": "unreachable",
-   "error": "fetch failed"
+   "status": "none (404)",
+   "aiBlocks": false
   },
   "https://www.hongkongheritage.org": {
    "status": "none (403)",
@@ -326,8 +326,8 @@
    "aiBlocks": false
   },
   "https://nkie.nankai.edu.cn": {
-   "status": "unreachable",
-   "error": "fetch failed"
+   "status": "none (404)",
+   "aiBlocks": false
   },
   "https://m.sohu.com": {
    "status": "disallows all tools",
@@ -670,8 +670,8 @@
    "aiBlocks": false
   },
   "https://www.huguenotsofspitalfields.org": {
-   "status": "allows",
-   "aiBlocks": false
+   "status": "unreachable",
+   "error": "fetch failed"
   },
   "https://axminsterheritage.org": {
    "status": "allows",
@@ -822,7 +822,7 @@
   {
    "name": "Winterthur / Library digital collections",
    "url": "https://digitalcollections.winterthur.org/documents/search?search=carpet",
-   "verdict": "ok (redirected)",
+   "verdict": "ok (moved)",
    "status": 200,
    "title": "Browse All - Winterthur Library Digital Collections",
    "moved": "https://digitalcollections.winterthur.org/documents?returning=true",
@@ -904,7 +904,7 @@
    "url": "https://www.thehenryford.org/search?q=carpet",
    "verdict": "ok",
    "status": 200,
-   "title": "",
+   "title": "Search",
    "robots": "allows"
   },
   {
@@ -1157,11 +1157,11 @@
   },
   {
    "id": "article-patton-ehnet",
-   "title": "403 - Forbidden",
+   "title": "",
    "url": "https://eh.net/encyclopedia/a-history-of-the-u-s-carpet-industry/",
    "verdict": "bot check",
-   "status": 403,
-   "robots": "none (403)"
+   "status": 202,
+   "robots": "allows"
   },
   {
    "id": "archive-bandy-deaton",
@@ -1248,7 +1248,7 @@
    "id": "event-bcf-nylon",
    "title": "Carpet Industry - New Georgia Encyclopedia",
    "url": "https://www.georgiaencyclopedia.org/articles/business-economy/carpet-industry/",
-   "verdict": "bot check",
+   "verdict": "ok",
    "status": 200,
    "robots": "allows"
   },
@@ -1256,7 +1256,7 @@
    "id": "event-whitener-bedspread",
    "title": "Chenille Bedspreads - New Georgia Encyclopedia",
    "url": "https://www.georgiaencyclopedia.org/articles/arts-culture/chenille-bedspreads",
-   "verdict": "bot check",
+   "verdict": "ok",
    "status": 200,
    "robots": "allows"
   },
@@ -1272,7 +1272,7 @@
    "id": "article-nge-chenille",
    "title": "Chenille Bedspreads - New Georgia Encyclopedia",
    "url": "https://www.georgiaencyclopedia.org/articles/arts-culture/chenille-bedspreads",
-   "verdict": "bot check",
+   "verdict": "ok",
    "status": 200,
    "robots": "allows"
   },
@@ -1280,7 +1280,7 @@
    "id": "article-nge-carpet-industry",
    "title": "Carpet Industry - New Georgia Encyclopedia",
    "url": "https://www.georgiaencyclopedia.org/articles/business-economy/carpet-industry/",
-   "verdict": "bot check",
+   "verdict": "ok",
    "status": 200,
    "robots": "allows"
   },
@@ -1288,7 +1288,7 @@
    "id": "article-rughooking-winterthur",
    "title": "Readers Gallery: Hooked Rugs of Winterthur - We Like Rug Hooking",
    "url": "https://www.rughookingmagazine.com/Rug-Hooking-Articles/Hooked-Rugs-of-Winterthur",
-   "verdict": "ok (redirected)",
+   "verdict": "ok (moved)",
    "status": 200,
    "moved": "https://welikerughooking.com/readers-gallery/hooked-rugs-of-winterthur/",
    "robots": "allows"
@@ -1337,9 +1337,8 @@
    "id": "hd-packard-1801",
    "title": "Going to the Sources: Researching the Esther Packard (1801) Bed Rug - Historic Deerfield",
    "url": "https://www.historic-deerfield.org/2017-7-21-going-to-the-sources-researching-the-esther-packard-1801-bed-rug",
-   "verdict": "ok (redirected)",
+   "verdict": "ok",
    "status": 200,
-   "moved": "https://www.historic-deerfield.org/2017-7-21-going-to-the-sources-researching-the-esther-packard-1801-bed-rug/",
    "robots": "allows"
   },
   {
@@ -1458,9 +1457,8 @@
    "id": "tool-moench-1928",
    "title": "",
    "url": "https://asme.org/wwwasmeorg/media/ResourceFiles/AboutASME/Who We Are/Engineering History/Landmarks/266-CarpetTuftingApparatus.pdf",
-   "verdict": "ok (redirected)",
+   "verdict": "ok",
    "status": 200,
-   "moved": "https://www.asme.org/wwwasmeorg/media/resourcefiles/aboutasme/who%20we%20are/engineering%20history/landmarks/266-carpettuftingapparatus.pdf",
    "robots": "allows"
   },
   {
@@ -1491,7 +1489,7 @@
    "id": "photo-green-burton-1933",
    "title": "Chenille Bedspreads - New Georgia Encyclopedia",
    "url": "https://www.georgiaencyclopedia.org/articles/arts-culture/chenille-bedspreads/m-2383/",
-   "verdict": "bot check",
+   "verdict": "ok",
    "status": 200,
    "robots": "allows"
   },
@@ -1556,7 +1554,7 @@
    "url": "https://www.dhu.edu.cn/2015/0309/c18935a59358/page.htm",
    "verdict": "unreachable",
    "error": "ETIMEDOUT",
-   "robots": "unreachable"
+   "robots": "none (404)"
   },
   {
    "id": "ner-cn-imports-2025",
@@ -1652,7 +1650,7 @@
    "url": "https://epaper.oeeee.com/epaper/G/html/2022-11/14/content_27066.htm",
    "verdict": "ok",
    "status": 200,
-   "robots": "unreachable"
+   "robots": "none (404)"
   },
   {
    "id": "ner-hk-taiping-needle",
@@ -1690,7 +1688,7 @@
    "id": "ner-in-hindi-wiki",
    "title": "कालीन - विकिपीडिया",
    "url": "https://hi.wikipedia.org/wiki/%E0%A4%95%E0%A4%BC%E0%A4%BE%E0%A4%B2%E0%A5%80%E0%A4%A8",
-   "verdict": "bot check",
+   "verdict": "ok",
    "status": 200,
    "robots": "allows"
   },
@@ -1746,7 +1744,7 @@
    "id": "ner-in-vocabulary",
    "title": "कालीन - विकिपीडिया",
    "url": "https://hi.wikipedia.org/wiki/%E0%A4%95%E0%A4%BC%E0%A4%BE%E0%A4%B2%E0%A5%80%E0%A4%A8",
-   "verdict": "bot check",
+   "verdict": "ok",
    "status": 200,
    "robots": "allows"
   },
@@ -1762,7 +1760,7 @@
    "id": "ner-in-colonial-bhadohi",
    "title": "Obeetee - Wikipedia",
    "url": "https://en.wikipedia.org/wiki/Obeetee",
-   "verdict": "bot check",
+   "verdict": "ok",
    "status": 200,
    "robots": "allows"
   },
@@ -1786,7 +1784,7 @@
    "id": "ner-jp-tufton-1957",
    "title": "SUMINOE - Wikipedia",
    "url": "https://ja.wikipedia.org/wiki/SUMINOE",
-   "verdict": "bot check",
+   "verdict": "ok",
    "status": 200,
    "robots": "allows"
   },
@@ -1794,7 +1792,7 @@
    "id": "ner-jp-carpet-day",
    "title": "11月1日 - Wikipedia",
    "url": "https://ja.wikipedia.org/wiki/11%E6%9C%881%E6%97%A5",
-   "verdict": "bot check",
+   "verdict": "ok",
    "status": 200,
    "robots": "allows"
   },
@@ -1868,7 +1866,6 @@
    "url": "http://www.carpet.or.jp/publics/index/95/detail=1/c_id=524/page524=1",
    "verdict": "gone (not found)",
    "status": 404,
-   "moved": "https://carpet.or.jp/publics/index/95/detail=1/c_id=524/page524=1",
    "robots": "allows"
   },
   {
@@ -1891,7 +1888,7 @@
    "id": "ner-de-longlife-refuted",
    "title": "Teppichboden – Wikipedia",
    "url": "https://de.wikipedia.org/wiki/Teppichboden",
-   "verdict": "bot check",
+   "verdict": "ok",
    "status": 200,
    "robots": "allows"
   },
@@ -1923,18 +1920,18 @@
    "id": "ner-be-gap",
    "title": "Homepage | Associated Weavers",
    "url": "https://carpetyourlife.com/en/about-us/associated-weavers/milestones",
-   "verdict": "ok (redirected)",
+   "verdict": "ok (moved)",
    "status": 200,
    "moved": "https://associated-weavers.com/en/",
    "robots": "allows"
   },
   {
    "id": "ner-chase-tianjin-primary",
-   "title": "《天津地毯工業》 Republican-era Chinese primary source (scan)",
+   "title": "方显廷回忆在南开大学经济研究所的事业与生活",
    "url": "https://nkie.nankai.edu.cn/2017/0502/c11716a121465/page.htm",
-   "verdict": "unreachable",
-   "error": "ETIMEDOUT",
-   "robots": "unreachable"
+   "verdict": "ok",
+   "status": 200,
+   "robots": "none (404)"
   },
   {
    "id": "ner-chase-sohu-series",
@@ -1947,7 +1944,7 @@
    "id": "ner-chase-gazetteers",
    "title": "地方文献丨《北京工业志·燕山石化志》_澎湃号·湃客_澎湃新闻-The Paper",
    "url": "https://www.thepaper.cn/newsDetail_forward_7818157",
-   "verdict": "bot check",
+   "verdict": "ok",
    "status": 200,
    "robots": "allows"
   },
@@ -2426,7 +2423,7 @@
    "id": "nps-wilton-america",
    "title": "Park History Program (U.S. National Park Service)",
    "url": "https://www.nps.gov/parkhistory/online_books/inde/anderson/chap2.htm",
-   "verdict": "ok (redirected)",
+   "verdict": "ok (moved)",
    "status": 200,
    "moved": "https://www.nps.gov/orgs/1220/index.htm",
    "robots": "allows"
@@ -2451,7 +2448,7 @@
    "id": "bigelow-mill",
    "title": "Bigelow Carpet Mill - Wikipedia",
    "url": "https://en.wikipedia.org/wiki/Bigelow_Carpet_Mill",
-   "verdict": "bot check",
+   "verdict": "ok",
    "status": 200,
    "robots": "allows"
   },
@@ -2483,7 +2480,7 @@
    "id": "tufted-half-price",
    "title": "Carpet Industry - New Georgia Encyclopedia",
    "url": "https://www.georgiaencyclopedia.org/articles/business-economy/carpet-industry/",
-   "verdict": "bot check",
+   "verdict": "ok",
    "status": 200,
    "robots": "allows"
   },
@@ -2499,7 +2496,7 @@
    "id": "mohasco-1956",
    "title": "Mohawk Industries - Wikipedia",
    "url": "https://en.wikipedia.org/wiki/Mohawk_Industries",
-   "verdict": "bot check",
+   "verdict": "ok",
    "status": 200,
    "robots": "allows"
   },
@@ -2947,7 +2944,7 @@
    "id": "co-vsoske",
    "title": "Stanislav V'Soske - Wikipedia",
    "url": "https://en.wikipedia.org/wiki/Stanislav_V%27Soske",
-   "verdict": "bot check",
+   "verdict": "ok",
    "status": 200,
    "robots": "allows"
   },
@@ -2963,7 +2960,7 @@
    "id": "co-kasthall",
    "title": "About Kasthall",
    "url": "https://www.kasthall.com/about",
-   "verdict": "ok (redirected)",
+   "verdict": "ok (moved)",
    "status": 200,
    "moved": "https://www.kasthall.com/en-us/pages/about-kasthall",
    "robots": "allows"
@@ -2990,7 +2987,6 @@
    "url": "https://materialbank.eu/partner/limitededition",
    "verdict": "gone (not found)",
    "status": 404,
-   "moved": "https://www.materialbank.eu/partner/limitededition",
    "robots": "allows"
   },
   {
@@ -3029,7 +3025,7 @@
    "id": "co-cabin-crafts",
    "title": "Chenille Bedspreads - New Georgia Encyclopedia",
    "url": "https://www.georgiaencyclopedia.org/articles/arts-culture/chenille-bedspreads",
-   "verdict": "bot check",
+   "verdict": "ok",
    "status": 200,
    "robots": "allows"
   },
@@ -3037,7 +3033,7 @@
    "id": "co-barwick",
    "title": "LaFayette &#8211; West Georgia Textile Heritage Trail",
    "url": "https://westgatextiletrail.com/?p=3323",
-   "verdict": "ok (redirected)",
+   "verdict": "ok (moved)",
    "status": 200,
    "moved": "https://westgatextiletrail.com/lafayette/",
    "robots": "allows"
@@ -3046,7 +3042,7 @@
    "id": "co-world-carpets",
    "title": "World Carpets - New Georgia Encyclopedia",
    "url": "https://www.georgiaencyclopedia.org/articles/business-economy/world-carpets/",
-   "verdict": "bot check",
+   "verdict": "ok",
    "status": 200,
    "robots": "allows"
   },
@@ -3062,7 +3058,7 @@
    "id": "co-interface",
    "title": "30+ Years of Sustainability: Ray Anderson’s Innovative Impact",
    "url": "https://www.interface.com/US/en-US/sustainability/our-history.html",
-   "verdict": "bot check",
+   "verdict": "ok",
    "status": 200,
    "robots": "allows"
   },
@@ -3078,7 +3074,7 @@
    "id": "co-dixie-group",
    "title": "Our Heritage - The Dixie Group",
    "url": "https://www.dixiegroup.com/About/Heritage",
-   "verdict": "ok",
+   "verdict": "bot check",
    "status": 200,
    "robots": "none (404)"
   },
@@ -3158,7 +3154,7 @@
    "id": "co-suminoe",
    "title": "Message from the CEO｜株式会社スミノエ インテリア プロダクツ（SUMINOE Interior Products）",
    "url": "https://suminoe.jp/en/pages/company",
-   "verdict": "ok (redirected)",
+   "verdict": "ok (moved)",
    "status": 200,
    "moved": "https://suminoe.jp/en/pages/message-from-the-president",
    "robots": "allows"
@@ -3199,7 +3195,7 @@
    "id": "co-cobble",
    "title": "Tufting | Vandewiele",
    "url": "https://www.cobble.co.uk/en",
-   "verdict": "ok (redirected)",
+   "verdict": "ok (moved)",
    "status": 200,
    "moved": "https://vandewiele.com/textile-solutions/tufting",
    "robots": "allows"
@@ -3208,7 +3204,7 @@
    "id": "co-tuftco",
    "title": "About - Tuftco",
    "url": "https://www.tuftco.com/about",
-   "verdict": "bot check",
+   "verdict": "ok",
    "status": 200,
    "robots": "allows"
   },
@@ -3248,7 +3244,7 @@
    "id": "co-kaleen-india",
    "title": "About Us | Kaleen Rugs",
    "url": "https://www.kaleen.com/about/",
-   "verdict": "bot check",
+   "verdict": "ok",
    "status": 200,
    "robots": "allows"
   },
@@ -3256,9 +3252,8 @@
    "id": "co-surya",
    "title": "Surya at 50: Honoring craft, community and continued growth | Home Accents Today",
    "url": "https://www.homeaccentstoday.com/rugs/surya-at-50-honoring-craft-community-and-continued-growth",
-   "verdict": "ok (redirected)",
+   "verdict": "ok",
    "status": 200,
-   "moved": "https://www.homeaccentstoday.com/rugs/surya-at-50-honoring-craft-community-and-continued-growth/",
    "robots": "allows"
   },
   {
@@ -3529,7 +3524,7 @@
    "id": "woven-kidderminster-1735",
    "title": "The Origins of Carpet Making in Kidderminster - Revolutionary Players",
    "url": "https://revolutionaryplayers.org.uk/?p=2924",
-   "verdict": "ok (redirected)",
+   "verdict": "ok (moved)",
    "status": 200,
    "moved": "https://www.revolutionaryplayers.org.uk/the-origins-of-carpet-making-in-kidderminster/",
    "robots": "allows"
@@ -3546,7 +3541,7 @@
    "id": "woven-scotch-kilmarnock",
    "title": "Carpet and Linoleum Manufacture",
    "url": "https://www.futuremuseum.co.uk/collections/life-work/key-industries/textiles/carpet-and-linoleum-manufacture",
-   "verdict": "bot check",
+   "verdict": "ok",
    "status": 200,
    "robots": "allows"
   },
@@ -3562,7 +3557,7 @@
    "id": "woven-scotch-carpet-america-1790",
    "title": "Park History Program (U.S. National Park Service)",
    "url": "https://www.nps.gov/parkhistory/online_books/inde/anderson/chap2.htm",
-   "verdict": "ok (redirected)",
+   "verdict": "ok (moved)",
    "status": 200,
    "moved": "https://www.nps.gov/orgs/1220/index.htm",
    "robots": "allows"
@@ -3571,9 +3566,8 @@
    "id": "woven-us-ingrain-1820s",
    "title": "First Connecticut Carpet Mills Emerge in Simsbury and Enfield - Connecticut History | a CTHumanities",
    "url": "https://connecticuthistory.org/first-connecticut-carpet-mills-emerge-in-simsbury-and-enfield",
-   "verdict": "ok (redirected)",
+   "verdict": "ok",
    "status": 200,
-   "moved": "https://connecticuthistory.org/first-connecticut-carpet-mills-emerge-in-simsbury-and-enfield/",
    "robots": "allows"
   },
   {
@@ -3604,7 +3598,7 @@
    "id": "woven-wilton-1699-charter",
    "title": "Wilton: Industry since c.1500 | British History Online",
    "url": "https://www.british-history.ac.uk/vch/wilts/vol6/pp24-27",
-   "verdict": "bot check",
+   "verdict": "ok",
    "status": 200,
    "robots": "allows"
   },
@@ -3612,7 +3606,7 @@
    "id": "woven-wilton-1741-patent-moccadoes",
    "title": "Textile industries since 1550 | British History Online",
    "url": "https://www.british-history.ac.uk/vch/wilts/vol4/pp148-182",
-   "verdict": "bot check",
+   "verdict": "ok",
    "status": 200,
    "robots": "allows"
   },
@@ -3636,7 +3630,7 @@
    "id": "woven-kidderminster-brussels-1749",
    "title": "The Origins of Carpet Making in Kidderminster - Revolutionary Players",
    "url": "https://revolutionaryplayers.org.uk/?p=2927",
-   "verdict": "ok (redirected)",
+   "verdict": "ok (moved)",
    "status": 200,
    "moved": "https://www.revolutionaryplayers.org.uk/the-origins-of-carpet-making-in-kidderminster-2/",
    "robots": "allows"
@@ -3677,7 +3671,7 @@
    "id": "savonnerie-1627",
    "title": "Savonnerie manufactory - Wikipedia",
    "url": "https://en.wikipedia.org/wiki/Savonnerie_manufactory",
-   "verdict": "bot check",
+   "verdict": "ok",
    "status": 200,
    "robots": "allows"
   },
@@ -3699,12 +3693,11 @@
   },
   {
    "id": "exeter-passavant-1756",
-   "title": "Exeter, Devon - The Huguenots of Spitalfields",
+   "title": "Claude Passavant's Exeter carpet manufactory (1756–1761): costly knotted carpets, three survivors",
    "url": "https://www.huguenotsofspitalfields.org/?p=1275",
-   "verdict": "ok (redirected)",
-   "status": 200,
-   "moved": "https://www.huguenotsofspitalfields.org/huguenot-towns/exeter/",
-   "robots": "allows"
+   "verdict": "unreachable",
+   "error": "ETIMEDOUT",
+   "robots": "unreachable"
   },
   {
    "id": "axminster-whitty-1755",
@@ -3846,7 +3839,7 @@
    "id": "event-colorpoint-colortron-2009",
    "title": "FloorTek Expo 2009 Preview - August/September 2009",
    "url": "https://floordaily.net/?p=20362",
-   "verdict": "ok (redirected)",
+   "verdict": "ok (moved)",
    "status": 200,
    "moved": "https://floordaily.net/floorfocus/floortek-expo-2009-preview-augustseptember-2009/",
    "robots": "allows"
@@ -3863,7 +3856,7 @@
    "id": "event-cmc-v-tuftco-2017",
    "title": "Card Monroe Corp. Wins ColorPoint Patent Infringement Case",
    "url": "https://floordaily.net/?p=26659",
-   "verdict": "ok (redirected)",
+   "verdict": "ok (moved)",
    "status": 200,
    "moved": "https://floordaily.net/flooring-news/card-monroe-corp-wins-colorpoint-patent-infringement-case/",
    "robots": "allows"
@@ -3904,9 +3897,8 @@
    "id": "co-wilcom-autotuft",
    "title": "Wilcom&#8217;s AutoTuft Pneumatic Tufting Head Produces Special Tufting Effects | Textile World",
    "url": "https://www.textileworld.com/textile-world/new-products/2012/07/wilcoms-autotuft-pneumatic-tufting-head-produces-special-tufting-effects",
-   "verdict": "ok (redirected)",
+   "verdict": "ok",
    "status": 200,
-   "moved": "https://www.textileworld.com/textile-world/new-products/2012/07/wilcoms-autotuft-pneumatic-tufting-head-produces-special-tufting-effects/",
    "robots": "allows"
   },
   {
@@ -3983,10 +3975,10 @@
   },
   {
    "id": "co-craftphilia",
-   "title": "Craftphilia: World's First Fully Automated Tufting Machine by Craftphilia :: Kicktraq",
+   "title": "Craftphilia (Hong Kong): a crowdfunded 'fully automated' desktop tufting machine for hobbyists",
    "url": "https://www.kicktraq.com/projects/207408103/craftphilia-worlds-first-fully-automated-tufting-machine/",
-   "verdict": "ok",
-   "status": 200,
+   "verdict": "unreachable",
+   "error": "The operation was aborted due to timeout",
    "robots": "allows"
   },
   {
@@ -4028,7 +4020,6 @@
    "url": "https://britannica.com/art/tapestry/Periods-and-centres-of-activity",
    "verdict": "bot check",
    "status": 403,
-   "moved": "https://www.britannica.com/art/tapestry/Periods-and-centres-of-activity",
    "robots": "allows"
   },
   {
@@ -4091,7 +4082,7 @@
    "id": "process-knotted-knot-types",
    "title": "Knotted-pile carpet - Wikipedia",
    "url": "https://en.wikipedia.org/wiki/Knotted-pile_carpet",
-   "verdict": "bot check",
+   "verdict": "ok",
    "status": 200,
    "robots": "allows"
   },
@@ -4147,7 +4138,7 @@
    "id": "process-hooking-origins",
    "title": "This page has been removed | Canadian Museum of History",
    "url": "https://historymuseum.ca/cmc/exhibitions/arts/rugs/rugs02e.html",
-   "verdict": "ok (redirected)",
+   "verdict": "gone (not found)",
    "status": 200,
    "moved": "https://www.historymuseum.ca/page-removed",
    "robots": "allows"
@@ -4204,9 +4195,8 @@
    "id": "process-rag-woven-shaker",
    "title": "",
    "url": "https://shakermuseum.us/object?id=4222",
-   "verdict": "ok (redirected)",
+   "verdict": "ok",
    "status": 200,
-   "moved": "https://www.shakermuseum.us/object?id=4222",
    "robots": "allows"
   },
   {
@@ -4253,7 +4243,7 @@
    "id": "process-industrial-fusion-bonded",
    "title": "Carpet Tile: 50 Years Later - Aug/Sep 2007",
    "url": "https://floordaily.net/?p=20185",
-   "verdict": "ok (redirected)",
+   "verdict": "ok (moved)",
    "status": 200,
    "moved": "https://floordaily.net/floorfocus/carpet-tile-50-years-later-augsep-2007/",
    "robots": "allows"
@@ -4264,14 +4254,13 @@
    "url": "https://zimmer-austria.com/en/node/6296",
    "verdict": "gone (not found)",
    "status": 404,
-   "moved": "https://www.zimmer-austria.com/en/node/6296/",
    "robots": "allows"
   },
   {
    "id": "process-industrial-carpet-tile",
    "title": "Carpet Tile: 50 Years Later - Aug/Sep 2007",
    "url": "https://floordaily.net/?p=20185",
-   "verdict": "ok (redirected)",
+   "verdict": "ok (moved)",
    "status": 200,
    "moved": "https://floordaily.net/floorfocus/carpet-tile-50-years-later-augsep-2007/",
    "robots": "allows"
@@ -4342,7 +4331,7 @@
   "georgiaencyclopedia.org": {
    "records": 8,
    "verdicts": {
-    "bot check": 8
+    "ok": 8
    }
   },
   "carpet-rug.org": {
@@ -4354,7 +4343,7 @@
   "rughookingmagazine.com": {
    "records": 1,
    "verdicts": {
-    "ok (redirected)": 1
+    "ok (moved)": 1
    }
   },
   "metmuseum.org": {
@@ -4366,7 +4355,7 @@
   "historic-deerfield.org": {
    "records": 1,
    "verdicts": {
-    "ok (redirected)": 1
+    "ok": 1
    }
   },
   "randomhouse.com": {
@@ -4432,7 +4421,7 @@
   "asme.org": {
    "records": 1,
    "verdicts": {
-    "ok (redirected)": 1
+    "ok": 1
    }
   },
   "patents.google.com": {
@@ -4552,7 +4541,7 @@
   "hi.wikipedia.org": {
    "records": 2,
    "verdicts": {
-    "bot check": 2
+    "ok": 2
    }
   },
   "cuts-citee.org": {
@@ -4594,7 +4583,7 @@
   "en.wikipedia.org": {
    "records": 6,
    "verdicts": {
-    "bot check": 6
+    "ok": 6
    }
   },
   "amarujala.com": {
@@ -4612,7 +4601,7 @@
   "ja.wikipedia.org": {
    "records": 2,
    "verdicts": {
-    "bot check": 2
+    "ok": 2
    }
   },
   "japancarpet.co.jp": {
@@ -4661,7 +4650,7 @@
   "de.wikipedia.org": {
    "records": 1,
    "verdicts": {
-    "bot check": 1
+    "ok": 1
    }
   },
   "fr.wikipedia.org": {
@@ -4679,13 +4668,13 @@
   "carpetyourlife.com": {
    "records": 1,
    "verdicts": {
-    "ok (redirected)": 1
+    "ok (moved)": 1
    }
   },
   "nkie.nankai.edu.cn": {
    "records": 1,
    "verdicts": {
-    "unreachable": 1
+    "ok": 1
    }
   },
   "m.sohu.com": {
@@ -4697,7 +4686,7 @@
   "thepaper.cn": {
    "records": 1,
    "verdicts": {
-    "bot check": 1
+    "ok": 1
    }
   },
   "cnki.net": {
@@ -4817,7 +4806,7 @@
   "nps.gov": {
    "records": 2,
    "verdicts": {
-    "ok (redirected)": 2
+    "ok (moved)": 2
    }
   },
   "britannica.com": {
@@ -4913,7 +4902,7 @@
   "kasthall.com": {
    "records": 1,
    "verdicts": {
-    "ok (redirected)": 1
+    "ok (moved)": 1
    }
   },
   "ceadogan.ie": {
@@ -4961,7 +4950,7 @@
   "westgatextiletrail.com": {
    "records": 1,
    "verdicts": {
-    "ok (redirected)": 1
+    "ok (moved)": 1
    }
   },
   "cormarcarpets.co.uk": {
@@ -4973,7 +4962,7 @@
   "interface.com": {
    "records": 1,
    "verdicts": {
-    "bot check": 1
+    "ok": 1
    }
   },
   "milliken.com": {
@@ -4985,7 +4974,7 @@
   "dixiegroup.com": {
    "records": 1,
    "verdicts": {
-    "ok": 1
+    "bot check": 1
    }
   },
   "engineeredfloors.com": {
@@ -5045,7 +5034,7 @@
   "suminoe.jp": {
    "records": 1,
    "verdicts": {
-    "ok (redirected)": 1
+    "ok (moved)": 1
    }
   },
   "orientalweavers.com": {
@@ -5075,13 +5064,13 @@
   "cobble.co.uk": {
    "records": 1,
    "verdicts": {
-    "ok (redirected)": 1
+    "ok (moved)": 1
    }
   },
   "tuftco.com": {
    "records": 1,
    "verdicts": {
-    "bot check": 1
+    "ok": 1
    }
   },
   "cardmonroe.com": {
@@ -5111,13 +5100,13 @@
   "kaleen.com": {
    "records": 1,
    "verdicts": {
-    "bot check": 1
+    "ok": 1
    }
   },
   "homeaccentstoday.com": {
    "records": 1,
    "verdicts": {
-    "ok (redirected)": 1
+    "ok": 1
    }
   },
   "hofmann-handtuft.de": {
@@ -5141,7 +5130,7 @@
   "revolutionaryplayers.org.uk": {
    "records": 2,
    "verdicts": {
-    "ok (redirected)": 2
+    "ok (moved)": 2
    }
   },
   "collections.vam.ac.uk": {
@@ -5153,7 +5142,7 @@
   "futuremuseum.co.uk": {
    "records": 1,
    "verdicts": {
-    "bot check": 1
+    "ok": 1
    }
   },
   "journals.socantscot.org": {
@@ -5165,7 +5154,7 @@
   "connecticuthistory.org": {
    "records": 1,
    "verdicts": {
-    "ok (redirected)": 1
+    "ok": 1
    }
   },
   "historicnewengland.org": {
@@ -5183,7 +5172,7 @@
   "british-history.ac.uk": {
    "records": 2,
    "verdicts": {
-    "bot check": 2
+    "ok": 2
    }
   },
   "wiltontowncouncil.gov.uk": {
@@ -5219,7 +5208,7 @@
   "huguenotsofspitalfields.org": {
    "records": 1,
    "verdicts": {
-    "ok (redirected)": 1
+    "unreachable": 1
    }
   },
   "axminsterheritage.org": {
@@ -5255,14 +5244,13 @@
   "floordaily.net": {
    "records": 4,
    "verdicts": {
-    "ok (redirected)": 4
+    "ok (moved)": 4
    }
   },
   "textileworld.com": {
    "records": 2,
    "verdicts": {
-    "ok": 1,
-    "ok (redirected)": 1
+    "ok": 2
    }
   },
   "highlights.paper.edu.cn": {
@@ -5322,7 +5310,7 @@
   "kicktraq.com": {
    "records": 1,
    "verdicts": {
-    "ok": 1
+    "unreachable": 1
    }
   },
   "depts.washington.edu": {
@@ -5388,7 +5376,7 @@
   "historymuseum.ca": {
    "records": 1,
    "verdicts": {
-    "ok (redirected)": 1
+    "gone (not found)": 1
    }
   },
   "textilemuseum.ca": {
@@ -5406,7 +5394,7 @@
   "shakermuseum.us": {
    "records": 1,
    "verdicts": {
-    "ok (redirected)": 1
+    "ok": 1
    }
   },
   "apparelsearch.com": {
