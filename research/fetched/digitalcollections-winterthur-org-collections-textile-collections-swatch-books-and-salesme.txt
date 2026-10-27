@@ -1,0 +1,195 @@
+URL: https://digitalcollections.winterthur.org/collections/textile-collections/swatch-books-and-salesmens-sample-books
+Final: https://digitalcollections.winterthur.org/collections/textile-collections/swatch-books-and-salesmens-sample-books
+Status: 200
+Title: Swatch Books and Salesmen&#x27;s Sample Books - Winterthur Library Digital Collections
+Fetched: 2026-10-27T07:00:34.800Z
+
+Swatch Books and Salesmen&#x27;s Sample Books - Winterthur Library Digital Collections
+You are logged in as a CMS user.
+Return to Site Manager
+X
+Keyboard Shortcuts
+Back
+Skip to main content
+Keyboard Shortcuts
+Skip to main content
+Keyboard shortcuts can be used to navigate aspects of this site without a mouse or cursor.
+When viewing a object, select or tab into the image viewer and use the following controls to manipulate the image.
+Move up: w or [up arrow]
+Move down: s or [down arrow]
+Move left: a or [left arrow]
+Move right: d or [right arrow]
+Return to centre: 0
+Zoom in: = or [shift] + w or [shift] + [up arrow]
+Zoom out: - or [shift] + s or [shift] + [down arrow]
+Rotate clockwise: r
+Rotate counterclockwise: R
+Flip horizontally: f
+Skip to main content
+Skip to main content
+Winterthur Library Digital Collections
+Hello, | My Account: Logout
+My Account: Logout | Restricted Content: Logout
+My Account: Logout | Restricted Content: Approved IP address
+Hello, | My Account: Logout | Restricted Content: Logout
+Hello, | My Account: Logout | Restricted Content: Approved IP address
+You are able to view restricted content due to your approved IP address
+You are logged in to view restricted content: Logout
+Close
+Skip to main content
+My Account Login
+Skip to main content
+My Account allows searches and documents to be saved across any AM or AM Quartex powered site. My Account is a free and optional service provided by AM.
+Don't have an account? Register for free
+Email
+Password
+Forgotten Password?
+Please enter the email address you use for your personal Quartex account. A link to reset your password will be emailed to this address.
+Email Address
+If you haven't received an email within 24 hours, please contact support@quartexcollections.com
+Back to Login
+Close
+Close
+Skip to main content
+Search
+Search...
+Search
+Advanced search
+Share
+Facebook
+Twitter
+Email
+My Account
+Switch to high contrast
+Menu
+Home
+Browse All
+Collections
+Digital Projects & Exhibits
+About
+More
+Swatch Books and Salesmen&#x27;s Sample Books
+Swatch Books and Salesmen&#x27;s Sample Books
+Search Swatch Books and Salesmen&#x27;s Sample Books
+The Swatch Book Collection is made up of bound and unbound items containing a variety of fabric samples including yarn, ribbons, lace, woven portraits, bookmarks, handkerchiefs, and needlework. The volumes represented here cover a span of about 150 years and are mainly from Norwich and Manchester, two important textile manufacturing centers in England.
+0" style="display: none;">
+Current search criteria
+Share search
+Save search
+Clear all
+Clear tag
+No search criteria
+Filter results
+Sort by
+Relevance
+Title Ascending
+Title Descending
+Sort by
+Relevance
+Title Ascending
+Title Descending
+View
+12
+30
+90
+All
+Cancel
+Clear
+Apply
+View type
+List view
+Grid view
+Sort by
+Relevance
+Title Ascending
+Title Descending
+Sort by
+Relevance
+Title Ascending
+Title Descending
+View per page
+12
+30
+90
+All
+Filter results
+There are no filters for Static Content
+Apply
+Clear
+File type
+Date
+Month
+January
+February
+March
+April
+May
+June
+July
+August
+September
+October
+November
+December
+Add Range
+to
+Month
+January
+February
+March
+April
+May
+June
+July
+August
+September
+October
+November
+December
+Remove Range
+0" style="display: none;">
+0" />
+Apply
+Clear
+Page
+of
+Showing of
+Remove this document from bookmarks
+Bookmark this document
+Sorry, no results found that match your criteria.
+Sorry, no results found that match your criteria. Please check the Restricted Documents tab in case there are results you do not currently have access to.
+Sorry, no results found for Restricted Documents that match your criteria.
+1" aria-label="Previous page">
+Previous
+Page
+of
+Next
+Jump to Top
+Toggle
+Close
+Your search has also found results in related AM products.
+Show me the results
+Back
+Skip to main content
+Share search
+Skip to main content
+Copy the below link to share this set of search criteria with others. Using the link will allow others to see a list of search results on this site with the same parameters as those you've used.
+Share URL
+Close
+Copy
+Email
+Skip to main content
+Contact
+Winterthur Library
+5105 Kennett Pike
+Winterthur, DE 19735
+302-888-4681 | reference@winterthur.org
+winterthur.org
+Visit Us
+Reading Room Hours
+Monday-Friday, 9:00-4:00
+Special Collections by Appointment
+Monday-Friday, 10:00-4:00
+Learn More
+Powered by
+This is from the quartex-front-end repo.

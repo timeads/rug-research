@@ -1,0 +1,9 @@
+{
+ "pattern": "http://museumcollection.winterthur.org/index_files/index-Textiles-catalog-{n}-411.html",
+ "from": 1,
+ "to": 411,
+ "grep": "nylon|hooked|tufted|chenille|candlewick|bed ?rug|carpet|rug|acrylic|polyester|synthetic",
+ "crawledAt": "2026-10-27T07:01:17.108Z",
+ "count": 0,
+ "matches": []
+}
