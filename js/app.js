@@ -836,14 +836,14 @@
   // A picture of a comparable item is saved as an illustration and labelled so on cards and in the
   // record, so it's never mistaken for the item described. Keep imageQuery in step with
   // scripts/suggest-images.mjs, which uses the same words for the weekly suggestions.
-  const IMAGE_TERMS = ["Brussels carpet", "Wilton carpet", "Kidderminster carpet", "Venetian carpet", "ingrain carpet", "Axminster carpet", "Scotch carpet", "tapestry carpet", "chenille carpet", "Moquette", "Savonnerie", "Turkey carpet", "needlework carpet", "hearth rug", "floor cloth", "floorcloth", "hooked rug", "bed rug", "yarn-sewn rug", "shirred rug", "braided rug", "rag rug", "candlewick", "chenille bedspread", "tufted bedspread", "coverlet", "Jacquard loom", "power loom", "draw loom", "tufting machine", "tufting gun", "rug hook", "punch needle", "Pazyryk", "kilim", "soumak", "dhurrie", "rya", "shyrdak", "felt rug", "Navajo rug", "carpet loom", "carpet sample", "sample book", "pattern book", "nylon", "tufted carpet", "tufting", "hand-knotted carpet", "knotted carpet", "woven carpet"];
+  const IMAGE_TERMS = ["Brussels carpet", "Wilton carpet", "Kidderminster carpet", "Venetian carpet", "ingrain carpet", "Axminster carpet", "Scotch carpet", "tapestry carpet", "chenille carpet", "Moquette", "Savonnerie", "Turkey carpet", "needlework carpet", "hearth rug", "floor cloth", "floorcloth", "hooked rug", "bed rug", "yarn-sewn rug", "shirred rug", "braided rug", "rag rug", "candlewick", "chenille bedspread", "tufted bedspread", "coverlet", "Jacquard loom", "power loom", "draw loom", "tufting machine", "tufting gun", "rug hook", "punch needle", "Pazyryk", "kilim", "soumak", "dhurrie", "rya", "shyrdak", "felt rug", "Navajo rug", "carpet loom", "carpet sample", "sample book", "pattern book", "nylon", "Kidderminster", "Wilton", "Axminster", "Venetian", "ingrain", "Brussels", "tufted carpet", "tufting", "hand-knotted carpet", "knotted carpet", "woven carpet"];
   const STOP = new Set("the a an of and or in on at for to from by with as is are was were be its it this that these those begins began first earliest early late new into over under about how what why which who whose than then their his her our your not no only also more most some any all each per via vs".split(" "));
   const imageQuery = it => {
     const t = (it.title || "").replace(/^(REFUTED|UNVERIFIED|CORRECTION)\s*:\s*/i, "").replace(/\([^)]*\)/g, " ").replace(/[‘’“”"']/g, "");
     const find = text => IMAGE_TERMS.find(k => new RegExp(`\\b${k}`, "i").test(text));
     // Findings and events often have abstract titles; their text usually names the thing to picture.
     const term = find(t) || (["finding", "event"].includes(it.type) && find([...(it.techniques || []), ...(it.tags || []), it.description || ""].join(" ")));
-    if (term) return term;
+    if (term) return /^(Kidderminster|Wilton|Axminster|Venetian|ingrain|Brussels)$/.test(term) ? term + " carpet" : term; // a weave name alone finds towns and paintings
     const head = t.split(/[:;–—]|\s-\s/)[0];
     return head.replace(/\b\d{1,4}s?\b|\b(c|ca)\./gi, " ").split(/[^\p{L}\p{N}-]+/u).filter(w => w.length > 2 && !STOP.has(w.toLowerCase())).slice(0, 3).join(" ");
   };
