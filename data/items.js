@@ -8349,7 +8349,24 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "suggestive",
-    "place": "Europe (EP), German priority"
+    "place": "Europe (EP), German priority",
+    "images": [
+      {
+        "src": "images/patents/EP0026492A1-01.png",
+        "caption": "EP0026492A1, sheet 1"
+      },
+      {
+        "src": "images/patents/EP0026492A1-02.png",
+        "caption": "EP0026492A1, sheet 2"
+      },
+      {
+        "src": "images/patents/EP0026492A1-03.png",
+        "caption": "EP0026492A1, sheet 3"
+      }
+    ],
+    "image": "images/patents/EP0026492A1-01.png",
+    "imageCredit": "European Patent Office via Google Patents",
+    "imageSource": "patent-office"
   },
   {
     "id": "pat-de2815801a1",
@@ -8469,7 +8486,24 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "solid",
-    "place": "Australia (EP filing)"
+    "place": "Australia (EP filing)",
+    "images": [
+      {
+        "src": "images/patents/EP1674605A1-01.png",
+        "caption": "EP1674605A1, sheet 1"
+      },
+      {
+        "src": "images/patents/EP1674605A1-02.png",
+        "caption": "EP1674605A1, sheet 2"
+      },
+      {
+        "src": "images/patents/EP1674605A1-03.png",
+        "caption": "EP1674605A1, sheet 3"
+      }
+    ],
+    "image": "images/patents/EP1674605A1-01.png",
+    "imageCredit": "European Patent Office via Google Patents",
+    "imageSource": "patent-office"
   },
   {
     "id": "pat-ep2077348b1",
@@ -8501,7 +8535,24 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "solid",
-    "place": "Australia (EP filing)"
+    "place": "Australia (EP filing)",
+    "images": [
+      {
+        "src": "images/patents/EP2077348B1-01.png",
+        "caption": "EP2077348B1, sheet 1"
+      },
+      {
+        "src": "images/patents/EP2077348B1-02.png",
+        "caption": "EP2077348B1, sheet 2"
+      },
+      {
+        "src": "images/patents/EP2077348B1-03.png",
+        "caption": "EP2077348B1, sheet 3"
+      }
+    ],
+    "image": "images/patents/EP2077348B1-01.png",
+    "imageCredit": "European Patent Office via Google Patents",
+    "imageSource": "patent-office"
   },
   {
     "id": "pat-de2621360a1",
@@ -8557,7 +8608,24 @@ window.RUG_ITEMS = [
       "checked from search results"
     ],
     "status": "unverified",
-    "confidence": "unverified"
+    "confidence": "unverified",
+    "images": [
+      {
+        "src": "images/patents/CN2402698Y-1.png",
+        "caption": "CN2402698Y, sheet 1"
+      },
+      {
+        "src": "images/patents/CN2402698Y-2.png",
+        "caption": "CN2402698Y, sheet 2"
+      },
+      {
+        "src": "images/patents/CN2402698Y-3.png",
+        "caption": "CN2402698Y, sheet 3"
+      }
+    ],
+    "image": "images/patents/CN2402698Y-1.png",
+    "imageCredit": "CNIPA (China National Intellectual Property Administration) via Google Patents",
+    "imageSource": "patent-office"
   },
   {
     "id": "pat-cn2723478y",
@@ -8587,7 +8655,24 @@ window.RUG_ITEMS = [
       "checked from search results"
     ],
     "status": "unverified",
-    "confidence": "solid"
+    "confidence": "solid",
+    "images": [
+      {
+        "src": "images/patents/CN2723478Y-1.png",
+        "caption": "CN2723478Y, sheet 1"
+      },
+      {
+        "src": "images/patents/CN2723478Y-2.png",
+        "caption": "CN2723478Y, sheet 2"
+      },
+      {
+        "src": "images/patents/CN2723478Y-3.png",
+        "caption": "CN2723478Y, sheet 3"
+      }
+    ],
+    "image": "images/patents/CN2723478Y-1.png",
+    "imageCredit": "CNIPA (China National Intellectual Property Administration) via Google Patents",
+    "imageSource": "patent-office"
   },
   {
     "id": "pat-cn2806530y",
@@ -8616,7 +8701,24 @@ window.RUG_ITEMS = [
       "checked from search results"
     ],
     "status": "unverified",
-    "confidence": "solid"
+    "confidence": "solid",
+    "images": [
+      {
+        "src": "images/patents/CN2806530Y-01.png",
+        "caption": "CN2806530Y, sheet 1"
+      },
+      {
+        "src": "images/patents/CN2806530Y-02.png",
+        "caption": "CN2806530Y, sheet 2"
+      },
+      {
+        "src": "images/patents/CN2806530Y-03.png",
+        "caption": "CN2806530Y, sheet 3"
+      }
+    ],
+    "image": "images/patents/CN2806530Y-01.png",
+    "imageCredit": "CNIPA (China National Intellectual Property Administration) via Google Patents",
+    "imageSource": "patent-office"
   },
   {
     "id": "pat-cn104562491a",
@@ -8648,7 +8750,24 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "solid",
-    "place": "Shenyang / Yiwu"
+    "place": "Shenyang / Yiwu",
+    "images": [
+      {
+        "src": "images/patents/CN104562491A-01.png",
+        "caption": "CN104562491A, sheet 1"
+      },
+      {
+        "src": "images/patents/CN104562491A-02.png",
+        "caption": "CN104562491A, sheet 2"
+      },
+      {
+        "src": "images/patents/CN104562491A-03.png",
+        "caption": "CN104562491A, sheet 3"
+      }
+    ],
+    "image": "images/patents/CN104562491A-01.png",
+    "imageCredit": "CNIPA (China National Intellectual Property Administration) via Google Patents",
+    "imageSource": "patent-office"
   },
   {
     "id": "pat-cn204058934u",
@@ -8677,7 +8796,24 @@ window.RUG_ITEMS = [
       "checked from search results"
     ],
     "status": "unverified",
-    "confidence": "suggestive"
+    "confidence": "suggestive",
+    "images": [
+      {
+        "src": "images/patents/CN204058934U-1.png",
+        "caption": "CN204058934U, sheet 1"
+      },
+      {
+        "src": "images/patents/CN204058934U-2.png",
+        "caption": "CN204058934U, sheet 2"
+      },
+      {
+        "src": "images/patents/CN204058934U-3.png",
+        "caption": "CN204058934U, sheet 3"
+      }
+    ],
+    "image": "images/patents/CN204058934U-1.png",
+    "imageCredit": "CNIPA (China National Intellectual Property Administration) via Google Patents",
+    "imageSource": "patent-office"
   },
   {
     "id": "pat-cn111441143a",
@@ -8705,7 +8841,24 @@ window.RUG_ITEMS = [
       "checked from search results"
     ],
     "status": "unverified",
-    "confidence": "suggestive"
+    "confidence": "suggestive",
+    "images": [
+      {
+        "src": "images/patents/CN111441143A-1.png",
+        "caption": "CN111441143A, sheet 1"
+      },
+      {
+        "src": "images/patents/CN111441143A-2.png",
+        "caption": "CN111441143A, sheet 2"
+      },
+      {
+        "src": "images/patents/CN111441143A-3.png",
+        "caption": "CN111441143A, sheet 3"
+      }
+    ],
+    "image": "images/patents/CN111441143A-1.png",
+    "imageCredit": "CNIPA (China National Intellectual Property Administration) via Google Patents",
+    "imageSource": "patent-office"
   },
   {
     "id": "pat-cn111705448a",
@@ -8736,7 +8889,24 @@ window.RUG_ITEMS = [
       "checked from search results"
     ],
     "status": "unverified",
-    "confidence": "solid"
+    "confidence": "solid",
+    "images": [
+      {
+        "src": "images/patents/CN111705448A-1.png",
+        "caption": "CN111705448A, sheet 1"
+      },
+      {
+        "src": "images/patents/CN111705448A-2.png",
+        "caption": "CN111705448A, sheet 2"
+      },
+      {
+        "src": "images/patents/CN111705448A-3.png",
+        "caption": "CN111705448A, sheet 3"
+      }
+    ],
+    "image": "images/patents/CN111705448A-1.png",
+    "imageCredit": "CNIPA (China National Intellectual Property Administration) via Google Patents",
+    "imageSource": "patent-office"
   },
   {
     "id": "pat-cn111876919a",
@@ -8764,7 +8934,24 @@ window.RUG_ITEMS = [
       "checked from search results"
     ],
     "status": "unverified",
-    "confidence": "suggestive"
+    "confidence": "suggestive",
+    "images": [
+      {
+        "src": "images/patents/CN111876919A-01.png",
+        "caption": "CN111876919A, sheet 1"
+      },
+      {
+        "src": "images/patents/CN111876919A-02.png",
+        "caption": "CN111876919A, sheet 2"
+      },
+      {
+        "src": "images/patents/CN111876919A-03.png",
+        "caption": "CN111876919A, sheet 3"
+      }
+    ],
+    "image": "images/patents/CN111876919A-01.png",
+    "imageCredit": "CNIPA (China National Intellectual Property Administration) via Google Patents",
+    "imageSource": "patent-office"
   },
   {
     "id": "pat-gb821702a",
@@ -8966,7 +9153,24 @@ window.RUG_ITEMS = [
       "checked from search results"
     ],
     "status": "unverified",
-    "confidence": "suggestive"
+    "confidence": "suggestive",
+    "images": [
+      {
+        "src": "images/patents/US3968758-1.png",
+        "caption": "US 3,968,758, sheet 1"
+      },
+      {
+        "src": "images/patents/US3968758-2.png",
+        "caption": "US 3,968,758, sheet 2"
+      },
+      {
+        "src": "images/patents/US3968758-3.png",
+        "caption": "US 3,968,758, sheet 3"
+      }
+    ],
+    "image": "images/patents/US3968758-1.png",
+    "imageCredit": "USPTO via Google Patents (public domain)",
+    "imageSource": "uspto"
   },
   {
     "id": "pat-us4029031a",
@@ -8990,6 +9194,23 @@ window.RUG_ITEMS = [
       "checked from search results"
     ],
     "status": "unverified",
-    "confidence": "suggestive"
+    "confidence": "suggestive",
+    "images": [
+      {
+        "src": "images/patents/US4029031-01.png",
+        "caption": "US 4,029,031, sheet 1"
+      },
+      {
+        "src": "images/patents/US4029031-02.png",
+        "caption": "US 4,029,031, sheet 2"
+      },
+      {
+        "src": "images/patents/US4029031-03.png",
+        "caption": "US 4,029,031, sheet 3"
+      }
+    ],
+    "image": "images/patents/US4029031-01.png",
+    "imageCredit": "USPTO via Google Patents (public domain)",
+    "imageSource": "uspto"
   }
 ];
