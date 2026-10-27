@@ -314,6 +314,37 @@
     </form>
   </dialog>
 
+  <dialog id="img-dialog" class="img-dialog" aria-labelledby="img-title">
+    <header class="dialog-head">
+      <h2 id="img-title">Find an image</h2>
+      <button type="button" class="icon-btn" id="btn-x-img" aria-label="Close"><svg class="ic"><use href="#i-x"/></svg></button>
+    </header>
+    <div class="img-body">
+      <p class="img-for">For <strong id="img-for"></strong></p>
+      <form id="img-search" class="img-search" role="search">
+        <label class="sr-only" for="img-q">Search words</label>
+        <input id="img-q" type="search" placeholder="e.g. Brussels carpet" autocomplete="off">
+        <button class="btn primary">Search</button>
+      </form>
+      <fieldset class="img-role">
+        <legend>Use the picture as</legend>
+        <label><input type="radio" name="img-role" value="illustration"> <span><strong>An illustration</strong> A comparable item. Labelled “Illustration” wherever it shows.</span></label>
+        <label><input type="radio" name="img-role" value="own"> <span><strong>This record's own image</strong> It shows the very item described.</span></label>
+      </fieldset>
+      <p id="img-status" class="status" role="status"></p>
+      <div id="img-results" class="img-grid"></div>
+      <details class="img-manual">
+        <summary>Found one elsewhere? Paste its address</summary>
+        <form id="img-paste" class="img-paste">
+          <label>Image address <input id="img-url" type="url" placeholder="https://…/image.jpg"></label>
+          <label>Page it's on <input id="img-page" type="url" placeholder="https://"></label>
+          <label class="span2">What it shows <input id="img-cap" placeholder="Brussels carpet sample, England, about 1850"></label>
+          <button class="btn primary">Use this image</button>
+        </form>
+      </details>
+    </div>
+  </dialog>
+
   <input type="file" id="restore-file" accept="application/json" hidden>
   <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
 

@@ -1,0 +1,49 @@
+name: Image suggestions
+
+# Gathers candidate pictures for records without an image into data/image-suggestions.json,
+# which "Find an image" on the site shows first. Nothing is attached to records here.
+# Weekly, and on demand from the Actions tab.
+on:
+  workflow_dispatch:
+    inputs:
+      only:
+        description: "Comma-separated record ids (blank = every record without an image)"
+        required: false
+        default: ""
+  schedule:
+    - cron: "23 9 * * 3"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: suggest-images
+  cancel-in-progress: false
+
+jobs:
+  suggest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Gather suggestions and commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898+github-actions[bot]@users.noreply.github.com"
+          if [ -n "${{ inputs.only }}" ]; then node scripts/suggest-images.mjs --only "${{ inputs.only }}"; else node scripts/suggest-images.mjs; fi
+          cp data/image-suggestions.json "${RUNNER_TEMP}/image-suggestions.json"
+          for attempt in 1 2 3; do
+            git add data/image-suggestions.json
+            if git diff --cached --quiet; then echo "Nothing new."; exit 0; fi
+            git commit -q -m "Update image suggestions"
+            if git push origin "HEAD:${GITHUB_REF_NAME}"; then exit 0; fi
+            # Someone else pushed: take their branch and lay this run's file on top.
+            git fetch -q origin "${GITHUB_REF_NAME}" && git reset -q --hard FETCH_HEAD
+            cp "${RUNNER_TEMP}/image-suggestions.json" data/image-suggestions.json
+          done
+          exit 1

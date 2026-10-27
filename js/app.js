@@ -299,7 +299,7 @@
   const plateHTML = (it, alt = "") => {
     const src = imgSrc(it);
     return src
-      ? `<img src="${esc(src)}" alt="${esc(alt)}" loading="lazy" decoding="async" referrerpolicy="no-referrer" data-fallback="${esc(boardPlate(it))}">${it._borrowed ? `<span class="plate-rel" title="${esc(it.imageCredit)}">Related record</span>` : ""}`
+      ? `<img src="${esc(src)}" alt="${esc(alt)}" loading="lazy" decoding="async" referrerpolicy="no-referrer" data-fallback="${esc(boardPlate(it))}">${it._borrowed ? `<span class="plate-rel" title="${esc(it.imageCredit)}">Related record</span>` : it.imageRole === "illustration" ? `<span class="plate-rel" title="${esc("Illustration: " + (it.imageCaption || "a comparable item"))}">Illustration</span>` : ""}`
       : boardPlate(it);
   };
   // Broken remote images fall back to the board plate.
@@ -506,13 +506,15 @@
       ${src ? `<div class="drawer-plate"><a href="${esc(src)}" target="_blank" rel="noopener" aria-label="Open full image">${plateHTML(it, it.title)}</a></div>` : it.type === "finding" ? "" : `<div class="drawer-plate"><div class="plate-board">${boardPlate(it)}</div></div>`}
       ${gallery.length > 1 ? `<div class="gallery" role="group" aria-label="More photos">${gallery.map((g, i) => `<button class="gthumb" data-gsrc="${esc(g.src)}" data-gcap="${esc(g.caption || "")}" aria-label="${esc(g.caption || `Photo ${i + 1}`)}" aria-pressed="${i === 0}"><img src="${esc(g.src)}" alt="" loading="lazy" referrerpolicy="no-referrer"></button>`).join("")}</div>` : ""}
       ${src && it.rights && !["own", "public-domain"].includes(it.rights) ? `<p class="credit rights rights-${esc(it.rights)}">${esc(RIGHTS[it.rights] || it.rights)}${it.rights === "not-requested" ? ": shown here for research; ask before publishing" : ""}</p>` : ""}
-      ${src && (credit || gallery[0]?.caption) ? `<p class="credit" id="gallery-caption">${esc([gallery[0]?.caption, credit && `Image: ${credit}`].filter(Boolean).join(" · "))}</p>` : ""}
+      ${src && it.imageRole === "illustration" ? `<p class="credit illus">Illustration, not the item described: ${it.imagePage && safeUrl(it.imagePage) ? `<a href="${esc(safeUrl(it.imagePage))}" target="_blank" rel="noopener">${esc(it.imageCaption || "a comparable item")}</a>` : esc(it.imageCaption || "a comparable item")}${credit ? ` · Image: ${esc(credit)}` : ""}</p>`
+        : src && (credit || gallery[0]?.caption) ? `<p class="credit" id="gallery-caption">${esc([gallery[0]?.caption, credit && `Image: ${credit}`].filter(Boolean).join(" · "))}</p>` : ""}
       <div class="drawer-body">
         <h2 id="drawer-title">${esc(it.title)}</h2>
         <p class="sub">${esc(metaLine(it))}</p>
         <div class="btn-row">
           ${it.sourceUrl && safeUrl(it.sourceUrl) ? `<a class="btn primary" href="${esc(safeUrl(it.sourceUrl))}" target="_blank" rel="noopener">View at source${icon("external")}</a><a class="btn" href="https://web.archive.org/web/2*/${esc(safeUrl(it.sourceUrl))}" target="_blank" rel="noopener" title="If the source link is broken, the Internet Archive may have saved copies">Archived copies${icon("external")}</a>` : ""}
           <button class="btn" id="copy-cite">${icon("copy")}Copy citation</button>
+          <button class="btn" data-find-image="${esc(id)}">${icon("search")}${it.image && !it._borrowed ? "Find another image" : "Find an image"}</button>
         </div>
         ${it.originalText ? `<figure class="quote"><blockquote lang="${esc(it.language || "")}">${esc(it.originalText)}</blockquote>${it.translation ? `<figcaption>${esc(it.translation)}</figcaption>` : ""}</figure>` : it.translation ? `<p class="desc">${esc(it.translation)}</p>` : ""}
         ${it.confidence && CONFIDENCE[it.confidence] ? `<p class="conf-line">${confBadge(it)} ${esc(CONFIDENCE[it.confidence].hint)}.</p>` : ""}
@@ -638,6 +640,7 @@
     for (const [k, v] of fd.entries()) if (k !== "imageFile" && k !== "imagesText") rec[k] = typeof v === "string" ? v.trim() : v;
     const more = String(fd.get("imagesText") || "").split("\n").map(l => l.trim()).filter(Boolean).map(l => { const [src, ...c] = l.split("|"); return { src: src.trim(), caption: c.join("|").trim() }; }).filter(g => safeUrl(g.src));
     if (more.length && !rec.image) rec.image = more.shift().src;
+    if (rec.image !== prev.image) { delete rec.imageRole; delete rec.imageCaption; } // a new image by hand isn't the picked illustration
     if (more.length) rec.images = [{ src: rec.image, caption: "" }, ...more].map(g => g.caption ? g : { src: g.src });
     for (const k of ["materials", "techniques", "themes", "tags"]) rec[k] = arr(rec[k]);
     for (const k of ["dateStart", "dateEnd"]) rec[k] = rec[k] === "" ? null : Number(rec[k]);
@@ -826,6 +829,82 @@
     const t = e.dataTransfer.getData("text/uri-list") || e.dataTransfer.getData("text/plain");
     if (!files.length && !t) return;
     e.preventDefault(); openEdit(null, { _drop: t, _files: files });
+  });
+
+  // ---------- find an image ----------
+  // Searches the open collections (and the weekly suggestions file) for a picture for a record.
+  // A picture of a comparable item is saved as an illustration and labelled so on cards and in the
+  // record, so it's never mistaken for the item described. Keep imageQuery in step with
+  // scripts/suggest-images.mjs, which uses the same words for the weekly suggestions.
+  const IMAGE_TERMS = ["Brussels carpet", "Wilton carpet", "Kidderminster carpet", "Venetian carpet", "ingrain carpet", "Axminster carpet", "Scotch carpet", "tapestry carpet", "chenille carpet", "Moquette", "Savonnerie", "Turkey carpet", "needlework carpet", "hearth rug", "floor cloth", "floorcloth", "hooked rug", "bed rug", "yarn-sewn rug", "shirred rug", "braided rug", "rag rug", "candlewick", "chenille bedspread", "tufted bedspread", "coverlet", "Jacquard loom", "power loom", "draw loom", "tufting machine", "tufting gun", "rug hook", "punch needle", "Pazyryk", "kilim", "soumak", "dhurrie", "rya", "shyrdak", "felt rug", "Navajo rug", "carpet loom", "carpet sample", "sample book", "pattern book", "nylon", "tufted carpet", "tufting", "hand-knotted carpet", "knotted carpet", "woven carpet"];
+  const STOP = new Set("the a an of and or in on at for to from by with as is are was were be its it this that these those begins began first earliest early late new into over under about how what why which who whose than then their his her our your not no only also more most some any all each per via vs".split(" "));
+  const imageQuery = it => {
+    const t = (it.title || "").replace(/^(REFUTED|UNVERIFIED|CORRECTION)\s*:\s*/i, "").replace(/\([^)]*\)/g, " ").replace(/[‘’“”"']/g, "");
+    const find = text => IMAGE_TERMS.find(k => new RegExp(`\\b${k}`, "i").test(text));
+    // Findings and events often have abstract titles; their text usually names the thing to picture.
+    const term = find(t) || (["finding", "event"].includes(it.type) && find([...(it.techniques || []), ...(it.tags || []), it.description || ""].join(" ")));
+    if (term) return term;
+    const head = t.split(/[:;–—]|\s-\s/)[0];
+    return head.replace(/\b\d{1,4}s?\b|\b(c|ca)\./gi, " ").split(/[^\p{L}\p{N}-]+/u).filter(w => w.length > 2 && !STOP.has(w.toLowerCase())).slice(0, 3).join(" ");
+  };
+  const imgDlg = $("#img-dialog");
+  let imgFor = null, imgResults = [];
+  const IMG_SOURCES = ["winterthur", "met", "vam", "aic", "cleveland", "smithsonian", "europeana", "commons"];
+  const renderImgResults = () => {
+    $("#img-results").innerHTML = imgResults.map((r, i) => `<figure class="img-cand">
+      <button class="img-pick" data-pick="${i}" aria-label="Use this image: ${esc(r.title)}"><img src="${esc(r.image)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('figure').remove()"></button>
+      <figcaption><strong>${esc(r.title || "Untitled")}</strong><span>${esc([r.date, r.institution].filter(Boolean).join(" · "))}</span>
+      <span class="img-cand-act"><button class="btn sm primary" data-pick="${i}">Use</button>${r.sourceUrl && safeUrl(r.sourceUrl) ? `<a class="link-btn" href="${esc(safeUrl(r.sourceUrl))}" target="_blank" rel="noopener">Source</a>` : ""}${r.suggested ? `<span class="img-sug">Suggested</span>` : ""}</span></figcaption>
+    </figure>`).join("");
+  };
+  const searchImages = async q => {
+    const st = $("#img-status");
+    st.className = "status"; st.textContent = "Searching the collections…";
+    $("#img-results").innerHTML = Array.from({ length: 8 }, () => `<div class="img-cand skel" aria-hidden="true"></div>`).join("");
+    let suggested = [];
+    try {
+      const sug = await loadIndex("image-suggestions.json");
+      const mine = sug.items[imgFor];
+      if (mine && mine.q.toLowerCase() === q.toLowerCase()) suggested = mine.results.map(r => ({ ...r, suggested: true }));
+    } catch {}
+    const runs = await Promise.allSettled(IMG_SOURCES.map(k => DISCOVER[k](q)));
+    const lists = runs.map(r => r.status === "fulfilled" ? r.value.filter(x => x.image && !x.image.startsWith("idb:")) : []);
+    const seen = new Set();
+    imgResults = [...suggested, ...interleave(lists)].filter(r => !seen.has(r.image) && seen.add(r.image)).slice(0, 60);
+    renderImgResults();
+    const n = lists.filter(l => l.length).length;
+    st.textContent = imgResults.length ? `${imgResults.length} images${suggested.length ? `, ${suggested.length} suggested ahead of time,` : ""} from ${n + (suggested.length ? 1 : 0)} sources. Pick one, or change the words and search again.` : `No images for “${q}”. Try fewer or broader words, e.g. just the kind of carpet.`;
+  };
+  const openImageFinder = id => {
+    const it = BY_ID[id]; if (!it) return;
+    imgFor = id;
+    const ownByDefault = ["object", "archive", "tool", "yarn", "trade-catalog", "book", "patent", "image", "film"].includes(it.type);
+    $("#img-for").textContent = it.title;
+    for (const r of $$("[name=img-role]")) r.checked = r.value === (ownByDefault ? "own" : "illustration");
+    const q = imageQuery(it);
+    $("#img-q").value = q;
+    imgDlg.showModal();
+    if (q) searchImages(q); else { $("#img-results").innerHTML = ""; $("#img-status").textContent = "Type a few words, e.g. “Brussels carpet”."; $("#img-q").focus(); }
+  };
+  const useImage = r => {
+    const it = BY_ID[imgFor]; if (!it) return;
+    const role = $("[name=img-role]:checked").value;
+    const base = S.items[imgFor] || clean(it);
+    const rec = { ...base, image: r.image, imageCredit: r.institution || r.imageCredit || "", imagePage: r.sourceUrl || "", imageSource: "picked", rights: base.rights && base.rights !== "own" ? base.rights : "not-requested" };
+    delete rec.images; delete rec._borrowed;
+    if (role === "illustration") { rec.imageRole = "illustration"; rec.imageCaption = [r.title, r.date, r.identifier].filter(Boolean).join(", "); }
+    else { delete rec.imageRole; delete rec.imageCaption; }
+    S.items[imgFor] = clean(rec); touch(imgFor); save(); imgDlg.close(); refresh();
+    toast(role === "illustration" ? "Image added as an illustration" : "Image added");
+  };
+  $("#img-search").addEventListener("submit", e => { e.preventDefault(); const q = $("#img-q").value.trim(); if (q) searchImages(q); });
+  $("#img-results").addEventListener("click", e => { const b = e.target.closest("[data-pick]"); if (b) useImage(imgResults[+b.dataset.pick]); });
+  $("#btn-x-img").onclick = () => imgDlg.close();
+  $("#img-paste").addEventListener("submit", e => {
+    e.preventDefault();
+    const u = $("#img-url").value.trim(); if (!safeUrl(u)) { toast("Paste the address of an image (right-click it, Copy image address)"); return; }
+    useImage({ image: u, title: $("#img-cap").value.trim(), sourceUrl: $("#img-page").value.trim(), institution: (() => { try { return new URL($("#img-page").value.trim() || u).hostname.replace(/^www\./, ""); } catch { return ""; } })() });
+    $("#img-url").value = $("#img-cap").value = $("#img-page").value = "";
   });
 
   // ---------- compile ----------
@@ -1343,6 +1422,7 @@
       return;
     }
     const ed = e.target.closest("[data-edit]"); if (ed) return openEdit(ed.dataset.edit);
+    const fi = e.target.closest("[data-find-image]"); if (fi) return openImageFinder(fi.dataset.findImage);
     const f = e.target.closest("[data-flag]"); if (f) return toggleFlag(drawerId, f.dataset.flag);
     const ul = e.target.closest("[data-unlist]"); if (ul) return toggleInList(drawerId, ul.dataset.unlist);
     if (e.target.id === "copy-cite") {
@@ -1373,6 +1453,7 @@
   const JOBS = {
     "winterthur-index.yml": ["Winterthur collection copy", "Saves Winterthur's textiles and rug-related objects for Discover. Runs weekly."],
     "winterthur-library-index.yml": ["Winterthur library copy", "Saves the list of the Winterthur Library's digital collections for Discover. Runs weekly."],
+    "suggest-images.yml": ["Image suggestions", "Gathers candidate pictures for records without one, for Find an image. Runs weekly."],
     "fetch-images.yml": ["Image lookup", "Finds images for records at their institutions. Runs after records change."],
     "patent-drawings.yml": ["Patent drawings", "Fetches drawings for patent records."],
     "research-fetch.yml": ["Research fetch", "Saves source pages for checking citations."],
