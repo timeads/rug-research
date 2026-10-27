@@ -8330,7 +8330,8 @@ window.RUG_ITEMS = [
       "hand tool",
       "pre-1950",
       "foreign patents 2026",
-      "checked from search results"
+      "checked from search results",
+      "number confirmed"
     ],
     "status": "unverified",
     "confidence": "solid",
@@ -8360,7 +8361,8 @@ window.RUG_ITEMS = [
       "hand tool",
       "tufting needle",
       "foreign patents 2026",
-      "checked from search results"
+      "checked from search results",
+      "number confirmed"
     ],
     "status": "unverified",
     "confidence": "solid",
@@ -8390,7 +8392,8 @@ window.RUG_ITEMS = [
       "Denmark",
       "hand tool",
       "foreign patents 2026",
-      "checked from search results"
+      "checked from search results",
+      "number confirmed"
     ],
     "status": "unverified",
     "confidence": "suggestive"
@@ -8420,7 +8423,8 @@ window.RUG_ITEMS = [
       "cut pile",
       "hand tool",
       "foreign patents 2026",
-      "checked from search results"
+      "checked from search results",
+      "number confirmed"
     ],
     "status": "unverified",
     "confidence": "solid",
@@ -8450,7 +8454,8 @@ window.RUG_ITEMS = [
       "hand tool",
       "tufting needle",
       "foreign patents 2026",
-      "checked from search results"
+      "checked from search results",
+      "number confirmed"
     ],
     "status": "unverified",
     "confidence": "suggestive",
@@ -8481,7 +8486,8 @@ window.RUG_ITEMS = [
       "Scholz",
       "tufting gun",
       "foreign patents 2026",
-      "checked from search results"
+      "checked from search results",
+      "number confirmed"
     ],
     "status": "unverified",
     "confidence": "solid",
@@ -8513,7 +8519,8 @@ window.RUG_ITEMS = [
       "Scholz",
       "tufting gun",
       "foreign patents 2026",
-      "checked from search results"
+      "checked from search results",
+      "number confirmed"
     ],
     "status": "unverified",
     "confidence": "solid"
@@ -8589,7 +8596,8 @@ window.RUG_ITEMS = [
       "Hartleb",
       "tufting gun",
       "foreign patents 2026",
-      "checked from search results"
+      "checked from search results",
+      "number confirmed"
     ],
     "status": "unverified",
     "confidence": "suggestive"
@@ -8618,7 +8626,8 @@ window.RUG_ITEMS = [
       "tufting gun",
       "fibre industry",
       "foreign patents 2026",
-      "checked from search results"
+      "checked from search results",
+      "number confirmed"
     ],
     "status": "unverified",
     "confidence": "suggestive",
@@ -8647,7 +8656,8 @@ window.RUG_ITEMS = [
       "UK",
       "tufting gun",
       "foreign patents 2026",
-      "checked from search results"
+      "checked from search results",
+      "number confirmed"
     ],
     "status": "unverified",
     "confidence": "solid",
@@ -8773,7 +8783,8 @@ window.RUG_ITEMS = [
       "patent lineage",
       "Germany",
       "foreign patents 2026",
-      "checked from search results"
+      "checked from search results",
+      "number confirmed"
     ],
     "status": "unverified",
     "confidence": "suggestive"
@@ -9173,7 +9184,8 @@ window.RUG_ITEMS = [
       "UK",
       "1950s",
       "foreign patents 2026",
-      "checked from search results"
+      "checked from search results",
+      "number confirmed"
     ],
     "status": "unverified",
     "confidence": "suggestive"
@@ -9203,7 +9215,8 @@ window.RUG_ITEMS = [
       "Blackburn",
       "patterning",
       "foreign patents 2026",
-      "checked from search results"
+      "checked from search results",
+      "number confirmed"
     ],
     "status": "unverified",
     "confidence": "suggestive",
@@ -9234,7 +9247,8 @@ window.RUG_ITEMS = [
       "Singer",
       "Blackburn",
       "foreign patents 2026",
-      "checked from search results"
+      "checked from search results",
+      "number confirmed"
     ],
     "status": "unverified",
     "confidence": "suggestive"
@@ -9264,7 +9278,8 @@ window.RUG_ITEMS = [
       "Singer",
       "Blackburn",
       "foreign patents 2026",
-      "checked from search results"
+      "checked from search results",
+      "number confirmed"
     ],
     "status": "unverified",
     "confidence": "solid",
@@ -9294,7 +9309,8 @@ window.RUG_ITEMS = [
       "Krefeld",
       "Girmes",
       "foreign patents 2026",
-      "checked from search results"
+      "checked from search results",
+      "number confirmed"
     ],
     "status": "unverified",
     "confidence": "suggestive",
