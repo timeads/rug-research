@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rug Research Database</title>
+  <meta name="description" content="A searchable research database of rugs, carpets, tufting, books, images, yarn samples and tools.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <div>
+        <h1>Rug Research</h1>
+        <p class="brand-sub">Objects · books · images · yarn · tools</p>
+      </div>
+    </div>
+    <nav class="tabs" role="tablist">
+      <button class="tab active" data-view="browse">Browse</button>
+      <button class="tab" data-view="timeline">Timeline</button>
+      <button class="tab" data-view="compile">Compile <span class="badge" id="list-count"></span></button>
+      <button class="tab" data-view="discover">Discover</button>
+      <button class="tab" data-view="sources">Search elsewhere</button>
+    </nav>
+    <div class="top-actions">
+      <button class="btn primary" id="btn-add">+ Add item</button>
+      <div class="menu">
+        <button class="btn" id="btn-export">Export ▾</button>
+        <div class="menu-pop" id="export-menu" hidden>
+          <button data-export="db">Database file (items.js): commit to GitHub</button>
+          <button data-export="backup">Backup my flags, notes &amp; lists (.json)</button>
+          <button data-export="restore">Restore from backup…</button>
+          <button data-export="csv-all">All visible results as CSV</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- BROWSE -->
+    <section class="view" id="view-browse">
+      <div class="searchrow">
+        <input id="q" type="search" placeholder='Search: hooked rug, "tufting machine", type:book, inst:hagley, year:1940-1960, -wool' autocomplete="off">
+        <select id="sort" aria-label="Sort">
+          <option value="relevance">Best match</option>
+          <option value="date-asc">Oldest first</option>
+          <option value="date-desc">Newest first</option>
+          <option value="title">Title A–Z</option>
+          <option value="recent">Recently added/edited</option>
+        </select>
+        <div class="seg" role="group" aria-label="Layout">
+          <button class="seg-btn active" data-layout="grid" title="Grid">▦</button>
+          <button class="seg-btn" data-layout="list" title="List">☰</button>
+        </div>
+      </div>
+      <div class="browse">
+        <button class="btn mobile-only" id="toggle-facets">Filters ▾</button>
+        <aside class="facets" id="facets"></aside>
+        <div>
+          <div class="resultbar">
+            <span id="result-count"></span>
+            <span id="active-filters"></span>
+          </div>
+          <div id="results" class="grid"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="view" id="view-timeline" hidden>
+      <p class="hint">Dated items from your current Browse search and filters, grouped by decade. Use it to see gaps in your history of tufting.</p>
+      <div id="timeline"></div>
+    </section>
+
+    <!-- COMPILE -->
+    <section class="view" id="view-compile" hidden>
+      <div class="compile-head">
+        <select id="list-select" aria-label="Compilation"></select>
+        <button class="btn" id="btn-new-list">New list</button>
+        <button class="btn" id="btn-rename-list">Rename</button>
+        <button class="btn danger-ghost" id="btn-delete-list">Delete</button>
+        <span class="spacer"></span>
+        <button class="btn" data-cexport="md">Markdown</button>
+        <button class="btn" data-cexport="csv">CSV</button>
+        <button class="btn" data-cexport="json">JSON</button>
+        <button class="btn primary" id="btn-print">Print / PDF</button>
+      </div>
+      <h2 id="print-title" class="print-only"></h2>
+      <div id="print-intro" class="print-only"></div>
+      <textarea id="list-intro" class="list-intro" placeholder="Intro or working argument for this compilation, e.g. a fellowship research statement draft. Saved automatically."></textarea>
+      <div id="compile-items"></div>
+    </section>
+
+    <!-- DISCOVER -->
+    <section class="view" id="view-discover" hidden>
+      <p class="hint">Search open museum and library APIs from your browser and add results, with images, to your database in one click.</p>
+      <div class="searchrow">
+        <input id="dq" type="search" placeholder="e.g. hooked rug, carpet sample, tufted bedspread" autocomplete="off">
+        <select id="dsource">
+          <option value="met">The Met (objects + images)</option>
+          <option value="aic">Art Institute of Chicago (objects + images)</option>
+          <option value="openlibrary">Open Library (books)</option>
+        </select>
+        <button class="btn primary" id="btn-discover">Search</button>
+      </div>
+      <div id="discover-status" class="hint"></div>
+      <div id="discover-results" class="grid"></div>
+    </section>
+
+    <!-- SOURCES -->
+    <section class="view" id="view-sources" hidden>
+      <div class="searchrow">
+        <input id="sq" type="search" placeholder="Terms to search across archives, e.g. tufted carpet" autocomplete="off">
+      </div>
+      <p class="hint">Each link opens that institution's search for your terms in a new tab. Found something? Use <b>+ Add item</b> and paste the link.</p>
+      <div id="sources"></div>
+    </section>
+  </main>
+
+  <!-- DETAIL DRAWER -->
+  <div class="scrim" id="scrim" hidden></div>
+  <aside class="drawer" id="drawer" hidden aria-label="Item details"></aside>
+
+  <!-- EDIT MODAL -->
+  <dialog id="edit-dialog">
+    <form id="edit-form" method="dialog">
+      <h2 id="edit-title">Add item</h2>
+      <div class="form-grid">
+        <label>Type
+          <select name="type" required></select>
+        </label>
+        <label class="span2">Title <input name="title" required></label>
+        <label>Creator / maker / author <input name="creator"></label>
+        <label>Date (as written) <input name="date" placeholder="c. 1850–1875"></label>
+        <label>Start year <input name="dateStart" type="number" placeholder="1850"></label>
+        <label>End year <input name="dateEnd" type="number" placeholder="1875"></label>
+        <label>Institution / owner <input name="institution" list="dl-inst"></label>
+        <label>Collection / series <input name="collection"></label>
+        <label>Accession / call no. / ISBN <input name="identifier"></label>
+        <label>Place <input name="place"></label>
+        <label>Publisher <input name="publisher"></label>
+        <label>Dimensions <input name="dimensions"></label>
+        <label class="span2">Materials (comma-separated) <input name="materials" placeholder="wool, burlap, cotton"></label>
+        <label class="span2">Techniques (comma-separated) <input name="techniques" placeholder="hooked, hand-tufted, punch needle"></label>
+        <label class="span2">Themes (comma-separated) <input name="themes" list="dl-themes"></label>
+        <label class="span2">Tags (comma-separated) <input name="tags"></label>
+        <label class="span2">Description <textarea name="description" rows="4"></textarea></label>
+        <label class="span2">Source link <input name="sourceUrl" type="url" placeholder="https://"></label>
+        <label class="span2">Image link <input name="image" placeholder="https://… or images/my-photo.jpg"></label>
+        <label class="span2">…or upload a photo (yarn samples, tools, your own photos)
+          <input name="imageFile" type="file" accept="image/*">
+        </label>
+        <label class="span2">Citation (optional; generated if blank) <textarea name="citation" rows="2"></textarea></label>
+        <label>Status
+          <select name="status">
+            <option value="unverified">Unverified</option>
+            <option value="verified">Verified at source</option>
+          </select>
+        </label>
+      </div>
+      <datalist id="dl-inst"></datalist>
+      <datalist id="dl-themes"></datalist>
+      <div class="form-actions">
+        <button type="button" class="btn danger-ghost" id="btn-delete-item" hidden>Delete item</button>
+        <span class="spacer"></span>
+        <button type="button" class="btn" id="btn-cancel-edit">Cancel</button>
+        <button type="submit" class="btn primary">Save</button>
+      </div>
+    </form>
+  </dialog>
+
+  <input type="file" id="restore-file" accept="application/json" hidden>
+  <div id="toast" class="toast" hidden></div>
+
+  <script src="data/items.js"></script>
+  <script src="data/sources.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
