@@ -1,0 +1,68 @@
+name: Research fetch
+
+# Saves the text of pages that the editing environment can't reach, and can walk
+# a numbered catalog index looking for keywords. Results land in research/fetched/.
+on:
+  workflow_dispatch:
+    inputs:
+      urls:
+        description: "Pages to save (space-separated URLs)"
+        required: false
+        default: ""
+      crawl:
+        description: "Numbered page pattern with {n}, e.g. https://site/index-{n}.html"
+        required: false
+        default: ""
+      from:
+        description: "First page number"
+        required: false
+        default: "1"
+      to:
+        description: "Last page number"
+        required: false
+        default: "1"
+      grep:
+        description: "Pattern to look for (regular expression)"
+        required: false
+        default: "nylon"
+      name:
+        description: "Name for the crawl results file"
+        required: false
+        default: "crawl"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-commits
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Fetch
+        env:
+          URLS: ${{ inputs.urls }}
+          CRAWL: ${{ inputs.crawl }}
+          FROM: ${{ inputs.from }}
+          TO: ${{ inputs.to }}
+          GREP: ${{ inputs.grep }}
+          NAME: ${{ inputs.name }}
+        run: node scripts/fetch-pages.mjs --urls "$URLS" --crawl "$CRAWL" --from "$FROM" --to "$TO" --grep "$GREP" --name "$NAME"
+      - name: Commit results
+        run: |
+          git add research/fetched
+          if git diff --cached --quiet; then echo "Nothing new."; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Save fetched research pages"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"

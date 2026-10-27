@@ -981,7 +981,18 @@
   $("#sq").addEventListener("input", debounce(renderSources, 150));
 
   // ---------- boot ----------
-  if (!S.chaptersSeeded) { S.lists.unshift(...SEED_CHAPTERS.map(c => ({ ...c, items: [...c.items] }))); S.chaptersSeeded = true; S.activeList = SEED_CHAPTERS[0].id; save(); }
+  if (!S.chaptersSeeded) { S.lists.unshift(...SEED_CHAPTERS.map(c => ({ ...c, items: [...c.items] }))); S.chaptersSeeded = true; S.seedChaptersSeen = SEED_CHAPTERS.map(c => c.id); S.activeList = SEED_CHAPTERS[0].id; save(); }
+  // Chapters added to the outline in later releases are inserted once, next to their neighbour in the outline.
+  // Browsers set up before this tracking existed already had the first nine chapters (kept or deleted).
+  S.seedChaptersSeen = S.seedChaptersSeen || ["ch-before-machine", "ch-dalton-bedspreads", "ch-machine", "ch-nylon", "ch-abroad", "ch-china", "ch-gun", "ch-india", "ch-hobby"];
+  SEED_CHAPTERS.forEach((c, n) => {
+    if (S.seedChaptersSeen.includes(c.id)) return;
+    S.seedChaptersSeen.push(c.id);
+    if (S.lists.some(l => l.id === c.id)) return;
+    const prev = SEED_CHAPTERS.slice(0, n).reverse().map(p => S.lists.findIndex(l => l.id === p.id)).find(ix => ix > -1);
+    S.lists.splice(prev === undefined ? 0 : prev + 1, 0, { ...c, items: [...c.items] });
+    S.seedSeen = S.seedSeen || {}; S.seedSeen[c.id] = [...c.items];
+  });
   // Evidence added to a seeded chapter in later releases reaches existing browsers once; anything you removed stays removed.
   S.seedSeen = S.seedSeen || {};
   for (const c of SEED_CHAPTERS) {

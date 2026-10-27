@@ -1302,7 +1302,8 @@ window.RUG_ITEMS = [
     ],
     "image": "images/patents/US2977905-01.png",
     "imageCredit": "USPTO via Google Patents (public domain)",
-    "imageSource": "uspto"
+    "imageSource": "uspto",
+    "rights": "public-domain"
   },
   {
     "id": "marker-mechanization-bedspread",
@@ -2767,14 +2768,14 @@ window.RUG_ITEMS = [
   {
     "id": "pat-us463548a",
     "type": "patent",
-    "title": "Ebenezer Ross, hand rug-making implement (US463548A)",
+    "title": "Ebenezer Ross, \"Turfing Implement\" (US463548A)",
     "creator": "Ebenezer Ross",
-    "date": "1891",
+    "date": "patented 17 Nov 1891",
     "dateStart": 1891,
     "identifier": "US463548A",
     "sourceUrl": "https://patents.google.com/patent/US463548A/en",
     "region": "United States",
-    "description": "Two sliding handles, a needle in one and a loop-holding member in the other. Expired 1908; the Susan Burr copies it almost part for part. Cited in 1948 by Shaycraft (US2442906A).",
+    "description": "Checked against the USPTO document: E. Ross, \"Turfing Implement\", No. 463,548, patented November 17, 1891. The drawing shows a two-handled needle-and-gauge tool of the same form as the Susan Burr. \"Turfing\" is the patent's own word. Expired 1908; cited in 1948 by Shaycraft (US2442906A).",
     "themes": [
       "Hand-tufting tools & the gun",
       "Tools & equipment"
@@ -2785,7 +2786,7 @@ window.RUG_ITEMS = [
       "root patent"
     ],
     "collection": "TTW Script Bank fact-check notes (Claude research, Aug 2026)",
-    "status": "unverified",
+    "status": "verified",
     "confidence": "solid",
     "images": [
       {
@@ -2803,19 +2804,20 @@ window.RUG_ITEMS = [
     ],
     "image": "images/patents/US463548-1.png",
     "imageCredit": "USPTO via Google Patents (public domain)",
-    "imageSource": "uspto"
+    "imageSource": "uspto",
+    "rights": "public-domain"
   },
   {
     "id": "pat-us1917162a",
     "type": "patent",
-    "title": "Motor in the handle (Cabin Crafts) (US1917162A)",
-    "creator": "Cabin Crafts",
-    "date": "1932",
+    "title": "Lawrence P. Smith, \"Motor Operated Tufting Machine\" (US1917162A)",
+    "creator": "Lawrence P. Smith",
+    "date": "filed 23 Jun 1932, granted 4 Jul 1933",
     "dateStart": 1932,
     "identifier": "US1917162A",
     "sourceUrl": "https://patents.google.com/patent/US1917162A/en",
     "region": "United States",
-    "description": "First handheld tufting tool with a motor inside the handle, per the script fact-check notes.",
+    "description": "Checked against the USPTO document: L. P. Smith, \"Motor Operated Tufting Machine\", No. 1,917,162, filed June 23, 1932, granted July 4, 1933. A handheld tool with the motor in the body and the needle below: the earliest motorised hand tufting tool in this database. Earlier notes credited it to Cabin Crafts; the patent names Lawrence P. Smith (check for an assignee in the text).",
     "themes": [
       "Hand-tufting tools & the gun",
       "Tools & equipment"
@@ -2825,7 +2827,7 @@ window.RUG_ITEMS = [
       "tufting gun"
     ],
     "collection": "TTW Script Bank fact-check notes (Claude research, Aug 2026)",
-    "status": "unverified",
+    "status": "verified",
     "confidence": "solid",
     "images": [
       {
@@ -2843,7 +2845,9 @@ window.RUG_ITEMS = [
     ],
     "image": "images/patents/US1917162-1.png",
     "imageCredit": "USPTO via Google Patents (public domain)",
-    "imageSource": "uspto"
+    "imageSource": "uspto",
+    "dateEnd": 1933,
+    "rights": "public-domain"
   },
   {
     "id": "pat-us2422126a",
@@ -2883,7 +2887,8 @@ window.RUG_ITEMS = [
     ],
     "image": "images/patents/US2422126-1.png",
     "imageCredit": "USPTO via Google Patents (public domain)",
-    "imageSource": "uspto"
+    "imageSource": "uspto",
+    "rights": "public-domain"
   },
   {
     "id": "pat-us2442906a",
@@ -2923,7 +2928,8 @@ window.RUG_ITEMS = [
     ],
     "image": "images/patents/US2442906-1.png",
     "imageCredit": "USPTO via Google Patents (public domain)",
-    "imageSource": "uspto"
+    "imageSource": "uspto",
+    "rights": "public-domain"
   },
   {
     "id": "pat-us2753820a",
@@ -2963,7 +2969,8 @@ window.RUG_ITEMS = [
     ],
     "image": "images/patents/US2753820-1.png",
     "imageCredit": "USPTO via Google Patents (public domain)",
-    "imageSource": "uspto"
+    "imageSource": "uspto",
+    "rights": "public-domain"
   },
   {
     "id": "pat-us3142276a",
@@ -3004,7 +3011,8 @@ window.RUG_ITEMS = [
     ],
     "image": "images/patents/US3142276-01.png",
     "imageCredit": "USPTO via Google Patents (public domain)",
-    "imageSource": "uspto"
+    "imageSource": "uspto",
+    "rights": "public-domain"
   },
   {
     "id": "pat-us5090341a",
@@ -3045,7 +3053,8 @@ window.RUG_ITEMS = [
     ],
     "image": "images/patents/US5090341-1.png",
     "imageCredit": "USPTO via Google Patents (public domain)",
-    "imageSource": "uspto"
+    "imageSource": "uspto",
+    "rights": "public-domain"
   },
   {
     "id": "ttw-evans-1895-1900",
@@ -4052,7 +4061,8 @@ window.RUG_ITEMS = [
     ],
     "image": "images/patents/US2071250-01.png",
     "imageCredit": "USPTO via Google Patents (public domain)",
-    "imageSource": "uspto"
+    "imageSource": "uspto",
+    "rights": "public-domain"
   },
   {
     "id": "pat-us2130948a",
@@ -4092,7 +4102,8 @@ window.RUG_ITEMS = [
     ],
     "image": "images/patents/US2130948-01.png",
     "imageCredit": "USPTO via Google Patents (public domain)",
-    "imageSource": "uspto"
+    "imageSource": "uspto",
+    "rights": "public-domain"
   },
   {
     "id": "hagley-vault-1937-patent",
@@ -4177,7 +4188,7 @@ window.RUG_ITEMS = [
     "title": "CONFLICT: when was the tufting gun invented?",
     "region": "Global",
     "confidence": "unverified",
-    "description": "The Non-English Record brief says the gun was \"invented in Hong Kong in 1973\", but its own source says Tai Ping fitted a motor to an existing tufting gun in 1973. The US patent record shows a motor-in-handle tufting tool in 1932 (US1917162A), air-fed handheld tools in 1946–48, a trigger and knife in 1952, and a \"hand gun-type device\" in 1964 (US3142276A). Safer wording: \"Tai Ping built and motorised its own hand tufting gun in Hong Kong, by 1973; motorised handheld tufting tools had been patented in the US since 1932.\"",
+    "description": "The Non-English Record brief says the gun was \"invented in Hong Kong in 1973\", but its own source says Tai Ping fitted a motor to an existing tufting gun in 1973. The US patent record shows a motor-in-handle tufting tool in 1932 (US1917162A), air-fed handheld tools in 1946–48, a trigger and knife in 1952, and a \"hand gun-type device\" in 1964 (US3142276A). Safer wording: \"Tai Ping built and motorised its own hand tufting gun in Hong Kong, by 1973; motorised handheld tufting tools had been patented in the US since 1932.\" Update: a trade source dates Anthony Yeh's motorised/pneumatic gun at Tai Ping to 1960 (see the Tai Ping company record), against the Hong Kong Heritage Project's 1973 motorisation.",
     "themes": [
       "Hand-tufting tools & the gun",
       "Global diffusion of tufting"
@@ -4188,5 +4199,652 @@ window.RUG_ITEMS = [
       "priority"
     ],
     "status": "unverified"
+  },
+  {
+    "id": "co-shaw",
+    "type": "company",
+    "title": "Shaw Industries Group",
+    "creator": "Clarence Shaw; sons Robert (Bob) and J. C. (Bud) Shaw",
+    "place": "Dalton, Georgia",
+    "region": "United States",
+    "date": "founded 1946 (as Star Dye Co.)",
+    "dateStart": 1946,
+    "sourceUrl": "https://shawinc.com/Our-Company/History",
+    "institution": "Shaw Industries Group",
+    "description": "Began dyeing small tufted goods (bedspreads, scatter rugs) during Dalton's chenille boom, then became the world's largest commission finisher of tufted carpet as Star Finishing Co. A 1967 holding company bought Philadelphia Carpet Co. (founded 1846), Shaw's first move into making carpet; public as Shaw Industries in 1971; first yarn plant 1972; acquisitions included West Point-Pepperell's carpet business (1987), Salem (1992) and Queen (1999). Owned by Berkshire Hathaway since 2001. Shaw Rugs also made licensed \"Winterthur Collection\" nylon area rugs (see that record).\n\nDates: 1946 Star Dye confirmed; Star Finishing 1958 (Shaw) vs 1960 (Georgia Encyclopedia); 1967 is the holding company, not the origin. \"World's largest carpet manufacturer\" dates from 1987; don't repeat it as current.\n\nOther pages with images: https://shawfloors.com/why-shaw/about-us/shaw-timeline · https://shawinc.com/50years/shaw-stories · https://shawinc.com/Our-Impact/Sustainability/Our-Process\n\nIndependent sources: https://www.georgiaencyclopedia.org/articles/business-economy/shaw-industries · https://en.wikipedia.org/wiki/Shaw_Industries · Randall L. Patton, Shaw Industries: A History (University of Georgia Press, 2019)",
+    "themes": [
+      "Companies & modern tufting",
+      "Machine tufting & Dalton",
+      "Nylon & synthetic fibers (DuPont)"
+    ],
+    "tags": [
+      "company",
+      "Dalton",
+      "broadloom"
+    ],
+    "status": "unverified"
+  },
+  {
+    "id": "co-mohawk",
+    "type": "company",
+    "title": "Mohawk Industries",
+    "creator": "Shuttleworth family (William Shuttleworth and sons)",
+    "place": "Calhoun, Georgia",
+    "region": "United States",
+    "date": "founded 1878 (Amsterdam, New York)",
+    "dateStart": 1878,
+    "sourceUrl": "https://mohawkind.com/about/our-growth-story.php",
+    "institution": "Mohawk Industries",
+    "description": "A woven-carpet firm: the Shuttleworths came from England in 1875 and wove carpet in Amsterdam, NY, on secondhand looms (incorporated 1902). The 1920 merger with McCleary, Wallin & Crouse formed Mohawk Carpet Mills; the 1956 merger with Alexander Smith formed Mohasco, just as Georgia's cheaper tufted synthetic carpet took the market. Mohasco moved south (a tufted plant in Dublin, GA, and the end of Wilton/velvet weaving at Laurens, SC, by 1965); Amsterdam carpet making ended about 1968. Spun off as Mohawk Industries in a 1988 buyout; public 1992. A case study of the woven industry losing the race to tufting.\n\nDates: 1878, 1920 and 1956 confirmed; when Mohasco first tufted is unverified (1965 Dublin is the earliest found). \"World's largest flooring manufacturer\" refers to all flooring by revenue, not carpet.\n\nOther pages with images: https://www.mohawkgroup.com/technical-resources/construction-types\n\nIndependent sources: https://en.wikipedia.org/wiki/Mohawk_Industries · https://encyclopedia.com/books/politics-and-business-magazines/mohawk-industries-inc · https://www.usitc.gov/publications/tea/pub160.pdf (1965 USITC report)",
+    "themes": [
+      "Companies & modern tufting",
+      "Woven carpet",
+      "Machine tufting & Dalton"
+    ],
+    "tags": [
+      "company",
+      "woven to tufted",
+      "broadloom"
+    ],
+    "status": "unverified"
+  },
+  {
+    "id": "co-delos",
+    "type": "company",
+    "title": "Delos (The Delos Company)",
+    "creator": "Ivan and Leah Phillips",
+    "place": "Calhoun, Georgia",
+    "region": "United States",
+    "date": "founded 2005",
+    "dateStart": 2005,
+    "sourceUrl": "https://thedeloscompany.com/about/",
+    "institution": "Delos (The Delos Company)",
+    "description": "Trade-only custom rug maker from flooring-industry families. A made-to-order hand-tufted line was announced in 2007; US custom area rugs from 2008; an aircraft carpet division in 2013; in 2021 it bought Masland's US custom area-rug equipment and added tufting machines. \"American Made\" rugs are robotic/CNC tufted in Georgia and hand-finished; \"Journey Made\" rugs are hand-tufted or woven overseas.\n\nDates: 2005, 2013, 2021 confirmed; 2008 company claim. Not to be confused with Tufenkian's \"Delos\" rug design.\n\nOther pages with images: https://thedeloscompany.com/american-made/ · https://thedeloscompany.com/our-artisans/ · https://thedeloscompany.com/journey-made/\n\nIndependent sources: https://www.textileworld.com/textile-world/2021/09/delos-amplifies-manufacturing-assets-to-boost-american-made-custom-rug-capacity · https://www.furnituretoday.com/business-news/delos-readies-made-to-order-hand-tufted-line",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "CNC tufting",
+      "custom"
+    ],
+    "status": "unverified"
+  },
+  {
+    "id": "co-scott-group",
+    "type": "company",
+    "title": "Scott Group Studio",
+    "creator": "Steve Sellinger",
+    "place": "Grand Rapids, Michigan",
+    "region": "United States",
+    "date": "founded 1969 (as Scott Carpet Mills, Cleveland)",
+    "dateStart": 1969,
+    "sourceUrl": "https://scottgroupstudio.com/our-story/",
+    "institution": "Scott Group Studio",
+    "description": "Moved to Grand Rapids in the late 1970s; renamed The Scott Group in 1982; bought after Sellinger's death (1995) by Michael Ruggeri, Richard Ruggeri and Timothy Hill. Made the 2010 Oval Office rug. Acquired Hokanson (hand-knotted) and PWV Studios (hand-tufted, founded 1983 by V'Soske). More than 50 tufting artisans in Grand Rapids.\n\nDates: 1969 confirmed; Hokanson acquisition 2014 vs 2017; \"one of the largest US hand-tufted makers\" is marketing.\n\nOther pages with images: https://scottgroupstudio.com/craftsmanship/ · https://scottgroupstudio.com/made-in-america/\n\nIndependent sources: https://iands.design/articles/32797/scott-group-studios-2019-collection-celebrates-50-years-carpet-and-rug-design · https://www.rugnews.com/news-archives/09032010-rug-is-centerpiece-of-new-oval-office-red-4591",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "hand-tufted",
+      "custom",
+      "V'Soske lineage"
+    ],
+    "status": "unverified"
+  },
+  {
+    "id": "co-creative-accents",
+    "type": "company",
+    "title": "Creative Accents",
+    "creator": "Ken Hensler (now run by grandson Andy Hensler)",
+    "place": "California",
+    "region": "United States",
+    "date": "founded 1967",
+    "dateStart": 1967,
+    "sourceUrl": "https://creativeaccents.com/our-story/",
+    "institution": "Creative Accents",
+    "description": "Family company, third generation. Company story: Ken Hensler made \"one of the world's first shag rugs\" on his wife's sewing machine in the early 1960s; first rugs released in Los Angeles. Hand-tufts custom rugs to order in California with single-needle tufting (designs hand-traced, then tufted line by line), New Zealand wool and recycled nylon. Artist collaborations with Jacquin Headen (2021) and Parker Heath (2024).\n\nDates: 1967 and the shag-rug story are company claims only.\n\nOther pages with images: https://creativeaccents.com/process/ · https://creativeaccents.com/collections/\n\nIndependent sources: https://cover-magazine.com/2021/07/23/creative-accents-x-jacquin-headen/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "hand-tufted",
+      "custom",
+      "sewing machine"
+    ],
+    "status": "unverified"
+  },
+  {
+    "id": "co-kramis",
+    "type": "company",
+    "title": "Kramis Teppich Design",
+    "creator": "Felix Kramis (with Doris Kramis)",
+    "place": "Altbüron, Lucerne",
+    "region": "Switzerland",
+    "date": "founded 1987",
+    "dateStart": 1987,
+    "sourceUrl": "https://www.kramis-teppich.ch/en/about/family/",
+    "institution": "Kramis Teppich Design",
+    "description": "Makes only bespoke hand-tufted luxury rugs with single-needle tufting guns; yarn, tufting and finishing on one site. About 12 staff making up to 4 carpets a day (Monocle, 2011). A 2022 Instagram tufting video brought international attention; Swisscraft collection (Swiss wool and linen) 2025. Part of the social-media wave that made gun tufting a hobby.\n\nDates: 1987 and founder confirmed.\n\nOther pages with images: https://www.kramis-teppich.ch/en/products/bespoke-rugs/eingepackt-b/ · https://www.kramis-teppich.ch/en/products/bespoke-rugs/gaensebluemchen/\n\nIndependent sources: https://monocle.com/business/manufacturing/swiss-carpet-kramis-rugs/ · https://swisstextiles.ch/en/issues/kramis-fertigt-seit-35-jahren-exklusive-teppiche",
+    "themes": [
+      "Companies & modern tufting",
+      "Global diffusion of tufting",
+      "Hand-tufting tools & the gun"
+    ],
+    "tags": [
+      "company",
+      "hand-tufted",
+      "social media"
+    ],
+    "status": "unverified"
+  },
+  {
+    "id": "co-jaipur",
+    "type": "company",
+    "title": "Jaipur Living / Jaipur Rugs",
+    "creator": "Nand Kishore (N. K.) Chaudhary",
+    "place": "Atlanta, Georgia (US); Jaipur, India",
+    "region": "India",
+    "date": "founded 1978 (Rajasthan)",
+    "dateStart": 1978,
+    "sourceUrl": "https://www.jaipurliving.com/the-jaipur-living-story/",
+    "institution": "Jaipur Living / Jaipur Rugs",
+    "description": "Started with 2 looms and 9 artisans; built a village artisan network of about 40,000. US headquarters in Atlanta from 1998, led by Asha Chaudhary. Core business is hand-knotted, but it also makes hand-tufted rugs (gun-tufted through a pre-woven cloth with a cotton-latex backing) and power-loomed lines. Bridges the India chapter and the US market.\n\nDates: 1978 confirmed; 1998 Atlanta is a company claim; starting capital Rs 5,000 vs $200.\n\nOther pages with images: https://www.jaipurliving.com/the-craft · https://www.jaipurliving.com/rugs/handtufted-rugs.html · https://www.jaipurliving.com/our-founder\n\nIndependent sources: https://en.wikipedia.org/wiki/Jaipur_Rugs · https://m.csmonitor.com/World/Making-a-difference/Change-Agent/2015/0116/A-real-magic-carpet-story-transforming-28-000-lives-with-200",
+    "themes": [
+      "Companies & modern tufting",
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "company",
+      "India",
+      "hand-tufted",
+      "hand-knotted"
+    ],
+    "status": "unverified"
+  },
+  {
+    "id": "co-tai-ping",
+    "type": "company",
+    "title": "Tai Ping Carpets",
+    "creator": "Sir Lawrence and Sir Horace Kadoorie with partners",
+    "place": "Hong Kong",
+    "region": "Hong Kong",
+    "date": "founded 1956",
+    "dateStart": 1956,
+    "sourceUrl": "https://www.taipingcarpets.com/about/heritage",
+    "institution": "Tai Ping Carpets",
+    "description": "Founded to keep Chinese carpet craft alive and employ refugees. First workshop in Tuen Mun (1956); main factory in Tai Po from 1959. The early breakthrough was switching from hand-knotting to hand-tufting; engineer Anthony Yeh developed a motorised hand-tufting gun (dated 1960 by a trade source, motorised 1973 per the Hong Kong Heritage Project). Later machine-tufted carpet; today residential, hospitality, aviation and yacht work.\n\nDates: 1956 and founders confirmed; gun date conflicting (1960 vs 1973 motorisation). Don't say Tai Ping \"invented hand-tufting\".\n\nOther pages with images: https://www.taipingcarpets.com/collections/atelier-by-fang-collection · https://www.taipingcarpets.com/collections/vestige\n\nIndependent sources: https://industrialhistoryhk.org/?p=5060 · https://www.hongkongheritage.org/nodes/view/25832 · https://en.wikipedia.org/wiki/Tai_Ping_Carpets",
+    "themes": [
+      "Companies & modern tufting",
+      "Global diffusion of tufting",
+      "Hand-tufting tools & the gun"
+    ],
+    "tags": [
+      "company",
+      "Hong Kong",
+      "hand-tufted",
+      "tufting gun"
+    ],
+    "status": "unverified"
+  },
+  {
+    "id": "wilton-1741",
+    "type": "finding",
+    "title": "Wilton: Huguenot weavers (1720s) and the first Wilton loom (1741)",
+    "description": "The 9th Earl of Pembroke brought French weavers to Wilton in the early 1700s (the firm dates it to 1721); its timeline says the first Wilton loom was patented in 1741 and credits Defosse with cutting the loops of Brussels weave. Wilton is the cut-pile variant of Brussels carpet, made on the same narrow looms. Company account: the inventor and patent are unconfirmed elsewhere.",
+    "region": "United Kingdom",
+    "themes": [
+      "Woven carpet"
+    ],
+    "tags": [
+      "Wilton",
+      "Brussels",
+      "company claim"
+    ],
+    "status": "unverified",
+    "confidence": "suggestive",
+    "dateStart": 1741,
+    "date": "1720s–1741",
+    "sourceUrl": "https://wiltoncarpets.com/about-us/our-heritage/"
+  },
+  {
+    "id": "grace-wilton-royal",
+    "type": "article",
+    "title": "Wilton Royal Carpet Factory (Grace's Guide)",
+    "description": "Yates & Co. incorporated 1889 to continue carpet making at Wilton; royal recognition in the early 1900s; a 1995 closure threat and reopening by employees.",
+    "region": "United Kingdom",
+    "themes": [
+      "Woven carpet"
+    ],
+    "tags": [
+      "Wilton"
+    ],
+    "status": "unverified",
+    "confidence": "suggestive",
+    "dateStart": 1889,
+    "sourceUrl": "https://gracesguide.co.uk/Wilton_Royal_Carpet_Factory"
+  },
+  {
+    "id": "nps-wilton-america",
+    "type": "finding",
+    "title": "Brussels and Wilton carpet reached America in the 1750s; Americans favoured Wilton",
+    "description": "From inventories and auction advertisements, per the National Park Service's history of Independence Hall furnishings.",
+    "region": "United States",
+    "themes": [
+      "Woven carpet"
+    ],
+    "tags": [
+      "Wilton",
+      "Brussels",
+      "colonial America"
+    ],
+    "status": "unverified",
+    "confidence": "suggestive",
+    "dateStart": 1750,
+    "date": "1750s",
+    "sourceUrl": "https://www.nps.gov/parkhistory/online_books/inde/anderson/chap2.htm"
+  },
+  {
+    "id": "bigelow-power-loom",
+    "type": "finding",
+    "title": "Erastus Bigelow's power looms: ingrain (c. 1839–41), then Brussels and Wilton (1845–51)",
+    "description": "The Wilton loom was a modified Brussels loom. Sources tie the looms to cheaper production (replacing male weavers with lower-paid women and boys) and to output doubling, then tripling by 1850. Dates vary by source (1839, 1841, 1843 for ingrain).",
+    "region": "United States",
+    "themes": [
+      "Woven carpet"
+    ],
+    "tags": [
+      "Bigelow",
+      "power loom",
+      "affordability"
+    ],
+    "status": "unverified",
+    "confidence": "suggestive",
+    "dateStart": 1839,
+    "dateEnd": 1851,
+    "date": "1839–1851",
+    "sourceUrl": "https://www.britannica.com/biography/Erastus-Brigham-Bigelow"
+  },
+  {
+    "id": "si-bigelow-loom-model",
+    "type": "object",
+    "title": "Bigelow's patent model of a loom (1838)",
+    "description": "Patent model in the Smithsonian's National Museum of American History: an object for the woven side of the race to affordable carpet.",
+    "region": "United States",
+    "themes": [
+      "Woven carpet",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "Bigelow",
+      "patent model"
+    ],
+    "status": "unverified",
+    "dateStart": 1838,
+    "date": "1838",
+    "sourceUrl": "https://www.si.edu/object/1838-bigelows-patent-model-loom:nmah_1070864",
+    "institution": "Smithsonian, National Museum of American History",
+    "identifier": "nmah_1070864"
+  },
+  {
+    "id": "bigelow-mill",
+    "type": "article",
+    "title": "Bigelow Carpet Mill, Clinton, Massachusetts",
+    "description": "Erastus and Horatio Bigelow's mill (from 1848), where the power Brussels loom went into production.",
+    "region": "United States",
+    "themes": [
+      "Woven carpet"
+    ],
+    "tags": [
+      "Bigelow",
+      "mill"
+    ],
+    "status": "unverified",
+    "dateStart": 1848,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Bigelow_Carpet_Mill"
+  },
+  {
+    "id": "bigelow-broadloom-1877",
+    "type": "finding",
+    "title": "\"Bigelow introduced the first broadloom carpet in 1877\"",
+    "description": "A single popular source; not corroborated. Find a primary source (Bigelow company history, trade press) before using.",
+    "region": "United States",
+    "themes": [
+      "Woven carpet"
+    ],
+    "tags": [
+      "broadloom",
+      "single source"
+    ],
+    "status": "unverified",
+    "confidence": "unverified",
+    "dateStart": 1877,
+    "sourceUrl": "https://daltoncarpet.com/info-center/carpet/history-of-carpet"
+  },
+  {
+    "id": "skinner-axminster-1876",
+    "type": "finding",
+    "title": "Halcyon Skinner perfected the power loom for Royal Axminster (1876)",
+    "description": "Made cut-pile patterned carpet cheaper (Alexander Smith & Sons, Yonkers). Corroborate with a second source.",
+    "region": "United States",
+    "themes": [
+      "Woven carpet"
+    ],
+    "tags": [
+      "Axminster",
+      "Alexander Smith",
+      "power loom",
+      "affordability"
+    ],
+    "status": "unverified",
+    "confidence": "suggestive",
+    "dateStart": 1876,
+    "date": "1876",
+    "sourceUrl": "https://kids.britannica.com/students/article/rug-and-carpet/276811"
+  },
+  {
+    "id": "woven-slump-1920s",
+    "type": "finding",
+    "title": "Mid-1920s: carpet sales fell and woven firms like Bigelow and Mohawk struggled; then the Depression",
+    "description": "Background to the race: the woven industry was weakened before tufting arrived.",
+    "region": "United States",
+    "themes": [
+      "Woven carpet"
+    ],
+    "tags": [
+      "broadloom",
+      "decline"
+    ],
+    "status": "unverified",
+    "confidence": "suggestive",
+    "dateStart": 1924,
+    "dateEnd": 1939,
+    "date": "1920s–1930s",
+    "sourceUrl": "https://philadelphiaencyclopedia.org/essays/carpet-weaving-and-rug-making-2/"
+  },
+  {
+    "id": "tufted-half-price",
+    "type": "finding",
+    "title": "Tufted carpet sold wholesale at about half the price of woven",
+    "description": "Why tufting won the race to affordable wall-to-wall carpet; with BCF nylon the decisive development. By the end of the 1950s tufting had passed the woven industry.",
+    "region": "United States",
+    "themes": [
+      "Woven carpet",
+      "Machine tufting & Dalton",
+      "Nylon & synthetic fibers (DuPont)"
+    ],
+    "tags": [
+      "broadloom",
+      "affordability",
+      "race"
+    ],
+    "status": "unverified",
+    "confidence": "suggestive",
+    "dateStart": 1950,
+    "dateEnd": 1959,
+    "date": "1950s",
+    "sourceUrl": "https://www.georgiaencyclopedia.org/articles/business-economy/carpet-industry/"
+  },
+  {
+    "id": "chenille-widened",
+    "type": "finding",
+    "title": "Chenille bedspread machines were widened into rug and broadloom tufting machines",
+    "description": "\"Machinery was developed for making chenille rugs and was widened, creating larger rugs and broadloom carpet\" (Carpet and Rug Institute). The bridge from bedspreads to broadloom.",
+    "region": "United States",
+    "themes": [
+      "Woven carpet",
+      "Machine tufting & Dalton"
+    ],
+    "tags": [
+      "broadloom",
+      "machinery"
+    ],
+    "status": "unverified",
+    "confidence": "suggestive",
+    "sourceUrl": "https://carpet-rug.org/about-us/history-of-carpet/"
+  },
+  {
+    "id": "mohasco-1956",
+    "type": "finding",
+    "title": "1956: Mohawk merges with Alexander Smith to form Mohasco, as tufting takes over",
+    "description": "Two great woven-carpet firms combine just as Georgia's tufted synthetic carpet takes the market; production moves south.",
+    "region": "United States",
+    "themes": [
+      "Woven carpet",
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "woven to tufted"
+    ],
+    "status": "unverified",
+    "confidence": "solid",
+    "dateStart": 1956,
+    "date": "1956",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Mohawk_Industries"
+  },
+  {
+    "id": "langhorne-wilton",
+    "type": "finding",
+    "title": "Langhorne Carpet, Pennsylvania: one of the last American Wilton mills, now closed",
+    "description": "From your own \"Rug Techniques & Tufting History\" slide deck (May 2025): \"closed last month\". Find the closing date and a news source.",
+    "region": "United States",
+    "themes": [
+      "Woven carpet"
+    ],
+    "tags": [
+      "Wilton",
+      "own note",
+      "find source"
+    ],
+    "status": "unverified",
+    "confidence": "suggestive"
+  },
+  {
+    "id": "philly-encyclopedia-carpet",
+    "type": "article",
+    "title": "Carpet Weaving and Rug Making (Encyclopedia of Greater Philadelphia)",
+    "description": "Scholarly overview of Philadelphia's large carpet industry, including Wilton and Brussels weaving and its decline.",
+    "region": "United States",
+    "themes": [
+      "Woven carpet"
+    ],
+    "tags": [
+      "Philadelphia",
+      "overview"
+    ],
+    "status": "unverified",
+    "sourceUrl": "https://philadelphiaencyclopedia.org/essays/carpet-weaving-and-rug-making-2/"
+  },
+  {
+    "id": "book-patton-shaw",
+    "type": "book",
+    "title": "Shaw Industries: A History",
+    "description": "By Randall L. Patton (University of Georgia Press, 2019).",
+    "region": "United States",
+    "themes": [
+      "Companies & modern tufting",
+      "Machine tufting & Dalton"
+    ],
+    "tags": [
+      "core source"
+    ],
+    "status": "unverified",
+    "dateStart": 2019,
+    "date": "2019",
+    "creator": "Randall L. Patton",
+    "publisher": "University of Georgia Press"
+  },
+  {
+    "id": "wint-lib-ross-1891",
+    "type": "trade-catalog",
+    "title": "[Catalog of rug patterns], E. Ross & Co., Toledo, Ohio, 1891",
+    "description": "Mail-order catalog sold with Ebenezer Ross's rug machine; mostly patterns carried over from earlier catalogs, plus his own originals \"Mastiff Dog\" and \"Lion and Palm\" (later copied by Montgomery Ward and Sears). Winterthur Library copy, digitized on the Internet Archive.",
+    "region": "United States",
+    "themes": [
+      "Hooked & handmade rugs",
+      "Trade catalogs & marketing",
+      "Hand-tufting tools & the gun"
+    ],
+    "tags": [
+      "priority",
+      "Ross",
+      "patterns",
+      "fellowship anchor"
+    ],
+    "status": "unverified",
+    "dateStart": 1891,
+    "date": "1891",
+    "sourceUrl": "https://archive.org/details/catalogofrugpatt00eros",
+    "institution": "Winterthur Library",
+    "creator": "E. Ross & Co.",
+    "place": "Toledo, Ohio"
+  },
+  {
+    "id": "ross-toledo",
+    "type": "finding",
+    "title": "Ebenezer Ross of Toledo: a mechanical punch hook (1886) and mail-order rug patterns",
+    "description": "Christie's lot note credits Ross with a mechanical punch hook in 1886 and the 1891 pattern catalog. Very likely the same Ebenezer Ross as US patent 463,548 (1891), the tool the Susan Burr copies. Confirm the patentee's residence (Toledo) on the patent itself.",
+    "region": "United States",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Hooked & handmade rugs"
+    ],
+    "tags": [
+      "Ross",
+      "link to verify",
+      "priority"
+    ],
+    "status": "unverified",
+    "confidence": "suggestive",
+    "dateStart": 1886,
+    "dateEnd": 1891,
+    "date": "1886–1891",
+    "sourceUrl": "https://www.christies.com.cn/lot/lot-1709610"
+  },
+  {
+    "id": "aic-71710",
+    "type": "object",
+    "title": "Lion with Palms Rug, after a pattern by Ebenezer Ross",
+    "description": "Hooked rug made in Toledo, 1890–1900, from Ross's \"Lion and Palm\" pattern. Art Institute of Chicago.",
+    "region": "United States",
+    "themes": [
+      "Hooked & handmade rugs",
+      "Hand-tufting tools & the gun"
+    ],
+    "tags": [
+      "Ross",
+      "pattern"
+    ],
+    "status": "unverified",
+    "dateStart": 1890,
+    "dateEnd": 1900,
+    "date": "1890–1900",
+    "sourceUrl": "https://www.artic.edu/artworks/71710/lion-with-palms-rug",
+    "institution": "Art Institute of Chicago",
+    "identifier": "71710"
+  },
+  {
+    "id": "wint-lib-allen-papers",
+    "type": "archive",
+    "title": "Laura M. Allen papers: scrapbook on hooked rugs, hand weaving 1924–1929",
+    "description": "Winterthur Library finding aid: a scrapbook devoted to hooked rugs, clippings, and a note about a hooked-rug class. Subject heading \"Rugs, hooked\". Evidence for the 1920s hooked-rug revival in ephemera.",
+    "region": "United States",
+    "themes": [
+      "Hooked & handmade rugs",
+      "Trade catalogs & marketing"
+    ],
+    "tags": [
+      "ephemera",
+      "request"
+    ],
+    "status": "unverified",
+    "dateStart": 1924,
+    "dateEnd": 1929,
+    "date": "1920s",
+    "sourceUrl": "http://findingaid.winterthur.org/html/HTML_Finding_Aids/COL0979.htm",
+    "institution": "Winterthur Library",
+    "identifier": "Col. 979"
+  },
+  {
+    "id": "wint-lib-swatch-books",
+    "type": "archive",
+    "title": "Winterthur Library Swatch Book Collection (Collection 50) and salesmen's sample books",
+    "description": "Finding aid for swatch and dye sample books, plus the digitized \"Swatch Books and Salesmen's Sample Books\" and \"Weaving Drafts and Pattern Books\" collections. Check for carpet, rug yarn and Wilton/Brussels samples.",
+    "region": "United States",
+    "themes": [
+      "Yarn & materials",
+      "Trade catalogs & marketing",
+      "Woven carpet"
+    ],
+    "tags": [
+      "samples",
+      "request"
+    ],
+    "status": "unverified",
+    "sourceUrl": "https://digitalcollections.winterthur.org/collections/textile-collections/swatch-books-and-salesmens-sample-books",
+    "institution": "Winterthur Library",
+    "identifier": "Col. 50"
+  },
+  {
+    "id": "wint-shaw-licensed-nylon",
+    "type": "object",
+    "title": "\"Winterthur Collection\" area rug, 100% nylon, made by Shaw Rugs under licence",
+    "description": "Not in the museum collection: a licensed reproduction-program rug labelled \"Winterthur\" and \"MM Shaw Rugs\" (RN 17357, The Henry Francis du Pont Winterthur Museum, Inc.), seen in an auction listing. Links Winterthur, Shaw and nylon tufted rugs. Date unknown; ask Winterthur about its licensing program.",
+    "region": "United States",
+    "themes": [
+      "Nylon & synthetic fibers (DuPont)",
+      "Companies & modern tufting",
+      "Machine tufting & Dalton"
+    ],
+    "tags": [
+      "Winterthur",
+      "Shaw",
+      "licensing",
+      "nylon",
+      "priority"
+    ],
+    "status": "unverified",
+    "confidence": "suggestive",
+    "sourceUrl": "https://www.ebth.com/items/5023244-winterthur-collection-area-rug",
+    "institution": "Private (auction listing)"
+  },
+  {
+    "id": "diamond-dye-rug-book",
+    "type": "trade-catalog",
+    "title": "Diamond Dye rug book (1899)",
+    "description": "Wells & Richardson's catalog of fifteen rug patterns with dyeing instructions (a dye company selling hooked-rug patterns). Copies digitized from Canadian libraries; not known at Winterthur.",
+    "region": "United States",
+    "themes": [
+      "Hooked & handmade rugs",
+      "Trade catalogs & marketing",
+      "Yarn & materials"
+    ],
+    "tags": [
+      "patterns",
+      "dyes"
+    ],
+    "status": "unverified",
+    "dateStart": 1899,
+    "date": "1899",
+    "sourceUrl": "https://archive.org/details/cihm_01194",
+    "creator": "Wells & Richardson Co."
+  },
+  {
+    "id": "hooked-rugs-chestertown",
+    "type": "article",
+    "title": "Hooked Rugs at Henry Francis du Pont's Chestertown House",
+    "description": "Essay on H. F. du Pont's hooked rug collecting at his Southampton house.",
+    "region": "United States",
+    "themes": [
+      "Hooked & handmade rugs"
+    ],
+    "tags": [
+      "H. F. du Pont",
+      "collecting"
+    ],
+    "status": "unverified",
+    "sourceUrl": "https://americanainsights.org/essays/hooked-rugs/"
   }
 ];
