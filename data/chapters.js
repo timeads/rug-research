@@ -61,7 +61,7 @@ window.RUG_CHAPTERS = [
     id: "ch-today", kind: "chapter",
     name: "Today: industry giants and custom tufting studios",
     intro: "Working notes:\n\nTwo ends of the same technique. Machine broadloom concentrated around Dalton (Shaw, from a 1946 dye house finishing tufted bedspreads; Mohawk, a woven-carpet firm from 1878 that moved south). Hand-tufting became a studio craft: Scott Group (1969), Creative Accents (1967), Kramis (1987, Switzerland), Delos (2005, CNC and hand), Tai Ping (1956, Hong Kong), Jaipur Living (1978, India). Merida (Fall River) is the counterpoint: woven natural-fibre rugs in an old cotton-mill town, rejecting synthetics. Careful with superlatives: \"world's largest\" claims are dated or about all flooring.",
-    items: ["co-shaw", "co-mohawk", "book-patton-shaw", "wint-shaw-licensed-nylon", "co-scott-group", "co-creative-accents", "co-delos", "co-kramis", "co-tai-ping", "co-jaipur", "co-merida"]
+    items: ["co-shaw", "own-spool-axminster-loom", "co-mohawk", "book-patton-shaw", "wint-shaw-licensed-nylon", "co-scott-group", "co-creative-accents", "co-delos", "co-kramis", "co-tai-ping", "co-jaipur", "co-merida"]
   },
   {
     id: "ch-hobby", kind: "chapter",

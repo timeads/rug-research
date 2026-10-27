@@ -6813,7 +6813,7 @@ window.RUG_ITEMS = [
     "id": "own-bandy-peacock-spreads",
     "type": "object",
     "title": "Two peacock chenille bedspreads (yellow ground; white ground with pink peacock)",
-    "institution": "Seen in Dalton, Georgia (confirm: Bandy Heritage Center / Sandra Mahs collection?)",
+    "institution": "Museum in Dalton, Georgia, associated with the Bandy Heritage Center (name to confirm)",
     "place": "Dalton area, Georgia",
     "region": "United States",
     "date": "undated; peacock spreads are associated with the 1930s–1950s roadside trade",
@@ -6836,7 +6836,7 @@ window.RUG_ITEMS = [
       "Bandy visit",
       "peacock",
       "Peacock Alley",
-      "confirm location"
+      "confirm museum name"
     ],
     "status": "unverified",
     "confidence": "suggestive",
@@ -6854,13 +6854,13 @@ window.RUG_ITEMS = [
     "imageCredit": "Photo: Tuft the World",
     "imageSource": "own",
     "rights": "own",
-    "collection": "Photo: Tuft the World, taken on a visit to Dalton, Georgia (Bandy Heritage Center and local museum). The photograph is yours; the objects belong to the holding institution, so check its photo policy before publishing outside the database."
+    "collection": "Photo: Tuft the World, taken at a museum in Dalton, Georgia, associated with the Bandy Heritage Center. The photograph is yours; the objects belong to the museum, so check its photo policy before publishing outside the database."
   },
   {
     "id": "own-bandy-chenille-spreads",
     "type": "object",
     "title": "Chenille bedspreads: line-tufted tulips, dot-tufted florals and diamond lattice",
-    "institution": "Seen in Dalton, Georgia (confirm: Bandy Heritage Center / Sandra Mahs collection?)",
+    "institution": "Museum in Dalton, Georgia, associated with the Bandy Heritage Center (name to confirm)",
     "place": "Dalton area, Georgia",
     "region": "United States",
     "date": "undated (mid-20th century style)",
@@ -6883,7 +6883,7 @@ window.RUG_ITEMS = [
       "own photo",
       "Bandy visit",
       "line vs dot tufting",
-      "confirm location"
+      "confirm museum name"
     ],
     "status": "unverified",
     "confidence": "suggestive",
@@ -6905,7 +6905,7 @@ window.RUG_ITEMS = [
     "imageCredit": "Photo: Tuft the World",
     "imageSource": "own",
     "rights": "own",
-    "collection": "Photo: Tuft the World, taken on a visit to Dalton, Georgia (Bandy Heritage Center and local museum). The photograph is yours; the objects belong to the holding institution, so check its photo policy before publishing outside the database."
+    "collection": "Photo: Tuft the World, taken at a museum in Dalton, Georgia, associated with the Bandy Heritage Center. The photograph is yours; the objects belong to the museum, so check its photo policy before publishing outside the database."
   },
   {
     "id": "own-bandy-sims-chenille-center",
@@ -6951,7 +6951,7 @@ window.RUG_ITEMS = [
     "id": "own-spool-axminster-loom",
     "type": "tool",
     "title": "Spool Axminster power loom (identified from photograph)",
-    "institution": "Seen in Dalton, Georgia (confirm location and owner)",
+    "institution": "Shaw Industries, Dalton, Georgia",
     "region": "United States",
     "date": "undated; the spool Axminster type dates from Skinner's 1876 loom",
     "dateStart": 1876,
@@ -6959,17 +6959,16 @@ window.RUG_ITEMS = [
       "Axminster weaving",
       "spool Axminster"
     ],
-    "description": "A large green cast-iron carpet loom. The tall chains overhead carry the tube frames (\"spools\"), each pre-wound with one row of coloured pile yarn. The loom takes one spool at a time, inserts a row of tufts, cuts them and weaves them in, which gives unlimited colours per row. The patterned multicolour carpet on the cloth beam is typical of Axminster. Behind it, a pegboard wall of yarn cones.\n\nWhy it matters: in Axminster weaving, cut tufts are inserted row by row, the woven industry's answer to many-coloured pile. It was the high-volume rival tufted broadloom had to undercut. Link to Halcyon Skinner's 1876 loom and to Bigelow-Sanford.\n\nIdentification is from the photo only. To record: the maker's plate and serial number (often cast on the frame), the loom width, its owner and date.",
+    "description": "A large green cast-iron carpet loom. The tall chains overhead carry the tube frames (\"spools\"), each pre-wound with one row of coloured pile yarn. The loom takes one spool at a time, inserts a row of tufts, cuts them and weaves them in, which gives unlimited colours per row. The patterned multicolour carpet on the cloth beam is typical of Axminster. Behind it, a pegboard wall of yarn cones.\n\nWhy it matters: in Axminster weaving, cut tufts are inserted row by row, the woven industry's answer to many-coloured pile. It was the high-volume rival tufted broadloom had to undercut. Link to Halcyon Skinner's 1876 loom and to Bigelow-Sanford.\n\nIdentification is from the photo only. Photographed at Shaw Industries in Dalton. A woven-carpet loom kept by the largest tufted-carpet maker is worth a line in the book: ask Shaw where it came from (a Shaw woven plant, an acquired mill?) and whether it still runs. To record: the maker's plate and serial number (often cast on the frame), the loom width, and its date.",
     "themes": [
       "Woven carpet",
       "Tools & equipment"
     ],
     "tags": [
       "own photo",
-      "Bandy visit",
       "Axminster",
       "loom",
-      "confirm location"
+      "Shaw"
     ],
     "status": "unverified",
     "confidence": "suggestive",
@@ -6983,6 +6982,7 @@ window.RUG_ITEMS = [
     "imageCredit": "Photo: Tuft the World",
     "imageSource": "own",
     "rights": "own",
-    "collection": "Photo: Tuft the World, taken on a visit to Dalton, Georgia (Bandy Heritage Center and local museum). The photograph is yours; the objects belong to the holding institution, so check its photo policy before publishing outside the database."
+    "collection": "Photo: Tuft the World, taken at Shaw Industries, Dalton, Georgia. The photograph is yours; the loom is Shaw's, so check with Shaw before publishing outside the database.",
+    "place": "Dalton, Georgia"
   }
 ];
