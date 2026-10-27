@@ -93,6 +93,15 @@ const APIS = {
   fsStir: `https://www.stirworld.com/stirpad/news/stir-news/floor-story-presents-rugs-designed-by-amechi-mandi-and-gill-thorpe-at-ldf-2023/`,
   fsSite: `https://www.floorstory.co.uk/`,
   fsAbout: `https://www.floorstory.co.uk/pages/about-us`,
+  hgItem: `https://digital.hagley.org/1970200_09067`,
+  hgItemJson: `https://digital.hagley.org/1970200_09067?_format=json`,
+  hgManifest: `https://digital.hagley.org/1970200_09067/manifest`,
+  hgOai: `https://digital.hagley.org/oai/request?verb=Identify`,
+  hgJsonapi: `https://digital.hagley.org/jsonapi`,
+  hgSearchNew: `https://digital.hagley.org/search?search_api_fulltext=nylon%20carpet`,
+  hgSearchOld: `https://digital.hagley.org/islandora/search/nylon%20carpet?type=dismax`,
+  hgSitemap1: `https://digital.hagley.org/sitemap.xml?page=1`,
+  hgRobots: `https://digital.hagley.org/robots.txt`,
   cooperHewitt: `https://api.collection.cooperhewitt.org/rest/?method=cooperhewitt.search.objects&query=rug`,
 };
 // "sources" mode: try every Other archives search link with a sample query.
