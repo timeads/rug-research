@@ -54,7 +54,7 @@
   const SEED_CHAPTERS = window.RUG_CHAPTERS || [];
   const DEFAULT_THEMES = [
     "Early tufting: bed rugs & needlework pile", "Global diffusion of tufting", "Hand-tufting tools & the gun", "Companies & modern tufting", "Hooked & handmade rugs", "Woven carpet", "Chenille & candlewick", "Machine tufting & Dalton",
-    "Nylon & synthetic fibers (DuPont)", "Trade catalogs & marketing", "Tools & equipment", "Yarn & materials"
+    "Nylon & synthetic fibers (DuPont)", "Trade catalogs & marketing", "Tools & equipment", "Yarn & materials", "Rug-making techniques"
   ];
 
   // ---------- utilities ----------
@@ -278,8 +278,10 @@
     "Chenille & candlewick": "rose", "Machine tufting & Dalton": "ochre", "Nylon & synthetic fibers (DuPont)": "teal",
     "Trade catalogs & marketing": "slate", "Tools & equipment": "umber", "Yarn & materials": "plum",
     "Global diffusion of tufting": "indigo", "Hand-tufting tools & the gun": "rust",
-    "Companies & modern tufting": "jade"
+    "Companies & modern tufting": "jade", "Rug-making techniques": "wheat"
   };
+  // Years before 1 CE are stored as negative numbers and shown as "400 BCE".
+  const fmtYear = y => y < 0 ? `${-y} BCE` : String(y);
   const SPARE_CLOTH = ["navy", "moss", "plum", "teal", "umber", "slate", "rose", "ochre", "indigo", "rust"];
   const cloth = theme => `var(--cloth-${THEME_CLOTH[theme] || (theme ? SPARE_CLOTH[hash(theme) % SPARE_CLOTH.length] : "grey")})`;
   const itemCloth = it => cloth(it.themes[0]);
@@ -394,12 +396,13 @@
     fe.innerHTML = dated.map(it => {
       const s = it.dateStart, e = it.dateEnd ?? s, mid = (s + e) / 2;
       const span = e - s >= 15 ? `<span class="leaf span" style="left:${x(s)}%;width:${x(e) - x(s)}%;--c:${itemCloth(it)}"></span>` : "";
-      return `${span}<button class="leaf" tabindex="-1" style="left:${x(mid)}%;--c:${itemCloth(it)}" data-open="${esc(it.id)}" title="${esc(`${it.date || s} · ${it.title}`)}" aria-label="${esc(it.title)}"></button>`;
+      return `${span}<button class="leaf" tabindex="-1" style="left:${x(mid)}%;--c:${itemCloth(it)}" data-open="${esc(it.id)}" title="${esc(`${it.date || fmtYear(s)} · ${it.title}`)}" aria-label="${esc(it.title)}"></button>`;
     }).join("");
     const ticks = [];
     const narrow = fe.clientWidth < 560;
-    const every = (hi - lo > 250 ? 50 : 25) * (narrow ? 2 : 1);
-    for (let y = lo; y <= hi; y += every) ticks.push(`<span style="left:${x(y)}%">${y}</span>`);
+    // About eight ticks whatever the span (a few decades, or back to the BCE carpets).
+    const every = [25, 50, 100, 250, 500, 1000].find(n => (hi - lo) / n <= (narrow ? 5 : 9)) || 1000;
+    for (let y = Math.ceil(lo / every) * every; y <= hi; y += every) ticks.push(`<span style="left:${x(y)}%">${fmtYear(y)}</span>`);
     axis.innerHTML = ticks.join("");
   };
 
@@ -428,7 +431,7 @@
   S.eraNotes = S.eraNotes || {};
   const eraSummary = e => S.eraNotes[e.id] ?? e.summary;
   const eraYears = e => e.from < 0 ? `before ${e.to + 1}` : e.to > 3000 ? `${e.from}–today` : `${e.from}–${e.to}`;
-  const decadeHTML = (d, items) => `<section class="decade"><h3 class="decade-label">${d}s<small>${items.length} record${items.length > 1 ? "s" : ""}</small></h3><div class="grid">${items.map(it => cardHTML(it)).join("")}</div></section>`;
+  const decadeHTML = (d, items) => `<section class="decade"><h3 class="decade-label">${d < 0 ? `${-d}s BCE` : `${d}s`}<small>${items.length} record${items.length > 1 ? "s" : ""}</small></h3><div class="grid">${items.map(it => cardHTML(it)).join("")}</div></section>`;
   const eraHeadHTML = (e, n) => `<header class="era-head" data-era="${esc(e.id)}">
       <h2>${esc(e.title)} <span class="era-years">${esc(eraYears(e))}</span></h2>
       <p class="era-summary">${esc(eraSummary(e))}</p>
@@ -450,7 +453,7 @@
         era = e; opened = true;
         if (e) { const n = decades.filter(x => eraOf(x) === e).reduce((t, x) => t + groups.get(x).length, 0); out.push(`<section class="era">${eraHeadHTML(e, n)}`); }
         else out.push(`<section class="era">`);
-      } else if (i && d - decades[i - 1] > 20) out.push(`<p class="gap-note">No records from ${decades[i - 1] + 10} to ${d - 1}.</p>`);
+      } else if (i && d - decades[i - 1] > 20) out.push(`<p class="gap-note">No records from ${fmtYear(decades[i - 1] + 10)} to ${fmtYear(d - 1)}.</p>`);
       out.push(decadeHTML(d, groups.get(d)));
     });
     if (opened) out.push(`</section>`);
