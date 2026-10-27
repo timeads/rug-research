@@ -1165,7 +1165,10 @@ window.RUG_ITEMS = [
       "catalog"
     ],
     "status": "unverified",
-    "region": "United States"
+    "region": "United States",
+    "image": "https://covers.openlibrary.org/b/id/10042294-L.jpg",
+    "imageCredit": "Cover via Open Library",
+    "imageSource": "auto"
   },
   {
     "id": "book-ulrich-age-of-homespun",
@@ -11444,7 +11447,10 @@ window.RUG_ITEMS = [
     "themes": [
       "Rug-making techniques"
     ],
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Map_Asia_physical_%28continental%29.png/330px-Map_Asia_physical_%28continental%29.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+    "imageCredit": "en.wikipedia.org (image from en.wikipedia.org)",
+    "imagePage": "https://en.wikipedia.org/wiki/Pazyryk_culture"
   },
   {
     "id": "process-felt-shyrdak",
@@ -11479,7 +11485,10 @@ window.RUG_ITEMS = [
     "themes": [
       "Rug-making techniques"
     ],
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "image": "https://img.youtube.com/vi/mO2VxDmy4y4/0.jpg",
+    "imageCredit": "ich.unesco.org (image from ich.unesco.org)",
+    "imagePage": "https://ich.unesco.org/en/RL/ala-kiyiz-and-shyrdak-art-of-kyrgyz-traditional-felt-carpets-00693"
   },
   {
     "id": "process-felt-turkmen-cooperhewitt",
@@ -11511,8 +11520,7 @@ window.RUG_ITEMS = [
     "status": "unverified",
     "themes": [
       "Rug-making techniques"
-    ],
-    "imageSource": "auto"
+    ]
   },
   {
     "id": "process-flatweave-earliest-tapestry-egypt",
@@ -11578,7 +11586,10 @@ window.RUG_ITEMS = [
     "themes": [
       "Rug-making techniques"
     ],
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "image": "https://archive.artic.edu/divineart/images/Divine_Arts_hdr.jpg",
+    "imageCredit": "archive.artic.edu (image from archive.artic.edu)",
+    "imagePage": "https://archive.artic.edu/divineart/weavingstruc"
   },
   {
     "id": "process-flatweave-soumak-tm",
@@ -11612,7 +11623,10 @@ window.RUG_ITEMS = [
     "themes": [
       "Rug-making techniques"
     ],
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/76/Borchaliu_Soumak_Mafrash.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail_unscaled",
+    "imageCredit": "en.wikipedia.org (image from en.wikipedia.org)",
+    "imagePage": "https://en.wikipedia.org/wiki/Soumak"
   },
   {
     "id": "process-flatweave-navajo",
@@ -11680,7 +11694,9 @@ window.RUG_ITEMS = [
     "themes": [
       "Rug-making techniques"
     ],
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "image": "https://statemuseum.arizona.edu/sites/default/files/styles/az_medium/public/E-1200_x.jpg.webp?itok=slMykIUN",
+    "imageCredit": "Arizona State Museum, University of Arizona"
   },
   {
     "id": "process-flatweave-dhurrie-penn",
@@ -11713,7 +11729,9 @@ window.RUG_ITEMS = [
     "themes": [
       "Rug-making techniques"
     ],
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "image": "https://collections.penn.museum/collections/assets/058T/589k/589573_800.jpg",
+    "imageCredit": "Penn Museum (University of Pennsylvania Museum of Archaeology and Anthropology)"
   },
   {
     "id": "process-flatweave-rolakan",
@@ -11778,7 +11796,10 @@ window.RUG_ITEMS = [
       "Woven carpet"
     ],
     "status": "unverified",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "image": "https://www.guinnessworldrecords.com/_site-config/images/latest-news-menu-image.jpg",
+    "imageCredit": "guinnessworldrecords.com (image from guinnessworldrecords.com)",
+    "imagePage": "https://guinnessworldrecords.com/world-records/652074-oldest-carpet"
   },
   {
     "id": "process-knotted-knot-types",
@@ -11845,7 +11866,10 @@ window.RUG_ITEMS = [
       "Woven carpet"
     ],
     "status": "unverified",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Noeud_turc.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail_unscaled",
+    "imageCredit": "en.wikipedia.org (image from en.wikipedia.org)",
+    "imagePage": "https://en.wikipedia.org/wiki/Knotted-pile_carpet"
   },
   {
     "id": "process-knotted-tibetan",
@@ -11910,7 +11934,9 @@ window.RUG_ITEMS = [
       "Woven carpet"
     ],
     "status": "unverified",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "image": "https://framemark.vam.ac.uk/collections/2017KL2153/full/!600,/0/default.jpg",
+    "imageCredit": "Victoria and Albert Museum"
   },
   {
     "id": "process-knotted-looms",
@@ -11980,7 +12006,9 @@ window.RUG_ITEMS = [
       "Woven carpet"
     ],
     "status": "unverified",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "image": "https://framemark.vam.ac.uk/collections/2018LE8696/full/!600,/0/default.jpg",
+    "imageCredit": "Victoria and Albert Museum"
   },
   {
     "id": "process-loompile-chenille-axminster",
@@ -12017,7 +12045,9 @@ window.RUG_ITEMS = [
       "Woven carpet"
     ],
     "status": "unverified",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "image": "https://framemark.vam.ac.uk/collections/2018LE8726/full/!600,/0/default.jpg",
+    "imageCredit": "Victoria and Albert Museum"
   },
   {
     "id": "process-hooking-origins",
@@ -12083,8 +12113,7 @@ window.RUG_ITEMS = [
       "Rug-making techniques",
       "Hooked & handmade rugs"
     ],
-    "status": "unverified",
-    "imageSource": "auto"
+    "status": "unverified"
   },
   {
     "id": "process-hooking-grenfell",
@@ -12153,7 +12182,9 @@ window.RUG_ITEMS = [
       "Hooked & handmade rugs"
     ],
     "status": "unverified",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Toy_motorbike_%28AM_1996.165.44%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "imageCredit": "Wikimedia Commons (CC BY 4.0)"
   },
   {
     "id": "process-sewn-yarn-sewn-chs",
@@ -12187,7 +12218,9 @@ window.RUG_ITEMS = [
       "Early tufting: bed rugs & needlework pile"
     ],
     "status": "unverified",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "image": "https://emuseum.chs.org/emuseum/internal/media/dispatcher/12509/full",
+    "imageCredit": "Connecticut Historical Society"
   },
   {
     "id": "process-sewn-shirred-hne",
@@ -12221,8 +12254,7 @@ window.RUG_ITEMS = [
       "Rug-making techniques",
       "Hooked & handmade rugs"
     ],
-    "status": "unverified",
-    "imageSource": "auto"
+    "status": "unverified"
   },
   {
     "id": "process-braided-hne",
@@ -12255,7 +12287,10 @@ window.RUG_ITEMS = [
       "Hooked & handmade rugs"
     ],
     "status": "unverified",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "image": "https://www.capelrugs.com/cdn/shop/files/0210-910-Xb.jpg?v=1621535235&width=300",
+    "imageCredit": "capelrugs.com (image from capelrugs.com)",
+    "imagePage": "https://capelrugs.com/pages/braided-info"
   },
   {
     "id": "process-rag-woven-shaker",
@@ -12292,7 +12327,10 @@ window.RUG_ITEMS = [
       "Hooked & handmade rugs"
     ],
     "status": "unverified",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Swedish-carpet-Fjetterstrom-by-doris-leslie-blau.jpg/960px-Swedish-carpet-Fjetterstrom-by-doris-leslie-blau.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
+    "imageCredit": "en.wikipedia.org (image from en.wikipedia.org)",
+    "imagePage": "https://en.wikipedia.org/wiki/Swedish_carpets_and_rugs"
   },
   {
     "id": "process-crochet-knit-afam",
@@ -12328,7 +12366,10 @@ window.RUG_ITEMS = [
       "Hooked & handmade rugs"
     ],
     "status": "unverified",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "image": "https://folkartmuseum.org/content/uploads/2014/10/folk_1868_image.jpg",
+    "imageCredit": "folkartmuseum.org (image from folkartmuseum.org)",
+    "imagePage": "https://folkartmuseum.org/exhibitions/the-great-cover-up-american-rugs-on-beds-tables-and-floors"
   },
   {
     "id": "process-tufting-overview",
