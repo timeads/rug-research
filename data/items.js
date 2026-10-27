@@ -8108,5 +8108,890 @@ window.RUG_ITEMS = [
     "status": "unverified",
     "confidence": "solid",
     "rights": "not-requested"
+  },
+  {
+    "id": "pat-ch214147a",
+    "type": "patent",
+    "title": "Ernst Thomsen Christian, \"Apparatus for Hand Sewing Carpets\" (CH214147A)",
+    "creator": "Ernst Thomsen Christian (inventor and original assignee)",
+    "date": "Danish priority 4 Oct 1938; published 15 Apr 1941",
+    "dateStart": 1938,
+    "identifier": "CH214147A",
+    "sourceUrl": "https://patents.google.com/patent/CH214147A/de",
+    "region": "Switzerland",
+    "language": "German",
+    "originalText": "Apparat zum Handnähen von Teppichen.",
+    "translation": "Apparatus for hand-sewing carpets.",
+    "description": "This is a Danish hand tool for making carpets, patented across Europe on the eve of WWII. The same 4 Oct 1938 Danish priority is claimed by GB532412A (\"Improved apparatus for the hand-sewing of carpets\", application GB24809/39 filed 29 Aug 1939, published 23 Jan 1941), FR853635A (\"Appareil pour coudre à la main les tapis\"), DE712192C and BE436213A. Google Patents puts the French member under CPC D05C15/06 (hand tufting needles; hand-held tufting apparatus). In that period \"sewing carpets\" can mean making pile by hand-stitching yarn into a backing, not seaming, but I have not read the claims to confirm that. Verified Oct 2026 by web search only. patents.google.com and Espacenet could not be opened from the sandbox, so I did not read the document itself. I read the inventor, title and dates from Google Patents result snippets for CH214147A and GB532412A. The GB snippet does not name the applicant, so linking it to Thomsen is my inference from the shared priority.\n\nResearch note (Oct 2026): found through search results; the patent document itself wasn't opened. The Patent drawings job fetches the document from Google Patents; if drawings appear on this record, the number is confirmed.",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Tools & equipment",
+      "Early tufting: bed rugs & needlework pile"
+    ],
+    "tags": [
+      "patent lineage",
+      "Denmark",
+      "Switzerland",
+      "hand tool",
+      "pre-1950",
+      "foreign patents 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "solid",
+    "place": "Switzerland (Danish inventor)"
+  },
+  {
+    "id": "pat-gb674501a",
+    "type": "patent",
+    "title": "Felicitas A/S (attrib.), \"Improvements in devices for hand-sewing carpets\" (GB674501A)",
+    "creator": "applicant not shown in snippet; French family member assigned to Felicitas A/S (Denmark)",
+    "date": "Danish priority 1 Apr 1950; filed 17 Jul 1950; published 25 Jun 1952",
+    "dateStart": 1950,
+    "identifier": "GB674501A",
+    "sourceUrl": "https://patents.google.com/patent/GB674501A/en",
+    "region": "United Kingdom",
+    "language": "English",
+    "originalText": "Improvements in devices for hand-sewing carpets",
+    "translation": "—",
+    "description": "This is a post-war Danish hand-held carpet-making device. Google Patents classes it under D05C15/06 (hand tufting needles; hand-held tufting apparatus), and its indexed keywords (needle, eccentric, crank, oscillation) point to a crank-driven reciprocating needle. Family members found: DE854562C \"Handgeraet zur Teppichherstellung\" (a search snippet gives 1951 and says it was published alongside GB674501A) and FR1034542A \"Dispositif à confectionner les tapis à la main\", whose original assignee is FELICITAS AS (priority 1 Apr 1950, filed 29 Mar 1951). Verified Oct 2026 by web search only. patents.google.com and Espacenet could not be opened from the sandbox, so I did not read the document itself. Application GB17874/50 and the dates come from the Google Patents record as summarised in search results. The Felicitas attribution rests on the shared 1 Apr 1950 priority with the French patent.\n\nResearch note (Oct 2026): found through search results; the patent document itself wasn't opened. The Patent drawings job fetches the document from Google Patents; if drawings appear on this record, the number is confirmed.",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "patent lineage",
+      "Denmark",
+      "hand tool",
+      "tufting needle",
+      "foreign patents 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "solid",
+    "place": "United Kingdom (Danish priority)"
+  },
+  {
+    "id": "pat-de854562c",
+    "type": "patent",
+    "title": "\"Handgerät zur Teppichherstellung\" (DE854562C)",
+    "creator": "applicant not seen (probably Felicitas A/S, Denmark; see GB674501A)",
+    "date": "c. 1951 (date from search summary only)",
+    "dateStart": 1951,
+    "identifier": "DE854562C",
+    "sourceUrl": "https://patents.google.com/patent/DE854562C/de",
+    "region": "Germany",
+    "language": "German",
+    "originalText": "Handgeraet zur Teppichherstellung",
+    "translation": "Hand device for carpet making",
+    "description": "This is the German member of the 1950 Danish hand-tool family (GB674501A, FR1034542A). Google Patents classes it under D05C15/06 (hand-held tufting apparatus), and its keywords mention a tubular needle and a movement element. It is the earliest German document classed as a hand tufting device that turned up in this search. Date caution: a single search summary gave \"1951\" and said it was published alongside GB674501A. I did not see a publication date on the record itself. Verified Oct 2026 by web search only. patents.google.com and Espacenet could not be opened from the sandbox, so I did not read the document itself. \n\nResearch note (Oct 2026): found through search results; the patent document itself wasn't opened. The Patent drawings job fetches the document from Google Patents; if drawings appear on this record, the number is confirmed.",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "patent lineage",
+      "Germany",
+      "Denmark",
+      "hand tool",
+      "foreign patents 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "suggestive"
+  },
+  {
+    "id": "pat-gb663196a",
+    "type": "patent",
+    "title": "Melvin Sivyer Hurley, \"A new or improved hand tool for making rugs, carpets and the like with a cut pile\" (GB663196A)",
+    "creator": "Melvin Sivyer Hurley",
+    "date": "priority 10 Dec 1948; published 19 Dec 1951",
+    "dateStart": 1948,
+    "identifier": "GB663196A",
+    "sourceUrl": "https://patents.google.com/patent/GB663196A/en",
+    "region": "United Kingdom",
+    "language": "English",
+    "originalText": "A new or improved hand tool for making rugs, carpets and the like with a cut pile",
+    "translation": "—",
+    "description": "This is the British filing of the cut-pile hand tool that the database already holds as US2605727A (pat-us2605727a). Family members: FR1001038A (\"Outil à main pour la fabrication de carpettes, tapis et articles analogues à poils coupés\", which names Hurley as inventor) and BE492654A. It is classed D05C15/06, and its keywords (scissors, needle, cam, pins) suggest a needle with a built-in cutter. It shows that American hand cut-pile tools were being patented in Europe by 1948–51. Verified Oct 2026 by web search only. patents.google.com and Espacenet could not be opened from the sandbox, so I did not read the document itself. Dates and the inventor come from Google Patents snippets for GB663196A, BE492654A and FR1001038A.\n\nResearch note (Oct 2026): found through search results; the patent document itself wasn't opened. The Patent drawings job fetches the document from Google Patents; if drawings appear on this record, the number is confirmed.",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "patent lineage",
+      "UK",
+      "France",
+      "cut pile",
+      "hand tool",
+      "foreign patents 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "solid",
+    "place": "United Kingdom (US inventor)"
+  },
+  {
+    "id": "pat-de1074196b",
+    "type": "patent",
+    "title": "Madeleine Jeandupeux, \"Pile-knotting needle for making carpets\" (DE1074196B)",
+    "creator": "Madeleine Jeandupeux, Delémont, Switzerland",
+    "date": "filed 1953; published 1960",
+    "dateStart": 1953,
+    "identifier": "DE1074196B",
+    "sourceUrl": "https://patents.google.com/patent/DE1074196B/de",
+    "region": "Germany",
+    "language": "German",
+    "originalText": "Florknüpfnadel zur Herstellung von Teppichen",
+    "translation": "Pile-knotting needle for making carpets",
+    "description": "This is a Swiss woman's hand needle for making carpet pile. It appears in the citation table of DE115020C, an older German hand embroidery (punch-type) needle, which suggests the examiner treated it as a hollow-needle, punch-style tool rather than a knotting hook. Verified Oct 2026 by web search only. patents.google.com and Espacenet could not be opened from the sandbox, so I did not read the document itself. The number, title, years and applicant come only from that citation row as summarised in a search result. A follow-up search could not find the record itself. Treat it as a lead.\n\nResearch note (Oct 2026): found through search results; the patent document itself wasn't opened. The Patent drawings job fetches the document from Google Patents; if drawings appear on this record, the number is confirmed.",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "patent lineage",
+      "Switzerland",
+      "hand tool",
+      "tufting needle",
+      "foreign patents 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "suggestive",
+    "place": "Delémont"
+  },
+  {
+    "id": "pat-de2356585c2",
+    "type": "patent",
+    "title": "Hartmut Scholz, \"Device for tufting carpets by hand\" (DE2356585C2)",
+    "creator": "Hartmut Scholz, Allersberg (inventor and assignee)",
+    "date": "priority 13 Nov 1973; Auslegeschrift (B1) 28 Nov 1974; C2 published 17 Jul 1975",
+    "dateStart": 1973,
+    "identifier": "DE2356585C2",
+    "sourceUrl": "https://patents.google.com/patent/DE2356585C2/de",
+    "region": "Germany",
+    "language": "German",
+    "originalText": "Vorrichtung zum Tuften von Teppichen in Handarbeit",
+    "translation": "Device for tufting carpets by hand",
+    "description": "This is the founding patent of the Hofmann hand-tufting gun lineage. Hofmann Handtuft-Technik's history page says the firm began in 1973 as Scholz Handtuft-Technik KG in Allersberg, with Hartmut (\"Harmut\") Scholz and Heinz Hofmann as managing directors. This patent was filed by Scholz from Allersberg in the same year. Its US counterpart is US3968758A, \"Arrangement for the tufting of carpets\" (13 Jul 1976). Wilcom's later patents (EP1674605, US8225727) cite \"the Scholz (US 3,968,758)\" gun as an earlier hand-held tufting gun whose cutter could be engaged and disengaged by hand. Later German filings citing it include DE2621360A1 and DE3410783A1. Verified Oct 2026 by web search only. patents.google.com and Espacenet could not be opened from the sandbox, so I did not read the document itself. Title, assignee, town and dates come from Google Patents snippets, and the Allersberg link from the company's own history page. No patent in the name of Hofmann itself was found.\n\nResearch note (Oct 2026): found through search results; the patent document itself wasn't opened. The Patent drawings job fetches the document from Google Patents; if drawings appear on this record, the number is confirmed.",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "patent lineage",
+      "Germany",
+      "Hofmann",
+      "Scholz",
+      "tufting gun",
+      "foreign patents 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "solid",
+    "place": "Allersberg, Bavaria"
+  },
+  {
+    "id": "pat-de2511266c3",
+    "type": "patent",
+    "title": "Hartmut Scholz, \"Device for tufting by hand\" (DE2511266C3)",
+    "creator": "Hartmut Scholz",
+    "date": "German priority 14 Mar 1975; Austrian member AT347214B filed 5 Mar 1976, published 11 Dec 1978",
+    "dateStart": 1975,
+    "identifier": "DE2511266C3",
+    "sourceUrl": "https://patents.google.com/patent/DE2511266C3/de",
+    "region": "Germany",
+    "language": "German",
+    "originalText": "Vorrichtung zum Tuften von Hand",
+    "translation": "Device for tufting by hand",
+    "description": "This is Scholz's second hand-tufting patent family, filed while Scholz Handtuft-Technik KG was operating. Family members: AT347214B (\"Vorrichtung zum Tuften von Teppichen od. dgl.\", D05C15/06), US4029031A (\"Device for providing rugs and the like with tufts\", 14 Jun 1977, inventor Hartmut Scholz), GB1536346A, FR2303888A1, IT1063070B and a Japanese member JPS51116752A. One summary of US4029031 describes a manual tufting device with a fixed needle, a movable cutting blade and two arms that slide against each other. This is consistent with the hand-operated (later pneumatic) guns that Hofmann still sells, but I have not read the claims. Verified Oct 2026 by web search only. patents.google.com and Espacenet could not be opened from the sandbox, so I did not read the document itself. The DE number, title and priority date come from Google Patents family listings, and the AT dates from the AT347214B record snippet. I did not see the DE C3 publication date.\n\nResearch note (Oct 2026): found through search results; the patent document itself wasn't opened. The Patent drawings job fetches the document from Google Patents; if drawings appear on this record, the number is confirmed.",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "patent lineage",
+      "Germany",
+      "Austria",
+      "Hofmann",
+      "Scholz",
+      "tufting gun",
+      "foreign patents 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "solid"
+  },
+  {
+    "id": "pat-ep0026492a1",
+    "type": "patent",
+    "title": "Hartmut Scholz (attrib.), \"Process and device for tufting carpets or the like\" (EP0026492A1)",
+    "creator": "Hartmut Scholz (per one Google Patents citation row)",
+    "date": "German priorities 2 Oct 1979 (DE2939851) and 17 Oct 1979 (DE2941903); published 8 Apr 1981",
+    "dateStart": 1979,
+    "identifier": "EP0026492A1",
+    "sourceUrl": "https://patents.google.com/patent/EP0026492A1/de",
+    "region": "Europe",
+    "language": "German",
+    "originalText": "Verfahren und Vorrichtung zum Tuften von Teppichen od. dgl.",
+    "translation": "Process and device for tufting carpets or the like",
+    "description": "These are the last tufting filings found for Scholz. The Hofmann history page says Scholz left the company in 1979, the year of these priorities, and died in 1989. Verified Oct 2026 by web search only. patents.google.com and Espacenet could not be opened from the sandbox, so I did not read the document itself. The number, title, priorities and publication date come from the EPO Global Patent Index record. That record's snippet did not show the applicant. \"Hartmut Scholz\" as applicant comes only from a citation row on another Google Patents page, so treat the attribution as probable.\n\nResearch note (Oct 2026): found through search results; the patent document itself wasn't opened. The Patent drawings job fetches the document from Google Patents; if drawings appear on this record, the number is confirmed.",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "patent lineage",
+      "Germany",
+      "Scholz",
+      "tufting gun",
+      "foreign patents 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "suggestive",
+    "place": "Europe (EP), German priority"
+  },
+  {
+    "id": "pat-de2815801a1",
+    "type": "patent",
+    "title": "Hans Hartleb, \"Tufting device, in particular hand tufting device\" (DE2815801A1)",
+    "creator": "Hans Hartleb",
+    "date": "priority 12 Apr 1978; published 18 Oct 1979",
+    "dateStart": 1978,
+    "identifier": "DE2815801A1",
+    "sourceUrl": "https://patents.google.com/patent/DE2815801A1/de",
+    "region": "Germany",
+    "language": "German",
+    "originalText": "(German title not seen; Google Patents English rendering below)",
+    "translation": "Tufting device, in particular hand tufting device",
+    "description": "This is the patent behind the \"Hartleb\" gun, the second German hand gun that Wilcom's patents name alongside Hofmann. US8225727 and EP2077348 describe \"a traditional hand tufting gun for instance, Hofmann™ or Hartleb™, each of which are limited to tufting along an outline at a constant pile height\". EP1674605 and US7218987 cite \"the Hartleb (see DE 2,815,801)\" gun as having a cutter that can be engaged and disengaged by hand. No company named Hartleb turned up in searches, so Hartleb may have been an individual inventor or a small firm. Verified Oct 2026 by web search only. patents.google.com and Espacenet could not be opened from the sandbox, so I did not read the document itself. Number, assignee and dates come from Google Patents citation and family rows as summarised in search results. The English title is Google's translation.\n\nResearch note (Oct 2026): found through search results; the patent document itself wasn't opened. The Patent drawings job fetches the document from Google Patents; if drawings appear on this record, the number is confirmed.",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "patent lineage",
+      "Germany",
+      "Hartleb",
+      "tufting gun",
+      "foreign patents 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "suggestive"
+  },
+  {
+    "id": "pat-de3410783a1",
+    "type": "patent",
+    "title": "Akzo GmbH, \"Hand tufting appliance\" (DE3410783A1)",
+    "creator": "Akzo GmbH, Wuppertal",
+    "date": "priority 23 Mar 1984; published 26 Sep 1985",
+    "dateStart": 1984,
+    "identifier": "DE3410783A1",
+    "sourceUrl": "https://patents.google.com/patent/DE3410783A1/de",
+    "region": "Germany",
+    "language": "German",
+    "originalText": "Handtuftinggerät",
+    "translation": "Hand tufting appliance",
+    "description": "This is a hand-tufting device from Akzo's German arm (Wuppertal, the former Enka/Glanzstoff fibre business). It suggests that fibre makers took an interest in hand guns in the 1980s, probably for sampling or repair. It cites Scholz's DE2356585. Verified Oct 2026 by web search only. patents.google.com and Espacenet could not be opened from the sandbox, so I did not read the document itself. The number, title, dates and assignee come from a \"Cited By\" table on a Google Patents page, as summarised in a search result.\n\nResearch note (Oct 2026): found through search results; the patent document itself wasn't opened. The Patent drawings job fetches the document from Google Patents; if drawings appear on this record, the number is confirmed.",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "patent lineage",
+      "Germany",
+      "tufting gun",
+      "fibre industry",
+      "foreign patents 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "suggestive",
+    "place": "Wuppertal"
+  },
+  {
+    "id": "pat-ep0534974a1",
+    "type": "patent",
+    "title": "Jamshid Divangahi, \"A hand-held tufting machine\" (EP0534974A1)",
+    "creator": "Jamshid Divangahi, Barnsley, South Yorkshire (applicant and inventor)",
+    "date": "GB priority 24 Jan 1990; filed 23 Jan 1991; published 7 Apr 1993",
+    "dateStart": 1990,
+    "identifier": "EP0534974A1",
+    "sourceUrl": "https://patents.google.com/patent/EP0534974A1/en",
+    "region": "United Kingdom",
+    "language": "English",
+    "originalText": "A hand-held tufting machine",
+    "translation": "—",
+    "description": "This is the clearest British hand-gun patent found. It is a PCT filing (PCT/GB1991/000097, published as WO1991011550) claiming GB priority 9001631 of 24 Jan 1990, by an individual inventor in Barnsley. Verified Oct 2026 by web search only. patents.google.com and Espacenet could not be opened from the sandbox, so I did not read the document itself. All bibliographic data come from the EPO publication-server record (data.epo.org) as summarised in a search result.\n\nResearch note (Oct 2026): found through search results; the patent document itself wasn't opened. The Patent drawings job fetches the document from Google Patents; if drawings appear on this record, the number is confirmed.",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "patent lineage",
+      "UK",
+      "tufting gun",
+      "foreign patents 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "solid",
+    "place": "Barnsley"
+  },
+  {
+    "id": "pat-ep1674605a1",
+    "type": "patent",
+    "title": "Wilcom Pty Ltd, \"Tufting machine\" (EP1674605A1)",
+    "creator": "Mile (Joz) Jez, William Brian Wilson; Wilcom Pty Ltd (Australia)",
+    "date": "AU priority 23 Dec 2004; A1 published 28 Jun 2006; B1 granted 25 Jan 2012",
+    "dateStart": 2004,
+    "identifier": "EP1674605A1",
+    "sourceUrl": "https://patents.google.com/patent/EP1674605A1/en",
+    "region": "Australia",
+    "language": "English",
+    "originalText": "Tufting machine",
+    "translation": "—",
+    "description": "This patent puts the hand tufting gun on a computer-guided gantry. It covers a single hollow-needle tufting head moved over the backing from vector design files, with a yarn cutter that switches between cut and loop pile. Its background is a useful history: it says tufting guns \"may be controlled and guided manually by a human operator\" and names earlier hand guns, Hartleb (DE2815801) and Scholz (US3968758/DE2356585). US counterpart: US7218987B2 (granted 15 May 2007). Austrian member: ATE522650T1. Wilcom (Sydney, best known for embroidery software) had earlier tufting-head patents, US5829372 and US5503092 (Wilcom Tufting Pty Ltd). Their background cites PCT/AU92/00401 (WO 93/03215), and there are Chinese (CN1046772C), Australian (AU1058695A) and Japanese (JPH09505361A) members. I saw those numbers but not their dates. Verified Oct 2026 by web search only. patents.google.com and Espacenet could not be opened from the sandbox, so I did not read the document itself. EP dates come from the EPO Global Patent Index; the inventors and assignee come from the US7218987B2 Google Patents record.\n\nResearch note (Oct 2026): found through search results; the patent document itself wasn't opened. The Patent drawings job fetches the document from Google Patents; if drawings appear on this record, the number is confirmed.",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Tools & equipment",
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "patent lineage",
+      "Australia",
+      "Wilcom",
+      "robot tufting",
+      "tufting gun",
+      "foreign patents 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "solid",
+    "place": "Australia (EP filing)"
+  },
+  {
+    "id": "pat-ep2077348b1",
+    "type": "patent",
+    "title": "Wilcom Pty Ltd, \"An improved tufting machine\" (EP2077348B1)",
+    "creator": "William Brian Wilson, Mile Jez, Joseph Van Woerkom; Wilcom Pty Ltd",
+    "date": "AU priority 4 Jan 2008 (AU2008900045); B1 granted 31 Aug 2011",
+    "dateStart": 2008,
+    "identifier": "EP2077348B1",
+    "sourceUrl": "https://patents.google.com/patent/EP2077348B1/en",
+    "region": "Australia",
+    "language": "English",
+    "originalText": "An improved tufting machine",
+    "translation": "—",
+    "description": "This is Wilcom's second-generation computer-guided tufting head, able to vary pile height. Its main value here is the background statement naming the two best-known German hand guns: \"a traditional hand tufting gun for instance, Hofmann™ or Hartleb™, each of which are limited to tufting along an outline at a constant pile height\". It is the only patent text found that names Hofmann. US counterpart: US8225727B2 (filed 3 Dec 2008, granted 24 Jul 2012). Trade press: Textile World (July 2012) covered Wilcom's AutoTuft pneumatic tufting head. Verified Oct 2026 by web search only. patents.google.com and Espacenet could not be opened from the sandbox, so I did not read the document itself. The B1 number, title, grant date and priority come from the EPO Global Patent Index. I did not see the A1 publication date (probably 2009), so the B1 is cited.\n\nResearch note (Oct 2026): found through search results; the patent document itself wasn't opened. The Patent drawings job fetches the document from Google Patents; if drawings appear on this record, the number is confirmed.",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Tools & equipment",
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "patent lineage",
+      "Australia",
+      "Wilcom",
+      "Hofmann",
+      "robot tufting",
+      "foreign patents 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "solid",
+    "place": "Australia (EP filing)"
+  },
+  {
+    "id": "pat-de2621360a1",
+    "type": "patent",
+    "title": "Wilh. Simon & Co, \"Device for producing tufted products\" (DE2621360A1)",
+    "creator": "Wilh. Simon & Co (as OCR'd by Google Patents)",
+    "date": "priority/filed 14 May 1976; A1 published 24 Nov 1977; C2 granted 6 Dec 1984",
+    "dateStart": 1976,
+    "identifier": "DE2621360A1",
+    "sourceUrl": "https://patents.google.com/patent/DE2621360A1/de",
+    "region": "Germany",
+    "language": "German",
+    "originalText": "Vorrichtung zur Herstellung von Tuftingerzeugnissen",
+    "translation": "Device for producing tufted products",
+    "description": "This is a German tufting device that cites Scholz's hand-tufting patent DE2356585 as prior art. I did not find out whether it is a hand tool or a machine. It is included mainly as evidence that Scholz's patent was being cited by 1976. Verified Oct 2026 by web search only. patents.google.com and Espacenet could not be opened from the sandbox, so I did not read the document itself. Applicant and dates come from the Google Patents record as summarised in a search result. Google warns that the applicant name is OCR-derived.\n\nResearch note (Oct 2026): found through search results; the patent document itself wasn't opened. The Patent drawings job fetches the document from Google Patents; if drawings appear on this record, the number is confirmed.",
+    "themes": [
+      "Tools & equipment",
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "patent lineage",
+      "Germany",
+      "foreign patents 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "suggestive"
+  },
+  {
+    "id": "pat-cn2402698y",
+    "type": "patent",
+    "title": "\"Barrel cam for driving needle and shear for electrically-operated carpet floc[king tool]\" (CN2402698Y)",
+    "creator": "applicant not seen",
+    "date": "2000 (year only, from a Google Patents sitemap listing)",
+    "dateStart": 2000,
+    "identifier": "CN2402698Y",
+    "sourceUrl": "https://patents.google.com/patent/CN2402698Y/zh",
+    "region": "China",
+    "language": "Chinese",
+    "originalText": "(Chinese title not seen)",
+    "translation": "Barrel cam for driving needle and shear for electrically-operated carpet flocking [tool] (Google's English title, truncated)",
+    "description": "This may be the earliest Chinese patent found for an electric hand-tufting (\"植绒\", flocking) tool component: a cylindrical cam that drives both the needle and the scissors. It would date the electric carpet gun in China to about 2000, long before the 2019+ hobby boom. Verified Oct 2026 by web search only. patents.google.com and Espacenet could not be opened from the sandbox, so I did not read the document itself. The number, the truncated English title and the year come only from a Google Patents sitemap page for class D04G 3, as summarised in a search result. Two follow-up searches could not find the record. Confirm before use.\n\nResearch note (Oct 2026): found through search results; the patent document itself wasn't opened. The Patent drawings job fetches the document from Google Patents; if drawings appear on this record, the number is confirmed.",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "patent lineage",
+      "China",
+      "tufting gun",
+      "electric",
+      "foreign patents 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "unverified"
+  },
+  {
+    "id": "pat-cn2723478y",
+    "type": "patent",
+    "title": "\"A hand-held horizontal electric weaving needle for weaving carpets\" (CN2723478Y)",
+    "creator": "applicant not seen",
+    "date": "filed 19 Apr 2004 (application 200420044858.X); granted/published 7 Sep 2005",
+    "dateStart": 2004,
+    "identifier": "CN2723478Y",
+    "sourceUrl": "https://patents.google.com/patent/CN2723478Y/zh",
+    "region": "China",
+    "language": "Chinese",
+    "originalText": "一种织地毯的手提横式电织针",
+    "translation": "A hand-held horizontal-type electric weaving needle for weaving carpets",
+    "description": "This is a Chinese utility model for an electric hand-held tufting gun. In 2000s Chinese, the gun was called a \"电织针\" (electric weaving needle). The patent mattered enough to be challenged: the CNIPA Patent Reexamination Board issued invalidation decision No. 12764 on it on 22 Dec 2008, which a Shanghai patent-law site (426zl.com) discusses. Verified Oct 2026 by web search only. patents.google.com and Espacenet could not be opened from the sandbox, so I did not read the document itself. The publication number, title and 7 Sep 2005 date come from the similar-documents table on the CN2806530Y Google Patents page. The application number, filing date and grant date come from the invalidation write-up. The two sources agree.\n\nResearch note (Oct 2026): found through search results; the patent document itself wasn't opened. The Patent drawings job fetches the document from Google Patents; if drawings appear on this record, the number is confirmed.",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "patent lineage",
+      "China",
+      "tufting gun",
+      "electric",
+      "terminology",
+      "foreign patents 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "solid"
+  },
+  {
+    "id": "pat-cn2806530y",
+    "type": "patent",
+    "title": "\"A hand-held high-speed electric weaving needle for weaving carpets\" (CN2806530Y)",
+    "creator": "applicant not seen",
+    "date": "filed 23 Nov 2004",
+    "dateStart": 2004,
+    "identifier": "CN2806530Y",
+    "sourceUrl": "https://patents.google.com/patent/CN2806530Y/zh",
+    "region": "China",
+    "language": "Chinese",
+    "originalText": "一种织地毯的手提式高速电织针",
+    "translation": "A hand-held high-speed electric weaving needle for weaving carpets",
+    "description": "The Google Patents abstract describes an electric tufting gun: a small motor, a gear-transmission box, a braking part, a movable connecting-rod part, a needle-barrel part and a needle-tip part, for carpet-weaving machinery. With CN2723478Y it shows that Chinese electric hand guns were being patented in 2004–05, the period of the export hand-tufted rug trade, well before the TikTok \"poke-poke\" (戳戳秀) revival. Verified Oct 2026 by web search only. patents.google.com and Espacenet could not be opened from the sandbox, so I did not read the document itself. The title, filing date and abstract come from Google Patents search snippets. I did not see the publication date (probably 2006) or the applicant.\n\nResearch note (Oct 2026): found through search results; the patent document itself wasn't opened. The Patent drawings job fetches the document from Google Patents; if drawings appear on this record, the number is confirmed.",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "patent lineage",
+      "China",
+      "tufting gun",
+      "electric",
+      "foreign patents 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "solid"
+  },
+  {
+    "id": "pat-cn104562491a",
+    "type": "patent",
+    "title": "Shenyang Institute of Automation (CAS), Yiwu New Rainbow Craft Carpet Co. et al., \"Fully computerised servo 3D gun-tufted carpet machine\" (CN104562491A)",
+    "creator": "Shenyang Institute of Automation, Chinese Academy of Sciences; 义乌新彩虹工艺地毯有限公司 (Yiwu New Rainbow Craft Carpet Co., Ltd.) and others",
+    "date": "filed 19 Dec 2014; granted as CN104562491B (now lapsed)",
+    "dateStart": 2014,
+    "identifier": "CN104562491A",
+    "sourceUrl": "https://patents.google.com/patent/CN104562491A/zh",
+    "region": "China",
+    "language": "Chinese",
+    "originalText": "全电脑伺服3D枪刺簇绒地毯机",
+    "translation": "Fully computerised servo 3D gun-tufted carpet machine",
+    "description": "This is the most significant Chinese gun-tufting machine patent found: a tufting head carried on a servo-driven X–Y displacement mechanism, with a built-in yarn-cutting mechanism so cut and loop pile can be switched freely. In effect it is a robotised hand gun, the Chinese equivalent of Wilcom's EP1674605. It ties a Chinese Academy of Sciences automation institute to a Yiwu (Zhejiang) hand-tufted carpet maker, so Yiwu was a hand-tufting centre before the hobby era. Its \"3D\" refers to sculpted pile. Verified Oct 2026 by web search only. patents.google.com and Espacenet could not be opened from the sandbox, so I did not read the document itself. The applicants, filing date and lapsed B status come from Google Patents snippets for the A and B publications.\n\nResearch note (Oct 2026): found through search results; the patent document itself wasn't opened. The Patent drawings job fetches the document from Google Patents; if drawings appear on this record, the number is confirmed.",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Global diffusion of tufting",
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "patent lineage",
+      "China",
+      "Yiwu",
+      "robot tufting",
+      "gun tufting",
+      "foreign patents 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "solid",
+    "place": "Shenyang / Yiwu"
+  },
+  {
+    "id": "pat-cn204058934u",
+    "type": "patent",
+    "title": "\"All-digital intelligent robot for hand gun-tufted carpets\" (CN204058934U)",
+    "creator": "applicant not seen",
+    "date": "2014 (listed under 31 Dec 2014 in a Google Patents sitemap)",
+    "dateStart": 2014,
+    "identifier": "CN204058934U",
+    "sourceUrl": "https://patents.google.com/patent/CN204058934U/zh",
+    "region": "China",
+    "language": "Chinese",
+    "originalText": "手工枪刺地毯全数字化智能机器人",
+    "translation": "All-digital intelligent robot for hand gun-tufted (\"gun-stabbed\") carpets",
+    "description": "This is a utility model from the same moment as CN104562491A (Dec 2014) for automating the hand tufting gun. \"枪刺\" (gun-stabbing) is the Chinese industry word for hand-gun tufting, used by the hand-tufted carpet trade. The English rendering Google gives is \"Handmade carpets bayonet all-digital intelligent robots\". Verified Oct 2026 by web search only. patents.google.com and Espacenet could not be opened from the sandbox, so I did not read the document itself. The number, Chinese title and date come from a Google Patents sitemap listing as summarised in a search result. I did not see the applicant, and whether it shares applicants with CN104562491A is unverified.\n\nResearch note (Oct 2026): found through search results; the patent document itself wasn't opened. The Patent drawings job fetches the document from Google Patents; if drawings appear on this record, the number is confirmed.",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "patent lineage",
+      "China",
+      "robot tufting",
+      "gun tufting",
+      "foreign patents 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "suggestive"
+  },
+  {
+    "id": "pat-cn111441143a",
+    "type": "patent",
+    "title": "\"Stable yarn-feeding and tensioning equipment for a carpet gun-tufting machine\" (CN111441143A)",
+    "creator": "applicant not seen",
+    "date": "filed 17 Jan 2019 (per search summary)",
+    "dateStart": 2019,
+    "identifier": "CN111441143A",
+    "sourceUrl": "https://patents.google.com/patent/CN111441143A/zh",
+    "region": "China",
+    "language": "Chinese",
+    "originalText": "一种地毯枪刺机用稳定型送线紧线设备",
+    "translation": "Stable yarn-feeding and yarn-tensioning equipment for a carpet gun-tufting machine",
+    "description": "This is a yarn-feed and tension device (bracket, gun head, roller frame, feed rollers) for automated gun-tufting machines, meant to stop yarn tangling. Its background cites CN207313899U, a synchronous yarn feeder for a gun-tufting carpet machine, which shows a cluster of 2017–2020 patents on robot gun-tufting. It is included as an example of that cluster, not because it is important on its own. Verified Oct 2026 by web search only. patents.google.com and Espacenet could not be opened from the sandbox, so I did not read the document itself. The title and filing date come from Google Patents snippets.\n\nResearch note (Oct 2026): found through search results; the patent document itself wasn't opened. The Patent drawings job fetches the document from Google Patents; if drawings appear on this record, the number is confirmed.",
+    "themes": [
+      "Tools & equipment",
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "patent lineage",
+      "China",
+      "robot tufting",
+      "foreign patents 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "suggestive"
+  },
+  {
+    "id": "pat-cn111705448a",
+    "type": "patent",
+    "title": "Yangxin Ruixin Group, \"Pneumatic multifunctional carpet tufting gun for an intelligent gun-tufted carpet robot\" (CN111705448A)",
+    "creator": "阳信瑞鑫集团有限公司 (Yangxin Ruixin Group Co., Ltd., Shandong)",
+    "date": "filed 30 Jun 2020; published 25 Sep 2020",
+    "dateStart": 2020,
+    "identifier": "CN111705448A",
+    "sourceUrl": "https://patents.google.com/patent/CN111705448A/zh",
+    "region": "China",
+    "language": "Chinese",
+    "originalText": "枪刺地毯智能机器人用气动多功能地毯簇绒枪",
+    "translation": "Pneumatic multifunctional carpet tufting gun for an intelligent gun-tufted carpet robot",
+    "description": "This is a pneumatic tufting gun designed as the end-effector of a tufting robot, from a large Shandong carpet group. It is close kin to the Hofmann/Scholz pneumatic hand gun and Wilcom's pneumatic head. A companion utility model, CN212426405U (\"pneumatic multifunctional carpet pricking gun for an intelligent robot\"), appears in the same similar-documents lists, but I did not see its date. Another background citation, CN108642747A (an intelligent robot gun-tufting device with screw-driven XYZ motion, cited in CN110468525A), was seen only secondhand. Verified Oct 2026 by web search only. patents.google.com and Espacenet could not be opened from the sandbox, so I did not read the document itself. The dates and assignee come from a citation row on the ATE522650T1 Google Patents page. The English title comes from another Google Patents page.\n\nResearch note (Oct 2026): found through search results; the patent document itself wasn't opened. The Patent drawings job fetches the document from Google Patents; if drawings appear on this record, the number is confirmed.",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Global diffusion of tufting",
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "patent lineage",
+      "China",
+      "Shandong",
+      "robot tufting",
+      "pneumatic",
+      "foreign patents 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "solid"
+  },
+  {
+    "id": "pat-cn111876919a",
+    "type": "patent",
+    "title": "\"Fully automatic carpet gun-tufting machine head and its working method\" (CN111876919A)",
+    "creator": "applicant not seen",
+    "date": "priority 11 Aug 2020; published 3 Nov 2020",
+    "dateStart": 2020,
+    "identifier": "CN111876919A",
+    "sourceUrl": "https://patents.google.com/patent/CN111876919A/zh",
+    "region": "China",
+    "language": "Chinese",
+    "originalText": "(Chinese title not seen)",
+    "translation": "A fully automatic carpet gun punching [gun-tufting] machine head and its working method (Google English title)",
+    "description": "This is another 2020 robot gun-tufting head, part of the same burst of filings as CN111705448A. Verified Oct 2026 by web search only. patents.google.com and Espacenet could not be opened from the sandbox, so I did not read the document itself. The number, English title and dates come from a similar-documents row on a Google Patents page, as summarised in a search result. A direct search for the Chinese title found nothing.\n\nResearch note (Oct 2026): found through search results; the patent document itself wasn't opened. The Patent drawings job fetches the document from Google Patents; if drawings appear on this record, the number is confirmed.",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "patent lineage",
+      "China",
+      "robot tufting",
+      "foreign patents 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "suggestive"
+  },
+  {
+    "id": "pat-gb821702a",
+    "type": "patent",
+    "title": "\"A method of producing plush-like goods such as carpets or the like and a machine for performing the same\" (GB821702A)",
+    "creator": "applicant not seen",
+    "date": "published 14 Oct 1959",
+    "dateStart": 1959,
+    "identifier": "GB821702A",
+    "sourceUrl": "https://patents.google.com/patent/GB821702A/en",
+    "region": "United Kingdom",
+    "language": "English",
+    "originalText": "A method of producing plush-like goods such as carpets or the like and a machine for performing the same",
+    "translation": "—",
+    "description": "This is the earliest British carpet-pile machine patent that came up in searches for 1950s GB tufting patents. I could not confirm whether it is a needle-tufting machine or the applicant. Verified Oct 2026 by web search only. patents.google.com and Espacenet could not be opened from the sandbox, so I did not read the document itself. The number, title and date come from a Google Patents related-documents row.\n\nResearch note (Oct 2026): found through search results; the patent document itself wasn't opened. The Patent drawings job fetches the document from Google Patents; if drawings appear on this record, the number is confirmed.",
+    "themes": [
+      "Machine tufting & Dalton",
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "patent lineage",
+      "UK",
+      "1950s",
+      "foreign patents 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "suggestive"
+  },
+  {
+    "id": "pat-gb853746a",
+    "type": "patent",
+    "title": "Cobble Brothers Machinery (attrib.), \"Apparatus for making patterned tufted pile fabric\" (GB853746A)",
+    "creator": "J. L. Card (US inventor); Cobble Brothers Machinery Co. (attrib.)",
+    "date": "US original 1956; GB filed 1957; published 9 Nov 1960",
+    "dateStart": 1957,
+    "identifier": "GB853746A",
+    "sourceUrl": "https://patents.google.com/patent/GB853746A/en",
+    "region": "United Kingdom",
+    "language": "English",
+    "originalText": "Apparatus for making patterned tufted pile fabric",
+    "translation": "—",
+    "description": "This is the British filing of Joseph L. Card's patterned-tufting apparatus, held in the database as US2935037A (pat-us2935037a). It was filed in Britain in 1957, about the time Cobble opened its Blackburn subsidiary. Grace's Guide says a wholly-owned Cobble Brothers Machinery subsidiary was set up in Blackburn in 1955 and became Singer-Cobble in 1960. A Cotton Town caption says Cobble took over Albert Mill in 1956. The two dates conflict. Verified Oct 2026 by web search only. patents.google.com and Espacenet could not be opened from the sandbox, so I did not read the document itself. The GB number, title and publication date come from Google Patents family and citation rows. I did not see the assignee on the GB record.\n\nResearch note (Oct 2026): found through search results; the patent document itself wasn't opened. The Patent drawings job fetches the document from Google Patents; if drawings appear on this record, the number is confirmed.",
+    "themes": [
+      "Machine tufting & Dalton",
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "patent lineage",
+      "UK",
+      "Cobble",
+      "Blackburn",
+      "patterning",
+      "foreign patents 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "suggestive",
+    "place": "United Kingdom (US applicant)"
+  },
+  {
+    "id": "pat-gb880860a",
+    "type": "patent",
+    "title": "Singer Cobble (attrib.), \"Improvements in machines for making tufted fabrics\" (GB880860A)",
+    "creator": "Singer Cobble (assignee of US counterpart)",
+    "date": "priority 9 Jul 1960",
+    "dateStart": 1960,
+    "identifier": "GB880860A",
+    "sourceUrl": "https://patents.google.com/patent/GB880860A/en",
+    "region": "United Kingdom",
+    "language": "English",
+    "originalText": "Improvements in machines for making tufted fabrics",
+    "translation": "—",
+    "description": "This is a British priority document for a Singer-Cobble needle-plate patent (US3398708A, \"Needle plate for tufting machine\"). It suggests that machine development was happening at the Blackburn plant, not just in Chattanooga. Verified Oct 2026 by web search only. patents.google.com and Espacenet could not be opened from the sandbox, so I did not read the document itself. The number, title and priority date come from Google Patents family listings. I did not see the GB publication date.\n\nResearch note (Oct 2026): found through search results; the patent document itself wasn't opened. The Patent drawings job fetches the document from Google Patents; if drawings appear on this record, the number is confirmed.",
+    "themes": [
+      "Machine tufting & Dalton",
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "patent lineage",
+      "UK",
+      "Cobble",
+      "Singer",
+      "Blackburn",
+      "foreign patents 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "suggestive"
+  },
+  {
+    "id": "pat-gb1067502a",
+    "type": "patent",
+    "title": "Ernest Kenneth Lund / Singer-Cobble Ltd, \"Improvements in or relating to tufting machines\" (GB1067502A)",
+    "creator": "Ernest Kenneth Lund (inventor); Singer-Cobble Ltd (original assignee)",
+    "date": "filed 19 Mar 1965 (GB11648/65); published 3 May 1967",
+    "dateStart": 1965,
+    "identifier": "GB1067502A",
+    "sourceUrl": "https://patents.google.com/patent/GB1067502A/en",
+    "region": "United Kingdom",
+    "language": "English",
+    "originalText": "Improvements in or relating to tufting machines",
+    "translation": "—",
+    "description": "This is a British-originated tufting-machine patent from Singer-Cobble Ltd, Blackburn, on needle and looper operation (inferred from keywords). It is good evidence that the British arm of Cobble filed its own machine inventions in the 1960s. Grace's Guide says the American parent was taken over by Singer in 1960 and the Blackburn subsidiary became Singer-Cobble. Edgar Pickering left Singer-Cobble to found Edgar Pickering (Blackburn) in 1964, and Ronald Ellison founded Ellison Tufting Machinery in 1961; I found no patents for either. Verified Oct 2026 by web search only. patents.google.com and Espacenet could not be opened from the sandbox, so I did not read the document itself. The assignee, inventor and application number come from the Google Patents record. The publication date comes from a related-documents row.\n\nResearch note (Oct 2026): found through search results; the patent document itself wasn't opened. The Patent drawings job fetches the document from Google Patents; if drawings appear on this record, the number is confirmed.",
+    "themes": [
+      "Machine tufting & Dalton",
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "patent lineage",
+      "UK",
+      "Cobble",
+      "Singer",
+      "Blackburn",
+      "foreign patents 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "solid",
+    "place": "Blackburn"
+  },
+  {
+    "id": "pat-de1785451c",
+    "type": "patent",
+    "title": "Girmes-Werke AG, \"Plush tufting machine\" (DE1785451C)",
+    "creator": "Girmes-Werke AG, Oedt (near Krefeld); inventor based in Krefeld",
+    "date": "1971 (year from search summary)",
+    "dateStart": 1971,
+    "identifier": "DE1785451C",
+    "sourceUrl": "https://patents.google.com/patent/DE1785451C/de",
+    "region": "Germany",
+    "language": "German",
+    "originalText": "(German title not seen)",
+    "translation": "Plush tufting machine (Google English title)",
+    "description": "This is a German tufting machine from Girmes, the Oedt/Krefeld plush maker. It is the nearest thing to a Krefeld tufting-machine patent found. No patent naming Zangs turned up. It partly qualifies the existing finding that \"Germany tufted early but never built the machines\" (ner-de-no-machines), because German pile-fabric firms did patent tufting machinery even if they did not build it commercially. Verified Oct 2026 by web search only. patents.google.com and Espacenet could not be opened from the sandbox, so I did not read the document itself. The number, English title, assignee and year come from one Google Patents snippet. A second search could not retrieve it.\n\nResearch note (Oct 2026): found through search results; the patent document itself wasn't opened. The Patent drawings job fetches the document from Google Patents; if drawings appear on this record, the number is confirmed.",
+    "themes": [
+      "Machine tufting & Dalton",
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "patent lineage",
+      "Germany",
+      "Krefeld",
+      "Girmes",
+      "foreign patents 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "suggestive",
+    "place": "Oedt / Krefeld"
+  },
+  {
+    "id": "co-hofmann-handtuft",
+    "type": "company",
+    "title": "Hofmann Handtuft-Technik GmbH",
+    "creator": "Heinz Hofmann and Hartmut Scholz (founders); today Michael Hofmann and Nico Coletta",
+    "place": "Nördlingen, Bavaria (founded in Allersberg near Nuremberg)",
+    "region": "Germany",
+    "date": "trials 1969; founded 1973 as Scholz Handtuft-Technik KG; GmbH in Nördlingen 1992",
+    "dateStart": 1973,
+    "sourceUrl": "https://hofmann-handtuft.de/en/history/",
+    "institution": "Hofmann Handtuft-Technik GmbH",
+    "description": "The \"Hoffman\" hand-tufting gun is made by Hofmann Handtuft-Technik GmbH, An der Lach 27, 86720 Nördlingen. The company's history page gives this timeline: 1969, trials with hand-tuft technique; 1973, Scholz Handtuft-Technik KG founded in Allersberg near Nuremberg, managing directors Hartmut (\"Harmut\") Scholz and Heinz Hofmann; 1979, Scholz leaves (he died in 1989) and Heinz Hofmann becomes sole MD of Hofmann Handtuft-Technik KG, still in Allersberg; 1983, the firm moves to Nördlingen, Polizeigasse (German page only); 1992, it becomes Hofmann Handtuft-Technik GmbH with Heinz and Michael Hofmann as MDs; 2012, it acquires Münsinger GmbH, Knittlingen (shearing machines). Company catalogue material says the first hand-tufting machines were made in 1973, with market launch in 1975. Products include the VML 16 pneumatic hand-tufting machine for cut and loop pile (in cut-pile mode a blade cuts the yarn and an air jet blows the tuft through), the SML mini and SML 10-PP loop-pile machines (loop pile up to 80 mm; 8 bar, 300 l/min air), MTS 300 and MS 40-A carving machines, and TS 120 U and TS 300 S shearing machines.\n\nPatents: no patent or Gebrauchsmuster in the name of Hofmann was found. The lineage is in co-founder Hartmut Scholz's name: DE2356585C2 (1973), DE2511266C3 (1975) and probably EP0026492A1 (1979). DEPATISnet could not be reached to search \"Hofmann\" as applicant, so a Hofmann utility model may still exist. Australian Wilcom patents (EP2077348, US8225727) call \"Hofmann™ or Hartleb™\" the traditional hand tufting guns.\n\nConflicts: Bayern International gives the founding year as 1975, which matches the company's market-launch date, not its 1973 founding. Don't say Hofmann \"invented the tufting gun\": US hand-gun patents go back to the 1930s–60s (see pat-us3142276a), and Tai Ping motorised a gun by 1973. The company's site says it has \"30 years of experience\" (older copy) and that the VML 16 is used in carpet production worldwide. Spelling is Hofmann, one f and two n's. It is unrelated to the Hoffmann Group (tools) and to Hofmann balancing machines (Pfungstadt).\n\nIndependent sources: https://www.bayern-international.de/en/company-database/company-details/hofmann-handtuft-technik-gmbh-3299 · https://heimtextil.messefrankfurt.com/frankfurt/en/exhibitor-search.detail.html/hofmann-handtuft-technik-gmbh/mf_1_0010286540_4913646_10000000202601.html · https://app.implisense.com/en/companies/hofmann-handtuft-technik-gmbh-noerdlingen--DE7ZJSE1X522 · https://patents.google.com/patent/US8225727\n\nResearch note (Oct 2026): found through search results; the patent document itself wasn't opened. The Patent drawings job fetches the document from Google Patents; if drawings appear on this record, the number is confirmed.",
+    "themes": [
+      "Companies & modern tufting",
+      "Hand-tufting tools & the gun"
+    ],
+    "tags": [
+      "company",
+      "tool maker",
+      "Germany",
+      "tufting gun",
+      "Hofmann",
+      "foreign patents 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "solid"
+  },
+  {
+    "id": "pat-us3968758a",
+    "type": "patent",
+    "title": "Hartmut Scholz, US counterpart of DE2356585 (US3968758A)",
+    "creator": "Hartmut Scholz",
+    "identifier": "US3968758A",
+    "sourceUrl": "https://patents.google.com/patent/US3968758A/en",
+    "region": "United States",
+    "date": "1970s (US counterpart of a 1973 German filing)",
+    "dateStart": 1973,
+    "description": "US equivalent of Hartmut Scholz's German hand-tufting device patent DE2356585C2, the patent basis of the Hofmann hand-tufting gun (see co-hofmann-handtuft). Reported as a US counterpart in search results; title and dates to be read from the USPTO scan once the drawings job has run.",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "patent lineage",
+      "Hofmann",
+      "foreign patents 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "suggestive"
+  },
+  {
+    "id": "pat-us4029031a",
+    "type": "patent",
+    "title": "Hartmut Scholz, US counterpart of DE2511266 (US4029031A)",
+    "creator": "Hartmut Scholz",
+    "identifier": "US4029031A",
+    "sourceUrl": "https://patents.google.com/patent/US4029031A/en",
+    "region": "United States",
+    "date": "1970s (US counterpart of a 1975 German filing)",
+    "dateStart": 1975,
+    "description": "US equivalent of Hartmut Scholz's second German hand-tufting patent DE2511266C3. Reported as a US counterpart in search results; title and dates to be read from the USPTO scan once the drawings job has run.",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "patent lineage",
+      "Hofmann",
+      "foreign patents 2026",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "suggestive"
   }
 ];
