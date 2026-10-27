@@ -3,6 +3,15 @@ name: API probe
 # Records which collection APIs allow browser (CORS) requests, with a sample response each.
 on:
   workflow_dispatch:
+    inputs:
+      only:
+        description: "Comma-separated API keys to probe (blank = all)"
+        required: false
+        default: ""
+      sample:
+        description: "Characters of each response to keep"
+        required: false
+        default: "2500"
 
 permissions:
   contents: write
@@ -26,7 +35,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898+github-actions[bot]@users.noreply.github.com"
           for attempt in 1 2 3; do
-            node scripts/probe-apis.mjs
+            node scripts/probe-apis.mjs "${{ inputs.only }}" "${{ inputs.sample }}"
             git add research/fetched/api-probe.json
             if git diff --cached --quiet; then echo "Nothing new."; exit 0; fi
             git commit -q -m "Save API probe results"

@@ -1,12 +1,16 @@
 #!/usr/bin/env node
 // Checks which collection search APIs a browser page can call (CORS) and saves a sample
 // of each response, so the Discover view can be written against real data.
-// Usage: node scripts/probe-apis.mjs  ->  research/fetched/api-probe.json
+// Usage: node scripts/probe-apis.mjs [only,these,keys] [sample-chars]  ->  research/fetched/api-probe.json
 import { writeFile, mkdir } from "node:fs/promises";
 const ORIGIN = "https://timeads.github.io";
 const Q = "tufted rug";
 const e = encodeURIComponent(Q);
+const ONLY = process.argv[2] ? process.argv[2].split(",") : null;
+const SAMPLE = Number(process.argv[3]) || 2500;
 const APIS = {
+  met11: `https://collectionapi.metmuseum.org/public/collection/v1.1/search?q=${e}&hasImages=true&limit=3`,
+  metobj: `https://collectionapi.metmuseum.org/public/collection/v1/objects/14535`,
   met: `https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&q=${e}`,
   vam: `https://api.vam.ac.uk/v2/objects/search?q=${e}&page_size=3&images_exist=1`,
   cleveland: `https://openaccess-api.clevelandart.org/api/artworks/?q=${e}&limit=3&has_image=1`,
@@ -27,11 +31,11 @@ const APIS = {
   chs: `https://emuseum.chs.org/search/${e}/objects/json`,
 };
 const out = {};
-for (const [k, url] of Object.entries(APIS)) {
+for (const [k, url] of Object.entries(APIS).filter(([k]) => !ONLY || ONLY.includes(k))) {
   try {
     const r = await fetch(url, { headers: { Origin: ORIGIN, "User-Agent": "RugResearchProbe/1.0" }, redirect: "follow" });
     const body = await r.text();
-    out[k] = { url, status: r.status, cors: r.headers.get("access-control-allow-origin"), type: r.headers.get("content-type"), sample: body.slice(0, 2500) };
+    out[k] = { url, status: r.status, cors: r.headers.get("access-control-allow-origin"), type: r.headers.get("content-type"), sample: body.slice(0, SAMPLE) };
   } catch (err) { out[k] = { url, error: err.message }; }
   console.log(k, out[k].status, out[k].cors, out[k].type || out[k].error);
 }
