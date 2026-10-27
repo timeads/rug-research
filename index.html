@@ -175,7 +175,7 @@
     <section class="view" id="view-discover" hidden>
       <header class="view-head">
         <h1>Discover</h1>
-        <p>Search ten open museum, library and archive collections at once, or one at a time, and add results with their images in one click. Every other archive is one click away below your results.</p>
+        <p>Search eleven collections at once, including Winterthur's museum, or one at a time, and add results with their images in one click. Every other archive is one click away below your results.</p>
       </header>
       <div class="searchbar">
         <label class="search">
@@ -188,6 +188,10 @@
           </label>
           <button class="btn primary" id="btn-discover">Search</button>
         </div>
+      </div>
+      <div class="dlink">
+        <label for="dlink">Found something on Winterthur's own site? Paste its link (or several) to add it:</label>
+        <div class="dlink-row"><input id="dlink" type="url" placeholder="https://museumcollection.winterthur.org/object/16695" autocomplete="off"><button class="btn" id="btn-dlink"><svg class="ic"><use href="#i-plus"/></svg>Add</button></div>
       </div>
       <p id="discover-status" class="status" role="status"></p>
       <div id="discover-results" class="grid"></div>

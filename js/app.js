@@ -821,6 +821,21 @@
 
   // ---------- discover (open APIs) ----------
   let discoverResults = [];
+  let WT_INDEX = null;
+  const winterthurIndex = () => WT_INDEX || (WT_INDEX = fetch("data/winterthur-index.json").then(r => { if (!r.ok) throw new Error("Winterthur index not built yet"); return r.json(); }).catch(e => { WT_INDEX = null; throw e; }));
+  const winterthurRecord = (row, idx) => {
+    const [irn, title, name, num, cat, creator, d1, d2, img] = row;
+    const date = d1 == null ? "" : d2 != null && d2 !== d1 ? `${d1}–${d2}` : String(d1);
+    return {
+      id: "wint-irn-" + irn, type: "object", title: title || name || "Winterthur object " + irn, creator: creator || "",
+      date, dateStart: d1 ?? null, dateEnd: d2 ?? null, institution: "Winterthur Museum, Garden & Library", collection: cat,
+      identifier: num, description: [name, cat].filter(Boolean).join(". "),
+      image: img ? idx.image.replace("{irn}", irn) : "", imageCredit: img ? "Winterthur Museum, Garden & Library" : "",
+      sourceUrl: idx.page.replace("{irn}", irn), status: "verified", tags: ["via Winterthur index"]
+    };
+  };
+  // Already in the database, by id or by the same source page.
+  const haveRecord = r => BY_ID[r.id] || (r.sourceUrl && ITEMS.find(x => x.sourceUrl === r.sourceUrl));
   const DISCOVER = {
     async met(q) {
       // v1 search was retired on 2026-10-01; v1.1 is paginated with offset and limit.
@@ -847,6 +862,20 @@
         image: o.image_id ? `${iiif}/${o.image_id}/full/600,/0/default.jpg` : "", sourceUrl: `https://www.artic.edu/artworks/${o.id}`,
         status: "verified", tags: ["via AIC API"]
       }));
+    },
+    // Winterthur's own search can't be called from here, so this searches the weekly index
+    // (data/winterthur-index.json, built by scripts/winterthur-index.mjs).
+    async winterthur(q) {
+      const idx = await winterthurIndex();
+      const terms = q.toLowerCase().split(/\s+/).filter(Boolean);
+      const hits = [];
+      for (const row of idx.rows) {
+        const hay = (row[1] + " " + row[2] + " " + row[3] + " " + row[4] + " " + row[5]).toLowerCase();
+        if (!terms.every(t => hay.includes(t))) continue;
+        const inTitle = terms.filter(t => (row[1] + " " + row[2]).toLowerCase().includes(t)).length;
+        hits.push([inTitle * 3 + row[9] * 2 + row[8] * 2, row]);
+      }
+      return hits.sort((a, b) => b[0] - a[0]).slice(0, 48).map(([, r]) => winterthurRecord(r, idx));
     },
     async vam(q) {
       const r = await (await fetch(`https://api.vam.ac.uk/v2/objects/search?q=${encodeURIComponent(q)}&page_size=24&images_exist=1`)).json();
@@ -927,7 +956,7 @@
     }
   };
   const LIVE = [
-    ["met", "The Met"], ["vam", "V&A"], ["aic", "Art Institute of Chicago"], ["cleveland", "Cleveland Museum of Art"],
+    ["winterthur", "Winterthur Museum"], ["met", "The Met"], ["vam", "V&A"], ["aic", "Art Institute of Chicago"], ["cleveland", "Cleveland Museum of Art"],
     ["smithsonian", "Smithsonian"], ["europeana", "Europeana (European museums)"], ["archive", "Internet Archive"],
     ["winterthurIA", "Winterthur trade catalogs (Internet Archive)"], ["commons", "Wikimedia Commons"], ["openlibrary", "Open Library (books)"]
   ];
@@ -992,21 +1021,21 @@
     } catch (err) {
       console.error(err); discoverResults = [];
       status.className = "status error";
-      status.textContent = "That collection couldn't be reached. Try again, choose All live collections, or use the archive links below.";
+      status.textContent = src === "winterthur" ? "The Winterthur index isn't available yet (it's rebuilt weekly). Use the Museum collection link below meanwhile." : "That collection couldn't be reached. Try again, choose All live collections, or use the archive links below.";
     }
     $("#btn-discover").disabled = false;
     renderDiscover();
   };
   const renderDiscover = () => {
     $("#discover-results").innerHTML = discoverResults.map(r => {
-      const it = norm(r), have = !!BY_ID[r.id];
+      const it = norm(r), had = haveRecord(r), have = !!had;
       return `<article class="card" data-did="${esc(r.id)}">
         <a class="card-open" href="${esc(safeUrl(r.sourceUrl) || "#")}" target="_blank" rel="noopener">
           <span class="plate">${plateHTML(it)}</span>
           <span class="label"><span class="label-top"><span>${esc(TYPES[it.type].label)}</span>${it.date ? `<span>${esc(it.date)}</span>` : ""}</span>
           <h3>${esc(it.title)}</h3><span class="meta">${esc([it.creator, it.institution].filter(Boolean).join(" · "))}</span></span>
         </a>
-        <div class="add-btn">${have ? `<button class="btn sm" data-open="${esc(r.id)}">${icon("check")}Added</button>` : `<button class="btn sm primary" data-dadd>${icon("plus")}Add</button>`}</div>
+        <div class="add-btn">${have ? `<button class="btn sm" data-open="${esc(had.id)}">${icon("check")}Added</button>` : `<button class="btn sm primary" data-dadd>${icon("plus")}Add</button>`}</div>
       </article>`;
     }).join("");
   };
@@ -1230,6 +1259,30 @@
   // discover
   const copyWords = q => { try { navigator.clipboard.writeText(q).then(() => toast(`Copied “${q}”: paste it into their search box`), () => {}); } catch {} };
   document.addEventListener("click", e => { const a = e.target.closest("a[data-copy]"); if (a) copyWords(a.dataset.copy); });
+  // Paste Winterthur object links (from their own site) to add them in one step.
+  const addWinterthurLinks = async () => {
+    const box = $("#dlink"), irns = [...new Set([...box.value.matchAll(/winterthur\.org\/object\/(\d+)/g)].map(m => m[1]))];
+    if (!irns.length) { toast("Paste a Winterthur object link, e.g. museumcollection.winterthur.org/object/16695"); box.focus(); return; }
+    let idx = null; try { idx = await winterthurIndex(); } catch {}
+    const rows = idx ? Object.fromEntries(idx.rows.map(r => [r[0], r])) : {};
+    let added = 0, skipped = 0, bare = 0;
+    for (const irn of irns) {
+      const row = rows[irn];
+      const r = row ? winterthurRecord(row, idx) : {
+        id: "wint-irn-" + irn, type: "object", title: "Winterthur object " + irn, institution: "Winterthur Museum, Garden & Library",
+        image: `https://winocr-images.s3.us-east-1.amazonaws.com/art-objects/live/${irn}/multimedia/0-original.jpg`, imageCredit: "Winterthur Museum, Garden & Library",
+        sourceUrl: `https://museumcollection.winterthur.org/object/${irn}`, status: "unverified", tags: ["via Winterthur link"],
+        description: "Added from a link. Not in the weekly index yet: open it at the source and fill in the title, date and number."
+      };
+      if (haveRecord(r)) { skipped++; continue; }
+      if (!row) bare++;
+      const rec = clean(norm(r)); rec.themes = []; S.items[rec.id] = rec; touch(rec.id); added++;
+    }
+    save(); refresh(); box.value = "";
+    toast(`${added} added${skipped ? `, ${skipped} already in the database` : ""}${bare ? `; ${bare} need their title filled in` : ""}.`);
+  };
+  $("#btn-dlink").onclick = addWinterthurLinks;
+  $("#dlink").addEventListener("keydown", e => { if (e.key === "Enter") addWinterthurLinks(); });
   buildDiscoverSources();
   // Archives that open elsewhere get a different button and a plain-words note, so the page never looks stuck.
   const syncDiscoverButton = () => {
