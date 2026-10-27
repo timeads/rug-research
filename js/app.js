@@ -441,7 +441,9 @@
     const dated = lastResults.filter(it => it.dateStart != null).sort((a, b) => a.dateStart - b.dateStart);
     const undated = lastResults.length - dated.length;
     const groups = new Map();
-    for (const it of dated) { const d = Math.floor(it.dateStart / 10) * 10; if (!groups.has(d)) groups.set(d, []); groups.get(d).push(it); }
+    // BCE decades count backwards: 1483 BCE (-1483) belongs to "the 1480s BCE" (-1489 to -1480).
+    const decadeOf = y => y < 0 ? Math.ceil(y / 10) * 10 : Math.floor(y / 10) * 10;
+    for (const it of dated) { const d = decadeOf(it.dateStart); if (!groups.has(d)) groups.set(d, []); groups.get(d).push(it); }
     const decades = [...groups.keys()];
     const eraOf = d => ERAS.find(e => d >= e.from && d <= e.to);
     const out = [];
@@ -453,7 +455,7 @@
         era = e; opened = true;
         if (e) { const n = decades.filter(x => eraOf(x) === e).reduce((t, x) => t + groups.get(x).length, 0); out.push(`<section class="era">${eraHeadHTML(e, n)}`); }
         else out.push(`<section class="era">`);
-      } else if (i && d - decades[i - 1] > 20) out.push(`<p class="gap-note">No records from ${fmtYear(decades[i - 1] + 10)} to ${fmtYear(d - 1)}.</p>`);
+      } else if (i && d - decades[i - 1] > 20) out.push(`<p class="gap-note">No records from ${fmtYear(decades[i - 1] < 0 ? decades[i - 1] + 1 : decades[i - 1] + 10)} to ${fmtYear(d < 0 ? d - 10 : d - 1)}.</p>`);
       out.push(decadeHTML(d, groups.get(d)));
     });
     if (opened) out.push(`</section>`);

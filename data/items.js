@@ -11380,5 +11380,1185 @@ window.RUG_ITEMS = [
     "image": "https://www.kicktraq.com/projects/207408103/craftphilia-worlds-first-fully-automated-tufting-machine/dailychart.png",
     "imageCredit": "Craftphilia",
     "imageSource": "auto"
+  },
+  {
+    "id": "process-felt-definition",
+    "type": "finding",
+    "title": "Felt: fibres matted together with heat, moisture and friction rather than woven",
+    "place": "Central Asia (origin unknown)",
+    "region": "Eurasia",
+    "date": "before weaving (traditional claim); firm evidence from 5th–3rd century BCE (Pazyryk)",
+    "dateStart": -500,
+    "sourceUrl": "https://www.britannica.com/technology/felt",
+    "techniques": [
+      "felting",
+      "fulling"
+    ],
+    "materials": [
+      "wool",
+      "fur",
+      "hair"
+    ],
+    "description": "How it works: Britannica defines felt as fabric made by interlocking wool, fur or some hair fibres under heat, moisture and friction. No adhesive is needed. Other fibres felt only when mixed with wool. In industrial felting the wet batts are first hardened (pressed by a platen or rollers) and then fulled, which can shrink the area by up to about 50 percent. Antiquity: Britannica says non-woven felts are considered the first textile goods produced. A commercial blog (Contrado) says felt is thought to be over 5,000 years old and from Asia, but no archaeological source for that figure turned up. Firm evidence for felt floor and wall coverings in this set is the Pazyryk material (see process-felt-pazyryk-hangings). A search for older excavated felt found none. Sources: https://www.britannica.com/technology/felt · https://www.britannica.com/technology/felting · https://www.contrado.com/blog/what-is-felt\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "tags": [
+      "process history",
+      "felt",
+      "checked from search results"
+    ],
+    "confidence": "suggestive",
+    "status": "unverified",
+    "themes": [
+      "Rug-making techniques"
+    ]
+  },
+  {
+    "id": "process-felt-pazyryk-hangings",
+    "type": "object",
+    "title": "Pazyryk felt appliqué hangings and furnishings (Altai burial mounds)",
+    "creator": "Pazyryk culture (Early Iron Age Altai)",
+    "place": "Pazyryk valley, Altai Mountains",
+    "region": "Russia (Siberia)",
+    "date": "5th–3rd century BCE (dating disputed)",
+    "dateStart": -500,
+    "dateEnd": -238,
+    "institution": "State Hermitage Museum, St Petersburg",
+    "identifier": "not found (inventory numbers for these felts were not in search results)",
+    "sourceUrl": "https://depts.washington.edu/silkroad/museums/shm/shmpazyryk.html",
+    "techniques": [
+      "felting",
+      "felt appliqué"
+    ],
+    "materials": [
+      "wool felt",
+      "dyed fur"
+    ],
+    "description": "What it shows: the earliest firm, well-known group of decorated felts. Britannica (Scythian art) says felt appliqué wall hangings were found at Pazyryk, some with the Great Goddess or part-human beasts and others with geometric or animal motifs. Wikipedia says the best-known figural hangings (an investiture scene and a part-human, part-bird creature) are in the Hermitage. The University of Washington Silk Road page on the Hermitage notes saddlecloths and cushions with appliqué felt, dyed fur and embroidery. A Hermitage curator's tour report also mentions felt swan figures. Felt here is cut and sewn appliqué on felt grounds, not woven. Conflicts: the Hermitage listing dates Barrow 5 to 252–238 BCE, which is later than Rudenko's original dates, and other sources give 5th–4th or 4th–3rd century BCE. An Art Resource image calls the Hermitage 'Horseman' felt a 'carpet detail', but a blog calls it a wall hanging. Sources: https://www.britannica.com/art/Scythian-art · https://en.wikipedia.org/wiki/Pazyryk_culture · https://depts.washington.edu/silkroad/museums/shm/shmpazyryk.html · https://www.artres.com/archive/Horseman--Pazyryk-felt-artifact--Carpet-Detail---5th-4th-century-BC--Artist--Ancient-Altaian--Pazyryk-Burial-Mounds-2UN86IV293G.html\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "tags": [
+      "process history",
+      "felt",
+      "Pazyryk",
+      "checked from search results"
+    ],
+    "confidence": "solid",
+    "status": "unverified",
+    "themes": [
+      "Rug-making techniques"
+    ],
+    "imageSource": "auto"
+  },
+  {
+    "id": "process-felt-shyrdak",
+    "type": "object",
+    "title": "Kyrgyz shyrdak: felt cut in counterchange, sewn and quilted (British Museum As1995,20.14)",
+    "creator": "Kyrgyz women felt-makers",
+    "place": "Kyrgyzstan (Naryn and Issyk-Kul today)",
+    "region": "Central Asia",
+    "date": "object 1955; craft listed by UNESCO 2012",
+    "dateStart": 1955,
+    "institution": "British Museum",
+    "identifier": "As1995,20.14",
+    "sourceUrl": "https://www.britishmuseum.org/collection/object/W_As1995-20-14",
+    "techniques": [
+      "felting",
+      "felt mosaic / counterchange appliqué",
+      "quilting"
+    ],
+    "materials": [
+      "wool felt"
+    ],
+    "description": "How it works: two felts of contrasting colour are laid together, a pattern is chalked on, and both are cut through at once. The pieces are swapped and sewn onto a coarser felt base, and the scrap from one makes a second shyrdak with the colours reversed. The seams are covered with cord and the whole is quilted along the ornament. A medium piece takes one woman about two months (Wikipedia; shyrdakjurte.com; Atlantis Press paper). The related ala-kiyiz is pressed felt, with coloured wool laid into the batt before felting. UNESCO inscribed 'Ala-kiyiz and Shyrdak' on its Urgent Safeguarding List in 2012 (7.COM). One site gives 2010, which conflicts with UNESCO's own record. This object: a tent felt of four appliquéd sections on a brown backing, used as a floor covering, dated 1955, 159 × 80 cm. It was collected by Stephanie Bunn during doctoral research on Kirgiz tent felts (BM records As1995,20 and As1996,13 hold more shyrdaks, e.g. As1995,20.10, c. 1950). Sources: https://ich.unesco.org/en/RL/ala-kiyiz-and-shyrdak-art-of-kyrgyz-traditional-felt-carpets-00693 · https://en.wikipedia.org/wiki/Shyrdak · https://shyrdakjurte.com/en/blogs/news/herstellung · https://www.britishmuseum.org/collection/object/W_As1995-20-14\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "tags": [
+      "process history",
+      "felt",
+      "shyrdak",
+      "UNESCO",
+      "checked from search results"
+    ],
+    "confidence": "solid",
+    "status": "unverified",
+    "themes": [
+      "Rug-making techniques"
+    ],
+    "imageSource": "auto"
+  },
+  {
+    "id": "process-felt-turkmen-cooperhewitt",
+    "type": "object",
+    "title": "Turkmen rolled felt carpet, Erbent (Cooper Hewitt, made 2007)",
+    "creator": "Turkmen household maker, Erbent oasis",
+    "place": "Erbent, Karakum desert",
+    "region": "Turkmenistan",
+    "date": "2007",
+    "dateStart": 2007,
+    "institution": "Cooper Hewitt, Smithsonian Design Museum",
+    "identifier": "collection object ID 18715829 (accession number not seen; gift of Christine Martens, acquired 2008)",
+    "sourceUrl": "https://collection.cooperhewitt.org/objects/18715829",
+    "techniques": [
+      "felting",
+      "rolled pressed felt (ala kiiz)"
+    ],
+    "materials": [
+      "wool"
+    ],
+    "description": "How it works (as the museum describes it): dyed wool is laid out in a pattern on a reed mat, wetted and rolled, and the roll is kicked back and forth. It is then unrolled and finished by fulling on the forearms. The pattern is felted in, not sewn on. This object: a 251.5 × 144.8 cm felt with horn motifs (a protective symbol), made at home for family use. Comparison: the British Museum has a double-sided Yomut felt from 1960–70 with ram's-horn motifs (As1973,09.66). The Mary Museum in Turkmenistan names traditional felt patterns and says felt is rolled in reeds with hot water. Sources: https://collection.cooperhewitt.org/objects/18715829 · https://www.britishmuseum.org/collection/object/W_As1973-09-66 · https://marymuseum.gov.tm/tazelikler/en/28.05.2025_en.html\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "tags": [
+      "process history",
+      "felt",
+      "Turkmen",
+      "checked from search results"
+    ],
+    "confidence": "suggestive",
+    "status": "unverified",
+    "themes": [
+      "Rug-making techniques"
+    ],
+    "imageSource": "auto"
+  },
+  {
+    "id": "process-flatweave-earliest-tapestry-egypt",
+    "type": "finding",
+    "title": "Earliest tapestry weave: linen fragments from the tomb of Thutmose IV, Egypt (c. 1483–1400 BCE)",
+    "place": "Thebes (Valley of the Kings)",
+    "region": "Egypt",
+    "date": "c. 1483–1411 BCE (Britannica); 1500–1400 BCE (Glazier 1923)",
+    "dateStart": -1483,
+    "dateEnd": -1400,
+    "institution": "Egyptian Museum, Cairo (CG 46526, per V&A)",
+    "identifier": "CG 46526",
+    "sourceUrl": "https://britannica.com/art/tapestry/Periods-and-centres-of-activity",
+    "techniques": [
+      "tapestry weave",
+      "weft-faced plain weave"
+    ],
+    "materials": [
+      "linen"
+    ],
+    "description": "How it works: tapestry is a weft-faced plain weave. Each coloured weft is woven back and forth only where its colour is needed, packed down to hide the warp. Kilims, Navajo blankets, dhurries and rölakan are all tapestry-woven. Earliest firm evidence: Britannica dates the earliest known tapestry to linen work in Egypt, 1483–1411 BCE, and says three fragments came from the tomb of Thutmose IV (two with royal cartouches, one with hieroglyphs). A V&A record says one fragment bears the prenomen of Amenhotep II although found in Tuthmosis IV's tomb, and is in the Cairo Museum as CG 46526. Conflicts: Glazier (1923) assigns the Cairo linen tapestries to Thutmose III's tomb and dates them 1500–1400 BCE. The Hellenic National Archaeological Museum (inv. Π 9651_b) claims a 17th–16th century BCE weft-faced tabby with slit-tapestry decoration as the earliest tapestry in Greece and Europe. That claim was seen only in one search snippet. Sources: https://britannica.com/art/tapestry/Periods-and-centres-of-activity · https://collections.vam.ac.uk/item/O320267/painting · https://digi.ub.uni-heidelberg.de/diglit/glazier1923/0045 · https://www.artextiles.org/el/node/445\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "tags": [
+      "process history",
+      "flatweave",
+      "tapestry",
+      "checked from search results"
+    ],
+    "confidence": "solid",
+    "status": "unverified",
+    "themes": [
+      "Rug-making techniques"
+    ]
+  },
+  {
+    "id": "process-flatweave-kilim-famsf",
+    "type": "object",
+    "title": "Kilim in slit tapestry, 17th century (Fine Arts Museums of San Francisco 1988.11.561)",
+    "place": "Anatolia (per collection grouping)",
+    "region": "Turkey",
+    "date": "17th century",
+    "dateStart": 1600,
+    "dateEnd": 1699,
+    "institution": "Fine Arts Museums of San Francisco (Caroline and H. McCoy Jones Collection)",
+    "identifier": "1988.11.561",
+    "sourceUrl": "https://www.famsf.org/artworks/kilim",
+    "techniques": [
+      "slit tapestry",
+      "weft-faced plain weave"
+    ],
+    "materials": [
+      "wool",
+      "cotton"
+    ],
+    "description": "How kilims are joined: a kilim is a weft-faced plain weave. Where two colours meet along a vertical line, the weaver can (1) turn each weft back round its own warp, leaving a slit (slit tapestry). (2) Dovetail, with both wefts wrapping the same warp in turn. (3) Interlock, with the two wefts looping through each other. Slits give crisp outlines, while dovetailing and interlocking close the gap but blur the edge (Art Institute of Chicago guide to tapestry structures; Wikipedia 'Kilim'; Marla Mallett). This object: wool and cotton, slit-tapestry weave, 17th century. FAMSF also has 2003.87.5 (17th–18th century). The Textile Museum (GWU) has a late-19th-century Aydınlı kilim, 2011.10.2. Conflict on 'earliest kilim': James Mellaart argued that wall paintings at Neolithic Çatalhöyük copied kilims (published in The Goddess from Anatolia, 1989). No woven remains were found, and Marla Mallett and Murray Eiland argued in Oriental Rug Review (1990) that his reconstructed drawings were unreliable or fabricated. Treat Neolithic kilim claims as unproven. Sources: https://www.famsf.org/artworks/kilim · https://archive.artic.edu/divineart/weavingstruc · https://en.wikipedia.org/wiki/Kilim · https://www.marlamallett.com/techniques · https://daily.jstor.org/catalhoyuk-its-story-continues\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "tags": [
+      "process history",
+      "flatweave",
+      "kilim",
+      "checked from search results"
+    ],
+    "confidence": "solid",
+    "status": "unverified",
+    "themes": [
+      "Rug-making techniques"
+    ],
+    "imageSource": "auto"
+  },
+  {
+    "id": "process-flatweave-soumak-tm",
+    "type": "object",
+    "title": "Soumak (weft-wrapped) flatweave from the Caucasus, 1875–1925 (Textile Museum 1989.10.92)",
+    "place": "Dagestan area, south-eastern Caucasus (general attribution)",
+    "region": "Caucasus",
+    "date": "1875–1925",
+    "dateStart": 1875,
+    "dateEnd": 1925,
+    "institution": "The George Washington University Museum and The Textile Museum",
+    "identifier": "1989.10.92",
+    "sourceUrl": "https://collectionstories.museum.gwu.edu/flatweave-rug-from-the-caucasus/",
+    "techniques": [
+      "soumak",
+      "weft wrapping",
+      "supplementary weft"
+    ],
+    "materials": [
+      "wool"
+    ],
+    "description": "How it works: in soumak, coloured supplementary wefts are wrapped around the warps rather than woven over and under them. Typically each wrap goes forward over four warps and back under two, with plain ground wefts between the wrapping rows. The front looks like herringbone or embroidery, the back is left with loose ends, and there are no slits where colours meet (Wikipedia 'Soumak'). The name may come from Shemakha in Azerbaijan, but its origin is uncertain. This object: catalogued as plain weave with supplementary-weft wrapping, Caucasus, 1875–1925. Comparison: the Fitzwilliam Museum's T.3-1961 (Caucasian, 19th century, soumak with herringbone effect). Sources: https://collectionstories.museum.gwu.edu/flatweave-rug-from-the-caucasus/ · https://en.wikipedia.org/wiki/Soumak · https://data.fitzmuseum.cam.ac.uk/id/object/137685\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "tags": [
+      "process history",
+      "flatweave",
+      "soumak",
+      "checked from search results"
+    ],
+    "confidence": "solid",
+    "status": "unverified",
+    "themes": [
+      "Rug-making techniques"
+    ],
+    "imageSource": "auto"
+  },
+  {
+    "id": "process-flatweave-navajo",
+    "type": "finding",
+    "title": "Navajo (Diné) weaving: tapestry on the upright loom, from wearing blankets (1600s–) to floor rugs (1880s–1920)",
+    "creator": "Diné (Navajo) weavers; traders J. L. Hubbell (Ganado) and J. B. Moore (Crystal)",
+    "place": "Navajo country, Arizona and New Mexico",
+    "region": "United States",
+    "date": "weaving c. 1600–1700 (disputed); rug era c. 1880–1920",
+    "dateStart": 1600,
+    "dateEnd": 1920,
+    "sourceUrl": "https://statemuseum.arizona.edu/online-exhibit/19-century-navajo-weaving-asm/navajo-weaving-methods",
+    "techniques": [
+      "tapestry weave",
+      "upright loom",
+      "weft interlock"
+    ],
+    "materials": [
+      "wool",
+      "indigo",
+      "bayeta"
+    ],
+    "description": "How it works: a continuous warp is strung on an upright loom hanging from a horizontal pole, and the loom has no moving parts. Coloured wefts are woven in tapestry fashion only where each colour is needed, so 'lazy lines' form between blocks. Blankets had four finished selvedges (Arizona State Museum; Millicent Rogers Museum blog via Adams State). Origins conflict: the Arizona State Museum says Navajo weaving was a distinct activity by 1650 and shared the upright loom and techniques with Pueblo weavers. A Taos lecture summary dates the adoption of the loom to around 1600. Other accounts tie it to Pueblo refugees after the 1680 Pueblo Revolt, though some say Navajos wove half a century earlier. By 1805, First Phase chief blankets were being woven (lecture summary). Shift to rugs: from the 1880s traders such as Hubbell at Ganado and Moore at Crystal steered weavers toward bordered floor rugs for Anglo buyers. Moore showed weavers Turkish carpets and Hubbell had designs painted for them. Sources give the transitional period as late 1870s or 1890–1920, and say weavers long resisted borders (dealer sources). Sources: https://statemuseum.arizona.edu/online-exhibit/19-century-navajo-weaving-asm/navajo-weaving-methods · https://statemuseum.arizona.edu/node/228 · https://blogs.adams.edu/salazar-center/2019/11/25/ · https://toh-atin.com/blog/how-navajo-blankets-became-rugs/\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "tags": [
+      "process history",
+      "flatweave",
+      "Navajo",
+      "checked from search results"
+    ],
+    "confidence": "solid",
+    "status": "unverified",
+    "themes": [
+      "Rug-making techniques"
+    ]
+  },
+  {
+    "id": "process-flatweave-navajo-chief-asm",
+    "type": "object",
+    "title": "Navajo First Phase chief's-style blanket, c. 1800–1850 (Arizona State Museum E-1200)",
+    "creator": "Diné (Navajo) weaver",
+    "place": "Navajo country",
+    "region": "United States",
+    "date": "c. 1800–1850",
+    "dateStart": 1800,
+    "dateEnd": 1850,
+    "institution": "Arizona State Museum, University of Arizona",
+    "identifier": "E-1200",
+    "sourceUrl": "https://statemuseum.arizona.edu/online-exhibit/19-century-navajo-weaving-asm/chiefs-style-blankets",
+    "techniques": [
+      "tapestry weave",
+      "upright loom"
+    ],
+    "materials": [
+      "wool"
+    ],
+    "description": "What it shows: an early wearing blanket in tapestry weave with wide horizontal bands. Gift of Mary Cabot Wheelwright, 1942. Other dated examples: Maxwell Museum (UNM) 63.34.114, a First Phase chief blanket of c. 1850–1860. Penn Museum NA3477, 'First Phase Chief Blanket, Ute type', 1800–1850. The Bern Historical Museum 'Schoch' blanket (1890.410.0027), c. 1830, once catalogued as a 'Sioux trade cloth'. Sources: https://statemuseum.arizona.edu/online-exhibit/19-century-navajo-weaving-asm/chiefs-style-blankets · https://maxwellmuseum.unm.edu/node/600 · https://www.penn.museum/collections/object/301176\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "tags": [
+      "process history",
+      "flatweave",
+      "Navajo",
+      "checked from search results"
+    ],
+    "confidence": "suggestive",
+    "status": "unverified",
+    "themes": [
+      "Rug-making techniques"
+    ],
+    "imageSource": "auto"
+  },
+  {
+    "id": "process-flatweave-dhurrie-penn",
+    "type": "object",
+    "title": "Cotton dhurrie, North India, late 19th century (Penn Museum 29-96-81)",
+    "place": "North India",
+    "region": "India",
+    "date": "late 19th century",
+    "dateStart": 1870,
+    "dateEnd": 1899,
+    "institution": "Penn Museum (University of Pennsylvania Museum of Archaeology and Anthropology)",
+    "identifier": "29-96-81",
+    "sourceUrl": "https://collections.penn.museum/collections/object/72254",
+    "techniques": [
+      "tapestry weave",
+      "weft-faced flatweave"
+    ],
+    "materials": [
+      "cotton"
+    ],
+    "description": "How it works: a dhurrie is a flat, weft-faced cotton (sometimes wool) tapestry weave. The wefts are beaten down with a panja, a hand tool with metal prongs, until they cover the warp completely (Penn Museum). This object: 232 × 137 cm, with elephants and horses that the museum links to Mughal hunting carpets and Iranian medallion rugs. Bequest of Maxwell Sommerville, 1904. Production context: Penn says dhurries of this period were mostly made by prison labour, tied to colonial interest in Indian craft after 1851. MAP Academy says jail workshops were revived by Maharaja Sawai Ram Singh II of Jaipur in 1856 and lists jails such as Allahabad, Lucknow, Benares, Fatehgarh and Agra. One essay dates the Jaipur jail to the 1850s. MAP also says jail output fell by the mid-20th century. Sources: https://collections.penn.museum/collections/object/72254 · https://mapacademy.io/?p=3159 · https://Artsandculture.google.com/story/DQVRlmbixCYTKA\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "tags": [
+      "process history",
+      "flatweave",
+      "dhurrie",
+      "checked from search results"
+    ],
+    "confidence": "solid",
+    "status": "unverified",
+    "themes": [
+      "Rug-making techniques"
+    ],
+    "imageSource": "auto"
+  },
+  {
+    "id": "process-flatweave-rolakan",
+    "type": "finding",
+    "title": "Swedish rölakan (röllakan): interlocked double-faced tapestry weave, documented from the 18th century",
+    "place": "Skåne and Småland (traditional attribution)",
+    "region": "Sweden",
+    "date": "17th–18th century onward (dealer claims; not confirmed by museum sources)",
+    "dateStart": 1700,
+    "sourceUrl": "https://digitaltmuseum.org/011025057959",
+    "techniques": [
+      "tapestry weave",
+      "interlocked weft"
+    ],
+    "materials": [
+      "wool weft",
+      "linen warp"
+    ],
+    "description": "How it works: rölakan is a flat, weft-faced tapestry weave in which the wefts hide the warp. At each colour change the wefts are interlocked, which leaves a slight ridge along the join and makes the rug reversible. Wool weft on linen warp is typical (dealer descriptions: 1stdibs, Chairish, rugandkilim.com). Dating: dealers say the technique has been used in Sweden since the early 1700s, and one says it arose in the rural traditions of Skåne and Småland in the 1600s–1700s. Searches of Swedish museum databases (Nordiska museet via DigitaltMuseum; Kulturen) found 18th-century Skåne coverlets and cushions. One digitaltmuseum record is an åkdyna (carriage cushion) described as röllakan, but its date was not shown. The 18th-century dated records seen were not clearly röllakan, so the early date is unconfirmed by a museum. The name's origin is uncertain (one dealer claims 'ryglakan', 'back sheet'). Mid-20th-century workshops such as Märta Måås-Fjetterström wove rölakan floor rugs. Sources: https://digitaltmuseum.org/011025057959 · https://carl.kulturen.com/web/object/121632/REFERENCES/235 · https://rugandkilim.com/blogs/a-collectors-guide-to-antique-swedish-rollakan-tapestries/ · https://www.chairish.com/product/28640885/hand-woven-flatweave-swedish-rollakan-rug-by-alice-walleback-1950s\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "tags": [
+      "process history",
+      "flatweave",
+      "Scandinavia",
+      "checked from search results"
+    ],
+    "confidence": "unverified",
+    "status": "unverified",
+    "themes": [
+      "Rug-making techniques"
+    ]
+  },
+  {
+    "id": "process-knotted-pazyryk",
+    "type": "object",
+    "title": "The Pazyryk carpet: oldest known hand-knotted pile carpet (5th–4th century BCE)",
+    "creator": "Unknown (Achaemenid Persian, Armenian or local origin all proposed)",
+    "place": "Barrow 5, Pazyryk valley, Altai Mountains; excavated by Sergei Rudenko, 1949",
+    "region": "Russia (Siberia)",
+    "date": "5th–4th century BCE (radiocarbon); barrow later dated 252–238 BCE by the Hermitage listing",
+    "dateStart": -500,
+    "dateEnd": -300,
+    "institution": "State Hermitage Museum, St Petersburg",
+    "identifier": "not found in search results",
+    "sourceUrl": "https://depts.washington.edu/silkroad/museums/shm/shmpazyryk.html",
+    "techniques": [
+      "hand-knotted pile",
+      "symmetric knot"
+    ],
+    "materials": [
+      "wool"
+    ],
+    "description": "How hand-knotting works: on a warped loom, the weaver ties short lengths of yarn around warp pairs, one row at a time. Each row is cut to height and locked with one or more ground wefts, and the knot ends form the pile (Wikipedia, 'Knotted-pile carpet'). What it shows: the earliest firm evidence of knotted pile. It is all wool with symmetric (Turkish/Ghiordes) knots. The field has a cross-like motif and the borders have deer and mounted horsemen. It is about 1.83 × 1.98 m (Schürmann 1982, from a Hermitage viewing). It was found in 1949 in Barrow 5, frozen in ice after looters left the tomb open. Conflicts: (1) Date: radiocarbon gives 5th–4th century BCE or 2,400–2,500 years old (Guinness; Wikipedia). The Hermitage listing dates Barrow 5 to 252–238 BCE, and other accounts put the main barrows in the 4th–3rd century BCE. A 2019 Hali article suggests even earlier pile weaving may exist. (2) Knot density varies by source: about 3,600 per dm² or 360,000 per m² (232 per in²), 250 per in², 278 per in². (3) Origin: Achaemenid Persian, 'Armenia or Persia' (Guinness), or unknown. Sources: https://guinnessworldrecords.com/world-records/652074-oldest-carpet · https://en.wikipedia.org/wiki/Pazyryk_burials · https://depts.washington.edu/silkroad/museums/shm/shmpazyryk.html · https://ia800204.us.archive.org/26/items/ThePazyrykItsUseAndOrigin/Schurmann_1982_Pazyryk.pdf\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "tags": [
+      "process history",
+      "knotting",
+      "Pazyryk",
+      "checked from search results"
+    ],
+    "confidence": "solid",
+    "themes": [
+      "Rug-making techniques",
+      "Woven carpet"
+    ],
+    "status": "unverified",
+    "imageSource": "auto"
+  },
+  {
+    "id": "process-knotted-knot-types",
+    "type": "finding",
+    "title": "Knot types: symmetric (Turkish/Ghiordes) and asymmetric (Persian/Senneh)",
+    "place": "Anatolia, Caucasus, Iran, Central Asia",
+    "region": "West and Central Asia",
+    "date": "symmetric knot attested from 5th–4th century BCE (Pazyryk)",
+    "dateStart": -500,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Knotted-pile_carpet",
+    "techniques": [
+      "hand-knotted pile",
+      "symmetric knot",
+      "asymmetric knot"
+    ],
+    "materials": [
+      "wool",
+      "silk",
+      "cotton"
+    ],
+    "description": "How they work: the symmetric knot passes round two neighbouring warps and brings both ends up between them. The asymmetric knot wraps fully round one warp and only partly round the next, with one end coming up on each side, and can open to the left or right. Sources say the asymmetric knot allows finer, more curving designs, and the symmetric knot is very secure (Wikipedia; woven.is; Nazmiyal). Naming caveat: the geographic names are misleading. Wikipedia notes that symmetric knots are tied in the town of Senneh itself, and Iranian and non-Iranian weavers use both knots. Earliest evidence: Wikipedia says the Ghiordes (symmetric) knot is the one found in the Pazyryk fragments. For single-warp and Tibetan knots see process-knotted-spanish-knot and process-knotted-tibetan. Sources: https://en.wikipedia.org/wiki/Knotted-pile_carpet · https://www.woven.is/blog/persian-knot-vs-turkish-knot.htm · https://nazmiyalantiquerugs.com/resources/guide/rug-making/types-of-knots/\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "tags": [
+      "process history",
+      "knotting",
+      "checked from search results"
+    ],
+    "confidence": "solid",
+    "themes": [
+      "Rug-making techniques",
+      "Woven carpet"
+    ],
+    "status": "unverified"
+  },
+  {
+    "id": "process-knotted-spanish-knot",
+    "type": "object",
+    "title": "Single-warp 'Spanish' knot: armorial carpet, 1415–1458 (Textile Museum R44.4.1)",
+    "creator": "Mudéjar weavers",
+    "place": "Spain (Alcaraz?)",
+    "region": "Spain",
+    "date": "1415–1458",
+    "dateStart": 1415,
+    "dateEnd": 1458,
+    "institution": "The George Washington University Museum and The Textile Museum",
+    "identifier": "R44.4.1",
+    "sourceUrl": "https://collections-gwu.zetcom.net/en/collection/item/7980/",
+    "techniques": [
+      "hand-knotted pile",
+      "single-warp (Spanish) knot"
+    ],
+    "materials": [
+      "wool"
+    ],
+    "description": "How it works: the Spanish knot is tied round a single warp, not two. Knots in alternate rows sit on alternate warps, so the pile is staggered (Britannica 'Spanish knot'; Wikipedia; Textile Studies paper on Spanish carpets). Britannica says it was used mainly in Spain and became extremely rare after the 18th century. This object: an armorial carpet with the joined arms of Alfonso V of Aragon and Maria of Castile. Its structure is listed as knotted pile, plain weave, single-warp knot. Acquired by George Hewitt Myers in 1944. GWU says the Textile Museum holds two of only ten known Mudéjar carpets with Spanish arms. More single-warp examples: the Met 57.150.3 (fragment, Spain, 15th–16th century) and MFA Boston 39.614 (small-pattern 'Holbein' carpet, probably Alcaraz, 15th century, on loan to the Aga Khan Museum July 2026 – Feb 2027 per one snapshot). Sources: https://www.britannica.com/topic/Spanish-knot · https://en.wikipedia.org/wiki/Knotted-pile_carpet · https://collections-gwu.zetcom.net/en/collection/item/7980/ · https://www.metmuseum.org/art/collection/search/451458 · https://collections.mfa.org/objects/46976\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "tags": [
+      "process history",
+      "knotting",
+      "Spain",
+      "checked from search results"
+    ],
+    "confidence": "solid",
+    "themes": [
+      "Rug-making techniques",
+      "Woven carpet"
+    ],
+    "status": "unverified",
+    "imageSource": "auto"
+  },
+  {
+    "id": "process-knotted-tibetan",
+    "type": "finding",
+    "title": "Tibetan 'slit-loop' knot: continuous yarn looped over a gauge rod, then cut",
+    "place": "Tibet; Tibetan refugee workshops in Nepal",
+    "region": "Tibet / Nepal",
+    "date": "tradition undated; similar technique in Coptic Egyptian and Central Asian fragments (Britannica)",
+    "sourceUrl": "https://www.britannica.com/art/Tibetan-carpet",
+    "techniques": [
+      "hand-knotted pile",
+      "Tibetan knot",
+      "rod-and-cut loop pile"
+    ],
+    "materials": [
+      "wool",
+      "cotton weft"
+    ],
+    "description": "How it works: Britannica says the yarn is looped under a warp, brought toward the weaver over a metal gauge rod, and looped round the next warp. After a row, a knife run along a groove in the rod cuts the loops into pile. Tamarian Carpets patents describe the same knot as yarn looped round two warps and a temporary rod (e.g. a 3 mm aluminium rod). Kvadrat says a 'punja' is then used to beat the row down. Conflict: dealer pages differ on whether each loop grips one warp or two. Dating: Britannica says archaeological fragments in a similar technique survive from Coptic Egypt and Central Asia. No dated early Tibetan rug was found here (the repo already covers the 1860 Tibet note: ner-cn-tibet-1860). Sources: https://www.britannica.com/art/Tibetan-carpet · https://patents.google.com/patent/US8794270 · https://kvadrat.dk/en/kinnasand/about/journal/product-story-icon\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "tags": [
+      "process history",
+      "knotting",
+      "Tibet",
+      "checked from search results"
+    ],
+    "confidence": "solid",
+    "themes": [
+      "Rug-making techniques",
+      "Woven carpet"
+    ],
+    "status": "unverified"
+  },
+  {
+    "id": "process-knotted-rya-vam",
+    "type": "object",
+    "title": "Finnish ryijy (rya) with long knotted pile, dated 1814 (V&A T.123-1924)",
+    "place": "Finland",
+    "region": "Finland",
+    "date": "1814 (object); documented from mid-15th century",
+    "dateStart": 1814,
+    "institution": "Victoria and Albert Museum",
+    "identifier": "T.123-1924",
+    "sourceUrl": "https://collections.vam.ac.uk/item/O102075/carpet-unknown",
+    "techniques": [
+      "hand-knotted pile",
+      "long-pile knotting"
+    ],
+    "materials": [
+      "wool pile",
+      "linen warp"
+    ],
+    "description": "How it works: rya/ryijy is knotted pile with long, widely spaced rows of knots and many ground picks between them, giving a shaggy, heavy fabric first used as a bedcover. This object: woollen pile knotted on linen warps, marked with the initials AFBD and the date 1814. Given by Roger Fry, and the 1924 file mentions a moth-eaten patch. The V&A also has a ryijy dated 1799 (T.8-1914). History: the Finnish intangible-heritage wiki puts the earliest certain reference in the mid-15th century, tied to a castellan of Häme Castle, and says early ryijys were bedcovers made by professional weavers at castles and Crown manors. The Hämeenlinna museum cites a 1547 Häme Castle inventory listing 55 rugs as the earliest record of colourful ryijys. Bukowskis says the oldest surviving Finnish ryijy is 17th-century. The claim of a 9th-century (Viking) origin (Wikipedia, dealers) has no dated evidence. Sources: https://collections.vam.ac.uk/item/O102075/carpet-unknown · https://wiki.aineetonkulttuuriperinto.fi/wiki/Ryijy_tradition · https://hmlmuseo.fi/?p=12964 · https://wikipedia.com/wiki/Ryijy\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "tags": [
+      "process history",
+      "knotting",
+      "Scandinavia",
+      "checked from search results"
+    ],
+    "confidence": "suggestive",
+    "themes": [
+      "Rug-making techniques",
+      "Woven carpet"
+    ],
+    "status": "unverified",
+    "imageSource": "auto"
+  },
+  {
+    "id": "process-knotted-looms",
+    "type": "finding",
+    "title": "Looms for knotted rugs: horizontal ground looms (nomads) and vertical looms (villages and workshops)",
+    "region": "West and Central Asia",
+    "date": "undated tradition",
+    "sourceUrl": "https://www.iranicaonline.org/articles/carpets-xiv",
+    "techniques": [
+      "hand-knotted pile",
+      "horizontal loom",
+      "vertical loom",
+      "roller-beam loom"
+    ],
+    "materials": [
+      "wood",
+      "metal"
+    ],
+    "description": "How they work: nomadic weavers use a horizontal loom with the warp stretched between two beams staked close to the ground. The weaver sits on the finished part, and the loom can be taken down and rebuilt at each camp, which sources link to the uneven shapes of tribal rugs. Settled weavers use vertical looms with two horizontal beams held by rigid side posts. On the simplest village type, finished sections (about 1.2–1.5 m) are rolled onto the lower beam and the warp is adjusted, while the weaver sits on a raised bench. Fixed workshop looms allow bigger and finer rugs. The search returned the Encyclopaedia Iranica 'Carpets xiv' entry but not its text. Detail comes from dealer guides (Nazmiyal, PCG Australia, Pak Persian Rugs), so the wording is not confirmed by a scholarly source. No dated early loom was found. Sources: https://www.iranicaonline.org/articles/carpets-xiv · https://nazmiyalantiquerugs.com/blog/loom-stories-how-vertical-and-horizontal-looms-shape-design/ · https://pcgaustralia.com/blogs/rugs/the-loom-a-guide-to-traditional-rug-weaving-tools\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "tags": [
+      "process history",
+      "knotting",
+      "looms",
+      "checked from search results"
+    ],
+    "confidence": "suggestive",
+    "themes": [
+      "Rug-making techniques",
+      "Tools & equipment"
+    ],
+    "status": "unverified"
+  },
+  {
+    "id": "process-loompile-tapestry-brussels",
+    "type": "object",
+    "title": "'Tapestry' carpet: pile from warp yarns printed before weaving (Richard Whytock, Edinburgh, patented 1832); V&A sample c. 1850",
+    "creator": "Richard Whytock (inventor); G. P. Simcox, Kidderminster (sample maker)",
+    "place": "Edinburgh; Kidderminster",
+    "region": "United Kingdom",
+    "date": "patent 1832 (GSA Archives); 'about 1840' (Britain at Work); sample c. 1850",
+    "dateStart": 1832,
+    "dateEnd": 1850,
+    "institution": "Victoria and Albert Museum",
+    "identifier": "V&A system no. O258617 (museum number not seen)",
+    "sourceUrl": "https://collections.vam.ac.uk/item/O258617",
+    "techniques": [
+      "loop/velvet pile over wires",
+      "printed warp",
+      "tapestry carpet"
+    ],
+    "materials": [
+      "wool",
+      "linen",
+      "cotton backing"
+    ],
+    "description": "How it works: in Brussels carpet, five or six coloured worsted yarns run in every pile line and the Jacquard lifts the needed colour over the wire. Whytock instead printed the pattern onto one pile warp before weaving, allowing for the take-up of the loops. The result was a lighter Brussels-like carpet with one layer of wool on a linen foundation, cut (velvet) or uncut (tapestry) (Britain at Work). History: the Glasgow School of Art Archives (Henry Widnell & Stewart / Stoddard-Templeton records) say the Board of Trustees sent Whytock to Brussels in 1830, he returned unimpressed, and he invented and patented the 'Tapestry carpet loom' in 1832. They add that the loom used one thread instead of five or six and was a third the size of a Brussels loom. Conflict: Britain at Work dates the invention to about 1840, and the patent itself was not found. This object: a tapestry-carpet sample with velvet pile and printed warp, flowers and leaves on a creamy ground, by G. P. Simcox of Kidderminster, c. 1850. The V&A also has an 1851 Henderson & Widnell (Lasswade) printed-warp sample, O366782. Builds on the existing woven-brussels-wire-loop record. Sources: https://catalogue.gsaarchives.net/index.php/henry-widnell-stewart-ltd · https://tekniskkulturarv.dk/book/9ed6a0c7-3d5b-4bef-b920-e3a87a3a9e6e?page=338 · https://collections.vam.ac.uk/item/O258617 · https://collections.vam.ac.uk/item/O366782\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "tags": [
+      "process history",
+      "loom pile",
+      "Brussels",
+      "printed warp",
+      "checked from search results"
+    ],
+    "confidence": "solid",
+    "themes": [
+      "Rug-making techniques",
+      "Woven carpet"
+    ],
+    "status": "unverified",
+    "imageSource": "auto"
+  },
+  {
+    "id": "process-loompile-chenille-axminster",
+    "type": "object",
+    "title": "Chenille Axminster: James Templeton and William Quiglay's chenille patent (Glasgow, 1839); V&A Templeton sample",
+    "creator": "James Templeton; William Quiglay (Quigley)",
+    "place": "Glasgow (Bridgeton; later King Street)",
+    "region": "United Kingdom",
+    "date": "patent July 1839; sample late 19th century",
+    "dateStart": 1839,
+    "dateEnd": 1899,
+    "institution": "Victoria and Albert Museum",
+    "identifier": "V&A system no. O352290 (museum number not seen)",
+    "sourceUrl": "https://collections.vam.ac.uk/item/O352290/carpet-james-templeton",
+    "techniques": [
+      "chenille Axminster",
+      "two-stage weaving"
+    ],
+    "materials": [
+      "wool",
+      "jute/cotton backing"
+    ],
+    "description": "How it works: a two-stage weave. First a 'weft blanket' is woven in the pattern colours and cut into strips. Each strip is folded into a furry 'chenille' (caterpillar) yarn and then woven into a backing as the pile weft. This gives seamless, Axminster-like cut pile without hand-tying every knot (GSA Archives; Wikipedia). History: the GSA Archives say Templeton and Quiglay, a weaver he employed, patented an improved chenille method in July 1839. Templeton saw its use for carpet and in December 1839 bought out Quiglay's share. Conflicts: Wikipedia calls Quiglay a fellow shawl maker and dates their contact to 1837. A Glasgow paper calls him an Irish weaver, and another account places the chenille experiments in Paisley. This object: a late-19th-century Templeton stair-carpet sample with a Persian palmette and cloud-band design, pile woven in chenille strips, 84.5 × 66.7 cm. See also GSA DC 077/8 (Templeton 'Special Seamless Axminster' stair runner, c. 1880s–1930s; not confirmed as chenille). Sources: https://catalogue.gsaarchives.net/index.php/james-templeton-co · https://en.wikipedia.org/wiki/James_Templeton_%26_Co · https://collections.vam.ac.uk/item/O352290/carpet-james-templeton · https://catalogue.gsaarchives.net/index.php/dc-077-8\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "tags": [
+      "process history",
+      "loom pile",
+      "Axminster",
+      "chenille",
+      "checked from search results"
+    ],
+    "confidence": "solid",
+    "themes": [
+      "Rug-making techniques",
+      "Woven carpet"
+    ],
+    "status": "unverified",
+    "imageSource": "auto"
+  },
+  {
+    "id": "process-hooking-origins",
+    "type": "finding",
+    "title": "Rug hooking's origin debate: Yorkshire (Kent), or several centres at once (Québec, Maritimes, New England); burlap from the 1850s",
+    "creator": "William Winthrop Kent, The Hooked Rug (Dodd, Mead, 1930)",
+    "place": "New England; Maritime Canada; Québec; Yorkshire (theory)",
+    "region": "North America / Britain",
+    "date": "1840s–1860 (earliest firm North American dates)",
+    "dateStart": 1840,
+    "dateEnd": 1860,
+    "sourceUrl": "https://historymuseum.ca/cmc/exhibitions/arts/rugs/rugs02e.html",
+    "techniques": [
+      "hooking"
+    ],
+    "materials": [
+      "burlap",
+      "fabric strips",
+      "yarn"
+    ],
+    "description": "How it works: strips of fabric or yarn are pulled up through a woven foundation (usually burlap) with a hook, making loops on the surface (Halifax Public Libraries; Canadian Museum of History). Sources seen did not describe the hand motion in more detail. Origin theories: (1) Kent's The Hooked Rug (1930, Dodd, Mead; Tudor reissues 1937/1941) traced it to early-1800s Yorkshire floor mats, with mill workers hooking thrum ends through a backing. This is reported second-hand by Wikipedia. (2) The Canadian Encyclopedia says it probably arose independently and at the same time in Québec, the Maritimes and New England. (3) A Colonial Williamsburg label says hooking seems to have begun in New England and south-east Canada in the 1840s. (4) Viking or Scandinavian origins (dealers, Jamar) are unsupported. Burlap: the Canadian Museum of History says burlap was not sold commercially in North America until the 1850s, just when hooking spread. Colonial Williamsburg says a lack of foundation cloth held the craft back until jute burlap arrived. The oldest known Canadian hooked rug was designed by Susanna Smith (16) and hooked by her sister Abigail (13) in 1860 at New Maryland near Fredericton, New Brunswick (CMH). Repo already has Winterthur hooked rugs and the Ross 1886 punch hook. Sources: https://historymuseum.ca/cmc/exhibitions/arts/rugs/rugs02e.html · https://thecanadianencyclopedia.ca/en/article/rugs-and-rug-making · https://emuseum.colonialwilliamsburg.org/objects/59028/hooked-rug · https://en.wikipedia.org/wiki/Rug_hooking · https://rp-digitalcollections.nypl.org/items/510d47db-d3d0-a3d9-e040-e00a18064a99\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "tags": [
+      "process history",
+      "hooking",
+      "historiography",
+      "checked from search results"
+    ],
+    "confidence": "solid",
+    "themes": [
+      "Rug-making techniques",
+      "Hooked & handmade rugs"
+    ],
+    "status": "unverified"
+  },
+  {
+    "id": "process-hooking-cw-1983-611-1",
+    "type": "object",
+    "title": "Hooked rug on burlap, ca. 1875 (Colonial Williamsburg 1983.611.1)",
+    "place": "New England or south-east Canada (not specified in snippet)",
+    "region": "North America",
+    "date": "ca. 1875",
+    "dateStart": 1865,
+    "dateEnd": 1885,
+    "institution": "Colonial Williamsburg Foundation",
+    "identifier": "1983.611.1",
+    "sourceUrl": "https://emuseum.colonialwilliamsburg.org/objects/59028/hooked-rug",
+    "techniques": [
+      "hooking"
+    ],
+    "materials": [
+      "cotton",
+      "wool",
+      "burlap"
+    ],
+    "description": "What it shows: a large (90 × 84 in.) rug of cotton and wool hooked into burlap, the foundation that made the craft widespread. A later canvas backing was added, and the record says neither backing nor binding seems original. Its label says hooking appears to have started in New England and south-east Canada in the 1840s and spread once burlap arrived in the mid-19th century. Museum purchase. Sources: https://emuseum.colonialwilliamsburg.org/objects/59028/hooked-rug\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "tags": [
+      "process history",
+      "hooking",
+      "checked from search results"
+    ],
+    "confidence": "suggestive",
+    "themes": [
+      "Rug-making techniques",
+      "Hooked & handmade rugs"
+    ],
+    "status": "unverified",
+    "imageSource": "auto"
+  },
+  {
+    "id": "process-hooking-grenfell",
+    "type": "finding",
+    "title": "Grenfell mats: a mission cottage industry of hooked mats in Newfoundland and Labrador (1906/1909/1913 to late 1960s)",
+    "creator": "Grenfell Mission (Dr Wilfred Grenfell), Industrial Department",
+    "place": "Northern Newfoundland and Labrador",
+    "region": "Canada",
+    "date": "founded 1906, 1909 or 1913 (sources differ); peak late 1920s–early 1930s",
+    "dateStart": 1906,
+    "dateEnd": 1969,
+    "sourceUrl": "https://textilemuseum.ca/collection/hooked-rug-t84-0117/",
+    "techniques": [
+      "hooking"
+    ],
+    "materials": [
+      "burlap",
+      "silk and rayon stockings",
+      "dyed fabric"
+    ],
+    "description": "How it worked: the Industrial Department gave women kits of pre-dyed material and burlap with stencilled designs (dog teams, geese, polar bears), and they hooked the mats at home. A 1928 mission appeal asked supporters for worn stockings, so many mats are hooked with fine silk or rayon strips. The mission sold them through churches and supporters to fund medical work (Textile Museum of Canada; Canadian Encyclopedia; Meer). Conflicts: start date 1906 (Meer), 1909 (Paula Laverty, Silk Stocking Mats, McGill-Queen's, 2005, as summarised) or 1913 (Canadian Encyclopedia). Mats were made until the late 1960s, and output peaked in the late 1920s and early 1930s. Sources: https://textilemuseum.ca/collection/hooked-rug-t84-0117/ · https://thecanadianencyclopedia.ca/en/article/rugs-and-rug-making · https://www.meer.com/en/37268-hooked-mats-of-the-grenfell-mission · https://49thshelf.com/Books/S/Silk-Stocking-Mats\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "tags": [
+      "process history",
+      "hooking",
+      "Grenfell",
+      "checked from search results"
+    ],
+    "confidence": "solid",
+    "themes": [
+      "Rug-making techniques",
+      "Hooked & handmade rugs"
+    ],
+    "status": "unverified"
+  },
+  {
+    "id": "process-hooking-grenfell-bma",
+    "type": "object",
+    "title": "Grenfell hooked mat 'Polar Bear on Ice Floe', 1929 or c. 1930 (Baltimore Museum of Art 1996.165)",
+    "creator": "Grenfell Labrador Industries",
+    "place": "Newfoundland and Labrador",
+    "region": "Canada",
+    "date": "1929 (artwork page) or c. 1930 (database)",
+    "dateStart": 1929,
+    "dateEnd": 1930,
+    "institution": "Baltimore Museum of Art",
+    "identifier": "1996.165",
+    "sourceUrl": "https://collection.artbma.org/objects/43106/polar-bear-on-ice-floe",
+    "techniques": [
+      "hooking"
+    ],
+    "materials": [
+      "jute burlap",
+      "wool",
+      "rayon or silk jersey"
+    ],
+    "description": "What it shows: a fine-gauge Grenfell mat hooked in wool and rayon or silk jersey strips on jute burlap, 21.5 × 31.5 in. It has a woven label 'Grenfell Labrador Industries' / 'HAND MADE IN NEWFOUNDLAND & LABRADOR'. Gift of Dena S. Katzenberg, 1996. Shown in Textiles: Recycled/Reimagined (2010), and not on view. The BMA's two pages give different dates. Also: Textile Museum of Canada T84.0117, a Grenfell mat hooked with silk stockings, 107 × 79 cm (date not seen). Sources: https://collection.artbma.org/objects/43106/polar-bear-on-ice-floe · https://textilemuseum.ca/collection/hooked-rug-t84-0117/\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "tags": [
+      "process history",
+      "hooking",
+      "Grenfell",
+      "checked from search results"
+    ],
+    "confidence": "suggestive",
+    "themes": [
+      "Rug-making techniques",
+      "Hooked & handmade rugs"
+    ],
+    "status": "unverified",
+    "imageSource": "auto"
+  },
+  {
+    "id": "process-sewn-yarn-sewn-chs",
+    "type": "object",
+    "title": "Yarn-sewn hearth rug, 1800–1820 (Connecticut Historical Society 2010.409.0)",
+    "place": "Wethersfield, Connecticut (family tradition)",
+    "region": "United States",
+    "date": "1800–1820",
+    "dateStart": 1800,
+    "dateEnd": 1820,
+    "institution": "Connecticut Historical Society",
+    "identifier": "2010.409.0",
+    "sourceUrl": "https://emuseum.chs.org/emuseum/objects/13050/hearth-rug",
+    "techniques": [
+      "yarn-sewn pile",
+      "running stitch"
+    ],
+    "materials": [
+      "wool",
+      "linen"
+    ],
+    "description": "How it works: yarn is sewn with a needle in a continuous running stitch through a closely woven cloth, leaving loops on the face that are usually clipped (Getty AAT definition, via search). The Met's bed rugs use the same needle-worked running stitch, 'not hooked, as was once assumed'. This links yarn-sewn rugs to the bed rugs (1720s–1830s) already in the repo. This object: cut and uncut loops of multi-ply wool (or bunches of fine singles) on plain-woven linen. It has an oval medallion with a boy and girl under a grapevine and roses in the corners, 33 1/8 × 61 1/4 in. A family tradition links it to the Samuel Hanmer house (built 1765). Caveat: Colonial Williamsburg's lab found most grounds in its early sewn-rug exhibition were cotton, not linen, so check each fibre ID. Sources: https://emuseum.chs.org/emuseum/objects/13050/hearth-rug · https://www.metmuseum.org/toah/works-of-art/33.122 · https://collection.beta.fitz.ms/id/terminology/term-73016 · https://www.themagazineantiques.com/?p=11067\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "tags": [
+      "process history",
+      "needle-sewn pile",
+      "checked from search results"
+    ],
+    "confidence": "solid",
+    "themes": [
+      "Rug-making techniques",
+      "Early tufting: bed rugs & needlework pile"
+    ],
+    "status": "unverified",
+    "imageSource": "auto"
+  },
+  {
+    "id": "process-sewn-shirred-hne",
+    "type": "object",
+    "title": "Shirred rug 'Apple Tree Farm', 1820–1830 (Historic New England 1991.1525)",
+    "place": "Cogswell's Grant, Essex, Massachusetts (original to the house)",
+    "region": "United States",
+    "date": "1820–1830",
+    "dateStart": 1820,
+    "dateEnd": 1830,
+    "institution": "Historic New England",
+    "identifier": "1991.1525",
+    "sourceUrl": "https://www.historicnewengland.org/explore/collections-access/gusn/3034",
+    "techniques": [
+      "shirring",
+      "bias shirring",
+      "chenille shirring"
+    ],
+    "materials": [
+      "wool"
+    ],
+    "description": "How it works: in chenille shirring, a fabric strip is stitched lengthwise down the middle and gathered tight into a caterpillar-like strand, which is sewn flat onto the foundation along the pattern. In bias shirring, short bias-cut strips are sewn on edge (Historic New England; Rug Hooking Magazine). Rug Hooking Magazine says shirring was most common in 1820–1850. Conflict: Rugmaker's Homestead dates shirred rugs to about 1870, but museum-dated examples are earlier. This object: polychrome wool on a brown and black ground with a narrow blue border, described with the term 'shirring'. Gift of Bertram K. and Nina Fletcher Little. Other examples: HNE 1991.1519 (shirred, 1825–1850), Winterthur 'Elephant' rug (Rhode Island, 1810–1825, bias and chenille shirring on cotton), and a bias-shirred hearth rug, probably Maine, ca. 1830 (Caputo collection, Colonial Williamsburg exhibition). Sources: https://www.historicnewengland.org/explore/collections-access/gusn/3034 · https://rughookingmagazine.com/Rug-Hooking-Articles/Bias-Chenille-Pleat-Bundle · https://rugmakershomestead.com/shirred.html · https://antiquetrader.com/art/exhibit-of-important-early-american-hooked-rugs-opens\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "tags": [
+      "process history",
+      "needle-sewn pile",
+      "shirred",
+      "checked from search results"
+    ],
+    "confidence": "solid",
+    "themes": [
+      "Rug-making techniques",
+      "Hooked & handmade rugs"
+    ],
+    "status": "unverified",
+    "imageSource": "auto"
+  },
+  {
+    "id": "process-braided-hne",
+    "type": "object",
+    "title": "Circular braided wool rug, 1860–1890 (Historic New England 1998.1344)",
+    "place": "Castle Tucker, Wiscasset, Maine",
+    "region": "United States",
+    "date": "1860–1890",
+    "dateStart": 1860,
+    "dateEnd": 1890,
+    "institution": "Historic New England",
+    "identifier": "1998.1344",
+    "sourceUrl": "https://www.historicnewengland.org/explore/collections-access/gusn/18698/",
+    "techniques": [
+      "braiding",
+      "coiling and sewing"
+    ],
+    "materials": [
+      "wool"
+    ],
+    "description": "How it works: strips of cloth are folded and plaited into a three-strand braid, and the braid is coiled and sewn edge to edge into a round or oval mat. The Shaker Museum describes heavily fulled wool strips folded and braided in three strands and sewn into an oval (object 1959.11205.1, by Eldress Sarah Collins, South Family, Mount Lebanon; date not seen). Dating: Journal of Antiques says braided mats were common by the late 1700s, and Capel Rugs (a maker) describes settlers tearing old blankets and coats for braids. Both are trade sources, and no museum-dated 18th-century braided rug was found. Firm museum dates in this set begin with this 1860–1890 rug. Commercial braided rugs (e.g. Thorndike Mills, from 1921) are 20th-century. Sources: https://www.historicnewengland.org/explore/collections-access/gusn/18698/ · https://www.shakermuseum.us/object?id=19748 · https://journalofantiques.com/columns/antiques-peek-august-2017/ · https://capelrugs.com/pages/braided-info\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "tags": [
+      "process history",
+      "braided",
+      "checked from search results"
+    ],
+    "confidence": "suggestive",
+    "themes": [
+      "Rug-making techniques",
+      "Hooked & handmade rugs"
+    ],
+    "status": "unverified",
+    "imageSource": "auto"
+  },
+  {
+    "id": "process-rag-woven-shaker",
+    "type": "object",
+    "title": "Woven rag runner, ca. 1930 (Shaker Museum 1984.5.1); rag rugs popular in the US from the 1830s",
+    "creator": "Sister Alice Smith, Church Family, Hancock Shaker community",
+    "place": "Hancock, Massachusetts",
+    "region": "United States",
+    "date": "ca. 1930 (object); 1830s (popularity, per museum)",
+    "dateStart": 1830,
+    "dateEnd": 1930,
+    "institution": "Shaker Museum | Mount Lebanon",
+    "identifier": "1984.5.1",
+    "sourceUrl": "https://shakermuseum.us/object?id=4222",
+    "techniques": [
+      "rag weaving",
+      "plain weave",
+      "loom-woven"
+    ],
+    "materials": [
+      "cloth strips",
+      "cotton warp"
+    ],
+    "description": "How it works: textile scraps are cut into strips, sewn end to end and used as weft in plain weave on a loom, so the pattern comes from the changing rags (Shaker Museum). The museum says rag rugs became popular in the United States in the 1830s as a cheap, practical floor covering. Shaker rugs often have symmetrical colour patterns and taped or stitched edges. This object: a runner with S- and Z-twist rag wefts in a repeat pattern, plain woven at 8 warps and 8 wefts per inch. Donated by Faith Andrews, 1984. Scandinavian parallel (trasmatta): only dealer sources were found. They say little is known before about 1900, rugs were woven on home looms about two feet wide in winter, and powder dyes arrived around the end of the 18th century. That part is unverified. Sources: https://shakermuseum.us/object?id=4222 · https://www.dorisleslieblau.com/the-history-of-trasmattas-the-swedish-rag-rugs/ · https://en.wikipedia.org/wiki/Swedish_carpets_and_rugs\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "tags": [
+      "process history",
+      "braided",
+      "rag rug",
+      "checked from search results"
+    ],
+    "confidence": "suggestive",
+    "themes": [
+      "Rug-making techniques",
+      "Hooked & handmade rugs"
+    ],
+    "status": "unverified",
+    "imageSource": "auto"
+  },
+  {
+    "id": "process-crochet-knit-afam",
+    "type": "object",
+    "title": "Crocheted rug, 1880–1900 (American Folk Art Museum 1985.21.1)",
+    "place": "Watervliet, New York, or Maine (possible origins)",
+    "region": "United States",
+    "date": "1880–1900",
+    "dateStart": 1880,
+    "dateEnd": 1900,
+    "institution": "American Folk Art Museum",
+    "identifier": "1985.21.1",
+    "sourceUrl": "https://collection.folkartmuseum.org/objects/922/crocheted-rug",
+    "techniques": [
+      "crochet"
+    ],
+    "materials": [
+      "hand-dyed wool",
+      "woven wool cloth",
+      "ingrain carpet"
+    ],
+    "description": "How it works: strips of cloth or yarn are worked with a crochet hook into chained loops, built row by row or in rounds into a dense mat with no separate foundation. This object: crocheted from hand-dyed wool, woven wool cloth and recycled ingrain carpet, 55 × 37 1/2 in. The record is marked as a work in progress. Knitting: AFAM's exhibition 'The Great Cover-Up' (2007) showed a rare knitted rug attributed to Elvira Hulett of the Hancock Shaker community (object number not seen). Other crochet: a Wichita Art Museum hooked rug of about 1880 has a crocheted edge. No earlier dated crocheted or knitted floor rug was found. Sources: https://collection.folkartmuseum.org/objects/922/crocheted-rug · https://folkartmuseum.org/exhibitions/the-great-cover-up-american-rugs-on-beds-tables-and-floors · https://wam.org/our-collection/collection/hooked-rug-with-crochet-edge/\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "tags": [
+      "process history",
+      "braided",
+      "crochet",
+      "knitted",
+      "checked from search results"
+    ],
+    "confidence": "suggestive",
+    "themes": [
+      "Rug-making techniques",
+      "Hooked & handmade rugs"
+    ],
+    "status": "unverified",
+    "imageSource": "auto"
+  },
+  {
+    "id": "process-tufting-overview",
+    "type": "finding",
+    "title": "Tufting defined: needles push pile yarn through a ready-made backing, locked in with adhesive",
+    "place": "Dalton, Georgia (machine tufting)",
+    "region": "United States",
+    "date": "hand needle 18th–19th c.; machine from mid-20th c.",
+    "sourceUrl": "https://kids.britannica.com/students/article/rug-and-carpet/276811",
+    "techniques": [
+      "tufting",
+      "hand tufting",
+      "machine tufting",
+      "tufting gun"
+    ],
+    "materials": [
+      "primary backing",
+      "pile yarn",
+      "latex"
+    ],
+    "description": "How it works: unlike weaving, where pile and backing are made together, tufting adds pile yarns to a backing that already exists (Britannica Student, 'rug and carpet', which names weaving and tufting as today's main methods). A needle, or a bar of hundreds of needles, pierces the primary backing and leaves loops, which can be cut. The tufts are then locked with latex or another adhesive, often laminated to a secondary backing (Playrite technical sheet; US patent 3856596). Lineage already in this database: needle-sewn bed rugs and candlewick, Dalton chenille bedspreads, multi-needle machines, nylon broadloom and the hand-held tufting gun. One source says tufted products are now more than 90 percent of carpet (Duckett, needle-punched nonwovens). Sources: https://kids.britannica.com/students/article/rug-and-carpet/276811 · https://www.specifiedby.com/playrite/cricket-practice-play/Playrite_Technical_What-Is-Tufted.pdf · https://patents.google.com/patent/US3856596A/en · https://www.apparelsearch.com/education/research/nonwoven/2001_kermit_duckett/education_research_nonwoven_needle_punched_nonwovens.htm\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "tags": [
+      "process history",
+      "tufting",
+      "checked from search results"
+    ],
+    "confidence": "solid",
+    "themes": [
+      "Rug-making techniques",
+      "Machine tufting & Dalton"
+    ],
+    "status": "unverified"
+  },
+  {
+    "id": "process-industrial-needlepunch",
+    "type": "finding",
+    "title": "Needle-punch (needlefelt): barbed needles mat a fibre web into a non-woven floor covering (padding from late 1800s; synthetics late 1950s)",
+    "creator": "William Bywater Ltd (early commercial development, per Duckett)",
+    "place": "England; later US, Europe, Japan",
+    "region": "International",
+    "date": "late 1800s (padding); late 1950s (synthetic home-furnishing products); mid-1980s (random velour looms)",
+    "dateStart": 1880,
+    "dateEnd": 1985,
+    "sourceUrl": "https://www.apparelsearch.com/education/research/nonwoven/2001_kermit_duckett/education_research_nonwoven_needle_punched_nonwovens.htm",
+    "techniques": [
+      "needle-punch",
+      "non-woven"
+    ],
+    "materials": [
+      "jute",
+      "sisal",
+      "animal hair",
+      "polypropylene and other synthetics"
+    ],
+    "description": "How it works: a loose web (batt) of fibres passes under a beam of barbed felting needles. As they stab in and out, the barbs drag fibres through the web and tangle them into a felt-like fabric with no yarn. 'Structuring' looms with fork needles push fibre into loops or ribs to make pile carpets and mats (Duckett). History (one educational source): developed commercially in the late 1800s by William Bywater Ltd in England for jute, sisal and hair padding. Early looms ran about 100 strokes a minute and modern ones up to 2,000. Needled synthetic products entered home furnishings in the late 1950s, and random-velour looms arrived in the mid-1980s. The repo already notes that Toli (Japan) began selling needlepunch carpet in June 1967. Heuga's first carpet tile was needlefelt (see process-industrial-carpet-tile). Indoor-outdoor needlepunch claims were not confirmed. Sources: https://www.apparelsearch.com/education/research/nonwoven/2001_kermit_duckett/education_research_nonwoven_needle_punched_nonwovens.htm · https://www.textileworld.com/textile-world/features/2005/11/advancing-needlepunched-nonwovens\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "tags": [
+      "process history",
+      "industrial",
+      "needle-punch",
+      "checked from search results"
+    ],
+    "confidence": "suggestive",
+    "themes": [
+      "Rug-making techniques",
+      "Tools & equipment"
+    ],
+    "status": "unverified"
+  },
+  {
+    "id": "process-industrial-knitted",
+    "type": "finding",
+    "title": "Knitted carpet: pile and backing yarns looped together in one knitting operation",
+    "region": "International",
+    "date": "date not found",
+    "sourceUrl": "https://kids.britannica.com/students/article/rug-and-carpet/276811",
+    "techniques": [
+      "knitted carpet"
+    ],
+    "materials": [
+      "pile yarn",
+      "backing yarn",
+      "binder/latex"
+    ],
+    "description": "How it works: Britannica Student says backing and pile yarns are interlocked in one operation by a knitting process, and lists knitting with chenille weaving as less widely used methods than weaving and tufting. Patent literature (US 6269759) notes that knit-pile structures put much of the pile yarn below the surface and need heavy back-coating with binder to be stable. No date of introduction or named maker was found. This needs a trade-history source. Sources: https://kids.britannica.com/students/article/rug-and-carpet/276811 · https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/6269759\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "tags": [
+      "process history",
+      "industrial",
+      "knitted",
+      "checked from search results"
+    ],
+    "confidence": "suggestive",
+    "themes": [
+      "Rug-making techniques",
+      "Tools & equipment"
+    ],
+    "status": "unverified"
+  },
+  {
+    "id": "process-industrial-flocked",
+    "type": "finding",
+    "title": "Flocked floor covering (Flotex): short nylon fibres shot upright into adhesive by an electric field (France, 1960s; UK 1971–72)",
+    "creator": "Flotex (Château-Renault); Low & Bonar (UK rights 1971); now Forbo",
+    "place": "Château-Renault, France; Ripley, Derbyshire",
+    "region": "France / United Kingdom",
+    "date": "1960s (France); 1971 UK launch; Ripley factory 1972",
+    "dateStart": 1960,
+    "dateEnd": 1972,
+    "sourceUrl": "https://www.bdonline.co.uk/cpd/cpd-26-2013-electrostatically-flocked-flooring/5063206.article",
+    "techniques": [
+      "electrostatic flocking"
+    ],
+    "materials": [
+      "polyamide 6.6 flock",
+      "adhesive",
+      "glass-fibre interlayer"
+    ],
+    "description": "How it works: cut nylon fibres are charged in an electric field so they fly end-first into a wet adhesive layer and stand upright. After curing, loose fibres are drawn off. The result is a dense 'pile' (Forbo cites about 80 million polyamide 6.6 fibres per m²) over a waterproof adhesive and glass-fibre layers. BD Online says flocked flooring is neither carpet nor resilient flooring, though it shares traits of both. History: BD Online and Forbo say the first electrostatically flocked floor covering was made by Flotex at Château-Renault in the 1960s. Low & Bonar took UK rights in 1971, launched at Interbuild in November 1971, and opened a factory at Codnor Gate, Ripley, in 1972. Conflict: a 1994 Spanish article calls Flotex British. Sources: https://www.bdonline.co.uk/cpd/cpd-26-2013-electrostatically-flocked-flooring/5063206.article · https://forbo.com/flooring/en-uk/inspiration-references/making-spaces-into-places-blog/50-years-of-ripley/pa66c9 · https://revistas.unav.edu/index.php/revista-de-edificacion/article/download/36550/30629/100778\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "tags": [
+      "process history",
+      "industrial",
+      "flocked",
+      "checked from search results"
+    ],
+    "confidence": "solid",
+    "themes": [
+      "Rug-making techniques",
+      "Tools & equipment"
+    ],
+    "status": "unverified"
+  },
+  {
+    "id": "process-industrial-fusion-bonded",
+    "type": "finding",
+    "title": "Fusion-bonded carpet: cut pile yarn set into a PVC adhesive layer (Debron, Kidderminster; US rights to Milliken 1969)",
+    "creator": "Debron division, Carpet Manufacturing Co. (later Carpets International)",
+    "place": "Kidderminster, England; LaGrange, Georgia",
+    "region": "United Kingdom / United States",
+    "date": "by 1969",
+    "dateStart": 1969,
+    "sourceUrl": "https://floordaily.net/?p=20185",
+    "techniques": [
+      "fusion bonding",
+      "I-bond",
+      "U-bond"
+    ],
+    "materials": [
+      "PVC plastisol",
+      "glass-fibre scrim",
+      "nylon pile"
+    ],
+    "description": "How it works: pile is not woven or tufted. In the U-bond method a pleated layer of yarn has its folds pressed into adhesive on a backing sheet on both sides, and the sandwich is cut through the middle to make two carpets of cut pile set in adhesive. In I-bond, short cut lengths stand on end in the adhesive. The usual adhesive is PVC plastisol, heated to gel and fuse, or a hot-melt. Glass-fibre scrim and fleece stabilise the product, which can be cut into tiles (US patents 5616200, 6089007). History: Floor Daily credits the process to the Debron division of the Carpet Manufacturing Company in England. An Interface blog calls Kidderminster the birthplace of the Debron technology used in the earliest fusion-bonded carpet tile. Encyclopedia.com says Milliken bought US rights in July 1969 on Ray Anderson's advice. Grace's Guide says Carpets International was formed in 1969 by merging John Crossley-Carpet Trades Holdings and the Carpet Manufacturing Co. Anderson saw the process at CI and founded the CI-Georgia joint venture (later Interface) in 1973 (already in repo under co-milliken). The exact invention date was not found. Sources: https://floordaily.net/?p=20185 · https://blog.interface.com/50-years-of-history-past-forward · https://www.encyclopedia.com/social-sciences-and-law/economics-business-and-labor/businesses-and-occupations/interface-inc · https://gracesguide.co.uk/Kosset_Carpets · https://patents.justia.com/patent/5616200\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "tags": [
+      "process history",
+      "industrial",
+      "bonded",
+      "carpet tile",
+      "checked from search results"
+    ],
+    "confidence": "solid",
+    "themes": [
+      "Rug-making techniques",
+      "Tools & equipment"
+    ],
+    "status": "unverified"
+  },
+  {
+    "id": "process-industrial-printed",
+    "type": "finding",
+    "title": "Printed carpet: flat-screen (1962) and rotary-screen (1968) printing of pile carpet, then jet dyeing",
+    "creator": "Zimmer (Austria) among others; Milliken Millitron 1973 (already in repo)",
+    "region": "Europe / United States",
+    "date": "1962 (flat-screen carpet printer); 1968 (large rotary screen); 1970s jet printing",
+    "dateStart": 1962,
+    "dateEnd": 1976,
+    "sourceUrl": "https://zimmer-austria.com/en/node/6296",
+    "techniques": [
+      "screen printing",
+      "rotary-screen printing",
+      "jet printing / dye injection"
+    ],
+    "materials": [
+      "dyes",
+      "tufted nylon carpet"
+    ],
+    "description": "How it works: colour is applied to plain (usually tufted) carpet after it is made. Dye is forced through a stencilled screen, flat or rotary, one screen per colour, and must reach the full depth of the pile. Later jet machines inject dye from computer-controlled jets with no screens. A US patent on rotary screens for carpet notes that deep and shag piles were hard to print, because higher squeegee pressure caused leaks (US 4030411). History (mostly self-reported by Zimmer): rotary screen machine 1955. Carpet printing from 1962 on a flat-bed machine. Large rotary-screen carpet printing in 1968 with repeats up to 3 m. Its first digital carpet system is put at 1976 by other sources, and its Chromojet later replaced screen printers. An industry article says flat-screen carpet printers used screens about 12 ft wide with about eight colours, and makers like Durkan held big screen stocks. The Milliken Millitron (1973) is already in the repo. No independent history of the first printed carpet was found. Sources: https://zimmer-austria.com/en/node/6296 · https://www.fsw.cc/the-evolution-of-jet-printing-in-carpet-manufacturing/ · https://patents.google.com/patent/US4030411\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "tags": [
+      "process history",
+      "industrial",
+      "printed",
+      "checked from search results"
+    ],
+    "confidence": "suggestive",
+    "themes": [
+      "Rug-making techniques",
+      "Tools & equipment"
+    ],
+    "status": "unverified"
+  },
+  {
+    "id": "process-industrial-carpet-tile",
+    "type": "finding",
+    "title": "Carpet tiles: Heuga's bitumen-backed needlefelt squares (Netherlands, c. 1956–58)",
+    "creator": "P. J. van Heugten (Heuga)",
+    "place": "Netherlands",
+    "region": "Netherlands",
+    "date": "c. 1956–1958 (sources differ)",
+    "dateStart": 1956,
+    "dateEnd": 1958,
+    "sourceUrl": "https://floordaily.net/?p=20185",
+    "techniques": [
+      "carpet tile",
+      "needle-punch",
+      "fusion bonding (later)"
+    ],
+    "materials": [
+      "needlefelt",
+      "bitumen backing"
+    ],
+    "description": "How it works: carpet is made or backed so that it lies flat and stable when cut into squares. Early tiles used a heavy bitumen backing on needlefelt, and later ones used fusion-bonded or tufted face cloth with PVC or other backings. Tiles can be laid loose and lifted to reach wiring under office floors. History: a 2007 Floor Daily article credits the Dutch firm Heuga, which had made bicycle saddle covers and bought a needlepunch machine, with the first carpet tile about 50 years earlier. Its owner, P. J. van Heugten, wanted to cut the waste from wall-to-wall offcuts. The first tile was a bitumen-backed, 10-inch-square needlefelt. Conflicts: UK retailers say Heuga was founded in 1956, or that the first commercial tile came in 1958. The 1968 US 'HEUGA' trademark filing is not the invention date. Encyclopedia.com says tiles spread in the 1980s in open-plan offices. Interface (founded 1973) later bought Heuga (1988 per one source). Sources: https://floordaily.net/?p=20185 · https://dctuk.com/blog/where-is-heuga · https://www.encyclopedia.com/social-sciences-and-law/economics-business-and-labor/businesses-and-occupations/interface-inc · https://trademark.justia.com/owners/van-heugten-western-hemisphere-a-g-109064\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "tags": [
+      "process history",
+      "industrial",
+      "carpet tile",
+      "checked from search results"
+    ],
+    "confidence": "suggestive",
+    "themes": [
+      "Rug-making techniques",
+      "Tools & equipment"
+    ],
+    "status": "unverified"
   }
 ];
