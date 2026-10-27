@@ -7121,11 +7121,11 @@ window.RUG_ITEMS = [
     "creator": "Sims Textile Co.",
     "place": "Dalton, Georgia",
     "region": "United States",
-    "institution": "Seen in Dalton, Georgia (confirm holding institution; the sheets may be facsimiles)",
+    "institution": "Bandy Heritage Center, Dalton State College",
     "date": "after 1945 (the company was founded in 1945)",
     "dateStart": 1945,
     "dateEnd": 1959,
-    "description": "Three mail-order sheets selling everything needed to start a home chenille business, with a small tufted sample and a yarn tassel.\n\nAs read from the photo (check against the originals):\n- \"The Electric Chenille Machine Complete With Table and Motor. Ready to plug into your light circuit and operate.\" A labelled drawing of a sewing-machine head (needle, presser foot, stitch adjuster, yarn tension, chenille yarn on a stand) on a table with motor, clutch and stop-and-start treadle. $150.00 complete, F.O.B. Dalton.\n- Heads only: 1-needle $75, 2-needle $85, 4-needle $95, 8-needle $100. Complete with table and motor: $150, $160, $170, $180.\n- Extra needles 15¢ each ($1.75 per dozen); extra \"hooks\" and \"cutters\" priced separately. $25 deposit per machine, balance C.O.D.\n- Yarn list: retail orders of any quantity; wholesale only in 200-lb case lots; direct mill shipments in 75 standard colours, minimum 300 lb per colour, F.O.B. the mill at Carrollton, Ga.\n- \"Miscellaneous Information\": advice on mark-up and profits, making good products, and the cost of producing a 1-needle bedspread (sheeting per spread, then a few cents each for tearing, hemming and stamping the pattern). It mentions the highway \"Spread Line\".\n\nWhy it matters: shows the post-war home-industry stage, when a household could buy a motorised single- or multi-needle chenille machine by mail and plug it in. This is the bridge between hand tufting and the factory multi-needle machine.\n\nCompany: per a Dalton business history, Pete Sims started Sims Textile Company in 1945, making single-needle tufting machines and selling yarn, sheeting and a mail-order catalog of bedspread patterns; it later became a warehouse (incorporated 1972). Source: https://www.fsw.cc/?p=873",
+    "description": "Seen at the Bandy Heritage Center for Northwest Georgia, on the Dalton State campus (https://www.bandyheritagecenter.org/). Three mail-order sheets selling everything needed to start a home chenille business, with a small tufted sample and a yarn tassel.\n\nAs read from the photo (check against the originals):\n- \"The Electric Chenille Machine Complete With Table and Motor. Ready to plug into your light circuit and operate.\" A labelled drawing of a sewing-machine head (needle, presser foot, stitch adjuster, yarn tension, chenille yarn on a stand) on a table with motor, clutch and stop-and-start treadle. $150.00 complete, F.O.B. Dalton.\n- Heads only: 1-needle $75, 2-needle $85, 4-needle $95, 8-needle $100. Complete with table and motor: $150, $160, $170, $180.\n- Extra needles 15¢ each ($1.75 per dozen); extra \"hooks\" and \"cutters\" priced separately. $25 deposit per machine, balance C.O.D.\n- Yarn list: retail orders of any quantity; wholesale only in 200-lb case lots; direct mill shipments in 75 standard colours, minimum 300 lb per colour, F.O.B. the mill at Carrollton, Ga.\n- \"Miscellaneous Information\": advice on mark-up and profits, making good products, and the cost of producing a 1-needle bedspread (sheeting per spread, then a few cents each for tearing, hemming and stamping the pattern). It mentions the highway \"Spread Line\".\n\nWhy it matters: shows the post-war home-industry stage, when a household could buy a motorised single- or multi-needle chenille machine by mail and plug it in. This is the bridge between hand tufting and the factory multi-needle machine.\n\nCompany: per a Dalton business history, Pete Sims started Sims Textile Company in 1945, making single-needle tufting machines and selling yarn, sheeting and a mail-order catalog of bedspread patterns; it later became a warehouse (incorporated 1972). Source: https://www.fsw.cc/?p=873",
     "themes": [
       "Machine tufting & Dalton",
       "Chenille & candlewick",
@@ -7137,8 +7137,7 @@ window.RUG_ITEMS = [
       "Bandy visit",
       "price list",
       "home industry",
-      "single-needle machine",
-      "confirm location"
+      "single-needle machine"
     ],
     "status": "unverified",
     "confidence": "suggestive",
@@ -7152,7 +7151,7 @@ window.RUG_ITEMS = [
     "imageCredit": "Photo: Tuft the World",
     "imageSource": "own",
     "rights": "own",
-    "collection": "Photo: Tuft the World, taken on a visit to Dalton, Georgia (Bandy Heritage Center and local museum). The photograph is yours; the objects belong to the holding institution, so check its photo policy before publishing outside the database."
+    "collection": "Photo: Tuft the World, taken at the Bandy Heritage Center, Dalton State College, Dalton, Georgia. The photograph is yours; the sheets belong to the center, so check its photo policy before publishing outside the database."
   },
   {
     "id": "own-spool-axminster-loom",

@@ -155,6 +155,10 @@ main { max-width: 1520px; margin: 0 auto; padding: 24px 24px 80px; }
 .search:focus-within { border-color: var(--focus); box-shadow: 0 0 0 3px color-mix(in srgb, var(--focus) 22%, transparent); }
 .search input { flex: 1; min-width: 0; border: 0; background: none; outline: none; font-size: 1.0625rem; color: var(--ink); }
 .search input::placeholder { color: var(--ink-3); }
+/* Native option lists: give them the theme's colours. Without this, a select with a transparent
+   background (the chapter picker) opens a white list with light dark-mode text. */
+select option, select optgroup { background-color: var(--surface); color: var(--ink); }
+select optgroup { color: var(--ink-2); font-weight: 650; }
 .search kbd { font: 500 var(--t-xs) var(--font); border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 4px; padding: 1px 6px; color: var(--ink-3); }
 .search-tools { display: flex; gap: 8px; align-items: center; }
 .select select, .h1-select, .form-grid select {
