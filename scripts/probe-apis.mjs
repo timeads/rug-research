@@ -9,6 +9,12 @@ const e = encodeURIComponent(Q);
 const ONLY = process.argv[2] ? process.argv[2].split(",") : null;
 const SAMPLE = Number(process.argv[3]) || 2500;
 const APIS = {
+  wtMuseumHome: `https://museumcollection.winterthur.org/`,
+  wtMuseumSearch: `https://museumcollection.winterthur.org/search?q=${e}`,
+  wtLibraryHome: `https://library.winterthur.org/`,
+  wtDigitalSearch: `https://digitalcollections.winterthur.org/search?query=${e}`,
+  wtFindingAids: `https://findingaid.winterthur.org/`,
+  hagleyDigitalSearch: `https://digital.hagley.org/islandora/search/${e}?type=dismax`,
   met11: `https://collectionapi.metmuseum.org/public/collection/v1.1/search?q=${e}&hasImages=true&limit=3`,
   metobj: `https://collectionapi.metmuseum.org/public/collection/v1/objects/14535`,
   met: `https://collectionapi.metmuseum.org/public/collection/v1/search?hasImages=true&q=${e}`,
