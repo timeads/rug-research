@@ -1,0 +1,41 @@
+name: Fetch images
+
+# Looks up real museum/library images for records that don't have one and
+# commits the image links back to data/items.js.
+on:
+  workflow_dispatch:
+    inputs:
+      refresh:
+        description: "Re-check images that were found automatically before"
+        type: boolean
+        default: false
+  push:
+    paths: ["data/items.js"]
+  schedule:
+    - cron: "17 6 * * 1"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fetch-images
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Look up images
+        run: node scripts/fetch-images.mjs ${{ inputs.refresh && '--refresh' || '' }}
+      - name: Commit image links
+        run: |
+          if git diff --quiet data/items.js; then echo "No new images."; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898+github-actions[bot]@users.noreply.github.com"
+          git add data/items.js
+          git commit -m "Add image links found by image lookup"
+          git push
