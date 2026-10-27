@@ -225,6 +225,7 @@ async function primary(item) {
   if (special) { const r = await special.run(item); if (r && (await isImage(r.image))) return r; }
   // Search-engine links, PDFs and finding aids rarely carry an object image.
   if (/google\.com\/search|\.pdf($|\?)/i.test(item.sourceUrl)) return null;
+  if (/web\.archive\.org\//.test(item.sourceUrl)) return null; // an archived copy's images are the archive's banners
   return fromPage(item);
 }
 async function resolve(item) {

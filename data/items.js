@@ -255,8 +255,8 @@ window.RUG_ITEMS = [
     "dateStart": 1984,
     "publisher": "Garland",
     "institution": "Winterthur Library",
-    "description": "Finding aid to Winterthur's trade catalogs, arranged by type of goods and indexed chronologically, geographically and by name. Use the floor coverings entries to build a list of carpet/rug catalogs to request.",
-    "sourceUrl": "https://origin-www.alibris.com/Trade-Catlgs-Winterthur-Richard-E-McKinstry/book/11606707",
+    "description": "Finding aid to Winterthur's trade catalogs, arranged by type of goods and indexed chronologically, geographically and by name. Use the floor coverings entries to build a list of carpet/rug catalogs to request.\n\nLink note (Oct 2026): the bookseller page this cited no longer answers; the link is now the Open Library catalogue record for the book.",
+    "sourceUrl": "https://openlibrary.org/works/OL2649034W",
     "themes": [
       "Trade catalogs & marketing"
     ],
@@ -1156,7 +1156,7 @@ window.RUG_ITEMS = [
     "publisher": "Wadsworth Atheneum",
     "identifier": "OCLC 578197; LCCN 72088680",
     "description": "80-page catalog of a loan exhibition, 9 Nov.–31 Dec. 1972. The standard survey of American bed rugs; check its object list for Winterthur loans.",
-    "sourceUrl": "https://discovery.nypl.org/research/research-catalog/bib/b10248634",
+    "sourceUrl": "https://www.nypl.org/research/research-catalog/bib/b10248634",
     "themes": [
       "Early tufting: bed rugs & needlework pile"
     ],
@@ -1234,7 +1234,7 @@ window.RUG_ITEMS = [
     ],
     "dimensions": "approx. 33 × 16 in.",
     "description": "Red and white handmade rug inscribed \"NEW V-8 FORD 1936\", made as a thank-you gift to Henry Ford. A dated, homemade chenille (tufted) rug from the hand-tufting era, before tufted carpet was industrialized. Not on exhibit.",
-    "sourceUrl": "https://www.thehenryford.org/collections-and-research/digital-collections/artifact/66143/",
+    "sourceUrl": "https://www.thehenryford.org/collections/explore/artifact/66143",
     "themes": [
       "Chenille & candlewick",
       "Machine tufting & Dalton"
@@ -1660,7 +1660,7 @@ window.RUG_ITEMS = [
     "type": "finding",
     "title": "Beijing palace carpet weaving: state-listed heritage \"in danger of being lost\"",
     "region": "China",
-    "description": "Western Han origin from the Western Regions; mature by the Tang. 1900 gold medal at the Paris Exposition; 1920: 354 workshops; 1956: Beijing No. 1 Carpet Factory (joint state-private).\n\nCitation check (Oct 2026, from search results; pages not opened): confirmed.\nThe quotes and facts were found on the ihchina entry: 西汉由西域传入, mature by the Tang, 1900 Paris Exposition gold medal, 1920 with 354 workshops, the 1956 joint state-private Beijing No. 1 Carpet Factory, and 后继乏人，织造技艺面临失传的危险. The 354 figure counts workshops (作坊), and the record's description is consistent with that. Listing details vary: ihchina says 2nd national batch (2008), with Beijing Huafang Carpet Art Co. as the safeguarding unit, while other sources say 2009 or 2010. Some sources say Beijing carpets won multiple expo awards, including New York 1904.\nSource: 地毯织造技艺（北京宫毯织造技艺）(Carpet weaving: Beijing palace carpet weaving), 中国非物质文化遗产网 (China Intangible Cultural Heritage Network).\nFound at: https://www.ihchina.cn/project_details/14500\nAlso: https://www.chinanews.com.cn/cul/2011/09-26/3354245.shtml · https://baike.baidu.com/item/%E5%AE%AB%E6%AF%AF/9488470",
+    "description": "Western Han origin from the Western Regions; mature by the Tang. 1900 gold medal at the Paris Exposition; 1920: 354 workshops; 1956: Beijing No. 1 Carpet Factory (joint state-private).\n\nCitation check (Oct 2026, from search results; pages not opened): confirmed.\nThe quotes and facts were found on the ihchina entry: 西汉由西域传入, mature by the Tang, 1900 Paris Exposition gold medal, 1920 with 354 workshops, the 1956 joint state-private Beijing No. 1 Carpet Factory, and 后继乏人，织造技艺面临失传的危险. The 354 figure counts workshops (作坊), and the record's description is consistent with that. Listing details vary: ihchina says 2nd national batch (2008), with Beijing Huafang Carpet Art Co. as the safeguarding unit, while other sources say 2009 or 2010. Some sources say Beijing carpets won multiple expo awards, including New York 1904.\nSource: 地毯织造技艺（北京宫毯织造技艺）(Carpet weaving: Beijing palace carpet weaving), 中国非物质文化遗产网 (China Intangible Cultural Heritage Network).\nFound at: https://www.ihchina.cn/project_details/14500\nAlso: https://www.chinanews.com.cn/cul/2011/09-26/3354245.shtml · https://baike.baidu.com/item/%E5%AE%AB%E6%AF%AF/9488470\n\nLink note (Oct 2026): the page does not answer from outside China. The link is now the Internet Archive's copy of 20 Sep 2025; the original address was https://www.ihchina.cn/project_details/14500.",
     "themes": [
       "Global diffusion of tufting",
       "Woven carpet"
@@ -1677,7 +1677,7 @@ window.RUG_ITEMS = [
     "language": "zh-Hans",
     "translation": "Carpet weaving entered China from the Western Regions in the Western Han; by the Tang, weaving in the Central Plains was largely mature … No successors; the technique faces the danger of being lost.",
     "publisher": "中国非物质文化遗产网 (state intangible heritage registry)",
-    "sourceUrl": "https://www.ihchina.cn/project_details/14500"
+    "sourceUrl": "https://web.archive.org/web/20250920054023/https://www.ihchina.cn/project_details/14500"
   },
   {
     "id": "ner-cn-beijing-export",
@@ -2581,7 +2581,7 @@ window.RUG_ITEMS = [
     "type": "book",
     "title": "『日本カーペット工業史』 History of the Japanese Carpet Industry (2008)",
     "region": "Japan",
-    "description": "The definitive Japanese-language source, from hand-woven dantsu to the present. ¥5,000 including shipping; order from the association, 06-6809-2868.\n\nCitation check (Oct 2026, from search results; pages not opened): confirmed.\nQuote and price (税込5,000円, 送料込み) are confirmed; the price page is dated around Jan 2023. Add: it was published April 2008 as the 50th-anniversary project of 日本特殊毛織物等工業組合. The phone number 06-6809-2868 was not verified.\nSource: 組合発行書籍のご案内 (Association publications) – 日本カーペット工業組合, April 2008.\nFound at: http://www.carpet.or.jp/publics/index/95/detail=1/c_id=524/page524=1\nAlso: https://carpet.or.jp/aboutus/",
+    "description": "The definitive Japanese-language source, from hand-woven dantsu to the present. ¥5,000 including shipping; order from the association, 06-6809-2868.\n\nCitation check (Oct 2026, from search results; pages not opened): confirmed.\nQuote and price (税込5,000円, 送料込み) are confirmed; the price page is dated around Jan 2023. Add: it was published April 2008 as the 50th-anniversary project of 日本特殊毛織物等工業組合. The phone number 06-6809-2868 was not verified.\nSource: 組合発行書籍のご案内 (Association publications) – 日本カーペット工業組合, April 2008.\nFound at: http://www.carpet.or.jp/publics/index/95/detail=1/c_id=524/page524=1\nAlso: https://carpet.or.jp/aboutus/\n\nLink note (Oct 2026): the Japan Carpet Manufacturers Association rebuilt its website and this page is gone. The link is now the Internet Archive's copy of 17 Oct 2025; the original address was http://www.carpet.or.jp/publics/index/95/detail=1/c_id=524/page524=1.",
     "themes": [
       "Global diffusion of tufting"
     ],
@@ -2601,7 +2601,7 @@ window.RUG_ITEMS = [
     "date": "2008",
     "dateStart": 2008,
     "creator": "日本カーペット工業組合",
-    "sourceUrl": "http://www.carpet.or.jp/publics/index/95/detail=1/c_id=524/page524=1",
+    "sourceUrl": "https://web.archive.org/web/20251017034058/http://www.carpet.or.jp/publics/index/95/detail=1/c_id=524/page524=1",
     "imageSource": "rejected"
   },
   {
@@ -4711,13 +4711,13 @@ window.RUG_ITEMS = [
     "status": "unverified",
     "confidence": "suggestive",
     "dateStart": 1889,
-    "sourceUrl": "https://gracesguide.co.uk/Wilton_Royal_Carpet_Factory"
+    "sourceUrl": "https://www.gracesguide.co.uk/Wilton_Royal_Carpet_Factory"
   },
   {
     "id": "nps-wilton-america",
     "type": "finding",
     "title": "Brussels and Wilton carpet reached America in the 1750s; Americans favoured Wilton",
-    "description": "From inventories and auction advertisements, per the National Park Service's history of Independence Hall furnishings.",
+    "description": "From inventories and auction advertisements, per the National Park Service's history of Independence Hall furnishings.\n\nLink note (Oct 2026): the National Park Service moved its online books and this chapter now redirects to a general page. The link is now the Internet Archive's copy of 6 Feb 2025; the original address was https://www.nps.gov/parkhistory/online_books/inde/anderson/chap2.htm.",
     "region": "United States",
     "themes": [
       "Woven carpet"
@@ -4731,7 +4731,7 @@ window.RUG_ITEMS = [
     "confidence": "suggestive",
     "dateStart": 1750,
     "date": "1750s",
-    "sourceUrl": "https://www.nps.gov/parkhistory/online_books/inde/anderson/chap2.htm"
+    "sourceUrl": "https://web.archive.org/web/20250206041128/https://www.nps.gov/parkhistory/online_books/inde/anderson/chap2.htm"
   },
   {
     "id": "bigelow-power-loom",
@@ -7416,9 +7416,9 @@ window.RUG_ITEMS = [
     "region": "Belgium",
     "date": "founded 1991",
     "dateStart": 1991,
-    "sourceUrl": "https://materialbank.eu/partner/limitededition",
+    "sourceUrl": "https://www.le.be/",
     "institution": "Limited Edition",
-    "description": "Family company founded in 1991 that began with sisal rug borders and edge finishes, then (per the founder) bought struggling weaving and tufting companies and renovated their collections. Says it spins and dyes yarn, weaves, tufts and finishes in Mouscron, with hand-tufted rugs as a main category alongside flatweaves and braids, all \"100% designed and produced in Belgium\". About 100 staff in an older interview, 200+ in later articles.\n\nWhy it matters: a vertically integrated European hand-tufter in Belgium, the country of Balta and Beaulieu's machine-made output—useful contrast of hand and machine tufting in one region.\n\nDates: 1991 consistent across sources (TLmag interview and retailers); headcounts vary by date. No official history page was found in search; sourceUrl is a partner profile.\n\nIndependent sources: https://tlmagazine.com/limited-edition-art-of-the-rug/ · https://livingedge.com.au/inspiration/blog-news/blog-limited-edition-inside-the-atelier.html · https://grshop.com/blog/wall-floor-coverings/new-floor-coverings-with-a-story-limited-edition-rugs-100-made-in-belgium.html\n\nResearch note (Oct 2026): facts taken from search-result summaries; the pages themselves weren't opened. Check the cited pages before quoting.",
+    "description": "Family company founded in 1991 that began with sisal rug borders and edge finishes, then (per the founder) bought struggling weaving and tufting companies and renovated their collections. Says it spins and dyes yarn, weaves, tufts and finishes in Mouscron, with hand-tufted rugs as a main category alongside flatweaves and braids, all \"100% designed and produced in Belgium\". About 100 staff in an older interview, 200+ in later articles.\n\nWhy it matters: a vertically integrated European hand-tufter in Belgium, the country of Balta and Beaulieu's machine-made output—useful contrast of hand and machine tufting in one region.\n\nDates: 1991 consistent across sources (TLmag interview and retailers); headcounts vary by date. No official history page was found in search; sourceUrl is a partner profile.\n\nIndependent sources: https://tlmagazine.com/limited-edition-art-of-the-rug/ · https://livingedge.com.au/inspiration/blog-news/blog-limited-edition-inside-the-atelier.html · https://grshop.com/blog/wall-floor-coverings/new-floor-coverings-with-a-story-limited-edition-rugs-100-made-in-belgium.html\n\nResearch note (Oct 2026): facts taken from search-result summaries; the pages themselves weren't opened. Check the cited pages before quoting.\n\nLink note (Oct 2026): the Material Bank partner page this was drawn from (https://materialbank.eu/partner/limitededition) is gone; the link is now the company's own site, le.be (formerly limitededition.be).",
     "themes": [
       "Companies & modern tufting",
       "Global diffusion of tufting"
@@ -7662,7 +7662,7 @@ window.RUG_ITEMS = [
     "region": "United Kingdom",
     "date": "founded 1956",
     "dateStart": 1956,
-    "sourceUrl": "https://cormarcarpets.co.uk/about-us/our-history",
+    "sourceUrl": "https://www.cormarcarpets.co.uk/about-us/our-history/",
     "institution": "Cormar Carpets",
     "description": "Neville Cormack, aged 26, bought two tufting machines at a Manchester machinery exhibition in 1955 and in 1956 founded Cormar Carpets, the company says \"with the advent of a new method of making carpet, called tufted\". Production began at Nunn Hills Mill, moved to Brookhouse Mill, Greenmount in 1959, and added Holme Mill, Ramsbottom in 1973. Still family-run (son David from 1987; Helen and Edward Polito now).\n\nWhy it matters: an early British adopter of American tufting machines in the heartland of woven carpet; dates the arrival of tufting in UK manufacturing.\n\nDates: 1955/1956 consistent (company, Wikipedia, The Manufacturer). Headcount 280 vs 400+.\n\nIndependent sources: https://en.wikipedia.org/wiki/Cormar_Carpets · https://www.themanufacturer.com/articles/cormar-carpets-marks-70-years-of-british-manufacturing/ · https://ramsbottomheritage.org.uk/holme-mill/\n\nResearch note (Oct 2026): facts taken from search-result summaries; the pages themselves weren't opened. Check the cited pages before quoting.",
     "themes": [
@@ -9790,8 +9790,8 @@ window.RUG_ITEMS = [
     "date": "c. 1775–1790",
     "dateStart": 1775,
     "dateEnd": 1790,
-    "sourceUrl": "https://www.nps.gov/parkhistory/online_books/inde/anderson/chap2.htm",
-    "description": "The National Park Service's furnishings history of Independence Hall says that by the last quarter of the 18th century a majority of middle-class houses had inexpensive Scotch carpeting, floorcloths or straw mats, and quotes Tobias Lear writing for George Washington in 1790 that 'Scotch Carpeting is almost the only kind to be found here in New York'. The same chapter says Brussels and Wilton reached America in the 1750s (see existing record nps-wilton-america). Why it matters: imported loom-woven flat carpet was the everyday floor covering before American mills existed. Single source. Sources: https://www.nps.gov/parkhistory/online_books/inde/anderson/chap2.htm\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "sourceUrl": "https://web.archive.org/web/20250206041128/https://www.nps.gov/parkhistory/online_books/inde/anderson/chap2.htm",
+    "description": "The National Park Service's furnishings history of Independence Hall says that by the last quarter of the 18th century a majority of middle-class houses had inexpensive Scotch carpeting, floorcloths or straw mats, and quotes Tobias Lear writing for George Washington in 1790 that 'Scotch Carpeting is almost the only kind to be found here in New York'. The same chapter says Brussels and Wilton reached America in the 1750s (see existing record nps-wilton-america). Why it matters: imported loom-woven flat carpet was the everyday floor covering before American mills existed. Single source. Sources: https://www.nps.gov/parkhistory/online_books/inde/anderson/chap2.htm\n\nResearch note (Oct 2026): from search results; pages not opened.\n\nLink note (Oct 2026): the National Park Service moved its online books and this chapter now redirects to a general page. The link is now the Internet Archive's copy of 6 Feb 2025; the original address was https://www.nps.gov/parkhistory/online_books/inde/anderson/chap2.htm.",
     "tags": [
       "pre-Wilton",
       "Scotch carpet",
@@ -10214,8 +10214,8 @@ window.RUG_ITEMS = [
     "date": "1750 or 1753–1755",
     "dateStart": 1750,
     "dateEnd": 1756,
-    "sourceUrl": "https://prod.british-history.ac.uk/node/15310",
-    "description": "Hand-knotted context. The Victoria County History (Middlesex, 'Industries: Tapestry') says Parisot first employed workers from Chaillot at Paddington, then moved to Fulham, with financial help from the Duke of Cumberland; the goods were judged too costly, Parisot left for Exeter, and his stock was auctioned in January 1756. The National Trust dates the venture 1753–55 and says he recruited émigré Savonnerie weavers; a 1755 publication dates its start to 1750. Axminster Heritage says Thomas Whitty learned about knotting partly by gaining access to the Fulham works. Conflict: 1750 vs 1753 start. Sources: https://prod.british-history.ac.uk/node/15310 · https://www.nationaltrustcollections.org.uk/object/1440601 · https://library.usi.edu/record/556629 · https://axminsterheritage.org/the-birth-of-axminster-carpets/\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "sourceUrl": "https://www.british-history.ac.uk/vch/middx/vol2/pp138-139",
+    "description": "Hand-knotted context. The Victoria County History (Middlesex, 'Industries: Tapestry') says Parisot first employed workers from Chaillot at Paddington, then moved to Fulham, with financial help from the Duke of Cumberland; the goods were judged too costly, Parisot left for Exeter, and his stock was auctioned in January 1756. The National Trust dates the venture 1753–55 and says he recruited émigré Savonnerie weavers; a 1755 publication dates its start to 1750. Axminster Heritage says Thomas Whitty learned about knotting partly by gaining access to the Fulham works. Conflict: 1750 vs 1753 start. Sources: https://www.british-history.ac.uk/vch/middx/vol2/pp138-139 · https://www.nationaltrustcollections.org.uk/object/1440601 · https://library.usi.edu/record/556629 · https://axminsterheritage.org/the-birth-of-axminster-carpets/\n\nResearch note (Oct 2026): from search results; pages not opened.",
     "tags": [
       "pre-Wilton",
       "Fulham",
@@ -10242,8 +10242,8 @@ window.RUG_ITEMS = [
     "date": "1756–1761",
     "dateStart": 1756,
     "dateEnd": 1761,
-    "sourceUrl": "https://www.huguenotsofspitalfields.org/?p=1275",
-    "description": "Hand-knotted context. Passavant, a Swiss Huguenot, bought Parisot's workshop (sources say 1755 or 1756) and moved the weavers to Exeter. Huguenots of Spitalfields: only three Passavant carpets survive (V&A, Petworth House, private collection); its page features the 1758 Petworth carpet. The NPS notes Exeter carpets' 'counting warps' and a signature and date woven into the border. Axminster Heritage: Exeter Carpets stopped trading in 1761 because the carpets were too expensive. Conflict: one source places all three survivors in English country houses; the Cambridge History of Western Textiles reportedly credits Winterthur for an image of a 1757 Passavant carpet (see wint-pre-wilton-leads). Sources: https://www.huguenotsofspitalfields.org/?p=1275 · https://axminsterheritage.org/wp-content/uploads/2015/01/the-story-of-axminster-carpets.pdf · https://www.nps.gov/parkhistory/online_books/inde/anderson/chap2.htm\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "sourceUrl": "https://www.huguenotsofspitalfields.org/huguenot-towns/exeter/",
+    "description": "Hand-knotted context. Passavant, a Swiss Huguenot, bought Parisot's workshop (sources say 1755 or 1756) and moved the weavers to Exeter. Huguenots of Spitalfields: only three Passavant carpets survive (V&A, Petworth House, private collection); its page features the 1758 Petworth carpet. The NPS notes Exeter carpets' 'counting warps' and a signature and date woven into the border. Axminster Heritage: Exeter Carpets stopped trading in 1761 because the carpets were too expensive. Conflict: one source places all three survivors in English country houses; the Cambridge History of Western Textiles reportedly credits Winterthur for an image of a 1757 Passavant carpet (see wint-pre-wilton-leads). Sources: https://www.huguenotsofspitalfields.org/huguenot-towns/exeter/ · https://axminsterheritage.org/wp-content/uploads/2015/01/the-story-of-axminster-carpets.pdf · https://www.nps.gov/parkhistory/online_books/inde/anderson/chap2.htm\n\nResearch note (Oct 2026): from search results; pages not opened.",
     "tags": [
       "pre-Wilton",
       "Exeter",
@@ -11106,9 +11106,9 @@ window.RUG_ITEMS = [
     "region": "China",
     "date": "31 Aug 2011",
     "dateStart": 2011,
-    "sourceUrl": "https://highlights.paper.edu.cn/index/paper_detail/4287",
+    "sourceUrl": "https://web.archive.org/web/20210411192249/http://highlights.paper.edu.cn/index/paper_detail/4287",
     "institution": "Chongqing University",
-    "description": "Paper 《基于PMAC的簇绒机零编程数控系统研究》 ('Research on a zero-programming CNC system for tufting machines based on PMAC'). It uses a PC+NC structure built round a PMAC multi-axis motion controller. Patterns are drawn in AutoCAD, a customised CAD/CAM layer extracts contour points and generates NC code automatically, and Visual C++ software talks to the PMAC through the PComm32 library to tuft complex rug designs. It shows Chinese universities building CNC control for tufting between the first robot-gun patents and the 2014 Shenyang/Yiwu patent (pat-cn104562491a). Only a metadata page on the Sciencepaper Online (paper.edu.cn) platform was seen; the full text was not read. Whether the machine is a single gun head or a broadloom machine is not stated. Sources: https://highlights.paper.edu.cn/index/paper_detail/4287\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "description": "Paper 《基于PMAC的簇绒机零编程数控系统研究》 ('Research on a zero-programming CNC system for tufting machines based on PMAC'). It uses a PC+NC structure built round a PMAC multi-axis motion controller. Patterns are drawn in AutoCAD, a customised CAD/CAM layer extracts contour points and generates NC code automatically, and Visual C++ software talks to the PMAC through the PComm32 library to tuft complex rug designs. It shows Chinese universities building CNC control for tufting between the first robot-gun patents and the 2014 Shenyang/Yiwu patent (pat-cn104562491a). Only a metadata page on the Sciencepaper Online (paper.edu.cn) platform was seen; the full text was not read. Whether the machine is a single gun head or a broadloom machine is not stated. Sources: https://highlights.paper.edu.cn/index/paper_detail/4287\n\nResearch note (Oct 2026): from search results; pages not opened.\n\nLink note (Oct 2026): the page does not answer from outside China. The link is now the Internet Archive's copy of 11 Apr 2021; the original address was https://highlights.paper.edu.cn/index/paper_detail/4287.",
     "themes": [
       "Tools & equipment",
       "Global diffusion of tufting"
@@ -11311,9 +11311,9 @@ window.RUG_ITEMS = [
     "region": "Austria",
     "date": "2022 onwards (Vienna project undated)",
     "dateStart": 2022,
-    "sourceUrl": "https://builds.openbuilds.com/posts/137701/",
+    "sourceUrl": "https://hackaday.com/2022/03/05/robotic-tufting-gun-fires-off-cnc-textiles/",
     "institution": "OpenBuilds; Universität für angewandte Kunst Wien",
-    "description": "Besides Trueblood (event-trueblood-robotic-tufting-2022), the search found a handful of open experiments but no open-source tufting-CNC repository. (1) OpenBuilds forum, January 2022: a builder proposes putting a tufting gun on a CoreXY 3D-printer-style gantry and asks how to keep the gun facing its direction of travel. This rotation problem is the same one Wilcom solved with a rotating needle. (2) A diploma project at the University of Applied Arts Vienna, 'Tufting – parametric design & robot fabrication', rebuilt a hand tufting gun, fixed it to a 6-axis industrial robot to tuft 3D surfaces on 3D objects for upholstery and acoustic panels, and found contact pressure, speed and orientation the hard parts. Its year was not visible. (3) A 2026 Fabricademy (Textile Academy) assignment motorised a punch needle with a servo and 3D-printed gear. No KUKA or ABB industrial tufting projects or peer-reviewed papers were found. Sources: https://builds.openbuilds.com/posts/137701/ · https://phaidra.bibliothek.uni-ak.ac.at/o:53066 · https://class.textile-academy.org/2026/heaven-whitby/assignments/11.%20Open%20Sourced%20Hardware/\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "description": "Besides Trueblood (event-trueblood-robotic-tufting-2022), the search found a handful of open experiments but no open-source tufting-CNC repository. (1) OpenBuilds forum, January 2022: a builder proposes putting a tufting gun on a CoreXY 3D-printer-style gantry and asks how to keep the gun facing its direction of travel. This rotation problem is the same one Wilcom solved with a rotating needle. (2) A diploma project at the University of Applied Arts Vienna, 'Tufting – parametric design & robot fabrication', rebuilt a hand tufting gun, fixed it to a 6-axis industrial robot to tuft 3D surfaces on 3D objects for upholstery and acoustic panels, and found contact pressure, speed and orientation the hard parts. Its year was not visible. (3) A 2026 Fabricademy (Textile Academy) assignment motorised a punch needle with a servo and 3D-printed gear. No KUKA or ABB industrial tufting projects or peer-reviewed papers were found. Sources: https://builds.openbuilds.com/posts/137701/ · https://phaidra.bibliothek.uni-ak.ac.at/o:53066 · https://class.textile-academy.org/2026/heaven-whitby/assignments/11.%20Open%20Sourced%20Hardware/\n\nResearch note (Oct 2026): from search results; pages not opened.\n\nLink note (Oct 2026): the OpenBuilds forum address (builds.openbuilds.com) no longer resolves and has no archived copy. Also on robot-arm tufting: Hackaday, 5 Mar 2022, on Owen Trueblood's tufting gun fixed to a robot arm and controlled through an Arduino (page read Oct 2026), now the link here.",
     "themes": [
       "Hand-tufting tools & the gun",
       "Tools & equipment"
@@ -11367,9 +11367,9 @@ window.RUG_ITEMS = [
     "region": "China",
     "date": "Kickstarter 16 Jun–16 Jul (year not confirmed; probably 2023)",
     "dateStart": 2023,
-    "sourceUrl": "https://www.kicktraq.com/projects/207408103/craftphilia-worlds-first-fully-automated-tufting-machine/",
+    "sourceUrl": "https://www.baijing.cn/article/55772",
     "institution": "Craftphilia",
-    "description": "This is the first consumer-priced CNC tufter found, the hobby counterpart of Wilcom and EFAB. It was marketed on Kickstarter as the 'World's First Fully Automated Tufting Machine' (the company's own claim). Kicktraq records 634 backers and HK$4,050,697 against a HK$78,888 goal, for a 16 June–16 July campaign; the year was not shown. A search summary placed it in mid-2023, which is unconfirmed. Chinese outlet Baijing (白鲸出海) says it met its goal in about 5 minutes and raised about US$400,000 in a week, at $499 for a 50 × 50 cm frame or $849 for 70 × 140 cm. A Bilibili article gives US$450,000 in 10 days, a conflict. The company site and FAQ list the CF05 (50 × 50 cm, extendable to 50 × 100) and CF07 (70 × 70, extendable to 70 × 140). The free Craftphilia Studio software turns a JPG/PNG into colour-mapped paths. The machine does not change yarn colours itself, so the user swaps yarn by hand. Hackster reported 14–16 mm pile. Context: Shenzhen start-up CLAWLAB (founded Dec 2022 by ex-DJI engineer Hu Wenxin) launched a lightweight hand tufting kit on Kickstarter on 25 Apr 2024. It is not a CNC, but shows Chinese hardware firms selling into the hobby-tufting boom. Sources: https://www.kicktraq.com/projects/207408103/craftphilia-worlds-first-fully-automated-tufting-machine/ · https://www.baijing.cn/article/55772 · https://www.hackster.io/news/the-fully-automatic-craftphilia-tufting-machine-launches-on-kickstarter-with-a-bang-d6b216300ca9 · https://www.craftphilia.com/pages/faq · https://www.bilibili.com/read/cv51243845\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "description": "This is the first consumer-priced CNC tufter found, the hobby counterpart of Wilcom and EFAB. It was marketed on Kickstarter as the 'World's First Fully Automated Tufting Machine' (the company's own claim). Kicktraq records 634 backers and HK$4,050,697 against a HK$78,888 goal, for a 16 June–16 July campaign; the year was not shown. A search summary placed it in mid-2023, which is unconfirmed. Chinese outlet Baijing (白鲸出海) says it met its goal in about 5 minutes and raised about US$400,000 in a week, at $499 for a 50 × 50 cm frame or $849 for 70 × 140 cm. A Bilibili article gives US$450,000 in 10 days, a conflict. The company site and FAQ list the CF05 (50 × 50 cm, extendable to 50 × 100) and CF07 (70 × 70, extendable to 70 × 140). The free Craftphilia Studio software turns a JPG/PNG into colour-mapped paths. The machine does not change yarn colours itself, so the user swaps yarn by hand. Hackster reported 14–16 mm pile. Context: Shenzhen start-up CLAWLAB (founded Dec 2022 by ex-DJI engineer Hu Wenxin) launched a lightweight hand tufting kit on Kickstarter on 25 Apr 2024. It is not a CNC, but shows Chinese hardware firms selling into the hobby-tufting boom. Sources: https://www.kicktraq.com/projects/207408103/craftphilia-worlds-first-fully-automated-tufting-machine/ · https://www.baijing.cn/article/55772 · https://www.hackster.io/news/the-fully-automatic-craftphilia-tufting-machine-launches-on-kickstarter-with-a-bang-d6b216300ca9 · https://www.craftphilia.com/pages/faq · https://www.bilibili.com/read/cv51243845\n\nResearch note (Oct 2026): from search results; pages not opened.\n\nLink note (Oct 2026): Kicktraq timed out in two checks; the link is now the baijing.cn article listed in the sources.",
     "themes": [
       "Hand-tufting tools & the gun",
       "Companies & modern tufting",
@@ -12092,7 +12092,7 @@ window.RUG_ITEMS = [
     "date": "1840s–1860 (earliest firm North American dates)",
     "dateStart": 1840,
     "dateEnd": 1860,
-    "sourceUrl": "https://historymuseum.ca/cmc/exhibitions/arts/rugs/rugs02e.html",
+    "sourceUrl": "https://web.archive.org/web/20240319123851/https://www.historymuseum.ca/cmc/exhibitions/arts/rugs/rugs02e.html",
     "techniques": [
       "hooking"
     ],
@@ -12101,7 +12101,7 @@ window.RUG_ITEMS = [
       "fabric strips",
       "yarn"
     ],
-    "description": "How it works: strips of fabric or yarn are pulled up through a woven foundation (usually burlap) with a hook, making loops on the surface (Halifax Public Libraries; Canadian Museum of History). Sources seen did not describe the hand motion in more detail. Origin theories: (1) Kent's The Hooked Rug (1930, Dodd, Mead; Tudor reissues 1937/1941) traced it to early-1800s Yorkshire floor mats, with mill workers hooking thrum ends through a backing. This is reported second-hand by Wikipedia. (2) The Canadian Encyclopedia says it probably arose independently and at the same time in Québec, the Maritimes and New England. (3) A Colonial Williamsburg label says hooking seems to have begun in New England and south-east Canada in the 1840s. (4) Viking or Scandinavian origins (dealers, Jamar) are unsupported. Burlap: the Canadian Museum of History says burlap was not sold commercially in North America until the 1850s, just when hooking spread. Colonial Williamsburg says a lack of foundation cloth held the craft back until jute burlap arrived. The oldest known Canadian hooked rug was designed by Susanna Smith (16) and hooked by her sister Abigail (13) in 1860 at New Maryland near Fredericton, New Brunswick (CMH). Repo already has Winterthur hooked rugs and the Ross 1886 punch hook. Sources: https://historymuseum.ca/cmc/exhibitions/arts/rugs/rugs02e.html · https://thecanadianencyclopedia.ca/en/article/rugs-and-rug-making · https://emuseum.colonialwilliamsburg.org/objects/59028/hooked-rug · https://en.wikipedia.org/wiki/Rug_hooking · https://rp-digitalcollections.nypl.org/items/510d47db-d3d0-a3d9-e040-e00a18064a99\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "description": "How it works: strips of fabric or yarn are pulled up through a woven foundation (usually burlap) with a hook, making loops on the surface (Halifax Public Libraries; Canadian Museum of History). Sources seen did not describe the hand motion in more detail. Origin theories: (1) Kent's The Hooked Rug (1930, Dodd, Mead; Tudor reissues 1937/1941) traced it to early-1800s Yorkshire floor mats, with mill workers hooking thrum ends through a backing. This is reported second-hand by Wikipedia. (2) The Canadian Encyclopedia says it probably arose independently and at the same time in Québec, the Maritimes and New England. (3) A Colonial Williamsburg label says hooking seems to have begun in New England and south-east Canada in the 1840s. (4) Viking or Scandinavian origins (dealers, Jamar) are unsupported. Burlap: the Canadian Museum of History says burlap was not sold commercially in North America until the 1850s, just when hooking spread. Colonial Williamsburg says a lack of foundation cloth held the craft back until jute burlap arrived. The oldest known Canadian hooked rug was designed by Susanna Smith (16) and hooked by her sister Abigail (13) in 1860 at New Maryland near Fredericton, New Brunswick (CMH). Repo already has Winterthur hooked rugs and the Ross 1886 punch hook. Sources: https://historymuseum.ca/cmc/exhibitions/arts/rugs/rugs02e.html · https://thecanadianencyclopedia.ca/en/article/rugs-and-rug-making · https://emuseum.colonialwilliamsburg.org/objects/59028/hooked-rug · https://en.wikipedia.org/wiki/Rug_hooking · https://rp-digitalcollections.nypl.org/items/510d47db-d3d0-a3d9-e040-e00a18064a99\n\nResearch note (Oct 2026): from search results; pages not opened.\n\nLink note (Oct 2026): the Canadian Museum of History removed this exhibition page. The link is now the Internet Archive's copy of 19 Mar 2024; the original address was https://historymuseum.ca/cmc/exhibitions/arts/rugs/rugs02e.html.",
     "tags": [
       "process history",
       "hooking",
@@ -12571,7 +12571,7 @@ window.RUG_ITEMS = [
     "date": "1962 (flat-screen carpet printer); 1968 (large rotary screen); 1970s jet printing",
     "dateStart": 1962,
     "dateEnd": 1976,
-    "sourceUrl": "https://zimmer-austria.com/en/node/6296",
+    "sourceUrl": "https://web.archive.org/web/20230616194018/https://www.zimmer-austria.com/en/node/6296",
     "techniques": [
       "screen printing",
       "rotary-screen printing",
@@ -12581,7 +12581,7 @@ window.RUG_ITEMS = [
       "dyes",
       "tufted nylon carpet"
     ],
-    "description": "How it works: colour is applied to plain (usually tufted) carpet after it is made. Dye is forced through a stencilled screen, flat or rotary, one screen per colour, and must reach the full depth of the pile. Later jet machines inject dye from computer-controlled jets with no screens. A US patent on rotary screens for carpet notes that deep and shag piles were hard to print, because higher squeegee pressure caused leaks (US 4030411). History (mostly self-reported by Zimmer): rotary screen machine 1955. Carpet printing from 1962 on a flat-bed machine. Large rotary-screen carpet printing in 1968 with repeats up to 3 m. Its first digital carpet system is put at 1976 by other sources, and its Chromojet later replaced screen printers. An industry article says flat-screen carpet printers used screens about 12 ft wide with about eight colours, and makers like Durkan held big screen stocks. The Milliken Millitron (1973) is already in the repo. No independent history of the first printed carpet was found. Sources: https://zimmer-austria.com/en/node/6296 · https://www.fsw.cc/the-evolution-of-jet-printing-in-carpet-manufacturing/ · https://patents.google.com/patent/US4030411\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "description": "How it works: colour is applied to plain (usually tufted) carpet after it is made. Dye is forced through a stencilled screen, flat or rotary, one screen per colour, and must reach the full depth of the pile. Later jet machines inject dye from computer-controlled jets with no screens. A US patent on rotary screens for carpet notes that deep and shag piles were hard to print, because higher squeegee pressure caused leaks (US 4030411). History (mostly self-reported by Zimmer): rotary screen machine 1955. Carpet printing from 1962 on a flat-bed machine. Large rotary-screen carpet printing in 1968 with repeats up to 3 m. Its first digital carpet system is put at 1976 by other sources, and its Chromojet later replaced screen printers. An industry article says flat-screen carpet printers used screens about 12 ft wide with about eight colours, and makers like Durkan held big screen stocks. The Milliken Millitron (1973) is already in the repo. No independent history of the first printed carpet was found. Sources: https://zimmer-austria.com/en/node/6296 · https://www.fsw.cc/the-evolution-of-jet-printing-in-carpet-manufacturing/ · https://patents.google.com/patent/US4030411\n\nResearch note (Oct 2026): from search results; pages not opened.\n\nLink note (Oct 2026): Zimmer Austria removed this newsletter page. The link is now the Internet Archive's copy of 16 Jun 2023; the original address was https://zimmer-austria.com/en/node/6296.",
     "tags": [
       "process history",
       "industrial",
