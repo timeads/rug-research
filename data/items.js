@@ -4630,7 +4630,7 @@ window.RUG_ITEMS = [
     "id": "wilton-1741",
     "type": "finding",
     "title": "Wilton: Huguenot weavers (1720s) and the first Wilton loom (1741)",
-    "description": "The 9th Earl of Pembroke brought French weavers to Wilton in the early 1700s (the firm dates it to 1721); its timeline says the first Wilton loom was patented in 1741 and credits Defosse with cutting the loops of Brussels weave. Wilton is the cut-pile variant of Brussels carpet, made on the same narrow looms. Company account: the inventor and patent are unconfirmed elsewhere.",
+    "description": "The 9th Earl of Pembroke brought French weavers to Wilton in the early 1700s (the firm dates it to 1721); its timeline says the first Wilton loom was patented in 1741 and credits Defosse with cutting the loops of Brussels weave. Wilton is the cut-pile variant of Brussels carpet, made on the same narrow looms. Company account: the inventor and patent are unconfirmed elsewhere.\n\nConflict (Oct 2026 research): the Victoria County History (Wiltshire vol. 4) gives the first written evidence of carpet at Wilton as a 1741 patent to Couran, Barford and Moody for carpet \"Moccadoes\", says that loom had no cutting device, and points to French \"moquettes\" for cut pile. The firm credits Defosse with cutting the loops in 1741, and dates its French weavers to 1721 (the town's heritage trail says 1741). See woven-wilton-1741-patent-moccadoes and woven-wilton-french-weavers.",
     "region": "United Kingdom",
     "themes": [
       "Woven carpet"
@@ -9600,5 +9600,777 @@ window.RUG_ITEMS = [
     "image": "http://www.paradigmarts.org/cdn/shop/articles/DALL-E-2023-05-29-21.08.13_1024x1024.jpg?v=1688317240",
     "imageCredit": "Paradigm Gallery + Studio",
     "imageSource": "auto"
+  },
+  {
+    "id": "woven-kidderminster-1735",
+    "type": "finding",
+    "title": "Kidderminster begins weaving flat, double-cloth 'Kidderminster' (ingrain) carpet in 1735",
+    "creator": "John Pearsall (credited by local history)",
+    "place": "Kidderminster, Worcestershire",
+    "region": "United Kingdom",
+    "date": "1735",
+    "dateStart": 1735,
+    "sourceUrl": "https://revolutionaryplayers.org.uk/?p=2924",
+    "description": "The 1911 Encyclopaedia Britannica says Kidderminster's woollen trade 'was however replaced by that of carpets, introduced in 1735', and that at first only 'Kidderminster' carpets were made until a Brussels loom was set up in 1749. The Revolutionary Players local-history site (West Midlands) credits John Pearsall with introducing carpets 'as we would recognise them' in 1735, says early pieces were closer to wall hangings, and that the product was called 'Ingrain', then 'Kidderminster', then 'Scotch' once the process moved to Scotland. Another local source says instead that two stuff weavers made the first one. The 1797 Encyclopaedia Britannica (via jimclifford.ca) reports over 250 carpet looms in the town by 1772. Why it matters: ingrain was the first carpet woven on a loom in volume in England: flat, pileless, reversible double cloth, the cheap end of the market that pile carpet (Brussels, Wilton) and much later tufted broadloom would compete against. Conflict: who made the first piece (Pearsall vs. 'two stuff weavers'). Sources: https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Kidderminster · https://revolutionaryplayers.org.uk/?p=2924 · https://jimclifford.ca/early_encyclopedia_britannica/articles/1797/eb_3rd_1797_012331.html\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "tags": [
+      "pre-Wilton",
+      "Kidderminster",
+      "ingrain",
+      "double cloth",
+      "flat-woven",
+      "checked from search results"
+    ],
+    "confidence": "solid",
+    "status": "unverified",
+    "themes": [
+      "Woven carpet"
+    ]
+  },
+  {
+    "id": "vam-t5-1959-kidderminster-sample",
+    "type": "object",
+    "title": "Sample of Kidderminster carpeting, double cloth (Dove & Co., Leeds, mid-19th century)",
+    "creator": "Dove & Co.",
+    "place": "Leeds, England",
+    "region": "United Kingdom",
+    "date": "mid-19th century",
+    "dateStart": 1840,
+    "dateEnd": 1860,
+    "institution": "Victoria and Albert Museum",
+    "identifier": "T.5-1959",
+    "sourceUrl": "https://collections.vam.ac.uk/item/O93057",
+    "description": "V&A sample woven in double cloth with a worsted warp and a woollen weft, 'a construction particular to this type of carpet'; warp in two series, wefts in two series combining blue, white, yellow, grey, green or red. Star-and-cross design. Later than the 1740s, but it is a museum-catalogued example of the Kidderminster/ingrain structure that began in 1735. The 1842 Encyclopaedia Britannica describes the same carpet as 'composed of two plies of cloth' with right and wrong sides, the colours reversed. A related V&A Dove & Co. sample (O258620, 1850s) is triple cloth. Sources: https://collections.vam.ac.uk/item/O93057 · https://jimclifford.ca/early_encyclopedia_britannica/articles/1842/eb_7th_1842_004597.html\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "tags": [
+      "pre-Wilton",
+      "Kidderminster",
+      "ingrain",
+      "double cloth",
+      "V&A",
+      "checked from search results"
+    ],
+    "confidence": "solid",
+    "status": "unverified",
+    "themes": [
+      "Woven carpet"
+    ],
+    "imageSource": "auto"
+  },
+  {
+    "id": "woven-scotch-kilmarnock",
+    "type": "finding",
+    "title": "'Scotch' carpet in Kilmarnock (from 1728?): pileless double cloth, much of it sold to Holland",
+    "creator": "Maria Gardiner (per Undiscovered Scotland)",
+    "place": "Kilmarnock, Ayrshire",
+    "region": "United Kingdom",
+    "date": "1728 (single source)",
+    "dateStart": 1728,
+    "sourceUrl": "https://www.futuremuseum.co.uk/collections/life-work/key-industries/textiles/carpet-and-linoleum-manufacture",
+    "description": "Undiscovered Scotland dates Kilmarnock carpet making to 1728, when Maria Gardiner began making carpets and blankets on hand looms with spinners and weavers brought from Dalkeith (one source only). Future Museum (south-west Scotland museums) describes Kilmarnock's early 'Scotch' carpets as pileless cloth rugs, often resembling tapestry, sold largely to Holland; Kilmarnock later wove finer pile carpets and became known across Europe once weavers took up power looms. A Dumfries & Galloway record notes the Scotch carpet was a double-thickness cloth with colours reversed underneath. By 1855–57 the Ordnance Survey name book counted six or seven carpet factories making Brussels, Wilton and Scotch carpets. Grace's Guide credits Thomas Morton of Kilmarnock with carpet-loom machinery, and another source credits him with adding a third ply ('Scotch three-ply Kidderminster'); his date (sometimes given as 1824) is unconfirmed. Conflict: 1728 is unconfirmed elsewhere, and Gregory Thomson is not mentioned in any source found. Sources: https://www.undiscoveredscotland.co.uk/kilmarnock/kilmarnock/index.html · https://www.futuremuseum.co.uk/collections/life-work/key-industries/textiles/carpet-and-linoleum-manufacture · https://www.futuremuseum.co.uk/collections/life-work/key-industries/textiles/carpet-and-linoleum-manufacture/scotch-carpets--crawick-woollen-manufactures--sanquhar · https://gracesguide.co.uk/Thomas_Morton_(of_Kilmarnock) · https://scotlandsplaces.gov.uk/digital-volumes/ordnance-survey-name-books/ayrshire-os-name-books-1855-1857/ayrshire-volume-34/3\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "tags": [
+      "pre-Wilton",
+      "Scotch carpet",
+      "Kilmarnock",
+      "ingrain",
+      "Scotland",
+      "checked from search results"
+    ],
+    "confidence": "suggestive",
+    "status": "unverified",
+    "themes": [
+      "Woven carpet"
+    ]
+  },
+  {
+    "id": "article-habib-scotch-stirling",
+    "type": "article",
+    "title": "Scotch carpets at Stirling: Thomas Gilfillan's cash book and ledger, 1764–1770 (and Axminster manufacture in Edinburgh)",
+    "creator": "Vanessa Habib",
+    "place": "Stirling and Edinburgh",
+    "region": "United Kingdom",
+    "date": "2000; 2005",
+    "dateStart": 1764,
+    "dateEnd": 1770,
+    "sourceUrl": "https://journals.socantscot.org/index.php/psas/article/view/9541",
+    "description": "Two articles in the Proceedings of the Society of Antiquaries of Scotland. The 2000 article treats Gilfillan's business books (1764–70) as rare evidence of a working Scotch carpet manufactory, describes Scotch carpets as flat, reversible, pileless woollen floor coverings encouraged by the Board of Trustees for Manufactures from the mid-18th century, and quotes a 1776 observer: Scotch carpets suited those who 'cannot afford the extravagant prices of Wilton, Axminster, and other more expensive manufactories'. The 2005 article ('Axminster carpet manufacture in Edinburgh in the mid-18th century') reports a French carpet weaver who set up a hand-knotted 'Axminster' workshop in Edinburgh and Fife, the Edinburgh society's 1755 carpet premiums, and Germain Havard, who came in 1759 from Thomas Moore's London manufactory. None of those Edinburgh carpets are known to survive. Why it matters: shows the price ladder of the 1760s–70s (Scotch/ingrain at the bottom; Wilton and hand-knotted 'Axminster' at the top). Sources: https://journals.socantscot.org/index.php/psas/article/view/9541 · https://journals.socantscot.org/index.php/psas/article/view/9650 · https://journals.socantscot.org/index.php/psas/article/download/9541/9508/9493\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "tags": [
+      "pre-Wilton",
+      "Scotch carpet",
+      "Scotland",
+      "Society of Antiquaries of Scotland",
+      "price ladder",
+      "checked from search results"
+    ],
+    "confidence": "suggestive",
+    "status": "unverified",
+    "themes": [
+      "Woven carpet"
+    ]
+  },
+  {
+    "id": "woven-scotch-carpet-america-1790",
+    "type": "finding",
+    "title": "By the late 18th century most middle-class American houses had cheap 'Scotch' carpeting (Lear letter, 1790)",
+    "place": "Philadelphia and New York",
+    "region": "United States",
+    "date": "c. 1775–1790",
+    "dateStart": 1775,
+    "dateEnd": 1790,
+    "sourceUrl": "https://www.nps.gov/parkhistory/online_books/inde/anderson/chap2.htm",
+    "description": "The National Park Service's furnishings history of Independence Hall says that by the last quarter of the 18th century a majority of middle-class houses had inexpensive Scotch carpeting, floorcloths or straw mats, and quotes Tobias Lear writing for George Washington in 1790 that 'Scotch Carpeting is almost the only kind to be found here in New York'. The same chapter says Brussels and Wilton reached America in the 1750s (see existing record nps-wilton-america). Why it matters: imported loom-woven flat carpet was the everyday floor covering before American mills existed. Single source. Sources: https://www.nps.gov/parkhistory/online_books/inde/anderson/chap2.htm\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "tags": [
+      "pre-Wilton",
+      "Scotch carpet",
+      "ingrain",
+      "colonial America",
+      "National Park Service",
+      "checked from search results"
+    ],
+    "confidence": "suggestive",
+    "status": "unverified",
+    "themes": [
+      "Woven carpet"
+    ]
+  },
+  {
+    "id": "woven-us-ingrain-1820s",
+    "type": "finding",
+    "title": "American carpet weaving: Sprague's knotted carpets (1791), then ingrain mills at Tariffville (1825) and Thompsonville (1828)",
+    "place": "Philadelphia; Simsbury and Enfield, Connecticut",
+    "region": "United States",
+    "date": "1791; 1825–1829",
+    "dateStart": 1791,
+    "dateEnd": 1829,
+    "sourceUrl": "https://connecticuthistory.org/first-connecticut-carpet-mills-emerge-in-simsbury-and-enfield",
+    "description": "Correction to a common assumption: the NPS describes William Peter Sprague's Philadelphia Carpet Manufactory (1791) as the first full-fledged commercial carpet factory in America, but it used the Axminster hand-knotting technique (he may have trained under Thomas Whitty), not ingrain. Connecticut Historical Society material calls him William R. Sprague. Flat-woven ingrain arrives at mill scale later: the Tariff Manufacturing Company, Simsbury, incorporated 1825, was Connecticut's first carpet factory and made ingrain (the Winterthur dye notebooks in record wint-lib-tariff-brussels show it later dyed Brussels yarn). Orrin Thompson founded the Thompsonville works in 1828 (mill finished early 1829), making 'inexpensive flat-woven ingrain carpeting'; this became Bigelow-Hartford. A LeRoy Historical Society article reports ingrain was still over 50 percent of US production in 1899 (single source). Sources: https://www.nps.gov/parkhistory/online_books/inde/anderson/chap1.htm · https://www.nps.gov/articles/000/senate-carpet.htm · https://connecticuthistory.org/first-connecticut-carpet-mills-emerge-in-simsbury-and-enfield · https://en.wikipedia.org/wiki/Bigelow-Hartford_Carpet_Mills · https://enfieldhistoricalsociety.org/old-town-hall/the-carpet-industry/ · https://leroyhistoricalsociety.org/Articles/2009/011809%20-%20A%20Red%20Carpet%20Affair.pdf\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "tags": [
+      "pre-Wilton",
+      "ingrain",
+      "Sprague",
+      "Thompsonville",
+      "Tariff Manufacturing",
+      "American carpet",
+      "checked from search results"
+    ],
+    "confidence": "solid",
+    "status": "unverified",
+    "themes": [
+      "Woven carpet"
+    ]
+  },
+  {
+    "id": "hne-1959-7b-ingrain",
+    "type": "object",
+    "title": "Ingrain carpet fragment, floral design on striped green ground (Parson Smith House, Maine)",
+    "place": "United States (found in Maine)",
+    "region": "United States",
+    "date": "1851–1875",
+    "dateStart": 1851,
+    "dateEnd": 1875,
+    "institution": "Historic New England",
+    "identifier": "1959.7B (GUSN-8721)",
+    "sourceUrl": "https://www.historicnewengland.org/explore/collections-access/gusn/8721",
+    "description": "Wool ingrain fragment with both selvages and a striped wool binding. Historic New England holds several more: GUSN-8722 (1959.6, 1850–70, strapwork and eight-pointed stars, from Jacob's Farmhouse, Mass.), GUSN-8664 (1993.507, 1850–80, diamond-and-vine), GUSN-24021 (1998.4941.7, Castle Tucker, 1860–90) and an 1899 Chicago ingrain sample (GUSN-8690). The selvages show the narrow loom width that was sewn into room-size carpet. Catalogue date ranges are estimates. Sources: https://www.historicnewengland.org/explore/collections-access/gusn/8721 · https://www.historicnewengland.org/explore/collections-access/gusn/8722 · https://www.historicnewengland.org/explore/collections-access/gusn/8664 · https://www.historicnewengland.org/explore/collections-access/gusn/8690\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "tags": [
+      "pre-Wilton",
+      "ingrain",
+      "Historic New England",
+      "fragment",
+      "selvage",
+      "checked from search results"
+    ],
+    "confidence": "solid",
+    "status": "unverified",
+    "themes": [
+      "Woven carpet"
+    ],
+    "imageSource": "auto"
+  },
+  {
+    "id": "cw-1976-609-4-scotch",
+    "type": "object",
+    "title": "Carpet, Scotch (ingrain), large diamond-medallion pattern",
+    "place": "Probably Britain or United States",
+    "region": "United States",
+    "date": "1830–1840",
+    "dateStart": 1830,
+    "dateEnd": 1840,
+    "institution": "Colonial Williamsburg Foundation",
+    "identifier": "1976.609.4",
+    "sourceUrl": "https://emuseum.colonialwilliamsburg.org/objects/58853/carpet-scotch",
+    "description": "Reversible length of wool Scotch or ingrain carpeting, bought in 1976 from a dealer in Camden, Ohio. Colonial Williamsburg also holds a Scotch/ingrain fragment dated 1830–60 (object 6860) and a double-cloth piece (1835–80) whose label notes that woven coverlets and ingrain carpeting share materials and weave structures, and that double and triple cloth carpeting is 'a distinctly British (and beginning in the 19th-century, American) textile tradition often referred to as ingrains'. Also comparable: MFA Boston 'piece of ingrain carpeting' (mid-19th c., double cloth, colours reverse on back). Sources: https://emuseum.colonialwilliamsburg.org/objects/58853/carpet-scotch · https://emuseum.colonialwilliamsburg.org/objects/6860/carpet-fragment-scotch-ingrain · https://emuseum.colonialwilliamsburg.org/objects/32763/woven-double-cloth-carpet-or-coverlet-fragment · https://collections.mfa.org/objects/114278\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "tags": [
+      "pre-Wilton",
+      "Scotch carpet",
+      "ingrain",
+      "Colonial Williamsburg",
+      "double cloth",
+      "checked from search results"
+    ],
+    "confidence": "solid",
+    "status": "unverified",
+    "themes": [
+      "Woven carpet"
+    ],
+    "imageSource": "auto"
+  },
+  {
+    "id": "woven-brussels-wire-loop",
+    "type": "finding",
+    "title": "Brussels carpet: looped wool pile raised over steel wires on the loom",
+    "place": "Brussels region (origin uncertain); Wilton; Kidderminster",
+    "region": "Europe",
+    "date": "by the 1740s",
+    "dateStart": 1740,
+    "sourceUrl": "https://www.britannica.com/topic/Brussels-carpet",
+    "description": "Britannica: a machine-made carpet with uncut loops, 'thought to have originated in or near Brussels', fashionable in the first half of the 19th century. The 1842 Encyclopaedia Britannica: Brussels and Wilton are woven 'in looms of the same construction' and named after the places where they were invented; long steel wires are inserted between linen and worsted warps, looping up the worsted pile. The NPS adds that Brussels was woven in strips on a 27-inch loom. Why it matters: this is the step from knotting pile by hand to forming pile mechanically on a loom, the technique that power-loom Brussels and Wilton later scaled up and that tufting eventually replaced. Gap: no source found ties the technique to Tournai specifically, except the Kidderminster legend that John Broom fetched it from 'Brussels, Tournai, or Wilton'. Dictionary.com dates the term 'Brussels carpet' to 1790–1800. Sources: https://www.britannica.com/topic/Brussels-carpet · https://jimclifford.ca/early_encyclopedia_britannica/articles/1842/eb_7th_1842_004597.html · https://www.nps.gov/parkhistory/online_books/inde/anderson/chap2.htm\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "tags": [
+      "pre-Wilton",
+      "Brussels",
+      "loop pile",
+      "wires",
+      "technique",
+      "checked from search results"
+    ],
+    "confidence": "solid",
+    "status": "unverified",
+    "themes": [
+      "Woven carpet"
+    ]
+  },
+  {
+    "id": "woven-wilton-1699-charter",
+    "type": "finding",
+    "title": "1699: Wilton's clothiers and weavers seek a charter to restrict the weaving trade (cloth, not yet carpet)",
+    "place": "Wilton, Wiltshire",
+    "region": "United Kingdom",
+    "date": "1699",
+    "dateStart": 1699,
+    "sourceUrl": "https://www.british-history.ac.uk/vch/wilts/vol6/pp24-27",
+    "description": "Checked: the Victoria County History (Wiltshire vol. 6, 'Wilton: Industry since c.1500') says that in 1699 the town sought a charter to restrict entry into the weaving trade to members of the fellowship, because outside competition had overwhelmed the old by-laws; at least 37 Wilton weavers and 25 from the surrounding area joined that year. Wilton Carpets' timeline says William III granted the clothiers and weavers a charter 'to reduce the impact of foreign competition'; another source says it limited trade within four miles to those who had served a seven-year apprenticeship. Correction: the charter concerned the woollen-cloth trade generally, not carpet weaving, which the VCH dates from 1741. The claims that a carpet factory was built at Wilton in 1655 (Wilton Carpets; Britannica's 'Royal Carpet Factory established 1655') are not supported by the VCH. Sources: https://www.british-history.ac.uk/vch/wilts/vol6/pp24-27 · https://wiltoncarpets.com/about-us/our-heritage/ · https://www.wiltontowncouncil.gov.uk/heritage-trail/\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "tags": [
+      "pre-Wilton",
+      "Wilton",
+      "charter",
+      "weavers' fellowship",
+      "company claim",
+      "checked from search results"
+    ],
+    "confidence": "solid",
+    "status": "unverified",
+    "themes": [
+      "Woven carpet"
+    ]
+  },
+  {
+    "id": "woven-wilton-1741-patent-moccadoes",
+    "type": "finding",
+    "title": "1741 patent to Couran, Barford and Moody for carpet 'Moccadoes', the first written evidence of Wilton carpet",
+    "creator": "Ignatius Couran (London merchant), John Barford (Wilton upholder), William Moody (Wilton clothier)",
+    "place": "Wilton, Wiltshire",
+    "region": "United Kingdom",
+    "date": "1741",
+    "dateStart": 1741,
+    "sourceUrl": "https://www.british-history.ac.uk/vch/wilts/vol4/pp148-182",
+    "description": "The Victoria County History (Wiltshire vol. 4, 'Textile industries since 1550') says the first written evidence of Wilton carpet is a 1741 patent to Ignatius Couran of London, merchant, John Barford of Wilton, upholder, and William Moody of Wilton, clothier, for a new method of making carpeting 'known as Moccadoes'. The VCH notes that the patented loom had no device for cutting the loops (the feature that separates Wilton 'plush' from Brussels) and suggests that French moquettes, not Wilton, were the more likely origin of that feature. It records the Kidderminster–Wilton rivalry after Kidderminster began Brussels weaving in 1749. Wiltshire Council's community-history list of patentees also names Ignatius Couran of London. Wilton Carpets dates 'the first Wilton carpet loom' patent to 1741 and credits Defosse with cutting the loops. Conflict: whether loop-cutting was part of the 1741 invention (company) or came later or from France (VCH). Sources: https://www.british-history.ac.uk/vch/wilts/vol4/pp148-182 · https://apps.wiltshire.gov.uk/communityhistory/Page/Index/4834 · https://wiltoncarpets.com/about-us/our-heritage/\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "tags": [
+      "pre-Wilton",
+      "Wilton",
+      "patent",
+      "Moccadoes",
+      "moquette",
+      "Victoria County History",
+      "checked from search results"
+    ],
+    "confidence": "solid",
+    "status": "unverified",
+    "themes": [
+      "Woven carpet"
+    ]
+  },
+  {
+    "id": "woven-wilton-french-weavers",
+    "type": "finding",
+    "title": "The Earl of Pembroke's French weavers at Wilton: 1721 or 1741? (and the 'wine cask' story)",
+    "creator": "9th Earl of Pembroke (Henry Herbert); weavers named as Anthony Defussy/Dufossy/Defosse and Peter Jemaule",
+    "place": "Wilton, Wiltshire",
+    "region": "United Kingdom",
+    "date": "1721 or 1741 (conflict)",
+    "dateStart": 1721,
+    "dateEnd": 1741,
+    "sourceUrl": "https://www.wiltontowncouncil.gov.uk/heritage-trail/",
+    "description": "All sources credit the 9th Earl of Pembroke with bringing French weavers to Wilton; they disagree on when. Wilton Town Council's Heritage Trail: in 1741 Henry, 9th Earl, brought two French carpet weavers, smuggled in wine barrels. Wiltshire Council community history and Wikipedia also say 1741. Wilton Carpets (the firm) says 1721 and keeps 1741 for the loom patent. A 1920s industrial book (Britain at Work) tells the legend of a Frenchman smuggled across the Channel in a cask. The names Anthony Defussy and Peter Jemaule appear only in a dealer's archive (Nazmiyal); the firm spells one 'Defosse'. The VCH (see woven-wilton-1741-patent-moccadoes) names different men on the 1741 patent. Treat the names and the cask story as tradition. Extends existing record wilton-1741. Sources: https://www.wiltontowncouncil.gov.uk/heritage-trail/ · https://wiltoncarpets.com/about-us/our-heritage/ · https://en.wikipedia.org/wiki/Wilton,_Wiltshire · https://nazmiyalantiquerugs.com/vintage-art-nouveau-scandinavian-swedish-rug-48330/ · https://tekniskkulturarv.dk/book/9ed6a0c7-3d5b-4bef-b920-e3a87a3a9e6e?page=335\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "tags": [
+      "pre-Wilton",
+      "Wilton",
+      "Huguenot",
+      "Pembroke",
+      "legend",
+      "company claim",
+      "date conflict",
+      "checked from search results"
+    ],
+    "confidence": "suggestive",
+    "status": "unverified",
+    "themes": [
+      "Woven carpet"
+    ]
+  },
+  {
+    "id": "woven-wilton-cutting-wire",
+    "type": "finding",
+    "title": "How cutting the loops made Wilton: the bladed or grooved wire and the 'travat' knife",
+    "place": "Wilton, Wiltshire",
+    "region": "United Kingdom",
+    "date": "18th century (exact date disputed)",
+    "dateStart": 1741,
+    "sourceUrl": "https://jimclifford.ca/early_encyclopedia_britannica/articles/1842/eb_7th_1842_004597.html",
+    "description": "The 1842 Encyclopaedia Britannica: Wilton pile is cut, giving a velvet surface, while Brussels pile stays uncut; Wilton wires had a groove along which a knife called a 'travat' ran to cut the loops. Britain at Work (1920s) says Wilton was the first English town to make Brussels carpet and that its weavers fixed 'a little cutting blade at one end of the looping wires', creating the Wilton carpet. The NPS calls Wilton 'an offshoot of the Brussels technique made on the same narrow looms, but its loops were cut to give a smooth, velvety pile'. Merriam-Webster gives 1774 as the first known use of 'Wilton' for the carpet. Why it matters: cut pile on a loom is the direct ancestor of cut-pile broadloom, and cutting the loop with a blade is the same idea later used on tufting machines. Conflict: the VCH says the 1741 loom had no cutting device (see woven-wilton-1741-patent-moccadoes). Sources: https://jimclifford.ca/early_encyclopedia_britannica/articles/1842/eb_7th_1842_004597.html · https://tekniskkulturarv.dk/book/9ed6a0c7-3d5b-4bef-b920-e3a87a3a9e6e?page=335 · https://www.nps.gov/parkhistory/online_books/inde/anderson/chap2.htm · https://www.merriam-webster.com/dictionary/wiltons\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "themes": [
+      "Woven carpet",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "pre-Wilton",
+      "Wilton",
+      "cut pile",
+      "wires",
+      "technique",
+      "checked from search results"
+    ],
+    "confidence": "solid",
+    "status": "unverified"
+  },
+  {
+    "id": "woven-kidderminster-brussels-1749",
+    "type": "finding",
+    "title": "1749: Brussels looms reach Kidderminster (John Broom and John Pearsall) and the town makes carpets 'the same as Wilton'",
+    "creator": "John Broom; John Pearsall",
+    "place": "Kidderminster, Worcestershire",
+    "region": "United Kingdom",
+    "date": "1749",
+    "dateStart": 1749,
+    "sourceUrl": "https://revolutionaryplayers.org.uk/?p=2927",
+    "description": "The 1911 Britannica says a Brussels loom was set up in Kidderminster in 1749, and the Victoria County History (Wilts.) agrees Kidderminster began Brussels weaving in 1749. Local history: John Broom, a stuff manufacturer, 'travelled to Brussels, Tournai, or Wilton' and returned with plans for the Brussels loom and immigrant workers. The source warns none of the versions can be proved and all suggest industrial espionage. Another account says Broom and Pearsall built the first Brussels loom factory at Caldwell Park Farm and, in March 1749, a two-storey, 150 ft building with 32 looms at Mount Skippet; a 1753 map shows two carpet halls leased jointly by them. A Worcester oral tradition calls him 'John Brown' and adds a spy at the skylight. Bishop Pococke (1751) reportedly noted Kidderminster carpets 'the same as Wilton' (only secondary citations seen). Conflicting dates: an 1831 topographical dictionary credits 'Mr. Broom's' grandfather with Wilton and Brussels carpet in 1745; an older text says Wilton carpets were first made at Kidderminster in 1749. Sources: https://revolutionaryplayers.org.uk/?p=2927 · https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Kidderminster · https://www.british-history.ac.uk/vch/wilts/vol4/pp148-182 · https://www.worcesterpeopleandplaces.org.uk/news/737/146/A-Carpet-Spy-In-Kidderminster.html · https://parishmouse.co.uk/england/worcestershire/kidderminster-a-topographical-dictionary-of-england-1831/ · https://world4.eu/carpets-design-19th-century/\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "tags": [
+      "pre-Wilton",
+      "Kidderminster",
+      "Brussels",
+      "Broom",
+      "Pearsall",
+      "industrial espionage",
+      "date conflict",
+      "checked from search results"
+    ],
+    "confidence": "solid",
+    "status": "unverified",
+    "themes": [
+      "Woven carpet"
+    ]
+  },
+  {
+    "id": "article-tetley-18c-floor-coverings",
+    "type": "article",
+    "title": "18th-century British Floor Coverings",
+    "creator": "Heather Tetley",
+    "region": "United Kingdom",
+    "date": "undated (Building Conservation Directory)",
+    "dateStart": 1700,
+    "dateEnd": 1800,
+    "sourceUrl": "https://buildingconservation.com/articles/floor-coverings/floor-coverings.htm",
+    "description": "Conservation-trade overview of 18th-century British floor coverings. Says ingrain/Scotch/Kidderminster were popular, woven double-sided, with more colour and design than most floor coverings of the period ('a coarser version of the Welsh blankets of today'), and that looped-pile Brussels and cut-velvet Wilton began to be made in 1740 (compare 1741 patent; 1749 at Kidderminster). Useful single overview for a chapter section; its 1740 date is rounder than the documentary 1741. Sources: https://buildingconservation.com/articles/floor-coverings/floor-coverings.htm\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "tags": [
+      "pre-Wilton",
+      "overview",
+      "Brussels",
+      "Wilton",
+      "ingrain",
+      "conservation",
+      "checked from search results"
+    ],
+    "confidence": "suggestive",
+    "status": "unverified",
+    "themes": [
+      "Woven carpet"
+    ]
+  },
+  {
+    "id": "vam-t11-1981-garthwaite-brussels",
+    "type": "object",
+    "title": "Brussels carpet sample woven in 1980 after a design by Anna Maria Garthwaite dated 1753",
+    "creator": "Hugh Mackay & Co. (weaver); Anna Maria Garthwaite (designer)",
+    "place": "England",
+    "region": "United Kingdom",
+    "date": "1980 (design dated 1753)",
+    "dateStart": 1753,
+    "institution": "Victoria and Albert Museum",
+    "identifier": "T.11-1981",
+    "sourceUrl": "https://collections.vam.ac.uk/item/O258637/carpet-sample-anna-maria-garthwaite",
+    "description": "A modern Brussels-loom sample, given by the makers, after a design by the Spitalfields silk designer Anna Maria Garthwaite dated 1753. The weave is modern, but the record shows a mid-18th-century design woven in the Brussels technique of the period. Garthwaite's dates differ between sources (c.1688 or 1690 to 1763). Sources: https://collections.vam.ac.uk/item/O258637/carpet-sample-anna-maria-garthwaite · https://www.english-heritage.org.uk/visit/blue-plaques/anna-maria-garthwaite/\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "tags": [
+      "pre-Wilton",
+      "Brussels",
+      "Garthwaite",
+      "V&A",
+      "reproduction",
+      "checked from search results"
+    ],
+    "confidence": "suggestive",
+    "status": "unverified",
+    "themes": [
+      "Woven carpet"
+    ],
+    "imageSource": "auto"
+  },
+  {
+    "id": "book-christie-1800-carpet-sale",
+    "type": "book",
+    "title": "Christie's sale catalogue of 150 lots of Brussels, Wilton, Venetian and Kidderminster carpets, 30 May 1800",
+    "creator": "James Christie (1730–1803)",
+    "place": "London",
+    "region": "United Kingdom",
+    "date": "1800",
+    "dateStart": 1800,
+    "institution": "New York Public Library (microfilm)",
+    "identifier": "*ZM MAY p.v. 1, no. 18; OCLC 44515494",
+    "sourceUrl": "https://www.nypl.org/research/research-catalog/bib/b14693993",
+    "description": "An 8-page London auction catalogue listing 150 lots of carpet in the four loom-woven types of the period: Brussels, Wilton, Venetian and Kidderminster. Microfilm, on-site use only (Schwarzman Building, Art & Architecture Room 300). Why it matters: an early printed trade document naming the loom-woven carpet types as stock-in-trade, about 50 years after Wilton and Kidderminster pile weaving began. Sources: https://www.nypl.org/research/research-catalog/bib/b14693993\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "themes": [
+      "Woven carpet",
+      "Trade catalogs & marketing"
+    ],
+    "tags": [
+      "pre-Wilton",
+      "auction catalogue",
+      "Christie's",
+      "NYPL",
+      "request",
+      "checked from search results"
+    ],
+    "confidence": "suggestive",
+    "status": "unverified"
+  },
+  {
+    "id": "woven-venetian-carpet",
+    "type": "finding",
+    "title": "Venetian carpet: striped, worsted-warp flat carpet for stairs and passages",
+    "region": "United Kingdom",
+    "date": "17th–19th century",
+    "dateStart": 1700,
+    "dateEnd": 1890,
+    "sourceUrl": "https://jimclifford.ca/early_encyclopedia_britannica/articles/1842/eb_7th_1842_004597.html",
+    "description": "The 1842 Encyclopaedia Britannica says Venetian carpeting was used mostly for stairs, passages and lobbies, plain versions usually striped with colours shading dark to light. The Museum of Fine Arts, Houston (object 42932, Venetian carpet, c. 1850–90) describes colourful vertical wool stripes with a linen or hemp weft, and says that by the 18th century such carpets were produced in factories as well as on home looms. Roger Oates (a maker) says the name has nothing to do with Venice and was popular before pile carpets took over (company view). Gap: 'list carpet' (woven from cloth selvages) was not found in any source searched, and no 18th-century Venetian original was found in a museum. Sources: https://jimclifford.ca/early_encyclopedia_britannica/articles/1842/eb_7th_1842_004597.html · https://emuseum.mfah.org/objects/42932/venetian-carpet · https://selvedge.org/blogs/selvedge/roger-oates\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "tags": [
+      "pre-Wilton",
+      "Venetian carpet",
+      "stair carpet",
+      "flat-woven",
+      "gap: list carpet",
+      "checked from search results"
+    ],
+    "confidence": "solid",
+    "status": "unverified",
+    "themes": [
+      "Woven carpet"
+    ]
+  },
+  {
+    "id": "savonnerie-1627",
+    "type": "finding",
+    "title": "Savonnerie, Paris: Dupont's workshop (1615) and the 1627 royal monopoly with Lourdet for knotted 'Turkish-manner' carpets",
+    "creator": "Pierre Dupont; Simon Lourdet",
+    "place": "Louvre and Chaillot, Paris",
+    "region": "France",
+    "date": "1615; 1627",
+    "dateStart": 1615,
+    "dateEnd": 1627,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Savonnerie_manufactory",
+    "description": "Context, not loom pile: Savonnerie carpets were hand-knotted. Wikipedia: Dupont set up a workshop in a former soap factory (savon) at Chaillot around 1615 after returning from the Levant; in 1627 Louis XIII granted Dupont and his former apprentice Simon Lourdet an 18-year monopoly on carpets 'in the Turkish manner'. Sotheby's gives a September 1626 partnership and an April 1627 grant of exclusive rights, with production at both the Louvre and Chaillot until 1671. The crown owned the output until 1768. Why it matters: Europe's model of a state-backed carpet manufactory, which London (Fulham) tried to copy in the 1750s. Conflict: 1615 (workshop) vs 1627 (patent). Sources: https://en.wikipedia.org/wiki/Savonnerie_manufactory · https://sothebys.com/en/auctions/ecatalogue/2014/masterworks-n09209/lot.20.html\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "tags": [
+      "pre-Wilton",
+      "Savonnerie",
+      "hand-knotted",
+      "France",
+      "context",
+      "checked from search results"
+    ],
+    "confidence": "solid",
+    "status": "unverified",
+    "themes": [
+      "Woven carpet"
+    ]
+  },
+  {
+    "id": "met-1976-155-114-savonnerie",
+    "type": "object",
+    "title": "Grande Galerie carpet with landscapes (Savonnerie, after Charles Le Brun), 1680",
+    "creator": "Savonnerie Manufactory, after designs by Charles Le Brun",
+    "place": "Paris",
+    "region": "France",
+    "date": "1680",
+    "dateStart": 1680,
+    "institution": "The Metropolitan Museum of Art",
+    "identifier": "1976.155.114",
+    "sourceUrl": "https://www.metmuseum.org/exhibitions/a-kings-carpet-louis-xiv-and-the-savonnerie",
+    "description": "Knotted and cut wool pile (symmetrical knot), 896.6 × 325.1 cm. Gift of Mr. and Mrs. Charles Wrightsman, 1976. One of the series woven for the Louvre's Grande Galerie, nearly all between 1670 and 1689; Dupont's workshop made 32 and the Lourdet workshops 60, per Sotheby's. Featured in the Met exhibition 'A King's Carpet: Louis XIV and the Savonnerie' (8 Sept 2026 – 5 March 2028). Shows the hand-knotted luxury standard that loom-woven Wilton and Brussels were cheaper alternatives to. Sources: https://www.metmuseum.org/press-releases/kings-carpet · https://www.metmuseum.org/exhibitions/a-kings-carpet-louis-xiv-and-the-savonnerie · https://www.sothebys.com/en/auctions/ecatalogue/2016/treasures-l16303/lot.11.html\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "tags": [
+      "pre-Wilton",
+      "Savonnerie",
+      "hand-knotted",
+      "Met",
+      "Louis XIV",
+      "checked from search results"
+    ],
+    "confidence": "solid",
+    "status": "unverified",
+    "themes": [
+      "Woven carpet"
+    ],
+    "imageSource": "auto"
+  },
+  {
+    "id": "fulham-parisot-1750",
+    "type": "finding",
+    "title": "Peter Parisot's Fulham carpet manufactory (1750/1753–55): Savonnerie weavers in London",
+    "creator": "Peter (Pierre) Parisot",
+    "place": "Paddington and Fulham, London; then Exeter",
+    "region": "United Kingdom",
+    "date": "1750 or 1753–1755",
+    "dateStart": 1750,
+    "dateEnd": 1756,
+    "sourceUrl": "https://prod.british-history.ac.uk/node/15310",
+    "description": "Hand-knotted context. The Victoria County History (Middlesex, 'Industries: Tapestry') says Parisot first employed workers from Chaillot at Paddington, then moved to Fulham, with financial help from the Duke of Cumberland; the goods were judged too costly, Parisot left for Exeter, and his stock was auctioned in January 1756. The National Trust dates the venture 1753–55 and says he recruited émigré Savonnerie weavers; a 1755 publication dates its start to 1750. Axminster Heritage says Thomas Whitty learned about knotting partly by gaining access to the Fulham works. Conflict: 1750 vs 1753 start. Sources: https://prod.british-history.ac.uk/node/15310 · https://www.nationaltrustcollections.org.uk/object/1440601 · https://library.usi.edu/record/556629 · https://axminsterheritage.org/the-birth-of-axminster-carpets/\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "tags": [
+      "pre-Wilton",
+      "Fulham",
+      "Parisot",
+      "Savonnerie",
+      "hand-knotted",
+      "context",
+      "date conflict",
+      "checked from search results"
+    ],
+    "confidence": "solid",
+    "status": "unverified",
+    "themes": [
+      "Woven carpet"
+    ]
+  },
+  {
+    "id": "exeter-passavant-1756",
+    "type": "finding",
+    "title": "Claude Passavant's Exeter carpet manufactory (1756–1761): costly knotted carpets, three survivors",
+    "creator": "Claude Passavant",
+    "place": "Exeter, Devon",
+    "region": "United Kingdom",
+    "date": "1756–1761",
+    "dateStart": 1756,
+    "dateEnd": 1761,
+    "sourceUrl": "https://www.huguenotsofspitalfields.org/?p=1275",
+    "description": "Hand-knotted context. Passavant, a Swiss Huguenot, bought Parisot's workshop (sources say 1755 or 1756) and moved the weavers to Exeter. Huguenots of Spitalfields: only three Passavant carpets survive (V&A, Petworth House, private collection); its page features the 1758 Petworth carpet. The NPS notes Exeter carpets' 'counting warps' and a signature and date woven into the border. Axminster Heritage: Exeter Carpets stopped trading in 1761 because the carpets were too expensive. Conflict: one source places all three survivors in English country houses; the Cambridge History of Western Textiles reportedly credits Winterthur for an image of a 1757 Passavant carpet (see wint-pre-wilton-leads). Sources: https://www.huguenotsofspitalfields.org/?p=1275 · https://axminsterheritage.org/wp-content/uploads/2015/01/the-story-of-axminster-carpets.pdf · https://www.nps.gov/parkhistory/online_books/inde/anderson/chap2.htm\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "tags": [
+      "pre-Wilton",
+      "Exeter",
+      "Passavant",
+      "Huguenot",
+      "hand-knotted",
+      "context",
+      "checked from search results"
+    ],
+    "confidence": "solid",
+    "status": "unverified",
+    "themes": [
+      "Woven carpet"
+    ]
+  },
+  {
+    "id": "axminster-whitty-1755",
+    "type": "finding",
+    "title": "Thomas Whitty finishes his first hand-knotted carpet at Axminster on Midsummer Day 1755",
+    "creator": "Thomas Whitty (b. 1716)",
+    "place": "Axminster, Devon",
+    "region": "United Kingdom",
+    "date": "1755",
+    "dateStart": 1755,
+    "sourceUrl": "https://axminsterheritage.org/the-birth-of-axminster-carpets/",
+    "description": "Hand-knotted, not loom pile: the 18th-century 'Axminster' is knotted by hand; the later machine 'Axminster' (Skinner, 1876; existing record skinner-axminster-1876) only borrowed the name. Whitty ran a cloth business from 1737 and completed his first carpet at midsummer 1755 (Wikipedia; Axminster Heritage). Accounts of his inspiration differ: a Turkish carpet seen at Cheapside market, or the French weavers at Fulham. Axminster Heritage dates the family's production 1755–1835. One Christie's essay gives 1775, apparently a typo. Sources: https://axminsterheritage.org/the-birth-of-axminster-carpets/ · https://en.wikipedia.org/wiki/Thomas_Whitty · https://en.wikipedia.org/wiki/Axminster_Carpets · https://www.britannica.com/topic/Axminster-carpet\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "tags": [
+      "pre-Wilton",
+      "Axminster",
+      "Whitty",
+      "hand-knotted",
+      "context",
+      "checked from search results"
+    ],
+    "confidence": "solid",
+    "status": "unverified",
+    "themes": [
+      "Woven carpet"
+    ]
+  },
+  {
+    "id": "rsa-carpet-premiums-1757-59",
+    "type": "event",
+    "title": "Society of Arts carpet premiums, 1757–59: Moore and Whitty share 1757; Whitty wins outright in 1759",
+    "creator": "Society for the Encouragement of Arts, Manufactures and Commerce (now RSA)",
+    "place": "London",
+    "region": "United Kingdom",
+    "date": "1757–1759",
+    "dateStart": 1757,
+    "dateEnd": 1759,
+    "sourceUrl": "https://axminsterheritage.org/wp-content/uploads/2015/01/the-story-of-axminster-carpets.pdf",
+    "description": "Prizes for English 'Turkey' (knotted) carpets to rival imports and the French. 1757: Thomas Moore of Moorfields made the finest carpet but at forty guineas; Whitty's at £15 was judged best value, and the prize was split. 1758: Whitty shared again, with Claude Passavant of Exeter (Axminster Heritage) or 'Peter Parisot of Exeter' (Christie's, Sotheby's), a name conflict. 1759: Whitty won outright (Christie's, Sotheby's). One Christie's note gives 1753, likely an error. Habib's 2005 article records parallel Edinburgh society premiums for carpets in 1755. Why it matters: shows that in the 1750s the fashionable push was for hand-knotted pile, at the same time that loom pile (Wilton, Brussels) was spreading at Wilton and Kidderminster. Sources: https://axminsterheritage.org/wp-content/uploads/2015/01/the-story-of-axminster-carpets.pdf · https://axminsterheritage.org/the-birth-of-axminster-carpets/ · https://www.christies.com.cn/lot/lot-1479292 · https://sothebys.com/en/auctions/ecatalogue/2013/a-connoisseurs-collection-l13306/lot.471.html · https://journals.socantscot.org/index.php/psas/article/view/9650\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "tags": [
+      "pre-Wilton",
+      "Royal Society of Arts",
+      "premiums",
+      "Whitty",
+      "Moore",
+      "Passavant",
+      "name conflict",
+      "checked from search results"
+    ],
+    "confidence": "solid",
+    "status": "unverified",
+    "themes": [
+      "Woven carpet"
+    ]
+  },
+  {
+    "id": "moorfields-moore",
+    "type": "finding",
+    "title": "Thomas Moore's Moorfields manufactory: knotted carpets for Robert Adam (Osterley)",
+    "creator": "Thomas Moore",
+    "place": "Moorfields, London",
+    "region": "United Kingdom",
+    "date": "c. 1757–1770s",
+    "dateStart": 1757,
+    "sourceUrl": "https://collections.soane.org/ARC4174",
+    "description": "Hand-knotted context. Moore shared the 1757 Society of Arts premium (see rsa-carpet-premiums-1757-59). The Soane Museum says the Osterley drawing-room carpet was 'executed in accordance with Adam's design by Thomas Moore of Moorfields' and survives in place; the National Trust calls it a 'hand tufted pile carpet' (its wording). Christie's: Moore made silk stockings before knotted carpets, his success owed much to Adam, and his and Whitty's were the only two workshops to survive past the mid-century. Germain Havard came from Moore's works to Scotland in 1759 (Habib). The Met's Lansdowne-room carpet shares an Adam design with V&A and Philadelphia examples, attributed to 'Axminster or Moorfields'. Sources: https://collections.soane.org/ARC4174 · https://sothebys.com/en/auctions/ecatalogue/2012/arts-of-europe-2/lot.384.html · https://www.nps.gov/parkhistory/online_books/inde/anderson/chap3.htm · https://journals.socantscot.org/index.php/psas/article/view/9541\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "tags": [
+      "pre-Wilton",
+      "Moorfields",
+      "Moore",
+      "Robert Adam",
+      "hand-knotted",
+      "context",
+      "checked from search results"
+    ],
+    "confidence": "solid",
+    "status": "unverified",
+    "themes": [
+      "Woven carpet"
+    ]
+  },
+  {
+    "id": "met-57-162-axminster",
+    "type": "object",
+    "title": "Axminster carpet, probably Thomas Whitty, c. 1780–90",
+    "creator": "Probably Axminster carpet manufactory, probably Thomas Whitty",
+    "place": "Axminster, Devon",
+    "region": "United Kingdom",
+    "date": "ca. 1780–90",
+    "dateStart": 1780,
+    "dateEnd": 1790,
+    "institution": "The Metropolitan Museum of Art",
+    "identifier": "57.162a, b",
+    "sourceUrl": "https://www.metmuseum.org/art/collection/search/202045",
+    "description": "Hand-knotted wool carpet, 23 × 16 ft (701 × 487.7 cm), bought with funds from various donors in 1957; not on view. Tentative attribution ('probably'). The best Met example of the knotted 'Axminster' that loom-woven Wilton and Brussels competed with on price. Sources: https://www.metmuseum.org/art/collection/search/202045\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "tags": [
+      "pre-Wilton",
+      "Axminster",
+      "Whitty",
+      "hand-knotted",
+      "Met",
+      "checked from search results"
+    ],
+    "confidence": "suggestive",
+    "status": "unverified",
+    "themes": [
+      "Woven carpet"
+    ],
+    "imageSource": "auto"
+  },
+  {
+    "id": "drawloom-to-jacquard-carpet",
+    "type": "finding",
+    "title": "From draw-loom and drawboy to Jacquard (1804–05): pattern control on carpet looms, adopted at Kidderminster by 1825",
+    "creator": "Joseph-Marie Jacquard; Basile Bouchon (1725)",
+    "place": "Lyon; Kidderminster",
+    "region": "Europe",
+    "date": "1725; 1804–05; c. 1825",
+    "dateStart": 1725,
+    "dateEnd": 1825,
+    "sourceUrl": "https://www.britannica.com/print/article/299152",
+    "description": "On the draw loom a second worker, the drawboy, selected the warp ends for each pattern pick, which was slow and limited pattern size (Wikipedia; Linda Hall Library). Basile Bouchon applied a perforated paper band to the draw loom in 1725. Britannica: Jacquard introduced his attachment in 1804–05; its interchangeable punched cards made any pattern automatic. Linda Hall says it did away with drawboys; Britannica Kids says he first showed it in 1801. For carpet: a Worcester local-history page says the Jacquard reached Tiverton in 1812 and was introduced at Kidderminster by 1825 by Lea, Broome & Son, cutting costs; Revolutionary Players says it replaced the 'mounture', the original pattern mechanism of the Brussels loom, and was hard for small loom shops to afford, hastening the move from cottages to loom shops. A Dickens-era Household Words piece still describes boys tending Jacquard Brussels/Wilton looms. Why it matters: Wilton and Brussels of the 1740s were draw-loom fabrics; Jacquard made figured pile cheaper and led to Bigelow's power looms (existing record bigelow-power-loom). Conflicts: 1801 vs 1804–05 for Jacquard; 1812 Tiverton vs 1825 'first in Britain'. Sources: https://www.britannica.com/print/article/299152 · https://en.wikipedia.org/wiki/Jacquard_machine · https://www.lindahall.org/about/news/scientist-of-the-day/joseph-marie-jacquard/ · https://worcesterpeopleandplaces.org.uk/news/740/146/The-Jacquard-System.html · https://revolutionaryplayers.org.uk/?p=2954 · https://djo.org.uk/household-words/volume-iv/page-189.html\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "themes": [
+      "Woven carpet",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "pre-Wilton",
+      "draw loom",
+      "drawboy",
+      "Jacquard",
+      "mounture",
+      "Kidderminster",
+      "date conflict",
+      "checked from search results"
+    ],
+    "confidence": "solid",
+    "status": "unverified"
+  },
+  {
+    "id": "thesis-mcfadden-arbuthnot-drafts",
+    "type": "book",
+    "title": "Early nineteenth-century British carpet patterns (46 'Brussels' drafts by I. Arbuthnot, 1803–06 and 1813–17)",
+    "creator": "Michelle McFadden (M.A. thesis, University of Delaware / Winterthur Program, 1993)",
+    "place": "England",
+    "region": "United Kingdom",
+    "date": "1993 (drafts 1803–1817)",
+    "dateStart": 1803,
+    "dateEnd": 1817,
+    "institution": "University of Delaware (UDSpace)",
+    "sourceUrl": "https://udspace.udel.edu/items/87a6bdac-8a10-499b-8263-a957d9a595d7",
+    "description": "Winterthur Program thesis on 46 watercolour point-paper 'drafts' for five-frame Brussels or Wilton carpet, signed and dated by I. Arbuthnot, with weaving instructions on the front and colours and quantities on the back. Commonest size 130 × 240 lashes (about a 27-inch square repeat); uses loom-gearing terms 'comber', 'point' and 'cross point'. The abstract says they hold information on the draw-loom weaving process, before Jacquard. Few English patterns of the period were previously known. The drafts were catalogued in Kidderminster in January 1989; where the originals are now held is not stated in the results. Why it matters: the closest documentary evidence found for how draw-loom Brussels and Wilton were designed and set up, within about 60 years of 1741. Sources: https://udspace.udel.edu/items/87a6bdac-8a10-499b-8263-a957d9a595d7 · https://udspace.udel.edu/items/87a6bdac-8a10-499b-8263-a957d9a595d7/full\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "themes": [
+      "Woven carpet",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "pre-Wilton",
+      "Winterthur Program",
+      "draw loom",
+      "point paper",
+      "Brussels",
+      "Wilton",
+      "thesis",
+      "checked from search results"
+    ],
+    "confidence": "suggestive",
+    "status": "unverified"
+  },
+  {
+    "id": "wint-pre-wilton-leads",
+    "type": "finding",
+    "title": "Winterthur leads for pre-Wilton and early loom-woven carpet (unconfirmed)",
+    "place": "Winterthur, Delaware",
+    "region": "United States",
+    "institution": "Winterthur Museum, Garden & Library",
+    "sourceUrl": "https://assets.cambridge.org/97805213/41073/sample/9780521341073ws.pdf",
+    "description": "No Winterthur catalogue record for an ingrain, Brussels or Wilton carpet was found through search (the collection site is poorly indexed and blocked from this sandbox). Leads to check directly: (1) the Cambridge History of Western Textiles (ed. David Jenkins, 2003) reportedly credits Winterthur for images of a 1757 carpet from Claude Passavant's Exeter manufactory and an Axminster carpet of 1765–70; this conflicts with the claim that the three surviving Passavant carpets are at the V&A, Petworth and in a private collection, so verify. (2) Winterthur Library Swatch Book Collection, Col. 50 (existing records wint-lib-swatch-books, wint-lib-tariff-brussels). (3) Winterthur Library trade catalogues on the Adam Matthew 'Trade Catalogues' platform (subscription); none found were carpet catalogues. (4) The McFadden thesis on Arbuthnot's Brussels drafts (thesis-mcfadden-arbuthnot-drafts) came from the Winterthur Program. Suggested searches on museumcollection.winterthur.org: 'ingrain', 'Kidderminster', 'Brussels', 'Venetian', 'Passavant', 'Axminster'. Sources: https://assets.cambridge.org/97805213/41073/sample/9780521341073ws.pdf · http://museumcollection.winterthur.org/index_files/index-Textiles-catalog-40-411.html · http://findingaid.winterthur.org/html/HTML_Finding_Aids/col0050.htm\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "themes": [
+      "Woven carpet",
+      "Trade catalogs & marketing"
+    ],
+    "tags": [
+      "pre-Wilton",
+      "Winterthur",
+      "request",
+      "gap",
+      "lead",
+      "checked from search results"
+    ],
+    "confidence": "unverified",
+    "status": "unverified"
   }
 ];
