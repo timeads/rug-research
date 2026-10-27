@@ -2565,7 +2565,10 @@ window.RUG_ITEMS = [
     "date": "1960s–1981",
     "dateStart": 1960,
     "dateEnd": 1981,
-    "sourceUrl": "https://carpet.or.jp/aboutus/"
+    "sourceUrl": "https://carpet.or.jp/aboutus/",
+    "image": "https://carpet.or.jp/mg/wp-content/uploads/2026/03/ogp.png",
+    "imageCredit": "carpet.or.jp",
+    "imageSource": "auto"
   },
   {
     "id": "ner-jp-industry-history-2008",
@@ -2800,7 +2803,10 @@ window.RUG_ITEMS = [
     "status": "unverified",
     "collection": "Tuft the World research brief: The Non-English Record",
     "publisher": "Sohu account 121123801 (Tianjin radio/media series 「文献里的天津」)",
-    "sourceUrl": "https://m.sohu.com/a/875737930_121123801/"
+    "sourceUrl": "https://m.sohu.com/a/875737930_121123801/",
+    "image": "https://q8.itc.cn/q_70/images03/20250326/aebca72820a14722b26a11ffb3ed4529.jpeg",
+    "imageCredit": "m.sohu.com",
+    "imageSource": "auto"
   },
   {
     "id": "ner-chase-gazetteers",
@@ -2820,7 +2826,10 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "collection": "Tuft the World research brief: The Non-English Record",
-    "sourceUrl": "https://www.thepaper.cn/newsDetail_forward_7818157"
+    "sourceUrl": "https://www.thepaper.cn/newsDetail_forward_7818157",
+    "image": "https://file.thepaper.cn/clt/img/sparker_small.jpg",
+    "imageCredit": "thepaper.cn",
+    "imageSource": "auto"
   },
   {
     "id": "ner-chase-cnki",
@@ -2861,7 +2870,10 @@ window.RUG_ITEMS = [
     "collection": "Tuft the World research brief: The Non-English Record",
     "creator": "K. K. Goswami (ed.)",
     "publisher": "Woodhead Publishing (Elsevier), The Textile Institute Book Series",
-    "sourceUrl": "https://shop.elsevier.com/books/advances-in-carpet-manufacture/goswami/978-0-08-101131-7"
+    "sourceUrl": "https://shop.elsevier.com/books/advances-in-carpet-manufacture/goswami/978-0-08-101131-7",
+    "image": "https://secure-ecsd.elsevier.com/covers/80/Tango2/largest/9780081011317.jpg",
+    "imageCredit": "shop.elsevier.com",
+    "imageSource": "auto"
   },
   {
     "id": "ttw-susan-burr",
@@ -7238,7 +7250,10 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "solid",
-    "rights": "not-requested"
+    "rights": "not-requested",
+    "image": "https://taiping-development.sgp1.digitaloceanspaces.com/images/Edward-Fields-Heritage-Banner-2.jpg",
+    "imageCredit": "Edward Fields",
+    "imageSource": "auto"
   },
   {
     "id": "co-kasthall",
@@ -7267,7 +7282,10 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "solid",
-    "rights": "not-requested"
+    "rights": "not-requested",
+    "image": "http://www.kasthall.com/cdn/shop/files/1200x628_Ida.jpg?v=1775663966",
+    "imageCredit": "Kasthall",
+    "imageSource": "auto"
   },
   {
     "id": "co-ceadogan",
@@ -7327,7 +7345,10 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "solid",
-    "rights": "not-requested"
+    "rights": "not-requested",
+    "image": "https://www.pinton1867.com/wp-content/uploads/2021/07/felletin_photo_archives1.jpg",
+    "imageCredit": "Pinton (Ateliers Pinton)",
+    "imageSource": "auto"
   },
   {
     "id": "co-limited-edition",
@@ -7385,7 +7406,10 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "solid",
-    "rights": "not-requested"
+    "rights": "not-requested",
+    "image": "https://yamagatadantsu.co.jp/login/wp-content/uploads/2022/04/history_ogp.jpg",
+    "imageCredit": "Yamagata Dantsu (Oriental Carpet Mills)",
+    "imageSource": "auto"
   },
   {
     "id": "co-designer-rugs",
@@ -7414,7 +7438,10 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "solid",
-    "rights": "not-requested"
+    "rights": "not-requested",
+    "image": "https://designerrugs.com.au/cdn/shop/files/designer-rugs-house-of-heras-Paloma-lo-01-wr-press-release.jpg?v=1785313534&width=480",
+    "imageCredit": "Designer Rugs",
+    "imageSource": "auto"
   },
   {
     "id": "co-roger-oates",
@@ -7442,7 +7469,10 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "solid",
-    "rights": "not-requested"
+    "rights": "not-requested",
+    "image": "https://www.rogeroates.com/app/uploads/2024/05/RogerOates-Tide-Rug-1663-3x4-SFW.jpg",
+    "imageCredit": "Roger Oates Design",
+    "imageSource": "auto"
   },
   {
     "id": "co-royal-thai",
@@ -7472,7 +7502,10 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "suggestive",
-    "rights": "not-requested"
+    "rights": "not-requested",
+    "image": "https://images.squarespace-cdn.com/content/v1/6814f014b27d3c39c34d192d/1746202786267-VQLW9JQU5G2CIPKSNYXY/InterContinental+Bangkok_Balcony+Lounge_01_web+opt.jpg",
+    "imageCredit": "Royal Thai (Thailand Carpet Manufacturing / TCM Corporation)",
+    "imageSource": "auto"
   },
   {
     "id": "co-cabin-crafts",
@@ -7499,7 +7532,10 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "solid",
-    "rights": "not-requested"
+    "rights": "not-requested",
+    "image": "https://georgiaencyclopedia.org/wp-content/uploads/2021/02/chenille-bedspreads_004-1200x630.jpg",
+    "imageCredit": "Cabin Crafts",
+    "imageSource": "auto"
   },
   {
     "id": "co-barwick",
@@ -7555,7 +7591,10 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "solid",
-    "rights": "not-requested"
+    "rights": "not-requested",
+    "image": "https://georgiaencyclopedia.org/wp-content/uploads/2021/03/m-8904-1200x630.jpg",
+    "imageCredit": "World Carpets",
+    "imageSource": "auto"
   },
   {
     "id": "co-cormar",
@@ -7611,7 +7650,10 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "solid",
-    "rights": "not-requested"
+    "rights": "not-requested",
+    "image": "https://media.interface.com/is/image/interfaceprd/factory%204:c1300x716",
+    "imageCredit": "Interface",
+    "imageSource": "auto"
   },
   {
     "id": "co-milliken",
@@ -7639,7 +7681,10 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "solid",
-    "rights": "not-requested"
+    "rights": "not-requested",
+    "image": "https://www.milliken.com/en-us/-/media/milliken/corporate/about-us/history/history_full_screen-1865-1920.jpg",
+    "imageCredit": "Milliken & Company (floor covering)",
+    "imageSource": "auto"
   },
   {
     "id": "co-dixie-group",
@@ -7696,7 +7741,10 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "solid",
-    "rights": "not-requested"
+    "rights": "not-requested",
+    "image": "https://res.cloudinary.com/engineeredfloors/image/upload/f_auto,q_auto,w_1920,h_650,c_fill/ef-wp-uploads/2024/11/MODEL_133-Titan-399-Luna-Pearl-.-Lifestyle-4003-Caicos-15.webp",
+    "imageCredit": "Engineered Floors",
+    "imageSource": "auto"
   },
   {
     "id": "co-ege",
@@ -7725,7 +7773,10 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "solid",
-    "rights": "not-requested"
+    "rights": "not-requested",
+    "image": "https://media.ffycdn.net/eu/ege-carpets/uE7cxtA3XRAQ9syTSw6Y.jpg?mod=v1/resize=3840/quality=80",
+    "imageCredit": "Ege Carpets (Egetæpper)",
+    "imageSource": "auto"
   },
   {
     "id": "co-object-carpet",
@@ -7754,7 +7805,10 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "suggestive",
-    "rights": "not-requested"
+    "rights": "not-requested",
+    "image": "https://www.object-carpet.com/uploads/media/stage/03/8493-object_carpet_forever_young_titel_neon.jpg?v=1-0",
+    "imageCredit": "Object Carpet",
+    "imageSource": "auto"
   },
   {
     "id": "co-vorwerk",
@@ -7813,7 +7867,10 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "solid",
-    "rights": "not-requested"
+    "rights": "not-requested",
+    "image": "https://media.tarkett-image.com/large-high/IN_DesertAirMaster_9525-9970_cover.jpg",
+    "imageCredit": "Desso (Tarkett)",
+    "imageSource": "auto"
   },
   {
     "id": "co-balta",
@@ -7843,7 +7900,10 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "solid",
-    "rights": "not-requested"
+    "rights": "not-requested",
+    "image": "https://www.belysse.com/build/images/brand-cta.cbf23ca1.jpg",
+    "imageCredit": "Balta (Belysse / Victoria)",
+    "imageSource": "auto"
   },
   {
     "id": "co-beaulieu",
@@ -7871,7 +7931,10 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "solid",
-    "rights": "not-requested"
+    "rights": "not-requested",
+    "image": "https://dxm.mediacenter.bintg.com/api/wedia/dam/transform/6foabi5tejewk3wax36d8exkfyrpuajpme7ffia/out?t=crop&x=0.000&y=0.110&width=1.000&height=0.788&outputWidth=1200&outputHeight=630",
+    "imageCredit": "Beaulieu International Group",
+    "imageSource": "auto"
   },
   {
     "id": "co-victoria",
@@ -7901,7 +7964,10 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "solid",
-    "rights": "not-requested"
+    "rights": "not-requested",
+    "image": "https://d39d6i0wpcpox8.cloudfront.net/assets/images/vcl-static/hero/victoria-history-factory.jpg",
+    "imageCredit": "Victoria PLC (Victoria Carpets)",
+    "imageSource": "auto"
   },
   {
     "id": "co-godfrey-hirst",
@@ -7930,7 +7996,10 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "solid",
-    "rights": "not-requested"
+    "rights": "not-requested",
+    "image": "https://res.cloudinary.com/gh/image/upload/v1/apps/gh-web/pages/products/photography/hero",
+    "imageCredit": "Godfrey Hirst",
+    "imageSource": "auto"
   },
   {
     "id": "co-suminoe",
@@ -7959,7 +8028,10 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "suggestive",
-    "rights": "not-requested"
+    "rights": "not-requested",
+    "image": "https://cdn.shopify.com/s/files/1/0678/8392/5817/files/img_showroom_OSAKA.jpg?v=20250908",
+    "imageCredit": "Suminoe (Suminoe Textile Co.)",
+    "imageSource": "auto"
   },
   {
     "id": "co-oriental-weavers",
@@ -8128,7 +8200,10 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "solid",
-    "rights": "not-requested"
+    "rights": "not-requested",
+    "image": "https://cdn.prod.website-files.com/5f32c9823a88d84a78781478/663d91411dc86f3272be301b_Tuftco%20Domotex%202024%20Large.jpeg",
+    "imageCredit": "Tuftco",
+    "imageSource": "auto"
   },
   {
     "id": "co-card-monroe",
@@ -8156,7 +8231,10 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "solid",
-    "rights": "not-requested"
+    "rights": "not-requested",
+    "image": "https://cdn.prod.website-files.com/64744a6a3b93e3b39727c509/64f88be5b95f975874ebf4b1_Greg%20Headshot.jpg",
+    "imageCredit": "Card-Monroe Corp. (CMC)",
+    "imageSource": "auto"
   },
   {
     "id": "co-groz-beckert",
@@ -8213,7 +8291,10 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "solid",
-    "rights": "not-requested"
+    "rights": "not-requested",
+    "image": "http://www.obeetee.in/cdn/shop/files/bm1.jpg?v=1784027392&width=2048",
+    "imageCredit": "Obeetee",
+    "imageSource": "auto"
   },
   {
     "id": "co-hands",
@@ -8243,7 +8324,10 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "suggestive",
-    "rights": "not-requested"
+    "rights": "not-requested",
+    "image": "https://cdn.shopify.com/s/files/1/0755/3017/4762/files/all-carpets-thumb.jpg",
+    "imageCredit": "Hands (Hands Carpets / Patodia Exports)",
+    "imageSource": "auto"
   },
   {
     "id": "co-kaleen-india",
@@ -8302,7 +8386,10 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "solid",
-    "rights": "not-requested"
+    "rights": "not-requested",
+    "image": "https://www.homeaccentstoday.com/wp-content/uploads/sites/13/2026/04/SURYA50th_RSVPBanner_20260326-1.webp",
+    "imageCredit": "Surya",
+    "imageSource": "auto"
   },
   {
     "id": "pat-ch214147a",
@@ -9342,7 +9429,10 @@ window.RUG_ITEMS = [
       "checked from search results"
     ],
     "status": "unverified",
-    "confidence": "solid"
+    "confidence": "solid",
+    "image": "http://www.hofmann-handtuft.de/wp-content/uploads/2013/11/showroom-hofmann-handtuft.jpg",
+    "imageCredit": "Hofmann Handtuft-Technik GmbH",
+    "imageSource": "auto"
   },
   {
     "id": "pat-us3968758a",
@@ -9451,7 +9541,10 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "solid",
-    "rights": "own"
+    "rights": "own",
+    "image": "http://www.chroniclebooks.com/cdn/shop/files/9781797224565_1_1200x1200.jpg?v=1699638681",
+    "imageCredit": "Tuft the World",
+    "imageSource": "auto"
   },
   {
     "id": "book-tuft-the-world-2024",
@@ -9476,7 +9569,9 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "solid",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "image": "http://www.chroniclebooks.com/cdn/shop/files/9781797224565_1_1200x1200.jpg?v=1699638681",
+    "imageCredit": "chroniclebooks.com"
   },
   {
     "id": "event-ttw-editions-2023",
@@ -9499,6 +9594,9 @@ window.RUG_ITEMS = [
       "own firm"
     ],
     "status": "unverified",
-    "confidence": "solid"
+    "confidence": "solid",
+    "image": "http://www.paradigmarts.org/cdn/shop/articles/DALL-E-2023-05-29-21.08.13_1024x1024.jpg?v=1688317240",
+    "imageCredit": "Paradigm Gallery + Studio",
+    "imageSource": "auto"
   }
 ];
