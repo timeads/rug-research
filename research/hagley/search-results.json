@@ -1,0 +1,606 @@
+{
+  "searchedAt": "2026-10-27T06:41:38.335Z",
+  "probes": [
+    {
+      "term": "nylon carpet",
+      "url": "https://digital.hagley.org/islandora/search/nylon%20carpet?type=dismax",
+      "status": 200,
+      "finalUrl": "https://digital.hagley.org/challenge?destination=%2Fislandora%2Fsearch%2Fnylon%2520carpet%3Ftype%3Ddismax",
+      "links": 0,
+      "sample": [],
+      "title": "Verifying Connection",
+      "resultCount": ""
+    },
+    {
+      "term": "nylon carpet",
+      "url": "https://digital.hagley.org/islandora/search/%22nylon%20carpet%22?type=dismax",
+      "status": 200,
+      "finalUrl": "https://digital.hagley.org/challenge?destination=%2Fislandora%2Fsearch%2F%2522nylon%2520carpet%2522%3Ftype%3Ddismax",
+      "links": 0,
+      "sample": [],
+      "title": "Verifying Connection",
+      "resultCount": ""
+    },
+    {
+      "term": "nylon carpet",
+      "url": "https://digital.hagley.org/search?search_api_fulltext=nylon%20carpet",
+      "status": 200,
+      "finalUrl": "https://digital.hagley.org/challenge?destination=%2Fsearch%3Fsearch_api_fulltext%3Dnylon%2520carpet",
+      "links": 0,
+      "sample": [],
+      "title": "Verifying Connection",
+      "resultCount": ""
+    },
+    {
+      "term": "nylon carpet",
+      "url": "https://digital.hagley.org/search?keys=nylon%20carpet",
+      "status": 200,
+      "finalUrl": "https://digital.hagley.org/challenge?destination=%2Fsearch%3Fkeys%3Dnylon%2520carpet",
+      "links": 0,
+      "sample": [],
+      "title": "Verifying Connection",
+      "resultCount": ""
+    },
+    {
+      "term": "nylon carpet",
+      "url": "https://digital.hagley.org/search/node?keys=nylon%20carpet",
+      "status": 200,
+      "finalUrl": "https://digital.hagley.org/challenge?destination=%2Fsearch%2Fnode%3Fkeys%3Dnylon%2520carpet",
+      "links": 0,
+      "sample": [],
+      "title": "Verifying Connection",
+      "resultCount": ""
+    },
+    {
+      "term": "carpet",
+      "url": "https://digital.hagley.org/islandora/search/carpet?type=dismax",
+      "status": 200,
+      "finalUrl": "https://digital.hagley.org/challenge?destination=%2Fislandora%2Fsearch%2Fcarpet%3Ftype%3Ddismax",
+      "links": 0,
+      "sample": [],
+      "title": "Verifying Connection",
+      "resultCount": ""
+    },
+    {
+      "term": "carpet",
+      "url": "https://digital.hagley.org/islandora/search/%22carpet%22?type=dismax",
+      "status": 200,
+      "finalUrl": "https://digital.hagley.org/challenge?destination=%2Fislandora%2Fsearch%2F%2522carpet%2522%3Ftype%3Ddismax",
+      "links": 0,
+      "sample": [],
+      "title": "Verifying Connection",
+      "resultCount": ""
+    },
+    {
+      "term": "carpet",
+      "url": "https://digital.hagley.org/search?search_api_fulltext=carpet",
+      "status": 200,
+      "finalUrl": "https://digital.hagley.org/challenge?destination=%2Fsearch%3Fsearch_api_fulltext%3Dcarpet",
+      "links": 0,
+      "sample": [],
+      "title": "Verifying Connection",
+      "resultCount": ""
+    },
+    {
+      "term": "carpet",
+      "url": "https://digital.hagley.org/search?keys=carpet",
+      "status": 200,
+      "finalUrl": "https://digital.hagley.org/challenge?destination=%2Fsearch%3Fkeys%3Dcarpet",
+      "links": 0,
+      "sample": [],
+      "title": "Verifying Connection",
+      "resultCount": ""
+    },
+    {
+      "term": "carpet",
+      "url": "https://digital.hagley.org/search/node?keys=carpet",
+      "status": 200,
+      "finalUrl": "https://digital.hagley.org/challenge?destination=%2Fsearch%2Fnode%3Fkeys%3Dcarpet",
+      "links": 0,
+      "sample": [],
+      "title": "Verifying Connection",
+      "resultCount": ""
+    },
+    {
+      "term": "rug",
+      "url": "https://digital.hagley.org/islandora/search/rug?type=dismax",
+      "status": 200,
+      "finalUrl": "https://digital.hagley.org/challenge?destination=%2Fislandora%2Fsearch%2Frug%3Ftype%3Ddismax",
+      "links": 0,
+      "sample": [],
+      "title": "Verifying Connection",
+      "resultCount": ""
+    },
+    {
+      "term": "rug",
+      "url": "https://digital.hagley.org/islandora/search/%22rug%22?type=dismax",
+      "status": 200,
+      "finalUrl": "https://digital.hagley.org/challenge?destination=%2Fislandora%2Fsearch%2F%2522rug%2522%3Ftype%3Ddismax",
+      "links": 0,
+      "sample": [],
+      "title": "Verifying Connection",
+      "resultCount": ""
+    },
+    {
+      "term": "rug",
+      "url": "https://digital.hagley.org/search?search_api_fulltext=rug",
+      "status": 200,
+      "finalUrl": "https://digital.hagley.org/challenge?destination=%2Fsearch%3Fsearch_api_fulltext%3Drug",
+      "links": 0,
+      "sample": [],
+      "title": "Verifying Connection",
+      "resultCount": ""
+    },
+    {
+      "term": "rug",
+      "url": "https://digital.hagley.org/search?keys=rug",
+      "status": 200,
+      "finalUrl": "https://digital.hagley.org/challenge?destination=%2Fsearch%3Fkeys%3Drug",
+      "links": 0,
+      "sample": [],
+      "title": "Verifying Connection",
+      "resultCount": ""
+    },
+    {
+      "term": "rug",
+      "url": "https://digital.hagley.org/search/node?keys=rug",
+      "status": 200,
+      "finalUrl": "https://digital.hagley.org/challenge?destination=%2Fsearch%2Fnode%3Fkeys%3Drug",
+      "links": 0,
+      "sample": [],
+      "title": "Verifying Connection",
+      "resultCount": ""
+    },
+    {
+      "term": "Antron",
+      "url": "https://digital.hagley.org/islandora/search/Antron?type=dismax",
+      "status": 200,
+      "finalUrl": "https://digital.hagley.org/challenge?destination=%2Fislandora%2Fsearch%2FAntron%3Ftype%3Ddismax",
+      "links": 0,
+      "sample": [],
+      "title": "Verifying Connection",
+      "resultCount": ""
+    },
+    {
+      "term": "Antron",
+      "url": "https://digital.hagley.org/islandora/search/%22Antron%22?type=dismax",
+      "status": 200,
+      "finalUrl": "https://digital.hagley.org/challenge?destination=%2Fislandora%2Fsearch%2F%2522Antron%2522%3Ftype%3Ddismax",
+      "links": 0,
+      "sample": [],
+      "title": "Verifying Connection",
+      "resultCount": ""
+    },
+    {
+      "term": "Antron",
+      "url": "https://digital.hagley.org/search?search_api_fulltext=Antron",
+      "status": 200,
+      "finalUrl": "https://digital.hagley.org/challenge?destination=%2Fsearch%3Fsearch_api_fulltext%3DAntron",
+      "links": 0,
+      "sample": [],
+      "title": "Verifying Connection",
+      "resultCount": ""
+    },
+    {
+      "term": "Antron",
+      "url": "https://digital.hagley.org/search?keys=Antron",
+      "status": 200,
+      "finalUrl": "https://digital.hagley.org/challenge?destination=%2Fsearch%3Fkeys%3DAntron",
+      "links": 0,
+      "sample": [],
+      "title": "Verifying Connection",
+      "resultCount": ""
+    },
+    {
+      "term": "Antron",
+      "url": "https://digital.hagley.org/search/node?keys=Antron",
+      "status": 200,
+      "finalUrl": "https://digital.hagley.org/challenge?destination=%2Fsearch%2Fnode%3Fkeys%3DAntron",
+      "links": 0,
+      "sample": [],
+      "title": "Verifying Connection",
+      "resultCount": ""
+    },
+    {
+      "term": "501 nylon",
+      "url": "https://digital.hagley.org/islandora/search/501%20nylon?type=dismax",
+      "status": 200,
+      "finalUrl": "https://digital.hagley.org/challenge?destination=%2Fislandora%2Fsearch%2F501%2520nylon%3Ftype%3Ddismax",
+      "links": 0,
+      "sample": [],
+      "title": "Verifying Connection",
+      "resultCount": ""
+    },
+    {
+      "term": "501 nylon",
+      "url": "https://digital.hagley.org/islandora/search/%22501%20nylon%22?type=dismax",
+      "status": 200,
+      "finalUrl": "https://digital.hagley.org/challenge?destination=%2Fislandora%2Fsearch%2F%2522501%2520nylon%2522%3Ftype%3Ddismax",
+      "links": 0,
+      "sample": [],
+      "title": "Verifying Connection",
+      "resultCount": ""
+    },
+    {
+      "term": "501 nylon",
+      "url": "https://digital.hagley.org/search?search_api_fulltext=501%20nylon",
+      "status": 200,
+      "finalUrl": "https://digital.hagley.org/challenge?destination=%2Fsearch%3Fsearch_api_fulltext%3D501%2520nylon",
+      "links": 0,
+      "sample": [],
+      "title": "Verifying Connection",
+      "resultCount": ""
+    },
+    {
+      "term": "501 nylon",
+      "url": "https://digital.hagley.org/search?keys=501%20nylon",
+      "status": 200,
+      "finalUrl": "https://digital.hagley.org/challenge?destination=%2Fsearch%3Fkeys%3D501%2520nylon",
+      "links": 0,
+      "sample": [],
+      "title": "Verifying Connection",
+      "resultCount": ""
+    },
+    {
+      "term": "501 nylon",
+      "url": "https://digital.hagley.org/search/node?keys=501%20nylon",
+      "status": 200,
+      "finalUrl": "https://digital.hagley.org/challenge?destination=%2Fsearch%2Fnode%3Fkeys%3D501%2520nylon",
+      "links": 0,
+      "sample": [],
+      "title": "Verifying Connection",
+      "resultCount": ""
+    },
+    {
+      "term": "tufted",
+      "url": "https://digital.hagley.org/islandora/search/tufted?type=dismax",
+      "status": 200,
+      "finalUrl": "https://digital.hagley.org/challenge?destination=%2Fislandora%2Fsearch%2Ftufted%3Ftype%3Ddismax",
+      "links": 0,
+      "sample": [],
+      "title": "Verifying Connection",
+      "resultCount": ""
+    },
+    {
+      "term": "tufted",
+      "url": "https://digital.hagley.org/islandora/search/%22tufted%22?type=dismax",
+      "status": 200,
+      "finalUrl": "https://digital.hagley.org/challenge?destination=%2Fislandora%2Fsearch%2F%2522tufted%2522%3Ftype%3Ddismax",
+      "links": 0,
+      "sample": [],
+      "title": "Verifying Connection",
+      "resultCount": ""
+    },
+    {
+      "term": "tufted",
+      "url": "https://digital.hagley.org/search?search_api_fulltext=tufted",
+      "status": 200,
+      "finalUrl": "https://digital.hagley.org/challenge?destination=%2Fsearch%3Fsearch_api_fulltext%3Dtufted",
+      "links": 0,
+      "sample": [],
+      "title": "Verifying Connection",
+      "resultCount": ""
+    },
+    {
+      "term": "tufted",
+      "url": "https://digital.hagley.org/search?keys=tufted",
+      "status": 200,
+      "finalUrl": "https://digital.hagley.org/challenge?destination=%2Fsearch%3Fkeys%3Dtufted",
+      "links": 0,
+      "sample": [],
+      "title": "Verifying Connection",
+      "resultCount": ""
+    },
+    {
+      "term": "tufted",
+      "url": "https://digital.hagley.org/search/node?keys=tufted",
+      "status": 200,
+      "finalUrl": "https://digital.hagley.org/challenge?destination=%2Fsearch%2Fnode%3Fkeys%3Dtufted",
+      "links": 0,
+      "sample": [],
+      "title": "Verifying Connection",
+      "resultCount": ""
+    },
+    {
+      "term": "broadloom",
+      "url": "https://digital.hagley.org/islandora/search/broadloom?type=dismax",
+      "status": 200,
+      "finalUrl": "https://digital.hagley.org/challenge?destination=%2Fislandora%2Fsearch%2Fbroadloom%3Ftype%3Ddismax",
+      "links": 0,
+      "sample": [],
+      "title": "Verifying Connection",
+      "resultCount": ""
+    },
+    {
+      "term": "broadloom",
+      "url": "https://digital.hagley.org/islandora/search/%22broadloom%22?type=dismax",
+      "status": 200,
+      "finalUrl": "https://digital.hagley.org/challenge?destination=%2Fislandora%2Fsearch%2F%2522broadloom%2522%3Ftype%3Ddismax",
+      "links": 0,
+      "sample": [],
+      "title": "Verifying Connection",
+      "resultCount": ""
+    },
+    {
+      "term": "broadloom",
+      "url": "https://digital.hagley.org/search?search_api_fulltext=broadloom",
+      "status": 200,
+      "finalUrl": "https://digital.hagley.org/challenge?destination=%2Fsearch%3Fsearch_api_fulltext%3Dbroadloom",
+      "links": 0,
+      "sample": [],
+      "title": "Verifying Connection",
+      "resultCount": ""
+    },
+    {
+      "term": "broadloom",
+      "url": "https://digital.hagley.org/search?keys=broadloom",
+      "status": 200,
+      "finalUrl": "https://digital.hagley.org/challenge?destination=%2Fsearch%3Fkeys%3Dbroadloom",
+      "links": 0,
+      "sample": [],
+      "title": "Verifying Connection",
+      "resultCount": ""
+    },
+    {
+      "term": "broadloom",
+      "url": "https://digital.hagley.org/search/node?keys=broadloom",
+      "status": 200,
+      "finalUrl": "https://digital.hagley.org/challenge?destination=%2Fsearch%2Fnode%3Fkeys%3Dbroadloom",
+      "links": 0,
+      "sample": [],
+      "title": "Verifying Connection",
+      "resultCount": ""
+    },
+    {
+      "term": "carpet fiber",
+      "url": "https://digital.hagley.org/islandora/search/carpet%20fiber?type=dismax",
+      "status": 200,
+      "finalUrl": "https://digital.hagley.org/challenge?destination=%2Fislandora%2Fsearch%2Fcarpet%2520fiber%3Ftype%3Ddismax",
+      "links": 0,
+      "sample": [],
+      "title": "Verifying Connection",
+      "resultCount": ""
+    },
+    {
+      "term": "carpet fiber",
+      "url": "https://digital.hagley.org/islandora/search/%22carpet%20fiber%22?type=dismax",
+      "status": 200,
+      "finalUrl": "https://digital.hagley.org/challenge?destination=%2Fislandora%2Fsearch%2F%2522carpet%2520fiber%2522%3Ftype%3Ddismax",
+      "links": 0,
+      "sample": [],
+      "title": "Verifying Connection",
+      "resultCount": ""
+    },
+    {
+      "term": "carpet fiber",
+      "url": "https://digital.hagley.org/search?search_api_fulltext=carpet%20fiber",
+      "status": 200,
+      "finalUrl": "https://digital.hagley.org/challenge?destination=%2Fsearch%3Fsearch_api_fulltext%3Dcarpet%2520fiber",
+      "links": 0,
+      "sample": [],
+      "title": "Verifying Connection",
+      "resultCount": ""
+    },
+    {
+      "term": "carpet fiber",
+      "url": "https://digital.hagley.org/search?keys=carpet%20fiber",
+      "status": 200,
+      "finalUrl": "https://digital.hagley.org/challenge?destination=%2Fsearch%3Fkeys%3Dcarpet%2520fiber",
+      "links": 0,
+      "sample": [],
+      "title": "Verifying Connection",
+      "resultCount": ""
+    },
+    {
+      "term": "carpet fiber",
+      "url": "https://digital.hagley.org/search/node?keys=carpet%20fiber",
+      "status": 200,
+      "finalUrl": "https://digital.hagley.org/challenge?destination=%2Fsearch%2Fnode%3Fkeys%3Dcarpet%2520fiber",
+      "links": 0,
+      "sample": [],
+      "title": "Verifying Connection",
+      "resultCount": ""
+    },
+    {
+      "term": "carpeting",
+      "url": "https://digital.hagley.org/islandora/search/carpeting?type=dismax",
+      "status": 200,
+      "finalUrl": "https://digital.hagley.org/challenge?destination=%2Fislandora%2Fsearch%2Fcarpeting%3Ftype%3Ddismax",
+      "links": 0,
+      "sample": [],
+      "title": "Verifying Connection",
+      "resultCount": ""
+    },
+    {
+      "term": "carpeting",
+      "url": "https://digital.hagley.org/islandora/search/%22carpeting%22?type=dismax",
+      "status": 200,
+      "finalUrl": "https://digital.hagley.org/challenge?destination=%2Fislandora%2Fsearch%2F%2522carpeting%2522%3Ftype%3Ddismax",
+      "links": 0,
+      "sample": [],
+      "title": "Verifying Connection",
+      "resultCount": ""
+    },
+    {
+      "term": "carpeting",
+      "url": "https://digital.hagley.org/search?search_api_fulltext=carpeting",
+      "status": 200,
+      "finalUrl": "https://digital.hagley.org/challenge?destination=%2Fsearch%3Fsearch_api_fulltext%3Dcarpeting",
+      "links": 0,
+      "sample": [],
+      "title": "Verifying Connection",
+      "resultCount": ""
+    },
+    {
+      "term": "carpeting",
+      "url": "https://digital.hagley.org/search?keys=carpeting",
+      "status": 200,
+      "finalUrl": "https://digital.hagley.org/challenge?destination=%2Fsearch%3Fkeys%3Dcarpeting",
+      "links": 0,
+      "sample": [],
+      "title": "Verifying Connection",
+      "resultCount": ""
+    },
+    {
+      "term": "carpeting",
+      "url": "https://digital.hagley.org/search/node?keys=carpeting",
+      "status": 200,
+      "finalUrl": "https://digital.hagley.org/challenge?destination=%2Fsearch%2Fnode%3Fkeys%3Dcarpeting",
+      "links": 0,
+      "sample": [],
+      "title": "Verifying Connection",
+      "resultCount": ""
+    },
+    {
+      "term": "nylon rug",
+      "url": "https://digital.hagley.org/islandora/search/nylon%20rug?type=dismax",
+      "status": 200,
+      "finalUrl": "https://digital.hagley.org/challenge?destination=%2Fislandora%2Fsearch%2Fnylon%2520rug%3Ftype%3Ddismax",
+      "links": 0,
+      "sample": [],
+      "title": "Verifying Connection",
+      "resultCount": ""
+    },
+    {
+      "term": "nylon rug",
+      "url": "https://digital.hagley.org/islandora/search/%22nylon%20rug%22?type=dismax",
+      "status": 200,
+      "finalUrl": "https://digital.hagley.org/challenge?destination=%2Fislandora%2Fsearch%2F%2522nylon%2520rug%2522%3Ftype%3Ddismax",
+      "links": 0,
+      "sample": [],
+      "title": "Verifying Connection",
+      "resultCount": ""
+    },
+    {
+      "term": "nylon rug",
+      "url": "https://digital.hagley.org/search?search_api_fulltext=nylon%20rug",
+      "status": 200,
+      "finalUrl": "https://digital.hagley.org/challenge?destination=%2Fsearch%3Fsearch_api_fulltext%3Dnylon%2520rug",
+      "links": 0,
+      "sample": [],
+      "title": "Verifying Connection",
+      "resultCount": ""
+    },
+    {
+      "term": "nylon rug",
+      "url": "https://digital.hagley.org/search?keys=nylon%20rug",
+      "status": 200,
+      "finalUrl": "https://digital.hagley.org/challenge?destination=%2Fsearch%3Fkeys%3Dnylon%2520rug",
+      "links": 0,
+      "sample": [],
+      "title": "Verifying Connection",
+      "resultCount": ""
+    },
+    {
+      "term": "nylon rug",
+      "url": "https://digital.hagley.org/search/node?keys=nylon%20rug",
+      "status": 200,
+      "finalUrl": "https://digital.hagley.org/challenge?destination=%2Fsearch%2Fnode%3Fkeys%3Dnylon%2520rug",
+      "links": 0,
+      "sample": [],
+      "title": "Verifying Connection",
+      "resultCount": ""
+    },
+    {
+      "term": "Dacron carpet",
+      "url": "https://digital.hagley.org/islandora/search/Dacron%20carpet?type=dismax",
+      "status": 200,
+      "finalUrl": "https://digital.hagley.org/challenge?destination=%2Fislandora%2Fsearch%2FDacron%2520carpet%3Ftype%3Ddismax",
+      "links": 0,
+      "sample": [],
+      "title": "Verifying Connection",
+      "resultCount": ""
+    },
+    {
+      "term": "Dacron carpet",
+      "url": "https://digital.hagley.org/islandora/search/%22Dacron%20carpet%22?type=dismax",
+      "status": 200,
+      "finalUrl": "https://digital.hagley.org/challenge?destination=%2Fislandora%2Fsearch%2F%2522Dacron%2520carpet%2522%3Ftype%3Ddismax",
+      "links": 0,
+      "sample": [],
+      "title": "Verifying Connection",
+      "resultCount": ""
+    },
+    {
+      "term": "Dacron carpet",
+      "url": "https://digital.hagley.org/search?search_api_fulltext=Dacron%20carpet",
+      "status": 200,
+      "finalUrl": "https://digital.hagley.org/challenge?destination=%2Fsearch%3Fsearch_api_fulltext%3DDacron%2520carpet",
+      "links": 0,
+      "sample": [],
+      "title": "Verifying Connection",
+      "resultCount": ""
+    },
+    {
+      "term": "Dacron carpet",
+      "url": "https://digital.hagley.org/search?keys=Dacron%20carpet",
+      "status": 200,
+      "finalUrl": "https://digital.hagley.org/challenge?destination=%2Fsearch%3Fkeys%3DDacron%2520carpet",
+      "links": 0,
+      "sample": [],
+      "title": "Verifying Connection",
+      "resultCount": ""
+    },
+    {
+      "term": "Dacron carpet",
+      "url": "https://digital.hagley.org/search/node?keys=Dacron%20carpet",
+      "status": 200,
+      "finalUrl": "https://digital.hagley.org/challenge?destination=%2Fsearch%2Fnode%3Fkeys%3DDacron%2520carpet",
+      "links": 0,
+      "sample": [],
+      "title": "Verifying Connection",
+      "resultCount": ""
+    },
+    {
+      "term": "Orlon carpet",
+      "url": "https://digital.hagley.org/islandora/search/Orlon%20carpet?type=dismax",
+      "status": 200,
+      "finalUrl": "https://digital.hagley.org/challenge?destination=%2Fislandora%2Fsearch%2FOrlon%2520carpet%3Ftype%3Ddismax",
+      "links": 0,
+      "sample": [],
+      "title": "Verifying Connection",
+      "resultCount": ""
+    },
+    {
+      "term": "Orlon carpet",
+      "url": "https://digital.hagley.org/islandora/search/%22Orlon%20carpet%22?type=dismax",
+      "status": 200,
+      "finalUrl": "https://digital.hagley.org/challenge?destination=%2Fislandora%2Fsearch%2F%2522Orlon%2520carpet%2522%3Ftype%3Ddismax",
+      "links": 0,
+      "sample": [],
+      "title": "Verifying Connection",
+      "resultCount": ""
+    },
+    {
+      "term": "Orlon carpet",
+      "url": "https://digital.hagley.org/search?search_api_fulltext=Orlon%20carpet",
+      "status": 200,
+      "finalUrl": "https://digital.hagley.org/challenge?destination=%2Fsearch%3Fsearch_api_fulltext%3DOrlon%2520carpet",
+      "links": 0,
+      "sample": [],
+      "title": "Verifying Connection",
+      "resultCount": ""
+    },
+    {
+      "term": "Orlon carpet",
+      "url": "https://digital.hagley.org/search?keys=Orlon%20carpet",
+      "status": 200,
+      "finalUrl": "https://digital.hagley.org/challenge?destination=%2Fsearch%3Fkeys%3DOrlon%2520carpet",
+      "links": 0,
+      "sample": [],
+      "title": "Verifying Connection",
+      "resultCount": ""
+    },
+    {
+      "term": "Orlon carpet",
+      "url": "https://digital.hagley.org/search/node?keys=Orlon%20carpet",
+      "status": 200,
+      "finalUrl": "https://digital.hagley.org/challenge?destination=%2Fsearch%2Fnode%3Fkeys%3DOrlon%2520carpet",
+      "links": 0,
+      "sample": [],
+      "title": "Verifying Connection",
+      "resultCount": ""
+    }
+  ],
+  "items": {}
+}
