@@ -3739,12 +3739,12 @@ window.RUG_ITEMS = [
     "id": "hagley-nylon-hooked-rug",
     "type": "object",
     "title": "Nylon hooked rug made by Nancy du Pont Reynolds Cooch (Mrs. Edward W. Cooch Jr.)",
-    "date": "c. 1950–1952",
+    "date": "1950",
     "institution": "Hagley Museum and Library",
     "collection": "Hagley museum collection",
-    "identifier": "2012.8",
+    "identifier": "2012.8.1",
     "sourceUrl": "https://www.hagley.org/librarynews/museum-collections-du-pont-story-hooked-rug",
-    "description": "10 × 12 ft hooked rug in nylon, linked to DuPont's wear-testing of nylon for floor coverings; it frayed and pilled when walked on. Shown in the 2015 \"Unraveling Stories\" exhibit. Probably the only nylon hooked rug: a direct bridge between handmade rugs and nylon carpet. Found via search-engine results (Hagley's site blocks automated reading): open the link to confirm and see the image.",
+    "description": "Hooked rug, 116 × 139 in. (Hagley museum record), in nylon, linked to DuPont's wear-testing of nylon for floor coverings; it frayed and pilled when walked on. Shown in the 2015 \"Unraveling Stories\" exhibit. Probably the only nylon hooked rug: a direct bridge between handmade rugs and nylon carpet. Found via search-engine results (Hagley's site blocks automated reading): open the link to confirm and see the image.\n\nMuseum record: https://museumcollection.hagley.org/objects/40662/hooked-rug",
     "region": "United States",
     "themes": [
       "Nylon & synthetic fibers (DuPont)",
@@ -3759,7 +3759,7 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "dateStart": 1950,
-    "dateEnd": 1952,
+    "dateEnd": 1950,
     "image": "https://www.hagley.org/sites/default/files/pictures/2012.8.2-sv.jpg",
     "imageCredit": "Hagley Museum and Library",
     "imageSource": "auto"
@@ -4782,24 +4782,30 @@ window.RUG_ITEMS = [
   {
     "id": "wint-lib-allen-papers",
     "type": "archive",
-    "title": "Laura M. Allen papers: scrapbook on hooked rugs, hand weaving 1924–1929",
-    "description": "Winterthur Library finding aid: a scrapbook devoted to hooked rugs, clippings, and a note about a hooked-rug class. Subject heading \"Rugs, hooked\". Evidence for the 1920s hooked-rug revival in ephemera.",
+    "title": "Laura M. Allen collection (Col. 979): \"Hooked Rugs\" scrapbook of articles, pictures and advertisements, 1920s",
+    "description": "Read from the Winterthur Library finding aid (Joseph Downs Collection). Rug material:\n- acc. 2017x86.1, \"Hooked Rugs,\" Mrs. Laura M. Allen, Rochester, N.Y.: scrapbook of articles, pictures and advertisements pertaining to hooked rugs, 1920s.\n- Folder 12: notebook \"Rugs, 1911 to [blank]\", labelled braided, crocheted, hooked, knotted, kelim, felt appliqué, hooked bags. Note inside: hooked rugs taught by Mrs. W. E. Raymond, Home Bureau member, Rochester. Includes a stenographer's pad of rug notes by Marguerite P. Davison.\n- Folder 4: two clippings on hooked rugs; an article on rug weaving by Mary M. Atwater.\n- acc. 2017x86.2, \"Hand Weaving, 1924 to 1929\": scrapbook with loom advertisements.\nAlso Atwater–Allen correspondence 1928–36 (Shuttle-Craft Guild) and seven volumes of weavers' drafts.\n\nWhy it matters: primary evidence for the 1920s hooked-rug revival as taught through home-bureau classes and sold through ads. Ask the library to scan the scrapbook's advertisements.",
     "region": "United States",
     "themes": [
       "Hooked & handmade rugs",
       "Trade catalogs & marketing"
     ],
     "tags": [
+      "Winterthur library",
+      "advertisements",
       "ephemera",
+      "hooked-rug revival",
       "request"
     ],
     "status": "unverified",
-    "dateStart": 1924,
+    "dateStart": 1911,
     "dateEnd": 1929,
-    "date": "1920s",
+    "date": "1911–1929 (rug material); collection to the 1960s",
     "sourceUrl": "http://findingaid.winterthur.org/html/HTML_Finding_Aids/COL0979.htm",
     "institution": "Winterthur Library",
-    "identifier": "Col. 979"
+    "identifier": "Col. 979",
+    "creator": "Laura M. Allen (Rochester, N.Y.); Helen D. Young",
+    "place": "Rochester, New York",
+    "confidence": "solid"
   },
   {
     "id": "wint-lib-swatch-books",
@@ -6717,5 +6723,91 @@ window.RUG_ITEMS = [
     "date": "1964–1968",
     "dateStart": 1964,
     "dateEnd": 1968
+  },
+  {
+    "id": "co-merida",
+    "type": "company",
+    "title": "Merida",
+    "creator": "Catherine Connolly (CEO); earlier owner Hiram Samel",
+    "place": "Fall River, Massachusetts",
+    "region": "United States",
+    "date": "founded 1978 (directory listings); in Fall River since the mid-1990s",
+    "dateStart": 1978,
+    "sourceUrl": "https://meridastudio.com/",
+    "institution": "Merida",
+    "description": "Natural-fibre rug and textile maker in a former Fall River cotton mill. Began in Syracuse, New York, largely as an importer of sisal sold through carpet dealers; Hiram Samel took it over from relatives in 1978 and experimented with sisal. Moved to Fall River in the mid-1990s and centralised production there by about 2010. Under Catherine Connolly it moved from volume importing to rugs woven to order on heritage looms, with hand and machine finishing, in wool, linen, mohair and cotton; the company says it avoids synthetic fibres.\n\nRelevance: mainly woven and hand-loomed, not a tufting house. Useful as a New England mill-town counterpoint to Dalton, and to the synthetic-fibre story by deliberately rejecting it. Check whether any current lines are hand-tufted.\n\nDates conflict: founding given as 1978 (craft.co) or as Samel's 1978 purchase (New England Home, 2012); Connolly's start given as 2007 (Boston Globe) and differently by Traditional Building. Confirm with the company.\n\nIndependent sources: https://nehomemag.com/the-merida-mystique/ · https://www.traditionalbuilding.com/the-spirit-in-the-thread-meridas-art-first-approach-to-rug-making · https://craftcouncil.org/articles/a-slow-sustainable-yarn/ · https://www.bostonglobe.com/2022/02/20/real-estate/when-obscurity-loomed-fall-river-bobbed-weaved",
+    "themes": [
+      "Companies & modern tufting",
+      "Woven carpet"
+    ],
+    "tags": [
+      "company",
+      "natural fibre",
+      "woven",
+      "New England mills"
+    ],
+    "status": "unverified",
+    "confidence": "suggestive",
+    "rights": "not-requested"
+  },
+  {
+    "id": "wint-lib-tariff-brussels",
+    "type": "archive",
+    "title": "Tariff Manufacturing Company, Brussels colours dyed at Tariffville, Conn., c. 1840 (two dye-recipe notebooks)",
+    "creator": "Tariff Manufacturing Company",
+    "place": "Tariffville, Connecticut",
+    "region": "United States",
+    "date": "c. 1840",
+    "dateStart": 1835,
+    "dateEnd": 1845,
+    "institution": "Winterthur Library",
+    "collection": "Swatch Book Collection (Col. 50)",
+    "identifier": "2017x85.30a-b (ATHM 2009.33)",
+    "sourceUrl": "http://findingaid.winterthur.org/html/HTML_Finding_Aids/col0050.htm",
+    "description": "Two notebooks of recipes for dyeing wool for Brussels carpets made at the Tariff Manufacturing Company's mills. Per the finding aid, Tariffville was founded in 1825 when the company was founded to produce carpet; it changed owners and names and closed in 1867 after a fire. Stationer's labels of I. A. Whitcomb, Lawrence.\n\nWhy it matters: rare mill-floor evidence from early American Brussels (looped-pile woven) carpet, the product tufted broadloom later undercut. Pair with Bigelow's Brussels power loom (1845–51).",
+    "themes": [
+      "Woven carpet",
+      "Yarn & materials"
+    ],
+    "tags": [
+      "Winterthur library",
+      "Brussels carpet",
+      "dye recipes",
+      "request"
+    ],
+    "status": "unverified",
+    "confidence": "solid"
+  },
+  {
+    "id": "hagley-2015-10-2",
+    "type": "object",
+    "title": "Hooked rug in nylon and cotton, maker unknown",
+    "date": "1975–1990",
+    "dateStart": 1975,
+    "dateEnd": 1990,
+    "institution": "Hagley Museum and Library",
+    "collection": "Hagley museum collection",
+    "identifier": "2015.10.2",
+    "materials": [
+      "nylon",
+      "cotton"
+    ],
+    "techniques": [
+      "hooking"
+    ],
+    "sourceUrl": "https://museumcollection.hagley.org/objects/46294/hooked-rug",
+    "description": "23 × 35 in. Hagley's record has no description yet (\"Text available soon\"). A later nylon hooked rug, useful against the claim that the Cooch rug (2012.8.1) is the only one. No link between the two is known; ask Hagley about the donor.",
+    "region": "United States",
+    "themes": [
+      "Nylon & synthetic fibers (DuPont)",
+      "Hooked & handmade rugs"
+    ],
+    "tags": [
+      "Hagley nylon deep dive",
+      "object"
+    ],
+    "status": "unverified",
+    "confidence": "suggestive",
+    "imageSource": "auto"
   }
 ];

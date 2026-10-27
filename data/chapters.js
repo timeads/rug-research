@@ -13,7 +13,7 @@ window.RUG_CHAPTERS = [
     id: "ch-woven", kind: "chapter",
     name: "Woven carpet and the race to broadloom",
     intro: "Working notes:\n\nBefore tufting, the race to cover whole floors affordably was run on looms: Wilton's cut-pile carpet (Huguenot weavers, a 1741 loom), Brussels and Wilton reaching America by the 1750s, Bigelow's power looms (ingrain c. 1839–41; Brussels and Wilton 1845–51), Skinner's Axminster power loom (1876). The woven industry slumped in the 1920s and Depression; tufted carpet arrived at about half the wholesale price, Mohawk and Alexander Smith merged as Mohasco in 1956, and production moved south. Langhorne, one of the last American Wilton mills, has closed.\n\nOpen: the 1877 \"first broadloom\" claim (single source); when the term broadloom came into use.",
-    items: ["wilton-1741", "grace-wilton-royal", "nps-wilton-america", "si-bigelow-loom-model", "bigelow-power-loom", "bigelow-mill", "book-bigelow-century", "ucsb-bigelow-sample-book", "skinner-axminster-1876", "bigelow-broadloom-1877", "woven-slump-1920s", "chenille-widened", "tufted-half-price", "mohasco-1956", "co-mohawk", "langhorne-wilton", "philly-encyclopedia-carpet", "wint-lib-swatch-books", "article-patton-ehnet"]
+    items: ["wilton-1741", "grace-wilton-royal", "nps-wilton-america", "si-bigelow-loom-model", "bigelow-power-loom", "bigelow-mill", "book-bigelow-century", "ucsb-bigelow-sample-book", "skinner-axminster-1876", "bigelow-broadloom-1877", "woven-slump-1920s", "chenille-widened", "tufted-half-price", "mohasco-1956", "co-mohawk", "langhorne-wilton", "philly-encyclopedia-carpet", "wint-lib-swatch-books", "wint-lib-tariff-brussels", "article-patton-ehnet"]
   },
   {
     id: "ch-dalton-bedspreads", kind: "chapter",
@@ -31,7 +31,7 @@ window.RUG_CHAPTERS = [
     id: "ch-nylon", kind: "chapter",
     name: "Nylon and the broadloom boom",
     intro: "Working notes:\n\nDuPont's bulked continuous filament (BCF) nylon, dated 1957 or 1959 by different sources; carpet nylon developed at Seaford in 1958. Tufted sales rose from near zero in the late 1940s to over 100 million square yards by 1958. Hagley holds the advertising, photography and consumer research. Do not repeat the Longlife 1952 nylon claim.",
-    items: ["event-bcf-nylon", "hagley-seaford-nylon", "hagley-textile-fibers-album", "hagley-textile-fibers-product-info", "hagley-dupont-advertising-1803", "hagley-dichter-nylon-carpets", "hagley-hull-papers", "ner-de-longlife-refuted", "hagley-nylon-hooked-rug", "hagley-pam-20160208", "hagley-dpads-1803-00680", "hagley-dpads-1803-00709", "hagley-dpads-1803-00712", "hagley-film-fc319", "hagley-film-opening-door-1959", "hagley-vid-1995300-b10", "hagley-1972430-1080", "hagley-1972341-ludox", "hagley-oh-mcandrews", "ttw-finding-501-1958", "hagley-dichter-954a", "hagley-bbdo-nylon", "hagley-pahlmann-samples", "hagley-film-fc249-02", "article-archer-luxury-underfoot", "duke-adviews-caprolan", "ttw-claim-dupont-nylon", "pat-us2071250a", "pat-us2130948a", "hagley-vault-1937-patent", "book-hounshell-smith", "ttw-nylon-6-schlack", "wint-shaw-licensed-nylon", "tufted-half-price"]
+    items: ["event-bcf-nylon", "hagley-seaford-nylon", "hagley-textile-fibers-album", "hagley-textile-fibers-product-info", "hagley-dupont-advertising-1803", "hagley-dichter-nylon-carpets", "hagley-hull-papers", "ner-de-longlife-refuted", "hagley-nylon-hooked-rug", "hagley-2015-10-2", "hagley-pam-20160208", "hagley-dpads-1803-00680", "hagley-dpads-1803-00709", "hagley-dpads-1803-00712", "hagley-film-fc319", "hagley-film-opening-door-1959", "hagley-vid-1995300-b10", "hagley-1972430-1080", "hagley-1972341-ludox", "hagley-oh-mcandrews", "ttw-finding-501-1958", "hagley-dichter-954a", "hagley-bbdo-nylon", "hagley-pahlmann-samples", "hagley-film-fc249-02", "article-archer-luxury-underfoot", "duke-adviews-caprolan", "ttw-claim-dupont-nylon", "pat-us2071250a", "pat-us2130948a", "hagley-vault-1937-patent", "book-hounshell-smith", "ttw-nylon-6-schlack", "wint-shaw-licensed-nylon", "tufted-half-price"]
   },
   {
     id: "ch-abroad", kind: "chapter",
@@ -60,8 +60,8 @@ window.RUG_CHAPTERS = [
   {
     id: "ch-today", kind: "chapter",
     name: "Today: industry giants and custom tufting studios",
-    intro: "Working notes:\n\nTwo ends of the same technique. Machine broadloom concentrated around Dalton (Shaw, from a 1946 dye house finishing tufted bedspreads; Mohawk, a woven-carpet firm from 1878 that moved south). Hand-tufting became a studio craft: Scott Group (1969), Creative Accents (1967), Kramis (1987, Switzerland), Delos (2005, CNC and hand), Tai Ping (1956, Hong Kong), Jaipur Living (1978, India). Careful with superlatives: \"world's largest\" claims are dated or about all flooring.",
-    items: ["co-shaw", "co-mohawk", "book-patton-shaw", "wint-shaw-licensed-nylon", "co-scott-group", "co-creative-accents", "co-delos", "co-kramis", "co-tai-ping", "co-jaipur"]
+    intro: "Working notes:\n\nTwo ends of the same technique. Machine broadloom concentrated around Dalton (Shaw, from a 1946 dye house finishing tufted bedspreads; Mohawk, a woven-carpet firm from 1878 that moved south). Hand-tufting became a studio craft: Scott Group (1969), Creative Accents (1967), Kramis (1987, Switzerland), Delos (2005, CNC and hand), Tai Ping (1956, Hong Kong), Jaipur Living (1978, India). Merida (Fall River) is the counterpoint: woven natural-fibre rugs in an old cotton-mill town, rejecting synthetics. Careful with superlatives: \"world's largest\" claims are dated or about all flooring.",
+    items: ["co-shaw", "co-mohawk", "book-patton-shaw", "wint-shaw-licensed-nylon", "co-scott-group", "co-creative-accents", "co-delos", "co-kramis", "co-tai-ping", "co-jaipur", "co-merida"]
   },
   {
     id: "ch-hobby", kind: "chapter",
