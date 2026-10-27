@@ -1,0 +1,672 @@
+URL: https://patents.google.com/patent/CN2723478Y/en
+Final: https://patents.google.com/patent/CN2723478Y/en
+Status: 200
+Title: CN2723478Y - Hand held lateral electric knitting needle for knitting carpet 
+      - Google Patents
+Fetched: 2026-10-27T07:27:47.695Z
+
+CN2723478Y - Hand held lateral electric knitting needle for knitting carpet
+- Google Patents
+CN2723478Y - Hand held lateral electric knitting needle for knitting carpet
+- Google Patents
+Hand held lateral electric knitting needle for knitting carpet
+Download PDF
+Info
+Publication number
+CN2723478Y
+CN2723478Y
+CN 200420044858
+CN200420044858U
+CN2723478Y
+CN 2723478 Y
+CN2723478 Y
+CN 2723478Y
+CN 200420044858
+CN200420044858
+CN 200420044858
+CN 200420044858 U
+CN200420044858 U
+CN 200420044858U
+CN 2723478 Y
+CN2723478 Y
+CN 2723478Y
+Authority
+CN
+China
+Prior art keywords
+needle
+knitting
+scissors
+velvet
+internal sleeve
+Prior art date
+2004-04-19
+Legal status (The legal status is an assumption and is not a legal conclusion. Google has not performed a legal analysis and makes no representation as to the accuracy of the status listed.)
+Expired - Fee Related
+Application number
+CN 200420044858
+Other languages
+Chinese ( zh )
+Inventor
+霍兆斌
+Current Assignee (The listed assignees may be inaccurate. Google has not performed a legal analysis and makes no representation or warranty as to the accuracy of the list.)
+Individual
+Original Assignee
+Individual
+Priority date (The priority date is an assumption and is not a legal conclusion. Google has not performed a legal analysis and makes no representation as to the accuracy of the date listed.)
+2004-04-19
+Filing date
+2004-04-19
+Publication date
+2005-09-07
+Family has litigation
+First worldwide family litigation filed
+litigation
+Critical
+https://patents.darts-ip.com/?family=35037108&utm_source=google_patent&utm_medium=platform_link&utm_campaign=public_patent_search&patent=CN2723478(Y)
+"Global patent litigation dataset” by Darts-ip is licensed under a Creative Commons Attribution 4.0 International License.
+2004-04-19
+Application filed by Individual
+filed
+Critical
+Individual
+2004-04-19
+Priority to CN 200420044858
+priority
+Critical
+patent/CN2723478Y/en
+2005-09-07
+Application granted
+granted
+Critical
+2005-09-07
+Publication of CN2723478Y
+publication
+Critical
+patent/CN2723478Y/en
+2014-04-19
+Anticipated expiration
+legal-status
+Critical
+Status
+Expired - Fee Related
+legal-status
+Critical
+Current
+Links
+Espacenet
+Global Dossier
+Discuss
+238000009940
+knitting
+Methods
+0.000
+title
+claims
+abstract
+description
+29
+RYGMFSIKBFXOCR-UHFFFAOYSA-N
+Copper
+Chemical compound
+[Cu]
+RYGMFSIKBFXOCR-UHFFFAOYSA-N
+0.000
+claims
+abstract
+description
+8
+239000010949
+copper
+Substances
+0.000
+claims
+abstract
+description
+8
+229910052802
+copper
+Inorganic materials
+0.000
+claims
+abstract
+description
+8
+229910000831
+Steel
+Inorganic materials
+0.000
+claims
+abstract
+description
+6
+239000010959
+steel
+Substances
+0.000
+claims
+abstract
+description
+6
+230000005611
+electricity
+Effects
+0.000
+claims
+description
+12
+239000000463
+material
+Substances
+0.000
+abstract
+description
+4
+239000004743
+Polypropylene
+Substances
+0.000
+abstract
+description
+3
+239000000835
+fiber
+Substances
+0.000
+abstract
+description
+3
+-1
+polypropylene
+Polymers
+0.000
+abstract
+description
+3
+229920001155
+polypropylene
+Polymers
+0.000
+abstract
+description
+3
+229920000297
+Rayon
+Polymers
+0.000
+abstract
+1
+239000002964
+rayon
+Substances
+0.000
+abstract
+1
+238000009941
+weaving
+Methods
+0.000
+abstract
+1
+210000002268
+wool
+Anatomy
+0.000
+description
+9
+239000002994
+raw material
+Substances
+0.000
+description
+6
+210000004209
+hair
+Anatomy
+0.000
+description
+4
+238000010008
+shearing
+Methods
+0.000
+description
+4
+NIXOWILDQLNWCW-UHFFFAOYSA-N
+acrylic acid group
+Chemical group
+C(C=C)(=O)O
+NIXOWILDQLNWCW-UHFFFAOYSA-N
+0.000
+description
+3
+235000015111
+chews
+Nutrition
+0.000
+description
+3
+229920002955
+Art silk
+Polymers
+0.000
+description
+2
+230000009286
+beneficial effect
+Effects
+0.000
+description
+2
+230000001055
+chewing effect
+Effects
+0.000
+description
+2
+230000000875
+corresponding effect
+Effects
+0.000
+description
+2
+239000004744
+fabric
+Substances
+0.000
+description
+2
+229910000906
+Bronze
+Inorganic materials
+0.000
+description
+1
+101100008048
+Caenorhabditis elegans cut-4 gene
+Proteins
+0.000
+description
+1
+239000003082
+abrasive agent
+Substances
+0.000
+description
+1
+230000006978
+adaptation
+Effects
+0.000
+description
+1
+239000010974
+bronze
+Substances
+0.000
+description
+1
+KUNSUQLRTQLHQQ-UHFFFAOYSA-N
+copper tin
+Chemical compound
+[Cu].[Sn]
+KUNSUQLRTQLHQQ-UHFFFAOYSA-N
+0.000
+description
+1
+230000002596
+correlated effect
+Effects
+0.000
+description
+1
+238000010586
+diagram
+Methods
+0.000
+description
+1
+230000000694
+effects
+Effects
+0.000
+description
+1
+238000009434
+installation
+Methods
+0.000
+description
+1
+238000012423
+maintenance
+Methods
+0.000
+description
+1
+230000035515
+penetration
+Effects
+0.000
+description
+1
+239000002699
+waste material
+Substances
+0.000
+description
+1
+Images
+Landscapes
+Knitting Machines
+( AREA )
+Abstract
+The utility model relates to a hand held lateral electric knitting needle for knitting carpet, comprising a needle nozzle, ream scissors, a needle frame steel jacket, a needle head, a nozzle internal sleeve, a scissors internal sleeve, a copper outer plate, a movable connecting rod, a gear box and a miniature electric motor arranged in an electric motor casing. The needle nozzle and the ream scissors can be laterally arranged in the needle frame steel jacket and can laterally move via the specially designed nozzle internal sleeve and the scissors internal sleeve arranged in the needle head when knitting blanket. Therefore, various primary materials such as polypropylene fiber, real silk, real silk mixing velvet, rayon and yarn can be knitted into 1 to 8 velvet wires in order to increase the quality and the efficiency of weaving blanket. The knitted velvet surface is smooth, the length difference of the velvet is small, so the utility model can save a large amount of primary materials and reduce the cost.
+Description
+A kind of portable horizontal type electricity knitting needle of weavening carpet
+Affiliated technical field
+The utility model relates to a kind of portable horizontal type electricity knitting needle of weavening carpet, especially relates to a kind ofly knitting 1 to 8 knitting wool and using multiple knitting wool raw material can knit the portable horizontal type electricity knitting needle of the middle and high level carpet of better quality.
+Background technology
+At present, the portable electric knitting needle of weavening carpet all is straight formula, can only knit 3 to 6 knitting wools, and the knitting wool material of use is just wool or acrylic generally.Second-rate during self-figure formula pattern, effect is bad, can only knit some low-grade carpets; When knitting flat pin carpet, efficient is low, and its fine hair length of the matte that weaves differs bigger, and the fine hair waste is bigger when cutting flat.
+Technical problem to be solved
+The purpose of this utility model just provides a kind of portable horizontal type electricity knitting needle, and the raw material of its use also can use polypropylene fibre, real silk, raw silk rings to mix multiple raw material such as suede, artificial silk, the dimity except that wool and acrylic; Quality is good during self-figure formula pattern, can knit middle-and-high-ranking carpet; Efficient height when knitting flat pin, quality are good; And can knit 1 to 8 knitting wool.The matte that weaves is flat, neat, and its fine hair length differs less, can save a large amount of raw material, reduces cost.
+The technical scheme that is adopted
+For achieving the above object, the utility model solves the technical scheme that its technical problem adopts and is: adopt with the straight formula feed motion of at present portable straight formula electricity knitting needle horizontal type feed motion inequality fully be horizontal type electricity knitting needle.For realizing this purpose, two parts primary clustering of horizontal type electricity knitting needle: syringe needle and gear-box all carry out new design, and the track requirement according to transverse movement is designed to special structure.
+Described needle assembly mainly by pin chew, syringe needle, cut interior cover, chew interior cover, machine is cut, cut across to copper outer plate, punch block steel bushing, hinge, close shearing machine, clever son, cut end catapult and top cloth holder etc. constitutes.
+Because the movement locus that pin is chewed is transverse movement, need laterally to install, just make the driving part of supporting pin to chew transverse movement chew interior cover, cut interior cover, syringe needle, punch block steel bushing, hinge are cut, are cut across the structure of parts such as machine, pass shearing machine and carry out new design and change mounting means.
+In addition, gear-box and some other part of need supporting transverse movement, crank for example, parts such as head transverse axis, brake system have all been done design new on the corresponding structure and have been changed its installation site.
+Beneficial effect
+The beneficial effects of the utility model are: enlarged and knitted suede number scope and use the raw material scope, can knit 1 to 8 knitting wool, can use polypropylene fibre, real silk, real silk beyond wool and the acrylic to mix multiple materials such as suede, artificial silk, the dimity, can knit middle and high level carpet, quality is good.The utility model can be done to adjust arbitrarily to the density of carpet and thickness, weaves the not only short but also real real blanket of weak point.Because concordant its fine hair length of surface of second order differs less, like this, can save a large amount of raw material when cutting face, reduces cost.Some consumable accessorys have adopted high-abrasive material, improve service life, rational in infrastructure, easy to maintenance.
+Description of drawings:
+The utility model is described in further detail below in conjunction with drawings and Examples
+Fig. 1 looks schematic diagram for the master of the utility model embodiment syringe needle part and gear-box part.
+Fig. 2 is the vertical view of Fig. 1
+Fig. 3 is syringe needle, cuts interior cover, chews the internal sleeve assembly outline drawing
+Fig. 4 is the cutaway view along the A-A line of Fig. 3
+1 pin is chewed among the figure, and 2 top cloth holders, 3 hinges are cut 4 punch block steel bushings
+5 handle 6 syringe needles 7 bronze medal outer plates 8 movable rods alive
+9 gear-boxes, 10 cranks, 11 switch lever, 12 handles
+13 close shearing machine 14 penetration pipes 15 head transverse axis 16 chews interior cover
+17 cut interior cover
+Can see that by Fig. 1 and Fig. 2 it is laterally to install that the pin of the utility model horizontal type electricity knitting needle is chewed (1).It also is laterally to be installed in pin to chew in the groove that hinge is cut (3).
+When motor power passes through gear-box (9) transferring power, the movable rod of both sides (8) does reciprocating linear motion two the copper outer plates (7) that are connected in syringe needle (6) both sides, and chew interior cover (16) and cut overcoat (17) under the driving of copper outer plate (7) with both sides copper outer plates (7) connect respectively, make pin chew (1) respectively and hinge is cut (3) and made transverse movement and corresponding shearing motion, thereby realize the transverse movement of knitting woollen blanket.
+It needs to be noted: the design of straight formula electricity knitting needle syringe needle inner chamber is 8 fonts, and the design of the utility model syringe needle (6) inner chamber is columnar, and both structures are inequality, can be clear that the inner chamber design of the utility model syringe needle (6) from Fig. 4
+Be installed in chewing interior cover (16) and cut interior cover (17) and all being designed to cohesion style of syringe needle (6) inner chamber, be installed in the cylinder bore of syringe needle (6).
+Some other correlated parts of the present utility model is the adaptation pin and chews the transverse movement of (1), and carries out special structural design.
+Certainly; pin is chewed and can be made into longer or weak point; in chewing cover with cut in the size of cover also can make some changes, when these changes or some other part are done slightly to change and when still making pin chew to do transverse movement, all fallen into protection domain of the present utility model.
+Claims ( 3 )
+1. the portable horizontal type of weavening carpet electricity knitting needle, cut cover (16) in (3), punch block steel bushing (4), syringe needle (6), the mouth, cut interior cover (17), copper outer plate (7), movable rod (8), gear-box (9) and the micro-machine that is installed in the motor casing is formed by pin mouth (1), hinge, it is characterized in that: the inner chamber of syringe needle (6) is designed to cylindrical shape, overlap (16) in the mouth and cut interior cover (17) obvolvent and be installed in the cylindrical cavity of syringe needle (6) the horizontal type motion when making pin mouth (1) realize knitting woollen blanket.
+2. according to the described portable horizontal type electricity of claim 1 knitting needle, it is characterized in that: cover (16) and the obvolvent face of cutting interior cover (17) are a kind of ladder-type structures in the mouth, and its inside is the rectangular inner cavity of a hollow, and the top is a semicircle, and the bottom is the plane.
+3. according to the described portable horizontal type electricity knitting needle of claim 1, it is characterized in that: the copper outer plate (7) of syringe needle (6) both sides is made of copper.
+CN 200420044858
+2004-04-19
+2004-04-19
+Hand held lateral electric knitting needle for knitting carpet
+Expired - Fee Related
+CN2723478Y
+( en )
+Priority Applications (1)
+Application Number
+Priority Date
+Filing Date
+Title
+CN 200420044858
+CN2723478Y
+( en )
+2004-04-19
+2004-04-19
+Hand held lateral electric knitting needle for knitting carpet
+Applications Claiming Priority (1)
+Application Number
+Priority Date
+Filing Date
+Title
+CN 200420044858
+CN2723478Y
+( en )
+2004-04-19
+2004-04-19
+Hand held lateral electric knitting needle for knitting carpet
+Publications (1)
+Publication Number
+Publication Date
+CN2723478Y
+true
+CN2723478Y
+( en )
+2005-09-07
+Family
+ID=35037108
+Family Applications (1)
+Application Number
+Title
+Priority Date
+Filing Date
+CN 200420044858
+Expired - Fee Related
+CN2723478Y
+( en )
+2004-04-19
+2004-04-19
+Hand held lateral electric knitting needle for knitting carpet
+Country Status (1)
+Country
+Link
+CN
+( 1 )
+CN2723478Y
+( en )
+Cited By (3)
+* Cited by examiner, † Cited by third party
+Publication number
+Priority date
+Publication date
+Assignee
+Title
+WO2015154325A1
+( en )
+*
+2014-04-12
+2015-10-15
+南通德贝尔工贸有限公司
+Curtain fabric having relief effect and manufacturing method therefor
+US10017891B1
+( en )
+2018-01-31
+2018-07-10
+The Oxford Company, LLC
+Needle assembly for use in manufacturing carpeting
+CN110409053A
+( en )
+*
+2019-08-30
+2019-11-05
+殷建和
+A carpet knitting machine gun head
+2004
+2004-04-19
+CN
+CN 200420044858
+patent/CN2723478Y/en
+not_active
+Expired - Fee Related
+Cited By (3)
+* Cited by examiner, † Cited by third party
+Publication number
+Priority date
+Publication date
+Assignee
+Title
+WO2015154325A1
+( en )
+*
+2014-04-12
+2015-10-15
+南通德贝尔工贸有限公司
+Curtain fabric having relief effect and manufacturing method therefor
+US10017891B1
+( en )
+2018-01-31
+2018-07-10
+The Oxford Company, LLC
+Needle assembly for use in manufacturing carpeting
+CN110409053A
+( en )
+*
+2019-08-30
+2019-11-05
+殷建和
+A carpet knitting machine gun head
+Similar Documents
+Publication
+Publication Date
+Title
+CN201325764Y
+( en )
+2009-10-14
+Directly operated type automatic bolt arrangement machine
+CN202466122U
+( en )
+2012-10-03
+Dial Linking machine with wear-reducing yarn-picking device
+CN214168333U
+( en )
+2021-09-10
+Forming tool for arc surface of special-shaped needling preform
+CN2806530Y
+( en )
+2006-08-16
+Portable high speed electric needle for knitting carpet
+CN220619336U
+( en )
+2024-03-19
+Non-woven fabrics acupuncture device convenient to change pjncture needle
+CN218855749U
+( en )
+2023-04-14
+But angle regulation's metal plate shearing machine
+CN2853343Y
+( en )
+2007-01-03
+Automatic stamping-out device for suction tube
+CN202766777U
+( en )
+2013-03-06
+Feed lifting mechanism of direct-driven minim oil-supply side cutter flat sewing machine
+CN215333985U
+( en )
+2021-12-28
+Magnetic force slider
+CN222313474U
+( en )
+2025-01-07
+Emergency interception device for double-spindle rocker arm type needling machine
+CN219342534U
+( en )
+2023-07-14
+An embroidery machine with the function of automatic thread breaking stop
+CN207874361U
+( en )
+2018-09-18
+Full-automatic velveteen toy wire-electrode cutting device
+CN209887641U
+( en )
+2020-01-03
+Cutter assembly for quilt core machine
+CN201433277Y
+( en )
+2010-03-31
+Hand-held electric knitting needle head for knitting blankets
+CN219670724U
+( en )
+2023-09-12
+Positioning wire pressing device convenient to operate
+CN216473894U
+( en )
+2022-05-10
+Efficient type knitting needle reciprocating motion equipment
+CN219731315U
+( en )
+2023-09-22
+Oiling station is used in glass fiber manufacturing
+CN2858111Y
+( en )
+2007-01-17
+Cutting device for pocket spring
+CN224047661U
+( en )
+2026-03-27
+Easy-to-disassemble crank for lifting teeth of sewing machine
+CN221218072U
+( en )
+2024-06-25
+Yarn feeding installation structure for circular weft knitting machine
+CN222846206U
+( en )
+2025-05-09
+A yarn guide for industrial yarn with adjustable spacing
+CN221344807U
+( en )
+2024-07-16
+Mixed carding machine with multicolor reciprocating carding function
+CN220183531U
+( en )
+2023-12-15
+Multiaxial warp knitting machine of glass fiber double warp knitting cloth for wind power blade
+CN218252196U
+( en )
+2023-01-10
+Manipulator material feeding unit of aluminium alloy extruder
+CN214736709U
+( en )
+2021-11-16
+Passive cloth pressing mechanism
+Legal Events
+Date
+Code
+Title
+Description
+2005-09-07
+C14
+Grant of patent or utility model
+2005-09-07
+GR01
+Patent grant
+2008-12-03
+EE01
+Entry into force of recordation of patent licensing contract
+Assignee :
+Foshan Nanhai Yong Lun carpet textile Co., Ltd.
+Assignor :
+Huo Zhaobin
+Contract fulfillment period :
+2008.2.16 to 2014.4.18
+Contract record no. :
+2008440000084
+Denomination of utility model :
+Hand held lateral electric knitting needle for knitting carpet
+Granted publication date :
+20050907
+License type :
+exclusive license
+Record date :
+20080512
+2008-12-03
+LIC
+Patent licence contract for exploitation submitted for record
+Free format text :
+EXCLUSIVE LICENCE; TIME LIMIT OF IMPLEMENTING CONTACT: 2008.2.16 TO 2014.4.18
+Name of requester :
+NANHAI YONGLUN CARPET TEXTILE CO., LTD., FUSHAN C
+Effective date :
+20080512
+2014-06-11
+C17
+Cessation of patent right
+2014-06-11
+CF01
+Termination of patent right due to non-payment of annual fee
+Granted publication date :
+20050907
+Termination date :
+20130419

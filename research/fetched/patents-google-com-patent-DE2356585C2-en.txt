@@ -1,0 +1,854 @@
+URL: https://patents.google.com/patent/DE2356585C2/en
+Final: https://patents.google.com/patent/DE2356585C2/en
+Status: 200
+Title: DE2356585C2 - 
+  Device for tufting carpets by hand
+ 
+      - Google Patents
+Fetched: 2026-10-27T07:27:46.827Z
+
+DE2356585C2 -
+Device for tufting carpets by hand
+- Google Patents
+DE2356585C2 -
+Device for tufting carpets by hand
+- Google Patents
+Device for tufting carpets by hand
+Info
+Publication number
+DE2356585C2
+DE2356585C2
+DE2356585A
+DE2356585A
+DE2356585C2
+DE 2356585 C2
+DE2356585 C2
+DE 2356585C2
+DE 2356585 A
+DE2356585 A
+DE 2356585A
+DE 2356585 A
+DE2356585 A
+DE 2356585A
+DE 2356585 C2
+DE2356585 C2
+DE 2356585C2
+Authority
+DE
+Germany
+Prior art keywords
+needle
+thread
+piston
+swivel head
+section
+Prior art date
+1973-11-13
+Legal status (The legal status is an assumption and is not a legal conclusion. Google has not performed a legal analysis and makes no representation as to the accuracy of the status listed.)
+Expired
+Application number
+DE2356585A
+Other languages
+German ( de )
+Other versions
+DE2356585B1
+( en
+Inventor
+Hartmut 8501 Allersberg Scholz
+Current Assignee (The listed assignees may be inaccurate. Google has not performed a legal analysis and makes no representation or warranty as to the accuracy of the list.)
+Bavaria Textil 8567 Neunkirchen De GmbH
+Original Assignee
+Individual
+Priority date (The priority date is an assumption and is not a legal conclusion. Google has not performed a legal analysis and makes no representation as to the accuracy of the date listed.)
+1973-11-13
+Filing date
+1973-11-13
+Publication date
+1975-07-17
+1973-11-13
+Application filed by Individual
+filed
+Critical
+Individual
+1973-11-13
+Priority to DE2356585A
+priority
+Critical
+patent/DE2356585C2/en
+1974-10-31
+Priority to GB4727674A
+priority
+patent/GB1461009A/en
+1974-11-01
+Priority to US05/520,119
+priority
+patent/US3968758A/en
+1974-11-08
+Priority to JP49129489A
+priority
+patent/JPS5078459A/ja
+1974-11-28
+Publication of DE2356585B1
+publication
+Critical
+patent/DE2356585B1/en
+1975-07-17
+Application granted
+granted
+Critical
+1975-07-17
+Publication of DE2356585C2
+publication
+Critical
+patent/DE2356585C2/en
+Status
+Expired
+legal-status
+Critical
+Current
+Links
+Espacenet
+Global Dossier
+DPMA
+Discuss
+238000009732
+tufting
+Methods
+0.000
+title
+claims
+description
+6
+230000001360
+synchronised effect
+Effects
+0.000
+claims
+description
+2
+239000004744
+fabric
+Substances
+0.000
+description
+10
+230000000694
+effects
+Effects
+0.000
+description
+2
+238000000034
+method
+Methods
+0.000
+description
+2
+238000010586
+diagram
+Methods
+0.000
+description
+1
+238000003780
+insertion
+Methods
+0.000
+description
+1
+230000037431
+insertion
+Effects
+0.000
+description
+1
+230000001788
+irregular
+Effects
+0.000
+description
+1
+238000004519
+manufacturing process
+Methods
+0.000
+description
+1
+238000000059
+patterning
+Methods
+0.000
+description
+1
+230000000149
+penetrating effect
+Effects
+0.000
+description
+1
+Classifications
+D &mdash; TEXTILES; PAPER
+D05 &mdash; SEWING; EMBROIDERING; TUFTING
+D05C &mdash; EMBROIDERING; TUFTING
+D05C15/00 &mdash; Making pile fabrics or articles having similar surface features by inserting loops into a base material
+Landscapes
+Engineering & Computer Science
+( AREA )
+Chemical & Material Sciences
+( AREA )
+Materials Engineering
+( AREA )
+Textile Engineering
+( AREA )
+Sewing Machines And Sewing
+( AREA )
+Preliminary Treatment Of Fibers
+( AREA )
+Description
+Translated from German
+35 35
+Die Erfindung richtet sich auf eine Vorrichtung zum Tuften von Teppichen in Handarbeit mit einer durch
+einen Kolben axial hin- und herbewegten Hohlnadel, durch die der seitlich eingeführte Faden mittels eines
+seitlich eingeleiteten Luftstroms hindurchführbar ist, und mit einem synchron zur Nadelbewegung angetriebenen
+sowie taktmäßig den Faden in der Hohlnadel durchtrennenden und der Kolbenbewegung folgenden
+Messer. The invention is directed to an apparatus for tufting carpets by hand with a through
+a piston axially reciprocating hollow needle, through which the laterally inserted thread by means of a
+laterally introduced air flow can be passed through, and with a driven synchronous to the needle movement
+as well as clockwise cutting through the thread in the hollow needle and following the piston movement
+Knife.
+Es ist eine derartige Vorrichtung bekannt (DT-OS 1 685 107), mittels deren von der Rückseite her das
+Grundgewebe für jeden Faden zweifach durchstochen wird. Zwischen den beiden Einstichen wird das Gerät
+seitwärts versetzt. Auf diese Weise bildet sich eine an der Vorderseite des Grundgewebes offene Schlinge.
+Nadel und Druckluft treten gemeinsam seitlich in den sich hin- und herbewegenden Kolben und über diesen
+in die Nadel ein. Innerhalb des Kolbenkanals wird der eingeführte Faden im Luftstrom umgelenkt, was erhebliche
+Schwierigkeiten beim Fadenlauf und infolgedessen einen ungleichmäßigen Flor des Teppichs ergibt.
+Das Abschneiden des Fadens erfolgt in einer Unterbrechung des Kolbenkanals mittels eines schräg zu diesen
+hin- und herbewegten Messers. Der Antrieb des Messers geht von einem außerhalb des Handgeräts befindlichen
+Gestänge aus, so daß die Vorrichtung einen außerordentlich unruhigen Lauf aufweist, was deren
+Führung gegenüber dem Grundgewebe, insbesondere im Hinblick auf den geringen Abstand der Stiche,
+außerordentlich erschwert. Such a device is known (DT-OS 1 685 107), by means of which from the rear the
+The base fabric is pierced twice for each thread. The device is between the two punctures
+offset sideways. In this way a loop is formed which is open at the front of the base fabric.
+The needle and compressed air enter the side of the reciprocating piston and over it
+into the needle. Within the piston channel, the introduced thread is deflected in the air flow, which is considerable
+Difficulties in running the thread and, as a result, an uneven pile of the carpet.
+The thread is cut in an interruption of the piston channel by means of an oblique to the latter
+floating knife. The drive of the knife comes from an outside of the hand-held device
+Linkage out, so that the device has an extremely rough run, what their
+Guidance in relation to the base fabric, especially with regard to the small spacing of the stitches,
+extremely difficult.
+Von einer nach einem anderen Prinzip arbeitenden Vorrichtung (DT-OS 1 919 058) zum Tuften von Teppichen
+ist es schließlich bekannt, den Faden axial und den Luftstrom seitlich in eine Hohlnadel einzuleiten. From a device (DT-OS 1 919 058) working according to a different principle for tufting carpets
+it is finally known to introduce the thread axially and the air flow laterally into a hollow needle.
+Diesen bekannten Geräten gegenüber stellt sich die Aufgabe, eine Vorrichtung zum Tuften von Teppichen
+zu schaffen, die auf Grund ihrer konstruktiven Gestaltung für den praktischen Gebrauch geeignet ist und die
+eine exakte Stichführung erlaubt, worauf es vornehmlich bei der Verwendung feinerer Fäden entscheidend
+ankommt Erfindungsgemäß wird dies dadurch erreicht, daß die Lufteinströmöffnung und die Fadeneinführung
+getrennt voneinander in die Nadel einmünden, daß der Nadelvorderteil um seine Achse drehbar im Kolben gelagert
+und daß ein umlaufendes Messer vorgesehen ist. In contrast to these known devices, the task is to provide a device for tufting carpets
+to create which is suitable for practical use due to its structural design and which
+an exact stitch guidance allows, which is especially important when using finer threads
+According to the invention, this is achieved in that the air inlet opening and the thread introduction
+open separately from each other in the needle that the needle front part rotatably mounted about its axis in the piston
+and that a rotating knife is provided.
+Eine solche Maßnahme führt zu einem exakten Schnitt des Fadens und bildet damit die Voraussetzung
+für eine Einstellbarkeit der Florlänge in einem beachtlichen Bereich. Fadenführung und Schnitt lassen sich
+derart exakt vornehmen, daß der gebildete Velour praktisch nicht mehr geschoren zu werden braucht Mit
+dem Gerät lassen sich beliebige, auch unregelmäßige, insbesondere aber auch sehr komplizierte Muster ausführen,
+wie dies vornehmlich für Einzelstücke, zu deren Fertigung die erfindungsgemäße Vorrichtung bevorzugt
+in Betracht kommt, verlangt wird. Such a measure leads to an exact cut of the thread and is therefore a prerequisite
+for an adjustability of the pile length in a considerable range. Thread guide and cut can be
+make so exactly that the formed velor practically no longer needs to be sheared
+The device can be used to execute any pattern, including irregular, but also particularly very complex patterns,
+as is the case primarily for individual pieces, for the manufacture of which the device according to the invention is preferred
+is considered, is required.
+Es liegt im Rahmen der Erfindung, daß das Messer auf einer parallel zur Nadel verlaufenden Antriebswelle
+drehfest und längsbeweglich gelagert ist Dadurch folgt das Nadelvorderteil den Schwenkbewegungen des
+Schwenkkopfes. In diesem Zusammenhang hat sich die Anordnung eines Handhebels an dem Schwenkkopf besonders
+bewährt, um der Nadel und damit dem Arbeitsfortschritt die jeweils gewünschte Richtung auf dem
+Grundgewebe zu geben. Die Mitnahme der Nadel durch den Schwenkkopf läßt sich in einer den Erfordernissen
+der erfindungsgemäßen Vorrichtung besonders gerech« werdenden Weise vor allem dadurch erreichen,
+daß der Außenquerschnitt der Nadel und die Lagerbohrung des Schwenkkopfes einen ovalen Querschnitt
+aufweisen. It is within the scope of the invention that the knife is on a drive shaft running parallel to the needle
+Is rotatably and longitudinally movably mounted so that the needle front part follows the pivoting movements of the
+Swivel head. In this context, the arrangement of a hand lever on the swivel head has proven particularly useful
+proven to move the needle and thus the progress of work in the desired direction on the
+To give base fabric. The entrainment of the needle by the swivel head can be in one of the requirements
+the device according to the invention in a particularly fair manner, above all by
+that the outer cross-section of the needle and the bearing bore of the swivel head have an oval cross-section
+exhibit.
+Weitere Einzelheiten ergeben sich aus der folgenden Beschreibung einer bevorzugten Ausführungsform der
+Erfindung sowie an Hand der Zeichnung. Hierbei zeigt Further details emerge from the following description of a preferred embodiment of FIG
+Invention as well as on the basis of the drawing. Here shows
+F i g. 1 eine teilweise geschnittene Seitenansicht der Vorrichtung mit der Nadel in ausgelahrener Stellung, F i g. 1 is a partially sectioned side view of the device with the needle in the extended position,
+F i g. 2 eine Draufsicht mit der Nadel in eingefahrener Stellung, F i g. 2 is a top view with the needle in the retracted position;
+F i g. 3 einen Schnitt etwa nach Linie III-III in F i g. 2,
+F i g. 4 einen Schnitt etwa nach Linie IV-IV in F i g. 1, F i g. 5 einen Axialschnitt durch die Messerscheibe, F i g. 3 shows a section approximately along line III-III in F i g. 2,
+F i g. 4 shows a section approximately along line IV-IV in FIG. 1, Fig. 5 an axial section through the knife disc,
+F i g. 6 ein Detail der Arbeitsweise der Vorrichtung und F i g. 6 shows a detail of the operation of the device and
+F i g. 7 eine Anwendungsform der erfindungsgemäßen Vorrichtung im Schema. F i g. 7 shows a form of application of the device according to the invention in the diagram.
+Das Gehäuse 1 enthält in seinem Kopf 2 den im einzelnen nicht wiedergegebenen Antrieb. An das Griffstück
+3 ist das Stromzuführungskabel 4 angeschlossen. The housing 1 contains the drive, which is not shown in detail, in its head 2. To the handle
+3 the power supply cable 4 is connected.
+Jn dem Gehäusevorderteil 5 ist eine nach vorn offene
+Bohrung 6 vorgesehen, in welcher ein Kolben 7 gelagert ist. Dieser weist eine Innenbohrung 8 auf, und in
+dieser ist der hintere Teil 9 einer Nadel 10 befestigt. An das innere Ende der Nadel 10 ist im Winkel zur Längsachse
+des Nadelkanals U ein Rohrstutzen als Fadeneinführung 12 angebracht, der durch ein Fenster des
+Gehäusevorderteils 5 nach außen ragt. Vor dieser Fadeneinführung 12 ist die Nadel 10 mit einer Lufteinströmöffnung
+13 versehen, die an den Luftkanal 14 angeschlossen ist, der in einem mit dem Kolben 7 fest In the front part 5 of the housing there is an open to the front
+Bore 6 is provided in which a piston 7 is mounted. This has an inner bore 8, and in
+this is attached to the rear part 9 of a needle 10. At the inner end of the needle 10 is at an angle to the longitudinal axis
+of the needle channel U a pipe socket attached as a thread inlet 12, through a window of the
+Housing front part 5 protrudes to the outside. In front of this thread insertion 12, the needle 10 is provided with an air inflow opening
+13, which is connected to the air duct 14, which is fixed in one with the piston 7
+verbundenen Düsenkopf 15 mündet Der Düsenkopf carchsetzt ein Fenster 16 des Gehäusevorderteils 5. An
+eine Bohrung 17 des Düsenkopfs 15 ist ein Luftkanal 18 angeschlossen, der längsverschiebbar in eine Gehäusebohrung
+19 eingreift, die mit dem DruJduftanschluß 20
+verbunden ist connected nozzle head 15 opens the nozzle head carchsetzt a window 16 of the housing front part 5
+a bore 17 of the nozzle head 15 is connected to an air duct 18 which is longitudinally displaceable in a housing bore
+19 engages, which with the DruJduftanschluss 20
+connected is
+Das Vorderteil 21 der Nadel 10 ist in einem eine vordere
+Ausnehmung 22 des Kolbens 7 abschließenden Verschlußstück 23 drehbar oder mit diesem Verschlußstück
+23 drehbar in einer Kolbenhülse 24 gelagert Diese Kolbenhülse 24 greift in einen in der Gehäusenase
+25 drehbar, aber nicht längsbeweglich gelagerten Schwenkkopf 26 ein, an dem ein Handhebel 27 befestigt
+ist In diesem Schwenkkopf 26 ist das Vorderteil 21 der Nadel 10 längsbeweglich, jedoch drehfest gelagert
+so daß mit einer Verschwenkung des Handhebels 27 auch das Vorderteil 21 der Nadel 10 um seine Achse
+verschwenkbar ist The front part 21 of the needle 10 is a front one
+Recess 22 of the piston 7 closing locking piece 23 rotatable or with this locking piece
+23 rotatably mounted in a piston sleeve 24. This piston sleeve 24 engages in a nose in the housing
+25 rotatable, but not longitudinally movably mounted swivel head 26, to which a hand lever 27 is attached
+In this swivel head 26, the front part 21 of the needle 10 is longitudinally movable, but mounted in a rotationally fixed manner
+so that with a pivoting of the hand lever 27 and the front part 21 of the needle 10 about its axis
+is pivotable
+An der Innenseite des Verschlußstücks 23 ist ein Zwischenring 28 und in geringem Abstand davon ein
+Druckring 29 gelagert der unter der Wirkung der in der Ausnehmung 22 gelagerten Druckfeder 30 steht. In
+den Spalt zwischen Zwischenring 28 und Druckring 29 greift eine Messerscheibe 31 ein (vgl. auch F i g. 4 und
+5), die auf einer Büchse 32 sitzt, welche ihrerseits am Ende einer Antriebswelle 33 befestigt und in einem
+Lagerbock 34 gelagert ist Dieser ist mit der Büchse 24 des Kolbens 7 fest verbunden und durchsetzt ein Fenster
+35 in dem Gehäusevorderteil 5. Antriebswelio 33 und Büchse 32 sind zumindest drehfest verbunden,
+während andererseits entweder die Büchse auf der Antriebswelle 33 längsverschiebbar gelagert ist oder aber
+die Antriebswelle 33 unter drehfester und zugleich längsverschieblicher Verbindung gewissermaßen teleskopartig
+in die Welle 36 eingreift, die in den beiden Lagern 37 und 38 im Gehäusevorderteil 5 gelagert ist
+und mit dem nicht wiedergegebenen Antriebsmotor in Verbindung steht Auf dem hinteren Ende dieser Welle
+36 ist ein Ritzel 39 befestigt welches mit einem anderen Ritzel 40 auf der kurzen Zwischenwelle 41 kämmt.
+Diese trägt ein Kegelrad 42, welches seinerseits mit 7wei koaxial einander gegenüberstehenden Kegelrads
+rn 43 und 44 im Eingriff steht. On the inside of the closure piece 23 is an intermediate ring 28 and a small distance therefrom
+Pressure ring 29 mounted which is under the action of the pressure spring 30 mounted in the recess 22. In
+the gap between intermediate ring 28 and pressure ring 29 is engaged by a knife disk 31 (see also FIGS. 4 and 4)
+5), which sits on a sleeve 32, which in turn is attached to the end of a drive shaft 33 and in a
+Bearing block 34 is mounted. This is firmly connected to the bushing 24 of the piston 7 and passes through a window
+35 in the front part of the housing 5.
+while on the other hand either the bushing is mounted on the drive shaft 33 so as to be longitudinally displaceable or else
+the drive shaft 33 with a non-rotatable and at the same time longitudinally displaceable connection, as it were telescopic
+engages in the shaft 36 which is mounted in the two bearings 37 and 38 in the front part 5 of the housing
+and is connected to the drive motor not shown on the rear end of this shaft
+36 a pinion 39 is attached which meshes with another pinion 40 on the short intermediate shaft 41.
+This carries a bevel gear 42, which in turn with 7wei bevel gear coaxially opposed to one another
+rn 43 and 44 is in engagement.
+Über das Kegelrad 44 wird der Antrieb für die hin- und hergehende Bewegung des Kolbens / abgeleitet,
+und zwar durchsetzt die das Kegelrad 44 tragende Welle 45 den Gehäusevorderteil 5, und sie trägt an ihrem
+äußeren Ende eine Kurbelscheibe 46 mit dem Kurbelzapfen 47. An diesem greift eine Schubstange 48 an,
+deren anderes Ende an einem ein weiteres Fenster 49 im Gehäusevorderteil 5 durchsetzenden Mitnthmerzapfen
+50 angelenkt ist, der fest mit dem Kolben 7 verbunden ist. The drive for the reciprocating movement of the piston / is derived via the bevel gear 44,
+and that the shaft 45 carrying the bevel gear 44 passes through the front housing part 5, and it carries on its
+outer end of a crank disk 46 with the crank pin 47. A push rod 48 engages on this,
+the other end of which on a further window 49 in the front housing part 5 penetrating the Mitnthmerzapfen
+50 is articulated, which is firmly connected to the piston 7.
+Das Kegelrad 43 sitzt auf einer Welle 51, die im Gehäusevorderteil
+5 gelagert ist und auf ihrem äußeren Ende das eine Transportrad 52 trägt, dessen aufgerauhte
+Oberfläche mit der in gleicher Weise ausgebildeten Oberfläche des zweiten Transportrades 54 unter der
+Wirkung der Feder 53 im Reibungseingriff steht. Das andere Ende der Feder 53 ist an dem gehäuseseitig befestigten
+Rahmen 55 angebracht. The bevel gear 43 sits on a shaft 51 in the front part of the housing
+5 is mounted and carries a transport wheel 52 on its outer end, its roughened
+Surface with the surface formed in the same way of the second transport wheel 54 under the
+Effect of the spring 53 is in frictional engagement. The other end of the spring 53 is attached to the housing-side
+Frame 55 attached.
+Die Arbeitsweise der erfindungsgemäßen Vorrichtung ergibt sich aus dem Schema nach F i g. 7. Die Bahn
+56 des Grundgewebes wird von der Vorratsrolle 57 abgezogen und über die beiden Transportrollen 58 in
+einem etwa vertikalen Abschnitt 59 abwärts zur Umlenkrolle 60 geführt und schließlich auf die Lagerrolle
+61 für die fertige Ware aufgewickelt Gegenüber dem vertikal verlaufenden Abschnitt der Grundgewebebahn
+56 ist eine obere, hier T-förmig ausgebildete Laufschiene 62 angeordnet auf der ein Wagen 63 mittels Rollen
+od. dgl. längsverfahrbar gelagert ist An dem auf- und abwickelbaren Gehänge 64 ist die erfindungsgemäße
+Vorrichtung 65 einer Lage gegenüber dem Abschnitt 59 der Grundgewebebahn aufgehängt, so daß das Tuften
+an jeder beliebigen Stelle dieser Gewebebahn von deren der Vorrichtung 65 zugekehrten Rückseite 66
+(F i g. 6) her vorgenommen werden kann. Und zwar wird, wie F i g. 6 erkennen läßt, das offene Ende 67 des
+durch die Hohlnadel 10 zugeführten Fadens 68 beim Einstich der Nadel in das Grundgewebe 56 durch dieses
+hindurchgeführt und die Hohlnadel 10 zurückgezogen (vgl. Stellung in Fig.6). Darauf wird die Vorrichtung
+mit der Hohlnadel 10 seitlich versetzt und die Nadel 10 erneut eingeführt. Inzwischen hat das Messer 31 durch
+einen Trennschnitt das Fadenende 67 von dem Faden 68 abgetrennt, so daß auch dieses hintere Ende nun
+durch die in das Grundgewebe 56 einstechende Hohlnadel 10 eingeführt wird. Dieser Vorgang wiederholt
+sich in der gewünschten Weise und Musterung ständig. Die mechanische Wirkungsweise der erfindungsgemäßen
+Vorrichtung ergibt sich wie folgt: Durch den Druckluftanschluß 20 und die Luftkanäle 18,14 wird ein
+ständiger Luftstrom in der Nadel 10 erzeugt der an der Nadelspitze austritt. Da die Luft nur den vorderen Teil
+der Nadel 10 durchströmt, die Fadeneinführung aber durch den in Bewegungsrichtung des Fadens 68 weiter
+zurückliegenden Rohrstutzen 12 erfolgt, ergibt sich in der Hohlnadel 10, die vorzugsweise einen ovalen Querschnitt
+aufweist, praktisch eine Injektorwirkung, mittels deren der Faden 68 durch die Hohlnadel 10 hindurchgezogen
+wird. Dabei sorgt der Fadentransporteur, bestehend aus den beiden Transportrollen 52 und 54, für
+eine stetige Zuführung des von einer nicht dargestellten Vorratsrolle kommenden Fadens 68. Dieser Fadentransporteur
+wird über das Kegelradgetriebe 42,43 und die beiden Stirnräder 39, 40 synchron angetrieben mit
+der Antriebswelle 36 für die umlaufende Messerscheibe 31, die beispielsweise bei jedem vollen Umlauf einen
+Trennschnitt durchführt. The method of operation of the device according to the invention results from the scheme according to FIG. 7. The train
+56 of the base fabric is pulled off the supply roll 57 and transferred over the two transport rolls 58 in
+an approximately vertical section 59 down to the deflection roller 60 and finally on the bearing roller
+61 wound up for the finished goods Opposite the vertical section of the base fabric web
+56 an upper, here T-shaped running rail 62 is arranged on which a carriage 63 by means of rollers
+od. The like. Is mounted so as to be longitudinally displaceable
+Device 65 suspended in a position opposite the section 59 of the base fabric sheet, so that the tufting
+at any point on this fabric web from its rear side 66 facing device 65
+(Fig. 6) can be made ago. In fact, as shown in FIG. 6 shows the open end 67 of the
+thread 68 fed through the hollow needle 10 when the needle punctures the base fabric 56 through the latter
+passed through and the hollow needle 10 withdrawn (see position in Figure 6). Then the device
+laterally offset with the hollow needle 10 and the needle 10 is reinserted. Meanwhile the knife 31 has done
+a severing cut the thread end 67 separated from the thread 68, so that this rear end now
+is inserted through the hollow needle 10 piercing into the base fabric 56. This process is repeated
+in the desired manner and patterning constantly. The mechanical mode of action of the invention
+The device results as follows: Through the compressed air connection 20 and the air channels 18,14 a
+constant air flow generated in the needle 10 emerges at the needle tip. Because the air is only the front part
+the needle 10 flows through, but the thread introduction continues through the in the direction of movement of the thread 68
+rear pipe socket 12 takes place, results in the hollow needle 10, which preferably has an oval cross-section
+has, practically an injector effect, by means of which the thread 68 is pulled through the hollow needle 10
+will. The thread feeder, consisting of the two transport rollers 52 and 54, ensures
+a steady supply of the thread 68 coming from a supply roll (not shown). This thread conveyor
+is driven synchronously with the bevel gear 42,43 and the two spur gears 39, 40
+of the drive shaft 36 for the rotating cutter disk 31, which, for example, with each full revolution
+Carries out a separating cut.
+Der Antrieb wird über die Kegelräder 42, 44 auf die Kurbelscheibe 46 übertragen, wodurch der Kolben 7
+innerhalb des Gehäusevorderteils 5 in eine ebenfalls synchron gelagerte hin- und hergehende Bewegung
+versetzt wird. An dieser Bewegung nehmen sowohl die Hohlnadel 10 als auch das Messer 31 teil, welches allerdings
+nur während des eigentlichen Schnittes in den Nadelkanal eingreift. Das Messer 31 wird dabei durch
+den mit dem Kolben 7 verbundenen Lagerbock 34 mit- The drive is transmitted to the crank disk 46 via the bevel gears 42, 44, whereby the piston 7
+within the front housing part 5 in a likewise synchronously mounted reciprocating movement
+is moved. Both the hollow needle 10 and the knife 31 take part in this movement, but which one does
+only engages in the needle channel during the actual cut. The knife 31 is thereby through
+the bearing block 34 connected to the piston 7 with
+genommen. taken.
+Der Vorderteil 21 der Nadel 10 hat erfindungsgemäß einen ovalen Außenquerschnitt. Mit diesem ovalen
+Querschnitt stimmt überein der Querschnitt der den Vorderteil 2t aufnehmenden öffnung in dem Schwenkkopf
+26, so daß der Vorderteil 21 der Nadel 10 bei Betätigung des Schwenkkopfes 26 mittels des Handhebels
+27 einwandfrei mit verschwenkt werden kann. Der Innenquerschnitt der Nadel 21 ist dagegen vorteilhaft
+kreisrund. Er kann aber auch, entsprechend dem Außenquerschnitt, ebenfalls oval sein. According to the invention, the front part 21 of the needle 10 has an oval external cross-section. With this oval
+The cross section corresponds to the cross section of the opening in the swivel head that receives the front part 2t
+26, so that the front part 21 of the needle 10 when the swivel head 26 is actuated by means of the hand lever
+27 can be swiveled properly with. The inner cross-section of the needle 21, on the other hand, is advantageous
+circular. However, it can also be oval, depending on the external cross-section.
+Hierzu 2 Blatt Zeichnungen For this purpose 2 sheets of drawings
+Claims ( 5 )
+Translated from German
+Patentansprüche: Patent claims:
+1. Vorrichtung zum Tuften von Teppichen in Handarbeit mit einer durch einen Kolben axial hin-
+und herbewegten Hohlnadel, durch die der seitlich eingeFOhrte Faden mittels eines seitlich eingeleiteten
+Luftstroms hindurchführbar ist und mit einem synchron zur Nadelbewegung angetriebenen sowie
+taktmäßig den Faden in der Hohlnadel durchtrennenden und der Kolbenbewegung folgenden Messer,
+dadurch gekennzeichnet, daß die Lufteinströmöffnung (13) und die Fadeneinführung
+getrennt voneinander in die Nadel (21) einmünden, daß der Nadelvorderteil (21) um seine Achse drehbar
+im Kolben (7) gelagert und daß ein umlaufendes Messer (31) vorgesehen ist. 1. Device for tufting carpets by hand with a piston axially
+and a hollow needle, through which the laterally inserted thread is moved by means of a laterally inserted
+Air flow can be passed through and with a synchronous to the needle movement driven as well
+knives that cut through the thread in the hollow needle and follow the piston movement at regular intervals,
+characterized in that the air inflow opening (13) and the thread introduction
+open separately from one another into the needle (21) so that the needle front part (21) is rotatable about its axis
+mounted in the piston (7) and that a rotating knife (31) is provided.
+2. Vorrichtung nach Anspruch 1, dadurch gekennzeichnet, daß das Messer (31) auf einer parallel zur
+Nadel (21) verlaufenden Antriebswelle (33) drehfest und längsbeweglich gelagert ist. 2. Apparatus according to claim 1, characterized in that the knife (31) is mounted on a drive shaft (33) running parallel to the needle (21) in a rotationally fixed and longitudinally movable manner.
+3. Vorrichtung nach Anspruch 1 oder 2, dadurch gekennzeichnet, daß die Nadel (21) drehfest und
+längsbeweglich in dem gehäuseseitigen Schwenkkopf (26) gelagert ist. 3. Apparatus according to claim 1 or 2, characterized in that the needle (21) rotatably and
+is mounted longitudinally movable in the swivel head (26) on the housing side.
+4. Vorrichtung nach einem der Ansprüche 1 bis 3, dadurch gekennzeichnet, daß die Nadel mittels
+eines an dem gehäuseseitigen Schwenkkopf (26) angeordneten Handhebels (27) drehbar ist. 4. Device according to one of claims 1 to 3, characterized in that the needle means
+a hand lever (27) arranged on the swivel head (26) on the housing side is rotatable.
+5. Vorrichtung nach einem der Ansprüche 1 bis 4, dadurch gekennzeichnet, daß der Außenquerschnitt
+der Nadel (21) und die Lagerbohrung des Schwenkkopfes (26) einen ovalen Querschnitt aufweisen. 5. Device according to one of claims 1 to 4, characterized in that the outer cross section
+the needle (21) and the bearing bore of the swivel head (26) have an oval cross-section.
+DE2356585A
+1973-11-13
+1973-11-13
+Device for tufting carpets by hand
+Expired
+DE2356585C2
+( en )
+Priority Applications (4)
+Application Number
+Priority Date
+Filing Date
+Title
+DE2356585A
+DE2356585C2
+( en )
+1973-11-13
+1973-11-13
+Device for tufting carpets by hand
+GB4727674A
+GB1461009A
+( en )
+1973-11-13
+1974-10-31
+Device for tufting carpets
+US05/520,119
+US3968758A
+( en )
+1973-11-13
+1974-11-01
+Arrangement for the tufting of carpets
+JP49129489A
+JPS5078459A
+( en )
+1973-11-13
+1974-11-08
+Applications Claiming Priority (1)
+Application Number
+Priority Date
+Filing Date
+Title
+DE2356585A
+DE2356585C2
+( en )
+1973-11-13
+1973-11-13
+Device for tufting carpets by hand
+Publications (2)
+Publication Number
+Publication Date
+DE2356585B1
+DE2356585B1
+( en )
+1974-11-28
+DE2356585C2
+true
+DE2356585C2
+( en )
+1975-07-17
+Family
+ID=5897962
+Family Applications (1)
+Application Number
+Title
+Priority Date
+Filing Date
+DE2356585A
+Expired
+DE2356585C2
+( en )
+1973-11-13
+1973-11-13
+Device for tufting carpets by hand
+Country Status (4)
+Country
+Link
+US
+( 1 )
+US3968758A
+( en )
+JP
+( 1 )
+JPS5078459A
+( en )
+DE
+( 1 )
+DE2356585C2
+( en )
+GB
+( 1 )
+GB1461009A
+( en )
+Families Citing this family (12)
+* Cited by examiner, † Cited by third party
+Publication number
+Priority date
+Publication date
+Assignee
+Title
+GB1524895A
+( en )
+*
+1976-03-04
+1978-09-13
+Wallop Ind Ltd
+Firing mechanism for percussion caps
+DE2621360C2
+( en )
+*
+1976-05-14
+1984-12-06
+Wilhelm Simon & Co, 8501 Feucht
+Device for the production of tufted products
+US4123985A
+( en )
+*
+1977-11-07
+1978-11-07
+Milliken Research Corporation
+Mend counter
+US4267784A
+( en )
+*
+1979-11-30
+1981-05-19
+Heemstra Theodore C
+Tufting machine
+US4488498A
+( en )
+*
+1983-11-16
+1984-12-18
+General Motors Corporation
+Apparatus for producing decoratively stitched trim part
+DE3410783A1
+( en )
+*
+1984-03-23
+1985-09-26
+Akzo Gmbh, 5600 Wuppertal
+Hand tufting appliance
+US4694761A
+( en )
+*
+1986-01-06
+1987-09-22
+Yackob Golda
+Yarn cutting head
+CH695321A5
+( en )
+*
+2001-07-13
+2006-03-31
+Alstom Technology Ltd
+Member for holding down measuring leads.
+US7218987B2
+( en )
+*
+2004-12-23
+2007-05-15
+Wilcom Pty Ltd
+Tufting machine
+DE102010007225B3
+( en )
+*
+2010-02-09
+2011-07-21
+Fecht, Jessica von der, 27616
+Felting device for felting fiber materials
+CN102677410B
+( en )
+*
+2012-05-16
+2014-03-26
+广东大洋地毯机械设备厂有限公司
+Automatic gun exchanging mechanism of tufting bayonet manipulator
+CN113529257B
+( en )
+*
+2021-07-21
+2022-07-22
+浙江美诺地毯制造有限公司
+Bionic carpet knitting machine gun head group
+Family Cites Families (5)
+* Cited by examiner, † Cited by third party
+Publication number
+Priority date
+Publication date
+Assignee
+Title
+US3142276A
+( en )
+*
+1962-06-25
+1964-07-28
+Roger H Mullen Inc
+Device for forming cut pile fabrics and the like
+US3225723A
+( en )
+*
+1962-07-06
+1965-12-28
+Internat Leasing Corp
+Air feed tufting machine
+US3144844A
+( en )
+*
+1962-10-11
+1964-08-18
+Cabin Crafts Inc
+Portable machine for tufting cut pile
+US3389667A
+( en )
+*
+1965-12-23
+1968-06-25
+Bigelow Sanford Inc
+Method and apparatus for cutting pile yarns
+US3430590A
+( en )
+*
+1966-11-07
+1969-03-04
+Glenn Looper
+Pneumatically fed tufted textile machine
+1973
+1973-11-13
+DE
+DE2356585A
+patent/DE2356585C2/en
+not_active
+Expired
+1974
+1974-10-31
+GB
+GB4727674A
+patent/GB1461009A/en
+not_active
+Expired
+1974-11-01
+US
+US05/520,119
+patent/US3968758A/en
+not_active
+Expired - Lifetime
+1974-11-08
+JP
+JP49129489A
+patent/JPS5078459A/ja
+active
+Pending
+Also Published As
+Publication number
+Publication date
+US3968758A
+( en )
+1976-07-13
+GB1461009A
+( en )
+1977-01-13
+DE2356585B1
+( en )
+1974-11-28
+JPS5078459A
+( en )
+1975-06-26
+Similar Documents
+Publication
+Publication Date
+Title
+DE69208344T2
+( en )
+1996-10-24
+Hollow needle tufting device for producing patterned pile goods
+DE2356585B1
+( en )
+1974-11-28
+Device for tufting carpets by hand
+DD144250A5
+( en )
+1980-10-08
+DEVICE FOR JOINING TEXTILE FAIRS THROUGH AXIAL DRESSING
+DE1922827A1
+( en )
+1969-11-20
+Needle bed and feed roller for a machine for the production of endless felt products
+EP1209272A1
+( en )
+2002-05-29
+Spangle feeding head
+DE2026523B2
+( en )
+1978-08-24
+Control device on a weaving machine for driving an edging needle
+DE2755209A1
+( en )
+1979-06-13
+WIRE STICKER
+DE1485454B1
+( en )
+1970-11-19
+Tufting machine
+DE3047976C2
+( en )
+1984-05-10
+Longitudinal cutting device for movable material webs
+DE3833941C2
+( en )
+1999-07-15
+Take-off device in a weaving machine
+DE7340533U
+( en )
+1975-10-09
+Device for tufting carpets
+DE4034230C1
+( en )
+1991-12-19
+DE1212031B
+( en )
+1966-03-10
+Folding device for items of laundry or the like.
+DE3221496A1
+( en )
+1982-12-30
+HAND-HOLDING TUFTING MACHINE
+DE1037240B
+( en )
+1958-08-21
+Sewing machine
+DE832838C
+( en )
+1952-02-28
+Gripper device with rotating gripper for sewing machines
+DE3035958A1
+( en )
+1981-05-14
+DEVICE FOR PRODUCING A TEXTILE AREA FITTED WITH Tinsel and / or Sequins
+DE2621360A1
+( en )
+1977-11-24
+Hand-held tufting machine - with piston-operated hollow needle with synchronised yarn cutter
+EP1620592B1
+( en )
+2008-07-16
+Sewing machine
+DE685347C
+( en )
+1939-12-16
+Device on sewing machines for sewing elastic threads into pieces of fabric
+DE2239148B2
+( en )
+1974-09-19
+Sewing machine with tape cutter
+DE2015239A1
+( en )
+1971-10-14
+Cutting tubular knit goods
+DE863767C
+( en )
+1953-01-19
+Exchange pen
+AT275290B
+( en )
+1969-10-27
+Device for sewing or hemming parts of goods
+DE1068217B
+( en )
+1959-11-05
+Wire stitching machine with automatic clip formation on printing machines
+Legal Events
+Date
+Code
+Title
+Description
+1977-12-31
+E77
+Valid patent as to the heymanns-index 1977
+1982-05-13
+8339
+Ceased/non-payment of the annual fee
+1983-06-30
+8370
+Indication of lapse of patent is to be deleted
+1989-07-13
+8327
+Change in the person/name/address of the patent owner
+Owner name :
+BAVARIA TEXTIL GMBH, 8567 NEUNKIRCHEN, DE
+1989-07-13
+8381
+Inventor (new situation)
+Free format text :
+SCHOLZ, HARTMUT, 8500 NUERNBERG, DE

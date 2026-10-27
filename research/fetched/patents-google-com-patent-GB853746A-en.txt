@@ -1,0 +1,501 @@
+URL: https://patents.google.com/patent/GB853746A/en
+Final: https://patents.google.com/patent/GB853746A/en
+Status: 200
+Title: GB853746A - Apparatus for making patterned tufted pile fabric 
+      - Google Patents
+Fetched: 2026-10-27T07:27:48.553Z
+
+GB853746A - Apparatus for making patterned tufted pile fabric
+- Google Patents
+GB853746A - Apparatus for making patterned tufted pile fabric
+- Google Patents
+Apparatus for making patterned tufted pile fabric
+Info
+Publication number
+GB853746A
+GB853746A
+GB39468/57A
+GB3946857A
+GB853746A
+GB 853746 A
+GB853746 A
+GB 853746A
+GB 39468/57 A
+GB39468/57 A
+GB 39468/57A
+GB 3946857 A
+GB3946857 A
+GB 3946857A
+GB 853746 A
+GB853746 A
+GB 853746A
+Authority
+GB
+United Kingdom
+Prior art keywords
+rollers
+roller
+yarn
+shaft
+pattern
+Prior art date
+1956-12-24
+Legal status (The legal status is an assumption and is not a legal conclusion. Google has not performed a legal analysis and makes no representation as to the accuracy of the status listed.)
+Expired
+Application number
+GB39468/57A
+Current Assignee (The listed assignees may be inaccurate. Google has not performed a legal analysis and makes no representation or warranty as to the accuracy of the list.)
+COBBLE BROTHERS MACHINERY COMP
+Original Assignee
+COBBLE BROTHERS MACHINERY COMP
+Priority date (The priority date is an assumption and is not a legal conclusion. Google has not performed a legal analysis and makes no representation as to the accuracy of the date listed.)
+1956-12-24
+Filing date
+1957-12-19
+Publication date
+1960-11-09
+1957-12-19
+Application filed by COBBLE BROTHERS MACHINERY COMP
+filed
+Critical
+COBBLE BROTHERS MACHINERY COMP
+1960-11-09
+Publication of GB853746A
+publication
+Critical
+patent/GB853746A/en
+Status
+Expired
+legal-status
+Critical
+Current
+Links
+Espacenet
+Global Dossier
+Discuss
+239000004744
+fabric
+Substances
+0.000
+title
+abstract
+3
+238000009732
+tufting
+Methods
+0.000
+abstract
+3
+229910001651
+emery
+Inorganic materials
+0.000
+abstract
+1
+239000002783
+friction material
+Substances
+0.000
+abstract
+1
+Classifications
+D &mdash; TEXTILES; PAPER
+D05 &mdash; SEWING; EMBROIDERING; TUFTING
+D05C &mdash; EMBROIDERING; TUFTING
+D05C15/00 &mdash; Making pile fabrics or articles having similar surface features by inserting loops into a base material
+D05C15/04 &mdash; Tufting
+D05C15/08 &mdash; Tufting machines
+D05C15/26 &mdash; Tufting machines with provision for producing patterns
+D05C15/32 &mdash; Tufting machines with provision for producing patterns by altering the loop length
+D &mdash; TEXTILES; PAPER
+D05 &mdash; SEWING; EMBROIDERING; TUFTING
+D05C &mdash; EMBROIDERING; TUFTING
+D05C15/00 &mdash; Making pile fabrics or articles having similar surface features by inserting loops into a base material
+D05C15/04 &mdash; Tufting
+D05C15/08 &mdash; Tufting machines
+D05C15/16 &mdash; Arrangements or devices for manipulating threads
+D05C15/18 &mdash; Thread feeding or tensioning arrangements
+Landscapes
+Engineering & Computer Science
+( AREA )
+Chemical & Material Sciences
+( AREA )
+Materials Engineering
+( AREA )
+Textile Engineering
+( AREA )
+Treatment Of Fiber Materials
+( AREA )
+Abstract
+853,746. Tufting, tufting machines. COBBLE BROS. MACHINERY CO. Ltd. Dec. 19, 1957 [Dec. 24, 1956], No. 39468/57. Class 112 A tufting machine comprises a plurality of yarn feed means operating respectively at constant but different speeds, means for shifting yarn from one feed means to another, and means for controlling the yarn-shifting means so as to produce a pattern of predetermined form on the base fabric. A horizontal shaft 14 journalled in the machine housing 10 is driven by an electric motor and carries eccentrics 19 adapted to impart reciprocating movement to a horizontal needle bar carrying needles 24 which co-operate with loopers 26 to insert tufts of yarn 93 in a base fabric 28.. The latter is fed by rear rollers 30 driven from shaft 14 via a belt 31, gear box 35 and shaft 36, and by front rollers, not shown, driven from shaft 36 via a belt 40 and shaft 42. A pair of parallel, horizontal rollers 43, 44 are journalled at the front of the housing and are formed with spaced circumferential bands 47 of friction material, such as emery, embedded in the surface of the rollers, the bands 47 on one roller lying opposite the smooth intermediate bands 48 on the other roller, and the rollers being spaced about 0.006 inches apart to allow the passage of yarn therebetween. Roller 44 is driven from shaft 14 via a belt 52 and gear box 50, while a gear 54 fast with roller 44 meshes with a gear 55 of larger diameter fast with roller 43 to drive the latter slower than roller 44. A casing 61 contains solenoids 62 equal in number to the number of bands 47 on one of the rollers. The plunger 63 of each solenoid is connected to a respective arm 64 which is rigid with a vertical, pivoted spindle 58. An arm 57 rigid with spindle 58 passes through a movementlimiting notch 68 in a bar 67 and extends to a position such that a notch 92_in the end of arm 57 is located over the gap between the rollers 43, 44. Springs 66, acting on plungers 63, bias arms 57 to positions opposite the bands 47 on roller 43. A pair of yarns 93 pass through each notch 92 and between rollers 43, 44 to the needles. A horizontal pattern drum 71 is rotated by gearing driven from shaft 36. Fitted around drum 71 is a pattern sheet 81 provided with the required pattern in the form of openings 82 cut in the sheet. Pattern fingers 84, equal in number to the number of solenoids, are pivoted on a bar 85 and are biased into engagement with the pattern drum at their front ends by springs 86. When a finger 84 engages an opening 82 a contact on its rear end engages a contact 88 on a bar 89 to close a circuit 90, 91 through a solenoid 62. The associated arm 57 of the latter is thereby shifted to bring its notch 92 opposite a band 47 on roller 44. The arrangement is thereby such that when a finger 84 engages the surface of pattern sheet 81 the yarn 93 guided by its associated arm 57 is fed by a band 47 of the slower drum 43 to form short tufts L<SP>2</SP>, and when the finger engages an opening 82 said arm shifts the yarn so that the latter is fed by a band 47 of the faster drum 44 to produce long tufts L<SP>1</SP>.
+GB39468/57A
+1956-12-24
+1957-12-19
+Apparatus for making patterned tufted pile fabric
+Expired
+GB853746A
+( en )
+Applications Claiming Priority (1)
+Application Number
+Priority Date
+Filing Date
+Title
+US630343A
+US2935037A
+( en )
+1956-12-24
+1956-12-24
+Apparatus for making patterned tufted pile fabric
+Publications (1)
+Publication Number
+Publication Date
+GB853746A
+true
+GB853746A
+( en )
+1960-11-09
+Family
+ID=24526793
+Family Applications (1)
+Application Number
+Title
+Priority Date
+Filing Date
+GB39468/57A
+Expired
+GB853746A
+( en )
+1956-12-24
+1957-12-19
+Apparatus for making patterned tufted pile fabric
+Country Status (3)
+Country
+Link
+US
+( 1 )
+US2935037A
+( en )
+DE
+( 1 )
+DE1258716B
+( en )
+GB
+( 1 )
+GB853746A
+( en )
+Families Citing this family (9)
+* Cited by examiner, † Cited by third party
+Publication number
+Priority date
+Publication date
+Assignee
+Title
+US3001388A
+( en )
+*
+1958-06-13
+1961-09-26
+C H Masland And Sons
+Pile fabric formation with varying height
+US3075481A
+( en )
+*
+1958-09-23
+1963-01-29
+Shubael C Stratton
+Apparatus for making tufted pile fabrics
+US3119536A
+( en )
+*
+1961-05-16
+1964-01-28
+Berkeley Davis Inc
+Wire feeding apparatus
+US3093100A
+( en )
+*
+1961-09-05
+1963-06-11
+Callaway Mills Co
+Tufting machine
+US3259089A
+( en )
+*
+1962-09-13
+1966-07-05
+John T Rockholt
+Tufting machine
+US3207105A
+( en )
+*
+1962-11-09
+1965-09-21
+Singer Co
+Pattern attachment for tufting machines
+US3224395A
+( en )
+*
+1963-11-21
+1965-12-21
+Singer Co
+Pattern attachment for tufting machines
+GB1060251A
+( en )
+*
+1964-09-07
+1967-03-01
+Ellison Tufting Machinery Ltd
+Improvements in tufting machines
+US5544605A
+( en )
+*
+1994-03-10
+1996-08-13
+Tuftco Corporation
+Auxiliary yarn feed module for tufting machine with pattern control yarn feed mechanism
+Family Cites Families (16)
+* Cited by examiner, † Cited by third party
+Publication number
+Priority date
+Publication date
+Assignee
+Title
+DE33238C
+( en )
+*
+O. GRAF und V. PREUSSER in Kottbus
+Device for the production of nap yarns on twisting machines
+DE304595C
+( en )
+*
+CH56561A
+( en )
+*
+1911-03-29
+1912-11-01
+Fischer Amrein Sigmund
+Device for braking the needle threads on embroidery machines
+CH82781A
+( en )
+*
+1918-11-28
+1920-01-02
+Johann Duenner
+Thread changing device on shuttle embroidery machines
+CH95641A
+( en )
+*
+1921-03-31
+1922-08-01
+Wetzstein Bruno
+Thread guide device for shuttle embroidery machines.
+US1581093A
+( en )
+*
+1922-01-03
+1926-04-13
+Wildman Mfg Co
+Yarn furnishing and controlling mechanism for knitting machines
+CH104305A
+( en )
+*
+1922-11-20
+1924-05-01
+Duenner Johann
+Thread changing device on shuttle embroidery machines.
+US2023515A
+( en )
+*
+1932-10-24
+1935-12-10
+Munsingwear Corp
+Thread feeding mechanism
+US2247244A
+( en )
+*
+1939-06-28
+1941-06-24
+Lawson Products Inc
+Strand feed-controlling mechanism for textile or other machines
+US2273052A
+( en )
+*
+1940-09-20
+1942-02-17
+Scott & Williams Inc
+Strand feeding mechanism
+GB735019A
+( en )
+*
+1952-12-24
+1955-08-10
+Card Joseph L
+Improvements in method of and apparatus for making patterned tufted pile fabric
+US2781007A
+( en )
+*
+1953-03-17
+1957-02-12
+Calloway Mills Company
+Apparatus for making pile fabrics
+US2784689A
+( en )
+*
+1953-09-02
+1957-03-12
+Masland C H & Sons
+Formation of high and low loops by needling
+US2768593A
+( en )
+*
+1954-02-16
+1956-10-30
+Lombard Ben
+Apparatus for tufting
+US2782741A
+( en )
+*
+1954-10-25
+1957-02-26
+Lees & Sons Co James
+Individual pile yarn control apparatus for pile fabrics
+US2880684A
+( en )
+*
+1955-03-09
+1959-04-07
+Masland C H & Sons
+Formation of high and low pile by needling
+1956
+1956-12-24
+US
+US630343A
+patent/US2935037A/en
+not_active
+Expired - Lifetime
+1957
+1957-12-19
+GB
+GB39468/57A
+patent/GB853746A/en
+not_active
+Expired
+1957-12-24
+DE
+DEC16015A
+patent/DE1258716B/en
+active
+Pending
+Also Published As
+Publication number
+Publication date
+US2935037A
+( en )
+1960-05-03
+DE1258716B
+( en )
+1968-01-11
+Similar Documents
+Publication
+Publication Date
+Title
+US3375797A
+( en )
+1968-04-02
+Pattern attachment for tufting machines
+US2966866A
+( en )
+1961-01-03
+Method of and apparatus for making patterned tufted pile fabric
+GB780370A
+( en )
+1957-07-31
+Tufting machines
+US3752094A
+( en )
+1973-08-14
+Strand delivery means
+GB1098142A
+( en )
+1968-01-10
+Improvements in or relating to method and apparatus for producing knit pile fabric
+US2679218A
+( en )
+1954-05-25
+Chenille tufting machine
+GB983994A
+( en )
+1965-02-24
+Method and means for making tufted fabrics
+GB1000387A
+( en )
+1965-08-04
+Improvements in circular knitting machines
+GB810305A
+( en )
+1959-03-11
+Improved yarn feeding means for knitting machines
+US2876441A
+( en )
+1959-03-03
+Method and means for feeding thread in tufting machines
+GB815672A
+( en )
+1959-07-01
+A pattern control mechanism for a machine
+US2912945A
+( en )
+1959-11-17
+High and low pattern attachment for tufted pile fabrics
+US2935037A
+( en )
+1960-05-03
+Apparatus for making patterned tufted pile fabric
+US2746410A
+( en )
+1956-05-22
+Uniform tension feeding mechanism
+GB735019A
+( en )
+1955-08-10
+Improvements in method of and apparatus for making patterned tufted pile fabric
+GB1438363A
+( en )
+1976-06-03
+Sliver feeding means for high pile fabric knitting machine
+US3224395A
+( en )
+1965-12-21
+Pattern attachment for tufting machines
+US3334601A
+( en )
+1967-08-08
+Tufting machines
+US2199263A
+( en )
+1940-04-30
+Strand-feeding device for knitting and like machines
+GB1213151A
+( en )
+1970-11-18
+Crimping yarn
+US3269147A
+( en )
+1966-08-30
+Method and means for knitting pile fabric
+US3134529A
+( en )
+1964-05-26
+Yarn threading mechanism for a pattern attachment for tufting machines
+GB1531300A
+( en )
+1978-11-08
+Variable strand feed devices
+GB1235134A
+( en )
+1971-06-09
+Circular warp knitting machine
+EP0711366B1
+( en )
+1997-10-22
+Process and machine for manufacturing elastic bands as well as bands thus obtained
