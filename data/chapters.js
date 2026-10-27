@@ -42,7 +42,7 @@ window.RUG_CHAPTERS = [
   {
     id: "ch-china", kind: "chapter",
     name: "China: palace carpets, export factories and Cuihuangkou",
-    intro: "Working notes:\n\nThe Chinese carpet line runs through Tibet, not Persia. The Beijing and Tianjin export era was industrial and labour history, not \"Chinese Art Deco\". Tufted carpet was standardised in 1989, but China built its own tufting machine only in 2004 and still imports the high end. Today Cuihuangkou makes eight of every ten Chinese carpets, and Iraq is the biggest customer. Hand-weaving was killed by printing, not tufting.",
+    intro: "Working notes:\n\nThe Chinese carpet line runs through Tibet, not Persia. The Beijing and Tianjin export era was industrial and labour history, more than the \"Chinese Art Deco\" of the Western collector market (though Chinese sources do use that term). Tufted carpet was standardised in 1989, but China built its own tufting machine only in 2004 and still imports the high end. Today Cuihuangkou is the biggest carpet town (a 2020 feature's \"eight of every ten\" has no statistical source), and Iraq is the biggest market for Tianjin-made carpet. One Cuihuangkou maker credits heat-transfer printing, not tufting, with the latest shift; that it \"killed\" hand-weaving is our inference.",
     items: ["ner-cn-tibet-1860", "ner-cn-palace-carpet", "ner-cn-ningxia", "ner-cn-beijing-export", "ner-cn-tianjin", "ner-art-deco-not-chinese", "ner-cn-yanshan", "ner-cn-1970s", "ner-cn-gbt11746", "ner-cn-dht200", "ner-cn-sun-yize", "ner-cn-patents", "ner-cn-imports-2025", "ner-cn-cuihuangkou", "ner-cn-exports-iraq", "ner-cn-heat-transfer", "ner-cn-knotters-descendant", "ner-chase-tianjin-primary", "ner-chase-sohu-series", "ner-chase-gazetteers", "ner-chase-cnki"]
   },
   {
@@ -54,7 +54,7 @@ window.RUG_CHAPTERS = [
   {
     id: "ch-india", kind: "chapter",
     name: "India: Bhadohi, Panipat and the hand-tufted takeover",
-    intro: "Working notes:\n\nNo sourced date exists for hand-tufting's arrival; the gap is real. Hand-tufting overtook hand-knotting around 1995–2005. Bhadohi's \"traditional\" knotted trade was itself a colonial export industry. Panipat is a recycling town that became a rug town. The common tool is an unpowered ₹100 hand punch, and India now exports electric guns. Hindi has a word for tufted carpet that the trade never uses.",
+    intro: "Working notes:\n\nNo sourced date exists for hand-tufting's arrival; the gap is real. When hand-tufting overtook hand-knotting is also undated (the brief's 1995–2005 rested on a mistranslation). Bhadohi's \"traditional\" knotted trade was itself a colonial export industry. Panipat is a recycling town that became a rug town. The brief's \"unpowered ₹100 hand tool\" is unconfirmed; India now sells electric guns (Sheru Brothers, per its own listings). Hindi has a word for tufted carpet that the trade never uses.",
     items: ["ner-in-colonial-bhadohi", "co-hands", "co-obeetee", "ner-in-date-gap", "ner-in-jain", "ner-in-hindi-wiki", "ner-in-crossover", "ner-in-unpowered-tool", "ner-in-iict-syllabus", "ner-in-sheru", "ner-in-backing-patents", "ner-in-vocabulary", "ner-in-panipat-migration", "ner-in-panipat-recycling", "ner-in-guinness-2025", "ner-in-tariff-2025", "ner-chase-goswami"]
   },
   {

@@ -1,4 +1,7 @@
 TUFTING HISTORY — THE NON-ENGLISH RECORD  
+
+> **Citation check, October 2026:** every claim below was checked against its sources. Several were corrected and two are refuted or unsupported (Chinese Art Deco; the India 1995–2005 crossover). See [citation-check.md](citation-check.md); the database records carry the corrected versions. This file is kept as written.
+
 Research brief for Tuft the World
 
 Searched in: Chinese (simplified + Cantonese/HK), Hindi/Devanagari, Japanese, German, French, Dutch.  

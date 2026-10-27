@@ -31,7 +31,7 @@ window.RUG_ERAS = [
   {
     id: "era-1970-1999", from: 1970, to: 1999,
     title: "The gun goes global",
-    summary: "Hand-tufting with the gun became an export industry in Asia. Tai Ping's motorised gun is dated 1973 in the research brief, though US motor-driven hand tools were patented from 1932. China produced machine-made carpet at scale from the 1970s and set a national tufted-carpet standard in 1989. In India, hand-tufting overtook hand-knotting around 1995–2005. Custom studios grew in Europe and the US. The first histories of the industry (Deaton 1993, Patton 1999) date from this period."
+    summary: "Hand-tufting with the gun became an export industry in Asia. Tai Ping's motorised gun is dated 1973 in the research brief, though US motor-driven hand tools were patented from 1932. China produced machine-made carpet at scale from the 1970s and set a national tufted-carpet standard in 1989. In India, hand-tufting grew into the main handmade export, though no source dates when it overtook hand-knotting. Custom studios grew in Europe and the US. The first histories of the industry (Deaton 1993, Patton 1999) date from this period."
   },
   {
     id: "era-2000-now", from: 2000, to: 10000,
