@@ -6,8 +6,9 @@
 // are stored the same way but credited to the office and not marked public domain:
 // check each office's terms before publishing them outside the database.
 //
-// Source: USPTO image server (image-ppubs.uspto.gov) for US patents, and the PDF that
-// Google Patents mirrors for everything (and as the US fallback). Needs `pdftoppm`.
+// Source: USPTO image server (image-ppubs.uspto.gov) for US patents; the PDF that Google
+// Patents mirrors for everything (and as the US fallback); DEPATISnet when Google has no PDF.
+// Non-US records whose Google Patents page exists are tagged "number confirmed". Needs `pdftoppm`.
 // Usage: node scripts/patent-drawings.mjs [--refresh] [--pages 3]
 
 import { readFile, writeFile, mkdir, readdir, unlink } from "node:fs/promises";
@@ -34,16 +35,50 @@ const OFFICES = { DE: "DPMA (German Patent and Trade Mark Office)", EP: "Europea
   WO: "WIPO", KR: "Korean Intellectual Property Office", IT: "Italian Patent and Trademark Office", ES: "Spanish Patent and Trademark Office",
   DK: "Danish Patent and Trademark Office", SE: "Swedish Intellectual Property Office", CA: "Canadian Intellectual Property Office", AU: "IP Australia", IN: "Indian Patent Office" };
 
-// The PDF Google Patents mirrors from the issuing office.
-async function googlePdf(id) {
+// The Google Patents page for a publication: confirms the number exists and usually links
+// the PDF mirrored from the issuing office (older DE/GB/CH documents often have no PDF there).
+async function googlePage(id) {
   try {
-    const page = await (await get(`https://patents.google.com/patent/${id}/en`, "text/html")).text();
-    const m = page.match(/https:\/\/patentimages\.storage\.googleapis\.com\/[^"'\s]+\.pdf/i);
-    if (!m) { console.log("  Google Patents: no PDF link on page"); return null; }
-    const r = await get(m[0], "application/pdf");
+    const r = await get(`https://patents.google.com/patent/${id}/en`, "text/html");
+    const html = await r.text();
+    const title = ((html.match(/<title>([\s\S]*?)<\/title>/i) || [])[1] || "").replace(/\s+/g, " ").trim();
+    const pdf = (html.match(/https:\/\/patentimages\.storage\.googleapis\.com\/[^"'\s]+\.pdf/i) || [])[0];
+    return { exists: r.ok && title.toUpperCase().startsWith(id), title, pdf };
+  } catch (e) { console.log(`  Google Patents: ${e.message}`); return { exists: false }; }
+}
+async function fetchPdf(url, headers = {}) {
+  try {
+    const r = await fetch(url, { redirect: "follow", headers: { "User-Agent": UA, Accept: "application/pdf,*/*", ...headers } });
     const buf = Buffer.from(await r.arrayBuffer());
     return r.ok && buf.subarray(0, 4).toString() === "%PDF" ? buf : null;
-  } catch (e) { console.log(`  Google Patents: ${e.message}`); return null; }
+  } catch { return null; }
+}
+async function googlePdf(id) {
+  const page = await googlePage(id);
+  if (!page.pdf) { console.log(`  Google Patents: ${page.exists ? "page found, no PDF" : "no page"}`); return null; }
+  return fetchPdf(page.pdf);
+}
+// DEPATISnet (German Patent and Trade Mark Office) holds documents from most offices. Its PDF
+// view is a frameset, so follow any pdf-looking frame or link, keeping the session cookie.
+async function depatisPdf(id) {
+  const m = id.match(/^([A-Z]{2})(\d+)([A-Z]\d?)$/);
+  if (!m) return null;
+  const docid = m[1] + m[2].padStart(9, "0") + m[3];
+  const start = `https://depatisnet.dpma.de/DepatisNet/depatisnet?action=pdf&docid=${docid}`;
+  try {
+    const r = await fetch(start, { redirect: "follow", headers: { "User-Agent": UA } });
+    const cookie = (r.headers.getSetCookie?.() || []).map(c => c.split(";")[0]).join("; ");
+    const buf = Buffer.from(await r.arrayBuffer());
+    if (buf.subarray(0, 4).toString() === "%PDF") return buf;
+    const html = buf.toString("latin1");
+    const links = [...html.matchAll(/(?:src|href)=["']([^"']+)["']/gi)].map(x => x[1].replace(/&amp;/g, "&")).filter(u => /pdf/i.test(u) && !/\.(css|js)(\?|$)/i.test(u));
+    for (const u of [...new Set(links)]) {
+      const pdf = await fetchPdf(new URL(u, r.url).href, cookie ? { Cookie: cookie } : {});
+      if (pdf) return pdf;
+    }
+    console.log(`  DEPATISnet: no PDF (${links.length} candidate links)`);
+  } catch (e) { console.log(`  DEPATISnet: ${e.message}`); }
+  return null;
 }
 
 async function pdfFor(num) {
@@ -65,7 +100,7 @@ const header = src.slice(0, at);
 const items = JSON.parse(src.slice(at + "window.RUG_ITEMS = ".length).trim().replace(/;$/, ""));
 await mkdir(OUT, { recursive: true });
 
-const done = [], missed = [];
+const done = [], missed = [], confirmed = [];
 for (const item of items) {
   if (item.type !== "patent") continue;
   const id = String(item.identifier || "").replace(/[\s,.\/-]/g, "").toUpperCase();
@@ -76,7 +111,20 @@ for (const item of items) {
   if (item.imageSource === "rejected" || (item.image && !["auto", "uspto", "patent-office"].includes(item.imageSource))) continue;
   const stem = us ? `US${us[1]}` : id;
   console.log(`${stem}  ${item.title}`);
-  const pdf = us ? await pdfFor(us[1]) : await googlePdf(id).then(buf => buf && { buf, source: `${OFFICES[other[1]]} via Google Patents` });
+  let pdf;
+  if (us) pdf = await pdfFor(us[1]);
+  else {
+    const page = await googlePage(id);
+    // A Google Patents page whose title starts with the number confirms the number is real.
+    if (page.exists && !(item.tags || []).includes("number confirmed")) { item.tags = [...(item.tags || []), "number confirmed"]; confirmed.push(item); }
+    const g = page.pdf && await fetchPdf(page.pdf);
+    if (g) pdf = { buf: g, source: `${OFFICES[other[1]]} via Google Patents` };
+    else {
+      console.log(`  Google Patents: ${page.exists ? "page found, no PDF" : "no page"}`);
+      const d = await depatisPdf(id);
+      if (d) pdf = { buf: d, source: `${OFFICES[other[1]]} via DEPATISnet (DPMA)` };
+    }
+  }
   if (!pdf) { missed.push(item); continue; }
   const tmp = join(tmpdir(), `${stem}.pdf`);
   await writeFile(tmp, pdf.buf);
@@ -96,7 +144,7 @@ for (const item of items) {
 }
 
 await writeFile(FILE, header + "window.RUG_ITEMS = " + JSON.stringify(items, null, 2) + ";\n");
-const summary = [`## Patent drawings`, ``, `Rendered **${done.length}** patent(s); **${missed.length}** without a downloadable PDF.`, ``,
+const summary = [`## Patent drawings`, ``, `Rendered **${done.length}** patent(s); **${missed.length}** without a downloadable PDF; **${confirmed.length}** newly confirmed on Google Patents.`, ``,
   ...done.map(x => `- ✅ ${x.identifier}: ${x.title} (${x.images.length} page(s))`), ...missed.map(x => `- ⬜ ${x.identifier}: ${x.title}`)].join("\n");
 console.log("\n" + summary);
 if (process.env.GITHUB_STEP_SUMMARY) await writeFile(process.env.GITHUB_STEP_SUMMARY, summary + "\n", { flag: "a" });
