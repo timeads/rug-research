@@ -8816,7 +8816,7 @@ window.RUG_ITEMS = [
       "checked from search results"
     ],
     "status": "unverified",
-    "confidence": "unverified",
+    "confidence": "suggestive",
     "images": [
       {
         "src": "images/patents/CN2402698Y-1.png",
@@ -9347,14 +9347,14 @@ window.RUG_ITEMS = [
   {
     "id": "pat-us3968758a",
     "type": "patent",
-    "title": "Hartmut Scholz, US counterpart of DE2356585 (US3968758A)",
-    "creator": "Hartmut Scholz",
+    "title": "Hartmut Scholz, \"Arrangement for the Tufting of Carpets\" (US3968758A)",
+    "creator": "Hartmut Scholz, Allersberg, Germany",
     "identifier": "US3968758A",
     "sourceUrl": "https://patents.google.com/patent/US3968758A/en",
     "region": "United States",
-    "date": "1970s (US counterpart of a 1973 German filing)",
-    "dateStart": 1973,
-    "description": "US equivalent of Hartmut Scholz's German hand-tufting device patent DE2356585C2, the patent basis of the Hofmann hand-tufting gun (see co-hofmann-handtuft). Reported as a US counterpart in search results; title and dates to be read from the USPTO scan once the drawings job has run.",
+    "date": "filed 1 Nov 1974; patented 13 Jul 1976 (German priority 13 Nov 1973, DE 2356585)",
+    "dateStart": 1974,
+    "description": "Checked against the USPTO document: H. Scholz, \"Arrangement for the Tufting of Carpets\", No. 3,968,758, patented July 13, 1976; filed Nov. 1, 1974; German priority Nov. 13, 1973 (2356585). The US counterpart of the patent behind the Hofmann hand-tufting gun (see co-hofmann-handtuft).\n\nWhat it is: a pneumatic hand gun. A hollow needle pierces the backing and the yarn is carried through it in an air stream; the air inlet sits behind the thread infeed, and one synchronous drive works both the cutter and the needle lift. This is the cut-pile, air-fed principle of today's professional guns.\n\nLineage: it cites Schauer (US 3,142,276, 1964), Elliott et al. (US 3,144,844, 1964), Wilkes (US 3,225,723, 1965), Mueller (US 3,389,667, 1968) and Looper (US 3,430,590, 1969). Schauer, Elliott and Mueller are already in this database, so the German gun builds directly on the American hand-gun patents of the 1960s.",
     "themes": [
       "Hand-tufting tools & the gun",
       "Tools & equipment"
@@ -9365,8 +9365,8 @@ window.RUG_ITEMS = [
       "foreign patents 2026",
       "checked from search results"
     ],
-    "status": "unverified",
-    "confidence": "suggestive",
+    "status": "verified",
+    "confidence": "solid",
     "images": [
       {
         "src": "images/patents/US3968758-1.png",
@@ -9388,14 +9388,14 @@ window.RUG_ITEMS = [
   {
     "id": "pat-us4029031a",
     "type": "patent",
-    "title": "Hartmut Scholz, US counterpart of DE2511266 (US4029031A)",
-    "creator": "Hartmut Scholz",
+    "title": "Hartmut Scholz, \"Device for Providing Rugs and the Like with Tufts\" (US4029031A)",
+    "creator": "Hartmut Scholz, Allersberg, Germany",
     "identifier": "US4029031A",
     "sourceUrl": "https://patents.google.com/patent/US4029031A/en",
     "region": "United States",
-    "date": "1970s (US counterpart of a 1975 German filing)",
-    "dateStart": 1975,
-    "description": "US equivalent of Hartmut Scholz's second German hand-tufting patent DE2511266C3. Reported as a US counterpart in search results; title and dates to be read from the USPTO scan once the drawings job has run.",
+    "date": "filed 10 Mar 1976; patented 14 Jun 1977 (German priority 14 Mar 1975, DE 2511266)",
+    "dateStart": 1976,
+    "description": "Checked against the USPTO document: H. Scholz, \"Device for Providing Rugs and the Like with Tufts\", No. 4,029,031, patented June 14, 1977; filed Mar. 10, 1976; German priority Mar. 14, 1975 (2511266).\n\nWhat it is: a MANUAL tufting tool with two arms side by side, worked alternately against the backing. One arm carries a fixed needle (with a curved point) that guides the yarn; the other carries a blade that slides along the needle and cuts the yarn after each loop, opened by a guide and closed by a spring. The drawing shows a two-handled tool fed from a yarn cone.\n\nWhy it matters: it is the same two-part, alternate-stroke principle as Ebenezer Ross's 1891 \"Turfing Implement\" and the Susan Burr, now with a cutting blade, from the co-founder of the firm that became Hofmann Handtuft-Technik. It cites Roberts (US 739,447, 1903), Doubler (US 1,976,709, 1934), Miller et al. (US 2,226,632, 1940), Hurley (US 2,605,727, 1952; already in this database), German 2,402,811 (1975) and British 473,702 (1937).",
     "themes": [
       "Hand-tufting tools & the gun",
       "Tools & equipment"
@@ -9404,10 +9404,11 @@ window.RUG_ITEMS = [
       "patent lineage",
       "Hofmann",
       "foreign patents 2026",
-      "checked from search results"
+      "checked from search results",
+      "Ross patent lineage"
     ],
-    "status": "unverified",
-    "confidence": "suggestive",
+    "status": "verified",
+    "confidence": "solid",
     "images": [
       {
         "src": "images/patents/US4029031-01.png",
