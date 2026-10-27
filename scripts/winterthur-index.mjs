@@ -40,8 +40,8 @@ async function all(body, label) {
   for (let page = 1; ; page++) {
     const r = await search(body, page);
     out.push(...(r.results || []));
-    if (page === 1) console.log(`${label}: ${r.total} objects`);
-    if (page >= (r.totalPages || 1)) break;
+    if (page === 1) console.log(`${label}: ${r.total} objects${r.total > 10000 ? " (the search stops at 10,000; split this query)" : ""}`);
+    if (page >= (r.totalPages || 1) || page * 100 >= 10000) break;
     await sleep(250);
   }
   return out;
@@ -51,7 +51,8 @@ let prev = {};
 try { for (const row of JSON.parse(await readFile(OUT, "utf8")).rows) prev[row[0]] = row; } catch {}
 
 const objects = new Map(), keywordHits = new Set();
-for (const o of await all({ categoriesAny: TEXTILES }, "Textiles")) objects.set(o.irn, o);
+// One category at a time: the search returns at most 10,000 results per query.
+for (const c of TEXTILES) for (const o of await all({ categoriesAny: [c] }, c)) objects.set(o.irn, o);
 for (const k of KEYWORDS) {
   for (const o of await all({ query: k }, `"${k}"`)) { objects.set(o.irn, o); keywordHits.add(o.irn); }
 }
