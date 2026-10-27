@@ -172,7 +172,10 @@ window.RUG_ITEMS = [
     "tags": [
       "Charles K. Davis gift"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "image": "https://winocr-images.s3.us-east-1.amazonaws.com/art-objects/live/1923/multimedia/0-original.jpg",
+    "imageCredit": "Winterthur Museum, Garden & Library",
+    "imageSource": "auto"
   },
   {
     "id": "wint-lib-olson-1920",
@@ -1052,7 +1055,10 @@ window.RUG_ITEMS = [
       "exhibition",
       "checklist"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "image": "https://folkartmuseum.org/content/uploads/2014/10/folk_1868_image.jpg",
+    "imageCredit": "American Folk Art Museum",
+    "imageSource": "auto"
   },
   {
     "id": "wadsworth-bed-furnishings-2018",
@@ -1135,7 +1141,10 @@ window.RUG_ITEMS = [
     "tags": [
       "core source"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "image": "https://covers.openlibrary.org/b/isbn/9780820345161-L.jpg?default=false",
+    "imageCredit": "Cover via Open Library",
+    "imageSource": "auto"
   },
   {
     "id": "hf-00-1510-19",
@@ -1240,7 +1249,10 @@ window.RUG_ITEMS = [
     "tags": [
       "visit"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "image": "https://www.bandyheritagecenter.org/Content/Uploads/Bandy/Images/Content/Epaulettes-web.jpg",
+    "imageCredit": "Bandy Heritage Center, Dalton State College",
+    "imageSource": "auto"
   },
   {
     "id": "photo-green-burton-1933",
@@ -1259,7 +1271,10 @@ window.RUG_ITEMS = [
       "roadside trade",
       "image rights"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "image": "https://bunny-wp-pullzone-cjamrcljf0.b-cdn.net/wp-content/uploads/2021/02/chenille-bedspreads_004.jpg",
+    "imageCredit": "Georgia Archives (Vanishing Georgia)",
+    "imageSource": "auto"
   },
   {
     "id": "photo-cabin-crafts-arnall",
