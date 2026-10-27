@@ -36,7 +36,7 @@
   const FLAG_BY_ID = Object.fromEntries(FLAGS.map(f => [f.id, f]));
 
   const DEFAULT_THEMES = [
-    "Hooked & handmade rugs", "Woven carpet", "Chenille & candlewick", "Machine tufting & Dalton",
+    "Early tufting: bed rugs & needlework pile", "Hooked & handmade rugs", "Woven carpet", "Chenille & candlewick", "Machine tufting & Dalton",
     "Nylon & synthetic fibers (DuPont)", "Trade catalogs & marketing", "Tools & equipment", "Yarn & materials"
   ];
 

@@ -53,6 +53,7 @@ Flags, notes, lists, edits and uploaded photos are saved **in your browser** on 
 **Every seed record is marked `unverified`.** They were gathered from search results, not from the institutions' own catalogs, because this was built in an environment that could not reach winterthur.org or hagley.org. Before citing a record, open its source link, confirm the details, and set its status to "Verified at source".
 
 ### Starting research threads in the seed data
+- **Early tufting (bed rugs → candlewick → chenille → machine):** see [`research/early-tufted-rugs.md`](research/early-tufted-rugs.md). Includes Winterthur's *Mary Foot* bed rug (1778), the Met's 1809 bed rug and Caswell carpet, dated candlewick spreads (1810s–1820s), the Henry Ford's 1936 chenille rug, and the Moench, Looper and Cobble tufting machines.
 - **Winterthur hooked and sewn rugs:** six objects dated 1800–1925. One record (1965.0685) reportedly cites a 2024 tufting manual.
 - **Winterthur trade catalogs:** Olson Rug Co. (1920, 1922). McKinstry's *Trade Catalogues at Winterthur* is the finding aid for further floor-covering catalogs.
 - **Nylon and DuPont at Hagley:** Advertising Dept. records (Acc. 1803; Nylon, Antron), the Seaford nylon plant photographs (carpet nylon developed there in 1958), the Textile Fibers photo album (1946–68), the Ernest Dichter study on selling nylon carpet, and the Donald R. Hull papers (anti-static carpet fiber, 1969).
