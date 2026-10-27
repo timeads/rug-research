@@ -25,7 +25,7 @@ window.RUG_CHAPTERS = [
     id: "ch-nylon", kind: "chapter",
     name: "Nylon and the broadloom boom",
     intro: "Working notes:\n\nDuPont's bulked continuous filament (BCF) nylon, dated 1957 or 1959 by different sources; carpet nylon developed at Seaford in 1958. Tufted sales rose from near zero in the late 1940s to over 100 million square yards by 1958. Hagley holds the advertising, photography and consumer research. Do not repeat the Longlife 1952 nylon claim.",
-    items: ["event-bcf-nylon", "hagley-seaford-nylon", "hagley-textile-fibers-album", "hagley-textile-fibers-product-info", "hagley-dupont-advertising-1803", "hagley-dichter-nylon-carpets", "hagley-hull-papers", "ner-de-longlife-refuted", "hagley-nylon-hooked-rug", "hagley-pam-20160208", "hagley-dpads-1803-00680", "hagley-dpads-1803-00709", "hagley-dpads-1803-00712", "hagley-film-fc319", "hagley-film-opening-door-1959", "hagley-vid-1995300-b10", "hagley-1972430-1080", "hagley-1972341-ludox", "hagley-oh-mcandrews", "ttw-finding-501-1958", "hagley-dichter-954a", "hagley-bbdo-nylon", "hagley-pahlmann-samples", "hagley-film-fc249-02", "article-archer-luxury-underfoot", "duke-adviews-caprolan"]
+    items: ["event-bcf-nylon", "hagley-seaford-nylon", "hagley-textile-fibers-album", "hagley-textile-fibers-product-info", "hagley-dupont-advertising-1803", "hagley-dichter-nylon-carpets", "hagley-hull-papers", "ner-de-longlife-refuted", "hagley-nylon-hooked-rug", "hagley-pam-20160208", "hagley-dpads-1803-00680", "hagley-dpads-1803-00709", "hagley-dpads-1803-00712", "hagley-film-fc319", "hagley-film-opening-door-1959", "hagley-vid-1995300-b10", "hagley-1972430-1080", "hagley-1972341-ludox", "hagley-oh-mcandrews", "ttw-finding-501-1958", "hagley-dichter-954a", "hagley-bbdo-nylon", "hagley-pahlmann-samples", "hagley-film-fc249-02", "article-archer-luxury-underfoot", "duke-adviews-caprolan", "ttw-claim-dupont-nylon", "pat-us2071250a", "pat-us2130948a", "hagley-vault-1937-patent", "book-hounshell-smith", "ttw-nylon-6-schlack"]
   },
   {
     id: "ch-abroad", kind: "chapter",
@@ -43,7 +43,7 @@ window.RUG_CHAPTERS = [
     id: "ch-gun", kind: "chapter",
     name: "Hand tools and the tufting gun",
     intro: "Working notes:\n\nThe hand tool comes first: Ross's 1891 two-handled needle-and-gauge patent, copied after 1908 by the Susan Burr (Torrington) and the Molter-Reinhard Shuttle Needle (Chicago), then sped up by the 1930s Bluenose hookers. Its patents run unbroken to a 1992 Dalton mending gun (Ross → Shaycraft 1948 → Spencer Wright 1992), while the gun itself gains a motor (1932), air (1946), a trigger and knife (1952) and its name (1964).\n\nTai Ping's Anthony Yeh built a cut-pile tufting needle from the American single-needle sewing-machine method and from domestic hand-tufting tools; in 1973 the gun was motorised. The Chinese text makes the hand-tool lineage explicit. The English version doesn't.",
-    items: ["ner-hk-taiping-needle", "ner-hk-taiping-1973", "ttw-susan-burr", "ner-hk-taiping-1992", "ner-cn-terminology", "ner-cn-handmade-label", "ttw-shuttle-needle", "pat-us463548a", "ttw-excelsior-needle", "ttw-greer-susan-burr", "wint-photo-bucilla-tools", "wint-photo-fleisher", "wint-photo-olson-02", "pat-us1917162a", "pat-us2422126a", "pat-us2442906a", "pat-us2753820a", "pat-us3142276a", "pat-us5090341a", "ttw-mirzapur-manual"]
+    items: ["ner-hk-taiping-needle", "ner-hk-taiping-1973", "ttw-susan-burr", "ner-hk-taiping-1992", "ner-cn-terminology", "ner-cn-handmade-label", "ttw-shuttle-needle", "pat-us463548a", "ttw-excelsior-needle", "ttw-greer-susan-burr", "wint-photo-bucilla-tools", "wint-photo-fleisher", "wint-photo-olson-02", "pat-us1917162a", "pat-us2422126a", "pat-us2442906a", "pat-us2753820a", "pat-us3142276a", "pat-us5090341a", "ttw-mirzapur-manual", "ttw-conflict-gun-origin"]
   },
   {
     id: "ch-india", kind: "chapter",
@@ -54,7 +54,7 @@ window.RUG_CHAPTERS = [
   {
     id: "ch-hobby", kind: "chapter",
     name: "The hand tool returns: hobby tufting and poke-poke",
-    intro: "Working notes:\n\nThe gun invented in Hong Kong in 1973 re-entered mainland China around 2021 as an imported social-media craze, 戳戳秀 (\"poke-poke\"). Tie back to the hand tools of the first chapters.",
+    intro: "Working notes:\n\nThe hand gun Tai Ping motorised in Hong Kong by 1973 (motorised handheld tools were patented in the US from 1932) re-entered mainland China around 2021 as an imported social-media craze, 戳戳秀 (\"poke-poke\"). Tie back to the hand tools of the first chapters.",
     items: ["ner-cn-pokepoke", "ner-hk-taiping-1973", "ner-in-sheru", "ttw-susan-burr"]
   }
 ];

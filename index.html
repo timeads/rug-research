@@ -59,6 +59,7 @@
             <button role="menuitem" data-export="backup"><strong>Back up my work</strong><span>Flags, notes, lists and photos (.json)</span></button>
             <button role="menuitem" data-export="restore"><strong>Restore a backup…</strong><span>Replace this browser's work with a backup file</span></button>
             <button role="menuitem" data-export="csv-all"><strong>Current results</strong><span>Spreadsheet (.csv)</span></button>
+            <button role="menuitem" data-export="rights"><strong>Image permission list</strong><span>Every outside image still needing permission (.csv)</span></button>
           </div>
         </div>
       </div>
@@ -238,7 +239,18 @@
         <label class="span2">Translation <textarea name="translation" rows="2"></textarea></label>
         <label class="span2">Source link <input name="sourceUrl" type="url" placeholder="https://"><small>The museum or library page. The image lookup reads it to find the photo.</small></label>
         <label class="span2">Image link <input name="image" placeholder="https://… or images/my-photo.jpg"></label>
-        <label class="span2">Image credit <input name="imageCredit" placeholder="Winterthur Museum"></label>
+        <label>Image credit <input name="imageCredit" placeholder="Winterthur Museum"></label>
+        <label>Image permission
+          <select name="rights">
+            <option value="">Not set</option>
+            <option value="not-requested">Not yet requested</option>
+            <option value="requested">Requested</option>
+            <option value="granted">Granted</option>
+            <option value="declined">Declined</option>
+            <option value="own">Own photo</option>
+            <option value="public-domain">Public domain</option>
+          </select>
+        </label>
         <label class="span2 file">Or upload a photo <input name="imageFile" type="file" accept="image/*"><small>For yarn samples, tools and your own photographs. Stored in this browser until you export.</small></label>
         <label class="span2">Citation <textarea name="citation" rows="2"></textarea><small>Leave blank to generate one.</small></label>
       </div>

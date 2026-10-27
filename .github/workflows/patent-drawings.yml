@@ -1,0 +1,44 @@
+name: Patent drawings
+
+# Downloads each US patent record's document from the USPTO and stores its first
+# pages as images in images/patents/ (public domain).
+on:
+  workflow_dispatch:
+    inputs:
+      refresh:
+        description: "Re-render patents that already have drawings"
+        type: boolean
+        default: false
+  push:
+    paths: ["data/items.js"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-commits
+  cancel-in-progress: false
+
+jobs:
+  drawings:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install PDF renderer
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils
+      - name: Render patent drawings
+        run: node scripts/patent-drawings.mjs ${{ inputs.refresh && '--refresh' || '' }}
+      - name: Commit drawings
+        run: |
+          git add data/items.js images/patents
+          if git diff --cached --quiet; then echo "No new drawings."; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Add patent drawings from the USPTO"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"

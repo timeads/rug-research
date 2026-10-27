@@ -163,7 +163,7 @@ what "hand-tufted" does in English.
 • NINGXIA WAS THE IMPERIAL RUG SOURCE. Of the 1,000+ carpets in the Palace Museum collection,  
   Ningxia carpets are MORE THAN 50%. SOLID (state heritage registry).
 
-• THE TUFTING GUN WAS INVENTED IN HONG KONG IN 1973 AND RE-ENTERED MAINLAND CHINA AROUND 2021 AS AN  
+• [CORRECTION: Tai Ping motorised its gun in 1973; US patents for motorised handheld tufting tools date from 1932. See the database record "CONFLICT: when was the tufting gun invented?"] THE TUFTING GUN WAS INVENTED IN HONG KONG IN 1973 AND RE-ENTERED MAINLAND CHINA AROUND 2021 AS AN  
   IMPORTED WESTERN TIKTOK TREND, under the name 戳戳秀 ("poke-poke"). A Chengdu shop owner:  
   "一个月前在抖音上看到有人玩戳戳秀，觉得确实解压，立刻开起铺子" — "a month ago I saw people doing  
   poke-poke on Douyin, thought it really relieved stress, and immediately opened a shop." SOLID.

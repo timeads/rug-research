@@ -24,6 +24,7 @@
     "oral-history":  { label: "Oral history", plural: "Oral histories" },
     "event":         { label: "Event / milestone", plural: "Events & milestones" },
     "finding":       { label: "Finding", plural: "Research findings" },
+    "company":       { label: "Company", plural: "Companies" },
     "other":         { label: "Other", plural: "Other" }
   };
 
@@ -43,11 +44,16 @@
     unverified: { label: "Couldn't verify", hint: "Searched and not found" },
     refuted:    { label: "Refuted", hint: "Checked and found unsupported. Do not cite as fact" }
   };
+  // Permission to show an image publicly, tracked so requests can be sent before publication.
+  const RIGHTS = {
+    "own": "Own photo", "public-domain": "Public domain", "not-requested": "Permission not yet requested",
+    "requested": "Permission requested", "granted": "Permission granted", "declined": "Permission declined"
+  };
   const confBadge = it => it.confidence && CONFIDENCE[it.confidence] ? `<span class="conf conf-${it.confidence}" title="${esc(CONFIDENCE[it.confidence].hint)}">${esc(CONFIDENCE[it.confidence].label)}</span>` : "";
 
   const SEED_CHAPTERS = window.RUG_CHAPTERS || [];
   const DEFAULT_THEMES = [
-    "Early tufting: bed rugs & needlework pile", "Global diffusion of tufting", "Hand-tufting tools & the gun", "Hooked & handmade rugs", "Woven carpet", "Chenille & candlewick", "Machine tufting & Dalton",
+    "Early tufting: bed rugs & needlework pile", "Global diffusion of tufting", "Hand-tufting tools & the gun", "Companies & modern tufting", "Hooked & handmade rugs", "Woven carpet", "Chenille & candlewick", "Machine tufting & Dalton",
     "Nylon & synthetic fibers (DuPont)", "Trade catalogs & marketing", "Tools & equipment", "Yarn & materials"
   ];
 
@@ -181,6 +187,7 @@
       case "flag": return (S.flags[it.id] || []).some(f => f.includes(val) || FLAG_BY_ID[f]?.label.toLowerCase().includes(val));
       case "status": return (it.status || "unverified").startsWith(val);
       case "conf": case "confidence": return !!it.confidence && (it.confidence.startsWith(val) || CONFIDENCE[it.confidence].label.toLowerCase().startsWith(val));
+      case "rights": case "permission": return (it.rights || (it.image ? "not-requested" : "")).startsWith(val);
       case "region": case "country": return (it.region || "").toLowerCase().includes(val);
       case "lang": case "language": return (it.language || "").toLowerCase().startsWith(val);
       case "by": case "creator": case "author": return it._hay.creator.includes(val);
@@ -212,7 +219,7 @@
   };
 
   // facet filters (checkbox state, not persisted)
-  const F = { type: new Set(), theme: new Set(), region: new Set(), conf: new Set(), inst: new Set(), flag: new Set(), status: new Set() };
+  const F = { type: new Set(), theme: new Set(), region: new Set(), conf: new Set(), rights: new Set(), inst: new Set(), flag: new Set(), status: new Set() };
   const facetValues = {
     type: it => [it.type],
     theme: it => it.themes,
@@ -220,7 +227,8 @@
     flag: it => (S.flags[it.id] || []).length ? S.flags[it.id] : ["(unflagged)"],
     status: it => [it.status || "unverified"],
     region: it => [it.region || "(none)"],
-    conf: it => [it.confidence || "(none)"]
+    conf: it => [it.confidence || "(none)"],
+    rights: it => it.image ? [it.rights || "not-requested"] : ["(no image)"]
   };
   const passFacets = (it, except) => Object.entries(F).every(([k, set]) => k === except || !set.size || facetValues[k](it).some(v => set.has(v)));
 
@@ -257,7 +265,8 @@
     "Early tufting: bed rugs & needlework pile": "oxblood", "Hooked & handmade rugs": "moss", "Woven carpet": "navy",
     "Chenille & candlewick": "rose", "Machine tufting & Dalton": "ochre", "Nylon & synthetic fibers (DuPont)": "teal",
     "Trade catalogs & marketing": "slate", "Tools & equipment": "umber", "Yarn & materials": "plum",
-    "Global diffusion of tufting": "indigo", "Hand-tufting tools & the gun": "rust"
+    "Global diffusion of tufting": "indigo", "Hand-tufting tools & the gun": "rust",
+    "Companies & modern tufting": "jade"
   };
   const SPARE_CLOTH = ["navy", "moss", "plum", "teal", "umber", "slate", "rose", "ochre", "indigo", "rust"];
   const cloth = theme => `var(--cloth-${THEME_CLOTH[theme] || (theme ? SPARE_CLOTH[hash(theme) % SPARE_CLOTH.length] : "grey")})`;
@@ -339,6 +348,7 @@
       ["type", "Kinds of record", v => TYPES[v]?.plural || v],
       ["conf", "Confidence", v => v === "(none)" ? "Not graded" : CONFIDENCE[v]?.label || v, v => CONFIDENCE[v] ? `<span class="conf-dot conf-${v}"></span>` : ""],
       ["inst", "Held by", v => v === "(none)" ? "No institution" : v],
+      ["rights", "Image permission", v => v === "(no image)" ? "No image" : RIGHTS[v] || v],
       ["status", "Checked", v => v === "verified" ? "Verified at source" : "Not yet verified"]
     ];
     $("#facets").innerHTML = defs.map(([key, title, label, mark]) => {
@@ -445,6 +455,7 @@
       </div>
       ${src ? `<div class="drawer-plate"><a href="${esc(src)}" target="_blank" rel="noopener" aria-label="Open full image">${plateHTML(it, it.title)}</a></div>` : it.type === "finding" ? "" : `<div class="drawer-plate"><div class="plate-board">${boardPlate(it)}</div></div>`}
       ${gallery.length > 1 ? `<div class="gallery" role="group" aria-label="More photos">${gallery.map((g, i) => `<button class="gthumb" data-gsrc="${esc(g.src)}" data-gcap="${esc(g.caption || "")}" aria-label="${esc(g.caption || `Photo ${i + 1}`)}" aria-pressed="${i === 0}"><img src="${esc(g.src)}" alt="" loading="lazy" referrerpolicy="no-referrer"></button>`).join("")}</div>` : ""}
+      ${src && it.rights && !["own", "public-domain"].includes(it.rights) ? `<p class="credit rights rights-${esc(it.rights)}">${esc(RIGHTS[it.rights] || it.rights)}${it.rights === "not-requested" ? ": shown here for research; ask before publishing" : ""}</p>` : ""}
       ${src && (credit || gallery[0]?.caption) ? `<p class="credit" id="gallery-caption">${esc([gallery[0]?.caption, credit && `Image: ${credit}`].filter(Boolean).join(" · "))}</p>` : ""}
       <div class="drawer-body">
         <h2 id="drawer-title">${esc(it.title)}</h2>
@@ -904,6 +915,13 @@
     if (k === "db") exportDb();
     if (k === "backup") exportBackup();
     if (k === "restore") $("#restore-file").click();
+    if (k === "rights") {
+      const rows = ITEMS.filter(it => it.image && !["own", "public-domain"].includes(it.rights || "not-requested"));
+      const cols = ["Status", "Title", "Owner / institution", "Image credit", "Image URL", "Record page", "Your notes"];
+      const abs = u => /^https?:/.test(u) ? u : new URL(u, location.href).href;
+      download("image-permission-requests.csv", [cols.join(","), ...rows.map(it => [RIGHTS[it.rights || "not-requested"], it.title, it.institution || it.creator, it.imageCredit, abs(imgSrc(it) || it.image), it.sourceUrl, S.notes[it.id]].map(csvCell).join(","))].join("\n"), "text/csv");
+      toast(`${rows.length} images listed`);
+    }
     if (k === "csv-all") {
       const cols = ["id", "title", "type", "creator", "date", "dateStart", "dateEnd", "institution", "collection", "identifier", "materials", "techniques", "themes", "tags", "description", "sourceUrl", "status"];
       download("rug-research-results.csv", [[...cols, "flags", "notes"].join(","), ...lastResults.map(it => [...cols.map(c => csvCell(it[c])), csvCell(S.flags[it.id]), csvCell(S.notes[it.id])].join(","))].join("\n"), "text/csv");

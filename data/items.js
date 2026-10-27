@@ -95,7 +95,8 @@ window.RUG_ITEMS = [
     "image": "https://winocr-images.s3.us-east-1.amazonaws.com/art-objects/live/28352/multimedia/0-original.jpg",
     "imageCredit": "Winterthur Museum",
     "imageSource": "auto",
-    "region": "United States"
+    "region": "United States",
+    "rights": "not-requested"
   },
   {
     "id": "wint-1964-0808",
@@ -181,7 +182,8 @@ window.RUG_ITEMS = [
     "image": "https://winocr-images.s3.us-east-1.amazonaws.com/art-objects/live/1923/multimedia/0-original.jpg",
     "imageCredit": "Winterthur Museum, Garden & Library",
     "imageSource": "auto",
-    "region": "United States"
+    "region": "United States",
+    "rights": "not-requested"
   },
   {
     "id": "wint-lib-olson-1920",
@@ -308,7 +310,8 @@ window.RUG_ITEMS = [
     "image": "https://covers.openlibrary.org/b/isbn/9780820324647-L.jpg?default=false",
     "imageCredit": "Cover via Open Library",
     "imageSource": "auto",
-    "region": "United States"
+    "region": "United States",
+    "rights": "not-requested"
   },
   {
     "id": "article-patton-ehnet",
@@ -336,13 +339,14 @@ window.RUG_ITEMS = [
     "creator": "Thomas M. Deaton",
     "date": "1993",
     "dateStart": 1993,
-    "description": "Industry history; Deaton's research files (company histories, periodicals, oral history transcripts with industry pioneers) are at the Bandy Heritage Center, Dalton State College.",
+    "description": "Industry history; Deaton's research files (company histories, periodicals, oral history transcripts with industry pioneers) are at the Bandy Heritage Center, Dalton State College. Check: you recall this book stating that DuPont invented nylon; note the page, and cite the Carothers patents for the invention itself.",
     "themes": [
       "Machine tufting & Dalton",
       "Chenille & candlewick"
     ],
     "tags": [
-      "core source"
+      "core source",
+      "check claim"
     ],
     "status": "unverified",
     "region": "United States"
@@ -574,7 +578,8 @@ window.RUG_ITEMS = [
     "image": "https://georgiaencyclopedia.org/wp-content/uploads/2021/02/carpet_machine_001-1200x630.jpg",
     "imageCredit": "georgiaencyclopedia.org",
     "imageSource": "auto",
-    "region": "United States"
+    "region": "United States",
+    "rights": "not-requested"
   },
   {
     "id": "event-whitener-bedspread",
@@ -599,7 +604,8 @@ window.RUG_ITEMS = [
     "image": "https://georgiaencyclopedia.org/wp-content/uploads/2021/02/chenille-bedspreads_004-1200x630.jpg",
     "imageCredit": "georgiaencyclopedia.org",
     "imageSource": "auto",
-    "region": "United States"
+    "region": "United States",
+    "rights": "not-requested"
   },
   {
     "id": "event-looper-tufting-machine",
@@ -640,7 +646,8 @@ window.RUG_ITEMS = [
     "image": "https://georgiaencyclopedia.org/wp-content/uploads/2021/02/chenille-bedspreads_004-1200x630.jpg",
     "imageCredit": "georgiaencyclopedia.org",
     "imageSource": "auto",
-    "region": "United States"
+    "region": "United States",
+    "rights": "not-requested"
   },
   {
     "id": "article-nge-carpet-industry",
@@ -660,7 +667,8 @@ window.RUG_ITEMS = [
     "image": "https://georgiaencyclopedia.org/wp-content/uploads/2021/02/carpet_machine_001-1200x630.jpg",
     "imageCredit": "georgiaencyclopedia.org",
     "imageSource": "auto",
-    "region": "United States"
+    "region": "United States",
+    "rights": "not-requested"
   },
   {
     "id": "article-rughooking-winterthur",
@@ -683,7 +691,8 @@ window.RUG_ITEMS = [
     "image": "https://welikerughooking.com/wp-content/uploads/2026/04/J-Fea1.08-scaled.jpg",
     "imageCredit": "welikerughooking.com",
     "imageSource": "auto",
-    "region": "United States"
+    "region": "United States",
+    "rights": "not-requested"
   },
   {
     "id": "wint-1960-0594",
@@ -718,7 +727,8 @@ window.RUG_ITEMS = [
     "image": "https://winocr-images.s3.us-east-1.amazonaws.com/art-objects/live/16695/multimedia/0-original.jpg",
     "imageCredit": "Winterthur Museum",
     "imageSource": "auto",
-    "region": "United States"
+    "region": "United States",
+    "rights": "not-requested"
   },
   {
     "id": "wint-1964-1641",
@@ -748,7 +758,8 @@ window.RUG_ITEMS = [
     "image": "https://winocr-images.s3.us-east-1.amazonaws.com/art-objects/live/27031/multimedia/0-original.jpg",
     "imageCredit": "Winterthur Museum",
     "imageSource": "auto",
-    "region": "United States"
+    "region": "United States",
+    "rights": "not-requested"
   },
   {
     "id": "wint-1958-0062-003b",
@@ -836,7 +847,8 @@ window.RUG_ITEMS = [
     "image": "https://images.metmuseum.org/CRDImages/ad/original/DT823.jpg",
     "imageCredit": "The Metropolitan Museum of Art (Open Access, public domain)",
     "imageSource": "auto",
-    "region": "United States"
+    "region": "United States",
+    "rights": "public-domain"
   },
   {
     "id": "hd-packard-1801",
@@ -865,7 +877,8 @@ window.RUG_ITEMS = [
     "image": "https://www.historic-deerfield.org/wp-content/uploads/2017/07/2017-6-web.jpg",
     "imageCredit": "Historic Deerfield",
     "imageSource": "auto",
-    "region": "United States"
+    "region": "United States",
+    "rights": "not-requested"
   },
   {
     "id": "hd-blue-white-bed-rug",
@@ -1028,7 +1041,8 @@ window.RUG_ITEMS = [
     "image": "https://emuseum.chs.org/emuseum/internal/media/dispatcher/17570/full",
     "imageCredit": "Connecticut Historical Society",
     "imageSource": "auto",
-    "region": "United States"
+    "region": "United States",
+    "rights": "not-requested"
   },
   {
     "id": "afam-1995-13-2",
@@ -1102,7 +1116,8 @@ window.RUG_ITEMS = [
     "image": "https://folkartmuseum.org/content/uploads/2014/10/folk_1868_image.jpg",
     "imageCredit": "American Folk Art Museum",
     "imageSource": "auto",
-    "region": "United States"
+    "region": "United States",
+    "rights": "not-requested"
   },
   {
     "id": "wadsworth-bed-furnishings-2018",
@@ -1124,7 +1139,8 @@ window.RUG_ITEMS = [
     "image": "https://enfilade18thc.com/wp-content/uploads/2018/11/1967-75.jpg?w=720",
     "imageCredit": "Wadsworth Atheneum Museum of Art",
     "imageSource": "auto",
-    "region": "United States"
+    "region": "United States",
+    "rights": "not-requested"
   },
   {
     "id": "book-bed-ruggs-1972",
@@ -1192,7 +1208,8 @@ window.RUG_ITEMS = [
     "image": "https://covers.openlibrary.org/b/isbn/9780820345161-L.jpg?default=false",
     "imageCredit": "Cover via Open Library",
     "imageSource": "auto",
-    "region": "United States"
+    "region": "United States",
+    "rights": "not-requested"
   },
   {
     "id": "hf-00-1510-19",
@@ -1326,7 +1343,8 @@ window.RUG_ITEMS = [
     "image": "https://bunny-wp-pullzone-cjamrcljf0.b-cdn.net/wp-content/uploads/2021/02/chenille-bedspreads_004.jpg",
     "imageCredit": "Georgia Archives (Vanishing Georgia)",
     "imageSource": "auto",
-    "region": "United States"
+    "region": "United States",
+    "rights": "not-requested"
   },
   {
     "id": "photo-cabin-crafts-arnall",
@@ -1554,7 +1572,8 @@ window.RUG_ITEMS = [
     "dateEnd": 2017,
     "image": "https://patentimages.storage.googleapis.com/38/0e/76/5c15e00f816479/HDA0003205608580000011.png",
     "imageCredit": "Patent drawing via Google Patents (public domain)",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "rights": "public-domain"
   },
   {
     "id": "ner-cn-tibet-1860",
@@ -1763,7 +1782,7 @@ window.RUG_ITEMS = [
     "type": "finding",
     "title": "The tufting gun came back to mainland China as a TikTok trend: 戳戳秀, \"poke-poke\"",
     "region": "China",
-    "description": "Invented in Hong Kong in 1973, the gun re-entered the mainland around 2021 as an imported Western social-media craze.",
+    "description": "The hand tufting gun, which Tai Ping motorised in Hong Kong by 1973 (US patents for motorised handheld tools go back to 1932; see the gun-origin conflict record), re-entered the mainland around 2021 as an imported Western social-media craze.",
     "themes": [
       "Global diffusion of tufting",
       "Hand-tufting tools & the gun"
@@ -2672,7 +2691,8 @@ window.RUG_ITEMS = [
     ],
     "imageCredit": "Tuft the World",
     "imageSource": "own",
-    "sourceUrl": "https://docs.google.com/spreadsheets/d/1cj3lVGl_GaLrJt1FuzGKVGMVO3G6xLL3V6MIDF-iERM/edit"
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1cj3lVGl_GaLrJt1FuzGKVGMVO3G6xLL3V6MIDF-iERM/edit",
+    "rights": "own"
   },
   {
     "id": "ttw-shuttle-needle",
@@ -2724,7 +2744,8 @@ window.RUG_ITEMS = [
       "research maker",
       "date unknown"
     ],
-    "status": "verified"
+    "status": "verified",
+    "rights": "own"
   },
   {
     "id": "pat-us463548a",
@@ -3848,6 +3869,144 @@ window.RUG_ITEMS = [
       "Caprolan",
       "advertisement",
       "comparison"
+    ],
+    "status": "unverified"
+  },
+  {
+    "id": "pat-us2071250a",
+    "type": "patent",
+    "title": "Wallace H. Carothers, \"Linear condensation polymers\" (US2071250A)",
+    "creator": "Wallace H. Carothers",
+    "institution": "E. I. du Pont de Nemours & Company (assignee)",
+    "date": "granted 16 Feb 1937",
+    "dateStart": 1937,
+    "identifier": "US2071250A",
+    "sourceUrl": "https://patents.google.com/patent/US2071250A/en",
+    "region": "United States",
+    "description": "Primary evidence for DuPont's invention of nylon (the polyamide later sold as nylon 6,6). Hagley marks 16 February 1937 as the day DuPont was granted this patent. Check the patent text, inventor and assignee before citing.",
+    "themes": [
+      "Nylon & synthetic fibers (DuPont)"
+    ],
+    "tags": [
+      "nylon origin",
+      "primary source",
+      "claim support"
+    ],
+    "status": "unverified",
+    "confidence": "solid"
+  },
+  {
+    "id": "pat-us2130948a",
+    "type": "patent",
+    "title": "Wallace H. Carothers, \"Synthetic fiber\" (US2130948A)",
+    "creator": "Wallace H. Carothers",
+    "institution": "E. I. du Pont de Nemours & Company (assignee)",
+    "date": "granted 20 Sep 1938",
+    "dateStart": 1938,
+    "identifier": "US2130948A",
+    "sourceUrl": "https://patents.google.com/patent/US2130948A/en",
+    "region": "United States",
+    "description": "The nylon fiber patent from Carothers's research at DuPont. Check the patent text, inventor and assignee before citing.",
+    "themes": [
+      "Nylon & synthetic fibers (DuPont)"
+    ],
+    "tags": [
+      "nylon origin",
+      "primary source",
+      "claim support"
+    ],
+    "status": "unverified",
+    "confidence": "solid"
+  },
+  {
+    "id": "hagley-vault-1937-patent",
+    "type": "article",
+    "title": "Hagley Vault: \"February 16, 1937: E. I. du Pont de Nemours & Co. was granted U.S. patent…\"",
+    "publisher": "Hagley Museum and Library",
+    "sourceUrl": "https://www.hagley.org/research/news/hagley-vault/date-february-16-1937-ei-du-pont-de-nemours-co-was-granted-us-patent",
+    "date": "1937",
+    "dateStart": 1937,
+    "region": "United States",
+    "description": "Hagley's own note on the nylon patent date. A citable institutional source alongside the patent itself.",
+    "themes": [
+      "Nylon & synthetic fibers (DuPont)"
+    ],
+    "tags": [
+      "nylon origin",
+      "claim support"
+    ],
+    "status": "unverified"
+  },
+  {
+    "id": "book-hounshell-smith",
+    "type": "book",
+    "title": "Science and Corporate Strategy: Du Pont R&D, 1902–1980",
+    "creator": "David A. Hounshell and John Kenly Smith",
+    "publisher": "Cambridge University Press",
+    "place": "Cambridge",
+    "date": "1988",
+    "dateStart": 1988,
+    "region": "United States",
+    "description": "The standard scholarly history of DuPont research, including Carothers and the development of nylon. The secondary source to cite for how nylon was invented and commercialised (find the chapter and pages).",
+    "themes": [
+      "Nylon & synthetic fibers (DuPont)"
+    ],
+    "tags": [
+      "core source",
+      "nylon origin",
+      "claim support"
+    ],
+    "status": "unverified"
+  },
+  {
+    "id": "ttw-nylon-6-schlack",
+    "type": "finding",
+    "title": "Nylon 6 was developed separately by Paul Schlack at IG Farben, Germany (1938), sold as Perlon",
+    "region": "Germany",
+    "confidence": "suggestive",
+    "description": "Why \"DuPont invented nylon\" is only half right: DuPont's polymer is nylon 6,6; nylon 6 came from Schlack's work at IG Farben. Matters for carpet: nylon 6 fibers (e.g. Allied Chemical's Caprolan) competed with DuPont's nylon 6,6 in tufted carpet. Find a primary or scholarly source (Schlack's patent; Hounshell & Smith).",
+    "themes": [
+      "Nylon & synthetic fibers (DuPont)",
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "nylon origin",
+      "careful wording",
+      "find source"
+    ],
+    "status": "unverified"
+  },
+  {
+    "id": "ttw-claim-dupont-nylon",
+    "type": "finding",
+    "title": "Careful wording: \"DuPont invented nylon\"",
+    "region": "United States",
+    "confidence": "suggestive",
+    "description": "Supported for nylon 6,6 by Carothers's DuPont patents (US2071250, 1937; US2130948, 1938), Hagley's records and Hounshell & Smith (1988). Not true of nylon 6 (Schlack, IG Farben, 1938). Safer wording: \"Nylon 6,6, the fiber DuPont patented in 1937–38 from Wallace Carothers's research…\". You recall reading the broad claim in Deaton's Bedspreads to Broadloom: find the page, and cite the patents rather than the book for the invention itself.",
+    "themes": [
+      "Nylon & synthetic fibers (DuPont)"
+    ],
+    "tags": [
+      "careful wording",
+      "claim support"
+    ],
+    "status": "unverified"
+  },
+  {
+    "id": "ttw-conflict-gun-origin",
+    "type": "finding",
+    "title": "CONFLICT: when was the tufting gun invented?",
+    "region": "Global",
+    "confidence": "unverified",
+    "description": "The Non-English Record brief says the gun was \"invented in Hong Kong in 1973\", but its own source says Tai Ping fitted a motor to an existing tufting gun in 1973. The US patent record shows a motor-in-handle tufting tool in 1932 (US1917162A), air-fed handheld tools in 1946–48, a trigger and knife in 1952, and a \"hand gun-type device\" in 1964 (US3142276A). Safer wording: \"Tai Ping built and motorised its own hand tufting gun in Hong Kong, by 1973; motorised handheld tufting tools had been patented in the US since 1932.\"",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "conflict",
+      "careful wording",
+      "priority"
     ],
     "status": "unverified"
   }
