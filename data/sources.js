@@ -7,7 +7,8 @@ window.RUG_SOURCES = [
   { group: "Winterthur", name: "Library digital collections", url: "https://digitalcollections.winterthur.org/documents/search?search={q}", home: "https://digitalcollections.winterthur.org/" },
   { group: "Winterthur", name: "Library catalog (WinterCat)", url: "https://library.winterthur.org/", home: "https://library.winterthur.org/", copy: true },
   { group: "Winterthur", name: "Trade catalogs on Internet Archive", url: "https://archive.org/search?query={q}+AND+contributor%3A%28Winterthur%29", home: "https://archive.org/search?query=contributor%3A%28Winterthur%29" },
-  { group: "Hagley", name: "Digital Archives (images)", url: "https://digital.hagley.org/islandora/search/{q}?type=dismax", home: "https://digital.hagley.org/" },
+  // Hagley's new site (2024) has a different search address and checks every visitor, so the link opens the site and copies your words to paste.
+  { group: "Hagley", name: "Digital Archives (images)", url: "https://digital.hagley.org/", home: "https://digital.hagley.org/", copy: true },
   { group: "Hagley", name: "Finding aids (manuscripts)", url: "https://findingaids.hagley.org/search?q[]={q}", home: "https://findingaids.hagley.org/" },
   { group: "Hagley", name: "Research home", url: "https://www.google.com/search?q=site%3Ahagley.org+{q}", home: "https://www.hagley.org/research", via: "Google" },
   { group: "Museums", name: "The Met", url: "https://www.metmuseum.org/art/collection/search?q={q}", home: "https://www.metmuseum.org/art/collection" },

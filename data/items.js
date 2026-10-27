@@ -3889,8 +3889,8 @@ window.RUG_ITEMS = [
     "institution": "Hagley Museum and Library",
     "collection": "DuPont Company films and commercials (Acc. 1995.300)",
     "identifier": "",
-    "sourceUrl": "https://digital.hagley.org/islandora/search?page=9&type=dismax&f[0]=mods_relatedItem_host_titleInfo_title_ms:DuPont\\ Company\\ films\\ and\\ commercials\\ \\(Accession\\ 1995.300\\)",
-    "description": "Snippet: starring Virginia Christine and Irene Dunne, with commercials for Dacron and \"DuPont Carpet Nylon\". The cast matches \"The Opening Door\" (DuPont Show with June Allyson, 5 Oct 1959). Item page not yet identified. Found via search-engine results (Hagley's site blocks automated reading): open the link to confirm and see the image.",
+    "sourceUrl": "https://digital.hagley.org/",
+    "description": "Snippet: starring Virginia Christine and Irene Dunne, with commercials for Dacron and \"DuPont Carpet Nylon\". The cast matches \"The Opening Door\" (DuPont Show with June Allyson, 5 Oct 1959). Item page not yet identified: the result came from a search on Hagley's old site (https://digital.hagley.org/islandora/search?page=9&type=dismax&f[0]=mods_relatedItem_host_titleInfo_title_ms:DuPont\\ Company\\ films\\ and\\ commercials\\ \\(Accession\\ 1995.300\\)), which no longer works; search the new site for DuPont Company films and commercials (Accession 1995.300). Found via search-engine results (Hagley's site blocks automated reading): open the link to confirm and see the image.",
     "region": "United States",
     "themes": [
       "Nylon & synthetic fibers (DuPont)",
@@ -4151,9 +4151,9 @@ window.RUG_ITEMS = [
     "date": "1936",
     "institution": "Hagley Museum and Library",
     "collection": "Acc. 1970.200",
-    "identifier": "70_200_09067",
-    "sourceUrl": "https://digital.hagley.org/70_200_09067",
-    "description": "Aerial photograph of a woven-carpet mill (Bloomsburg, Pa.). Context for the pre-tufting industry. Found via search-engine results (Hagley's site blocks automated reading): open the link to confirm and see the image.",
+    "identifier": "1970200_09067 (Hagley Accession 1970.200)",
+    "sourceUrl": "https://digital.hagley.org/1970200_09067",
+    "description": "Aerial photograph of a woven-carpet mill (Bloomsburg, Pa.). Context for the pre-tufting industry. Found via search-engine results (Hagley's site blocks automated reading). The link was on Hagley's old site (digital.hagley.org/70_200_09067); the database author found the item at its new address in Oct 2026. Open the link to confirm and see the image.",
     "region": "United States",
     "themes": [
       "Woven carpet"

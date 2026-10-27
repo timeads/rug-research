@@ -778,6 +778,9 @@
       notes.push("Filled in from the collection's own data");
     }
     set("sourceUrl", d.pages[0]);
+    // Item numbers that can be read from the address itself.
+    const idm = (d.pages[0] || "").match(/digital\.hagley\.org\/(\d{6,}_[\w-]+)/);
+    if (idm) set("identifier", idm[1]);
     for (const k of ["title", "date", "dateStart", "dateEnd", "dimensions", "materials", "institution", "citation", "description"]) set(k, d[k]);
     if (d.pages.length > 1) set("description", [el.description.value, "See also: " + d.pages.slice(1).join(" ")].filter(Boolean).join("\n"), true);
     if (!kind && /\b(rug|carpet|bedspread|coverlet|textile|mat|runner|sample)\b/i.test(d.title || "") && !api) el.type.value = "object";
