@@ -50,12 +50,16 @@ async function check(url) {
     const type = r.headers.get("content-type") || "";
     const body = type.includes("html") ? (await r.text()).slice(0, 40000) : "";
     const title = ((body.match(/<title>([\s\S]*?)<\/title>/i) || [])[1] || "").replace(/\s+/g, " ").trim().slice(0, 100);
-    const moved = new URL(r.url).origin !== origin ? r.url : (new URL(r.url).pathname !== new URL(url).pathname ? r.url : "");
+    // http→https, www and a trailing slash aren't moves.
+    const norm = u => { const x = new URL(u); return (x.hostname.replace(/^www\./, "") + x.pathname.replace(/\/$/, "") + x.search).toLowerCase(); };
+    const moved = norm(r.url) !== norm(url) ? r.url : "";
+    const challenge = /\/(challenge|turnstile)\b|__cf_chl|captcha/i.test(r.url);
     let verdict;
-    if (r.status === 404 || r.status === 410 || /page not found|not found|404/i.test(title) && body.length < 30000 && !/search/i.test(url)) verdict = "gone (not found)";
-    else if (r.status === 202 && !body.trim() || r.status === 403 || r.status === 429 || r.status === 503 || BOTCHECK.test(title) || BOTCHECK.test(body.slice(0, 4000))) verdict = "bot check";
+    if (r.status === 404 || r.status === 410 || /page-removed|\/404\b|not-found/i.test(moved) || /page not found|not found|404/i.test(title) && body.length < 30000 && !/search/i.test(url)) verdict = "gone (not found)";
+    // A challenge page is short; a long article that mentions "captcha" isn't one.
+    else if (challenge || r.status === 202 && !body.trim() || r.status === 403 || r.status === 429 || r.status === 503 || BOTCHECK.test(title) || body.length < 12000 && BOTCHECK.test(body)) verdict = "bot check";
     else if (r.status >= 500) verdict = `server error (${r.status})`;
-    else if (r.ok) verdict = moved ? "ok (redirected)" : "ok";
+    else if (r.ok) verdict = moved ? "ok (moved)" : "ok";
     else verdict = `error (${r.status})`;
     return { verdict, status: r.status, title, moved: moved || undefined, robots: rb.status };
   } catch (e) { return { verdict: "unreachable", error: (e.cause?.code || e.message).slice(0, 80), robots: rb.status }; }
@@ -96,12 +100,12 @@ const lines = [`# Access check`, ``, `Checked ${new Date().toISOString().slice(0
   `## Other archives (${archives.length})`, ``, `| Archive | Result | Notes |`, `|---|---|---|`,
   ...archives.map(a => `| ${a.name} | ${a.verdict} | ${[a.status && `HTTP ${a.status}`, a.title && `“${a.title}”`, a.moved && `now at ${a.moved}`, a.robots && a.robots !== "allows" && `robots.txt: ${a.robots}`].filter(Boolean).join("; ").replace(/\|/g, "/")} |`), ``,
   `## Record source links (${links.length})`, ``,
-  `${count(links, "ok") + count(links, "ok (redirected)")} work, ${count(links, "bot check")} hit a bot check, ${count(links, "robots: keep out")} are on sites that ask tools to keep out, ${count(links, "gone (not found)")} are gone, ${links.filter(l => /unreachable|error/.test(l.verdict)).length} didn't answer.`, ``,
+  `${count(links, "ok") + count(links, "ok (moved)")} work (${count(links, "ok (moved)")} of them at a new address), ${count(links, "bot check")} hit a bot check, ${count(links, "robots: keep out")} are on sites that ask tools to keep out, ${count(links, "gone (not found)")} are gone, ${links.filter(l => /unreachable|error/.test(l.verdict)).length} didn't answer.`, ``,
   `### Sites that block automated tools`, ``, `| Site | Records | Results |`, `|---|---|---|`,
   ...Object.entries(byHost).filter(([, v]) => v.verdicts["bot check"] || v.verdicts["robots: keep out"]).sort((a, b) => b[1].records - a[1].records).map(([h, v]) => `| ${h} | ${v.records} | ${Object.entries(v.verdicts).map(([k, n]) => `${k} ${n}`).join(", ")} |`), ``,
   `### Broken or unanswered links`, ``, `| Record | Link | Result |`, `|---|---|---|`,
   ...links.filter(l => /gone|unreachable|error/.test(l.verdict)).map(l => `| ${l.id} | ${l.url} | ${l.verdict}${l.status ? ` (HTTP ${l.status})` : ""}${l.error ? ` (${l.error})` : ""} |`), ``,
   `### Links that moved`, ``, `| Record | Link | Now |`, `|---|---|---|`,
-  ...links.filter(l => l.moved).map(l => `| ${l.id} | ${l.url} | ${l.moved} |`), ``];
+  ...links.filter(l => l.moved && l.verdict === "ok (moved)").map(l => `| ${l.id} | ${l.url} | ${l.moved} |`), ``];
 await writeFile(new URL("../research/access-check.md", import.meta.url), lines.join("\n"));
 console.log(`\n${links.length} record links checked; report in research/access-check.md`);
