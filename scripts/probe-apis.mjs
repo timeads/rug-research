@@ -10,6 +10,8 @@ const ONLY = process.argv[2] ? process.argv[2].split(",") : null;
 const SAMPLE = Number(process.argv[3]) || 2500;
 const APIS = {
   wtMuseumHome: `https://museumcollection.winterthur.org/`,
+  wtMuseumHelp: `https://museumcollection.winterthur.org/help`,
+  wtMuseumObject: `https://museumcollection.winterthur.org/object/16695`,
   wtMuseumSearch: `https://museumcollection.winterthur.org/search?q=${e}`,
   wtLibraryHome: `https://library.winterthur.org/`,
   wtDigitalSearch: `https://digitalcollections.winterthur.org/search?query=${e}`,
@@ -60,7 +62,14 @@ for (const [k, url] of Object.entries(APIS).filter(([k]) => !ONLY || ONLY.includ
     const r = await fetch(url, { headers: { Origin: ORIGIN, "User-Agent": "RugResearchProbe/1.0" }, redirect: "follow" });
     const body = await r.text();
     out[k] = { url, status: r.status, cors: r.headers.get("access-control-allow-origin"), type: r.headers.get("content-type"), sample: body.slice(0, SAMPLE) };
-  } catch (err) { out[k] = { url, error: err.message }; }
+  } catch (err) {
+    // Some sites send certificate chains Node rejects but browsers accept; retry with curl.
+    try {
+      const { execFileSync } = await import("node:child_process");
+      const body = execFileSync("curl", ["-sSL", "-k", "-m", "30", "-A", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/124", url], { maxBuffer: 1 << 26 }).toString();
+      out[k] = { url, status: "curl", error: err.message + " (" + (err.cause?.code || "") + ")", type: "text/html", sample: body.slice(0, SAMPLE) };
+    } catch (e2) { out[k] = { url, error: err.message + " (" + (err.cause?.code || "") + "); curl: " + e2.message.slice(0, 200) }; }
+  }
   console.log(k, out[k].status, out[k].cors, out[k].type || out[k].error);
 }
 await mkdir(new URL("../research/fetched/", import.meta.url), { recursive: true });
