@@ -12187,16 +12187,16 @@ window.RUG_ITEMS = [
   {
     "id": "process-hooking-grenfell-bma",
     "type": "object",
-    "title": "Grenfell hooked mat 'Polar Bear on Ice Floe', 1929 or c. 1930 (Baltimore Museum of Art 1996.165)",
-    "creator": "Grenfell Labrador Industries",
+    "title": "Grenfell hooked mat 'Polar Bear on Ice Floe', c. 1930 (Baltimore Museum of Art 1996.165)",
+    "creator": "Grenfell Mission Industrial Department (label: Grenfell Labrador Industries)",
     "place": "Newfoundland and Labrador",
     "region": "Canada",
-    "date": "1929 (artwork page) or c. 1930 (database)",
-    "dateStart": 1929,
+    "date": "c. 1930",
+    "dateStart": 1930,
     "dateEnd": 1930,
     "institution": "Baltimore Museum of Art",
     "identifier": "1996.165",
-    "sourceUrl": "https://collection.artbma.org/objects/43106/polar-bear-on-ice-floe",
+    "sourceUrl": "https://artbma.org/artwork/polar-bear-on-ice-floe",
     "techniques": [
       "hooking"
     ],
@@ -12205,22 +12205,21 @@ window.RUG_ITEMS = [
       "wool",
       "rayon or silk jersey"
     ],
-    "description": "What it shows: a fine-gauge Grenfell mat hooked in wool and rayon or silk jersey strips on jute burlap, 21.5 × 31.5 in. It has a woven label 'Grenfell Labrador Industries' / 'HAND MADE IN NEWFOUNDLAND & LABRADOR'. Gift of Dena S. Katzenberg, 1996. Shown in Textiles: Recycled/Reimagined (2010), and not on view. The BMA's two pages give different dates. Also: Textile Museum of Canada T84.0117, a Grenfell mat hooked with silk stockings, 107 × 79 cm (date not seen). Sources: https://collection.artbma.org/objects/43106/polar-bear-on-ice-floe · https://textilemuseum.ca/collection/hooked-rug-t84-0117/\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "description": "What it shows: a Grenfell mat hooked in wool and rayon or silk jersey on a jute burlap ground, 21 1/2 × 31 1/2 in. (54.6 × 80 cm). A woven label in red on white, sewn to the back at lower left, reads 'Grenfell Labrador Industries' (script) / 'HAND MADE IN NEWFOUNDLAND & LABRADOR' (block letters). The BMA names the maker as the Grenfell Mission Industrial Department (Canadian, 1909–1984). Gift of Dena S. Katzenberg, Baltimore, 1996. Shown in Textiles: Recycled/Reimagined (Jean and Allan Berman Textile Gallery, 10 March – 10 October 2010, no catalogue); not on view.\n\nThe BMA's note: the mat was made by women working for the Grenfell Mission charity, which helped women in fishing villages along the Atlantic coast earn income by supplying pattern kits and used stockings donated by women in North American and British cities (slogan: \"When your stockings run, let them run to Labrador!\"); local Arctic scenes appealed to city buyers.\n\nWhy it matters for the history: hooking as organised outwork, with a charity supplying patterns and recycled materials and selling the mats, decades before tufting turned Dalton's bedspread outwork into an industry.\n\nAlso: Textile Museum of Canada T84.0117, a Grenfell mat hooked with silk stockings, 107 × 79 cm (date not seen). Sources: https://artbma.org/artwork/polar-bear-on-ice-floe · https://textilemuseum.ca/collection/hooked-rug-t84-0117/\n\nChecked at source (Oct 2026): the BMA moved its collection site, and the old address (https://collection.artbma.org/objects/43106/polar-bear-on-ice-floe) no longer exists. artbma.org blocks automated reading, so the page text above was read on the BMA's own staging copy of the same page (https://artbmadevsite.org/artwork/polar-bear-on-ice-floe/). It gives c. 1930; an earlier page's 1929 is not repeated there.",
     "tags": [
       "process history",
       "hooking",
       "Grenfell",
-      "checked from search results"
+      "checked at source 2026"
     ],
-    "confidence": "suggestive",
+    "confidence": "solid",
     "themes": [
       "Rug-making techniques",
       "Hooked & handmade rugs"
     ],
-    "status": "unverified",
-    "imageSource": "auto",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Toy_motorbike_%28AM_1996.165.44%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-    "imageCredit": "Wikimedia Commons (CC BY 4.0)"
+    "status": "verified",
+    "imageSource": "rejected",
+    "dimensions": "21 1/2 × 31 1/2 in. (54.6 × 80 cm)"
   },
   {
     "id": "process-sewn-yarn-sewn-chs",

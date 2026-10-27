@@ -160,10 +160,13 @@ async function byAccession(item) {
   // Wikimedia Commons file names often carry the museum's number, e.g. "… NGA 25792.jpg".
   const r = await json(`https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrnamespace=6&gsrsearch=${encodeURIComponent('"' + acc + '"')}&gsrlimit=10&prop=imageinfo&iiprop=url|extmetadata&iiurlwidth=1000`);
   const key = acc.replace(/\s+/g, "").toLowerCase();
-  const inst = norm(item.institution).split(" ").filter(w => w.length > 3);
+  // The whole number must match (1996.165 is not 1996.165.44), and the institution by a distinctive word, not "museum".
+  const whole = new RegExp(`(^|[^\\d.])${key.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}(?![\\d]|\\.\\d)`);
+  const GENERIC = new Set(["museum", "museums", "collection", "collections", "library", "gallery", "national", "institute", "institution", "society", "historical", "history", "arts", "foundation", "center", "centre", "university", "college"]);
+  const inst = norm(item.institution).split(" ").filter(w => w.length > 3 && !GENERIC.has(w));
   for (const pg of Object.values(r.query?.pages || {})) {
     const t = pg.title.replace(/[\s_]+/g, "").toLowerCase(), credit = norm((pg.imageinfo?.[0]?.extmetadata?.Credit?.value || "") + " " + pg.title);
-    if (t.includes(key) && (!inst.length || inst.some(w => credit.includes(w)))) {
+    if (whole.test(t) && (!inst.length || inst.some(w => credit.includes(w)))) {
       const ii = pg.imageinfo[0]; return { image: ii.thumburl || ii.url, imageCredit: `Wikimedia Commons (${ii.extmetadata?.LicenseShortName?.value || "see file page"})` };
     }
   }
