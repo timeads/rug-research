@@ -18,7 +18,9 @@ const args = process.argv.slice(2);
 const REFRESH = args.includes("--refresh");
 const ONLY = (args[args.indexOf("--only") + 1] || "").split(",").filter(Boolean);
 const UA = "Mozilla/5.0 (compatible; RugResearchImageBot/1.0; +https://github.com/timeads/rug-research)";
-const BAD = /logo|favicon|sprite|placeholder|default[-_]?image|blank\.|spacer|icon[-_.]|social[-_]?share|og[-_]default|share[-_]image/i;
+const BAD = /logo|favicon|sprite|placeholder|default[-_]?image|no[-_ ]?image|image[-_ ]?not[-_ ]?available|coming[-_]?soon|blank\.|spacer|icon[-_.]|social[-_]?share|og[-_]default|share[-_]image|\/themes?\/|\/assets\/img/i;
+// Stock-photo filenames (Pixabay "macro-2573557_1920", Shutterstock, iStock…) are illustrations, not evidence.
+const STOCK = /(shutterstock|istock|adobestock|gettyimages|pexels|unsplash|pixabay|dreamstime|depositphotos)|[a-z]-\d{6,8}_(640|960|1280|1920)\b/i;
 
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 async function get(url, opts = {}) {
@@ -31,13 +33,14 @@ async function get(url, opts = {}) {
 const json = async url => { const r = await get(url, { headers: { Accept: "application/json" } }); if (!r.ok) throw new Error(`${r.status} ${url}`); return r.json(); };
 
 // Confirms a URL serves a real image (not an HTML error page or a tiny icon).
-async function isImage(url) {
+async function isImage(url, minBytes = 6000) {
+  if (STOCK.test(url)) return false;
   try {
     const r = await get(url, { headers: { Accept: "image/*" } });
     const type = r.headers.get("content-type") || "";
     if (!r.ok || !type.startsWith("image/")) return false;
     const buf = await r.arrayBuffer();
-    return buf.byteLength > 6000;
+    return buf.byteLength > minBytes;
   } catch { return false; }
 }
 
@@ -65,19 +68,34 @@ function collectionImages(html, base, item) {
     const u = decode(m[1]);
     if (BAD.test(u)) continue;
     const score = (acc && u.includes(acc) ? 5 : 0) + (/dispatcher|iiif|full|large|zoom|media/i.test(u) ? 2 : 0);
-    if (score) out.push([score, u]);
+    // Any sizeable photo file is a weak candidate on collection pages that lack og:image.
+    out.push([score || (/\.(jpe?g|webp)(\?|$)/i.test(u) && /files|uploads|images|media|collection|objects|piction/i.test(u) ? 1 : 0), u]);
   }
-  return out.sort((a, b) => b[0] - a[0]).map(([, u]) => { try { return new URL(u, base).href; } catch { return null; } }).filter(Boolean);
+  return out.filter(([sc]) => sc > 0).sort((a, b) => b[0] - a[0]).map(([, u]) => { try { return new URL(u, base).href; } catch { return null; } }).filter(Boolean);
 }
 
 const RESOLVERS = [
+  { // Winterthur: object images live on S3 under the object id
+    test: u => /museumcollection\.winterthur\.org\/object\/\d+/.test(u),
+    async run(item) {
+      const id = item.sourceUrl.match(/object\/(\d+)/)[1];
+      const url = `https://winocr-images.s3.us-east-1.amazonaws.com/art-objects/live/${id}/multimedia/0-original.jpg`;
+      return (await isImage(url)) ? { image: url, imageCredit: "Winterthur Museum, Garden & Library" } : null;
+    }
+  },
   { // The Met: object id in URL, or an accession-number search
     test: u => /metmuseum\.org/.test(u),
     async run(item) {
       let id = (item.sourceUrl.match(/\/search\/(\d+)/) || [])[1];
       if (!id && item.identifier) {
-        const s = await json(`https://collectionapi.metmuseum.org/public/collection/v1/search?q=${encodeURIComponent(item.identifier)}`);
-        for (const oid of (s.objectIDs || []).slice(0, 15)) {
+        // The API search endpoint may be unavailable; fall back to object ids linked from the website's search page.
+        let ids = [];
+        try { ids = (await json(`https://collectionapi.metmuseum.org/public/collection/v1/search?q=${encodeURIComponent(item.identifier)}`)).objectIDs || []; }
+        catch {
+          const html = await (await get(`https://www.metmuseum.org/art/collection/search?q=${encodeURIComponent(item.identifier)}`)).text();
+          ids = [...new Set([...html.matchAll(/collection\/search\/(\d+)/g)].map(m => m[1]))];
+        }
+        for (const oid of ids.slice(0, 15)) {
           const o = await json(`https://collectionapi.metmuseum.org/public/collection/v1/objects/${oid}`);
           if (o.accessionNumber === item.identifier) { id = oid; break; }
         }
@@ -120,7 +138,7 @@ async function fromPage(item) {
   const base = r.url || item.sourceUrl;
   const host = new URL(base).hostname.replace(/^www\./, "");
   const cands = [...metaImages(html, base), ...collectionImages(html, base, item)].filter(u => !BAD.test(u));
-  for (const u of [...new Set(cands)].slice(0, 6)) if (await isImage(u)) return { image: u, imageCredit: item.institution || host };
+  for (const u of [...new Set(cands)].slice(0, 6)) if (await isImage(u, 20000)) return { image: u, imageCredit: item.institution || host };
   return null;
 }
 
@@ -144,10 +162,14 @@ for (const item of items) {
   if (ONLY.length && !ONLY.includes(item.id)) continue;
   if (item.image && !REFRESH) continue;
   if (item.image && item.imageSource !== "auto") continue; // never overwrite a hand-picked image
+  if (item.imageSource === "rejected") continue; // a person ruled out the found image; don't look again
   try {
     const r = await resolve(item);
     if (r) { Object.assign(item, r, { imageSource: "auto" }); found.push(item); console.log(`✓ ${item.id}  ${r.image}`); }
-    else { missed.push([item, "no image on source page"]); console.log(`– ${item.id}`); }
+    else {
+      if (item.imageSource === "auto") { delete item.image; delete item.imageCredit; delete item.imageSource; } // refreshed and gone
+      missed.push([item, "no image on source page"]); console.log(`– ${item.id}`);
+    }
   } catch (e) { missed.push([item, e.message]); console.log(`! ${item.id}  ${e.message}`); }
   await sleep(400); // be polite to museum servers
 }

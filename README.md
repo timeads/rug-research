@@ -35,6 +35,9 @@ Press `/` anywhere to jump to search.
 ### Flags
 There are five flags: Winterthur fellowship ★, History of tufting ⚑, Follow up / verify, Request / visit, and Need image rights. The ★ and ⚑ flags have one-click buttons on every card.
 
+### Real images
+Records show the institution's own photograph where one exists. The **Fetch images** GitHub Action (`.github/workflows/fetch-images.yml`) runs whenever `data/items.js` changes, every Monday, and on demand from the repo's **Actions** tab. It looks up each record's source page (Winterthur, the Met, the Art Institute of Chicago, Open Library covers, Google Patents drawings, eMuseum sites) and records the image link plus a credit. Images are **linked, not copied**, so rights stay with the institution. If it picks a wrong image, remove it in `data/items.js` and add `"imageSource": "rejected"` to that record. Records without an image show a plain label plate.
+
 ### Adding your own things
 Click **+ Add item**. For yarn samples, tools and your own photos, upload a picture straight from your phone or computer. Photos are resized and stored in the browser.
 

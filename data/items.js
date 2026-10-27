@@ -591,9 +591,7 @@ window.RUG_ITEMS = [
       "machinery"
     ],
     "status": "unverified",
-    "image": "https://carpet-rug.org/wp-content/uploads/2018/06/macro-2573557_1920.jpg",
-    "imageCredit": "carpet-rug.org",
-    "imageSource": "auto"
+    "imageSource": "rejected"
   },
   {
     "id": "article-nge-chenille",

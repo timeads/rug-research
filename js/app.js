@@ -27,11 +27,11 @@
   };
 
   const FLAGS = [
-    { id: "fellowship", label: "Winterthur fellowship", color: "#a6382b" },
-    { id: "tufting",    label: "History of tufting",    color: "#2f4a6d" },
-    { id: "followup",   label: "Follow up / verify",    color: "#c08a2e" },
-    { id: "request",    label: "Request / visit",       color: "#6b7f5b" },
-    { id: "image",      label: "Need image rights",     color: "#8a5a9e" }
+    { id: "fellowship", label: "Winterthur fellowship", color: "var(--cloth-oxblood)" },
+    { id: "tufting",    label: "History of tufting",    color: "var(--cloth-navy)" },
+    { id: "followup",   label: "Follow up or verify",   color: "var(--cloth-ochre)" },
+    { id: "request",    label: "Request or visit",      color: "var(--cloth-moss)" },
+    { id: "image",      label: "Need image rights",     color: "var(--cloth-plum)" }
   ];
   const FLAG_BY_ID = Object.fromEntries(FLAGS.map(f => [f.id, f]));
 
@@ -126,7 +126,11 @@
   });
 
   const rebuild = () => {
-    const list = BASE.filter(x => !S.deleted[x.id]).map(x => S.items[x.id] || x);
+    // A local edit keeps any image the committed database has since gained (e.g. from the image lookup).
+    const list = BASE.filter(x => !S.deleted[x.id]).map(x => {
+      const o = S.items[x.id];
+      return !o ? x : o.image ? o : { ...o, image: x.image, imageCredit: x.imageCredit };
+    });
     for (const [id, x] of Object.entries(S.items)) if (!BASE_IDS.has(id) && !S.deleted[id]) list.push(x);
     ITEMS = list.map(norm);
     BY_ID = Object.fromEntries(ITEMS.map(x => [x.id, x]));
@@ -226,33 +230,39 @@
     let html = esc(text);
     for (const t of terms) {
       if (t.length < 2) continue;
-      html = html.replace(new RegExp("(" + esc(t).replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + ")", "ig"), "<mark>$1</mark>");
+      // Mark matches at the start of words only, so "bed" doesn't light up inside "inscribed".
+      html = html.replace(new RegExp("(^|[^\\p{L}\\p{N}])(" + esc(t).replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + ")", "igu"), "$1<mark>$2</mark>");
     }
     return html;
   };
 
-  // ---------- placeholder art: a little "rug swatch" per item ----------
-  const PALETTES = [
-    ["#a6382b", "#e9d9b8", "#2f4a6d", "#c08a2e"], ["#2f4a6d", "#d8c7a3", "#6b7f5b", "#a6382b"],
-    ["#6b7f5b", "#efe3c8", "#8a3b2a", "#c08a2e"], ["#3b2f2a", "#c9a46a", "#a6382b", "#e8dcc4"],
-    ["#8a5a9e", "#ecdfc8", "#2f4a6d", "#c08a2e"], ["#c08a2e", "#f3e8d2", "#3a5a40", "#8a3b2a"]
-  ];
-  const swatch = item => {
-    const h = hash(item.id || item.title);
-    const [a, b, c, d] = PALETTES[h % PALETTES.length];
-    const bg = [
-      `repeating-linear-gradient(0deg, ${a} 0 6px, ${b} 6px 10px, ${c} 10px 13px, ${b} 13px 20px)`,
-      `repeating-linear-gradient(45deg, ${a} 0 8px, ${b} 8px 16px)`,
-      `radial-gradient(circle, ${c} 0 22%, ${a} 24% 44%, ${b} 46%) 0 0 / 12px 12px`,
-      `conic-gradient(${a} 25%, ${b} 0 50%, ${a} 0 75%, ${b} 0) 0 0 / 18px 18px`,
-      `linear-gradient(135deg, ${a} 25%, transparent 25%) -9px 0 / 18px 18px, linear-gradient(225deg, ${a} 25%, transparent 25%) -9px 0 / 18px 18px, linear-gradient(315deg, ${a} 25%, transparent 25%) 0 0 / 18px 18px, linear-gradient(45deg, ${a} 25%, ${b} 25%) 0 0 / 18px 18px`
-    ][(h >>> 4) % 5];
-    return `<div class="swatch" aria-hidden="true" style="border-color:${c};box-shadow:inset 0 0 0 7px ${d};background:${bg}"></div>`;
+  // ---------- bookcloth: every research theme has a cloth colour ----------
+  const THEME_CLOTH = {
+    "Early tufting: bed rugs & needlework pile": "oxblood", "Hooked & handmade rugs": "moss", "Woven carpet": "navy",
+    "Chenille & candlewick": "rose", "Machine tufting & Dalton": "ochre", "Nylon & synthetic fibers (DuPont)": "teal",
+    "Trade catalogs & marketing": "slate", "Tools & equipment": "umber", "Yarn & materials": "plum"
   };
-  const thumbHTML = item => {
-    const src = imgSrc(item);
-    return src ? `<img src="${esc(src)}" alt="" loading="lazy" onerror="this.replaceWith(document.createRange().createContextualFragment(this.dataset.fallback))" data-fallback="${esc(swatch(item))}">` : swatch(item);
+  const SPARE_CLOTH = ["navy", "moss", "plum", "teal", "umber", "slate", "rose", "ochre"];
+  const cloth = theme => `var(--cloth-${THEME_CLOTH[theme] || (theme ? SPARE_CLOTH[hash(theme) % SPARE_CLOTH.length] : "grey")})`;
+  const itemCloth = it => cloth(it.themes[0]);
+  const icon = (name, cls = "") => `<svg class="ic ${cls}" aria-hidden="true"><use href="#i-${name}"/></svg>`;
+
+  // An honest empty plate: bare bookcloth stamped with what the record is. Never a fake picture.
+  const boardPlate = it => `<div class="board-plate" style="--c:${itemCloth(it)}" aria-hidden="true">
+      <span class="bp-tape"><span class="bp-type">${esc(TYPES[it.type].label)}</span></span>
+      <span class="bp-title">${esc(it.title || "")}</span>
+      <span class="bp-note">${it.sourceUrl ? "No image found yet" : "No image"}</span></div>`;
+  const plateHTML = (it, alt = "") => {
+    const src = imgSrc(it);
+    return src
+      ? `<img src="${esc(src)}" alt="${esc(alt)}" loading="lazy" decoding="async" referrerpolicy="no-referrer" data-fallback="${esc(boardPlate(it))}">`
+      : boardPlate(it);
   };
+  // Broken remote images fall back to the board plate.
+  document.addEventListener("error", e => {
+    const img = e.target;
+    if (img.tagName === "IMG" && img.dataset.fallback) img.replaceWith(document.createRange().createContextualFragment(img.dataset.fallback));
+  }, true);
 
   // ---------- citations ----------
   const citation = it => {
@@ -276,46 +286,75 @@
 
   // ---------- rendering: browse ----------
   const metaLine = it => [it.creator, it.date, it.institution].filter(Boolean).join(" · ");
-  const flagDots = it => (S.flags[it.id] || []).map(f => FLAG_BY_ID[f] ? `<span class="flag-dot" title="${esc(FLAG_BY_ID[f].label)}" style="background:${FLAG_BY_ID[f].color}"></span>` : "").join("");
+  const flagDots = it => (S.flags[it.id] || []).map(f => FLAG_BY_ID[f] ? `<span class="flag-dot" title="${esc(FLAG_BY_ID[f].label)}" style="--c:${FLAG_BY_ID[f].color}"></span>` : "").join("");
   const activeList = () => S.lists.find(l => l.id === S.activeList) || S.lists[0];
+  const colorway = it => it.themes.length ? `<span class="colorway" title="${esc(it.themes.join(", "))}">${it.themes.slice(0, 3).map(t => `<i style="--c:${cloth(t)}"></i>`).join("")}</span>` : "";
 
   const cardHTML = (it, terms = []) => {
-    const inList = activeList().items.includes(it.id);
     const fl = S.flags[it.id] || [];
-    return `<article class="card" tabindex="0" data-id="${esc(it.id)}">
-      <div class="thumb">${thumbHTML(it)}<span class="type-pill">${esc(TYPES[it.type].label)}</span><span class="card-flags">${flagDots(it)}</span></div>
-      <div class="card-body">
-        <div class="card-title">${highlight(it.title || "(untitled)", terms)}</div>
-        <div class="card-meta">${highlight(metaLine(it), terms)}</div>
-        ${it.status !== "verified" ? `<div class="card-unverified">● unverified</div>` : ""}
-        <div class="card-quick">
-          <button class="qbtn ${fl.includes("fellowship") ? "on" : ""}" style="${fl.includes("fellowship") ? "background:" + FLAG_BY_ID.fellowship.color : ""}" data-qflag="fellowship" title="Flag: Winterthur fellowship">★ Fellowship</button>
-          <button class="qbtn ${fl.includes("tufting") ? "on" : ""}" style="${fl.includes("tufting") ? "background:" + FLAG_BY_ID.tufting.color : ""}" data-qflag="tufting" title="Flag: History of tufting">⚑ Tufting</button>
-          <button class="qbtn ${inList ? "on" : ""}" style="${inList ? "background:var(--ink)" : ""}" data-qlist title="Add to compilation: ${esc(activeList().name)}">${inList ? "✓ In list" : "+ List"}</button>
-        </div>
+    const inList = activeList().items.includes(it.id);
+    const act = (on, attr, ic, label, c) => `<button class="act ${on ? "on" : ""}" ${attr} style="--c:${c}" aria-pressed="${on}" aria-label="${esc(label)}" title="${esc(label)}">${icon(ic)}</button>`;
+    const sub = [it.institution, it.identifier ? `<span class="num">${highlight(it.identifier, terms)}</span>` : ""].filter(Boolean);
+    return `<article class="card" data-id="${esc(it.id)}">
+      <button class="card-open" data-open="${esc(it.id)}">
+        <span class="plate">${plateHTML(it)}<span class="plate-flags">${flagDots(it)}</span></span>
+        <span class="label">
+          <span class="label-top">${colorway(it)}<span>${esc(TYPES[it.type].label)}</span>${it.date ? `<span>${esc(it.date)}</span>` : ""}${it.status === "verified" ? `<span class="verified">${icon("check")}Verified</span>` : ""}</span>
+          <h3>${highlight(it.title || "Untitled", terms)}</h3>
+          ${sub.length ? `<span class="meta">${sub.map(s => s.startsWith("<") ? s : highlight(s, terms)).join(" · ")}</span>` : ""}
+        </span>
+      </button>
+      <div class="card-actions ${fl.length || inList ? "has-on" : ""}">
+        ${act(fl.includes("fellowship"), 'data-qflag="fellowship"', "star", "Flag for Winterthur fellowship", FLAG_BY_ID.fellowship.color)}
+        ${act(fl.includes("tufting"), 'data-qflag="tufting"', "flag", "Flag for History of tufting", FLAG_BY_ID.tufting.color)}
+        ${act(inList, "data-qlist", "bookmark", inList ? `Remove from "${activeList().name}"` : `Add to "${activeList().name}"`, "var(--ink)")}
       </div></article>`;
   };
 
   const renderFacets = scoredAll => {
     const defs = [
-      ["flag", "Flags", v => v === "(unflagged)" ? v : FLAG_BY_ID[v]?.label || v, v => FLAG_BY_ID[v]?.color],
-      ["type", "Type", v => TYPES[v]?.plural || v],
-      ["theme", "Research theme", v => v],
-      ["inst", "Institution", v => v],
-      ["status", "Status", v => v === "verified" ? "Verified at source" : "Unverified"]
+      ["flag", "Flags", v => v === "(unflagged)" ? "Not flagged" : FLAG_BY_ID[v]?.label || v, v => FLAG_BY_ID[v] && `<span class="flag-dot" style="--c:${FLAG_BY_ID[v].color}"></span>`],
+      ["theme", "Research themes", v => v, v => `<span class="cloth-dot" style="--c:${cloth(v)}"></span>`],
+      ["type", "Kinds of record", v => TYPES[v]?.plural || v],
+      ["inst", "Held by", v => v === "(none)" ? "No institution" : v],
+      ["status", "Checked", v => v === "verified" ? "Verified at source" : "Not yet verified"]
     ];
-    $("#facets").innerHTML = defs.map(([key, title, label, color]) => {
+    $("#facets").innerHTML = defs.map(([key, title, label, mark]) => {
       const counts = new Map();
       for (const it of scoredAll) if (passFacets(it, key)) for (const v of new Set(facetValues[key](it))) counts.set(v, (counts.get(v) || 0) + 1);
       for (const v of F[key]) if (!counts.has(v)) counts.set(v, 0);
       if (key === "flag") for (const f of FLAGS) if (!counts.has(f.id)) counts.set(f.id, 0);
-      const entries = [...counts].sort((a, b) => b[1] - a[1] || String(label(a[0])).localeCompare(label(b[0])));
+      const order = key === "flag" ? [...FLAGS.map(f => f.id), "(unflagged)"] : null;
+      const entries = [...counts].sort((a, b) => order ? order.indexOf(a[0]) - order.indexOf(b[0]) : b[1] - a[1] || String(label(a[0])).localeCompare(label(b[0])));
       if (!entries.length) return "";
       const expanded = $("#facets").dataset["open" + key] === "1";
-      const shown = expanded ? entries : entries.slice(0, 8);
-      return `<div class="facet"><h3>${title}</h3>${shown.map(([v, n]) => `<label><input type="checkbox" data-facet="${key}" value="${esc(v)}" ${F[key].has(v) ? "checked" : ""}>${color && color(v) ? `<span class="flag-dot" style="background:${color(v)}"></span>` : ""}<span>${esc(label(v))}</span><span class="count">${n}</span></label>`).join("")}
-        ${entries.length > 8 ? `<button class="more" data-more="${key}">${expanded ? "Show less" : `Show all ${entries.length}`}</button>` : ""}</div>`;
+      const limit = key === "flag" || key === "theme" ? 20 : 7;
+      const shown = expanded ? entries : entries.slice(0, limit);
+      return `<div class="facet" role="group" aria-labelledby="fh-${key}"><h2 id="fh-${key}">${title}</h2>${shown.map(([v, n]) => `<label class="${n ? "" : "zero"}"><input type="checkbox" data-facet="${key}" value="${esc(v)}" ${F[key].has(v) ? "checked" : ""}>${mark ? mark(v) || "" : ""}<span class="fl">${esc(label(v))}</span><span class="count">${n}</span></label>`).join("")}
+        ${entries.length > limit ? `<button class="more" data-more="${key}">${expanded ? "Show fewer" : `Show all ${entries.length}`}</button>` : ""}</div>`;
     }).join("");
+  };
+
+  // Fore-edge: every result as a leaf on a date axis, coloured by its theme's cloth.
+  const renderForeedge = () => {
+    const dated = lastResults.filter(it => it.dateStart != null);
+    const fe = $("#foreedge"), axis = $("#foreedge-axis");
+    if (!dated.length) { fe.innerHTML = `<div class="foreedge-empty">No dated records in these results</div>`; axis.innerHTML = ""; return; }
+    const step = 50;
+    let lo = Math.floor(Math.min(...dated.map(it => it.dateStart)) / step) * step;
+    let hi = Math.ceil(Math.max(...dated.map(it => it.dateEnd ?? it.dateStart)) / step) * step;
+    if (hi - lo < 100) { lo -= step; hi += step; }
+    const x = y => ((y - lo) / (hi - lo)) * 100;
+    fe.innerHTML = dated.map(it => {
+      const s = it.dateStart, e = it.dateEnd ?? s, mid = (s + e) / 2;
+      const span = e - s >= 15 ? `<span class="leaf span" style="left:${x(s)}%;width:${x(e) - x(s)}%;--c:${itemCloth(it)}"></span>` : "";
+      return `${span}<button class="leaf" tabindex="-1" style="left:${x(mid)}%;--c:${itemCloth(it)}" data-open="${esc(it.id)}" title="${esc(`${it.date || s} · ${it.title}`)}" aria-label="${esc(it.title)}"></button>`;
+    }).join("");
+    const ticks = [];
+    const narrow = fe.clientWidth < 560;
+    const every = (hi - lo > 250 ? 50 : 25) * (narrow ? 2 : 1);
+    for (let y = lo; y <= hi; y += every) ticks.push(`<span style="left:${x(y)}%">${y}</span>`);
+    axis.innerHTML = ticks.join("");
   };
 
   const renderBrowse = () => {
@@ -323,13 +362,17 @@
     renderFacets(scored);
     const res = $("#results");
     res.className = "grid" + (S.ui.layout === "list" ? " list" : "");
+    const filtered = Object.values(F).some(s => s.size);
     res.innerHTML = lastResults.length ? lastResults.map(it => cardHTML(it, pq.terms)).join("")
-      : `<div class="empty">No matches. Try fewer words, clear filters, or <a href="#" data-goto="sources">search other archives</a> / <a href="#" data-goto="discover">discover</a> new items.</div>`;
-    $("#result-count").textContent = `${lastResults.length} of ${ITEMS.length} items`;
+      : `<div class="empty"><h2>Nothing matches${S.ui.q ? ` “${esc(S.ui.q)}”` : ""}</h2>
+         <p>${filtered ? "Some filters are switched on. Clear them, or" : "Try fewer or different words, or"} look for it outside your database.</p>
+         <div class="btns">${filtered ? `<button class="btn" id="clear-facets-empty">Clear filters</button>` : ""}<a class="btn" href="#sources">Search other archives</a><a class="btn" href="#discover">Search open collections</a></div></div>`;
+    $("#result-count").innerHTML = lastResults.length === ITEMS.length ? `<b>${ITEMS.length}</b> records` : `<b>${lastResults.length}</b> of ${ITEMS.length} records`;
     const chips = [];
-    for (const [k, set] of Object.entries(F)) for (const v of set) chips.push(`<span class="chip">${esc(k === "type" ? TYPES[v]?.label : k === "flag" ? FLAG_BY_ID[v]?.label || v : v)}<button data-unfacet="${k}" data-val="${esc(v)}" aria-label="Remove">✕</button></span>`);
-    if (chips.length) chips.push(`<button class="btn small" id="clear-facets">Clear filters</button>`);
-    $("#active-filters").innerHTML = chips.join(" ");
+    for (const [k, set] of Object.entries(F)) for (const v of set) chips.push(`<span class="chip">${esc(k === "type" ? TYPES[v]?.label : k === "flag" ? FLAG_BY_ID[v]?.label || "Not flagged" : v)}<button data-unfacet="${k}" data-val="${esc(v)}" aria-label="Remove filter">${icon("x")}</button></span>`);
+    if (chips.length > 1) chips.push(`<button class="link-btn" id="clear-facets">Clear all</button>`);
+    $("#active-filters").innerHTML = chips.join("");
+    renderForeedge();
     renderListBadge();
     if (currentView === "timeline") renderTimeline();
   };
@@ -340,63 +383,87 @@
     const undated = lastResults.length - dated.length;
     const groups = new Map();
     for (const it of dated) { const d = Math.floor(it.dateStart / 10) * 10; if (!groups.has(d)) groups.set(d, []); groups.get(d).push(it); }
-    $("#timeline").innerHTML = (dated.length ? [...groups].map(([d, items]) => `<div class="decade"><div class="decade-label">${d}s</div><div class="decade-items">${items.map(it => cardHTML(it)).join("")}</div></div>`).join("") : `<div class="empty">No dated items match.</div>`)
-      + (undated ? `<p class="hint" style="margin-top:16px">${undated} matching item(s) have no start year. Add one to place them on the timeline.</p>` : "");
+    const decades = [...groups.keys()];
+    const out = [];
+    decades.forEach((d, i) => {
+      if (i && d - decades[i - 1] > 20) out.push(`<p class="gap-note">No records from ${decades[i - 1] + 10} to ${d - 1}.</p>`);
+      const items = groups.get(d);
+      out.push(`<section class="decade"><h2 class="decade-label">${d}s<small>${items.length} record${items.length > 1 ? "s" : ""}</small></h2><div class="grid">${items.map(it => cardHTML(it)).join("")}</div></section>`);
+    });
+    $("#timeline").innerHTML = (out.length ? out.join("") : `<div class="empty"><h2>No dated records match</h2><p>Change your search in Browse, or add start years to your records.</p></div>`)
+      + (undated ? `<p class="gap-note">${undated} matching record${undated > 1 ? "s have" : " has"} no start year, so ${undated > 1 ? "they aren't" : "it isn't"} shown. Add a start year to place ${undated > 1 ? "them" : "it"} here.</p>` : "");
   };
 
   // ---------- drawer ----------
-  let drawerId = null;
+  let drawerId = null, drawerReturn = null;
   const openDrawer = id => {
     const it = BY_ID[id]; if (!it) return;
+    if (!drawerId) drawerReturn = document.activeElement;
     drawerId = id;
     const fl = S.flags[id] || [];
     const src = imgSrc(it);
     const fields = [
-      ["Type", TYPES[it.type].label], ["Creator", it.creator], ["Date", it.date || it.dateStart], ["Place", it.place],
-      ["Institution", it.institution], ["Collection", it.collection], ["Identifier", it.identifier], ["Publisher", it.publisher],
+      ["Maker", it.creator], ["Date", it.date || it.dateStart], ["Place", it.place],
+      ["Held by", it.institution], ["Collection", it.collection], ["Number", it.identifier], ["Publisher", it.publisher],
       ["Materials", it.materials.join(", ")], ["Techniques", it.techniques.join(", ")], ["Dimensions", it.dimensions],
-      ["Themes", it.themes.join(", ")], ["Tags", it.tags.join(", ")],
-      ["Status", it.status === "verified" ? "Verified at source" : "Unverified. Confirm details before citing."]
+      ["Themes", it.themes.join(", ")], ["Tags", it.tags.join(", ")]
     ].filter(([, v]) => v);
     const q = encodeURIComponent([it.title, it.creator].filter(Boolean).join(" "));
     const lists = S.lists.filter(l => l.items.includes(id));
+    const credit = it.imageCredit || (src && !src.startsWith("data:") && !src.startsWith("blob:") && it.institution) || "";
     $("#drawer").innerHTML = `
-      <div class="drawer-img">${src ? `<a href="${esc(src)}" target="_blank" rel="noopener"><img src="${esc(src)}" alt="${esc(it.title)}"></a>` : swatch(it)}</div>
+      <div class="drawer-bar">
+        <span class="label-top">${colorway(it)}<span>${esc(TYPES[it.type].label)}</span>${it.status === "verified" ? `<span class="verified">${icon("check")}Verified</span>` : ""}</span>
+        <span class="spacer"></span>
+        <button class="btn sm" data-edit="${esc(id)}">${icon("edit")}Edit</button>
+        <button class="icon-btn" data-close aria-label="Close details">${icon("x")}</button>
+      </div>
+      <div class="drawer-plate">${src ? `<a href="${esc(src)}" target="_blank" rel="noopener" aria-label="Open full image">${plateHTML(it, it.title)}</a>` : `<div class="plate-board">${boardPlate(it)}</div>`}</div>
+      ${src && credit ? `<p class="credit">Image: ${esc(credit)}</p>` : ""}
       <div class="drawer-body">
-        <div class="drawer-top">
-          <span class="chip">${esc(TYPES[it.type].label)}</span>
-          <span class="spacer"></span>
-          <button class="btn small" data-edit="${esc(id)}">Edit</button>
-          <button class="btn small" data-close>Close ✕</button>
+        <h2 id="drawer-title">${esc(it.title)}</h2>
+        <p class="sub">${esc(metaLine(it))}</p>
+        <div class="btn-row">
+          ${it.sourceUrl && safeUrl(it.sourceUrl) ? `<a class="btn primary" href="${esc(safeUrl(it.sourceUrl))}" target="_blank" rel="noopener">View at source${icon("external")}</a>` : ""}
+          <button class="btn" id="copy-cite">${icon("copy")}Copy citation</button>
         </div>
-        <h2>${esc(it.title)}</h2>
-        <div class="sub">${esc(metaLine(it))}</div>
-        ${it.sourceUrl && safeUrl(it.sourceUrl) ? `<a class="btn" href="${esc(safeUrl(it.sourceUrl))}" target="_blank" rel="noopener">View at source ↗</a>` : ""}
-        ${it.description ? `<p>${esc(it.description)}</p>` : ""}
+        ${it.description ? `<p class="desc">${esc(it.description)}</p>` : ""}
+        ${it.status !== "verified" ? `<div class="unverified-note">${icon("flag")}<span>Not yet checked against the institution's own record. Confirm the details, then mark it verified with <b>Edit</b>.</span></div>` : ""}
         <dl class="fields">${fields.map(([k, v]) => `<dt>${k}</dt><dd>${esc(v)}</dd>`).join("")}</dl>
 
-        <div class="section-label">Flags</div>
-        <div class="flag-toggles">${FLAGS.map(f => `<button class="flag-toggle ${fl.includes(f.id) ? "on" : ""}" data-flag="${f.id}"><span class="flag-dot" style="background:${f.color}"></span>${esc(f.label)}</button>`).join("")}</div>
+        <section class="dsec"><h3>Flags</h3>
+          <div class="toggles">${FLAGS.map(f => `<button class="toggle" data-flag="${f.id}" aria-pressed="${fl.includes(f.id)}" style="--c:${f.color}"><span class="flag-dot" style="--c:${f.color}"></span>${esc(f.label)}</button>`).join("")}</div>
+        </section>
 
-        <div class="section-label">Compilations</div>
-        <div class="list-add">
-          ${lists.map(l => `<span class="chip">${esc(l.name)}<button data-unlist="${esc(l.id)}" aria-label="Remove from list">✕</button></span>`).join("")}
-          <select id="drawer-list-add"><option value="">+ Add to list…</option>${S.lists.filter(l => !l.items.includes(id)).map(l => `<option value="${esc(l.id)}">${esc(l.name)}</option>`).join("")}<option value="__new">New list…</option></select>
-        </div>
+        <section class="dsec"><h3>Lists</h3>
+          <div class="list-add">
+            ${lists.map(l => `<span class="chip">${esc(l.name)}<button data-unlist="${esc(l.id)}" aria-label="Remove from ${esc(l.name)}">${icon("x")}</button></span>`).join("")}
+            <label class="select"><span class="vh">Add to a list</span><select id="drawer-list-add"><option value="">Add to a list…</option>${S.lists.filter(l => !l.items.includes(id)).map(l => `<option value="${esc(l.id)}">${esc(l.name)}</option>`).join("")}<option value="__new">New list…</option></select></label>
+          </div>
+        </section>
 
-        <div class="section-label">My notes</div>
-        <textarea class="notes" id="drawer-notes" placeholder="Why this matters, what to check, quotes, page numbers…">${esc(S.notes[id] || "")}</textarea>
+        <section class="dsec"><h3><label for="drawer-notes">My notes</label> <span class="saved" id="notes-saved"></span></h3>
+          <textarea class="notes" id="drawer-notes" placeholder="Why this matters, what to check, quotes, page numbers…">${esc(S.notes[id] || "")}</textarea>
+        </section>
 
-        <div class="section-label">Citation <button class="btn small" id="copy-cite">Copy</button></div>
-        <div class="citation">${mdInline(citation(it))}</div>
+        <section class="dsec"><h3>Citation</h3>
+          <div class="citation">${mdInline(citation(it))}</div>
+        </section>
 
-        <div class="section-label">Search for this elsewhere</div>
-        <div class="searchlinks">${(window.RUG_SOURCES || []).slice(0, 12).map(s => `<a href="${esc(s.url.replace("{q}", q))}" target="_blank" rel="noopener">${esc(s.group === "Museums" || s.group === "Books & texts" ? s.name : s.group + " " + s.name.toLowerCase())}</a>`).join(" · ")}</div>
+        <section class="dsec"><h3>Search for this elsewhere</h3>
+          <div class="searchlinks">${(window.RUG_SOURCES || []).slice(0, 12).map(s => `<a href="${esc(s.url.replace("{q}", q))}" target="_blank" rel="noopener">${esc(s.group === "Museums" || s.group === "Books & texts" ? s.name : s.group + " " + s.name.toLowerCase())}</a>`).join("")}</div>
+        </section>
       </div>`;
+    $("#drawer").setAttribute("aria-labelledby", "drawer-title");
+    const wasHidden = $("#drawer").hidden;
     $("#drawer").hidden = false; $("#scrim").hidden = false;
-    $("#drawer").scrollTop = 0;
+    if (wasHidden) { $("#drawer").scrollTop = 0; $("#drawer").focus({ preventScroll: true }); }
   };
-  const closeDrawer = () => { $("#drawer").hidden = true; $("#scrim").hidden = true; drawerId = null; };
+  const closeDrawer = () => {
+    $("#drawer").hidden = true; $("#scrim").hidden = true; drawerId = null;
+    if (drawerReturn && document.contains(drawerReturn)) drawerReturn.focus({ preventScroll: true });
+    drawerReturn = null;
+  };
 
   // ---------- mutations ----------
   const touch = id => { S.touched[id] = Date.now(); };
@@ -478,7 +545,7 @@
     toast(editingId ? "Saved" : "Added to database");
     if (!editingId) openDrawer(id);
   });
-  $("#btn-cancel-edit").onclick = () => dlg.close();
+  $("#btn-cancel-edit").onclick = $("#btn-x-edit").onclick = () => dlg.close();
   $("#btn-delete-item").onclick = () => {
     if (!editingId || !confirm("Delete this item from your database?")) return;
     const id = editingId;
@@ -500,22 +567,22 @@
     $("#print-intro").textContent = l.intro || "";
     const items = l.items.map(id => BY_ID[id]).filter(Boolean);
     $("#compile-items").innerHTML = items.length ? items.map((it, i) => `
-      <div class="citem" data-id="${esc(it.id)}">
-        <div class="num">${i + 1}</div>
-        <div class="thumb">${thumbHTML(it)}</div>
+      <article class="citem" data-id="${esc(it.id)}">
+        <div class="n">${i + 1}</div>
+        <div class="plate">${plateHTML(it)}</div>
         <div>
-          <div class="card-title" style="cursor:pointer" data-open="${esc(it.id)}">${esc(it.title)}</div>
-          <div class="card-meta">${esc(TYPES[it.type].label)} · ${esc(metaLine(it))} <span class="card-flags" style="position:static;display:inline-flex">${flagDots(it)}</span></div>
-          <div class="ccite">${mdInline(citation(it))}</div>
+          <h3><button data-open="${esc(it.id)}">${esc(it.title)}</button></h3>
+          <div class="label-top">${colorway(it)}<span>${esc(TYPES[it.type].label)}</span>${it.date ? `<span>${esc(it.date)}</span>` : ""}${it.institution ? `<span>${esc(it.institution)}</span>` : ""}<span class="plate-flags" style="position:static">${flagDots(it)}</span></div>
+          <p class="ccite">${mdInline(citation(it))}</p>
           ${S.notes[it.id] ? `<div class="cnote">${esc(S.notes[it.id])}</div>` : ""}
         </div>
         <div class="cact">
-          <button class="btn small" data-move="-1" ${i === 0 ? "disabled" : ""}>↑</button>
-          <button class="btn small" data-move="1" ${i === items.length - 1 ? "disabled" : ""}>↓</button>
-          <button class="btn small danger-ghost" data-remove>Remove</button>
+          <button class="icon-btn" data-move="-1" ${i === 0 ? "disabled" : ""} aria-label="Move up">${icon("up")}</button>
+          <button class="icon-btn" data-move="1" ${i === items.length - 1 ? "disabled" : ""} aria-label="Move down">${icon("down")}</button>
+          <button class="icon-btn" data-remove aria-label="Remove from list">${icon("x")}</button>
         </div>
-      </div>`).join("")
-      : `<div class="empty">This list is empty. In Browse, click <b>+ List</b> on any card, or open an item and choose <b>Add to list</b>.</div>`;
+      </article>`).join("")
+      : `<div class="empty"><h2>This list is empty</h2><p>In Browse, use the ${icon("bookmark", "sm")} button on any record, or open a record and choose <b>Add to a list</b>.</p><div class="btns"><a class="btn" href="#browse">Go to Browse</a></div></div>`;
     renderListBadge();
   };
   const compileExport = fmt => {
@@ -584,25 +651,33 @@
   };
   const runDiscover = async () => {
     const q = $("#dq").value.trim(), src = $("#dsource").value;
-    if (!q) return;
-    $("#discover-status").textContent = "Searching…"; $("#discover-results").innerHTML = "";
+    const status = $("#discover-status");
+    if (!q) { status.textContent = "Type something to search for."; $("#dq").focus(); return; }
+    status.className = "status"; status.textContent = "Searching…";
+    $("#discover-results").innerHTML = Array.from({ length: 8 }, () => `<div class="card skel" aria-hidden="true"><div class="plate"></div><div class="bar"></div><div class="bar short"></div></div>`).join("");
+    $("#btn-discover").disabled = true;
     try {
       discoverResults = await DISCOVER[src](q);
-      $("#discover-status").textContent = discoverResults.length ? `${discoverResults.length} results. Click + Add to save one to your database.` : "No results.";
+      status.textContent = discoverResults.length ? `${discoverResults.length} results. Add the ones you want to keep.` : `No results for “${q}”. Try a broader word, or another collection.`;
     } catch (err) {
       console.error(err); discoverResults = [];
-      $("#discover-status").textContent = "That service couldn't be reached. Check your connection, or use Search elsewhere instead.";
+      status.className = "status error";
+      status.textContent = "That collection couldn't be reached. Check your connection and try again, or use Other archives.";
     }
+    $("#btn-discover").disabled = false;
     renderDiscover();
   };
   const renderDiscover = () => {
     $("#discover-results").innerHTML = discoverResults.map(r => {
       const it = norm(r), have = !!BY_ID[r.id];
       return `<article class="card" data-did="${esc(r.id)}">
-        <div class="thumb">${thumbHTML(it)}<span class="type-pill">${esc(TYPES[it.type].label)}</span></div>
-        <div class="card-body"><div class="card-title">${esc(it.title)}</div><div class="card-meta">${esc(metaLine(it))}</div>
-        <div class="card-quick">${have ? `<button class="qbtn on" style="background:var(--sage)" data-open="${esc(r.id)}">✓ In database</button>` : `<button class="qbtn" data-dadd>+ Add</button>`}
-        ${safeUrl(r.sourceUrl) ? `<a class="qbtn" href="${esc(safeUrl(r.sourceUrl))}" target="_blank" rel="noopener">Source ↗</a>` : ""}</div></div></article>`;
+        <a class="card-open" href="${esc(safeUrl(r.sourceUrl) || "#")}" target="_blank" rel="noopener">
+          <span class="plate">${plateHTML(it)}</span>
+          <span class="label"><span class="label-top"><span>${esc(TYPES[it.type].label)}</span>${it.date ? `<span>${esc(it.date)}</span>` : ""}</span>
+          <h3>${esc(it.title)}</h3><span class="meta">${esc([it.creator, it.institution].filter(Boolean).join(" · "))}</span></span>
+        </a>
+        <div class="add-btn">${have ? `<button class="btn sm" data-open="${esc(r.id)}">${icon("check")}Added</button>` : `<button class="btn sm primary" data-dadd>${icon("plus")}Add</button>`}</div>
+      </article>`;
     }).join("");
   };
 
@@ -611,10 +686,10 @@
     const q = $("#sq").value.trim();
     const groups = {};
     for (const s of window.RUG_SOURCES || []) (groups[s.group] = groups[s.group] || []).push(s);
-    $("#sources").innerHTML = Object.entries(groups).map(([g, list]) => `<div class="src-group"><h3>${esc(g)}</h3><div class="src-links">${list.map(s => {
+    $("#sources").innerHTML = Object.entries(groups).map(([g, list]) => `<section class="src-group"><h2>${esc(g)}</h2><div class="src-links">${list.map(s => {
       const href = q ? s.url.replace("{q}", encodeURIComponent(q)) : s.home;
-      return `<a class="src-link" href="${esc(href)}" target="_blank" rel="noopener">${esc(s.name)} ↗<small>${q ? "Search: " + esc(q) : "Open home page"}</small></a>`;
-    }).join("")}</div></div>`).join("");
+      return `<a class="src-link" href="${esc(href)}" target="_blank" rel="noopener"><span><strong>${esc(s.name)}</strong><small>${q ? "Search for “" + esc(q) + "”" : "Open the collection"}</small></span>${icon("external")}</a>`;
+    }).join("")}</div></section>`).join("");
   };
 
   // ---------- export / backup ----------
@@ -647,7 +722,7 @@
   let currentView = "browse";
   const setView = v => {
     currentView = v;
-    $$(".tab").forEach(t => t.classList.toggle("active", t.dataset.view === v));
+    $$(".tab").forEach(t => t.dataset.view === v ? t.setAttribute("aria-current", "page") : t.removeAttribute("aria-current"));
     $$(".view").forEach(s => (s.hidden = s.id !== "view-" + v));
     if (v === "browse" || v === "timeline") renderBrowse();
     if (v === "compile") renderCompile();
@@ -658,16 +733,15 @@
   };
 
   // ---------- events ----------
-  $$(".tab").forEach(t => (t.onclick = () => setView(t.dataset.view)));
   const q = $("#q");
   q.value = S.ui.q || "";
   q.addEventListener("input", debounce(() => { S.ui.q = q.value; save(); renderBrowse(); }, 120));
   $("#sort").value = S.ui.sort || "relevance";
   $("#sort").onchange = e => { S.ui.sort = e.target.value; save(); renderBrowse(); };
-  $$(".seg-btn").forEach(b => {
-    b.classList.toggle("active", b.dataset.layout === S.ui.layout);
-    b.onclick = () => { S.ui.layout = b.dataset.layout; $$(".seg-btn").forEach(x => x.classList.toggle("active", x === b)); save(); renderBrowse(); };
-  });
+  const syncLayout = () => $$(".seg-btn").forEach(x => x.setAttribute("aria-pressed", String(x.dataset.layout === S.ui.layout)));
+  syncLayout();
+  $$(".seg-btn").forEach(b => (b.onclick = () => { S.ui.layout = b.dataset.layout; syncLayout(); save(); renderBrowse(); }));
+  $$(".tip").forEach(b => (b.onclick = () => { q.value = b.dataset.q; S.ui.q = q.value; save(); renderBrowse(); q.focus(); }));
 
   $("#facets").addEventListener("change", e => {
     const cb = e.target.closest("[data-facet]"); if (!cb) return;
@@ -684,17 +758,18 @@
 
   // card interactions (browse, timeline)
   const onCardClick = e => {
-    const goto = e.target.closest("[data-goto]"); if (goto) { e.preventDefault(); setView(goto.dataset.goto); return; }
+    if (e.target.closest("#clear-facets-empty")) { Object.values(F).forEach(s => s.clear()); renderBrowse(); return; }
     const card = e.target.closest(".card[data-id]"); if (!card) return;
     const id = card.dataset.id;
-    const qf = e.target.closest("[data-qflag]"); if (qf) { e.stopPropagation(); toggleFlag(id, qf.dataset.qflag); return; }
-    if (e.target.closest("[data-qlist]")) { e.stopPropagation(); toggleInList(id); return; }
-    openDrawer(id);
+    const qf = e.target.closest("[data-qflag]"); if (qf) { toggleFlag(id, qf.dataset.qflag); return; }
+    if (e.target.closest("[data-qlist]")) { toggleInList(id); return; }
+    if (e.target.closest("[data-open]")) openDrawer(id);
   };
   $("#results").addEventListener("click", onCardClick);
   $("#timeline").addEventListener("click", onCardClick);
+  $("#foreedge").addEventListener("click", e => { const b = e.target.closest("[data-open]"); if (b) openDrawer(b.dataset.open); });
   document.addEventListener("keydown", e => {
-    if (e.key === "Enter" && e.target.matches(".card[data-id]")) openDrawer(e.target.dataset.id);
+    if (e.key === "Escape" && !$("#export-menu").hidden) { $("#export-menu").hidden = true; $("#btn-export").setAttribute("aria-expanded", "false"); $("#btn-export").focus(); return; }
     if (e.key === "Escape" && drawerId && !dlg.open) closeDrawer();
     if (e.key === "/" && !e.target.matches("input, textarea, select")) { e.preventDefault(); setView("browse"); q.focus(); }
   });
@@ -716,18 +791,24 @@
     if (listId === "__new") { const l = newList(); if (!l) { e.target.value = ""; return; } listId = l.id; }
     toggleInList(drawerId, listId);
   });
-  const saveNotes = debounce(v => { const id = drawerId; if (!id) return; if (v.trim()) S.notes[id] = v; else delete S.notes[id]; touch(id); save(); rebuild(); }, 300);
+  const saveNotes = debounce(v => {
+    const id = drawerId; if (!id) return;
+    if (v.trim()) S.notes[id] = v; else delete S.notes[id];
+    touch(id); save(); rebuild();
+    const m = $("#notes-saved"); if (m) m.textContent = "Saved";
+  }, 400);
   $("#drawer").addEventListener("input", e => { if (e.target.id === "drawer-notes") saveNotes(e.target.value); });
 
-  $("#toggle-facets").onclick = () => $("#facets").classList.toggle("open");
+  $("#toggle-facets").onclick = e => { const open = $("#facets").classList.toggle("open"); e.currentTarget.setAttribute("aria-expanded", String(open)); };
 
   // add / export menu
   $("#btn-add").onclick = () => openEdit(null);
-  $("#btn-export").onclick = e => { e.stopPropagation(); $("#export-menu").hidden = !$("#export-menu").hidden; };
-  document.addEventListener("click", e => { if (!e.target.closest(".menu")) $("#export-menu").hidden = true; });
+  const setMenu = open => { $("#export-menu").hidden = !open; $("#btn-export").setAttribute("aria-expanded", String(open)); if (open) $("#export-menu button").focus(); };
+  $("#btn-export").onclick = e => { e.stopPropagation(); setMenu($("#export-menu").hidden); };
+  document.addEventListener("click", e => { if (!e.target.closest(".menu")) setMenu(false); });
   $("#export-menu").addEventListener("click", e => {
     const b = e.target.closest("[data-export]"); if (!b) return;
-    $("#export-menu").hidden = true;
+    setMenu(false);
     const k = b.dataset.export;
     if (k === "db") exportDb();
     if (k === "backup") exportBackup();

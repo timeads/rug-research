@@ -3,67 +3,103 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Rug Research Database</title>
-  <meta name="description" content="A searchable research database of rugs, carpets, tufting, books, images, yarn samples and tools.">
+  <title>Rug Research</title>
+  <meta name="description" content="A searchable research database of rugs, carpets and tufting: objects, books, images, archives, yarn samples and tools.">
+  <meta name="color-scheme" content="light dark">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="topbar">
-    <div class="brand">
-      <span class="brand-mark" aria-hidden="true"></span>
-      <div>
-        <h1>Rug Research</h1>
-        <p class="brand-sub">Objects · books · images · yarn · tools</p>
-      </div>
-    </div>
-    <nav class="tabs" role="tablist">
-      <button class="tab active" data-view="browse">Browse</button>
-      <button class="tab" data-view="timeline">Timeline</button>
-      <button class="tab" data-view="compile">Compile <span class="badge" id="list-count"></span></button>
-      <button class="tab" data-view="discover">Discover</button>
-      <button class="tab" data-view="sources">Search elsewhere</button>
-    </nav>
-    <div class="top-actions">
-      <button class="btn primary" id="btn-add">+ Add item</button>
-      <div class="menu">
-        <button class="btn" id="btn-export">Export ▾</button>
-        <div class="menu-pop" id="export-menu" hidden>
-          <button data-export="db">Database file (items.js): commit to GitHub</button>
-          <button data-export="backup">Backup my flags, notes &amp; lists (.json)</button>
-          <button data-export="restore">Restore from backup…</button>
-          <button data-export="csv-all">All visible results as CSV</button>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></symbol>
+      <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="7" height="7" rx="1"/><rect x="13.5" y="3.5" width="7" height="7" rx="1"/><rect x="3.5" y="13.5" width="7" height="7" rx="1"/><rect x="13.5" y="13.5" width="7" height="7" rx="1"/></symbol>
+      <symbol id="i-list" viewBox="0 0 24 24"><rect x="3.5" y="4" width="5" height="5" rx="1"/><rect x="3.5" y="15" width="5" height="5" rx="1"/><path d="M12 6.5h8.5M12 17.5h8.5"/></symbol>
+      <symbol id="i-flag" viewBox="0 0 24 24"><path d="M5.5 21V4.5h12l-2.5 4.25 2.5 4.25h-12"/></symbol>
+      <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3.5 2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.8l-5.2 2.8 1-5.8-4.3-4.1 5.9-.8z"/></symbol>
+      <symbol id="i-bookmark" viewBox="0 0 24 24"><path d="M6.5 3.5h11v17l-5.5-3.8-5.5 3.8z"/></symbol>
+      <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+      <symbol id="i-x" viewBox="0 0 24 24"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11"/></symbol>
+      <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19V5.5M6.5 11 12 5.5l5.5 5.5"/></symbol>
+      <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 5v13.5M6.5 13l5.5 5.5 5.5-5.5"/></symbol>
+      <symbol id="i-external" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-8.5 8.5M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></symbol>
+      <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v11M7 10.5l5 5 5-5M5 20h14"/></symbol>
+      <symbol id="i-filter" viewBox="0 0 24 24"><path d="M4 5.5h16M7 12h10M10 18.5h4"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8.5" y="8.5" width="11" height="11" rx="1.5"/><path d="M15.5 8.5V5.5a1 1 0 0 0-1-1h-9a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h3"/></symbol>
+      <symbol id="i-edit" viewBox="0 0 24 24"><path d="M4.5 19.5h4l10-10-4-4-10 10z"/><path d="m13 7 4 4"/></symbol>
+      <symbol id="i-print" viewBox="0 0 24 24"><path d="M7 9V4h10v5M7 17H5a1 1 0 0 1-1-1v-6a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1h-2"/><rect x="7" y="14" width="10" height="6"/></symbol>
+      <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m7 10 5 5 5-5"/></symbol>
+    </defs>
+  </svg>
+
+  <a class="skip" href="#main">Skip to results</a>
+
+  <header class="shell">
+    <div class="shell-inner">
+      <a class="wordmark" href="#browse" aria-label="Rug Research, home">
+        <span class="wordmark-name">Rug Research</span>
+        <span class="wordmark-sub">Sample book of rugs, carpet &amp; tufting</span>
+      </a>
+      <nav class="tabs" aria-label="Sections">
+        <a class="tab" href="#browse" data-view="browse">Browse</a>
+        <a class="tab" href="#timeline" data-view="timeline">Timeline</a>
+        <a class="tab" href="#compile" data-view="compile">Compile <span class="count-pill" id="list-count"></span></a>
+        <a class="tab" href="#discover" data-view="discover">Discover</a>
+        <a class="tab" href="#sources" data-view="sources">Other archives</a>
+      </nav>
+      <div class="shell-actions">
+        <button class="btn on-board" id="btn-add"><svg class="ic"><use href="#i-plus"/></svg><span class="btn-label">Add item</span></button>
+        <div class="menu">
+          <button class="btn on-board ghost" id="btn-export" aria-haspopup="menu" aria-expanded="false"><svg class="ic"><use href="#i-download"/></svg><span class="btn-label">Export</span><svg class="ic sm"><use href="#i-chevron"/></svg></button>
+          <div class="menu-pop" id="export-menu" role="menu" hidden>
+            <button role="menuitem" data-export="db"><strong>Database file</strong><span>items.js, to commit to GitHub</span></button>
+            <button role="menuitem" data-export="backup"><strong>Back up my work</strong><span>Flags, notes, lists and photos (.json)</span></button>
+            <button role="menuitem" data-export="restore"><strong>Restore a backup…</strong><span>Replace this browser's work with a backup file</span></button>
+            <button role="menuitem" data-export="csv-all"><strong>Current results</strong><span>Spreadsheet (.csv)</span></button>
+          </div>
         </div>
       </div>
     </div>
   </header>
 
-  <main>
+  <main id="main">
     <!-- BROWSE -->
     <section class="view" id="view-browse">
-      <div class="searchrow">
-        <input id="q" type="search" placeholder='Search: hooked rug, "tufting machine", type:book, inst:hagley, year:1940-1960, -wool' autocomplete="off">
-        <select id="sort" aria-label="Sort">
-          <option value="relevance">Best match</option>
-          <option value="date-asc">Oldest first</option>
-          <option value="date-desc">Newest first</option>
-          <option value="title">Title A–Z</option>
-          <option value="recent">Recently added/edited</option>
-        </select>
-        <div class="seg" role="group" aria-label="Layout">
-          <button class="seg-btn active" data-layout="grid" title="Grid">▦</button>
-          <button class="seg-btn" data-layout="list" title="List">☰</button>
+      <div class="searchbar">
+        <label class="search">
+          <svg class="ic"><use href="#i-search"/></svg>
+          <input id="q" type="search" placeholder="Search rugs, makers, places, accession numbers…" autocomplete="off" aria-label="Search the database">
+          <kbd>/</kbd>
+        </label>
+        <div class="search-tools">
+          <button class="btn mobile-only" id="toggle-facets" aria-expanded="false"><svg class="ic"><use href="#i-filter"/></svg>Filters</button>
+          <label class="select"><span class="vh">Sort</span>
+            <select id="sort">
+              <option value="relevance">Best match</option>
+              <option value="date-asc">Oldest first</option>
+              <option value="date-desc">Newest first</option>
+              <option value="title">Title A–Z</option>
+              <option value="recent">Recently edited</option>
+            </select>
+          </label>
+          <div class="seg" role="group" aria-label="Layout">
+            <button class="seg-btn" data-layout="grid" aria-label="Grid view"><svg class="ic"><use href="#i-grid"/></svg></button>
+            <button class="seg-btn" data-layout="list" aria-label="List view"><svg class="ic"><use href="#i-list"/></svg></button>
+          </div>
         </div>
       </div>
+      <p class="syntax">Try <button class="tip" data-q='"bed rug"'>"bed rug"</button> <button class="tip" data-q="year:1700-1850">year:1700-1850</button> <button class="tip" data-q="type:book">type:book</button> <button class="tip" data-q="inst:hagley">inst:hagley</button> <button class="tip" data-q="flag:fellowship">flag:fellowship</button> <button class="tip" data-q="tufted -machine">tufted -machine</button></p>
+
       <div class="browse">
-        <button class="btn mobile-only" id="toggle-facets">Filters ▾</button>
-        <aside class="facets" id="facets"></aside>
-        <div>
-          <div class="resultbar">
-            <span id="result-count"></span>
-            <span id="active-filters"></span>
+        <aside class="facets" id="facets" aria-label="Filters"></aside>
+        <div class="results-col">
+          <div class="foreedge-wrap" id="foreedge-wrap">
+            <div class="foreedge-head"><span id="result-count"></span><span id="active-filters" class="chips"></span></div>
+            <div class="foreedge" id="foreedge" aria-label="Results by date"></div>
+            <div class="foreedge-axis" id="foreedge-axis" aria-hidden="true"></div>
           </div>
           <div id="results" class="grid"></div>
         </div>
@@ -72,109 +108,134 @@
 
     <!-- TIMELINE -->
     <section class="view" id="view-timeline" hidden>
-      <p class="hint">Dated items from your current Browse search and filters, grouped by decade. Use it to see gaps in your history of tufting.</p>
+      <header class="view-head">
+        <h1>Timeline</h1>
+        <p>Dated items from your current search and filters, by decade. Gaps here are gaps in the history of tufting.</p>
+      </header>
       <div id="timeline"></div>
     </section>
 
     <!-- COMPILE -->
     <section class="view" id="view-compile" hidden>
-      <div class="compile-head">
-        <select id="list-select" aria-label="Compilation"></select>
-        <button class="btn" id="btn-new-list">New list</button>
-        <button class="btn" id="btn-rename-list">Rename</button>
-        <button class="btn danger-ghost" id="btn-delete-list">Delete</button>
-        <span class="spacer"></span>
-        <button class="btn" data-cexport="md">Markdown</button>
-        <button class="btn" data-cexport="csv">CSV</button>
-        <button class="btn" data-cexport="json">JSON</button>
-        <button class="btn primary" id="btn-print">Print / PDF</button>
-      </div>
+      <header class="view-head row">
+        <div class="list-pick">
+          <label class="vh" for="list-select">Compilation</label>
+          <select id="list-select" class="h1-select"></select>
+          <div class="list-actions">
+            <button class="link-btn" id="btn-new-list">New list</button>
+            <button class="link-btn" id="btn-rename-list">Rename</button>
+            <button class="link-btn danger" id="btn-delete-list">Delete</button>
+          </div>
+        </div>
+        <div class="export-row">
+          <span class="export-label">Export</span>
+          <button class="btn" data-cexport="md">Markdown</button>
+          <button class="btn" data-cexport="csv">CSV</button>
+          <button class="btn" data-cexport="json">JSON</button>
+          <button class="btn primary" id="btn-print"><svg class="ic"><use href="#i-print"/></svg>Print or PDF</button>
+        </div>
+      </header>
       <h2 id="print-title" class="print-only"></h2>
       <div id="print-intro" class="print-only"></div>
-      <textarea id="list-intro" class="list-intro" placeholder="Intro or working argument for this compilation, e.g. a fellowship research statement draft. Saved automatically."></textarea>
+      <label class="intro-label" for="list-intro">Introduction</label>
+      <textarea id="list-intro" class="list-intro" placeholder="Your working argument for this list, e.g. a draft research statement. Saved as you type."></textarea>
       <div id="compile-items"></div>
     </section>
 
     <!-- DISCOVER -->
     <section class="view" id="view-discover" hidden>
-      <p class="hint">Search open museum and library APIs from your browser and add results, with images, to your database in one click.</p>
-      <div class="searchrow">
-        <input id="dq" type="search" placeholder="e.g. hooked rug, carpet sample, tufted bedspread" autocomplete="off">
-        <select id="dsource">
-          <option value="met">The Met (objects + images)</option>
-          <option value="aic">Art Institute of Chicago (objects + images)</option>
-          <option value="openlibrary">Open Library (books)</option>
-        </select>
-        <button class="btn primary" id="btn-discover">Search</button>
+      <header class="view-head">
+        <h1>Discover</h1>
+        <p>Search open museum and library collections and add results, with their images, in one click.</p>
+      </header>
+      <div class="searchbar">
+        <label class="search">
+          <svg class="ic"><use href="#i-search"/></svg>
+          <input id="dq" type="search" placeholder="bed rug, candlewick, tufted bedspread…" autocomplete="off" aria-label="Search open collections">
+        </label>
+        <div class="search-tools">
+          <label class="select"><span class="vh">Collection</span>
+            <select id="dsource">
+              <option value="met">The Met</option>
+              <option value="aic">Art Institute of Chicago</option>
+              <option value="openlibrary">Open Library (books)</option>
+            </select>
+          </label>
+          <button class="btn primary" id="btn-discover">Search</button>
+        </div>
       </div>
-      <div id="discover-status" class="hint"></div>
+      <p id="discover-status" class="status" role="status"></p>
       <div id="discover-results" class="grid"></div>
     </section>
 
     <!-- SOURCES -->
     <section class="view" id="view-sources" hidden>
-      <div class="searchrow">
-        <input id="sq" type="search" placeholder="Terms to search across archives, e.g. tufted carpet" autocomplete="off">
+      <header class="view-head">
+        <h1>Other archives</h1>
+        <p>Run your search at each institution. Found something? Add it with <b>Add item</b> and paste its link; the image lookup fills in the picture.</p>
+      </header>
+      <div class="searchbar">
+        <label class="search">
+          <svg class="ic"><use href="#i-search"/></svg>
+          <input id="sq" type="search" placeholder="Terms to search for, e.g. tufted bedspread" autocomplete="off" aria-label="Terms to search at other archives">
+        </label>
       </div>
-      <p class="hint">Each link opens that institution's search for your terms in a new tab. Found something? Use <b>+ Add item</b> and paste the link.</p>
       <div id="sources"></div>
     </section>
   </main>
 
-  <!-- DETAIL DRAWER -->
   <div class="scrim" id="scrim" hidden></div>
-  <aside class="drawer" id="drawer" hidden aria-label="Item details"></aside>
+  <aside class="drawer" id="drawer" hidden aria-label="Item details" tabindex="-1"></aside>
 
-  <!-- EDIT MODAL -->
-  <dialog id="edit-dialog">
+  <dialog id="edit-dialog" aria-labelledby="edit-title">
     <form id="edit-form" method="dialog">
-      <h2 id="edit-title">Add item</h2>
+      <header class="dialog-head">
+        <h2 id="edit-title">Add item</h2>
+        <button type="button" class="icon-btn" id="btn-x-edit" aria-label="Close"><svg class="ic"><use href="#i-x"/></svg></button>
+      </header>
       <div class="form-grid">
-        <label>Type
-          <select name="type" required></select>
-        </label>
-        <label class="span2">Title <input name="title" required></label>
-        <label>Creator / maker / author <input name="creator"></label>
-        <label>Date (as written) <input name="date" placeholder="c. 1850–1875"></label>
-        <label>Start year <input name="dateStart" type="number" placeholder="1850"></label>
-        <label>End year <input name="dateEnd" type="number" placeholder="1875"></label>
-        <label>Institution / owner <input name="institution" list="dl-inst"></label>
-        <label>Collection / series <input name="collection"></label>
-        <label>Accession / call no. / ISBN <input name="identifier"></label>
-        <label>Place <input name="place"></label>
-        <label>Publisher <input name="publisher"></label>
-        <label>Dimensions <input name="dimensions"></label>
-        <label class="span2">Materials (comma-separated) <input name="materials" placeholder="wool, burlap, cotton"></label>
-        <label class="span2">Techniques (comma-separated) <input name="techniques" placeholder="hooked, hand-tufted, punch needle"></label>
-        <label class="span2">Themes (comma-separated) <input name="themes" list="dl-themes"></label>
-        <label class="span2">Tags (comma-separated) <input name="tags"></label>
-        <label class="span2">Description <textarea name="description" rows="4"></textarea></label>
-        <label class="span2">Source link <input name="sourceUrl" type="url" placeholder="https://"></label>
-        <label class="span2">Image link <input name="image" placeholder="https://… or images/my-photo.jpg"></label>
-        <label class="span2">…or upload a photo (yarn samples, tools, your own photos)
-          <input name="imageFile" type="file" accept="image/*">
-        </label>
-        <label class="span2">Citation (optional; generated if blank) <textarea name="citation" rows="2"></textarea></label>
+        <label>Type <select name="type" required></select></label>
         <label>Status
           <select name="status">
             <option value="unverified">Unverified</option>
             <option value="verified">Verified at source</option>
           </select>
         </label>
+        <label class="span2">Title <input name="title" required></label>
+        <label>Maker, creator or author <input name="creator"></label>
+        <label>Date as written <input name="date" placeholder="c. 1850–1875"></label>
+        <label>Start year <input name="dateStart" type="number" inputmode="numeric" placeholder="1850"></label>
+        <label>End year <input name="dateEnd" type="number" inputmode="numeric" placeholder="1875"></label>
+        <label>Institution or owner <input name="institution" list="dl-inst"></label>
+        <label>Collection or series <input name="collection"></label>
+        <label>Accession no., call no. or ISBN <input name="identifier"></label>
+        <label>Place <input name="place"></label>
+        <label>Publisher <input name="publisher"></label>
+        <label>Dimensions <input name="dimensions"></label>
+        <label class="span2">Materials <input name="materials" placeholder="wool, burlap, cotton"><small>Separate with commas</small></label>
+        <label class="span2">Techniques <input name="techniques" placeholder="hooked, hand-tufted, candlewick"><small>Separate with commas</small></label>
+        <label class="span2">Research themes <input name="themes" list="dl-themes"><small>Separate with commas</small></label>
+        <label class="span2">Tags <input name="tags"><small>Separate with commas</small></label>
+        <label class="span2">Description <textarea name="description" rows="4"></textarea></label>
+        <label class="span2">Source link <input name="sourceUrl" type="url" placeholder="https://"><small>The museum or library page. The image lookup reads it to find the photo.</small></label>
+        <label class="span2">Image link <input name="image" placeholder="https://… or images/my-photo.jpg"></label>
+        <label class="span2">Image credit <input name="imageCredit" placeholder="Winterthur Museum"></label>
+        <label class="span2 file">Or upload a photo <input name="imageFile" type="file" accept="image/*"><small>For yarn samples, tools and your own photographs. Stored in this browser until you export.</small></label>
+        <label class="span2">Citation <textarea name="citation" rows="2"></textarea><small>Leave blank to generate one.</small></label>
       </div>
       <datalist id="dl-inst"></datalist>
       <datalist id="dl-themes"></datalist>
-      <div class="form-actions">
-        <button type="button" class="btn danger-ghost" id="btn-delete-item" hidden>Delete item</button>
+      <footer class="dialog-foot">
+        <button type="button" class="link-btn danger" id="btn-delete-item" hidden>Delete item</button>
         <span class="spacer"></span>
         <button type="button" class="btn" id="btn-cancel-edit">Cancel</button>
         <button type="submit" class="btn primary">Save</button>
-      </div>
+      </footer>
     </form>
   </dialog>
 
   <input type="file" id="restore-file" accept="application/json" hidden>
-  <div id="toast" class="toast" hidden></div>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
 
   <script src="data/items.js"></script>
   <script src="data/sources.js"></script>
