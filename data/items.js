@@ -4884,7 +4884,20 @@ window.RUG_ITEMS = [
       "root patent"
     ],
     "confidence": "solid",
-    "status": "unverified"
+    "status": "unverified",
+    "images": [
+      {
+        "src": "images/patents/US251381-1.png",
+        "caption": "US 251,381, sheet 1"
+      },
+      {
+        "src": "images/patents/US251381-2.png",
+        "caption": "US 251,381, sheet 2"
+      }
+    ],
+    "image": "images/patents/US251381-1.png",
+    "imageCredit": "USPTO via Google Patents (public domain)",
+    "imageSource": "uspto"
   },
   {
     "id": "pat-us340189a",
@@ -4909,7 +4922,24 @@ window.RUG_ITEMS = [
       "19th century"
     ],
     "confidence": "solid",
-    "status": "unverified"
+    "status": "unverified",
+    "images": [
+      {
+        "src": "images/patents/US340189-1.png",
+        "caption": "US 340,189, sheet 1"
+      },
+      {
+        "src": "images/patents/US340189-2.png",
+        "caption": "US 340,189, sheet 2"
+      },
+      {
+        "src": "images/patents/US340189-3.png",
+        "caption": "US 340,189, sheet 3"
+      }
+    ],
+    "image": "images/patents/US340189-1.png",
+    "imageCredit": "USPTO via Google Patents (public domain)",
+    "imageSource": "uspto"
   },
   {
     "id": "pat-us897200a",
@@ -4933,7 +4963,24 @@ window.RUG_ITEMS = [
       "patent"
     ],
     "confidence": "solid",
-    "status": "unverified"
+    "status": "unverified",
+    "images": [
+      {
+        "src": "images/patents/US897200-1.png",
+        "caption": "US 897,200, sheet 1"
+      },
+      {
+        "src": "images/patents/US897200-2.png",
+        "caption": "US 897,200, sheet 2"
+      },
+      {
+        "src": "images/patents/US897200-3.png",
+        "caption": "US 897,200, sheet 3"
+      }
+    ],
+    "image": "images/patents/US897200-1.png",
+    "imageCredit": "USPTO via Google Patents (public domain)",
+    "imageSource": "uspto"
   },
   {
     "id": "pat-us1605711a",
@@ -4960,7 +5007,24 @@ window.RUG_ITEMS = [
       "priority"
     ],
     "confidence": "solid",
-    "status": "unverified"
+    "status": "unverified",
+    "images": [
+      {
+        "src": "images/patents/US1605711-1.png",
+        "caption": "US 1,605,711, sheet 1"
+      },
+      {
+        "src": "images/patents/US1605711-2.png",
+        "caption": "US 1,605,711, sheet 2"
+      },
+      {
+        "src": "images/patents/US1605711-3.png",
+        "caption": "US 1,605,711, sheet 3"
+      }
+    ],
+    "image": "images/patents/US1605711-1.png",
+    "imageCredit": "USPTO via Google Patents (public domain)",
+    "imageSource": "uspto"
   },
   {
     "id": "pat-us1941346a",
@@ -4986,7 +5050,24 @@ window.RUG_ITEMS = [
       "speed hooker"
     ],
     "confidence": "solid",
-    "status": "unverified"
+    "status": "unverified",
+    "images": [
+      {
+        "src": "images/patents/US1941346-1.png",
+        "caption": "US 1,941,346, sheet 1"
+      },
+      {
+        "src": "images/patents/US1941346-2.png",
+        "caption": "US 1,941,346, sheet 2"
+      },
+      {
+        "src": "images/patents/US1941346-3.png",
+        "caption": "US 1,941,346, sheet 3"
+      }
+    ],
+    "image": "images/patents/US1941346-1.png",
+    "imageCredit": "USPTO via Google Patents (public domain)",
+    "imageSource": "uspto"
   },
   {
     "id": "pat-us1912977a",
@@ -5010,7 +5091,24 @@ window.RUG_ITEMS = [
       "punch needle"
     ],
     "confidence": "solid",
-    "status": "unverified"
+    "status": "unverified",
+    "images": [
+      {
+        "src": "images/patents/US1912977-1.png",
+        "caption": "US 1,912,977, sheet 1"
+      },
+      {
+        "src": "images/patents/US1912977-2.png",
+        "caption": "US 1,912,977, sheet 2"
+      },
+      {
+        "src": "images/patents/US1912977-3.png",
+        "caption": "US 1,912,977, sheet 3"
+      }
+    ],
+    "image": "images/patents/US1912977-1.png",
+    "imageCredit": "USPTO via Google Patents (public domain)",
+    "imageSource": "uspto"
   },
   {
     "id": "pat-us2077719a",
@@ -5034,7 +5132,24 @@ window.RUG_ITEMS = [
       "patent"
     ],
     "confidence": "solid",
-    "status": "unverified"
+    "status": "unverified",
+    "images": [
+      {
+        "src": "images/patents/US2077719-1.png",
+        "caption": "US 2,077,719, sheet 1"
+      },
+      {
+        "src": "images/patents/US2077719-2.png",
+        "caption": "US 2,077,719, sheet 2"
+      },
+      {
+        "src": "images/patents/US2077719-3.png",
+        "caption": "US 2,077,719, sheet 3"
+      }
+    ],
+    "image": "images/patents/US2077719-1.png",
+    "imageCredit": "USPTO via Google Patents (public domain)",
+    "imageSource": "uspto"
   },
   {
     "id": "pat-us2605727a",
@@ -5059,7 +5174,24 @@ window.RUG_ITEMS = [
       "cut pile"
     ],
     "confidence": "solid",
-    "status": "unverified"
+    "status": "unverified",
+    "images": [
+      {
+        "src": "images/patents/US2605727-1.png",
+        "caption": "US 2,605,727, sheet 1"
+      },
+      {
+        "src": "images/patents/US2605727-2.png",
+        "caption": "US 2,605,727, sheet 2"
+      },
+      {
+        "src": "images/patents/US2605727-3.png",
+        "caption": "US 2,605,727, sheet 3"
+      }
+    ],
+    "image": "images/patents/US2605727-1.png",
+    "imageCredit": "USPTO via Google Patents (public domain)",
+    "imageSource": "uspto"
   },
   {
     "id": "pat-us2591939a",
@@ -5084,7 +5216,24 @@ window.RUG_ITEMS = [
       "cut pile"
     ],
     "confidence": "solid",
-    "status": "unverified"
+    "status": "unverified",
+    "images": [
+      {
+        "src": "images/patents/US2591939-1.png",
+        "caption": "US 2,591,939, sheet 1"
+      },
+      {
+        "src": "images/patents/US2591939-2.png",
+        "caption": "US 2,591,939, sheet 2"
+      },
+      {
+        "src": "images/patents/US2591939-3.png",
+        "caption": "US 2,591,939, sheet 3"
+      }
+    ],
+    "image": "images/patents/US2591939-1.png",
+    "imageCredit": "USPTO via Google Patents (public domain)",
+    "imageSource": "uspto"
   },
   {
     "id": "pat-us2578038a",
@@ -5107,7 +5256,24 @@ window.RUG_ITEMS = [
       "patent"
     ],
     "confidence": "solid",
-    "status": "unverified"
+    "status": "unverified",
+    "images": [
+      {
+        "src": "images/patents/US2578038-1.png",
+        "caption": "US 2,578,038, sheet 1"
+      },
+      {
+        "src": "images/patents/US2578038-2.png",
+        "caption": "US 2,578,038, sheet 2"
+      },
+      {
+        "src": "images/patents/US2578038-3.png",
+        "caption": "US 2,578,038, sheet 3"
+      }
+    ],
+    "image": "images/patents/US2578038-1.png",
+    "imageCredit": "USPTO via Google Patents (public domain)",
+    "imageSource": "uspto"
   },
   {
     "id": "pat-us1485213a",
@@ -5134,7 +5300,24 @@ window.RUG_ITEMS = [
       "bedspread machine"
     ],
     "confidence": "solid",
-    "status": "unverified"
+    "status": "unverified",
+    "images": [
+      {
+        "src": "images/patents/US1485213-01.png",
+        "caption": "US 1,485,213, sheet 1"
+      },
+      {
+        "src": "images/patents/US1485213-02.png",
+        "caption": "US 1,485,213, sheet 2"
+      },
+      {
+        "src": "images/patents/US1485213-03.png",
+        "caption": "US 1,485,213, sheet 3"
+      }
+    ],
+    "image": "images/patents/US1485213-01.png",
+    "imageCredit": "USPTO via Google Patents (public domain)",
+    "imageSource": "uspto"
   },
   {
     "id": "pat-us1452632a",
@@ -5160,7 +5343,24 @@ window.RUG_ITEMS = [
       "earliest?"
     ],
     "confidence": "solid",
-    "status": "unverified"
+    "status": "unverified",
+    "images": [
+      {
+        "src": "images/patents/US1452632-01.png",
+        "caption": "US 1,452,632, sheet 1"
+      },
+      {
+        "src": "images/patents/US1452632-02.png",
+        "caption": "US 1,452,632, sheet 2"
+      },
+      {
+        "src": "images/patents/US1452632-03.png",
+        "caption": "US 1,452,632, sheet 3"
+      }
+    ],
+    "image": "images/patents/US1452632-01.png",
+    "imageCredit": "USPTO via Google Patents (public domain)",
+    "imageSource": "uspto"
   },
   {
     "id": "pat-us1800522a",
@@ -5186,7 +5386,24 @@ window.RUG_ITEMS = [
       "Carter Brothers"
     ],
     "confidence": "solid",
-    "status": "unverified"
+    "status": "unverified",
+    "images": [
+      {
+        "src": "images/patents/US1800522-01.png",
+        "caption": "US 1,800,522, sheet 1"
+      },
+      {
+        "src": "images/patents/US1800522-02.png",
+        "caption": "US 1,800,522, sheet 2"
+      },
+      {
+        "src": "images/patents/US1800522-03.png",
+        "caption": "US 1,800,522, sheet 3"
+      }
+    ],
+    "image": "images/patents/US1800522-01.png",
+    "imageCredit": "USPTO via Google Patents (public domain)",
+    "imageSource": "uspto"
   },
   {
     "id": "pat-us2042503a",
@@ -5213,7 +5430,24 @@ window.RUG_ITEMS = [
       "rug"
     ],
     "confidence": "solid",
-    "status": "unverified"
+    "status": "unverified",
+    "images": [
+      {
+        "src": "images/patents/US2042503-1.png",
+        "caption": "US 2,042,503, sheet 1"
+      },
+      {
+        "src": "images/patents/US2042503-2.png",
+        "caption": "US 2,042,503, sheet 2"
+      },
+      {
+        "src": "images/patents/US2042503-3.png",
+        "caption": "US 2,042,503, sheet 3"
+      }
+    ],
+    "image": "images/patents/US2042503-1.png",
+    "imageCredit": "USPTO via Google Patents (public domain)",
+    "imageSource": "uspto"
   },
   {
     "id": "pat-us2224866a",
@@ -5238,7 +5472,24 @@ window.RUG_ITEMS = [
       "patent"
     ],
     "confidence": "solid",
-    "status": "unverified"
+    "status": "unverified",
+    "images": [
+      {
+        "src": "images/patents/US2224866-01.png",
+        "caption": "US 2,224,866, sheet 1"
+      },
+      {
+        "src": "images/patents/US2224866-02.png",
+        "caption": "US 2,224,866, sheet 2"
+      },
+      {
+        "src": "images/patents/US2224866-03.png",
+        "caption": "US 2,224,866, sheet 3"
+      }
+    ],
+    "image": "images/patents/US2224866-01.png",
+    "imageCredit": "USPTO via Google Patents (public domain)",
+    "imageSource": "uspto"
   },
   {
     "id": "pat-us2123114a",
@@ -5264,7 +5515,24 @@ window.RUG_ITEMS = [
       "priority"
     ],
     "confidence": "solid",
-    "status": "unverified"
+    "status": "unverified",
+    "images": [
+      {
+        "src": "images/patents/US2123114-1.png",
+        "caption": "US 2,123,114, sheet 1"
+      },
+      {
+        "src": "images/patents/US2123114-2.png",
+        "caption": "US 2,123,114, sheet 2"
+      },
+      {
+        "src": "images/patents/US2123114-3.png",
+        "caption": "US 2,123,114, sheet 3"
+      }
+    ],
+    "image": "images/patents/US2123114-1.png",
+    "imageCredit": "USPTO via Google Patents (public domain)",
+    "imageSource": "uspto"
   },
   {
     "id": "pat-us2311802a",
@@ -5289,7 +5557,24 @@ window.RUG_ITEMS = [
       "patent"
     ],
     "confidence": "solid",
-    "status": "unverified"
+    "status": "unverified",
+    "images": [
+      {
+        "src": "images/patents/US2311802-1.png",
+        "caption": "US 2,311,802, sheet 1"
+      },
+      {
+        "src": "images/patents/US2311802-2.png",
+        "caption": "US 2,311,802, sheet 2"
+      },
+      {
+        "src": "images/patents/US2311802-3.png",
+        "caption": "US 2,311,802, sheet 3"
+      }
+    ],
+    "image": "images/patents/US2311802-1.png",
+    "imageCredit": "USPTO via Google Patents (public domain)",
+    "imageSource": "uspto"
   },
   {
     "id": "pat-us2335487a",
@@ -5317,7 +5602,24 @@ window.RUG_ITEMS = [
       "priority"
     ],
     "confidence": "solid",
-    "status": "unverified"
+    "status": "unverified",
+    "images": [
+      {
+        "src": "images/patents/US2335487-1.png",
+        "caption": "US 2,335,487, sheet 1"
+      },
+      {
+        "src": "images/patents/US2335487-2.png",
+        "caption": "US 2,335,487, sheet 2"
+      },
+      {
+        "src": "images/patents/US2335487-3.png",
+        "caption": "US 2,335,487, sheet 3"
+      }
+    ],
+    "image": "images/patents/US2335487-1.png",
+    "imageCredit": "USPTO via Google Patents (public domain)",
+    "imageSource": "uspto"
   },
   {
     "id": "pat-us2389914a",
@@ -5343,7 +5645,24 @@ window.RUG_ITEMS = [
       "Cabin Crafts"
     ],
     "confidence": "solid",
-    "status": "unverified"
+    "status": "unverified",
+    "images": [
+      {
+        "src": "images/patents/US2389914-01.png",
+        "caption": "US 2,389,914, sheet 1"
+      },
+      {
+        "src": "images/patents/US2389914-02.png",
+        "caption": "US 2,389,914, sheet 2"
+      },
+      {
+        "src": "images/patents/US2389914-03.png",
+        "caption": "US 2,389,914, sheet 3"
+      }
+    ],
+    "image": "images/patents/US2389914-01.png",
+    "imageCredit": "USPTO via Google Patents (public domain)",
+    "imageSource": "uspto"
   },
   {
     "id": "pat-us2411267a",
@@ -5368,7 +5687,24 @@ window.RUG_ITEMS = [
       "multi-needle"
     ],
     "confidence": "solid",
-    "status": "unverified"
+    "status": "unverified",
+    "images": [
+      {
+        "src": "images/patents/US2411267-01.png",
+        "caption": "US 2,411,267, sheet 1"
+      },
+      {
+        "src": "images/patents/US2411267-02.png",
+        "caption": "US 2,411,267, sheet 2"
+      },
+      {
+        "src": "images/patents/US2411267-03.png",
+        "caption": "US 2,411,267, sheet 3"
+      }
+    ],
+    "image": "images/patents/US2411267-01.png",
+    "imageCredit": "USPTO via Google Patents (public domain)",
+    "imageSource": "uspto"
   },
   {
     "id": "pat-us2595355a",
@@ -5394,7 +5730,24 @@ window.RUG_ITEMS = [
       "multi-needle"
     ],
     "confidence": "solid",
-    "status": "unverified"
+    "status": "unverified",
+    "images": [
+      {
+        "src": "images/patents/US2595355-01.png",
+        "caption": "US 2,595,355, sheet 1"
+      },
+      {
+        "src": "images/patents/US2595355-02.png",
+        "caption": "US 2,595,355, sheet 2"
+      },
+      {
+        "src": "images/patents/US2595355-03.png",
+        "caption": "US 2,595,355, sheet 3"
+      }
+    ],
+    "image": "images/patents/US2595355-01.png",
+    "imageCredit": "USPTO via Google Patents (public domain)",
+    "imageSource": "uspto"
   },
   {
     "id": "pat-us1963441a",
@@ -5418,7 +5771,24 @@ window.RUG_ITEMS = [
       "patent"
     ],
     "confidence": "solid",
-    "status": "unverified"
+    "status": "unverified",
+    "images": [
+      {
+        "src": "images/patents/US1963441-1.png",
+        "caption": "US 1,963,441, sheet 1"
+      },
+      {
+        "src": "images/patents/US1963441-2.png",
+        "caption": "US 1,963,441, sheet 2"
+      },
+      {
+        "src": "images/patents/US1963441-3.png",
+        "caption": "US 1,963,441, sheet 3"
+      }
+    ],
+    "image": "images/patents/US1963441-1.png",
+    "imageCredit": "USPTO via Google Patents (public domain)",
+    "imageSource": "uspto"
   },
   {
     "id": "pat-us1903946a",
@@ -5443,7 +5813,24 @@ window.RUG_ITEMS = [
       "patent"
     ],
     "confidence": "solid",
-    "status": "unverified"
+    "status": "unverified",
+    "images": [
+      {
+        "src": "images/patents/US1903946-1.png",
+        "caption": "US 1,903,946, sheet 1"
+      },
+      {
+        "src": "images/patents/US1903946-2.png",
+        "caption": "US 1,903,946, sheet 2"
+      },
+      {
+        "src": "images/patents/US1903946-3.png",
+        "caption": "US 1,903,946, sheet 3"
+      }
+    ],
+    "image": "images/patents/US1903946-1.png",
+    "imageCredit": "USPTO via Google Patents (public domain)",
+    "imageSource": "uspto"
   },
   {
     "id": "pat-us2112512a",
@@ -5467,7 +5854,24 @@ window.RUG_ITEMS = [
       "patent"
     ],
     "confidence": "solid",
-    "status": "unverified"
+    "status": "unverified",
+    "images": [
+      {
+        "src": "images/patents/US2112512-01.png",
+        "caption": "US 2,112,512, sheet 1"
+      },
+      {
+        "src": "images/patents/US2112512-02.png",
+        "caption": "US 2,112,512, sheet 2"
+      },
+      {
+        "src": "images/patents/US2112512-03.png",
+        "caption": "US 2,112,512, sheet 3"
+      }
+    ],
+    "image": "images/patents/US2112512-01.png",
+    "imageCredit": "USPTO via Google Patents (public domain)",
+    "imageSource": "uspto"
   },
   {
     "id": "pat-us2058047a",
@@ -5490,7 +5894,24 @@ window.RUG_ITEMS = [
       "patent"
     ],
     "confidence": "solid",
-    "status": "unverified"
+    "status": "unverified",
+    "images": [
+      {
+        "src": "images/patents/US2058047-1.png",
+        "caption": "US 2,058,047, sheet 1"
+      },
+      {
+        "src": "images/patents/US2058047-2.png",
+        "caption": "US 2,058,047, sheet 2"
+      },
+      {
+        "src": "images/patents/US2058047-3.png",
+        "caption": "US 2,058,047, sheet 3"
+      }
+    ],
+    "image": "images/patents/US2058047-1.png",
+    "imageCredit": "USPTO via Google Patents (public domain)",
+    "imageSource": "uspto"
   },
   {
     "id": "pat-us2346467a",
@@ -5514,7 +5935,24 @@ window.RUG_ITEMS = [
       "patent"
     ],
     "confidence": "solid",
-    "status": "unverified"
+    "status": "unverified",
+    "images": [
+      {
+        "src": "images/patents/US2346467-1.png",
+        "caption": "US 2,346,467, sheet 1"
+      },
+      {
+        "src": "images/patents/US2346467-2.png",
+        "caption": "US 2,346,467, sheet 2"
+      },
+      {
+        "src": "images/patents/US2346467-3.png",
+        "caption": "US 2,346,467, sheet 3"
+      }
+    ],
+    "image": "images/patents/US2346467-1.png",
+    "imageCredit": "USPTO via Google Patents (public domain)",
+    "imageSource": "uspto"
   },
   {
     "id": "pat-us2679218a",
@@ -5538,7 +5976,24 @@ window.RUG_ITEMS = [
       "patent"
     ],
     "confidence": "solid",
-    "status": "unverified"
+    "status": "unverified",
+    "images": [
+      {
+        "src": "images/patents/US2679218-1.png",
+        "caption": "US 2,679,218, sheet 1"
+      },
+      {
+        "src": "images/patents/US2679218-2.png",
+        "caption": "US 2,679,218, sheet 2"
+      },
+      {
+        "src": "images/patents/US2679218-3.png",
+        "caption": "US 2,679,218, sheet 3"
+      }
+    ],
+    "image": "images/patents/US2679218-1.png",
+    "imageCredit": "USPTO via Google Patents (public domain)",
+    "imageSource": "uspto"
   },
   {
     "id": "pat-us1907292a",
@@ -5563,7 +6018,24 @@ window.RUG_ITEMS = [
       "Valway"
     ],
     "confidence": "solid",
-    "status": "unverified"
+    "status": "unverified",
+    "images": [
+      {
+        "src": "images/patents/US1907292-01.png",
+        "caption": "US 1,907,292, sheet 1"
+      },
+      {
+        "src": "images/patents/US1907292-02.png",
+        "caption": "US 1,907,292, sheet 2"
+      },
+      {
+        "src": "images/patents/US1907292-03.png",
+        "caption": "US 1,907,292, sheet 3"
+      }
+    ],
+    "image": "images/patents/US1907292-01.png",
+    "imageCredit": "USPTO via Google Patents (public domain)",
+    "imageSource": "uspto"
   },
   {
     "id": "pat-us1909530a",
@@ -5589,7 +6061,24 @@ window.RUG_ITEMS = [
       "looper"
     ],
     "confidence": "solid",
-    "status": "unverified"
+    "status": "unverified",
+    "images": [
+      {
+        "src": "images/patents/US1909530-1.png",
+        "caption": "US 1,909,530, sheet 1"
+      },
+      {
+        "src": "images/patents/US1909530-2.png",
+        "caption": "US 1,909,530, sheet 2"
+      },
+      {
+        "src": "images/patents/US1909530-3.png",
+        "caption": "US 1,909,530, sheet 3"
+      }
+    ],
+    "image": "images/patents/US1909530-1.png",
+    "imageCredit": "USPTO via Google Patents (public domain)",
+    "imageSource": "uspto"
   },
   {
     "id": "pat-us1909531a",
@@ -5614,7 +6103,24 @@ window.RUG_ITEMS = [
       "Valway"
     ],
     "confidence": "solid",
-    "status": "unverified"
+    "status": "unverified",
+    "images": [
+      {
+        "src": "images/patents/US1909531-1.png",
+        "caption": "US 1,909,531, sheet 1"
+      },
+      {
+        "src": "images/patents/US1909531-2.png",
+        "caption": "US 1,909,531, sheet 2"
+      },
+      {
+        "src": "images/patents/US1909531-3.png",
+        "caption": "US 1,909,531, sheet 3"
+      }
+    ],
+    "image": "images/patents/US1909531-1.png",
+    "imageCredit": "USPTO via Google Patents (public domain)",
+    "imageSource": "uspto"
   },
   {
     "id": "pat-us1831485a",
@@ -5639,7 +6145,24 @@ window.RUG_ITEMS = [
       "Union Special"
     ],
     "confidence": "solid",
-    "status": "unverified"
+    "status": "unverified",
+    "images": [
+      {
+        "src": "images/patents/US1831485-1.png",
+        "caption": "US 1,831,485, sheet 1"
+      },
+      {
+        "src": "images/patents/US1831485-2.png",
+        "caption": "US 1,831,485, sheet 2"
+      },
+      {
+        "src": "images/patents/US1831485-3.png",
+        "caption": "US 1,831,485, sheet 3"
+      }
+    ],
+    "image": "images/patents/US1831485-1.png",
+    "imageCredit": "USPTO via Google Patents (public domain)",
+    "imageSource": "uspto"
   },
   {
     "id": "pat-us1970703a",
@@ -5661,7 +6184,24 @@ window.RUG_ITEMS = [
       "patent"
     ],
     "confidence": "solid",
-    "status": "unverified"
+    "status": "unverified",
+    "images": [
+      {
+        "src": "images/patents/US1970703-1.png",
+        "caption": "US 1,970,703, sheet 1"
+      },
+      {
+        "src": "images/patents/US1970703-2.png",
+        "caption": "US 1,970,703, sheet 2"
+      },
+      {
+        "src": "images/patents/US1970703-3.png",
+        "caption": "US 1,970,703, sheet 3"
+      }
+    ],
+    "image": "images/patents/US1970703-1.png",
+    "imageCredit": "USPTO via Google Patents (public domain)",
+    "imageSource": "uspto"
   },
   {
     "id": "pat-us2070287a",
@@ -5683,7 +6223,24 @@ window.RUG_ITEMS = [
       "patent"
     ],
     "confidence": "solid",
-    "status": "unverified"
+    "status": "unverified",
+    "images": [
+      {
+        "src": "images/patents/US2070287-1.png",
+        "caption": "US 2,070,287, sheet 1"
+      },
+      {
+        "src": "images/patents/US2070287-2.png",
+        "caption": "US 2,070,287, sheet 2"
+      },
+      {
+        "src": "images/patents/US2070287-3.png",
+        "caption": "US 2,070,287, sheet 3"
+      }
+    ],
+    "image": "images/patents/US2070287-1.png",
+    "imageCredit": "USPTO via Google Patents (public domain)",
+    "imageSource": "uspto"
   },
   {
     "id": "pat-us2600993a",
@@ -5708,7 +6265,24 @@ window.RUG_ITEMS = [
       "portable"
     ],
     "confidence": "solid",
-    "status": "unverified"
+    "status": "unverified",
+    "images": [
+      {
+        "src": "images/patents/US2600993-01.png",
+        "caption": "US 2,600,993, sheet 1"
+      },
+      {
+        "src": "images/patents/US2600993-02.png",
+        "caption": "US 2,600,993, sheet 2"
+      },
+      {
+        "src": "images/patents/US2600993-03.png",
+        "caption": "US 2,600,993, sheet 3"
+      }
+    ],
+    "image": "images/patents/US2600993-01.png",
+    "imageCredit": "USPTO via Google Patents (public domain)",
+    "imageSource": "uspto"
   },
   {
     "id": "pat-us2837045a",
@@ -5734,7 +6308,24 @@ window.RUG_ITEMS = [
       "gun lineage"
     ],
     "confidence": "solid",
-    "status": "unverified"
+    "status": "unverified",
+    "images": [
+      {
+        "src": "images/patents/US2837045-1.png",
+        "caption": "US 2,837,045, sheet 1"
+      },
+      {
+        "src": "images/patents/US2837045-2.png",
+        "caption": "US 2,837,045, sheet 2"
+      },
+      {
+        "src": "images/patents/US2837045-3.png",
+        "caption": "US 2,837,045, sheet 3"
+      }
+    ],
+    "image": "images/patents/US2837045-1.png",
+    "imageCredit": "USPTO via Google Patents (public domain)",
+    "imageSource": "uspto"
   },
   {
     "id": "pat-us2935037a",
@@ -5761,7 +6352,24 @@ window.RUG_ITEMS = [
       "patterning"
     ],
     "confidence": "solid",
-    "status": "unverified"
+    "status": "unverified",
+    "images": [
+      {
+        "src": "images/patents/US2935037-01.png",
+        "caption": "US 2,935,037, sheet 1"
+      },
+      {
+        "src": "images/patents/US2935037-02.png",
+        "caption": "US 2,935,037, sheet 2"
+      },
+      {
+        "src": "images/patents/US2935037-03.png",
+        "caption": "US 2,935,037, sheet 3"
+      }
+    ],
+    "image": "images/patents/US2935037-01.png",
+    "imageCredit": "USPTO via Google Patents (public domain)",
+    "imageSource": "uspto"
   },
   {
     "id": "pat-us2862465a",
@@ -5785,7 +6393,24 @@ window.RUG_ITEMS = [
       "patterning"
     ],
     "confidence": "solid",
-    "status": "unverified"
+    "status": "unverified",
+    "images": [
+      {
+        "src": "images/patents/US2862465-01.png",
+        "caption": "US 2,862,465, sheet 1"
+      },
+      {
+        "src": "images/patents/US2862465-02.png",
+        "caption": "US 2,862,465, sheet 2"
+      },
+      {
+        "src": "images/patents/US2862465-03.png",
+        "caption": "US 2,862,465, sheet 3"
+      }
+    ],
+    "image": "images/patents/US2862465-01.png",
+    "imageCredit": "USPTO via Google Patents (public domain)",
+    "imageSource": "uspto"
   },
   {
     "id": "pat-us2975736a",
@@ -5810,7 +6435,24 @@ window.RUG_ITEMS = [
       "Singer-Cobble"
     ],
     "confidence": "solid",
-    "status": "unverified"
+    "status": "unverified",
+    "images": [
+      {
+        "src": "images/patents/US2975736-1.png",
+        "caption": "US 2,975,736, sheet 1"
+      },
+      {
+        "src": "images/patents/US2975736-2.png",
+        "caption": "US 2,975,736, sheet 2"
+      },
+      {
+        "src": "images/patents/US2975736-3.png",
+        "caption": "US 2,975,736, sheet 3"
+      }
+    ],
+    "image": "images/patents/US2975736-1.png",
+    "imageCredit": "USPTO via Google Patents (public domain)",
+    "imageSource": "uspto"
   },
   {
     "id": "pat-us2879731a",
@@ -5835,7 +6477,24 @@ window.RUG_ITEMS = [
       "gun lineage"
     ],
     "confidence": "solid",
-    "status": "unverified"
+    "status": "unverified",
+    "images": [
+      {
+        "src": "images/patents/US2879731-1.png",
+        "caption": "US 2,879,731, sheet 1"
+      },
+      {
+        "src": "images/patents/US2879731-2.png",
+        "caption": "US 2,879,731, sheet 2"
+      },
+      {
+        "src": "images/patents/US2879731-3.png",
+        "caption": "US 2,879,731, sheet 3"
+      }
+    ],
+    "image": "images/patents/US2879731-1.png",
+    "imageCredit": "USPTO via Google Patents (public domain)",
+    "imageSource": "uspto"
   },
   {
     "id": "pat-us2887076a",
@@ -5860,7 +6519,24 @@ window.RUG_ITEMS = [
       "gun lineage"
     ],
     "confidence": "solid",
-    "status": "unverified"
+    "status": "unverified",
+    "images": [
+      {
+        "src": "images/patents/US2887076-1.png",
+        "caption": "US 2,887,076, sheet 1"
+      },
+      {
+        "src": "images/patents/US2887076-2.png",
+        "caption": "US 2,887,076, sheet 2"
+      },
+      {
+        "src": "images/patents/US2887076-3.png",
+        "caption": "US 2,887,076, sheet 3"
+      }
+    ],
+    "image": "images/patents/US2887076-1.png",
+    "imageCredit": "USPTO via Google Patents (public domain)",
+    "imageSource": "uspto"
   },
   {
     "id": "pat-us3144844a",
@@ -5886,7 +6562,24 @@ window.RUG_ITEMS = [
       "Cabin Crafts"
     ],
     "confidence": "solid",
-    "status": "unverified"
+    "status": "unverified",
+    "images": [
+      {
+        "src": "images/patents/US3144844-1.png",
+        "caption": "US 3,144,844, sheet 1"
+      },
+      {
+        "src": "images/patents/US3144844-2.png",
+        "caption": "US 3,144,844, sheet 2"
+      },
+      {
+        "src": "images/patents/US3144844-3.png",
+        "caption": "US 3,144,844, sheet 3"
+      }
+    ],
+    "image": "images/patents/US3144844-1.png",
+    "imageCredit": "USPTO via Google Patents (public domain)",
+    "imageSource": "uspto"
   },
   {
     "id": "pat-us3229653a",
@@ -5911,7 +6604,24 @@ window.RUG_ITEMS = [
       "Bigelow-Sanford"
     ],
     "confidence": "solid",
-    "status": "unverified"
+    "status": "unverified",
+    "images": [
+      {
+        "src": "images/patents/US3229653-1.png",
+        "caption": "US 3,229,653, sheet 1"
+      },
+      {
+        "src": "images/patents/US3229653-2.png",
+        "caption": "US 3,229,653, sheet 2"
+      },
+      {
+        "src": "images/patents/US3229653-3.png",
+        "caption": "US 3,229,653, sheet 3"
+      }
+    ],
+    "image": "images/patents/US3229653-1.png",
+    "imageCredit": "USPTO via Google Patents (public domain)",
+    "imageSource": "uspto"
   },
   {
     "id": "pat-us3389667a",
@@ -5937,7 +6647,24 @@ window.RUG_ITEMS = [
       "Bigelow-Sanford"
     ],
     "confidence": "solid",
-    "status": "unverified"
+    "status": "unverified",
+    "images": [
+      {
+        "src": "images/patents/US3389667-1.png",
+        "caption": "US 3,389,667, sheet 1"
+      },
+      {
+        "src": "images/patents/US3389667-2.png",
+        "caption": "US 3,389,667, sheet 2"
+      },
+      {
+        "src": "images/patents/US3389667-3.png",
+        "caption": "US 3,389,667, sheet 3"
+      }
+    ],
+    "image": "images/patents/US3389667-1.png",
+    "imageCredit": "USPTO via Google Patents (public domain)",
+    "imageSource": "uspto"
   },
   {
     "id": "ttw-tufting-gun-term",
