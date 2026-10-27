@@ -86,6 +86,7 @@ const APIS = {
   hermitagePazyryk: `https://www.hermitagemuseum.org/digital-collection/25.+archaeological+artifacts/879870`,
   uwImg1: `https://depts.washington.edu/silkroad/museums/shm/hermitagepazyryk15a.jpg`,
   uwImg2: `https://depts.washington.edu/silkroad/museums/shm/hermitagepazyryk6a.jpg`,
+  qxDetail: `https://digitalcollections.winterthur.org/Documents/Detail/letter-samples-of-netting/29271`,
   cooperHewitt: `https://api.collection.cooperhewitt.org/rest/?method=cooperhewitt.search.objects&query=rug`,
 };
 // "sources" mode: try every Other archives search link with a sample query.
