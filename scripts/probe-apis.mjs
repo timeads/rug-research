@@ -31,6 +31,8 @@ const APIS = {
   wtc2: `https://museumcollection.winterthur.org/_next/static/chunks/b3ea614bd9f56a40.js`,
   wtc3: `https://museumcollection.winterthur.org/_next/static/chunks/eef056bf785424e1.js`,
   wtc4: `https://museumcollection.winterthur.org/_next/static/chunks/590def262d4144a1.js`,
+  wtApi: { url: "https://museumcollection.winterthur.org/api/search", method: "POST", body: JSON.stringify({ query: "bed rug", hasImages: true, page: 1, perPage: 3 }) },
+  wtApiPreflight: { url: "https://museumcollection.winterthur.org/api/search", method: "OPTIONS", headers: { "Access-Control-Request-Method": "POST", "Access-Control-Request-Headers": "content-type" } },
   wtMuseumHelp: `https://museumcollection.winterthur.org/help`,
   wtMuseumObject: `https://museumcollection.winterthur.org/object/16695`,
   wtMuseumSearch: `https://museumcollection.winterthur.org/search?q=${e}`,
@@ -78,11 +80,13 @@ if (process.argv[2] === "sources") {
   process.exit(0);
 }
 const out = {};
-for (const [k, url] of Object.entries(APIS).filter(([k]) => !ONLY || ONLY.includes(k))) {
+for (const [k, spec] of Object.entries(APIS).filter(([k]) => !ONLY || ONLY.includes(k))) {
+  // An entry is a URL, or { url, method, body, headers } for POST and preflight checks.
+  const { url, method = "GET", body: reqBody, headers: extra = {} } = typeof spec === "string" ? { url: spec } : spec;
   try {
-    const r = await fetch(url, { headers: { Origin: ORIGIN, "User-Agent": "RugResearchProbe/1.0" }, redirect: "follow" });
+    const r = await fetch(url, { method, body: reqBody, headers: { Origin: ORIGIN, "User-Agent": "RugResearchProbe/1.0", ...(reqBody ? { "content-type": "application/json" } : {}), ...extra }, redirect: "follow" });
     const body = await r.text();
-    out[k] = { url, status: r.status, cors: r.headers.get("access-control-allow-origin"), type: r.headers.get("content-type"), sample: body.slice(0, SAMPLE) };
+    out[k] = { url, method, status: r.status, cors: r.headers.get("access-control-allow-origin"), corsMethods: r.headers.get("access-control-allow-methods"), corsHeaders: r.headers.get("access-control-allow-headers"), type: r.headers.get("content-type"), sample: body.slice(0, SAMPLE) };
   } catch (err) {
     // Some sites send certificate chains Node rejects but browsers accept; retry with curl.
     try {

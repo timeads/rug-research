@@ -40,6 +40,6 @@ jobs:
             if git diff --cached --quiet; then echo "Nothing new."; exit 0; fi
             git commit -q -m "Save API probe results"
             if git push origin "HEAD:${GITHUB_REF_NAME}"; then exit 0; fi
-            git fetch -q origin "${GITHUB_REF_NAME}" && git reset -q --hard "origin/${GITHUB_REF_NAME}"
+            git fetch -q origin "${GITHUB_REF_NAME}" && git reset -q --hard FETCH_HEAD  # checkout creates no origin/<branch> ref
           done
           exit 1

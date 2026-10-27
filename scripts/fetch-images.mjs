@@ -238,21 +238,28 @@ const at = src.indexOf("window.RUG_ITEMS = ");
 const header = src.slice(0, at);
 const items = JSON.parse(src.slice(at + "window.RUG_ITEMS = ".length).trim().replace(/;$/, ""));
 
+// Results are cached for the run, so a retry after a rejected push (the workflow starts again from
+// the latest data) reuses them instead of repeating every lookup.
+const CACHE = process.env.IMAGE_CACHE ? new URL(`file://${process.env.IMAGE_CACHE}`) : null;
+let cache = {};
+if (CACHE) { try { cache = JSON.parse(await readFile(CACHE, "utf8")); } catch {} }
 const found = [], missed = [];
 for (const item of items) {
   if (ONLY.length && !ONLY.includes(item.id)) continue;
   if (item.image && !REFRESH) continue;
   if (item.image && item.imageSource !== "auto") continue; // never overwrite a hand-picked image
   if (item.imageSource === "rejected") continue; // a person ruled out the found image; don't look again
+  const cached = item.id in cache;
   try {
-    const r = await resolve(item);
+    const r = cached ? cache[item.id] : await resolve(item);
+    cache[item.id] = r || null;
     if (r) { Object.assign(item, r, { imageSource: "auto" }); found.push(item); console.log(`✓ ${item.id}  ${r.image}`); }
     else {
       if (item.imageSource === "auto") { delete item.image; delete item.imageCredit; delete item.imageSource; } // refreshed and gone
       missed.push([item, "no image on source page"]); console.log(`– ${item.id}`);
     }
   } catch (e) { missed.push([item, e.message]); console.log(`! ${item.id}  ${e.message}`); }
-  await sleep(400); // be polite to museum servers
+  if (!cached) await sleep(400); // be polite to museum servers
 }
 
 // A URL shared by unrelated records is a site-wide banner, not an object photo.
@@ -263,6 +270,7 @@ for (const it of found) if (counts[it.image] > 1 && new Set(found.filter(x => x.
 }
 
 await writeFile(FILE, header + "window.RUG_ITEMS = " + JSON.stringify(items, null, 2) + ";\n");
+if (CACHE) await writeFile(CACHE, JSON.stringify(cache));
 const kept = found.filter(x => x.image);
 const summary = [`## Image lookup`, ``, `Found **${kept.length}**, no image for **${missed.length}**.`, ``,
   ...kept.map(x => `- ✅ ${x.title}: ${x.imageCredit}`), ...missed.map(([x, why]) => `- ⬜ ${x.title}: ${why}`)].join("\n");
