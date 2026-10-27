@@ -868,7 +868,11 @@
       if (mine && mine.q.toLowerCase() === q.toLowerCase()) suggested = mine.results.map(r => ({ ...r, suggested: true }));
     } catch {}
     const runs = await Promise.allSettled(IMG_SOURCES.map(k => DISCOVER[k](q)));
-    const lists = runs.map(r => r.status === "fulfilled" ? r.value.filter(x => x.image && !x.image.startsWith("idb:")) : []);
+    const words = q.toLowerCase().split(/[^\p{L}\p{N}]+/u).filter(w => w.length > 3).map(w => w.replace(/s$/, ""));
+    const all = runs.map(r => r.status === "fulfilled" ? r.value.filter(x => x.image && !x.image.startsWith("idb:")) : []);
+    // Loose matches (a painting for "Brussels carpet") go last: titles sharing a word with the search come first.
+    const fits = x => !words.length || words.some(w => (x.title || "").toLowerCase().includes(w));
+    const lists = [...all.map(l => l.filter(fits)), ...all.map(l => l.filter(x => !fits(x)))];
     const seen = new Set();
     imgResults = [...suggested, ...interleave(lists)].filter(r => !seen.has(r.image) && seen.add(r.image)).slice(0, 60);
     renderImgResults();

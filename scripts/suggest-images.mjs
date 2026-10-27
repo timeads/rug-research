@@ -87,6 +87,12 @@ const winterthur = q => {
   }));
 };
 
+const relevant = (list, q) => {
+  const words = q.toLowerCase().split(/[^\p{L}\p{N}]+/u).filter(w => w.length > 3).map(w => w.replace(/s$/, ""));
+  if (!words.length) return list;
+  return list.filter(r => words.some(w => (r.title || "").toLowerCase().includes(w)));
+};
+
 const src = await readFile(ITEMS, "utf8");
 const items = JSON.parse(src.slice(src.indexOf("window.RUG_ITEMS = ") + "window.RUG_ITEMS = ".length).trim().replace(/;$/, ""));
 let prev = { items: {} };
@@ -105,6 +111,8 @@ for (const it of want) {
       try { lists.push(await run(q)); } catch (err) { console.log(`  ${name}: ${err.message}`); lists.push([]); }
       await sleep(250);
     }
+    // Loose matches (a painting for "Brussels carpet") are dropped when the title shares no word with the search.
+    for (let i = 0; i < lists.length; i++) lists[i] = relevant(lists[i], q);
     const seen = new Set(), mixed = [];
     for (let i = 0; mixed.length < PER && lists.some(l => i < l.length); i++) for (const l of lists) if (i < l.length && l[i].image && !seen.has(l[i].image)) { seen.add(l[i].image); mixed.push(l[i]); }
     byQuery[q] = mixed.slice(0, PER);
