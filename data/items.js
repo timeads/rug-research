@@ -4259,7 +4259,10 @@ window.RUG_ITEMS = [
       "woven to tufted",
       "broadloom"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "image": "https://mohawkind.com/_images/about/our-growth-story/hero2.jpg",
+    "imageCredit": "Mohawk Industries",
+    "imageSource": "auto"
   },
   {
     "id": "co-delos",
@@ -4281,7 +4284,10 @@ window.RUG_ITEMS = [
       "CNC tufting",
       "custom"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "image": "https://bunny-wp-pullzone-hdlfyxcoqo.b-cdn.net/wp-content/uploads/2020/02/Powells-Landing_04.jpg",
+    "imageCredit": "Delos (The Delos Company)",
+    "imageSource": "auto"
   },
   {
     "id": "co-scott-group",
@@ -4304,7 +4310,10 @@ window.RUG_ITEMS = [
       "custom",
       "V'Soske lineage"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "image": "https://scottgroupstudio.com/wp-content/uploads/2024/02/803415-Margot-Interior-Rendering-for-web-934x1024.jpg",
+    "imageCredit": "Scott Group Studio",
+    "imageSource": "auto"
   },
   {
     "id": "co-creative-accents",
@@ -4327,7 +4336,10 @@ window.RUG_ITEMS = [
       "custom",
       "sewing machine"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "image": "https://creativeaccents.com/wp-content/uploads/2020/05/ken.jpg",
+    "imageCredit": "Creative Accents",
+    "imageSource": "auto"
   },
   {
     "id": "co-kramis",
@@ -4375,7 +4387,10 @@ window.RUG_ITEMS = [
       "hand-tufted",
       "hand-knotted"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "image": "https://www.jaipurliving.com/media/wysiwyg/the-craft1.jpg",
+    "imageCredit": "Jaipur Living / Jaipur Rugs",
+    "imageSource": "auto"
   },
   {
     "id": "co-tai-ping",
@@ -4516,7 +4531,10 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "dateStart": 1848,
-    "sourceUrl": "https://en.wikipedia.org/wiki/Bigelow_Carpet_Mill"
+    "sourceUrl": "https://en.wikipedia.org/wiki/Bigelow_Carpet_Mill",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Bigelow_Clinton.jpg/1280px-Bigelow_Clinton.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
+    "imageCredit": "en.wikipedia.org",
+    "imageSource": "auto"
   },
   {
     "id": "bigelow-broadloom-1877",
@@ -4668,7 +4686,10 @@ window.RUG_ITEMS = [
       "overview"
     ],
     "status": "unverified",
-    "sourceUrl": "https://philadelphiaencyclopedia.org/essays/carpet-weaving-and-rug-making-2/"
+    "sourceUrl": "https://philadelphiaencyclopedia.org/essays/carpet-weaving-and-rug-making-2/",
+    "image": "https://philadelphiaencyclopedia.org/wp-content/uploads/2015/08/Alirene-Mills-textile-plant-at-Frankford-Creek-12001300-Adams-Avenue-Frankford-Philadelphia.-e1440428996694.jpg",
+    "imageCredit": "philadelphiaencyclopedia.org",
+    "imageSource": "auto"
   },
   {
     "id": "book-patton-shaw",
@@ -4798,7 +4819,10 @@ window.RUG_ITEMS = [
     "status": "unverified",
     "sourceUrl": "https://digitalcollections.winterthur.org/collections/textile-collections/swatch-books-and-salesmens-sample-books",
     "institution": "Winterthur Library",
-    "identifier": "Col. 50"
+    "identifier": "Col. 50",
+    "image": "https://static.quartexcollections.com/winterthur/media-file/2daf85f8-c780-4c3f-9a8b-0186905a4a80-mastheadsingle.jpg",
+    "imageCredit": "Winterthur Library",
+    "imageSource": "auto"
   },
   {
     "id": "wint-shaw-licensed-nylon",
@@ -4821,7 +4845,10 @@ window.RUG_ITEMS = [
     "status": "unverified",
     "confidence": "suggestive",
     "sourceUrl": "https://www.ebth.com/items/5023244-winterthur-collection-area-rug",
-    "institution": "Private (auction listing)"
+    "institution": "Private (auction listing)",
+    "image": "https://imgix-prod.ebth.com/2016/12/29/10/09/31/e10a133f-3107-4a25-b2bb-5a43250980e5/16DEN005-1058.jpg?ixlib=rb-3.1.0&w=781&h=855&fit=max&crop=&auto=format",
+    "imageCredit": "Private (auction listing)",
+    "imageSource": "auto"
   },
   {
     "id": "diamond-dye-rug-book",
@@ -4842,7 +4869,10 @@ window.RUG_ITEMS = [
     "dateStart": 1899,
     "date": "1899",
     "sourceUrl": "https://archive.org/details/cihm_01194",
-    "creator": "Wells & Richardson Co."
+    "creator": "Wells & Richardson Co.",
+    "image": "https://archive.org/services/img/cihm_01194",
+    "imageCredit": "archive.org",
+    "imageSource": "auto"
   },
   {
     "id": "hooked-rugs-chestertown",
@@ -4858,7 +4888,10 @@ window.RUG_ITEMS = [
       "collecting"
     ],
     "status": "unverified",
-    "sourceUrl": "https://americanainsights.org/essays/hooked-rugs/"
+    "sourceUrl": "https://americanainsights.org/essays/hooked-rugs/",
+    "image": "https://americanainsights.org/wp-content/uploads/2023/11/hooked-rug-essay-grid.jpg",
+    "imageCredit": "americanainsights.org",
+    "imageSource": "auto"
   },
   {
     "id": "pat-us251381a",
