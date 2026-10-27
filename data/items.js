@@ -1246,7 +1246,10 @@ window.RUG_ITEMS = [
       "inscribed"
     ],
     "status": "unverified",
-    "region": "United States"
+    "region": "United States",
+    "image": "https://collections-media.thehenryford.org/CollectionImages/_detail/photos/thf158112.jpg",
+    "imageCredit": "The Henry Ford",
+    "imageSource": "auto"
   },
   {
     "id": "tool-moench-1928",
