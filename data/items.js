@@ -10375,5 +10375,758 @@ window.RUG_ITEMS = [
     ],
     "confidence": "unverified",
     "status": "unverified"
+  },
+  {
+    "id": "finding-cnc-mechanical-pattern-attachments",
+    "type": "finding",
+    "title": "Before computers: chain-driven roll and scroll pattern attachments on broadloom tufting machines",
+    "creator": "Cobble Brothers; later Tuftco patents (retrospective)",
+    "place": "Chattanooga / Dalton",
+    "region": "United States",
+    "date": "1950s–1990s",
+    "dateStart": 1955,
+    "sourceUrl": "https://bandyheritagecenter.pastperfectonline.com/photo/8CAB4598-A255-467E-8C6F-442640452218",
+    "institution": "Bandy Heritage Center (Dalton)",
+    "description": "Broadloom tufting machines made patterns by controlling how much yarn each needle got. Roll and scroll pattern attachments do this with sets of yarn-feed rolls; a scroll attachment sends yarns to the needles through a tube bank, and Tuftco's later patents say scroll attachments typically have 36–120 sets of rolls. Those same patents describe the earlier limit: the yarn-feed pattern devices were driven by chains or other mechanical linkage from the main drive shaft, so only two or three stitch heights, in fixed ratios to the shaft, could be used in a whole pattern. A Bandy Heritage Center photo record shows a Cobble Brothers 216-inch loop-pile machine with a scroll-type pattern attachment and an 18-inch pattern repeat (undated). A trade blog (Mannington Commercial) says pattern attachments were among the foremost tufting inventions of the 1950s, but gives no dates. The scroll and roll mechanism is the background to every later computer-controlled patterning system. Dates: the 1950s start is from the trade blog, and the mechanical-drive limit comes from Tuftco's 1996–97 patents looking back. No dated first scroll attachment was found. See also the Card pattern-control patents of 1955–58 (pat-us2862465a, pat-us2935037a). Sources: https://bandyheritagecenter.pastperfectonline.com/photo/8CAB4598-A255-467E-8C6F-442640452218 · https://patents.google.com/patent/US6244203 · https://blog.manningtoncommercial.com/what-is-carpet-tufting\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "themes": [
+      "Machine tufting & Dalton",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "CNC tufting",
+      "pattern control",
+      "scroll attachment",
+      "broadloom",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "suggestive"
+  },
+  {
+    "id": "pat-us3103187a",
+    "type": "patent",
+    "title": "Singer Cobble Inc., \"Photocell controlled pattern attachment for tufting machines\" (US3103187A)",
+    "creator": "Singer Cobble Inc.",
+    "identifier": "US3103187A",
+    "sourceUrl": "https://patents.google.com/patent/US3103187A/en",
+    "region": "United States",
+    "date": "filed 29 May 1961; published 10 Sep 1963",
+    "dateStart": 1961,
+    "description": "An early attempt to automate pattern selection on a broadloom tufting machine: a photocell, not a mechanical cam or chain, controls the pattern attachment. It is the earliest Singer Cobble electrical pattern-control patent found. It is cited as prior art in later tufting-control patents (GB1050239A, DE1485465C3 'Elektrische Steuervorrichtung für eine Tuftingmaschine'), which suggests it was a recognised step towards electrical control. Verified Oct 2026 from Google Patents citation-table entries (number, title, dates, assignee). The patent text itself was not opened, so how the photocell read the pattern is not confirmed.\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "themes": [
+      "Machine tufting & Dalton",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "CNC tufting",
+      "patent lineage",
+      "pattern control",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "solid"
+  },
+  {
+    "id": "pat-us3375797a",
+    "type": "patent",
+    "title": "\"Pattern attachment for tufting machines\" (US3375797A)",
+    "creator": "Assignee not seen",
+    "identifier": "US3375797A",
+    "sourceUrl": "https://patents.google.com/patent/US3375797A/en",
+    "region": "United States",
+    "date": "filed 15 Sep 1966 (appl. 579,643); GB counterpart GB1123540A published 14 Aug 1968",
+    "dateStart": 1966,
+    "description": "A 1960s yarn-feed pattern attachment. Google Patents keywords for it are yarn, feed roll, pattern and speed. A British counterpart (GB1123540A) has the same title and the same 15 Sep 1966 priority. A Callaway Mills 'Pattern attachment' (US3435787A, filed 18 Apr 1967, published 1 Apr 1969) appears in the same citation lists. These show that by the mid-1960s, carpet mills as well as machine makers were patenting yarn-feed pattern control. Verified Oct 2026 by web search only: the number, title and filing date come from Google Patents snippets. The inventor and assignee were not visible, and I could not confirm whether it is a scroll or a roll design.\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "themes": [
+      "Machine tufting & Dalton",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "CNC tufting",
+      "patent lineage",
+      "pattern control",
+      "scroll attachment",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "solid"
+  },
+  {
+    "id": "pat-us4106416a",
+    "type": "patent",
+    "title": "Westpoint Pepperell, \"Control apparatus for textile dyeing and tufting machinery\" (US4106416A)",
+    "creator": "Westpoint Pepperell, Inc.",
+    "identifier": "US4106416A",
+    "sourceUrl": "https://patents.google.com/patent/US4106416A/en",
+    "region": "United States",
+    "date": "priority 2 Dec 1976; published 15 Aug 1978",
+    "dateStart": 1976,
+    "description": "An early case of digital pattern data driving tufting: each yarn is dyed at several colour stations by yarn-control assemblies that are 'individually controllable by digital color pattern data' held in registers, and the yarns are then fed to a tufting station to make a predetermined complex design. It builds on US4015550 ('Apparatus and Method for Selective Multi-Color Dyeing of Individual Yarns and producing therefrom a predetermined complex design in a tufted carpet'). The pattern is put into the yarn before tufting, not by moving needles, but it is an electronic, data-driven patterning system at a 1970s carpet mill. Verified Oct 2026: the title, assignee and dates come from Google Patents snippets, and claim 1 from an RPX Insight summary.\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "themes": [
+      "Machine tufting & Dalton",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "CNC tufting",
+      "patent lineage",
+      "pattern control",
+      "digital control",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "solid"
+  },
+  {
+    "id": "pat-us4867080a",
+    "type": "patent",
+    "title": "Brooks E. Taylor, Marshall A. Neely & Roy T. Card, \"Computer controlled tufting machine and a process of controlling the parameters of operation of a tufting machine\" (US4867080A)",
+    "creator": "Brooks E. Taylor; Marshall A. Neely; Roy T. Card",
+    "identifier": "US4867080A",
+    "sourceUrl": "https://patents.google.com/patent/US4867080A/en",
+    "region": "United States",
+    "date": "filed 15 Dec 1988 (Google record says 2 Dec 1988); granted 19 Sep 1989",
+    "dateStart": 1988,
+    "description": "A computer controls synchronous motors on the backing feed and yarn feed, using encoders on main-shaft speed and bed-rail height. Stitch rate, pile height and face-yarn weight can then be changed from the computer, which replaced the old method of changing sheaves on the gearbox. Continuations with the same title: US4981091 (listed 1 Jan 1991) and US5005498 (published 9 Apr 1991). Later patents cite US4867080 as the start of computer control giving 'greater precision and variety' in patterned tufting. Roy T. Card is of the Card family (see co-card-monroe), but the assignee field was not visible in snippets, so Card-Monroe ownership is likely but not confirmed. Card-Monroe's company timeline lists 'Command Performance 1989'; a link to this patent is plausible but not shown. The two filing dates conflict: 15 Dec is from the patent text, 2 Dec from the Google record. No source calls this the first computer-controlled tufting machine. Verified Oct 2026 by web search only.\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "themes": [
+      "Machine tufting & Dalton",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "CNC tufting",
+      "patent lineage",
+      "computer control",
+      "Card-Monroe",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "solid"
+  },
+  {
+    "id": "pat-us5058518a",
+    "type": "patent",
+    "title": "Roy T. Card & Brooks E. Taylor / Card-Monroe, \"Method and apparatus for producing enhanced graphic appearances in a tufted product and a product produced therefrom\" (US5058518A)",
+    "creator": "Roy T. Card; Brooks E. Taylor; Card-Monroe Corp.",
+    "identifier": "US5058518A",
+    "sourceUrl": "https://patents.google.com/patent/US5058518A/en",
+    "region": "United States",
+    "date": "filed 1989; published 22 Oct 1991",
+    "dateStart": 1989,
+    "description": "A Card-Monroe patent for 'enhanced graphic appearances' in tufted carpet, covering a tufting machine, a way of forming tufts and the resulting fabric. It cites Card et al. US3919953 (18 Nov 1975), two needle rows that put cut pile beside loop pile. A later patent (2003) credits US5058518 with computerised design centres, where designers develop patterns on a computer. This marks the move from mechanical patterning to computer-designed 'graphics' carpet. Verified Oct 2026 by web search only: the title, inventors, assignee (from a citing-family table) and dates come from Google Patents snippets. The claims were not read.\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "themes": [
+      "Machine tufting & Dalton",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "CNC tufting",
+      "patent lineage",
+      "computer control",
+      "Card-Monroe",
+      "graphics tufting",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "solid"
+  },
+  {
+    "id": "pat-us6244203b1",
+    "type": "patent",
+    "title": "Tuftco Corp. (Morgante, Stanfield, Bishop), \"Independent servo motor controlled scroll-type pattern attachment for tufting machine and computerized design system\" (US6244203B1)",
+    "creator": "Michael R. Morgante; Randall E. Stanfield; Mike Bishop; Tuftco Corporation",
+    "identifier": "US6244203B1",
+    "sourceUrl": "https://patents.google.com/patent/US6244203B1/en",
+    "region": "United States",
+    "date": "provisional 27 Nov 1996; filed 26 Nov 1997 (appl. 08/980,045); grant date not seen",
+    "dateStart": 1996,
+    "description": "The servo scroll: each set of yarn-feed rolls on a scroll attachment gets its own independently controlled servo motor, plus a computerised design system to handle 'the large numbers of individually controllable design parameters'. This removed the old chain-drive limit of two or three stitch heights per pattern. Family members: US6283053 ('independent single end servo motor driven scroll-type pattern attachment', filed 20 Dec 1999); US6439141 ('Independent single end servo scroll pattern attachment… and computerized design system', a divisional); US6516734; US6877449 and US7089874 (servo-motor-driven scroll attachments). The EP counterpart is EP1132514, which names Tuftco Corporation, Chattanooga, as proprietor. Later patents call these 'the single end servo scroll of Morgante' and set them beside Frost's double-end servo scroll (US6550407, filed Aug 2002). One continuation's text misprints the number as 6,224,203. Verified Oct 2026 by web search only.\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "themes": [
+      "Machine tufting & Dalton",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "CNC tufting",
+      "patent lineage",
+      "servo scroll",
+      "Tuftco",
+      "computer control",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "solid"
+  },
+  {
+    "id": "co-tapistron",
+    "type": "company",
+    "title": "Tapistron International: computerised yarn placement (CYP) tufting, Ringgold, Georgia",
+    "creator": "Tapistron International, Inc.; Gary L. Ingram (inventor)",
+    "place": "Ringgold, Georgia",
+    "region": "United States",
+    "date": "founded 1986 (Bloomberg); CYP dated 1992 (one trade article); bankruptcy filed 1996; sold at auction 2001",
+    "dateStart": 1986,
+    "sourceUrl": "https://www.chattanoogan.com/2001/7/10/10705/Tapistron-International-Being-Sold-At.aspx",
+    "institution": "Tapistron International, Inc.",
+    "description": "Tapistron made the CYP (Computerized Yarn Placement) machine, a hollow-needle tufting machine that places individual coloured yarns to make patterned, coloured and textured carpets and rugs. Bloomberg gives its founding date as 7 Feb 1986 and its address as Ringgold, Georgia. A FloorDaily article on servo drives says Tapistron developed the CYP in 1992 for large-scale patterns. It describes the machine as slow but able to make woven-looking patterns by tufting, with scroll motors controlling yarn placement and six component colours. Tapistron's patents go back further. Gary L. Ingram's US4991523 ('Tufting apparatus', dated 12 Feb 1991) was assigned first to Textile Corporation of America, then to Tapistron, then to Frontier Bank. US5165352 (hollow-needle apparatus, filed Dec 1991) followed, with later patents by Davis (US5588383, 1996) and Samilo (US6293211, granted 25 Sep 2001). In a 2000 press release the company said it had installed seven of its patented simultaneous cut-and-loop CYP systems with leading manufacturers in ten months, including a sale near Dalton. Chattanoogan.com reported in July 2001 that Tapistron had filed for bankruptcy in Atlanta in 1996, had kept operating, had sold equipment to Shaw Industries, and was being sold at auction. A US5158027 record shows its patents later assigned to CYP Technologies, LLC (Tennessee). Conflicts: the 1992 'developed' date comes from one article and is later than Ingram's 1989–91 patents. Leadership is unclear: Rodney C. Hardeman Jr. is named CEO in 2000, and Larry Pierce in an undated item. Why it matters: Tapistron's machine placed individual coloured yarns under computer control, a full generation before ColorPoint. Sources: https://www.bloomberg.com/profile/company/TAPI:US · https://www.just-style.com/news/usa-tapistron-international-announces-placement-of-advanced-model-cyp-system/ · https://floordaily.net/?p=20962 · https://www.chattanoogan.com/2000/11/7/6611/Tapistron-Has-New-High-Speed-Tufting.aspx · https://patents.justia.com/assignee/tapistron-international-inc\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "themes": [
+      "Machine tufting & Dalton",
+      "Companies & modern tufting",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "CNC tufting",
+      "Tapistron",
+      "individually controlled yarn",
+      "hollow needle",
+      "computer control",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "solid"
+  },
+  {
+    "id": "pat-us4991523a",
+    "type": "patent",
+    "title": "Gary L. Ingram / Textile Corporation of America (later Tapistron), \"Tufting apparatus\" (US4991523A)",
+    "creator": "Gary L. Ingram; Textile Corporation of America; later Tapistron International, Inc.",
+    "identifier": "US4991523A",
+    "sourceUrl": "https://patents.google.com/patent/US4991523A/en",
+    "region": "United States",
+    "date": "application 07/366,545; patent dated 12 Feb 1991",
+    "dateStart": 1989,
+    "description": "Ingram's base patent for the multi-hollow-needle patterning tufter that became Tapistron's CYP. Later patents say it shifts the backing sideways, not the needle heads, so much less weight moves and the shifting is faster and more accurate. A blade working with the hollow needle cuts the yarn or leaves it uncut, giving loop, cut or cut/loop pile. Ingram's work is described as a modification of Kile's US4549496 (issued 29 Oct 1985), a multi-head machine with pneumatically fed hollow needles placing yarns of different colours. US5080028 ('Apparatus for producing tufted goods using yarns of different color or texture') claims priority from the same application. Assignments run from Ingram to Textile Corporation of America, then Tapistron International, then Frontier Bank. Verified Oct 2026 by web search only. The 12 Feb 1991 date comes from a later Ingram patent's cross-reference. The 1989 filing year is inferred from the application series and was not shown.\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "themes": [
+      "Machine tufting & Dalton",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "CNC tufting",
+      "patent lineage",
+      "Tapistron",
+      "hollow needle",
+      "individually controlled yarn",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "solid"
+  },
+  {
+    "id": "pat-us5165352a",
+    "type": "patent",
+    "title": "Gary L. Ingram / Tapistron International, \"Hollow needle tufting apparatus for producing patterned fabric\" (US5165352A)",
+    "creator": "Gary L. Ingram; Tapistron International, Inc.",
+    "identifier": "US5165352A",
+    "sourceUrl": "https://patents.google.com/patent/US5165352A/en",
+    "region": "United States",
+    "date": "filed 27 Dec 1991; granted 24 Nov 1992",
+    "dateStart": 1991,
+    "description": "Tapistron's main hollow-needle patterning patent. Reciprocating hollow needles go through the backing, and the backing is shifted sideways to place a row of tufts, so each colour lands where the pattern needs it. It has a wide foreign family, which shows Tapistron sought world markets: EP0549099 (B1), AU648964B2, CA2077392A1, DE69208344T2 and China CN1086862A ('生产提花织物的空心簇绒机'). Related: US5158027 (presser foot, filed 1991, later held by CYP Technologies) and US5205233 (fabric shift sequencing). Card-Monroe's 2023 hollow-needle patents return to this design family (see pat-us12180632b2). Verified Oct 2026 by web search only, from Google Patents snippets.\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "themes": [
+      "Machine tufting & Dalton",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "CNC tufting",
+      "patent lineage",
+      "Tapistron",
+      "hollow needle",
+      "individually controlled yarn",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "solid"
+  },
+  {
+    "id": "event-colorpoint-colortron-2009",
+    "type": "event",
+    "title": "Card-Monroe ColorPoint and Tuftco ColorTron launched: yarn colour placement in broadloom tufting (2009)",
+    "creator": "Card-Monroe Corp.; Tuftco Corp.",
+    "place": "FloorTek Expo, Dalton, Georgia (22–24 Sep 2009)",
+    "region": "United States",
+    "date": "2009",
+    "dateStart": 2009,
+    "sourceUrl": "https://floordaily.net/?p=20362",
+    "institution": "FloorDaily (FloorTek Expo 2009 preview)",
+    "description": "The FloorTek Expo 2009 preview said Card-Monroe was introducing its ColorPoint series, which places 'up to six colors or more anywhere in a carpet pattern with pinpoint accuracy'. The company says the machines also give multiple pile heights and textures with single-stitch accuracy. The same preview said Tuftco's ColorTron, 'patented technology developed by Tuftco', had been introduced earlier that year, with a cut-and-loop version allowing any tuft to be cut or looped in any colour. ColorPoint is protected by US8141505 'Yarn color placement system' (filed 15 Feb 2008; granted 27 Mar 2012), continuations US8359989 (29 Jan 2013) and US8776703 (15 Jul 2014), EP2100994 and TR 2011 06842 T4 (Floor Trends). The system shifts needle bars and uses level-cut-loop loopers so that only the chosen colour shows on the face. Tuftco also filed the trademark ITUFT on 12 Jun 2009 (serial 77758770) for tufting machines and yarn-feed pattern attachments. Card-Monroe's own timeline also gives ColorPoint as 2009 (see co-card-monroe). ColorTron rests on a single trade preview. Sources: https://floordaily.net/?p=20362 · https://patents.google.com/patent/US8141505B2/en · https://www.floortrendsmag.com/articles/93227-card-monroe-corp-receives-patents-for-colorpoint-machine · https://trademark.justia.com/owners/tuftco-corporation-1644955\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "themes": [
+      "Machine tufting & Dalton",
+      "Companies & modern tufting",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "CNC tufting",
+      "ColorPoint",
+      "colour placement",
+      "Card-Monroe",
+      "Tuftco",
+      "graphics tufting",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "solid"
+  },
+  {
+    "id": "pat-us8141505b2",
+    "type": "patent",
+    "title": "Card-Monroe Corp., \"Yarn color placement system\" (US8141505B2)",
+    "creator": "Card-Monroe Corp.",
+    "identifier": "US8141505B2",
+    "sourceUrl": "https://patents.google.com/patent/US8141505B2/en",
+    "region": "United States",
+    "date": "filed 15 Feb 2008; granted 27 Mar 2012",
+    "dateStart": 2008,
+    "description": "The core ColorPoint patent: coordinates yarns of different colours on a tufting machine so that only the selected colour shows at each stitch, giving computer-placed multicolour patterns on broadloom machines. Continuations: US8359989 (stitch distribution control, 29 Jan 2013), US8776703 (15 Jul 2014), US9410276 and US10443173; European EP2100994. It was the patent asserted in Card-Monroe v. Tuftco (see event-cmc-v-tuftco-2017). The application predates the 2009 launch. Verified Oct 2026 from Google Patents snippets and a court opinion summary (vLex).\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "themes": [
+      "Machine tufting & Dalton",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "CNC tufting",
+      "patent lineage",
+      "ColorPoint",
+      "colour placement",
+      "Card-Monroe",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "solid"
+  },
+  {
+    "id": "event-cmc-v-tuftco-2017",
+    "type": "event",
+    "title": "Card-Monroe v. Tuftco: the ColorPoint patent suit over computer colour-placement tufting (2014–2017)",
+    "creator": "Card-Monroe Corp.; Tuftco Corp.",
+    "place": "U.S. District Court, Eastern District of Tennessee (No. 1:14-cv-292)",
+    "region": "United States",
+    "date": "filed 2014; settled 6 Nov 2017; injunction 9 Nov 2017",
+    "dateStart": 2014,
+    "sourceUrl": "https://floordaily.net/?p=26659",
+    "institution": "U.S. District Court, E.D. Tenn.",
+    "description": "Card-Monroe sued Tuftco for infringing its ColorPoint patents (US8141505, US8359989, US8776703). The accused machines were Tuftco's ColorTuft, iTuft c, Colortuft Graphics, iTuft 5c and iTuft 6c when set up for the ColorTuft or Easy Pattern method. In September 2017 an amended memorandum and order (270 F. Supp. 3d 967) ruled partly for each side on summary judgment. Orrick notes the court let Card-Monroe pursue damages for sales abroad based on US infringement. The parties settled on 6 Nov 2017. The agreed order of 9 Nov 2017 said the patents were valid and enforceable, said the accused machines infringed or could be used to infringe, and enjoined Tuftco from selling single-needle-bar ColorTuft/iTuft c machines. Why it matters: it shows how valuable computer colour placement on broadloom machines had become, and it dates Tuftco's iTuft graphics line (trademark filed 2009). The damages figure was not found. Sources: https://floordaily.net/?p=26659 · https://www.orrick.com/en/Insights/2017/09/The-World-in-US-Courts-Fall-2017--Card-Monroe-Corp-v-Tuftco-Corp · https://case-law.vlex.com/vid/card-monroe-corp-v-886262287\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "themes": [
+      "Machine tufting & Dalton",
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "CNC tufting",
+      "ColorPoint",
+      "iTuft",
+      "Tuftco",
+      "Card-Monroe",
+      "litigation",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "solid"
+  },
+  {
+    "id": "event-cobble-colortec-icn",
+    "type": "event",
+    "title": "Cobble (Vandewiele) Colortec: individually controlled needles and individual pile delivery (2018–2019)",
+    "creator": "Cobble, a Vandewiele company",
+    "place": "Blackburn (UK) / Kortrijk (Belgium); shown at ITMA Asia 2018 and ITMA 2019, Barcelona",
+    "region": "Belgium",
+    "date": "IPD shown 2018; Colortec L+ launched 20–26 Jun 2019",
+    "dateStart": 2018,
+    "sourceUrl": "https://www.textileworld.com/textile-world/2019/05/itma-2019-exhibitor-preview-cobble-a-vandewiele-company/",
+    "institution": "Cobble / Vandewiele",
+    "description": "Cobble's Colortec is a graphics tufting machine whose needles 'tuft only where pile is required'. A 2018 preview of Van de Wiele's ITMA Asia stand calls Individual Pile Delivery (IPD) for Colortec a key Cobble development, so the base Colortec existed by then. At ITMA 2019 (Barcelona, 20–26 June) Cobble launched the Colortec L+, which it called its most versatile tufting machine to date. It combines three Cobble technologies: ICN (individually controlled needle), IPD (individual pile delivery) and LCL (level cut/loop). Floor Trends later reported that Colortec could take an LCL attachment. A later patent application refers to individual needle selection 'used on the ColorTec® machine, of the applicant', so far only in cut pile. Why it matters: it is the European counterpart to ColorPoint, controlling each needle in a broadloom machine individually. Gap: the year the first Colortec was introduced was not found. Sources: https://www.textileworld.com/textile-world/2019/05/itma-2019-exhibitor-preview-cobble-a-vandewiele-company/ · https://innovationintextiles.com/interiors/cobbles-combinations-for-advanced-tufting-at-itma-2019 · https://www.innovationintextiles.com/van-de-wiele-innovations-at-itma-asia-2018 · https://www.floortrendsmag.com/articles/92218-cobble-s-colortec-machine-can-use-lcl-attachment\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "themes": [
+      "Machine tufting & Dalton",
+      "Companies & modern tufting",
+      "Tools & equipment",
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "CNC tufting",
+      "Colortec",
+      "ICN",
+      "individually controlled needle",
+      "Cobble",
+      "Vandewiele",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "solid"
+  },
+  {
+    "id": "pat-us12180632b2",
+    "type": "patent",
+    "title": "Card-Monroe Corp. (Mathews, Christman, Lovelady, Vetter), \"Tufting machines and methods of tufting\" (US12180632B2): the Hollow Needle machine",
+    "creator": "Ricky E. Mathews; William M. Christman Jr.; Brian Lovelady; Jamie Vetter; Card-Monroe Corp.",
+    "identifier": "US12180632B2",
+    "sourceUrl": "https://patents.google.com/patent/US12180632B2/en",
+    "region": "United States",
+    "date": "filed 21 Aug 2023 (appl. 18/235,917); published as US20240068144A1; grant date not seen",
+    "dateStart": 2023,
+    "description": "A hollow-needle tufting machine for patterned articles in several yarn colours. Knives move between no-cut and cut positions to make loop and cut pile (Justia abstract). Card-Monroe's filings say earlier hollow-needle machines (the Kile, Davis and Tapistron line) used solenoid-controlled air cylinders to pick colours, but needle spacing limited how many colours each needle could take. A continuation is US12546042B2 (appl. 18/955,318), and a later EP application covers artificial turf. Card-Monroe's company timeline lists 'Hollow Needle 2023' (see co-card-monroe), and the August 2023 filing fits it, but no launch news was found. Why it matters: in 2023 the leading broadloom builder returned to the hollow-needle, individually fed yarn idea that Tapistron pioneered around 1990. Verified Oct 2026 by web search only: the filing date is from Justia and the identity from Google Patents snippets.\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "themes": [
+      "Machine tufting & Dalton",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "CNC tufting",
+      "patent lineage",
+      "hollow needle",
+      "Card-Monroe",
+      "individually controlled yarn",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "solid"
+  },
+  {
+    "id": "pat-us5503092a",
+    "type": "patent",
+    "title": "Wilcom Tufting Pty Ltd (Aubourg, Pongrass, Wilson), \"Method and system of tufting\" (US5503092A)",
+    "creator": "Peter L. Aubourg; Robert G. Pongrass; William B. Wilson; Wilcom Tufting Pty Ltd",
+    "identifier": "US5503092A",
+    "sourceUrl": "https://patents.google.com/patent/US5503092A/en",
+    "region": "Australia",
+    "date": "filed 1994 (appl. 08/190,070); granted 2 Apr 1996",
+    "dateStart": 1994,
+    "description": "The earliest dated Wilcom tufting-machine patent found, ten years before the EP1674605 family already in the database. A tufting head is moved automatically over a backing stretched on a frame, and the needle position is corrected for traverse direction, yarn type and backing type. That correction is needed when a hand-gun-style head is driven by computer instead of guided by eye. Rights passed from Wilcom Tufting to Wilcom Pty Limited and then to Margit Pongrass Pty Ltd. A companion 'Mechanical tufting head' patent, US5829372, is listed as of 3 Nov 1998. Why it matters: it puts computer-driven single-head tufting by the Sydney embroidery-software firm in the mid-1990s. Verified Oct 2026 by web search only: the inventors, assignee and application come from Google Patents snippets, and the grant date from a Google sitemap listing.\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Tools & equipment",
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "CNC tufting",
+      "patent lineage",
+      "Wilcom",
+      "CNC hand-tufting head",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "solid"
+  },
+  {
+    "id": "pat-us5743200a",
+    "type": "patent",
+    "title": "Miller et al., \"Apparatus for manufacturing tufted rugs\" (US5743200A)",
+    "creator": "Miller et al. (assignee not seen)",
+    "identifier": "US5743200A",
+    "sourceUrl": "https://patents.google.com/patent/US5743200A/en",
+    "region": "United States",
+    "date": "filed 1996 (appl. 08/623,248); listed among 1998 publications; expired (fee-related)",
+    "dateStart": 1996,
+    "description": "A gantry tufting machine for rugs: a tufting head with cylinder, piston, needle and blade moves independently on a Z-axis, travelling along the X-axis on a gantry that moves along Y. A later turf patent (US7814850) describes it in these terms. It is the earliest US gantry 'robot tufter' patent found in this search. One search summary said its text names a Wilcom TM2417 machine and controller as comparable; a second search could not confirm this, so treat the Wilcom TM2417 reference as unverified. Verified Oct 2026 by web search only: the number, title and application number come from Google Patents snippets. The assignee and exact grant date were not seen.\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "CNC tufting",
+      "patent lineage",
+      "gantry",
+      "CNC hand-tufting head",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "suggestive"
+  },
+  {
+    "id": "co-wilcom-autotuft",
+    "type": "company",
+    "title": "Wilcom AutoTuft (Sydney): robotic single-head tufting machines for custom rugs",
+    "creator": "Wilcom Pty Ltd / Wilcom AutoTuft Pty Ltd",
+    "place": "Sydney",
+    "region": "Australia",
+    "date": "patents from 1994; AutoTuft trade reports 2012",
+    "dateStart": 1994,
+    "sourceUrl": "https://www.textileworld.com/textile-world/new-products/2012/07/wilcoms-autotuft-pneumatic-tufting-head-produces-special-tufting-effects",
+    "institution": "Wilcom Pty Ltd",
+    "description": "Wilcom, an Australian maker of CAD/CAM software for embroidery, carpet and rugs, sold AutoTuft robotic tufting machines with pneumatic or mechanical heads. In July 2012 Textile World reported a pneumatic-head option with a rotating needle for full-speed cornering, automatic cut/loop switching tuft by tuft, varied pile heights ('3-D tufting') and a guillotine cutter for multiple yarn ends. Wilcom presented these as patented features that hand tufting cannot match. In August 2012 Textile World reported new AutoTuft agents in India and in China (distributor Shun Long Machinery), describing machines that make custom rugs and wall hangings with a 'hand-tufted' look for less than hand tufting. Patent line: US5503092 (filed 1994), US5829372 (1998), EP1674605 / US7218987 (AU priority 2004), and US8225727 'Tufting machine' (filed 3 Dec 2008, granted 24 Jul 2012; inventors William Brian Wilson, Mile Jez, Joseph Van Woerkom). Google Patents shows US7218987 and US8225727 later assigned to Perpetual Machine Co., a Dalton, Georgia maker of carpet-handling and custom equipment, so the Australian robot-tufting patents ended up in Dalton. Why it matters: Wilcom was the main early commercial maker of CNC 'hand-tufting' robots, and it was selling into India and China by 2012. Gaps: the founding date of Wilcom's tufting arm and AutoTuft's first sale were not found, and current status is unknown. Sources: https://www.textileworld.com/textile-world/textile-news/2012/08/wilcom-autotuft-adds-representatives-in-india-china · https://patents.google.com/patent/US8225727B2/en · https://business.daltonchamber.org/list/member/perpetual-machine-co-dalton-6033\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Companies & modern tufting",
+      "Tools & equipment",
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "CNC tufting",
+      "Wilcom",
+      "AutoTuft",
+      "robotic tufting",
+      "CNC hand-tufting head",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "solid"
+  },
+  {
+    "id": "finding-cnc-chongqing-pmac-2011",
+    "type": "finding",
+    "title": "Chongqing University: a 'zero-programming' PMAC CNC system for tufting machines (2011)",
+    "creator": "Ye Suping (叶苏平); Li Guolong (李国龙)",
+    "place": "Chongqing University, Institute of Manufacturing Engineering",
+    "region": "China",
+    "date": "31 Aug 2011",
+    "dateStart": 2011,
+    "sourceUrl": "https://highlights.paper.edu.cn/index/paper_detail/4287",
+    "institution": "Chongqing University",
+    "description": "Paper 《基于PMAC的簇绒机零编程数控系统研究》 ('Research on a zero-programming CNC system for tufting machines based on PMAC'). It uses a PC+NC structure built round a PMAC multi-axis motion controller. Patterns are drawn in AutoCAD, a customised CAD/CAM layer extracts contour points and generates NC code automatically, and Visual C++ software talks to the PMAC through the PComm32 library to tuft complex rug designs. It shows Chinese universities building CNC control for tufting between the first robot-gun patents and the 2014 Shenyang/Yiwu patent (pat-cn104562491a). Only a metadata page on the Sciencepaper Online (paper.edu.cn) platform was seen; the full text was not read. Whether the machine is a single gun head or a broadloom machine is not stated. Sources: https://highlights.paper.edu.cn/index/paper_detail/4287\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "themes": [
+      "Tools & equipment",
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "CNC tufting",
+      "China",
+      "CNC control",
+      "academic research",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "suggestive"
+  },
+  {
+    "id": "event-yangxin-donghua-robot",
+    "type": "event",
+    "title": "Yangxin Ruixin and Donghua University: 'China's first fully digital intelligent robot for hand-tufted carpets'",
+    "creator": "Yangxin Ruixin Group; Donghua University",
+    "place": "Yangxin, Shandong",
+    "region": "China",
+    "date": "reported May 2025 (development date not given)",
+    "dateStart": 2014,
+    "sourceUrl": "https://global.chinadaily.com.cn/a/202505/12/WS682169dda310a04af22bec34_2.html",
+    "institution": "China Daily",
+    "description": "A May 2025 China Daily feature on the Yangxin Carpet Intangible Cultural Heritage Workshop (set up by Yangxin Ruixin Group in 2022) says a joint project with Donghua University produced 'China's first fully digital intelligent robot for hand-tufted carpets'. It follows pre-programmed designs and makes mid- to low-grade tufted carpets efficiently. The name matches the 2014 utility model CN204058934U 手工枪刺地毯全数字化智能机器人 (see pat-cn204058934u). Yangxin Ruixin also filed CN111705448A in 2020, a pneumatic gun for an intelligent gun-tufted carpet robot. dateStart 2014 follows the matching patent; the article gives no date. The 'first' claim is the press's and is not independently confirmed. CN104562491A (Shenyang/Yiwu, also 2014) is a competing early claimant. Sources: https://global.chinadaily.com.cn/a/202505/12/WS682169dda310a04af22bec34_2.html · https://www.chinaservicesinfo.com/s/202505/14/WS6823f1f1498eec7e1f736a20/reviving-a-legacy-yangxins-carpet-weaving-finds-new-life_2.html\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Global diffusion of tufting",
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "CNC tufting",
+      "China",
+      "robotic tufting",
+      "robot gun",
+      "Donghua University",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "suggestive"
+  },
+  {
+    "id": "finding-cnc-delos-robotic-2013",
+    "type": "finding",
+    "title": "Delos was robot-tufting custom rugs and aircraft carpet in Georgia by 2013",
+    "creator": "Delos (The Delos Company)",
+    "place": "Calhoun, Georgia",
+    "region": "United States",
+    "date": "2013; 2016",
+    "dateStart": 2013,
+    "sourceUrl": "https://backend.ainonline.com/aviation-news/business-aviation/2013-10-22/delos-rugs-launches-aircraft-carpet-division",
+    "institution": "AIN (Aviation International News)",
+    "description": "This adds dates to co-delos. In October 2013 AIN reported that Delos had launched an aircraft-carpet division using a custom-made robotic tufting machine able to make seamless carpet up to 13.5 by 60 feet. Home Accents Today's report on the 2016 Delos lookbook said robotic tufting machines speed up the process, but about 85% of the work is still done by craftsmen; most custom rugs ship within six weeks, in sizes up to 14 by 60. In September 2021 Delos bought Masland's US custom area-rug department equipment (Textile World), and earlier Masland material describes rugs as 'machine tufted and hand finished in the U.S.' This is the clearest dated evidence of a US custom-rug maker adopting CNC/robotic tufting. Whether Delos's machine was Wilcom, EFAB or built in-house is not stated. Sources: https://backend.ainonline.com/aviation-news/business-aviation/2013-10-22/delos-rugs-launches-aircraft-carpet-division · https://www.homeaccentstoday.com/industry-news/delos-releases-residential-and-hospitality-lookbook · https://www.textileworld.com/textile-world/2021/09/delos-amplifies-manufacturing-assets-to-boost-american-made-custom-rug-capacity\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "themes": [
+      "Companies & modern tufting",
+      "Machine tufting & Dalton"
+    ],
+    "tags": [
+      "CNC tufting",
+      "Delos",
+      "robotic tufting",
+      "custom rugs",
+      "adoption",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "solid"
+  },
+  {
+    "id": "co-efab-etuft",
+    "type": "company",
+    "title": "EFAB GmbH: eTuft / Robotuft robotic tufting machines (Germany)",
+    "creator": "EFAB GmbH",
+    "place": "near Düsseldorf (Korschenbroich area)",
+    "region": "Germany",
+    "date": "by 2016 (dated used unit); current",
+    "dateStart": 2016,
+    "sourceUrl": "https://heimtextil.messefrankfurt.com/frankfurt/en/exhibitor-search.detail.html/efab-gmbh/mf_1_0052756498_5034504_10000000202601.html",
+    "institution": "EFAB GmbH",
+    "description": "EFAB makes the eTuft, sold as Robotuft®, a robotic tufting machine for fashion carpets, rugs, samples and custom artificial grass, for one-off orders or series. The company says all components are sourced, made and assembled in Germany. Its Heimtextil exhibitor listings give up to 1,200 stitches per minute, 3–30 mm gauge and 100–500 stitches per metre. Pile types are U-tuft, J-tuft and loop. Samples are tufted on a removable vertical frame that stays tensioned for back-coating, and mechanical and pneumatic guns can be swapped. Software: eDesigner, eHMI, and a Robotuft add-on that converts raster art to vector tufting paths. A dealer listing for a used 2016 unit (4 × 6 m frame, Korschenbroich) asked €49,900. It gives the pneumatic head up to 60 mm cut pile and 100 mm J-tuft and claims 1–6 m²/hour and up to 2,000 stitches/min. Indian agent A.T.E., which also sells Card-Monroe machines, lists 'Robotic tufting from EFAB, Germany'. The specs are the company's or dealers' own figures, and EFAB's founding date was not found. Sources: https://www.machineseeker.my/efab+gmbh-etuft+robo-tufter/i-21660763 · https://www.textileexcellence.com/single-news/4388/a-t-e-ties-up-with-cmc-to-bring-innovative-carpet-manufacturing-technology-to-india\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Companies & modern tufting",
+      "Tools & equipment",
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "CNC tufting",
+      "EFAB",
+      "Robotuft",
+      "robotic tufting",
+      "Europe",
+      "India",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "suggestive"
+  },
+  {
+    "id": "co-carpet-sign",
+    "type": "company",
+    "title": "Carpet Sign (Asten, Netherlands): 3-D tufting robot rugs with Karim Rashid (2017) and Richard Hutten (2019)",
+    "creator": "Carpet Sign; Karim Rashid; Richard Hutten",
+    "place": "Asten",
+    "region": "Netherlands",
+    "date": "2017; 2019",
+    "dateStart": 2017,
+    "sourceUrl": "https://interiordesign.net/designwire/karim-rashid-designs-carpet-sign-collection-made-by-3-d-tufting-robot/",
+    "institution": "Carpet Sign",
+    "description": "Interior Design (11 Jul 2017) reported that Carpet Sign had just acquired a 3-D tufting robot able to vary pile height continuously, without stopping, and had Karim Rashid design a collection to show it off. The result was 'Lush' (Chaplins calls it '3D Lush'): 12 designs in loop and cut pile in New Zealand wool. In April 2019 Dezeen described Carpet Sign as a manufacturer making rugs on robotic tufting machines in Asten. It reported the Freedom collection of nine rugs by Dutch designers, art-directed by Richard Hutten to show 'the extreme possibilities of robot-assisted rug production', which premiered at Milan design week 2019. Pieces included Jólan van der Wiel's Tropical Tapestry and Hutten's Rainbow Mountains. Why it matters: well-known designers were showing European design rugs made by tufting robots from 2017. The robot's maker is not named. Sources: https://interiordesign.net/designwire/karim-rashid-designs-carpet-sign-collection-made-by-3-d-tufting-robot/ · https://design-milk.com/lush-by-karim-rashid-for-carpet-sign/ · https://www.dezeen.com/2019/04/04/freedom-rugs-richard-hutten-dutch-designers-carpet-sign/ · https://interiordesign.net/products/dutch-manufacturer-carpet-sign-uses-robots-to-showcase-the-possibilities-of-rug-design/\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "themes": [
+      "Companies & modern tufting",
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "CNC tufting",
+      "robotic tufting",
+      "Netherlands",
+      "design rugs",
+      "adoption",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "solid"
+  },
+  {
+    "id": "finding-cnc-european-robotufting-studios",
+    "type": "finding",
+    "title": "European design-rug firms add 'robotufting' alongside handmade production: cc-tapis (Milan) and Van Besouw (Netherlands)",
+    "creator": "cc-tapis; Van Besouw",
+    "place": "Milan; Goirle (Netherlands)",
+    "region": "Italy",
+    "date": "2022 onwards",
+    "dateStart": 2022,
+    "sourceUrl": "https://cc-tapis.com/made-in-milan",
+    "institution": "cc-tapis",
+    "description": "cc-tapis says it opened a new Milan headquarters in 2022 with a prototyping centre. There its 'automated robotufting technology' handles many yarns, shapes and tufting directions, and it is used for one-off pieces for exhibitions, installations, museums and fashion shows. Since 2024 it has used recyclable Econyl yarn. The company says most of its collections are still handmade in its ateliers in Nepal and India, and only smaller runs, including robotufting, are made in Italy. Van Besouw (founded 1839, otherwise knitting and weaving) says its Studio now uses 'new robot tufting technology' for more distinctive structures and precise colour. Its brochure lists robot-tufted rugs in 100% New Zealand worsted wool up to 380 × 880 cm; no start date is given. Pattern: robots are used for one-off and design work, while volume handmade production stays in South Asia. All claims are the companies' own. Sources: https://cc-tapis.com/made-in-milan · https://cc-tapis.com/company · https://www.besouw.nl/en/collection/studio/ · https://www.besouw.nl/files/Downloads/brochure-van-besouw-studio.pdf\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "themes": [
+      "Companies & modern tufting",
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "CNC tufting",
+      "robotic tufting",
+      "Italy",
+      "Netherlands",
+      "design rugs",
+      "adoption",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "suggestive"
+  },
+  {
+    "id": "event-trueblood-robotic-tufting-2022",
+    "type": "event",
+    "title": "Owen Trueblood's robot-arm tufting system: a hacked tufting gun on a UR5 (2022)",
+    "creator": "Owen Trueblood",
+    "place": "New York",
+    "region": "United States",
+    "date": "Feb–Mar 2022; exhibited Apr 2023",
+    "dateStart": 2022,
+    "sourceUrl": "https://hackaday.io/project/184058-robotic-tufting-system/log/203292-hacking-the-tufting-gun",
+    "institution": "Hackaday.io",
+    "description": "The best-documented hobby and studio robot-tufting build. Trueblood's Hackaday.io log (February 2022) shows how he replaced a consumer tufting gun's 555-timer PWM motor controller with an Arduino. He added a 3.5 mm jack carrying an on/off input and an analogue speed input so a robot can drive the gun, and he explains the gun's loop- and cut-pile modes. Hackaday covered it on 5 Mar 2022 as 'Robotic Tufting Gun Fires Off CNC Textiles', calling it the slow, arbitrary-pattern kind of machine, unlike fast fixed-pattern industrial tufters. A collaboration write-up, 'Parks x Needle', says the gun went on a UR5 robot arm, after a first try with a punch needle was dropped for speed. It tufted the shapes of NYC park wildlife zones, with hand punch-needling to fill in, for the Ground Truth IRL exhibition (April 2023). Sources: https://hackaday.com/2022/03/05/ · https://hackaday.io/project/184058-robotic-tufting-system/log/203292-hacking-the-tufting-gun · https://sneaky-number-c9a.notion.site/Parks-x-Needle-2cf72c8a5bee4072ba335dad2cce4fb7\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "CNC tufting",
+      "DIY",
+      "robot arm",
+      "hobby CNC",
+      "artists",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "solid"
+  },
+  {
+    "id": "finding-cnc-diy-robot-arm-experiments",
+    "type": "finding",
+    "title": "DIY and academic robot tufting: CoreXY gantries, 6-axis arms and the gun-orientation problem",
+    "creator": "OpenBuilds forum users; University of Applied Arts Vienna diploma; Fabricademy student",
+    "place": "various",
+    "region": "Austria",
+    "date": "2022 onwards (Vienna project undated)",
+    "dateStart": 2022,
+    "sourceUrl": "https://builds.openbuilds.com/posts/137701/",
+    "institution": "OpenBuilds; Universität für angewandte Kunst Wien",
+    "description": "Besides Trueblood (event-trueblood-robotic-tufting-2022), the search found a handful of open experiments but no open-source tufting-CNC repository. (1) OpenBuilds forum, January 2022: a builder proposes putting a tufting gun on a CoreXY 3D-printer-style gantry and asks how to keep the gun facing its direction of travel. This rotation problem is the same one Wilcom solved with a rotating needle. (2) A diploma project at the University of Applied Arts Vienna, 'Tufting – parametric design & robot fabrication', rebuilt a hand tufting gun, fixed it to a 6-axis industrial robot to tuft 3D surfaces on 3D objects for upholstery and acoustic panels, and found contact pressure, speed and orientation the hard parts. Its year was not visible. (3) A 2026 Fabricademy (Textile Academy) assignment motorised a punch needle with a servo and 3D-printed gear. No KUKA or ABB industrial tufting projects or peer-reviewed papers were found. Sources: https://builds.openbuilds.com/posts/137701/ · https://phaidra.bibliothek.uni-ak.ac.at/o:53066 · https://class.textile-academy.org/2026/heaven-whitby/assignments/11.%20Open%20Sourced%20Hardware/\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "CNC tufting",
+      "DIY",
+      "robot arm",
+      "open source",
+      "hobby CNC",
+      "academic research",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "suggestive"
+  },
+  {
+    "id": "finding-cnc-ttw-cnc-machine",
+    "type": "finding",
+    "title": "Tuft the World's CNC tufting robot: carpal tunnel, a $75,000 machine and the 'handmade' question (2023–2024)",
+    "creator": "Tim Eads; Tiernan Alexander (Tuft the World)",
+    "place": "West Philadelphia",
+    "region": "United States",
+    "date": "bought by 2023; reported 2023–2024",
+    "dateStart": 2023,
+    "sourceUrl": "https://technical.ly/civic-news/cnc-machines-rug-making/",
+    "institution": "Tuft the World",
+    "description": "This record is about the machine itself and complements event-ttw-editions-2023 and co-tuft-the-world. Technical.ly (Aug 2024) says co-founder Tim Eads bought a CNC tufting machine after hand tufting aggravated his carpal tunnel. Eads says the machine makes tufting accessible to people who cannot tuft by hand and gives consistency and evenly stretched backing. Users still adjust tuft density and row spacing by hand and change yarn colours and tuft heads, and the article notes makers disagree about what counts as handmade. Design software splits an image into colour blocks and toolpaths. The Philadelphia Inquirer (Oct 2024) calls it a '$75,000 wonder robot' that works a cloth 10 × 13 ft. WHYY and Paradigm Gallery describe AI (DALL-E) images vectorised for the CNC; Eads said 'This is not really my work… I basically curate.' Size conflict: Technical.ly gives the machine as 16 ft tall × 24 ft wide; Paradigm gives fifteen feet tall × twenty-four feet wide. Both give rugs up to 10 × 13 ft. TTW's 1stDibs listing describes pieces as 'robo-tufted and hand-finished in Philadelphia'. The machine's maker is not named. Sources: https://technical.ly/civic-news/cnc-machines-rug-making/ · https://www.inquirer.com/arts/tuft-the-world-philadelphia-20241025.html · https://whyy.org/articles/tufting-art-rugs-artificial-intelligence-paradigm-gallery-philadelphia · https://www.paradigmarts.org/blogs/news/tuft-the-world-ttf-editions\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "themes": [
+      "Companies & modern tufting",
+      "Hand-tufting tools & the gun"
+    ],
+    "tags": [
+      "CNC tufting",
+      "Tuft the World",
+      "studio CNC",
+      "artists",
+      "AI design",
+      "handmade debate",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "solid"
+  },
+  {
+    "id": "co-craftphilia",
+    "type": "company",
+    "title": "Craftphilia (Hong Kong): a crowdfunded 'fully automated' desktop tufting machine for hobbyists",
+    "creator": "Craftphilia",
+    "place": "Hong Kong",
+    "region": "China",
+    "date": "Kickstarter 16 Jun–16 Jul (year not confirmed; probably 2023)",
+    "dateStart": 2023,
+    "sourceUrl": "https://www.kicktraq.com/projects/207408103/craftphilia-worlds-first-fully-automated-tufting-machine/",
+    "institution": "Craftphilia",
+    "description": "This is the first consumer-priced CNC tufter found, the hobby counterpart of Wilcom and EFAB. It was marketed on Kickstarter as the 'World's First Fully Automated Tufting Machine' (the company's own claim). Kicktraq records 634 backers and HK$4,050,697 against a HK$78,888 goal, for a 16 June–16 July campaign; the year was not shown. A search summary placed it in mid-2023, which is unconfirmed. Chinese outlet Baijing (白鲸出海) says it met its goal in about 5 minutes and raised about US$400,000 in a week, at $499 for a 50 × 50 cm frame or $849 for 70 × 140 cm. A Bilibili article gives US$450,000 in 10 days, a conflict. The company site and FAQ list the CF05 (50 × 50 cm, extendable to 50 × 100) and CF07 (70 × 70, extendable to 70 × 140). The free Craftphilia Studio software turns a JPG/PNG into colour-mapped paths. The machine does not change yarn colours itself, so the user swaps yarn by hand. Hackster reported 14–16 mm pile. Context: Shenzhen start-up CLAWLAB (founded Dec 2022 by ex-DJI engineer Hu Wenxin) launched a lightweight hand tufting kit on Kickstarter on 25 Apr 2024. It is not a CNC, but shows Chinese hardware firms selling into the hobby-tufting boom. Sources: https://www.kicktraq.com/projects/207408103/craftphilia-worlds-first-fully-automated-tufting-machine/ · https://www.baijing.cn/article/55772 · https://www.hackster.io/news/the-fully-automatic-craftphilia-tufting-machine-launches-on-kickstarter-with-a-bang-d6b216300ca9 · https://www.craftphilia.com/pages/faq · https://www.bilibili.com/read/cv51243845\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Companies & modern tufting",
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "CNC tufting",
+      "hobby CNC",
+      "crowdfunding",
+      "Hong Kong",
+      "consumer robot",
+      "checked from search results"
+    ],
+    "status": "unverified",
+    "confidence": "suggestive"
   }
 ];
