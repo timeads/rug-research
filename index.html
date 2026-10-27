@@ -52,6 +52,10 @@
         <a class="tab" href="#sources" data-view="sources">Other archives</a>
       </nav>
       <div class="shell-actions">
+        <div class="menu">
+          <button class="btn on-board ghost jobs-btn" id="btn-jobs" aria-haspopup="dialog" aria-expanded="false" aria-controls="jobs-pop" hidden><span class="jobs-dot" aria-hidden="true"></span><span class="btn-label" id="jobs-label">Up to date</span></button>
+          <div class="menu-pop jobs-pop" id="jobs-pop" role="dialog" aria-label="Background updates" hidden></div>
+        </div>
         <button class="btn on-board" id="btn-add"><svg class="ic"><use href="#i-plus"/></svg><span class="btn-label">Add item</span></button>
         <div class="menu">
           <button class="btn on-board ghost" id="btn-export" aria-haspopup="menu" aria-expanded="false"><svg class="ic"><use href="#i-download"/></svg><span class="btn-label">Export</span><svg class="ic sm"><use href="#i-chevron"/></svg></button>

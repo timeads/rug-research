@@ -1174,6 +1174,109 @@
 
   $("#toggle-facets").onclick = e => { const open = $("#facets").classList.toggle("open"); e.currentTarget.setAttribute("aria-expanded", String(open)); };
 
+  // ---------- background updates ----------
+  // The data jobs (image lookup, Winterthur copy and so on) run on GitHub Actions. Their run list is
+  // public, so the header shows what's running, an estimate from the last run's length, and when new
+  // data has gone live. Unsigned GitHub API calls are limited to 60 an hour, so checks are spaced out.
+  const REPO = "timeads/rug-research";
+  const JOBS = {
+    "winterthur-index.yml": ["Winterthur collection copy", "Saves Winterthur's textiles and rug-related objects for Discover. Runs weekly."],
+    "fetch-images.yml": ["Image lookup", "Finds images for records at their institutions. Runs after records change."],
+    "patent-drawings.yml": ["Patent drawings", "Fetches drawings for patent records."],
+    "research-fetch.yml": ["Research fetch", "Saves source pages for checking citations."],
+    "hagley-search.yml": ["Hagley search", "Searches Hagley's catalogue for records."],
+    "check-data.yml": ["Data check", "Checks the data files after every change."],
+    "pages-build-deployment": ["Publishing the site", "Puts the latest changes live, usually within a minute."]
+  };
+  const loadedAt = Date.now();
+  let jobRuns = null, jobsChecked = 0, jobsError = "", jobsTimer = 0;
+  const ago = t => {
+    const m = Math.round((Date.now() - t) / 60000);
+    return m < 1 ? "just now" : m < 60 ? `${m} min ago` : m < 60 * 36 ? `${Math.round(m / 60)} h ago` : `${Math.round(m / 1440)} days ago`;
+  };
+  const mins = ms => { const m = Math.max(1, Math.round(ms / 60000)); return m < 90 ? `${m} min` : `${Math.round(m / 6) / 10} h`; };
+  const jobSummary = () => {
+    const by = {};
+    for (const r of jobRuns || []) {
+      const k = (r.path || "").split("/").pop(); if (!JOBS[k]) continue;
+      (by[k] = by[k] || []).push(r);
+    }
+    return Object.keys(JOBS).filter(k => by[k]).map(k => {
+      const runs = by[k], latest = runs[0], done = runs.find(r => r.status === "completed" && r.conclusion !== "cancelled");
+      const ok = runs.find(r => r.status === "completed" && r.conclusion === "success");
+      const running = runs.filter(r => r.status !== "completed");
+      return { k, name: JOBS[k][0], about: JOBS[k][1], latest, done, running, took: ok ? Date.parse(ok.updated_at) - Date.parse(ok.run_started_at || ok.created_at) : 0 };
+    });
+  };
+  const renderJobs = () => {
+    const btn = $("#btn-jobs"), pop = $("#jobs-pop");
+    if (!jobRuns && !jobsError) return;
+    const jobs = jobSummary();
+    const running = jobs.filter(j => j.running.length);
+    const failed = jobs.filter(j => !j.running.length && j.done && j.done.conclusion === "failure");
+    const live = jobs.find(j => j.k === "pages-build-deployment" && j.done && j.done.conclusion === "success" && Date.parse(j.done.updated_at) > loadedAt);
+    const state = running.length ? "running" : failed.length ? "failed" : live ? "new" : "ok";
+    btn.hidden = false; btn.dataset.state = jobsError && !jobRuns ? "unknown" : state;
+    $("#jobs-label").textContent = jobsError && !jobRuns ? "Updates" : running.length ? (running.length === 1 ? "Updating" : `Updating (${running.length})`)
+      : failed.length ? "Update failed" : live ? "New data" : "Up to date";
+    btn.title = running.length ? "Running: " + running.map(j => j.name).join(", ") : failed.length ? "Failed: " + failed.map(j => j.name).join(", ") : live ? "New data is live. Reload to see it." : "Background updates: nothing running";
+    btn.setAttribute("aria-label", btn.title);
+    const row = j => {
+      const r = j.running[0];
+      let line, bar = "";
+      if (r) {
+        const t0 = Date.parse(r.run_started_at || r.created_at), el = Date.now() - t0;
+        if (r.status === "queued" || r.status === "waiting" || r.status === "pending") line = `Waiting to start (queued ${ago(Date.parse(r.created_at))})`;
+        else if (j.took) {
+          const pct = Math.min(95, Math.round(el / j.took * 100));
+          line = el < j.took ? `Running for ${mins(el)}, about ${mins(j.took - el)} to go (last run took ${mins(j.took)})` : `Running for ${mins(el)}, longer than last time (${mins(j.took)})`;
+          bar = `<span class="jobs-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${pct}" aria-label="Estimated progress"><span style="width:${pct}%"></span></span>`;
+        } else { line = `Running for ${mins(el)} (first run, so no estimate yet)`; bar = `<span class="jobs-bar indet" aria-hidden="true"><span></span></span>`; }
+      } else if (j.done) {
+        const t = Date.parse(j.done.updated_at);
+        line = j.done.conclusion === "success" ? `Finished ${ago(t)}` : `Failed ${ago(t)}. It retries on the next change or weekly run.`;
+      } else line = "No finished run yet";
+      const st = r ? "running" : j.done && j.done.conclusion === "failure" ? "failed" : "ok";
+      const link = (r || j.done || j.latest).html_url;
+      return `<li class="job" data-state="${st}"><span class="jobs-dot" aria-hidden="true"></span><span class="job-body"><strong>${esc(j.name)}</strong><span class="job-line">${esc(line)}</span>${bar}<span class="job-about">${esc(j.about)}</span></span><a class="job-link" href="${esc(link)}" target="_blank" rel="noopener" aria-label="${esc(j.name)} on GitHub">${icon("external")}</a></li>`;
+    };
+    const order = [...running, ...jobs.filter(j => !j.running.length)];
+    pop.innerHTML = `<div class="jobs-head"><strong>Background updates</strong><span>Jobs on GitHub that fetch images and records into the site.</span></div>
+      ${live ? `<div class="jobs-new"><span>New data went live ${esc(ago(Date.parse(live.done.updated_at)))}.</span><button class="btn sm primary" id="jobs-reload">Reload page</button></div>` : ""}
+      ${jobsError ? `<p class="jobs-err">${esc(jobsError)}</p>` : ""}
+      <ul class="jobs-list">${order.map(row).join("")}</ul>
+      <div class="jobs-foot"><span>Checked ${esc(jobsChecked ? ago(jobsChecked) : "never")}</span><button class="link-btn" id="jobs-refresh">Check now</button><a class="link-btn" href="https://github.com/${REPO}/actions" target="_blank" rel="noopener">All runs on GitHub</a></div>`;
+  };
+  const checkJobs = async () => {
+    clearTimeout(jobsTimer);
+    try {
+      const r = await fetch(`https://api.github.com/repos/${REPO}/actions/runs?per_page=60`, { headers: { Accept: "application/vnd.github+json" } });
+      if (r.status === 403 || r.status === 429) {
+        const reset = Number(r.headers.get("x-ratelimit-reset")) * 1000;
+        jobsError = `GitHub's hourly limit for status checks is used up${reset ? `; checking again at ${new Date(reset).toLocaleTimeString([], { hour: "numeric", minute: "2-digit" })}` : ""}.`;
+      } else if (!r.ok) jobsError = `Couldn't read job status (GitHub said ${r.status}).`;
+      else { jobRuns = (await r.json()).workflow_runs || []; jobsError = ""; jobsChecked = Date.now(); }
+    } catch { jobsError = "Couldn't reach GitHub to check job status."; }
+    renderJobs();
+    const busy = jobSummary().some(j => j.running.length);
+    if (document.visibilityState === "visible") jobsTimer = setTimeout(checkJobs, busy ? 90000 : 600000);
+  };
+  const setJobs = open => {
+    $("#jobs-pop").hidden = !open; $("#btn-jobs").setAttribute("aria-expanded", String(open));
+    if (open && Date.now() - jobsChecked > 20000) checkJobs();
+  };
+  $("#btn-jobs").onclick = e => { e.stopPropagation(); setJobs($("#jobs-pop").hidden); };
+  document.addEventListener("click", e => { if (!e.target.closest(".jobs-pop") && !e.target.closest("#btn-jobs")) setJobs(false); });
+  $("#jobs-pop").addEventListener("click", e => {
+    if (e.target.closest("#jobs-refresh")) checkJobs();
+    if (e.target.closest("#jobs-reload")) location.reload();
+  });
+  document.addEventListener("keydown", e => { if (e.key === "Escape" && !$("#jobs-pop").hidden) { setJobs(false); $("#btn-jobs").focus(); } });
+  document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible" && Date.now() - jobsChecked > 60000) checkJobs(); });
+  // The minute-by-minute estimates go stale between checks; refresh the text without asking GitHub.
+  setInterval(() => { if (jobRuns) renderJobs(); }, 30000);
+  setTimeout(checkJobs, 1200);
+
   // add / export menu
   $("#btn-add").onclick = () => openEdit(null);
   const setMenu = open => { $("#export-menu").hidden = !open; $("#btn-export").setAttribute("aria-expanded", String(open)); if (open) $("#export-menu button").focus(); };
