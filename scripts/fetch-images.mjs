@@ -145,6 +145,9 @@ async function fromPage(item) {
 async function resolve(item) {
   if (item.type === "book" || item.type === "trade-catalog") { const c = await bookCover(item); if (c) return c; }
   if (!item.sourceUrl) return null;
+  // Research findings are statements, not objects; a site's home page shows a banner, not the record.
+  if (item.type === "finding") return null;
+  try { if (new URL(item.sourceUrl).pathname.replace(/\/$/, "") === "") return null; } catch { return null; }
   const special = RESOLVERS.find(r => r.test(item.sourceUrl));
   if (special) { const r = await special.run(item); if (r && (await isImage(r.image))) return r; }
   // Search-engine links, PDFs and finding aids rarely carry an object image.

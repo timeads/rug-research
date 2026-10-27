@@ -35,7 +35,8 @@ window.RUG_ITEMS = [
       "runner",
       "Ames 1977"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "region": "United States"
   },
   {
     "id": "wint-1964-1355",
@@ -60,7 +61,8 @@ window.RUG_ITEMS = [
       "Hooked & handmade rugs"
     ],
     "tags": [],
-    "status": "unverified"
+    "status": "unverified",
+    "region": "United States"
   },
   {
     "id": "wint-1965-0685",
@@ -92,7 +94,8 @@ window.RUG_ITEMS = [
     "status": "unverified",
     "image": "https://winocr-images.s3.us-east-1.amazonaws.com/art-objects/live/28352/multimedia/0-original.jpg",
     "imageCredit": "Winterthur Museum",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "region": "United States"
   },
   {
     "id": "wint-1964-0808",
@@ -120,7 +123,8 @@ window.RUG_ITEMS = [
       "on display",
       "early example"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "region": "United States"
   },
   {
     "id": "wint-1967-1451",
@@ -146,7 +150,8 @@ window.RUG_ITEMS = [
     "tags": [
       "room size"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "region": "United States"
   },
   {
     "id": "wint-1955-0048-045",
@@ -175,7 +180,8 @@ window.RUG_ITEMS = [
     "status": "unverified",
     "image": "https://winocr-images.s3.us-east-1.amazonaws.com/art-objects/live/1923/multimedia/0-original.jpg",
     "imageCredit": "Winterthur Museum, Garden & Library",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "region": "United States"
   },
   {
     "id": "wint-lib-olson-1920",
@@ -196,7 +202,8 @@ window.RUG_ITEMS = [
       "mail order",
       "recycled fiber"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "region": "United States"
   },
   {
     "id": "wint-lib-olson-1922",
@@ -216,7 +223,8 @@ window.RUG_ITEMS = [
     "tags": [
       "mail order"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "region": "United States"
   },
   {
     "id": "wint-lib-household-1915",
@@ -233,7 +241,8 @@ window.RUG_ITEMS = [
       "Trade catalogs & marketing"
     ],
     "tags": [],
-    "status": "unverified"
+    "status": "unverified",
+    "region": "United States"
   },
   {
     "id": "book-mckinstry-trade-catalogues",
@@ -253,7 +262,8 @@ window.RUG_ITEMS = [
       "finding aid",
       "start here"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "region": "United States"
   },
   {
     "id": "book-ames-beyond-necessity",
@@ -272,7 +282,8 @@ window.RUG_ITEMS = [
       "historiography",
       "folk art"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "region": "United States"
   },
   {
     "id": "book-patton-carpet-capital",
@@ -296,7 +307,8 @@ window.RUG_ITEMS = [
     "status": "unverified",
     "image": "https://covers.openlibrary.org/b/isbn/9780820324647-L.jpg?default=false",
     "imageCredit": "Cover via Open Library",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "region": "United States"
   },
   {
     "id": "article-patton-ehnet",
@@ -314,7 +326,8 @@ window.RUG_ITEMS = [
       "overview",
       "statistics"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "region": "United States"
   },
   {
     "id": "book-deaton-bedspreads-broadloom",
@@ -331,7 +344,8 @@ window.RUG_ITEMS = [
     "tags": [
       "core source"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "region": "United States"
   },
   {
     "id": "archive-bandy-deaton",
@@ -348,7 +362,8 @@ window.RUG_ITEMS = [
       "oral histories",
       "visit"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "region": "United States"
   },
   {
     "id": "book-bigelow-century",
@@ -368,7 +383,8 @@ window.RUG_ITEMS = [
       "digitized",
       "Bigelow"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "region": "United States"
   },
   {
     "id": "ucsb-bigelow-sample-book",
@@ -391,7 +407,8 @@ window.RUG_ITEMS = [
       "sample book",
       "Bigelow"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "region": "United States"
   },
   {
     "id": "hagley-dupont-advertising-1803",
@@ -414,7 +431,8 @@ window.RUG_ITEMS = [
       "advertising",
       "priority"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "region": "United States"
   },
   {
     "id": "hagley-dupont-records",
@@ -433,7 +451,8 @@ window.RUG_ITEMS = [
     "tags": [
       "corporate records"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "region": "United States"
   },
   {
     "id": "hagley-seaford-nylon",
@@ -453,7 +472,8 @@ window.RUG_ITEMS = [
       "carpet nylon 1958",
       "priority"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "region": "United States"
   },
   {
     "id": "hagley-textile-fibers-album",
@@ -472,7 +492,8 @@ window.RUG_ITEMS = [
     "tags": [
       "photographs"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "region": "United States"
   },
   {
     "id": "hagley-textile-fibers-product-info",
@@ -490,7 +511,8 @@ window.RUG_ITEMS = [
       "photographs",
       "digitized"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "region": "United States"
   },
   {
     "id": "hagley-dichter-nylon-carpets",
@@ -510,7 +532,8 @@ window.RUG_ITEMS = [
       "consumers",
       "priority"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "region": "United States"
   },
   {
     "id": "hagley-hull-papers",
@@ -527,7 +550,8 @@ window.RUG_ITEMS = [
       "static control",
       "invention"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "region": "United States"
   },
   {
     "id": "event-bcf-nylon",
@@ -549,7 +573,8 @@ window.RUG_ITEMS = [
     "status": "unverified",
     "image": "https://georgiaencyclopedia.org/wp-content/uploads/2021/02/carpet_machine_001-1200x630.jpg",
     "imageCredit": "georgiaencyclopedia.org",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "region": "United States"
   },
   {
     "id": "event-whitener-bedspread",
@@ -573,7 +598,8 @@ window.RUG_ITEMS = [
     "status": "unverified",
     "image": "https://georgiaencyclopedia.org/wp-content/uploads/2021/02/chenille-bedspreads_004-1200x630.jpg",
     "imageCredit": "georgiaencyclopedia.org",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "region": "United States"
   },
   {
     "id": "event-looper-tufting-machine",
@@ -594,7 +620,8 @@ window.RUG_ITEMS = [
       "machinery"
     ],
     "status": "unverified",
-    "imageSource": "rejected"
+    "imageSource": "rejected",
+    "region": "United States"
   },
   {
     "id": "article-nge-chenille",
@@ -612,7 +639,8 @@ window.RUG_ITEMS = [
     "status": "unverified",
     "image": "https://georgiaencyclopedia.org/wp-content/uploads/2021/02/chenille-bedspreads_004-1200x630.jpg",
     "imageCredit": "georgiaencyclopedia.org",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "region": "United States"
   },
   {
     "id": "article-nge-carpet-industry",
@@ -631,7 +659,8 @@ window.RUG_ITEMS = [
     "status": "unverified",
     "image": "https://georgiaencyclopedia.org/wp-content/uploads/2021/02/carpet_machine_001-1200x630.jpg",
     "imageCredit": "georgiaencyclopedia.org",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "region": "United States"
   },
   {
     "id": "article-rughooking-winterthur",
@@ -653,7 +682,8 @@ window.RUG_ITEMS = [
     "status": "unverified",
     "image": "https://welikerughooking.com/wp-content/uploads/2026/04/J-Fea1.08-scaled.jpg",
     "imageCredit": "welikerughooking.com",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "region": "United States"
   },
   {
     "id": "wint-1960-0594",
@@ -687,7 +717,8 @@ window.RUG_ITEMS = [
     "status": "unverified",
     "image": "https://winocr-images.s3.us-east-1.amazonaws.com/art-objects/live/16695/multimedia/0-original.jpg",
     "imageCredit": "Winterthur Museum",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "region": "United States"
   },
   {
     "id": "wint-1964-1641",
@@ -716,7 +747,8 @@ window.RUG_ITEMS = [
     "status": "unverified",
     "image": "https://winocr-images.s3.us-east-1.amazonaws.com/art-objects/live/27031/multimedia/0-original.jpg",
     "imageCredit": "Winterthur Museum",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "region": "United States"
   },
   {
     "id": "wint-1958-0062-003b",
@@ -741,9 +773,8 @@ window.RUG_ITEMS = [
       "verify technique"
     ],
     "status": "unverified",
-    "image": "https://live-winocr.pantheonsite.io/wp-content/uploads/2026/06/21008-Collections-Website-No-Image-Available-Graphic-1-scaled.jpg",
-    "imageCredit": "Winterthur Museum",
-    "imageSource": "auto"
+    "imageSource": "rejected",
+    "region": "United States"
   },
   {
     "id": "met-13-207",
@@ -771,7 +802,8 @@ window.RUG_ITEMS = [
       "priority",
       "technique evidence"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "region": "United States"
   },
   {
     "id": "met-caswell-carpet",
@@ -803,7 +835,8 @@ window.RUG_ITEMS = [
     "status": "unverified",
     "image": "https://images.metmuseum.org/CRDImages/ad/original/DT823.jpg",
     "imageCredit": "The Metropolitan Museum of Art (Open Access, public domain)",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "region": "United States"
   },
   {
     "id": "hd-packard-1801",
@@ -831,7 +864,8 @@ window.RUG_ITEMS = [
     "status": "unverified",
     "image": "https://www.historic-deerfield.org/wp-content/uploads/2017/07/2017-6-web.jpg",
     "imageCredit": "Historic Deerfield",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "region": "United States"
   },
   {
     "id": "hd-blue-white-bed-rug",
@@ -851,7 +885,8 @@ window.RUG_ITEMS = [
     "tags": [
       "Foot family"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "region": "United States"
   },
   {
     "id": "chs-foote-bed-rug",
@@ -873,7 +908,8 @@ window.RUG_ITEMS = [
       "Foot family",
       "find CHS record"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "region": "United States"
   },
   {
     "id": "mfa-1980-447",
@@ -889,7 +925,8 @@ window.RUG_ITEMS = [
     "tags": [
       "date to confirm"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "region": "United States"
   },
   {
     "id": "mfah-157589",
@@ -903,7 +940,8 @@ window.RUG_ITEMS = [
     "tags": [
       "date to confirm"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "region": "United States"
   },
   {
     "id": "lacma-m-74-48",
@@ -930,7 +968,8 @@ window.RUG_ITEMS = [
     "tags": [
       "dated"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "region": "United States"
   },
   {
     "id": "hne-1949-1018",
@@ -956,7 +995,8 @@ window.RUG_ITEMS = [
     "tags": [
       "find record"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "region": "United States"
   },
   {
     "id": "chs-candlewick-group",
@@ -987,7 +1027,8 @@ window.RUG_ITEMS = [
     "status": "unverified",
     "image": "https://emuseum.chs.org/emuseum/internal/media/dispatcher/17570/full",
     "imageCredit": "Connecticut Historical Society",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "region": "United States"
   },
   {
     "id": "afam-1995-13-2",
@@ -1015,7 +1056,8 @@ window.RUG_ITEMS = [
     "tags": [
       "technique evidence"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "region": "United States"
   },
   {
     "id": "afam-concentric-circles",
@@ -1036,7 +1078,8 @@ window.RUG_ITEMS = [
       "Early tufting: bed rugs & needlework pile",
       "Chenille & candlewick"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "region": "United States"
   },
   {
     "id": "afam-great-cover-up",
@@ -1058,7 +1101,8 @@ window.RUG_ITEMS = [
     "status": "unverified",
     "image": "https://folkartmuseum.org/content/uploads/2014/10/folk_1868_image.jpg",
     "imageCredit": "American Folk Art Museum",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "region": "United States"
   },
   {
     "id": "wadsworth-bed-furnishings-2018",
@@ -1079,7 +1123,8 @@ window.RUG_ITEMS = [
     "status": "unverified",
     "image": "https://enfilade18thc.com/wp-content/uploads/2018/11/1967-75.jpg?w=720",
     "imageCredit": "Wadsworth Atheneum Museum of Art",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "region": "United States"
   },
   {
     "id": "book-bed-ruggs-1972",
@@ -1100,7 +1145,8 @@ window.RUG_ITEMS = [
       "core source",
       "catalog"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "region": "United States"
   },
   {
     "id": "book-ulrich-age-of-homespun",
@@ -1120,7 +1166,8 @@ window.RUG_ITEMS = [
       "core source",
       "method"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "region": "United States"
   },
   {
     "id": "book-callahan-southern-tufts",
@@ -1144,7 +1191,8 @@ window.RUG_ITEMS = [
     "status": "unverified",
     "image": "https://covers.openlibrary.org/b/isbn/9780820345161-L.jpg?default=false",
     "imageCredit": "Cover via Open Library",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "region": "United States"
   },
   {
     "id": "hf-00-1510-19",
@@ -1174,7 +1222,8 @@ window.RUG_ITEMS = [
       "dated",
       "inscribed"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "region": "United States"
   },
   {
     "id": "tool-moench-1928",
@@ -1196,7 +1245,8 @@ window.RUG_ITEMS = [
       "machinery",
       "first machine dispute"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "region": "United States"
   },
   {
     "id": "patent-us2977905",
@@ -1217,7 +1267,8 @@ window.RUG_ITEMS = [
       "Cobble",
       "machinery"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "region": "United States"
   },
   {
     "id": "marker-mechanization-bedspread",
@@ -1234,7 +1285,8 @@ window.RUG_ITEMS = [
     "tags": [
       "inventors"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "region": "United States"
   },
   {
     "id": "bandy-mahs-chenille",
@@ -1250,9 +1302,8 @@ window.RUG_ITEMS = [
       "visit"
     ],
     "status": "unverified",
-    "image": "https://www.bandyheritagecenter.org/Content/Uploads/Bandy/Images/Content/Epaulettes-web.jpg",
-    "imageCredit": "Bandy Heritage Center, Dalton State College",
-    "imageSource": "auto"
+    "imageSource": "rejected",
+    "region": "United States"
   },
   {
     "id": "photo-green-burton-1933",
@@ -1274,7 +1325,8 @@ window.RUG_ITEMS = [
     "status": "unverified",
     "image": "https://bunny-wp-pullzone-cjamrcljf0.b-cdn.net/wp-content/uploads/2021/02/chenille-bedspreads_004.jpg",
     "imageCredit": "Georgia Archives (Vanishing Georgia)",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "region": "United States"
   },
   {
     "id": "photo-cabin-crafts-arnall",
@@ -1292,6 +1344,1302 @@ window.RUG_ITEMS = [
       "Cabin Crafts",
       "date conflict"
     ],
+    "status": "unverified",
+    "region": "United States"
+  },
+  {
+    "id": "ner-nobody-invented",
+    "type": "finding",
+    "title": "No country claims to have invented tufting",
+    "region": "Global",
+    "description": "Searched in Chinese, Japanese, German, French and Dutch (plus Hindi): every national record describes tufting as imported from America. No independent inventor turned up anywhere. A stronger claim than English sources alone can support.",
+    "themes": [
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "synthesis",
+      "headline",
+      "script idea"
+    ],
+    "status": "unverified",
+    "collection": "Tuft the World research brief: The Non-English Record"
+  },
+  {
+    "id": "ner-outsiders",
+    "type": "finding",
+    "title": "Everywhere, tufting was adopted by outsiders, not established weavers",
+    "region": "Global",
+    "description": "Germany (trade press, 1959: \"nur durch Außenseiter\"), Japan (Nihon Jūtan: Wilton 1955, tufting only 1981; Toli came from vinyl tile) and Britain show the same pattern. A cross-cultural finding nobody seems to have written down.",
+    "themes": [
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "synthesis",
+      "headline",
+      "script idea"
+    ],
+    "status": "unverified",
+    "collection": "Tuft the World research brief: The Non-English Record"
+  },
+  {
+    "id": "ner-art-deco-not-chinese",
+    "type": "finding",
+    "title": "\"Chinese Art Deco\" and \"Nichols rugs\" do not exist in Chinese",
+    "region": "China",
+    "description": "Searched specifically: zero Chinese-language sources use those categories. They are Anglophone collector-market inventions. Chinese sources tell the period as industrial and labour history: factory counts, export tonnage, named merchants.",
+    "themes": [
+      "Global diffusion of tufting",
+      "Woven carpet"
+    ],
+    "tags": [
+      "synthesis",
+      "historiography",
+      "script idea"
+    ],
+    "status": "unverified",
+    "collection": "Tuft the World research brief: The Non-English Record"
+  },
+  {
+    "id": "ner-cn-1970s",
+    "type": "finding",
+    "title": "Machine-made carpet in large-scale production in China from the 1970s",
+    "region": "China",
+    "description": "The only explicit dating statement found in Chinese for machine carpet. When tufting itself arrived is genuinely undocumented.",
+    "themes": [
+      "Global diffusion of tufting"
+    ],
+    "tags": [],
+    "status": "unverified",
+    "collection": "Tuft the World research brief: The Non-English Record",
+    "confidence": "suggestive",
+    "originalText": "机制地毯自上世纪70年代在中国开始大规模生产以来",
+    "language": "zh-Hans",
+    "translation": "Since machine-made carpet began large-scale production in China in the 1970s…",
+    "publisher": "Sina (republished trade article)",
+    "date": "1970s",
+    "dateStart": 1970,
+    "dateEnd": 1979
+  },
+  {
+    "id": "ner-cn-gbt11746",
+    "type": "finding",
+    "title": "China's national standard for tufted carpet: GB/T 11746-1989",
+    "region": "China",
+    "description": "Issued 20 Oct 1989, in force 1 Jul 1990. The hardest date available: a country does not write a national standard for a novelty, so real production was running for years before 1989.",
+    "themes": [
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "standards",
+      "dating anchor"
+    ],
+    "status": "unverified",
+    "collection": "Tuft the World research brief: The Non-English Record",
+    "confidence": "solid",
+    "originalText": "GB/T 11746-1989「簇绒地毯」",
+    "language": "zh-Hans",
+    "translation": "GB/T 11746-1989 \"Tufted carpet\"",
+    "publisher": "全国标准信息公共服务平台 (State Administration for Market Regulation)",
+    "date": "1989",
+    "dateStart": 1989,
+    "identifier": "GB/T 11746-1989"
+  },
+  {
+    "id": "ner-cn-yanshan",
+    "type": "finding",
+    "title": "China's carpet modernisation was led by an oil refinery",
+    "region": "China",
+    "description": "The Beijing Yanshan Petrochemical Company Carpet Factory: a downstream petrochemical story, not a textile-mill story. Connects to the nylon/synthetics thread.",
+    "themes": [
+      "Global diffusion of tufting",
+      "Nylon & synthetic fibers (DuPont)"
+    ],
+    "tags": [],
+    "status": "unverified",
+    "collection": "Tuft the World research brief: The Non-English Record",
+    "confidence": "suggestive",
+    "originalText": "北京燕山石油化工公司地毯厂，是我国最早的机织地毯生产企业…中国现代化地毯工业的摇篮",
+    "language": "zh-Hans",
+    "translation": "The Beijing Yanshan Petrochemical Company Carpet Factory was China's earliest machine-woven carpet enterprise… the cradle of China's modernised carpet industry.",
+    "publisher": "中国税务杂志社 (company profile)"
+  },
+  {
+    "id": "ner-cn-dht200",
+    "type": "finding",
+    "title": "China built its first domestic tufting machine in 2004 (DHT-200)",
+    "region": "China",
+    "description": "Shanghai Huayuan Group Carpet Co. commissioned Donghua University's School of Mechanical Engineering. 填补国内空白 (\"filled a domestic blank\") is the standard formula for: nobody in China could do this before. Before that, the trade press says, tufting technology was held by American and European firms (CMC, Tuftco, Cobble). The country with the oldest carpet tradition was the last major producer to build the machine.",
+    "themes": [
+      "Global diffusion of tufting",
+      "Machine tufting & Dalton"
+    ],
+    "tags": [
+      "machinery",
+      "headline",
+      "script idea"
+    ],
+    "status": "unverified",
+    "collection": "Tuft the World research brief: The Non-English Record",
+    "confidence": "solid",
+    "originalText": "上海华源集团地毯有限公司委托东华大学机械学院研制开发了DHT－200地毯簇绒机，在整机产品设计、制造生产上均填补了国内空白",
+    "language": "zh-Hans",
+    "translation": "Shanghai Huayuan Group Carpet Co. commissioned Donghua University's School of Mechanical Engineering to develop the DHT-200 carpet tufting machine, which filled a domestic blank in both whole-machine design and manufacturing.",
+    "publisher": "《纺织导报》 Textile Leader",
+    "date": "2004",
+    "dateStart": 2004
+  },
+  {
+    "id": "ner-cn-sun-yize",
+    "type": "finding",
+    "title": "Donghua team wins 2010 National Science and Technology Progress Award for digital tufting looms",
+    "region": "China",
+    "description": "Prof. 孙以泽 (Sun Yize), now an academician; 2nd Class award for digital tufted carpet loom equipment.",
+    "themes": [
+      "Global diffusion of tufting",
+      "Machine tufting & Dalton"
+    ],
+    "tags": [
+      "machinery"
+    ],
+    "status": "unverified",
+    "collection": "Tuft the World research brief: The Non-English Record",
+    "confidence": "solid",
+    "publisher": "东华大学 (Donghua University) official site",
+    "date": "2010",
+    "dateStart": 2010
+  },
+  {
+    "id": "ner-cn-imports-2025",
+    "type": "finding",
+    "title": "China still imports high-end tufting machines",
+    "region": "China",
+    "description": "Customs code HS 84479011 (簇绒地毯织机). March 2025 alone: Jiangsu imported one machine at US$665,441; Zhejiang one at US$471,660.",
+    "themes": [
+      "Global diffusion of tufting",
+      "Machine tufting & Dalton"
+    ],
+    "tags": [
+      "machinery",
+      "trade data"
+    ],
+    "status": "unverified",
+    "collection": "Tuft the World research brief: The Non-English Record",
+    "confidence": "solid",
+    "publisher": "Chinese customs data",
+    "date": "March 2025",
+    "dateStart": 2025,
+    "identifier": "HS 84479011"
+  },
+  {
+    "id": "ner-cn-patents",
+    "type": "patent",
+    "title": "The significant tufting-machine patents filed in China are foreign",
+    "region": "China",
+    "description": "CN113584750A (Card-Monroe Corp, US, filed 2017); CN1030783C (Norddeutsche Faserwerke, Germany, 1992). The 1990s Chinese carpet patents are about improving hand looms.",
+    "themes": [
+      "Global diffusion of tufting",
+      "Machine tufting & Dalton"
+    ],
+    "tags": [
+      "machinery",
+      "patents"
+    ],
+    "status": "unverified",
+    "collection": "Tuft the World research brief: The Non-English Record",
+    "confidence": "solid",
+    "publisher": "Chinese patent records",
+    "sourceUrl": "https://patents.google.com/patent/CN113584750A/en",
+    "date": "1992–2017",
+    "dateStart": 1992,
+    "dateEnd": 2017
+  },
+  {
+    "id": "ner-cn-tibet-1860",
+    "type": "finding",
+    "title": "The Beijing carpet trade begins in 1860 with a Tibetan lama, not Persia",
+    "region": "China",
+    "description": "A lama brought carpets to Beijing for the Xianfeng Emperor and set up production at 报国寺 (Baoguo Temple) near 广安门, founding the 「东门法」 and 「西门法」 (Eastern Gate and Western Gate) methods. Popular history, widely repeated.",
+    "themes": [
+      "Global diffusion of tufting",
+      "Woven carpet"
+    ],
+    "tags": [
+      "origins",
+      "script idea"
+    ],
+    "status": "unverified",
+    "collection": "Tuft the World research brief: The Non-English Record",
+    "confidence": "suggestive",
+    "date": "1860",
+    "dateStart": 1860
+  },
+  {
+    "id": "ner-cn-palace-carpet",
+    "type": "finding",
+    "title": "Beijing palace carpet weaving: state-listed heritage \"in danger of being lost\"",
+    "region": "China",
+    "description": "Western Han origin from the Western Regions; mature by the Tang. 1900 gold medal at the Paris Exposition; 1920: 354 workshops; 1956: Beijing No. 1 Carpet Factory (joint state-private).",
+    "themes": [
+      "Global diffusion of tufting",
+      "Woven carpet"
+    ],
+    "tags": [
+      "heritage"
+    ],
+    "status": "unverified",
+    "collection": "Tuft the World research brief: The Non-English Record",
+    "confidence": "solid",
+    "originalText": "织毯技术西汉时由西域传入我国，到唐代，中原地区的地毯织造已大致成熟 … 后继乏人，织造技艺面临失传的危险",
+    "language": "zh-Hans",
+    "translation": "Carpet weaving entered China from the Western Regions in the Western Han; by the Tang, weaving in the Central Plains was largely mature … No successors; the technique faces the danger of being lost.",
+    "publisher": "中国非物质文化遗产网 (state intangible heritage registry)"
+  },
+  {
+    "id": "ner-cn-beijing-export",
+    "type": "finding",
+    "title": "Beijing's 1920s export boom was run by American merchants",
+    "region": "China",
+    "description": "1920: 354 factories, ~5,000 workers. 1926: exports peak at 115 times 1912. F. C. Fette and A. Shoemaker dominated; Fette and merchant 李立轩 founded 仰经地毯厂, ~1/3 of output by 1924 with 1,200+ workers. Labour: 2–3 yuan a month, 9–16 hour days, apprentices unpaid and beaten.",
+    "themes": [
+      "Global diffusion of tufting",
+      "Woven carpet"
+    ],
+    "tags": [
+      "labour",
+      "export"
+    ],
+    "status": "unverified",
+    "collection": "Tuft the World research brief: The Non-English Record",
+    "confidence": "suggestive",
+    "publisher": "Popular history column",
+    "date": "1912–1926",
+    "dateStart": 1912,
+    "dateEnd": 1926
+  },
+  {
+    "id": "ner-cn-tianjin",
+    "type": "finding",
+    "title": "Tianjin: 70–80% of China's carpet exports, killed by real estate",
+    "region": "China",
+    "description": "1930s: 303 factories and workshops, 2,749 looms, 11,568 workers. The 风船 (\"sailing ship\") brand; gold medals at Leipzig 1965 and 1986. After the 1990s, urban development displaced the major factories.",
+    "themes": [
+      "Global diffusion of tufting",
+      "Woven carpet"
+    ],
+    "tags": [
+      "export",
+      "decline"
+    ],
+    "status": "unverified",
+    "collection": "Tuft the World research brief: The Non-English Record",
+    "confidence": "suggestive",
+    "originalText": "1990年代后…城市发展使主要工厂迁移",
+    "language": "zh-Hans",
+    "translation": "After the 1990s… urban development displaced the major factories.",
+    "publisher": "天津日报 (Tianjin Daily) and trade sources",
+    "date": "1930s–1990s",
+    "dateStart": 1930,
+    "dateEnd": 1999
+  },
+  {
+    "id": "ner-cn-terminology",
+    "type": "finding",
+    "title": "Chinese tufting vocabulary",
+    "region": "China",
+    "description": "簇绒 tufting (generic) · 簇绒机 industrial tufting machine · 簇绒枪 tufting gun (HK/Cantonese) · 枪刺/刺枪 \"gun-stab\", the everyday trade word for hand-tufting · 手工枪刺地毯 hand gun-tufted carpet · 手工打结 hand-knotted · 机织 machine-woven (威尔顿 Wilton, 阿克明斯特 Axminster) · 针刺 needle-punched · 栽绒 \"planted pile\" (old term for knotted pile) · 地毯/地氈 mainland/HK forms · 戳戳绣/戳戳秀 \"poke-poke\", the social-media hobby name.",
+    "themes": [
+      "Global diffusion of tufting",
+      "Hand-tufting tools & the gun"
+    ],
+    "tags": [
+      "glossary"
+    ],
+    "status": "unverified",
+    "collection": "Tuft the World research brief: The Non-English Record",
+    "language": "zh-Hans"
+  },
+  {
+    "id": "ner-cn-handmade-label",
+    "type": "finding",
+    "title": "\"Hand-tufted\" sells as \"handmade\" in Chinese too",
+    "region": "China",
+    "description": "Marketing drops 胶背 (\"glue-back\") and sells 手工枪刺地毯, so consumers hear 手工 (\"handmade\") and infer hand-knotted. Identical to what \"hand-tufted\" does in English.",
+    "themes": [
+      "Global diffusion of tufting",
+      "Hand-tufting tools & the gun"
+    ],
+    "tags": [
+      "marketing"
+    ],
+    "status": "unverified",
+    "collection": "Tuft the World research brief: The Non-English Record"
+  },
+  {
+    "id": "ner-cn-cuihuangkou",
+    "type": "finding",
+    "title": "Cuihuangkou, Tianjin: the Dalton of China that almost no American has heard of",
+    "region": "China",
+    "description": "Officially named with Dalton and Gaziantep as one of the world's three great carpet clusters. Under 100 km², ~50,000 residents, 1,200+ carpet firms, nearly half of national output.",
+    "themes": [
+      "Global diffusion of tufting",
+      "Machine tufting & Dalton"
+    ],
+    "tags": [
+      "cluster",
+      "script idea"
+    ],
+    "status": "unverified",
+    "collection": "Tuft the World research brief: The Non-English Record",
+    "confidence": "solid",
+    "originalText": "国内每十张地毯，八张来自崔黄口",
+    "language": "zh-Hans",
+    "translation": "Eight of every ten carpets in China come from Cuihuangkou.",
+    "place": "Cuihuangkou (崔黄口镇), Tianjin"
+  },
+  {
+    "id": "ner-cn-exports-iraq",
+    "type": "finding",
+    "title": "China is the world's #1 carpet exporter, and its biggest customer is Iraq",
+    "region": "China",
+    "description": "23.5% of world share (2023). Tianjin, Jan–Oct 2024: Iraq 19.6%, USA 17.1%, Malaysia 11.2%.",
+    "themes": [
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "trade data",
+      "script idea"
+    ],
+    "status": "unverified",
+    "collection": "Tuft the World research brief: The Non-English Record",
+    "confidence": "solid",
+    "publisher": "Trade statistics",
+    "date": "2023–2024",
+    "dateStart": 2023,
+    "dateEnd": 2024
+  },
+  {
+    "id": "ner-cn-heat-transfer",
+    "type": "finding",
+    "title": "What killed Chinese hand-weaving was heat-transfer printing, not tufting",
+    "region": "China",
+    "description": "The Chinese arc runs hand → gun → machine → printing (热转印).",
+    "themes": [
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "decline",
+      "script idea"
+    ],
+    "status": "unverified",
+    "collection": "Tuft the World research brief: The Non-English Record",
+    "confidence": "solid",
+    "originalText": "现在我们一个月生产五六十万平米，以前得干10年",
+    "language": "zh-Hans",
+    "translation": "Now we produce 500,000–600,000 m² a month; before, that took ten years."
+  },
+  {
+    "id": "ner-cn-ningxia",
+    "type": "finding",
+    "title": "Ningxia carpets are over half of the Palace Museum's imperial carpets",
+    "region": "China",
+    "description": "Of the 1,000+ carpets in the Palace Museum collection, Ningxia carpets are more than 50%.",
+    "themes": [
+      "Global diffusion of tufting",
+      "Woven carpet"
+    ],
+    "tags": [
+      "collections"
+    ],
+    "status": "unverified",
+    "collection": "Tuft the World research brief: The Non-English Record",
+    "confidence": "solid",
+    "publisher": "State heritage registry"
+  },
+  {
+    "id": "ner-cn-pokepoke",
+    "type": "finding",
+    "title": "The tufting gun came back to mainland China as a TikTok trend: 戳戳秀, \"poke-poke\"",
+    "region": "China",
+    "description": "Invented in Hong Kong in 1973, the gun re-entered the mainland around 2021 as an imported Western social-media craze.",
+    "themes": [
+      "Global diffusion of tufting",
+      "Hand-tufting tools & the gun"
+    ],
+    "tags": [
+      "hobby revival",
+      "script idea"
+    ],
+    "status": "unverified",
+    "collection": "Tuft the World research brief: The Non-English Record",
+    "confidence": "solid",
+    "originalText": "一个月前在抖音上看到有人玩戳戳秀，觉得确实解压，立刻开起铺子",
+    "language": "zh-Hans",
+    "translation": "A month ago I saw people doing poke-poke on Douyin, thought it really relieved stress, and immediately opened a shop. (Chengdu shop owner)",
+    "date": "c. 2021",
+    "dateStart": 2021
+  },
+  {
+    "id": "ner-cn-knotters-descendant",
+    "type": "finding",
+    "title": "Chinese hand-knotters call machine carpet their own descendant",
+    "region": "China",
+    "description": "A far more generous framing than the Western \"machines destroyed the craft\".",
+    "themes": [
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "historiography"
+    ],
+    "status": "unverified",
+    "collection": "Tuft the World research brief: The Non-English Record",
+    "confidence": "suggestive",
+    "originalText": "现代机械地毯技术是从手工打结技术演化而来",
+    "language": "zh-Hans",
+    "translation": "Modern machine carpet technology evolved out of hand-knotting."
+  },
+  {
+    "id": "ner-hk-taiping-needle",
+    "type": "finding",
+    "title": "Tai Ping's tufting tool drew on both the American machine and domestic hand-tufting tools",
+    "region": "Hong Kong",
+    "description": "General manager Yip Yuen-cheung (Anthony Yeh), an engineer, developed a new cut-pile tufting needle. The Chinese text names domestic hand-tufting tools as a source, a link from hand tools like the Susan Burr to the Hong Kong gun that the English version doesn't make explicit.",
+    "themes": [
+      "Global diffusion of tufting",
+      "Hand-tufting tools & the gun"
+    ],
+    "tags": [
+      "priority",
+      "Tai Ping",
+      "tool lineage",
+      "script idea"
+    ],
+    "status": "unverified",
+    "collection": "Tuft the World research brief: The Non-English Record",
+    "confidence": "solid",
+    "originalText": "工程師出身的太平總經理葉元章參考了美國用單針衣車造地氈的方法和家用簇絨工具，再加點創新的工程思維，開發了新的割絨織針。",
+    "language": "zh-Hant",
+    "translation": "Tai Ping's general manager Yip Yuen-cheung, trained as an engineer, referred to the American method of making carpet with a single-needle sewing machine and to domestic hand-tufting tools, added some innovative engineering thinking, and developed a new cut-pile tufting needle.",
+    "publisher": "Hong Kong Heritage Project (Kadoorie family archive)",
+    "sourceUrl": "https://www.hongkongheritage.org/"
+  },
+  {
+    "id": "ner-hk-taiping-1973",
+    "type": "finding",
+    "title": "1973: Tai Ping motorises the tufting gun",
+    "region": "Hong Kong",
+    "description": "The handheld tufting gun, powered and lightened.",
+    "themes": [
+      "Global diffusion of tufting",
+      "Hand-tufting tools & the gun"
+    ],
+    "tags": [
+      "priority",
+      "Tai Ping",
+      "tufting gun"
+    ],
+    "status": "unverified",
+    "collection": "Tuft the World research brief: The Non-English Record",
+    "confidence": "solid",
+    "originalText": "1973年為簇絨槍裝上摩打，並且減輕重量。",
+    "language": "zh-Hant",
+    "translation": "In 1973 a motor was fitted to the tufting gun, and its weight was reduced.",
+    "publisher": "Hong Kong Heritage Project",
+    "sourceUrl": "https://www.hongkongheritage.org/",
+    "date": "1973",
+    "dateStart": 1973
+  },
+  {
+    "id": "ner-hk-taiping-1992",
+    "type": "finding",
+    "title": "July 1992: Tai Ping moves all carpet production to Nanhai, Guangdong",
+    "region": "Hong Kong",
+    "description": "",
+    "themes": [
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "Tai Ping"
+    ],
+    "status": "unverified",
+    "collection": "Tuft the World research brief: The Non-English Record",
+    "confidence": "solid",
+    "originalText": "1992年7月，所有地氈生產遷往南海",
+    "language": "zh-Hant",
+    "translation": "In July 1992 all carpet production moved to Nanhai.",
+    "publisher": "Hong Kong Heritage Project",
+    "sourceUrl": "https://www.hongkongheritage.org/",
+    "date": "1992",
+    "dateStart": 1992
+  },
+  {
+    "id": "ner-in-date-gap",
+    "type": "finding",
+    "title": "No sourced date exists for hand-tufting's arrival in India",
+    "region": "India",
+    "description": "Not a search failure. Checked and empty: Shodhganga (Bhadohi chapter mentions \"tufted guns\", no date); IICT Bhadohi papers; Carpet Export Promotion Council history; National Handicrafts Policy Report; Harvard FXB \"Tainted Carpets\"; CUTS International.",
+    "themes": [
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "gap",
+      "script idea"
+    ],
+    "status": "unverified",
+    "collection": "Tuft the World research brief: The Non-English Record",
+    "confidence": "unverified"
+  },
+  {
+    "id": "ner-in-jain",
+    "type": "finding",
+    "title": "\"This technique came after India achieved independence\"",
+    "region": "India",
+    "description": "Best sourced statement found anywhere, but uncited in its journal.",
+    "themes": [
+      "Global diffusion of tufting"
+    ],
+    "tags": [],
+    "status": "unverified",
+    "collection": "Tuft the World research brief: The Non-English Record",
+    "confidence": "suggestive",
+    "originalText": "In India, this technique came after the India achieved independence. This was the innovation technique which was introduced in this industry for making the production faster.",
+    "language": "en",
+    "publisher": "Pranshi Jain, MITS Gwalior, IJRG",
+    "dateStart": 1947
+  },
+  {
+    "id": "ner-in-hindi-wiki",
+    "type": "finding",
+    "title": "Hindi Wikipedia: the tufting machine was invented in the southern United States after WWII",
+    "region": "India",
+    "description": "Independent confirmation of the Western-origin account in Hindi.",
+    "themes": [
+      "Global diffusion of tufting"
+    ],
+    "tags": [],
+    "status": "unverified",
+    "collection": "Tuft the World research brief: The Non-English Record",
+    "confidence": "solid",
+    "originalText": "द्वितीय विश्वयुद्ध के कुछ बाद ही संयुक्त राष्ट्र (अमरीका) के दक्षिणी भाग में सिलाई द्वारा कालीन बनाने की मशीन का आविष्कार हुआ। इनसे 'गुच्छित' कालीन बनते हैं",
+    "language": "hi",
+    "translation": "Shortly after the Second World War, in the southern part of the United States, the machine for making carpets by stitching was invented. These produce 'tufted' carpets.",
+    "publisher": "Hindi Wikipedia"
+  },
+  {
+    "id": "ner-in-crossover",
+    "type": "finding",
+    "title": "Hand-tufting overtook hand-knotting in India around 1995–2005",
+    "region": "India",
+    "description": "Exporter Jabir Ansari, Bhadohi. The only construction-split figure found anywhere: hand-knotted is now ₹3,000 crore of a ₹17,000 crore market, against up to 80% in the 1990s; weaver out-migration began in 2000.",
+    "themes": [
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "dating anchor",
+      "trade data"
+    ],
+    "status": "unverified",
+    "collection": "Tuft the World research brief: The Non-English Record",
+    "confidence": "suggestive",
+    "originalText": "हस्तनिर्मित कालीन का बाजार मौजूदा कुल 17000 करोड़ मे से तीन हजार करोड़ का रह गया है। जबकि 1990 के दशक में यह 80 प्रतिशत तक होती थी। … वर्ष 2000 से बुनकरों का पलायन शुरू हो गया।",
+    "language": "hi",
+    "translation": "The hand-knotted carpet market is now only ₹3,000 crore out of ₹17,000 crore total, whereas in the 1990s it was as much as 80 percent. … From the year 2000, weaver out-migration began.",
+    "publisher": "Amar Ujala, Bhadohi desk, 15 Feb 2026",
+    "date": "1995–2005",
+    "dateStart": 1995,
+    "dateEnd": 2005
+  },
+  {
+    "id": "ner-in-panipat-migration",
+    "type": "finding",
+    "title": "Panipat's carpet skill came from Bhadohi-Mirzapur, not from Partition",
+    "region": "India",
+    "description": "The Partition story is real for weaving generally (weavers from Sindh, Jhang and Multan arrived in 1947), but the carpet-specific migration runs east to west.",
+    "themes": [
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "migration"
+    ],
+    "status": "unverified",
+    "collection": "Tuft the World research brief: The Non-English Record",
+    "confidence": "suggestive",
+    "originalText": "The urbanisation of this industry along with its export worthiness has seen the spread of this industry to Panipat in the state of Haryana, where the weavers migrated from Bhadohi-Mirzapur.",
+    "language": "en",
+    "publisher": "CUTS International",
+    "place": "Panipat, Haryana"
+  },
+  {
+    "id": "ner-in-panipat-recycling",
+    "type": "finding",
+    "title": "Panipat: the world's largest textile-recycling cluster became a rug town",
+    "region": "India",
+    "description": "~25 years old. 30 lakh kg of recycled yarn a day, ~200 spinning mills, ~70,000 workers (The Tribune, 2025); ₹7,000 crore of carpets exported a year (Amar Ujala, 2023). The cheap tufted rug and the recycled-fibre industry are the same story.",
+    "themes": [
+      "Global diffusion of tufting",
+      "Yarn & materials"
+    ],
+    "tags": [
+      "recycling",
+      "script idea"
+    ],
+    "status": "unverified",
+    "collection": "Tuft the World research brief: The Non-English Record",
+    "confidence": "suggestive",
+    "publisher": "The Tribune (2025); Amar Ujala (2023)",
+    "dateStart": 2000,
+    "place": "Panipat, Haryana"
+  },
+  {
+    "id": "ner-in-unpowered-tool",
+    "type": "finding",
+    "title": "The common Indian tufting tool is unpowered and costs about ₹100",
+    "region": "India",
+    "description": "Two independent non-commercial sources. CUTS International: \"a tufting machine, which resembles a pair of large scissors… costs around INR 100\" (~US$1.20). Harvard FXB / Kara: \"a screwdriver-shaped, hand-operated 'gun'\".",
+    "themes": [
+      "Global diffusion of tufting",
+      "Hand-tufting tools & the gun"
+    ],
+    "tags": [
+      "hand tools"
+    ],
+    "status": "unverified",
+    "collection": "Tuft the World research brief: The Non-English Record",
+    "confidence": "solid",
+    "publisher": "CUTS International; Harvard FXB (Siddharth Kara)"
+  },
+  {
+    "id": "ner-in-iict-syllabus",
+    "type": "finding",
+    "title": "IICT Bhadohi teaches hand and electric gun tufting as separate skills",
+    "region": "India",
+    "description": "\"Practice of tufting using hand & electric gun\" (ECT-551 practical); \"tufting equipments used e.g. (tufting frame, tufting gun etc.) Schortz hand tufted machine\". The manual tool is taught as first-class technique.",
+    "themes": [
+      "Global diffusion of tufting",
+      "Hand-tufting tools & the gun"
+    ],
+    "tags": [
+      "education",
+      "hand tools"
+    ],
+    "status": "unverified",
+    "collection": "Tuft the World research brief: The Non-English Record",
+    "confidence": "solid",
+    "publisher": "Indian Institute of Carpet Technology syllabus (Government of India)"
+  },
+  {
+    "id": "ner-in-sheru",
+    "type": "tool",
+    "title": "India now exports tufting guns: Sheru Brothers, Meerut (est. 1965)",
+    "region": "India",
+    "description": "Electric hand tufting guns, ~₹9,000, 300 W, 1425 rpm, exported to Egypt and South Africa.",
+    "themes": [
+      "Global diffusion of tufting",
+      "Hand-tufting tools & the gun"
+    ],
+    "tags": [
+      "tufting gun",
+      "manufacturer"
+    ],
+    "status": "unverified",
+    "collection": "Tuft the World research brief: The Non-English Record",
+    "confidence": "solid",
+    "dateStart": 1965,
+    "place": "Meerut"
+  },
+  {
+    "id": "ner-in-backing-patents",
+    "type": "finding",
+    "title": "India patents the backing, not the gun",
+    "region": "India",
+    "description": "IICT filed a patent for a new tufted-carpet backing technique; K. K. Goswami invented a backing technology called \"Snehabha\". No Indian tufting-gun patent found.",
+    "themes": [
+      "Global diffusion of tufting",
+      "Yarn & materials"
+    ],
+    "tags": [
+      "patents"
+    ],
+    "status": "unverified",
+    "collection": "Tuft the World research brief: The Non-English Record",
+    "confidence": "solid"
+  },
+  {
+    "id": "ner-in-vocabulary",
+    "type": "finding",
+    "title": "India has a word for tufted carpet, गुच्छित कालीन, and the industry has never used it",
+    "region": "India",
+    "description": "From गुच्छ, \"tuft/cluster\". It appears on Hindi Wikipedia and almost nowhere else. The trade writes English loanwords in Devanagari: हैंड टफ्टेड, हैंडनाॅटेड, टफ्टिंग गन. Compare the lexically rich old crafts: दरी, गलीचा, तालीम, रफ़ूगर, बुनकर. The missing vocabulary is evidence of a late, foreign, ready-made technology transfer.",
+    "themes": [
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "glossary",
+      "script idea"
+    ],
+    "status": "unverified",
+    "collection": "Tuft the World research brief: The Non-English Record",
+    "confidence": "suggestive",
+    "originalText": "गुच्छित कालीन",
+    "language": "hi",
+    "translation": "guchchhit kālīn: \"tufted carpet\""
+  },
+  {
+    "id": "ner-in-guinness-2025",
+    "type": "finding",
+    "title": "The world's largest handcrafted carpet is hand-tufted (Bhadohi, 2025)",
+    "region": "India",
+    "description": "Guinness record, made for a mosque in Kazakhstan.",
+    "themes": [
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "script idea"
+    ],
+    "status": "unverified",
+    "collection": "Tuft the World research brief: The Non-English Record",
+    "confidence": "suggestive",
+    "publisher": "Aaj Tak, 8 Oct 2025",
+    "date": "2025",
+    "dateStart": 2025
+  },
+  {
+    "id": "ner-in-colonial-bhadohi",
+    "type": "finding",
+    "title": "Bhadohi's \"traditional\" hand-knotted industry was built by Europeans in the late 19th century",
+    "region": "India",
+    "description": "Brownford (M/s E. Hill & Co., Khamaria); A. Tellery (son Otto became first president of the All India Carpet Manufacturers Association); Oakley, Bowden and Taylor (Obeetee, 1920). The Mughal lineage and the commercial industry are ~300 years apart.",
+    "themes": [
+      "Global diffusion of tufting",
+      "Woven carpet"
+    ],
+    "tags": [
+      "colonial",
+      "historiography"
+    ],
+    "status": "unverified",
+    "collection": "Tuft the World research brief: The Non-English Record",
+    "confidence": "solid",
+    "publisher": "Shodhganga PhD thesis",
+    "date": "late 19th century–1920",
+    "dateStart": 1880,
+    "dateEnd": 1920
+  },
+  {
+    "id": "ner-in-tariff-2025",
+    "type": "finding",
+    "title": "A 50% US tariff has brought Bhadohi's American business to the brink (2025)",
+    "region": "India",
+    "description": "US buyers at the Oct 2025 Bhadohi fair: 46, down from 80–100.",
+    "themes": [
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "trade"
+    ],
+    "status": "unverified",
+    "collection": "Tuft the World research brief: The Non-English Record",
+    "confidence": "suggestive",
+    "originalText": "वर्तमान में 50 प्रतिशत टैरिफ से कालीन उद्यमियों का अमेरिकी व्यवसाय लगभग बंदी के कगार पर पहुंच गया है।",
+    "language": "hi",
+    "translation": "At present, the 50 percent tariff has brought carpet entrepreneurs' American business almost to the brink of shutdown.",
+    "publisher": "Bhadohi trade press",
+    "date": "2025",
+    "dateStart": 2025
+  },
+  {
+    "id": "ner-jp-suminoe-1954",
+    "type": "finding",
+    "title": "1954: Japan imports its first mass-production tufting machine from America (Suminoe)",
+    "region": "Japan",
+    "description": "The machine's maker is not named anywhere (couldn't verify). Underlying source: Suminoe's 2013 centenary volume 『住江物語り』. Distinguish: 1954 machine imported · 1956 commercial tufted production begins · 1957 Tufton launched.",
+    "themes": [
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "dating anchor",
+      "priority"
+    ],
+    "status": "unverified",
+    "collection": "Tuft the World research brief: The Non-English Record",
+    "confidence": "solid",
+    "originalText": "1954年（昭和29年）日本で初めて大量生産型タフティングカーペットマシンをアメリカから導入",
+    "language": "ja",
+    "translation": "1954 (Shōwa 29): introduced from America, for the first time in Japan, a mass-production-type tufting carpet machine.",
+    "publisher": "suminoe.co.jp corporate history",
+    "sourceUrl": "https://www.suminoe.co.jp/",
+    "date": "1954",
+    "dateStart": 1954
+  },
+  {
+    "id": "ner-jp-tufton-1957",
+    "type": "finding",
+    "title": "1957: Suminoe's Tufton brings carpet to the Japanese mass market",
+    "region": "Japan",
+    "description": "~¥9,900 per 4.5-mat unit.",
+    "themes": [
+      "Global diffusion of tufting"
+    ],
+    "tags": [],
+    "status": "unverified",
+    "collection": "Tuft the World research brief: The Non-English Record",
+    "confidence": "solid",
+    "originalText": "オーダーメイド生産からレディメイド生産に変わる転機となり、カーペットの大衆化をもたらす",
+    "language": "ja",
+    "translation": "The turning point from made-to-order to ready-made, bringing carpet to the mass market.",
+    "publisher": "suminoe.co.jp corporate history",
+    "date": "1957",
+    "dateStart": 1957
+  },
+  {
+    "id": "ner-jp-carpet-day",
+    "type": "finding",
+    "title": "Japan's Carpet Day, 1 November, marks the Emperor's 1956 visit to Suminoe",
+    "region": "Japan",
+    "description": "Commemorates 1 Nov 1956, when the Shōwa Emperor and Empress toured Suminoe's Sumiyoshi plant.",
+    "themes": [
+      "Global diffusion of tufting"
+    ],
+    "tags": [],
+    "status": "unverified",
+    "collection": "Tuft the World research brief: The Non-English Record",
+    "confidence": "suggestive",
+    "date": "1956",
+    "dateStart": 1956
+  },
+  {
+    "id": "ner-jp-slow-diffusion",
+    "type": "finding",
+    "title": "Japan's established weavers were the last to tuft",
+    "region": "Japan",
+    "description": "東リ (Toli) was a vinyl tile company through the 1950s–60s; its first carpet was a 1967 needlepunch joint venture with Teijin. 日本絨氈 (Nihon Jūtan, Sakai) installed its first Wilton loom in 1955 but a tufting machine only in 1981, a 26-year gap.",
+    "themes": [
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "outsiders pattern"
+    ],
+    "status": "unverified",
+    "collection": "Tuft the World research brief: The Non-English Record",
+    "confidence": "solid",
+    "date": "1955–1981",
+    "dateStart": 1955,
+    "dateEnd": 1981
+  },
+  {
+    "id": "ner-jp-dust-mite",
+    "type": "finding",
+    "title": "Japan's carpet industry was hit by a 1980s dust-mite panic",
+    "region": "Japan",
+    "description": "No US/UK counterpart. Tufted output fell 51,345 → 35,779 thousand m² (2009→2024); tufted is ~99% of Japanese output by area.",
+    "themes": [
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "decline",
+      "script idea"
+    ],
+    "status": "unverified",
+    "collection": "Tuft the World research brief: The Non-English Record",
+    "confidence": "solid",
+    "originalText": "1980年あたりから不当なダニ問題が湧き上がり",
+    "language": "ja",
+    "translation": "From around 1980 an unfair dust-mite problem arose.",
+    "date": "c. 1980",
+    "dateStart": 1980
+  },
+  {
+    "id": "ner-jp-sakai-dantsu",
+    "type": "finding",
+    "title": "Sakai dantsu (1831), and the \"dantsu king\" who went to America",
+    "region": "Japan",
+    "description": "Grandson 藤本荘太郎, the 緞通王 (\"dantsu king\"), 「渡米して海外への普及に努めた」 travelled to America to spread it abroad, seventy years before the tufting machine came the other way.",
+    "themes": [
+      "Global diffusion of tufting",
+      "Woven carpet"
+    ],
+    "tags": [
+      "script idea"
+    ],
+    "status": "unverified",
+    "collection": "Tuft the World research brief: The Non-English Record",
+    "confidence": "solid",
+    "originalText": "天保2年（1831年）堺の糸物商藤本庄左衛門が泉利兵衛に織らせて堺緞通として売り出したのが始め",
+    "language": "ja",
+    "translation": "It began in Tenpō 2 (1831) when the Sakai yarn merchant Fujimoto Shōzaemon had Izumi Rihei weave it and put it on sale as Sakai dantsu.",
+    "publisher": "City of Sakai",
+    "date": "1831",
+    "dateStart": 1831
+  },
+  {
+    "id": "ner-jp-nabeshima",
+    "type": "finding",
+    "title": "Nabeshima dantsu: a domain monopoly banned from public sale",
+    "region": "Japan",
+    "description": "Origin in the Genroku era (1688–1704). The third Saga lord 鍋島綱茂 granted a rice stipend to protect the technique, made it an official domain product, and banned sale to the general public.",
+    "themes": [
+      "Global diffusion of tufting",
+      "Woven carpet"
+    ],
+    "tags": [],
+    "status": "unverified",
+    "collection": "Tuft the World research brief: The Non-English Record",
+    "confidence": "solid",
+    "date": "1688–1704",
+    "dateStart": 1688,
+    "dateEnd": 1704
+  },
+  {
+    "id": "ner-jp-trade-body-1895",
+    "type": "finding",
+    "title": "Japan's tufting association descends from an 1895 hand-knotting guild",
+    "region": "Japan",
+    "description": "An unbroken institutional line from the Osaka Prefecture Dantsu Trade Association to the modern Japan Carpet Manufacturers' Association.",
+    "themes": [
+      "Global diffusion of tufting"
+    ],
+    "tags": [],
+    "status": "unverified",
+    "collection": "Tuft the World research brief: The Non-English Record",
+    "confidence": "solid",
+    "originalText": "1895年に設立された大阪府緞通同業組合を淵源としています",
+    "language": "ja",
+    "translation": "It originates in the Osaka Prefecture Dantsu Trade Association, founded in 1895.",
+    "date": "1895",
+    "dateStart": 1895
+  },
+  {
+    "id": "ner-jp-osumi",
+    "type": "article",
+    "title": "Ōsumi Tadashi, seven-part series on Japanese interiors (1995–2001), part 5: 「タフテッドカーペット／20世紀の軌跡」",
+    "region": "Japan",
+    "description": "Correction to an earlier citation: author is 大墨 正 (Ōsumi Tadashi), not \"Ōsumi Tadao\"; it is a two-page conference abstract. Part (1) covers periodisation and may be as useful. Free on J-Stage but blocked to automated fetching; one click in a browser.",
+    "themes": [
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "to chase",
+      "free online"
+    ],
+    "status": "unverified",
+    "collection": "Tuft the World research brief: The Non-English Record",
+    "publisher": "Japan Interior Society (J-Stage)",
+    "sourceUrl": "https://www.jstage.jst.go.jp/article/japaninteriorsociety/11/0/11_103/_pdf/-char/ja",
+    "date": "1995–2001",
+    "dateStart": 1995,
+    "dateEnd": 2001,
+    "creator": "大墨 正 (Ōsumi Tadashi)"
+  },
+  {
+    "id": "ner-jp-maruyama-1987",
+    "type": "article",
+    "title": "丸山孝雄「タフティング・マシンの変遷と今後の開発課題」(Past, Present and Future of Tufting Technology)",
+    "region": "Japan",
+    "description": "繊維学会誌 43(1), 1987, pp. P22–P27. A state-institute review of the evolution of the tufting machine (Osaka Prefectural Textile Research Institute, Sakai branch). Its sole reference is the 1981 Japan Carpet Association study-mission report.",
+    "themes": [
+      "Global diffusion of tufting",
+      "Machine tufting & Dalton"
+    ],
+    "tags": [
+      "to chase",
+      "machinery",
+      "free online"
+    ],
+    "status": "unverified",
+    "collection": "Tuft the World research brief: The Non-English Record",
+    "publisher": "繊維学会誌 (Journal of the Society of Fiber Science and Technology, Japan)",
+    "date": "1987",
+    "dateStart": 1987,
+    "creator": "丸山孝雄 (Maruyama Takao)"
+  },
+  {
+    "id": "ner-jp-study-missions",
+    "type": "archive",
+    "title": "Japan Carpet Association study-mission reports on the US and European carpet industries",
+    "region": "Japan",
+    "description": "『第10回欧米カーペット業界研修調査団報告書』 (1981) proves at least ten missions, 1960s–1981. An entirely untapped seam.",
+    "themes": [
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "to chase",
+      "untapped"
+    ],
+    "status": "unverified",
+    "collection": "Tuft the World research brief: The Non-English Record",
+    "publisher": "日本カーペット協会 (Japan Carpet Association)",
+    "date": "1960s–1981",
+    "dateStart": 1960,
+    "dateEnd": 1981
+  },
+  {
+    "id": "ner-jp-industry-history-2008",
+    "type": "book",
+    "title": "『日本カーペット工業史』 History of the Japanese Carpet Industry (2008)",
+    "region": "Japan",
+    "description": "The definitive Japanese-language source, from hand-woven dantsu to the present. ¥5,000 including shipping; order from the association, 06-6809-2868.",
+    "themes": [
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "to chase",
+      "buy",
+      "priority"
+    ],
+    "status": "unverified",
+    "collection": "Tuft the World research brief: The Non-English Record",
+    "originalText": "手織り緞通の時代から現代に至るまで、日本におけるカーペット工業の歴史をまとめた一冊",
+    "language": "ja",
+    "translation": "A volume covering the history of the carpet industry in Japan from the era of hand-woven dantsu to the present.",
+    "publisher": "日本カーペット工業組合 (Japan Carpet Manufacturers' Association)",
+    "date": "2008",
+    "dateStart": 2008,
+    "creator": "日本カーペット工業組合"
+  },
+  {
+    "id": "ner-de-outsiders-1959",
+    "type": "finding",
+    "title": "1959: German trade press says tufting is used \"only by outsiders\" and is breaking through",
+    "region": "Germany",
+    "description": "\"boden wand decke\" quoting its own September 1959 issue. Names the three German producers: Tuftex (Hameln), Tufton (Emsdetten), Dura Tufting GmbH (Fulda). Dura was founded three years earlier (→1956), ~DM 15 million turnover, planning to double, positioning itself as Europe's largest tufting operation. None of this appears in the Anglophone record.",
+    "themes": [
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "priority",
+      "outsiders pattern",
+      "script idea"
+    ],
+    "status": "unverified",
+    "collection": "Tuft the World research brief: The Non-English Record",
+    "confidence": "solid",
+    "originalText": "Offensichtlich befindet sich das Tuftingverfahren, das in Deutschland erst seit kurzer Zeit und bisher nur durch Außenseiter angewandt wurde, im Durchbruch",
+    "language": "de",
+    "translation": "Evidently the tufting process, which in Germany has been in use only for a short time and hitherto only by outsiders, is breaking through.",
+    "publisher": "boden wand decke (trade journal, founded 1954)",
+    "date": "1959",
+    "dateStart": 1959
+  },
+  {
+    "id": "ner-de-1956-mecheels",
+    "type": "book",
+    "title": "Mecheels, Vogler & Kurz, Kultur- & Industriegeschichte der Textilien (2009), p. 475",
+    "region": "Germany",
+    "description": "The printed source behind German Wikipedia's \"In Deutschland wurde 1956 mit der industriellen Fertigung von Tufting-Erzeugnissen begonnen\". Not online; p. 475 is one page to photograph.",
+    "themes": [
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "to chase",
+      "dating anchor"
+    ],
+    "status": "unverified",
+    "collection": "Tuft the World research brief: The Non-English Record",
+    "publisher": "Wachter GmbH, Bönnigheim",
+    "date": "2009",
+    "dateStart": 2009,
+    "creator": "Stefan Mecheels, Herbert Vogler, Josef Kurz",
+    "identifier": "ISBN 978-3-9812485-3-1"
+  },
+  {
+    "id": "ner-de-longlife-refuted",
+    "type": "finding",
+    "title": "REFUTED: \"Longlife, Nettetal, first nylon carpet, 1952\"",
+    "region": "Germany",
+    "description": "The German Wikipedia sentence carries no footnote; every other German page repeating it is a mirror. Do not repeat as fact. Even if true it would be a nylon first, not a tufting first. The firm is real (Longlife Teppichboden, Nettetal, in the old Niedieck plush-and-velvet district), so the shape is plausible; it just has no source.",
+    "themes": [
+      "Global diffusion of tufting",
+      "Nylon & synthetic fibers (DuPont)"
+    ],
+    "tags": [
+      "do not cite"
+    ],
+    "status": "unverified",
+    "collection": "Tuft the World research brief: The Non-English Record",
+    "confidence": "refuted",
+    "originalText": "Die heute verbreiteten Teppichböden aus Nylonfasern wurden erstmals 1952 von der Firma Longlife in Nettetal/Deutschland produziert, einer früheren Samtweberei.",
+    "language": "de",
+    "translation": "The nylon-fibre carpets common today were first produced in 1952 by the firm Longlife in Nettetal, Germany, a former velvet weaving mill.",
+    "publisher": "German Wikipedia (unsourced)",
+    "dateStart": 1952
+  },
+  {
+    "id": "ner-de-no-machines",
+    "type": "finding",
+    "title": "Germany tufted early but never built the machines",
+    "region": "Germany",
+    "description": "No German tufting-machine builder appears in any source found; German Wikipedia credits the machine lineage to the US/UK (Looper, the Cobble brothers, Card-Monroe). Germany's contribution is components: Groz-Beckert needles.",
+    "themes": [
+      "Global diffusion of tufting",
+      "Machine tufting & Dalton"
+    ],
+    "tags": [
+      "machinery"
+    ],
+    "status": "unverified",
+    "collection": "Tuft the World research brief: The Non-English Record",
+    "confidence": "suggestive"
+  },
+  {
+    "id": "ner-fr-balsan-1954",
+    "type": "finding",
+    "title": "France: Louis Balsan brings tufting back from the United States (1954)",
+    "region": "France",
+    "description": "The first tufted product was in carded wool (\"moquette en laine cardée\"); synthetics came later. Caveat: 1954 is when Balsan took over the firm; no French source dates the first machine or first metre.",
+    "themes": [
+      "Global diffusion of tufting"
+    ],
+    "tags": [],
+    "status": "unverified",
+    "collection": "Tuft the World research brief: The Non-English Record",
+    "confidence": "suggestive",
+    "originalText": "En 1954, Louis Balsan succède à son cousin François aux rênes de l'entreprise… il l'oriente vers un procédé nouveau qu'il rapporte des États-Unis : le tuftage",
+    "language": "fr",
+    "translation": "In 1954 Louis Balsan succeeded his cousin François at the head of the firm… steering it toward a new process he brought back from the United States: tufting.",
+    "publisher": "French industrial-heritage association",
+    "date": "1954",
+    "dateStart": 1954
+  },
+  {
+    "id": "ner-nl-genemuiden-1967",
+    "type": "finding",
+    "title": "Netherlands: tufting machines installed at Genemuiden in 1967",
+    "region": "Netherlands",
+    "description": "Dutch terms: uncut loops = bouclé-tapijt; cut = moquette-tapijt.",
+    "themes": [
+      "Global diffusion of tufting"
+    ],
+    "tags": [],
+    "status": "unverified",
+    "collection": "Tuft the World research brief: The Non-English Record",
+    "confidence": "solid",
+    "originalText": "In Genemuiden installeerde men daarom in 1967 tuftingmachines voor de productie van synthetische zachte vloerbedekking.",
+    "language": "nl",
+    "translation": "In Genemuiden, therefore, tufting machines were installed in 1967 for the production of synthetic soft floor covering.",
+    "publisher": "Rijksdienst voor het Cultureel Erfgoed (Dutch national heritage agency)",
+    "date": "1967",
+    "dateStart": 1967,
+    "place": "Genemuiden"
+  },
+  {
+    "id": "ner-be-gap",
+    "type": "finding",
+    "title": "Belgium: no source dates tufting's arrival in West Flanders",
+    "region": "Belgium",
+    "description": "Belgium is now a top-3 world exporter of tufted carpet, yet no Dutch-language source was found dating the start. A genuine gap.",
+    "themes": [
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "gap"
+    ],
+    "status": "unverified",
+    "collection": "Tuft the World research brief: The Non-English Record",
+    "confidence": "unverified"
+  },
+  {
+    "id": "ner-chase-tianjin-primary",
+    "type": "archive",
+    "title": "《天津地毯工業》 Republican-era Chinese primary source (scan)",
+    "region": "China",
+    "description": "Free on Wikimedia Commons, from the National Library of China. Blocked to automated fetching; one click in a browser.",
+    "themes": [
+      "Global diffusion of tufting",
+      "Woven carpet"
+    ],
+    "tags": [
+      "to chase",
+      "primary source",
+      "free online"
+    ],
+    "status": "unverified",
+    "collection": "Tuft the World research brief: The Non-English Record",
+    "publisher": "National Library of China via Wikimedia Commons"
+  },
+  {
+    "id": "ner-chase-sohu-series",
+    "type": "film",
+    "title": "「文献里的天津」之天津地毯故事 (Sohu archival documentary series)",
+    "region": "China",
+    "description": "Includes the German firm 鲁麟洋行, \"the earliest exporter of Chinese carpets\". Sohu blocks bots.",
+    "themes": [
+      "Global diffusion of tufting",
+      "Woven carpet"
+    ],
+    "tags": [
+      "to chase"
+    ],
+    "status": "unverified",
+    "collection": "Tuft the World research brief: The Non-English Record",
+    "publisher": "Sohu"
+  },
+  {
+    "id": "ner-chase-gazetteers",
+    "type": "archive",
+    "title": "Chinese provincial gazetteers (地方志) on the first tufting machine imports",
+    "region": "China",
+    "description": "《天津纺织工业志》, 《北京工业志·燕山石化志》, 《中国轻工业年鉴》 (early 1980s). These should name the first tufting machine imported into China, the vendor and the import approval. Print only, in Chinese libraries.",
+    "themes": [
+      "Global diffusion of tufting",
+      "Machine tufting & Dalton"
+    ],
+    "tags": [
+      "to chase",
+      "dating anchor"
+    ],
+    "status": "unverified",
+    "collection": "Tuft the World research brief: The Non-English Record"
+  },
+  {
+    "id": "ner-chase-cnki",
+    "type": "archive",
+    "title": "CNKI (知网) master's theses on the Tianjin carpet industry",
+    "region": "China",
+    "description": "Almost certainly hold the detailed local history. Needs institutional access.",
+    "themes": [
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "to chase"
+    ],
+    "status": "unverified",
+    "collection": "Tuft the World research brief: The Non-English Record",
+    "publisher": "CNKI",
+    "sourceUrl": "https://www.cnki.net/"
+  },
+  {
+    "id": "ner-chase-goswami",
+    "type": "book",
+    "title": "K. K. Goswami, Advances in Carpet Manufacture, 2nd ed., chapters 11–12",
+    "region": "India",
+    "description": "By the founder director of IICT Bhadohi. The most likely place a sourced Indian hand-tufting chronology exists. Paywalled (Elsevier/Woodhead).",
+    "themes": [
+      "Global diffusion of tufting",
+      "Hand-tufting tools & the gun"
+    ],
+    "tags": [
+      "to chase",
+      "priority"
+    ],
+    "status": "unverified",
+    "collection": "Tuft the World research brief: The Non-English Record",
+    "creator": "K. K. Goswami (ed.)",
+    "publisher": "Woodhead Publishing / Elsevier"
+  },
+  {
+    "id": "ttw-susan-burr",
+    "type": "tool",
+    "title": "Susan Burr hand tufting tool",
+    "institution": "Tuft the World (own collection)",
+    "description": "The hand tool in hand. The research brief places domestic hand-tufting tools like this one alongside the Dalton machine as sources for Tai Ping's 1973 Hong Kong tufting gun. Add maker, date, patent number and photographs.",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "own collection",
+      "add photos"
+    ],
+    "region": "United States",
     "status": "unverified"
   }
 ];

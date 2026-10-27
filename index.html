@@ -46,7 +46,7 @@
       <nav class="tabs" aria-label="Sections">
         <a class="tab" href="#browse" data-view="browse">Browse</a>
         <a class="tab" href="#timeline" data-view="timeline">Timeline</a>
-        <a class="tab" href="#compile" data-view="compile">Compile <span class="count-pill" id="list-count"></span></a>
+        <a class="tab" href="#compile" data-view="compile">Write <span class="count-pill" id="list-count"></span></a>
         <a class="tab" href="#discover" data-view="discover">Discover</a>
         <a class="tab" href="#sources" data-view="sources">Other archives</a>
       </nav>
@@ -91,7 +91,7 @@
           </div>
         </div>
       </div>
-      <p class="syntax">Try <button class="tip" data-q='"bed rug"'>"bed rug"</button> <button class="tip" data-q="year:1700-1850">year:1700-1850</button> <button class="tip" data-q="type:book">type:book</button> <button class="tip" data-q="inst:hagley">inst:hagley</button> <button class="tip" data-q="flag:fellowship">flag:fellowship</button> <button class="tip" data-q="tufted -machine">tufted -machine</button></p>
+      <p class="syntax">Try <button class="tip" data-q='"bed rug"'>"bed rug"</button> <button class="tip" data-q="year:1700-1850">year:1700-1850</button> <button class="tip" data-q="region:japan">region:japan</button> <button class="tip" data-q="conf:solid">conf:solid</button> <button class="tip" data-q="tag:&quot;to chase&quot;">tag:"to chase"</button> <button class="tip" data-q="inst:hagley">inst:hagley</button> <button class="tip" data-q="tufting gun">tufting gun</button></p>
 
       <div class="browse">
         <aside class="facets" id="facets" aria-label="Filters"></aside>
@@ -119,26 +119,32 @@
     <section class="view" id="view-compile" hidden>
       <header class="view-head row">
         <div class="list-pick">
-          <label class="vh" for="list-select">Compilation</label>
+          <span class="write-kicker" id="write-kicker"></span>
+          <label class="vh" for="list-select">Chapter or list</label>
           <select id="list-select" class="h1-select"></select>
           <div class="list-actions">
+            <button class="link-btn" id="btn-new-chapter">New chapter</button>
             <button class="link-btn" id="btn-new-list">New list</button>
             <button class="link-btn" id="btn-rename-list">Rename</button>
+            <button class="link-btn" id="btn-chapter-up">Move earlier</button>
+            <button class="link-btn" id="btn-chapter-down">Move later</button>
             <button class="link-btn danger" id="btn-delete-list">Delete</button>
           </div>
         </div>
         <div class="export-row">
-          <span class="export-label">Export</span>
+          <span class="export-label">This page as</span>
           <button class="btn" data-cexport="md">Markdown</button>
           <button class="btn" data-cexport="csv">CSV</button>
           <button class="btn" data-cexport="json">JSON</button>
-          <button class="btn primary" id="btn-print"><svg class="ic"><use href="#i-print"/></svg>Print or PDF</button>
+          <button class="btn" id="btn-print"><svg class="ic"><use href="#i-print"/></svg>Print or PDF</button>
+          <button class="btn primary" id="btn-manuscript"><svg class="ic"><use href="#i-download"/></svg>Whole manuscript</button>
         </div>
       </header>
       <h2 id="print-title" class="print-only"></h2>
       <div id="print-intro" class="print-only"></div>
-      <label class="intro-label" for="list-intro">Introduction</label>
-      <textarea id="list-intro" class="list-intro" placeholder="Your working argument for this list, e.g. a draft research statement. Saved as you type."></textarea>
+      <div class="intro-head"><label class="intro-label" id="intro-label" for="list-intro">Draft</label><span class="saved" id="word-count"></span></div>
+      <textarea id="list-intro" class="list-intro"></textarea>
+      <h2 class="evidence-label" id="evidence-label">Evidence</h2>
       <div id="compile-items"></div>
     </section>
 
@@ -216,7 +222,20 @@
         <label class="span2">Techniques <input name="techniques" placeholder="hooked, hand-tufted, candlewick"><small>Separate with commas</small></label>
         <label class="span2">Research themes <input name="themes" list="dl-themes"><small>Separate with commas</small></label>
         <label class="span2">Tags <input name="tags"><small>Separate with commas</small></label>
+        <label>Country or region <input name="region" list="dl-region" placeholder="Japan"></label>
+        <label>Confidence
+          <select name="confidence">
+            <option value="">Not graded</option>
+            <option value="solid">Solid</option>
+            <option value="suggestive">Suggestive</option>
+            <option value="unverified">Couldn't verify</option>
+            <option value="refuted">Refuted</option>
+          </select>
+        </label>
         <label class="span2">Description <textarea name="description" rows="4"></textarea></label>
+        <label class="span2">Quotation in the original language <textarea name="originalText" rows="2"></textarea></label>
+        <label>Language code <input name="language" placeholder="ja, zh-Hans, hi, de…"></label>
+        <label class="span2">Translation <textarea name="translation" rows="2"></textarea></label>
         <label class="span2">Source link <input name="sourceUrl" type="url" placeholder="https://"><small>The museum or library page. The image lookup reads it to find the photo.</small></label>
         <label class="span2">Image link <input name="image" placeholder="https://… or images/my-photo.jpg"></label>
         <label class="span2">Image credit <input name="imageCredit" placeholder="Winterthur Museum"></label>
@@ -225,6 +244,7 @@
       </div>
       <datalist id="dl-inst"></datalist>
       <datalist id="dl-themes"></datalist>
+      <datalist id="dl-region"></datalist>
       <footer class="dialog-foot">
         <button type="button" class="link-btn danger" id="btn-delete-item" hidden>Delete item</button>
         <span class="spacer"></span>
@@ -239,6 +259,7 @@
 
   <script src="data/items.js"></script>
   <script src="data/sources.js"></script>
+  <script src="data/chapters.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>

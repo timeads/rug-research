@@ -30,3 +30,8 @@ One family, **Archivo** (variable width and weight). The wordmark uses the expan
 
 ## Images
 Images are linked from the holding institution, never copied, with a credit line in the detail view. `scripts/fetch-images.mjs` (run by GitHub Actions) finds them; set `"imageSource": "rejected"` on a record to stop it re-attaching an image you've ruled out.
+
+## Findings and writing
+- **Finding cards** show the original-language quotation on the plate, in the source's own script with `lang` set, so a Japanese or Hindi source looks like itself. The detail panel sets the quote above its translation.
+- **Confidence** is a small coloured pill: moss = Solid, ochre = Suggestive, grey = Couldn't verify, red = Refuted. It's also a filter.
+- **Write** shows the chapter as a heading (a select, to switch chapters), a draft area at a comfortable 78-character measure with a live word count, then numbered evidence in the chapter's order.

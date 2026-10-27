@@ -23,6 +23,7 @@
     "film":          { label: "Film / audio", plural: "Film & audio" },
     "oral-history":  { label: "Oral history", plural: "Oral histories" },
     "event":         { label: "Event / milestone", plural: "Events & milestones" },
+    "finding":       { label: "Finding", plural: "Research findings" },
     "other":         { label: "Other", plural: "Other" }
   };
 
@@ -35,8 +36,18 @@
   ];
   const FLAG_BY_ID = Object.fromEntries(FLAGS.map(f => [f.id, f]));
 
+  // Confidence grades for findings, as used in the research briefs.
+  const CONFIDENCE = {
+    solid:      { label: "Solid", hint: "Primary or authoritative source" },
+    suggestive: { label: "Suggestive", hint: "Plausible but secondary, popular or uncited" },
+    unverified: { label: "Couldn't verify", hint: "Searched and not found" },
+    refuted:    { label: "Refuted", hint: "Checked and found unsupported. Do not cite as fact" }
+  };
+  const confBadge = it => it.confidence && CONFIDENCE[it.confidence] ? `<span class="conf conf-${it.confidence}" title="${esc(CONFIDENCE[it.confidence].hint)}">${esc(CONFIDENCE[it.confidence].label)}</span>` : "";
+
+  const SEED_CHAPTERS = window.RUG_CHAPTERS || [];
   const DEFAULT_THEMES = [
-    "Early tufting: bed rugs & needlework pile", "Hooked & handmade rugs", "Woven carpet", "Chenille & candlewick", "Machine tufting & Dalton",
+    "Early tufting: bed rugs & needlework pile", "Global diffusion of tufting", "Hand-tufting tools & the gun", "Hooked & handmade rugs", "Woven carpet", "Chenille & candlewick", "Machine tufting & Dalton",
     "Nylon & synthetic fibers (DuPont)", "Trade catalogs & marketing", "Tools & equipment", "Yarn & materials"
   ];
 
@@ -140,7 +151,7 @@
         creator: (it.creator || "").toLowerCase(),
         facets: [...it.themes, ...it.tags, ...it.techniques, ...it.materials, TYPES[it.type].label].join(" | ").toLowerCase(),
         where: [it.institution, it.collection, it.identifier, it.place, it.publisher, it.date].join(" | ").toLowerCase(),
-        body: [it.description, S.notes[it.id], it.citation].join(" | ").toLowerCase()
+        body: [it.description, S.notes[it.id], it.citation, it.originalText, it.translation, it.region].join(" | ").toLowerCase()
       };
     }
   };
@@ -169,6 +180,9 @@
       case "technique": return it.techniques.some(t => t.toLowerCase().includes(val));
       case "flag": return (S.flags[it.id] || []).some(f => f.includes(val) || FLAG_BY_ID[f]?.label.toLowerCase().includes(val));
       case "status": return (it.status || "unverified").startsWith(val);
+      case "conf": case "confidence": return !!it.confidence && (it.confidence.startsWith(val) || CONFIDENCE[it.confidence].label.toLowerCase().startsWith(val));
+      case "region": case "country": return (it.region || "").toLowerCase().includes(val);
+      case "lang": case "language": return (it.language || "").toLowerCase().startsWith(val);
       case "by": case "creator": case "author": return it._hay.creator.includes(val);
       case "year": case "date": {
         const [a, b] = val.split(/[-–]/).map(Number);
@@ -198,13 +212,15 @@
   };
 
   // facet filters (checkbox state, not persisted)
-  const F = { type: new Set(), theme: new Set(), inst: new Set(), flag: new Set(), status: new Set() };
+  const F = { type: new Set(), theme: new Set(), region: new Set(), conf: new Set(), inst: new Set(), flag: new Set(), status: new Set() };
   const facetValues = {
     type: it => [it.type],
     theme: it => it.themes,
     inst: it => it.institution ? [it.institution] : ["(none)"],
     flag: it => (S.flags[it.id] || []).length ? S.flags[it.id] : ["(unflagged)"],
-    status: it => [it.status || "unverified"]
+    status: it => [it.status || "unverified"],
+    region: it => [it.region || "(none)"],
+    conf: it => [it.confidence || "(none)"]
   };
   const passFacets = (it, except) => Object.entries(F).every(([k, set]) => k === except || !set.size || facetValues[k](it).some(v => set.has(v)));
 
@@ -240,9 +256,10 @@
   const THEME_CLOTH = {
     "Early tufting: bed rugs & needlework pile": "oxblood", "Hooked & handmade rugs": "moss", "Woven carpet": "navy",
     "Chenille & candlewick": "rose", "Machine tufting & Dalton": "ochre", "Nylon & synthetic fibers (DuPont)": "teal",
-    "Trade catalogs & marketing": "slate", "Tools & equipment": "umber", "Yarn & materials": "plum"
+    "Trade catalogs & marketing": "slate", "Tools & equipment": "umber", "Yarn & materials": "plum",
+    "Global diffusion of tufting": "indigo", "Hand-tufting tools & the gun": "rust"
   };
-  const SPARE_CLOTH = ["navy", "moss", "plum", "teal", "umber", "slate", "rose", "ochre"];
+  const SPARE_CLOTH = ["navy", "moss", "plum", "teal", "umber", "slate", "rose", "ochre", "indigo", "rust"];
   const cloth = theme => `var(--cloth-${THEME_CLOTH[theme] || (theme ? SPARE_CLOTH[hash(theme) % SPARE_CLOTH.length] : "grey")})`;
   const itemCloth = it => cloth(it.themes[0]);
   const icon = (name, cls = "") => `<svg class="ic ${cls}" aria-hidden="true"><use href="#i-${name}"/></svg>`;
@@ -250,8 +267,9 @@
   // An honest empty plate: bare bookcloth stamped with what the record is. Never a fake picture.
   const boardPlate = it => `<div class="board-plate" style="--c:${itemCloth(it)}" aria-hidden="true">
       <span class="bp-tape"><span class="bp-type">${esc(TYPES[it.type].label)}</span></span>
-      <span class="bp-title">${esc(it.title || "")}</span>
-      <span class="bp-note">${it.sourceUrl ? "No image found yet" : "No image"}</span></div>`;
+      ${it.originalText ? `<span class="bp-title bp-quote" lang="${esc(it.language || "")}">${esc(it.originalText)}</span>` : `<span class="bp-title">${esc(it.title || "")}</span>`}
+      <span class="bp-note">${it.type === "finding" ? esc([it.region, it.language && LANGS[it.language]].filter(Boolean).join(" · ")) : it.sourceUrl ? "No image found yet" : "No image"}</span></div>`;
+  const LANGS = { "zh-Hans": "Chinese", "zh-Hant": "Chinese (Hong Kong)", hi: "Hindi", ja: "Japanese", de: "German", fr: "French", nl: "Dutch", en: "English" };
   const plateHTML = (it, alt = "") => {
     const src = imgSrc(it);
     return src
@@ -274,6 +292,8 @@
     switch (it.type) {
       case "book":
         return `${who}*${it.title}*. ${join(it.place && it.publisher ? it.place + ": " + it.publisher : it.publisher || it.place, date)}.${it.identifier ? " " + it.identifier + "." : ""}${url}`;
+      case "finding":
+        return `"${it.title}." ${join(it.publisher, it.date)}${it.publisher || it.date ? ". " : ""}${it.collection ? it.collection + "." : ""}${url}`.replace(/\.\s*\./g, ".");
       case "article":
         return `${who}"${it.title}." ${join(it.publisher ? "*" + it.publisher + "*" : "", it.date)}.${url}`;
       case "object": case "yarn": case "tool":
@@ -294,12 +314,12 @@
     const fl = S.flags[it.id] || [];
     const inList = activeList().items.includes(it.id);
     const act = (on, attr, ic, label, c) => `<button class="act ${on ? "on" : ""}" ${attr} style="--c:${c}" aria-pressed="${on}" aria-label="${esc(label)}" title="${esc(label)}">${icon(ic)}</button>`;
-    const sub = [it.institution, it.identifier ? `<span class="num">${highlight(it.identifier, terms)}</span>` : ""].filter(Boolean);
+    const sub = [it.institution || (it.type === "finding" ? it.region : ""), it.identifier ? `<span class="num">${highlight(it.identifier, terms)}</span>` : ""].filter(Boolean);
     return `<article class="card" data-id="${esc(it.id)}">
       <button class="card-open" data-open="${esc(it.id)}">
         <span class="plate">${plateHTML(it)}<span class="plate-flags">${flagDots(it)}</span></span>
         <span class="label">
-          <span class="label-top">${colorway(it)}<span>${esc(TYPES[it.type].label)}</span>${it.date ? `<span>${esc(it.date)}</span>` : ""}${it.status === "verified" ? `<span class="verified">${icon("check")}Verified</span>` : ""}</span>
+          <span class="label-top">${colorway(it)}<span>${esc(TYPES[it.type].label)}</span>${it.date ? `<span>${esc(it.date)}</span>` : ""}${confBadge(it)}${it.status === "verified" ? `<span class="verified">${icon("check")}Verified</span>` : ""}</span>
           <h3>${highlight(it.title || "Untitled", terms)}</h3>
           ${sub.length ? `<span class="meta">${sub.map(s => s.startsWith("<") ? s : highlight(s, terms)).join(" · ")}</span>` : ""}
         </span>
@@ -315,7 +335,9 @@
     const defs = [
       ["flag", "Flags", v => v === "(unflagged)" ? "Not flagged" : FLAG_BY_ID[v]?.label || v, v => FLAG_BY_ID[v] && `<span class="flag-dot" style="--c:${FLAG_BY_ID[v].color}"></span>`],
       ["theme", "Research themes", v => v, v => `<span class="cloth-dot" style="--c:${cloth(v)}"></span>`],
+      ["region", "Country or region", v => v === "(none)" ? "Not set" : v],
       ["type", "Kinds of record", v => TYPES[v]?.plural || v],
+      ["conf", "Confidence", v => v === "(none)" ? "Not graded" : CONFIDENCE[v]?.label || v, v => CONFIDENCE[v] ? `<span class="conf-dot conf-${v}"></span>` : ""],
       ["inst", "Held by", v => v === "(none)" ? "No institution" : v],
       ["status", "Checked", v => v === "verified" ? "Verified at source" : "Not yet verified"]
     ];
@@ -404,8 +426,9 @@
     const src = imgSrc(it);
     const fields = [
       ["Maker", it.creator], ["Date", it.date || it.dateStart], ["Place", it.place],
-      ["Held by", it.institution], ["Collection", it.collection], ["Number", it.identifier], ["Publisher", it.publisher],
+      ["Held by", it.institution], ["Collection", it.collection], ["Number", it.identifier], ["Publisher", it.type === "finding" ? "" : it.publisher],
       ["Materials", it.materials.join(", ")], ["Techniques", it.techniques.join(", ")], ["Dimensions", it.dimensions],
+      ["Country or region", it.region], ["Source", it.type === "finding" ? it.publisher : ""], ["Research brief", it.collection && it.type === "finding" ? it.collection : ""],
       ["Themes", it.themes.join(", ")], ["Tags", it.tags.join(", ")]
     ].filter(([, v]) => v);
     const q = encodeURIComponent([it.title, it.creator].filter(Boolean).join(" "));
@@ -413,12 +436,12 @@
     const credit = it.imageCredit || (src && !src.startsWith("data:") && !src.startsWith("blob:") && it.institution) || "";
     $("#drawer").innerHTML = `
       <div class="drawer-bar">
-        <span class="label-top">${colorway(it)}<span>${esc(TYPES[it.type].label)}</span>${it.status === "verified" ? `<span class="verified">${icon("check")}Verified</span>` : ""}</span>
+        <span class="label-top">${colorway(it)}<span>${esc(TYPES[it.type].label)}</span>${confBadge(it)}${it.status === "verified" ? `<span class="verified">${icon("check")}Verified</span>` : ""}</span>
         <span class="spacer"></span>
         <button class="btn sm" data-edit="${esc(id)}">${icon("edit")}Edit</button>
         <button class="icon-btn" data-close aria-label="Close details">${icon("x")}</button>
       </div>
-      <div class="drawer-plate">${src ? `<a href="${esc(src)}" target="_blank" rel="noopener" aria-label="Open full image">${plateHTML(it, it.title)}</a>` : `<div class="plate-board">${boardPlate(it)}</div>`}</div>
+      ${src ? `<div class="drawer-plate"><a href="${esc(src)}" target="_blank" rel="noopener" aria-label="Open full image">${plateHTML(it, it.title)}</a></div>` : it.type === "finding" ? "" : `<div class="drawer-plate"><div class="plate-board">${boardPlate(it)}</div></div>`}
       ${src && credit ? `<p class="credit">Image: ${esc(credit)}</p>` : ""}
       <div class="drawer-body">
         <h2 id="drawer-title">${esc(it.title)}</h2>
@@ -427,6 +450,8 @@
           ${it.sourceUrl && safeUrl(it.sourceUrl) ? `<a class="btn primary" href="${esc(safeUrl(it.sourceUrl))}" target="_blank" rel="noopener">View at source${icon("external")}</a>` : ""}
           <button class="btn" id="copy-cite">${icon("copy")}Copy citation</button>
         </div>
+        ${it.originalText ? `<figure class="quote"><blockquote lang="${esc(it.language || "")}">${esc(it.originalText)}</blockquote>${it.translation ? `<figcaption>${esc(it.translation)}</figcaption>` : ""}</figure>` : it.translation ? `<p class="desc">${esc(it.translation)}</p>` : ""}
+        ${it.confidence && CONFIDENCE[it.confidence] ? `<p class="conf-line">${confBadge(it)} ${esc(CONFIDENCE[it.confidence].hint)}.</p>` : ""}
         ${it.description ? `<p class="desc">${esc(it.description)}</p>` : ""}
         ${it.status !== "verified" ? `<div class="unverified-note">${icon("flag")}<span>Not yet checked against the institution's own record. Confirm the details, then mark it verified with <b>Edit</b>.</span></div>` : ""}
         <dl class="fields">${fields.map(([k, v]) => `<dt>${k}</dt><dd>${esc(v)}</dd>`).join("")}</dl>
@@ -435,10 +460,10 @@
           <div class="toggles">${FLAGS.map(f => `<button class="toggle" data-flag="${f.id}" aria-pressed="${fl.includes(f.id)}" style="--c:${f.color}"><span class="flag-dot" style="--c:${f.color}"></span>${esc(f.label)}</button>`).join("")}</div>
         </section>
 
-        <section class="dsec"><h3>Lists</h3>
+        <section class="dsec"><h3>Chapters and lists</h3>
           <div class="list-add">
             ${lists.map(l => `<span class="chip">${esc(l.name)}<button data-unlist="${esc(l.id)}" aria-label="Remove from ${esc(l.name)}">${icon("x")}</button></span>`).join("")}
-            <label class="select"><span class="vh">Add to a list</span><select id="drawer-list-add"><option value="">Add to a list…</option>${S.lists.filter(l => !l.items.includes(id)).map(l => `<option value="${esc(l.id)}">${esc(l.name)}</option>`).join("")}<option value="__new">New list…</option></select></label>
+            <label class="select"><span class="vh">Add to a list</span><select id="drawer-list-add"><option value="">Add to a chapter or list…</option>${listOptions(l => !l.items.includes(id))}<option value="__new">New list…</option></select></label>
           </div>
         </section>
 
@@ -480,6 +505,20 @@
     save(); refresh();
     toast(i >= 0 ? `Removed from "${l.name}"` : `Added to "${l.name}"`);
   };
+  const isChapter = l => l.kind === "chapter";
+  const listOptions = (keep = () => true, selectedId) => {
+    const opt = l => `<option value="${esc(l.id)}" ${l.id === selectedId ? "selected" : ""}>${esc(l.name)}</option>`;
+    const ch = S.lists.filter(l => isChapter(l) && keep(l)), ls = S.lists.filter(l => !isChapter(l) && keep(l));
+    return (ch.length ? `<optgroup label="Chapters">${ch.map((l, i) => opt({ ...l, name: `${S.lists.filter(isChapter).indexOf(l) + 1}. ${l.name}` })).join("")}</optgroup>` : "")
+      + (ls.length ? `<optgroup label="Lists">${ls.map(opt).join("")}</optgroup>` : "");
+  };
+  const newChapter = () => {
+    const name = prompt("Chapter title:", "");
+    if (!name) return null;
+    const l = { id: uid(), kind: "chapter", name, intro: "", items: [] };
+    const last = S.lists.map(isChapter).lastIndexOf(true);
+    S.lists.splice(last + 1, 0, l); S.activeList = l.id; save(); return l;
+  };
   const newList = () => {
     const name = prompt("Name for the new compilation:", "History of tufting: chapter 1");
     if (!name) return null;
@@ -514,6 +553,7 @@
     if (it.image && it.image.startsWith("idb:")) form.elements.image.value = it.image;
     $("#btn-delete-item").hidden = !id;
     $("#dl-inst").innerHTML = [...new Set(ITEMS.map(x => x.institution).filter(Boolean))].map(v => `<option value="${esc(v)}">`).join("");
+    $("#dl-region").innerHTML = [...new Set(ITEMS.map(x => x.region).filter(Boolean))].map(v => `<option value="${esc(v)}">`).join("");
     $("#dl-themes").innerHTML = [...new Set([...DEFAULT_THEMES, ...ITEMS.flatMap(x => x.themes)])].map(v => `<option value="${esc(v)}">`).join("");
     dlg.showModal();
   };
@@ -558,11 +598,22 @@
   };
 
   // ---------- compile ----------
-  const renderListBadge = () => { const n = activeList().items.filter(id => BY_ID[id]).length; $("#list-count").textContent = n || ""; };
+  // The tab badge counts the active list (e.g. the fellowship list), not chapter evidence.
+  const renderListBadge = () => { const l = activeList(), n = isChapter(l) ? 0 : l.items.filter(id => BY_ID[id]).length; $("#list-count").textContent = n || ""; };
   const renderCompile = () => {
     const l = activeList();
-    $("#list-select").innerHTML = S.lists.map(x => `<option value="${esc(x.id)}" ${x.id === l.id ? "selected" : ""}>${esc(x.name)} (${x.items.length})</option>`).join("");
+    const ch = isChapter(l), chapters = S.lists.filter(isChapter), ci = chapters.indexOf(l);
+    $("#list-select").innerHTML = listOptions(() => true, l.id);
+    $("#write-kicker").textContent = ch ? `Chapter ${ci + 1} of ${chapters.length}` : "List";
+    $("#btn-chapter-up").hidden = $("#btn-chapter-down").hidden = !ch;
+    $("#btn-chapter-up").disabled = ci <= 0; $("#btn-chapter-down").disabled = ci < 0 || ci >= chapters.length - 1;
+    $("#intro-label").textContent = ch ? "Draft" : "Introduction";
+    $("#list-intro").classList.toggle("draft", ch);
+    $("#list-intro").placeholder = ch ? "Write this chapter here. Saved as you type. Cite evidence by its number below, e.g. [3]." : "Your working argument for this list, e.g. a draft research statement. Saved as you type.";
+    $("#evidence-label").textContent = ch ? `Evidence (${l.items.length})` : `Records (${l.items.length})`;
     if (document.activeElement !== $("#list-intro")) $("#list-intro").value = l.intro || "";
+    const words = (l.intro || "").trim().split(/\s+/).filter(Boolean).length;
+    $("#word-count").textContent = words ? `${words.toLocaleString()} word${words === 1 ? "" : "s"}` : "";
     $("#print-title").textContent = l.name;
     $("#print-intro").textContent = l.intro || "";
     const items = l.items.map(id => BY_ID[id]).filter(Boolean);
@@ -572,7 +623,8 @@
         <div class="plate">${plateHTML(it)}</div>
         <div>
           <h3><button data-open="${esc(it.id)}">${esc(it.title)}</button></h3>
-          <div class="label-top">${colorway(it)}<span>${esc(TYPES[it.type].label)}</span>${it.date ? `<span>${esc(it.date)}</span>` : ""}${it.institution ? `<span>${esc(it.institution)}</span>` : ""}<span class="plate-flags" style="position:static">${flagDots(it)}</span></div>
+          <div class="label-top">${colorway(it)}<span>${esc(TYPES[it.type].label)}</span>${it.date ? `<span>${esc(it.date)}</span>` : ""}${it.institution || it.region ? `<span>${esc(it.institution || it.region)}</span>` : ""}${confBadge(it)}<span class="plate-flags" style="position:static">${flagDots(it)}</span></div>
+          ${it.translation ? `<p class="ctrans">${esc(it.translation)}</p>` : ""}
           <p class="ccite">${mdInline(citation(it))}</p>
           ${S.notes[it.id] ? `<div class="cnote">${esc(S.notes[it.id])}</div>` : ""}
         </div>
@@ -582,8 +634,34 @@
           <button class="icon-btn" data-remove aria-label="Remove from list">${icon("x")}</button>
         </div>
       </article>`).join("")
-      : `<div class="empty"><h2>This list is empty</h2><p>In Browse, use the ${icon("bookmark", "sm")} button on any record, or open a record and choose <b>Add to a list</b>.</p><div class="btns"><a class="btn" href="#browse">Go to Browse</a></div></div>`;
+      : `<div class="empty"><h2>No ${isChapter(l) ? "evidence" : "records"} yet</h2><p>Open any record in Browse and choose <b>Add to a chapter or list</b>${isChapter(l) ? "" : `, or use the ${icon("bookmark", "sm")} button on a card`}.</p><div class="btns"><a class="btn" href="#browse">Go to Browse</a></div></div>`;
     renderListBadge();
+  };
+  const quoteMd = it => it.originalText ? `> ${it.originalText.replace(/\n/g, "\n> ")}${it.translation && it.language !== "en" ? `\n>\n> *${it.translation}*` : ""}\n` : "";
+  const exportManuscript = () => {
+    const chapters = S.lists.filter(isChapter);
+    if (!chapters.length) return toast("Add a chapter first.");
+    const all = [];
+    const out = ["# A History of Tufting", "", `*Working manuscript exported ${new Date().toISOString().slice(0, 10)}. Unverified sources are marked.*`, ""];
+    chapters.forEach((l, ci) => {
+      const items = l.items.map(id => BY_ID[id]).filter(Boolean);
+      out.push(`## ${ci + 1}. ${l.name}`, "", (l.intro || "*No draft yet.*").trim(), "");
+      if (items.length) {
+        out.push(`### Evidence for chapter ${ci + 1}`, "");
+        items.forEach((it, i) => {
+          if (!all.includes(it)) all.push(it);
+          const flags = [it.confidence && CONFIDENCE[it.confidence]?.label, it.status !== "verified" ? "not yet checked" : ""].filter(Boolean).join(", ");
+          out.push(`${i + 1}. ${citation(it)}${flags ? ` (${flags})` : ""}`);
+          if (it.originalText) out.push("", "   " + quoteMd(it).trim().replace(/\n/g, "\n   "), "");
+          if (S.notes[it.id]) out.push(`   *Note:* ${S.notes[it.id].replace(/\n/g, " ")}`);
+        });
+        out.push("");
+      }
+    });
+    const chase = ITEMS.filter(it => it.tags.includes("to chase"));
+    if (chase.length) out.push("## Sources still to chase", "", ...chase.map(it => `- ${citation(it)}${it.description ? ` ${it.description}` : ""}`), "");
+    out.push("## Bibliography", "", ...[...all].sort((a, b) => citation(a).localeCompare(citation(b))).map(it => `- ${citation(it)}`));
+    download("history-of-tufting-manuscript.md", out.join("\n").replace(/\n{3,}/g, "\n\n"), "text/markdown");
   };
   const compileExport = fmt => {
     const l = activeList();
@@ -595,8 +673,9 @@
         `- **Type:** ${TYPES[it.type].label}`,
         ...[["Creator", it.creator], ["Date", it.date], ["Institution", it.institution], ["Identifier", it.identifier], ["Materials", it.materials.join(", ")], ["Source", it.sourceUrl]].filter(([, v]) => v).map(([k, v]) => `- **${k}:** ${v}`),
         it.status !== "verified" ? "- **Status:** unverified" : "",
-        "", it.description || "", "",
-        S.notes[it.id] ? `> ${S.notes[it.id].replace(/\n/g, "\n> ")}\n` : "",
+        it.confidence ? `- **Confidence:** ${CONFIDENCE[it.confidence]?.label}` : "",
+        "", quoteMd(it), it.description || "", "",
+        S.notes[it.id] ? `**My notes:** ${S.notes[it.id]}\n` : "",
         `*Citation:* ${citation(it)}`, ""
       ]), "## Bibliography", "", ...items.map(it => `- ${citation(it)}`)].join("\n").replace(/\n{3,}/g, "\n\n");
       download(slug + ".md", md, "text/markdown");
@@ -823,6 +902,16 @@
   // compile
   $("#list-select").onchange = e => { S.activeList = e.target.value; save(); renderCompile(); };
   $("#btn-new-list").onclick = () => { if (newList()) renderCompile(); };
+  $("#btn-new-chapter").onclick = () => { if (newChapter()) renderCompile(); };
+  const moveChapter = d => {
+    const l = activeList(), chapters = S.lists.filter(isChapter), i = chapters.indexOf(l), other = chapters[i + d];
+    if (!other) return;
+    const a = S.lists.indexOf(l), b = S.lists.indexOf(other);
+    [S.lists[a], S.lists[b]] = [S.lists[b], S.lists[a]]; save(); renderCompile();
+  };
+  $("#btn-chapter-up").onclick = () => moveChapter(-1);
+  $("#btn-chapter-down").onclick = () => moveChapter(1);
+  $("#btn-manuscript").onclick = exportManuscript;
   $("#btn-rename-list").onclick = () => { const l = activeList(); const n = prompt("Rename list:", l.name); if (n) { l.name = n; save(); renderCompile(); } };
   $("#btn-delete-list").onclick = () => {
     const l = activeList();
@@ -830,7 +919,11 @@
     if (!confirm(`Delete the list "${l.name}"? Items stay in the database.`)) return;
     S.lists = S.lists.filter(x => x !== l); S.activeList = S.lists[0].id; save(); renderCompile();
   };
-  $("#list-intro").addEventListener("input", debounce(e => { activeList().intro = e.target.value; $("#print-intro").textContent = e.target.value; save(); }, 300));
+  $("#list-intro").addEventListener("input", debounce(e => {
+    activeList().intro = e.target.value; $("#print-intro").textContent = e.target.value; save();
+    const w = e.target.value.trim().split(/\s+/).filter(Boolean).length;
+    $("#word-count").textContent = w ? `${w.toLocaleString()} word${w === 1 ? "" : "s"} · saved` : "";
+  }, 300));
   $("#compile-items").addEventListener("click", e => {
     const row = e.target.closest(".citem"); if (!row) return;
     const id = row.dataset.id, l = activeList(), i = l.items.indexOf(id);
@@ -858,6 +951,7 @@
   $("#sq").addEventListener("input", debounce(renderSources, 150));
 
   // ---------- boot ----------
+  if (!S.chaptersSeeded) { S.lists.unshift(...SEED_CHAPTERS.map(c => ({ ...c, items: [...c.items] }))); S.chaptersSeeded = true; S.activeList = SEED_CHAPTERS[0].id; save(); }
   rebuild();
   const VIEWS = ["browse", "timeline", "compile", "discover", "sources"];
   const viewFromHash = () => { const v = (location.hash || "").slice(1); return VIEWS.includes(v) ? v : "browse"; };

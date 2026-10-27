@@ -26,6 +26,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }} # latest branch state, not the commit that queued this run
       - uses: actions/setup-node@v4
         with:
           node-version: 22
@@ -38,4 +40,6 @@ jobs:
           git config user.email "41898+github-actions[bot]@users.noreply.github.com"
           git add data/items.js
           git commit -m "Add image links found by image lookup"
-          git push
+          # Another run or a person may have pushed meanwhile; replay this commit on top.
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"

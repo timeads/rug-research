@@ -41,6 +41,26 @@ Records show the institution's own photograph where one exists. The **Fetch imag
 ### Adding your own things
 Click **+ Add item**. For yarn samples, tools and your own photos, upload a picture straight from your phone or computer. Photos are resized and stored in the browser.
 
+## Writing the history of tufting
+
+The **Write** tab is where the book gets written. It opens with a nine-chapter outline (`data/chapters.js`), from colonial bed rugs through Dalton, the machine, nylon, tufting's spread abroad, China, the Hong Kong gun, India and the hobby revival. Each chapter has:
+- a **draft** you write in (saved as you type, with a word count), seeded with working notes from the research so far;
+- its **evidence**: records you attach from any record's detail panel (*Add to a chapter or list*), numbered so the draft can cite them as [3]. You can reorder or remove them.
+
+Use **New chapter**, **Rename** and **Move earlier/later** to reshape the outline. **Whole manuscript** downloads every chapter in order as one Markdown file, with each chapter's numbered evidence and original-language quotations, a "Sources still to chase" list and a bibliography. Lists that aren't chapters (like the Winterthur fellowship list) work as before.
+
+### Research findings and confidence
+Findings from research briefs (starting with `research/non-english-record.md`, the Chinese, Hindi, Japanese, German, French and Dutch record) are records of type **Finding**. Each keeps the **original-language quotation**, a **translation**, the **source**, the **country or region**, and a **confidence** grade:
+
+| Grade | Meaning |
+|---|---|
+| Solid | Primary or authoritative source |
+| Suggestive | Plausible but secondary, popular or uncited |
+| Couldn't verify | Searched for and not found (a real gap) |
+| Refuted | Checked and unsupported; never cite as fact |
+
+Search them with `region:japan`, `conf:solid`, `lang:zh` or just type in the original script (`簇绒`, `緞通`). Sources marked `tag:"to chase"` are the offline reading list.
+
 ## Where your work is saved and how to keep it
 
 Flags, notes, lists, edits and uploaded photos are saved **in your browser** on the device you use.
