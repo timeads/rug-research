@@ -6813,8 +6813,8 @@ window.RUG_ITEMS = [
     "id": "own-bandy-peacock-spreads",
     "type": "object",
     "title": "Two peacock chenille bedspreads (yellow ground; white ground with pink peacock)",
-    "institution": "Museum in Dalton, Georgia, associated with the Bandy Heritage Center (name to confirm)",
-    "place": "Dalton area, Georgia",
+    "institution": "Shaw Floors / Bandy art center, Dalton, Georgia",
+    "place": "305 S Depot St, Dalton, GA 30720",
     "region": "United States",
     "date": "undated; peacock spreads are associated with the 1930s–1950s roadside trade",
     "dateStart": 1930,
@@ -6826,7 +6826,7 @@ window.RUG_ITEMS = [
       "tufting (chenille)",
       "cut-loop tufts"
     ],
-    "description": "Two spreads with the peacock, the motif that gave U.S. Highway 41 its nickname \"Peacock Alley\". The yellow spread is a fan-tailed peacock on a branch, worked almost entirely in rows of separate cut tufts (\"dots\") in blue, red, pink, green, brown and white, with a scalloped tufted edge. The white spread has a standing pink peacock with blue \"eyes\" in a dense tufted tail, framed by green and pink foliage. Dense areas (the bodies) are packed rows of tufts; outlines are single rows.\n\nTo record on a return visit: accession numbers, maker or label, whether hand- or machine-tufted (look at the back: even stitch length and straight rows suggest a single-needle machine), and dates.\n\nContext: https://handwovenmagazine.com/peacock-alley-once-chenille-capital-world/",
+    "description": "Two spreads with the peacock, the motif that gave U.S. Highway 41 its nickname \"Peacock Alley\". The yellow spread is a fan-tailed peacock on a branch, worked almost entirely in rows of separate cut tufts (\"dots\") in blue, red, pink, green, brown and white, with a scalloped tufted edge. The white spread has a standing pink peacock with blue \"eyes\" in a dense tufted tail, framed by green and pink foliage. Dense areas (the bodies) are packed rows of tufts; outlines are single rows.\n\nTo record on a return visit (ask the center): accession numbers, maker or label, whether hand- or machine-tufted (look at the back: even stitch length and straight rows suggest a single-needle machine), and dates.\n\nContext: https://handwovenmagazine.com/peacock-alley-once-chenille-capital-world/",
     "themes": [
       "Chenille & candlewick",
       "Machine tufting & Dalton"
@@ -6835,8 +6835,7 @@ window.RUG_ITEMS = [
       "own photo",
       "Bandy visit",
       "peacock",
-      "Peacock Alley",
-      "confirm museum name"
+      "Peacock Alley"
     ],
     "status": "unverified",
     "confidence": "suggestive",
@@ -6854,14 +6853,14 @@ window.RUG_ITEMS = [
     "imageCredit": "Photo: Tuft the World",
     "imageSource": "own",
     "rights": "own",
-    "collection": "Photo: Tuft the World, taken at a museum in Dalton, Georgia, associated with the Bandy Heritage Center. The photograph is yours; the objects belong to the museum, so check its photo policy before publishing outside the database."
+    "collection": "Photo: Tuft the World, taken at the Shaw Floors / Bandy art center, 305 S Depot St, Dalton, Georgia. The photograph is yours; the spreads belong to the center, so check its photo policy before publishing outside the database."
   },
   {
     "id": "own-bandy-chenille-spreads",
     "type": "object",
     "title": "Chenille bedspreads: line-tufted tulips, dot-tufted florals and diamond lattice",
-    "institution": "Museum in Dalton, Georgia, associated with the Bandy Heritage Center (name to confirm)",
-    "place": "Dalton area, Georgia",
+    "institution": "Shaw Floors / Bandy art center, Dalton, Georgia",
+    "place": "305 S Depot St, Dalton, GA 30720",
     "region": "United States",
     "date": "undated (mid-20th century style)",
     "dateStart": 1930,
@@ -6882,8 +6881,7 @@ window.RUG_ITEMS = [
     "tags": [
       "own photo",
       "Bandy visit",
-      "line vs dot tufting",
-      "confirm museum name"
+      "line vs dot tufting"
     ],
     "status": "unverified",
     "confidence": "suggestive",
@@ -6905,7 +6903,7 @@ window.RUG_ITEMS = [
     "imageCredit": "Photo: Tuft the World",
     "imageSource": "own",
     "rights": "own",
-    "collection": "Photo: Tuft the World, taken at a museum in Dalton, Georgia, associated with the Bandy Heritage Center. The photograph is yours; the objects belong to the museum, so check its photo policy before publishing outside the database."
+    "collection": "Photo: Tuft the World, taken at the Shaw Floors / Bandy art center, 305 S Depot St, Dalton, Georgia. The photograph is yours; the spreads belong to the center, so check its photo policy before publishing outside the database."
   },
   {
     "id": "own-bandy-sims-chenille-center",
