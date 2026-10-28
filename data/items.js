@@ -350,7 +350,10 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "region": "United States",
-    "sourceUrl": "https://openlibrary.org/works/OL8896555W"
+    "sourceUrl": "https://openlibrary.org/works/OL8896555W",
+    "image": "https://covers.openlibrary.org/b/id/13899835-L.jpg",
+    "imageCredit": "openlibrary.org",
+    "imageSource": "auto"
   },
   {
     "id": "archive-bandy-deaton",
