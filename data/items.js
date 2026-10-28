@@ -5175,7 +5175,7 @@ window.RUG_ITEMS = [
     "status": "unverified",
     "dateStart": 1848,
     "sourceUrl": "https://en.wikipedia.org/wiki/Bigelow_Carpet_Mill",
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Bigelow_Clinton.jpg/1280px-Bigelow_Clinton.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Bigelow_Clinton.jpg/1280px-Bigelow_Clinton.jpg",
     "imageCredit": "en.wikipedia.org",
     "imageSource": "auto"
   },
@@ -8749,7 +8749,7 @@ window.RUG_ITEMS = [
     "status": "unverified",
     "confidence": "solid",
     "rights": "not-requested",
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/About-us-family-owned-british-made.jpg/250px-About-us-family-owned-british-made.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/About-us-family-owned-british-made.jpg/250px-About-us-family-owned-british-made.jpg",
     "imageCredit": "en.wikipedia.org (image from en.wikipedia.org)",
     "imagePage": "https://en.wikipedia.org/wiki/Cormar_Carpets",
     "imageSource": "auto"
@@ -11074,7 +11074,14 @@ window.RUG_ITEMS = [
       "checked from search results"
     ],
     "confidence": "solid",
-    "status": "unverified"
+    "status": "unverified",
+    "image": "https://framemark.vam.ac.uk/collections/2021MY5415/full/!600,600/0/default.jpg",
+    "imageCredit": "Victoria and Albert Museum",
+    "imagePage": "https://collections.vam.ac.uk/item/O89256/",
+    "imageSource": "picked",
+    "rights": "not-requested",
+    "imageRole": "illustration",
+    "imageCaption": "“Lily” Wilton carpet sample, designed by William Morris 1875, woven by the Wilton Royal Carpet Factory, CIRC.65B-1959"
   },
   {
     "id": "woven-kidderminster-brussels-1749",
@@ -11345,7 +11352,14 @@ window.RUG_ITEMS = [
     "status": "unverified",
     "themes": [
       "Woven carpet"
-    ]
+    ],
+    "image": "https://framemark.vam.ac.uk/collections/2018LF0999/full/!600,600/0/default.jpg",
+    "imageCaption": "Royal Axminster Magnificat, 1998, T.191-2000",
+    "imageCredit": "Victoria and Albert Museum",
+    "imagePage": "https://collections.vam.ac.uk/item/O51045/",
+    "imageRole": "illustration",
+    "imageSource": "picked",
+    "rights": "not-requested"
   },
   {
     "id": "rsa-carpet-premiums-1757-59",
@@ -11428,7 +11442,14 @@ window.RUG_ITEMS = [
     "status": "unverified",
     "themes": [
       "Woven carpet"
-    ]
+    ],
+    "image": "https://images.metmuseum.org/CRDImages/es/web-large/DP-45246-001.jpg",
+    "imageCredit": "The Metropolitan Museum of Art",
+    "imagePage": "https://www.metmuseum.org/art/collection/search/928622",
+    "imageSource": "picked",
+    "rights": "public-domain",
+    "imageRole": "illustration",
+    "imageCaption": "Carpet, ca. 1765, attributed to Thomas Whitty, Axminster (a different carpet), 2025.725"
   },
   {
     "id": "drawloom-to-jacquard-carpet",
@@ -11457,7 +11478,14 @@ window.RUG_ITEMS = [
       "checked from search results"
     ],
     "confidence": "solid",
-    "status": "unverified"
+    "status": "unverified",
+    "image": "https://iiif.wellcomecollection.org/image/V0024155ER.jpg/full/500,/0/default.jpg",
+    "imageCredit": "Wellcome Collection",
+    "imagePage": "https://wellcomecollection.org/works/hvnh9bck",
+    "imageSource": "picked",
+    "rights": "not-requested",
+    "imageRole": "illustration",
+    "imageCaption": "Textiles: a mechanical carpet loom, three-quarter view, with spectators. Engraving, c. 1862"
   },
   {
     "id": "thesis-mcfadden-arbuthnot-drafts",
@@ -12660,7 +12688,13 @@ window.RUG_ITEMS = [
     "themes": [
       "Rug-making techniques"
     ],
-    "imageSource": "rejected"
+    "imageSource": "picked",
+    "image": "https://openaccess-cdn.clevelandart.org/1961.388/1961.388_web.jpg",
+    "imageCredit": "Cleveland Museum of Art",
+    "imagePage": "https://clevelandart.org/art/1961.388",
+    "rights": "not-requested",
+    "imageRole": "illustration",
+    "imageCaption": "Carpet (Kilim), late 19th–early 20th century, 1961.388"
   },
   {
     "id": "process-flatweave-soumak-tm",
@@ -12728,7 +12762,14 @@ window.RUG_ITEMS = [
     "status": "unverified",
     "themes": [
       "Rug-making techniques"
-    ]
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Mable_Burnside_%28Myers%29_at_Navajo_fairgrounds.jpg/960px-Mable_Burnside_%28Myers%29_at_Navajo_fairgrounds.jpg",
+    "imageCaption": "Mable Burnside (Myers) at Navajo fairgrounds, c.1936-1956",
+    "imageCredit": "Wikimedia Commons",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Mable_Burnside_(Myers)_at_Navajo_fairgrounds.jpg",
+    "imageRole": "illustration",
+    "imageSource": "picked",
+    "rights": "not-requested"
   },
   {
     "id": "process-flatweave-navajo-chief-asm",
@@ -12829,7 +12870,14 @@ window.RUG_ITEMS = [
     "status": "unverified",
     "themes": [
       "Rug-making techniques"
-    ]
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/R%C3%B6llakan.jpg/960px-R%C3%B6llakan.jpg",
+    "imageCaption": "Röllakan (photograph, 2012)",
+    "imageCredit": "Wikimedia Commons",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:R%C3%B6llakan.jpg",
+    "imageRole": "illustration",
+    "imageSource": "picked",
+    "rights": "not-requested"
   },
   {
     "id": "process-knotted-pazyryk",
@@ -12928,7 +12976,14 @@ window.RUG_ITEMS = [
       "Rug-making techniques",
       "Woven carpet"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Pazyryk_carpet.jpg",
+    "imageCaption": "Pazyryk carpet, 4th century BCE",
+    "imageCredit": "Wikimedia Commons",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Pazyryk_carpet.jpg",
+    "imageRole": "illustration",
+    "imageSource": "picked",
+    "rights": "not-requested"
   },
   {
     "id": "process-knotted-spanish-knot",
@@ -12963,7 +13018,13 @@ window.RUG_ITEMS = [
       "Woven carpet"
     ],
     "status": "unverified",
-    "imageSource": "rejected"
+    "imageSource": "picked",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Spanish_knot.svg/960px-Spanish_knot.svg.png",
+    "imageCredit": "Wikimedia Commons",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Spanish_knot.svg",
+    "rights": "not-requested",
+    "imageRole": "illustration",
+    "imageCaption": "Diagram of the single-warp (Spanish) knot"
   },
   {
     "id": "process-knotted-tibetan",
@@ -13688,5 +13749,89 @@ window.RUG_ITEMS = [
       "Tools & equipment"
     ],
     "status": "unverified"
+  },
+  {
+    "creator": "",
+    "date": "by 1930 (patent 1886, per the museum's record)",
+    "dateStart": 1886,
+    "description": "Museum record: “Semi-automated ‘Jewel’ rug-hooking tool for punching pile through backing; metal and wooden tool; wooden handles, painted with floral designs on black; large needle in centre of tool; makers marks painted to handle in gold – ‘Jewel Pat. Allowed’.” Patented in 1886 (USA). “Picked up in Eden Terrace, Auckland by the donor in 1930.”",
+    "id": "wc-83070426",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Tool%2C_rug-hooking_%28AM_1932.212-1%29.jpg/960px-Tool%2C_rug-hooking_%28AM_1932.212-1%29.jpg",
+    "institution": "Auckland War Memorial Museum (via Wikimedia Commons)",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tool,_rug-hooking_(AM_1932.212-1).jpg",
+    "status": "unverified",
+    "tags": [
+      "via Wikimedia Commons",
+      "hand tools",
+      "punch needle"
+    ],
+    "title": "“Jewel” rug-hooking tool, patented 1886 (Auckland Museum 1932.212.1)",
+    "type": "image",
+    "dateEnd": 1930,
+    "place": "USA (patent); found in Auckland, New Zealand",
+    "identifier": "1932.212.1",
+    "imageCredit": "Auckland War Memorial Museum, CC BY 4.0"
+  },
+  {
+    "creator": "Orville A. Carroll",
+    "date": "c. 1938",
+    "id": "wc-82212663",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Orville_A._Carroll%2C_Shaker_Tufted_Wool_Rug%2C_c._1938%2C_NGA_25792.jpg/960px-Orville_A._Carroll%2C_Shaker_Tufted_Wool_Rug%2C_c._1938%2C_NGA_25792.jpg",
+    "institution": "National Gallery of Art, Index of American Design (via Wikimedia Commons)",
+    "rights": "public-domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Orville_A._Carroll,_Shaker_Tufted_Wool_Rug,_c._1938,_NGA_25792.jpg",
+    "status": "unverified",
+    "tags": [
+      "via Wikimedia Commons",
+      "Index of American Design",
+      "Shaker"
+    ],
+    "title": "Orville A. Carroll, Shaker Tufted Wool Rug, c. 1938 (Index of American Design)",
+    "type": "image",
+    "dateStart": 1938,
+    "imageCredit": "National Gallery of Art, CC0",
+    "place": "Kentucky",
+    "description": "Watercolour rendering for the Index of American Design (Kentucky), donated to Wikimedia Commons by the National Gallery of Art under CC0.",
+    "identifier": "NGA 25792"
+  },
+  {
+    "creator": "bradleyolin from Santa Cruz, USA",
+    "date": "2007-10-26 15:22",
+    "dateStart": 2007,
+    "description": "70s flashback!  Shag carpet fabric in a cabin",
+    "id": "wc-3126256",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Shag.jpg",
+    "institution": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shag.jpg",
+    "status": "unverified",
+    "tags": [
+      "via Wikimedia Commons"
+    ],
+    "title": "Shag",
+    "type": "image"
+  },
+  {
+    "collection": "The American Wing",
+    "creator": "United Society of Believers in Christ’s Second Appearing (“Shakers”)",
+    "date": "ca. 1842",
+    "dateEnd": 1842,
+    "dateStart": 1839,
+    "description": "Purchase, Anonymous Gift, 1981",
+    "dimensions": "11 x 9 1/4 x 10 3/4 in. (27.9 x 23.5 x 27.3 cm)",
+    "id": "met-7405",
+    "identifier": "1981.207",
+    "image": "https://images.metmuseum.org/CRDImages/ad/web-large/ADA5177.jpg",
+    "institution": "The Metropolitan Museum of Art",
+    "materials": [
+      "Pine"
+    ],
+    "place": "New Lebanon, New York, United States",
+    "sourceUrl": "https://www.metmuseum.org/art/collection/search/7405",
+    "status": "verified",
+    "tags": [
+      "via Met API"
+    ],
+    "title": "Sewing steps",
+    "type": "object"
   }
 ];
