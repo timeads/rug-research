@@ -3,13 +3,16 @@
 import { getCollection } from "astro:content";
 import Base from "../layouts/Base.astro";
 import WoundBand from "../components/WoundBand.astro";
-import { db, base, CHAPTER_CLOTH, chapterYears, fmtYear } from "../lib/data.js";
+import { db, base, CHAPTER_CLOTH, chapterYears, fmtYear, clothName } from "../lib/data.js";
 
-const published = Object.fromEntries((await getCollection("chapters")).map(e => [e.data.researchChapter, e.id]));
+const entries = await getCollection("chapters");
+const published = Object.fromEntries(entries.map(e => [e.data.researchChapter, e.id]));
+// A finished chapter shows the span of its own key dates; one in preparation, the span of its evidence.
+const spans = Object.fromEntries(entries.filter(e => e.data.milestones.length).map(e => [e.data.researchChapter, `${e.data.milestones[0].year}–${e.data.milestones.at(-1).year}`]));
 const { chapters, items } = db();
 const rows = chapters.map((c, i) => {
   const ys = chapterYears(c);
-  return { n: i + 1, title: c.name, shade: `var(--cloth-${CHAPTER_CLOTH[c.id] || "grey"})`, years: ys ? `${fmtYear(ys[0])}–${fmtYear(ys[1])}` : "", slug: published[c.id] };
+  return { n: i + 1, title: c.name, cloth: clothName(CHAPTER_CLOTH[c.id] || "grey"), shade: `var(--cloth-${CHAPTER_CLOTH[c.id] || "grey"})`, years: spans[c.id] || (ys ? `${fmtYear(ys[0])}–${fmtYear(ys[1])}` : ""), slug: published[c.id] };
 });
 const ready = rows.filter(r => r.slug).length;
 const dated = items.filter(x => x.dateStart != null).length;
@@ -23,15 +26,19 @@ const sources = items.filter(x => ["book", "article", "archive", "trade-catalog"
   </section>
   <section class="card" aria-labelledby="contents">
     <div class="card-sheet">
-      <div class="card-head"><h2 id="contents">Contents</h2><span>{ready} of {rows.length} chapters ready to read</span></div>
+      <div class="card-head"><h2 id="contents">Contents</h2><span>{ready} {ready === 1 ? "chapter" : "chapters"} ready to read, {rows.length - ready} in preparation</span></div>
       <ol class="shades">
-        {rows.map(r => (
-          <li style={`--shade:${r.shade}`}>
-            {r.slug
-              ? <a class="shade-row" href={base(`chapters/${r.slug}/`)}><WoundBand shade={r.shade} n={r.n} height={44} /><span class="no">{String(r.n).padStart(2, "0")}</span><span><span class="t">{r.title}</span><span class="yrs">{r.years}</span></span><span class="st">Read the chapter</span></a>
-              : <div class="shade-row soon"><WoundBand shade={r.shade} n={r.n} height={44} /><span class="no">{String(r.n).padStart(2, "0")}</span><span><span class="t">{r.title}</span><span class="yrs">{r.years}</span></span><span class="st">In preparation</span></div>}
-          </li>
-        ))}
+        {rows.map(r => {
+          const label = <span class="no"><b class="num">Shade {r.n}</b><span>{r.cloth}</span></span>;
+          const text = <span class="tx"><span class="t">{r.title}</span><span class="yrs num">{r.years}</span></span>;
+          return (
+            <li style={`--shade:${r.shade}`}>
+              {r.slug
+                ? <a class="shade-row" href={base(`chapters/${r.slug}/`)}><WoundBand shade={r.shade} n={r.n} height={44} />{label}{text}<span class="st">Read the chapter</span></a>
+                : <div class="shade-row soon"><WoundBand shade={r.shade} n={r.n} height={44} />{label}{text}<span class="st">In preparation</span></div>}
+            </li>
+          );
+        })}
       </ol>
     </div>
   </section>

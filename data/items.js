@@ -5279,7 +5279,9 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "suggestive",
-    "sourceUrl": "https://carpet-rug.org/about-us/history-of-carpet/"
+    "sourceUrl": "https://carpet-rug.org/about-us/history-of-carpet/",
+    "publisher": "Carpet and Rug Institute",
+    "citation": "Carpet and Rug Institute, web page on the history of carpet, carpet-rug.org (quoted from search results; page not yet checked)."
   },
   {
     "id": "mohasco-1956",

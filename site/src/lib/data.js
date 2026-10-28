@@ -34,6 +34,7 @@ export const THEME_CLOTH = {
 };
 // The cloth (shade) of each chapter, as in the research tool.
 export const CHAPTER_CLOTH = { "ch-processes": "wheat", "ch-before-machine": "oxblood", "ch-woven": "navy", "ch-dalton-bedspreads": "rose", "ch-machine": "ochre", "ch-nylon": "teal", "ch-abroad": "indigo", "ch-china": "plum", "ch-gun": "rust", "ch-india": "umber", "ch-today": "jade", "ch-cnc": "slate", "ch-hobby": "moss" };
+export const clothName = c => c ? c[0].toUpperCase() + c.slice(1) : "";
 // The years a chapter's dated evidence spans.
 export function chapterYears(ch) {
   const ys = (ch.items || []).map(id => db().byId[id]?.dateStart).filter(y => y != null).sort((a, b) => a - b);
@@ -86,6 +87,7 @@ export function citation(it, { link = true, loc = "" } = {}) {
 // A short note for the margin: title, date and where it is held; the full citation is in the notes.
 export function shortCitation(it, { loc = "" } = {}) {
   if (!it) return "";
+  if (it.citation) return citation(it, { link: false, loc });
   const title = it.type === "book" || it.type === "object" ? `<em>${esc(curly(it.title))}</em>` : it.type === "patent" ? esc(curly(it.title)) : `“${esc(inner(it.title.replace(/^(REFUTED|UNVERIFIED|CORRECTION)\s*:\s*/i, "")))}”`;
   const who = it.type === "book" || it.type === "article" ? (it.creator || "").split(/ and |,/)[0].trim() : "";
   const held = it.institution && !/assignee/i.test(it.institution) ? it.institution.replace(/ Museum and Library$/, "") : it.type === "article" ? it.publisher : it.type === "finding" ? "research note" : "";

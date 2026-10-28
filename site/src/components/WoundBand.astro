@@ -1,7 +1,7 @@
 ---
 // A wound-yarn band, as on a dye house's shade card: fine parallel strands of one shade, laid at a
 // slight angle, each a little lighter or darker than the next, and shadowed where the yarn turns over
-// the card's edges. Exact shapes, drawn the same every time (the tones come from the shade number).
+// the card's edges (top, bottom and both ends). Exact shapes, drawn the same every time (the tones come from the shade number).
 const { shade = "var(--shade)", n = 1, height = 72, className = "", label } = Astro.props;
 const pitch = 1.8, H = height, W = 600, slope = 2.4;
 const strands = Math.ceil((H + slope) / pitch) + 1;
@@ -19,4 +19,8 @@ const edge = Math.max(2, Math.round(H * .09));
   <rect y={edge} width={W} height={edge * .6} fill="#000" fill-opacity=".08" />
   <rect y={H - edge} width={W} height={edge} fill="#000" fill-opacity=".24" />
   <rect y={H - edge * 1.6} width={W} height={edge * .6} fill="#000" fill-opacity=".1" />
+  <rect width="7" height={H} fill="#000" fill-opacity=".3" />
+  <rect x="7" width="5" height={H} fill="#000" fill-opacity=".12" />
+  <rect x={W - 7} width="7" height={H} fill="#000" fill-opacity=".26" />
+  <rect x={W - 12} width="5" height={H} fill="#000" fill-opacity=".1" />
 </svg>

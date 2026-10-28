@@ -6,7 +6,7 @@ import Base from "../../layouts/Base.astro";
 import Milestones from "../../components/Milestones.astro";
 import WoundBand from "../../components/WoundBand.astro";
 import Cite from "../../components/Cite.astro";
-import { db, record, imageUrl, imageCleared, citation, base, CHAPTER_CLOTH } from "../../lib/data.js";
+import { db, record, imageUrl, imageCleared, citation, base, CHAPTER_CLOTH, clothName } from "../../lib/data.js";
 
 export async function getStaticPaths() {
   const chapters = await getCollection("chapters");
@@ -21,14 +21,14 @@ const shade = `var(--cloth-${CHAPTER_CLOTH[d.researchChapter] || "grey"})`;
 const years = d.milestones.length ? `${d.milestones[0].year}–${d.milestones.at(-1).year}` : "";
 const words = (entry.body || "").replace(/<[^>]+>|\[@[^\]]+\]|^---[\s\S]*?---/g, " ").split(/\s+/).filter(Boolean).length;
 const cited = [...new Set(notes.flatMap(n => n.refs.map(r => r.id)))].map(record);
-const holders = Object.entries(cited.reduce((o, it) => { const k = it.type === "patent" ? "US patents" : it.institution || (it.type === "finding" ? "Research notes" : "Published sources"); o[k] = (o[k] || 0) + 1; return o; }, {})).sort((a, b) => b[1] - a[1]);
+const holders = Object.entries(cited.reduce((o, it) => { const k = it.type === "patent" ? "US patents" : it.institution || (it.type === "finding" ? "Research notes, not yet traced to a public source" : "Published sources"); o[k] = (o[k] || 0) + 1; return o; }, {})).sort((a, b) => b[1] - a[1]);
 const most = holders[0]?.[1] || 1;
 const verified = cited.filter(it => it.status === "verified").length;
 ---
 <Base title={`${d.title} · A History of Tufting`} description={d.dek} shade={shade} current="chapters" progress>
   <article>
     <header class="ch-head">
-      <div class="ch-band"><WoundBand shade={shade} n={d.number} height={72} label={`Shade ${d.number}`} /><span class="tab">Chapter {d.number}{years && <> · <span class="num">{years}</span></>}</span></div>
+      <div class="ch-band"><WoundBand shade={shade} n={d.number} height={72} /><p class="ch-label"><b class="num">Shade {d.number}</b><span>{clothName(CHAPTER_CLOTH[d.researchChapter] || "grey")}</span>{years && <span class="num">{years}</span>}</p></div>
       <h1 class="ch-title">{d.title}</h1>
       <p class="ch-dek">{d.dek}</p>
       <div class="ch-byline"><span>By <b>Tim Eads</b></span><span>{Math.max(1, Math.round(words / 230))} minute read</span><span><span class="num">{notes.length}</span> notes, <span class="num">{cited.length}</span> sources, <span class="num">{verified}</span> checked at the archive</span>{d.status !== "final" && <span>{d.status === "prototype" ? "Prototype draft" : "Draft"}</span>}</div>
