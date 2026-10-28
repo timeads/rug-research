@@ -1,14 +1,20 @@
 ---
-// The chapter's key dates on one thread, spaced by year; a list on narrow screens.
+// The chapter's key dates on one thread, spaced by year; a list on narrow screens. Labels alternate above
+// and below the thread, so each needs room up to the next label on its side. When dates bunch so closely
+// that labels would overprint (a long span with a cluster of recent dates), the dates are spaced evenly
+// instead, still in order.
 import { base } from "../lib/data.js";
 const { items = [] } = Astro.props;
 const years = items.map(m => parseInt(m.year, 10));
 const lo = Math.min(...years), hi = Math.max(...years);
-const x = y => `${((y - lo) / (hi - lo || 1)) * 90 + 1}%`;
+const byYear = years.map(y => ((y - lo) / (hi - lo || 1)) * 90 + 1);
+// A label is 8.5rem wide on a thread about 51rem long: same-side neighbours need about 18.5% between them.
+const fits = byYear.every((x, i) => i < 2 || x - byYear[i - 2] >= 18.5);
+const pos = fits ? byYear : years.map((_, i) => (i / Math.max(1, years.length - 1)) * 90 + 1);
 ---
 <section class="milestones" aria-labelledby="key-dates">
   <h2 id="key-dates">Key dates</h2>
   <ol>
-    {items.map((m, i) => <li style={`--x:${x(years[i])}`}><a href={base(`records/${m.record}/`)}><b>{m.year}</b>{m.label}</a></li>)}
+    {items.map((m, i) => <li style={`--x:${pos[i]}%`}><a href={base(`records/${m.record}/`)}><b>{m.year}</b>{m.label}</a></li>)}
   </ol>
 </section>
