@@ -3539,7 +3539,24 @@ window.RUG_ITEMS = [
       "Ross patent lineage"
     ],
     "status": "unverified",
-    "confidence": "solid"
+    "confidence": "solid",
+    "images": [
+      {
+        "src": "images/patents/US3968757-1.png",
+        "caption": "US 3,968,757, sheet 1"
+      },
+      {
+        "src": "images/patents/US3968757-2.png",
+        "caption": "US 3,968,757, sheet 2"
+      },
+      {
+        "src": "images/patents/US3968757-3.png",
+        "caption": "US 3,968,757, sheet 3"
+      }
+    ],
+    "image": "images/patents/US3968757-1.png",
+    "imageCredit": "USPTO via Google Patents (public domain)",
+    "imageSource": "uspto"
   },
   {
     "id": "pat-us4011823a",
@@ -3563,7 +3580,24 @@ window.RUG_ITEMS = [
       "hobby"
     ],
     "status": "unverified",
-    "confidence": "solid"
+    "confidence": "solid",
+    "images": [
+      {
+        "src": "images/patents/US4011823-1.png",
+        "caption": "US 4,011,823, sheet 1"
+      },
+      {
+        "src": "images/patents/US4011823-2.png",
+        "caption": "US 4,011,823, sheet 2"
+      },
+      {
+        "src": "images/patents/US4011823-3.png",
+        "caption": "US 4,011,823, sheet 3"
+      }
+    ],
+    "image": "images/patents/US4011823-1.png",
+    "imageCredit": "USPTO via Google Patents (public domain)",
+    "imageSource": "uspto"
   },
   {
     "id": "pat-us5090341a",
