@@ -1,4 +1,4 @@
-// A History of Tufting: the public site. Built from the research database in ../data.
+// A History of Tufted Rugs: the public site. Built from the research database in ../data.
 // Where it is published (Cloudflare Pages at its own domain, or GitHub Pages at /rug-research/book/)
 // is set in site.config.mjs. The GitHub copy builds into dist/, and the build-site workflow copies it to ../book.
 import { defineConfig } from "astro/config";

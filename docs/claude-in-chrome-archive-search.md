@@ -1,6 +1,6 @@
 # Archive search brief for Claude in Chrome
 
-You are helping Tim Eads research the history of rugs, carpet and tufting for a Winterthur fellowship application and a history of tufting for his firm, Tuft the World. The research lives in a website, the **Rug Research database**: https://timeads.github.io/rug-research/
+You are helping Tim Eads research the history of rugs, carpet and tufting for a Winterthur fellowship application and a history of tufted rugs for his firm, Tuft the World. The research lives in a website, the **Rug Research database**: https://timeads.github.io/rug-research/
 
 Your job: search the archives listed below, which the database can't search for itself. For each archive, run the searches given, open the promising results, and add the relevant items to the database. Work through the archives in the order given. At the end, report back (see "When you finish").
 

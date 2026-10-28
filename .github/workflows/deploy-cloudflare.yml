@@ -1,6 +1,6 @@
 name: Publish to Cloudflare
 
-# Builds A History of Tufting for its own domain and publishes it to Cloudflare Pages (project
+# Builds A History of Tufted Rugs for its own domain and publishes it to Cloudflare Pages (project
 # "historyoftuftedrugs"), then makes sure www.historyoftuftedrugs.com and historyoftuftedrugs.com point at it
 # (scripts/cloudflare-setup.sh). Needs two repository secrets: CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID.
 on:

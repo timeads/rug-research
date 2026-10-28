@@ -32,7 +32,7 @@ zone=$(cf "$API/zones?name=$APEX" | jq -r '.result[0].id // empty')
 for name in "$WWW" "$APEX"; do
   existing=$(cf "$API/zones/$zone/dns_records?name=$name" | jq -r '[.result[]? | "\(.type) \(.content)"] | join(", ")')
   if [ -n "$existing" ]; then echo "DNS for $name already set: $existing"; continue; fi
-  r=$(cf -X POST "$API/zones/$zone/dns_records" -d "{\"type\":\"CNAME\",\"name\":\"$name\",\"content\":\"$target\",\"proxied\":true,\"comment\":\"A History of Tufting (Cloudflare Pages)\"}")
+  r=$(cf -X POST "$API/zones/$zone/dns_records" -d "{\"type\":\"CNAME\",\"name\":\"$name\",\"content\":\"$target\",\"proxied\":true,\"comment\":\"A History of Tufted Rugs (Cloudflare Pages)\"}")
   if ok "$r"; then echo "DNS: $name -> $target"; else echo "DNS for $name failed: $(errors "$r")"; exit 1; fi
 done
 

@@ -1,6 +1,6 @@
 name: Build the public site
 
-# Rebuilds the Astro site in site/ (A History of Tufting) whenever its pages or the research data
+# Rebuilds the Astro site in site/ (A History of Tufted Rugs) whenever its pages or the research data
 # change, and commits the result to book/, where GitHub Pages serves it at /rug-research/book/.
 on:
   push:

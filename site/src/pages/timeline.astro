@@ -16,7 +16,7 @@ for (let d = FIRST; d < LAST; d += 10) bars.push({ label: `${d}s`, n: dated.filt
 const most = Math.max(...bars.map(b => b.n));
 const yearOf = x => x.dateEnd && x.dateEnd !== x.dateStart && x.dateEnd - x.dateStart < 30 ? `${fmtYear(x.dateStart)}–${String(x.dateEnd).slice(-2)}` : fmtYear(x.dateStart);
 ---
-<Base title="Timeline · A History of Tufting" description="Every dated record in the research, era by era." current="timeline" shade="var(--ink)">
+<Base title="Timeline · A History of Tufted Rugs" description="Every dated record in the research, era by era." current="timeline" shade="var(--ink)">
   <header class="page-head">
     <h1>Timeline</h1>
     <p>All {dated.length} dated objects, patents, archives and findings in the research, from Egyptian tapestry to the robot studio. Choose a theme to follow one thread.</p>

@@ -1,4 +1,4 @@
-// Starting outline for "A History of Tufting".
+// Starting outline for "A History of Tufted Rugs".
 // Loaded once into the Write view; after that the chapters live in your browser
 // (and in your backups), where you can rename, reorder, draft and add evidence.
 // Each "intro" is a set of working notes drawn from the research so far, to write over.

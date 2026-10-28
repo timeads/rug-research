@@ -1,5 +1,5 @@
 // Eras for the Timeline view. Each era heads the decades from `from` to `to` (inclusive
-// start years) with a short summary of why the period matters for the history of tufting.
+// start years) with a short summary of why the period matters for the history of tufted rugs.
 // The summaries are working drafts drawn from records in the database. Edits made on the
 // site are kept in the browser (and in backups); edit here to change the defaults for everyone.
 window.RUG_ERAS = [

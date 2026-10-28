@@ -1,5 +1,5 @@
 ---
-name: A History of Tufting
+name: A History of Tufted Rugs
 description: A dye house's yarn shade card; every chapter is one wound shade on a single cool card, read in a calm column with its sources in the margin.
 colors:
   shade-teal: "#1e6767"
@@ -156,7 +156,7 @@ components:
     padding: "1rem 1.25rem"
 ---
 
-# Design System: A History of Tufting
+# Design System: A History of Tufted Rugs
 
 ## Overview
 

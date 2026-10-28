@@ -5,7 +5,7 @@ primary_target: "site/src/pages/chapters/[slug].astro"
 related_targets: ["site/src/pages/index.astro","site/src/pages/timeline.astro","site/src/pages/bibliography.astro","site/src/pages/records/[id].astro"]
 ---
 
-# A History of Tufting (public site)
+# A History of Tufted Rugs (public site)
 
 Scope: the public site in `site/` (cover, chapters, timeline, bibliography, record pages), published at /rug-research/book/. Visitor mode: Read.
 

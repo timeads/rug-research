@@ -15,9 +15,9 @@ const facts = [["Made by", it.creator], ["Date", it.date], ["Place", it.place], 
 const shade = cloth(it.themes[0]);
 const img = it.image && !it.image.startsWith("idb:") ? it.image : "";
 // For search results: what the source is, when, and who holds it.
-const description = [`${TYPE[it.type] || "Source"}: ${it.title.replace(/^(REFUTED|UNVERIFIED|CORRECTION)\s*:\s*/i, "")}`, it.date, it.institution].filter(Boolean).join(", ") + ". A source for A History of Tufting, by Tim Eads.";
+const description = [`${TYPE[it.type] || "Source"}: ${it.title.replace(/^(REFUTED|UNVERIFIED|CORRECTION)\s*:\s*/i, "")}`, it.date, it.institution].filter(Boolean).join(", ") + ". A source for A History of Tufted Rugs, by Tim Eads.";
 ---
-<Base title={`${it.title} · A History of Tufting`} description={description} shade={shade} image={img && imageCleared(it) ? imageUrl(img) : ""}>
+<Base title={`${it.title} · A History of Tufted Rugs`} description={description} shade={shade} image={img && imageCleared(it) ? imageUrl(img) : ""}>
   <div class={`rec ${img ? "" : "noimg"}`}>
     {img && <figure class="plate"><img src={imageUrl(img, 1400)} alt={it.title} referrerpolicy="no-referrer" />{it.imageRole === "illustration" && <figcaption>Illustration, not the item itself: {it.imageCaption || "a comparable item"}</figcaption>}</figure>}
     <div>

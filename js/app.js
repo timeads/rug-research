@@ -31,7 +31,7 @@
 
   const FLAGS = [
     { id: "fellowship", label: "Winterthur fellowship", color: "var(--cloth-oxblood)" },
-    { id: "tufting",    label: "History of tufting",    color: "var(--cloth-navy)" },
+    { id: "tufting",    label: "History of tufted rugs",    color: "var(--cloth-navy)" },
     { id: "followup",   label: "Follow up or verify",   color: "var(--cloth-ochre)" },
     { id: "request",    label: "Request or visit",      color: "var(--cloth-moss)" },
     { id: "image",      label: "Need image rights",     color: "var(--cloth-plum)" }
@@ -417,7 +417,7 @@
       </button>
       <div class="card-actions ${fl.length || inList ? "has-on" : ""}">
         ${act(fl.includes("fellowship"), 'data-qflag="fellowship"', "star", "Flag for Winterthur fellowship", FLAG_BY_ID.fellowship.color)}
-        ${act(fl.includes("tufting"), 'data-qflag="tufting"', "flag", "Flag for History of tufting", FLAG_BY_ID.tufting.color)}
+        ${act(fl.includes("tufting"), 'data-qflag="tufting"', "flag", "Flag for History of tufted rugs", FLAG_BY_ID.tufting.color)}
         ${act(inList, "data-qlist", "bookmark", inList ? `Remove from "${activeList().name}"` : `Add to "${activeList().name}"`, "#2b3330")}
       </div></article>`;
   };
@@ -722,7 +722,7 @@
     S.lists.splice(last + 1, 0, l); S.activeList = l.id; save(); return l;
   };
   const newList = () => {
-    const name = prompt("Name for the new compilation:", "History of tufting: chapter 1");
+    const name = prompt("Name for the new compilation:", "History of tufted rugs: chapter 1");
     if (!name) return null;
     const l = { id: uid(), name, intro: "", items: [] };
     S.lists.push(l); S.activeList = l.id; save(); return l;
@@ -1116,7 +1116,7 @@
     const chapters = S.lists.filter(isChapter);
     if (!chapters.length) return toast("Add a chapter first.");
     const all = [];
-    const out = ["# A History of Tufting", "", `*Working manuscript exported ${new Date().toISOString().slice(0, 10)}. Unverified sources are marked.*`, ""];
+    const out = ["# A History of Tufted Rugs", "", `*Working manuscript exported ${new Date().toISOString().slice(0, 10)}. Unverified sources are marked.*`, ""];
     chapters.forEach((l, ci) => {
       const items = l.items.map(id => BY_ID[id]).filter(Boolean);
       out.push(`## ${ci + 1}. ${l.name}`, "", (l.intro || "*No draft yet.*").trim(), "");
@@ -1630,7 +1630,7 @@
     "research-fetch.yml": ["Research fetch", "Saves source pages for checking citations."],
     "hagley-search.yml": ["Hagley search", "Searches Hagley's catalogue for records."],
     "check-data.yml": ["Data check", "Checks the data files after every change."],
-    "build-site.yml": ["Public site", "Rebuilds A History of Tufting (the chapter, timeline and bibliography) after changes."],
+    "build-site.yml": ["Public site", "Rebuilds A History of Tufted Rugs (the chapter, timeline and bibliography) after changes."],
     "pages-build-deployment": ["Publishing the site", "Puts the latest changes live, usually within a minute."]
   };
   const loadedAt = Date.now();

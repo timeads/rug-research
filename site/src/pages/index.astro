@@ -19,16 +19,16 @@ const rows = chapters.map((c, i) => {
 const ready = rows.filter(r => r.slug).length;
 // The history as a book, with the chapters that can be read so far.
 const schema = {
-  "@context": "https://schema.org", "@type": "Book", name: "A History of Tufting", url: canonical(""), inLanguage: "en",
+  "@context": "https://schema.org", "@type": "Book", name: "A History of Tufted Rugs", url: canonical(""), inLanguage: "en",
   author: { "@type": "Person", name: "Tim Eads" },
   hasPart: rows.filter(r => r.slug).map(r => ({ "@type": "Chapter", name: r.title, position: r.n, url: canonical(`chapters/${r.slug}/`) }))
 };
 const dated = items.filter(x => x.dateStart != null).length;
 const sources = items.filter(x => ["book", "article", "archive", "trade-catalog", "patent", "film", "oral-history"].includes(x.type)).length;
 ---
-<Base title="A History of Tufting" description="A history of tufting in thirteen chapters, from needle-made pile to the tufting gun and the robot, by Tim Eads." current="chapters" schema={schema}>
+<Base title="A History of Tufted Rugs" description="A history of tufted rugs in thirteen chapters, from needle-made pile to the tufting gun and the robot, by Tim Eads." current="chapters" schema={schema}>
   <section class="cover">
-    <h1>A History of Tufting</h1>
+    <h1>A History of Tufted Rugs</h1>
     <p class="scope">From needle-made pile and candlewick spreads to the broadloom mills of Dalton, the hand-held gun and the robot, told from patents, trade papers, archives and the objects themselves.</p>
     <p class="by">By Tim Eads</p>
   </section>

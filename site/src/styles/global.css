@@ -1,4 +1,4 @@
-/* A History of Tufting: the shade card.
+/* A History of Tufted Rugs: the shade card.
    A dye house's yarn shade card: cool card-stock grey (never cream), a charcoal bookcloth board for the
    masthead and foot, one wound-yarn shade per chapter. Archivo for the frame and headings, Literata for
    reading. The world owns the frame; the reading column stays calm. */
@@ -60,8 +60,13 @@ a:hover { text-decoration-color: currentColor; }
 }
 .notice { max-width: 80rem; margin: 0 auto; padding: .6rem clamp(1rem, 3vw, 2rem); font: 450 .8125rem/1.45 var(--frame); color: var(--ink-2); border-bottom: 1px solid var(--rule); }
 .notice b { font-weight: 650; color: var(--ink); }
-@media (max-width: 560px) { .mast .in { gap: .9rem; } .mast nav { gap: .85rem; font-size: .8125rem; } .wordmark { font-size: 1rem; } }
-@media (max-width: 360px) { .wordmark { font-size: .875rem; } }
+/* Phones: the title on its own line, the navigation in a compact row under it. */
+@media (max-width: 560px) {
+  .mast .in { height: auto; flex-wrap: wrap; gap: 0 1.1rem; padding-top: .8rem; }
+  .wordmark { width: 100%; font-size: 1rem; }
+  .mast nav { margin-left: 0; gap: 1.1rem; font-size: .8125rem; }
+  .mast nav a { padding: .65rem 0 .55rem; }
+}
 
 /* ---------- the shade card (cover) ---------- */
 .cover { max-width: var(--wide); margin: 0 auto; padding: clamp(3rem, 8vw, 5.5rem) 1.25rem 2.5rem; }

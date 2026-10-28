@@ -1,4 +1,4 @@
-# A History of Tufting: the public site
+# A History of Tufted Rugs: the public site
 
 An [Astro](https://astro.build) site built from the research database in `../data`. The same files make
 two builds (set in `site.config.mjs`):

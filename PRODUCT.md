@@ -16,14 +16,14 @@ The research tool (the root site) has one user, Tim Eads, with Claude and Claude
 
 Two connected products in one repository:
 
-- **The research database** (root site, `index.html`): gathers, checks and organises the evidence for a history of tufting, and drafts the chapters.
-- **A History of Tufting** (`site/`, published at `/book/`): the public history, by Tim Eads, written from that evidence. Chapters, a timeline of every dated record, a page per source, and a full bibliography.
+- **The research database** (root site, `index.html`): gathers, checks and organises the evidence for a history of tufted rugs, and drafts the chapters.
+- **A History of Tufted Rugs** (`site/`, published at `/book/`): the public history, by Tim Eads, written from that evidence. Chapters, a timeline of every dated record, a page per source, and a full bibliography.
 
 Success: a reader can follow the history chapter by chapter and reach the original source behind any sentence in one step; a scholar finds nothing asserted without evidence.
 
 ## Positioning
 
-A history of tufting written by a practising tufter and the co-founder of a tufting firm, from primary sources (patents, trade literature, company archives at Hagley and Winterthur, museum objects, oral histories), with every claim footnoted to a public record. It follows both branches of the needle: the multiplied needle of Dalton's broadloom industry and the single hand-held tool that went global.
+A history of tufted rugs written by a practising tufter and the co-founder of a tufting firm, from primary sources (patents, trade literature, company archives at Hagley and Winterthur, museum objects, oral histories), with every claim footnoted to a public record. It follows both branches of the needle: the multiplied needle of Dalton's broadloom industry and the single hand-held tool that went global.
 
 ## Operating Context
 
@@ -42,7 +42,7 @@ A history of tufting written by a practising tufter and the co-founder of a tuft
 
 ## Brand Commitments
 
-- Author: Tim Eads. Title: *A History of Tufting*. Tuft the World (founded 2018 by Tiernan Alexander and Tim Eads, Philadelphia) is credited, not the publisher.
+- Author: Tim Eads. Title: *A History of Tufted Rugs*. Tuft the World (founded 2018 by Tiernan Alexander and Tim Eads, Philadelphia) is credited, not the publisher.
 - The research tool's established world is recorded in `DESIGN.md` (a mill's carpet sample book). The public site is a separate surface whose visual world is decided in new-work.
 
 ## Evidence on Hand

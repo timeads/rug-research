@@ -2,7 +2,7 @@
   "name": "history-of-tufting",
   "private": true,
   "type": "module",
-  "description": "The public site for A History of Tufting, built with Astro from the research database in ../data.",
+  "description": "The public site for A History of Tufted Rugs, built with Astro from the research database in ../data.",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",

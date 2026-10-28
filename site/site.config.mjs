@@ -1,4 +1,4 @@
-// Where A History of Tufting is published. The same files make two builds:
+// Where A History of Tufted Rugs is published. The same files make two builds:
 // - the public site on Cloudflare Pages, at the root of its own domain (Cloudflare's build sets CF_PAGES);
 // - the prototype inside the research site on GitHub Pages, at /rug-research/book/.
 

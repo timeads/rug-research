@@ -18,9 +18,9 @@ const nav = [["", "Contents", "chapters", ""], ["timeline/", "Timeline", "timeli
     <title>{title}</title>
     {description && <meta name="description" content={description} />}
     <link rel="canonical" href={url} />
-    <meta property="og:site_name" content="A History of Tufting" />
+    <meta property="og:site_name" content="A History of Tufted Rugs" />
     <meta property="og:type" content={type} />
-    <meta property="og:title" content={title.replace(/ · A History of Tufting$/, "")} />
+    <meta property="og:title" content={title.replace(/ · A History of Tufted Rugs$/, "")} />
     {description && <meta property="og:description" content={description} />}
     <meta property="og:url" content={url} />
     {image && <meta property="og:image" content={absolute(image)} />}
@@ -32,7 +32,7 @@ const nav = [["", "Contents", "chapters", ""], ["timeline/", "Timeline", "timeli
   <body style={`--shade:${shade}`}>
     <header class="mast">
       <div class="in">
-        <a class="wordmark" href={base("")}>A History of Tufting</a>
+        <a class="wordmark" href={base("")}>A History of Tufted Rugs</a>
         <nav aria-label="Main">
           {nav.map(([href, label, key, cls]) => <a class={cls} href={base(href)} aria-current={current === key ? "page" : undefined}>{label}</a>)}
         </nav>
@@ -43,7 +43,7 @@ const nav = [["", "Contents", "chapters", ""], ["timeline/", "Timeline", "timeli
     <main><slot /></main>
     <footer class="foot">
       <div class="in">
-        <span>A History of Tufting, by Tim Eads. Built from the <a href={RESEARCH_URL}>Rug Research database</a>.</span>
+        <span>A History of Tufted Rugs, by Tim Eads. Built from the <a href={RESEARCH_URL}>Rug Research database</a>.</span>
         <span>Every source links to the institution that holds it.</span>
       </div>
     </footer>
