@@ -12,21 +12,22 @@ two builds (set in `site.config.mjs`):
 
 ## Publishing on Cloudflare Pages
 
-One-time setup in the Cloudflare dashboard: Workers & Pages → Create application → Pages → Import an
-existing Git repository → `timeads/rug-research`, then:
+`.github/workflows/deploy-cloudflare.yml` builds the site for www.historyoftuftedrugs.com and publishes
+it to the Cloudflare Pages project `historyoftuftedrugs` on every push that changes `site/`, `data/` or
+`images/` (or by hand, from the Actions tab). It creates the project on its first run, and
+`scripts/cloudflare-setup.sh` attaches both addresses, adds their DNS records where none exist, and
+redirects historyoftuftedrugs.com to www.
 
-| Setting | Value |
-| --- | --- |
-| Production branch | `claude/ecstatic-hamilton-gw4o0u` (the branch GitHub Pages serves) |
-| Framework preset | Astro |
-| Build command | `npm run build` |
-| Build output directory | `dist` |
-| Root directory (advanced) | `site` |
+It needs two repository secrets (GitHub → Settings → Secrets and variables → Actions):
 
-Node 22 comes from `.nvmrc`. Then, in the project's Custom domains tab, add the domain (and `www` if wanted).
+- `CLOUDFLARE_ACCOUNT_ID`: the Account ID shown on the Cloudflare dashboard's account home page.
+- `CLOUDFLARE_API_TOKEN`: a token made at My Profile → API Tokens → Create Token → Create Custom Token,
+  with these permissions: Account · Cloudflare Pages · Edit; Zone · Zone · Read; Zone · DNS · Edit;
+  Zone · Single Redirect (also listed as Dynamic URL Redirects) · Edit. Limit its zone resources to
+  historyoftuftedrugs.com.
 
-Once the domain works, set `DOMAIN` in `site.config.mjs`: every page (the GitHub copy too) then names its
-address on the domain as its canonical address, and the sitemap uses it.
+`DOMAIN` in `site.config.mjs` is the address every page (the GitHub copy too) names as its canonical one,
+and the sitemap uses it.
 
 **Search engines.** Every page says `noindex` until `OPEN_TO_SEARCH` in `site.config.mjs` is `true` (and
 `DOMAIN` is set). Then add the domain to Google Search Console (Cloudflare can verify it automatically) and
