@@ -144,12 +144,13 @@ h1.ch-title { margin: 1.75rem 0 0; font: 680 clamp(2.5rem, 6vw, 4.5rem)/1 var(--
    small pictures float into it inside their own box; wide pictures and quotes take the full width. */
 .prose { max-width: var(--wide); margin: 0 auto; padding: 3.5rem 1.25rem 2rem; font: 400 1.125rem/1.66 var(--read); }
 .prose > * { padding-right: calc(var(--margin) + var(--gap)); }
-.prose > .wide, .prose > .pull, .prose > .pair, .prose > .aside, .prose > .full, .prose > .margin { padding-right: 0; }
+.prose > .wide, .prose > .pull, .prose > .aside, .prose > .full, .prose > .margin { padding-right: 0; }
+.prose > .pair { padding-right: 0; max-width: var(--measure); } /* text width, so margin notes run on beside it */
 .prose > .full { width: 100vw; margin-left: calc(50% - 50vw); }
 .prose p { margin: 0 0 1.1em; text-wrap: pretty; hanging-punctuation: first; }
 .prose h2 { margin: 2.4em 0 .7em; font: 660 1.6rem/1.15 var(--frame); font-stretch: 90%; letter-spacing: -.012em; text-wrap: balance; }
 .prose em { font-style: italic; }
-.prose .wide, .prose .pull, .prose .pair, .prose .aside, .prose .full { clear: both; }
+.prose .wide, .prose .pull, .prose .aside, .prose .full { clear: both; }
 .fn { font: 650 .66em/0 var(--frame); vertical-align: super; margin-left: .06em; }
 .fn a { text-decoration: none; color: var(--shade-ink); padding: 0 .12em; }
 .sidenote { float: right; clear: right; width: var(--margin); margin: .25rem calc(-1 * (var(--margin) + var(--gap))) .9rem 0; font: 400 .8125rem/1.45 var(--frame); color: var(--ink-3); text-wrap: pretty; }
