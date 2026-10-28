@@ -1,12 +1,8 @@
-cover: 1 of 1 images loaded
+cover: 0 of 0 images loaded
 chapter-desktop: 9 of 9 images loaded
 chapter-phone: 9 of 9 images loaded
-timeline: 189 of 196 images loaded
-  broken: https://iiif.wellcomecollection.org/image/V0024155ER.jpg/full/300,/0/default.jpg
-  broken: https://archive.org/services/img/innovationinunit0000will/full/pct:200/0/default.jpg
-  broken: https://covers.openlibrary.org/b/id/13899835-L.jpg
-  broken: https://covers.openlibrary.org/b/isbn/9780820324647-L.jpg?default=false
+cover-phone: 0 of 0 images loaded
+timeline: 194 of 196 images loaded
   broken: https://img2.chinadaily.com.cn/images/202505/12/682169dda310a04a96783487.jpeg
-  broken: https://covers.openlibrary.org/b/isbn/9780820345161-L.jpg?default=false
   broken: https://welspunflooring.com/images/about/banner.webp
 record: 1 of 1 images loaded
