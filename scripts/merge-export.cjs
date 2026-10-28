@@ -10,6 +10,7 @@
 //   - not published at all                                 → new: added, unless it looks like a
 //     duplicate (same page address, same catalogue number at the same place, or the same title)
 //   - published but missing from the export                → reported, never deleted
+// Merged records get reviewedAt (see js/app.js: a browser's own copy older than that is dropped).
 // Pictures borrowed from a related record (credit "Image from related record…") are ignored, as
 // older exports wrongly saved them as records' own.
 //
@@ -30,6 +31,8 @@ const tidy = o => {
   return c;
 };
 const key = o => JSON.stringify(tidy(o));
+// Merged records are stamped, so a browser drops its own older copy and shows the published one.
+const NOW = new Date().toISOString();
 const urlKey = u => String(u || "").toLowerCase().replace(/^https?:\/\/(www\.)?/, "").replace(/[/#?]+$/, "");
 const titleKey = t => String(t || "").toLowerCase().normalize("NFKD").replace(/[^\p{L}\p{N}]+/gu, " ").trim();
 
@@ -71,7 +74,7 @@ for (const e of exp) {
       if (k in te) OUT[id][k] = te[k]; else delete OUT[id][k];
       changed.push(k);
     }
-    if (changed.length) report.edited.push(`${id}: ${changed.join(", ")}`); else report.stale.push(id);
+    if (changed.length) { OUT[id].reviewedAt = NOW; report.edited.push(`${id}: ${changed.join(", ")}`); } else report.stale.push(id);
   } else if (hist[id]) {
     report.stale.push(`${id} (removed from the published database since; not re-added)`);
   } else {
@@ -81,7 +84,7 @@ for (const e of exp) {
       (e.identifier && x.identifier && titleKey(e.identifier) === titleKey(x.identifier) && titleKey(e.institution) === titleKey(x.institution)) ||
       (titleKey(e.title).length > 12 && titleKey(e.title) === titleKey(x.title)));
     if (dup) { report.duplicates.push(`${id} "${e.title}" looks like published ${dup.id} "${dup.title}": not added`); continue; }
-    const rec = tidy(e); rec.id = id; out.push(rec); OUT[id] = rec;
+    const rec = tidy(e); rec.id = id; rec.reviewedAt = NOW; out.push(rec); OUT[id] = rec;
     report.added.push(`${id}: ${e.title}`);
   }
 }

@@ -7,6 +7,8 @@
 // status: "verified"   = checked against the holding institution's own record
 //         "unverified" = gathered from secondary sources / search summaries;
 //                        confirm titles, dates and numbers before citing.
+// Records taken out after being merged from an export, with when; a browser drops its own copy of them.
+window.RUG_REMOVED = {"wc-3126256":"2026-10-28T15:05:57.518Z","met-7405":"2026-10-28T15:05:57.518Z"};
 window.RUG_ITEMS = [
   {
     "id": "wint-1964-0804",
@@ -11081,7 +11083,8 @@ window.RUG_ITEMS = [
     "imageSource": "picked",
     "rights": "not-requested",
     "imageRole": "illustration",
-    "imageCaption": "“Lily” Wilton carpet sample, designed by William Morris 1875, woven by the Wilton Royal Carpet Factory, CIRC.65B-1959"
+    "imageCaption": "“Lily” Wilton carpet sample, designed by William Morris 1875, woven by the Wilton Royal Carpet Factory, CIRC.65B-1959",
+    "reviewedAt": "2026-10-28T15:05:57.518Z"
   },
   {
     "id": "woven-kidderminster-brussels-1749",
@@ -11359,7 +11362,8 @@ window.RUG_ITEMS = [
     "imagePage": "https://collections.vam.ac.uk/item/O51045/",
     "imageRole": "illustration",
     "imageSource": "picked",
-    "rights": "not-requested"
+    "rights": "not-requested",
+    "reviewedAt": "2026-10-28T15:05:57.518Z"
   },
   {
     "id": "rsa-carpet-premiums-1757-59",
@@ -11429,7 +11433,7 @@ window.RUG_ITEMS = [
     "institution": "The Metropolitan Museum of Art",
     "identifier": "57.162a, b",
     "sourceUrl": "https://www.metmuseum.org/art/collection/search/202045",
-    "description": "Hand-knotted wool carpet, 23 × 16 ft (701 × 487.7 cm), bought with funds from various donors in 1957; not on view. Tentative attribution ('probably'). The best Met example of the knotted 'Axminster' that loom-woven Wilton and Brussels competed with on price. Sources: https://www.metmuseum.org/art/collection/search/202045\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "description": "Hand-knotted wool carpet, 23 × 16 ft (701 × 487.7 cm), bought with funds from various donors in 1957; not on view. Tentative attribution ('probably'). The best Met example of the knotted 'Axminster' that loom-woven Wilton and Brussels competed with on price. Sources: https://www.metmuseum.org/art/collection/search/202045\n\nResearch note (Oct 2026): from search results; pages not opened.\n\nSee also met-928622: the Met's second Whitty carpet, ca. 1765, acquired 2025 (the picture shown here is of that carpet).",
     "tags": [
       "pre-Wilton",
       "Axminster",
@@ -11449,7 +11453,48 @@ window.RUG_ITEMS = [
     "imageSource": "picked",
     "rights": "public-domain",
     "imageRole": "illustration",
-    "imageCaption": "Carpet, ca. 1765, attributed to Thomas Whitty, Axminster (a different carpet), 2025.725"
+    "imageCaption": "Carpet, ca. 1765, attributed to Thomas Whitty, Axminster (a different carpet), 2025.725",
+    "reviewedAt": "2026-10-28T15:05:57.518Z"
+  },
+  {
+    "id": "met-928622",
+    "type": "object",
+    "title": "Axminster carpet attributed to Thomas Whitty, ca. 1765 (Met 2025.725)",
+    "creator": "Attributed to Thomas Whitty (1713–1792); Axminster carpet manufactory",
+    "place": "Axminster, Devon",
+    "region": "United Kingdom",
+    "date": "ca. 1765",
+    "dateStart": 1760,
+    "dateEnd": 1770,
+    "institution": "The Metropolitan Museum of Art",
+    "collection": "European Sculpture and Decorative Arts",
+    "identifier": "2025.725",
+    "materials": [
+      "wool"
+    ],
+    "techniques": [
+      "hand-knotted"
+    ],
+    "dimensions": "17 ft × 14 ft 11 3/4 in. (518.2 × 456.6 cm), irregular rectangle",
+    "description": "Hand-knotted wool carpet (\"Wool; knotted pile\"), attributed to Thomas Whitty of the Axminster carpet manufactory, ca. 1765 (the Met's date range 1760–1770). Acquired by the Met in 2025: \"Purchase, F.J. Hakimian Gift, in memory of Joseph Hakimian, and Christian Keesee and Anonymous Gifts, in memory of Irene Roosevelt Aitken, 2025\". Gallery 511. Public domain image.\nWhy it matters: a dated Whitty attribution from his first decade at Axminster (his first carpet was finished in 1755), a generation earlier than the Met's other Whitty carpet (57.162, ca. 1780–90).\nSource: Met Collection API, object 928622 (record dated 2026-07-16), saved in research/fetched.",
+    "image": "https://images.metmuseum.org/CRDImages/es/web-large/DP-45246-001.jpg",
+    "imageCredit": "The Metropolitan Museum of Art",
+    "imagePage": "https://www.metmuseum.org/art/collection/search/928622",
+    "imageSource": "manual",
+    "rights": "public-domain",
+    "sourceUrl": "https://www.metmuseum.org/art/collection/search/928622",
+    "status": "verified",
+    "confidence": "solid",
+    "themes": [
+      "Woven carpet"
+    ],
+    "tags": [
+      "Axminster",
+      "Whitty",
+      "hand-knotted",
+      "Met",
+      "via Met API"
+    ]
   },
   {
     "id": "drawloom-to-jacquard-carpet",
@@ -11485,7 +11530,8 @@ window.RUG_ITEMS = [
     "imageSource": "picked",
     "rights": "not-requested",
     "imageRole": "illustration",
-    "imageCaption": "Textiles: a mechanical carpet loom, three-quarter view, with spectators. Engraving, c. 1862"
+    "imageCaption": "Textiles: a mechanical carpet loom, three-quarter view, with spectators. Engraving, c. 1862",
+    "reviewedAt": "2026-10-28T15:05:57.518Z"
   },
   {
     "id": "thesis-mcfadden-arbuthnot-drafts",
@@ -12694,7 +12740,8 @@ window.RUG_ITEMS = [
     "imagePage": "https://clevelandart.org/art/1961.388",
     "rights": "not-requested",
     "imageRole": "illustration",
-    "imageCaption": "Carpet (Kilim), late 19th–early 20th century, 1961.388"
+    "imageCaption": "Carpet (Kilim), late 19th–early 20th century, 1961.388",
+    "reviewedAt": "2026-10-28T15:05:57.518Z"
   },
   {
     "id": "process-flatweave-soumak-tm",
@@ -12769,7 +12816,8 @@ window.RUG_ITEMS = [
     "imagePage": "https://commons.wikimedia.org/wiki/File:Mable_Burnside_(Myers)_at_Navajo_fairgrounds.jpg",
     "imageRole": "illustration",
     "imageSource": "picked",
-    "rights": "not-requested"
+    "rights": "not-requested",
+    "reviewedAt": "2026-10-28T15:05:57.518Z"
   },
   {
     "id": "process-flatweave-navajo-chief-asm",
@@ -12805,7 +12853,8 @@ window.RUG_ITEMS = [
     ],
     "imageSource": "auto",
     "image": "https://statemuseum.arizona.edu/sites/default/files/styles/az_medium/public/E-1200_x.jpg.webp?itok=slMykIUN",
-    "imageCredit": "Arizona State Museum, University of Arizona"
+    "imageCredit": "Arizona State Museum, University of Arizona",
+    "reviewedAt": "2026-10-28T15:05:57.518Z"
   },
   {
     "id": "process-flatweave-dhurrie-penn",
@@ -12877,7 +12926,8 @@ window.RUG_ITEMS = [
     "imagePage": "https://commons.wikimedia.org/wiki/File:R%C3%B6llakan.jpg",
     "imageRole": "illustration",
     "imageSource": "picked",
-    "rights": "not-requested"
+    "rights": "not-requested",
+    "reviewedAt": "2026-10-28T15:05:57.518Z"
   },
   {
     "id": "process-knotted-pazyryk",
@@ -12983,7 +13033,8 @@ window.RUG_ITEMS = [
     "imagePage": "https://commons.wikimedia.org/wiki/File:Pazyryk_carpet.jpg",
     "imageRole": "illustration",
     "imageSource": "picked",
-    "rights": "not-requested"
+    "rights": "not-requested",
+    "reviewedAt": "2026-10-28T15:05:57.518Z"
   },
   {
     "id": "process-knotted-spanish-knot",
@@ -13024,7 +13075,8 @@ window.RUG_ITEMS = [
     "imagePage": "https://commons.wikimedia.org/wiki/File:Spanish_knot.svg",
     "rights": "not-requested",
     "imageRole": "illustration",
-    "imageCaption": "Diagram of the single-warp (Spanish) knot"
+    "imageCaption": "Diagram of the single-warp (Spanish) knot",
+    "reviewedAt": "2026-10-28T15:05:57.518Z"
   },
   {
     "id": "process-knotted-tibetan",
@@ -13770,7 +13822,15 @@ window.RUG_ITEMS = [
     "dateEnd": 1930,
     "place": "USA (patent); found in Auckland, New Zealand",
     "identifier": "1932.212.1",
-    "imageCredit": "Auckland War Memorial Museum, CC BY 4.0"
+    "imageCredit": "Auckland War Memorial Museum, CC BY 4.0",
+    "reviewedAt": "2026-10-28T15:05:57.518Z",
+    "themes": [
+      "Hooked & handmade rugs",
+      "Tools & equipment",
+      "Hand-tufting tools & the gun",
+      "Global diffusion of tufting"
+    ],
+    "region": "New Zealand"
   },
   {
     "creator": "Orville A. Carroll",
@@ -13791,47 +13851,13 @@ window.RUG_ITEMS = [
     "dateStart": 1938,
     "imageCredit": "National Gallery of Art, CC0",
     "place": "Kentucky",
-    "description": "Watercolour rendering for the Index of American Design (Kentucky), donated to Wikimedia Commons by the National Gallery of Art under CC0.",
-    "identifier": "NGA 25792"
-  },
-  {
-    "creator": "bradleyolin from Santa Cruz, USA",
-    "date": "2007-10-26 15:22",
-    "dateStart": 2007,
-    "description": "70s flashback!  Shag carpet fabric in a cabin",
-    "id": "wc-3126256",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Shag.jpg",
-    "institution": "Wikimedia Commons",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shag.jpg",
-    "status": "unverified",
-    "tags": [
-      "via Wikimedia Commons"
+    "description": "Watercolour rendering made for the Index of American Design (Kentucky), c. 1938; Commons categories: Index of American Design in Kentucky, 1938 drawings. Donated to Wikimedia Commons by the National Gallery of Art under CC0. What “tufted” means here (sewn tufts, shirred or yarn-sewn pile) is not stated; see the NGA's own record.",
+    "identifier": "NGA 25792",
+    "reviewedAt": "2026-10-28T15:05:57.518Z",
+    "themes": [
+      "Early tufting: bed rugs & needlework pile",
+      "Hooked & handmade rugs"
     ],
-    "title": "Shag",
-    "type": "image"
-  },
-  {
-    "collection": "The American Wing",
-    "creator": "United Society of Believers in Christ’s Second Appearing (“Shakers”)",
-    "date": "ca. 1842",
-    "dateEnd": 1842,
-    "dateStart": 1839,
-    "description": "Purchase, Anonymous Gift, 1981",
-    "dimensions": "11 x 9 1/4 x 10 3/4 in. (27.9 x 23.5 x 27.3 cm)",
-    "id": "met-7405",
-    "identifier": "1981.207",
-    "image": "https://images.metmuseum.org/CRDImages/ad/web-large/ADA5177.jpg",
-    "institution": "The Metropolitan Museum of Art",
-    "materials": [
-      "Pine"
-    ],
-    "place": "New Lebanon, New York, United States",
-    "sourceUrl": "https://www.metmuseum.org/art/collection/search/7405",
-    "status": "verified",
-    "tags": [
-      "via Met API"
-    ],
-    "title": "Sewing steps",
-    "type": "object"
+    "region": "United States"
   }
 ];

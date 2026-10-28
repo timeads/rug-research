@@ -1752,13 +1752,22 @@
   }
   // A local copy of a record that now matches the published database (for example after its export was
   // committed) is dropped, so later fixes to the published record show here. Only image fields may
-  // differ, and a picture you picked or uploaded yourself always keeps the local copy.
+  // differ, and a picture you picked or uploaded yourself keeps the local copy, unless the record was
+  // merged from an export since you last changed it (reviewedAt): the published copy then already holds
+  // your changes, with any corrections. Records removed after a merge (RUG_REMOVED) go the same way.
   const IMG_KEYS = new Set(["image", "imageCredit", "imagePage", "imageSource", "rights"]);
   const sameText = (a, b) => { const k = o => JSON.stringify(Object.keys(o).filter(x => !IMG_KEYS.has(x) && !x.startsWith("_") && !(o[x] === "" || o[x] == null || (Array.isArray(o[x]) && !o[x].length))).sort().map(x => [x, o[x]])); return k(a) === k(b); };
   const BASE_BY = Object.fromEntries(BASE.map(x => [x.id, x]));
+  const REMOVED = window.RUG_REMOVED || {};
   for (const [id, mine] of Object.entries(S.items)) {
-    const pub = BASE_BY[id];
-    if (!pub || mine.imageSource === "picked" || mine.imageRole || String(mine.image || "").startsWith("idb:")) continue;
+    if (String(mine.image || "").startsWith("idb:")) continue;
+    const pub = BASE_BY[id], since = pub ? pub.reviewedAt : REMOVED[id];
+    if (since && (S.touched[id] || 0) <= Date.parse(since)) {
+      delete S.items[id];
+      if (!pub) { delete S.flags[id]; delete S.notes[id]; for (const l of S.lists) l.items = l.items.filter(x => x !== id); }
+      continue;
+    }
+    if (!pub || mine.imageSource === "picked" || mine.imageRole) continue;
     if (sameText(mine, pub)) delete S.items[id];
   }
   save();
