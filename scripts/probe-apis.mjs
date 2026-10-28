@@ -128,6 +128,9 @@ const APIS = {
   bbGaWomen: `https://api.crossref.org/works/10.1515/9780820376134-006`,
   bbEwingMeta: `https://archive.org/metadata/broadloomsbusine0000ewin/metadata`,
   bbReynoldsMeta: `https://archive.org/metadata/innovationinunit0000will/metadata`,
+  ronco1: `https://patents.google.com/xhr/query?url=assignee%3DSouthbury%26q%3Dtufting&exp=`,
+  ronco2: `https://patents.google.com/xhr/query?url=assignee%3DRonco%26q%3D(tufting%20OR%20rug)&exp=`,
+  ronco3: `https://patents.google.com/xhr/query?url=q%3D(rug%20tufting%20tool%20looper%20needle)%26before%3Dpriority%3A19770101%26after%3Dpriority%3A19720101%26country%3DUS&exp=`,
   cooperHewitt: `https://api.collection.cooperhewitt.org/rest/?method=cooperhewitt.search.objects&query=rug`,
 };
 // "sources" mode: try every Other archives search link with a sample query.
