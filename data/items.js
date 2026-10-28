@@ -568,7 +568,7 @@ window.RUG_ITEMS = [
     "date": "1957–1959",
     "dateStart": 1957,
     "dateEnd": 1959,
-    "description": "Sources disagree on the date: the New Georgia Encyclopedia says 1957; Material Intelligence says 1959. BCF made tufted nylon carpet resilient and cheap. Confirm against Hagley's Textile Fibers records.",
+    "description": "Sources disagree on the date: the New Georgia Encyclopedia says 1957; Material Intelligence says 1959. BCF made tufted nylon carpet resilient and cheap. Confirm against Hagley's Textile Fibers records.\n\nUpdate 2026-10-28 (Claude in Chrome): DuPont's own commemorative booklet \"Nylon: The First 25 Years\" (Textile Fibers Department, 1963; Hagley 1984259_121412_004, https://digital.hagley.org/1984259_121412_004) gives 1958 in its chronology: \"A special bulked continuous filament nylon yarn was developed for carpeting; it soon revolutionized the market for rugs and carpeting by [introducing] nylon filament in loop pile construction\" (read from Hagley's OCR, which is garbled; check the page image, image 2). The database's \"501\" record also gives 1958. Date left as written until Tim reviews.",
     "sourceUrl": "https://www.georgiaencyclopedia.org/articles/business-economy/carpet-industry/",
     "themes": [
       "Nylon & synthetic fibers (DuPont)",
@@ -576,7 +576,10 @@ window.RUG_ITEMS = [
     ],
     "tags": [
       "timeline",
-      "date conflict"
+      "date conflict",
+      "found by Claude in Chrome",
+      "Hagley",
+      "for: Nylon"
     ],
     "status": "unverified",
     "imageSource": "rejected",
@@ -3882,14 +3885,15 @@ window.RUG_ITEMS = [
   {
     "id": "hagley-film-opening-door-1959",
     "type": "film",
-    "title": "DuPont-sponsored TV program with DuPont Carpet Nylon commercials (probably \"The Opening Door\", 1959)",
-    "date": "1959?",
+    "status": "unverified",
+    "title": "\"The Opening Door\" (The DuPont Show with June Allyson, Episode No. 1-3), with a DuPont Carpet Nylon commercial",
+    "date": "1959-10-05",
+    "dateStart": 1959,
+    "dateEnd": 1959,
     "institution": "Hagley Museum and Library",
-    "collection": "DuPont Company films and commercials (Acc. 1995.300)",
-    "identifier": "",
-    "sourceUrl": "https://digital.hagley.org/",
-    "description": "Snippet: starring Virginia Christine and Irene Dunne, with commercials for Dacron and \"DuPont Carpet Nylon\". The cast matches \"The Opening Door\" (DuPont Show with June Allyson, 5 Oct 1959). Item page not yet identified: the result came from a search on Hagley's old site (https://digital.hagley.org/islandora/search?page=9&type=dismax&f[0]=mods_relatedItem_host_titleInfo_title_ms:DuPont\\ Company\\ films\\ and\\ commercials\\ \\(Accession\\ 1995.300\\)), which no longer works; search the new site for DuPont Company films and commercials (Accession 1995.300). Found via search-engine results (Hagley's site blocks automated reading): open the link to confirm and see the image.",
-    "region": "United States",
+    "collection": "DuPont Company films and commercials (Accession 1995.300), Series VIII. The DuPont Show with June Allyson, FC 305",
+    "identifier": "FILM_1995300_FC305 (FC 305)",
+    "dimensions": "1 reel (1200 ft) : sd., b&w ; 16mm (00:29:17:00).",
     "themes": [
       "Nylon & synthetic fibers (DuPont)",
       "Trade catalogs & marketing"
@@ -3898,22 +3902,26 @@ window.RUG_ITEMS = [
       "Hagley nylon deep dive",
       "film",
       "commercial",
-      "identify item"
+      "identify item",
+      "found by Claude in Chrome",
+      "Hagley",
+      "for: Nylon"
     ],
-    "status": "unverified",
-    "dateStart": 1959
+    "region": "United States",
+    "description": "Snippet: starring Virginia Christine and Irene Dunne, with commercials for Dacron and \"DuPont Carpet Nylon\". The cast matches \"The Opening Door\" (DuPont Show with June Allyson, 5 Oct 1959). Item page not yet identified: the result came from a search on Hagley's old site (https://digital.hagley.org/islandora/search?page=9&type=dismax&f[0]=mods_relatedItem_host_titleInfo_title_ms:DuPont\\ Company\\ films\\ and\\ commercials\\ \\(Accession\\ 1995.300\\)), which no longer works; search the new site for DuPont Company films and commercials (Accession 1995.300). Found via search-engine results (Hagley's site blocks automated reading): open the link to confirm and see the image.\n\nUpdate 2026-10-28 (Claude in Chrome): item page found on Hagley's new site: https://digital.hagley.org/FILM_1995300_FC305. Hagley ID FILM_1995300_FC305. Alternative title: \"The DuPont Show with June Allyson. Episode No. 1-3\". Date Created 1959-10-05. Producers: Columbia Broadcasting System, Inc.; Four Star Television. Director Jack Smight; screenwriter Henry F. Greenberg; host June Allyson; actor Irene Dunne. Hagley summary: \"Starring Virginia Christine and Irene Dunne. A mother looks to a teacher for help for her special needs son. ... Includes commercials for DuPont Dacron polyester fiber for men's fashions, DuPont Dacron polyester fiber for women's fashion and DuPont Carpet Nylon.\" Low resolution copy online; high resolution on request. This confirms the identification.\nFound: Hagley Digital Archives, search \"carpet nylon\", 2026-10-28.",
+    "sourceUrl": "https://digital.hagley.org/FILM_1995300_FC305"
   },
   {
     "id": "hagley-1972341-ludox",
     "type": "image",
+    "status": "unverified",
     "title": "Carpet test strip partly treated with Ludox colloidal silica",
-    "date": "1955",
+    "date": "1955 (year approximate)",
+    "dateStart": 1955,
+    "dateEnd": 1955,
     "institution": "Hagley Museum and Library",
-    "collection": "DuPont Product Information photographs (Acc. 1972.341)",
-    "identifier": "1972341_1003 (inferred)",
-    "sourceUrl": "https://digital.hagley.org/1972341?display=list&page=60",
-    "description": "Photograph: treated carpet clean after vacuuming, untreated part \"dirty and dingy\". An early soil-resistance image for carpet (DuPont Ludox). Found via search-engine results (Hagley's site blocks automated reading): open the link to confirm and see the image.",
-    "region": "United States",
+    "collection": "DuPont Company Product Information photographs (Accession 1972.341), Series IX. Fabrics and finishes",
+    "identifier": "1972341_2649 (related: 1972341_2692)",
     "themes": [
       "Nylon & synthetic fibers (DuPont)",
       "Woven carpet"
@@ -3921,10 +3929,14 @@ window.RUG_ITEMS = [
     "tags": [
       "Hagley nylon deep dive",
       "soil resistance",
-      "photograph"
+      "photograph",
+      "found by Claude in Chrome",
+      "Hagley",
+      "for: Nylon"
     ],
-    "status": "unverified",
-    "dateStart": 1955
+    "region": "United States",
+    "description": "Photograph: treated carpet clean after vacuuming, untreated part \"dirty and dingy\". An early soil-resistance image for carpet (DuPont Ludox). Found via search-engine results (Hagley's site blocks automated reading): open the link to confirm and see the image.\n\nUpdate 2026-10-28 (Claude in Chrome): item found on Hagley's new site. Catalogue title \"Test strip of carpet partially treated with Ludox collodial silica\" [sic], 1972341_2649, Date Created \"1955 (year approximate)\", Series IX. Fabrics and finishes. Summary: \"This is a test strip of carpet, portions of which have been treated with Ludox collodial silica. After vacuuming, treated areas emerge clean, while untreated portions remain dirty and dingy.\" A companion photograph, \"Carpet treated by Ludox colloidal silica\" (1972341_2692, same date), says Ludox \"is rapidly being adopted by the carpet industry as a soil retardant. It is easily applied at the mill by a multiple spray method, as shown here.\" The earlier number 1972341_1003 was a guess and is wrong.\nFound: Hagley Digital Archives, collection search \"carpet\", 2026-10-28.",
+    "sourceUrl": "https://digital.hagley.org/1972341_2649"
   },
   {
     "id": "hagley-1972430-1080",
@@ -7067,6 +7079,696 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "suggestive"
+  },
+  {
+    "id": "u-mvs3387y549fp",
+    "type": "trade-catalog",
+    "status": "unverified",
+    "title": "Nylon: The First 25 Years",
+    "creator": "E.I. du Pont de Nemours & Company. Textile Fibers Department (originator); Public Relations Department (associated)",
+    "date": "1963",
+    "dateStart": 1963,
+    "dateEnd": 1963,
+    "institution": "Hagley Museum and Library",
+    "collection": "DuPont Company Textile Fibers Product Information photographs (Accession 1984.259), Series I. Fashion master files; Subseries F. Hosiery, Box 12, Folder 20",
+    "identifier": "1984259_121412_004",
+    "themes": [
+      "Nylon & synthetic fibers (DuPont)"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Hagley",
+      "for: Nylon"
+    ],
+    "region": "United States",
+    "description": "Commemorative booklet marking the twenty-fifth anniversary of the invention of nylon (Hagley summary). 36 page images. Its chronology page (image 2) reads, in the OCR text: \"1958: A special bulked continuous filament nylon yarn was developed for carpeting; it soon revolutionized the market for rugs and carpeting by [introducing] nylon filament in loop pile construction\" (OCR is garbled; check against the page image). Image 25: \"Nylon for carpets now totals over 150 million pounds a year... New continuous type used in carpets has helped nylon take over 26 per cent of market for broadloom carpeting.\"\nWhy it matters: Nylon chapter, open question \"The BCF date (1957 or 1959)\": DuPont's own 1963 chronology dates BCF carpet nylon to 1958. Also gives a 1963 market share for nylon in broadloom.\nFound: Hagley Digital Archives, search \"bulked continuous filament\", 2026-10-28.",
+    "sourceUrl": "https://digital.hagley.org/1984259_121412_004",
+    "image": "https://digital.hagley.org/cantaloupe/iiif/2/https%3A%2F%2Fdigital.hagley.org%2Fsystem%2Ffiles%2F2024-10%2F31359-Service%2520File.jpg/full/800,/0/default.jpg",
+    "imageCredit": "Hagley Museum and Library",
+    "imagePage": "https://digital.hagley.org/1984259_121412_004",
+    "rights": "not-requested"
+  },
+  {
+    "id": "u-mvs379gngi80e",
+    "type": "archive",
+    "status": "unverified",
+    "title": "Luxurious Carpet: A New Use for Nylon",
+    "creator": "E.I. du Pont de Nemours & Company, Public Relations Department (news release)",
+    "date": "1948-05-12 (for release May 12)",
+    "dateStart": 1948,
+    "dateEnd": 1948,
+    "institution": "Hagley Museum and Library",
+    "collection": "DuPont Company Textile Fibers Product Information photographs (Accession 1984.259), Series II. Textile reference files; Subseries E. Nylon. Folder titled: Nylon - 1948",
+    "identifier": "1984259_010913_162",
+    "place": "New York",
+    "techniques": [
+      "woven"
+    ],
+    "themes": [
+      "Nylon & synthetic fibers (DuPont)",
+      "Woven carpet"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Hagley",
+      "for: Nylon",
+      "for: Woven carpet"
+    ],
+    "region": "United States",
+    "description": "Press release regarding the benefits of a new woven carpet textile made of nylon (Hagley summary). 2 pages, numbered A-2874, from DuPont's Public Relations Department, 350 Fifth Avenue, New York. The release (read from Hagley's OCR text) announces \"the first carpet on the market with pile completely woven of Du Pont nylon\", made by the Nye-Wait Company, Auburn, N.Y., under the name \"Splendante\", with contrasting pile heights giving \"a bas-relief effect\"; colours beige, gray and pastel green.\nWhy it matters: Nylon chapter: dates the first all-nylon-pile carpet (woven, not tufted) to May 1948 and names the mill. Compare the c. 1955 Nye-Wait photograph (1972341_1333), whose caption says nylon carpeting was introduced \"five years ago\".\nFound: Hagley Digital Archives, search \"nylon carpet\", 2026-10-28.",
+    "sourceUrl": "https://digital.hagley.org/1984259_010913_162",
+    "image": "https://digital.hagley.org/cantaloupe/iiif/2/https%3A%2F%2Fdigital.hagley.org%2Fsystem%2Ffiles%2F2024-10%2F31793-Service%2520File.jpg/full/800,/0/default.jpg",
+    "imageCredit": "Hagley Museum and Library",
+    "imagePage": "https://digital.hagley.org/1984259_010913_162",
+    "rights": "not-requested"
+  },
+  {
+    "id": "u-mvs37wl6gkh9w",
+    "type": "image",
+    "status": "unverified",
+    "title": "Nylon carpeting [Nye-Wait \"Splendante\" and \"Cirque\" carpet]",
+    "creator": "E.I. du Pont de Nemours & Company (product information photograph); carpet by the Nye-Wait Company",
+    "date": "1955 (year approximate)",
+    "dateStart": 1955,
+    "dateEnd": 1955,
+    "institution": "Hagley Museum and Library",
+    "collection": "DuPont Company Product Information photographs (Accession 1972.341), Series V. Man made fibers, Subseries C. Nylon",
+    "identifier": "1972341_1333",
+    "dimensions": "1 photographic print : b&w ; 8 x 10 in. or smaller",
+    "techniques": [
+      "woven"
+    ],
+    "themes": [
+      "Nylon & synthetic fibers (DuPont)",
+      "Woven carpet"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Hagley",
+      "for: Nylon",
+      "for: Woven carpet"
+    ],
+    "region": "United States",
+    "description": "Photograph with caption. Hagley summary: \"Nylon carpeting, paradoxically the most luxurious yet in terms of wear life and upkeep, the most economical ever made, was shown at a press meeting held recently in New York by the Nye-Wait Company. Almost 100 different samples were displayed were all available nationally, indicating rapid consumer acceptance since introduction five years ago.\" The rug is \"woven to order in dual pile heights\" and \"combines two qualities, Splendante woven into the Celtic design for the center and Cirque for the plain border.\"\nWhy it matters: Nylon chapter: shows woven nylon carpet in the mid-1950s, before BCF; the caption dates nylon carpeting's introduction to about five years earlier (compare the 1948 Splendante press release, 1984259_010913_162). Date is Hagley's approximation.\nFound: Hagley Digital Archives, search \"nylon carpet\", 2026-10-28.",
+    "sourceUrl": "https://digital.hagley.org/1972341_1333",
+    "image": "https://digital.hagley.org/cantaloupe/iiif/2/https%3A%2F%2Fdigital.hagley.org%2Fsystem%2Ffiles%2F2025-06%2F535052-Service%2520File.jpg/full/800,/0/default.jpg",
+    "imageCredit": "Hagley Museum and Library",
+    "imagePage": "https://digital.hagley.org/1972341_1333",
+    "rights": "not-requested"
+  },
+  {
+    "id": "u-mvs37zoguerdx",
+    "type": "image",
+    "status": "unverified",
+    "title": "Nylon carpeting [tufted nylon bath mat and lid cover]",
+    "creator": "E.I. du Pont de Nemours & Company (product information photograph); mats by Neddletuft [sic]",
+    "date": "1955 (year approximate)",
+    "dateStart": 1955,
+    "dateEnd": 1955,
+    "institution": "Hagley Museum and Library",
+    "collection": "DuPont Company Product Information photographs (Accession 1972.341), Series V. Man made fibers, Subseries C. Nylon",
+    "identifier": "1972341_1332",
+    "dimensions": "1 photographic print : b&w ; 8 x 10 in. or smaller",
+    "techniques": [
+      "tufted"
+    ],
+    "themes": [
+      "Nylon & synthetic fibers (DuPont)",
+      "Machine tufting & Dalton"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Hagley",
+      "for: Nylon",
+      "for: Dalton bedspreads"
+    ],
+    "region": "United States",
+    "description": "Photograph with caption. Hagley summary: \"This soft, luxurious bathmat and matching lid cover are tufted with DuPont nylon. They are described as machine washable by the manufacturer and since nylon does not absorb dirt, should stay clean longer. The Neddletuft mats and covers are usually fluffy and come in array of glowing colors all with an attractive faint sheen imparted by the frosty looking nylon fibers.\" (Brand spelled \"Neddletuft\" in the catalogue; probably \"Needletuft\", not confirmed.) Catalogue title is \"Nylon carpeting\"; bracketed words added to tell it from 1972341_1333.\nWhy it matters: tufted bath mats were a main product of the Dalton-style tufting industry between bedspreads and broadloom; this shows DuPont promoting nylon for tufted mats around 1955 (Hagley's approximate date).\nFound: Hagley Digital Archives, search \"nylon carpet\", 2026-10-28.",
+    "sourceUrl": "https://digital.hagley.org/1972341_1332",
+    "image": "https://digital.hagley.org/cantaloupe/iiif/2/https%3A%2F%2Fdigital.hagley.org%2Fsystem%2Ffiles%2F2025-06%2F535051-Service%2520File.jpg/full/800,/0/default.jpg",
+    "imageCredit": "Hagley Museum and Library",
+    "imagePage": "https://digital.hagley.org/1972341_1332",
+    "rights": "not-requested"
+  },
+  {
+    "id": "u-mvs38atad1qhj",
+    "type": "image",
+    "status": "unverified",
+    "title": "DuPont Carpet Nylon",
+    "creator": "E.I. du Pont de Nemours & Company. Advertising Department",
+    "date": "1960",
+    "dateStart": 1960,
+    "dateEnd": 1960,
+    "institution": "Hagley Museum and Library",
+    "collection": "E.I. du Pont de Nemours & Company Advertising Department records (Accession 1803), Series I. Advertising Department, general files, Box 43, Folder 37",
+    "identifier": "dpads_1803_00475",
+    "dimensions": "1 item : tear sheet",
+    "themes": [
+      "Nylon & synthetic fibers (DuPont)",
+      "Trade catalogs & marketing"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Hagley",
+      "for: Nylon"
+    ],
+    "region": "United States",
+    "description": "Advertisement tear sheet. Hagley summary: \"Advertisement for DuPont Nylon; from The New York Time Magazine\" Subjects include Carpets, Floor coverings, Nylon. Advertising Department general files, Box 43, Folder 37. (Hagley holds two 1960 tear sheets with this title: dpads_1803_00475 and dpads_1803_00476.)\nWhy it matters: Nylon chapter, open question \"DuPont carpet ads from 1958–66\": a dated DuPont Carpet Nylon advertisement from before Antron.\nFound: Hagley Digital Archives, search \"carpet nylon\", 2026-10-28.",
+    "sourceUrl": "https://digital.hagley.org/dpads_1803_00475",
+    "image": "https://digital.hagley.org/cantaloupe/iiif/2/https%3A%2F%2Fdigital.hagley.org%2Fsystem%2Ffiles%2F2025-06%2F570307-Service%2520File.jpg/full/800,/0/default.jpg",
+    "imageCredit": "Hagley Museum and Library",
+    "imagePage": "https://digital.hagley.org/dpads_1803_00475",
+    "rights": "not-requested"
+  },
+  {
+    "id": "u-mvs38eabwvt3b",
+    "type": "image",
+    "status": "unverified",
+    "title": "DuPont Carpet Nylon",
+    "creator": "E.I. du Pont de Nemours & Company. Advertising Department",
+    "date": "1960",
+    "dateStart": 1960,
+    "dateEnd": 1960,
+    "institution": "Hagley Museum and Library",
+    "collection": "E.I. du Pont de Nemours & Company Advertising Department records (Accession 1803), Series I. Advertising Department, general files, Box 43, Folder 37",
+    "identifier": "dpads_1803_00476",
+    "dimensions": "1 item : tear sheet",
+    "themes": [
+      "Nylon & synthetic fibers (DuPont)",
+      "Trade catalogs & marketing"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Hagley",
+      "for: Nylon"
+    ],
+    "region": "United States",
+    "description": "Advertisement tear sheet. Hagley summary: \"Advertisement for DuPont Nylon; from The New York Time Magazine\" Subjects include Carpets, Floor coverings, Nylon. Advertising Department general files, Box 43, Folder 37. (Hagley holds two 1960 tear sheets with this title: dpads_1803_00475 and dpads_1803_00476.)\nWhy it matters: Nylon chapter, open question \"DuPont carpet ads from 1958–66\": a dated DuPont Carpet Nylon advertisement from before Antron.\nFound: Hagley Digital Archives, search \"carpet nylon\", 2026-10-28.",
+    "sourceUrl": "https://digital.hagley.org/dpads_1803_00476",
+    "image": "https://digital.hagley.org/cantaloupe/iiif/2/https%3A%2F%2Fdigital.hagley.org%2Fsystem%2Ffiles%2F2025-06%2F570308-Service%2520File.jpg/full/800,/0/default.jpg",
+    "imageCredit": "Hagley Museum and Library",
+    "imagePage": "https://digital.hagley.org/dpads_1803_00476",
+    "rights": "not-requested"
+  },
+  {
+    "id": "u-mvs38hqlyz4s6",
+    "type": "image",
+    "status": "unverified",
+    "title": "A Houseful of Value ... All '501'",
+    "creator": "E.I. du Pont de Nemours & Company. Advertising Department",
+    "date": "1965",
+    "dateStart": 1965,
+    "dateEnd": 1965,
+    "institution": "Hagley Museum and Library",
+    "collection": "E.I. du Pont de Nemours & Company Advertising Department records (Accession 1803), Series I. Advertising Department, general files, Box 43, Folder 40",
+    "identifier": "dpads_1803_00643",
+    "dimensions": "1 item : tear sheet",
+    "themes": [
+      "Nylon & synthetic fibers (DuPont)",
+      "Trade catalogs & marketing"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Hagley",
+      "for: Nylon"
+    ],
+    "region": "United States",
+    "description": "Advertisement tear sheet. Hagley summary: \"Advertisement for DuPont Carpet Nylon\" Subjects include Carpets, Floor coverings, Nylon. Advertising Department general files, Box 43, Folder 40.\nWhy it matters: Nylon chapter, open question \"DuPont carpet ads from 1958–66\": a dated DuPont Carpet Nylon advertisement from before Antron.\nFound: Hagley Digital Archives, search \"carpet nylon\", 2026-10-28.",
+    "sourceUrl": "https://digital.hagley.org/dpads_1803_00643",
+    "image": "https://digital.hagley.org/cantaloupe/iiif/2/https%3A%2F%2Fdigital.hagley.org%2Fsystem%2Ffiles%2F2025-06%2F570342-Service%2520File.jpg/full/800,/0/default.jpg",
+    "imageCredit": "Hagley Museum and Library",
+    "imagePage": "https://digital.hagley.org/dpads_1803_00643",
+    "rights": "not-requested"
+  },
+  {
+    "id": "u-mvs38l6olbged",
+    "type": "image",
+    "status": "unverified",
+    "title": "Those Five Tough DuPont Tests",
+    "creator": "E.I. du Pont de Nemours & Company. Advertising Department",
+    "date": "1966",
+    "dateStart": 1966,
+    "dateEnd": 1966,
+    "institution": "Hagley Museum and Library",
+    "collection": "E.I. du Pont de Nemours & Company Advertising Department records (Accession 1803), Series I. Advertising Department, general files, Box 43, Folder 41",
+    "identifier": "dpads_1803_00650",
+    "dimensions": "1 item : tear sheet",
+    "themes": [
+      "Nylon & synthetic fibers (DuPont)",
+      "Trade catalogs & marketing"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Hagley",
+      "for: Nylon"
+    ],
+    "region": "United States",
+    "description": "Advertisement tear sheet. Hagley summary: \"Advertisement for DuPont Carpet Nylon\" Subjects include Carpets, Floor coverings, Nylon. Advertising Department general files, Box 43, Folder 41.\nWhy it matters: Nylon chapter, open question \"DuPont carpet ads from 1958–66\": a dated DuPont Carpet Nylon advertisement from before Antron.\nFound: Hagley Digital Archives, search \"carpet nylon\", 2026-10-28.",
+    "sourceUrl": "https://digital.hagley.org/dpads_1803_00650",
+    "image": "https://digital.hagley.org/cantaloupe/iiif/2/https%3A%2F%2Fdigital.hagley.org%2Fsystem%2Ffiles%2F2025-06%2F570350-Service%2520File.jpg/full/800,/0/default.jpg",
+    "imageCredit": "Hagley Museum and Library",
+    "imagePage": "https://digital.hagley.org/dpads_1803_00650",
+    "rights": "not-requested"
+  },
+  {
+    "id": "u-mvs38omy32ao5",
+    "type": "image",
+    "status": "unverified",
+    "title": "Don 't Let Anyone Mislead You, DuPont 501 Is Not the Name of a Fiber",
+    "creator": "E.I. du Pont de Nemours & Company. Advertising Department",
+    "date": "1966",
+    "dateStart": 1966,
+    "dateEnd": 1966,
+    "institution": "Hagley Museum and Library",
+    "collection": "E.I. du Pont de Nemours & Company Advertising Department records (Accession 1803), Series I. Advertising Department, general files, Box 43, Folder 41",
+    "identifier": "dpads_1803_00655",
+    "dimensions": "1 item : tear sheet",
+    "themes": [
+      "Nylon & synthetic fibers (DuPont)",
+      "Trade catalogs & marketing"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Hagley",
+      "for: Nylon"
+    ],
+    "region": "United States",
+    "description": "Advertisement tear sheet. Hagley summary: \"Advertisement for DuPont Carpet Nylon\" Subjects include Carpets, Floor coverings, Nylon. Advertising Department general files, Box 43, Folder 41.\nWhy it matters: Nylon chapter, open question \"DuPont carpet ads from 1958–66\": a dated DuPont Carpet Nylon advertisement from before Antron.\nFound: Hagley Digital Archives, search \"carpet nylon\", 2026-10-28.",
+    "sourceUrl": "https://digital.hagley.org/dpads_1803_00655",
+    "image": "https://digital.hagley.org/cantaloupe/iiif/2/https%3A%2F%2Fdigital.hagley.org%2Fsystem%2Ffiles%2F2025-06%2F570355-Service%2520File.jpg/full/800,/0/default.jpg",
+    "imageCredit": "Hagley Museum and Library",
+    "imagePage": "https://digital.hagley.org/dpads_1803_00655",
+    "rights": "not-requested"
+  },
+  {
+    "id": "u-mvs3903rv1gjh",
+    "type": "film",
+    "status": "unverified",
+    "title": "\"The Trench Coat\" (The DuPont Show with June Allyson. Episode No. 1-16), with a DuPont Carpet Nylon commercial",
+    "creator": "Sponsor: E.I. du Pont de Nemours & Company",
+    "date": "1960-01-11",
+    "dateStart": 1960,
+    "dateEnd": 1960,
+    "institution": "Hagley Museum and Library",
+    "collection": "DuPont Company films and commercials (Accession 1995.300), Series VIII. The DuPont Show with June Allyson, FC 322",
+    "identifier": "FC 322",
+    "dimensions": "1 reel (1200 ft) : sd., b&w ; 16mm (00:29:21:00).",
+    "themes": [
+      "Nylon & synthetic fibers (DuPont)",
+      "Trade catalogs & marketing"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Hagley",
+      "for: Nylon"
+    ],
+    "region": "United States",
+    "description": "Sponsored television program (16mm, low-resolution copy online; high resolution on request). Hagley summary: \"David Niven portrays a salesman who briefly acts out a fantasy through the use of a military style trench coat. Includes commercials for DuPont Dacron polyester fiber for curtains, DuPont Nylon tires, plane and automobile tire footage and DuPont Carpet Nylon.\"\nWhy it matters: Nylon chapter, open question \"DuPont TV commercials for carpet nylon\": a dated broadcast carrying a DuPont Carpet Nylon spot.\nFound: Hagley Digital Archives, search \"carpet nylon\", 2026-10-28.",
+    "sourceUrl": "https://digital.hagley.org/FILM_1995300_FC322"
+  },
+  {
+    "id": "u-mvs393k4f607p",
+    "type": "film",
+    "status": "unverified",
+    "title": "\"The Old Fashioned Way\" (The DuPont Show with June Allyson. Episode No. 2-21), with a DuPont Carpet Nylon commercial",
+    "creator": "Sponsor: E.I. du Pont de Nemours & Company",
+    "date": "1961-02-20",
+    "dateStart": 1961,
+    "dateEnd": 1961,
+    "institution": "Hagley Museum and Library",
+    "collection": "DuPont Company films and commercials (Accession 1995.300), Series VIII. The DuPont Show with June Allyson, FC 352",
+    "identifier": "FC 352",
+    "dimensions": "1 reel (1200 ft) : sd., b&w ; 16mm (00:27:25:00).",
+    "themes": [
+      "Nylon & synthetic fibers (DuPont)",
+      "Trade catalogs & marketing"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Hagley",
+      "for: Nylon"
+    ],
+    "region": "United States",
+    "description": "Sponsored television program (16mm, low-resolution copy online; high resolution on request). Hagley summary: \"June Allyson plays a wife having a baby who insists on doing things the modern way, much to her husband's dismay. Includes commercial for DuPont Carpet Nylon.\"\nWhy it matters: Nylon chapter, open question \"DuPont TV commercials for carpet nylon\": a dated broadcast carrying a DuPont Carpet Nylon spot.\nFound: Hagley Digital Archives, search \"carpet nylon\", 2026-10-28.",
+    "sourceUrl": "https://digital.hagley.org/FILM_1995300_FC352"
+  },
+  {
+    "id": "u-mvs3970mvyiw9",
+    "type": "film",
+    "status": "unverified",
+    "title": "\"The Beauty of Woman\" (The DuPont Show of the Week. Production Number 4036), with a DuPont 501 Carpet Nylon commercial",
+    "creator": "Sponsor: E.I. du Pont de Nemours & Company",
+    "date": "1962",
+    "dateStart": 1962,
+    "dateEnd": 1962,
+    "institution": "Hagley Museum and Library",
+    "collection": "DuPont Company films and commercials (Accession 1995.300), Series IX. The DuPont Show of the Week, FC 366",
+    "identifier": "FC 366",
+    "dimensions": "1 reel (1600 ft) : sd., b&w ; 16 mm (00:58:19:00).",
+    "themes": [
+      "Nylon & synthetic fibers (DuPont)",
+      "Trade catalogs & marketing"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Hagley",
+      "for: Nylon"
+    ],
+    "region": "United States",
+    "description": "Sponsored television program (16mm, low-resolution copy online; high resolution on request). Hagley summary: \"A discussion of what makes women beautiful, examining examples of art and celebrities from antiquity to the twentieth century. Includes commercials for DuPont Lucite wall paint, DuPont 501 Carpet Nylon, DuPont Dacron polyester fiber for men's fashion and DuPont Dacron polyester fiber for women's vacation separates.\"\nWhy it matters: Nylon chapter, open question \"DuPont TV commercials for carpet nylon\": a dated broadcast carrying a DuPont Carpet Nylon spot.\nFound: Hagley Digital Archives, search \"carpet nylon\", 2026-10-28.",
+    "sourceUrl": "https://digital.hagley.org/FILM_1995300_FC366"
+  },
+  {
+    "id": "u-mvs3aug7hh3lv",
+    "type": "archive",
+    "status": "unverified",
+    "title": "A Creative Problem Analysis and Proposal for a Motivational Research Study of Nylon Carpeting Acceptance among Distributors, Buyers and Retailers",
+    "creator": "Ernest Dichter (1907-1991); Institute for Motivational Research",
+    "date": "1957-11",
+    "dateStart": 1957,
+    "dateEnd": 1957,
+    "institution": "Hagley Museum and Library",
+    "collection": "Ernest Dichter papers (Accession 2407), Series I. Research Proposals and Reports, Box 42, Item 954.1A",
+    "identifier": "MSS_2407_042_0954A1",
+    "dimensions": "1 letter (30 p.)",
+    "themes": [
+      "Nylon & synthetic fibers (DuPont)",
+      "Trade catalogs & marketing"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Hagley",
+      "for: Nylon"
+    ],
+    "region": "United States",
+    "description": "Research proposal, November 1957, by Ernest Dichter's Institute for Motivational Research, associated with E.I. du Pont de Nemours & Company; 1 letter (30 p.). A companion to the Dichter proposal 954A (1957-10) and report 954C (1958-07) already in the database; this one addresses nylon carpeting acceptance among distributors, buyers and retailers rather than consumers.\nWhy it matters: Nylon chapter: shows DuPont commissioning trade-side research on nylon carpet in late 1957, just as carpet nylon (BCF/\"501\") was being launched.\nFound: Hagley Digital Archives, search \"nylon carpet\", 2026-10-28.",
+    "sourceUrl": "https://digital.hagley.org/MSS_2407_042_0954A1"
+  },
+  {
+    "id": "u-mvs3g9dd3zmb0",
+    "type": "archive",
+    "status": "unverified",
+    "title": "Hotel du Pont Installs Nylon Fabrics for Economy of Wear and Care",
+    "creator": "E.I. du Pont de Nemours & Company. Textile Fibers Department (originator); Public Relations Department (associated)",
+    "date": "1948-07-13",
+    "dateStart": 1948,
+    "dateEnd": 1948,
+    "institution": "Hagley Museum and Library",
+    "collection": "DuPont Company Textile Fibers Product Information photographs (Accession 1984.259), Series II. Textile reference files; Subseries E. Nylon. Folder titled: Nylon - 1948",
+    "identifier": "1984259_010913_168",
+    "place": "Wilmington, Delaware",
+    "dimensions": "1 item (6 page images)",
+    "techniques": [
+      "Axminster",
+      "Wilton"
+    ],
+    "themes": [
+      "Nylon & synthetic fibers (DuPont)",
+      "Woven carpet"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Hagley",
+      "for: Nylon",
+      "for: Woven carpet"
+    ],
+    "region": "United States",
+    "description": "Press release describing the installation and benefits of furnishings in the Hotel du Pont in Wilmington, Delaware (Hagley summary). Its \"Rugs and Carpets\" section (read from Hagley's OCR text, page image 5) says: \"A cut pile rug of burgundy spun nylon in Axminster weave was laid nine months ago in the Brandywine Room, one of the Hotel du Pont's restaurants. Plans for nylon floor coverings also include a Wilton weave carpet for the Grill Room in gray and white spiral pattern, and rugs for some of the guest rooms and elevator lobbies.\" Hagley also holds a near-identical later version, \"Economy of Nylon Furnishings Shown In Use at Hotel\" (1948-09-01, 1984259_010913_167).\nWhy it matters: Nylon chapter: a spun-nylon Axminster rug in use by about October 1947 (nine months before this July 1948 release), so DuPont was trialling nylon carpet in its own hotel before Nye-Wait's \"Splendante\" (May 1948). Both are woven, not tufted.\nFound: Hagley Digital Archives, collection search \"carpet\" in DuPont Company Textile Fibers Product Information photographs, 2026-10-28.",
+    "sourceUrl": "https://digital.hagley.org/1984259_010913_168",
+    "image": "https://digital.hagley.org/cantaloupe/iiif/2/https%3A%2F%2Fdigital.hagley.org%2Fsystem%2Ffiles%2F2024-10%2F31731-Service%2520File.jpg/full/800,/0/default.jpg",
+    "imageCredit": "Hagley Museum and Library",
+    "imagePage": "https://digital.hagley.org/1984259_010913_168",
+    "rights": "not-requested"
+  },
+  {
+    "id": "u-mvs3hnbq2gjum",
+    "type": "film",
+    "status": "unverified",
+    "title": "The Making of Carpet Fiber",
+    "creator": "E.I. du Pont de Nemours & Company; released by The Learning Center, DuPont Flooring Systems",
+    "date": "1991",
+    "dateStart": 1991,
+    "dateEnd": 1991,
+    "institution": "Hagley Museum and Library",
+    "collection": "DuPont Company films and commercials (Accession 1995.300), Box 23",
+    "identifier": "VID_1995300_B23_ID02",
+    "dimensions": "1 1\" video reel : sd. col. (00:10:18:00)",
+    "materials": [
+      "nylon 6",
+      "6"
+    ],
+    "themes": [
+      "Nylon & synthetic fibers (DuPont)",
+      "Yarn & materials"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Hagley",
+      "for: Nylon"
+    ],
+    "region": "United States",
+    "description": "10-minute training video. Hagley summary: \"From chemicals to yarn. An in-depth look at the creation of superpolymer Type 66 Nylon, a synthetic fiber made for use in commercial carpets. Details how scientists manipulate specific compounds and apply heat and pressure to create the fiber, and why it's strong enough to withstand a large amount of wear and tear. Released by The Learning Center, DuPont Flooring Systems.\"\nWhy it matters: Nylon chapter: DuPont's own explanation of how its nylon 6,6 carpet fibre was made, useful for describing the fibre side of tufted carpet. Late (1991), so background rather than evidence for the 1950s questions.\nFound: Hagley Digital Archives, search \"carpet fiber\", 2026-10-28.",
+    "sourceUrl": "https://digital.hagley.org/VID_1995300_B23_ID02"
+  },
+  {
+    "id": "u-mvs3jcd5g72ua",
+    "type": "image",
+    "status": "unverified",
+    "title": "The Nylon Suite at the Hotel DuPont",
+    "creator": "E.I. du Pont de Nemours & Company (product information photograph); carpet by James Lees and Sons Company (\"Sculptex\")",
+    "date": "1945 (year approximate)",
+    "dateStart": 1945,
+    "dateEnd": 1948,
+    "institution": "Hagley Museum and Library",
+    "collection": "DuPont Company Product Information photographs (Accession 1972.341), Series V. Man made fibers, Subseries C. Nylon",
+    "identifier": "1972341_1401 (related views 1972341_1366, _1369, _1371, _1373)",
+    "place": "Hotel DuPont, Wilmington, Delaware",
+    "themes": [
+      "Nylon & synthetic fibers (DuPont)",
+      "Woven carpet"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Hagley",
+      "for: Nylon",
+      "possible"
+    ],
+    "region": "United States",
+    "description": "Photograph with caption (Hagley summary): \"The gold bedroom draperies, green upholstery of the chair, marquisette window curtain and carpet are among the all nylon uses in The Nylon Suite, a new deluxe feature of the Hotel DuPont. ... James Lees and Sons Company's Sculptex carpet is on the floor. An all nylon face in grey-green, the carpet does not attract moths or other insects.\" Four more views of the suite (1972341_1366, _1369, _1371, _1373) carry similar captions; 1373 says the Lees carpet \"with face of 100% long wearing nylon, covers the floors of the foyer living room and bedroom.\"\nDate: Hagley gives \"1945 (year approximate)\" for all five. That looks early: DuPont's July 1948 Hotel du Pont press release (1984259_010913_168) describes nylon furnishings being installed then, so the suite may date c. 1948. End year set to 1948 for that reason; tagged possible until checked.\nWhy it matters: Nylon chapter: an all-nylon-face carpet by a named mill (James Lees & Sons, \"Sculptex\") in a DuPont showcase room, among the earliest nylon carpets found.\nFound: Hagley Digital Archives, collection search \"carpet\" in DuPont Company product information collection, 2026-10-28.",
+    "sourceUrl": "https://digital.hagley.org/1972341_1401",
+    "image": "https://digital.hagley.org/cantaloupe/iiif/2/https%3A%2F%2Fdigital.hagley.org%2Fsystem%2Ffiles%2F2025-06%2F535040-Service%2520File.jpg/full/800,/0/default.jpg",
+    "imageCredit": "Hagley Museum and Library",
+    "imagePage": "https://digital.hagley.org/1972341_1401",
+    "rights": "not-requested",
+    "images": [
+      {
+        "src": "https://digital.hagley.org/cantaloupe/iiif/2/https%3A%2F%2Fdigital.hagley.org%2Fsystem%2Ffiles%2F2025-06%2F535040-Service%2520File.jpg/full/800,/0/default.jpg"
+      },
+      {
+        "src": "https://digital.hagley.org/cantaloupe/iiif/2/https%3A%2F%2Fdigital.hagley.org%2Fsystem%2Ffiles%2F2025-06%2F535030-Service%2520File.jpg/full/800,/0/default.jpg",
+        "caption": "1972341_1366"
+      },
+      {
+        "src": "https://digital.hagley.org/cantaloupe/iiif/2/https%3A%2F%2Fdigital.hagley.org%2Fsystem%2Ffiles%2F2025-06%2F535033-Service%2520File.jpg/full/800,/0/default.jpg",
+        "caption": "1972341_1369"
+      },
+      {
+        "src": "https://digital.hagley.org/cantaloupe/iiif/2/https%3A%2F%2Fdigital.hagley.org%2Fsystem%2Ffiles%2F2025-06%2F535035-Service%2520File.jpg/full/800,/0/default.jpg",
+        "caption": "1972341_1371"
+      },
+      {
+        "src": "https://digital.hagley.org/cantaloupe/iiif/2/https%3A%2F%2Fdigital.hagley.org%2Fsystem%2Ffiles%2F2025-06%2F535037-Service%2520File.jpg/full/800,/0/default.jpg",
+        "caption": "1972341_1373"
+      }
+    ]
+  },
+  {
+    "id": "u-mvs3lacgfbrui",
+    "type": "archive",
+    "status": "unverified",
+    "title": "1957 Annual Report, Mohasco Industries, Inc.",
+    "creator": "Mohasco Industries",
+    "date": "1957",
+    "dateStart": 1957,
+    "dateEnd": 1957,
+    "institution": "Hagley Museum and Library",
+    "collection": "Joseph Bancroft and Sons Company, Miss America collection (Accession 1972.430), Box 3, Folder 13",
+    "identifier": "72430_477",
+    "dimensions": "1 color pamphlet (19 pages) ; 8.5 x 11 cm [as catalogued]",
+    "themes": [
+      "Woven carpet",
+      "Machine tufting & Dalton",
+      "Nylon & synthetic fibers (DuPont)"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Hagley",
+      "for: Woven carpet",
+      "for: Building the machine",
+      "check link"
+    ],
+    "region": "United States",
+    "description": "Annual report of Mohasco Industries (Mohawk and Alexander Smith carpet lines) for 1957; 19-page pamphlet. Read from Hagley's OCR text (page image 7, \"Products\"): the Mohawk and Alexander Smith lines were \"strengthened during the year by the use of new synthetic fibres\", Chromspun acetate and Acrilan acrylic, while wool remained featured \"exclusively in many of its lines and in blends with nylon in other fabrics\"; and \"New manufacturing techniques materially enhancing the quality and appearance of its tufted and velvet fabric lines ... were perfected during the year, and patents have been received or are pending\". It also notes Mohasco's 20% interest in Bancroft's \"Ban-Lon\" bulking process for nylon. Held, oddly, in the Bancroft Miss America collection.\nWhy it matters: shows an old-line woven-carpet maker (Mohawk/Alexander Smith) already running tufted lines and patenting tufting techniques by 1957, and switching to synthetic fibres. Useful for the woven-to-tufted transition.\nFound: Hagley Digital Archives, search \"Mohasco\", 2026-10-28.\n\nCheck the link: Hagley's other items in this accession (1972.430) are addressed 1972430_…; an address like 72430_477 may be the old-site form (compare 70_200_09067 → 1970200_09067). If it doesn't open, try https://digital.hagley.org/1972430_477.",
+    "sourceUrl": "https://digital.hagley.org/72430_477",
+    "image": "https://digital.hagley.org/cantaloupe/iiif/2/https%3A%2F%2Fdigital.hagley.org%2Fsystem%2Ffiles%2F2024-10%2F26812-Service%2520File.jpg/full/800,/0/default.jpg",
+    "imageCredit": "Hagley Museum and Library",
+    "imagePage": "https://digital.hagley.org/72430_477",
+    "rights": "not-requested"
+  },
+  {
+    "id": "u-mvs3riubri1f6",
+    "type": "archive",
+    "status": "unverified",
+    "title": "E.I. du Pont de Nemours & Company, Textile Fibers Department records",
+    "creator": "E.I. du Pont de Nemours & Company. Textile Fibers Department",
+    "date": "1899-1988",
+    "dateStart": 1899,
+    "dateEnd": 1988,
+    "institution": "Hagley Museum and Library",
+    "collection": "Hagley Library, Manuscripts and Archives",
+    "identifier": "Accession 1771",
+    "dimensions": "88 linear feet",
+    "themes": [
+      "Nylon & synthetic fibers (DuPont)",
+      "Trade catalogs & marketing"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Hagley finding aids",
+      "for: Nylon"
+    ],
+    "region": "United States",
+    "description": "Collection guide abstract: \"The collection consists of research files and other records from the primary divisions of the Textile Fibers Department, including the Pioneering Research Division, Rayon Research Division, Technical Service Section, and the research facilities at the Spruance Plant ... and at the Yerkes Plant\". Also \"market research reports assessing product performance and consumer surveys\". The department was founded in 1936 as the Rayon Department and renamed in 1952.\nCarpet folders found by searching the guide for \"carpet\":\n- Pioneering Research Division, Chronological files: \"PG-6 - New fibers - carpet fibers, 1937\" (Box 10, Folder 22); same title 1938 (Box 12, Folder 22); \"PM-2 - Materials - carpet fibers, 1950\" (Box 35, Folder 22).\n- Sales and Marketing divisions, Merchandising Division (Marketing Research Section): \"Report No. MMR-59-2: September Survey of Retailers' Attitudes Toward Carpet Fibers and the Du Pont Airwaves Program Promoting 100% Nylon Carpeting, 1959 January 20\" (Box 78, Folder 15); \"Report No. MMR-59-40: Summary Report of Evaluation of Carpet Advertisements, 1959 August 14\" (Box 78, Folder 50); \"Report No. MMR-59-47: Recent Developments in 'Acrilan' Carpet Sales, 1959 August 31\" (Box 78, Folder 57).\n- Also \"Technical Information Files - Density, Bulk, Loft, 1951-1962, 1967\" (Box 74, Folder 9), possibly relevant to bulked yarn.\nNo folder title mentions \"tufted\"; none gives the BCF launch date directly.\nWhy it matters: Nylon chapter: the boxes most likely to show the BCF carpet nylon launch (open question \"BCF date, 1957 or 1959\") and DuPont's 1958-59 carpet advertising (the 1958 \"airwaves\" programme for 100% nylon carpeting). Paper only; needs a visit or a request.\nFound: Hagley finding aids, search \"Textile Fibers Department\" then \"carpet\" within the collection, 2026-10-28.",
+    "sourceUrl": "https://findingaids.hagley.org/repositories/3/resources/1278"
+  },
+  {
+    "id": "u-mvs3rm86ifn5j",
+    "type": "archive",
+    "status": "unverified",
+    "title": "Chronology of ITP tufting (weaving), 1962 July 3",
+    "creator": "E.I. du Pont de Nemours & Company",
+    "date": "1962 July 3",
+    "dateStart": 1962,
+    "dateEnd": 1962,
+    "institution": "Hagley Museum and Library",
+    "collection": "E.I. du Pont de Nemours & Company Lavoisier Library archival collection (Accession 2632), Series II. History-DuPont Products and Events, 1902-2010, Box 2, Folder 13",
+    "identifier": "Accession 2632, Box 2, Folder 13 (2632-II.)",
+    "themes": [
+      "Machine tufting & Dalton",
+      "Nylon & synthetic fibers (DuPont)"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Hagley finding aids",
+      "for: Building the machine",
+      "possible"
+    ],
+    "region": "United States",
+    "description": "File-level entry in the Lavoisier Library archival collection: \"Chronology of ITP tufting (weaving), 1962 July 3\". No scope note; \"ITP\" is not explained in the guide (perhaps a DuPont product or process name).\nWhy it matters: a 1962 DuPont chronology of a tufting process could date developments in machine tufting or DuPont's role in it (Building the machine; Nylon). Tagged possible until the folder is seen.\nFound: Hagley finding aids, search \"tufting\", 2026-10-28.",
+    "sourceUrl": "https://findingaids.hagley.org/repositories/3/archival_objects/289529"
+  },
+  {
+    "id": "u-mvs3rpmcr1tkn",
+    "type": "archive",
+    "status": "unverified",
+    "title": "General - Image Designs, improved tufting machine (rug weaver), 1962",
+    "creator": "Vladimir K. Zworykin (papers); Image Designs",
+    "date": "1962 (patents folder 1961-1962)",
+    "dateStart": 1961,
+    "dateEnd": 1962,
+    "institution": "Hagley Museum and Library",
+    "collection": "David Sarnoff Research Center records (Accession 2464-09), Vladimir K. Zworykin papers, 1908-1981, Research, 1930-1971; Box M&A 80, Folder 4; related folder Box M&A 87, Folder 29",
+    "identifier": "Accession 2464-09 (2464-09-6.-I.-B.)",
+    "themes": [
+      "Machine tufting & Dalton"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Hagley finding aids",
+      "for: Programmable tufting",
+      "for: Building the machine",
+      "possible"
+    ],
+    "region": "United States",
+    "description": "Two folders in the papers of Vladimir K. Zworykin (RCA television pioneer): \"General - Image Designs, improved tufting machine (rug weaver), 1962\" (Box M&A 80, Folder 4) and \"General - Image Designs, patents (Improved Tufting Machine, Mosaic Tile Setter), 1961-1962\" (Box M&A 87, Folder 29, https://findingaids.hagley.org/repositories/3/archival_objects/245806). No scope notes.\nWhy it matters: an electronics engineer's file on an \"improved tufting machine\" for rugs in 1961-62 may be an early attempt at image- or pattern-controlled tufting (Programmable tufting: \"the first computer-controlled broadloom tufting machine\"). Who \"Image Designs\" were, and whether patents issued, needs the folders or a patent search.\nFound: Hagley finding aids, search \"tufting\", 2026-10-28.",
+    "sourceUrl": "https://findingaids.hagley.org/repositories/3/archival_objects/245804"
+  },
+  {
+    "id": "u-mvs3rt0be77qi",
+    "type": "archive",
+    "status": "unverified",
+    "title": "Tufted Textile Manufacturers Association, 1960",
+    "creator": "E.C. Beetem and Son, Inc. (records)",
+    "date": "1960",
+    "dateStart": 1960,
+    "dateEnd": 1960,
+    "institution": "Hagley Museum and Library",
+    "collection": "E.C. Beetem and Son, Inc. records (Accession 1178), Series III. Incoming correspondence, 1894-1967; Box 181, Folder 491",
+    "identifier": "Accession 1178, Box 181, Folder 491",
+    "themes": [
+      "Machine tufting & Dalton"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Hagley finding aids",
+      "for: Dalton bedspreads",
+      "possible"
+    ],
+    "region": "United States",
+    "description": "Correspondence file \"Tufted Textile Manufacturers Association, 1960\" in the incoming correspondence of E.C. Beetem and Son, Inc. No scope note. The Beetem firm's business is not stated in this entry (check the collection guide).\nWhy it matters: the Tufted Textile Manufacturers Association was the Dalton industry's trade body; a 1960 file could hold circulars, membership or statistics for the bedspread-to-carpet years. Tagged possible until seen.\nFound: Hagley finding aids, search \"tufted\", 2026-10-28.",
+    "sourceUrl": "https://findingaids.hagley.org/repositories/3/archival_objects/560954"
+  },
+  {
+    "id": "u-mvs3rwdznyj3f",
+    "type": "archive",
+    "status": "unverified",
+    "title": "153A: The Carpet Institute, Inc. - Proposal for a Psychological Research Study on the Sales and Advertising Problems of the Carpet Institute, Inc., 1952",
+    "creator": "Ernest Dichter (Institute for Motivational Research)",
+    "date": "1952",
+    "dateStart": 1952,
+    "dateEnd": 1952,
+    "institution": "Hagley Museum and Library",
+    "collection": "Ernest Dichter papers (Accession 2407), Series I. Research Proposals and Reports, Box 8",
+    "identifier": "Accession 2407, Box 8, 153A",
+    "themes": [
+      "Trade catalogs & marketing",
+      "Woven carpet"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Hagley finding aids",
+      "for: Woven carpet"
+    ],
+    "region": "United States",
+    "description": "Research proposal, 1952, by Ernest Dichter for the Carpet Institute, Inc., on \"the Sales and Advertising Problems of the Carpet Institute\". File-level entry only; not digitised as far as found.\nWhy it matters: the Carpet Institute was the wool-carpet industry's trade body; a 1952 study of why carpet was not selling sets the scene for nylon and tufted carpet later in the decade, and pairs with Dichter's 1957-58 DuPont nylon carpet studies already in the database.\nFound: Hagley finding aids, search \"Carpet Institute\", 2026-10-28.",
+    "sourceUrl": "https://findingaids.hagley.org/repositories/3/archival_objects/230059"
+  },
+  {
+    "id": "u-mvs3rzs1i3apg",
+    "type": "archive",
+    "status": "unverified",
+    "title": "Joseph W. Lynch papers",
+    "creator": "Joseph W. Lynch (DuPont textile chemist, 1954-1994)",
+    "date": "1943-1994 (majority 1954-1979)",
+    "dateStart": 1943,
+    "dateEnd": 1994,
+    "institution": "Hagley Museum and Library",
+    "collection": "Hagley Library, Manuscripts and Archives",
+    "identifier": "Hagley finding aid resources/1631 (accession number not captured)",
+    "dimensions": "3 linear feet",
+    "themes": [
+      "Nylon & synthetic fibers (DuPont)",
+      "Yarn & materials"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Hagley finding aids",
+      "for: Nylon",
+      "possible"
+    ],
+    "region": "United States",
+    "description": "Collection guide: Lynch was \"a textile chemist at the DuPont Company from 1954 to 1994\" in the Textile Fibers Department, \"providing technical service focusing on nylon and rayon dyeing and finishing, specific areas of type 501 nylon, staple nylon carpet dyeing, tricot finishing\". The papers deal mainly with customer relations and technical assistance to customers.\nWhy it matters: Nylon chapter: technical-service papers on \"type 501 nylon\" and nylon carpet dyeing from the launch years; may show how mills (including tufters) were helped to use carpet nylon. Tagged possible; folder list not yet read.\nFound: Hagley finding aids, search \"nylon carpet\", 2026-10-28.",
+    "sourceUrl": "https://findingaids.hagley.org/repositories/3/resources/1631"
   },
   {
     "id": "own-bandy-peacock-spreads",

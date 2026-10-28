@@ -1347,6 +1347,7 @@
   const exportDb = async () => {
     const items = ITEMS.map(it => {
       const o = clean(it);
+      if (it._borrowed) { delete o.image; delete o.imageCredit; } // a related record's picture, shown but not this record's own
       if (o.image && o.image.startsWith("idb:")) o.image = imgCache[o.image.slice(4)] || ""; // embed uploaded photos
       return o;
     });
