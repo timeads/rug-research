@@ -102,6 +102,13 @@ const APIS = {
   hgSearchOld: `https://digital.hagley.org/islandora/search/nylon%20carpet?type=dismax`,
   hgSitemap1: `https://digital.hagley.org/sitemap.xml?page=1`,
   hgRobots: `https://digital.hagley.org/robots.txt`,
+  dtIA: `https://archive.org/advancedsearch.php?q=title%3A%28bedspreads%20broadloom%29&fl[]=identifier&fl[]=title&fl[]=date&fl[]=lending___status&fl[]=collection&rows=10&output=json`,
+  dtIAfts: `https://archive.org/advancedsearch.php?q=%22bedspreads%20to%20broadloom%22&fl[]=identifier&fl[]=title&fl[]=date&rows=20&output=json`,
+  dtGB: `https://www.googleapis.com/books/v1/volumes?q=intitle:%22bedspreads%20to%20broadloom%22`,
+  dtOL: `https://openlibrary.org/search.json?q=bedspreads%20to%20broadloom`,
+  dtHathi: `https://catalog.hathitrust.org/api/volumes/brief/oclc/28640376.json`,
+  dtBandy: `https://bandyheritagecenter.pastperfectonline.com/archive/2349F571-3AF7-4957-BDA1-373971530010`,
+  dtBandySearch: `https://bandyheritagecenter.pastperfectonline.com/search?search_criteria=Deaton`,
   cooperHewitt: `https://api.collection.cooperhewitt.org/rest/?method=cooperhewitt.search.objects&query=rug`,
 };
 // "sources" mode: try every Other archives search link with a sample query.
