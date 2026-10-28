@@ -20,7 +20,8 @@ const description = [`${TYPE[it.type] || "Source"}: ${it.title.replace(/^(REFUTE
 <Base title={`${it.title} · A History of Tufted Rugs`} description={description} shade={shade} image={img && imageCleared(it) ? imageUrl(img) : ""}>
   <div class={`rec ${img ? "" : "noimg"}`}>
     {img && <figure class="plate"><img src={imageUrl(img, 1400)} alt={it.title} referrerpolicy="no-referrer" />{it.imageRole === "illustration" && <figcaption>Illustration, not the item itself: {it.imageCaption || "a comparable item"}</figcaption>}</figure>}
-    <div>
+    <div class="rec-body">
+      <div class="rec-id">
       <h1>{it.title}</h1>
       <p class="kind">{TYPE[it.type] || it.type} · {it.status === "verified" ? "checked at the source" : "not yet checked at the source"}{img && !imageCleared(it) && <> · <span class="pending">Image permission pending</span></>}</p>
       <dl class="facts">{facts.map(([k, v]) => <><dt>{k}</dt><dd>{v}</dd></>)}</dl>
@@ -28,9 +29,12 @@ const description = [`${TYPE[it.type] || "Source"}: ${it.title.replace(/^(REFUTE
         {it.sourceUrl && <a class="btn primary" href={it.sourceUrl} rel="noopener">View at the source</a>}
         {citedIn.map(c => <a class="btn" href={base(`chapters/${c.slug}/#ref-${c.ns[0]}`)}>Cited in chapter {c.number}, note{c.ns.length > 1 ? "s" : ""} {c.ns.join(", ")}</a>)}
       </div>
+      </div>
+      <div class="rec-read">
       <h2>Cite this source</h2>
       <div class="cite-box" set:html={citation(it)} />
       {it.description && <><h2>Research notes</h2><p class="notes-raw">{it.description}</p></>}
+      </div>
     </div>
   </div>
 </Base>

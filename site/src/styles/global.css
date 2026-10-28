@@ -278,7 +278,12 @@ h1.ch-title { margin: 1.75rem 0 0; font: 680 clamp(2.5rem, 6vw, 4.5rem)/1 var(--
 
 /* ---------- record page ---------- */
 .rec { max-width: var(--page); margin: 0 auto; padding: 2.5rem var(--pad) 4rem; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 2.75rem; }
-.rec.noimg { grid-template-columns: minmax(0, var(--measure)); }
+.rec.noimg { grid-template-columns: minmax(0, 1fr); }
+/* Without a picture, the record still fills the page: what it is on the left, how to cite it and the notes on the right. */
+@media (min-width: 861px) {
+  .rec.noimg .rec-body { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 2.75rem; }
+  .rec.noimg .rec-read > h2:first-child { margin-top: .35rem; }
+}
 .rec .plate { margin: 0; background: var(--sheet-2); align-self: start; position: sticky; top: 5rem; }
 .rec .plate img { width: 100%; }
 .rec .plate figcaption { padding: .6rem .75rem; font: 400 .875rem/1.45 var(--frame); color: var(--ink-2); background: var(--ground); }
@@ -289,7 +294,7 @@ h1.ch-title { margin: 1.75rem 0 0; font: 680 clamp(2.5rem, 6vw, 4.5rem)/1 var(--
 .facts dt, .facts dd { margin: 0; padding: .55rem 0; border-bottom: 1px solid var(--rule); }
 .facts dt { color: var(--ink-3); }
 .cite-box { padding: 1rem 1.25rem; background: var(--sheet); border-radius: 3px; font: 400 .9375rem/1.55 var(--read); overflow-wrap: anywhere; }
-.notes-raw { font: 400 1rem/1.6 var(--read); color: var(--ink-2); white-space: pre-line; max-width: var(--measure); text-wrap: pretty; }
+.notes-raw { font: 400 1rem/1.6 var(--read); color: var(--ink-2); white-space: pre-line; max-width: var(--measure); text-wrap: pretty; overflow-wrap: anywhere; }
 .btns { display: flex; flex-wrap: wrap; gap: .5rem; margin: 1.25rem 0; }
 .btn { display: inline-flex; align-items: center; min-height: 2.5rem; padding: 0 1rem; border: 1px solid var(--rule-2); border-radius: 2px; font: 600 .875rem/1 var(--frame); text-decoration: none; color: var(--ink); background: var(--sheet); }
 .btn:hover { border-color: var(--ink-3); }

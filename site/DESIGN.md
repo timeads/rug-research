@@ -238,6 +238,8 @@ Every page shares the masthead's frame: 80rem (`--page`) with a fluid clamp(1.25
 
 **Timeline and bibliography.** The timeline lists every theme filter at once, wrapping onto as many rows as it needs (never a sideways scroller); the bar is not sticky. Era heads sit in an up-to-18rem column, entries cap their titles at 64ch. From 1180px the bibliography's kinds of source become a list that stays in view to the left of the entries, as in a chapter, and each entry mirrors the reading block: the citation at the 37rem measure, its record link and chapter in the 14rem margin column, with the rules running to the page's right edge.
 
+**Record pages.** Two halves across the full page: the picture on the left and the record on the right; a record without a picture puts what it is (title, kind, facts, links) on the left and how to cite it with the research notes on the right. One column under 861px.
+
 **Responsive.** At 1100px the margin column folds away: the column narrows to the measure, notes hide and open beneath the line when their number is tapped, margin figures drop into the flow at up to 22rem. Figure pairs stack under 700px; end matter and record pages go single-column under 860px; the timeline drops thumbnails under 760px.
 
 **Motion.** The only motion is the scroll-driven progress thread on chapter pages (CSS scroll timeline, where supported); reduced-motion turns all animation and transition off.
