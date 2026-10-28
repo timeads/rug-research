@@ -1,152 +1,42 @@
 {
- "bbEwing": {
-  "url": "https://archive.org/advancedsearch.php?q=title%3A%28broadlooms%20businessmen%29&fl[]=identifier&fl[]=title&fl[]=date&fl[]=creator&fl[]=collection&rows=8&output=json",
+ "bbRDissues": {
+  "url": "https://archive.org/advancedsearch.php?q=collection%3Apub_readers-digest%20AND%20date%3A%5B1941-03-01%20TO%201941-05-31%5D&fl[]=identifier&fl[]=title&fl[]=date&rows=10&output=json",
   "method": "GET",
   "status": 200,
   "cors": "*",
   "corsMethods": "GET, POST, OPTIONS",
   "corsHeaders": "Accept-Encoding,Accept-Language,Authorization,Baggage,Cache-Control,Content-Length,Content-Range,DNT,Pragma,Range,Sentry-Trace,X-Requested-With",
   "type": "application/json",
-  "sample": "{\"responseHeader\":{\"status\":0,\"QTime\":40,\"params\":{\"query\":\"title:(broadlooms businessmen)\",\"qin\":\"title:(broadlooms businessmen)\",\"fields\":\"identifier,title,date,creator,collection\",\"wt\":\"json\",\"rows\":8,\"start\":0}},\"response\":{\"numFound\":0,\"start\":0,\"docs\":[]}}"
+  "sample": "{\"responseHeader\":{\"status\":0,\"QTime\":19,\"params\":{\"query\":\"collection:pub_readers-digest AND date:[1941-03-01T00\\\\:00\\\\:00Z TO 1941-05-31T23\\\\:59\\\\:59Z]\",\"qin\":\"collection:pub_readers-digest AND date:[1941-03-01 TO 1941-05-31]\",\"fields\":\"identifier,title,date\",\"wt\":\"json\",\"rows\":10,\"start\":0}},\"response\":{\"numFound\":0,\"start\":0,\"docs\":[]}}"
  },
- "bbReynolds": {
-  "url": "https://archive.org/advancedsearch.php?q=title%3A%28innovation%20carpet%20industry%29&fl[]=identifier&fl[]=title&fl[]=date&fl[]=creator&fl[]=collection&rows=8&output=json",
-  "method": "GET",
-  "status": 200,
-  "cors": "*",
-  "corsMethods": "GET, POST, OPTIONS",
-  "corsHeaders": "Accept-Encoding,Accept-Language,Authorization,Baggage,Cache-Control,Content-Length,Content-Range,DNT,Pragma,Range,Sentry-Trace,X-Requested-With",
-  "type": "application/json",
-  "sample": "{\"responseHeader\":{\"status\":0,\"QTime\":18,\"params\":{\"query\":\"title:(innovation carpet industry)\",\"qin\":\"title:(innovation carpet industry)\",\"fields\":\"identifier,title,date,creator,collection\",\"wt\":\"json\",\"rows\":8,\"start\":0}},\"response\":{\"numFound\":2,\"start\":0,\"docs\":[{\"collection\":[\"opensource\"],\"identifier\":\"httpswww.pqprc.irarticle_210886.htmllangen\",\"title\":\"Developing compatibility model of Iran\\u2019s handmade carpet industry emphasizing quality and innovation factors\"},{\"collection\":[\"internetarchivebooks\",\"universityofarizonalib\",\"inlibrary\",\"printdisabled\"],\"creator\":\"william a. reynolds\",\"date\":\"1968-01-01T00:00:00Z\",\"identifier\":\"innovationinunit0000will\",\"title\":\"Innovation in the United States Carpet Industry 1947-1963\"}]}}"
- },
- "bbWard": {
-  "url": "https://archive.org/advancedsearch.php?q=title%3A%28tufting%20introduction%29&fl[]=identifier&fl[]=title&fl[]=date&fl[]=creator&fl[]=collection&rows=8&output=json",
-  "method": "GET",
-  "status": 200,
-  "cors": "*",
-  "corsMethods": "GET, POST, OPTIONS",
-  "corsHeaders": "Accept-Encoding,Accept-Language,Authorization,Baggage,Cache-Control,Content-Length,Content-Range,DNT,Pragma,Range,Sentry-Trace,X-Requested-With",
-  "type": "application/json",
-  "sample": "{\"responseHeader\":{\"status\":0,\"QTime\":12,\"params\":{\"query\":\"title:(tufting introduction)\",\"qin\":\"title:(tufting introduction)\",\"fields\":\"identifier,title,date,creator,collection\",\"wt\":\"json\",\"rows\":8,\"start\":0}},\"response\":{\"numFound\":0,\"start\":0,\"docs\":[]}}"
- },
- "bbWindham": {
-  "url": "https://archive.org/advancedsearch.php?q=title%3A%28tufting%20machine%29%20AND%20date%3A%5B1930%20TO%201950%5D&fl[]=identifier&fl[]=title&fl[]=date&fl[]=creator&fl[]=collection&rows=8&output=json",
-  "method": "GET",
-  "status": 200,
-  "cors": "*",
-  "corsMethods": "GET, POST, OPTIONS",
-  "corsHeaders": "Accept-Encoding,Accept-Language,Authorization,Baggage,Cache-Control,Content-Length,Content-Range,DNT,Pragma,Range,Sentry-Trace,X-Requested-With",
-  "type": "application/json",
-  "sample": "{\"responseHeader\":{\"status\":0,\"QTime\":23,\"params\":{\"query\":\"title:(tufting machine) AND date:[1930-01-01T00\\\\:00\\\\:00Z TO 1950-12-31T23\\\\:59\\\\:59Z]\",\"qin\":\"title:(tufting machine) AND date:[1930 TO 1950]\",\"fields\":\"identifier,title,date,creator,collection\",\"wt\":\"json\",\"rows\":8,\"start\":0}},\"response\":{\"numFound\":0,\"start\":0,\"docs\":[]}}"
- },
- "bbAndrews": {
-  "url": "https://archive.org/advancedsearch.php?q=title%3A%28men%20and%20the%20mills%29&fl[]=identifier&fl[]=title&fl[]=date&fl[]=creator&fl[]=collection&rows=8&output=json",
-  "method": "GET",
-  "status": 200,
-  "cors": "*",
-  "corsMethods": "GET, POST, OPTIONS",
-  "corsHeaders": "Accept-Encoding,Accept-Language,Authorization,Baggage,Cache-Control,Content-Length,Content-Range,DNT,Pragma,Range,Sentry-Trace,X-Requested-With",
-  "type": "application/json",
-  "sample": "{\"responseHeader\":{\"status\":0,\"QTime\":17,\"params\":{\"query\":\"title:(men and the mills)\",\"qin\":\"title:(men and the mills)\",\"fields\":\"identifier,title,date,creator,collection\",\"wt\":\"json\",\"rows\":8,\"start\":0}},\"response\":{\"numFound\":5,\"start\":0,\"docs\":[{\"collection\":[\"library_of_congress\",\"americana\"],\"creator\":[\"Dickson, William Martin, 1827-1889. [from old catalog]\",\"Daniel Murray Pamphlet Collection (Library of Congress) DLC [from old catalog]\",\"YA Pamphlet Collection (Library of Congress) DLC [from old catalog]\",\"Mill, John Stuart, 1806-1873\"],\"date\":\"1865-01-01T00:00:00Z\",\"identifier\":\"absoluteequality00dick\",\"title\":\"The absolute equality of all men before the law, the only true basis of reconstruction. An address by William M. Dickson, delivered at Oberlin, Ohio, October 3, 1865, with and appendix, containing John Stuart Mills' [!] letter on reconstruction, and the correspondence therewith connected\"},{\"collection\":[\"antislavery\",\"oberlincollegelibrary\",\"americana\",\"fav-michael_collier\"],\"creator\":\"Dickson, William Martin, 1827-1889\",\"date\":\"1865-01-01T00:00:00Z\",\"identifier\":\"ca0cc235-f3c9-4431-b203-01a0542864af\",\"title\":\"The absolute equality of all men before the law, the only true basis of reconstruction : an address by William M. Dickson, delivered at Oberlin, Ohio, October 3, 1865 : with an appendix, containing John Stuart Mills' letter on reconstruction, and the \\u2026\"},{\"collection\":[\"popularchinesebooks\",\"internetarchivebooks\",\"inlibrary\",\"printdisabled\"],\"creator\":\"Honig, Emily\",\"date\":\"2011-01-01T00:00:00Z\",\"identifier\":\"jiemeimenyumoshe0000honi\",\"title\":\"Jie mei men yu mo sheng ren : Shanghai mian sha chang nu\\u0308 gong, 1919-1949 = Sisters and strangers : women in the Shanghai cotton mills, 1919-1949\"},{\"collection\":[\"trent_university\",\"internetarchivebooks\",\"inlibrary\",\"printdisabled\",\"fav-marylifegarrett\",\"fav-sunnyg70\",\"fav-davyd286\",\"fav-selinnertikk\",\"americanuniversity-ol\",\"binghamton-ol\",\"dartmouthlibrary-ol\",\"framingham-ol\",\"gwulibraries-ol\",\"marymount-ol\",\"riceuniversity-ol\",\"rochester-ol\",\"the-claremont-colleges-ol\",\"udc-ol\",\"unb-ol\",\"universityofarizona-ol\",\"wilsoncollege-ol\"],\"creator\":\"Andrews, Mildred Gwin, 1903-1984\",\"date\":\"1987-01-01T00:00:00Z\",\"identifier\":\"menmillshistoryo0000andr\",\"title\":\"The men and the mills : a history of the Southern textile industry\"},{\"collection\":[\"opensource_audio\"],\"date\":\"1977-03-20T00:00:00Z\",\"identifier\":\"31b3ac68-a372-409f-a9b3-b6b2f5741019\",\"title\":\"The General Mills Radio Adventure Theater 1977-03-20 Robin Hood and His Merry Men\"}]}}"
- },
- "bbRD1941": {
-  "url": "https://archive.org/advancedsearch.php?q=title%3A%28reader%27s%20digest%29%20AND%20date%3A1941&fl[]=identifier&fl[]=title&fl[]=date&fl[]=creator&fl[]=collection&rows=8&output=json",
-  "method": "GET",
-  "status": 200,
-  "cors": "*",
-  "corsMethods": "GET, POST, OPTIONS",
-  "corsHeaders": "Accept-Encoding,Accept-Language,Authorization,Baggage,Cache-Control,Content-Length,Content-Range,DNT,Pragma,Range,Sentry-Trace,X-Requested-With",
-  "type": "application/json",
-  "sample": "{\"responseHeader\":{\"status\":0,\"QTime\":29,\"params\":{\"query\":\"title:(reader\\\\'s digest) AND date:[1941-01-01T00\\\\:00\\\\:00Z TO 1941-12-31T23\\\\:59\\\\:59Z]\",\"qin\":\"title:(reader's digest) AND date:1941\",\"fields\":\"identifier,title,date,creator,collection\",\"wt\":\"json\",\"rows\":8,\"start\":0}},\"response\":{\"numFound\":21,\"start\":0,\"docs\":[{\"collection\":[\"internetarchivebooks\",\"printdisabled\",\"inlibrary\"],\"creator\":\"VARIOUS\",\"date\":\"1941-01-01T00:00:00Z\",\"identifier\":\"bwb_Y0-CHY-829\",\"title\":\"THE READER'S DIGEST 20th ANNIVERSARY ANTHOLOGY\"},{\"collection\":[\"internetarchivebooks\",\"bostonmedicallibrary\",\"printdisabled\",\"inlibrary\"],\"creator\":\"Reader's digest\",\"date\":\"1941-01-01T00:00:00Z\",\"identifier\":\"readersdigestboo0000read_q8c6\",\"title\":\"Reader's Digest books\"},{\"collection\":[\"internetarchivebooks\",\"printdisabled\",\"inlibrary\"],\"creator\":\"various\",\"date\":\"1941-01-01T00:00:00Z\",\"identifier\":\"readersdigesttwe0000unse\",\"title\":\"The Reader's Digest Twentieth Anniversary Anthology\"},{\"collection\":[\"internetarchivebooks\",\"inlibrary\",\"printdisabled\"],\"creator\":\"Reader's Digest Association\",\"date\":\"1941-01-01T00:00:00Z\",\"identifier\":\"readersdigestcon0000read\",\"title\":\"Reader's digest condensed book\"},{\"collection\":[\"pub_readers-digest\",\"sim_microfilm\",\"periodicals\",\"fav-michael_aquilina\"],\"date\":\"1941-01-01T00:00:00Z\",\"identifier\":\"sim_readers-digest_1941_39_index\",\"title\":\"The Reader's Digest 1941: Vol 39 Index\"},{\"collection\":[\"internetarchivebooks\",\"printdisabled\",\"inlibrary\"],\"creator\":\"Various\",\"date\":\"1941-01-01T00:00:00Z\",\"identifier\":\"bwb_S0-CGP-590\",\"title\":\"The Reader's Digest Twentieth Anniversary Anthology\"},{\"collection\":[\"pub_readers-digest\",\"sim_microfilm\",\"periodicals\",\"fav-michael_aquilina\"],\"date\":\"1941-01-01T00:00:00Z\",\"identifier\":\"sim_readers-digest_1941_38_index\",\"title\":\"The Reader's Digest 1941: Vol 38 Index\"},{\"collection\":[\"internetarchivebooks\",\"printdisabled\",\"inlibrary\"],\"creator\":\"Various\",\"date\":\"1941-01-01T00:00:00Z\",\"identifier\":\"readersdigesttwe0000vari\",\"title\":\"The Reader's Digest Twentieth Anniversary Anthology\"}]}}"
- },
- "bbOLEwing": {
-  "url": "https://openlibrary.org/search.json?q=broadlooms+and+businessmen&fields=key,title,first_publish_year,ebook_access,ia&limit=3",
-  "method": "GET",
-  "status": 200,
-  "cors": "*",
-  "corsMethods": null,
-  "corsHeaders": null,
-  "type": "application/json",
-  "sample": "{\"numFound\":2,\"start\":0,\"numFoundExact\":true,\"num_found\":2,\"documentation_url\":\"https://openlibrary.org/dev/docs/api/search\",\"q\":\"broadlooms and businessmen\",\"offset\":null,\"docs\":[{\"ebook_access\":\"printdisabled\",\"first_publish_year\":1955,\"ia\":[\"broadloomsbusine0000ewin\"],\"key\":\"/works/OL160421W\",\"title\":\"Broadlooms and businessmen\"},{\"ebook_access\":\"no_ebook\",\"first_publish_year\":2001,\"key\":\"/works/OL9709100M\",\"title\":\"Broadlooms and Businessmen\"}]}"
- },
- "bbOLReynolds": {
-  "url": "https://openlibrary.org/search.json?q=innovation+in+the+united+states+carpet+industry&fields=key,title,first_publish_year,ebook_access,ia&limit=3",
-  "method": "GET",
-  "status": 200,
-  "cors": "*",
-  "corsMethods": null,
-  "corsHeaders": null,
-  "type": "application/json",
-  "sample": "{\"numFound\":2,\"start\":0,\"numFoundExact\":true,\"num_found\":2,\"documentation_url\":\"https://openlibrary.org/dev/docs/api/search\",\"q\":\"innovation in the united states carpet industry\",\"offset\":null,\"docs\":[{\"ebook_access\":\"borrowable\",\"first_publish_year\":1967,\"ia\":[\"innovationinunit0000will\"],\"key\":\"/works/OL7000518W\",\"title\":\"Innovation in the United States carpet industry, 1947-1963\"},{\"ebook_access\":\"public\",\"first_publish_year\":1975,\"ia\":[\"AmericanFilm198211\",\"AmericanFilm198207\",\"AmericanFilm198012\",\"americanfilmmagazine197601\",\"AmericanFilmMagazineDecember1976January1977\",\"AmericanFilmOctober1976\",\"american_film_magazine_1976_07\",\"american_film_magazine_1976_05\",\"american_film_magazine_1976_03\",\"AmericanFilmDec1975\",\"pdfy-nLdhmX0Mb3yJNQEC\",\"pdfy-FnaKnmyYOYt6cYJA\"],\"key\":\"/works/OL17597290W\",\"title\":\"American Film\"}]}"
- },
- "bbOLWard": {
-  "url": "https://openlibrary.org/search.json?q=tufting+an+introduction+ward&fields=key,title,first_publish_year,ebook_access,ia&limit=3",
-  "method": "GET",
-  "status": 200,
-  "cors": "*",
-  "corsMethods": null,
-  "corsHeaders": null,
-  "type": "application/json",
-  "sample": "{\"numFound\":6,\"start\":0,\"numFoundExact\":true,\"num_found\":6,\"documentation_url\":\"https://openlibrary.org/dev/docs/api/search\",\"q\":\"tufting an introduction ward\",\"offset\":null,\"docs\":[{\"ebook_access\":\"no_ebook\",\"first_publish_year\":1975,\"key\":\"/works/OL8325429W\",\"title\":\"Tufting\"},{\"ebook_access\":\"no_ebook\",\"first_publish_year\":1969,\"key\":\"/works/OL8653285W\",\"title\":\"Tufting\"},{\"ebook_access\":\"no_ebook\",\"first_publish_year\":1969,\"key\":\"/works/OL10487156W\",\"title\":\"Tufting\"}]}"
- },
- "bbOLWindham": {
-  "url": "https://openlibrary.org/search.json?q=tufting+machine+windham&fields=key,title,first_publish_year,ebook_access,ia&limit=3",
-  "method": "GET",
-  "status": 200,
-  "cors": "*",
-  "corsMethods": null,
-  "corsHeaders": null,
-  "type": "application/json",
-  "sample": "{\"numFound\":0,\"start\":0,\"numFoundExact\":true,\"num_found\":0,\"documentation_url\":\"https://openlibrary.org/dev/docs/api/search\",\"q\":\"tufting machine windham\",\"offset\":null,\"docs\":[]}"
- },
- "bbOLShaheen": {
-  "url": "https://openlibrary.org/search.json?q=world+carpets+first+thirty+years&fields=key,title,first_publish_year,ebook_access,ia&limit=3",
-  "method": "GET",
-  "status": 200,
-  "cors": "*",
-  "corsMethods": null,
-  "corsHeaders": null,
-  "type": "application/json",
-  "sample": "{\"numFound\":7,\"start\":0,\"numFoundExact\":true,\"num_found\":7,\"documentation_url\":\"https://openlibrary.org/dev/docs/api/search\",\"q\":\"world carpets first thirty years\",\"offset\":null,\"docs\":[{\"ebook_access\":\"no_ebook\",\"first_publish_year\":1984,\"key\":\"/works/OL5611518W\",\"title\":\"World Carpets, the first thirty years\"},{\"ebook_access\":\"public\",\"first_publish_year\":1893,\"ia\":[\"historyofworldsf01trum\",\"historyofworldsf00trum\"],\"key\":\"/works/OL1618262W\",\"title\":\"History of the World's Fair\"},{\"ebook_access\":\"public\",\"first_publish_year\":1975,\"ia\":[\"AmericanFilm198211\",\"AmericanFilm198207\",\"AmericanFilm198012\",\"americanfilmmagazine197601\",\"AmericanFilmMagazineDecember1976January1977\",\"AmericanFilmOctober1976\",\"american_film_magazine_1976_07\",\"american_film_magazine_1976_05\",\"american_film_magazine_1976_03\",\"AmericanFilmDec1975\",\"pdfy-nLdhmX0Mb3yJNQEC\",\"pdfy-FnaKnmyYOYt6cYJA\"],\"key\":\"/works/OL17597290W\",\"title\":\"American Film\"}]}"
- },
- "bbOLPainter": {
-  "url": "https://openlibrary.org/search.json?q=millionaire%27s+fun+mose+painter&fields=key,title,first_publish_year,ebook_access,ia&limit=3",
-  "method": "GET",
-  "status": 200,
-  "cors": "*",
-  "corsMethods": null,
-  "corsHeaders": null,
-  "type": "application/json",
-  "sample": "{\"numFound\":0,\"start\":0,\"numFoundExact\":true,\"num_found\":0,\"documentation_url\":\"https://openlibrary.org/dev/docs/api/search\",\"q\":\"millionaire's fun mose painter\",\"offset\":null,\"docs\":[]}"
- },
- "bbSEGeog": {
-  "url": "https://muse.jhu.edu/search?action=search&query=content:%22Tufted%20Textile%20Concentration%22",
-  "method": "GET",
-  "status": 200,
-  "cors": null,
-  "corsMethods": null,
-  "corsHeaders": null,
-  "type": "text/html; charset=utf-8",
-  "sample": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<title>Project MUSE -- Verification required!</title>\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/css/style_home2.css\"/>\n</head>\n<body style=\"margin:0;padding:0;\">\n\n<div style=\"text-align: center; padding: 30px 20px 20px;\">\n  <div style=\"display: inline-block;\">\n    <div style=\"float: left; padding-right: 40px;\">\n      <img src=\"/images/muselogo_notext.png\" alt=\"MUSE logo\" style=\"width:100%;height:auto;\">\n    </div>\n    <div style=\"float: left; max-width: 320px; padding-top: 16px; text-align: left;\">\n\n      <h1 style=\"margin:0;padding: 0;font-size: 30px;\">Verification required!</h1>\n\n\n\n\n\n  <p style=\"font-size:.75em;color:#757575;line-height:1.5;margin:6px 0 14px 0;\">In order to better serve you and keep this site secure,\n  please complete this challenge. If you are trying to perform text/data mining, please <a href=\"mailto:muse@jh.edu\">contact Customer Service</a>\n  for assistance.</p>\n\n  <form name=\"verify_form\" method=\"post\" action=\"/verify\">\n  <input type=\"hidden\" name=\"action\" value=\"verify\">\n  <input type=\"hidden\" name=\"target_url\" value=\"/search?action=search&query=content:%22Tufted%20Textile%20Concentration%22\">\n  <input type=\"hidden\" name=\"r\" value=\"4972760\">\n  <script type=\"module\" src=\"https://cdn.jsdelivr.net/npm/@friendlycaptcha/sdk@0.2.0/site.min.js\" async defer></script>\n<script nomodule src=\"https://cdn.jsdelivr.net/npm/@friendlycaptcha/sdk@0.2.0/site.compat.min.js\" async defer></script>\n\n<div class=\"frc-captcha\" id=\"frc-captcha-13161250\" data-sitekey=\"FCMUE5FSPQQ6QBKQ\" data-start=\"none\"></div>\n\n<script>\nconst myWidgetElement = document.querySelector(\".frc-captcha\");\nmyWidgetElement.addEventListener(\"frc:widget.statechange\", function (event) {\n  const detail = event.detail;\n  console.log(\"STATECHANGE: state=\" + detail.state + \" response=\" + detail.response);\n  if (detail.state === \"completed\") { \n    \n    console.log(\"Submitting form\");\n    document.verify_form.submit();\n    \n  } else if (detail.state === \"activating\") {\n    \n    console.log(\"Submitting activation\");\n    fetch(\"/verify?action=activate\");\n    \n  } else if (detail.state === \"error\") {\n    console.error(detail.error);\n  }\n});\n</script>\n\n  </form>\n\n\n\n\n    </div>\n\n    <div style=\"clear: both;\"></div>\n  </div>\n</div>\n\n</body>\n</html>\n"
- },
- "bbCrossref": {
-  "url": "https://api.crossref.org/works?query.bibliographic=Localization+Economics+in+the+American+Carpet+Industry+Walters+Wheeler&rows=2",
+ "bbGaWomen": {
+  "url": "https://api.crossref.org/works/10.1515/9780820376134-006",
   "method": "GET",
   "status": 200,
   "cors": "*",
   "corsMethods": null,
   "corsHeaders": "X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language, Accept-Ranges, Cache-Control",
   "type": "application/json",
-  "sample": "{\"status\":\"ok\",\"message-type\":\"work-list\",\"message-version\":\"1.0.0\",\"message\":{\"facets\":{},\"total-results\":7409820,\"items\":[{\"indexed\":{\"date-parts\":[[2026,6,1]],\"date-time\":\"2026-06-01T14:30:34Z\",\"timestamp\":1780324234087,\"version\":\"3.54.1\"},\"reference-count\":0,\"publisher\":\"JSTOR\",\"issue\":\"2\",\"content-domain\":{\"domain\":[],\"crossmark-restriction\":false},\"short-container-title\":[\"Geographical Review\"],\"published-print\":{\"date-parts\":[[1984,4]]},\"DOI\":\"10.2307\\/214099\",\"type\":\"journal-article\",\"created\":{\"date-parts\":[[2006,5,4]],\"date-time\":\"2006-05-04T05:52:28Z\",\"timestamp\":1146721948000},\"page\":\"183\",\"source\":\"Crossref\",\"is-referenced-by-count\":5,\"title\":[\"Localization Economies in the American Carpet Industry\"],\"prefix\":\"10.2307\",\"volume\":\"74\",\"author\":[{\"given\":\"Billie J.\",\"family\":\"Walters\",\"sequence\":\"first\",\"affiliation\":[],\"role\":[{\"vocabulary\":\"crossref\",\"role\":\"author\"}]},{\"given\":\"James O.\",\"family\":\"Wheeler\",\"sequence\":\"additional\",\"affiliation\":[],\"role\":[{\"vocabulary\":\"crossref\",\"role\":\"author\"}]}],\"member\":\"1121\",\"container-title\":[\"Geographical Review\"],\"deposited\":{\"date-parts\":[[2018,4,18]],\"date-time\":\"2018-04-18T10:03:27Z\",\"timestamp\":1524045807000},\"score\":48.127087,\"resource\":{\"primary\":{\"URL\":\"https:\\/\\/www.jstor.org\\/stable\\/214099?origin=crossref\"}},\"issued\":{\"date-parts\":[[1984,4]]},\"references-count\":0,\"journal-issue\":{\"issue\":\"2\",\"published-print\":{\"date-parts\":[[1984,4]]}},\"URL\":\"https:\\/\\/doi.org\\/10.2307\\/214099\",\"ISSN\":[\"0016-7428\"],\"issn-type\":[{\"value\":\"0016-7428\",\"type\":\"print\"}],\"published\":{\"date-parts\":[[1984,4]]}},{\"institution\":[{\"name\":\"Federal Reserve Bank of St. Louis\",\"place\":[\"St. Louis, MO, USA\"]}],\"indexed\":{\"date-parts\":[[2026,5,5]],\"date-time\":\"2026-05-05T02:57:19Z\",\"timestamp\":1777949839634,\"version\":\"3.51.4\"},\"reference-count\":0,\"publisher\":\"Federal Reserve Bank of St. Louis\",\"content-domain\":{\"domain\":[],\"crossmark-restriction\":false},\"DOI\":\"10.20955\\/wp.2004.021\",\"type\":\"report\",\"created\":{\"date-parts\":[[2018,10,11]],\"date-time\":\"2018-10-11T15:26:25Z\",\"timestamp\":1539271585000},\"source\":\"Crossref\",\"is-referenced-by-count\":0,\"title\":[\"Worker Turnover, Industry Localization, and Producer Size\"],\"prefix\":\"10.20955\",\"author\":[{\"given\":\"Christopher H.\",\"family\":\"Wheeler\",\"sequence\":\"first\",\"affiliation\":[],\"role\":[{\"role\":\"author\",\"vocabulary\":\"crossref\"}]}],\"member\":\"8515\",\"published-online\":{\"date-parts\":[[2004]]},\"deposited\":{\"date-parts\":[[2026,5,4]],\"date-time\":\"2026-05-04T04:44:07Z\",\"timestamp\":1777869847000},\"score\":27.976097,\"resource\":{\"primary\":{\"URL\":\"https:\\/\\/fraser.stlouisfed.org\\/title\\/working-papers-federal-reserve-bank-st-louis-9029\\/worker-turnover-industry-localization-producer-size-716238\"}},\"issued\":{\"date-parts\":[[2004]]},\"references-count\":0,\"URL\":\"https:\\/\\/doi.org\\/10.20955\\/wp.2004.021\",\"published\":{\"date-parts\":[[2004]]}}],\"items-per-page\":2,\"query\":{\"start-index\":0,\"search-terms\":null}}}"
+  "sample": "{\"status\":\"ok\",\"message-type\":\"work\",\"message-version\":\"1.0.0\",\"message\":{\"indexed\":{\"date-parts\":[[2026,5,27]],\"date-time\":\"2026-05-27T23:02:03Z\",\"timestamp\":1779922923467,\"version\":\"3.53.1\"},\"reference-count\":0,\"publisher\":\"University of Georgia Press\",\"isbn-type\":[{\"value\":\"9780820376134\",\"type\":\"electronic\"}],\"content-domain\":{\"domain\":[],\"crossmark-restriction\":false},\"short-container-title\":[],\"published-print\":{\"date-parts\":[[2014,7,15]]},\"DOI\":\"10.1515\\/9780820376134-006\",\"type\":\"book-chapter\",\"created\":{\"date-parts\":[[2026,5,27]],\"date-time\":\"2026-05-27T22:05:21Z\",\"timestamp\":1779919521000},\"page\":\"86-113\",\"source\":\"Crossref\",\"is-referenced-by-count\":0,\"title\":[\"Catherine Evans Whitener (1881-1964)\"],\"prefix\":\"10.1515\",\"member\":\"374\",\"container-title\":[\"Georgia Women\"],\"original-title\":[],\"link\":[{\"URL\":\"https:\\/\\/www.degruyterbrill.com\\/document\\/doi\\/10.1515\\/9780820376134-006\\/xml\",\"content-type\":\"application\\/xml\",\"content-version\":\"vor\",\"intended-application\":\"text-mining\"},{\"URL\":\"https:\\/\\/www.degruyterbrill.com\\/document\\/doi\\/10.1515\\/9780820376134-006\\/pdf\",\"content-type\":\"unspecified\",\"content-version\":\"vor\",\"intended-application\":\"similarity-checking\"}],\"deposited\":{\"date-parts\":[[2026,5,27]],\"date-time\":\"2026-05-27T22:05:27Z\",\"timestamp\":1779919527000},\"score\":1,\"resource\":{\"primary\":{\"URL\":\"https:\\/\\/www.degruyterbrill.com\\/document\\/doi\\/10.1515\\/9780820376134-006\\/html\"}},\"subtitle\":[\"The Creation of North Georgia\\u2019s Tufted Textile Industry\"],\"editor\":[{\"given\":\"Chirhart\",\"family\":\"Ann Short\",\"sequence\":\"first\",\"affiliation\":[],\"role\":[{\"vocabulary\":\"crossref\",\"role\":\"editor\"}]},{\"given\":\"Kathleen\",\"family\":\"Ann Clark\",\"sequence\":\"additional\",\"affiliation\":[],\"role\":[{\"vocabulary\":\"crossref\",\"role\":\"editor\"}]}],\"short-title\":[],\"issued\":{\"date-parts\":[[2014,7,15]]},\"ISBN\":[\"9780820376134\"],\"references-count\":0,\"alternative-id\":[\"10.1515\\/9780820376134-006\",\"10.1515\\/9780820376134\"],\"URL\":\"https:\\/\\/doi.org\\/10.1515\\/9780820376134-006\",\"relation\":{},\"subject\":[],\"published\":{\"date-parts\":[[2014,7,15]]}}}"
  },
- "bbCrossref2": {
-  "url": "https://api.crossref.org/works?query.bibliographic=Dalton+Georgia+Tufted+Textile+Concentration+McGregor+Maxey&rows=2",
+ "bbEwingMeta": {
+  "url": "https://archive.org/metadata/broadloomsbusine0000ewin/metadata",
   "method": "GET",
   "status": 200,
   "cors": "*",
   "corsMethods": null,
-  "corsHeaders": "X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language, Accept-Ranges, Cache-Control",
+  "corsHeaders": null,
   "type": "application/json",
-  "sample": "{\"status\":\"ok\",\"message-type\":\"work-list\",\"message-version\":\"1.0.0\",\"message\":{\"facets\":{},\"total-results\":536851,\"items\":[{\"indexed\":{\"date-parts\":[[2024,1,21]],\"date-time\":\"2024-01-21T00:03:56Z\",\"timestamp\":1705795436065},\"reference-count\":0,\"publisher\":\"Project MUSE\",\"issue\":\"2\",\"content-domain\":{\"domain\":[],\"crossmark-restriction\":false},\"short-container-title\":[\"sgo\"],\"published-print\":{\"date-parts\":[[1974,11]]},\"DOI\":\"10.1353\\/sgo.1974.0010\",\"type\":\"journal-article\",\"created\":{\"date-parts\":[[2013,7,7]],\"date-time\":\"2013-07-07T18:22:25Z\",\"timestamp\":1373221345000},\"page\":\"133-144\",\"source\":\"Crossref\",\"is-referenced-by-count\":1,\"title\":[\"The Dalton, Georgia, Tufted Textile Concentration\"],\"prefix\":\"10.1353\",\"volume\":\"14\",\"author\":[{\"given\":\"John R.\",\"family\":\"McGregor\",\"sequence\":\"first\",\"affiliation\":[],\"role\":[{\"role\":\"author\",\"vocabulary\":\"crossref\"}]},{\"given\":\"Robert H.\",\"family\":\"Maxey\",\"sequence\":\"additional\",\"affiliation\":[],\"role\":[{\"role\":\"author\",\"vocabulary\":\"crossref\"}]}],\"member\":\"147\",\"container-title\":[\"Southeastern Geographer\"],\"language\":\"en\",\"deposited\":{\"date-parts\":[[2024,1,20]],\"date-time\":\"2024-01-20T05:05:03Z\",\"timestamp\":1705727103000},\"score\":71.055725,\"resource\":{\"primary\":{\"URL\":\"https:\\/\\/muse.jhu.edu\\/article\\/430656\"}},\"issued\":{\"date-parts\":[[1974,11]]},\"references-count\":0,\"journal-issue\":{\"issue\":\"2\",\"published-print\":{\"date-parts\":[[1974,11]]}},\"URL\":\"https:\\/\\/doi.org\\/10.1353\\/sgo.1974.0010\",\"ISSN\":[\"1549-6929\"],\"issn-type\":[{\"value\":\"1549-6929\",\"type\":\"electronic\"}],\"published\":{\"date-parts\":[[1974,11]]}},{\"indexed\":{\"date-parts\":[[2026,5,27]],\"date-time\":\"2026-05-27T23:02:03Z\",\"timestamp\":1779922923467,\"version\":\"3.53.1\"},\"reference-count\":0,\"publisher\":\"University of Georgia Press\",\"isbn-type\":[{\"value\":\"9780820376134\",\"type\":\"electronic\"}],\"content-domain\":{\"domain\":[],\"crossmark-restriction\":false},\"published-print\":{\"date-parts\":[[2014,7,15]]},\"DOI\":\"10.1515\\/9780820376134-006\",\"type\":\"book-chapter\",\"created\":{\"date-parts\":[[2026,5,27]],\"date-time\":\"2026-05-27T22:05:21Z\",\"timestamp\":1779919521000},\"page\":\"86-113\",\"source\":\"Crossref\",\"is-referenced-by-count\":0,\"title\":[\"Catherine Evans Whitener (1881-1964)\"],\"prefix\":\"10.1515\",\"member\":\"374\",\"container-title\":[\"Georgia Women\"],\"link\":[{\"URL\":\"https:\\/\\/www.degruyterbrill.com\\/document\\/doi\\/10.1515\\/9780820376134-006\\/xml\",\"content-type\":\"application\\/xml\",\"content-version\":\"vor\",\"intended-application\":\"text-mining\"},{\"URL\":\"https:\\/\\/www.degruyterbrill.com\\/document\\/doi\\/10.1515\\/9780820376134-006\\/pdf\",\"content-type\":\"unspecified\",\"content-version\":\"vor\",\"intended-application\":\"similarity-checking\"}],\"deposited\":{\"date-parts\":[[2026,5,27]],\"date-time\":\"2026-05-27T22:05:27Z\",\"timestamp\":1779919527000},\"score\":28.409386,\"resource\":{\"primary\":{\"URL\":\"https:\\/\\/www.degruyterbrill.com\\/document\\/doi\\/10.1515\\/9780820376134-006\\/html\"}},\"subtitle\":[\"The Creation of North Georgia\\u2019s Tufted Textile Industry\"],\"editor\":[{\"given\":\"Chirhart\",\"family\":\"Ann Short\",\"sequence\":\"first\",\"affiliation\":[],\"role\":[{\"vocabulary\":\"crossref\",\"role\":\"editor\"}]},{\"given\":\"Kathleen\",\"family\":\"Ann Clark\",\"sequence\":\"additional\",\"affiliation\":[],\"role\":[{\"vocabulary\":\"crossref\",\"role\":\"editor\"}]}],\"issued\":{\"date-parts\":[[2014,7,15]]},\"ISBN\":[\"9780820376134\"],\"references-count\":0,\"alternative-id\":[\"10.1515\\/9780820376134-006\",\"10.1515\\/9780820376134\"],\"URL\":\"https:\\/\\/doi.org\\/10.1515\\/9780820376134-006\",\"published\":{\"date-parts\":[[2014,7,15]]}}],\"items-per-page\":2,\"query\":{\"start-index\":0,\"search-terms\":null}}}"
+  "sample": "{\"result\":{\"identifier\":\"broadloomsbusine0000ewin\",\"associated-names\":\"Norton, Nancy P\",\"boxid\":\"IA1393018\",\"camera\":\"Sony Alpha-A6300 (Control)\",\"collection_set\":\"trent\",\"contributor\":\"Internet Archive\",\"creator\":\"Ewing, John S\",\"date\":\"1955\",\"description\":[\"439 p. :\",\"Bibliographical references included in \\\"Notes\\\" (p. [389]-417)\"],\"language\":\"eng\",\"lccn\":\"54012236\",\"mediatype\":\"texts\",\"old_pallet\":\"IA13916\",\"openlibrary_edition\":\"OL6157786M\",\"openlibrary_work\":\"OL160421W\",\"operator\":\"associate-jonalyn-templado@archive.org\",\"ppi\":\"300\",\"publisher\":\"Cambridge : Harvard University Press\",\"repub_state\":\"19\",\"scanner\":\"station07.cebu.archive.org\",\"scanningcenter\":\"cebu\",\"scribe3_search_catalog\":\"trent\",\"scribe3_search_id\":\"0116301141549\",\"subject\":\"Bigelow-Sanford Carpet Company\",\"title\":\"Broadlooms and businessmen : a history of the Bigelow-Sanford Carpet Company\",\"tts_version\":\"2.1-final-6-g58a4a27\",\"uploader\":\"station07.cebu@archive.org\",\"addeddate\":\"2019-07-31 07:31:33\",\"publicdate\":\"2019-07-31 07:31:47\",\"imagecount\":\"494\",\"scandate\":\"20190731084942\",\"republisher_operator\":\"associate-glennblair-beduya@archive.org\",\"republisher_date\":\"20190802214947\",\"republisher_time\":\"459\",\"foldoutcount\":\"0\",\"identifier-access\":\"http://archive.org/details/broadloomsbusine0000ewin\",\"identifier-ark\":\"ark:/13960/t6r001r0j\",\"bookplateleaf\":\"0003\",\"ocr\":\"ABBYY FineReader 11.0 (Extended OCR)\",\"external-identifier\":[\"urn:acs6:broadloomsbusine0000ewin:epub:39b51da6-9472-4af0-89d0-77155e7ddd6c\",\"urn:acs6:broadloomsbusine0000ewin:pdf:493e54b1-22ff-42da-8b70-75db4524a31a\",\"urn:oclc:record:1148019549\",\"urn:lcp:broadloomsbusine0000ewin:lcpdf:4fbf4990-17d6-474b-94a0-95d9ceb63e09\",\"urn:lcp:broadloomsbusine0000ewin:epub:6368abc4-af50-41d8-9455-ec8ee1c918d4\"],\"scanfee\":\"0;1.00;200\",\"invoice\":\"1652\",\"sponsordate\":\"20190731\",\"access-restricted-item\":\"true\",\"backup_location\":\"ia906908_12\",\"ocr_module_version\":\"0.0.16\",\"ocr_converted\":\"abbyy-to-hocr 1.1.20\",\"page_number_confidence\":\"82\",\"source\":\"removed\",\"page_number_module_version\":\"1.0.5\",\"year\":\"1955\",\"issn\":\"0073-067X\",\"collection\":[\"pub_harvard-studies-in-business-history\",\"trent_university\",\"internetarchivebooks\",\"periodicals\",\"printdisabled\"],\"noindex\":\"true\"}}"
+ },
+ "bbReynoldsMeta": {
+  "url": "https://archive.org/metadata/innovationinunit0000will/metadata",
+  "method": "GET",
+  "status": 200,
+  "cors": "*",
+  "corsMethods": null,
+  "corsHeaders": null,
+  "type": "application/json",
+  "sample": "{\"result\":{\"identifier\":\"innovationinunit0000will\",\"boxid\":\"IA40811701\",\"camera\":\"Sony Alpha-A6300 (Control)\",\"col_number\":\"COL-979\",\"contributor\":\"Internet Archive\",\"creator\":\"william a. reynolds \",\"date\":\"1968\",\"language\":\"eng\",\"mediatype\":\"texts\",\"old_pallet\":\"IA402326\",\"operator\":\"associate-fritzijuls-quiroben@archive.org\",\"page-progression\":\"lr\",\"publisher\":\"d.van nostrand company , inc.\",\"rcs_key\":\"24143\",\"repub_state\":\"19\",\"scanner\":\"station14.cebu.archive.org\",\"scanningcenter\":\"cebu\",\"title\":\"Innovation in the United States Carpet Industry 1947-1963\",\"tts_version\":\"5.4-initial-3-gae281fbc\",\"uploader\":\"station14.cebu@archive.org\",\"publicdate\":\"2022-12-29 04:04:54\",\"access-restricted-item\":\"true\",\"identifier-access\":\"http://archive.org/details/innovationinunit0000will\",\"identifier-ark\":\"ark:/13960/s2b4v32dp1w\",\"scandate\":\"20221229082154\",\"imagecount\":\"202\",\"autocrop_version\":\"0.0.14_books-20220331-0.2\",\"ppi\":\"360\",\"republisher_operator\":\"associate-loida-sulit@archive.org\",\"republisher_date\":\"20230109111703\",\"republisher_time\":\"460\",\"foldoutcount\":\"0\",\"bookplateleaf\":\"0006\",\"ocr\":\"tesseract 5.2.0-1-gc42a\",\"ocr_parameters\":\"-l eng\",\"ocr_module_version\":\"0.0.18\",\"ocr_detected_script\":\"Latin\",\"ocr_detected_script_conf\":\"0.9369\",\"ocr_detected_lang\":\"en\",\"ocr_detected_lang_conf\":\"1.0000\",\"external-identifier\":[\"urn:lcp:innovationinunit0000will:epub:28846779-a836-4fdd-b950-d65561263d76\",\"urn:acs6:innovationinunit0000will:pdf:d983867c-9ce5-4024-b17c-1e3c515f53d1\",\"urn:lcp:innovationinunit0000will:lcpdf:8fa1c130-c51e-4591-acc5-08314cb82695\"],\"page_number_confidence\":\"96\",\"pdf_module_version\":\"0.0.20\",\"addeddate\":\"2023-01-09 06:01:52\",\"scanfee\":\"0;1.00;1.00\",\"invoice\":\"1652\",\"year\":\"1968\",\"sponsordate\":\"20230131\",\"collection\":[\"internetarchivebooks\",\"universityofarizonalib\",\"inlibrary\",\"printdisabled\"],\"page_number_module_version\":\"1.0.5\",\"openlibrary_edition\":\"OL5041321M\",\"openlibrary_work\":\"OL7000518W\"}}"
  }
 }
