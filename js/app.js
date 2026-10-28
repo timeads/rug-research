@@ -1750,6 +1750,17 @@
     for (const id of c.items) if (!seen.has(id)) { if (!l.items.includes(id)) l.items.push(id); seen.add(id); }
     S.seedSeen[c.id] = [...seen];
   }
+  // A local copy of a record that now matches the published database (for example after its export was
+  // committed) is dropped, so later fixes to the published record show here. Only image fields may
+  // differ, and a picture you picked or uploaded yourself always keeps the local copy.
+  const IMG_KEYS = new Set(["image", "imageCredit", "imagePage", "imageSource", "rights"]);
+  const sameText = (a, b) => { const k = o => JSON.stringify(Object.keys(o).filter(x => !IMG_KEYS.has(x) && !x.startsWith("_") && !(o[x] === "" || o[x] == null || (Array.isArray(o[x]) && !o[x].length))).sort().map(x => [x, o[x]])); return k(a) === k(b); };
+  const BASE_BY = Object.fromEntries(BASE.map(x => [x.id, x]));
+  for (const [id, mine] of Object.entries(S.items)) {
+    const pub = BASE_BY[id];
+    if (!pub || mine.imageSource === "picked" || mine.imageRole || String(mine.image || "").startsWith("idb:")) continue;
+    if (sameText(mine, pub)) delete S.items[id];
+  }
   save();
   rebuild();
   const VIEWS = ["browse", "timeline", "compile", "manuscript", "discover", "sources"];
