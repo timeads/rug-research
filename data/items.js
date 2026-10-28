@@ -13861,5 +13861,117 @@ window.RUG_ITEMS = [
       "Hooked & handmade rugs"
     ],
     "region": "United States"
+  },
+  {
+    "id": "tool-ttw-electric-guns",
+    "type": "tool",
+    "title": "Electric tufting guns sold by Tuft the World: AK-I, AK-II, KRD-I, the Duo and AK5 (2018–2026)",
+    "creator": "Tuft the World (retailer); the product pages name no manufacturer",
+    "date": "product records created 2018–2024; the Duo and AK5 on sale Oct 2026",
+    "dateStart": 2018,
+    "place": "Philadelphia, Pennsylvania",
+    "region": "United States",
+    "description": "Handheld electric tufting guns sold by Tuft the World, which calls them \"tufting machines\". The product pages do not name a manufacturer.\n\nAK-I Cut-Pile Tufting Machine (now archived; product record created 23 April 2018): an \"electric cut-pile machine\" with adjustable cut-pile height of 7–18 mm, speed of 5–43 stitches per second, aluminium construction, a \"Japanese motor\", weight 3 lb (1.4 kg) and universal voltage (100–240 V). The page calls it \"our bestselling electric cut-pile machine\" and \"a lightweight, low-pile machine perfect for any tufter, from beginners to the most advanced\". Last listed price $150.\n\nAK-II Loop-Pile Tufting Machine (now archived; record created 23 April 2018): loop pile, 4–13 mm, 5–45 stitches per second, 3 lb (1.4 kg), 100–240 V, \"for a polished, punch-needle look\" and \"Perfect for beginning and advanced tufters alike.\" Last listed price $150.\n\nKRD-I Cut- and Loop-Pile Tufting Machine (now archived; record created 30 March 2021): switches between cut pile (9–18 mm) and loop pile (6–12 mm); 4 lb 10 oz (2.09 kg), \"quite a bit heavier than the AK-I or AK-II\"; 110 V. The page calls it a \"much-improved version\" of the ZQ-II, \"a past Tuft the World product\", and recommends it for \"intermediate and advanced tufters\". Last listed price $175.\n\nThe Duo (on sale; record created 20 May 2022): electric, switchable between cut and loop pile, in three fixed pile ranges sold as separate versions: low 8–16 mm ($199), medium 20–30 mm ($225) and high 35–45 mm ($260); 5–43 stitches per second; 3 lb (1.4 kg); 100–240 V. The page says \"Most beginners start with Low Pile\" and calls the high-pile version \"the closest you can get to the AK-III look without needing an air compressor\". It is also sold in a Tufting Starter Kit with frame and cloth.\n\nAK5 (on sale; record created 3 April 2024): switchable cut and loop pile, both fixed at 16 mm (\"pile height cannot be adjusted on this machine\"); 5–43 stitches per second; a digital speed readout and a front LED light; 3 lb (1.4 kg); 100–240 V; $250.\n\nDates are the creation dates of the product records in the store's Shopify system, not confirmed first-sale dates. The AK-I and AK-II records have the web addresses \"cut-pile-tufting-gun\" and \"loop-pile-tufting-gun\", so their titles may have been changed since 2018. Prices are as listed on 28 Oct 2026 (last listed price for archived items).\n\nThis is the database author's own firm: note the interest when citing it.\n\nSources: https://tufttheworld.com/products/the-duo · https://tufttheworld.com/products/ak5-tufting-machine · https://tufttheworld.com/products/cut-pile-tufting-gun (archived) · https://tufttheworld.com/products/loop-pile-tufting-gun (archived) · https://tufttheworld.com/products/cut-and-loop-pile-tufting-machine-krd-i (archived) · Research note (Oct 2026): tufttheworld.com could not be opened from the research sandbox (host blocked). The full product texts were read on 28 Oct 2026 from Tuft the World's own Shopify store data through the Shopify connector. The AK-I, AK-II and KRD-I listings are archived and not visible on the public site.",
+    "sourceUrl": "https://tufttheworld.com/products/the-duo",
+    "image": "https://cdn.shopify.com/s/files/1/0025/7530/2719/files/All-three-machines-web_2781e818-c74e-46e3-814a-693e76b9ac5a.jpg?v=1737990511",
+    "imageCredit": "Tuft the World",
+    "rights": "own",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "tufting gun",
+      "electric",
+      "cut pile",
+      "loop pile",
+      "hobby revival",
+      "own firm"
+    ],
+    "status": "unverified",
+    "confidence": "solid",
+    "reviewedAt": "2026-10-28T21:39:35.308Z"
+  },
+  {
+    "id": "tool-ttw-pneumatic-guns",
+    "type": "tool",
+    "title": "High-pile pneumatic tufting guns sold by Tuft the World: ZQ-III and AK-III",
+    "creator": "Tuft the World (retailer); the product pages name no manufacturer",
+    "date": "ZQ-III product record created May 2018 (now archived); AK-III on sale Oct 2026",
+    "dateStart": 2018,
+    "place": "Philadelphia, Pennsylvania",
+    "region": "United States",
+    "description": "Handheld tufting guns that need an air compressor as well as electricity, sold by Tuft the World for high (shag) pile.\n\nIndustrial grade high pile pneumatic tufting gun (ZQ-III) (now archived; product record created 24 May 2018): \"We now carry the ZQ-III commercial grade pneumatic rug tufting gun.\" The page says it is \"used in factory settings to create stunning rugs in large scale\" and does both cut and loop pile. Listed specifications: pile height 18–70 mm (.75–2.75 in); weight 7 lb (3.2 kg); input power 220 W; variable speed 0–2,000 stitches per minute; air pressure 8 bar at 200 L/min; 220 V power, so buyers in 110 V countries needed a converter. It shipped with a filter and fittings; the buyer supplied the compressor and hose. The page is written in the first person (\"Why purchase from me?\", \"I offer free training with every purchase\") and offers a 180-day parts warranty. Last listed price $1,350.\n\nAK-III Industrial Tufting Machine (on sale): \"a high-pile electric and pneumatic tufting machine that creates both cut and loop shags in a range of lengths, simply by changing the tufting needle\". It comes with nine needles from 20 to 60 mm; adjustable pile lengths 20–60 mm; weight 4 lb 13 oz (2.18 kg); 110 V; \"Precision Japanese motor\"; it \"requires an air compressor, a standard air hose, and an air filter\" (not included). The page says it is \"Best for intermediate and advanced tufters\". Price $599. The AK-III's product record was created on 1 September 2018, but its web address is \"rug-tufting-gun-v2-0\", so the record may first have been used for a different gun; when the AK-III itself first went on sale is not confirmed.\n\nZQ-III is also the model name of a pneumatic tufting gun on the Chinese maker Dayang's website (see tool-dayang-guns). Tuft the World's page does not name the maker, so it is not confirmed that this was a Dayang gun.\n\nDates are the creation dates of the product records in the store's Shopify system, not confirmed first-sale dates.\n\nThis is the database author's own firm: note the interest when citing it.\n\nSources: https://tufttheworld.com/products/rug-tufting-gun-v2-0 · https://tufttheworld.com/products/commercial-grade-high-pile-pneumatic-tufting-gun (archived) · Research note (Oct 2026): tufttheworld.com could not be opened from the research sandbox (host blocked). The full product texts were read on 28 Oct 2026 from Tuft the World's own Shopify store data through the Shopify connector. The ZQ-III listing is archived and not visible on the public site.",
+    "sourceUrl": "https://tufttheworld.com/products/rug-tufting-gun-v2-0",
+    "image": "https://cdn.shopify.com/s/files/1/0025/7530/2719/files/opt-Machines-AK3-min.jpg?v=1737996141",
+    "imageCredit": "Tuft the World",
+    "rights": "own",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "tufting gun",
+      "pneumatic",
+      "cut pile",
+      "loop pile",
+      "hobby revival",
+      "own firm"
+    ],
+    "status": "unverified",
+    "confidence": "solid",
+    "reviewedAt": "2026-10-28T21:39:35.308Z"
+  },
+  {
+    "id": "tool-hofmann-vml16",
+    "type": "tool",
+    "title": "Hofmann VML 16: pneumatic hand-tufting gun for cut and loop pile (Germany)",
+    "creator": "Hofmann Handtuft-Technik GmbH",
+    "date": "current (2026); spec sheet marked V2022 (per search excerpt)",
+    "place": "Nördlingen, Bavaria",
+    "region": "Germany",
+    "description": "From search results; pages not opened. Hofmann's exhibitor listing on Messe Frankfurt's Heimtextil site describes the VML 16 as a hand-tufting gun for cut and loop pile. A needle carries the yarn through the backing; in cut-pile mode \"a blade then cuts through the yarn and a jet of air blows the tuft through\". The listing says \"Changing the pile height or yarn colour is very simply achieved with the Hofmann handtufting gun.\"\n\nA Hofmann specification sheet (marked V2022), posted as an exhibitor download on Messe Frankfurt's site, gives, according to search excerpts: pile height 16–45 mm with the standard 6 mm yarn tunnel (a 5+4 mm option is also listed), down to 12 mm with an exchange kit; speed 0–2,000 stitches per minute; motor 220 V, 400 W; air supply 8 bar at 200 l/min.\n\nThe excerpts say nothing about who the gun is for. The company record (co-hofmann-handtuft) says Hofmann's site describes the VML 16 as used in carpet production worldwide, and lists the SML mini and SML 10-PP loop-pile machines; those models were not checked again here.\n\nSources: https://heimtextil.messefrankfurt.com/frankfurt/en/exhibitor-search.detail.html/hofmann-handtuft-technik-gmbh/mf_1_0010286540_4913646_10000000202601.html · https://exhibitorsearch.messefrankfurt.com/images/original/document_downloads/10000000202601/469619/1760518908425_3827131845.pdf · https://hofmann-handtuft.de/en/ · Research note (Oct 2026): hofmann-handtuft.de could not be opened from the research sandbox (host blocked); the Heimtextil listing and the spec-sheet PDF were seen only as search-result excerpts and were not opened. Check the specifications against the PDF before citing them.",
+    "sourceUrl": "https://heimtextil.messefrankfurt.com/frankfurt/en/exhibitor-search.detail.html/hofmann-handtuft-technik-gmbh/mf_1_0010286540_4913646_10000000202601.html",
+    "rights": "not-requested",
+    "themes": [
+      "Hand-tufting tools & the gun"
+    ],
+    "tags": [
+      "tufting gun",
+      "pneumatic",
+      "cut pile",
+      "loop pile",
+      "Germany",
+      "manufacturer"
+    ],
+    "status": "unverified",
+    "confidence": "suggestive",
+    "reviewedAt": "2026-10-28T21:39:35.308Z"
+  },
+  {
+    "id": "tool-dayang-guns",
+    "type": "tool",
+    "title": "Dayang (Shantou, China): pneumatic and electric tufting guns, including the ZQ-III",
+    "creator": "Guangdong Dayang Carpet Machinery Factory Co., Ltd.",
+    "date": "current (2026)",
+    "place": "Shantou, Guangdong",
+    "region": "China",
+    "description": "From search results; pages not opened. Dayang's English website names the company Guangdong Dayang Carpet Machinery Factory Co., Ltd., at Dayang Carpet Edifice, No. 34 Yanhe Road, Shantou, Guangdong. Its product categories, as shown in a search excerpt, are mostly large machines (\"Jaquard tufting machine\", \"Gantry tufting machine\", \"Turf tufting machine\", \"Tufting manipulator\", \"Horse head tufting machine\", \"Chenille tufting machine\", \"Flat style tufting machine\"), plus an \"electric tufting gun\", a \"shearing machine\" and \"Shear master\".\n\nThe site's ZQ-III page calls the ZQ-III \"a new portable type tufting machine\" that combines (\"cooperate\") an \"electric & pneumatic device to proceed high speed tufting\", for plush carpet. Marketplace listings under the names Shantou Dayang Carpet Industry Co., Ltd. (Made-in-China) and Shantou Dayang Carpet Machinery Factory Co., Ltd. (Tradeindia) also offer a ZQ-II hand tufting gun, a Z-II electric gun and a \"Pneumatic Hand Tufting Gun for Producing Shaggy Carpet\". Those are seller listings; their specifications and prices are not recorded here.\n\nGun or machine: Dayang calls the ZQ-III a \"portable type tufting machine\"; marketplace listings and retailers call it a pneumatic hand tufting gun. No dates for any model were found. Tuft the World once sold a \"ZQ-III\" pneumatic gun and a \"ZQ-II\" (see tool-ttw-pneumatic-guns, tool-ttw-electric-guns), but its pages do not name the maker, so a link to Dayang is not confirmed.\n\nSources: https://www.dayangcm.com/english/product · https://www.dayangcm.com/english/product/product_show/ZQIII · https://www.dayangcm.com/english/home · https://dayangcarpet.en.made-in-china.com/ · https://www.tradeindia.com/shantou-dayang-carpet-machinery-factory-co-ltd-3161370/ · Research note (Oct 2026): www.dayangcm.com could not be opened from the research sandbox (host blocked). Everything here comes from search-result excerpts; no page was opened.",
+    "sourceUrl": "https://www.dayangcm.com/english/product",
+    "rights": "not-requested",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Global diffusion of tufting"
+    ],
+    "tags": [
+      "tufting gun",
+      "pneumatic",
+      "electric",
+      "China",
+      "manufacturer"
+    ],
+    "status": "unverified",
+    "confidence": "suggestive",
+    "reviewedAt": "2026-10-28T21:39:35.308Z"
   }
 ];
