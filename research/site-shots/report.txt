@@ -1,8 +1,13 @@
 cover: 0 of 0 images loaded
 chapter-desktop: 9 of 9 images loaded
 chapter-phone: 9 of 9 images loaded
+dalton-desktop: 9 of 9 images loaded
+dalton-phone: 9 of 9 images loaded
 cover-phone: 0 of 0 images loaded
-timeline: 194 of 196 images loaded
+timeline: 191 of 196 images loaded
+  broken: https://openaccess-cdn.clevelandart.org/1961.388/1961.388_web.jpg
+  broken: https://iiif.wellcomecollection.org/image/V0024155ER.jpg/full/500,/0/default.jpg
   broken: https://img2.chinadaily.com.cn/images/202505/12/682169dda310a04a96783487.jpeg
   broken: https://welspunflooring.com/images/about/banner.webp
+  broken: https://www.kicktraq.com/projects/207408103/craftphilia-worlds-first-fully-automated-tufting-machine/dailychart.png
 record: 1 of 1 images loaded
