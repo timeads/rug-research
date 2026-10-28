@@ -83,6 +83,7 @@ Dalton's bedspread and carpet industry in photographs, newspapers and documents.
 ### 5. Bandy Heritage Center: https://bandyheritagecenter.pastperfectonline.com/
 Dalton State College's archive of the carpet and chenille industry.
 - Searches: `bedspread`, `chenille`, `tufting machine`, `Sims`, `Cabin Crafts`, `Looper`, `Cobble`, `Barwick`, `machine`, `photograph Dalton mill`.
+- Also search `Deaton` for the **Thomas Deaton research collection** (accession 2010.003): the files behind *Bedspreads to Broadloom* (1993), with company histories, industry periodicals and transcripts of oral interviews with carpet-industry pioneers. List every folder or item the catalogue describes (one record for the collection, plus records for any oral history transcripts named), and note how to make an appointment.
 - Wanted:
   - accession numbers, makers and dates for chenille spreads;
   - photographs of early Dalton and Chattanooga tufting machines;

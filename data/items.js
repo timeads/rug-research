@@ -337,9 +337,9 @@ window.RUG_ITEMS = [
     "type": "book",
     "title": "Bedspreads to Broadloom: The Story of the Tufted Carpet Industry",
     "creator": "Thomas M. Deaton",
-    "date": "1993",
+    "date": "1993 (Open Library gives 1994; check the copyright page)",
     "dateStart": 1993,
-    "description": "Industry history; Deaton's research files (company histories, periodicals, oral history transcripts with industry pioneers) are at the Bandy Heritage Center, Dalton State College. Check: you recall this book stating that DuPont invented nylon; note the page, and cite the Carothers patents for the invention itself.",
+    "description": "Industry history; Deaton's research files (company histories, periodicals, oral history transcripts with industry pioneers) are at the Bandy Heritage Center, Dalton State College. Check: you recall this book stating that DuPont invented nylon; note the page, and cite the Carothers patents for the invention itself.\n\nAvailability (checked Oct 2026): no digital copy on the Internet Archive (not even for lending), none at HathiTrust, and Open Library has a catalogue record only. The author's own copy is the way in: its notes and bibliography are the trail to primary sources (see research/deaton-sources.md once transcribed).",
     "themes": [
       "Machine tufting & Dalton",
       "Chenille & candlewick"
@@ -349,7 +349,8 @@ window.RUG_ITEMS = [
       "check claim"
     ],
     "status": "unverified",
-    "region": "United States"
+    "region": "United States",
+    "sourceUrl": "https://openlibrary.org/works/OL8896555W"
   },
   {
     "id": "archive-bandy-deaton",
