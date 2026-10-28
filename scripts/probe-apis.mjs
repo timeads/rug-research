@@ -124,6 +124,10 @@ const APIS = {
   bbSEGeog: `https://muse.jhu.edu/search?action=search&query=content:%22Tufted%20Textile%20Concentration%22`,
   bbCrossref: `https://api.crossref.org/works?query.bibliographic=Localization+Economics+in+the+American+Carpet+Industry+Walters+Wheeler&rows=2`,
   bbCrossref2: `https://api.crossref.org/works?query.bibliographic=Dalton+Georgia+Tufted+Textile+Concentration+McGregor+Maxey&rows=2`,
+  bbRDissues: `https://archive.org/advancedsearch.php?q=collection%3Apub_readers-digest%20AND%20date%3A%5B1941-03-01%20TO%201941-05-31%5D&fl[]=identifier&fl[]=title&fl[]=date&rows=10&output=json`,
+  bbGaWomen: `https://api.crossref.org/works/10.1515/9780820376134-006`,
+  bbEwingMeta: `https://archive.org/metadata/broadloomsbusine0000ewin/metadata`,
+  bbReynoldsMeta: `https://archive.org/metadata/innovationinunit0000will/metadata`,
   cooperHewitt: `https://api.collection.cooperhewitt.org/rest/?method=cooperhewitt.search.objects&query=rug`,
 };
 // "sources" mode: try every Other archives search link with a sample query.
