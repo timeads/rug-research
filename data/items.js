@@ -3490,6 +3490,26 @@ window.RUG_ITEMS = [
     "dateEnd": 1992
   },
   {
+    "id": "finding-shaw-mending-gun",
+    "type": "finding",
+    "title": "Hand tufting guns are still used to mend broadloom at final inspection",
+    "date": "2026 (conversation)",
+    "dateStart": 2026,
+    "institution": "Shaw Industries (design team, in conversation)",
+    "description": "In casual conversation, Shaw Industries' design team told Tim Eads that hand-held tufting guns are still used on the broadloom line to fix mistakes found at final inspection. Supporting record: William H. Satterfield's \"Hand-held Tufting Mending Gun\" (US5090341A, Dalton, filed 1990), which cites the portable tufting machines of the 1950s and 60s as prior art (pat-us5090341a).\n\nWhy it matters: the hand gun has a permanent place inside machine production, as well as in custom studios (chapter: Hand tools and the tufting gun).\n\nTo confirm: a written or photographed source (a mill tour, an equipment catalogue or trade-press piece on carpet mending).",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Machine tufting & Dalton"
+    ],
+    "tags": [
+      "personal communication",
+      "to confirm"
+    ],
+    "status": "unverified",
+    "confidence": "suggestive",
+    "region": "United States"
+  },
+  {
     "id": "ttw-evans-1895-1900",
     "type": "finding",
     "title": "Catherine Evans made her first spread in 1895 at 15; the first sale ($2.50) came in 1900",
