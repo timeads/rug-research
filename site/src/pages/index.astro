@@ -7,12 +7,14 @@ import { db, base, CHAPTER_CLOTH, chapterYears, fmtYear, clothName } from "../li
 
 const entries = await getCollection("chapters");
 const published = Object.fromEntries(entries.map(e => [e.data.researchChapter, e.id]));
+// A published chapter is listed under its own title, not the research draft's.
+const titles = Object.fromEntries(entries.map(e => [e.data.researchChapter, e.data.title]));
 // A finished chapter shows the span of its own key dates; one in preparation, the span of its evidence.
 const spans = Object.fromEntries(entries.filter(e => e.data.milestones.length).map(e => [e.data.researchChapter, `${e.data.milestones[0].year}–${e.data.milestones.at(-1).year}`]));
 const { chapters, items } = db();
 const rows = chapters.map((c, i) => {
   const ys = chapterYears(c);
-  return { n: i + 1, title: c.name, cloth: clothName(CHAPTER_CLOTH[c.id] || "grey"), shade: `var(--cloth-${CHAPTER_CLOTH[c.id] || "grey"})`, years: spans[c.id] || (ys ? `${fmtYear(ys[0])}–${fmtYear(ys[1])}` : ""), slug: published[c.id] };
+  return { n: i + 1, title: titles[c.id] || c.name, cloth: clothName(CHAPTER_CLOTH[c.id] || "grey"), shade: `var(--cloth-${CHAPTER_CLOTH[c.id] || "grey"})`, years: spans[c.id] || (ys ? `${fmtYear(ys[0])}–${fmtYear(ys[1])}` : ""), slug: published[c.id] };
 });
 const ready = rows.filter(r => r.slug).length;
 const dated = items.filter(x => x.dateStart != null).length;
