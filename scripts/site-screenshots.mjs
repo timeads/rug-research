@@ -14,7 +14,9 @@ const SHOTS = [
   ["dalton-phone", "chapters/dalton/", 390, 844, true],
   ["cover-phone", "", 390, 844, true],
   ["timeline", "timeline/", 1440, 900, false],
-  ["record", "records/u-mvs3jcd5g72ua/", 1440, 900, false]
+  ["record", "records/u-mvs3jcd5g72ua/", 1440, 900, false],
+  // The other chapters: the first screen of each, with every picture on the page checked.
+  ...["processes", "before-the-machine", "woven", "machine", "abroad", "china", "gun", "india", "today", "cnc", "hobby"].map(c => [`ch-${c}`, `chapters/${c}/`, 1440, 900, false])
 ];
 await mkdir(new URL("../research/site-shots/", import.meta.url), { recursive: true });
 const browser = await chromium.launch();
