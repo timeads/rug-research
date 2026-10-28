@@ -742,11 +742,18 @@
     }
     return null;
   };
-  const quickFill = async (files = []) => {
+  const quickFill = async (files = [], force = false) => {
     const text = $("#quick-text").value, st = $("#quick-status"), el = form.elements;
     if (!text.trim() && !files.length) { st.textContent = "Paste a link or some text first."; return; }
     const d = parseDrop(text);
     const notes = [];
+    // Already in the database? Same page address (ignoring http/https, www and a trailing slash).
+    const key = u => String(u || "").toLowerCase().replace(/^https?:\/\/(www\.)?/, "").replace(/[/#?]+$/, "");
+    const dup = d.pages.length && ITEMS.find(x => x.sourceUrl && d.pages.some(u => key(u) === key(x.sourceUrl)));
+    if (dup && !force) {
+      st.innerHTML = `Already in the database: <strong>${esc(dup.title)}</strong>. <button type="button" class="link-btn" data-dup="${esc(dup.id)}">Open it</button>, or, if this is a different item on the same page, <button type="button" class="link-btn" data-dup-anyway>add it as a new record</button>.`;
+      return;
+    }
     // What kind of record: chosen in the panel, or guessed. A company or institution's own website
     // (its home or About page), or text about founding, means a profile rather than an object.
     let kind = $("#quick-kind").value;
@@ -805,6 +812,10 @@
     el.title.focus();
   };
   $("#btn-quick").onclick = () => quickFill();
+  $("#quick-status").addEventListener("click", e => {
+    const b = e.target.closest("[data-dup]"); if (b) { dlg.close(); openDrawer(b.dataset.dup); }
+    if (e.target.closest("[data-dup-anyway]")) quickFill([], true);
+  });
   // Image files dropped on the panel attach to the form.
   const quick = $("#quick-add");
   quick.addEventListener("dragover", e => { e.preventDefault(); quick.classList.add("over"); });
