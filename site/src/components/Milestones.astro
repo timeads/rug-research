@@ -8,13 +8,13 @@ const { items = [] } = Astro.props;
 const years = items.map(m => parseInt(m.year, 10));
 const lo = Math.min(...years), hi = Math.max(...years);
 const byYear = years.map(y => ((y - lo) / (hi - lo || 1)) * 90 + 1);
-// A label is 8.5rem wide on a thread about 51rem long: same-side neighbours need about 18.5% between them.
+// A label is 8.5rem wide on a thread at least 51rem long (the shortest it gets before becoming a list): same-side neighbours need about 18.5% between them.
 const fits = byYear.every((x, i) => i < 2 || x - byYear[i - 2] >= 18.5);
 const pos = fits ? byYear : years.map((_, i) => (i / Math.max(1, years.length - 1)) * 90 + 1);
 ---
 <section class="milestones" aria-labelledby="key-dates">
   <h2 id="key-dates">Key dates</h2>
   <ol>
-    {items.map((m, i) => <li style={`--x:${pos[i]}%`}><a href={base(`records/${m.record}/`)}><b>{m.year}</b>{m.label}</a></li>)}
+    {items.map((m, i) => <li style={`--x:${pos[i].toFixed(2)}`}><a href={base(`records/${m.record}/`)}><b>{m.year}</b>{m.label}</a></li>)}
   </ol>
 </section>

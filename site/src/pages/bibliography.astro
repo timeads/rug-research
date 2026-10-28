@@ -21,11 +21,13 @@ const total = groups.reduce((n, g) => n + g.list.length, 0);
   </header>
   <div class="wrap bib">
     <nav class="bib-nav" aria-label="Kinds of source">{groups.map(g => <a class="chip" href={`#${g.type}`}>{g.name} · {g.list.length}</a>)}</nav>
+    <div class="bib-list">
     {groups.map(g => (
       <section id={g.type}>
         <h2>{g.name} <small>{g.list.length}</small></h2>
         <ol>{g.list.map(x => <li><Fragment set:html={citation(x)} /><a class="more" href={base(`records/${x.id}/`)}>Record</a>{cited[x.id] && <span class="tag">Chapter {cited[x.id][0].number}</span>}</li>)}</ol>
       </section>
     ))}
+    </div>
   </div>
 </Base>

@@ -1,4 +1,6 @@
 ---
 const { title } = Astro.props;
+// An id from the title, so "In this chapter" can link to the panel.
+const id = title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 ---
-<aside class="aside"><h3>{title}</h3><slot /></aside>
+<aside class="aside" id={id}><h3>{title}</h3><slot /></aside>

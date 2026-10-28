@@ -230,17 +230,21 @@ Dark mode (system preference) keeps the same roles: a near-black ground and shee
 
 ## Layout
 
-The page frame (masthead, notice, foot) runs to 80rem with a fluid clamp(1rem, 3vw, 2rem) side gutter. Content sits in a 53.75rem "wide" column: a 37rem text measure, a 2.75rem gap, and a 14rem margin column, with a 1.25rem gutter. The masthead is sticky at 3.5rem.
+Every page shares the masthead's frame: 80rem (`--page`) with a fluid clamp(1.25rem, 3vw, 2rem) side gutter (`--pad`), so content starts under the wordmark and ends under the last nav link. Reading happens in a 53.75rem "wide" block inside it: a 37rem text measure, a 2.75rem gap, and a 14rem margin column. The masthead is sticky at 3.5rem.
 
-**Cover.** Title and scope, then the contents card: one bordered sheet whose rows are a band (up to 14rem wide), the shade number and cloth name, the chapter title and years, and the status. A ready chapter's band is full height (2.75rem) and reads "Read the chapter" in shade ink; a chapter in preparation shows a thin 0.5rem band and "In preparation". Below the card, Timeline and Bibliography as two reference links under 2px ink rules. Under 640px each row stacks: band across the top, number at left, title and status at right.
+**Cover.** Title and scope, then the contents card across the full page width: one bordered sheet whose rows are a band (a third of the row), the shade number and cloth name, the chapter title and years, and the status. A ready chapter's band is full height (2.75rem) and reads "Read the chapter" in shade ink; a chapter in preparation shows a thin 0.5rem band and "In preparation". Below the card, Timeline and Bibliography as two reference links under 2px ink rules. Under 640px each row stacks: band across the top, number at left, title and status at right.
 
-**Chapter.** The 4.5rem wound band with the shade label beside it in the margin column; the title, dek and a byline between hairlines (author, reading time, note/source/checked counts, draft status); then a full-bleed opening photograph at min(72vh, 46rem). Key dates follow on a horizontal shade thread, each date placed by year and labels alternating above and below; under 900px they become a vertical list on a shade rule. The prose column reserves the margin with right padding so notes and small "margin" figures float into it; wide figures, pull quotes, panels and full-bleed figures span the whole width. End matter is a two-column grid: full notes beside "Where the sources are".
+**Chapter.** The 4.5rem wound band with the shade label beside it in the margin column; the title, dek and a byline between hairlines (author, reading time, note/source/checked counts, draft status); then a full-bleed opening photograph at min(72vh, 46rem). Key dates follow on a horizontal shade thread, each date placed by year and labels alternating above and below; under 900px they become a vertical list on a shade rule. The prose column reserves the margin with right padding so notes and small "margin" figures float into it; wide figures, pull quotes, panels and full-bleed figures span the whole width. End matter is a two-column grid: full notes beside "Where the sources are". From 1180px the text, margin and end matter sit at the right of the page, and "In this chapter" (key dates, sections, the "Still to find" panel, notes) stays in view in the space to their left, marking the section being read with a 2px shade underline.
+
+**Timeline and bibliography.** The timeline lists every theme filter at once, wrapping onto as many rows as it needs (never a sideways scroller); the bar is not sticky. Era heads sit in an up-to-18rem column, entries cap their titles at 64ch. From 1180px the bibliography's kinds of source become a list that stays in view to the left of the entries, as in a chapter.
 
 **Responsive.** At 1100px the margin column folds away: the column narrows to the measure, notes hide and open beneath the line when their number is tapped, margin figures drop into the flow at up to 22rem. Figure pairs stack under 700px; end matter and record pages go single-column under 860px; the timeline drops thumbnails under 760px.
 
 **Motion.** The only motion is the scroll-driven progress thread on chapter pages (CSS scroll timeline, where supported); reduced-motion turns all animation and transition off.
 
 ### Named Rules
+**The Shared Frame Rule.** Pages line up with the masthead. Extra width on large screens goes to navigation that stays in view or to full-width bands and cards, never to longer lines: text keeps its measure.
+
 **The Margin Column Rule.** Sources sit beside the sentence, not at the bottom of the screen: 37rem text plus a 14rem note column on wide screens; on narrow screens a tap opens the note in place rather than jumping to the end.
 
 ## Elevation & Depth

@@ -18,6 +18,8 @@
   --frame: "Archivo Variable", "Arial Narrow", system-ui, sans-serif;
   --read: "Literata Variable", "Iowan Old Style", Georgia, serif;
   --measure: 37rem; --margin: 14rem; --gap: 2.75rem; --wide: calc(var(--measure) + var(--gap) + var(--margin));
+  /* Every page shares the masthead's width and side padding, so their edges line up. */
+  --page: 80rem; --pad: clamp(1.25rem, 3vw, 2rem);
   --ease: cubic-bezier(.16, 1, .3, 1);
   color-scheme: light;
 }
@@ -47,7 +49,7 @@ a:hover { text-decoration-color: currentColor; }
 
 /* ---------- masthead: the board ---------- */
 .mast { position: sticky; top: 0; z-index: 20; background: var(--board); color: var(--board-ink); }
-.mast .in { max-width: 80rem; margin: 0 auto; height: 3.5rem; padding: 0 clamp(1rem, 3vw, 2rem); display: flex; align-items: center; gap: 1.5rem; }
+.mast .in { max-width: var(--page); margin: 0 auto; height: 3.5rem; padding: 0 var(--pad); display: flex; align-items: center; gap: 1.5rem; }
 .wordmark { font: 700 1.125rem/1 var(--frame); font-stretch: 84%; letter-spacing: -.005em; text-decoration: none; white-space: nowrap; }
 .mast nav { margin-left: auto; display: flex; gap: 1.5rem; font: 500 .875rem/1 var(--frame); }
 .mast nav a { color: var(--board-ink-2); text-decoration: none; padding: 1.25rem 0 1.1rem; border-bottom: 2px solid transparent; }
@@ -58,7 +60,7 @@ a:hover { text-decoration-color: currentColor; }
   .progress { animation: grow linear both; animation-timeline: scroll(root); }
   @keyframes grow { to { transform: scaleX(1); } }
 }
-.notice { max-width: 80rem; margin: 0 auto; padding: .6rem clamp(1rem, 3vw, 2rem); font: 450 .8125rem/1.45 var(--frame); color: var(--ink-2); border-bottom: 1px solid var(--rule); }
+.notice { max-width: var(--page); margin: 0 auto; padding: .6rem var(--pad); font: 450 .8125rem/1.45 var(--frame); color: var(--ink-2); border-bottom: 1px solid var(--rule); }
 .notice b { font-weight: 650; color: var(--ink); }
 /* Phones: the title on its own line, the navigation in a compact row under it. */
 @media (max-width: 560px) {
@@ -69,16 +71,16 @@ a:hover { text-decoration-color: currentColor; }
 }
 
 /* ---------- the shade card (cover) ---------- */
-.cover { max-width: var(--wide); margin: 0 auto; padding: clamp(3rem, 8vw, 5.5rem) 1.25rem 2.5rem; }
+.cover { max-width: var(--page); margin: 0 auto; padding: clamp(3rem, 8vw, 5.5rem) var(--pad) 2.5rem; }
 .cover h1 { margin: 0; font: 680 clamp(3rem, 8.5vw, 6rem)/.95 var(--frame); font-stretch: 82%; letter-spacing: -.025em; text-wrap: balance; }
 .cover .scope { max-width: 34rem; margin: 1.5rem 0 0; font: 400 1.25rem/1.5 var(--read); color: var(--ink-2); text-wrap: pretty; }
 .cover .by { margin: 1.25rem 0 0; font: 500 .9375rem/1.4 var(--frame); color: var(--ink-3); }
-.card { max-width: var(--wide); margin: 0 auto 1rem; padding: 0 1.25rem; }
+.card { max-width: var(--page); margin: 0 auto 1rem; padding: 0 var(--pad); }
 .card-sheet { background: var(--sheet); border: 1px solid var(--rule-2); border-radius: 2px; padding: 0 0 .5rem; }
 .card-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: .4rem 1.5rem; padding: 1.4rem 1.5rem 1rem; font: 500 .875rem/1.3 var(--frame); color: var(--ink-3); border-bottom: 2px solid var(--ink); }
 .card-head h2 { margin: 0; font: 680 1.75rem/1 var(--frame); font-stretch: 84%; letter-spacing: -.015em; color: var(--ink); }
 .shades { list-style: none; margin: 0; padding: 0; }
-.shade-row { display: grid; grid-template-columns: minmax(7rem, 14rem) 5rem minmax(0, 1fr) auto; align-items: center; gap: 0 1.25rem; padding: .55rem 1.5rem .55rem 0; border-bottom: 1px solid var(--rule); text-decoration: none; color: var(--ink); }
+.shade-row { display: grid; grid-template-columns: minmax(7rem, 1fr) 5rem minmax(0, 2fr) auto; align-items: center; gap: 0 1.25rem; padding: .55rem 1.5rem .55rem 0; border-bottom: 1px solid var(--rule); text-decoration: none; color: var(--ink); }
 .shades li:last-child .shade-row { border-bottom: 0; }
 .shade-row .band { width: 100%; height: 2.75rem; }
 .shade-row .no { display: flex; flex-direction: column; gap: .2rem; font: 450 .8125rem/1.1 var(--frame); color: var(--ink-3); }
@@ -99,7 +101,7 @@ a.shade-row:hover .t { text-decoration: underline; text-underline-offset: .2em; 
   .shade-row.soon .band { height: .5rem; }
   .shade-row .st { grid-area: s; }
 }
-.also { max-width: var(--wide); margin: 2.5rem auto 4rem; padding: 0 1.25rem; display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 3rem; }
+.also { max-width: var(--page); margin: 2.5rem auto 4rem; padding: 0 var(--pad); display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 3rem; }
 .also a { display: block; padding: 1rem 0; border-top: 2px solid var(--ink); text-decoration: none; }
 .also b { display: block; font: 650 1.25rem/1.2 var(--frame); }
 .also span { display: block; margin-top: .35rem; font: 400 1rem/1.5 var(--read); color: var(--ink-2); }
@@ -107,7 +109,7 @@ a.shade-row:hover .t { text-decoration: underline; text-underline-offset: .2em; 
 @media (max-width: 640px) { .also { grid-template-columns: 1fr; } }
 
 /* ---------- chapter: head ---------- */
-.ch-head { max-width: var(--wide); margin: 0 auto; padding: 2.5rem 1.25rem 0; }
+.ch-head { max-width: var(--page); margin: 0 auto; padding: 2.5rem var(--pad) 0; }
 .ch-band { display: grid; grid-template-columns: minmax(0, 1fr) var(--margin); gap: var(--gap); align-items: center; }
 .ch-band .band { width: 100%; height: 4.5rem; }
 .ch-label { margin: 0; display: flex; flex-direction: column; gap: .25rem; font: 450 .9375rem/1.2 var(--frame); color: var(--ink-2); }
@@ -119,18 +121,19 @@ h1.ch-title { margin: 1.75rem 0 0; font: 680 clamp(2.5rem, 6vw, 4.5rem)/1 var(--
 .ch-byline b { color: var(--ink); font-weight: 650; }
 .ch-hero { margin: 2.5rem 0 0; }
 .ch-hero img { width: 100%; height: min(72vh, 46rem); object-fit: cover; background: var(--sheet-2); }
-.ch-hero figcaption { max-width: var(--wide); margin: .75rem auto 0; padding: 0 1.25rem; }
+.ch-hero figcaption { max-width: var(--page); margin: .75rem auto 0; padding: 0 var(--pad); }
 .ch-hero figcaption > span { display: block; max-width: 68ch; }
 .ch-hero figcaption { font: 400 .875rem/1.5 var(--frame); color: var(--ink-2); }
 
 /* key dates */
-.milestones { max-width: var(--wide); margin: 3rem auto 0; padding: 0 1.25rem; }
+.milestones { max-width: var(--page); margin: 3rem auto 0; padding: 0 var(--pad); }
 .milestones h2 { margin: 0 0 .5rem; font: 650 .9375rem/1.3 var(--frame); }
-.milestones ol { position: relative; list-style: none; margin: 0; padding: 5.5rem 0; }
+.milestones ol { position: relative; list-style: none; margin: 0; padding: 5.5rem 0; container-type: inline-size; }
 .milestones ol::before { content: ""; position: absolute; left: 0; right: 0; top: 50%; border-top: 2px solid var(--shade); }
-.milestones li { position: absolute; left: var(--x); top: 50%; width: 0; }
+.milestones li { position: absolute; left: calc(var(--x) * 1%); top: 50%; width: 0; }
 .milestones li::before { content: ""; position: absolute; left: -1px; top: -9px; width: 2px; height: 18px; background: var(--shade); }
-.milestones a { position: absolute; left: -.1rem; width: 8.5rem; display: block; text-decoration: none; font: 450 .8125rem/1.3 var(--frame); color: var(--ink-2); }
+/* A label starts at its date, moved left only as far as it must to end inside the thread. */
+.milestones a { position: absolute; left: min(-.1rem, calc(100cqw - var(--x) * 1cqw - 8.5rem)); width: 8.5rem; display: block; text-decoration: none; font: 450 .8125rem/1.3 var(--frame); color: var(--ink-2); }
 .milestones a b { display: block; font: 650 1rem/1.1 var(--frame); color: var(--ink); font-variant-numeric: tabular-nums; margin-bottom: .2rem; }
 .milestones li:nth-child(odd) a { bottom: 1.1rem; }
 .milestones li:nth-child(even) a { top: 1.1rem; }
@@ -146,8 +149,23 @@ h1.ch-title { margin: 1.75rem 0 0; font: 680 clamp(2.5rem, 6vw, 4.5rem)/1 var(--
 
 /* ---------- chapter: the reading column ----------
    Text column plus a margin to its right. Every block reserves the margin with padding, so notes and
-   small pictures float into it inside their own box; wide pictures and quotes take the full width. */
-.prose { max-width: var(--wide); margin: 0 auto; padding: 3.5rem 1.25rem 2rem; font: 400 1.125rem/1.66 var(--read); }
+   small pictures float into it inside their own box; wide pictures and quotes take the full width.
+   On wide screens the text and margin sit at the right of the page, and "In this chapter" stays in view
+   to their left. */
+.reading { max-width: var(--page); margin: 0 auto; padding: 0 var(--pad); }
+.toc { display: none; }
+@media (min-width: 1180px) {
+  .reading { display: grid; grid-template-columns: minmax(0, 1fr) var(--wide); column-gap: var(--gap); }
+  .reading > .prose, .reading > .endmatter { grid-column: 2; }
+  .prose > .full { width: auto; margin-left: 0; } /* full-bleed needs a centred column; beside the list it is wide */
+  .toc { display: block; grid-column: 1; grid-row: 1 / span 2; align-self: start; position: sticky; top: 4.5rem; max-width: 16rem; padding: 3.75rem 0 2rem; }
+  .toc p { margin: 0 0 .7rem; font: 650 .8125rem/1.3 var(--frame); color: var(--ink); }
+  .toc ol { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--rule); }
+  .toc a { display: block; padding: .5rem 0; border-bottom: 1px solid var(--rule); font: 450 .875rem/1.35 var(--frame); color: var(--ink-3); text-decoration: none; text-wrap: pretty; }
+  .toc a:hover { color: var(--ink); }
+  .toc a[aria-current] { color: var(--ink); font-weight: 650; box-shadow: inset 0 -2px 0 var(--shade); }
+}
+.prose { max-width: var(--wide); padding: 3.5rem 0 2rem; font: 400 1.125rem/1.66 var(--read); }
 .prose > * { padding-right: calc(var(--margin) + var(--gap)); }
 .prose > .wide, .prose > .pull, .prose > .aside, .prose > .full, .prose > .margin { padding-right: 0; }
 .prose > .pair { padding-right: 0; max-width: var(--measure); } /* text width, so margin notes run on beside it */
@@ -163,7 +181,7 @@ h1.ch-title { margin: 1.75rem 0 0; font: 680 clamp(2.5rem, 6vw, 4.5rem)/1 var(--
 .sidenote em { font-style: italic; }
 .sidenote a { color: var(--ink-2); }
 @media (max-width: 1100px) {
-  .prose { max-width: calc(var(--measure) + 2.5rem); }
+  .prose { max-width: var(--measure); }
   .prose > * { padding-right: 0; }
   .sidenote { display: none; float: none; width: auto; margin: .6rem 0 1rem; padding: .75rem 1rem; background: var(--sheet); border-radius: 3px; font-size: .875rem; }
   .sidenote.open { display: block; }
@@ -198,7 +216,7 @@ h1.ch-title { margin: 1.75rem 0 0; font: 680 clamp(2.5rem, 6vw, 4.5rem)/1 var(--
 .aside .sidenote, .aside .sidenote.open { display: none; } /* in the panel, a note number links to the notes at the end */
 
 /* end matter */
-.endmatter { max-width: var(--wide); margin: 2rem auto 0; padding: 2.5rem 1.25rem 4rem; border-top: 2px solid var(--ink); display: grid; grid-template-columns: minmax(0, 1fr) var(--margin); gap: 2.5rem var(--gap); }
+.endmatter { max-width: var(--wide); margin: 2rem 0 0; padding: 2.5rem 0 4rem; border-top: 2px solid var(--ink); display: grid; grid-template-columns: minmax(0, 1fr) var(--margin); gap: 2.5rem var(--gap); }
 .endmatter h2 { margin: 0 0 1rem; font: 660 1.375rem/1.2 var(--frame); }
 .notes { margin: 0; padding: 0; list-style: none; font: 400 .9375rem/1.55 var(--frame); color: var(--ink-2); }
 .notes li { display: grid; grid-template-columns: 2.25rem minmax(0, 1fr); padding: .55rem 0; border-bottom: 1px solid var(--rule); }
@@ -214,29 +232,30 @@ h1.ch-title { margin: 1.75rem 0 0; font: 680 clamp(2.5rem, 6vw, 4.5rem)/1 var(--
 
 /* ---------- foot ---------- */
 .foot { background: var(--board); color: var(--board-ink-2); }
-.foot .in { max-width: 80rem; margin: 0 auto; padding: 2.25rem clamp(1rem, 3vw, 2rem) 2.75rem; display: flex; flex-wrap: wrap; gap: 1rem 2.5rem; justify-content: space-between; font: 400 .875rem/1.6 var(--frame); }
+.foot .in { max-width: var(--page); margin: 0 auto; padding: 2.25rem var(--pad) 2.75rem; display: flex; flex-wrap: wrap; gap: 1rem 2.5rem; justify-content: space-between; font: 400 .875rem/1.6 var(--frame); }
 .foot a { color: var(--board-ink); }
 
 /* ---------- page heads (timeline, bibliography) ---------- */
-.page-head { max-width: var(--wide); margin: 0 auto; padding: clamp(2.5rem, 6vw, 4.5rem) 1.25rem 1.5rem; }
+.page-head { max-width: var(--page); margin: 0 auto; padding: clamp(2.5rem, 6vw, 4.5rem) var(--pad) 1.5rem; }
 .page-head h1 { margin: 0; font: 680 clamp(2.5rem, 6vw, 4.5rem)/1 var(--frame); font-stretch: 84%; letter-spacing: -.022em; }
 .page-head p { max-width: var(--measure); margin: 1.1rem 0 0; font: 400 1.1875rem/1.5 var(--read); color: var(--ink-2); text-wrap: pretty; }
-.wrap { max-width: var(--wide); margin: 0 auto; padding: 0 1.25rem 4rem; }
+.wrap { max-width: var(--page); margin: 0 auto; padding: 0 var(--pad) 4rem; }
 
 /* ---------- timeline ---------- */
-.tl-tools { position: sticky; top: 3.5rem; z-index: 10; background: var(--ground); border-bottom: 1px solid var(--rule); }
-.tl-tools .in { max-width: var(--wide); margin: 0 auto; padding: .7rem 1.25rem; display: flex; gap: .4rem; overflow-x: auto; scrollbar-width: thin; }
+/* Every theme is listed at once, wrapping onto more rows as needed; no sideways scrolling. */
+.tl-tools { background: var(--ground); border-bottom: 1px solid var(--rule); }
+.tl-tools .in { max-width: var(--page); margin: 0 auto; padding: .7rem var(--pad); display: flex; flex-wrap: wrap; gap: .4rem; }
 .chip { --c: var(--ink-3); flex: none; display: inline-flex; align-items: center; gap: .45rem; min-height: 2.25rem; padding: 0 .85rem; border: 1px solid var(--rule-2); border-radius: 2px; background: var(--sheet); color: var(--ink-2); font: 500 .875rem/1 var(--frame); cursor: pointer; text-decoration: none; }
 .chip:hover { border-color: var(--ink-3); color: var(--ink); }
 .chip i { width: .5rem; height: .9rem; border-radius: 1px; background: var(--c); }
 .chip[aria-pressed="true"] { background: var(--ink); color: var(--ground); border-color: var(--ink); }
-.density { max-width: var(--wide); margin: 0 auto; padding: 1rem 1.25rem 1.25rem; }
+.density { max-width: var(--page); margin: 0 auto; padding: 1rem var(--pad) 1.25rem; }
 .density .bars { display: flex; align-items: flex-end; gap: 2px; height: 4rem; }
 .density a { flex: 1; min-width: 2px; background: var(--rule-2); border-radius: 1px 1px 0 0; }
 .density a:hover { background: var(--ink); }
 .density .ax { display: flex; justify-content: space-between; margin-top: .4rem; font: 500 .75rem/1 var(--frame); color: var(--ink-3); font-variant-numeric: tabular-nums; }
-.era { display: grid; grid-template-columns: 13rem minmax(0, 1fr); gap: 2.5rem; max-width: var(--wide); margin: 0 auto; padding: 3rem 1.25rem 1rem; border-top: 2px solid var(--ink); }
-.era-head { position: sticky; top: 8.5rem; align-self: start; }
+.era { display: grid; grid-template-columns: minmax(13rem, 18rem) minmax(0, 1fr); gap: 2.5rem; max-width: var(--page); margin: 0 auto; padding: 3rem var(--pad) 1rem; border-top: 2px solid var(--ink); }
+.era-head { position: sticky; top: 4.5rem; align-self: start; }
 .era-head .yrs { font: 680 1.875rem/1 var(--frame); font-stretch: 84%; font-variant-numeric: tabular-nums; }
 .era-head h2 { margin: .55rem 0 .5rem; font: 600 1.0625rem/1.3 var(--frame); }
 .era-head p { margin: 0; font: 400 .875rem/1.5 var(--frame); color: var(--ink-3); }
@@ -244,7 +263,7 @@ h1.ch-title { margin: 1.75rem 0 0; font: 680 clamp(2.5rem, 6vw, 4.5rem)/1 var(--
 .ev[hidden] { display: none; }
 .ev .sw { width: .5rem; height: 1.2rem; margin-top: .2rem; border-radius: 1px; background: var(--c); }
 .ev .y { font: 600 .9375rem/1.45 var(--frame); font-variant-numeric: tabular-nums; color: var(--ink-2); }
-.ev h3 { margin: 0; font: 450 1.0625rem/1.4 var(--read); text-wrap: balance; }
+.ev h3 { max-width: 64ch; margin: 0; font: 450 1.0625rem/1.4 var(--read); text-wrap: balance; }
 .ev h3 a { text-decoration: none; }
 .ev h3 a:hover { text-decoration: underline; }
 .ev .m { margin-top: .2rem; font: 400 .8125rem/1.45 var(--frame); color: var(--ink-3); }
@@ -258,7 +277,7 @@ h1.ch-title { margin: 1.75rem 0 0; font: 680 clamp(2.5rem, 6vw, 4.5rem)/1 var(--
 }
 
 /* ---------- record page ---------- */
-.rec { max-width: var(--wide); margin: 0 auto; padding: 2.5rem 1.25rem 4rem; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 2.75rem; }
+.rec { max-width: var(--page); margin: 0 auto; padding: 2.5rem var(--pad) 4rem; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 2.75rem; }
 .rec.noimg { grid-template-columns: minmax(0, var(--measure)); }
 .rec .plate { margin: 0; background: var(--sheet-2); align-self: start; position: sticky; top: 5rem; }
 .rec .plate img { width: 100%; }
@@ -280,6 +299,14 @@ h1.ch-title { margin: 1.75rem 0 0; font: 680 clamp(2.5rem, 6vw, 4.5rem)/1 var(--
 /* ---------- bibliography ---------- */
 .bib-nav { display: flex; flex-wrap: wrap; gap: .4rem; margin: 0 0 1.5rem; }
 .bib section { max-width: var(--measure); }
+/* Wide screens: the kinds of source as a list that stays in view beside the entries. */
+@media (min-width: 1180px) {
+  .bib { display: grid; grid-template-columns: minmax(0, 1fr) var(--wide); column-gap: var(--gap); }
+  .bib-nav { grid-column: 1; flex-direction: column; align-items: stretch; position: sticky; top: 4.5rem; align-self: start; max-width: 16rem; margin: 2.75rem 0 0; gap: 0; border-top: 1px solid var(--rule); }
+  .bib-nav .chip { min-height: 0; padding: .5rem 0; border: 0; border-bottom: 1px solid var(--rule); border-radius: 0; background: none; color: var(--ink-3); }
+  .bib-nav .chip:hover { color: var(--ink); }
+  .bib-list { grid-column: 2; }
+}
 .bib h2 { margin: 2.75rem 0 .75rem; font: 660 1.5rem/1.2 var(--frame); font-stretch: 90%; display: flex; align-items: baseline; gap: .75rem; }
 .bib h2 small { font: 500 .875rem/1 var(--frame); color: var(--ink-3); font-variant-numeric: tabular-nums; }
 .bib ol { list-style: none; margin: 0; padding: 0; }

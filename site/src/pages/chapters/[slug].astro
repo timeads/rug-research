@@ -13,9 +13,19 @@ export async function getStaticPaths() {
   return chapters.map(entry => ({ params: { slug: entry.id }, props: { entry } }));
 }
 const { entry } = Astro.props;
-const { Content, remarkPluginFrontmatter } = await render(entry);
+const { Content, remarkPluginFrontmatter, headings } = await render(entry);
 const notes = remarkPluginFrontmatter.notes || [];
 const d = entry.data;
+// "In this chapter": the key dates, the chapter's sections, its "Still to find" panel and the notes. Shown
+// beside the text on wide screens.
+const asideTitle = (entry.body || "").match(/<Aside title="([^"]+)"/)?.[1];
+const slug = t => t.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+const toc = [
+  ...(d.milestones.length ? [{ id: "key-dates", text: "Key dates" }] : []),
+  ...headings.filter(h => h.depth === 2).map(h => ({ id: h.slug, text: h.text })),
+  ...(asideTitle ? [{ id: slug(asideTitle), text: asideTitle.replace(/ for this chapter$/, "") }] : []),
+  { id: "notes", text: "Notes" }
+];
 const hero = d.hero ? record(d.hero.record) : null;
 // The opening picture: the record's own image, or one of its gallery images; focus sets the crop.
 const heroSrc = hero ? (d.hero.image != null && hero.images?.[d.hero.image]?.src) || hero.image : "";
@@ -49,6 +59,11 @@ const schema = {
       <figcaption><span>{d.hero.caption ?? hero.title} <a href={base(`records/${hero.id}/`)}>Source</a>{!imageCleared(hero) && <> <span class="pending">Permission pending</span></>}</span></figcaption>
     </figure>}
     {d.milestones.length > 0 && <Milestones items={d.milestones} />}
+    <div class="reading">
+    <nav class="toc" aria-label="In this chapter">
+      <p>In this chapter</p>
+      <ol>{toc.map(t => <li><a href={`#${t.id}`}>{t.text}</a></li>)}</ol>
+    </nav>
     <div class="prose">
       <Content components={{ Cite }} />
     </div>
@@ -67,5 +82,22 @@ const schema = {
         <a class="more" href={base("bibliography/")}>The full bibliography</a>
       </div>
     </section>
+    </div>
   </article>
+  <script is:inline>
+    // Mark the section being read in "In this chapter": the last heading above the upper third of the screen.
+    (() => {
+      const links = [...document.querySelectorAll(".toc a")];
+      const targets = links.map(a => document.getElementById(decodeURIComponent(a.hash.slice(1))));
+      let queued = false;
+      const mark = () => {
+        queued = false;
+        let current = -1;
+        targets.forEach((t, i) => { if (t && t.getBoundingClientRect().top < innerHeight * 0.3) current = i; });
+        links.forEach((a, i) => i === current ? a.setAttribute("aria-current", "location") : a.removeAttribute("aria-current"));
+      };
+      addEventListener("scroll", () => { if (!queued) { queued = true; requestAnimationFrame(mark); } }, { passive: true });
+      mark();
+    })();
+  </script>
 </Base>
