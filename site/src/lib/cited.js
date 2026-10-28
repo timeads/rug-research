@@ -5,7 +5,9 @@ let cache;
 export async function citedIndex() {
   if (cache) return cache;
   cache = {};
-  for (const entry of await getCollection("chapters")) {
+  // In chapter order, so every build lists them the same way (the collection's own order follows the file system).
+  const entries = (await getCollection("chapters")).sort((a, b) => a.data.number - b.data.number);
+  for (const entry of entries) {
     const { remarkPluginFrontmatter } = await render(entry);
     for (const n of remarkPluginFrontmatter.notes || []) for (const r of n.refs) {
       const list = (cache[r.id] ??= []);
