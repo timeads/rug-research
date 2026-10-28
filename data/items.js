@@ -13946,7 +13946,10 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "suggestive",
-    "reviewedAt": "2026-10-28T21:39:35.308Z"
+    "reviewedAt": "2026-10-28T21:39:35.308Z",
+    "image": "https://heimtextil.messefrankfurt.com/content/dam/messefrankfurt-redaktion/texpertisenetwork/images/stages-teaser/stage-texpertise.jpg",
+    "imageCredit": "heimtextil.messefrankfurt.com",
+    "imageSource": "auto"
   },
   {
     "id": "tool-dayang-guns",
