@@ -1,40 +1,42 @@
 ---
-// The cover: the title, the chapters as book spines on a shelf, and the ways in.
+// The cover: the title, then the history as one shade card of thirteen chapters.
 import { getCollection } from "astro:content";
 import Base from "../layouts/Base.astro";
-import { db, base } from "../lib/data.js";
+import WoundBand from "../components/WoundBand.astro";
+import { db, base, CHAPTER_CLOTH, chapterYears, fmtYear } from "../lib/data.js";
 
 const published = Object.fromEntries((await getCollection("chapters")).map(e => [e.data.researchChapter, e.id]));
-// Bookcloth for each chapter, and a slightly uneven shelf.
-const CLOTH = { "ch-processes": "wheat", "ch-before-machine": "oxblood", "ch-woven": "navy", "ch-dalton-bedspreads": "rose", "ch-machine": "ochre", "ch-nylon": "teal", "ch-abroad": "indigo", "ch-china": "plum", "ch-gun": "rust", "ch-india": "umber", "ch-today": "jade", "ch-cnc": "slate", "ch-hobby": "moss" };
-const HEIGHTS = [22, 23.5, 21, 24, 22.5, 25, 21.5, 23, 24.5, 21, 22, 23.5, 20.5];
-const { chapters, items, eras } = db();
-const shelf = chapters.map((c, i) => ({ id: c.id, n: i + 1, title: c.name.split(":")[0], full: c.name, cloth: CLOTH[c.id] || "grey", h: HEIGHTS[i % HEIGHTS.length], slug: published[c.id] }));
+const { chapters, items } = db();
+const rows = chapters.map((c, i) => {
+  const ys = chapterYears(c);
+  return { n: i + 1, title: c.name, shade: `var(--cloth-${CHAPTER_CLOTH[c.id] || "grey"})`, years: ys ? `${fmtYear(ys[0])}–${fmtYear(ys[1])}` : "", slug: published[c.id] };
+});
+const ready = rows.filter(r => r.slug).length;
 const dated = items.filter(x => x.dateStart != null).length;
 const sources = items.filter(x => ["book", "article", "archive", "trade-catalog", "patent", "film", "oral-history"].includes(x.type)).length;
 ---
-<Base title="A History of Tufting" description="A history of tufting, from needle-made pile to the tufting gun and the robot, by Tim Eads." current="chapters">
+<Base title="A History of Tufting" description="A history of tufting in thirteen chapters, from needle-made pile to the tufting gun and the robot, by Tim Eads." current="chapters">
   <section class="cover">
-    <div>
-    <span class="label">A history in thirteen chapters</span>
-    <h1>A History <i>of</i><br />Tufting</h1>
-    <p class="sub">From needle-made pile and candlewick spreads to the broadloom mills of Dalton, the hand-held gun and the robot.</p>
-    <p class="by">By Tim Eads · Tuft the World</p>
+    <h1>A History of Tufting</h1>
+    <p class="scope">From needle-made pile and candlewick spreads to the broadloom mills of Dalton, the hand-held gun and the robot, told from patents, trade papers, archives and the objects themselves.</p>
+    <p class="by">By Tim Eads</p>
+  </section>
+  <section class="card" aria-labelledby="contents">
+    <div class="card-sheet">
+      <div class="card-head"><h2 id="contents">Contents</h2><span>{ready} of {rows.length} chapters ready to read</span></div>
+      <ol class="shades">
+        {rows.map(r => (
+          <li style={`--shade:${r.shade}`}>
+            {r.slug
+              ? <a class="shade-row" href={base(`chapters/${r.slug}/`)}><WoundBand shade={r.shade} n={r.n} height={44} /><span class="no">{String(r.n).padStart(2, "0")}</span><span><span class="t">{r.title}</span><span class="yrs">{r.years}</span></span><span class="st">Read the chapter</span></a>
+              : <div class="shade-row soon"><WoundBand shade={r.shade} n={r.n} height={44} /><span class="no">{String(r.n).padStart(2, "0")}</span><span><span class="t">{r.title}</span><span class="yrs">{r.years}</span></span><span class="st">In preparation</span></div>}
+          </li>
+        ))}
+      </ol>
     </div>
-    <figure class="cover-art">
-      <a href={base("records/pat-us463548a/")}><img src="/rug-research/images/patents/US463548-1.png" alt="Patent drawing of Ebenezer Ross's two-handled turfing implement, 1891" /></a>
-      <figcaption>Ebenezer Ross, “Turfing Implement,” US patent 463,548, 1891</figcaption>
-    </figure>
   </section>
-  <div class="shelf-head"><span class="label">Chapters</span><span class="label">1 of {shelf.length} ready to read</span></div>
-  <nav class="shelf" aria-label="Chapters">
-    {shelf.map(s => s.slug
-      ? <a class="spine live" href={base(`chapters/${s.slug}/`)} style={`--c:var(--cloth-${s.cloth});--h:${s.h}rem`} title={s.full}><span class="no">{s.n}</span><span class="t">{s.title}</span><span class="st">Read</span></a>
-      : <span class="spine soon" style={`--c:var(--cloth-${s.cloth});--h:${s.h}rem`} title={`${s.full} (in preparation)`}><span class="no">{s.n}</span><span class="t">{s.title}</span><span class="st">Soon</span></span>)}
+  <nav class="also" aria-label="Reference">
+    <a href={base("timeline/")}><b>Timeline</b><span>All {dated} dated records, era by era, from Egyptian tapestry to the robot studio.</span></a>
+    <a href={base("bibliography/")}><b>Bibliography</b><span>{sources} sources: archives, patents, trade literature, films, books and articles.</span></a>
   </nav>
-  <section class="doors">
-    <a class="door" href={base("chapters/nylon/")}><span class="label">Chapter 6 · Read now</span><h2>Nylon and the broadloom boom</h2><p>How a DuPont fibre and a Dalton machine made wall-to-wall carpet cheap, and how it was sold.</p></a>
-    <a class="door" href={base("timeline/")}><span class="label">Timeline</span><h2>{dated} dated moments</h2><p>From Egyptian tapestry to today, in {eras.length} eras, filtered by theme.</p></a>
-    <a class="door" href={base("bibliography/")}><span class="label">Bibliography</span><h2>{sources} sources</h2><p>Archives, patents, trade literature, films, books and articles, each linked to where it is held.</p></a>
-  </section>
 </Base>

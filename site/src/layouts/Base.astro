@@ -1,9 +1,9 @@
 ---
-// Every page: the prototype notice, the top bar and the footer.
+// Every page: the board masthead, the prototype notice, and the foot.
 import "../styles/global.css";
 import { base } from "../lib/data.js";
-const { title, description = "", accent = "var(--cloth-teal)", current = "", progress = false } = Astro.props;
-const nav = [["chapters", "Chapters", ""], ["timeline", "Timeline", ""], ["bibliography", "Bibliography", "wide-only"]];
+const { title, description = "", shade = "var(--cloth-teal)", current = "", progress = false } = Astro.props;
+const nav = [["", "Contents", "chapters", ""], ["timeline/", "Timeline", "timeline", ""], ["bibliography/", "Bibliography", "bibliography", "wide-only"]];
 ---
 <!doctype html>
 <html lang="en">
@@ -13,27 +13,31 @@ const nav = [["chapters", "Chapters", ""], ["timeline", "Timeline", ""], ["bibli
     <meta name="robots" content="noindex" />
     <title>{title}</title>
     {description && <meta name="description" content={description} />}
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%231e6767'/><path d='M9 24V9m7 15V9m7 15V9' stroke='white' stroke-width='3' stroke-linecap='round'/></svg>" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='3' fill='%231e2421'/><rect x='6' y='6' width='20' height='20' fill='%231e6767'/><path d='M6 10h20M6 14h20M6 18h20M6 22h20' stroke='%23000' stroke-opacity='.25'/></svg>" />
   </head>
-  <body style={`--accent:${accent}`}>
-    <div class="proto-bar"><b>Prototype</b>Chapter text drafted from the research notes; sources not yet checked at the archives. Images awaiting permission are marked.</div>
-    <header class="topbar">
-      <a class="wordmark" href={base("")}>A History of Tufting <i>· Tim Eads</i></a>
-      <nav aria-label="Main">
-        {nav.map(([href, label, cls]) => <a class={cls} href={base(href === "chapters" ? "" : href + "/")} aria-current={current === href ? "page" : undefined}>{label}</a>)}
-      </nav>
+  <body style={`--shade:${shade}`}>
+    <header class="mast">
+      <div class="in">
+        <a class="wordmark" href={base("")}>A History of Tufting</a>
+        <nav aria-label="Main">
+          {nav.map(([href, label, key, cls]) => <a class={cls} href={base(href)} aria-current={current === key ? "page" : undefined}>{label}</a>)}
+        </nav>
+      </div>
       {progress && <span class="progress" aria-hidden="true"></span>}
     </header>
+    <p class="notice"><b>Prototype.</b> Chapter text drafted from the research notes and not yet checked at the archives. Images awaiting permission are marked.</p>
     <main><slot /></main>
     <footer class="foot">
-      <span>A History of Tufting, by Tim Eads. A prototype built from the <a href="/rug-research/">Rug Research database</a>.</span>
-      <span>Sources link to the institutions that hold them.</span>
+      <div class="in">
+        <span>A History of Tufting, by Tim Eads. Built from the <a href="/rug-research/">Rug Research database</a>.</span>
+        <span>Every source links to the institution that holds it.</span>
+      </div>
     </footer>
     <script is:inline>
       // On narrow screens a note number opens its note under the line instead of jumping to the end.
       document.addEventListener("click", e => {
         const a = e.target.closest(".fn a");
-        if (!a || !matchMedia("(max-width: 1100px)").matches) return;
+        if (!a || a.closest(".aside") || !matchMedia("(max-width: 1100px)").matches) return;
         const note = a.closest(".fn").nextElementSibling;
         if (!note || !note.classList.contains("sidenote")) return;
         e.preventDefault();

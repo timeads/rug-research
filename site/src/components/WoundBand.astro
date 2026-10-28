@@ -1,0 +1,22 @@
+---
+// A wound-yarn band, as on a dye house's shade card: fine parallel strands of one shade, laid at a
+// slight angle, each a little lighter or darker than the next, and shadowed where the yarn turns over
+// the card's edges. Exact shapes, drawn the same every time (the tones come from the shade number).
+const { shade = "var(--shade)", n = 1, height = 72, className = "", label } = Astro.props;
+const pitch = 1.8, H = height, W = 600, slope = 2.4;
+const strands = Math.ceil((H + slope) / pitch) + 1;
+const tone = i => { const h = Math.sin((i + 1) * 12.9898 + n * 78.233) * 43758.5453; return h - Math.floor(h); };
+const strand = i => { const y = i * pitch - slope; return `M0 ${y.toFixed(2)}L${W} ${(y + slope).toFixed(2)}L${W} ${(y + slope + pitch * .82).toFixed(2)}L0 ${(y + pitch * .82).toFixed(2)}Z`; };
+const light = [], dark = [];
+for (let i = 0; i < strands; i++) { const t = tone(i); (t > .5 ? light : dark).push([strand(i), Math.abs(t - .5) * .42]); }
+const edge = Math.max(2, Math.round(H * .09));
+---
+<svg class={`band ${className}`} viewBox={`0 0 ${W} ${H}`} preserveAspectRatio="none" role={label ? "img" : undefined} aria-label={label} aria-hidden={label ? undefined : "true"} style={`--shade:${shade}`}>
+  <rect width={W} height={H} fill={shade} />
+  {light.map(([d, o]) => <path d={d} fill="#fff" fill-opacity={o.toFixed(3)} />)}
+  {dark.map(([d, o]) => <path d={d} fill="#000" fill-opacity={o.toFixed(3)} />)}
+  <rect width={W} height={edge} fill="#000" fill-opacity=".2" />
+  <rect y={edge} width={W} height={edge * .6} fill="#000" fill-opacity=".08" />
+  <rect y={H - edge} width={W} height={edge} fill="#000" fill-opacity=".24" />
+  <rect y={H - edge * 1.6} width={W} height={edge * .6} fill="#000" fill-opacity=".1" />
+</svg>

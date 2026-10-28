@@ -32,6 +32,13 @@ export const THEME_CLOTH = {
   "Global diffusion of tufting": "indigo", "Hand-tufting tools & the gun": "rust",
   "Companies & modern tufting": "jade", "Rug-making techniques": "wheat"
 };
+// The cloth (shade) of each chapter, as in the research tool.
+export const CHAPTER_CLOTH = { "ch-processes": "wheat", "ch-before-machine": "oxblood", "ch-woven": "navy", "ch-dalton-bedspreads": "rose", "ch-machine": "ochre", "ch-nylon": "teal", "ch-abroad": "indigo", "ch-china": "plum", "ch-gun": "rust", "ch-india": "umber", "ch-today": "jade", "ch-cnc": "slate", "ch-hobby": "moss" };
+// The years a chapter's dated evidence spans.
+export function chapterYears(ch) {
+  const ys = (ch.items || []).map(id => db().byId[id]?.dateStart).filter(y => y != null).sort((a, b) => a - b);
+  return ys.length ? [ys[0], ys.at(-1)] : null;
+}
 export const cloth = theme => `var(--cloth-${THEME_CLOTH[theme] || "grey"})`;
 
 export const fmtYear = y => (y < 0 ? `${-y} BCE` : String(y));

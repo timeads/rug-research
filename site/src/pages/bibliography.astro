@@ -14,11 +14,10 @@ const key = x => (x.creator || x.title).replace(/^[“"']/, "").toLowerCase();
 const groups = GROUPS.map(([type, name]) => ({ type, name, list: items.filter(x => x.type === type).sort((a, b) => type === "patent" ? (a.dateStart ?? 0) - (b.dateStart ?? 0) : key(a).localeCompare(key(b))) })).filter(g => g.list.length);
 const total = groups.reduce((n, g) => n + g.list.length, 0);
 ---
-<Base title="Bibliography · A History of Tufting" description="Every source in the research, by kind." current="bibliography">
+<Base title="Bibliography · A History of Tufting" description="Every source in the research, by kind." current="bibliography" shade="var(--ink)">
   <header class="page-head">
-    <span class="label">Bibliography</span>
-    <h1>{total} sources</h1>
-    <p>Archives, patents, trade literature, films, books and articles gathered for the history so far. Sources cited in a finished chapter are marked.</p>
+    <h1>Bibliography</h1>
+    <p>The {total} sources gathered for the history so far: archives, patents, trade literature, films, books and articles. Sources cited in a finished chapter are marked with its number.</p>
   </header>
   <div class="wrap bib">
     <nav class="bib-nav" aria-label="Kinds of source">{groups.map(g => <a class="chip" href={`#${g.type}`}>{g.name} · {g.list.length}</a>)}</nav>
