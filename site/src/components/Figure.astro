@@ -15,8 +15,7 @@ const credit = [it.imageCredit || it.institution, it.identifier].filter(Boolean)
 <figure class={`fig ${size}`}>
   <a class="frame" href={base(`records/${id}/`)}><img src={imageUrl(src, width)} alt={alt ?? it.title} loading="lazy" decoding="async" referrerpolicy="no-referrer" /></a>
   <figcaption>
-    <span>{cap}</span>
-    <a class="rec" href={base(`records/${id}/`)}>Source →</a>
-    <span class="credit">{credit}{!imageCleared(it) && <span class="pending">Permission pending</span>}</span>
+    {cap}
+    <span class="credit"><span>{credit}</span><a class="src" href={base(`records/${id}/`)}>Source</a>{!imageCleared(it) && <span class="pending">Permission pending</span>}</span>
   </figcaption>
 </figure>

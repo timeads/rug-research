@@ -43,6 +43,9 @@ const SITE_ROOT = "/rug-research/";
 export function imageUrl(src, width = 1200) {
   if (!src) return "";
   if (!/^https?:/.test(src)) return SITE_ROOT + src.replace(/^\/+/, "");
+  // Hagley's image server reliably answers the size the research tool uses (800 wide) and large
+  // sizes, but not every size in between, so smaller pictures keep the stored address.
+  if (/digital\.hagley\.org/.test(src) && width < 1800) return src;
   return src.replace(/\/full\/(?:full|max|!?\d*,\d*)\/0\/default\.jpg$/, `/full/${width},/0/default.jpg`);
 }
 // Who may see a picture published: "own" and "public-domain" are clear; anything else is pending.
@@ -72,5 +75,13 @@ export function citation(it, { link = true, loc = "" } = {}) {
     default: s = `${who}“${esc(inner(it.title))},” ${date}. ${join(esc(it.identifier), esc(it.collection), esc(it.institution))}.`;
   }
   return at(s.replace(/\.\s*\./g, ".").replace(/,\s*\./g, ".")) + url;
+}
+// A short note for the margin: title, date and where it is held; the full citation is in the notes.
+export function shortCitation(it, { loc = "" } = {}) {
+  if (!it) return "";
+  const title = it.type === "book" || it.type === "object" ? `<em>${esc(curly(it.title))}</em>` : it.type === "patent" ? esc(curly(it.title)) : `“${esc(inner(it.title.replace(/^(REFUTED|UNVERIFIED|CORRECTION)\s*:\s*/i, "")))}”`;
+  const who = it.type === "book" || it.type === "article" ? (it.creator || "").split(/ and |,/)[0].trim() : "";
+  const held = it.institution && !/assignee/i.test(it.institution) ? it.institution.replace(/ Museum and Library$/, "") : it.type === "article" ? it.publisher : it.type === "finding" ? "research note" : "";
+  return [who, title, it.date, held, it.type === "patent" ? "" : it.identifier, loc].filter(Boolean).map(String).join(", ").replace(/,\s*,/g, ",") + ".";
 }
 export const base = p => "/rug-research/book/" + p.replace(/^\/+/, "");
