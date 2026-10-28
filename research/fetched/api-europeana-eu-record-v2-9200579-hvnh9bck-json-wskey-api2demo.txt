@@ -1,0 +1,37 @@
+URL: https://api.europeana.eu/record/v2/9200579/hvnh9bck.json?wskey=api2demo
+Final: https://api.europeana.eu/record/v2/9200579/hvnh9bck.json?wskey=api2demo
+Status: 200
+Title: 
+Fetched: 2026-10-28T14:12:56.759Z
+
+{"apikey":"api2demo","success":true,"statsDuration":240,"requestNumber":999,"object":{"about":"/9200579/hvnh9bck","aggregations":[{"about":"/aggregation/provider/9200579/hvnh9bck","edmDataProvider":{"def":["http://data.europeana.eu/organization/1191"]},"edmIsShownBy":"https://iiif.wellcomecollection.org/image/V0024155ER.jpg/full/512,/0/default.jpg","edmIsShownAt":"https://wellcomecollection.org/works/hvnh9bck","edmObject":"https://iiif.wellcomecollection.org/image/V0024155ER.jpg/full/500,/0/default.jpg","edmProvider":{"def":["http://data.europeana.eu/organization/1191"]},"edmRights":{"def":["http://creativecommons.org/licenses/by/4.0/"]},"edmUgc":"false","aggregatedCHO":"/item/9200579/hvnh9bck","webResources":[{"about":"https://iiif.wellcomecollection.org/image/V0024155ER.jpg/full/500,/0/default.jpg","textAttributionSnippet":"Textiles: a mechanical carpet loom, three-quarter view, with spectators. Engraving, c.1862 - https://www.europeana.eu/item/9200579/hvnh9bck. Wellcome Collection - https://wellcomecollection.org/works/hvnh9bck. CC BY - http://creativecommons.org/licenses/by/4.0/","htmlAttributionSnippet":" Title
+Textiles: a mechanical carpet loom, three-quarter view, with spectators. Engraving, c.1862
+Date
+1862
+Institution
+Wellcome Collection
+Country
+United Kingdom
+Rights
+CC BY
+","ebucoreHasMimeType":"image/jpeg","ebucoreFileByteSize":165946,"ebucoreWidth":500,"ebucoreHeight":721,"edmHasColorSpace":"sRGB","edmComponentColor":["#2F4F4F","#696969","#808080","#A9A9A9","#BC8F8F","#DCDCDC"],"ebucoreOrientation":"portrait"},{"about":"https://iiif.wellcomecollection.org/image/V0024155ER.jpg/full/512,/0/default.jpg","textAttributionSnippet":"Textiles: a mechanical carpet loom, three-quarter view, with spectators. Engraving, c.1862 - https://www.europeana.eu/item/9200579/hvnh9bck. Wellcome Collection - https://wellcomecollection.org/works/hvnh9bck. CC BY - http://creativecommons.org/licenses/by/4.0/","htmlAttributionSnippet":" Title
+Textiles: a mechanical carpet loom, three-quarter view, with spectators. Engraving, c.1862
+Date
+1862
+Institution
+Wellcome Collection
+Country
+United Kingdom
+Rights
+CC BY
+","svcsHasService":["https://iiif.wellcomecollection.org/image/V0024155ER.jpg"],"dctermsIsReferencedBy":["https://iiif.europeana.eu/presentation/9200579/hvnh9bck/manifest"],"ebucoreHasMimeType":"image/jpeg","ebucoreFileByteSize":173852,"ebucoreWidth":512,"ebucoreHeight":738,"edmHasColorSpace":"sRGB","edmComponentColor":["#2F4F4F","#696969","#808080","#A9A9A9","#DCDCDC","#BC8F8F"],"ebucoreOrientation":"portrait"},{"about":"https://wellcomecollection.org/works/hvnh9bck","textAttributionSnippet":"Textiles: a mechanical carpet loom, three-quarter view, with spectators. Engraving, c.1862 - https://www.europeana.eu/item/9200579/hvnh9bck. Wellcome Collection - https://wellcomecollection.org/works/hvnh9bck. CC BY - http://creativecommons.org/licenses/by/4.0/","htmlAttributionSnippet":" Title
+Textiles: a mechanical carpet loom, three-quarter view, with spectators. Engraving, c.1862
+Date
+1862
+Institution
+Wellcome Collection
+Country
+United Kingdom
+Rights
+CC BY
+","ebucoreHasMimeType":"text/html","ebucoreFileByteSize":270084},{"about":"https://iiif.europeana.eu/presentation/9200579/hvnh9bck/manifest","rdfType":"http://iiif.io/api/presentation/3#Manifest"}],"dqvHasQualityAnnotation":[{"created":"2019-07-17T02:25:53.099Z","target":["/aggregation/provider/9200579/hvnh9bck"],"body":"http://www.europeana.eu/schemas/epf/contentTier1"},{"created":"2019-07-17T02:25:53.099Z","target":["/aggregation/provider/9200579/hvnh9bck"],"body":"http://www.europeana.eu/schemas/epf/metadataTierA"}]}],"edmDatasetName":["9200579_Ag_UK_WellcomeCollection_IIIF"],"europeanaAggregation":{"about":"/aggregation/europeana/9200579/hvnh9bck","aggregatedCHO":"/item/9200579/hvnh9bck","edmCountry":{"def":["United Kingdom"]},"edmLanguage":{"def":["en"]},"edmPreview":"https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Fiiif.wellcomecollection.org%2Fimage%2FV0024155ER.jpg%2Ffull%2F500%2C%2F0%2Fdefault.jpg&type=IMAGE","edmLandingPage":"https://www.europeana.eu/item/9200579/hvnh9bck","dqvHasQualityAnnotation":[{"created":"2025-07-09T07:07:18.066580696Z","target":["/aggregation/europeana/9200579/hvnh9bck"],"body":"http://www.europeana.eu/schemas/epf/contentTier1"},{"created":"2025-07-09T07:07:18.066602216Z","target":["/aggregation/europeana/9200579/hvnh9bck"],"body":"http://www.europeana.eu/schemas/epf/metadataTierA"}]},"europeanaCollectionName":["9200579_Ag_UK_WellcomeCollection_IIIF"],"europeanaCompleteness":9,"organizations":[{"about":"http://data.europeana.eu/organization/1191","prefLabel":{"en":["Wellcome Collection"]}}],"providedCHOs":[{"about":"/item/9200579/hvnh9bck"}],"proxies":[{"about":"/proxy/europeana/9200579/hvnh9bck","dctermsCreated":{"def":["#1862"]},"proxyIn":["/aggregation/europeana/9200579/hvnh9bck"],"proxyFor":"/item/9200579/hvnh9bck","edmType":"IMAGE","year":{"def":["1862"]},"europeanaProxy":true},{"about":"/proxy/provider/9200579/hvnh9bck","dcDescription":{"en":["Lettering: Moxon & Co. patent carpet loom obtained the prize medal 1862"]},"dcIdentifier":{"def":["V0024155ER","b1201679","ICV No 24595R","ICV No 24595","hvnh9bck"]},"dcRights":{"def":["Credit: Wellcome Collection"]},"dcSource":{"def":["V0024155ER"]},"dcTitle":{"def":["Textiles: a mechanical carpet loom, three-quarter view, with spectators. Engraving, c.1862."]},"dcType":{"en":["Engravings"]},"dctermsCreated":{"def":["1862"]},"proxyIn":["/aggregation/provider/9200579/hvnh9bck"],"proxyFor":"/item/9200579/hvnh9bck","edmType":"IMAGE","europeanaProxy":false}],"services":[{"about":"https://iiif.wellcomecollection.org/image/V0024155ER.jpg","dctermsConformsTo":["http://iiif.io/api/image"],"doapImplements":["http://iiif.io/api/image/2/level1.json"]}],"timespans":[{"about":"http://semium.org/time/AD2xxx","prefLabel":{"en":["Second millenium AD","Second millenium AD, years 1001-2000"],"fr":["2e millénaire après J.-C."]},"isPartOf":{"def":["http://semium.org/time/ChronologicalPeriod"]}},{"about":"#1862","prefLabel":{"zxx":["1862"]},"begin":{"def":["1862-01-01"]},"end":{"def":["1862-12-31"]},"isPartOf":{"def":["http://data.europeana.eu/timespan/19"]},"skosNotation":{"def":["1862"]}},{"about":"http://semium.org/time/Time","prefLabel":{"en":["Time"]}},{"about":"http://semium.org/time/ChronologicalPeriod","prefLabel":{"en":["Chronological period"]},"isPartOf":{"def":["http://semium.org/time/Time"]}},{"about":"http://semium.org/time/18xx","prefLabel":{"ru":["19й век"],"def":["19..","19??","19e"],"en":["19-th","19th","19th century"],"fr":["19e siècle"],"nl":["19de eeuw"]},"begin":{"def":["Thu Jan 01 01:00:00 CET 1801"]},"end":{"def":["Mon Dec 31 00:19:32 CET 1900"]},"isPartOf":{"def":["http://semium.org/time/AD2xxx"]}}],"timestamp_created":"2019-06-09T12:29:10.469Z","timestamp_created_epoch":1560083350469,"timestamp_update":"2019-06-09T12:29:10.469Z","timestamp_update_epoch":1560083350469,"type":"IMAGE"}}
