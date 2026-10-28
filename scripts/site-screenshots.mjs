@@ -26,6 +26,8 @@ if (new URL(BASE).pathname === "/") {
     const r = await fetch(BASE + path);
     report.push(`${path}: ${r.status}${path === "sitemap.xml" ? `, ${((await r.text()).match(/<url>/g) || []).length} pages` : ""}`);
   }
+  const robots = (await (await fetch(BASE)).text()).match(/<meta name="robots" content="([^"]*)"/)?.[1];
+  report.push(`robots tag on the cover: ${robots}`);
   const host = new URL(BASE).host;
   if (host.startsWith("www.")) {
     const bare = `https://${host.slice(4)}/chapters/dalton/?x=1`;

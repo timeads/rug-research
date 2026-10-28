@@ -5,8 +5,8 @@
 // The registered address, e.g. "https://www.historyoftufting.org" (no trailing slash). Until it is set,
 // the Cloudflare build uses its pages.dev address.
 export const DOMAIN = "https://www.historyoftuftedrugs.com";
-// Let search engines index the public site. Off while the chapters are prototypes; every page says noindex.
-export const OPEN_TO_SEARCH = false;
+// Let search engines index the public site (only the Cloudflare copy at DOMAIN; the GitHub copy always says noindex).
+export const OPEN_TO_SEARCH = true;
 // The research database the history is built from.
 export const RESEARCH_URL = "https://timeads.github.io/rug-research/";
 
