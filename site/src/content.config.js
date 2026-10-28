@@ -9,7 +9,8 @@ const chapters = defineCollection({
     title: z.string(),
     dek: z.string(),
     theme: z.string(),
-    hero: z.object({ record: z.string(), image: z.number().optional(), caption: z.string().optional(), focus: z.string().optional() }),
+    // The picture at the head of the chapter; a chapter without a fitting picture goes straight to the text.
+    hero: z.object({ record: z.string(), image: z.number().optional(), caption: z.string().optional(), focus: z.string().optional() }).optional(),
     milestones: z.array(z.object({ year: z.string(), label: z.string(), record: z.string() })).default([]),
     status: z.enum(["prototype", "draft", "final"]).default("draft"),
     // The year the chapter was first put online, for citations (Google Scholar) and search engines.
