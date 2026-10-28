@@ -9,7 +9,7 @@ const chapters = defineCollection({
     title: z.string(),
     dek: z.string(),
     theme: z.string(),
-    hero: z.object({ record: z.string(), caption: z.string().optional(), focus: z.string().optional() }),
+    hero: z.object({ record: z.string(), image: z.number().optional(), caption: z.string().optional(), focus: z.string().optional() }),
     milestones: z.array(z.object({ year: z.string(), label: z.string(), record: z.string() })).default([]),
     status: z.enum(["prototype", "draft", "final"]).default("draft"),
     researchChapter: z.string().optional()

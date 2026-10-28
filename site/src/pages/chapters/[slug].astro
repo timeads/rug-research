@@ -17,6 +17,8 @@ const { Content, remarkPluginFrontmatter } = await render(entry);
 const notes = remarkPluginFrontmatter.notes || [];
 const d = entry.data;
 const hero = record(d.hero.record);
+// The opening picture: the record's own image, or one of its gallery images; focus sets the crop.
+const heroSrc = (d.hero.image != null && hero.images?.[d.hero.image]?.src) || hero.image;
 const shade = `var(--cloth-${CHAPTER_CLOTH[d.researchChapter] || "grey"})`;
 const years = d.milestones.length ? `${d.milestones[0].year}–${d.milestones.at(-1).year}` : "";
 const words = (entry.body || "").replace(/<[^>]+>|\[@[^\]]+\]|^---[\s\S]*?---/g, " ").split(/\s+/).filter(Boolean).length;
@@ -34,7 +36,7 @@ const verified = cited.filter(it => it.status === "verified").length;
       <div class="ch-byline"><span>By <b>Tim Eads</b></span><span>{Math.max(1, Math.round(words / 230))} minute read</span><span><span class="num">{notes.length}</span> notes, <span class="num">{cited.length}</span> sources, <span class="num">{verified}</span> checked at the archive</span>{d.status !== "final" && <span>{d.status === "prototype" ? "Prototype draft" : "Draft"}</span>}</div>
     </header>
     <figure class="ch-hero">
-      <img src={imageUrl(hero.image, 2400)} alt={hero.title} referrerpolicy="no-referrer" fetchpriority="high" />
+      <img src={imageUrl(heroSrc, 2400)} alt={hero.title} referrerpolicy="no-referrer" fetchpriority="high" style={d.hero.focus ? `object-position:${d.hero.focus}` : undefined} />
       <figcaption><span>{d.hero.caption ?? hero.title} <a href={base(`records/${hero.id}/`)}>Source</a>{!imageCleared(hero) && <> <span class="pending">Permission pending</span></>}</span></figcaption>
     </figure>
     {d.milestones.length > 0 && <Milestones items={d.milestones} />}
