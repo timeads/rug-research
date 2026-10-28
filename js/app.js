@@ -130,6 +130,50 @@
     img.onerror = rej; img.src = URL.createObjectURL(file);
   });
 
+  // ---------- transcripts ----------
+  // Transcripts of films, recordings and oral histories (or any record's full text). Published ones come
+  // from data/transcripts.js; ones added here live in IndexedDB ("tr:<id>") until exported and merged.
+  const PUB_TR = window.RUG_TRANSCRIPTS || {};
+  const LOCAL_TR = {};
+  const transcriptOf = id => LOCAL_TR[id] || PUB_TR[id] || null;
+  // Subtitle files (.srt, .vtt) become one "[hh:mm:ss] text" line per cue; plain text keeps its own lines.
+  const parseTranscript = (raw, name = "") => {
+    let t = raw.replace(/^﻿/, "").replace(/\r\n?/g, "\n");
+    if (/\.(srt|vtt)$/i.test(name) || /^WEBVTT/.test(t)) {
+      const out = [];
+      for (const block of t.split(/\n{2,}/)) {
+        const m = block.match(/(\d{1,2}:)?(\d{2}):(\d{2})[,.]\d{3}\s*-->/);
+        if (!m) continue;
+        const text = block.split("\n").filter(l => !l.includes("-->") && !/^\d+$/.test(l.trim())).join(" ").replace(/<[^>]+>/g, "").trim();
+        if (text) out.push(`[${(m[1] || "00:").padStart(3, "0")}${m[2]}:${m[3]}] ${text}`);
+      }
+      t = out.join("\n");
+    }
+    return t.replace(/[ \t]+\n/g, "\n").replace(/\n{3,}/g, "\n\n").trim();
+  };
+  // A .docx is a zip; its text is in word/document.xml, read here with the browser's own inflater.
+  const readDocx = async file => {
+    const buf = new Uint8Array(await file.arrayBuffer()), dv = new DataView(buf.buffer);
+    let end = buf.length - 22;
+    while (end >= 0 && dv.getUint32(end, true) !== 0x06054b50) end--;
+    if (end < 0) throw new Error("it isn't a Word (.docx) file");
+    for (let i = 0, p = dv.getUint32(end + 16, true), n = dv.getUint16(end + 10, true); i < n; i++) {
+      const method = dv.getUint16(p + 10, true), size = dv.getUint32(p + 20, true), len = dv.getUint16(p + 28, true), local = dv.getUint32(p + 42, true);
+      const name = new TextDecoder().decode(buf.subarray(p + 46, p + 46 + len));
+      p += 46 + len + dv.getUint16(p + 30, true) + dv.getUint16(p + 32, true);
+      if (name !== "word/document.xml") continue;
+      const start = local + 30 + dv.getUint16(local + 26, true) + dv.getUint16(local + 28, true), data = buf.subarray(start, start + size);
+      const xml = method === 0 ? new TextDecoder().decode(data) : await new Response(new Blob([data]).stream().pipeThrough(new DecompressionStream("deflate-raw"))).text();
+      const W = "http://schemas.openxmlformats.org/wordprocessingml/2006/main", doc = new DOMParser().parseFromString(xml, "application/xml");
+      return [...doc.getElementsByTagNameNS(W, "p")].map(par => {
+        let s = "";
+        for (const el of par.getElementsByTagNameNS(W, "*")) s += el.localName === "t" ? el.textContent : el.localName === "tab" ? "\t" : el.localName === "br" ? "\n" : "";
+        return s;
+      }).join("\n");
+    }
+    throw new Error("no text was found in it");
+  };
+
   // ---------- items ----------
   const BASE = (window.RUG_ITEMS || []).map(x => ({ ...x }));
   const BASE_IDS = new Set(BASE.map(x => x.id));
@@ -170,7 +214,8 @@
         creator: (it.creator || "").toLowerCase(),
         facets: [...it.themes, ...it.tags, ...it.techniques, ...it.materials, TYPES[it.type].label].join(" | ").toLowerCase(),
         where: [it.institution, it.collection, it.identifier, it.place, it.publisher, it.date].join(" | ").toLowerCase(),
-        body: [it.description, S.notes[it.id], it.citation, it.originalText, it.translation, it.region].join(" | ").toLowerCase()
+        body: [it.description, S.notes[it.id], it.citation, it.originalText, it.translation, it.region].join(" | ").toLowerCase(),
+        said: (transcriptOf(it.id)?.text || "").toLowerCase()
       };
     }
   };
@@ -204,6 +249,8 @@
       case "region": case "country": return (it.region || "").toLowerCase().includes(val);
       case "lang": case "language": return (it.language || "").toLowerCase().startsWith(val);
       case "by": case "creator": case "author": return it._hay.creator.includes(val);
+      case "said": case "transcript": return it._hay.said.includes(val);
+      case "has": return val.startsWith("transcript") ? !!transcriptOf(it.id) : val.startsWith("image") ? !!it.image : val.startsWith("note") ? !!S.notes[it.id] : false;
       case "year": case "date": {
         const [a, b] = val.split(/[-–]/).map(Number);
         if (isNaN(a)) return false;
@@ -224,6 +271,7 @@
       if (h.facets.includes(t)) s += 4;
       if (h.where.includes(t)) s += 3;
       if (h.body.includes(t)) s += 1;
+      if (h.said.includes(t)) s += 1;
       if (!s) return -1;
       score += s;
     }
@@ -336,18 +384,35 @@
   const activeList = () => S.lists.find(l => l.id === S.activeList) || S.lists[0];
   const colorway = it => it.themes.length ? `<span class="colorway" title="${esc(it.themes.join(", "))}">${it.themes.slice(0, 3).map(t => `<i style="--c:${cloth(t)}"></i>`).join("")}</span>` : "";
 
+  // Transcript lines: an optional leading time ("[00:12:34]", "12:34 –") is shown apart from the words.
+  const TS = /^\s*[[(]?((?:\d{1,2}:)?\d{1,2}:\d{2})[\])]?\s*[-–:]?\s*/;
+  const splitLine = l => { const m = l.match(TS); return m ? [m[1], l.slice(m[0].length)] : ["", l]; };
+  // On a card, the first transcript line that matches the search, so a hit inside a film is visible.
+  const transcriptSnippet = (id, terms) => {
+    const tr = terms.length && transcriptOf(id);
+    if (!tr) return "";
+    const lower = terms.map(t => t.toLowerCase()), line = tr.text.split("\n").find(l => lower.some(t => l.toLowerCase().includes(t)));
+    if (!line) return "";
+    let [ts, words] = splitLine(line);
+    const at = Math.max(0, words.toLowerCase().indexOf(lower.find(t => words.toLowerCase().includes(t)) || "") - 60);
+    words = (at ? "…" : "") + words.slice(at, at + 160) + (words.length > at + 160 ? "…" : "");
+    return `${ts ? `<span class="ts">${esc(ts)}</span>` : ""}“${highlight(words, terms)}”`;
+  };
+
   const cardHTML = (it, terms = []) => {
     const fl = S.flags[it.id] || [];
     const inList = activeList().items.includes(it.id);
     const act = (on, attr, ic, label, c) => `<button class="act ${on ? "on" : ""}" ${attr} style="--c:${c}" aria-pressed="${on}" aria-label="${esc(label)}" title="${esc(label)}">${icon(ic)}</button>`;
     const sub = [it.institution || (it.type === "finding" ? it.region : ""), it.identifier ? `<span class="num">${highlight(it.identifier, terms)}</span>` : ""].filter(Boolean);
+    const said = transcriptSnippet(it.id, terms);
     return `<article class="card" data-id="${esc(it.id)}">
       <button class="card-open" data-open="${esc(it.id)}">
         <span class="plate">${plateHTML(it)}<span class="plate-flags">${flagDots(it)}</span></span>
         <span class="label">
-          <span class="label-top">${colorway(it)}<span>${esc(TYPES[it.type].label)}</span>${it.date ? `<span>${esc(it.date)}</span>` : ""}${confBadge(it)}${it.status === "verified" ? `<span class="verified">${icon("check")}Verified</span>` : ""}</span>
+          <span class="label-top">${colorway(it)}<span>${esc(TYPES[it.type].label)}</span>${it.date ? `<span>${esc(it.date)}</span>` : ""}${confBadge(it)}${it.status === "verified" ? `<span class="verified">${icon("check")}Verified</span>` : ""}${transcriptOf(it.id) ? `<span class="tr-badge">Transcript</span>` : ""}</span>
           <h3>${highlight(it.title || "Untitled", terms)}</h3>
           ${sub.length ? `<span class="meta">${sub.map(s => s.startsWith("<") ? s : highlight(s, terms)).join(" · ")}</span>` : ""}
+          ${said ? `<span class="said">${said}</span>` : ""}
         </span>
       </button>
       <div class="card-actions ${fl.length || inList ? "has-on" : ""}">
@@ -476,6 +541,74 @@
     head.querySelector("[data-era-cancel]").onclick = renderTimeline;
   };
 
+  // ---------- transcript panel ----------
+  const TR_TYPES = new Set(["film", "oral-history"]);
+  const trLine = (l, i, terms = []) => { const [ts, words] = splitLine(l); return `<p class="tl">${ts ? `<span class="ts">${esc(ts)}</span>` : ""}<span class="tt">${highlight(words, terms)}</span><button class="tq" data-tr-quote="${i}" title="Add this line to my notes, with its time">Quote</button></p>`; };
+  const trLines = id => (transcriptOf(id)?.text || "").split("\n").filter(l => l.trim());
+  // Words from the current search that occur in the transcript, so the panel opens on them.
+  const searchTermsIn = id => {
+    const pq = parseQuery(S.ui.q || ""), said = (transcriptOf(id)?.text || "").toLowerCase();
+    return [...pq.terms, ...pq.fields.filter(f => ["said", "transcript"].includes(f.field)).map(f => f.val)].filter(t => said.includes(t));
+  };
+  const transcriptSection = it => {
+    const tr = transcriptOf(it.id);
+    if (!tr && !TR_TYPES.has(it.type)) return `<p class="tr-other"><button class="link-btn" data-tr-add>Add a transcript or full text</button></p>`;
+    const mine = !!LOCAL_TR[it.id], n = tr ? trLines(it.id).length : 0;
+    return `<section class="dsec tr"><h3>Transcript${tr ? ` <span class="tr-meta">${n.toLocaleString()} line${n === 1 ? "" : "s"} · ${esc(tr.file || "pasted")}${mine ? " · in this browser until you export" : ""}</span>` : ""}</h3>
+      ${tr ? `<label class="tr-find"><span class="vh">Find in transcript</span>${icon("search")}<input type="search" id="tr-q" placeholder="Find in transcript" autocomplete="off" value="${esc(searchTermsIn(it.id).join(" "))}"><span class="tr-count" id="tr-count" aria-live="polite"></span></label>
+        <div class="tr-lines" id="tr-lines" tabindex="0" aria-label="Transcript"></div>`
+        : `<p class="tr-empty">No transcript yet. Add a text or Word file, subtitles (.srt or .vtt), or paste the text. Lines that start with a time, like [00:12:34], keep it, and quoted lines carry it into your notes.</p>`}
+      <div class="btn-row">
+        <button class="btn sm" data-tr-add>${icon("plus")}${tr ? "Replace with a file" : "Add a file"}</button>
+        <button class="btn sm" data-tr-paste>${icon("edit")}${tr ? "Edit text" : "Paste text"}</button>
+        ${tr ? `<button class="btn sm" data-tr-download>${icon("download")}Download</button>` : ""}
+        ${mine ? `<button class="btn sm" data-tr-remove>${PUB_TR[it.id] ? "Undo my changes" : "Remove"}</button>` : ""}
+      </div>
+      <div class="tr-edit" id="tr-edit" hidden>
+        <label class="vh" for="tr-text">Transcript text</label>
+        <textarea class="notes" id="tr-text" placeholder="Paste or type the transcript. One line per speaker turn; start a line with a time like [00:12:34] to keep it.">${esc(tr?.text || "")}</textarea>
+        <div class="btn-row"><button class="btn sm primary" data-tr-save>Save transcript</button><button class="btn sm" data-tr-cancel>Cancel</button></div>
+      </div>
+    </section>`;
+  };
+  // Shows the lines that contain every word typed (all lines when empty), with matches marked.
+  const filterTranscript = () => {
+    const box = $("#tr-lines"); if (!box || !drawerId) return;
+    const q = ($("#tr-q")?.value || "").toLowerCase().trim(), terms = q.split(/\s+/).filter(Boolean);
+    const lines = trLines(drawerId), shown = [];
+    lines.forEach((l, i) => { if (!terms.length || terms.every(t => l.toLowerCase().includes(t))) shown.push(trLine(l, i, terms)); });
+    box.innerHTML = shown.join("") || `<p class="tr-empty">No line contains “${esc(q)}”.</p>`;
+    $("#tr-count").textContent = terms.length ? `${shown.length} of ${lines.length} lines` : "";
+  };
+  const setTranscript = async (id, tr) => {
+    try { if (tr) await idb.put("tr:" + id, tr); else await idb.del("tr:" + id); }
+    catch { return toast("Couldn't save the transcript in this browser"); }
+    if (tr) LOCAL_TR[id] = tr; else delete LOCAL_TR[id];
+    touch(id); save(); rebuild(); refresh();
+    if (drawerId === id) openDrawer(id);
+  };
+  const addTranscriptFile = async (id, file) => {
+    try {
+      if (/\.(pdf|doc|pages|rtf|odt)$/i.test(file.name)) return toast("Save it as a .txt or .docx file first, or paste the text");
+      const text = parseTranscript(/\.docx$/i.test(file.name) ? await readDocx(file) : await file.text(), file.name);
+      if (!text) return toast("That file has no text in it");
+      if (transcriptOf(id) && !confirm(`Replace this record's transcript with ${file.name}?`)) return;
+      await setTranscript(id, { text, file: file.name, added: new Date().toISOString().slice(0, 10) });
+      toast("Transcript added");
+    } catch (e) { toast("Couldn't read that file: " + e.message); }
+  };
+  // A quoted line goes into My notes with the record's title and the time, ready to cite.
+  const quoteLine = i => {
+    const id = drawerId, line = trLines(id)[i]; if (!line) return;
+    const [ts, words] = splitLine(line);
+    const q = `“${words.trim()}” (transcript${ts ? `, ${ts}` : ""})`;
+    S.notes[id] = (S.notes[id] ? S.notes[id].replace(/\s+$/, "") + "\n" : "") + q;
+    touch(id); save(); rebuild();
+    const ta = $("#drawer-notes"); if (ta) ta.value = S.notes[id];
+    navigator.clipboard?.writeText(q).catch(() => {});
+    toast("Added to your notes and copied");
+  };
+
   // ---------- drawer ----------
   let drawerId = null, drawerReturn = null;
   const openDrawer = id => {
@@ -533,6 +666,8 @@
           </div>
         </section>
 
+        ${transcriptSection(it)}
+
         <section class="dsec"><h3><label for="drawer-notes">My notes</label> <span class="saved" id="notes-saved"></span></h3>
           <textarea class="notes" id="drawer-notes" placeholder="Why this matters, what to check, quotes, page numbers…">${esc(S.notes[id] || "")}</textarea>
         </section>
@@ -546,6 +681,7 @@
         </section>
       </div>`;
     $("#drawer").setAttribute("aria-labelledby", "drawer-title");
+    filterTranscript();
     const wasHidden = $("#drawer").hidden;
     $("#drawer").hidden = false; $("#scrim").hidden = false;
     if (wasHidden) { $("#drawer").scrollTop = 0; $("#drawer").focus({ preventScroll: true }); }
@@ -671,6 +807,7 @@
     if (img && img.startsWith("idb:")) idb.del(img.slice(4));
     if (BASE_IDS.has(id)) S.deleted[id] = true;
     delete S.items[id]; delete S.flags[id]; delete S.notes[id];
+    if (LOCAL_TR[id]) { delete LOCAL_TR[id]; idb.del("tr:" + id).catch(() => {}); }
     for (const l of S.lists) l.items = l.items.filter(x => x !== id);
     save(); dlg.close(); closeDrawer(); refresh(); toast("Deleted");
   };
@@ -1352,7 +1489,9 @@
       return o;
     });
     const header = `// Rug Research Database: exported ${new Date().toISOString().slice(0, 10)}. Replace data/items.js with this file and commit.\n`;
-    download("items.js", header + "window.RUG_ITEMS = " + JSON.stringify(items, null, 2) + ";\n", "text/javascript");
+    // Transcripts travel in the same file; merging moves them to data/transcripts.js.
+    const ids = new Set(items.map(o => o.id)), trs = Object.fromEntries(Object.entries({ ...PUB_TR, ...LOCAL_TR }).filter(([id]) => ids.has(id)));
+    download("items.js", header + "window.RUG_ITEMS = " + JSON.stringify(items, null, 2) + ";\n" + (Object.keys(trs).length ? "window.RUG_TRANSCRIPTS = " + JSON.stringify(trs, null, 1) + ";\n" : ""), "text/javascript");
   };
   const exportBackup = async () => {
     const images = await idb.all().catch(() => ({}));
@@ -1365,8 +1504,8 @@
       if (!confirm("Replace your current flags, notes, lists and edits with this backup?")) return;
       const { images = {}, ...rest } = data;
       S = Object.assign(blankState(), rest);
-      for (const [k, v] of Object.entries(images)) { await idb.put(k, v); imgCache[k] = v; }
-      save(); refresh(); toast("Backup restored");
+      for (const [k, v] of Object.entries(images)) { await idb.put(k, v); if (k.startsWith("tr:")) LOCAL_TR[k.slice(3)] = v; else imgCache[k] = v; }
+      save(); rebuild(); refresh(); toast("Backup restored");
     } catch (e) { alert("Couldn't restore: " + e.message); }
   };
 
@@ -1441,6 +1580,17 @@
       return;
     }
     const ed = e.target.closest("[data-edit]"); if (ed) return openEdit(ed.dataset.edit);
+    if (e.target.closest("[data-tr-add]")) { $("#tr-file").value = ""; return $("#tr-file").click(); }
+    const tq = e.target.closest("[data-tr-quote]"); if (tq) return quoteLine(+tq.dataset.trQuote);
+    if (e.target.closest("[data-tr-paste]")) { $("#tr-edit").hidden = false; return $("#tr-text").focus(); }
+    if (e.target.closest("[data-tr-cancel]")) { $("#tr-edit").hidden = true; return; }
+    if (e.target.closest("[data-tr-save]")) {
+      const text = parseTranscript($("#tr-text").value), prev = transcriptOf(drawerId);
+      if (!text) return toast("The transcript is empty");
+      return setTranscript(drawerId, { text, file: prev?.file && prev.text !== text ? prev.file + " (edited)" : prev?.file || "pasted", added: new Date().toISOString().slice(0, 10) }).then(() => toast("Transcript saved"));
+    }
+    if (e.target.closest("[data-tr-download]")) { const it = BY_ID[drawerId]; return download(`${drawerId}-transcript.txt`, `${it.title}\n${citation(it).replace(/\*/g, "")}\n\n${transcriptOf(drawerId).text}\n`, "text/plain"); }
+    if (e.target.closest("[data-tr-remove]") && confirm(PUB_TR[drawerId] ? "Undo your changes to this transcript?" : "Remove this transcript?")) return setTranscript(drawerId, null);
     const fi = e.target.closest("[data-find-image]"); if (fi) return openImageFinder(fi.dataset.findImage);
     const f = e.target.closest("[data-flag]"); if (f) return toggleFlag(drawerId, f.dataset.flag);
     const ul = e.target.closest("[data-unlist]"); if (ul) return toggleInList(drawerId, ul.dataset.unlist);
@@ -1460,7 +1610,8 @@
     touch(id); save(); rebuild();
     const m = $("#notes-saved"); if (m) m.textContent = "Saved";
   }, 400);
-  $("#drawer").addEventListener("input", e => { if (e.target.id === "drawer-notes") saveNotes(e.target.value); });
+  $("#drawer").addEventListener("input", e => { if (e.target.id === "drawer-notes") saveNotes(e.target.value); if (e.target.id === "tr-q") filterTranscript(); });
+  $("#tr-file").addEventListener("change", e => { const f = e.target.files[0]; if (f && drawerId) addTranscriptFile(drawerId, f); });
 
   $("#toggle-facets").onclick = e => { const open = $("#facets").classList.toggle("open"); e.currentTarget.setAttribute("aria-expanded", String(open)); };
 
@@ -1776,5 +1927,16 @@
   const viewFromHash = () => { const v = (location.hash || "").slice(1); return VIEWS.includes(v) ? v : "browse"; };
   window.addEventListener("hashchange", () => { if (viewFromHash() !== currentView) setView(viewFromHash()); });
   setView(viewFromHash());
-  idb.all().then(all => { Object.assign(imgCache, all); if (Object.keys(all).length) refresh(); }).catch(() => {});
+  idb.all().then(all => {
+    let changed = false;
+    for (const [k, v] of Object.entries(all)) {
+      if (!k.startsWith("tr:")) { imgCache[k] = v; changed = true; continue; }
+      const id = k.slice(3);
+      // Once a transcript is merged and published, this browser's copy is no longer needed.
+      if (PUB_TR[id] && PUB_TR[id].text === v.text) { idb.del(k).catch(() => {}); continue; }
+      LOCAL_TR[id] = v; changed = true;
+    }
+    if (Object.keys(LOCAL_TR).length) rebuild();
+    if (changed) refresh();
+  }).catch(() => {});
 })();

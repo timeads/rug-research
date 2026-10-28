@@ -97,7 +97,7 @@
           </div>
         </div>
       </div>
-      <p class="syntax">Try <button class="tip" data-q='"bed rug"'>"bed rug"</button> <button class="tip" data-q="year:1700-1850">year:1700-1850</button> <button class="tip" data-q="region:japan">region:japan</button> <button class="tip" data-q="conf:solid">conf:solid</button> <button class="tip" data-q="tag:&quot;to chase&quot;">tag:"to chase"</button> <button class="tip" data-q="inst:hagley">inst:hagley</button> <button class="tip" data-q="tufting gun">tufting gun</button></p>
+      <p class="syntax">Try <button class="tip" data-q='"bed rug"'>"bed rug"</button> <button class="tip" data-q="year:1700-1850">year:1700-1850</button> <button class="tip" data-q="region:japan">region:japan</button> <button class="tip" data-q="conf:solid">conf:solid</button> <button class="tip" data-q="tag:&quot;to chase&quot;">tag:"to chase"</button> <button class="tip" data-q="inst:hagley">inst:hagley</button> <button class="tip" data-q="has:transcript">has:transcript</button> <button class="tip" data-q="tufting gun">tufting gun</button></p>
 
       <div class="browse">
         <aside class="facets" id="facets" aria-label="Filters"></aside>
@@ -346,12 +346,14 @@
   </dialog>
 
   <input type="file" id="restore-file" accept="application/json" hidden>
+  <input type="file" id="tr-file" accept=".txt,.md,.srt,.vtt,.docx,text/plain" hidden>
   <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
 
   <script src="data/items.js"></script>
   <script src="data/sources.js"></script>
   <script src="data/chapters.js"></script>
   <script src="data/eras.js"></script>
+  <script src="data/transcripts.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>

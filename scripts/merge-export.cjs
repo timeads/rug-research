@@ -10,6 +10,7 @@
 //   - not published at all                                 → new: added, unless it looks like a
 //     duplicate (same page address, same catalogue number at the same place, or the same title)
 //   - published but missing from the export                → reported, never deleted
+// Transcripts in the export (window.RUG_TRANSCRIPTS) that are new or changed go to data/transcripts.js.
 // Merged records get reviewedAt (see js/app.js: a browser's own copy older than that is dropped).
 // Pictures borrowed from a related record (credit "Image from related record…") are ignored, as
 // older exports wrongly saved them as records' own.
@@ -21,7 +22,8 @@ const fs = require("fs"), vm = require("vm"), path = require("path"), { execSync
 const ROOT = path.join(__dirname, "..");
 const [file, flag] = process.argv.slice(2);
 if (!file) { console.error("Usage: node scripts/merge-export.cjs export.js [--write]"); process.exit(1); }
-const load = src => { const c = { window: {} }; vm.runInNewContext(src, c); return c.window.RUG_ITEMS || []; };
+const loadW = src => { const c = { window: {} }; vm.runInNewContext(src, c); return c.window; };
+const load = src => loadW(src).RUG_ITEMS || [];
 
 const empty = v => v === "" || v == null || (Array.isArray(v) && !v.length);
 const tidy = o => {
@@ -36,7 +38,7 @@ const NOW = new Date().toISOString();
 const urlKey = u => String(u || "").toLowerCase().replace(/^https?:\/\/(www\.)?/, "").replace(/[/#?]+$/, "");
 const titleKey = t => String(t || "").toLowerCase().normalize("NFKD").replace(/[^\p{L}\p{N}]+/gu, " ").trim();
 
-const exp = load(fs.readFileSync(file, "utf8"));
+const expW = loadW(fs.readFileSync(file, "utf8")), exp = expW.RUG_ITEMS || [];
 const curSrc = fs.readFileSync(path.join(ROOT, "data/items.js"), "utf8");
 const cur = load(curSrc);
 const CUR = Object.fromEntries(cur.map(x => [x.id, x]));
@@ -49,7 +51,7 @@ for (const line of execSync("git log --format=%h%x20%ad --date=format:%Y-%m-%d\\
   for (const x of items) { (hist[x.id] = hist[x.id] || new Map()).set(key(x), tidy(x)); firstSeen[x.id] = d.join(" "); } // log runs newest first, so the last date seen is the first publication
 }
 
-const report = { unchanged: [], stale: [], edited: [], conflicts: [], added: [], duplicates: [], missing: [] };
+const report = { unchanged: [], stale: [], edited: [], conflicts: [], added: [], duplicates: [], missing: [], transcripts: [] };
 const out = cur.map(x => ({ ...x }));
 const OUT = Object.fromEntries(out.map(x => [x.id, x]));
 
@@ -88,13 +90,22 @@ for (const e of exp) {
     report.added.push(`${id}: ${e.title}`);
   }
 }
+// Transcripts: new or changed ones are taken; a transcript for a record that isn't published is reported.
+const TRF = path.join(ROOT, "data/transcripts.js");
+const trSrc = fs.readFileSync(TRF, "utf8"), pubTr = loadW(trSrc).RUG_TRANSCRIPTS || {}, outTr = { ...pubTr };
+for (const [id, t] of Object.entries(expW.RUG_TRANSCRIPTS || {})) {
+  if (!t || typeof t.text !== "string" || !t.text.trim() || (pubTr[id] && pubTr[id].text === t.text)) continue;
+  if (!OUT[id]) { report.transcripts.push(`${id}: not added (no published record with this id)`); continue; }
+  outTr[id] = { text: t.text, file: t.file || "", added: t.added || "" };
+  report.transcripts.push(`${id}: ${pubTr[id] ? "updated" : "added"} (${t.text.split("\n").filter(l => l.trim()).length} lines${t.file ? `, from ${t.file}` : ""})`);
+}
 const EXP = new Set(exp.map(x => x.id));
 for (const x of cur) if (!EXP.has(x.id)) report.missing.push(`${x.id}: ${x.title} (first published ${firstSeen[x.id] || "now"}; if that's after the export was made, it simply wasn't there yet)`);
 
 const lines = [`# Merge report`, ``, `Export: ${path.basename(file)} (${exp.length} records) into data/items.js (${cur.length} records). ${flag === "--write" ? "Written." : "Not written (dry run)."}`, ``,
   `- Unchanged: ${report.unchanged.length}`, `- Old copies ignored: ${report.stale.length}`, `- Edited and applied: ${report.edited.length}`, `- Conflicts kept as published: ${report.conflicts.length}`,
-  `- New and added: ${report.added.length}`, `- Possible duplicates not added: ${report.duplicates.length}`, `- Published but missing from the export (not deleted): ${report.missing.length}`, ``];
-for (const [k, title] of [["edited", "Edited"], ["conflicts", "Conflicts"], ["added", "Added"], ["duplicates", "Possible duplicates"], ["missing", "Missing from the export"]])
+  `- New and added: ${report.added.length}`, `- Possible duplicates not added: ${report.duplicates.length}`, `- Published but missing from the export (not deleted): ${report.missing.length}`, `- Transcripts added or updated: ${report.transcripts.filter(x => !x.includes("not added")).length}`, ``];
+for (const [k, title] of [["edited", "Edited"], ["conflicts", "Conflicts"], ["added", "Added"], ["duplicates", "Possible duplicates"], ["transcripts", "Transcripts"], ["missing", "Missing from the export"]])
   if (report[k].length) lines.push(`## ${title}`, ``, ...report[k].map(x => `- ${x}`), ``);
 fs.writeFileSync(path.join(ROOT, "research/merge-report.md"), lines.join("\n"));
 console.log(lines.join("\n"));
@@ -102,4 +113,5 @@ console.log(lines.join("\n"));
 if (flag === "--write") {
   const head = curSrc.slice(0, curSrc.indexOf("window.RUG_ITEMS = "));
   fs.writeFileSync(path.join(ROOT, "data/items.js"), head + "window.RUG_ITEMS = " + JSON.stringify(out, null, 2) + ";\n");
+  if (report.transcripts.length) fs.writeFileSync(TRF, trSrc.slice(0, trSrc.indexOf("window.RUG_TRANSCRIPTS = ")) + "window.RUG_TRANSCRIPTS = " + JSON.stringify(outTr, null, 1) + ";\n");
 }
