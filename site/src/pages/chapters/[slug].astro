@@ -19,7 +19,7 @@ const hero = record(d.hero.record);
 const accent = cloth(d.theme);
 const words = (entry.body || "").replace(/<[^>]+>|\[@[^\]]+\]|^---[\s\S]*?---/g, " ").split(/\s+/).filter(Boolean).length;
 const cited = [...new Set(notes.flatMap(n => n.refs.map(r => r.id)))].map(record);
-const holders = Object.entries(cited.reduce((o, it) => { const k = it.institution || (it.type === "patent" ? "US Patent Office" : it.type === "finding" ? "Research notes" : "Published sources"); o[k] = (o[k] || 0) + 1; return o; }, {})).sort((a, b) => b[1] - a[1]);
+const holders = Object.entries(cited.reduce((o, it) => { const k = it.type === "patent" ? "US patents" : it.institution || (it.type === "finding" ? "Research notes" : "Published sources"); o[k] = (o[k] || 0) + 1; return o; }, {})).sort((a, b) => b[1] - a[1]);
 const most = holders[0]?.[1] || 1;
 ---
 <Base title={`${d.title} · A History of Tufting`} description={d.dek} accent={accent} current="chapters" progress>

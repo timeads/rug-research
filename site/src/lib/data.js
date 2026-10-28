@@ -43,9 +43,9 @@ const SITE_ROOT = "/rug-research/";
 export function imageUrl(src, width = 1200) {
   if (!src) return "";
   if (!/^https?:/.test(src)) return SITE_ROOT + src.replace(/^\/+/, "");
-  // Hagley's image server reliably answers the size the research tool uses (800 wide) and large
-  // sizes, but not every size in between, so smaller pictures keep the stored address.
-  if (/digital\.hagley\.org/.test(src) && width < 1800) return src;
+  // Pictures keep the address stored in the research database (the size the research tool shows),
+  // except that Hagley's, which reliably answers large sizes, are asked for full-width pictures.
+  if (!/digital\.hagley\.org/.test(src) || width < 1800) return src;
   return src.replace(/\/full\/(?:full|max|!?\d*,\d*)\/0\/default\.jpg$/, `/full/${width},/0/default.jpg`);
 }
 // Who may see a picture published: "own" and "public-domain" are clear; anything else is pending.
@@ -70,7 +70,7 @@ export function citation(it, { link = true, loc = "" } = {}) {
     case "book": s = `${who}<em>${esc(curly(it.title))}</em>. ${join(esc(it.publisher || it.place), date)}.`; break;
     case "article": s = `${who}“${esc(inner(it.title))}.” ${join(it.publisher ? "<em>" + esc(it.publisher) + "</em>" : "", date)}.`; break;
     case "patent": s = `${esc(curly(it.title))}, ${date}${it.institution ? `; assigned to ${esc(it.institution.replace(/\s*\(assignee\)/i, ""))}` : ""}.`; break;
-    case "finding": s = `“${esc(it.title.replace(/^(REFUTED|UNVERIFIED|CORRECTION)\s*:\s*/i, ""))}.” Research note${it.collection ? ", " + esc(it.collection) : ""}.`; break;
+    case "finding": s = `“${esc(inner(it.title).replace(/^(REFUTED|UNVERIFIED|CORRECTION)\s*:\s*/i, ""))}.” Research note${it.collection ? ", " + esc(it.collection) : ""}.`; break;
     case "object": case "tool": case "yarn": s = `${esc(it.creator || "Unknown maker")}. <em>${esc(curly(it.title))}</em>, ${date}. ${join(esc(it.institution), esc(it.identifier))}.`; break;
     default: s = `${who}“${esc(inner(it.title))},” ${date}. ${join(esc(it.identifier), esc(it.collection), esc(it.institution))}.`;
   }
