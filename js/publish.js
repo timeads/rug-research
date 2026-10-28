@@ -29,7 +29,7 @@
 
   /**
    * local: { items: {id: record}, base: {id: record}, deleted: {id: true}, transcripts: {id: {text, file, added}},
-   *          photos: {id: dataUrl} (records whose picture was uploaded in this browser) }
+   *          photos: {id: {"idb:key": dataUrl}} (photos uploaded in this browser, main picture and gallery) }
    * published: { items: [...], removed: {id: iso}, transcripts: {id: {...}} } (as on GitHub now)
    * loaded: {id: record}: the published records as this page loaded them, the fallback when an edit has no
    *          snapshot of the record it started from.
@@ -46,6 +46,9 @@
     for (const [id, raw] of Object.entries(local.items || {})) {
       if (local.deleted && local.deleted[id]) continue;
       const mine = clean(raw), theirs = byId[id];
+      // A photo still only in this browser has to be at hand to publish; never publish a reference to it.
+      const missing = uploadedIn(mine).filter(src => !photoMap(mine, local.photos && local.photos[id])[src]);
+      if (missing.length) { changes.push({ id, title: mine.title || id, kind: theirs ? "edited" : "added", fields: [], conflicts: [], note: "a photo isn't loaded in this browser yet: reload the page and try again", skipped: true, blocked: true }); continue; }
       const snap = local.base && local.base[id];
       const start = snap || (loaded && loaded[id]) || theirs;
       const title = mine.title || (theirs && theirs.title) || id;
@@ -58,7 +61,7 @@
         if (dup) { changes.push({ id, title, kind: "duplicate", note: `looks like published ${dup.id}, “${dup.title}”` }); continue; }
         if (skip.has(id)) { changes.push({ id, title, kind: "added", skipped: true }); continue; }
         const rec = { ...mine, id, reviewedAt: now };
-        if (local.photos && local.photos[id]) photos.push(photoFor(rec, local.photos[id]));
+        if (uploadedIn(rec).length) photos.push(...photosFor(rec, local.photos[id]));
         items.push(rec); byId[id] = rec;
         changes.push({ id, title, kind: "added" });
         continue;
@@ -78,14 +81,14 @@
         if (!same(t, b) && !mineWins.has(`${id}.${k}`)) { conflicts.push(k); continue; }
         fields.push(k);
       }
-      const hasPhoto = !!(local.photos && local.photos[id]);
+      const hasPhoto = uploadedIn(mine).length > 0;
       if (!fields.length && !conflicts.length && !hasPhoto) continue; // nothing to publish for this record
       const change = { id, title, kind: "edited", fields, conflicts, legacy: !snap };
       changes.push(change);
       if (skip.has(id)) { change.skipped = true; continue; }
       const rec = byId[id];
       for (const k of fields) { if (empty(mine[k])) delete rec[k]; else rec[k] = mine[k]; }
-      if (hasPhoto) photos.push(photoFor(rec, local.photos[id]));
+      if (hasPhoto) photos.push(...photosFor(rec, local.photos[id]));
       if (!conflicts.length) rec.reviewedAt = now; // left unstamped, your copy stays in this browser
     }
 
@@ -110,12 +113,21 @@
     return { items, removed, transcripts, photos, changes };
   }
 
-  // A photo uploaded in this browser becomes a file in the repository, and the record points at it.
-  function photoFor(rec, dataUrl) {
-    const path = `images/own/uploads/${rec.id}-${Date.now().toString(36)}.jpg`;
-    rec.image = path;
+  // Photos uploaded in this browser ("idb:" addresses) become files in the repository, and the record's
+  // main picture and gallery point at them.
+  const uploadedIn = rec => [rec.image, ...(Array.isArray(rec.images) ? rec.images.map(g => g && g.src) : [])].filter(s => String(s || "").startsWith("idb:"));
+  const photoMap = (rec, photos) => (typeof photos === "string" ? { [rec.image]: photos } : photos || {}); // older pages sent the main picture alone
+  function photosFor(rec, photos) {
+    const map = photoMap(rec, photos), paths = {}, out = [], stamp = Date.now().toString(36);
+    for (const src of [...new Set(uploadedIn(rec))]) {
+      const path = `images/own/uploads/${rec.id}-${stamp}${out.length ? "-" + (out.length + 1) : ""}.jpg`;
+      paths[src] = path;
+      out.push({ id: rec.id, path, base64: String(map[src]).replace(/^data:[^,]*,/, "") });
+    }
+    if (paths[rec.image]) rec.image = paths[rec.image];
+    if (Array.isArray(rec.images)) rec.images = rec.images.map(g => g && paths[g.src] ? { ...g, src: paths[g.src] } : g);
     if (!rec.rights) rec.rights = "own";
-    return { id: rec.id, path, base64: String(dataUrl).replace(/^data:[^,]*,/, "") };
+    return out;
   }
 
   // The database files in the form the repository keeps them.

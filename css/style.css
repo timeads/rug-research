@@ -390,6 +390,17 @@ dialog::backdrop { background: rgb(12 15 13 / .5); }
 .form-grid textarea { height: auto; padding: 8px 10px; line-height: 1.5; }
 .form-grid input:focus, .form-grid textarea:focus, .form-grid select:focus { outline: none; border-color: var(--focus); box-shadow: 0 0 0 3px color-mix(in srgb, var(--focus) 20%, transparent); }
 .form-grid input:user-invalid { border-color: var(--danger); }
+.photos-field { display: flex; flex-direction: column; gap: 8px; }
+.photos-label { font-size: var(--t-sm); font-weight: 600; }
+.photo-strip { display: flex; flex-wrap: wrap; gap: 10px; }
+.pthumb { margin: 0; width: 112px; display: flex; flex-direction: column; gap: 4px; }
+.pthumb-img { display: block; width: 112px; height: 84px; border-radius: var(--r); background: var(--surface-2); overflow: hidden; outline: 1px solid var(--line); }
+.pthumb.main .pthumb-img { outline: 2px solid var(--primary); }
+.pthumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.pthumb figcaption { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2px 6px; font-size: var(--t-xs); color: var(--ink-2); }
+.pthumb figcaption b { font-weight: 650; color: var(--ink); }
+.pstrip-empty { margin: 0; font-size: var(--t-sm); color: var(--ink-3); }
+.pthumb .link-btn { font-size: var(--t-xs); padding: 2px 0; }
 .dialog-foot { display: flex; gap: 8px; align-items: center; padding: 14px 20px; border-top: 1px solid var(--line); }
 
 /* ---------- publish ---------- */

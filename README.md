@@ -41,7 +41,7 @@ Records show the institution's own photograph where one exists. The **Fetch imag
 Patent records get their actual drawing sheets from the **Patent drawings** Action (`scripts/patent-drawings.mjs`), stored in `images/patents/`. US patents come from the USPTO and are public domain. Patents from other offices (DE, EP, GB, CN, CH, FR, JP and more; use the Google Patents number, e.g. `DE202015001234U1`) come from the PDF Google Patents mirrors. Those are credited to the issuing office and not marked public domain, so check that office's terms before publishing them beyond the database.
 
 ### Adding your own things
-Click **+ Add item**. For yarn samples, tools and your own photos, upload a picture straight from your phone or computer. Photos are resized and stored in the browser.
+Click **+ Add item**. For yarn samples, tools and your own photos, add pictures straight from your phone or computer: choose several at once with **Add photos**, and add more later the same way. The first becomes the main picture; the rest form a strip under it (on the record page of the public site too). Any picture can be made the main one or removed. Photos are resized and kept in the browser until you publish.
 
 ## Writing the history of tufted rugs
 

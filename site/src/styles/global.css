@@ -289,6 +289,10 @@ h1.ch-title { margin: 1.75rem 0 0; font: 680 clamp(2.5rem, 6vw, 4.5rem)/1 var(--
 .rec .plate { margin: 0; background: var(--sheet-2); align-self: start; position: sticky; top: 5rem; }
 .rec .plate img { width: 100%; }
 .rec .plate figcaption { padding: .6rem .75rem; font: 400 .875rem/1.45 var(--frame); color: var(--ink-2); background: var(--ground); }
+.rec-gallery { list-style: none; margin: 0; padding: .6rem 0 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(4.5rem, 1fr)); gap: .5rem; background: var(--ground); }
+.rec-gallery a { display: block; aspect-ratio: 4 / 3; background: var(--sheet-2); outline: 1px solid var(--rule); outline-offset: -1px; }
+.rec-gallery a[aria-current] { outline: 2px solid var(--ink); outline-offset: -2px; }
+.rec-gallery img { width: 100%; height: 100%; object-fit: cover; }
 .rec h1 { margin: 0 0 .9rem; font: 660 clamp(1.75rem, 3.5vw, 2.5rem)/1.12 var(--frame); font-stretch: 90%; letter-spacing: -.015em; text-wrap: balance; }
 .rec .kind { margin: 0 0 1.25rem; font: 500 .9375rem/1.4 var(--frame); color: var(--ink-3); }
 .rec h2 { margin: 2rem 0 .6rem; font: 650 1rem/1.3 var(--frame); }

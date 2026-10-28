@@ -300,7 +300,11 @@
             <option value="public-domain">Public domain</option>
           </select>
         </label>
-        <label class="span2 file">Or upload a photo <input name="imageFile" type="file" accept="image/*"><small>For yarn samples, tools and your own photographs. Stored in this browser until you export.</small></label>
+        <div class="span2 photos-field">
+          <span class="photos-label">Pictures</span>
+          <div class="photo-strip" id="photo-strip"></div>
+          <label class="file">Add photos <input name="imageFile" type="file" accept="image/*" multiple><small>Choose one or several. The first becomes the main picture if there isn't one; the rest join the strip under it. Kept in this browser until you publish.</small></label>
+        </div>
         <label class="span2">Citation <textarea name="citation" rows="2"></textarea><small>Leave blank to generate one.</small></label>
       </div>
       <datalist id="dl-inst"></datalist>

@@ -632,7 +632,7 @@
     const q = encodeURIComponent([it.title, it.creator].filter(Boolean).join(" "));
     const lists = S.lists.filter(l => l.items.includes(id));
     // Extra photos (e.g. a tool, its box and its instructions) show as a strip under the main image.
-    const gallery = (Array.isArray(it.images) ? it.images : []).filter(g => g && safeUrl(g.src));
+    const gallery = (Array.isArray(it.images) ? it.images : []).filter(g => g && photoSrc(g.src));
     const credit = it.imageCredit || (src && !src.startsWith("data:") && !src.startsWith("blob:") && it.institution) || "";
     $("#drawer").innerHTML = `
       <div class="drawer-bar">
@@ -642,7 +642,7 @@
         <button class="icon-btn" data-close aria-label="Close details">${icon("x")}</button>
       </div>
       ${src ? `<div class="drawer-plate"><a href="${esc(src)}" target="_blank" rel="noopener" aria-label="Open full image">${plateHTML(it, it.title)}</a></div>` : it.type === "finding" ? "" : `<div class="drawer-plate"><div class="plate-board">${boardPlate(it)}</div></div>`}
-      ${gallery.length > 1 ? `<div class="gallery" role="group" aria-label="More photos">${gallery.map((g, i) => `<button class="gthumb" data-gsrc="${esc(g.src)}" data-gcap="${esc(g.caption || "")}" aria-label="${esc(g.caption || `Photo ${i + 1}`)}" aria-pressed="${i === 0}"><img src="${esc(g.src)}" alt="" loading="lazy" referrerpolicy="no-referrer"></button>`).join("")}</div>` : ""}
+      ${gallery.length > 1 ? `<div class="gallery" role="group" aria-label="More photos">${gallery.map((g, i) => `<button class="gthumb" data-gsrc="${esc(photoSrc(g.src))}" data-gcap="${esc(g.caption || "")}" aria-label="${esc(g.caption || `Photo ${i + 1}`)}" aria-pressed="${i === 0}"><img src="${esc(photoSrc(g.src))}" alt="" loading="lazy" referrerpolicy="no-referrer"></button>`).join("")}</div>` : ""}
       ${src && it.rights && !["own", "public-domain"].includes(it.rights) ? `<p class="credit rights rights-${esc(it.rights)}">${esc(RIGHTS[it.rights] || it.rights)}${it.rights === "not-requested" ? ": shown here for research; ask before publishing" : ""}</p>` : ""}
       ${src && it.imageRole === "illustration" ? `<p class="credit illus">Illustration, not the item described: ${it.imagePage && safeUrl(it.imagePage) ? `<a href="${esc(safeUrl(it.imagePage))}" target="_blank" rel="noopener">${esc(it.imageCaption || "a comparable item")}</a>` : esc(it.imageCaption || "a comparable item")}${credit ? ` · Image: ${esc(credit)}` : ""}</p>`
         : src && (credit || gallery[0]?.caption) ? `<p class="credit" id="gallery-caption">${esc([gallery[0]?.caption, credit && `Image: ${credit}`].filter(Boolean).join(" · "))}</p>` : ""}
@@ -760,6 +760,8 @@
     }
     form.elements.imageFile.value = "";
     form.elements.imagesText.value = (Array.isArray(it.images) ? it.images : []).filter(g => g && g.src && g.src !== it.image).map(g => g.src + (g.caption ? " | " + g.caption : "")).join("\n");
+    photoCaps = Object.fromEntries((Array.isArray(it.images) ? it.images : []).filter(g => g && g.src).map(g => [g.src, g.caption || ""]));
+    addedPhotos = []; savedEdit = false;
     $("#quick-add").hidden = !!id; $("#quick-text").value = preset._drop || ""; $("#quick-status").textContent = ""; $("#quick-kind").value = "auto";
     if (it.image && it.image.startsWith("idb:")) form.elements.image.value = it.image;
     if (it._borrowed) { form.elements.image.value = ""; if (form.elements.imageCredit) form.elements.imageCredit.value = ""; } // a related record's image isn't this record's own
@@ -768,8 +770,66 @@
     $("#dl-region").innerHTML = [...new Set(ITEMS.map(x => x.region).filter(Boolean))].map(v => `<option value="${esc(v)}">`).join("");
     $("#dl-themes").innerHTML = [...new Set([...DEFAULT_THEMES, ...ITEMS.flatMap(x => x.themes)])].map(v => `<option value="${esc(v)}">`).join("");
     dlg.showModal();
+    renderPhotoStrip();
     if (preset._drop || preset._files) quickFill(preset._files || []);
   };
+  // ---------- photos in the edit form ----------
+  // The main picture (Image link) and the gallery (More images) as one strip of thumbnails. Photos chosen
+  // with "Add photos" are added straight away (the first becomes the main picture if there is none); any
+  // photo can be made the main picture or removed. Uploaded photos are kept in this browser ("idb:" links)
+  // until published.
+  let photoCaps = {}, addedPhotos = [], savedEdit = false;
+  const uploadedSrcs = r => [r.image, ...(Array.isArray(r.images) ? r.images.map(g => g && g.src) : [])].filter(x => String(x || "").startsWith("idb:"));
+  const photoSrc = x => String(x || "").startsWith("idb:") ? imgCache[String(x).slice(4)] || "" : safeUrl(x);
+  const parseMore = text => String(text || "").split("\n").map(l => l.trim()).filter(Boolean)
+    .map(l => { const [src, ...c] = l.split("|"); return { src: src.trim(), caption: c.join("|").trim() }; })
+    .filter(g => safeUrl(g.src) || g.src.startsWith("idb:"));
+  const formPhotos = () => {
+    const main = form.elements.image.value.trim();
+    return [...(main ? [{ src: main, caption: photoCaps[main] || "" }] : []), ...parseMore(form.elements.imagesText.value).filter(g => g.src !== main)];
+  };
+  const setFormPhotos = list => {
+    for (const g of list) photoCaps[g.src] = g.caption || "";
+    form.elements.image.value = list[0] ? list[0].src : "";
+    form.elements.imagesText.value = list.slice(1).map(g => g.src + (g.caption ? " | " + g.caption : "")).join("\n");
+    renderPhotoStrip();
+  };
+  const renderPhotoStrip = () => {
+    const list = formPhotos();
+    $("#photo-strip").innerHTML = list.length > 0 ? list.map((g, i) => `<figure class="pthumb${i ? "" : " main"}">
+      <span class="pthumb-img">${photoSrc(g.src) ? `<img src="${esc(photoSrc(g.src))}" alt="" referrerpolicy="no-referrer">` : ""}</span>
+      <figcaption>${i ? `<button type="button" class="link-btn" data-pmain="${i}">Make main</button>` : "<b>Main</b>"}<button type="button" class="link-btn" data-pdel="${i}">Remove</button></figcaption>
+    </figure>`).join("") : `<p class="pstrip-empty">No pictures yet.</p>`;
+  };
+  $("#photo-strip").addEventListener("click", e => {
+    const list = formPhotos(), m = e.target.closest("[data-pmain]"), d = e.target.closest("[data-pdel]");
+    if (m) { const [g] = list.splice(+m.dataset.pmain, 1); list.unshift(g); setFormPhotos(list); }
+    if (d) { list.splice(+d.dataset.pdel, 1); setFormPhotos(list); }
+  });
+  form.elements.image.addEventListener("input", debounce(renderPhotoStrip, 300));
+  form.elements.imagesText.addEventListener("input", debounce(renderPhotoStrip, 300));
+  form.elements.imageFile.addEventListener("change", async () => {
+    const files = [...form.elements.imageFile.files]; if (!files.length) return;
+    const list = formPhotos(); let added = 0;
+    for (const file of files) {
+      try {
+        const data = await resizeImage(file);
+        const key = "img-" + (editingId || "new") + "-" + Date.now().toString(36) + Math.random().toString(36).slice(2, 5);
+        await idb.put(key, data); imgCache[key] = data; addedPhotos.push("idb:" + key);
+        list.push({ src: "idb:" + key, caption: "" }); added++;
+      } catch (err) { console.error(err); toast(`Couldn't read ${file.name}.`); }
+    }
+    form.elements.imageFile.value = "";
+    if (added && form.elements.rights && !form.elements.rights.value) form.elements.rights.value = "own";
+    setFormPhotos(list);
+    if (added) toast(`${added} photo${added === 1 ? "" : "s"} added. Save to keep ${added === 1 ? "it" : "them"}.`);
+  });
+  // Photos added and then not saved (the form was cancelled) are removed again.
+  dlg.addEventListener("close", () => {
+    if (savedEdit) return;
+    for (const src of addedPhotos) { idb.del(src.slice(4)); delete imgCache[src.slice(4)]; }
+    addedPhotos = [];
+  });
   form.addEventListener("submit", async e => {
     e.preventDefault();
     const fd = new FormData(form);
@@ -780,24 +840,17 @@
     const rec = { id };
     for (const [k, v] of Object.entries(prev || {})) if (!k.startsWith("_") && !shown.has(k) && k !== "images") rec[k] = v;
     for (const [k, v] of fd.entries()) if (k !== "imageFile" && k !== "imagesText") rec[k] = typeof v === "string" ? v.trim() : v;
-    const more = String(fd.get("imagesText") || "").split("\n").map(l => l.trim()).filter(Boolean).map(l => { const [src, ...c] = l.split("|"); return { src: src.trim(), caption: c.join("|").trim() }; }).filter(g => safeUrl(g.src));
+    const more = parseMore(fd.get("imagesText"));
     if (more.length && !rec.image) rec.image = more.shift().src;
     if (rec.image !== prev.image) { delete rec.imageRole; delete rec.imageCaption; } // a new image by hand isn't the picked illustration
-    if (more.length) rec.images = [{ src: rec.image, caption: "" }, ...more].map(g => g.caption ? g : { src: g.src });
+    if (more.length) rec.images = [{ src: rec.image, caption: photoCaps[rec.image] || "" }, ...more].map(g => g.caption ? g : { src: g.src });
     for (const k of ["materials", "techniques", "themes", "tags"]) rec[k] = arr(rec[k]);
     for (const k of ["dateStart", "dateEnd"]) rec[k] = rec[k] === "" ? null : Number(rec[k]);
     if (rec.dateStart == null && rec.date) { const m = String(rec.date).match(/\b(1[0-9]{3}|20[0-9]{2})\b/g); if (m) { rec.dateStart = +m[0]; if (m[1]) rec.dateEnd = +m[1]; } }
-    const file = form.elements.imageFile.files[0];
-    if (file) {
-      try {
-        const data = await resizeImage(file);
-        const key = "img-" + id + "-" + Date.now().toString(36);
-        await idb.put(key, data);
-        imgCache[key] = data;
-        if (prev.image && prev.image.startsWith("idb:")) { idb.del(prev.image.slice(4)); delete imgCache[prev.image.slice(4)]; }
-        rec.image = "idb:" + key;
-      } catch (err) { console.error(err); toast("Couldn't read that image file."); }
-    }
+    // Uploaded photos this record no longer uses are removed from the browser's store.
+    const kept = new Set(uploadedSrcs(rec));
+    for (const src of uploadedSrcs(prev || {})) if (!kept.has(src)) { idb.del(src.slice(4)); delete imgCache[src.slice(4)]; }
+    savedEdit = true;
     for (const k of Object.keys(rec)) if (rec[k] === "" || (Array.isArray(rec[k]) && !rec[k].length)) delete rec[k];
     rec.id = id;
     snapBase(id); S.items[id] = rec; touch(id); save();
@@ -809,8 +862,7 @@
   $("#btn-delete-item").onclick = () => {
     if (!editingId || !confirm("Delete this item from your database?")) return;
     const id = editingId;
-    const img = BY_ID[id]?.image;
-    if (img && img.startsWith("idb:")) idb.del(img.slice(4));
+    for (const src of uploadedSrcs(BY_ID[id] || {})) idb.del(src.slice(4));
     if (BASE_IDS.has(id)) S.deleted[id] = true;
     delete S.items[id]; delete S.base[id]; delete S.flags[id]; delete S.notes[id];
     if (LOCAL_TR[id]) { delete LOCAL_TR[id]; idb.del("tr:" + id).catch(() => {}); }
@@ -1507,6 +1559,7 @@
       const o = clean(it);
       if (it._borrowed) { delete o.image; delete o.imageCredit; } // a related record's picture, shown but not this record's own
       if (o.image && o.image.startsWith("idb:")) o.image = imgCache[o.image.slice(4)] || ""; // embed uploaded photos
+      if (Array.isArray(o.images)) o.images = o.images.map(g => g && String(g.src).startsWith("idb:") ? { ...g, src: imgCache[g.src.slice(4)] || "" } : g).filter(g => g && g.src);
       return o;
     });
     const header = `// Rug Research Database: exported ${new Date().toISOString().slice(0, 10)}. Replace data/items.js with this file and commit.\n`;
@@ -1758,7 +1811,7 @@
   const PUBLISHED_DELETIONS = new Set(); // published this visit; the page still holds the old copy until reloaded
   const localChanges = () => ({
     items: S.items, base: S.base || {}, deleted: Object.fromEntries(Object.entries(S.deleted).filter(([id]) => !PUBLISHED_DELETIONS.has(id))), transcripts: LOCAL_TR,
-    photos: Object.fromEntries(Object.entries(S.items).map(([id, x]) => [id, String(x.image || "").startsWith("idb:") ? imgCache[x.image.slice(4)] : null]).filter(([, d]) => d))
+    photos: Object.fromEntries(Object.entries(S.items).map(([id, x]) => [id, Object.fromEntries(uploadedSrcs(x).filter(src => imgCache[src.slice(4)]).map(src => [src, imgCache[src.slice(4)]]))]).filter(([, m]) => Object.keys(m).length))
   });
   // What would be published against the database as this page loaded it: the count on the button.
   function publishCount() {
@@ -1855,7 +1908,7 @@
         if (c.kind === "deleted" && !c.skipped) PUBLISHED_DELETIONS.add(c.id);
         if (c.skipped || !["edited", "added"].includes(c.kind) || !out[c.id] || !S.items[c.id]) continue;
         for (const k of c.conflicts || []) if (!mineSet.has(`${c.id}.${k}`)) { if (out[c.id][k] == null) delete S.items[c.id][k]; else S.items[c.id][k] = out[c.id][k]; }
-        if (String(S.items[c.id].image || "").startsWith("idb:") && out[c.id].image && !out[c.id].image.startsWith("idb:")) S.items[c.id].image = out[c.id].image;
+        if (uploadedSrcs(S.items[c.id]).length && !uploadedSrcs(out[c.id]).length) { S.items[c.id].image = out[c.id].image; if (out[c.id].images) S.items[c.id].images = out[c.id].images; }
         S.base[c.id] = { ...out[c.id] };
       }
       save(); refresh();
@@ -2086,7 +2139,7 @@
   const BASE_BY = Object.fromEntries(BASE.map(x => [x.id, x]));
   const REMOVED = window.RUG_REMOVED || {};
   for (const [id, mine] of Object.entries(S.items)) {
-    if (String(mine.image || "").startsWith("idb:")) continue;
+    if (uploadedSrcs(mine).length) continue;
     const pub = BASE_BY[id], since = pub ? pub.reviewedAt : REMOVED[id];
     if (since && (S.touched[id] || 0) <= Date.parse(since)) {
       delete S.items[id];

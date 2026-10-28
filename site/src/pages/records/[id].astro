@@ -14,12 +14,19 @@ const TYPE = { finding: "Research finding", patent: "Patent", company: "Company"
 const facts = [["Made by", it.creator], ["Date", it.date], ["Place", it.place], ["Held by", it.institution], ["Collection", it.collection], ["Number", it.identifier], ["Publisher", it.publisher], ["Materials", it.materials.join(", ")], ["Size", it.dimensions], ["Themes", it.themes.join(", ")]].filter(([, v]) => v);
 const shade = cloth(it.themes[0]);
 const img = it.image && !it.image.startsWith("idb:") ? it.image : "";
+// More photos of the same thing (a tool, its box, its instructions): a strip under the picture.
+const gallery = (Array.isArray(it.images) ? it.images : []).filter(g => g && g.src && !String(g.src).startsWith("idb:"));
+const firstCaption = gallery.find(g => g.src === img)?.caption || "";
 // For search results: what the source is, when, and who holds it.
 const description = [`${TYPE[it.type] || "Source"}: ${it.title.replace(/^(REFUTED|UNVERIFIED|CORRECTION)\s*:\s*/i, "")}`, it.date, it.institution].filter(Boolean).join(", ") + ". A source for A History of Tufted Rugs, by Tim Eads.";
 ---
 <Base title={`${it.title} · A History of Tufted Rugs`} description={description} shade={shade} image={img && imageCleared(it) ? imageUrl(img) : ""}>
   <div class={`rec ${img ? "" : "noimg"}`}>
-    {img && <figure class="plate"><img src={imageUrl(img, 1400)} alt={it.title} referrerpolicy="no-referrer" />{it.imageRole === "illustration" && <figcaption>Illustration, not the item itself: {it.imageCaption || "a comparable item"}</figcaption>}</figure>}
+    {img && <figure class="plate"><img id="plate-img" src={imageUrl(img, 1400)} alt={it.title} referrerpolicy="no-referrer" />
+      {it.imageRole === "illustration" ? <figcaption>Illustration, not the item itself: {it.imageCaption || "a comparable item"}</figcaption>
+        : gallery.length > 1 ? <figcaption id="plate-cap">{firstCaption || `Photo 1 of ${gallery.length}`}</figcaption> : null}
+      {gallery.length > 1 && <ul class="rec-gallery" aria-label="More photos">{gallery.map((g, i) => <li><a href={imageUrl(g.src, 1400)} data-full={imageUrl(g.src, 1400)} data-cap={g.caption || `Photo ${i + 1} of ${gallery.length}`} aria-current={i === 0 ? "true" : undefined}><img src={imageUrl(g.src, 400)} alt={g.caption || `Photo ${i + 1}`} loading="lazy" referrerpolicy="no-referrer" /></a></li>)}</ul>}
+    </figure>}
     <div class="rec-body">
       <div class="rec-id">
       <h1>{it.title}</h1>
@@ -37,4 +44,14 @@ const description = [`${TYPE[it.type] || "Source"}: ${it.title.replace(/^(REFUTE
       </div>
     </div>
   </div>
+  {gallery.length > 1 && <script is:inline>
+    // A photo in the strip shows in the main picture, with its caption.
+    document.querySelector(".rec-gallery").addEventListener("click", e => {
+      const a = e.target.closest("a[data-full]"); if (!a) return;
+      e.preventDefault();
+      document.getElementById("plate-img").src = a.dataset.full;
+      const cap = document.getElementById("plate-cap"); if (cap) cap.textContent = a.dataset.cap;
+      document.querySelectorAll(".rec-gallery a").forEach(x => x.toggleAttribute("aria-current", x === a));
+    });
+  </script>}
 </Base>
