@@ -575,11 +575,8 @@ window.RUG_ITEMS = [
       "date conflict"
     ],
     "status": "unverified",
-    "image": "https://georgiaencyclopedia.org/wp-content/uploads/2021/02/carpet_machine_001-1200x630.jpg",
-    "imageCredit": "georgiaencyclopedia.org",
-    "imageSource": "auto",
-    "region": "United States",
-    "rights": "not-requested"
+    "imageSource": "rejected",
+    "region": "United States"
   },
   {
     "id": "event-whitener-bedspread",
@@ -603,9 +600,11 @@ window.RUG_ITEMS = [
     "status": "unverified",
     "image": "https://georgiaencyclopedia.org/wp-content/uploads/2021/02/chenille-bedspreads_004-1200x630.jpg",
     "imageCredit": "georgiaencyclopedia.org",
-    "imageSource": "auto",
+    "imageSource": "picked",
     "region": "United States",
-    "rights": "not-requested"
+    "rights": "not-requested",
+    "imageRole": "illustration",
+    "imageCaption": "Mrs. J. A. Green and son Allen Burton making tufted bedspreads on U.S. Highway 41, 1933"
   },
   {
     "id": "event-looper-tufting-machine",
@@ -2573,9 +2572,7 @@ window.RUG_ITEMS = [
     "dateStart": 1960,
     "dateEnd": 1981,
     "sourceUrl": "https://carpet.or.jp/aboutus/",
-    "image": "https://carpet.or.jp/mg/wp-content/uploads/2026/03/ogp.png",
-    "imageCredit": "carpet.or.jp",
-    "imageSource": "auto"
+    "imageSource": "rejected"
   },
   {
     "id": "ner-jp-industry-history-2008",
@@ -2814,9 +2811,7 @@ window.RUG_ITEMS = [
     "collection": "Tuft the World research brief: The Non-English Record",
     "publisher": "Sohu account 121123801 (Tianjin radio/media series 「文献里的天津」)",
     "sourceUrl": "https://m.sohu.com/a/875737930_121123801/",
-    "image": "https://q8.itc.cn/q_70/images03/20250326/aebca72820a14722b26a11ffb3ed4529.jpeg",
-    "imageCredit": "m.sohu.com",
-    "imageSource": "auto"
+    "imageSource": "rejected"
   },
   {
     "id": "ner-chase-gazetteers",
@@ -2837,9 +2832,7 @@ window.RUG_ITEMS = [
     "status": "unverified",
     "collection": "Tuft the World research brief: The Non-English Record",
     "sourceUrl": "https://www.thepaper.cn/newsDetail_forward_7818157",
-    "image": "https://file.thepaper.cn/clt/img/sparker_small.jpg",
-    "imageCredit": "thepaper.cn",
-    "imageSource": "auto"
+    "imageSource": "rejected"
   },
   {
     "id": "ner-chase-cnki",
@@ -5086,9 +5079,7 @@ window.RUG_ITEMS = [
     "sourceUrl": "https://digitalcollections.winterthur.org/collections/textile-collections/swatch-books-and-salesmens-sample-books",
     "institution": "Winterthur Library",
     "identifier": "Col. 50",
-    "image": "https://static.quartexcollections.com/winterthur/media-file/2daf85f8-c780-4c3f-9a8b-0186905a4a80-mastheadsingle.jpg",
-    "imageCredit": "Winterthur Library",
-    "imageSource": "auto"
+    "imageSource": "rejected"
   },
   {
     "id": "wint-shaw-licensed-nylon",
@@ -7590,10 +7581,7 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "solid",
-    "rights": "not-requested",
-    "image": "https://georgiaencyclopedia.org/wp-content/uploads/2021/02/chenille-bedspreads_004-1200x630.jpg",
-    "imageCredit": "Cabin Crafts",
-    "imageSource": "auto"
+    "imageSource": "rejected"
   },
   {
     "id": "co-barwick",
@@ -7993,10 +7981,7 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "solid",
-    "rights": "not-requested",
-    "image": "https://dxm.mediacenter.bintg.com/api/wedia/dam/transform/6foabi5tejewk3wax36d8exkfyrpuajpme7ffia/out?t=crop&x=0.000&y=0.110&width=1.000&height=0.788&outputWidth=1200&outputHeight=630",
-    "imageCredit": "Beaulieu International Group",
-    "imageSource": "auto"
+    "imageSource": "rejected"
   },
   {
     "id": "co-victoria",
@@ -8462,10 +8447,7 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "solid",
-    "rights": "not-requested",
-    "image": "https://www.homeaccentstoday.com/wp-content/uploads/sites/13/2026/04/SURYA50th_RSVPBanner_20260326-1.webp",
-    "imageCredit": "Surya",
-    "imageSource": "auto"
+    "imageSource": "rejected"
   },
   {
     "id": "pat-ch214147a",
@@ -11150,10 +11132,7 @@ window.RUG_ITEMS = [
       "checked from search results"
     ],
     "status": "unverified",
-    "confidence": "suggestive",
-    "image": "http://img2.chinadaily.com.cn/images/202505/12/682169dda310a04a96783487.jpeg",
-    "imageCredit": "China Daily",
-    "imageSource": "auto"
+    "confidence": "suggestive"
   },
   {
     "id": "finding-cnc-delos-robotic-2013",
@@ -11211,9 +11190,7 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "suggestive",
-    "image": "https://heimtextil.messefrankfurt.com/content/dam/messefrankfurt-redaktion/texpertisenetwork/images/stages-teaser/stage-texpertise.jpg",
-    "imageCredit": "EFAB GmbH",
-    "imageSource": "auto"
+    "imageSource": "rejected"
   },
   {
     "id": "co-carpet-sign",

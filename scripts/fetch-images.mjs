@@ -20,7 +20,7 @@ const args = process.argv.slice(2);
 const REFRESH = args.includes("--refresh");
 const ONLY = (args[args.indexOf("--only") + 1] || "").split(",").filter(Boolean);
 const UA = "Mozilla/5.0 (compatible; RugResearchImageBot/1.0; +https://github.com/timeads/rug-research)";
-const BAD = /logo|favicon|sprite|placeholder|default[-_]?image|no[-_ ]?image|image[-_ ]?not[-_ ]?available|coming[-_]?soon|blank\.|spacer|icon[-_.]|social[-_]?share|og[-_]default|share[-_]image|\/themes?\/|\/assets\/img|\bogp\b|og[-_]?banner|banner|menu[-_]image|[-_]hdr\b|header|_site-config|img\.youtube\.com|ytimg\.com|\bmap[-_ (]/i;
+const BAD = /logo|favicon|sprite|placeholder|default[-_]?image|no[-_ ]?image|image[-_ ]?not[-_ ]?available|coming[-_]?soon|blank\.|spacer|icon[-_.]|social[-_]?share|og[-_]default|share[-_]image|\/themes?\/|\/assets\/img|\bogp\b|og[-_]?banner|banner|menu[-_]image|[-_]hdr\b|header|_site-config|img\.youtube\.com|ytimg\.com|\bmap[-_ (]|masthead|og[-_]?image|default[-_]share|site[-_]?image/i;
 // Stock-photo filenames (Pixabay "macro-2573557_1920", Shutterstock, iStock…) are illustrations, not evidence.
 const STOCK = /(shutterstock|istock|adobestock|gettyimages|pexels|unsplash|pixabay|dreamstime|depositphotos)|[a-z]-\d{6,8}_(640|960|1280|1920)\b/i;
 
@@ -251,6 +251,9 @@ const CACHE = process.env.IMAGE_CACHE ? new URL(`file://${process.env.IMAGE_CACH
 let cache = {};
 if (CACHE) { try { cache = JSON.parse(await readFile(CACHE, "utf8")); } catch {} }
 const found = [], missed = [];
+// A picture already shown on another record is almost always a site-wide image (a banner, or an
+// article's lead photo) rather than this record's subject, so it isn't reused.
+const usedBy = new Map(items.filter(x => x.image).map(x => [x.image, x.id]));
 for (const item of items) {
   if (ONLY.length && !ONLY.includes(item.id)) continue;
   if (item.image && !REFRESH) continue;
@@ -260,7 +263,8 @@ for (const item of items) {
   try {
     const r = cached ? cache[item.id] : await resolve(item);
     cache[item.id] = r || null;
-    if (r) { Object.assign(item, r, { imageSource: "auto" }); found.push(item); console.log(`✓ ${item.id}  ${r.image}`); }
+    if (r && usedBy.has(r.image) && usedBy.get(r.image) !== item.id) { console.log(`  skip ${item.id}: image already on ${usedBy.get(r.image)}`); cache[item.id] = null; missed.push([item, "image already on another record"]); continue; }
+    if (r) { usedBy.set(r.image, item.id); Object.assign(item, r, { imageSource: "auto" }); found.push(item); console.log(`✓ ${item.id}  ${r.image}`); }
     else {
       if (item.imageSource === "auto") { delete item.image; delete item.imageCredit; delete item.imageSource; } // refreshed and gone
       missed.push([item, "no image on source page"]); console.log(`– ${item.id}`);
