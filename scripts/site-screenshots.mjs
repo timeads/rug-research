@@ -8,7 +8,8 @@ const BASE = "https://timeads.github.io/rug-research/book/";
 const SHOTS = [
   ["cover", "", 1440, 900, true],
   ["chapter-desktop", "chapters/nylon/", 1440, 900, true],
-  ["chapter-phone", "chapters/nylon/", 390, 844, false],
+  ["chapter-phone", "chapters/nylon/", 390, 844, true],
+  ["cover-phone", "", 390, 844, true],
   ["timeline", "timeline/", 1440, 900, false],
   ["record", "records/u-mvs3jcd5g72ua/", 1440, 900, false]
 ];
