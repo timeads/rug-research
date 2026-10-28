@@ -1,0 +1,22 @@
+---
+// A picture from a record: the record's own image (or one of its gallery images), its caption and
+// credit, a link to the record's page, and a "permission pending" mark until the image is cleared.
+import { record, imageUrl, imageCleared, base } from "../lib/data.js";
+const { id, size = "text", caption, image = 0, alt } = Astro.props;
+const it = record(id);
+if (!it) throw new Error(`Figure: no record ${id}`);
+const gallery = Array.isArray(it.images) && it.images.length ? it.images : [];
+const src = image && gallery[image] ? gallery[image].src : it.image;
+if (!src) throw new Error(`Figure: record ${id} has no image`);
+const width = size === "full" ? 2200 : size === "wide" ? 1800 : size === "margin" ? 700 : 1300;
+const cap = caption ?? `${it.title}${it.date ? `, ${it.date}` : ""}.`;
+const credit = [it.imageCredit || it.institution, it.identifier].filter(Boolean).join(", ");
+---
+<figure class={`fig ${size}`}>
+  <a class="frame" href={base(`records/${id}/`)}><img src={imageUrl(src, width)} alt={alt ?? it.title} loading="lazy" decoding="async" referrerpolicy="no-referrer" /></a>
+  <figcaption>
+    <span>{cap}</span>
+    <a class="rec" href={base(`records/${id}/`)}>Source →</a>
+    <span class="credit">{credit}{!imageCleared(it) && <span class="pending">Permission pending</span>}</span>
+  </figcaption>
+</figure>

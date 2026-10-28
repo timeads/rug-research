@@ -1,0 +1,64 @@
+---
+// The timeline: every dated record, era by era, with a decade overview and theme filters.
+import Base from "../layouts/Base.astro";
+import { db, cloth, fmtYear, imageUrl, base } from "../lib/data.js";
+import { citedIndex } from "../lib/cited.js";
+
+const { items, eras } = db();
+const cited = await citedIndex();
+const dated = items.filter(x => x.dateStart != null).sort((a, b) => a.dateStart - b.dateStart || a.title.localeCompare(b.title));
+const sections = eras.map(e => ({ ...e, items: dated.filter(x => x.dateStart >= e.from && x.dateStart <= e.to) })).filter(e => e.items.length);
+const themes = [...new Set(dated.flatMap(x => x.themes))].sort();
+// Decade overview from 1700; everything earlier shares the first bar.
+const FIRST = 1700, LAST = Math.ceil((new Date().getFullYear() + 1) / 10) * 10;
+const bars = [{ label: `before ${FIRST}`, n: dated.filter(x => x.dateStart < FIRST).length, at: sections[0]?.id }];
+for (let d = FIRST; d < LAST; d += 10) bars.push({ label: `${d}s`, n: dated.filter(x => x.dateStart >= d && x.dateStart < d + 10).length, at: sections.find(e => d >= e.from && d <= e.to)?.id });
+const most = Math.max(...bars.map(b => b.n));
+const yearOf = x => x.dateEnd && x.dateEnd !== x.dateStart && x.dateEnd - x.dateStart < 30 ? `${fmtYear(x.dateStart)}–${String(x.dateEnd).slice(-2)}` : fmtYear(x.dateStart);
+---
+<Base title="Timeline · A History of Tufting" description="Every dated record in the research, era by era." current="timeline">
+  <header class="page-head">
+    <span class="label">Timeline</span>
+    <h1>{dated.length} dated moments</h1>
+    <p>Every dated object, patent, archive and finding in the research, from Egyptian tapestry to the robot studio. Choose a theme to follow one thread.</p>
+  </header>
+  <div class="density" aria-hidden="true">
+    <div class="bars">{bars.map(b => <a href={b.at ? `#${b.at}` : undefined} style={`height:${Math.max(2, (b.n / most) * 100)}%`} title={`${b.label}: ${b.n}`} tabindex="-1"></a>)}</div>
+    <div class="ax"><span>before {FIRST}</span><span>1800</span><span>1900</span><span>2000</span></div>
+  </div>
+  <div class="tl-tools"><div class="in" role="group" aria-label="Filter by theme">
+    <button class="chip" data-theme="" aria-pressed="true">All themes</button>
+    {themes.map(t => <button class="chip" data-theme={t} aria-pressed="false" style={`--c:${cloth(t)}`}><i></i>{t.replace(/\s*\(.*\)$/, "")}</button>)}
+  </div></div>
+  {sections.map(e => (
+    <section class="era" id={e.id} data-era>
+      <div class="era-head">
+        <div class="yrs">{e.from < -5000 ? `Before ${e.to + 1}` : `${fmtYear(e.from)}–${e.to > 3000 ? "now" : e.to}`}</div>
+        <h2>{e.title}</h2>
+        {e.summary && <p>{e.summary.length > 260 ? e.summary.slice(0, 260).replace(/\s\S*$/, "") + "…" : e.summary}</p>}
+      </div>
+      <ol style="list-style:none;margin:0;padding:0">
+        {e.items.map(x => (
+          <li class="ev" data-themes={x.themes.join("|")} style={`--c:${cloth(x.themes[0])}`}>
+            <span class="y">{yearOf(x)}</span>
+            <div>
+              <h3><a href={base(`records/${x.id}/`)}>{x.title}</a></h3>
+              <div class="m">{[x.institution || x.creator, x.place].filter(Boolean).join(" · ")}{cited[x.id] && <> · <span class="cited">Chapter {cited[x.id][0].number}</span></>}</div>
+            </div>
+            {x.image && !x.image.startsWith("idb:") ? <img class="th" src={imageUrl(x.image, 300)} alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" /> : <span></span>}
+          </li>
+        ))}
+      </ol>
+    </section>
+  ))}
+  <script is:inline>
+    // Theme filter: show the entries carrying the chosen theme, and hide eras left empty.
+    const chips = [...document.querySelectorAll(".chip[data-theme]")];
+    chips.forEach(c => c.addEventListener("click", () => {
+      const t = c.dataset.theme;
+      chips.forEach(x => x.setAttribute("aria-pressed", String(x === c)));
+      document.querySelectorAll(".ev").forEach(ev => { ev.hidden = !!t && !ev.dataset.themes.split("|").includes(t); });
+      document.querySelectorAll("[data-era]").forEach(s => { s.hidden = !s.querySelector(".ev:not([hidden])"); });
+    }));
+  </script>
+</Base>

@@ -1,0 +1,44 @@
+name: Build the public site
+
+# Rebuilds the Astro site in site/ (A History of Tufting) whenever its pages or the research data
+# change, and commits the result to book/, where GitHub Pages serves it at /rug-research/book/.
+on:
+  push:
+    paths: ["site/**", "data/**", ".github/workflows/build-site.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-site
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+      - name: Build
+        working-directory: site
+        run: |
+          npm ci
+          npm run build
+      - name: Commit the built site
+        run: |
+          rm -rf book
+          cp -r site/dist book
+          git add -A book
+          if git diff --cached --quiet; then echo "Site unchanged."; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Rebuild the public site"
+          for i in 1 2 3; do git pull --rebase origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0; sleep 5; done
+          exit 1

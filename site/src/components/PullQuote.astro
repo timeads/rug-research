@@ -1,0 +1,6 @@
+---
+import { record } from "../lib/data.js";
+const { from, who } = Astro.props;
+const it = from && record(from);
+---
+<figure class="pull"><p><slot /></p><cite>{who ?? (it ? `${it.creator?.split(/[;(]/)[0].trim() || it.institution}, ${it.date}` : "")}</cite></figure>

@@ -1,0 +1,32 @@
+---
+// The bibliography: every source record, by kind, in one citation style, each linked to its page.
+import Base from "../layouts/Base.astro";
+import { db, citation, base } from "../lib/data.js";
+import { citedIndex } from "../lib/cited.js";
+
+const { items } = db();
+const cited = await citedIndex();
+const GROUPS = [
+  ["archive", "Archives and manuscript collections"], ["trade-catalog", "Trade literature"], ["film", "Films and recordings"],
+  ["oral-history", "Oral histories"], ["patent", "Patents"], ["book", "Books"], ["article", "Articles"]
+];
+const key = x => (x.creator || x.title).replace(/^[“"']/, "").toLowerCase();
+const groups = GROUPS.map(([type, name]) => ({ type, name, list: items.filter(x => x.type === type).sort((a, b) => type === "patent" ? (a.dateStart ?? 0) - (b.dateStart ?? 0) : key(a).localeCompare(key(b))) })).filter(g => g.list.length);
+const total = groups.reduce((n, g) => n + g.list.length, 0);
+---
+<Base title="Bibliography · A History of Tufting" description="Every source in the research, by kind." current="bibliography">
+  <header class="page-head">
+    <span class="label">Bibliography</span>
+    <h1>{total} sources</h1>
+    <p>Archives, patents, trade literature, films, books and articles gathered for the history so far. Sources cited in a finished chapter are marked.</p>
+  </header>
+  <div class="wrap bib">
+    <nav class="bib-nav" aria-label="Kinds of source">{groups.map(g => <a class="chip" href={`#${g.type}`}>{g.name} · {g.list.length}</a>)}</nav>
+    {groups.map(g => (
+      <section id={g.type}>
+        <h2>{g.name} <small>{g.list.length}</small></h2>
+        <ol>{g.list.map(x => <li><Fragment set:html={citation(x)} /><a class="more" href={base(`records/${x.id}/`)}>Record</a>{cited[x.id] && <span class="tag">Chapter {cited[x.id][0].number}</span>}</li>)}</ol>
+      </section>
+    ))}
+  </div>
+</Base>

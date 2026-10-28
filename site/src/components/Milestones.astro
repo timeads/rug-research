@@ -1,0 +1,14 @@
+---
+// The chapter's key dates on one line, spaced by year; a list on narrow screens.
+import { base } from "../lib/data.js";
+const { items = [] } = Astro.props;
+const years = items.map(m => parseInt(m.year, 10));
+const lo = Math.min(...years), hi = Math.max(...years);
+const x = y => `${((y - lo) / (hi - lo || 1)) * 92 + 2}%`;
+---
+<section class="milestones" aria-label="Key dates in this chapter">
+  <ol>
+    {items.map((m, i) => <li style={`--x:${x(years[i])}`}><a href={base(`records/${m.record}/`)}><b>{m.year}</b>{m.label}</a></li>)}
+  </ol>
+  <div class="scale" aria-hidden="true"><span>{lo}</span><span>{hi}</span></div>
+</section>

@@ -1,0 +1,58 @@
+---
+// A chapter: opening image and title, key dates, the text with margin notes, then the notes in full
+// and where the sources are held.
+import { getCollection, render } from "astro:content";
+import Base from "../../layouts/Base.astro";
+import Milestones from "../../components/Milestones.astro";
+import Cite from "../../components/Cite.astro";
+import { record, cloth, imageUrl, imageCleared, citation, base } from "../../lib/data.js";
+
+export async function getStaticPaths() {
+  const chapters = await getCollection("chapters");
+  return chapters.map(entry => ({ params: { slug: entry.id }, props: { entry } }));
+}
+const { entry } = Astro.props;
+const { Content, remarkPluginFrontmatter } = await render(entry);
+const notes = remarkPluginFrontmatter.notes || [];
+const d = entry.data;
+const hero = record(d.hero.record);
+const accent = cloth(d.theme);
+const words = (entry.body || "").replace(/<[^>]+>|\[@[^\]]+\]|^---[\s\S]*?---/g, " ").split(/\s+/).filter(Boolean).length;
+const cited = [...new Set(notes.flatMap(n => n.refs.map(r => r.id)))].map(record);
+const holders = Object.entries(cited.reduce((o, it) => { const k = it.institution || (it.type === "patent" ? "US Patent Office" : it.type === "finding" ? "Research notes" : "Published sources"); o[k] = (o[k] || 0) + 1; return o; }, {})).sort((a, b) => b[1] - a[1]);
+const most = holders[0]?.[1] || 1;
+---
+<Base title={`${d.title} · A History of Tufting`} description={d.dek} accent={accent} current="chapters" progress>
+  <article>
+    <figure class="ch-hero">
+      <img src={imageUrl(hero.image, 2400)} alt={hero.title} referrerpolicy="no-referrer" fetchpriority="high" />
+      <figcaption>{d.hero.caption ?? hero.title} <a href={base(`records/${hero.id}/`)}>Source</a>{!imageCleared(hero) && <span class="pending">Permission pending</span>}</figcaption>
+    </figure>
+    <header class="ch-head">
+      <span class="ch-rule" aria-hidden="true"></span>
+      <div class="ch-kicker"><span class="label num">Chapter {d.number}</span><span class="label">{d.theme.replace(/\s*\(.*\)$/, "")}</span></div>
+      <h1 class="ch-title">{d.title}</h1>
+      <p class="ch-dek">{d.dek}</p>
+      <div class="ch-byline"><span>By <b>Tim Eads</b></span><span>{Math.max(1, Math.round(words / 230))} minute read</span><span>{notes.length} notes · {cited.length} sources</span>{d.status !== "final" && <span>{d.status === "prototype" ? "Prototype draft" : "Draft"}</span>}</div>
+    </header>
+    {d.milestones.length > 0 && <Milestones items={d.milestones} />}
+    <div class="prose">
+      <Content components={{ Cite }} />
+    </div>
+    <section class="endmatter">
+      <div>
+        <h2 id="notes">Notes</h2>
+        <ol class="notes">
+          {notes.map(n => <li id={`note-${n.n}`}><a class="n" href={`#ref-${n.n}`} aria-label={`Back to note ${n.n} in the text`}>{n.n}</a><span set:html={n.refs.map(r => `${citation(record(r.id), { loc: r.loc })} <a href="${base(`records/${r.id}/`)}">Record</a>`).join(" ")} /></li>)}
+        </ol>
+      </div>
+      <div>
+        <h2>Where the sources are</h2>
+        <ul class="holders">
+          {holders.map(([k, v]) => <li><span>{k}</span><span class="bar" style={`width:${Math.max(4, (v / most) * 80)}px`}></span><b>{v}</b></li>)}
+        </ul>
+        <p class="label" style="margin-top:1.5rem"><a href={base("bibliography/")}>Full bibliography →</a></p>
+      </div>
+    </section>
+  </article>
+</Base>

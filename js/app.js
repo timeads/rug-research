@@ -1630,6 +1630,7 @@
     "research-fetch.yml": ["Research fetch", "Saves source pages for checking citations."],
     "hagley-search.yml": ["Hagley search", "Searches Hagley's catalogue for records."],
     "check-data.yml": ["Data check", "Checks the data files after every change."],
+    "build-site.yml": ["Public site", "Rebuilds A History of Tufting (the chapter, timeline and bibliography) after changes."],
     "pages-build-deployment": ["Publishing the site", "Puts the latest changes live, usually within a minute."]
   };
   const loadedAt = Date.now();
