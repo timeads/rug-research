@@ -306,11 +306,18 @@ h1.ch-title { margin: 1.75rem 0 0; font: 680 clamp(2.5rem, 6vw, 4.5rem)/1 var(--
   .bib-nav .chip { min-height: 0; padding: .5rem 0; border: 0; border-bottom: 1px solid var(--rule); border-radius: 0; background: none; color: var(--ink-3); }
   .bib-nav .chip:hover { color: var(--ink); }
   .bib-list { grid-column: 2; }
+  /* As in a chapter: the citation at the text measure, its record link and chapter in the margin column. */
+  .bib section { max-width: none; }
+  .bib li { display: grid; grid-template-columns: minmax(0, var(--measure)) var(--margin); column-gap: var(--gap); padding-left: 0; text-indent: 0; }
+  .bib li .c { padding-left: 1.5rem; text-indent: -1.5rem; }
+  .bib li .meta { display: flex; flex-wrap: wrap; align-content: start; gap: .2rem .9rem; padding-top: .15rem; }
+  .bib li .tag, .bib li a.more { margin-left: 0; }
 }
 .bib h2 { margin: 2.75rem 0 .75rem; font: 660 1.5rem/1.2 var(--frame); font-stretch: 90%; display: flex; align-items: baseline; gap: .75rem; }
 .bib h2 small { font: 500 .875rem/1 var(--frame); color: var(--ink-3); font-variant-numeric: tabular-nums; }
 .bib ol { list-style: none; margin: 0; padding: 0; }
 .bib li { padding: .75rem 0 .75rem 1.5rem; text-indent: -1.5rem; border-bottom: 1px solid var(--rule); font: 400 1rem/1.55 var(--read); overflow-wrap: anywhere; }
+.bib li .meta { text-indent: 0; }
 .bib li .tag, .bib li a.more { text-indent: 0; display: inline-block; margin-left: .6rem; font: 600 .8125rem/1.5 var(--frame); }
 .bib li .tag { color: var(--ink); }
 .bib li a.more { color: var(--ink-3); text-decoration: none; }

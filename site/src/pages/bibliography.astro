@@ -25,7 +25,7 @@ const total = groups.reduce((n, g) => n + g.list.length, 0);
     {groups.map(g => (
       <section id={g.type}>
         <h2>{g.name} <small>{g.list.length}</small></h2>
-        <ol>{g.list.map(x => <li><Fragment set:html={citation(x)} /><a class="more" href={base(`records/${x.id}/`)}>Record</a>{cited[x.id] && <span class="tag">Chapter {cited[x.id][0].number}</span>}</li>)}</ol>
+        <ol>{g.list.map(x => <li><span class="c"><Fragment set:html={citation(x)} /></span><span class="meta"><a class="more" href={base(`records/${x.id}/`)}>Record</a>{cited[x.id] && <span class="tag">Chapter {cited[x.id][0].number}</span>}</span></li>)}</ol>
       </section>
     ))}
     </div>
