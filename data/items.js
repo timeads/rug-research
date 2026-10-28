@@ -13999,5 +13999,1748 @@ window.RUG_ITEMS = [
     "status": "unverified",
     "confidence": "solid",
     "reviewedAt": "2026-10-28T21:42:57.297Z"
+  },
+  {
+    "id": "u-mvs4p4bck1zum",
+    "type": "trade-catalog",
+    "status": "unverified",
+    "title": "The jewel fabric tufting machine is the most practical and most durable machine made / manufactured by the Gibbs Manufacturing Company",
+    "creator": "Gibbs Manufacturing Company (Chicago, Ill.)",
+    "date": "[ca.1890]",
+    "dateStart": 1885,
+    "dateEnd": 1895,
+    "institution": "Winterthur Library",
+    "identifier": "NK2799 G44a TC",
+    "place": "Chicago",
+    "publisher": "Gibbs (printed by Auditorium Printing Co., Chicago)",
+    "dimensions": "36, [4] p. : col. ill. ; 10 x 17 cm.",
+    "techniques": [
+      "tufted",
+      "hooked"
+    ],
+    "themes": [
+      "Hooked & handmade rugs",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Winterthur Library",
+      "for: Hand tools and the gun",
+      "for: Before the machine"
+    ],
+    "region": "United States",
+    "description": "Trade catalogue. WinterCat: published Chicago, Gibbs, [ca.1890] (printer Auditorium Printing Co.); 36, [4] p., col. ill.; \"Yarn list [4] p. at end\"; \"Also manufacturers, wholesale and retail dealers in Turkish rug patterns, rug hooks, clamps, and yarn reels. Fancy rug yarn a specialty.\" Subjects: Rugs, Hooked -- Patterns -- Catalogs. Catalogued with the hooked-rug trade catalogues; the title calls the device a \"fabric tufting machine\". Date is the catalogue's estimate.\nWhy it matters: Hand tools / Before the machine, open question \"a dated punch-needle tool besides Ross's 1886 punch hook\": a named, c. 1890 hand \"tufting machine\" sold for rug making, from the same Chicago firm as the 1887 catalogue of \"rug machines\" (NK2799 G44 TC). One of the earliest uses of \"tufting machine\" for a rug tool found so far. Needs a look at the catalogue to see how the machine works.\nFound: Winterthur Library catalogue (WinterCat), search \"tufting machine\", 2026-10-28.",
+    "sourceUrl": "https://library.winterthur.org/Record/vtls000070692",
+    "reviewedAt": "2026-10-28T21:52:11.222Z"
+  },
+  {
+    "id": "u-mvs4p7orwsj87",
+    "type": "trade-catalog",
+    "status": "unverified",
+    "title": "Descriptive catalogue and price list of Turkish rug patterns, rug machines, rug yarn, hooks and clamps.",
+    "creator": "Gibbs Manufacturing Co. (Chicago, Ill.)",
+    "date": "[ca. 1887]",
+    "dateStart": 1887,
+    "dateEnd": 1887,
+    "institution": "Winterthur Library",
+    "identifier": "NK2799 G44 TC",
+    "place": "Chicago",
+    "publisher": "Gibbs",
+    "dimensions": "32 p. : ill. ; 16 cm.",
+    "techniques": [
+      "hooked",
+      "tufted"
+    ],
+    "themes": [
+      "Hooked & handmade rugs",
+      "Tools & equipment",
+      "Trade catalogs & marketing"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Winterthur Library",
+      "for: Hand tools and the gun",
+      "for: Before the machine"
+    ],
+    "region": "United States",
+    "description": "Trade catalogue. WinterCat: Chicago, Gibbs, [ca. 1887]; 32 p., ill.; note \"Established in 1875.\" Subjects: Rugs, Hooked -- Patterns -- Catalogs.\nWhy it matters: Hand tools: a dated catalogue (c. 1887) selling \"rug machines\" alongside hooks, a year after Ross's 1886 punch hook; the same firm's c. 1890 catalogue calls its tool a \"fabric tufting machine\" (NK2799 G44a TC). Answers in part the open question \"a dated punch-needle tool besides Ross's 1886 punch hook\", pending a look at the illustrations.\nFound: Winterthur Library catalogue (WinterCat), search \"hooked rug patterns\" / \"rug machine\", 2026-10-28.",
+    "sourceUrl": "https://library.winterthur.org/Record/vtls000002364",
+    "reviewedAt": "2026-10-28T21:52:11.222Z"
+  },
+  {
+    "id": "u-mvs4pb1s6ng8a",
+    "type": "image",
+    "status": "unverified",
+    "title": "[Photographs of candlewick spreads]",
+    "creator": "Decorative Arts Photographic Collection (Winterthur Library)",
+    "date": "photographs undated; spreads \"Most were made in the early nineteenth-century\"",
+    "dateStart": 1800,
+    "dateEnd": 1850,
+    "institution": "Winterthur Library",
+    "collection": "Decorative Arts Photographic Collection (DAPC), Visual Resources, Winterthur Library",
+    "identifier": "DAPC barcode 000054198 (record vtls000047773)",
+    "dimensions": "1 folder (approx. 4 photoprints) : b&w ; 21 x 26 cm. or smaller",
+    "techniques": [
+      "candlewick"
+    ],
+    "themes": [
+      "Hooked & handmade rugs"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Winterthur Library",
+      "for: Before the machine",
+      "possible"
+    ],
+    "region": "United States",
+    "description": "WinterCat: \"Folder contains photographs and information sheets related to four bedspreads decorated with candlewick embroidery in which heavy cotton threads are pulled into loops to form designs. Most were made in the early nineteenth-century.\" Reproduction by written permission only from object's owner. The owners of the four spreads are not named in the record.\nWhy it matters: Before the machine: candlewick spreads are the looped-cotton ancestor of Dalton tufting; the information sheets may give owners, dates and whether any loops were cut (tufted). Needs a visit to Visual Resources.\nFound: Winterthur Library catalogue (WinterCat), search \"candlewick\", 2026-10-28.",
+    "sourceUrl": "https://library.winterthur.org/Record/vtls000047773",
+    "reviewedAt": "2026-10-28T21:52:11.222Z"
+  },
+  {
+    "id": "u-mvs4pef470bun",
+    "type": "trade-catalog",
+    "status": "unverified",
+    "title": "Frost hooked rug patterns.",
+    "creator": "Old New England Hooked Rug Craft Studio (Greenfield, Mass.); business operated by Charlotte K. Stratton",
+    "date": "c1952",
+    "dateStart": 1952,
+    "dateEnd": 1952,
+    "institution": "Winterthur Library",
+    "identifier": "NK2799 O44a TC",
+    "place": "Greenfield, Mass.",
+    "dimensions": "63 p. : ill. (1 col.) ; 29 cm. + 1 brochure ([4] p.)",
+    "techniques": [
+      "hooked"
+    ],
+    "themes": [
+      "Hooked & handmade rugs",
+      "Trade catalogs & marketing"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Winterthur Library",
+      "for: Before the machine"
+    ],
+    "region": "United States",
+    "description": "Trade catalogue reissuing E.S. Frost designs. WinterCat: Greenfield, Mass., Old New England Hooked Rug Craft Studio, c1952; \"Business operated by Charlotte K. Stratton. Accompanied by advertising brochure.\"\nWhy it matters: Hooked rugs: shows the Frost stencilled patterns still sold in the 1950s. Winterthur also holds an 1884 Frost circular (TT850 F93 TC).\nFound: Winterthur Library catalogue (WinterCat), search \"Frost hooked rug\", 2026-10-28.",
+    "sourceUrl": "https://library.winterthur.org/Record/vtls000058916",
+    "reviewedAt": "2026-10-28T21:52:11.222Z"
+  },
+  {
+    "id": "u-mvs4phsfe457q",
+    "type": "trade-catalog",
+    "status": "unverified",
+    "title": "Descriptive circular E.S. Frost & Co's Turkish rug patterns : colored rug or mat patterns. 1884.",
+    "creator": "E.S. Frost & Co. (Biddeford, Maine)",
+    "date": "1884",
+    "dateStart": 1884,
+    "dateEnd": 1884,
+    "institution": "Winterthur Library",
+    "identifier": "TT850 F93 TC",
+    "place": "Biddeford, Maine",
+    "dimensions": "12 leaves : ill. ; 13 cm.",
+    "techniques": [
+      "hooked"
+    ],
+    "themes": [
+      "Hooked & handmade rugs",
+      "Trade catalogs & marketing"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Winterthur Library",
+      "for: Before the machine"
+    ],
+    "region": "United States",
+    "description": "Trade circular. WinterCat: [Biddeford, Me.], The Company, 1884; cover title; \"Bronze medal of excellence awarded by the American Institute Fair of New York, 1878.\" \"Diploma awarded by Mechanics Fair Boston, 1878, for the best and handsomest patterns manufactured.\" Subjects include Rugs, Hooked -- Equipment and supplies -- Catalogs.\nWhy it matters: Hooked rugs: a dated Frost catalogue (1884), with equipment, for the stencilled-pattern trade that preceded the punch and tufting tools.\nFound: Winterthur Library catalogue (WinterCat), search \"Frost hooked rug\", 2026-10-28.",
+    "sourceUrl": "https://library.winterthur.org/Record/vtls000084487",
+    "reviewedAt": "2026-10-28T21:52:11.222Z"
+  },
+  {
+    "id": "u-mvs4pl5p14k1x",
+    "type": "trade-catalog",
+    "status": "unverified",
+    "title": "[Catalog of rug patterns] [E. Ross & Co., 1886]",
+    "creator": "E. Ross & Co. (Toledo, Ohio)",
+    "date": "1886",
+    "dateStart": 1886,
+    "dateEnd": 1886,
+    "institution": "Winterthur Library",
+    "identifier": "NK2799 R82a TC",
+    "place": "Toledo, Ohio",
+    "dimensions": "31 p. : col. ill. ; 11 x 18 cm.",
+    "techniques": [
+      "hooked",
+      "punch needle"
+    ],
+    "themes": [
+      "Hooked & handmade rugs",
+      "Trade catalogs & marketing"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Winterthur Library",
+      "for: Hand tools and the gun"
+    ],
+    "region": "United States",
+    "description": "Trade catalogue. WinterCat: [Toledo, OH : The Company] 1886; 31 p., col. ill. (The bracketed title is the cataloguer's; \"[E. Ross & Co., 1886]\" added here to tell it from the 1891 catalogue.) Winterthur also holds \"Rug patterns\" (1889, NK2799 R82 TC; also Mic. 2437.15; \"Includes illustrations of 56 rug patterns\") and the 1891 catalogue (NK2799 R82b TC) with a laid-in brochure \"The Ross & Co's rug machine in use\".\nWhy it matters: Hand tools: the Ross firm sold the 1886 punch hook (\"rug machine\"); this is its catalogue from the same year, and may illustrate the tool.\nFound: Winterthur Library catalogue (WinterCat), search \"Ross rug patterns\", 2026-10-28.",
+    "sourceUrl": "https://library.winterthur.org/Record/vtls000013217",
+    "reviewedAt": "2026-10-28T21:52:11.222Z"
+  },
+  {
+    "id": "u-mvs4poiyr3olt",
+    "type": "trade-catalog",
+    "status": "unverified",
+    "title": "Pattern catalog 1915 / the Magee Carpet Co.",
+    "creator": "Magee Carpet Co.",
+    "date": "[1915]",
+    "dateStart": 1915,
+    "dateEnd": 1915,
+    "institution": "Winterthur Library",
+    "identifier": "NK2799 M19 1915 TC*",
+    "place": "Bloomsburg, Pa.",
+    "dimensions": "48 pages : color illustrations ; 21 x 25 cm",
+    "themes": [
+      "Woven carpet",
+      "Trade catalogs & marketing"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Winterthur Library",
+      "for: Woven carpet"
+    ],
+    "region": "United States",
+    "description": "Trade catalogue. WinterCat: Bloomsburg, Pa., The Company, [1915]; 48 pages, color illustrations; cover title; \"The mill of 2000 dinner pails.\" The record notes a racist caricature on the back cover.\nWhy it matters: Woven carpet: a dated pattern catalogue from Magee, the Bloomsburg mill later linked to DuPont nylon carpet (Hagley's 1936 aerial view is in the database).\nFound: Winterthur Library catalogue (WinterCat), search \"carpet trade catalog\", 2026-10-28.",
+    "sourceUrl": "https://library.winterthur.org/Record/vtls000115518",
+    "reviewedAt": "2026-10-28T21:52:11.222Z"
+  },
+  {
+    "id": "u-mvs4prvfx7q5z",
+    "type": "trade-catalog",
+    "status": "unverified",
+    "title": "Elegant Brussels and Royal Wilton carpetings.",
+    "creator": "Henry Pettes & Company (Boston, Mass.)",
+    "date": "[ca.1845]",
+    "dateStart": 1845,
+    "dateEnd": 1845,
+    "institution": "Winterthur Library",
+    "identifier": "NK2799 P49 TC",
+    "place": "Boston",
+    "dimensions": "8 p. ; 23 cm.",
+    "techniques": [
+      "Brussels",
+      "Wilton"
+    ],
+    "themes": [
+      "Woven carpet",
+      "Trade catalogs & marketing"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Winterthur Library",
+      "for: Woven carpet"
+    ],
+    "region": "United States",
+    "description": "Retail trade catalogue. WinterCat: Boston, The Company, [ca.1845]; 8 p.; cover title; last 4 pages \"extracts from the public press\" about Pettes & Co.; prepared \"for the use of purchasers of dry goods and carpets, at retail.\"\nWhy it matters: Woven carpet: an early American retail source naming Brussels and \"Royal Wilton\" carpeting c. 1845.\nFound: Winterthur Library catalogue (WinterCat), search \"Brussels carpet\", 2026-10-28.",
+    "sourceUrl": "https://library.winterthur.org/Record/vtls000088506",
+    "reviewedAt": "2026-10-28T21:52:11.222Z"
+  },
+  {
+    "id": "u-mvs4pv7vwot2n",
+    "type": "archive",
+    "status": "unverified",
+    "title": "Brussels colours dyed at Tariffville, Conn., circa 1840.",
+    "creator": "Tariff Manufacturing Company (Tariffville, Conn.)",
+    "date": "circa 1840",
+    "dateStart": 1835,
+    "dateEnd": 1845,
+    "institution": "Winterthur Library",
+    "collection": "Joseph Downs Collection of Manuscripts and Printed Ephemera (Col. 50)",
+    "identifier": "Col. 50, acc. 2017x85.30a-b",
+    "place": "Tariffville, Conn.",
+    "dimensions": "2 volumes ; 20 cm",
+    "techniques": [
+      "Brussels"
+    ],
+    "themes": [
+      "Woven carpet",
+      "Yarn & materials"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Winterthur Library",
+      "for: Woven carpet",
+      "duplicate"
+    ],
+    "region": "United States",
+    "description": "DUPLICATE: the database already had this item (record citing \"2017x85.30a-b (ATHM 2009.33)\"); this copy can be deleted after merging anything useful.\n\nTwo dye notebooks. WinterCat: \"Two very similar notebooks, both with paste paper covers and leather spines\"; stationer's label of I. A. Whitcomb, Lawrence; \"Gift of American Textile History Museum.\" Subjects: Dyes and dyeing -- Wool; Formulas, recipes.\nWhy it matters: Woven carpet: wool dye recipes for Brussels carpet yarn from an American carpet mill, c. 1840 (the Tariff company's Brussels carpet era), relevant to Winterthur's ingrain/Brussels question. (Col. 50 is named as Winterthur's manuscripts collection by the call number; confirm.)\nFound: Winterthur Library catalogue (WinterCat), search \"Brussels carpet\", 2026-10-28.",
+    "sourceUrl": "https://library.winterthur.org/Record/vtls000110169",
+    "reviewedAt": "2026-10-28T21:52:11.222Z"
+  },
+  {
+    "id": "u-mvs4pykd1fa97",
+    "type": "trade-catalog",
+    "status": "unverified",
+    "title": "Chaumont seamless rugs : chenille axminster / manufactured by McCleary Wallin and Crouse.",
+    "creator": "McCleary, Wallin & Crouse; distributed by W. and J. Sloane",
+    "date": "[c1910]",
+    "dateStart": 1910,
+    "dateEnd": 1910,
+    "institution": "Winterthur Library",
+    "identifier": "NK2799 S63a TC",
+    "place": "New York",
+    "publisher": "W. and J. Sloane",
+    "dimensions": "24 p. : col. ill. ; 17 cm.",
+    "techniques": [
+      "chenille Axminster"
+    ],
+    "themes": [
+      "Woven carpet",
+      "Trade catalogs & marketing"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Winterthur Library",
+      "for: Woven carpet",
+      "possible"
+    ],
+    "region": "United States",
+    "description": "Trade catalogue. WinterCat: New York, W. and J. Sloane, [c1910]; 24 p., col. ill.; \"Distributed by W. and J. Sloane.\"\nWhy it matters: Woven carpet / Processes: \"chenille Axminster\" is a woven chenille-weft carpet, not tufted; useful to distinguish chenille carpet from Dalton \"chenille\" bedspreads. Tagged possible.\nFound: Winterthur Library catalogue (WinterCat), search \"chenille\", 2026-10-28.",
+    "sourceUrl": "https://library.winterthur.org/Record/vtls000024201",
+    "reviewedAt": "2026-10-28T21:52:11.222Z"
+  },
+  {
+    "id": "u-mvs4q1wwis111",
+    "type": "archive",
+    "status": "unverified",
+    "title": "Yarn sample books, [1847?-1854?]",
+    "creator": "H. Coan; Wm. Adams; J. Lehany (names in record)",
+    "date": "[1847?-1854?]",
+    "dateStart": 1847,
+    "dateEnd": 1854,
+    "institution": "Winterthur Library",
+    "collection": "Col. 50",
+    "identifier": "Col. 50, acc. 65x662.1-.7",
+    "dimensions": "7 v. ; 17 cm. or smaller",
+    "themes": [
+      "Yarn & materials"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Winterthur Library",
+      "possible"
+    ],
+    "region": "United States",
+    "description": "Seven yarn sample books. WinterCat subjects: Yarn -- Sample books; Dye industry; Workshop recipes. Names in the record: Coan, H.; Adams, Wm.; Lehany, J. Request as Col. 50, acc. 65x662.1-.7. Not stated whether the yarns are for carpet.\nWhy it matters: possible source on mid-19th-century dyed yarns (carpet or otherwise). Tagged possible.\nFound: Winterthur Library catalogue (WinterCat), search \"yarn sample book\", 2026-10-28.",
+    "sourceUrl": "https://library.winterthur.org/Record/vtls000026059",
+    "reviewedAt": "2026-10-28T21:52:11.222Z"
+  },
+  {
+    "id": "u-mvs4x4meam26h",
+    "type": "image",
+    "status": "unverified",
+    "title": "Cabin Craft Helen Hall",
+    "date": "1941 (description: \"ca. 1941\")",
+    "dateStart": 1941,
+    "dateEnd": 1941,
+    "institution": "Georgia Archives",
+    "collection": "Vanishing Georgia (Digital Library of Georgia)",
+    "identifier": "Vanishing Georgia wtf225",
+    "place": "Dalton, Whitfield County, Georgia",
+    "dimensions": "photograph",
+    "techniques": [
+      "tufted",
+      "needlepunch",
+      "electric needlepunch gun"
+    ],
+    "themes": [
+      "Machine tufting & Dalton",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Digital Library of Georgia",
+      "for: Hand tools and the gun",
+      "for: Dalton bedspreads"
+    ],
+    "region": "United States",
+    "description": "Photograph. DLG description: \"Dalton, ca. 1941. Interior of needlepunch room for bedspreads at Cabin Craft Bedspread Company located on East Morris Street. Each worker is seated in front of a large embroidery hoop in which the bedspread fabric is placed. A pattern has already been stamped on the fabric. The worker uses an electric needlepunch gun threaded with colored yarn to punch or embroider the fabric. This process was sometimes referred to as 'electric embroidery.' Frederick R. Westcott and G. Lamar Westcott were involved in the founding of this company.\" Date given as 1941 in the record, \"ca. 1941\" in the description.\nWhy it matters: Hand tools and the gun, open question \"the earliest dated motorised or air tufting gun in production use\" and \"a dated photograph of a hand gun in use in Dalton\": a factory room of women using electric hand-held needlepunch guns on hooped bedspreads, c. 1941, decades before the 1950s-60s photographs we have. Check the image to see the guns.\nFound: Digital Library of Georgia, search \"tufted\" / \"Cabin Crafts\", 2026-10-28.",
+    "sourceUrl": "https://dlg.usg.edu/record/dlg_vang_wtf225",
+    "image": "https://dlg.usg.edu/thumbnails/dlg/vang/dlg_vang_wtf225.jpg",
+    "imageCredit": "Georgia Archives, Vanishing Georgia",
+    "imagePage": "https://dlg.usg.edu/record/dlg_vang_wtf225",
+    "rights": "not-requested",
+    "reviewedAt": "2026-10-28T21:52:11.222Z"
+  },
+  {
+    "id": "u-mvs4x826tb8b2",
+    "type": "image",
+    "status": "unverified",
+    "title": "[Photograph of a modern tufting plant, Dalton, Whitfield County, Georgia, 1951]",
+    "date": "1951",
+    "dateStart": 1951,
+    "dateEnd": 1951,
+    "institution": "Georgia Archives",
+    "collection": "Vanishing Georgia (Digital Library of Georgia)",
+    "identifier": "Vanishing Georgia wtf152",
+    "place": "418 South Glenwood Avenue, Dalton, Georgia",
+    "dimensions": "photograph",
+    "techniques": [
+      "tufted"
+    ],
+    "themes": [
+      "Machine tufting & Dalton"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Digital Library of Georgia",
+      "for: Building the machine"
+    ],
+    "region": "United States",
+    "description": "Photograph. DLG description: \"Dalton, 1951. Modern tufting plant built ca. 1950 and located at 418 South Glenwood Avenue.\" (Plant name not given.)\nWhy it matters: Building the machine / Dalton: a dated exterior of a purpose-built tufting mill of c. 1950, the years the first broadloom-width machines arrived. Company could be identified from the address in the 1951 Dalton city directory (also on DLG).\nFound: Digital Library of Georgia, search \"tufted\", 2026-10-28.",
+    "sourceUrl": "https://dlg.usg.edu/record/dlg_vang_wtf152",
+    "image": "https://dlg.usg.edu/thumbnails/dlg/vang/dlg_vang_wtf152.jpg",
+    "imageCredit": "Georgia Archives, Vanishing Georgia",
+    "imagePage": "https://dlg.usg.edu/record/dlg_vang_wtf152",
+    "rights": "not-requested",
+    "reviewedAt": "2026-10-28T21:52:11.222Z"
+  },
+  {
+    "id": "u-mvs4xbi5obbnz",
+    "type": "image",
+    "status": "unverified",
+    "title": "[Photograph of family making tufted bedspreads, Gordon County, Georgia, ca. 192-]",
+    "date": "ca. 192- (description: \"ca. 1920s?\")",
+    "dateStart": 1920,
+    "dateEnd": 1929,
+    "institution": "Georgia Archives",
+    "collection": "Vanishing Georgia (Digital Library of Georgia)",
+    "identifier": "Vanishing Georgia gor366",
+    "place": "Gordon County, Georgia",
+    "dimensions": "photograph",
+    "techniques": [
+      "hand-tufted"
+    ],
+    "themes": [
+      "Machine tufting & Dalton",
+      "Hooked & handmade rugs"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Digital Library of Georgia",
+      "for: Dalton bedspreads"
+    ],
+    "region": "United States",
+    "description": "DLG description: \"Gordon County, ca. 1920s?. Family making tufted bedspreads at their home. Note the early automobile parked in front. It is possible that this image has been incorrectly labeled as a photograph.\" Date uncertain (catalogue's question mark).\nWhy it matters: Dalton bedspreads: one of the earliest images of home hand-tufting of bedspreads in north Georgia, before the 1930s roadside trade.\nFound: Digital Library of Georgia, search \"tufted\", 2026-10-28.",
+    "sourceUrl": "https://dlg.usg.edu/record/dlg_vang_gor366",
+    "image": "https://dlg.usg.edu/thumbnails/dlg/vang/dlg_vang_gor366.jpg",
+    "imageCredit": "Georgia Archives, Vanishing Georgia",
+    "imagePage": "https://dlg.usg.edu/record/dlg_vang_gor366",
+    "rights": "not-requested",
+    "reviewedAt": "2026-10-28T21:52:11.222Z"
+  },
+  {
+    "id": "u-mvs4xey6wp3mb",
+    "type": "image",
+    "status": "unverified",
+    "title": "[Photograph of Ethel Partin Stiles making a tufted bedspread, Ringgold, Catoosa County, Georgia, 1934 May]",
+    "date": "1934 May",
+    "dateStart": 1934,
+    "dateEnd": 1934,
+    "institution": "Georgia Archives",
+    "collection": "Vanishing Georgia (Digital Library of Georgia)",
+    "identifier": "Vanishing Georgia cat008 (related: cat005, cat006, cat007)",
+    "place": "Ringgold, Catoosa County, Georgia",
+    "dimensions": "photograph",
+    "techniques": [
+      "hand-tufted"
+    ],
+    "themes": [
+      "Machine tufting & Dalton",
+      "Hooked & handmade rugs"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Digital Library of Georgia",
+      "for: Dalton bedspreads"
+    ],
+    "region": "United States",
+    "description": "DLG description: \"Ringgold, May 1934. Ethel Partin Stiles in the process of making a tufted bedspread. Here she is stitching the yarn by hand into the bedspread fabric. She follows the pattern, which had been previously rubbed onto the fabric.\" Three companion photographs show the earlier step: Ethel Partin Stiles (cat005, cat006) and Frances Stiles (cat007) \"rubbing a pattern on bedspread fabric\", Ringgold, 1934.\nWhy it matters: Dalton bedspreads: a dated, step-by-step sequence of hand tufting at home in 1934, from transferring the pattern to stitching the yarn.\nFound: Digital Library of Georgia, search \"tufted\", 2026-10-28.",
+    "sourceUrl": "https://dlg.usg.edu/record/dlg_vang_cat008",
+    "image": "https://dlg.usg.edu/thumbnails/dlg/vang/dlg_vang_cat008.jpg",
+    "imageCredit": "Georgia Archives, Vanishing Georgia",
+    "imagePage": "https://dlg.usg.edu/record/dlg_vang_cat008",
+    "rights": "not-requested",
+    "images": [
+      {
+        "src": "https://dlg.usg.edu/thumbnails/dlg/vang/dlg_vang_cat008.jpg"
+      },
+      {
+        "src": "https://dlg.usg.edu/thumbnails/dlg/vang/dlg_vang_cat005.jpg",
+        "caption": "Vanishing Georgia cat005"
+      },
+      {
+        "src": "https://dlg.usg.edu/thumbnails/dlg/vang/dlg_vang_cat006.jpg",
+        "caption": "Vanishing Georgia cat006"
+      },
+      {
+        "src": "https://dlg.usg.edu/thumbnails/dlg/vang/dlg_vang_cat007.jpg",
+        "caption": "Vanishing Georgia cat007"
+      }
+    ],
+    "reviewedAt": "2026-10-28T21:52:11.222Z"
+  },
+  {
+    "id": "u-mvs4xie8j3yg2",
+    "type": "image",
+    "status": "unverified",
+    "title": "[Photograph of employees of the J. M. Muse Spread Manufacturing Company and truck, Sugar Valley, Gordon County, Georgia, ca. 1934-1936?]",
+    "date": "ca. 1934-1936?",
+    "dateStart": 1934,
+    "dateEnd": 1936,
+    "institution": "Georgia Archives",
+    "collection": "Vanishing Georgia (Digital Library of Georgia)",
+    "identifier": "Vanishing Georgia gor290",
+    "place": "Sugar Valley, Gordon County, Georgia",
+    "dimensions": "photograph",
+    "themes": [
+      "Machine tufting & Dalton"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Digital Library of Georgia",
+      "for: Dalton bedspreads",
+      "for: Building the machine"
+    ],
+    "region": "United States",
+    "description": "DLG description: \"Sugar Valley, mid 1930s. Employees of the J.M. Muse Spread Mfg. Company pose for a photograph on a truck belonging to the business. Mr. and Mrs. J.M. Muse, Sr. were pioneers in the tufted bedspread industry in Gordon County.\" Related Vanishing Georgia photographs: J. Marvin Muse and dogs, Sugar Valley, 1934 (gor272); the home of J. M. Muse, Sugar Valley, 1976 (gor071).\nWhy it matters: Building the machine, open question \"a joint Cobble-Muse patent\": documents the Muse family's spread company in the mid-1930s; useful for identifying which Muse worked with Cobble.\nFound: Digital Library of Georgia, search \"tufted\", 2026-10-28.",
+    "sourceUrl": "https://dlg.usg.edu/record/dlg_vang_gor290",
+    "image": "https://dlg.usg.edu/thumbnails/dlg/vang/dlg_vang_gor290.jpg",
+    "imageCredit": "Georgia Archives, Vanishing Georgia",
+    "imagePage": "https://dlg.usg.edu/record/dlg_vang_gor290",
+    "rights": "not-requested",
+    "reviewedAt": "2026-10-28T21:52:11.222Z"
+  },
+  {
+    "id": "u-mvs4xltw4y28g",
+    "type": "image",
+    "status": "unverified",
+    "title": "[1 p.m. 11-18-38 [ . . . ]B] [construction of the Mount Alto Bedspread Company plant, Calhoun]",
+    "date": "November 18, 1938",
+    "dateStart": 1938,
+    "dateEnd": 1938,
+    "institution": "Georgia Archives",
+    "collection": "Vanishing Georgia (Digital Library of Georgia)",
+    "identifier": "Vanishing Georgia gor206",
+    "place": "Calhoun, Gordon County, Georgia",
+    "dimensions": "photograph",
+    "themes": [
+      "Machine tufting & Dalton"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Digital Library of Georgia",
+      "for: Dalton bedspreads"
+    ],
+    "region": "United States",
+    "description": "Photograph; the catalogue title is the inscription \"[1 p.m. 11-18-38 [ . . . ]B]\" (bracketed words added here). DLG description: \"Calhoun, November 18, 1938. Construction of the Mount Alto Bedspread Company plant. The company was founded by Dr. John H. Boston ca. 1920 to supply materials for the tufted bedspread industry in Gordon County. Over the years it expanded. The plant seen in this photograph is said to have been the first modern tufted textile mill in Calhoun. Later it became Velvetone & Forrest Mills located on South Wall Street.\" (A related portrait, gor347, says Mary Ida Hamilton and Dr. John Houser Boston, married 1904, \"were one of the pioneers in the tufted bedspread industry in Gordon County.\")\nWhy it matters: Dalton bedspreads: dates the move from home work to a purpose-built tufted textile mill in Calhoun (1938) and names a c. 1920 supply firm.\nFound: Digital Library of Georgia, search \"tufted\", 2026-10-28.",
+    "sourceUrl": "https://dlg.usg.edu/record/dlg_vang_gor206",
+    "image": "https://dlg.usg.edu/thumbnails/dlg/vang/dlg_vang_gor206.jpg",
+    "imageCredit": "Georgia Archives, Vanishing Georgia",
+    "imagePage": "https://dlg.usg.edu/record/dlg_vang_gor206",
+    "rights": "not-requested",
+    "reviewedAt": "2026-10-28T21:52:11.222Z"
+  },
+  {
+    "id": "u-mvs4xp97zlh0h",
+    "type": "image",
+    "status": "unverified",
+    "title": "HAND TUFTED BEDSPREADS AND SOUVENIRS U.S. 41, GA.",
+    "date": "June 1940",
+    "dateStart": 1940,
+    "dateEnd": 1940,
+    "institution": "Georgia Archives",
+    "collection": "Vanishing Georgia (Digital Library of Georgia)",
+    "identifier": "Vanishing Georgia brt126 (related: brt120, brt121)",
+    "place": "U.S. Highway 41, Bartow County, Georgia",
+    "dimensions": "photograph",
+    "techniques": [
+      "hand-tufted",
+      "chenille"
+    ],
+    "themes": [
+      "Machine tufting & Dalton"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Digital Library of Georgia",
+      "for: Dalton bedspreads"
+    ],
+    "region": "United States",
+    "description": "Photograph. DLG description: \"Bartow County, U.S. Highway 41, June 1940. Roadside stand featuring hand-tufted chenille bedspreads and souvenirs.\" Two related photographs (brt120, brt121, dated 1940/1943): \"Bartow County, early 1940s. Chenille bedspreads. Note patterns.\" (from field notes).\nWhy it matters: Dalton bedspreads, open question on roadside spread sales: a dated (June 1940) roadside stand on \"Bedspread Boulevard\" (U.S. 41), with close views of patterns.\nFound: Digital Library of Georgia, search \"chenille bedspread\", 2026-10-28.",
+    "sourceUrl": "https://dlg.usg.edu/record/dlg_vang_brt126",
+    "image": "https://dlg.usg.edu/thumbnails/dlg/vang/dlg_vang_brt126.jpg",
+    "imageCredit": "Georgia Archives, Vanishing Georgia",
+    "imagePage": "https://dlg.usg.edu/record/dlg_vang_brt126",
+    "rights": "not-requested",
+    "images": [
+      {
+        "src": "https://dlg.usg.edu/thumbnails/dlg/vang/dlg_vang_brt126.jpg"
+      },
+      {
+        "src": "https://dlg.usg.edu/thumbnails/dlg/vang/dlg_vang_brt120.jpg",
+        "caption": "Vanishing Georgia brt120, chenille bedspreads, Bartow County, early 1940s"
+      },
+      {
+        "src": "https://dlg.usg.edu/thumbnails/dlg/vang/dlg_vang_brt121.jpg",
+        "caption": "Vanishing Georgia brt121, chenille bedspreads, Bartow County, early 1940s"
+      }
+    ],
+    "reviewedAt": "2026-10-28T21:52:11.222Z"
+  },
+  {
+    "id": "u-mvs4xsogzns87",
+    "type": "image",
+    "status": "unverified",
+    "title": "[Photograph of interior of Cornwells Gifts, Dalton, Whitfield County, Georgia, ca. 195-]",
+    "date": "ca. 195-",
+    "dateStart": 1950,
+    "dateEnd": 1959,
+    "institution": "Georgia Archives",
+    "collection": "Vanishing Georgia (Digital Library of Georgia)",
+    "identifier": "Vanishing Georgia wtf292",
+    "place": "Dalton, Georgia",
+    "dimensions": "photograph",
+    "techniques": [
+      "chenille"
+    ],
+    "themes": [
+      "Machine tufting & Dalton"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Digital Library of Georgia",
+      "for: Dalton bedspreads",
+      "possible"
+    ],
+    "region": "United States",
+    "description": "DLG description: \"Dalton, ca. 1950s. Interior of Cornwells Gifts. Note the chenille bedspreads on display in the left background.\"\nWhy it matters: Dalton bedspreads: retail display of chenille spreads in 1950s Dalton. Minor; tagged possible.\nFound: Digital Library of Georgia, search \"chenille bedspread\", 2026-10-28.",
+    "sourceUrl": "https://dlg.usg.edu/record/dlg_vang_wtf292",
+    "image": "https://dlg.usg.edu/thumbnails/dlg/vang/dlg_vang_wtf292.jpg",
+    "imageCredit": "Georgia Archives, Vanishing Georgia",
+    "imagePage": "https://dlg.usg.edu/record/dlg_vang_wtf292",
+    "rights": "not-requested",
+    "reviewedAt": "2026-10-28T21:52:11.222Z"
+  },
+  {
+    "id": "u-mvs4xw3te5pqk",
+    "type": "image",
+    "status": "unverified",
+    "title": "Dalton, Tufted Textile Manufacturing Association",
+    "creator": "Lane Brothers Commercial Photographers (Atlanta, Ga.)",
+    "date": "1949-01-03",
+    "dateStart": 1949,
+    "dateEnd": 1949,
+    "institution": "Georgia State University. Special Collections",
+    "collection": "Lane Brothers Commercial Photographers Photographic Collection, 1920-1976",
+    "identifier": "gsu_lane_3971 (also 3972, 3973, 3974)",
+    "place": "Dalton, Georgia",
+    "dimensions": "photograph",
+    "themes": [
+      "Machine tufting & Dalton"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Digital Library of Georgia",
+      "for: Dalton bedspreads"
+    ],
+    "region": "United States",
+    "description": "Four press photographs, 3 January 1949, by Lane Brothers, Atlanta. Envelope description: \"Dalton; Tufted Textile Manufacturing Association\". Subjects not described further; check images for who and what is shown.\nWhy it matters: Dalton bedspreads / Building the machine: a dated event of the Tufted Textile Manufacturers Association in 1949, just as the industry turned from spreads to carpet.\nFound: Digital Library of Georgia, search \"tufted\", 2026-10-28.",
+    "sourceUrl": "https://dlg.usg.edu/record/gsu_lane_3971",
+    "image": "https://dlg.usg.edu/thumbnails/gsu/lane/gsu_lane_3971.jpg",
+    "imageCredit": "Georgia State University Special Collections (Lane Brothers)",
+    "imagePage": "https://dlg.usg.edu/record/gsu_lane_3971",
+    "rights": "not-requested",
+    "images": [
+      {
+        "src": "https://dlg.usg.edu/thumbnails/gsu/lane/gsu_lane_3971.jpg"
+      },
+      {
+        "src": "https://dlg.usg.edu/thumbnails/gsu/lane/gsu_lane_3972.jpg",
+        "caption": "gsu_lane_3972"
+      },
+      {
+        "src": "https://dlg.usg.edu/thumbnails/gsu/lane/gsu_lane_3973.jpg",
+        "caption": "gsu_lane_3973"
+      },
+      {
+        "src": "https://dlg.usg.edu/thumbnails/gsu/lane/gsu_lane_3974.jpg",
+        "caption": "gsu_lane_3974"
+      }
+    ],
+    "reviewedAt": "2026-10-28T21:52:11.222Z"
+  },
+  {
+    "id": "u-mvs4xzj49ap0j",
+    "type": "image",
+    "status": "unverified",
+    "title": "Cabin Crafts plant, Dalton, Georgia",
+    "creator": "Lane Brothers Commercial Photographers (Atlanta, Ga.)",
+    "date": "1943-01",
+    "dateStart": 1943,
+    "dateEnd": 1943,
+    "institution": "Georgia State University. Special Collections",
+    "collection": "Lane Brothers Commercial Photographers Photographic Collection, 1920-1976",
+    "identifier": "gsu_lane_10910 (also 10911)",
+    "place": "Dalton, Georgia",
+    "dimensions": "photograph",
+    "themes": [
+      "Machine tufting & Dalton"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Digital Library of Georgia",
+      "for: Dalton bedspreads",
+      "possible"
+    ],
+    "region": "United States",
+    "description": "Two press photographs, January 1943. Envelope description: \"Cabin Croft [Craft?]; Dalton; [Textile industry; textile mill worker; Parachute? industry]\".\nWhy it matters: Dalton bedspreads: Cabin Crafts in wartime, possibly on war work (parachutes). Tagged possible until the images are checked.\nFound: Digital Library of Georgia, search \"Cabin Crafts\", 2026-10-28.",
+    "sourceUrl": "https://dlg.usg.edu/record/gsu_lane_10910",
+    "image": "https://dlg.usg.edu/thumbnails/gsu/lane/gsu_lane_10910.jpg",
+    "imageCredit": "Georgia State University Special Collections (Lane Brothers)",
+    "imagePage": "https://dlg.usg.edu/record/gsu_lane_10910",
+    "rights": "not-requested",
+    "reviewedAt": "2026-10-28T21:52:11.222Z"
+  },
+  {
+    "id": "u-mvs4y2ybakdr0",
+    "type": "image",
+    "status": "unverified",
+    "title": "Photograph of Evelyn Wall tufting in front of the fireplace in Sunshine Cottage, Mount Berry, Georgia, 194X",
+    "date": "194X",
+    "dateStart": 1940,
+    "dateEnd": 1949,
+    "institution": "Berry College. Library",
+    "collection": "Berry College Historic Image Collection",
+    "identifier": "gbc_photographs_2638",
+    "place": "Sunshine Cottage, Mount Berry, Georgia",
+    "dimensions": "photograph",
+    "techniques": [
+      "hand-tufted"
+    ],
+    "themes": [
+      "Machine tufting & Dalton",
+      "Hooked & handmade rugs"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Digital Library of Georgia",
+      "for: Dalton bedspreads"
+    ],
+    "region": "United States",
+    "description": "DLG description: \"Evelyn Wall tufting in front of the fireplace in Sunshine Cottage, 194X\".\nWhy it matters: Dalton bedspreads: hand tufting as a craft taught or practised at Berry College (Rome, Ga.) in the 1940s.\nFound: Digital Library of Georgia, search \"tufted\", 2026-10-28.",
+    "sourceUrl": "https://dlg.usg.edu/record/gbc_photographs_2638",
+    "image": "https://dlg.usg.edu/thumbnails/gbc/photographs/gbc_photographs_2638.jpg",
+    "imageCredit": "Berry College Library",
+    "imagePage": "https://dlg.usg.edu/record/gbc_photographs_2638",
+    "rights": "not-requested",
+    "reviewedAt": "2026-10-28T21:52:11.222Z"
+  },
+  {
+    "id": "u-mvs4y6dwj1xt5",
+    "type": "image",
+    "status": "unverified",
+    "title": "Tufting Machine",
+    "date": "circa 1964 (record: 1964)",
+    "dateStart": 1964,
+    "dateEnd": 1964,
+    "institution": "New Georgia Encyclopedia (Project)",
+    "collection": "New Georgia Encyclopedia",
+    "identifier": "NGE m-4007",
+    "place": "Shaw Industries, Dalton, Georgia",
+    "dimensions": "photograph",
+    "techniques": [
+      "tufted",
+      "broadloom"
+    ],
+    "themes": [
+      "Machine tufting & Dalton"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Digital Library of Georgia",
+      "for: Building the machine"
+    ],
+    "region": "United States",
+    "description": "Black-and-white photograph. DLG/NGE description: \"An early twelve-foot-wide tufting machine in operation at Shaw Industries, circa 1964. In this photo, yarn is fed through tubes at high speeds from cone positions at the left. ... First invented in the early 1950s, these machines allowed tufted carpets to compete successfully against woven carpets. By 1965 more than 85 percent of broadloom carpeting sold in the United States was tufted.\" Rights holder: Courtesy of Shaw Industries, Inc. NGE page: https://www.georgiaencyclopedia.org/articles/business-economy/shaw-industries/m-4007/\nWhy it matters: Building the machine: a dated photo of a 12-foot broadloom tufting machine in use, c. 1964. NGE's \"85 percent by 1965\" figure is a secondary claim; source it.\nFound: Digital Library of Georgia, search \"tufting machine\", 2026-10-28.",
+    "sourceUrl": "https://dlg.usg.edu/record/nge_ngen_m-4007",
+    "image": "https://dlg.usg.edu/thumbnails/nge/ngen/nge_ngen_m-4007.jpg",
+    "imageCredit": "Courtesy of Shaw Industries, Inc (via New Georgia Encyclopedia)",
+    "imagePage": "https://dlg.usg.edu/record/nge_ngen_m-4007",
+    "rights": "not-requested",
+    "reviewedAt": "2026-10-28T21:52:11.222Z"
+  },
+  {
+    "id": "u-mvs4y9t5g4k3g",
+    "type": "oral-history",
+    "status": "unverified",
+    "title": "Marguerite Stewart interview with Burl Jackson \"Jack\" Bandy and Altha Sue Quinton Gordon (part one)",
+    "creator": "Interviewer: Marguerite Stewart; interviewees: Burl Jackson Bandy (1926-2020), Altha Sue Quinton Gordon (1928-2011)",
+    "date": "1974 (digitised 2023)",
+    "dateStart": 1974,
+    "dateEnd": 1974,
+    "institution": "Atlanta History Center",
+    "collection": "John Burrison Georgia Folklore Archives Collection",
+    "identifier": "geh_p17222coll18_585",
+    "dimensions": "52:06 minutes",
+    "themes": [
+      "Machine tufting & Dalton"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Digital Library of Georgia",
+      "for: Dalton bedspreads",
+      "possible"
+    ],
+    "region": "United States",
+    "description": "Audio interview, 52 minutes, 1974, from the John Burrison Georgia Folklore Archives at the Atlanta History Center (via DLG). Found by a search for \"chenille bedspread\"; no summary in the record. Jack Bandy (1926-2020) is presumably the Dalton carpet manufacturer (Coronet, Bandy Heritage Center namesake); not confirmed by the record.\nWhy it matters: Dalton bedspreads: a 1974 first-hand account touching chenille spreads, possibly by a carpet-industry founder. Tagged possible until listened to.\nFound: Digital Library of Georgia, search \"chenille bedspread\", 2026-10-28.",
+    "sourceUrl": "https://dlg.usg.edu/record/geh_p17222coll18_585",
+    "reviewedAt": "2026-10-28T21:52:11.222Z"
+  },
+  {
+    "id": "u-mvs58ht1gp0h7",
+    "type": "image",
+    "status": "unverified",
+    "title": "1946 model tufting machine, 115\" tufting width (2011.002.0264)",
+    "date": "1946",
+    "dateStart": 1946,
+    "dateEnd": 1946,
+    "institution": "Bandy Heritage Center for Northwest Georgia, Dalton State College",
+    "collection": "Carpet & Rug Institute Collection (accession 2011.002)",
+    "identifier": "2011.002.0264",
+    "techniques": [
+      "tufted"
+    ],
+    "themes": [
+      "Machine tufting & Dalton"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Bandy Heritage Center",
+      "for: Building the machine"
+    ],
+    "region": "United States",
+    "description": "Photograph. Catalogue description: \"1946 model tufting machine photographed in front of a white wall. Machine has a tufting width of 115\" to accomodate 185 needles and is calibrated to 5/8\" gauge.\" Date: 1946. Catalogue title is \"Photograph\"; the record title here is supplied. Companion photographs: 2011.002.0261 (another 1946 model, plate naming Cobble Brothers Manufacturing, Chattanooga) and 2011.002.0265 (1949 model, Cobble, 115\" width, 370 needles, 5/16\" gauge).\nWhy it matters: Building the machine, open question \"the first machine to tuft broadloom width (c. 1950)\": a dated 1946 multi-needle machine already 115 inches wide (coarse 5/8\" gauge, presumably for bedspreads), before the c. 1950 broadloom date. Confirm the maker of this one from the image.\nFound: Bandy Heritage Center (PastPerfect), search \"tufting machine\", 2026-10-28.",
+    "sourceUrl": "https://bandyheritagecenter.pastperfectonline.com/photo/0B4464C0-1568-4AB0-8DCE-861300034362",
+    "image": "https://s3.amazonaws.com/pastperfectonline/images/museum_1415/001/20110020264.jpg",
+    "imageCredit": "Bandy Heritage Center, Dalton State College",
+    "imagePage": "https://bandyheritagecenter.pastperfectonline.com/photo/0B4464C0-1568-4AB0-8DCE-861300034362",
+    "rights": "not-requested",
+    "reviewedAt": "2026-10-28T21:52:11.222Z"
+  },
+  {
+    "id": "u-mvs58l9caxfar",
+    "type": "image",
+    "status": "unverified",
+    "title": "1946 model tufting machine, Cobble Brothers Manufacturing (2011.002.0261)",
+    "creator": "Cobble Brothers Manufacturing, Chattanooga, TN (machine)",
+    "date": "1946",
+    "dateStart": 1946,
+    "dateEnd": 1946,
+    "institution": "Bandy Heritage Center for Northwest Georgia, Dalton State College",
+    "collection": "Carpet & Rug Institute Collection (accession 2011.002)",
+    "identifier": "2011.002.0261",
+    "techniques": [
+      "tufted"
+    ],
+    "themes": [
+      "Machine tufting & Dalton"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Bandy Heritage Center",
+      "for: Building the machine"
+    ],
+    "region": "United States",
+    "description": "Photograph. Catalogue description: \"1946 model tufting machine with enclosed top housing and full-time lubrication system. Identification plate on right side of machine identifies manufacturer as Cobble Brothers Manufacturing, Chattanooga, TN.\" Date: 1946.\nWhy it matters: Building the machine: a dated 1946 Cobble multi-needle machine, with the maker's plate; photographs of early Chattanooga machines are an open question.\nFound: Bandy Heritage Center (PastPerfect), search \"tufting machine\", 2026-10-28.",
+    "sourceUrl": "https://bandyheritagecenter.pastperfectonline.com/photo/6B7E209F-8265-4352-9A88-132877858892",
+    "image": "https://s3.amazonaws.com/pastperfectonline/images/museum_1415/001/20110020261-2.jpg",
+    "imageCredit": "Bandy Heritage Center, Dalton State College",
+    "imagePage": "https://bandyheritagecenter.pastperfectonline.com/photo/6B7E209F-8265-4352-9A88-132877858892",
+    "rights": "not-requested",
+    "reviewedAt": "2026-10-28T21:52:11.222Z"
+  },
+  {
+    "id": "u-mvs58oq2j5mgp",
+    "type": "image",
+    "status": "unverified",
+    "title": "1949 model tufting machine, Cobble Brothers, 115\" width (2011.002.0265)",
+    "creator": "Cobble Brothers Machinery (machine)",
+    "date": "1949",
+    "dateStart": 1949,
+    "dateEnd": 1949,
+    "institution": "Bandy Heritage Center for Northwest Georgia, Dalton State College",
+    "collection": "Carpet & Rug Institute Collection (accession 2011.002)",
+    "identifier": "2011.002.0265",
+    "techniques": [
+      "tufted"
+    ],
+    "themes": [
+      "Machine tufting & Dalton"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Bandy Heritage Center",
+      "for: Building the machine"
+    ],
+    "region": "United States",
+    "description": "Photograph. Catalogue description: \"1949 model tufting machine. Identification tag on right side of machine indicates manufacturer in Cobble Brothers Machinery. Machine has a tufting width of 115\" to accomodate 370 needles and is calibrated to 5/16\" gauge.\" Date: 1949.\nWhy it matters: Building the machine, open question \"the first machine to tuft broadloom width (c. 1950)\": a 1949 Cobble machine 115\" wide at a finer 5/16\" gauge, nearer carpet than the 1946 5/8\" model (2011.002.0264).\nFound: Bandy Heritage Center (PastPerfect), search \"tufting machine\", 2026-10-28.",
+    "sourceUrl": "https://bandyheritagecenter.pastperfectonline.com/photo/15D19585-9771-4D81-93B8-316203478586",
+    "image": "https://s3.amazonaws.com/pastperfectonline/images/museum_1415/001/20110020265.jpg",
+    "imageCredit": "Bandy Heritage Center, Dalton State College",
+    "imagePage": "https://bandyheritagecenter.pastperfectonline.com/photo/15D19585-9771-4D81-93B8-316203478586",
+    "rights": "not-requested",
+    "reviewedAt": "2026-10-28T21:52:11.222Z"
+  },
+  {
+    "id": "u-mvs58s6lwxcnd",
+    "type": "image",
+    "status": "unverified",
+    "title": "Narrow width Cobble Brothers 40 DT carpet tufting machine with pattern attachment, 1953 (2011.002.0276)",
+    "creator": "Cobble Brothers (machine); Singer logo attached",
+    "date": "1953",
+    "dateStart": 1953,
+    "dateEnd": 1953,
+    "institution": "Bandy Heritage Center for Northwest Georgia, Dalton State College",
+    "collection": "Carpet & Rug Institute Collection (accession 2011.002)",
+    "identifier": "2011.002.0276",
+    "techniques": [
+      "tufted",
+      "cut pile"
+    ],
+    "themes": [
+      "Machine tufting & Dalton"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Bandy Heritage Center",
+      "for: Building the machine",
+      "for: Programmable tufting"
+    ],
+    "region": "United States",
+    "description": "Photograph. Catalogue description: \"Narrow width Cobble Brothers 40 DT carpet tufting machine with pattern attachment. Machine has Singer logo attached. Rollers are holding a residual amount of cut-pile tufted material.\" Date: 1953. Also in the collection: 1954 model broadloom machine by Cobble Bros. Machinery Co. (2011.002.0270); Cobble 120\" loop pile Universal-type pattern machine, 1954 (2011.002.0271).\nWhy it matters: Building the machine / Programmable tufting: a dated 1953 pattern attachment, and a Singer badge on a Cobble machine (Singer-Cobble link) earlier than often cited.\nFound: Bandy Heritage Center (PastPerfect), search \"Cobble\", 2026-10-28.",
+    "sourceUrl": "https://bandyheritagecenter.pastperfectonline.com/photo/FD78B715-F1A9-4588-96B8-465815209900",
+    "image": "https://s3.amazonaws.com/pastperfectonline/images/museum_1415/001/20110020276.jpg",
+    "imageCredit": "Bandy Heritage Center, Dalton State College",
+    "imagePage": "https://bandyheritagecenter.pastperfectonline.com/photo/FD78B715-F1A9-4588-96B8-465815209900",
+    "rights": "not-requested",
+    "reviewedAt": "2026-10-28T21:52:11.222Z"
+  },
+  {
+    "id": "u-mvs58vmypbqfc",
+    "type": "image",
+    "status": "unverified",
+    "title": "1954 model broadloom carpet tufting machine, Cobble Bros. Machinery Co. (2011.002.0270)",
+    "creator": "Cobble Bros. Machinery Co. (machine)",
+    "date": "1954",
+    "dateStart": 1954,
+    "dateEnd": 1954,
+    "institution": "Bandy Heritage Center for Northwest Georgia, Dalton State College",
+    "collection": "Carpet & Rug Institute Collection (accession 2011.002)",
+    "identifier": "2011.002.0270",
+    "techniques": [
+      "tufted",
+      "broadloom"
+    ],
+    "themes": [
+      "Machine tufting & Dalton"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Bandy Heritage Center",
+      "for: Building the machine"
+    ],
+    "region": "United States",
+    "description": "Photograph. Catalogue description: \"1954 model bradloom [sic] carpet tufting machine with six yarn tension rollers in place above the needle bar. Identification tag on left side of machine indicates manufacturer as Cobble Bros. Machinery Co.\" Date: 1954.\nWhy it matters: Building the machine: a dated broadloom tufting machine of 1954 with maker's tag.\nFound: Bandy Heritage Center (PastPerfect), search \"tufting machine\", 2026-10-28.",
+    "sourceUrl": "https://bandyheritagecenter.pastperfectonline.com/photo/8C12285B-F1DC-41DA-87A1-376231087818",
+    "image": "https://s3.amazonaws.com/pastperfectonline/images/museum_1415/001/20110020270.jpg",
+    "imageCredit": "Bandy Heritage Center, Dalton State College",
+    "imagePage": "https://bandyheritagecenter.pastperfectonline.com/photo/8C12285B-F1DC-41DA-87A1-376231087818",
+    "rights": "not-requested",
+    "reviewedAt": "2026-10-28T21:52:11.222Z"
+  },
+  {
+    "id": "u-mvs58z369fy9m",
+    "type": "image",
+    "status": "unverified",
+    "title": "Julia Mitchell using a hand-held tufting gun at Cabin Crafts, c.1940 (2020.006.0029)",
+    "date": "c.1940",
+    "dateStart": 1935,
+    "dateEnd": 1945,
+    "institution": "Bandy Heritage Center for Northwest Georgia, Dalton State College",
+    "collection": "David Stevenson collection (accession 2020.006)",
+    "identifier": "2020.006.0029",
+    "techniques": [
+      "tufted",
+      "tufting gun"
+    ],
+    "themes": [
+      "Machine tufting & Dalton",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Bandy Heritage Center",
+      "for: Hand tools and the gun",
+      "for: Dalton bedspreads"
+    ],
+    "region": "United States",
+    "description": "Photograph. Catalogue description: \"Julia Mitchell using a hand-held tufting gun to stitch in a floral pattern on a bedspread at Cabin Crafts. The bedspread is held in place within a circular frame that grants Mitchell easier access to all areas of the bedspread. A second tufting operator sits at a frame next to Mitchell, and an empty frame is positioned next to the second woman. A supervisor stands behind the second operator viewing her progress.\" Date: c.1940.\nWhy it matters: Hand tools and the gun, open questions \"the earliest dated motorised or air tufting gun in production use\" and \"a dated photograph of a hand gun in use in Dalton\": a hand-held tufting gun in factory use c. 1940, matching the Vanishing Georgia \"electric needlepunch gun\" photograph of Cabin Crafts, c. 1941 (wtf225). Related: Cabin Crafts workers \"using air-driven hand tufters\" on round frames (Deaton Collection 2010.003.0095c, undated).\nFound: Bandy Heritage Center (PastPerfect), search \"tufting gun\", 2026-10-28.",
+    "sourceUrl": "https://bandyheritagecenter.pastperfectonline.com/photo/0FDE0D89-C7A2-4859-AB7A-223311483185",
+    "image": "https://s3.amazonaws.com/pastperfectonline/images/museum_1415/008/20200060029.jpg",
+    "imageCredit": "Bandy Heritage Center, Dalton State College",
+    "imagePage": "https://bandyheritagecenter.pastperfectonline.com/photo/0FDE0D89-C7A2-4859-AB7A-223311483185",
+    "rights": "not-requested",
+    "reviewedAt": "2026-10-28T21:52:11.222Z"
+  },
+  {
+    "id": "u-mvs592jpun3vo",
+    "type": "image",
+    "status": "unverified",
+    "title": "Cabin Crafts workers using air-driven hand tufters (2010.003.0095c)",
+    "date": "undated",
+    "institution": "Bandy Heritage Center for Northwest Georgia, Dalton State College",
+    "collection": "Thomas Deaton Collection (accession 2010.003)",
+    "identifier": "2010.003.0095c",
+    "techniques": [
+      "tufted",
+      "air-driven tufting gun"
+    ],
+    "themes": [
+      "Machine tufting & Dalton",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Bandy Heritage Center",
+      "for: Hand tools and the gun"
+    ],
+    "region": "United States",
+    "description": "Digital photograph (image stored on compact disc 2010.003.0095). Catalogue description: \"Cabin Crafts workers using air-driven hand tufters to stitch in patterns on bedspread materials secured within a round frame. The round frame allowed the workers to rotate the bedspread to more easily reproduce the desired pattern. The worker at left is copying the pattern displayed on the frame at her feet while the worker in front of her works a different pattern. Yarn cones are suspended above the workers and yarns are running from the cones to the air-driven hand tufters.\" Undated.\nWhy it matters: Hand tools and the gun: explicitly \"air-driven\" hand tufters in bedspread production at Cabin Crafts; probably 1940s (compare c.1940 photo 2020.006.0029), but undated.\nFound: Bandy Heritage Center (PastPerfect), search \"tufting gun\", 2026-10-28.",
+    "sourceUrl": "https://bandyheritagecenter.pastperfectonline.com/photo/8AE0F8AF-52B9-4191-ACA6-201636278543",
+    "image": "https://s3.amazonaws.com/pastperfectonline/images/museum_1415/003/20100030095c.jpg",
+    "imageCredit": "Bandy Heritage Center, Dalton State College",
+    "imagePage": "https://bandyheritagecenter.pastperfectonline.com/photo/8AE0F8AF-52B9-4191-ACA6-201636278543",
+    "rights": "not-requested",
+    "reviewedAt": "2026-10-28T21:52:11.222Z"
+  },
+  {
+    "id": "u-mvs595z4bahu3",
+    "type": "image",
+    "status": "unverified",
+    "title": "Tenn-Tex hand-held, single-thread, portable tufting machine, 12/12/1952 (2011.002.0294)",
+    "creator": "Tenn-Tex (maker of tool)",
+    "date": "12/12/1952",
+    "dateStart": 1952,
+    "dateEnd": 1952,
+    "institution": "Bandy Heritage Center for Northwest Georgia, Dalton State College",
+    "collection": "Carpet & Rug Institute Collection (accession 2011.002)",
+    "identifier": "2011.002.0294",
+    "techniques": [
+      "tufting gun"
+    ],
+    "themes": [
+      "Tools & equipment",
+      "Machine tufting & Dalton"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Bandy Heritage Center",
+      "for: Hand tools and the gun"
+    ],
+    "region": "United States",
+    "description": "Photograph. Catalogue description: \"Tenn-Tex hand-held, single-thread, portable tufting machine used for repairs and fill-ins on tufted materials. Machine is fully threaded and suspended from a wire cable for ready access by the operator.\" Date: 12/12/1952. Related undated photographs: \"Hand-held tufting repair gun in operation\" (2011.002.0292); a worker \"using a Southern Machine Company hand-held, needle-punch tufting gun to trace a pattern ... A foot-pedal control regulates the speed of the tufting gun\" (2011.002.0415).\nWhy it matters: Hand tools and the gun: an exactly dated (1952) named hand tufting gun, the ancestor of today's hobby guns; plus a named maker (Southern Machine Co.) of pattern-tracing guns.\nFound: Bandy Heritage Center (PastPerfect), search \"tufting gun\", 2026-10-28.",
+    "sourceUrl": "https://bandyheritagecenter.pastperfectonline.com/photo/D2663E01-213F-4799-87B2-421448214058",
+    "image": "https://s3.amazonaws.com/pastperfectonline/images/museum_1415/001/20110020294.jpg",
+    "imageCredit": "Bandy Heritage Center, Dalton State College",
+    "imagePage": "https://bandyheritagecenter.pastperfectonline.com/photo/D2663E01-213F-4799-87B2-421448214058",
+    "rights": "not-requested",
+    "reviewedAt": "2026-10-28T21:52:11.222Z"
+  },
+  {
+    "id": "u-mvs599epnumc6",
+    "type": "image",
+    "status": "unverified",
+    "title": "Bedspread factory worker using a Southern Machine Company hand-held needle-punch tufting gun (2011.002.0415)",
+    "creator": "Southern Machine Company (maker of gun)",
+    "date": "undated",
+    "institution": "Bandy Heritage Center for Northwest Georgia, Dalton State College",
+    "collection": "Carpet & Rug Institute Collection (accession 2011.002)",
+    "identifier": "2011.002.0415",
+    "techniques": [
+      "tufting gun"
+    ],
+    "themes": [
+      "Tools & equipment",
+      "Machine tufting & Dalton"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Bandy Heritage Center",
+      "for: Hand tools and the gun"
+    ],
+    "region": "United States",
+    "description": "Photograph. Catalogue description: \"Bedspread factory worker using a Southern Machine Company hand-held, needle-punch tufting gun to trace a pattern on materials attached to a box-like wooden frame. A foot-pedal control regulates the speed of the tufting gun. The tufting gun is supplied with yarn from two yarn cones suspended above the wooden frame. Small piles of discarded yarn are scattered across the floor while a finished bedspread is laying on top of a box on the left background.\" Undated.\nWhy it matters: Hand tools and the gun: names a manufacturer of powered hand guns for bedspread work, with foot-pedal speed control. Undated; Southern Machine Co. dates would help.\nFound: Bandy Heritage Center (PastPerfect), search \"tufting gun\", 2026-10-28.",
+    "sourceUrl": "https://bandyheritagecenter.pastperfectonline.com/photo/E4D5CA37-A075-4253-A33A-802810170534",
+    "image": "https://s3.amazonaws.com/pastperfectonline/images/museum_1415/001/20110020415.jpg",
+    "imageCredit": "Bandy Heritage Center, Dalton State College",
+    "imagePage": "https://bandyheritagecenter.pastperfectonline.com/photo/E4D5CA37-A075-4253-A33A-802810170534",
+    "rights": "not-requested",
+    "reviewedAt": "2026-10-28T21:52:11.222Z"
+  },
+  {
+    "id": "u-mvs59cu4jhjqp",
+    "type": "image",
+    "status": "unverified",
+    "title": "Chenille factory worker sewing in pattern using single needle machine, 1928 (2010.003.0010)",
+    "date": "1928",
+    "dateStart": 1928,
+    "dateEnd": 1928,
+    "institution": "Bandy Heritage Center for Northwest Georgia, Dalton State College",
+    "collection": "Thomas Deaton Collection (accession 2010.003)",
+    "identifier": "2010.003.0010",
+    "techniques": [
+      "chenille",
+      "single-needle machine"
+    ],
+    "themes": [
+      "Machine tufting & Dalton"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Bandy Heritage Center",
+      "for: Dalton bedspreads",
+      "for: Building the machine"
+    ],
+    "region": "United States",
+    "description": "Photograph. Catalogue description: \"Chenille factory worker sewing in pattern using single needle machine. Sewing thread is unspooling from yarn cones at front of machine. Machine is numbered '133.' Machine in use is just one of several situated throughout the factory.\" Date: 1928.\nWhy it matters: Building the machine / Dalton bedspreads: if the 1928 date holds, a factory already running numbered (133+) single-needle machines for chenille spreads in the late 1920s, earlier than most accounts of machine tufting. Date should be checked.\nFound: Bandy Heritage Center (PastPerfect), search \"tufting machine\", 2026-10-28.",
+    "sourceUrl": "https://bandyheritagecenter.pastperfectonline.com/photo/FF28A59B-2254-437E-A4D8-944492699483",
+    "image": "https://s3.amazonaws.com/pastperfectonline/images/museum_1415/002/20100030010.jpg",
+    "imageCredit": "Bandy Heritage Center, Dalton State College",
+    "imagePage": "https://bandyheritagecenter.pastperfectonline.com/photo/FF28A59B-2254-437E-A4D8-944492699483",
+    "rights": "not-requested",
+    "reviewedAt": "2026-10-28T21:52:11.222Z"
+  },
+  {
+    "id": "u-mvs59g9qd6v9u",
+    "type": "image",
+    "status": "unverified",
+    "title": "36\" wide pass machine for tufting carpet in narrow bands (\"Irby Passons machine\") (2010.003.0034)",
+    "date": "05/1979 (slide date)",
+    "dateStart": 1979,
+    "dateEnd": 1979,
+    "institution": "Bandy Heritage Center for Northwest Georgia, Dalton State College",
+    "collection": "Thomas Deaton Collection (accession 2010.003)",
+    "identifier": "2010.003.0034",
+    "techniques": [
+      "tufted"
+    ],
+    "themes": [
+      "Machine tufting & Dalton"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Bandy Heritage Center",
+      "for: Building the machine"
+    ],
+    "region": "United States",
+    "description": "Photograph slide, May 1979. Catalogue description: \"36\" wide pass machine for tufting carpet in narrow bands. Early process for manufacturing before advent of broadloom tufting machines. Caption reads 'Irby Passons machine'\". (Slide date is when photographed, not the machine's date.)\nWhy it matters: Building the machine: shows the narrow-band carpet tufting that preceded broadloom-width machines; names Irby Passons.\nFound: Bandy Heritage Center (PastPerfect), search \"tufting machine\", 2026-10-28.",
+    "sourceUrl": "https://bandyheritagecenter.pastperfectonline.com/photo/71A4763F-DE2D-4772-BA3B-637680536424",
+    "rights": "not-requested",
+    "reviewedAt": "2026-10-28T21:52:11.222Z"
+  },
+  {
+    "id": "u-mvs59jpawyul9",
+    "type": "image",
+    "status": "unverified",
+    "title": "A.C. Ball holding a pattern drum for a tufting machine (2011.002.0240)",
+    "date": "undated",
+    "institution": "Bandy Heritage Center for Northwest Georgia, Dalton State College",
+    "collection": "Carpet & Rug Institute Collection (accession 2011.002)",
+    "identifier": "2011.002.0240",
+    "techniques": [
+      "tufted"
+    ],
+    "themes": [
+      "Machine tufting & Dalton"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Bandy Heritage Center",
+      "for: Programmable tufting",
+      "possible"
+    ],
+    "region": "United States",
+    "description": "Photograph. Catalogue description: \"A.C. Ball holding a pattern drum that directs the tufting machine to produce a floral pattern. Electronic control panel for the tufting machine is open showing the switch mechanism that controls the machine. A different pattern drum is installed on a machine and is visible behind the control panel.\" Undated.\nWhy it matters: Programmable tufting: drum-and-switch pattern control with an electronic panel, a step before computer control. Undated; tagged possible.\nFound: Bandy Heritage Center (PastPerfect), search \"tufting machine\", 2026-10-28.",
+    "sourceUrl": "https://bandyheritagecenter.pastperfectonline.com/photo/8BE0DFF7-7F9E-4E50-8777-782387115084",
+    "image": "https://s3.amazonaws.com/pastperfectonline/images/museum_1415/001/20110020240.jpg",
+    "imageCredit": "Bandy Heritage Center, Dalton State College",
+    "imagePage": "https://bandyheritagecenter.pastperfectonline.com/photo/8BE0DFF7-7F9E-4E50-8777-782387115084",
+    "rights": "not-requested",
+    "reviewedAt": "2026-10-28T21:52:11.222Z"
+  },
+  {
+    "id": "u-mvs5jnes48zxl",
+    "type": "article",
+    "status": "unverified",
+    "title": "\"Tufted Bed-Spreads\" [household instructions], Orleans County Monitor (Barton, Vt.), July 12, 1880, p. 4",
+    "creator": "Orleans County Monitor (unsigned household column)",
+    "date": "July 12, 1880",
+    "dateStart": 1880,
+    "dateEnd": 1880,
+    "institution": "Library of Congress (Chronicling America)",
+    "identifier": "LCCN sn84022871, 1880-07-12, ed. 1, image 4",
+    "place": "Barton, Vermont",
+    "publisher": "Orleans County Monitor",
+    "techniques": [
+      "hand-tufted"
+    ],
+    "themes": [
+      "Hooked & handmade rugs",
+      "Machine tufting & Dalton"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Chronicling America",
+      "for: Before the machine"
+    ],
+    "region": "United States",
+    "description": "Newspaper household column headed \"Tufted Bed-Spreads\" (read from the Library of Congress OCR text; OCR is rough and the column is split on the page). It instructs: take coarse unbleached sheeting made up like a sheet, mark it into checks with a pencil and a stick \"two or three inches wide\", use \"unprepared cotton yarn\" with \"twelve threads to draw through\", \"take as short a stitch as will draw through easily\", then \"Cut the threads exactly in the middle of each check, so that the tufts will be of a length. Dip the spread in water and hang up to dry without wringing. This will shrink the cloth and prevent the tufts from coming out when washing.\"\nWhy it matters: Before the machine, open question \"tufted work between the candlewick spreads and Catherine Evans (c. 1850-1890)\": a dated 1880 printed method for making a cut-tuft cotton bedspread at home in New England, with the shrink-to-lock step later used in Dalton. Check the page image to confirm wording.\nFound: Chronicling America, search \"tufted bedspread\" (sorted by date), 2026-10-28.",
+    "sourceUrl": "https://www.loc.gov/resource/sn84022871/1880-07-12/ed-1/?sp=4",
+    "image": "https://tile.loc.gov/image-services/iiif/service:ndnp:vtu:batch_vtu_ludlow_ver01:data:sn84022871:00202194394:1880071201:0533/full/pct:12.5/0/default.jpg",
+    "imageCredit": "Library of Congress, Chronicling America (page image)",
+    "rights": "public-domain",
+    "reviewedAt": "2026-10-28T21:52:11.222Z"
+  },
+  {
+    "id": "u-mvs5jqud65ki4",
+    "type": "article",
+    "status": "unverified",
+    "title": "\"Bedspreads Wanted\" advertisement, Watauga Democrat (Boone, N.C.), October 30, 1919, p. 2",
+    "creator": "Watauga Democrat (advertiser not captured)",
+    "date": "October 30, 1919 (ad repeated to at least January 8, 1920)",
+    "dateStart": 1919,
+    "dateEnd": 1920,
+    "institution": "Library of Congress (Chronicling America)",
+    "identifier": "LCCN sn82007642, 1919-10-30, ed. 1, image 2",
+    "place": "Boone, Watauga County, North Carolina",
+    "publisher": "Watauga Democrat",
+    "techniques": [
+      "hand-tufted",
+      "knotted"
+    ],
+    "themes": [
+      "Machine tufting & Dalton",
+      "Hooked & handmade rugs"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Chronicling America",
+      "for: Dalton bedspreads",
+      "possible"
+    ],
+    "region": "United States",
+    "description": "Classified advertisement (from the search snippet): \"Bedspreads Wanted. We want knotted and tufted bedspreads. Do not send any spreads without first consulting ...\" Repeated in issues of Nov. 6, Dec. 4, 11, 18, 1919, and Jan. 1 and 8, 1920. Who placed the ad is not yet read from the page.\nWhy it matters: Dalton bedspreads: shows a buyer for hand-made \"tufted bedspreads\" in the Appalachian craft trade in 1919, before Dalton's 1920s boom. Tagged possible until the full ad is read.\nFound: Chronicling America, search \"tufted bedspreads\", 2026-10-28.",
+    "sourceUrl": "https://www.loc.gov/resource/sn82007642/1919-10-30/ed-1/?sp=2",
+    "image": "https://tile.loc.gov/image-services/iiif/service:ndnp:ncu:batch_ncu_alligator_ver01:data:sn82007642:00202197930:1919103001:1042/full/pct:12.5/0/default.jpg",
+    "imageCredit": "Library of Congress, Chronicling America (page image)",
+    "rights": "public-domain",
+    "reviewedAt": "2026-10-28T21:52:11.222Z"
+  },
+  {
+    "id": "u-mvs5ju9r9mkdw",
+    "type": "article",
+    "status": "unverified",
+    "title": "Springfield Weekly Republican (Springfield, Mass.), July 14, 1905, p. 9: \"Mrs Henry's tufted bedspreads\"",
+    "creator": "Springfield Weekly Republican",
+    "date": "July 14, 1905",
+    "dateStart": 1905,
+    "dateEnd": 1905,
+    "institution": "Library of Congress (Chronicling America)",
+    "identifier": "LCCN sn83020847, 1905-07-14, ed. 1, image 9",
+    "place": "Springfield, Massachusetts",
+    "publisher": "Springfield Weekly Republican",
+    "techniques": [
+      "hand-tufted"
+    ],
+    "themes": [
+      "Hooked & handmade rugs"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Chronicling America",
+      "for: Before the machine",
+      "possible"
+    ],
+    "region": "United States",
+    "description": "Newspaper item (search snippet): \"... wish to see. Mrs Henry's tufted bedspreads and netting work exhibit her customary talent in ...\" Context (an exhibition or fair report) not yet read.\nWhy it matters: Before the machine: tufted bedspreads still made and exhibited in New England in 1905, between candlewick and Dalton. Tagged possible.\nFound: Chronicling America, search \"tufted bedspreads\", 2026-10-28.",
+    "sourceUrl": "https://www.loc.gov/resource/sn83020847/1905-07-14/ed-1/?sp=9",
+    "image": "https://tile.loc.gov/image-services/iiif/service:ndnp:mb:batch_mb_lachesis_ver01:data:sn83020847:00517171244:1905071401:1045/full/pct:12.5/0/default.jpg",
+    "imageCredit": "Library of Congress, Chronicling America (page image)",
+    "rights": "public-domain",
+    "reviewedAt": "2026-10-28T21:52:11.222Z"
+  },
+  {
+    "id": "u-mvs5nxw3dacy5",
+    "type": "article",
+    "status": "unverified",
+    "title": "The Rohm & Haas reporter, v.11-13 (1953-55)",
+    "creator": "Rohm & Haas Company",
+    "date": "1953-55 (volume)",
+    "dateStart": 1953,
+    "dateEnd": 1955,
+    "institution": "HathiTrust Digital Library",
+    "identifier": "HathiTrust coo.31924061333658 (Cornell copy)",
+    "themes": [
+      "Tools & equipment",
+      "Machine tufting & Dalton"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "HathiTrust",
+      "for: Hand tools and the gun",
+      "possible"
+    ],
+    "region": "United States",
+    "description": "Bound volume of the Rohm & Haas company magazine, v.11-13, 1953-55; search-only (limited view). HathiTrust full-text search for the phrase \"tufting gun\" matches this volume; it is the earliest-dated match of 76. Page not yet identified (the in-volume search did not load).\nWhy it matters: Hand tools and the gun, open question \"early uses of 'tufting gun' (before 1964)\": a 1953-55 use of the phrase. Needs the page number (search inside the volume on HathiTrust) to see what tool is meant.\nFound: HathiTrust full-text search, \"tufting gun\", 2026-10-28.",
+    "sourceUrl": "https://babel.hathitrust.org/cgi/pt?id=coo.31924061333658",
+    "reviewedAt": "2026-10-28T21:52:11.222Z"
+  },
+  {
+    "id": "u-mvs5o1cmqxeq8",
+    "type": "article",
+    "status": "unverified",
+    "title": "Textile industries, v.120:no.6 (June 1956)",
+    "creator": "Textile Industries (trade journal)",
+    "date": "1956:June",
+    "dateStart": 1956,
+    "dateEnd": 1956,
+    "institution": "HathiTrust Digital Library",
+    "identifier": "HathiTrust coo.31924127922569 (also nyp.33433108154174, v.120 Apr.-June 1956)",
+    "themes": [
+      "Tools & equipment",
+      "Machine tufting & Dalton"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "HathiTrust",
+      "for: Hand tools and the gun",
+      "possible"
+    ],
+    "region": "United States",
+    "description": "Trade journal issue; search-only. Matches the phrase \"tufting gun\" in HathiTrust full-text search (second-earliest dated match, after the Rohm & Haas Reporter 1953-55). Page not identified.\nWhy it matters: Hand tools and the gun: a 1956 trade-press use of \"tufting gun\", likely about bedspread or carpet repair guns in Dalton (compare the 1952 Tenn-Tex gun photo at the Bandy Heritage Center).\nFound: HathiTrust full-text search, \"tufting gun\", 2026-10-28.",
+    "sourceUrl": "https://babel.hathitrust.org/cgi/pt?id=coo.31924127922569",
+    "reviewedAt": "2026-10-28T21:52:11.222Z"
+  },
+  {
+    "id": "u-mvs5o4snsu0sy",
+    "type": "trade-catalog",
+    "status": "unverified",
+    "title": "Catalogue of floor coverings : series 1926-1927, catalog no. 20 / Simon Manges & Son",
+    "creator": "Simon Manges & Son",
+    "date": "1926",
+    "dateStart": 1926,
+    "dateEnd": 1927,
+    "institution": "HathiTrust Digital Library",
+    "identifier": "HathiTrust nnc2.ark:/13960/s211wtg9b8r (Columbia copy)",
+    "themes": [
+      "Woven carpet",
+      "Trade catalogs & marketing"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "HathiTrust",
+      "for: Woven carpet"
+    ],
+    "region": "United States",
+    "description": "Trade catalogue of floor coverings, series 1926-1927, catalog no. 20. The earliest-dated volume matching \"broadloom\" in HathiTrust full-text search (results begin in the 1920-1929 decade: this catalogue, then Price's directory of the floor covering trade, 1927, and Rug Profits from 1929). View status not recorded.\nWhy it matters: Woven carpet, open question \"when 'broadloom' came into use\": HathiTrust shows the word in trade use by 1926-27 and nothing earlier in its scanned text. Not a primary source for \"Bigelow's first broadloom, 1877\", which this search did not support.\nFound: HathiTrust full-text search, \"broadloom\" (filtered to 1920-1929), 2026-10-28.",
+    "sourceUrl": "https://babel.hathitrust.org/cgi/pt?id=nnc2.ark:/13960/s211wtg9b8r",
+    "reviewedAt": "2026-10-28T21:52:11.222Z"
+  },
+  {
+    "id": "u-mvs5o88tch6g4",
+    "type": "article",
+    "status": "unverified",
+    "title": "Carpet review, v. 10 (July-Oct. 1956)",
+    "creator": "Carpet Review (trade journal)",
+    "date": "1956",
+    "dateStart": 1956,
+    "dateEnd": 1958,
+    "institution": "HathiTrust Digital Library",
+    "identifier": "HathiTrust nyp.33433102814658 (NYPL); later volumes nyp.33433102813817, 102814351, 102814500, 102813940, 102813833",
+    "themes": [
+      "Machine tufting & Dalton"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "HathiTrust",
+      "for: Tufting abroad",
+      "possible"
+    ],
+    "region": "United Kingdom",
+    "description": "Trade journal volumes held by NYPL and scanned by HathiTrust (search-only), matching the phrase \"tufted carpet\" from 1956 onward; Skinner's record of the man-made fibres industry (1956, 1957) also matches. Pages not identified. (Carpet Review is believed to be British; confirm.)\nWhy it matters: Tufting abroad, open questions on the first tufting machines in Britain and Europe: a run of 1956-58 trade-journal volumes that discuss tufted carpet; searching inside each for \"tufting\" would give dated reports.\nFound: HathiTrust full-text search, \"tufted carpet\", 2026-10-28.",
+    "sourceUrl": "https://babel.hathitrust.org/cgi/pt?id=nyp.33433102814658",
+    "reviewedAt": "2026-10-28T21:52:11.222Z"
+  },
+  {
+    "id": "u-mvs5sylk4365x",
+    "type": "object",
+    "status": "unverified",
+    "title": "Counterpane, tufted (1850)",
+    "creator": "unknown",
+    "date": "1850",
+    "dateStart": 1850,
+    "dateEnd": 1850,
+    "institution": "National Museum of American History, Smithsonian Institution",
+    "identifier": "1994.0305.01",
+    "dimensions": "78 in x 98 in (198.12 x 248.92 cm)",
+    "techniques": [
+      "woven",
+      "tufted",
+      "jacquard"
+    ],
+    "themes": [
+      "Hooked & handmade rugs",
+      "Woven carpet"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Smithsonian",
+      "for: Before the machine"
+    ],
+    "region": "United States",
+    "description": "NMAH record: Object Name \"Counterpane, Tufted\"; maker unknown; place made United States; date made 1850; \"fabric, cotton (overall material) ; woven; tufted; jacquard (overall production method/technique)\"; 78 x 98 in. Companion: 1994.0305.02, dated 1875.\nWhy it matters: Before the machine, open question \"tufted work between the candlewick spreads and Catherine Evans (c. 1850-1890)\": a museum-dated 1850 tufted cotton counterpane. The jacquard technique suggests loom-woven tufts, not needle-tufted; check the object.\nFound: Smithsonian Collections Search, search \"tufted\", 2026-10-28.",
+    "sourceUrl": "https://collections.si.edu/search/detail/edanmdm:nmah_1167059",
+    "reviewedAt": "2026-10-28T21:52:11.222Z"
+  },
+  {
+    "id": "u-mvs5t2170sk4e",
+    "type": "object",
+    "status": "unverified",
+    "title": "Counterpane, tufted (1875)",
+    "creator": "unknown",
+    "date": "1875",
+    "dateStart": 1875,
+    "dateEnd": 1875,
+    "institution": "National Museum of American History, Smithsonian Institution",
+    "identifier": "1994.0305.02",
+    "dimensions": "71 in x 80 in (180.34 x 203.2 cm)",
+    "techniques": [
+      "woven",
+      "tufted",
+      "jacquard"
+    ],
+    "themes": [
+      "Hooked & handmade rugs",
+      "Woven carpet"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Smithsonian",
+      "for: Before the machine"
+    ],
+    "region": "United States",
+    "description": "NMAH record: Object Name \"Counterpane, Tufted\"; maker unknown; date made 1875; \"fabric, cotton (overall material) ; woven; tufted; jacquard\"; 71 x 80 in. Same accession as the 1850 counterpane (1994.0305.01).\nWhy it matters: Before the machine, open question on tufted work c. 1850-1890: a second museum-dated tufted counterpane, 1875. Probably loom-tufted (jacquard); confirm.\nFound: Smithsonian Collections Search, search \"tufted\", 2026-10-28.",
+    "sourceUrl": "https://collections.si.edu/search/detail/edanmdm:nmah_1167060",
+    "reviewedAt": "2026-10-28T21:52:11.222Z"
+  },
+  {
+    "id": "u-mvs5t5h8yhw6g",
+    "type": "object",
+    "status": "unverified",
+    "title": "Counterpane, tufted (1st quarter 19th century)",
+    "date": "1st quarter 19th century",
+    "dateStart": 1800,
+    "dateEnd": 1825,
+    "institution": "National Museum of American History, Smithsonian Institution",
+    "identifier": "1979.0795.01",
+    "dimensions": "92 in x 66 1/4 in (233.68 x 168.275 cm)",
+    "techniques": [
+      "embroidered",
+      "tufted"
+    ],
+    "themes": [
+      "Hooked & handmade rugs"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Smithsonian",
+      "for: Before the machine"
+    ],
+    "region": "United States",
+    "description": "NMAH record: Object Name \"Coverlet ; Coverlet ; Counterpane, tufted ; Counterpane\"; place made United States; date made 1st quarter 19th century; physical description \"embroidered\"; 92 x 66 1/4 in.\nWhy it matters: Before the machine: an early embroidered (needle-made) tufted counterpane, the candlewick-era ancestor of Dalton spreads.\nFound: Smithsonian Collections Search, search \"tufted\", 2026-10-28.",
+    "sourceUrl": "https://collections.si.edu/search/detail/edanmdm:nmah_214214",
+    "reviewedAt": "2026-10-28T21:52:11.222Z"
+  },
+  {
+    "id": "u-mvs5t8xdmkn6q",
+    "type": "object",
+    "status": "unverified",
+    "title": "Hand-tufted peacock 'chenille' bedspread",
+    "creator": "unknown maker (northwest Georgia, near Dalton, probably)",
+    "date": "1910-1930",
+    "dateStart": 1910,
+    "dateEnd": 1930,
+    "institution": "National Museum of American History, Smithsonian Institution",
+    "identifier": "2016.0080.01",
+    "place": "Georgia",
+    "dimensions": "82 3/8 in x 62 3/4 in (209.2 x 159.4 cm)",
+    "materials": [
+      "chenille"
+    ],
+    "techniques": [
+      "hand-tufted"
+    ],
+    "themes": [
+      "Machine tufting & Dalton"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Smithsonian",
+      "for: Dalton bedspreads"
+    ],
+    "region": "United States",
+    "description": "NMAH record: \"An all-white twin or daybed 'chenille' bedspread, hand tufted cotton on a twill weave cotton ground. Unknown maker, 1st third 20th century (probably) northwest Georgia, near Dalton.\" Twill-weave machine-woven ground, selvage width approx. 62 3/4 in; \"Hand tufted with many-stranded white cotton yarn. Unusual center motif of peacock in profile with closed tail\"; 8 in \"popcorn\" outer border; inner border of 8-petalled flowers.\nWhy it matters: Dalton bedspreads, open question \"accession numbers, makers and dates for the Dalton spreads\": a museum-catalogued hand-tufted Georgia spread dated 1910-1930.\nFound: Smithsonian Collections Search, search \"chenille bedspread\", 2026-10-28.",
+    "sourceUrl": "https://collections.si.edu/search/detail/edanmdm:nmah_1807334",
+    "reviewedAt": "2026-10-28T21:52:11.222Z"
+  },
+  {
+    "id": "u-mvs5tcdfeyml3",
+    "type": "object",
+    "status": "unverified",
+    "title": "Machine tufted (chenille) multicolor peacock bedspread; ca. 1955",
+    "creator": "unknown (Dalton, Georgia)",
+    "date": "ca. 1955",
+    "dateStart": 1950,
+    "dateEnd": 1960,
+    "institution": "National Museum of American History, Smithsonian Institution",
+    "identifier": "2016.0367.01",
+    "place": "Dalton, Georgia",
+    "dimensions": "96 in x 73 in (243.84 x 185.42 cm)",
+    "materials": [
+      "chenille"
+    ],
+    "techniques": [
+      "machine tufted",
+      "overtufted"
+    ],
+    "themes": [
+      "Machine tufting & Dalton"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Smithsonian",
+      "for: Dalton bedspreads"
+    ],
+    "region": "United States",
+    "description": "NMAH record: \"Machine-tufted twin-sized bedspread with multicolor peacock design, ca. 1955. Made in Georgia. Purchased by Charles Edwin Bryan in 'Peacock Alley,' near Dalton, Georgia, as a gift for his mother, Ethel Sprowel Bryan, who lived in Jeffersontown, Kentucky.\" Cotton ground and tufting yarn; plain weave; machine tufted; overtufted.\nWhy it matters: Dalton bedspreads: a dated, provenanced machine-tufted roadside (\"Peacock Alley\") spread, c. 1955. Also at NMAH: tufted bath mat and toilet-seat cover with peacock and flower design, Dalton, 1948-1959 (2017.0232.41, .42), and two mid-20th-century tufted/chenille spreads (2001.0248.83, .85).\nFound: Smithsonian Collections Search, search \"chenille bedspread\", 2026-10-28.",
+    "sourceUrl": "https://collections.si.edu/search/detail/edanmdm:nmah_1822500",
+    "reviewedAt": "2026-10-28T21:52:11.222Z"
+  },
+  {
+    "id": "u-mvs5tfti7ccv0",
+    "type": "object",
+    "status": "unverified",
+    "title": "NRA Code Candlewick Bedspread [placard]",
+    "creator": "Made for: National Recovery Administration",
+    "date": "1934",
+    "dateStart": 1934,
+    "dateEnd": 1934,
+    "institution": "National Museum of American History, Smithsonian Institution",
+    "identifier": "2001.0312.065 (Patent number: Des. 90793)",
+    "dimensions": "14 in x 11 in (35.56 x 27.94 cm)",
+    "materials": [
+      "cardboard"
+    ],
+    "themes": [
+      "Machine tufting & Dalton",
+      "Trade catalogs & marketing"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Smithsonian",
+      "for: Dalton bedspreads"
+    ],
+    "region": "United States",
+    "description": "NMAH record: Object Name \"Placard\"; title \"NRA Code Candlewick Bedspread\"; made for the National Recovery Administration; red, white and blue cardboard; 14 x 11 in; date made 1934; patent number Des. 90793 (presumably the NRA eagle design patent).\nWhy it matters: Dalton bedspreads: physical evidence that the candlewick bedspread trade had its own NRA code of fair competition in 1934, i.e. was recognised as a national industry. The code's text (and its wage terms) would be in NRA records.\nFound: Smithsonian Collections Search, search \"candlewick\", 2026-10-28.",
+    "sourceUrl": "https://collections.si.edu/search/detail/edanmdm:nmah_1028068",
+    "reviewedAt": "2026-10-28T21:52:11.222Z"
+  },
+  {
+    "id": "u-mvs5tj97nlohl",
+    "type": "object",
+    "status": "unverified",
+    "title": "Candlewicked counterpane, 1812",
+    "creator": "Elgin, Lucinda Eleanor (maker); \"Lucy E. MCPhearson\" stamped",
+    "date": "1812",
+    "dateStart": 1812,
+    "dateEnd": 1812,
+    "institution": "Smithsonian Institution",
+    "identifier": "TE.T13670",
+    "dimensions": "74 in x 96 in (187.96 x 243.84 cm)",
+    "techniques": [
+      "candlewick"
+    ],
+    "themes": [
+      "Hooked & handmade rugs"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Smithsonian",
+      "for: Before the machine"
+    ],
+    "description": "NMAH record: \"Candlewick embroidery on handwoven corded cotton. Fabric is 37\" wide selvage to selvage. Counterpane of two widths stitched down center. Initials 'G' 'E' 'E' and date 1812 embroidererd. Lucy E. MCPhearson stamped twice at the top center.\" Maker: Lucinda Eleanor Elgin.\nWhy it matters: Before the machine: a candlewick counterpane with an embroidered date (1812) and named maker, a firm anchor for the candlewick tradition.\nFound: Smithsonian Collections Search, search \"candlewick\", 2026-10-28.",
+    "sourceUrl": "https://collections.si.edu/search/detail/edanmdm:nmah_622063",
+    "image": "https://ids.si.edu/ids/deliveryService?id=NMAH-AHB2019q158025&max=800",
+    "imageCredit": "National Museum of American History, Smithsonian Institution",
+    "rights": "not-requested",
+    "reviewedAt": "2026-10-28T21:52:11.222Z"
+  },
+  {
+    "id": "u-mvs5tmorff2tc",
+    "type": "object",
+    "status": "unverified",
+    "title": "rug, tufted",
+    "date": "undated",
+    "institution": "National Museum of American History, Smithsonian Institution",
+    "identifier": "TE.T11448.026",
+    "techniques": [
+      "tufted"
+    ],
+    "themes": [
+      "Hooked & handmade rugs"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Smithsonian",
+      "possible"
+    ],
+    "region": "United States",
+    "description": "NMAH record gives only: Object Name \"Rug, Tufted\"; ID Number TE.T11448.026; currently not on view. No date, maker or description online.\nWhy it matters: one of very few objects catalogued as a \"tufted rug\" in the Smithsonian; worth asking NMAH Textiles what it is. Tagged possible.\nFound: Smithsonian Collections Search, search \"tufted\", 2026-10-28.",
+    "sourceUrl": "https://collections.si.edu/search/detail/edanmdm:nmah_644156",
+    "reviewedAt": "2026-10-28T21:52:11.222Z"
+  },
+  {
+    "id": "u-mvs5zcw5oetn4",
+    "type": "image",
+    "status": "unverified",
+    "title": "Portrait of Henry Laurens Roberts",
+    "creator": "Joseph H. Davis (American, 1811–1865)",
+    "date": "about 1835",
+    "dateStart": 1835,
+    "dateEnd": 1836,
+    "institution": "Museum of Fine Arts, Boston",
+    "collection": "M. and M. Karolik Collection of American Watercolors and Drawings, 1800–1875",
+    "identifier": "60.869 (Karolik cat. no. 1110)",
+    "dimensions": "Sheet: 20.5 x 18.6 cm (8 1/16 x 7 5/16 in.)",
+    "materials": [
+      "graphite",
+      "watercolor",
+      "paper"
+    ],
+    "techniques": [
+      "braided"
+    ],
+    "themes": [
+      "Hooked & handmade rugs"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "MFA Boston",
+      "for: Processes",
+      "for: Before the machine"
+    ],
+    "region": "United States",
+    "description": "Watercolor portrait. MFA description: \"Small boy standing, profile to right. Bird on finger of left hand, cap in right; amother bird on flowering plant in pot right. Three braided rugs on floor.\" Inscription: \"Henry Laurens Roberts. Born Octbr 18th / 1831. Painted at the age of 4 years.\" (so about 1835-36). A companion Davis portrait at the MFA, \"Portrait of Elizabeth A. Fall\" (60.870, inscribed \"Aged 21 years. 1835\"), is described with \"Floor pattern of braided rug motifs.\"\nWhy it matters: Processes, open question \"a museum-dated braided rug before 1860\": not a surviving rug, but a museum-catalogued, inscription-dated (1835) depiction of braided rugs on a New England floor, well before 1860.\nFound: MFA Boston collections search, \"braided rug\", 2026-10-28.\n\nImage note 2026-10-28 (Claude in Chrome): the museum has an online photograph (see Image page), but its server blocks the image from showing on other sites, so no image link is set.",
+    "sourceUrl": "https://collections.mfa.org/objects/258811",
+    "imageCredit": "Photograph © Museum of Fine Arts, Boston",
+    "imagePage": "https://collections.mfa.org/objects/258811",
+    "rights": "not-requested",
+    "reviewedAt": "2026-10-28T21:52:11.222Z"
+  },
+  {
+    "id": "u-mvs5zgbi4f8jd",
+    "type": "object",
+    "status": "unverified",
+    "title": "Bed Rugg",
+    "creator": "Spanish",
+    "date": "before 1683",
+    "dateStart": 1683,
+    "dateEnd": 1683,
+    "institution": "Museum of Fine Arts, Boston",
+    "collection": "Europe, Fashion and Textiles (Gift of Robert C. Winthrop)",
+    "identifier": "01.12",
+    "place": "Spain",
+    "dimensions": "284.5 x 212.6 cm (112 x 83 11/16 in.)",
+    "materials": [
+      "cotton"
+    ],
+    "techniques": [
+      "plain weave with supplementary weft pile"
+    ],
+    "themes": [
+      "Woven carpet",
+      "Hooked & handmade rugs"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "MFA Boston",
+      "for: Before the machine",
+      "possible"
+    ],
+    "region": "Spain",
+    "description": "MFA record: \"Bed Rugg / Bed Cover\", Spanish, before 1683; cotton (Z single); \"plain weave with supplementary weft pile (10 low spun singles used to make pile yarn)\"; 284.5 x 212.6 cm. Description: \"The ground and the design are both of white cotton. The design is woven with a pile like velvet. ... In the middle is a lozenge bearing a crowned animal, two birds and a flower. Made in three breadths and sewed together. Lined with heavy white cotton.\" Gift of Robert C. Winthrop (the \"before 1683\" date presumably from Winthrop family provenance; not stated).\nWhy it matters: Before the machine: a white cotton woven-pile bed covering called a \"bed rugg\", dated before 1683, i.e. a European antecedent of white tufted/candlewick spreads and of the term \"bed rugg\". Tagged possible (woven, not needle-made).\nFound: MFA Boston collections search, \"bed rugg\", 2026-10-28.\n\nImage note 2026-10-28 (Claude in Chrome): the museum has an online photograph (see Image page), but its server blocks the image from showing on other sites, so no image link is set.",
+    "sourceUrl": "https://collections.mfa.org/objects/74049",
+    "imageCredit": "Photograph © Museum of Fine Arts, Boston",
+    "imagePage": "https://collections.mfa.org/objects/74049",
+    "rights": "not-requested",
+    "reviewedAt": "2026-10-28T21:52:11.222Z"
+  },
+  {
+    "id": "u-mvs61hug2gmpn",
+    "type": "object",
+    "status": "unverified",
+    "title": "Bed Rug by Rebekah Harris",
+    "creator": "Rebekah Harris (1749-1814)",
+    "date": "1776 (dated)",
+    "dateStart": 1776,
+    "dateEnd": 1776,
+    "institution": "Colonial Williamsburg Foundation",
+    "collection": "Loan courtesy of Bell Family Properties, LLC",
+    "identifier": "2001-60 (L)",
+    "place": "New London, Connecticut",
+    "dimensions": "OW: 86\" x OL: 90\"",
+    "techniques": [
+      "hand-tufted",
+      "cut pile",
+      "uncut (looped) pile"
+    ],
+    "themes": [
+      "Hooked & handmade rugs"
+    ],
+    "tags": [
+      "found by Claude in Chrome",
+      "Colonial Williamsburg",
+      "for: Before the machine"
+    ],
+    "region": "United States",
+    "description": "CW record: Medium \"Hand-tufted wool pile on a linsey-woolsey ground (linen warp and wool weft)\". \"Large gracefully formed leaves and flowers in vegetable-dyed shades of gold, russet, blue, and dark blue-green with natural background tufting. Flowers, leaves, and vines sprout from a two-handled container ... Some portions of the design are made of cut pile, but most of the design and background is uncut pile. ... The bed rug is signed and dated in the center top, 'R H / 1776'. Technique: The tufted pile was created by using 7-10 strands of wool yarn, pulled through the background material with a large needle, in loose, 1/2\"-5/8\" running stitches ...\" On loan (Bell Family Properties).\nWhy it matters: Before the machine, open question \"which bed rugs have cut rather than looped pile\": a signed and dated (1776) bed rug that the museum itself calls \"hand-tufted\" and describes as part cut, part uncut pile, made with a large needle. Other CW bed rugs found: 1773 Connecticut, running stitch (1986-88); 1785 dated, darned (2014.609.6); 1760-1780 Bowne family, Long Island (1964-481); 1820-1835 Wythe County, Va., woven with knots (1980-158); 1807, woven and knotted, possibly Wales (1972-369).\nFound: Colonial Williamsburg eMuseum, search \"tufted\" / \"bed rug\", 2026-10-28.\n\nImage added 2026-10-28 (Claude in Chrome): CW eMuseum object photograph (first of four views).",
+    "sourceUrl": "https://emuseum.history.org/objects/8815",
+    "image": "https://emuseum.colonialwilliamsburg.org/internal/media/dispatcher/235586/preview",
+    "imageCredit": "The Colonial Williamsburg Foundation",
+    "imagePage": "https://emuseum.history.org/objects/8815/bed-rug-by-rebekah-harris",
+    "rights": "not-requested",
+    "reviewedAt": "2026-10-28T21:52:11.222Z"
   }
 ];
