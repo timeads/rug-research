@@ -1,0 +1,708 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-28T19:12:17+00:00",
+  "title": "Design System: A History of Tufting",
+  "extensions": {
+    "colorMeta": {
+      "shade-teal": {
+        "role": "primary",
+        "displayName": "The Chapter Shade (Teal default)",
+        "canonical": "oklch(47.0% 0.070 195.0)",
+        "tonalRamp": [
+          "oklch(15.0% 0.032 195.0)",
+          "oklch(26.4% 0.046 195.0)",
+          "oklch(37.9% 0.059 195.0)",
+          "oklch(49.3% 0.067 195.0)",
+          "oklch(60.7% 0.054 195.0)",
+          "oklch(72.1% 0.041 195.0)",
+          "oklch(83.6% 0.027 195.0)",
+          "oklch(95.0% 0.007 195.0)"
+        ],
+        "dark": "#4fa8a4",
+        "note": "Per-page token --shade; shade ink = color-mix(in oklab, var(--shade), #000 22%) in light, #fff 18% in dark."
+      },
+      "ground": {
+        "role": "neutral",
+        "displayName": "Card-Stock Grey",
+        "canonical": "oklch(93.0% 0.007 132.4)",
+        "tonalRamp": [
+          "oklch(15.0% 0.002 132.4)",
+          "oklch(26.4% 0.002 132.4)",
+          "oklch(37.9% 0.002 132.4)",
+          "oklch(49.3% 0.002 132.4)",
+          "oklch(60.7% 0.003 132.4)",
+          "oklch(72.1% 0.005 132.4)",
+          "oklch(83.6% 0.006 132.4)",
+          "oklch(95.0% 0.003 132.4)"
+        ],
+        "dark": "#171a19"
+      },
+      "sheet": {
+        "role": "neutral",
+        "displayName": "Pale Card",
+        "canonical": "oklch(96.5% 0.006 128.5)",
+        "tonalRamp": [
+          "oklch(15.0% 0.001 128.5)",
+          "oklch(26.4% 0.001 128.5)",
+          "oklch(37.9% 0.001 128.5)",
+          "oklch(49.3% 0.001 128.5)",
+          "oklch(60.7% 0.002 128.5)",
+          "oklch(72.1% 0.003 128.5)",
+          "oklch(83.6% 0.004 128.5)",
+          "oklch(95.0% 0.002 128.5)"
+        ],
+        "dark": "#1e2220"
+      },
+      "sheet-2": {
+        "role": "neutral",
+        "displayName": "Grey Mount",
+        "canonical": "oklch(90.5% 0.009 134.9)",
+        "tonalRamp": [
+          "oklch(15.0% 0.002 134.9)",
+          "oklch(26.4% 0.002 134.9)",
+          "oklch(37.9% 0.002 134.9)",
+          "oklch(49.3% 0.003 134.9)",
+          "oklch(60.7% 0.005 134.9)",
+          "oklch(72.1% 0.006 134.9)",
+          "oklch(83.6% 0.008 134.9)",
+          "oklch(95.0% 0.004 134.9)"
+        ],
+        "dark": "#262b28"
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Lamp Black",
+        "canonical": "oklch(21.7% 0.007 164.2)",
+        "tonalRamp": [
+          "oklch(15.0% 0.006 164.2)",
+          "oklch(26.4% 0.007 164.2)",
+          "oklch(37.9% 0.005 164.2)",
+          "oklch(49.3% 0.004 164.2)",
+          "oklch(60.7% 0.003 164.2)",
+          "oklch(72.1% 0.002 164.2)",
+          "oklch(83.6% 0.002 164.2)",
+          "oklch(95.0% 0.001 164.2)"
+        ],
+        "dark": "#e7ebe6"
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Graphite",
+        "canonical": "oklch(36.7% 0.011 160.8)",
+        "tonalRamp": [
+          "oklch(15.0% 0.007 160.8)",
+          "oklch(26.4% 0.010 160.8)",
+          "oklch(37.9% 0.011 160.8)",
+          "oklch(49.3% 0.009 160.8)",
+          "oklch(60.7% 0.007 160.8)",
+          "oklch(72.1% 0.005 160.8)",
+          "oklch(83.6% 0.003 160.8)",
+          "oklch(95.0% 0.001 160.8)"
+        ],
+        "dark": "#bcc4be"
+      },
+      "ink-3": {
+        "role": "neutral",
+        "displayName": "Pencil",
+        "canonical": "oklch(45.6% 0.012 164.4)",
+        "tonalRamp": [
+          "oklch(15.0% 0.006 164.4)",
+          "oklch(26.4% 0.008 164.4)",
+          "oklch(37.9% 0.010 164.4)",
+          "oklch(49.3% 0.011 164.4)",
+          "oklch(60.7% 0.009 164.4)",
+          "oklch(72.1% 0.007 164.4)",
+          "oklch(83.6% 0.004 164.4)",
+          "oklch(95.0% 0.001 164.4)"
+        ],
+        "dark": "#9da59f"
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "oklch(83.2% 0.012 141.3)",
+        "tonalRamp": [
+          "oklch(15.0% 0.003 141.3)",
+          "oklch(26.4% 0.003 141.3)",
+          "oklch(37.9% 0.003 141.3)",
+          "oklch(49.3% 0.005 141.3)",
+          "oklch(60.7% 0.007 141.3)",
+          "oklch(72.1% 0.009 141.3)",
+          "oklch(83.6% 0.012 141.3)",
+          "oklch(95.0% 0.004 141.3)"
+        ],
+        "dark": "#323834"
+      },
+      "rule-2": {
+        "role": "neutral",
+        "displayName": "Card Edge",
+        "canonical": "oklch(71.7% 0.013 149.2)",
+        "tonalRamp": [
+          "oklch(15.0% 0.003 149.2)",
+          "oklch(26.4% 0.003 149.2)",
+          "oklch(37.9% 0.006 149.2)",
+          "oklch(49.3% 0.008 149.2)",
+          "oklch(60.7% 0.011 149.2)",
+          "oklch(72.1% 0.013 149.2)",
+          "oklch(83.6% 0.011 149.2)",
+          "oklch(95.0% 0.003 149.2)"
+        ],
+        "dark": "#4b534e"
+      },
+      "board": {
+        "role": "neutral",
+        "displayName": "Bookcloth Board",
+        "canonical": "oklch(25.3% 0.010 164.0)",
+        "tonalRamp": [
+          "oklch(15.0% 0.009 164.0)",
+          "oklch(26.4% 0.010 164.0)",
+          "oklch(37.9% 0.008 164.0)",
+          "oklch(49.3% 0.006 164.0)",
+          "oklch(60.7% 0.004 164.0)",
+          "oklch(72.1% 0.003 164.0)",
+          "oklch(83.6% 0.003 164.0)",
+          "oklch(95.0% 0.001 164.0)"
+        ],
+        "dark": "#0e1110"
+      },
+      "board-ink": {
+        "role": "neutral",
+        "displayName": "Board Ink",
+        "canonical": "oklch(95.4% 0.007 132.4)",
+        "tonalRamp": [
+          "oklch(15.0% 0.002 132.4)",
+          "oklch(26.4% 0.002 132.4)",
+          "oklch(37.9% 0.002 132.4)",
+          "oklch(49.3% 0.002 132.4)",
+          "oklch(60.7% 0.003 132.4)",
+          "oklch(72.1% 0.004 132.4)",
+          "oklch(83.6% 0.006 132.4)",
+          "oklch(95.0% 0.003 132.4)"
+        ],
+        "dark": "#e7ebe6"
+      },
+      "board-ink-2": {
+        "role": "neutral",
+        "displayName": "Board Ink Dim",
+        "canonical": "oklch(80.3% 0.012 153.6)",
+        "tonalRamp": [
+          "oklch(15.0% 0.003 153.6)",
+          "oklch(26.4% 0.003 153.6)",
+          "oklch(37.9% 0.004 153.6)",
+          "oklch(49.3% 0.006 153.6)",
+          "oklch(60.7% 0.008 153.6)",
+          "oklch(72.1% 0.010 153.6)",
+          "oklch(83.6% 0.011 153.6)",
+          "oklch(95.0% 0.004 153.6)"
+        ],
+        "dark": "#a7afa9"
+      },
+      "cloth-wheat": {
+        "role": "secondary",
+        "displayName": "Bookcloth Wheat",
+        "canonical": "oklch(59.9% 0.090 83.2)",
+        "tonalRamp": [
+          "oklch(15.0% 0.023 83.2)",
+          "oklch(26.4% 0.040 83.2)",
+          "oklch(37.9% 0.057 83.2)",
+          "oklch(49.3% 0.074 83.2)",
+          "oklch(60.7% 0.089 83.2)",
+          "oklch(72.1% 0.072 83.2)",
+          "oklch(83.6% 0.055 83.2)",
+          "oklch(95.0% 0.016 83.2)"
+        ],
+        "dark": "#cdab68"
+      },
+      "cloth-oxblood": {
+        "role": "secondary",
+        "displayName": "Bookcloth Oxblood",
+        "canonical": "oklch(41.0% 0.107 25.9)",
+        "tonalRamp": [
+          "oklch(15.0% 0.061 25.9)",
+          "oklch(26.4% 0.081 25.9)",
+          "oklch(37.9% 0.102 25.9)",
+          "oklch(49.3% 0.092 25.9)",
+          "oklch(60.7% 0.072 25.9)",
+          "oklch(72.1% 0.052 25.9)",
+          "oklch(83.6% 0.031 25.9)",
+          "oklch(95.0% 0.011 25.9)"
+        ],
+        "dark": "#b8625b"
+      },
+      "cloth-navy": {
+        "role": "secondary",
+        "displayName": "Bookcloth Navy",
+        "canonical": "oklch(35.3% 0.069 259.8)",
+        "tonalRamp": [
+          "oklch(15.0% 0.046 259.8)",
+          "oklch(26.4% 0.059 259.8)",
+          "oklch(37.9% 0.066 259.8)",
+          "oklch(49.3% 0.053 259.8)",
+          "oklch(60.7% 0.040 259.8)",
+          "oklch(72.1% 0.027 259.8)",
+          "oklch(83.6% 0.017 259.8)",
+          "oklch(95.0% 0.007 259.8)"
+        ],
+        "dark": "#7090c2"
+      },
+      "cloth-rose": {
+        "role": "secondary",
+        "displayName": "Bookcloth Rose",
+        "canonical": "oklch(53.0% 0.086 359.7)",
+        "tonalRamp": [
+          "oklch(15.0% 0.031 359.7)",
+          "oklch(26.4% 0.048 359.7)",
+          "oklch(37.9% 0.064 359.7)",
+          "oklch(49.3% 0.080 359.7)",
+          "oklch(60.7% 0.075 359.7)",
+          "oklch(72.1% 0.058 359.7)",
+          "oklch(83.6% 0.042 359.7)",
+          "oklch(95.0% 0.011 359.7)"
+        ],
+        "dark": "#c4879b"
+      },
+      "cloth-ochre": {
+        "role": "secondary",
+        "displayName": "Bookcloth Ochre",
+        "canonical": "oklch(61.1% 0.115 78.9)",
+        "tonalRamp": [
+          "oklch(15.0% 0.029 78.9)",
+          "oklch(26.4% 0.048 78.9)",
+          "oklch(37.9% 0.070 78.9)",
+          "oklch(49.3% 0.092 78.9)",
+          "oklch(60.7% 0.114 78.9)",
+          "oklch(72.1% 0.093 78.9)",
+          "oklch(83.6% 0.072 78.9)",
+          "oklch(95.0% 0.021 78.9)"
+        ],
+        "dark": "#d3a44b"
+      },
+      "cloth-teal": {
+        "role": "secondary",
+        "displayName": "Bookcloth Teal",
+        "canonical": "oklch(47.0% 0.070 195.0)",
+        "tonalRamp": [
+          "oklch(15.0% 0.032 195.0)",
+          "oklch(26.4% 0.046 195.0)",
+          "oklch(37.9% 0.059 195.0)",
+          "oklch(49.3% 0.067 195.0)",
+          "oklch(60.7% 0.054 195.0)",
+          "oklch(72.1% 0.041 195.0)",
+          "oklch(83.6% 0.027 195.0)",
+          "oklch(95.0% 0.007 195.0)"
+        ],
+        "dark": "#4fa8a4"
+      },
+      "cloth-indigo": {
+        "role": "secondary",
+        "displayName": "Bookcloth Indigo",
+        "canonical": "oklch(39.3% 0.095 277.3)",
+        "tonalRamp": [
+          "oklch(15.0% 0.057 277.3)",
+          "oklch(26.4% 0.075 277.3)",
+          "oklch(37.9% 0.093 277.3)",
+          "oklch(49.3% 0.080 277.3)",
+          "oklch(60.7% 0.061 277.3)",
+          "oklch(72.1% 0.043 277.3)",
+          "oklch(83.6% 0.025 277.3)",
+          "oklch(95.0% 0.010 277.3)"
+        ],
+        "dark": "#8d92d2"
+      },
+      "cloth-plum": {
+        "role": "secondary",
+        "displayName": "Bookcloth Plum",
+        "canonical": "oklch(41.4% 0.080 311.9)",
+        "tonalRamp": [
+          "oklch(15.0% 0.045 311.9)",
+          "oklch(26.4% 0.060 311.9)",
+          "oklch(37.9% 0.075 311.9)",
+          "oklch(49.3% 0.070 311.9)",
+          "oklch(60.7% 0.054 311.9)",
+          "oklch(72.1% 0.039 311.9)",
+          "oklch(83.6% 0.024 311.9)",
+          "oklch(95.0% 0.008 311.9)"
+        ],
+        "dark": "#a88aba"
+      },
+      "cloth-rust": {
+        "role": "secondary",
+        "displayName": "Bookcloth Rust",
+        "canonical": "oklch(50.4% 0.118 43.3)",
+        "tonalRamp": [
+          "oklch(15.0% 0.048 43.3)",
+          "oklch(26.4% 0.071 43.3)",
+          "oklch(37.9% 0.093 43.3)",
+          "oklch(49.3% 0.116 43.3)",
+          "oklch(60.7% 0.097 43.3)",
+          "oklch(72.1% 0.075 43.3)",
+          "oklch(83.6% 0.053 43.3)",
+          "oklch(95.0% 0.013 43.3)"
+        ],
+        "dark": "#d4825a"
+      },
+      "cloth-umber": {
+        "role": "secondary",
+        "displayName": "Bookcloth Umber",
+        "canonical": "oklch(43.7% 0.060 61.4)",
+        "tonalRamp": [
+          "oklch(15.0% 0.031 61.4)",
+          "oklch(26.4% 0.043 61.4)",
+          "oklch(37.9% 0.054 61.4)",
+          "oklch(49.3% 0.055 61.4)",
+          "oklch(60.7% 0.043 61.4)",
+          "oklch(72.1% 0.032 61.4)",
+          "oklch(83.6% 0.020 61.4)",
+          "oklch(95.0% 0.006 61.4)"
+        ],
+        "dark": "#b48d66"
+      },
+      "cloth-jade": {
+        "role": "secondary",
+        "displayName": "Bookcloth Jade",
+        "canonical": "oklch(48.0% 0.075 163.8)",
+        "tonalRamp": [
+          "oklch(15.0% 0.034 163.8)",
+          "oklch(26.4% 0.048 163.8)",
+          "oklch(37.9% 0.062 163.8)",
+          "oklch(49.3% 0.074 163.8)",
+          "oklch(60.7% 0.059 163.8)",
+          "oklch(72.1% 0.045 163.8)",
+          "oklch(83.6% 0.031 163.8)",
+          "oklch(95.0% 0.008 163.8)"
+        ],
+        "dark": "#62b190"
+      },
+      "cloth-slate": {
+        "role": "secondary",
+        "displayName": "Bookcloth Slate",
+        "canonical": "oklch(45.9% 0.025 252.7)",
+        "tonalRamp": [
+          "oklch(15.0% 0.012 252.7)",
+          "oklch(26.4% 0.017 252.7)",
+          "oklch(37.9% 0.022 252.7)",
+          "oklch(49.3% 0.024 252.7)",
+          "oklch(60.7% 0.019 252.7)",
+          "oklch(72.1% 0.014 252.7)",
+          "oklch(83.6% 0.009 252.7)",
+          "oklch(95.0% 0.003 252.7)"
+        ],
+        "dark": "#8e9aa8"
+      },
+      "cloth-moss": {
+        "role": "secondary",
+        "displayName": "Bookcloth Moss",
+        "canonical": "oklch(48.3% 0.085 122.4)",
+        "tonalRamp": [
+          "oklch(15.0% 0.038 122.4)",
+          "oklch(26.4% 0.054 122.4)",
+          "oklch(37.9% 0.070 122.4)",
+          "oklch(49.3% 0.083 122.4)",
+          "oklch(60.7% 0.067 122.4)",
+          "oklch(72.1% 0.051 122.4)",
+          "oklch(83.6% 0.035 122.4)",
+          "oklch(95.0% 0.009 122.4)"
+        ],
+        "dark": "#8d9e55"
+      },
+      "cloth-grey": {
+        "role": "secondary",
+        "displayName": "Bookcloth Grey",
+        "canonical": "oklch(49.6% 0.011 161.1)",
+        "tonalRamp": [
+          "oklch(15.0% 0.005 161.1)",
+          "oklch(26.4% 0.007 161.1)",
+          "oklch(37.9% 0.009 161.1)",
+          "oklch(49.3% 0.011 161.1)",
+          "oklch(60.7% 0.009 161.1)",
+          "oklch(72.1% 0.007 161.1)",
+          "oklch(83.6% 0.005 161.1)",
+          "oklch(95.0% 0.001 161.1)"
+        ],
+        "dark": "#8f9691"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Cover title only; Archivo at 82% width."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Chapter and page titles; chapter titles max 18ch."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Section heads inside the prose."
+      },
+      "shade-number": {
+        "displayName": "Shade Number",
+        "purpose": "'Shade N' beside the wound band (1.5rem) and in contents rows (0.9375rem)."
+      },
+      "body": {
+        "displayName": "Reading",
+        "purpose": "Chapter prose in Literata at a 37rem measure."
+      },
+      "dek": {
+        "displayName": "Dek",
+        "purpose": "Chapter dek under the title, roman not italic, ink-2."
+      },
+      "pull": {
+        "displayName": "Pull Quote",
+        "purpose": "Pull quotes at 32ch under a shade thread."
+      },
+      "frame": {
+        "displayName": "Frame",
+        "purpose": "Default page text outside the reading column; panels, end matter."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Navigation, buttons, chips, byline; sentence case, no tracking."
+      },
+      "note": {
+        "displayName": "Note",
+        "purpose": "Margin notes, credits, timeline metadata."
+      }
+    },
+    "shadows": [],
+    "elevation": "Flat. Tonal layers board / ground / sheet plus 1px hairlines and 2px ink or shade rules; no box-shadow.",
+    "derived": [
+      {
+        "name": "shade-ink",
+        "value": "color-mix(in oklab, var(--shade), #000 22%)",
+        "dark": "color-mix(in oklab, var(--shade), #fff 18%)",
+        "purpose": "Note numbers, Source links, ready-chapter status, focus ring."
+      },
+      {
+        "name": "selection",
+        "value": "color-mix(in oklab, var(--shade), transparent 72%)",
+        "purpose": "Text selection."
+      },
+      {
+        "name": "note-target",
+        "value": "color-mix(in oklab, var(--shade), transparent 85%)",
+        "purpose": "Highlight of the targeted note in the end matter."
+      },
+      {
+        "name": "focus-ring",
+        "value": "outline: 2px solid shade-ink; outline-offset: 3px; border-radius: 2px",
+        "purpose": "Every interactive element."
+      }
+    ],
+    "motion": [
+      {
+        "name": "scroll-progress",
+        "value": "animation: grow linear both; animation-timeline: scroll(root) (scaleX 0 to 1)",
+        "purpose": "2px shade thread under the masthead on chapter pages, where scroll timelines are supported."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "transition: none; animation: none",
+        "purpose": "All motion off under prefers-reduced-motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "margin-fold",
+        "value": "1100px",
+        "note": "Margin notes fold into tap-to-open panels; margin figures enter the flow."
+      },
+      {
+        "name": "dates-list",
+        "value": "900px",
+        "note": "Key-dates thread becomes a vertical list."
+      },
+      {
+        "name": "single-column",
+        "value": "860px",
+        "note": "End matter and record pages go single column."
+      },
+      {
+        "name": "timeline-compact",
+        "value": "760px",
+        "note": "Timeline drops thumbnails and sticky era heads."
+      },
+      {
+        "name": "pair-stack",
+        "value": "700px",
+        "note": "Figure pairs stack."
+      },
+      {
+        "name": "mobile",
+        "value": "640px",
+        "note": "Contents rows stack; reference links single column; smaller chapter band."
+      },
+      {
+        "name": "mast-tight",
+        "value": "560px"
+      },
+      {
+        "name": "mast-min",
+        "value": "360px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Wound Band",
+      "kind": "custom",
+      "refersTo": "wound-band",
+      "description": "Signature: one chapter shade as wound yarn, exact parallel strands seeded by the shade number, always beside its shade number and cloth name.",
+      "html": "<div class=\"ds-ch-band\"><svg class=\"ds-band\" viewBox=\"0 0 600 72\" preserveAspectRatio=\"none\" aria-hidden=\"true\"><rect width=\"600\" height=\"72\" fill=\"var(--shade, #1e6767)\"/><path d=\"M0 -2.40L600 0.00L600 1.48L0 -0.92Z\" fill=\"#fff\" fill-opacity=\"0.133\"/><path d=\"M0 3.00L600 5.40L600 6.88L0 4.48Z\" fill=\"#fff\" fill-opacity=\"0.135\"/><path d=\"M0 10.20L600 12.60L600 14.08L0 11.68Z\" fill=\"#fff\" fill-opacity=\"0.071\"/><path d=\"M0 13.80L600 16.20L600 17.68L0 15.28Z\" fill=\"#fff\" fill-opacity=\"0.100\"/><path d=\"M0 15.60L600 18.00L600 19.48L0 17.08Z\" fill=\"#fff\" fill-opacity=\"0.145\"/><path d=\"M0 17.40L600 19.80L600 21.28L0 18.88Z\" fill=\"#fff\" fill-opacity=\"0.083\"/><path d=\"M0 19.20L600 21.60L600 23.08L0 20.68Z\" fill=\"#fff\" fill-opacity=\"0.159\"/><path d=\"M0 22.80L600 25.20L600 26.68L0 24.28Z\" fill=\"#fff\" fill-opacity=\"0.141\"/><path d=\"M0 26.40L600 28.80L600 30.28L0 27.88Z\" fill=\"#fff\" fill-opacity=\"0.162\"/><path d=\"M0 28.20L600 30.60L600 32.08L0 29.68Z\" fill=\"#fff\" fill-opacity=\"0.076\"/><path d=\"M0 30.00L600 32.40L600 33.88L0 31.48Z\" fill=\"#fff\" fill-opacity=\"0.185\"/><path d=\"M0 31.80L600 34.20L600 35.68L0 33.28Z\" fill=\"#fff\" fill-opacity=\"0.035\"/><path d=\"M0 33.60L600 36.00L600 37.48L0 35.08Z\" fill=\"#fff\" fill-opacity=\"0.164\"/><path d=\"M0 39.00L600 41.40L600 42.88L0 40.48Z\" fill=\"#fff\" fill-opacity=\"0.051\"/><path d=\"M0 42.60L600 45.00L600 46.48L0 44.08Z\" fill=\"#fff\" fill-opacity=\"0.169\"/><path d=\"M0 44.40L600 46.80L600 48.28L0 45.88Z\" fill=\"#fff\" fill-opacity=\"0.129\"/><path d=\"M0 46.20L600 48.60L600 50.08L0 47.68Z\" fill=\"#fff\" fill-opacity=\"0.144\"/><path d=\"M0 51.60L600 54.00L600 55.48L0 53.08Z\" fill=\"#fff\" fill-opacity=\"0.052\"/><path d=\"M0 53.40L600 55.80L600 57.28L0 54.88Z\" fill=\"#fff\" fill-opacity=\"0.033\"/><path d=\"M0 60.60L600 63.00L600 64.48L0 62.08Z\" fill=\"#fff\" fill-opacity=\"0.194\"/><path d=\"M0 62.40L600 64.80L600 66.28L0 63.88Z\" fill=\"#fff\" fill-opacity=\"0.202\"/><path d=\"M0 66.00L600 68.40L600 69.88L0 67.48Z\" fill=\"#fff\" fill-opacity=\"0.168\"/><path d=\"M0 71.40L600 73.80L600 75.28L0 72.88Z\" fill=\"#fff\" fill-opacity=\"0.114\"/><path d=\"M0 -0.60L600 1.80L600 3.28L0 0.88Z\" fill=\"#000\" fill-opacity=\"0.195\"/><path d=\"M0 1.20L600 3.60L600 5.08L0 2.68Z\" fill=\"#000\" fill-opacity=\"0.200\"/><path d=\"M0 4.80L600 7.20L600 8.68L0 6.28Z\" fill=\"#000\" fill-opacity=\"0.174\"/><path d=\"M0 6.60L600 9.00L600 10.48L0 8.08Z\" fill=\"#000\" fill-opacity=\"0.101\"/><path d=\"M0 8.40L600 10.80L600 12.28L0 9.88Z\" fill=\"#000\" fill-opacity=\"0.150\"/><path d=\"M0 12.00L600 14.40L600 15.88L0 13.48Z\" fill=\"#000\" fill-opacity=\"0.035\"/><path d=\"M0 21.00L600 23.40L600 24.88L0 22.48Z\" fill=\"#000\" fill-opacity=\"0.004\"/><path d=\"M0 24.60L600 27.00L600 28.48L0 26.08Z\" fill=\"#000\" fill-opacity=\"0.076\"/><path d=\"M0 35.40L600 37.80L600 39.28L0 36.88Z\" fill=\"#000\" fill-opacity=\"0.123\"/><path d=\"M0 37.20L600 39.60L600 41.08L0 38.68Z\" fill=\"#000\" fill-opacity=\"0.126\"/><path d=\"M0 40.80L600 43.20L600 44.68L0 42.28Z\" fill=\"#000\" fill-opacity=\"0.179\"/><path d=\"M0 48.00L600 50.40L600 51.88L0 49.48Z\" fill=\"#000\" fill-opacity=\"0.105\"/><path d=\"M0 49.80L600 52.20L600 53.68L0 51.28Z\" fill=\"#000\" fill-opacity=\"0.066\"/><path d=\"M0 55.20L600 57.60L600 59.08L0 56.68Z\" fill=\"#000\" fill-opacity=\"0.017\"/><path d=\"M0 57.00L600 59.40L600 60.88L0 58.48Z\" fill=\"#000\" fill-opacity=\"0.157\"/><path d=\"M0 58.80L600 61.20L600 62.68L0 60.28Z\" fill=\"#000\" fill-opacity=\"0.103\"/><path d=\"M0 64.20L600 66.60L600 68.08L0 65.68Z\" fill=\"#000\" fill-opacity=\"0.149\"/><path d=\"M0 67.80L600 70.20L600 71.68L0 69.28Z\" fill=\"#000\" fill-opacity=\"0.093\"/><path d=\"M0 69.60L600 72.00L600 73.48L0 71.08Z\" fill=\"#000\" fill-opacity=\"0.102\"/><path d=\"M0 73.20L600 75.60L600 77.08L0 74.68Z\" fill=\"#000\" fill-opacity=\"0.108\"/><rect width=\"600\" height=\"6\" fill=\"#000\" fill-opacity=\".2\"/><rect y=\"6\" width=\"600\" height=\"3.6\" fill=\"#000\" fill-opacity=\".08\"/><rect y=\"66\" width=\"600\" height=\"6\" fill=\"#000\" fill-opacity=\".24\"/><rect y=\"62.4\" width=\"600\" height=\"3.6\" fill=\"#000\" fill-opacity=\".1\"/><rect width=\"7\" height=\"72\" fill=\"#000\" fill-opacity=\".3\"/><rect x=\"7\" width=\"5\" height=\"72\" fill=\"#000\" fill-opacity=\".12\"/><rect x=\"593\" width=\"7\" height=\"72\" fill=\"#000\" fill-opacity=\".26\"/><rect x=\"588\" width=\"5\" height=\"72\" fill=\"#000\" fill-opacity=\".1\"/></svg><p class=\"ds-ch-label\"><b>Shade 6</b><span>Teal</span><span>1937–1977</span></p></div>",
+      "css": ".ds-ch-band { display: grid; grid-template-columns: minmax(0, 1fr) 10rem; gap: 2rem; align-items: center; background: var(--ground, #e6e9e4); padding: 1rem; } .ds-band { display: block; width: 100%; height: 4.5rem; } .ds-ch-label { margin: 0; display: flex; flex-direction: column; gap: .25rem; font: 450 .9375rem/1.2 var(--frame, \"Archivo Variable\", \"Arial Narrow\", system-ui, sans-serif); color: var(--ink-2, #3a413d); font-variant-numeric: tabular-nums; } .ds-ch-label b { font: 700 1.5rem/1 var(--frame, \"Archivo Variable\", \"Arial Narrow\", system-ui, sans-serif); font-stretch: 84%; color: var(--ink, #171b19); }"
+    },
+    {
+      "name": "Masthead",
+      "kind": "nav",
+      "refersTo": "masthead",
+      "description": "The charcoal board: wordmark and three links; current page in board ink with a 2px underline; shade progress thread on chapters.",
+      "html": "<header class=\"ds-mast\"><a class=\"ds-wordmark\" href=\"#\">A History of Tufting</a><nav><a href=\"#\" aria-current=\"page\">Contents</a><a href=\"#\">Timeline</a><a href=\"#\">Bibliography</a></nav><span class=\"ds-progress\"></span></header>",
+      "css": ".ds-mast { position: relative; display: flex; align-items: center; gap: 1.5rem; height: 3.5rem; padding: 0 1.5rem; background: var(--board, #1e2421); color: var(--board-ink, #eef1ec); } .ds-wordmark { font: 700 1.125rem/1 var(--frame, \"Archivo Variable\", \"Arial Narrow\", system-ui, sans-serif); font-stretch: 84%; color: inherit; text-decoration: none; white-space: nowrap; } .ds-mast nav { margin-left: auto; display: flex; gap: 1.5rem; font: 500 .875rem/1 var(--frame, \"Archivo Variable\", \"Arial Narrow\", system-ui, sans-serif); } .ds-mast nav a { color: var(--board-ink-2, #b9c1bb); text-decoration: none; padding: 1.25rem 0 1.1rem; border-bottom: 2px solid transparent; } .ds-mast nav a:hover { color: var(--board-ink, #eef1ec); } .ds-mast nav a[aria-current=\"page\"] { color: var(--board-ink, #eef1ec); border-bottom-color: var(--board-ink, #eef1ec); } .ds-mast a:focus-visible { outline: 2px solid color-mix(in oklab, var(--shade, #1e6767), #000 22%); outline-offset: 3px; border-radius: 2px; } .ds-progress { position: absolute; left: 0; bottom: 0; height: 2px; width: 38%; background: var(--shade, #1e6767); }"
+    },
+    {
+      "name": "Contents Row",
+      "kind": "card",
+      "refersTo": "card-sheet",
+      "description": "A row of the shade card on the cover: band, shade number and cloth, title and years, status; thin band for a chapter in preparation.",
+      "html": "<ol class=\"ds-card\"><li><a class=\"ds-row\" href=\"#\"><svg class=\"ds-band\" viewBox=\"0 0 600 44\" preserveAspectRatio=\"none\" aria-hidden=\"true\"><rect width=\"600\" height=\"44\" fill=\"var(--shade, #1e6767)\"/><path d=\"M0 -2.40L600 0.00L600 1.48L0 -0.92Z\" fill=\"#fff\" fill-opacity=\"0.133\"/><path d=\"M0 3.00L600 5.40L600 6.88L0 4.48Z\" fill=\"#fff\" fill-opacity=\"0.135\"/><path d=\"M0 10.20L600 12.60L600 14.08L0 11.68Z\" fill=\"#fff\" fill-opacity=\"0.071\"/><path d=\"M0 13.80L600 16.20L600 17.68L0 15.28Z\" fill=\"#fff\" fill-opacity=\"0.100\"/><path d=\"M0 15.60L600 18.00L600 19.48L0 17.08Z\" fill=\"#fff\" fill-opacity=\"0.145\"/><path d=\"M0 17.40L600 19.80L600 21.28L0 18.88Z\" fill=\"#fff\" fill-opacity=\"0.083\"/><path d=\"M0 19.20L600 21.60L600 23.08L0 20.68Z\" fill=\"#fff\" fill-opacity=\"0.159\"/><path d=\"M0 22.80L600 25.20L600 26.68L0 24.28Z\" fill=\"#fff\" fill-opacity=\"0.141\"/><path d=\"M0 26.40L600 28.80L600 30.28L0 27.88Z\" fill=\"#fff\" fill-opacity=\"0.162\"/><path d=\"M0 28.20L600 30.60L600 32.08L0 29.68Z\" fill=\"#fff\" fill-opacity=\"0.076\"/><path d=\"M0 30.00L600 32.40L600 33.88L0 31.48Z\" fill=\"#fff\" fill-opacity=\"0.185\"/><path d=\"M0 31.80L600 34.20L600 35.68L0 33.28Z\" fill=\"#fff\" fill-opacity=\"0.035\"/><path d=\"M0 33.60L600 36.00L600 37.48L0 35.08Z\" fill=\"#fff\" fill-opacity=\"0.164\"/><path d=\"M0 39.00L600 41.40L600 42.88L0 40.48Z\" fill=\"#fff\" fill-opacity=\"0.051\"/><path d=\"M0 42.60L600 45.00L600 46.48L0 44.08Z\" fill=\"#fff\" fill-opacity=\"0.169\"/><path d=\"M0 44.40L600 46.80L600 48.28L0 45.88Z\" fill=\"#fff\" fill-opacity=\"0.129\"/><path d=\"M0 -0.60L600 1.80L600 3.28L0 0.88Z\" fill=\"#000\" fill-opacity=\"0.195\"/><path d=\"M0 1.20L600 3.60L600 5.08L0 2.68Z\" fill=\"#000\" fill-opacity=\"0.200\"/><path d=\"M0 4.80L600 7.20L600 8.68L0 6.28Z\" fill=\"#000\" fill-opacity=\"0.174\"/><path d=\"M0 6.60L600 9.00L600 10.48L0 8.08Z\" fill=\"#000\" fill-opacity=\"0.101\"/><path d=\"M0 8.40L600 10.80L600 12.28L0 9.88Z\" fill=\"#000\" fill-opacity=\"0.150\"/><path d=\"M0 12.00L600 14.40L600 15.88L0 13.48Z\" fill=\"#000\" fill-opacity=\"0.035\"/><path d=\"M0 21.00L600 23.40L600 24.88L0 22.48Z\" fill=\"#000\" fill-opacity=\"0.004\"/><path d=\"M0 24.60L600 27.00L600 28.48L0 26.08Z\" fill=\"#000\" fill-opacity=\"0.076\"/><path d=\"M0 35.40L600 37.80L600 39.28L0 36.88Z\" fill=\"#000\" fill-opacity=\"0.123\"/><path d=\"M0 37.20L600 39.60L600 41.08L0 38.68Z\" fill=\"#000\" fill-opacity=\"0.126\"/><path d=\"M0 40.80L600 43.20L600 44.68L0 42.28Z\" fill=\"#000\" fill-opacity=\"0.179\"/><rect width=\"600\" height=\"4\" fill=\"#000\" fill-opacity=\".2\"/><rect y=\"4\" width=\"600\" height=\"2.4\" fill=\"#000\" fill-opacity=\".08\"/><rect y=\"40\" width=\"600\" height=\"4\" fill=\"#000\" fill-opacity=\".24\"/><rect y=\"37.6\" width=\"600\" height=\"2.4\" fill=\"#000\" fill-opacity=\".1\"/><rect width=\"7\" height=\"44\" fill=\"#000\" fill-opacity=\".3\"/><rect x=\"7\" width=\"5\" height=\"44\" fill=\"#000\" fill-opacity=\".12\"/><rect x=\"593\" width=\"7\" height=\"44\" fill=\"#000\" fill-opacity=\".26\"/><rect x=\"588\" width=\"5\" height=\"44\" fill=\"#000\" fill-opacity=\".1\"/></svg><span class=\"ds-no\"><b>Shade 6</b><span>Teal</span></span><span><span class=\"ds-t\">Nylon and the broadloom boom</span><span class=\"ds-yrs\">1937–1977</span></span><span class=\"ds-st\">Read the chapter</span></a></li><li><div class=\"ds-row ds-soon\"><svg class=\"ds-band\" viewBox=\"0 0 600 44\" preserveAspectRatio=\"none\" aria-hidden=\"true\"><rect width=\"600\" height=\"44\" fill=\"var(--cloth-indigo, #3a3f78)\"/><path d=\"M0 -0.60L600 1.80L600 3.28L0 0.88Z\" fill=\"#fff\" fill-opacity=\"0.170\"/><path d=\"M0 1.20L600 3.60L600 5.08L0 2.68Z\" fill=\"#fff\" fill-opacity=\"0.017\"/><path d=\"M0 3.00L600 5.40L600 6.88L0 4.48Z\" fill=\"#fff\" fill-opacity=\"0.122\"/><path d=\"M0 6.60L600 9.00L600 10.48L0 8.08Z\" fill=\"#fff\" fill-opacity=\"0.103\"/><path d=\"M0 10.20L600 12.60L600 14.08L0 11.68Z\" fill=\"#fff\" fill-opacity=\"0.142\"/><path d=\"M0 12.00L600 14.40L600 15.88L0 13.48Z\" fill=\"#fff\" fill-opacity=\"0.183\"/><path d=\"M0 15.60L600 18.00L600 19.48L0 17.08Z\" fill=\"#fff\" fill-opacity=\"0.174\"/><path d=\"M0 19.20L600 21.60L600 23.08L0 20.68Z\" fill=\"#fff\" fill-opacity=\"0.012\"/><path d=\"M0 21.00L600 23.40L600 24.88L0 22.48Z\" fill=\"#fff\" fill-opacity=\"0.171\"/><path d=\"M0 22.80L600 25.20L600 26.68L0 24.28Z\" fill=\"#fff\" fill-opacity=\"0.028\"/><path d=\"M0 24.60L600 27.00L600 28.48L0 26.08Z\" fill=\"#fff\" fill-opacity=\"0.082\"/><path d=\"M0 26.40L600 28.80L600 30.28L0 27.88Z\" fill=\"#fff\" fill-opacity=\"0.138\"/><path d=\"M0 28.20L600 30.60L600 32.08L0 29.68Z\" fill=\"#fff\" fill-opacity=\"0.093\"/><path d=\"M0 30.00L600 32.40L600 33.88L0 31.48Z\" fill=\"#fff\" fill-opacity=\"0.203\"/><path d=\"M0 33.60L600 36.00L600 37.48L0 35.08Z\" fill=\"#fff\" fill-opacity=\"0.074\"/><path d=\"M0 39.00L600 41.40L600 42.88L0 40.48Z\" fill=\"#fff\" fill-opacity=\"0.053\"/><path d=\"M0 40.80L600 43.20L600 44.68L0 42.28Z\" fill=\"#fff\" fill-opacity=\"0.109\"/><path d=\"M0 42.60L600 45.00L600 46.48L0 44.08Z\" fill=\"#fff\" fill-opacity=\"0.125\"/><path d=\"M0 -2.40L600 0.00L600 1.48L0 -0.92Z\" fill=\"#000\" fill-opacity=\"0.165\"/><path d=\"M0 4.80L600 7.20L600 8.68L0 6.28Z\" fill=\"#000\" fill-opacity=\"0.051\"/><path d=\"M0 8.40L600 10.80L600 12.28L0 9.88Z\" fill=\"#000\" fill-opacity=\"0.186\"/><path d=\"M0 13.80L600 16.20L600 17.68L0 15.28Z\" fill=\"#000\" fill-opacity=\"0.148\"/><path d=\"M0 17.40L600 19.80L600 21.28L0 18.88Z\" fill=\"#000\" fill-opacity=\"0.168\"/><path d=\"M0 31.80L600 34.20L600 35.68L0 33.28Z\" fill=\"#000\" fill-opacity=\"0.119\"/><path d=\"M0 35.40L600 37.80L600 39.28L0 36.88Z\" fill=\"#000\" fill-opacity=\"0.139\"/><path d=\"M0 37.20L600 39.60L600 41.08L0 38.68Z\" fill=\"#000\" fill-opacity=\"0.179\"/><path d=\"M0 44.40L600 46.80L600 48.28L0 45.88Z\" fill=\"#000\" fill-opacity=\"0.136\"/><rect width=\"600\" height=\"4\" fill=\"#000\" fill-opacity=\".2\"/><rect y=\"4\" width=\"600\" height=\"2.4\" fill=\"#000\" fill-opacity=\".08\"/><rect y=\"40\" width=\"600\" height=\"4\" fill=\"#000\" fill-opacity=\".24\"/><rect y=\"37.6\" width=\"600\" height=\"2.4\" fill=\"#000\" fill-opacity=\".1\"/><rect width=\"7\" height=\"44\" fill=\"#000\" fill-opacity=\".3\"/><rect x=\"7\" width=\"5\" height=\"44\" fill=\"#000\" fill-opacity=\".12\"/><rect x=\"593\" width=\"7\" height=\"44\" fill=\"#000\" fill-opacity=\".26\"/><rect x=\"588\" width=\"5\" height=\"44\" fill=\"#000\" fill-opacity=\".1\"/></svg><span class=\"ds-no\"><b>Shade 7</b><span>Indigo</span></span><span><span class=\"ds-t\">Nobody else invented it: tufting goes abroad</span><span class=\"ds-yrs\">1831–2009</span></span><span class=\"ds-st\">In preparation</span></div></li></ol>",
+      "css": ".ds-card { list-style: none; margin: 0; padding: 0; background: var(--sheet, #f2f4f0); border: 1px solid var(--rule-2, #9ea69f); border-radius: 2px; } .ds-row { display: grid; grid-template-columns: 10rem 5rem minmax(0, 1fr) auto; align-items: center; gap: 0 1.25rem; padding: .55rem 1.5rem .55rem 0; border-bottom: 1px solid var(--rule, #c4cac3); color: var(--ink, #171b19); text-decoration: none; font-family: var(--frame, \"Archivo Variable\", \"Arial Narrow\", system-ui, sans-serif); } .ds-row .ds-band { width: 100%; height: 2.75rem; } .ds-soon .ds-band { height: .5rem; } .ds-no { display: flex; flex-direction: column; gap: .2rem; font: 450 .8125rem/1.1 var(--frame, \"Archivo Variable\", \"Arial Narrow\", system-ui, sans-serif); color: var(--ink-3, #515955); } .ds-no b { font: 700 .9375rem/1 var(--frame, \"Archivo Variable\", \"Arial Narrow\", system-ui, sans-serif); font-stretch: 84%; color: var(--ink, #171b19); font-variant-numeric: tabular-nums; } .ds-t { display: block; font: 600 1.0625rem/1.25 var(--frame, \"Archivo Variable\", \"Arial Narrow\", system-ui, sans-serif); } .ds-soon .ds-t { font-weight: 500; color: var(--ink-2, #3a413d); } .ds-yrs { display: block; margin-top: .15rem; font: 450 .8125rem/1.3 var(--frame, \"Archivo Variable\", \"Arial Narrow\", system-ui, sans-serif); color: var(--ink-3, #515955); font-variant-numeric: tabular-nums; } .ds-st { font: 550 .8125rem/1 var(--frame, \"Archivo Variable\", \"Arial Narrow\", system-ui, sans-serif); color: var(--ink-3, #515955); white-space: nowrap; } a.ds-row .ds-st { color: color-mix(in oklab, var(--shade, #1e6767), #000 22%); } a.ds-row:hover .ds-t { text-decoration: underline; text-underline-offset: .2em; } a.ds-row:focus-visible { outline: 2px solid color-mix(in oklab, var(--shade, #1e6767), #000 22%); outline-offset: 3px; border-radius: 2px; }"
+    },
+    {
+      "name": "Margin Note",
+      "kind": "custom",
+      "refersTo": "margin-note",
+      "description": "Text column with a numbered note floated into the 14rem margin, linking to its record in one step.",
+      "html": "<div class=\"ds-prose\"><p><span class=\"ds-note\" role=\"note\"><b>12</b>“Tufted carpet production, 1951–1960,” <em>Carpet Institute</em>, 1961. <a href=\"#\">Record</a></span>By the end of the decade tufted carpet had overtaken woven broadloom by yardage.<sup class=\"ds-fn\"><a href=\"#\">12</a></sup></p></div>",
+      "css": ".ds-prose { max-width: 53.75rem; padding-right: 16.75rem; font: 400 1.125rem/1.66 var(--read, \"Literata Variable\", \"Iowan Old Style\", Georgia, serif); color: var(--ink, #171b19); background: var(--ground, #e6e9e4); } .ds-prose p { margin: 0; } .ds-note { float: right; width: 14rem; margin: .25rem -16.75rem .9rem 0; font: 400 .8125rem/1.45 var(--frame, \"Archivo Variable\", \"Arial Narrow\", system-ui, sans-serif); color: var(--ink-3, #515955); } .ds-note b { color: color-mix(in oklab, var(--shade, #1e6767), #000 22%); font-weight: 700; margin-right: .35em; font-variant-numeric: tabular-nums; } .ds-note a { color: var(--ink-2, #3a413d); } .ds-fn { font: 650 .66em/0 var(--frame, \"Archivo Variable\", \"Arial Narrow\", system-ui, sans-serif); vertical-align: super; } .ds-fn a { color: color-mix(in oklab, var(--shade, #1e6767), #000 22%); text-decoration: none; padding: 0 .12em; } .ds-prose a:hover { text-decoration-color: currentColor; } .ds-prose a:focus-visible { outline: 2px solid color-mix(in oklab, var(--shade, #1e6767), #000 22%); outline-offset: 3px; border-radius: 2px; }"
+    },
+    {
+      "name": "Figure Credit with Pending Tag",
+      "kind": "custom",
+      "refersTo": "tag-pending",
+      "description": "Caption, credit, a one-step Source link and the Permission pending tag until the image is cleared.",
+      "html": "<figcaption class=\"ds-cap\">Nylon carpet by the Nye-Wait Company, shown to the press about 1955.<span class=\"ds-credit\"><span>Hagley Museum and Library</span><a class=\"ds-src\" href=\"#\">Source</a><span class=\"ds-pending\">Permission pending</span></span></figcaption>",
+      "css": ".ds-cap { max-width: 68ch; font: 400 .875rem/1.5 var(--frame, \"Archivo Variable\", \"Arial Narrow\", system-ui, sans-serif); color: var(--ink-2, #3a413d); } .ds-credit { display: flex; flex-wrap: wrap; align-items: center; gap: .25rem .9rem; margin-top: .3rem; color: var(--ink-3, #515955); font-size: .8125rem; } .ds-src { font-weight: 650; text-decoration: none; color: color-mix(in oklab, var(--shade, #1e6767), #000 22%); } .ds-src:hover { text-decoration: underline; } .ds-src:focus-visible { outline: 2px solid color-mix(in oklab, var(--shade, #1e6767), #000 22%); outline-offset: 3px; border-radius: 2px; } .ds-pending { display: inline-flex; align-items: center; padding: .1em .55em; border: 1px solid var(--rule-2, #9ea69f); border-radius: 2px; font: 550 .75rem/1.5 var(--frame, \"Archivo Variable\", \"Arial Narrow\", system-ui, sans-serif); color: var(--ink-2, #3a413d); white-space: nowrap; }"
+    },
+    {
+      "name": "Pull Quote",
+      "kind": "custom",
+      "refersTo": "pull",
+      "description": "Literata at 32ch under a 2px shade thread; attribution in Archivo.",
+      "html": "<figure class=\"ds-pull\"><p>The magic word was nylon, and the mills could not make it fast enough.</p><cite>Trade advertisement, 1958</cite></figure>",
+      "css": ".ds-pull { margin: 0; padding: 1.5rem 0 0; border-top: 2px solid var(--shade, #1e6767); } .ds-pull p { margin: 0; max-width: 32ch; font: 400 1.75rem/1.3 var(--read, \"Literata Variable\", \"Iowan Old Style\", Georgia, serif); letter-spacing: -.005em; color: var(--ink, #171b19); } .ds-pull cite { display: block; margin-top: .9rem; font: 500 .875rem/1.4 var(--frame, \"Archivo Variable\", \"Arial Narrow\", system-ui, sans-serif); font-style: normal; color: var(--ink-3, #515955); }"
+    },
+    {
+      "name": "Note Panel",
+      "kind": "card",
+      "refersTo": "aside-panel",
+      "description": "A sheet panel for the honesty layer, e.g. Still to find for this chapter.",
+      "html": "<aside class=\"ds-aside\"><h3>Still to find for this chapter</h3><ul><li>The 1959 sales figures in the Carpet Institute reports.</li><li>Permission for the DuPont advertising images.</li></ul></aside>",
+      "css": ".ds-aside { padding: 1.5rem 1.75rem; background: var(--sheet, #f2f4f0); border-radius: 3px; font: 400 1rem/1.55 var(--frame, \"Archivo Variable\", \"Arial Narrow\", system-ui, sans-serif); color: var(--ink-2, #3a413d); } .ds-aside h3 { margin: 0 0 .6rem; font: 650 1rem/1.3 var(--frame, \"Archivo Variable\", \"Arial Narrow\", system-ui, sans-serif); color: var(--ink, #171b19); } .ds-aside ul { margin: 0; padding-left: 1.1rem; } .ds-aside li { margin: .3rem 0; }"
+    },
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Ink fill, nearly square; the one strong action on a record page.",
+      "html": "<a class=\"ds-btn ds-btn-primary\" href=\"#\">View at the source</a>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; min-height: 2.5rem; padding: 0 1rem; border: 1px solid var(--rule-2, #9ea69f); border-radius: 2px; font: 600 .875rem/1 var(--frame, \"Archivo Variable\", \"Arial Narrow\", system-ui, sans-serif); text-decoration: none; color: var(--ink, #171b19); background: var(--sheet, #f2f4f0); } .ds-btn-primary { background: var(--ink, #171b19); color: var(--ground, #e6e9e4); border-color: var(--ink, #171b19); } .ds-btn:hover { border-color: var(--ink-3, #515955); } .ds-btn:focus-visible { outline: 2px solid color-mix(in oklab, var(--shade, #1e6767), #000 22%); outline-offset: 3px; border-radius: 2px; }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button",
+      "description": "Sheet fill with card-edge border, e.g. Cited in chapter 6.",
+      "html": "<a class=\"ds-btn2\" href=\"#\">Cited in chapter 6, notes 12, 14</a>",
+      "css": ".ds-btn2 { display: inline-flex; align-items: center; min-height: 2.5rem; padding: 0 1rem; border: 1px solid var(--rule-2, #9ea69f); border-radius: 2px; font: 600 .875rem/1 var(--frame, \"Archivo Variable\", \"Arial Narrow\", system-ui, sans-serif); text-decoration: none; color: var(--ink, #171b19); background: var(--sheet, #f2f4f0); } .ds-btn2:hover { border-color: var(--ink-3, #515955); } .ds-btn2:focus-visible { outline: 2px solid color-mix(in oklab, var(--shade, #1e6767), #000 22%); outline-offset: 3px; border-radius: 2px; }"
+    },
+    {
+      "name": "Filter Chip",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Timeline filter with the chapter's cloth swatch; pressed is ink fill.",
+      "html": "<div class=\"ds-chips\"><button class=\"ds-chip\" aria-pressed=\"true\" style=\"--c: var(--cloth-teal, #1e6767)\"><i></i>Nylon</button><button class=\"ds-chip\" aria-pressed=\"false\" style=\"--c: var(--cloth-ochre, #a87a22)\"><i></i>Building the machine</button></div>",
+      "css": ".ds-chips { display: flex; gap: .4rem; } .ds-chip { display: inline-flex; align-items: center; gap: .45rem; min-height: 2.25rem; padding: 0 .85rem; border: 1px solid var(--rule-2, #9ea69f); border-radius: 2px; background: var(--sheet, #f2f4f0); color: var(--ink-2, #3a413d); font: 500 .875rem/1 var(--frame, \"Archivo Variable\", \"Arial Narrow\", system-ui, sans-serif); cursor: pointer; } .ds-chip i { width: .5rem; height: .9rem; border-radius: 1px; background: var(--c); } .ds-chip:hover { border-color: var(--ink-3, #515955); color: var(--ink, #171b19); } .ds-chip[aria-pressed=\"true\"] { background: var(--ink, #171b19); color: var(--ground, #e6e9e4); border-color: var(--ink, #171b19); } .ds-chip:focus-visible { outline: 2px solid color-mix(in oklab, var(--shade, #1e6767), #000 22%); outline-offset: 3px; border-radius: 2px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Dye House Shade Card",
+    "overview": "The history is laid out like a dye house's yarn shade card: a cool, card-stock grey sheet with one band of wound yarn per chapter, each with its shade number. The cover is the card itself, thirteen shades in a single bordered sheet; a chapter is one shade picked off that card and read. A charcoal bookcloth board closes the page top and bottom, the way a sample book's covers hold its cards. The world owns the frame (masthead, bands, shade numbers, headings, rules); the reading column stays calm.\n\nDensity is that of a close-reading book page: a single text measure with a margin column beside it where every note sits next to the sentence it supports and links to its record in one step. The world is flat and matter-of-fact, made of tonal sheets, hairline rules and condensed type rather than shadows or ornament. Its honesty is visible design, not small print: the prototype notice under the masthead, \"Permission pending\" on uncleared pictures, the count of sources \"checked at the archive\", and the \"Still to find\" panel are part of the system.\n\nThe world refuses the cream-paper editorial long-read: serif display headings on off-white, italic deks, small tracked labels above headings.",
+    "keyCharacteristics": [
+      "Cool grey card-stock ground, never cream; charcoal board for masthead and foot only.",
+      "One chapter shade per page, drawn as a wound-yarn band and reused as the page's only accent.",
+      "Condensed Archivo for the frame and headings, Literata for reading, tabular numerals for dates and shade numbers.",
+      "A text column with a margin-note column; every note, picture and date opens its record.",
+      "Flat surfaces separated by tone and 1-2px rules; no shadows.",
+      "Status (prototype, permission, verification, gaps) shown in plain words."
+    ],
+    "rules": [
+      {
+        "name": "The Card-Stock Rule",
+        "body": "The ground is cool grey card (#e6e9e4), never cream, ivory or warm paper.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Shade Rule",
+        "body": "A page carries one chapter shade and every accent on it derives from that shade; no second accent colour is introduced. Other cloths appear only as a chapter's own band or swatch.",
+        "section": "colors"
+      },
+      {
+        "name": "The Board Rule",
+        "body": "The charcoal board is the binding: masthead and foot, nothing else. Content never sits on a dark panel.",
+        "section": "colors"
+      },
+      {
+        "name": "The Frame and Read Rule",
+        "body": "Archivo for the frame: headings, navigation, captions, notes, labels, data. Literata for reading: prose, deks, the scope line, pull quotes, citations, timeline event titles, bibliography entries.",
+        "section": "typography"
+      },
+      {
+        "name": "The Condensed Heading Rule",
+        "body": "Headings are Archivo at 82-90% width, weight 650-700, with slight negative tracking. A serif display heading breaks the world.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tabular Rule",
+        "body": "Years, shade numbers, note numbers and counts set in tabular lining numerals.",
+        "section": "typography"
+      },
+      {
+        "name": "The Margin Column Rule",
+        "body": "Sources sit beside the sentence, not at the bottom of the screen: 37rem text plus a 14rem note column on wide screens; on narrow screens a tap opens the note in place rather than jumping to the end.",
+        "section": "layout"
+      },
+      {
+        "name": "The No-Shadow Rule",
+        "body": "Surfaces sit flat at rest and in every state; hover changes a border, underline or text colour, never adds lift.",
+        "section": "elevation"
+      },
+      {
+        "name": "The One-Step Rule",
+        "body": "Every note, figure, key date and timeline event links straight to its record page; the record links on to the holding institution.",
+        "section": "components"
+      },
+      {
+        "name": "The Visible Status Rule",
+        "body": "Prototype, \"Permission pending\", \"checked at the archive\" counts, \"not yet checked at the source\" and \"Still to find\" are shown in plain words at full legibility, never hidden, greyed out of reach or styled away.",
+        "section": "components"
+      }
+    ],
+    "dos": [
+      "**Do** set the page ground to Card-Stock Grey (#e6e9e4) and keep the charcoal board (#1e2421) for masthead and foot.",
+      "**Do** set `--shade` once per page from the chapter's cloth and take every accent (band, threads, note numbers, Source links, focus ring) from it.",
+      "**Do** show a chapter's shade as a wound band with its shade number and cloth name (\"Shade 6, Teal\"), never as a bare colour.",
+      "**Do** set headings in Archivo at 82-90% width, weight 650-700, and reading text in Literata at a 37rem measure.",
+      "**Do** put sources in the 14rem margin beside the text and link each to its record in one step.",
+      "**Do** use tabular numerals for years, shade numbers and counts.",
+      "**Do** show permission and verification status in words wherever the image or claim appears."
+    ],
+    "donts": [
+      "**Don't** use cream, ivory or warm off-white grounds.",
+      "**Don't** set headings in a serif display face, put deks in italic, or place small tracked uppercase labels above headings.",
+      "**Don't** introduce a second accent colour on a chapter page, or use another chapter's cloth outside its own band or swatch.",
+      "**Don't** add box-shadows, lift on hover, or rounded corners beyond 3px.",
+      "**Don't** draw the band as a flat swatch, gradient or random noise; it is exact parallel strands, the same every render.",
+      "**Don't** put content on the dark board or hide status marks to tidy a page."
+    ]
+  }
+}
