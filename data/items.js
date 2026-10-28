@@ -375,7 +375,10 @@ window.RUG_ITEMS = [
       "borrow online"
     ],
     "status": "unverified",
-    "region": "United States"
+    "region": "United States",
+    "image": "https://archive.org/services/img/innovationinunit0000will/full/pct:200/0/default.jpg",
+    "imageCredit": "archive.org",
+    "imageSource": "auto"
   },
   {
     "id": "book-ewing-norton-broadlooms-1955",
@@ -397,7 +400,10 @@ window.RUG_ITEMS = [
       "library copy"
     ],
     "status": "unverified",
-    "region": "United States"
+    "region": "United States",
+    "image": "https://archive.org/services/img/broadloomsbusine0000ewin/full/pct:200/0/default.jpg",
+    "imageCredit": "archive.org",
+    "imageSource": "auto"
   },
   {
     "id": "book-windham-tufting-machine-1941",
