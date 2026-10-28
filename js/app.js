@@ -85,7 +85,7 @@
 
   // ---------- persistent state ----------
   const blankState = () => ({
-    version: 1, items: {}, deleted: {}, flags: {}, notes: {}, touched: {},
+    version: 1, items: {}, deleted: {}, flags: {}, notes: {}, touched: {}, base: {},
     lists: [{ id: "fellowship", name: "Winterthur fellowship application", intro: "", items: [] }],
     activeList: "fellowship", ui: { layout: "grid", q: "", sort: "relevance" }
   });
@@ -93,6 +93,7 @@
   try { S = Object.assign(blankState(), JSON.parse(localStorage.getItem(STORE_KEY) || "{}")); }
   catch { S = blankState(); }
   if (!S.lists.length) S.lists = blankState().lists;
+  if (!S.base) S.base = {};
   const save = () => {
     try { localStorage.setItem(STORE_KEY, JSON.stringify(S)); }
     catch (e) { toast("Couldn't save. Browser storage is full. Export a backup."); console.error(e); }
@@ -177,6 +178,10 @@
   // ---------- items ----------
   const BASE = (window.RUG_ITEMS || []).map(x => ({ ...x }));
   const BASE_IDS = new Set(BASE.map(x => x.id));
+  const BASE_BY_ID = Object.fromEntries(BASE.map(x => [x.id, x]));
+  // The published record an edit started from, kept with your first edit to it, so publishing can tell your
+  // changes from changes made on GitHub since (js/publish.js).
+  const snapBase = id => { S.base = S.base || {}; if (BASE_IDS.has(id) && !S.items[id] && !S.base[id]) S.base[id] = { ...BASE_BY_ID[id] }; };
   let ITEMS = [], BY_ID = {};
 
   const norm = x => ({
@@ -737,6 +742,7 @@
       const scroll = $("#drawer").scrollTop; openDrawer(drawerId); $("#drawer").scrollTop = scroll;
     } else if (drawerId) closeDrawer();
     renderListBadge();
+    publishCount();
   };
 
   // ---------- edit dialog ----------
@@ -794,7 +800,7 @@
     }
     for (const k of Object.keys(rec)) if (rec[k] === "" || (Array.isArray(rec[k]) && !rec[k].length)) delete rec[k];
     rec.id = id;
-    S.items[id] = rec; touch(id); save();
+    snapBase(id); S.items[id] = rec; touch(id); save();
     dlg.close(); refresh();
     toast(editingId ? "Saved" : "Added to database");
     if (!editingId) openDrawer(id);
@@ -806,7 +812,7 @@
     const img = BY_ID[id]?.image;
     if (img && img.startsWith("idb:")) idb.del(img.slice(4));
     if (BASE_IDS.has(id)) S.deleted[id] = true;
-    delete S.items[id]; delete S.flags[id]; delete S.notes[id];
+    delete S.items[id]; delete S.base[id]; delete S.flags[id]; delete S.notes[id];
     if (LOCAL_TR[id]) { delete LOCAL_TR[id]; idb.del("tr:" + id).catch(() => {}); }
     for (const l of S.lists) l.items = l.items.filter(x => x !== id);
     save(); dlg.close(); closeDrawer(); refresh(); toast("Deleted");
@@ -1049,7 +1055,7 @@
     delete rec.images; delete rec._borrowed;
     if (role === "illustration") { rec.imageRole = "illustration"; rec.imageCaption = [r.title, r.date, r.identifier].filter(Boolean).join(", "); }
     else { delete rec.imageRole; delete rec.imageCaption; }
-    S.items[imgFor] = clean(rec); touch(imgFor); save(); imgDlg.close(); refresh();
+    snapBase(imgFor); S.items[imgFor] = clean(rec); touch(imgFor); save(); imgDlg.close(); refresh();
     toast(role === "illustration" ? "Image added as an illustration" : "Image added");
   };
   $("#img-search").addEventListener("submit", e => { e.preventDefault(); const q = $("#img-q").value.trim(); if (q) searchImages(q); });
@@ -1722,6 +1728,151 @@
   setInterval(() => { if (jobRuns) renderJobs(); }, 30000);
   setTimeout(checkJobs, 1200);
 
+  // ---------- publish to the site ----------
+  // Commits this browser's changes (edited and new records, transcripts, uploaded photos, and deletions you
+  // confirm) straight to GitHub, merged with what is published there now (js/publish.js). The research site
+  // and www.historyoftuftedrugs.com rebuild from that commit. Needs a GitHub token for this repository with
+  // permission to change its contents, kept in this browser only.
+  const PUBLISH_BRANCH = "claude/ecstatic-hamilton-gw4o0u";
+  const TOKEN_KEY = "rugdb.githubToken";
+  const ghToken = {
+    get: () => { try { return localStorage.getItem(TOKEN_KEY) || ""; } catch { return ""; } },
+    set: v => { try { if (v) localStorage.setItem(TOKEN_KEY, v); else localStorage.removeItem(TOKEN_KEY); } catch { /* storage off */ } }
+  };
+  const pubDlg = $("#publish-dialog"), pubBody = $("#publish-body"), pubFoot = $("#publish-foot");
+  const PUBLISHED_DELETIONS = new Set(); // published this visit; the page still holds the old copy until reloaded
+  const localChanges = () => ({
+    items: S.items, base: S.base || {}, deleted: Object.fromEntries(Object.entries(S.deleted).filter(([id]) => !PUBLISHED_DELETIONS.has(id))), transcripts: LOCAL_TR,
+    photos: Object.fromEntries(Object.entries(S.items).map(([id, x]) => [id, String(x.image || "").startsWith("idb:") ? imgCache[x.image.slice(4)] : null]).filter(([, d]) => d))
+  });
+  // What would be published against the database as this page loaded it: the count on the button.
+  function publishCount() {
+    const btn = $("#btn-publish"); if (!btn || !window.RugPublish) return;
+    let n = 0;
+    try { n = RugPublish.plan({ local: localChanges(), published: { items: BASE, removed: window.RUG_REMOVED || {}, transcripts: PUB_TR }, loaded: BASE_BY_ID }).changes.filter(c => !["gone", "duplicate"].includes(c.kind) && !c.blocked).length; } catch (e) { console.error(e); }
+    $("#publish-count").textContent = n ? String(n) : "";
+    $("#publish-count").hidden = !n;
+    btn.title = n ? `${n} change${n === 1 ? "" : "s"} in this browser not yet on the site` : "Everything in this browser is on the site";
+  }
+  const short = v => { const s = Array.isArray(v) ? v.join(", ") : String(v ?? "—"); return s.length > 90 ? s.slice(0, 88) + "…" : s; };
+  const KIND = { edited: "Edited", added: "New", transcript: "Transcript", deleted: "Delete from the site", duplicate: "Not published", gone: "Not published" };
+  const pubFootButtons = (primary, extra = "") => {
+    pubFoot.innerHTML = `${extra}<span style="flex:1"></span><button type="button" class="btn" data-pub="close">${primary ? "Cancel" : "Close"}</button>${primary || ""}`;
+  };
+  const setupView = (msg = "") => {
+    pubBody.innerHTML = `
+      <p>Publishing writes your changes straight to the research database on GitHub. It needs a key from GitHub, made once, that lets this browser change the repository's files.</p>
+      <ol class="pub-steps">
+        <li>Open <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">GitHub's page for a new fine-grained token</a>.</li>
+        <li>Name it “Rug Research publishing”. Choose an expiry (up to a year).</li>
+        <li>Under <b>Repository access</b>, choose <b>Only select repositories</b> and pick <b>${esc(REPO)}</b>.</li>
+        <li>Under <b>Permissions → Repository permissions</b>, set <b>Contents</b> to <b>Read and write</b>. Leave everything else as it is.</li>
+        <li>Click <b>Generate token</b>, copy it, and paste it here.</li>
+      </ol>
+      <label class="pub-token">GitHub token <input id="pub-token" type="password" autocomplete="off" spellcheck="false" placeholder="github_pat_…"></label>
+      <p class="pub-note">The key is kept only in this browser. Anyone using this browser could publish with it, so set it up on your own computer only. You can revoke it at any time on GitHub (Settings → Developer settings → Fine-grained tokens).</p>
+      ${msg ? `<p class="pub-err" role="alert">${esc(msg)}</p>` : ""}`;
+    pubFootButtons(`<button type="button" class="btn primary" data-pub="save-token">Save and continue</button>`);
+    setTimeout(() => $("#pub-token")?.focus(), 30);
+  };
+  const ghErr = e => e.status === 401 ? "GitHub didn't accept the key. It may have expired or been revoked: set up a new one."
+    : e.status === 403 || e.status === 404 ? `The key can't change ${REPO}. Check that it covers this repository with Contents set to Read and write.`
+    : e.message === "Failed to fetch" ? "Couldn't reach GitHub. Check the connection and try again." : e.message;
+  let review = null; // the plan shown for review
+  const reviewView = async () => {
+    pubBody.innerHTML = `<p class="pub-status" role="status">Reading what's on GitHub now…</p>`;
+    pubFootButtons("");
+    try {
+      const gh = RugPublish.github({ repo: REPO, branch: PUBLISH_BRANCH, token: ghToken.get(), fetchImpl: fetch.bind(window) });
+      const head = await gh.head();
+      const [itemsSrc, trSrc] = await Promise.all([gh.file("data/items.js", head), gh.file("data/transcripts.js", head)]);
+      const w = RugPublish.readWindow(itemsSrc), tw = RugPublish.readWindow(trSrc);
+      review = RugPublish.plan({ local: localChanges(), published: { items: w.RUG_ITEMS || [], removed: w.RUG_REMOVED || {}, transcripts: tw.RUG_TRANSCRIPTS || {} }, loaded: BASE_BY_ID });
+      review.pub = Object.fromEntries((w.RUG_ITEMS || []).map(x => [x.id, x]));
+    } catch (e) {
+      if (e.status === 401 || e.status === 403 || e.status === 404) { ghToken.set(""); return setupView(ghErr(e)); }
+      pubBody.innerHTML = `<p class="pub-err" role="alert">${esc(ghErr(e))}</p>`; return pubFootButtons("", `<button type="button" class="btn" data-pub="retry">Try again</button>`);
+    }
+    const ch = review.changes, mine = S.items;
+    const row = (c, checked, note = "") => `<li class="pub-row"><label><input type="checkbox" data-pick="${c.kind === "transcript" ? "tr:" + esc(c.id) : c.kind === "deleted" ? "del:" + esc(c.id) : esc(c.id)}"${checked ? " checked" : ""}${c.blocked ? " disabled" : ""}>
+      <span><span class="pub-kind">${KIND[c.kind]}</span> <strong>${esc(c.title)}</strong>${c.fields && c.fields.length ? `<span class="pub-fields">${esc(c.fields.join(", "))}</span>` : ""}${c.note ? `<span class="pub-fields">${esc(c.note)}</span>` : ""}${note}</span></label></li>`;
+    const ready = ch.filter(c => ["edited", "added", "transcript"].includes(c.kind) && !c.legacy && (c.kind !== "edited" || c.fields.length || !c.conflicts.length));
+    const legacy = ch.filter(c => c.kind === "edited" && c.legacy && c.fields.length);
+    const conflicts = ch.filter(c => c.kind === "edited" && c.conflicts && c.conflicts.length);
+    const dels = ch.filter(c => c.kind === "deleted"), info = ch.filter(c => ["duplicate", "gone"].includes(c.kind));
+    const total = ready.length + legacy.length + conflicts.length + dels.length;
+    if (!total) {
+      pubBody.innerHTML = `<p>Everything in this browser is already on the site.</p>${info.length ? `<ul class="pub-list">${info.map(c => row(c, false)).join("")}</ul>` : ""}`;
+      return pubFootButtons("", `<button type="button" class="link-btn" data-pub="forget">Forget the GitHub key</button>`);
+    }
+    pubBody.innerHTML = `
+      ${ready.length ? `<h3>Ready to publish</h3><ul class="pub-list">${ready.map(c => row(c, !c.blocked)).join("")}</ul>` : ""}
+      ${conflicts.length ? `<h3>Changed on both sides</h3><p class="pub-note">Since you edited these, the published record has changed the same field. The published version stays unless you tick “Use mine”.</p>
+        <ul class="pub-list">${conflicts.flatMap(c => c.conflicts.map(k => `<li class="pub-row"><label><input type="checkbox" data-mine="${esc(c.id)}.${esc(k)}"><span><span class="pub-kind">Use mine</span> <strong>${esc(c.title)}</strong> · ${esc(k)}<span class="pub-fields">Published: ${esc(short(review.pub[c.id]?.[k]))}</span><span class="pub-fields">Yours: ${esc(short(mine[c.id]?.[k]))}</span></span></label></li>`)).join("")}</ul>` : ""}
+      ${legacy.length ? `<h3>Older changes in this browser</h3><p class="pub-note">These were edited here before the Publish button existed, so it can't tell your edits from an out-of-date copy. Tick only the ones you know you changed.</p><ul class="pub-list">${legacy.map(c => row(c, false)).join("")}</ul>` : ""}
+      ${dels.length ? `<h3>Deleted in this browser</h3><p class="pub-note">Tick to remove these from the database and the public site. A chapter that cites a removed record stops the site from updating until the citation is changed.</p><ul class="pub-list">${dels.map(c => row(c, false)).join("")}</ul>` : ""}
+      ${info.length ? `<h3>Not published</h3><ul class="pub-list">${info.map(c => `<li class="pub-row"><span><span class="pub-kind">${KIND[c.kind]}</span> <strong>${esc(c.title)}</strong><span class="pub-fields">${esc(c.note)}</span></span></li>`).join("")}</ul>` : ""}
+      <p class="pub-note">Flags, notes and lists stay in this browser; they aren't part of the database.</p>`;
+    pubFootButtons(`<button type="button" class="btn primary" data-pub="go">Publish</button>`, `<button type="button" class="link-btn" data-pub="forget">Forget the GitHub key</button>`);
+  };
+  const go = async () => {
+    const picks = $$("[data-pick]", pubBody), skip = new Set(), deletions = new Set(), mineSet = new Set($$("[data-mine]:checked", pubBody).map(i => i.dataset.mine));
+    for (const i of picks) { const k = i.dataset.pick; if (k.startsWith("del:")) { if (i.checked) deletions.add(k.slice(4)); } else if (!i.checked) skip.add(k); }
+    // Older copies are left out unless ticked; so are records whose only change was declined above.
+    pubBody.innerHTML = `<p class="pub-status" role="status">Publishing…</p>`; pubFootButtons("");
+    try {
+      const r = await RugPublish.publish({
+        repo: REPO, branch: PUBLISH_BRANCH, token: ghToken.get(), fetchImpl: fetch.bind(window), local: localChanges(), loaded: BASE_BY_ID,
+        choose: { skip, deletions, mine: mineSet },
+        message: p => {
+          const live = p.changes.filter(c => !c.skipped && !["duplicate", "gone"].includes(c.kind));
+          const count = k => live.filter(c => c.kind === k).length;
+          const parts = [["edited", "edited"], ["added", "new"], ["transcript", "transcript"], ["deleted", "deleted"]].map(([k, w]) => count(k) ? `${count(k)} ${w}` : "").filter(Boolean);
+          return `Publish from the research tool: ${parts.join(", ")}\n\n` + live.map(c => `- ${c.kind}: ${c.id}${c.fields && c.fields.length ? ` (${c.fields.join(", ")})` : ""}`).join("\n");
+        }
+      });
+      if (r.nothing) { pubBody.innerHTML = `<p>Nothing was left to publish.</p>`; return pubFootButtons(""); }
+      // Keep this browser in step with what was published: the published records become the starting point
+      // for later edits, a conflict you didn't settle your way takes the published value, and uploaded photos
+      // now point at their files in the repository.
+      const out = Object.fromEntries(r.plan.items.map(x => [x.id, x]));
+      for (const c of r.plan.changes) {
+        if (c.kind === "deleted" && !c.skipped) PUBLISHED_DELETIONS.add(c.id);
+        if (c.skipped || !["edited", "added"].includes(c.kind) || !out[c.id] || !S.items[c.id]) continue;
+        for (const k of c.conflicts || []) if (!mineSet.has(`${c.id}.${k}`)) { if (out[c.id][k] == null) delete S.items[c.id][k]; else S.items[c.id][k] = out[c.id][k]; }
+        if (String(S.items[c.id].image || "").startsWith("idb:") && out[c.id].image && !out[c.id].image.startsWith("idb:")) S.items[c.id].image = out[c.id].image;
+        S.base[c.id] = { ...out[c.id] };
+      }
+      save(); refresh();
+      const n = r.plan.changes.filter(c => !c.skipped && !["duplicate", "gone"].includes(c.kind)).length;
+      pubBody.innerHTML = `<p><strong>Published ${n} change${n === 1 ? "" : "s"}.</strong> The research database and <a href="https://www.historyoftuftedrugs.com/" target="_blank" rel="noopener">www.historyoftuftedrugs.com</a> update in about two minutes. Reload this page after that to see the published copy.</p>
+        <p><a href="https://github.com/${REPO}/commit/${esc(r.commit.sha)}" target="_blank" rel="noopener">The commit on GitHub</a> · <a href="https://github.com/${REPO}/actions" target="_blank" rel="noopener">Site updates in progress</a></p>`;
+      pubFootButtons("");
+      if (typeof checkJobs === "function") setTimeout(checkJobs, 4000);
+    } catch (e) {
+      if (e.status === 401 || e.status === 403 || e.status === 404) { ghToken.set(""); return setupView(ghErr(e)); }
+      pubBody.innerHTML = `<p class="pub-err" role="alert">Nothing was published: ${esc(ghErr(e))}</p>`;
+      pubFootButtons("", `<button type="button" class="btn" data-pub="retry">Try again</button>`);
+    }
+  };
+  $("#btn-publish").onclick = () => { pubDlg.showModal(); if (ghToken.get()) reviewView(); else setupView(); };
+  pubDlg.addEventListener("click", async e => {
+    const b = e.target.closest("[data-pub]"); if (!b) return;
+    const k = b.dataset.pub;
+    if (k === "close") pubDlg.close();
+    if (k === "retry") reviewView();
+    if (k === "go") go();
+    if (k === "forget") { ghToken.set(""); setupView(); }
+    if (k === "save-token") {
+      const t = $("#pub-token").value.trim();
+      if (!t) return $("#pub-token").focus();
+      b.disabled = true;
+      try { await RugPublish.github({ repo: REPO, branch: PUBLISH_BRANCH, token: t, fetchImpl: fetch.bind(window) }).check(); ghToken.set(t); reviewView(); }
+      catch (err) { b.disabled = false; setupView(ghErr(err)); }
+    }
+  });
+  $("#btn-x-publish").onclick = () => pubDlg.close();
+
   // add / export menu
   $("#btn-add").onclick = () => openEdit(null);
   const setMenu = open => { $("#export-menu").hidden = !open; $("#btn-export").setAttribute("aria-expanded", String(open)); if (open) $("#export-menu button").focus(); };
@@ -1922,12 +2073,14 @@
     if (!pub || mine.imageSource === "picked" || mine.imageRole) continue;
     if (sameText(mine, pub)) delete S.items[id];
   }
+  for (const id of Object.keys(S.base)) if (!S.items[id]) delete S.base[id];
   save();
   rebuild();
   const VIEWS = ["browse", "timeline", "compile", "manuscript", "discover", "sources"];
   const viewFromHash = () => { const v = (location.hash || "").slice(1); return VIEWS.includes(v) ? v : "browse"; };
   window.addEventListener("hashchange", () => { if (viewFromHash() !== currentView) setView(viewFromHash()); });
   setView(viewFromHash());
+  publishCount();
   idb.all().then(all => {
     let changed = false;
     for (const [k, v] of Object.entries(all)) {
@@ -1939,5 +2092,6 @@
     }
     if (Object.keys(LOCAL_TR).length) rebuild();
     if (changed) refresh();
+    publishCount();
   }).catch(() => {});
 })();

@@ -68,7 +68,8 @@ Search them with `region:japan`, `conf:solid`, `lang:zh` or just type in the ori
 Flags, notes, lists, edits and uploaded photos are saved **in your browser** on the device you use.
 
 - **Export → Backup my flags, notes & lists** downloads one `.json` file containing everything, photos included. Do this regularly, and use **Restore** to move to another computer.
-- **Export → Database file (items.js)** downloads the full database with your additions and edits. Replace `data/items.js` in this repo with it and commit, and the records become part of the permanent, shared site.
+- **Publish** (top bar) sends your edits, new records, transcripts and uploaded photos straight to GitHub, merged with what is published there now, in one commit; the research site and www.historyoftuftedrugs.com update about two minutes later. The number on the button counts what hasn't been published yet. Before anything is sent it lists every change: fields changed on GitHub since you edited them are shown side by side (the published value stays unless you tick "Use mine"), records edited before the button existed are left unticked until you confirm them, and deletions are opt-in. It needs a fine-grained GitHub token for this repository with Contents: Read and write, made once and kept only in that browser (the dialog walks through it). The logic is in `js/publish.js`.
+- **Export → Database file (items.js)** still downloads the full database, for a backup or to send for merging by hand (`scripts/merge-export.cjs`).
 
 ## Data
 
