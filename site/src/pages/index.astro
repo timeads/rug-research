@@ -34,7 +34,7 @@ const sources = items.filter(x => ["book", "article", "archive", "trade-catalog"
   </section>
   <section class="card" aria-labelledby="contents">
     <div class="card-sheet">
-      <div class="card-head"><h2 id="contents">Contents</h2><span>{ready} {ready === 1 ? "chapter" : "chapters"} ready to read, {rows.length - ready} in preparation</span></div>
+      <div class="card-head"><h2 id="contents">Contents</h2><span>{ready === rows.length ? `All ${ready} chapters in prototype draft` : `${ready} ${ready === 1 ? "chapter" : "chapters"} ready to read, ${rows.length - ready} in preparation`}</span></div>
       <ol class="shades">
         {rows.map(r => {
           const label = <span class="no"><b class="num">Shade {r.n}</b><span>{r.cloth}</span></span>;

@@ -26,6 +26,10 @@ for (const id of ids) {
     if (gallery.length) gallery.forEach((g, i) => out.push(`  image={${i}}: ${g.src}${g.caption ? " (" + g.caption + ")" : ""}`));
     else out.push(`  image: ${it.image}`);
   } else out.push("IMAGE: none (cannot be a Figure or hero)");
-  out.push("", it.description || "(no description)", "");
+  out.push("", it.description || "(no description)");
+  // Every other field (original-language text, translations and the like), so nothing a chapter quotes is hidden.
+  const shown = new Set(["id", "type", "status", "confidence", "date", "dateStart", "dateEnd", "title", "creator", "institution", "identifier", "collection", "publisher", "place", "region", "citation", "sourceUrl", "rights", "image", "images", "imageCredit", "imageSource", "description", "reviewedAt", "themes", "tags", "materials", "techniques"]);
+  for (const [k, v] of Object.entries(it)) if (!shown.has(k) && v != null && v !== "" && !(Array.isArray(v) && !v.length)) out.push(`${k}: ${typeof v === "string" ? v : JSON.stringify(v)}`);
+  out.push("");
 }
 console.log(out.join("\n"));
