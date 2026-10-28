@@ -2,8 +2,7 @@ cover: 0 of 0 images loaded
 chapter-desktop: 9 of 9 images loaded
 chapter-phone: 9 of 9 images loaded
 cover-phone: 0 of 0 images loaded
-timeline: 193 of 196 images loaded
-  broken: https://collections.penn.museum/collections/assets/058T/589k/589573_800.jpg
+timeline: 194 of 196 images loaded
   broken: https://img2.chinadaily.com.cn/images/202505/12/682169dda310a04a96783487.jpeg
   broken: https://welspunflooring.com/images/about/banner.webp
 record: 1 of 1 images loaded
