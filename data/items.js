@@ -3186,6 +3186,78 @@ window.RUG_ITEMS = [
     "rights": "own"
   },
   {
+    "id": "ttw-ronco-speed-tufting-kit",
+    "type": "tool",
+    "title": "Ronco \"Speed-Tufting Kit\" (#1500), 1975",
+    "creator": "Southbury Manufacturing Corp., South Britain, Connecticut (maker); Ronco Teleproducts, Inc., Chicago (distributor)",
+    "place": "South Britain, Connecticut; Chicago, Illinois",
+    "date": "© 1975",
+    "dateStart": 1975,
+    "dateEnd": 1975,
+    "institution": "Tuft the World (own collection)",
+    "identifier": "Ronco #1500",
+    "region": "United States",
+    "materials": [
+      "moulded plastic",
+      "steel",
+      "jute burlap",
+      "wool yarn",
+      "latex"
+    ],
+    "techniques": [
+      "hand tufting with needle and looper",
+      "rag strips (fabric shredder)"
+    ],
+    "description": "A boxed home tufting kit sold on television (\"As seen on TV\"), complete with its tool, fabric shredder, printed burlap backing, yarn, sample latex, instruction booklet and mail-order pattern sheet. The box end reads: \"© 1975 Distributed Exclusively by Ronco Teleproducts, Inc. Chicago, Illinois 60611\", \"Patent Pending\", \"Made in USA\". The backing is printed \"© 1975 Southbury Mfg. Corp.\" with the owl pattern, and the booklet's warranty sends repairs to Southbury Manufacturing Corporation, PO Box 8, South Britain, Conn. 06487.\n\nThe kit (#1500) contains a tufting tool, tufting frame, fabric shredder, rug backing with printed pattern, one rug needle and looper, one tapestry needle and looper, two balls of yarn, a sewing needle, frame string, sample rug latex and an instruction booklet. The order sheet (© 1975 Ronco Teleproducts, 919 North Michigan Ave., Chicago) prices the kit at $9.95, a Sturdy-Wood frame (No. 222) at $6.98 and Speed Tufting Latex at $4.75 a half gallon. It also sells patterns by mail at $4.75–9.75, including No. 101 Navaho, 104 Astrological, 109 Wise Owl and 120 Mod Ovals.\n\nHow it works: a moulded-plastic tool with a needle drive handle and a looper drive handle, worked alternately. In the booklet's words: \"With the Looper all the way up punch the needle through the backing material to form the first loop. Then push the Looper down to hold down the formed loop. With Looper down raise the needle all the way out of the backing and push down again allowing the needle to move forward one space.\" Needle and looper settings give different pile heights, rug and tapestry needles give coarse or fine work, and the shredder cuts old clothes, sheets or blankets into strips to tuft with, as in rag rugs.\n\nWhy it matters: the same two-part alternating action as Ross's 1891 \"Turfing Implement\", the Susan Burr and the All Steel Shuttle Needle (ttw-susan-burr, ttw-shuttle-needle), sold to a 1970s mass market through television. It is evidence for a 1970s hobby wave between the Ross era and the gun revival of the 2020s. Southbury and South Britain are in Connecticut, as Torrington was for the Susan Burr.\n\nPatent: very likely John S. Doyel's US 3,968,757, \"Rug-tufting device suitable for home use by hobyists\" (filed 31 Oct 1975, granted 13 July 1976; pat-us3968757a). It describes a hand-operated device \"made primarily of molded plastic components\" with \"a needle drive handle at the back end\" and a looper, matching this tool and its booklet's wording. The patent names no assignee, so the link to Ronco and Southbury is inferred, not stated.",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "own collection",
+      "Ross patent lineage",
+      "hobby",
+      "as seen on TV",
+      "1970s"
+    ],
+    "status": "verified",
+    "confidence": "solid",
+    "rights": "own",
+    "imageCredit": "Tuft the World (own photograph)",
+    "imageSource": "manual",
+    "image": "images/tools/ronco-box-top.jpg",
+    "images": [
+      {
+        "src": "images/tools/ronco-box-top.jpg",
+        "caption": "Box lid: \"Speed-Tufting Kit by Ronco\", \"As seen on TV\""
+      },
+      {
+        "src": "images/tools/ronco-contents.jpg",
+        "caption": "Contents: the tufting tool (needle and looper handles), fabric shredder, yarn, rug needle, latex sample, printed backing and pattern sheet"
+      },
+      {
+        "src": "images/tools/ronco-instructions.jpg",
+        "caption": "Instruction booklet: using the fabric shredder and tufting tool, the owl pattern, and the Southbury warranty"
+      },
+      {
+        "src": "images/tools/ronco-order-sheet.jpg",
+        "caption": "Order sheet, © 1975 Ronco Teleproducts: kit #1500 at $9.95, frame, latex and patterns by mail"
+      },
+      {
+        "src": "images/tools/ronco-box-end.jpg",
+        "caption": "Box end: contents list, © 1975, \"Patent Pending\", \"Made in USA\""
+      },
+      {
+        "src": "images/tools/ronco-backing-owl.jpg",
+        "caption": "Printed burlap backing, owl pattern, \"© 1975 Southbury Mfg. Corp.\""
+      },
+      {
+        "src": "images/tools/ronco-box-shredder.jpg",
+        "caption": "Box end: \"Speed-Tufting Kit with Fabric Shredder\""
+      }
+    ]
+  },
+  {
     "id": "pat-us463548a",
     "type": "patent",
     "title": "Ebenezer Ross, \"Turfing Implement\" (US463548A)",
@@ -3444,6 +3516,54 @@ window.RUG_ITEMS = [
     "rights": "public-domain",
     "place": "Elmhurst, New York",
     "dateEnd": 1964
+  },
+  {
+    "id": "pat-us3968757a",
+    "type": "patent",
+    "title": "John S. Doyel, \"Rug-tufting device suitable for home use by hobyists\" (US3968757A)",
+    "creator": "John S. Doyel",
+    "date": "filed 31 Oct 1975, granted 13 July 1976",
+    "dateStart": 1975,
+    "dateEnd": 1976,
+    "identifier": "US3968757A",
+    "sourceUrl": "https://patents.google.com/patent/US3968757A/en",
+    "region": "United States",
+    "description": "\"A hand-operated rug-tufting device particularly suitable for home use by hobyists… inexpensively made primarily of molded plastic components\" (abstract). An elongated housing with a needle drive handle at the back and a looper. Very likely the patent behind the Ronco Speed-Tufting Kit (1975, \"Patent Pending\"; ttw-ronco-speed-tufting-kit). No assignee is named.\n\nIts background is a short history of hand tools: the simplest is a punch needle (US 1,912,977, spring-loaded); others \"use a looper in addition to the needle\" and work by piercing the burlap, holding the loop with the looper, and moving both forward (US 1,614,576; 1,873,257; 1,935,915; 2,442,906; 3,714,915); and others use a pressure foot like a sewing machine (US 889,922; 673,730; 1,932,516; 1,937,946). Patent research (Oct 2026): read from Google Patents.",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "patent lineage",
+      "hobby",
+      "Ross patent lineage"
+    ],
+    "status": "unverified",
+    "confidence": "solid"
+  },
+  {
+    "id": "pat-us4011823a",
+    "type": "patent",
+    "title": "George L. Houghton and Fred F. Fredensberg, \"Tufting tool for even stitching\" (US4011823A)",
+    "creator": "George L. Houghton; Fred F. Fredensberg",
+    "date": "filed 30 Jan 1976, granted 15 Mar 1977",
+    "dateStart": 1976,
+    "dateEnd": 1977,
+    "identifier": "US4011823A",
+    "sourceUrl": "https://patents.google.com/patent/US4011823A/en",
+    "region": "United States",
+    "institution": "Rug Crafters (assignee)",
+    "description": "A hobby tufting tool with a shuttle and resilient plunger in place of a looper, improving Rug Crafters' earlier \"Hooking needle\" (US 3,714,915, 1973). The background says tufting \"is characteristically carried out by the home craftsman using a hand-operated tufting tool\" and calls the 1973 tool \"one of the most popular\". Evidence, with the Ronco kit and Doyel's patent, of a busy 1970s market for home tufting tools. Patent research (Oct 2026): read from Google Patents.",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "patent lineage",
+      "hobby"
+    ],
+    "status": "unverified",
+    "confidence": "solid"
   },
   {
     "id": "pat-us5090341a",
