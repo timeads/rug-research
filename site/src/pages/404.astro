@@ -1,0 +1,11 @@
+---
+// Page not found: served by Cloudflare Pages for any address the site does not have.
+import Base from "../layouts/Base.astro";
+import { base } from "../lib/data.js";
+---
+<Base title="Page not found · A History of Tufting" description="This page is not part of A History of Tufting." shade="var(--ink)">
+  <header class="page-head">
+    <h1>Page not found</h1>
+    <p>There is no page at this address. The history starts from the <a href={base("")}>contents</a>; every dated source is on the <a href={base("timeline/")}>timeline</a>, and every source is in the <a href={base("bibliography/")}>bibliography</a>.</p>
+  </header>
+</Base>

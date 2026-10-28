@@ -6,7 +6,7 @@ import Base from "../../layouts/Base.astro";
 import Milestones from "../../components/Milestones.astro";
 import WoundBand from "../../components/WoundBand.astro";
 import Cite from "../../components/Cite.astro";
-import { db, record, imageUrl, imageCleared, citation, base, CHAPTER_CLOTH, clothName } from "../../lib/data.js";
+import { db, record, imageUrl, imageCleared, citation, base, canonical, absolute, CHAPTER_CLOTH, clothName } from "../../lib/data.js";
 
 export async function getStaticPaths() {
   const chapters = await getCollection("chapters");
@@ -26,8 +26,17 @@ const cited = [...new Set(notes.flatMap(n => n.refs.map(r => r.id)))].map(record
 const holders = Object.entries(cited.reduce((o, it) => { const k = it.type === "patent" ? "US patents" : it.institution || (it.type === "finding" ? "Research notes, not yet traced to a public source" : "Published sources"); o[k] = (o[k] || 0) + 1; return o; }, {})).sort((a, b) => b[1] - a[1]);
 const most = holders[0]?.[1] || 1;
 const verified = cited.filter(it => it.status === "verified").length;
+// How search engines and Google Scholar read the chapter: by Tim Eads, a chapter of A History of Tufting.
+const scholar = d.published ? { title: d.title, author: "Eads, Tim", publication_date: d.published, inbook_title: "A History of Tufting", language: "en" } : null;
+const shareImage = heroSrc && imageCleared(hero) ? imageUrl(heroSrc, 2400) : "";
+const schema = {
+  "@context": "https://schema.org", "@type": "Chapter", name: d.title, description: d.dek, position: d.number,
+  url: canonical(`chapters/${entry.id}/`), author: { "@type": "Person", name: "Tim Eads" }, inLanguage: "en",
+  image: shareImage ? absolute(shareImage) : undefined, datePublished: d.published,
+  isPartOf: { "@type": "Book", name: "A History of Tufting", author: { "@type": "Person", name: "Tim Eads" }, url: canonical("") }
+};
 ---
-<Base title={`${d.title} · A History of Tufting`} description={d.dek} shade={shade} current="chapters" progress>
+<Base title={`${d.title} · A History of Tufting`} description={d.dek} shade={shade} current="chapters" progress type="article" image={shareImage} scholar={scholar} schema={schema}>
   <article>
     <header class="ch-head">
       <div class="ch-band"><WoundBand shade={shade} n={d.number} height={72} /><p class="ch-label"><b class="num">Shade {d.number}</b><span>{clothName(CHAPTER_CLOTH[d.researchChapter] || "grey")}</span>{years && <span class="num">{years}</span>}</p></div>

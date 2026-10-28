@@ -3,7 +3,7 @@
 import { getCollection } from "astro:content";
 import Base from "../layouts/Base.astro";
 import WoundBand from "../components/WoundBand.astro";
-import { db, base, CHAPTER_CLOTH, chapterYears, fmtYear, clothName } from "../lib/data.js";
+import { db, base, canonical, CHAPTER_CLOTH, chapterYears, fmtYear, clothName } from "../lib/data.js";
 
 const entries = await getCollection("chapters");
 const published = Object.fromEntries(entries.map(e => [e.data.researchChapter, e.id]));
@@ -17,10 +17,16 @@ const rows = chapters.map((c, i) => {
   return { n: i + 1, title: titles[c.id] || c.name, cloth: clothName(CHAPTER_CLOTH[c.id] || "grey"), shade: `var(--cloth-${CHAPTER_CLOTH[c.id] || "grey"})`, years: spans[c.id] || (ys ? `${fmtYear(ys[0])}–${fmtYear(ys[1])}` : ""), slug: published[c.id] };
 });
 const ready = rows.filter(r => r.slug).length;
+// The history as a book, with the chapters that can be read so far.
+const schema = {
+  "@context": "https://schema.org", "@type": "Book", name: "A History of Tufting", url: canonical(""), inLanguage: "en",
+  author: { "@type": "Person", name: "Tim Eads" },
+  hasPart: rows.filter(r => r.slug).map(r => ({ "@type": "Chapter", name: r.title, position: r.n, url: canonical(`chapters/${r.slug}/`) }))
+};
 const dated = items.filter(x => x.dateStart != null).length;
 const sources = items.filter(x => ["book", "article", "archive", "trade-catalog", "patent", "film", "oral-history"].includes(x.type)).length;
 ---
-<Base title="A History of Tufting" description="A history of tufting in thirteen chapters, from needle-made pile to the tufting gun and the robot, by Tim Eads." current="chapters">
+<Base title="A History of Tufting" description="A history of tufting in thirteen chapters, from needle-made pile to the tufting gun and the robot, by Tim Eads." current="chapters" schema={schema}>
   <section class="cover">
     <h1>A History of Tufting</h1>
     <p class="scope">From needle-made pile and candlewick spreads to the broadloom mills of Dalton, the hand-held gun and the robot, told from patents, trade papers, archives and the objects themselves.</p>

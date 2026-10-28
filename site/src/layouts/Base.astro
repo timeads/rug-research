@@ -1,8 +1,12 @@
 ---
 // Every page: the board masthead, the prototype notice, and the foot.
 import "../styles/global.css";
-import { base } from "../lib/data.js";
-const { title, description = "", shade = "var(--cloth-teal)", current = "", progress = false } = Astro.props;
+import { base, canonical, absolute } from "../lib/data.js";
+import { BASE, INDEXABLE, RESEARCH_URL } from "../../site.config.mjs";
+// For search and sharing: image (a picture's address), type ("article" for a chapter), scholar (Google Scholar's
+// citation_ tags) and schema (structured data describing the page).
+const { title, description = "", shade = "var(--cloth-teal)", current = "", progress = false, image = "", type = "website", scholar = null, schema = null } = Astro.props;
+const url = canonical(Astro.url.pathname.slice(BASE.length));
 const nav = [["", "Contents", "chapters", ""], ["timeline/", "Timeline", "timeline", ""], ["bibliography/", "Bibliography", "bibliography", ""]];
 ---
 <!doctype html>
@@ -10,9 +14,19 @@ const nav = [["", "Contents", "chapters", ""], ["timeline/", "Timeline", "timeli
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="robots" content="noindex" />
+    <meta name="robots" content={INDEXABLE ? "index, follow" : "noindex"} />
     <title>{title}</title>
     {description && <meta name="description" content={description} />}
+    <link rel="canonical" href={url} />
+    <meta property="og:site_name" content="A History of Tufting" />
+    <meta property="og:type" content={type} />
+    <meta property="og:title" content={title.replace(/ · A History of Tufting$/, "")} />
+    {description && <meta property="og:description" content={description} />}
+    <meta property="og:url" content={url} />
+    {image && <meta property="og:image" content={absolute(image)} />}
+    <meta name="twitter:card" content={image ? "summary_large_image" : "summary"} />
+    {scholar && Object.entries(scholar).map(([k, v]) => <meta name={`citation_${k}`} content={v} />)}
+    {schema && <script type="application/ld+json" set:html={JSON.stringify(schema)} />}
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='3' fill='%231e2421'/><rect x='6' y='6' width='20' height='20' fill='%231e6767'/><path d='M6 10h20M6 14h20M6 18h20M6 22h20' stroke='%23000' stroke-opacity='.25'/></svg>" />
   </head>
   <body style={`--shade:${shade}`}>
@@ -29,7 +43,7 @@ const nav = [["", "Contents", "chapters", ""], ["timeline/", "Timeline", "timeli
     <main><slot /></main>
     <footer class="foot">
       <div class="in">
-        <span>A History of Tufting, by Tim Eads. Built from the <a href="/rug-research/">Rug Research database</a>.</span>
+        <span>A History of Tufting, by Tim Eads. Built from the <a href={RESEARCH_URL}>Rug Research database</a>.</span>
         <span>Every source links to the institution that holds it.</span>
       </div>
     </footer>

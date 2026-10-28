@@ -12,6 +12,8 @@ const chapters = defineCollection({
     hero: z.object({ record: z.string(), image: z.number().optional(), caption: z.string().optional(), focus: z.string().optional() }),
     milestones: z.array(z.object({ year: z.string(), label: z.string(), record: z.string() })).default([]),
     status: z.enum(["prototype", "draft", "final"]).default("draft"),
+    // The year the chapter was first put online, for citations (Google Scholar) and search engines.
+    published: z.string().optional(),
     researchChapter: z.string().optional()
   })
 });

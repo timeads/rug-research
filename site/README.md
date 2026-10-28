@@ -1,8 +1,41 @@
 # A History of Tufting: the public site
 
-An [Astro](https://astro.build) site built from the research database in `../data`. It is published
-with the research site, at https://timeads.github.io/rug-research/book/. Every push that changes
-`site/` or `data/` rebuilds it (`.github/workflows/build-site.yml`); the built pages land in `../book`.
+An [Astro](https://astro.build) site built from the research database in `../data`. The same files make
+two builds (set in `site.config.mjs`):
+
+- **The public site, on Cloudflare Pages**, at the root of its own domain. Cloudflare builds it on every
+  push. The build copies the pictures kept with the research (`../images/own`, `patents`, `tools`) and
+  writes `robots.txt`, `sitemap.xml` and `_headers`.
+- **The prototype, on GitHub Pages**, inside the research site at https://timeads.github.io/rug-research/book/.
+  Every push that changes `site/` or `data/` rebuilds it (`.github/workflows/build-site.yml`); the built
+  pages land in `../book`.
+
+## Publishing on Cloudflare Pages
+
+One-time setup in the Cloudflare dashboard: Workers & Pages → Create application → Pages → Import an
+existing Git repository → `timeads/rug-research`, then:
+
+| Setting | Value |
+| --- | --- |
+| Production branch | `claude/ecstatic-hamilton-gw4o0u` (the branch GitHub Pages serves) |
+| Framework preset | Astro |
+| Build command | `npm run build` |
+| Build output directory | `dist` |
+| Root directory (advanced) | `site` |
+
+Node 22 comes from `.nvmrc`. Then, in the project's Custom domains tab, add the domain (and `www` if wanted).
+
+Once the domain works, set `DOMAIN` in `site.config.mjs`: every page (the GitHub copy too) then names its
+address on the domain as its canonical address, and the sitemap uses it.
+
+**Search engines.** Every page says `noindex` until `OPEN_TO_SEARCH` in `site.config.mjs` is `true` (and
+`DOMAIN` is set). Then add the domain to Google Search Console (Cloudflare can verify it automatically) and
+submit `sitemap.xml`. Chapters carry Google Scholar tags (`citation_title`, `citation_author`,
+`citation_publication_date` from the chapter's `published` year) and schema.org data (a Book, with Chapters).
+In Cloudflare, "Block AI bots" stops AI assistants from reading and citing the site; turn it off to let them.
+
+To try the Cloudflare build locally: `CF_PAGES=1 npm run build`, then serve `dist/` at the root of a local
+server. Run a plain `npm run build` afterwards before copying `dist/` to `../book`.
 
 ## Pages
 

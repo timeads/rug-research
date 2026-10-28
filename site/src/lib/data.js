@@ -2,6 +2,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import vm from "node:vm";
+import { BASE, SITE, IMAGE_ROOT, CANONICAL } from "../../site.config.mjs";
 
 const DATA = path.resolve(process.cwd(), "../data");
 let cache;
@@ -45,12 +46,11 @@ export const cloth = theme => `var(--cloth-${THEME_CLOTH[theme] || "grey"})`;
 export const fmtYear = y => (y < 0 ? `${-y} BCE` : String(y));
 
 // Images: the research database links pictures where institutions publish them; pictures kept with the
-// research site (own photographs, patent drawings) are served from it. IIIF images are asked for at the
+// research (own photographs, patent drawings) are served with the site (see IMAGE_ROOT in site.config.mjs). IIIF images are asked for at the
 // width the layout needs.
-const SITE_ROOT = "/rug-research/";
 export function imageUrl(src, width = 1200) {
   if (!src) return "";
-  if (!/^https?:/.test(src)) return SITE_ROOT + src.replace(/^\/+/, "");
+  if (!/^https?:/.test(src)) return IMAGE_ROOT + src.replace(/^\/+/, "");
   // Pictures keep the address stored in the research database (the size the research tool shows),
   // except that Hagley's, which reliably answers large sizes, are asked for full-width pictures.
   if (!/digital\.hagley\.org/.test(src) || width < 1800) return src;
@@ -93,4 +93,7 @@ export function shortCitation(it, { loc = "" } = {}) {
   const held = it.institution && !/assignee/i.test(it.institution) ? it.institution.replace(/ Museum and Library$/, "") : it.type === "article" ? it.publisher : it.type === "finding" ? "research note" : "";
   return [who, title, it.date, held, it.type === "patent" ? "" : it.identifier, loc].filter(Boolean).map(String).join(", ").replace(/,\s*,/g, ",") + ".";
 }
-export const base = p => "/rug-research/book/" + p.replace(/^\/+/, "");
+export const base = p => BASE + p.replace(/^\/+/, "");
+// The full address of a page (the public one, once the site has its domain), and of a picture.
+export const canonical = p => CANONICAL + p.replace(/^\/+/, "");
+export const absolute = src => (/^https?:/.test(src) ? src : new URL(src, SITE).href);
