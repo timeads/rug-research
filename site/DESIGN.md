@@ -164,7 +164,7 @@ components:
 
 The history is laid out like a dye house's yarn shade card: a cool, card-stock grey sheet with one band of wound yarn per chapter, each with its shade number. The cover is the card itself, thirteen shades in a single bordered sheet; a chapter is one shade picked off that card and read. A charcoal bookcloth board closes the page top and bottom, the way a sample book's covers hold its cards. The world owns the frame (masthead, bands, shade numbers, headings, rules); the reading column stays calm.
 
-Density is that of a close-reading book page: a single text measure with a margin column beside it where every note sits next to the sentence it supports and links to its record in one step. The world is flat and matter-of-fact, made of tonal sheets, hairline rules and condensed type rather than shadows or ornament. Its honesty is visible design, not small print: the prototype notice under the masthead, "Permission pending" on uncleared pictures, the count of sources "checked at the archive", and the "Still to find" panel are part of the system.
+Density is that of a close-reading book page: a single text measure with a margin column beside it where every note sits next to the sentence it supports and links to its record in one step. The world is flat and matter-of-fact, made of tonal sheets, hairline rules and condensed type rather than shadows or ornament. Its honesty is visible design, not small print: the prototype notice under the masthead, "Permission pending" on uncleared pictures, and the count of sources "checked at the archive" are part of the system. (The author's "Still to find" lists are a private to-do list and stay in the research tool.)
 
 The world refuses the cream-paper editorial long-read: serif display headings on off-white, italic deks, small tracked labels above headings.
 
@@ -234,7 +234,7 @@ Every page shares the masthead's frame: 80rem (`--page`) with a fluid clamp(1.25
 
 **Cover.** Title and scope, then the contents card across the full page width: one bordered sheet whose rows are a band (a third of the row), the shade number and cloth name, the chapter title and years, and the status. A ready chapter's band is full height (2.75rem) and reads "Read the chapter" in shade ink; a chapter in preparation shows a thin 0.5rem band and "In preparation". Below the card, Timeline and Bibliography as two reference links under 2px ink rules. Under 640px each row stacks: band across the top, number at left, title and status at right.
 
-**Chapter.** The 4.5rem wound band with the shade label beside it in the margin column; the title, dek and a byline between hairlines (author, reading time, note/source/checked counts, draft status); then a full-bleed opening photograph at min(72vh, 46rem). Key dates follow on a horizontal shade thread, each date placed by year and labels alternating above and below; under 900px they become a vertical list on a shade rule. The prose column reserves the margin with right padding so notes and small "margin" figures float into it; wide figures, pull quotes, panels and full-bleed figures span the whole width. End matter is a two-column grid: full notes beside "Where the sources are". From 1180px the text, margin and end matter sit at the right of the page, and "In this chapter" (key dates, sections, the "Still to find" panel, notes) stays in view in the space to their left, marking the section being read with a 2px shade underline.
+**Chapter.** The 4.5rem wound band with the shade label beside it in the margin column; the title, dek and a byline between hairlines (author, reading time, note/source/checked counts, draft status); then a full-bleed opening photograph at min(72vh, 46rem). Key dates follow on a horizontal shade thread, each date placed by year and labels alternating above and below; under 900px they become a vertical list on a shade rule. The prose column reserves the margin with right padding so notes and small "margin" figures float into it; wide figures, pull quotes, panels and full-bleed figures span the whole width. End matter is a two-column grid: full notes beside "Where the sources are". From 1180px the text, margin and end matter sit at the right of the page, and "In this chapter" (key dates, sections, notes) stays in view in the space to their left, marking the section being read with a 2px shade underline.
 
 **Timeline and bibliography.** The timeline lists every theme filter at once, wrapping onto as many rows as it needs (never a sideways scroller); the bar is not sticky. Era heads sit in an up-to-18rem column, entries cap their titles at 64ch. From 1180px the bibliography's kinds of source become a list that stays in view to the left of the entries, as in a chapter, and each entry mirrors the reading block: the citation at the 37rem measure, its record link and chapter in the 14rem margin column, with the rules running to the page's right edge.
 
@@ -284,7 +284,7 @@ Archivo 550 0.75rem in ink-2, outlined in card edge with a 2px corner, no fill. 
 Literata 1.75rem at 32ch with a 2px shade thread above it (never a bar beside it), attribution in Archivo ink-3 below.
 
 ### Note Panel (Aside)
-A sheet panel with a 3px corner and 1.5rem 1.75rem padding; a 650 Archivo heading and a short list in ink-2. Carries "Still to find for this chapter".
+A sheet panel with a 3px corner and 1.5rem 1.75rem padding; a 650 Archivo heading and a short list in ink-2. Available for a short panel readers should see; no chapter uses one at present.
 
 ### Buttons
 - **Shape:** nearly square (2px), 2.5rem tall, 0 1rem padding, Archivo 600 0.875rem.
@@ -304,7 +304,7 @@ Full notes as a numbered list on hairlines (a targeted note is tinted with the s
 ### Named Rules
 **The One-Step Rule.** Every note, figure, key date and timeline event links straight to its record page; the record links on to the holding institution.
 
-**The Visible Status Rule.** Prototype, "Permission pending", "checked at the archive" counts, "not yet checked at the source" and "Still to find" are shown in plain words at full legibility, never hidden, greyed out of reach or styled away.
+**The Visible Status Rule.** Prototype, "Permission pending", "checked at the archive" counts, and "not yet checked at the source" are shown in plain words at full legibility, never hidden, greyed out of reach or styled away.
 
 ## Do's and Don'ts
 

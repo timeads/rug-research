@@ -599,6 +599,14 @@ input[type="search"]::-webkit-search-cancel-button:hover { background: var(--ink
 .ms-editor { display: block; width: 100%; min-height: 240px; padding: 16px 18px; border: 1px solid var(--focus); border-radius: var(--r-lg); background: var(--surface); color: var(--ink); font: inherit; font-size: 1.0625rem; line-height: 1.72; resize: vertical; overflow: hidden; box-shadow: 0 0 0 3px color-mix(in srgb, var(--focus) 18%, transparent); }
 .ms-editor:focus { outline: none; }
 .ms-hint { margin: 8px 0 0; font-size: var(--t-sm); color: var(--ink-3); }
+.ms-find { margin-top: 22px; padding: 14px 16px; border: 1px dashed var(--line-strong); border-radius: var(--r); }
+.ms-find h3 { margin: 0 0 8px; font-size: var(--t-sm); font-weight: 700; }
+.ms-find h3 small { margin-left: 6px; font-weight: 500; color: var(--ink-3); }
+.ms-find ul { list-style: none; margin: 0; padding: 0; font-size: var(--t-sm); line-height: 1.5; color: var(--ink-2); }
+.ms-find li label { display: flex; gap: 8px; align-items: flex-start; padding: 4px 0; cursor: pointer; }
+.ms-find li input { margin-top: 3px; accent-color: var(--primary); }
+.ms-find li input:checked + span { color: var(--ink-3); text-decoration: line-through; text-decoration-color: color-mix(in srgb, var(--ink-3) 60%, transparent); }
+.ms-find .ms-cite { font: inherit; text-decoration: underline dotted; text-underline-offset: .18em; }
 .ms-prose[data-ms-text] { cursor: text; }
 
 /* ---------- discover: other archives ---------- */

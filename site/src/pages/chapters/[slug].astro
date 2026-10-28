@@ -16,14 +16,10 @@ const { entry } = Astro.props;
 const { Content, remarkPluginFrontmatter, headings } = await render(entry);
 const notes = remarkPluginFrontmatter.notes || [];
 const d = entry.data;
-// "In this chapter": the key dates, the chapter's sections, its "Still to find" panel and the notes. Shown
-// beside the text on wide screens.
-const asideTitle = (entry.body || "").match(/<Aside title="([^"]+)"/)?.[1];
-const slug = t => t.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+// "In this chapter": the key dates, the chapter's sections and the notes. Shown beside the text on wide screens.
 const toc = [
   ...(d.milestones.length ? [{ id: "key-dates", text: "Key dates" }] : []),
   ...headings.filter(h => h.depth === 2).map(h => ({ id: h.slug, text: h.text })),
-  ...(asideTitle ? [{ id: slug(asideTitle), text: asideTitle.replace(/ for this chapter$/, "") }] : []),
   { id: "notes", text: "Notes" }
 ];
 const hero = d.hero ? record(d.hero.record) : null;

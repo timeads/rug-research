@@ -157,6 +157,7 @@ h1.ch-title { margin: 1.75rem 0 0; font: 680 clamp(2.5rem, 6vw, 4.5rem)/1 var(--
 @media (min-width: 1180px) {
   .reading { display: grid; grid-template-columns: minmax(0, 1fr) var(--wide); column-gap: var(--gap); }
   .reading > .prose, .reading > .endmatter { grid-column: 2; }
+  .reading > .prose { margin-left: auto; } /* notes end under the masthead's last link */
   .prose > .full { width: auto; margin-left: 0; } /* full-bleed needs a centred column; beside the list it is wide */
   .toc { display: block; grid-column: 1; grid-row: 1 / span 2; align-self: start; position: sticky; top: 4.5rem; max-width: 16rem; padding: 3.75rem 0 2rem; }
   .toc p { margin: 0 0 .7rem; font: 650 .8125rem/1.3 var(--frame); color: var(--ink); }
@@ -165,7 +166,8 @@ h1.ch-title { margin: 1.75rem 0 0; font: 680 clamp(2.5rem, 6vw, 4.5rem)/1 var(--
   .toc a:hover { color: var(--ink); }
   .toc a[aria-current] { color: var(--ink); font-weight: 650; box-shadow: inset 0 -2px 0 var(--shade); }
 }
-.prose { max-width: var(--wide); padding: 3.5rem 0 2rem; font: 400 1.125rem/1.66 var(--read); }
+/* The text keeps the 34.5rem line it has always had (about 70 characters); the margin column stays 14rem. */
+.prose { max-width: calc(var(--wide) - 2.5rem); padding: 3.5rem 0 2rem; font: 400 1.125rem/1.66 var(--read); }
 .prose > * { padding-right: calc(var(--margin) + var(--gap)); }
 .prose > .wide, .prose > .pull, .prose > .aside, .prose > .full, .prose > .margin { padding-right: 0; }
 .prose > .pair { padding-right: 0; max-width: var(--measure); } /* text width, so margin notes run on beside it */

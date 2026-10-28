@@ -63,7 +63,7 @@ A chapter is an `.mdx` file: settings at the top, then the text in Markdown.
   "Permission pending".
 - **Two pictures side by side**: wrap two Figures in `<Pair>…</Pair>`.
 - **A pull quote**: `<PullQuote from="record-id" who="DuPont press release, 12 May 1948">Quoted words</PullQuote>`.
-- **A side box**: `<Aside title="Still to find">…</Aside>`.
+- **A side box**: `<Aside title="…">…</Aside>`, for a short panel readers should see. A chapter's "Still to find" list is a to-do list, not for readers: it lives in `data/chapters.js` (`todo`) and shows only in the research tool's Manuscript view.
 - The settings at the top set the chapter number, title, dek (the line under the title), theme
   (which sets the colour), the opening image (`hero`), the key dates strip (`milestones`) and
   `status` (`prototype`, `draft` or `final`).

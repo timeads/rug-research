@@ -1187,9 +1187,24 @@
           const conf = it.confidence && CONFIDENCE[it.confidence] ? ` <span class="conf conf-${it.confidence}">${esc(CONFIDENCE[it.confidence].label)}</span>` : "";
           return `<li><button class="ms-cite" data-ms-open="${esc(it.id)}">${mdInline(citation(it))}</button>${conf}</li>`;
         }).join("")}</ol></details>` : ""}
+        ${todoHTML(l.id)}
       </section>`;
     }).join("") : `<div class="empty"><h2>No chapters yet</h2><p>Create a chapter in the Write tab and it appears here.</p><div class="btns"><a class="btn" href="#compile">Go to Write</a></div></div>`;
     $$(".ms-editor").forEach(fitMs);
+  };
+  // A chapter's "Still to find" list (data/chapters.js, todo): the author's to-do list, never on the public
+  // site. Record ids in it open the record; ticks are kept in this browser.
+  const todoHTML = chId => {
+    const todo = (SEED_CHAPTERS.find(c => c.id === chId) || {}).todo || [];
+    if (!todo.length) return "";
+    const done = S.todoDone || {}, key = t => chId + ":" + hash(t), open = todo.filter(t => !done[key(t)]).length;
+    const linkIds = html => html.replace(/\(([a-z0-9][\w-]*(?:, [a-z0-9][\w-]*)*)\)/g, (m, ids) => ids.split(", ").every(id => BY_ID[id])
+      ? "(" + ids.split(", ").map(id => `<button class="ms-cite" data-ms-open="${esc(id)}">${esc(id)}</button>`).join(", ") + ")" : m);
+    return `<section class="ms-find" aria-label="Still to find for this chapter">
+      <h3>Still to find <small>${open ? `${open} of ${todo.length} open` : "all done"}</small></h3>
+      <ul>${todo.map(t => `<li><label><input type="checkbox" data-todo="${esc(key(t))}"${done[key(t)] ? " checked" : ""}><span>${linkIds(mdInline(t))}</span></label></li>`).join("")}</ul>
+      <p class="ms-hint">Your research to-do list for this chapter. It isn't shown on the public site. Ticks are kept in this browser.</p>
+    </section>`;
   };
   const fitMs = ta => { ta.style.height = "auto"; ta.style.height = ta.scrollHeight + 2 + "px"; };
   const msTotals = () => {
@@ -1925,6 +1940,14 @@
     l.intro = ta.value; fitMs(ta); saveMsText();
     const wc = document.getElementById("ms-wc-" + l.id); if (wc) wc.textContent = `${wordsIn(l.intro).toLocaleString()} words`;
     msTotals();
+  });
+  $("#view-manuscript").addEventListener("change", e => {
+    const box = e.target.closest("[data-todo]"); if (!box) return;
+    S.todoDone = S.todoDone || {};
+    if (box.checked) S.todoDone[box.dataset.todo] = Date.now(); else delete S.todoDone[box.dataset.todo];
+    save();
+    const sec = box.closest(".ms-find"), boxes = $$("[data-todo]", sec), open = boxes.filter(b => !b.checked).length;
+    sec.querySelector("h3 small").textContent = open ? `${open} of ${boxes.length} open` : "all done";
   });
   $("#view-manuscript").addEventListener("click", e => {
     const open = e.target.closest("[data-ms-open]"); if (open) return openDrawer(open.dataset.msOpen);
