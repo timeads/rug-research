@@ -1,6 +1,6 @@
 Site: https://www.historyoftuftedrugs.com/
 robots.txt: 200
-sitemap.xml: 200, 471 pages
+sitemap.xml: 200, 482 pages
 no-such-page/: 404
 robots tag on the cover: index, follow
 https://historyoftuftedrugs.com/chapters/dalton/?x=1: 301 -> https://www.historyoftuftedrugs.com/chapters/dalton/?x=1
@@ -10,8 +10,18 @@ chapter-phone: 9 of 9 images loaded
 dalton-desktop: 9 of 9 images loaded
 dalton-phone: 9 of 9 images loaded
 cover-phone: 0 of 0 images loaded
-timeline: 193 of 196 images loaded
-  broken: https://openaccess-cdn.clevelandart.org/1961.388/1961.388_web.jpg
+timeline: 194 of 196 images loaded
   broken: https://img2.chinadaily.com.cn/images/202505/12/682169dda310a04a96783487.jpeg
   broken: https://welspunflooring.com/images/about/banner.webp
 record: 1 of 1 images loaded
+ch-processes: 6 of 6 images loaded
+ch-before-the-machine: 5 of 5 images loaded
+ch-woven: 5 of 5 images loaded
+ch-machine: 6 of 6 images loaded
+ch-abroad: 0 of 0 images loaded
+ch-china: 1 of 1 images loaded
+ch-gun: 8 of 8 images loaded
+ch-india: 0 of 0 images loaded
+ch-today: 1 of 1 images loaded
+ch-cnc: 7 of 7 images loaded
+ch-hobby: 3 of 3 images loaded
