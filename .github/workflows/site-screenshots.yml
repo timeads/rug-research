@@ -3,6 +3,11 @@ name: Site screenshots
 # Photographs the live public site (research/site-shots/) to check its pictures by eye. On demand.
 on:
   workflow_dispatch:
+    inputs:
+      base:
+        description: "Address to photograph (blank: the GitHub Pages prototype)"
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -30,7 +35,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898+github-actions[bot]@users.noreply.github.com"
-          node scripts/site-screenshots.mjs
+          SHOTS_BASE="${{ inputs.base }}" node scripts/site-screenshots.mjs
           mkdir -p "${RUNNER_TEMP}/out" && cp research/site-shots/* "${RUNNER_TEMP}/out/"
           for attempt in 1 2 3; do
             git add research/site-shots

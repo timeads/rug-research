@@ -4,7 +4,8 @@
 import { chromium } from "playwright";
 import { mkdir } from "node:fs/promises";
 
-const BASE = "https://timeads.github.io/rug-research/book/";
+// The site to photograph: the GitHub Pages prototype, or another address given as SHOTS_BASE (e.g. the domain).
+const BASE = (process.env.SHOTS_BASE || "https://timeads.github.io/rug-research/book/").replace(/\/?$/, "/");
 const SHOTS = [
   ["cover", "", 1440, 900, true],
   ["chapter-desktop", "chapters/nylon/", 1440, 900, true],
@@ -17,7 +18,21 @@ const SHOTS = [
 ];
 await mkdir(new URL("../research/site-shots/", import.meta.url), { recursive: true });
 const browser = await chromium.launch();
-const report = [];
+const report = [`Site: ${BASE}`];
+// At a site's own domain, also check what a crawler and a mistyped address see: the files search engines
+// read, the not-found page, and (for a www address) the bare domain's redirect.
+if (new URL(BASE).pathname === "/") {
+  for (const path of ["robots.txt", "sitemap.xml", "no-such-page/"]) {
+    const r = await fetch(BASE + path);
+    report.push(`${path}: ${r.status}${path === "sitemap.xml" ? `, ${((await r.text()).match(/<url>/g) || []).length} pages` : ""}`);
+  }
+  const host = new URL(BASE).host;
+  if (host.startsWith("www.")) {
+    const bare = `https://${host.slice(4)}/chapters/dalton/?x=1`;
+    const r = await fetch(bare, { redirect: "manual" });
+    report.push(`${bare}: ${r.status} -> ${r.headers.get("location")}`);
+  }
+}
 for (const [name, path, width, height, full] of SHOTS) {
   const page = await browser.newPage({ viewport: { width, height } });
   await page.goto(BASE + path, { waitUntil: "networkidle", timeout: 90000 });
