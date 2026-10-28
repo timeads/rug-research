@@ -1,21 +1,12 @@
 cover: 1 of 1 images loaded
-chapter-desktop: 6 of 9 images loaded
-  broken: https://digital.hagley.org/cantaloupe/iiif/2/https%3A%2F%2Fdigital.hagley.org%2Fsystem%2Ffiles%2F2024-10%2F31359-Service%2520File.jpg/full/700,/0/default.jpg
-  broken: https://digital.hagley.org/cantaloupe/iiif/2/https%3A%2F%2Fdigital.hagley.org%2Fsystem%2Ffiles%2F2025-06%2F570307-Service%2520File.jpg/full/1300,/0/default.jpg
-  broken: https://digital.hagley.org/cantaloupe/iiif/2/https%3A%2F%2Fdigital.hagley.org%2Fsystem%2Ffiles%2F2025-06%2F570342-Service%2520File.jpg/full/1300,/0/default.jpg
-chapter-phone: 7 of 9 images loaded
-  broken: https://digital.hagley.org/cantaloupe/iiif/2/https%3A%2F%2Fdigital.hagley.org%2Fsystem%2Ffiles%2F2025-06%2F570307-Service%2520File.jpg/full/1300,/0/default.jpg
-  broken: https://digital.hagley.org/cantaloupe/iiif/2/https%3A%2F%2Fdigital.hagley.org%2Fsystem%2Ffiles%2F2025-06%2F570342-Service%2520File.jpg/full/1300,/0/default.jpg
-timeline: 185 of 196 images loaded
-  broken: https://digital.hagley.org/cantaloupe/iiif/2/https%3A%2F%2Fdigital.hagley.org%2Fsystem%2Ffiles%2F2024-10%2F31731-Service%2520File.jpg/full/300,/0/default.jpg
-  broken: https://digital.hagley.org/cantaloupe/iiif/2/https%3A%2F%2Fdigital.hagley.org%2Fsystem%2Ffiles%2F2024-10%2F31793-Service%2520File.jpg/full/300,/0/default.jpg
-  broken: https://digital.hagley.org/cantaloupe/iiif/2/https%3A%2F%2Fdigital.hagley.org%2Fsystem%2Ffiles%2F2025-06%2F570307-Service%2520File.jpg/full/300,/0/default.jpg
-  broken: https://digital.hagley.org/cantaloupe/iiif/2/https%3A%2F%2Fdigital.hagley.org%2Fsystem%2Ffiles%2F2025-06%2F570308-Service%2520File.jpg/full/300,/0/default.jpg
-  broken: https://digital.hagley.org/cantaloupe/iiif/2/https%3A%2F%2Fdigital.hagley.org%2Fsystem%2Ffiles%2F2024-10%2F31359-Service%2520File.jpg/full/300,/0/default.jpg
-  broken: https://digital.hagley.org/cantaloupe/iiif/2/https%3A%2F%2Fdigital.hagley.org%2Fsystem%2Ffiles%2F2025-06%2F570342-Service%2520File.jpg/full/300,/0/default.jpg
-  broken: https://digital.hagley.org/cantaloupe/iiif/2/https%3A%2F%2Fdigital.hagley.org%2Fsystem%2Ffiles%2F2025-06%2F570355-Service%2520File.jpg/full/300,/0/default.jpg
-  broken: https://digital.hagley.org/cantaloupe/iiif/2/https%3A%2F%2Fdigital.hagley.org%2Fsystem%2Ffiles%2F2025-06%2F570350-Service%2520File.jpg/full/300,/0/default.jpg
+chapter-desktop: 9 of 9 images loaded
+chapter-phone: 9 of 9 images loaded
+timeline: 189 of 196 images loaded
+  broken: https://iiif.wellcomecollection.org/image/V0024155ER.jpg/full/300,/0/default.jpg
+  broken: https://archive.org/services/img/innovationinunit0000will/full/pct:200/0/default.jpg
+  broken: https://covers.openlibrary.org/b/id/13899835-L.jpg
+  broken: https://covers.openlibrary.org/b/isbn/9780820324647-L.jpg?default=false
   broken: https://img2.chinadaily.com.cn/images/202505/12/682169dda310a04a96783487.jpeg
+  broken: https://covers.openlibrary.org/b/isbn/9780820345161-L.jpg?default=false
   broken: https://welspunflooring.com/images/about/banner.webp
-  broken: http://static1.squarespace.com/static/58a21c1486e6c0e601e74867/5d6831971d99db000174179f/647ff318a47016534da12aaf/1688419952009/Screen+Shot+2023-07-03+at+5.08.07+PM.png?format=1500w
 record: 1 of 1 images loaded
