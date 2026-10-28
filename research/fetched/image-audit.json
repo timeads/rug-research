@@ -1,0 +1,716 @@
+[
+ {
+  "n": 1,
+  "id": "wint-1965-0685",
+  "title": "Rug",
+  "image": "https://winocr-images.s3.us-east-1.amazonaws.com/art-objects/live/28352/multimedia/0-original.jpg",
+  "credit": "Winterthur Museum"
+ },
+ {
+  "n": 2,
+  "id": "wint-1955-0048-045",
+  "title": "Hooked rug",
+  "image": "https://winocr-images.s3.us-east-1.amazonaws.com/art-objects/live/1923/multimedia/0-original.jpg",
+  "credit": "Winterthur Museum, Garden & Library"
+ },
+ {
+  "n": 3,
+  "id": "book-patton-carpet-capital",
+  "title": "Carpet Capital: The Rise of a New South Industry",
+  "image": "https://covers.openlibrary.org/b/isbn/9780820324647-L.jpg?default=false",
+  "credit": "Cover via Open Library"
+ },
+ {
+  "n": 4,
+  "id": "event-bcf-nylon",
+  "title": "DuPont introduces bulked continuous filament (BCF) nylon for carpet",
+  "image": "https://georgiaencyclopedia.org/wp-content/uploads/2021/02/carpet_machine_001-1200x630.jpg",
+  "credit": "georgiaencyclopedia.org"
+ },
+ {
+  "n": 5,
+  "id": "event-whitener-bedspread",
+  "title": "Catherine Evans Whitener revives hand tufting near Dalton",
+  "image": "https://georgiaencyclopedia.org/wp-content/uploads/2021/02/chenille-bedspreads_004-1200x630.jpg",
+  "credit": "georgiaencyclopedia.org"
+ },
+ {
+  "n": 6,
+  "id": "article-nge-chenille",
+  "title": "Chenille Bedspreads",
+  "image": "https://georgiaencyclopedia.org/wp-content/uploads/2021/02/chenille-bedspreads_004-1200x630.jpg",
+  "credit": "georgiaencyclopedia.org"
+ },
+ {
+  "n": 7,
+  "id": "article-nge-carpet-industry",
+  "title": "Carpet Industry",
+  "image": "https://georgiaencyclopedia.org/wp-content/uploads/2021/02/carpet_machine_001-1200x630.jpg",
+  "credit": "georgiaencyclopedia.org"
+ },
+ {
+  "n": 8,
+  "id": "article-rughooking-winterthur",
+  "title": "Hooked Rugs of Winterthur",
+  "image": "https://welikerughooking.com/wp-content/uploads/2026/04/J-Fea1.08-scaled.jpg",
+  "credit": "welikerughooking.com"
+ },
+ {
+  "n": 9,
+  "id": "wint-1960-0594",
+  "title": "Bed rug (bedcover) inscribed \"Mary Foot AD 1778\"",
+  "image": "https://winocr-images.s3.us-east-1.amazonaws.com/art-objects/live/16695/multimedia/0-original.jpg",
+  "credit": "Winterthur Museum"
+ },
+ {
+  "n": 10,
+  "id": "wint-1964-1641",
+  "title": "Bed rug marked \"C/1819\"",
+  "image": "https://winocr-images.s3.us-east-1.amazonaws.com/art-objects/live/27031/multimedia/0-original.jpg",
+  "credit": "Winterthur Museum"
+ },
+ {
+  "n": 11,
+  "id": "met-caswell-carpet",
+  "title": "Embroidered Carpet (the \"Caswell carpet\")",
+  "image": "https://images.metmuseum.org/CRDImages/ad/original/DT823.jpg",
+  "credit": "The Metropolitan Museum of Art (Open Access, public domain)"
+ },
+ {
+  "n": 12,
+  "id": "hd-packard-1801",
+  "title": "Bed rug marked \"Esther Packard 1801\"",
+  "image": "https://www.historic-deerfield.org/wp-content/uploads/2017/07/2017-6-web.jpg",
+  "credit": "Historic Deerfield"
+ },
+ {
+  "n": 13,
+  "id": "chs-candlewick-group",
+  "title": "Dated candlewick bed coverings (Peck 1824, Courtney 1825, Stanton 1820)",
+  "image": "https://emuseum.chs.org/emuseum/internal/media/dispatcher/17570/full",
+  "credit": "Connecticut Historical Society"
+ },
+ {
+  "n": 14,
+  "id": "afam-great-cover-up",
+  "title": "Exhibition: \"The Great Cover-Up: American Rugs on Beds, Tables, and Floors\"",
+  "image": "https://folkartmuseum.org/content/uploads/2014/10/folk_1868_image.jpg",
+  "credit": "American Folk Art Museum"
+ },
+ {
+  "n": 15,
+  "id": "wadsworth-bed-furnishings-2018",
+  "title": "Exhibition: \"Bed Furnishings in Early America: An Intimate Look\"",
+  "image": "https://enfilade18thc.com/wp-content/uploads/2018/11/1967-75.jpg?w=720",
+  "credit": "Wadsworth Atheneum Museum of Art"
+ },
+ {
+  "n": 16,
+  "id": "book-bed-ruggs-1972",
+  "title": "Bed Ruggs/1722–1833",
+  "image": "https://covers.openlibrary.org/b/id/10042294-L.jpg",
+  "credit": "Cover via Open Library"
+ },
+ {
+  "n": 17,
+  "id": "book-callahan-southern-tufts",
+  "title": "Southern Tufts: The Regional Origins and National Craze for Chenille Fashion",
+  "image": "https://covers.openlibrary.org/b/isbn/9780820345161-L.jpg?default=false",
+  "credit": "Cover via Open Library"
+ },
+ {
+  "n": 18,
+  "id": "hf-00-1510-19",
+  "title": "Chenille Rug, Gift to Henry Ford, 1936",
+  "image": "https://collections-media.thehenryford.org/CollectionImages/_detail/photos/thf158112.jpg",
+  "credit": "The Henry Ford"
+ },
+ {
+  "n": 19,
+  "id": "photo-green-burton-1933",
+  "title": "Mrs. J. A. Green and son Allen Burton making tufted bedspreads on U.S. Highway 41",
+  "image": "https://bunny-wp-pullzone-cjamrcljf0.b-cdn.net/wp-content/uploads/2021/02/chenille-bedspreads_004.jpg",
+  "credit": "Georgia Archives (Vanishing Georgia)"
+ },
+ {
+  "n": 20,
+  "id": "ner-cn-patents",
+  "title": "The significant tufting-machine patents filed in China are foreign",
+  "image": "https://patentimages.storage.googleapis.com/38/0e/76/5c15e00f816479/HDA0003205608580000011.png",
+  "credit": "Patent drawing via Google Patents (public domain)"
+ },
+ {
+  "n": 21,
+  "id": "ner-jp-study-missions",
+  "title": "Japan Carpet Association study-mission reports on the US and European carpet industries",
+  "image": "https://carpet.or.jp/mg/wp-content/uploads/2026/03/ogp.png",
+  "credit": "carpet.or.jp"
+ },
+ {
+  "n": 22,
+  "id": "ner-chase-sohu-series",
+  "title": "「文献里的天津」之天津地毯故事 (Sohu archival documentary series)",
+  "image": "https://q8.itc.cn/q_70/images03/20250326/aebca72820a14722b26a11ffb3ed4529.jpeg",
+  "credit": "m.sohu.com"
+ },
+ {
+  "n": 23,
+  "id": "ner-chase-gazetteers",
+  "title": "Chinese provincial gazetteers (地方志) on the first tufting machine imports",
+  "image": "https://file.thepaper.cn/clt/img/sparker_small.jpg",
+  "credit": "thepaper.cn"
+ },
+ {
+  "n": 24,
+  "id": "ner-chase-goswami",
+  "title": "K. K. Goswami, Advances in Carpet Manufacture, 2nd ed., chapters 12–13 (handmade carpets)",
+  "image": "https://secure-ecsd.elsevier.com/covers/80/Tango2/largest/9780081011317.jpg",
+  "credit": "shop.elsevier.com"
+ },
+ {
+  "n": 25,
+  "id": "hagley-nylon-hooked-rug",
+  "title": "Nylon hooked rug made by Nancy du Pont Reynolds Cooch (Mrs. Edward W. Cooch Jr.)",
+  "image": "https://www.hagley.org/sites/default/files/pictures/2012.8.2-sv.jpg",
+  "credit": "Hagley Museum and Library"
+ },
+ {
+  "n": 26,
+  "id": "article-archer-luxury-underfoot",
+  "title": "Luxury Underfoot",
+  "image": "http://static1.squarespace.com/static/58a21c1486e6c0e601e74867/5d6831971d99db000174179f/647ff318a47016534da12aaf/1688419952009/Screen+Shot+2023-07-03+at+5.08.07+PM.png?format=1500w",
+  "credit": "sarah-archer.com"
+ },
+ {
+  "n": 27,
+  "id": "hagley-vault-1937-patent",
+  "title": "Hagley Vault: \"February 16, 1937: E. I. du Pont de Nemours & Co. was granted U.S. patent…\"",
+  "image": "https://www.hagley.org/sites/default/files/styles/large/public/1984259_58917.jpg?itok=OaNen2yI",
+  "credit": "hagley.org"
+ },
+ {
+  "n": 28,
+  "id": "co-shaw",
+  "title": "Shaw Industries Group",
+  "image": "https://shawfloors.widen.net/content/x2u53obpom/webp/Intricate%20Trace-5E587-00106-River%20Birch-model-v-1.webp?w=2048&position=c&color=ffffffff&quality=80&u=k2mbls",
+  "credit": "shawfloors.com (image from shawfloors.com)",
+  "imagePage": "https://shawfloors.com/why-shaw/about-us/shaw-timeline"
+ },
+ {
+  "n": 29,
+  "id": "co-mohawk",
+  "title": "Mohawk Industries",
+  "image": "https://mohawkind.com/_images/about/our-growth-story/hero2.jpg",
+  "credit": "Mohawk Industries"
+ },
+ {
+  "n": 30,
+  "id": "co-delos",
+  "title": "Delos (The Delos Company)",
+  "image": "https://bunny-wp-pullzone-hdlfyxcoqo.b-cdn.net/wp-content/uploads/2020/02/Powells-Landing_04.jpg",
+  "credit": "Delos (The Delos Company)"
+ },
+ {
+  "n": 31,
+  "id": "co-floor-story",
+  "title": "FLOOR_STORY (Floor Story)",
+  "image": "https://www.thedesignsheppard.com/wp-content/uploads/2020/12/Camille-Walala-x-FLOOR_STORY.jpg",
+  "credit": "FLOOR_STORY"
+ },
+ {
+  "n": 32,
+  "id": "co-scott-group",
+  "title": "Scott Group Studio",
+  "image": "https://scottgroupstudio.com/wp-content/uploads/2024/02/803415-Margot-Interior-Rendering-for-web-934x1024.jpg",
+  "credit": "Scott Group Studio"
+ },
+ {
+  "n": 33,
+  "id": "co-creative-accents",
+  "title": "Creative Accents",
+  "image": "https://creativeaccents.com/wp-content/uploads/2020/05/ken.jpg",
+  "credit": "Creative Accents"
+ },
+ {
+  "n": 34,
+  "id": "co-kramis",
+  "title": "Kramis Teppich Design",
+  "image": "https://monocle.com/wp-content/uploads/legacy/article/1_rugs-to-riches_kramis-509bfa77c5ab3.jpg?fit=3307%2C2268",
+  "credit": "monocle.com (image from monocle.com)",
+  "imagePage": "https://monocle.com/business/manufacturing/swiss-carpet-kramis-rugs/"
+ },
+ {
+  "n": 35,
+  "id": "co-jaipur",
+  "title": "Jaipur Living / Jaipur Rugs",
+  "image": "https://www.jaipurliving.com/media/wysiwyg/the-craft1.jpg",
+  "credit": "Jaipur Living / Jaipur Rugs"
+ },
+ {
+  "n": 36,
+  "id": "co-tai-ping",
+  "title": "Tai Ping Carpets",
+  "image": "https://taiping-development.sgp1.digitaloceanspaces.com/images/image_2022-04-24-123453_pukq.jpg",
+  "credit": "taipingcarpets.com (image from taipingcarpets.com)",
+  "imagePage": "https://www.taipingcarpets.com/collections/atelier-by-fang-collection"
+ },
+ {
+  "n": 37,
+  "id": "bigelow-mill",
+  "title": "Bigelow Carpet Mill, Clinton, Massachusetts",
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Bigelow_Clinton.jpg/1280px-Bigelow_Clinton.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
+  "credit": "en.wikipedia.org"
+ },
+ {
+  "n": 38,
+  "id": "philly-encyclopedia-carpet",
+  "title": "Carpet Weaving and Rug Making (Encyclopedia of Greater Philadelphia)",
+  "image": "https://philadelphiaencyclopedia.org/wp-content/uploads/2015/08/Alirene-Mills-textile-plant-at-Frankford-Creek-12001300-Adams-Avenue-Frankford-Philadelphia.-e1440428996694.jpg",
+  "credit": "philadelphiaencyclopedia.org"
+ },
+ {
+  "n": 39,
+  "id": "wint-lib-swatch-books",
+  "title": "Winterthur Library Swatch Book Collection (Collection 50) and salesmen's sample books",
+  "image": "https://static.quartexcollections.com/winterthur/media-file/2daf85f8-c780-4c3f-9a8b-0186905a4a80-mastheadsingle.jpg",
+  "credit": "Winterthur Library"
+ },
+ {
+  "n": 40,
+  "id": "wint-shaw-licensed-nylon",
+  "title": "\"Winterthur Collection\" area rug, 100% nylon, made by Shaw Rugs under licence",
+  "image": "https://imgix-prod.ebth.com/2016/12/29/10/09/31/e10a133f-3107-4a25-b2bb-5a43250980e5/16DEN005-1058.jpg?ixlib=rb-3.1.0&w=781&h=855&fit=max&crop=&auto=format",
+  "credit": "Private (auction listing)"
+ },
+ {
+  "n": 41,
+  "id": "diamond-dye-rug-book",
+  "title": "Diamond Dye rug book (1899)",
+  "image": "https://archive.org/services/img/cihm_01194",
+  "credit": "archive.org"
+ },
+ {
+  "n": 42,
+  "id": "hooked-rugs-chestertown",
+  "title": "Hooked Rugs at Henry Francis du Pont's Chestertown House",
+  "image": "https://americanainsights.org/wp-content/uploads/2023/11/hooked-rug-essay-grid.jpg",
+  "credit": "americanainsights.org"
+ },
+ {
+  "n": 43,
+  "id": "co-merida",
+  "title": "Merida",
+  "image": "https://nehomemag.com/wp-content/uploads/2016/06/john-costa-working.jpg",
+  "credit": "nehomemag.com (image from nehomemag.com)",
+  "imagePage": "https://nehomemag.com/the-merida-mystique/"
+ },
+ {
+  "n": 44,
+  "id": "co-edward-fields",
+  "title": "Edward Fields",
+  "image": "https://taiping-development.sgp1.digitaloceanspaces.com/images/Edward-Fields-Heritage-Banner-2.jpg",
+  "credit": "Edward Fields"
+ },
+ {
+  "n": 45,
+  "id": "co-kasthall",
+  "title": "Kasthall",
+  "image": "http://www.kasthall.com/cdn/shop/files/1200x628_Ida.jpg?v=1775663966",
+  "credit": "Kasthall"
+ },
+ {
+  "n": 46,
+  "id": "co-ceadogan",
+  "title": "Ceadogán Rugmakers",
+  "image": "https://www.ceadogan.ie/wp-content/uploads/2024/04/Ceadogan-Alpaca-Rug-Cushions-Feb-2024-WEB-27.jpg",
+  "credit": "ceadogan.ie (image from ceadogan.ie)",
+  "imagePage": "https://www.ceadogan.ie/neadaithe/"
+ },
+ {
+  "n": 47,
+  "id": "co-pinton",
+  "title": "Pinton (Ateliers Pinton)",
+  "image": "https://www.pinton1867.com/wp-content/uploads/2021/07/felletin_photo_archives1.jpg",
+  "credit": "Pinton (Ateliers Pinton)"
+ },
+ {
+  "n": 48,
+  "id": "co-yamagata-dantsu",
+  "title": "Yamagata Dantsu (Oriental Carpet Mills)",
+  "image": "https://yamagatadantsu.co.jp/login/wp-content/uploads/2022/04/history_ogp.jpg",
+  "credit": "Yamagata Dantsu (Oriental Carpet Mills)"
+ },
+ {
+  "n": 49,
+  "id": "co-designer-rugs",
+  "title": "Designer Rugs",
+  "image": "https://designerrugs.com.au/cdn/shop/files/designer-rugs-house-of-heras-Paloma-lo-01-wr-press-release.jpg?v=1785313534&width=480",
+  "credit": "Designer Rugs"
+ },
+ {
+  "n": 50,
+  "id": "co-roger-oates",
+  "title": "Roger Oates Design",
+  "image": "https://www.rogeroates.com/app/uploads/2024/05/RogerOates-Tide-Rug-1663-3x4-SFW.jpg",
+  "credit": "Roger Oates Design"
+ },
+ {
+  "n": 51,
+  "id": "co-royal-thai",
+  "title": "Royal Thai (Thailand Carpet Manufacturing / TCM Corporation)",
+  "image": "https://images.squarespace-cdn.com/content/v1/6814f014b27d3c39c34d192d/1746202786267-VQLW9JQU5G2CIPKSNYXY/InterContinental+Bangkok_Balcony+Lounge_01_web+opt.jpg",
+  "credit": "Royal Thai (Thailand Carpet Manufacturing / TCM Corporation)"
+ },
+ {
+  "n": 52,
+  "id": "co-cabin-crafts",
+  "title": "Cabin Crafts",
+  "image": "https://georgiaencyclopedia.org/wp-content/uploads/2021/02/chenille-bedspreads_004-1200x630.jpg",
+  "credit": "Cabin Crafts"
+ },
+ {
+  "n": 53,
+  "id": "co-world-carpets",
+  "title": "World Carpets",
+  "image": "https://georgiaencyclopedia.org/wp-content/uploads/2021/03/m-8904-1200x630.jpg",
+  "credit": "World Carpets"
+ },
+ {
+  "n": 54,
+  "id": "co-cormar",
+  "title": "Cormar Carpets",
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/About-us-family-owned-british-made.jpg/250px-About-us-family-owned-british-made.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+  "credit": "en.wikipedia.org (image from en.wikipedia.org)",
+  "imagePage": "https://en.wikipedia.org/wiki/Cormar_Carpets"
+ },
+ {
+  "n": 55,
+  "id": "co-interface",
+  "title": "Interface",
+  "image": "https://media.interface.com/is/image/interfaceprd/factory%204:c1300x716",
+  "credit": "Interface"
+ },
+ {
+  "n": 56,
+  "id": "co-milliken",
+  "title": "Milliken & Company (floor covering)",
+  "image": "https://www.milliken.com/en-us/-/media/milliken/corporate/about-us/history/history_full_screen-1865-1920.jpg",
+  "credit": "Milliken & Company (floor covering)"
+ },
+ {
+  "n": 57,
+  "id": "co-engineered-floors",
+  "title": "Engineered Floors",
+  "image": "https://res.cloudinary.com/engineeredfloors/image/upload/f_auto,q_auto,w_1920,h_650,c_fill/ef-wp-uploads/2024/11/MODEL_133-Titan-399-Luna-Pearl-.-Lifestyle-4003-Caicos-15.webp",
+  "credit": "Engineered Floors"
+ },
+ {
+  "n": 58,
+  "id": "co-ege",
+  "title": "Ege Carpets (Egetæpper)",
+  "image": "https://media.ffycdn.net/eu/ege-carpets/uE7cxtA3XRAQ9syTSw6Y.jpg?mod=v1/resize=3840/quality=80",
+  "credit": "Ege Carpets (Egetæpper)"
+ },
+ {
+  "n": 59,
+  "id": "co-object-carpet",
+  "title": "Object Carpet",
+  "image": "https://www.object-carpet.com/uploads/media/stage/03/8493-object_carpet_forever_young_titel_neon.jpg?v=1-0",
+  "credit": "Object Carpet"
+ },
+ {
+  "n": 60,
+  "id": "co-desso",
+  "title": "Desso (Tarkett)",
+  "image": "https://media.tarkett-image.com/large-high/IN_DesertAirMaster_9525-9970_cover.jpg",
+  "credit": "Desso (Tarkett)"
+ },
+ {
+  "n": 61,
+  "id": "co-balta",
+  "title": "Balta (Belysse / Victoria)",
+  "image": "https://www.belysse.com/build/images/brand-cta.cbf23ca1.jpg",
+  "credit": "Balta (Belysse / Victoria)"
+ },
+ {
+  "n": 62,
+  "id": "co-beaulieu",
+  "title": "Beaulieu International Group",
+  "image": "https://dxm.mediacenter.bintg.com/api/wedia/dam/transform/6foabi5tejewk3wax36d8exkfyrpuajpme7ffia/out?t=crop&x=0.000&y=0.110&width=1.000&height=0.788&outputWidth=1200&outputHeight=630",
+  "credit": "Beaulieu International Group"
+ },
+ {
+  "n": 63,
+  "id": "co-victoria",
+  "title": "Victoria PLC (Victoria Carpets)",
+  "image": "https://d39d6i0wpcpox8.cloudfront.net/assets/images/vcl-static/hero/victoria-history-factory.jpg",
+  "credit": "Victoria PLC (Victoria Carpets)"
+ },
+ {
+  "n": 64,
+  "id": "co-godfrey-hirst",
+  "title": "Godfrey Hirst",
+  "image": "https://res.cloudinary.com/gh/image/upload/v1/apps/gh-web/pages/products/photography/hero",
+  "credit": "Godfrey Hirst"
+ },
+ {
+  "n": 65,
+  "id": "co-suminoe",
+  "title": "Suminoe (Suminoe Textile Co.)",
+  "image": "https://cdn.shopify.com/s/files/1/0678/8392/5817/files/img_showroom_OSAKA.jpg?v=20250908",
+  "credit": "Suminoe (Suminoe Textile Co.)"
+ },
+ {
+  "n": 66,
+  "id": "co-oriental-weavers",
+  "title": "Oriental Weavers",
+  "image": "https://www.fcnews.net/wp-content/webpc-passthru.php?src=https://www.fcnews.net/wp-content/uploads/2020/09/Mohamed-Farid-Khamis-Oriental-Weavers-founder.jpg&nocache=1",
+  "credit": "fcnews.net (image from fcnews.net)",
+  "imagePage": "https://www.fcnews.net/2020/09/obituary-mohamed-farid-khamis-oriental-weavers-founder/"
+ },
+ {
+  "n": 67,
+  "id": "co-huade",
+  "title": "Huade Carpet Group",
+  "image": "https://www.hdcarpets.com/u_file/1808/photo/725c28caed.jpg",
+  "credit": "Huade Carpet Group"
+ },
+ {
+  "n": 68,
+  "id": "co-welspun-flooring",
+  "title": "Welspun Flooring",
+  "image": "https://welspunflooring.com/images/about/banner.webp",
+  "credit": "Welspun Flooring"
+ },
+ {
+  "n": 69,
+  "id": "co-cobble",
+  "title": "Cobble (Cobble Brothers / Singer-Cobble / Vandewiele)",
+  "image": "https://vandewiele.com/public/shared/offices/_1200x630_crop_center-center_82_none/17.52.jpg?mtime=1685024426",
+  "credit": "vandewiele.com (image from vandewiele.com)",
+  "imagePage": "https://vandewiele.com/about-vandewiele-group/history-of-vandewiele"
+ },
+ {
+  "n": 70,
+  "id": "co-tuftco",
+  "title": "Tuftco",
+  "image": "https://cdn.prod.website-files.com/5f32c9823a88d84a78781478/663d91411dc86f3272be301b_Tuftco%20Domotex%202024%20Large.jpeg",
+  "credit": "Tuftco"
+ },
+ {
+  "n": 71,
+  "id": "co-card-monroe",
+  "title": "Card-Monroe Corp. (CMC)",
+  "image": "https://cdn.prod.website-files.com/64744a6a3b93e3b39727c509/64f88be5b95f975874ebf4b1_Greg%20Headshot.jpg",
+  "credit": "Card-Monroe Corp. (CMC)"
+ },
+ {
+  "n": 72,
+  "id": "co-obeetee",
+  "title": "Obeetee",
+  "image": "http://www.obeetee.in/cdn/shop/files/bm1.jpg?v=1784027392&width=2048",
+  "credit": "Obeetee"
+ },
+ {
+  "n": 73,
+  "id": "co-hands",
+  "title": "Hands (Hands Carpets / Patodia Exports)",
+  "image": "https://cdn.shopify.com/s/files/1/0755/3017/4762/files/all-carpets-thumb.jpg",
+  "credit": "Hands (Hands Carpets / Patodia Exports)"
+ },
+ {
+  "n": 74,
+  "id": "co-surya",
+  "title": "Surya",
+  "image": "https://www.homeaccentstoday.com/wp-content/uploads/sites/13/2026/04/SURYA50th_RSVPBanner_20260326-1.webp",
+  "credit": "Surya"
+ },
+ {
+  "n": 75,
+  "id": "co-hofmann-handtuft",
+  "title": "Hofmann Handtuft-Technik GmbH",
+  "image": "http://www.hofmann-handtuft.de/wp-content/uploads/2013/11/showroom-hofmann-handtuft.jpg",
+  "credit": "Hofmann Handtuft-Technik GmbH"
+ },
+ {
+  "n": 76,
+  "id": "co-tuft-the-world",
+  "title": "Tuft the World",
+  "image": "http://www.chroniclebooks.com/cdn/shop/files/9781797224565_1_1200x1200.jpg?v=1699638681",
+  "credit": "Tuft the World"
+ },
+ {
+  "n": 77,
+  "id": "book-tuft-the-world-2024",
+  "title": "Tuft the World: An Illustrated Manual to Tufting Gorgeous Rugs, Decor, and More",
+  "image": "http://www.chroniclebooks.com/cdn/shop/files/9781797224565_1_1200x1200.jpg?v=1699638681",
+  "credit": "chroniclebooks.com"
+ },
+ {
+  "n": 78,
+  "id": "event-ttw-editions-2023",
+  "title": "TTW Editions at Paradigm Gallery: rugs made by a large robotic tufting machine (2023)",
+  "image": "http://www.paradigmarts.org/cdn/shop/articles/DALL-E-2023-05-29-21.08.13_1024x1024.jpg?v=1688317240",
+  "credit": "Paradigm Gallery + Studio"
+ },
+ {
+  "n": 79,
+  "id": "vam-t5-1959-kidderminster-sample",
+  "title": "Sample of Kidderminster carpeting, double cloth (Dove & Co., Leeds, mid-19th century)",
+  "image": "https://framemark.vam.ac.uk/collections/2006AT3471/full/!600,/0/default.jpg",
+  "credit": "Victoria and Albert Museum"
+ },
+ {
+  "n": 80,
+  "id": "vam-t11-1981-garthwaite-brussels",
+  "title": "Brussels carpet sample woven in 1980 after a design by Anna Maria Garthwaite dated 1753",
+  "image": "https://framemark.vam.ac.uk/collections/2021MY5392/full/!600,/0/default.jpg",
+  "credit": "Victoria and Albert Museum"
+ },
+ {
+  "n": 81,
+  "id": "met-1976-155-114-savonnerie",
+  "title": "Grande Galerie carpet with landscapes (Savonnerie, after Charles Le Brun), 1680",
+  "image": "https://images.metmuseum.org/CRDImages/es/original/DP-36820-001.jpg",
+  "credit": "The Metropolitan Museum of Art (Open Access, public domain)"
+ },
+ {
+  "n": 82,
+  "id": "co-tapistron",
+  "title": "Tapistron International: computerised yarn placement (CYP) tufting, Ringgold, Georgia",
+  "image": "https://images.chattanoogan.com/2026/10/article.525283.jpg",
+  "credit": "Tapistron International, Inc."
+ },
+ {
+  "n": 83,
+  "id": "event-colorpoint-colortron-2009",
+  "title": "Card-Monroe ColorPoint and Tuftco ColorTron launched: yarn colour placement in broadloom tufting (2009)",
+  "image": "https://patentimages.storage.googleapis.com/d1/b4/eb/aa521eac9c2c9a/US08141505-20120327-D00000.png",
+  "credit": "Patent drawing via Google Patents (public domain)",
+  "imagePage": "https://patents.google.com/patent/US8141505B2/en"
+ },
+ {
+  "n": 84,
+  "id": "pat-us8141505b2",
+  "title": "Card-Monroe Corp., \"Yarn color placement system\" (US8141505B2)",
+  "image": "https://patentimages.storage.googleapis.com/d1/b4/eb/aa521eac9c2c9a/US08141505-20120327-D00000.png",
+  "credit": "Patent drawing via Google Patents (public domain)"
+ },
+ {
+  "n": 85,
+  "id": "event-cobble-colortec-icn",
+  "title": "Cobble (Vandewiele) Colortec: individually controlled needles and individual pile delivery (2018–2019)",
+  "image": "https://innovationintextiles.com/wp-content/uploads/2026/02/Cobble-1.jpg",
+  "credit": "innovationintextiles.com (image from innovationintextiles.com)",
+  "imagePage": "https://innovationintextiles.com/interiors/cobbles-combinations-for-advanced-tufting-at-itma-2019"
+ },
+ {
+  "n": 86,
+  "id": "co-wilcom-autotuft",
+  "title": "Wilcom AutoTuft (Sydney): robotic single-head tufting machines for custom rugs",
+  "image": "https://patentimages.storage.googleapis.com/be/0f/b5/8c71ec5024f14a/US08225727-20120724-D00000.png",
+  "credit": "Patent drawing via Google Patents (public domain)",
+  "imagePage": "https://patents.google.com/patent/US8225727B2/en"
+ },
+ {
+  "n": 87,
+  "id": "event-yangxin-donghua-robot",
+  "title": "Yangxin Ruixin and Donghua University: 'China's first fully digital intelligent robot for hand-tufted carpets'",
+  "image": "http://img2.chinadaily.com.cn/images/202505/12/682169dda310a04a96783487.jpeg",
+  "credit": "China Daily"
+ },
+ {
+  "n": 88,
+  "id": "co-efab-etuft",
+  "title": "EFAB GmbH: eTuft / Robotuft robotic tufting machines (Germany)",
+  "image": "https://heimtextil.messefrankfurt.com/content/dam/messefrankfurt-redaktion/texpertisenetwork/images/stages-teaser/stage-texpertise.jpg",
+  "credit": "EFAB GmbH"
+ },
+ {
+  "n": 89,
+  "id": "co-carpet-sign",
+  "title": "Carpet Sign (Asten, Netherlands): 3-D tufting robot rugs with Karim Rashid (2017) and Richard Hutten (2019)",
+  "image": "https://interiordesign.net/wp-content/uploads/2021/06/special_k_main_image.jpg",
+  "credit": "Carpet Sign"
+ },
+ {
+  "n": 90,
+  "id": "event-trueblood-robotic-tufting-2022",
+  "title": "Owen Trueblood's robot-arm tufting system: a hacked tufting gun on a UR5 (2022)",
+  "image": "https://cdn.hackaday.io/images/9350651645120696026.png",
+  "credit": "Hackaday.io"
+ },
+ {
+  "n": 91,
+  "id": "co-craftphilia",
+  "title": "Craftphilia (Hong Kong): a crowdfunded 'fully automated' desktop tufting machine for hobbyists",
+  "image": "https://www.kicktraq.com/projects/207408103/craftphilia-worlds-first-fully-automated-tufting-machine/dailychart.png",
+  "credit": "Craftphilia"
+ },
+ {
+  "n": 92,
+  "id": "process-felt-pazyryk-hangings",
+  "title": "Pazyryk felt appliqué hangings and furnishings (Altai burial mounds)",
+  "image": "https://depts.washington.edu/silkroad/museums/shm/hermitagepazyryk6a.jpg",
+  "credit": "Silk Road Seattle, University of Washington (photographs of objects in the State Hermitage Museum)",
+  "imagePage": "https://depts.washington.edu/silkroad/museums/shm/shmpazyryk.html"
+ },
+ {
+  "n": 93,
+  "id": "process-flatweave-navajo-chief-asm",
+  "title": "Navajo First Phase chief's-style blanket, c. 1800–1850 (Arizona State Museum E-1200)",
+  "image": "https://statemuseum.arizona.edu/sites/default/files/styles/az_medium/public/E-1200_x.jpg.webp?itok=slMykIUN",
+  "credit": "Arizona State Museum, University of Arizona"
+ },
+ {
+  "n": 94,
+  "id": "process-flatweave-dhurrie-penn",
+  "title": "Cotton dhurrie, North India, late 19th century (Penn Museum 29-96-81)",
+  "image": "https://collections.penn.museum/collections/assets/058T/589k/589573_800.jpg",
+  "credit": "Penn Museum (University of Pennsylvania Museum of Archaeology and Anthropology)"
+ },
+ {
+  "n": 95,
+  "id": "process-knotted-pazyryk",
+  "title": "The Pazyryk carpet: oldest known hand-knotted pile carpet (5th–4th century BCE)",
+  "image": "https://depts.washington.edu/silkroad/museums/shm/hermitagepazyryk15a.jpg",
+  "credit": "Silk Road Seattle, University of Washington (photographs of the carpet in the State Hermitage Museum)",
+  "imagePage": "https://depts.washington.edu/silkroad/museums/shm/shmpazyryk.html"
+ },
+ {
+  "n": 96,
+  "id": "process-knotted-rya-vam",
+  "title": "Finnish ryijy (rya) with long knotted pile, dated 1814 (V&A T.123-1924)",
+  "image": "https://framemark.vam.ac.uk/collections/2017KL2153/full/!600,/0/default.jpg",
+  "credit": "Victoria and Albert Museum"
+ },
+ {
+  "n": 97,
+  "id": "process-loompile-tapestry-brussels",
+  "title": "'Tapestry' carpet: pile from warp yarns printed before weaving (Richard Whytock, Edinburgh, patented 1832); V&A sample c. 1850",
+  "image": "https://framemark.vam.ac.uk/collections/2018LE8696/full/!600,/0/default.jpg",
+  "credit": "Victoria and Albert Museum"
+ },
+ {
+  "n": 98,
+  "id": "process-loompile-chenille-axminster",
+  "title": "Chenille Axminster: James Templeton and William Quiglay's chenille patent (Glasgow, 1839); V&A Templeton sample",
+  "image": "https://framemark.vam.ac.uk/collections/2018LE8726/full/!600,/0/default.jpg",
+  "credit": "Victoria and Albert Museum"
+ },
+ {
+  "n": 99,
+  "id": "process-sewn-yarn-sewn-chs",
+  "title": "Yarn-sewn hearth rug, 1800–1820 (Connecticut Historical Society 2010.409.0)",
+  "image": "https://emuseum.chs.org/emuseum/internal/media/dispatcher/12509/full",
+  "credit": "Connecticut Historical Society"
+ },
+ {
+  "n": 100,
+  "id": "process-crochet-knit-afam",
+  "title": "Crocheted rug, 1880–1900 (American Folk Art Museum 1985.21.1)",
+  "image": "https://folkartmuseum.org/content/uploads/2014/10/folk_1868_image.jpg",
+  "credit": "folkartmuseum.org (image from folkartmuseum.org)",
+  "imagePage": "https://folkartmuseum.org/exhibitions/the-great-cover-up-american-rugs-on-beds-tables-and-floors"
+ }
+]
