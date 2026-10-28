@@ -10,20 +10,20 @@ Spelling follows the book, including its slips: "Capitol" for Capital, "Ellijah"
 
 | Source | Kind | Why it matters | Where |
 |---|---|---|---|
-| Andrews, Mildred Gwin. *The Men and the Mills: A History of the Southern Textile Industry.* Macon, Ga.: Mercer University Press, 1987. | secondary | Southern textile context | |
+| Andrews, Mildred Gwin. *The Men and the Mills: A History of the Southern Textile Industry.* Macon, Ga.: Mercer University Press, 1987. | secondary | Southern textile context | Internet Archive, borrowable: https://archive.org/details/menmillshistoryo0000andr |
 | *Carpet & Rug Institute Annual Reports* | **primary** (industry body) | Production figures and tufted vs woven shares, year by year | CRI, Dalton; libraries |
 | Edge, Arthur B., Jr. *Fuller E. Callaway (1870–1928), Founder of Callaway Mills.* Newcomen Society in North America; Princeton University Press, 1954. | company history | Callaway Mills, LaGrange: woven and tufted | |
-| Ewing, John S., and Nancy P. Norton. *Broadlooms and Businessmen.* Cambridge, Mass.: Harvard University Press, 1955. | business history from company records | **Bigelow-Sanford's history**: the key source for Bigelow and "broadloom" (open question: Bigelow's first broadloom, 1877) | |
+| Ewing, John S., and Nancy P. Norton. *Broadlooms and Businessmen.* Cambridge, Mass.: Harvard University Press, 1955. | business history from company records | **Bigelow-Sanford's history**: the key source for Bigelow and "broadloom" (open question: Bigelow's first broadloom, 1877) | Internet Archive, print-disabled access only: https://archive.org/details/broadloomsbusine0000ewin; otherwise a library copy. Database: `book-ewing-norton-broadlooms-1955` |
 | Kriegel, Robert J., and Louis Patler. *If It Ain't Broke… BREAK IT!* New York: Warner Books, 1991. | business book | Unclear what it supports; check the book's index | |
 | *Man-Made Fiber and Textile Dictionary.* Celanese Corporation. | reference | Definitions | |
 | Norville, Zack. *Zack's Book.* Dalton, Ga.: Norville Industries, 1992. | memoir | Dalton industry participant | |
 | Plice, Steven S. *Manpower and Merger: The Impact of Merger upon Personnel Policies in the Carpet & Furniture Industries.* Harrisburg, Pa.: University of Pennsylvania Press, 1975. (Place as printed.) | study | 1960s–70s mergers | |
-| Reynolds, William A. *Innovation in the United States Carpet Industry, 1947–1963.* Princeton, N.J.: D. Van Nostrand, 1968. | economic history | **The broadloom boom itself**: tufting's rise against weaving, 1947–63 | |
+| Reynolds, William A. *Innovation in the United States Carpet Industry, 1947–1963.* Princeton, N.J.: D. Van Nostrand, 1968. | economic history | **The broadloom boom itself**: tufting's rise against weaving, 1947–63 | Internet Archive, borrowable: https://archive.org/details/innovationinunit0000will. Database: `book-reynolds-innovation-1968` |
 | *Tufted Textile Manufacturers Association Directory and Yearbook* | **primary** (trade association) | Firms, machines, output | Hagley holds a TTMA folder (1960, Acc. 1178, already in the database); libraries |
-| Shaheen, Shaheen. *World Carpets, the First Thirty Years.* Dalton, Ga.: Lee Printing, 1984. | company history by its founder | World Carpets (1954–84) | |
+| Shaheen, Shaheen. *World Carpets, the First Thirty Years.* Dalton, Ga.: Lee Printing, 1984. | company history by its founder | World Carpets (1954–84) | Open Library catalogue record only |
 | Taylor, Elaine. *I've Had a Millionaire's Fun: The Mose Painter Story.* Chattanooga: Painter and Taylor Manuscript Co., 1982. | biography | Mose Painter, machine inventor (Painter Carpet; Hanson-Painter) | |
-| Ward, Derek T. *Tufting: An Introduction.* Manchester: Textile Business Press, 1969. | technical | Machines and methods c. 1969; British view | |
-| Windham, Roy H. *The Tufting Machine: A Practical Text of Instruction for Machine Fixers.* 3rd ed. Rome, Ga.: Southern Craft Company, 1941. | **primary** (trade manual) | **Tufting machines as fixers knew them in 1941**: a direct source for "Building the machine" | |
+| Ward, Derek T. *Tufting: An Introduction.* Manchester: Textile Business Press, 1969. | technical | Machines and methods c. 1969; British view | Open Library catalogue record only |
+| Windham, Roy H. *The Tufting Machine: A Practical Text of Instruction for Machine Fixers.* 3rd ed. Rome, Ga.: Southern Craft Company, 1941. | **primary** (trade manual) | **Tufting machines as fixers knew them in 1941**: a direct source for "Building the machine" | Not on the Internet Archive or Open Library; to find (WorldCat, Bandy). Windham also patented tufting machines. Database: `book-windham-tufting-machine-1941` |
 
 ## Articles (pp. 210–212)
 
@@ -40,14 +40,14 @@ Spelling follows the book, including its slips: "Capitol" for Capital, "Ellijah"
 | Gavin, Kimberly. "Mohawk/Horizon Merge to Create Industry Giant." *Floor Covering Weekly*, 2 Nov. 1992, pp. 1, 9. | trade press | | |
 | Gunter, Ron. "Spring Signals: Joseph McCutchen, Jr." *Home Furnishings Daily*, 27 Dec. 1968, p. 16. | trade press | | |
 | Hamilton, R. E. "Bedspreads Are Big Business." *Christian Science Monitor*, 15 March 1941, pp. 5, 15. | **primary** (contemporary) | The bedspread boom at its height; written by the later TTMA executive secretary | CSM archive |
-| Hamilton, R. E. "Bedspread Bonanza." *Reader's Digest*, April 1941, pp. 41–44. | **primary** (contemporary) | National coverage of the boom, 1941 | |
+| Hamilton, R. E. "Bedspread Bonanza." *Reader's Digest*, April 1941, pp. 41–44. | **primary** (contemporary) | National coverage of the boom, 1941 | Internet Archive has 1941 volumes from microfilm; April issue not found by search. Database: `article-hamilton-1941-readers-digest` |
 | Jonas, Peggy Baugh. "Early Days of Industry Recalled." *Citizen News* (Dalton), 27 Feb. 1978, pp. 5–6D (reprinted from *Floor Covering Weekly*). | reminiscence | | |
 | Kary, Lee. "Hamilton: Dynamic Man." *Dalton Daily Citizen-News*, 12 June 1964, p. 3. | newspaper profile | R. E. Hamilton | |
 | Kary, Lee. "Hampton: Master Craftsman." *Dalton Daily Citizen-News*, 26 June 1964, p. 3. | newspaper profile | | |
 | Kary, Lee. "Jolly: Soaring Salesman." *Dalton Daily Citizen-News*, 19 Aug. 1964, p. 3. | newspaper profile | | |
 | Kary, Lee. "Turner: Man of Action." *Dalton Daily Citizen-News*, 10 Sept. 1964, p. 3. | newspaper profile | Jack Turner, Cabin Crafts? | |
 | "Main Issues: Consumerism, Marketing." *Floor Covering Weekly*, 14 May 1973, pp. 1ff. | trade press | | |
-| McGregor, John R., and Robert H. Maxey. "The Dalton, Georgia, Tufted Textile Concentration." *Southeastern Geographer* 14, no. 2, pp. 133–144. (The book gives no year; to confirm.) | scholarly | Why tufting concentrated in Dalton | Project MUSE / JSTOR |
+| McGregor, John R., and Robert H. Maxey. "The Dalton, Georgia, Tufted Textile Concentration." *Southeastern Geographer* 14, no. 2, pp. 133–144. (The book gives no year; to confirm.) | scholarly | Why tufting concentrated in Dalton | November 1974; https://doi.org/10.1353/sgo.1974.0010. Database: `article-mcgregor-maxey-1974` |
 | O'Neill, Frank. "Focus 100 Retail." *Floor Focus*, Nov. 1992, pp. 8–30. | trade press | | |
 | O'Neill, Frank. "Retail Alliances." *Floor Focus*, Nov. 1992, pp. 31–39, 43. | trade press | | |
 | "The Early Days of Candlewick." *Dixie Yarns, Inc. Report*, Fall 1979, vol. 34, no. 3, pp. 4–9. | company magazine | Candlewick to tufting | |
@@ -64,8 +64,8 @@ Spelling follows the book, including its slips: "Capitol" for Capital, "Ellijah"
 | Whaley, Peggy. "Patcraft Mills Inc., That's Real Living." *Carpet & Rug Industry*, June 1981, pp. 10–12. | trade press | | |
 | Whatley [Whaley?], Peggy. "The Chairman Is a Lady." *Carpet & Rug Industry*, Nov. 1981, pp. 10–12. | trade press | | |
 | "The Top 25." *Carpet & Rug Industry*, June 1989, pp. 34ff.; June 1990, pp. 11ff.; June 1991, pp. 25ff. | trade press | Industry rankings | |
-| Walters, Billie J., and James O. Wheeler. "Localization Economics in the American Carpet Industry." *Geographical Review* 74, no. 2 (April 1984), pp. 183–191. | scholarly | Why the industry clustered | JSTOR |
-| Whitener, Catherine Evans. "Mrs. Whitener Recalls Beginning of Bedspread Industry." *The Dalton News*, 11 March 1937, pp. 1ff. | **primary** (her own account) | **Catherine Evans's own account of 1895–1900**: the founding story first-hand | Dalton newspapers on microfilm; Crown Gardens & Archives |
+| Walters, Billie J., and James O. Wheeler. "Localization Economics in the American Carpet Industry." *Geographical Review* 74, no. 2 (April 1984), pp. 183–191. | scholarly | Why the industry clustered | Real title "Localization *Economies* in the American Carpet Industry"; https://doi.org/10.2307/214099. Database: `article-walters-wheeler-1984` |
+| Whitener, Catherine Evans. "Mrs. Whitener Recalls Beginning of Bedspread Industry." *The Dalton News*, 11 March 1937, pp. 1ff. | **primary** (her own account) | **Catherine Evans's own account of 1895–1900**: the founding story first-hand | Not online; Dalton newspapers on microfilm. Database: `article-whitener-1937-dalton-news`. See also the chapter "Catherine Evans Whitener (1881–1964)" in *Georgia Women: Their Lives and Times*, vol. 2 (UGA Press, 2014), pp. 86–113, https://doi.org/10.1515/9780820376134-006 |
 
 ## Interviews by Deaton (pp. 212–217)
 

@@ -339,7 +339,7 @@ window.RUG_ITEMS = [
     "creator": "Thomas M. Deaton",
     "date": "1993 (Open Library gives 1994; check the copyright page)",
     "dateStart": 1993,
-    "description": "Industry history; Deaton's research files (company histories, periodicals, oral history transcripts with industry pioneers) are at the Bandy Heritage Center, Dalton State College. Check: you recall this book stating that DuPont invented nylon; note the page, and cite the Carothers patents for the invention itself.\n\nAvailability (checked Oct 2026): no digital copy on the Internet Archive (not even for lending), none at HathiTrust, and Open Library has a catalogue record only. The author's own copy is the way in: its notes and bibliography are the trail to primary sources (see research/deaton-sources.md once transcribed).",
+    "description": "Industry history; Deaton's research files (company histories, periodicals, oral history transcripts with industry pioneers) are at the Bandy Heritage Center, Dalton State College. Check: you recall this book stating that DuPont invented nylon; note the page, and cite the Carothers patents for the invention itself.\n\nAvailability (checked Oct 2026): no digital copy on the Internet Archive (not even for lending), none at HathiTrust, and Open Library has a catalogue record only. The author's own copy is the way in: its notes and bibliography are the trail to primary sources (see research/deaton-sources.md once transcribed).\n\nBibliography (pp. 209–217) transcribed from Tim's copy, with a source trail: https://github.com/timeads/rug-research/blob/claude/ecstatic-hamilton-gw4o0u/research/deaton-sources.md. The book has no notes; the bibliography lists 14 books, about 40 articles, about 85 interviews (1972–1993) and 2 maps.",
     "themes": [
       "Machine tufting & Dalton",
       "Chenille & candlewick"
@@ -356,12 +356,206 @@ window.RUG_ITEMS = [
     "imageSource": "auto"
   },
   {
+    "id": "book-reynolds-innovation-1968",
+    "type": "book",
+    "title": "Innovation in the United States Carpet Industry, 1947–1963",
+    "creator": "William A. Reynolds",
+    "date": "1968",
+    "dateStart": 1968,
+    "publisher": "Princeton, N.J.: D. Van Nostrand",
+    "sourceUrl": "https://archive.org/details/innovationinunit0000will",
+    "description": "An economic history of the years tufting overtook weaving: the core period of the broadloom boom.\n\nAccess (checked Oct 2026): scanned on the Internet Archive and borrowable with a free account (Open Library gives 1967; the scan's catalogue gives 1968).\n\nCited in Deaton, Bedspreads to Broadloom (1993), bibliography pp. 209–217 (transcribed in research/deaton-sources.md).",
+    "themes": [
+      "Machine tufting & Dalton",
+      "Woven carpet"
+    ],
+    "tags": [
+      "Deaton bibliography",
+      "broadloom",
+      "borrow online"
+    ],
+    "status": "unverified",
+    "region": "United States"
+  },
+  {
+    "id": "book-ewing-norton-broadlooms-1955",
+    "type": "book",
+    "title": "Broadlooms and Businessmen: A History of the Bigelow-Sanford Carpet Company",
+    "creator": "John S. Ewing and Nancy P. Norton",
+    "date": "1955",
+    "dateStart": 1955,
+    "publisher": "Cambridge, Mass.: Harvard University Press (Harvard Studies in Business History)",
+    "sourceUrl": "https://archive.org/details/broadloomsbusine0000ewin",
+    "description": "Bigelow-Sanford's history, written from the company's records: the main secondary source for Bigelow's power looms and for broadloom (open question: Bigelow's first broadloom, 1877, and when \"broadloom\" came into use).\n\nAccess (checked Oct 2026): scanned on the Internet Archive but restricted to print-disabled readers; otherwise a library copy (Open Library: https://openlibrary.org/works/OL160421W).\n\nCited in Deaton, Bedspreads to Broadloom (1993), bibliography pp. 209–217 (transcribed in research/deaton-sources.md).",
+    "themes": [
+      "Woven carpet"
+    ],
+    "tags": [
+      "Deaton bibliography",
+      "broadloom",
+      "Bigelow",
+      "library copy"
+    ],
+    "status": "unverified",
+    "region": "United States"
+  },
+  {
+    "id": "book-windham-tufting-machine-1941",
+    "type": "book",
+    "title": "The Tufting Machine: A Practical Text of Instruction for Machine Fixers (3rd ed.)",
+    "creator": "Roy H. Windham",
+    "date": "1941",
+    "dateStart": 1941,
+    "publisher": "Rome, Ga.: Southern Craft Company",
+    "description": "A machine fixers' manual from the decade machines took over the bedspread trade: a primary source for how early tufting machines worked and were kept running. Windham also patented tufting machines (pat-us2112512a, with others; pat-us2311802a). That this is a third edition suggests earlier editions in the 1930s.\n\nAccess (checked Oct 2026): no copy found on the Internet Archive or Open Library. Try WorldCat, the Bandy Heritage Center and Rome, Georgia libraries.\n\nCited in Deaton, Bedspreads to Broadloom (1993), bibliography pp. 209–217 (transcribed in research/deaton-sources.md).",
+    "themes": [
+      "Machine tufting & Dalton",
+      "Tools & equipment"
+    ],
+    "tags": [
+      "Deaton bibliography",
+      "primary source",
+      "to find"
+    ],
+    "status": "unverified",
+    "region": "United States"
+  },
+  {
+    "id": "article-whitener-1937-dalton-news",
+    "type": "article",
+    "title": "\"Mrs. Whitener Recalls Beginning of Bedspread Industry\"",
+    "creator": "Catherine Evans Whitener",
+    "date": "11 March 1937",
+    "dateStart": 1937,
+    "publisher": "The Dalton News (Dalton, Georgia), pp. 1ff.",
+    "description": "Catherine Evans Whitener's own account of making the first tufted spread (1895) and selling it (1900): the founding story first-hand, 40 years on.\n\nAccess: not online as far as checked (Oct 2026). Dalton newspapers on microfilm: try the Dalton-Whitfield public library and Crown Gardens & Archives, Dalton (named in Deaton's bibliography for another Dalton News article).\n\nCited in Deaton, Bedspreads to Broadloom (1993), bibliography pp. 209–217 (transcribed in research/deaton-sources.md).",
+    "themes": [
+      "Chenille & candlewick",
+      "Machine tufting & Dalton"
+    ],
+    "tags": [
+      "Deaton bibliography",
+      "primary source",
+      "to find",
+      "Catherine Evans"
+    ],
+    "status": "unverified",
+    "region": "United States"
+  },
+  {
+    "id": "article-hamilton-1941-readers-digest",
+    "type": "article",
+    "title": "\"Bedspread Bonanza\"",
+    "creator": "R. E. Hamilton",
+    "date": "April 1941",
+    "dateStart": 1941,
+    "publisher": "Reader's Digest, April 1941, pp. 41–44",
+    "description": "National coverage of the north Georgia bedspread boom at its height. Hamilton was later executive secretary of the Tufted Textile Manufacturers Association (Deaton interviewed him in 1972). See also his \"Bedspreads Are Big Business\", Christian Science Monitor, 15 March 1941, pp. 5, 15.\n\nAccess (checked Oct 2026): the Internet Archive holds 1941 Reader's Digest volumes from microfilm, but the April issue wasn't found by search; libraries hold bound volumes.\n\nCited in Deaton, Bedspreads to Broadloom (1993), bibliography pp. 209–217 (transcribed in research/deaton-sources.md).",
+    "themes": [
+      "Chenille & candlewick",
+      "Machine tufting & Dalton"
+    ],
+    "tags": [
+      "Deaton bibliography",
+      "primary source",
+      "to find"
+    ],
+    "status": "unverified",
+    "region": "United States"
+  },
+  {
+    "id": "article-mcgregor-maxey-1974",
+    "type": "article",
+    "title": "\"The Dalton, Georgia, Tufted Textile Concentration\"",
+    "creator": "John R. McGregor and Robert H. Maxey",
+    "date": "November 1974",
+    "dateStart": 1974,
+    "publisher": "Southeastern Geographer 14, no. 2, pp. 133–144",
+    "identifier": "doi:10.1353/sgo.1974.0010",
+    "sourceUrl": "https://doi.org/10.1353/sgo.1974.0010",
+    "description": "Why tufting concentrated around Dalton. Year and issue from the DOI record (Deaton's bibliography gives no year).\n\nCited in Deaton, Bedspreads to Broadloom (1993), bibliography pp. 209–217 (transcribed in research/deaton-sources.md).",
+    "themes": [
+      "Machine tufting & Dalton"
+    ],
+    "tags": [
+      "Deaton bibliography",
+      "geography"
+    ],
+    "status": "unverified",
+    "region": "United States"
+  },
+  {
+    "id": "article-walters-wheeler-1984",
+    "type": "article",
+    "title": "\"Localization Economies in the American Carpet Industry\"",
+    "creator": "Billie J. Walters and James O. Wheeler",
+    "date": "April 1984",
+    "dateStart": 1984,
+    "publisher": "Geographical Review 74, no. 2, pp. 183–191",
+    "identifier": "doi:10.2307/214099",
+    "sourceUrl": "https://doi.org/10.2307/214099",
+    "description": "Why the carpet industry clustered in north Georgia. Title from the DOI record; Deaton's bibliography prints \"Economics\".\n\nCited in Deaton, Bedspreads to Broadloom (1993), bibliography pp. 209–217 (transcribed in research/deaton-sources.md).",
+    "themes": [
+      "Machine tufting & Dalton"
+    ],
+    "tags": [
+      "Deaton bibliography",
+      "geography"
+    ],
+    "status": "unverified",
+    "region": "United States"
+  },
+  {
+    "id": "book-georgia-women-whitener-2014",
+    "type": "article",
+    "title": "\"Catherine Evans Whitener (1881–1964)\", in Georgia Women: Their Lives and Times, vol. 2",
+    "creator": "Ann Short Chirhart and Kathleen Ann Clark (eds.)",
+    "date": "2014",
+    "dateStart": 2014,
+    "publisher": "Athens: University of Georgia Press, pp. 86–113",
+    "identifier": "doi:10.1515/9780820376134-006",
+    "sourceUrl": "https://doi.org/10.1515/9780820376134-006",
+    "description": "A scholarly biographical chapter on Catherine Evans Whitener; the chapter's author is not in the DOI record. Not in Deaton's bibliography: found while tracing it (Oct 2026). Likely to cite the 1937 Dalton News account and other primary sources.",
+    "themes": [
+      "Chenille & candlewick",
+      "Machine tufting & Dalton"
+    ],
+    "tags": [
+      "Catherine Evans",
+      "scholarly"
+    ],
+    "status": "unverified",
+    "region": "United States"
+  },
+  {
+    "id": "map-sims-textile-dalton-1946",
+    "type": "archive",
+    "title": "Sims Textile Company map of Dalton",
+    "creator": "Sims Textile Company",
+    "date": "c. 1946",
+    "dateStart": 1946,
+    "institution": "Dalton-Whitfield County Historical Society (per Deaton)",
+    "description": "A map of Dalton issued by Sims Textile, reproduced or cited by Deaton \"courtesy of Dalton-Whitfield County Historical Society\". Likely shows the bedspread businesses at their peak, and ties in with the Sims sheets at the Bandy Heritage Center (own-bandy-sims-chenille-center).\n\nCited in Deaton, Bedspreads to Broadloom (1993), bibliography pp. 209–217 (transcribed in research/deaton-sources.md).",
+    "themes": [
+      "Machine tufting & Dalton",
+      "Chenille & candlewick"
+    ],
+    "tags": [
+      "Deaton bibliography",
+      "primary source",
+      "to find",
+      "Sims"
+    ],
+    "status": "unverified",
+    "region": "United States"
+  },
+  {
     "id": "archive-bandy-deaton",
     "type": "archive",
     "title": "Thomas Deaton research collection on the tufted carpet industry",
     "creator": "Thomas M. Deaton",
     "institution": "Bandy Heritage Center, Dalton State College",
-    "description": "Corporate and public histories of carpet companies and individuals; industry periodicals; transcripts of oral interviews with carpet industry pioneers. By appointment.",
+    "description": "Corporate and public histories of carpet companies and individuals; industry periodicals; transcripts of oral interviews with carpet industry pioneers. By appointment.\n\nWhat the interviews probably are (Oct 2026): Deaton's bibliography lists about 85 interviews he conducted, 1972–1993. They include machine inventors and makers (Ernest J. Moench, Mose Painter, Albert Cobble, Paul Jolley, Lewis Card, Irby Passons; Glenn Looper's daughter Margaret Weissenberger) and the bedspread generation (Addie Evans and W. R. Evans, Catherine Evans Whitener's sister-in-law and nephew; Cabin Crafts' Jack Turner, Campbell Petty and Lulu Westcott). They also include DuPont's Hugh Barrow and the TTMA's R. E. Hamilton. Full list: https://github.com/timeads/rug-research/blob/claude/ecstatic-hamilton-gw4o0u/research/deaton-sources.md. Ask the Center which transcripts are in this collection.",
     "sourceUrl": "https://bandyheritagecenter.pastperfectonline.com/archive/2349F571-3AF7-4957-BDA1-373971530010",
     "themes": [
       "Machine tufting & Dalton"

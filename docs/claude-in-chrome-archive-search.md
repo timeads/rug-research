@@ -89,6 +89,13 @@ Dalton State College's archive of the carpet and chenille industry.
   - photographs of early Dalton and Chattanooga tufting machines;
   - Sims Textile catalogues, and whether the Sims sheets at the Center are originals or facsimiles.
 
+### 5b. Deaton's sources (from *Bedspreads to Broadloom*)
+The book's bibliography is transcribed in https://github.com/timeads/rug-research/blob/claude/ecstatic-hamilton-gw4o0u/research/deaton-sources.md. Several entries are already in the database tagged `Deaton bibliography`; update those records with what you find rather than adding new ones.
+- **Georgia Historic Newspapers** (https://gahistoricnewspapers.galileo.usg.edu/): search for Catherine Evans Whitener's own account, "Mrs. Whitener Recalls Beginning of Bedspread Industry", *The Dalton News*, 11 March 1937. Also look for W. M. Sapp, "The Genesis of a Great Industry", in *The Dalton News*. Try `Whitener bedspread`, `bedspread industry Dalton 1937`, `tufted bedspread`.
+- **Internet Archive** (https://archive.org/): *Reader's Digest*, April 1941, pp. 41–44, R. E. Hamilton, "Bedspread Bonanza". Find the April 1941 issue among the microfilmed volumes and record its address and page.
+- **WorldCat**: Roy H. Windham, *The Tufting Machine: A Practical Text of Instruction for Machine Fixers* (3rd ed., Rome, Ga.: Southern Craft Company, 1941), and any earlier edition. Note which libraries hold it.
+- **Bandy Heritage Center**: in the Thomas Deaton collection, list any interview transcripts named in the catalogue. Priority interviews: Moench, Weissenberger (Looper's daughter), Albert Cobble, Jolley, Card, Painter, W. R. and Addie Evans, Barrow (DuPont) and R. E. Hamilton (TTMA).
+
 ### 6. Chronicling America (newspapers): https://www.loc.gov/collections/chronicling-america/
 US newspapers to 1963.
 - Searches (try each with Georgia newspapers and nationally): `tufted bedspreads`, `chenille spreads`, `Dalton bedspreads`, `candlewick spreads`, `tufting machine`, `tufted rugs`, `hand-tufted`, `broadloom`.
