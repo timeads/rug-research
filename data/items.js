@@ -11132,7 +11132,10 @@ window.RUG_ITEMS = [
       "checked from search results"
     ],
     "status": "unverified",
-    "confidence": "suggestive"
+    "confidence": "suggestive",
+    "image": "http://img2.chinadaily.com.cn/images/202505/12/682169dda310a04a96783487.jpeg",
+    "imageCredit": "China Daily",
+    "imageSource": "auto"
   },
   {
     "id": "finding-cnc-delos-robotic-2013",
