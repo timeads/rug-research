@@ -565,10 +565,10 @@ window.RUG_ITEMS = [
     "id": "event-bcf-nylon",
     "type": "event",
     "title": "DuPont introduces bulked continuous filament (BCF) nylon for carpet",
-    "date": "1957–1959",
-    "dateStart": 1957,
-    "dateEnd": 1959,
-    "description": "Sources disagree on the date: the New Georgia Encyclopedia says 1957; Material Intelligence says 1959. BCF made tufted nylon carpet resilient and cheap. Confirm against Hagley's Textile Fibers records.\n\nUpdate 2026-10-28 (Claude in Chrome): DuPont's own commemorative booklet \"Nylon: The First 25 Years\" (Textile Fibers Department, 1963; Hagley 1984259_121412_004, https://digital.hagley.org/1984259_121412_004) gives 1958 in its chronology: \"A special bulked continuous filament nylon yarn was developed for carpeting; it soon revolutionized the market for rugs and carpeting by [introducing] nylon filament in loop pile construction\" (read from Hagley's OCR, which is garbled; check the page image, image 2). The database's \"501\" record also gives 1958. Date left as written until Tim reviews.",
+    "date": "1958",
+    "dateStart": 1958,
+    "dateEnd": 1958,
+    "description": "Sources disagree on the date: the New Georgia Encyclopedia says 1957; Material Intelligence says 1959. BCF made tufted nylon carpet resilient and cheap. Confirm against Hagley's Textile Fibers records.\n\nUpdate 2026-10-28 (Claude in Chrome): DuPont's own commemorative booklet \"Nylon: The First 25 Years\" (Textile Fibers Department, 1963; Hagley 1984259_121412_004, https://digital.hagley.org/1984259_121412_004) gives 1958 in its chronology: \"A special bulked continuous filament nylon yarn was developed for carpeting; it soon revolutionized the market for rugs and carpeting by [introducing] nylon filament in loop pile construction\" (read from Hagley's OCR, which is garbled; check the page image, image 2). The database's \"501\" record also gives 1958. Dated 1958 on Tim's review (Oct 2026), following DuPont's own chronology; the secondary sources' 1957 and 1959 are noted above. Still to do: quote the entry from the page image rather than the OCR.",
     "sourceUrl": "https://www.georgiaencyclopedia.org/articles/business-economy/carpet-industry/",
     "themes": [
       "Nylon & synthetic fibers (DuPont)",
@@ -576,10 +576,10 @@ window.RUG_ITEMS = [
     ],
     "tags": [
       "timeline",
-      "date conflict",
       "found by Claude in Chrome",
       "Hagley",
-      "for: Nylon"
+      "for: Nylon",
+      "date from DuPont chronology"
     ],
     "status": "unverified",
     "imageSource": "rejected",

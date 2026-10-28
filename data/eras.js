@@ -26,7 +26,7 @@ window.RUG_ERAS = [
   {
     id: "era-1950-1969", from: 1950, to: 1969,
     title: "Broadloom: tufting takes the floor",
-    summary: "Wide multi-needle machines moved tufting from bedspreads to wall-to-wall carpet. Tufted carpet was about 10% of US carpet in 1950, and records here put it at roughly half the wholesale price of woven. Carpet nylons followed (bulked continuous filament in 1957, \"501\" in 1958, Antron in the 1960s), and woven makers consolidated (Mohasco, 1956). The technique spread abroad: Japan in 1954, France in 1954, German trade press noticing it in 1959, Genemuiden in 1967. New ways to make floor covering without yarn construction appeared too: needle-punch felts, carpet tiles (about 1956–58) and, in the 1960s, flocked and printed carpet. Portable hand machines were patented, \"tufting gun\" was in print by 1964, and the first custom hand-tufting studios opened."
+    summary: "Wide multi-needle machines moved tufting from bedspreads to wall-to-wall carpet. Tufted carpet was about 10% of US carpet in 1950, and records here put it at roughly half the wholesale price of woven. Carpet nylons followed (bulked continuous filament and \"501\", both 1958 in DuPont's own chronology; Antron in the 1960s), and woven makers consolidated (Mohasco, 1956). The technique spread abroad: Japan in 1954, France in 1954, German trade press noticing it in 1959, Genemuiden in 1967. New ways to make floor covering without yarn construction appeared too: needle-punch felts, carpet tiles (about 1956–58) and, in the 1960s, flocked and printed carpet. Portable hand machines were patented, \"tufting gun\" was in print by 1964, and the first custom hand-tufting studios opened."
   },
   {
     id: "era-1970-1999", from: 1970, to: 1999,
