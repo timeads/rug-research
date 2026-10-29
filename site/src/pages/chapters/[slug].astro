@@ -9,10 +9,12 @@ import Cite from "../../components/Cite.astro";
 import { db, record, imageUrl, imageCleared, citation, base, canonical, absolute, CHAPTER_CLOTH, clothName } from "../../lib/data.js";
 
 export async function getStaticPaths() {
-  const chapters = await getCollection("chapters");
-  return chapters.map(entry => ({ params: { slug: entry.id }, props: { entry } }));
+  // In book order, so each chapter knows the one before and after it.
+  const chapters = (await getCollection("chapters")).sort((a, b) => a.data.number - b.data.number);
+  const brief = e => e && { slug: e.id, number: e.data.number, title: e.data.title, cloth: CHAPTER_CLOTH[e.data.researchChapter] || "grey" };
+  return chapters.map((entry, i) => ({ params: { slug: entry.id }, props: { entry, prev: brief(chapters[i - 1]), next: brief(chapters[i + 1]) } }));
 }
-const { entry } = Astro.props;
+const { entry, prev, next } = Astro.props;
 const { Content, remarkPluginFrontmatter, headings } = await render(entry);
 const notes = remarkPluginFrontmatter.notes || [];
 const d = entry.data;
@@ -63,6 +65,14 @@ const schema = {
     <div class="prose">
       <Content components={{ Cite }} />
     </div>
+    <nav class="ch-pager" aria-label="Previous and next chapters">
+      {prev
+        ? <a class="prev" rel="prev" href={base(`chapters/${prev.slug}/`)}><span class="dir">Previous chapter</span><span class="which"><i style={`--c:var(--cloth-${prev.cloth})`}></i><b class="num">Shade {prev.number}</b></span><span class="t">{prev.title}</span></a>
+        : <a class="prev" href={base("")}><span class="dir">Contents</span><span class="t">All the chapters</span></a>}
+      {next
+        ? <a class="next" rel="next" href={base(`chapters/${next.slug}/`)}><span class="dir">Next chapter</span><span class="which"><i style={`--c:var(--cloth-${next.cloth})`}></i><b class="num">Shade {next.number}</b></span><span class="t">{next.title}</span></a>
+        : <a class="next" href={base("")}><span class="dir">Contents</span><span class="t">Back to all the chapters</span></a>}
+    </nav>
     <section class="endmatter">
       <div>
         <h2 id="notes">Notes</h2>

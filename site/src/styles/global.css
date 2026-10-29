@@ -156,10 +156,10 @@ h1.ch-title { margin: 1.75rem 0 0; font: 680 clamp(2.5rem, 6vw, 4.5rem)/1 var(--
 .toc { display: none; }
 @media (min-width: 1180px) {
   .reading { display: grid; grid-template-columns: minmax(0, 1fr) var(--wide); column-gap: var(--gap); }
-  .reading > .prose, .reading > .endmatter { grid-column: 2; }
+  .reading > .prose, .reading > .ch-pager, .reading > .endmatter { grid-column: 2; }
   .reading > .prose { margin-left: auto; } /* notes end under the masthead's last link */
   .prose > .full { width: auto; margin-left: 0; } /* full-bleed needs a centred column; beside the list it is wide */
-  .toc { display: block; grid-column: 1; grid-row: 1 / span 2; align-self: start; position: sticky; top: 4.5rem; max-width: 16rem; padding: 3.75rem 0 2rem; }
+  .toc { display: block; grid-column: 1; grid-row: 1 / span 3; align-self: start; position: sticky; top: 4.5rem; max-width: 16rem; padding: 3.75rem 0 2rem; }
   .toc p { margin: 0 0 .7rem; font: 650 .8125rem/1.3 var(--frame); color: var(--ink); }
   .toc ol { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--rule); }
   .toc a { display: block; padding: .5rem 0; border-bottom: 1px solid var(--rule); font: 450 .875rem/1.35 var(--frame); color: var(--ink-3); text-decoration: none; text-wrap: pretty; }
@@ -216,6 +216,19 @@ h1.ch-title { margin: 1.75rem 0 0; font: 680 clamp(2.5rem, 6vw, 4.5rem)/1 var(--
 .aside ul { margin: 0; padding-left: 1.1rem; }
 .aside li { max-width: 62ch; margin: .3rem 0; text-wrap: pretty; }
 .aside .sidenote, .aside .sidenote.open { display: none; } /* in the panel, a note number links to the notes at the end */
+
+/* previous and next chapter, between the text and its notes */
+.ch-pager { max-width: var(--wide); display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin: 1rem 0 0; }
+.ch-pager a { display: flex; flex-direction: column; gap: .35rem; padding: 1rem 0 .25rem; border-top: 1px solid var(--rule-2); text-decoration: none; color: var(--ink); }
+.ch-pager .next { text-align: right; align-items: flex-end; }
+.ch-pager .dir { font: 600 .8125rem/1.2 var(--frame); color: var(--shade-ink); }
+.ch-pager .which { display: flex; align-items: center; gap: .5rem; font: 450 .8125rem/1 var(--frame); color: var(--ink-3); }
+.ch-pager .which i { width: 1.75rem; height: .5rem; border-radius: 1px; background: var(--c); }
+.ch-pager .which b { font: 700 .875rem/1 var(--frame); font-stretch: 84%; color: var(--ink-2); }
+.ch-pager .t { font: 600 1.125rem/1.3 var(--frame); text-wrap: balance; }
+.ch-pager a:hover .t { text-decoration: underline; text-underline-offset: .2em; }
+.ch-pager a:hover { border-top-color: var(--ink); }
+@media (max-width: 640px) { .ch-pager { grid-template-columns: 1fr; gap: 0; } .ch-pager .next { text-align: left; align-items: flex-start; } }
 
 /* end matter */
 .endmatter { max-width: var(--wide); margin: 2rem 0 0; padding: 2.5rem 0 4rem; border-top: 2px solid var(--ink); display: grid; grid-template-columns: minmax(0, 1fr) var(--margin); gap: 2.5rem var(--gap); }
