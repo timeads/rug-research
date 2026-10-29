@@ -1,27 +1,142 @@
 Site: https://www.historyoftuftedrugs.com/
 robots.txt: 200
-sitemap.xml: 200, 482 pages
+sitemap.xml: 200, 542 pages
 no-such-page/: 404
 robots tag on the cover: index, follow
 https://historyoftuftedrugs.com/chapters/dalton/?x=1: 301 -> https://www.historyoftuftedrugs.com/chapters/dalton/?x=1
 cover: 0 of 0 images loaded
-chapter-desktop: 9 of 9 images loaded
-chapter-phone: 9 of 9 images loaded
-dalton-desktop: 9 of 9 images loaded
-dalton-phone: 9 of 9 images loaded
+chapter-desktop: 8 of 8 images loaded
+chapter-phone: 8 of 8 images loaded
+dalton-desktop: 10 of 10 images loaded
+dalton-phone: 10 of 10 images loaded
 cover-phone: 0 of 0 images loaded
-timeline: 194 of 196 images loaded
+timeline: 205 of 226 images loaded
+  broken: https://iiif.wellcomecollection.org/image/V0024155ER.jpg/full/500,/0/default.jpg
+  broken: https://emuseum.colonialwilliamsburg.org/internal/media/dispatcher/235586/preview
+  broken: https://emuseum.chs.org/emuseum/internal/media/dispatcher/12509/full
+  broken: https://ids.si.edu/ids/deliveryService?id=NMAH-AHB2019q158025&max=800
+  broken: https://emuseum.chs.org/emuseum/internal/media/dispatcher/17570/full
+  broken: https://dlg.usg.edu/thumbnails/dlg/vang/dlg_vang_gor366.jpg
+  broken: https://dlg.usg.edu/thumbnails/dlg/vang/dlg_vang_gor290.jpg
+  broken: https://dlg.usg.edu/thumbnails/dlg/vang/dlg_vang_cat008.jpg
+  broken: https://dlg.usg.edu/thumbnails/dlg/vang/dlg_vang_gor206.jpg
+  broken: https://dlg.usg.edu/thumbnails/dlg/vang/dlg_vang_brt126.jpg
+  broken: https://dlg.usg.edu/thumbnails/gbc/photographs/gbc_photographs_2638.jpg
+  broken: https://dlg.usg.edu/thumbnails/dlg/vang/dlg_vang_wtf225.jpg
+  broken: https://dlg.usg.edu/thumbnails/gsu/lane/gsu_lane_10910.jpg
+  broken: https://dlg.usg.edu/thumbnails/gsu/lane/gsu_lane_3971.jpg
+  broken: https://dlg.usg.edu/thumbnails/dlg/vang/dlg_vang_wtf292.jpg
+  broken: https://dlg.usg.edu/thumbnails/dlg/vang/dlg_vang_wtf152.jpg
+  broken: https://dlg.usg.edu/thumbnails/nge/ngen/nge_ngen_m-4007.jpg
   broken: https://img2.chinadaily.com.cn/images/202505/12/682169dda310a04a96783487.jpeg
   broken: https://welspunflooring.com/images/about/banner.webp
-record: 1 of 1 images loaded
-ch-processes: 6 of 6 images loaded
-ch-before-the-machine: 5 of 5 images loaded
-ch-woven: 5 of 5 images loaded
-ch-machine: 6 of 6 images loaded
-ch-abroad: 0 of 0 images loaded
-ch-china: 1 of 1 images loaded
+  broken: https://cdn.shopify.com/s/files/1/0025/7530/2719/files/All-three-machines-web_2781e818-c74e-46e3-814a-693e76b9ac5a.jpg?v=1737990511
+  broken: https://cdn.hackaday.io/images/9350651645120696026.png
+record: 6 of 6 images loaded
+ch-processes: 6 of 7 images loaded
+  broken: https://emuseum.chs.org/emuseum/internal/media/dispatcher/12509/full
+ch-before-the-machine: 4 of 5 images loaded
+  broken: https://emuseum.chs.org/emuseum/internal/media/dispatcher/17570/full
+ch-woven: 7 of 7 images loaded
+ch-machine: 7 of 7 images loaded
+ch-abroad: 3 of 3 images loaded
+ch-china: 2 of 2 images loaded
 ch-gun: 8 of 8 images loaded
-ch-india: 0 of 0 images loaded
-ch-today: 1 of 1 images loaded
-ch-cnc: 7 of 7 images loaded
-ch-hobby: 3 of 3 images loaded
+ch-india: 4 of 5 images loaded
+  broken: https://welspunflooring.com/images/about/banner.webp
+ch-today: 6 of 6 images loaded
+ch-cnc: 8 of 8 images loaded
+ch-hobby: 5 of 6 images loaded
+  broken: https://cdn.shopify.com/s/files/1/0025/7530/2719/files/All-three-machines-web_2781e818-c74e-46e3-814a-693e76b9ac5a.jpg?v=1737990511
+figs/processes-0.jpg: The Pazyryk carpet, wool knotted pile, 183 by 200 cm, from barrow no. 5 at Pazyryk, now in the State Hermitage Museum. Source Permission pending
+figs/processes-1.jpg: Fragment of felt appliqué for a carpet or wall hanging, showing a bird, from Pazyryk barrow no. 5. Silk Road Seattle, University of Washington (photographs of objects in the State Hermitage Museum), not found (inventory numbers for these felts were not in search results)SourcePermission pending
+figs/processes-2.jpg: Cotton dhurrie from North India, late 19th century, 232 by 137 cm, with elephants and horses. Penn Museum (University of Pennsylvania Museum of Archaeology and Anthropology), 29-96-81SourcePermission pending
+figs/processes-3.jpg: Carpet attributed to Thomas Whitty, Axminster carpet manufactory, Devon, about 1765: wool, knotted pile. The Metropolitan Museum of Art, 2025.725Source
+figs/processes-4.jpg: Stair-carpet sample by James Templeton of Glasgow, late 19th century, its pile woven in chenille strips. Victoria and Albert Museum, V&A system no. O352290 (museum number not seen)SourcePermission pending
+figs/processes-5.jpg (IMAGE BROKEN): Yarn-sewn hearth rug, 1800–1820: cut and uncut wool loops on plain-woven linen, with a boy and girl under a grapevine. Connecticut Historical Society, 2010.409.0SourcePermission pending
+figs/processes-6.jpg (IMAGE BROKEN): 
+figs/processes-7.jpg: Joe C. Cobble, “Multiple Needle Tufting Machine”, US patent 2,335,487, filed 1941 and granted 1943. USPTO via Google Patents (public domain), US2335487ASource
+figs/before-the-machine-0.jpg: Bed rug inscribed “Mary Foot AD 1778”, probably made in Connecticut. Winterthur Museum, bequest of Henry Francis du Pont. Source Permission pending
+figs/before-the-machine-1.jpg: Bed rug marked “C/1819”, possibly from the Connecticut River Valley. Winterthur Museum. Winterthur Museum, 1964.1641SourcePermission pending
+figs/before-the-machine-2.jpg (IMAGE BROKEN): Candlewick bed covering at the Connecticut Historical Society, from its group of maker-named pieces dated 1820 to 1825. Connecticut Historical SocietySourcePermission pending
+figs/before-the-machine-3.jpg: The “Caswell carpet”, an embroidered carpet made by Zeruah H. Guernsey Caswell at Castleton, Vermont, 1832–35. Metropolitan Museum of Art. The Metropolitan Museum of Art (Open Access, public domain)Source
+figs/before-the-machine-4.jpg: Orville A. Carroll, “Shaker Tufted Wool Rug”, watercolour for the Index of American Design, Kentucky, about 1938. National Gallery of Art, CC0, NGA 25792Source
+figs/woven-0.jpg: Knotted wool carpet attributed to Thomas Whitty of Axminster, about 1765, acquired by the Metropolitan Museum in 2025. Source
+figs/woven-1.jpg: Savonnerie carpet for the Grande Galerie of the Louvre, after designs by Charles Le Brun, 1680: knotted wool pile, 896.6 by 325.1 cm. Metropolitan Museum of Art. The Metropolitan Museum of Art (Open Access, public domain), 1976.155.114SourcePermission pending
+figs/woven-2.jpg: Kidderminster carpeting in double cloth with a star-and-cross design, by Dove & Co. of Leeds, mid-19th century. Victoria and Albert Museum. Victoria and Albert Museum, T.5-1959SourcePermission pending
+figs/woven-3.jpg (IMAGE BROKEN): 
+figs/woven-4.jpg: Brussels carpet sample woven in 1980 by Hugh Mackay & Co. after a design by Anna Maria Garthwaite dated 1753. Victoria and Albert Museum, T.11-1981SourcePermission pending
+figs/woven-5.jpg: “Lily” Wilton carpet sample, designed by William Morris in 1875 and woven by the Wilton Royal Carpet Factory. Victoria and Albert MuseumSourcePermission pending
+figs/woven-6.jpg: The Bigelow Carpet Mill at Clinton, Massachusetts, where the power Brussels loom went into production. en.wikipedia.orgSourcePermission pending
+figs/woven-7.jpg: Mohasco Industries, annual report for 1957, a 19-page pamphlet. Hagley Museum and Library. Hagley Museum and Library, 72430_477SourcePermission pending
+figs/dalton-0.jpg: Chenille Bedspreads Source Permission pending
+figs/dalton-1.jpg: Mrs. J. A. Green and her son Allen Burton tufting bedspreads beside U.S. Highway 41, 1933. Georgia Archives (Vanishing Georgia)SourcePermission pending
+figs/dalton-2.jpg: Fan-tailed peacock in rows of separate cut tufts on a yellow ground, with a scalloped tufted edge. Photo: Tuft the WorldSource
+figs/dalton-3.jpg: Standing pink peacock: solid areas in packed rows of tufts, outlines in single rows. Photo: Tuft the WorldSource
+figs/dalton-4.jpg: Line tufting: tulips and scrolls drawn in continuous rows of cut pile. Photo: Tuft the WorldSource
+figs/dalton-5.jpg: Dot tufting: a floral stippled in separate tufts, with a diamond border. Photo: Tuft the WorldSource
+figs/dalton-6.jpg: Chenille rug inscribed “NEW V-8 FORD 1936”, a gift to Henry Ford. The Henry Ford, 00.1510.19SourcePermission pending
+figs/dalton-7.jpg: Jess Spencer Kile, “Machine and Method for Making Tufted Articles”, filed 1939 for Cabin Crafts. USPTO via Google Patents (public domain), US2389914ASource
+figs/dalton-8.jpg: Sims Textile Co. mail-order sheets, with a tufted sample and a yarn tassel, at the Bandy Heritage Center. Photo: Tuft the WorldSource
+figs/dalton-9.jpg (IMAGE BROKEN): 
+figs/dalton-10.jpg: DuPont product photograph, about 1955: a bath mat and matching lid cover tufted with DuPont nylon. Hagley Museum and Library, 1972341_1332SourcePermission pending
+figs/machine-0.jpg: Joe C. Cobble and George B. Muse, “Multiple Needle Tufting Machine”, US patent 2,335,487, filed 24 January 1941, sheet 1. Source
+figs/machine-1.jpg: William H. Barnett, “Sewing Machine”, US patent 1,452,632, granted 24 April 1923, sheet 1. USPTO via Google Patents (public domain), US1452632ASource
+figs/machine-2.jpg: August J. Carter, “Tufting-Attachment Mechanism for Sewing Machines”, US patent 1,485,213, filed 21 July 1922, sheet 1. USPTO via Google Patents (public domain), US1485213ASource
+figs/machine-3.jpg: John M. Gladish, “Loop and Pile Forming Machine”, filed 7 July 1928 for Valway Rug Mills, LaGrange, sheet 1. USPTO via Google Patents (public domain), US1907292ASource
+figs/machine-4.jpg: Glenn Looper, “Tufting Machine”, US patent 2,123,114, filed 15 December 1936, sheet 1. USPTO via Google Patents (public domain), US2123114ASource
+figs/machine-5.jpg: James A. Cobble Sr. and Jr., “Tufting Machine”, US patent 2,977,905, filed 4 March 1958, sheet 1. USPTO via Google Patents (public domain), US2977905ASource
+figs/machine-6.jpg: Joseph L. Card, “Apparatus for Making Patterned Tufted Pile Fabric”, filed 24 December 1956 for Cobble Brothers Machinery Co., sheet 1. USPTO via Google Patents (public domain), US2935037ASource
+figs/nylon-0.jpg: Nylon carpet by the Nye-Wait Company, woven to order in two pile heights: “Splendante” in a Celtic design, with a plain “Cirque” border. DuPont photograph, about 1955. Source Permission pending
+figs/nylon-1.jpg: Wallace H. Carothers, “Linear condensation polymers,” US patent 2,071,250, granted 16 February 1937. USPTO via Google Patents (public domain), US2071250ASource
+figs/nylon-2.jpg: The Nylon Suite at the Hotel DuPont, Wilmington. On the floor, James Lees and Sons’ “Sculptex” carpet with an all-nylon face. Hagley dates the photograph about 1945; DuPont’s 1948 press release suggests a later date. Hagley Museum and Library, 1972341_1401 (related views 1972341_1366, _1369, _1371, 
+figs/nylon-3.jpg (IMAGE BROKEN): 
+figs/nylon-4.jpg: Nancy du Pont Reynolds Cooch’s nylon hooked rug, 1950. Hagley Museum and Library, 2012.8.1SourcePermission pending
+figs/nylon-5.jpg: A bath mat and lid cover “tufted with DuPont nylon,” about 1955. Hagley Museum and Library, 1972341_1332SourcePermission pending
+figs/nylon-6.jpg: Nylon: The First 25 Years, DuPont’s anniversary booklet, 1963. Hagley Museum and Library, 1984259_121412_004SourcePermission pending
+figs/nylon-7.jpg: “DuPont Carpet Nylon,” advertisement from the New York Times Magazine, 1960. Hagley Museum and Library, dpads_1803_00475SourcePermission pending
+figs/nylon-8.jpg: “A Houseful of Value … All ‘501’,” DuPont advertisement, 1965. Hagley Museum and Library, dpads_1803_00643SourcePermission pending
+figs/nylon-9.jpg (IMAGE BROKEN): 
+figs/abroad-0.jpg: Yamagata Dantsu (Oriental Carpet Mills) Source Permission pending
+figs/abroad-1.jpg: Cormar Carpets, founded by Neville Cormack in 1956 and still run by his family. en.wikipedia.org (image from en.wikipedia.org)SourcePermission pending
+figs/abroad-2.jpg (IMAGE BROKEN): 
+figs/abroad-3.jpg: Royal Thai, set up in Thailand in 1967, makes hand-tufted and Axminster carpet, mainly for hotels. Royal Thai (Thailand Carpet Manufacturing / TCM Corporation)SourcePermission pending
+figs/china-0.jpg: Front page of CN2723478Y, “A hand-held horizontal electric weaving needle for weaving carpets”, a Chinese utility model filed on 19 April 2004. CNIPA (China National Intellectual Property Administration) via Google Patents, CN2723478YSource
+figs/china-1.jpg: Drawing from CN113584750A, a Chinese application by the American firm Card-Monroe for a tufting machine, with priority from 2016. Patent drawing via Google Patents (public domain)Source
+figs/gun-0.jpg: Box of Ye “Susan Burr” Hooked Rug Machine, made by The Holley Associates of Torrington, Connecticut, with its poem. Tuft the World collection. Source
+figs/gun-1.jpg (IMAGE BROKEN): 
+figs/gun-2.jpg: Ebenezer Ross, “Turfing Implement,” US patent 463,548, granted 17 November 1891: a two-handled needle-and-gauge tool. USPTO via Google Patents (public domain), US463548ASource
+figs/gun-3.jpg: “How to Use Ye Susan Burr Hooked Rug Machine”: the printed instructions, with a diagram of the needle, ring and gauge. Tuft the WorldSource
+figs/gun-4.jpg: The All Steel Shuttle Needle of the Molter-Reinhard Co., Chicago: needle point in one handle, looper in the other. Tuft the WorldSource
+figs/gun-5.jpg: Lawrence P. Smith, “Motor Operated Tufting Machine,” US patent 1,917,162, filed 1932 and assigned to Cabin Crafts. USPTO via Google Patents (public domain), US1917162ASource
+figs/gun-6.jpg: Alfred Schauer, “Device for Forming Cut Pile Fabrics and the Like,” US patent 3,142,276, filed 1962: the patent that uses the phrase “tufting gun”. USPTO via Google Patents (public domain), US3142276ASource
+figs/gun-7.jpg: Hartmut Scholz, “Arrangement for the Tufting of Carpets,” US patent 3,968,758, 1976: a pneumatic hand gun with an air-fed hollow needle. USPTO via Google Patents (public domain), US3968758ASource
+figs/gun-8.jpg: Hartmut Scholz, “Device for Providing Rugs and the Like with Tufts,” US patent 4,029,031, 1977: a manual two-arm tool, fed from a yarn cone. USPTO via Google Patents (public domain), US4029031ASource
+figs/india-0.jpg: European founders in the carpet belt: A. Tellery at Bhadohi in 1881, by a company account, and the three Britons who founded Obeetee at Mirzapur in 1920 Source Permission pending
+figs/india-1.jpg: Hands (Hands Carpets / Patodia Exports) of Bhadohi, which makes hand-knotted and hand-tufted carpets. Hands (Hands Carpets / Patodia Exports)SourcePermission pending
+figs/india-2.jpg: Obeetee, founded at Mirzapur in 1920 by F. H. Oakley, F. H. Bowden and J. A. L. Taylor. ObeeteeSourcePermission pending
+figs/india-3.jpg (IMAGE BROKEN): 
+figs/india-4.jpg: K. K. Goswami (ed.), Advances in Carpet Manufacture, second edition (Woodhead Publishing, 2017). shop.elsevier.comSourcePermission pending
+figs/india-5.jpg: Welspun Flooring, formed in 2016 as a subsidiary of the home-textile maker Welspun India. Welspun FlooringSourcePermission pending
+figs/today-0.jpg: Kasthall Source Permission pending
+figs/today-1.jpg: Ege Carpets (Egetæpper) of Herning, Denmark, which began in 1938 with two looms. Ege Carpets (Egetæpper)SourcePermission pending
+figs/today-2.jpg: Victoria Carpets, founded at Kirkcaldy in 1895, moved to Kidderminster in 1900. Victoria PLC (Victoria Carpets)SourcePermission pending
+figs/today-3.jpg: Edward Fields, the New York carpet house founded in 1935, now a Tai Ping brand. Edward FieldsSourcePermission pending
+figs/today-4.jpg: Pinton, the tapestry manufacture founded at Felletin, near Aubusson, in 1867. Pinton (Ateliers Pinton)SourcePermission pending
+figs/today-5.jpg: William H. Satterfield, “Hand-held Tufting Mending Gun”, US patent 5,090,341, filed 1990 and granted 1992. USPTO via Google Patents (public domain), US5090341ASource
+figs/cnc-0.jpg: Werk Source
+figs/cnc-1.jpg: Joseph L. Card, “Apparatus for Making Patterned Tufted Pile Fabric”, filed 24 December 1956 for Cobble Brothers Machinery Co.: sheet 1. USPTO via Google Patents (public domain), US2935037ASource
+figs/cnc-2.jpg: Westpoint Pepperell, “Control apparatus for textile dyeing and tufting machinery”, published 15 August 1978: sheet 1. USPTO via Google Patents (public domain), US4106416ASource
+figs/cnc-3.jpg: Taylor, Neely and Card, “Computer controlled tufting machine”, US patent 4,867,080, granted 19 September 1989: sheet 1. USPTO via Google Patents (public domain), US4867080ASource
+figs/cnc-4.jpg: Gary L. Ingram, “Hollow needle tufting apparatus for producing patterned fabric”, US patent 5,165,352, granted 24 November 1992 and assigned to Tapistron International. USPTO via Google Patents (public domain), US5165352ASource
+figs/cnc-5.jpg: Wilcom, “Tufting machine”, EP1674605A1, Australian priority 2004: sheet 1. European Patent Office via Google Patents, EP1674605A1Source
+figs/cnc-6.jpg: Shenyang Institute of Automation and Yiwu New Rainbow Craft Carpet Co., “Fully computerised servo 3D gun-tufted carpet machine”, filed 19 December 2014: sheet 1. CNIPA (China National Intellectual Property Administration) via Google Patents, CN104562491ASource
+figs/cnc-7.jpg (IMAGE BROKEN): 
+figs/cnc-8.jpg: From Owen Trueblood's robotic tufting project on Hackaday.io, 2022. Hackaday.ioSourcePermission pending
+figs/hobby-0.jpg: Lid of Ronco’s “Speed-Tufting Kit”, sold “as seen on TV” in 1975: a hand tufting tool worked over a rug on a frame. Source
+figs/hobby-1.jpg: “Jewel” rug-hooking tool, patented in the United States in 1886, picked up in Auckland in 1930. Auckland War Memorial Museum, CC BY 4.0, 1932.212.1SourcePermission pending
+figs/hobby-2.jpg: Box front of Ye “Susan Burr” Hooked Rug Machine, with its poem and “Made by The Holley Associates, Torrington, Conn.” Tuft the WorldSource
+figs/hobby-3.jpg (IMAGE BROKEN): 
+figs/hobby-4.jpg: Contents of the Ronco kit: the moulded-plastic tufting tool, fabric shredder, yarn, rug needle, latex sample, printed burlap backing and pattern sheet. Tuft the World (own photograph), Ronco #1500Source
+figs/hobby-5.jpg: Electric hand tufting guns sold by Tuft the World, the author’s firm. Tuft the WorldSource
+figs/hobby-6.jpg: Yangxin Ruixin Group, CN 111705448 A, a pneumatic tufting gun for a carpet robot, published 25 September 2020. CNIPA (China National Intellectual Property Administration) via Google Patents, CN111705448ASource
