@@ -2488,9 +2488,12 @@ window.RUG_ITEMS = [
     "confidence": "suggestive",
     "publisher": "Shodhganga PhD thesis",
     "date": "late 19th century–1920",
-    "dateStart": 1880,
-    "dateEnd": 1920,
-    "sourceUrl": "https://en.wikipedia.org/wiki/Obeetee"
+    "dateStart": 1920,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Obeetee",
+    "creator": "Obeetee",
+    "image": "https://www.obeetee.in/cdn/shop/files/1_ae02ef74-a2ea-45e0-9012-45961d7f14e1.jpg?v=1756800495&width=1400",
+    "imageCredit": "Obeetee",
+    "reviewedAt": "2026-10-29T00:00:40.030Z"
   },
   {
     "id": "ner-in-tariff-2025",
@@ -5317,7 +5320,46 @@ window.RUG_ITEMS = [
       "find source"
     ],
     "status": "unverified",
-    "confidence": "suggestive"
+    "confidence": "suggestive",
+    "image": "images/own/uploads/langhorne-wilton-mvss21k1.jpg",
+    "imageCredit": "Tuft the World",
+    "rights": "own",
+    "images": [
+      {
+        "src": "images/own/uploads/langhorne-wilton-mvss21k1.jpg"
+      },
+      {
+        "src": "images/own/uploads/langhorne-wilton-mvss21k1-2.jpg"
+      },
+      {
+        "src": "images/own/uploads/langhorne-wilton-mvss21k1-3.jpg"
+      },
+      {
+        "src": "images/own/uploads/langhorne-wilton-mvss21k1-4.jpg"
+      },
+      {
+        "src": "images/own/uploads/langhorne-wilton-mvss21k1-5.jpg"
+      },
+      {
+        "src": "images/own/uploads/langhorne-wilton-mvss21k1-6.jpg"
+      },
+      {
+        "src": "images/own/uploads/langhorne-wilton-mvss21k1-7.jpg"
+      },
+      {
+        "src": "images/own/uploads/langhorne-wilton-mvss21k1-8.jpg"
+      },
+      {
+        "src": "images/own/uploads/langhorne-wilton-mvss21k1-9.jpg"
+      },
+      {
+        "src": "images/own/uploads/langhorne-wilton-mvss21k1-10.jpg"
+      },
+      {
+        "src": "images/own/uploads/langhorne-wilton-mvss21k1-11.jpg"
+      }
+    ],
+    "reviewedAt": "2026-10-29T00:00:40.030Z"
   },
   {
     "id": "philly-encyclopedia-carpet",
@@ -15667,7 +15709,8 @@ window.RUG_ITEMS = [
     "imageCredit": "Photograph © Museum of Fine Arts, Boston",
     "imagePage": "https://collections.mfa.org/objects/258811",
     "rights": "not-requested",
-    "reviewedAt": "2026-10-28T21:52:11.222Z"
+    "reviewedAt": "2026-10-29T00:00:40.030Z",
+    "image": "images/own/uploads/u-mvs5zcw5oetn4-mvss21k1.jpg"
   },
   {
     "id": "u-mvs5zgbi4f8jd",
@@ -15742,5 +15785,25 @@ window.RUG_ITEMS = [
     "imagePage": "https://emuseum.history.org/objects/8815/bed-rug-by-rebekah-harris",
     "rights": "not-requested",
     "reviewedAt": "2026-10-28T21:52:11.222Z"
+  },
+  {
+    "id": "u-mvss1boffo03b",
+    "type": "company",
+    "status": "unverified",
+    "title": "Werk",
+    "institution": "Werk",
+    "techniques": [
+      "cnc"
+    ],
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company"
+    ],
+    "sourceUrl": "https://www.werk.com.cn/",
+    "image": "images/own/uploads/u-mvss1boffo03b-mvss21k2.jpg",
+    "rights": "own",
+    "reviewedAt": "2026-10-29T00:00:40.030Z"
   }
 ];
