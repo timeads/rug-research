@@ -851,11 +851,12 @@ window.RUG_ITEMS = [
       "overview"
     ],
     "status": "unverified",
-    "image": "https://georgiaencyclopedia.org/wp-content/uploads/2021/02/chenille-bedspreads_004-1200x630.jpg",
+    "image": "images/own/uploads/article-nge-chenille-mvtiul5p.jpg",
     "imageCredit": "georgiaencyclopedia.org",
     "imageSource": "auto",
     "region": "United States",
-    "rights": "not-requested"
+    "rights": "not-requested",
+    "reviewedAt": "2026-10-29T12:30:41.820Z"
   },
   {
     "id": "article-nge-carpet-industry",
@@ -15806,6 +15807,7 @@ window.RUG_ITEMS = [
     "sourceUrl": "https://www.werk.com.cn/",
     "image": "images/own/uploads/u-mvss1boffo03b-mvss21k2.jpg",
     "rights": "own",
-    "reviewedAt": "2026-10-29T00:00:40.030Z"
+    "reviewedAt": "2026-10-29T12:30:41.820Z",
+    "description": "Werk machine at Tuft the World, Philadelphia"
   }
 ];
