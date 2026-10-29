@@ -1230,7 +1230,7 @@
           <h2>${esc(l.name)}</h2>
           <p class="ms-ch-meta"><span id="ms-wc-${esc(l.id)}">${wordsIn(l.intro).toLocaleString()} words</span> · ${items.length} source${items.length === 1 ? "" : "s"}
             ${msEditing.has(l.id) ? `<button class="btn sm primary" data-ms-done="${esc(l.id)}">${icon("check")}Done</button>` : `<button class="btn sm" data-ms-text="${esc(l.id)}">${icon("edit")}Edit text</button>`}
-            <button class="linkish" data-ms-edit="${esc(l.id)}">Open in Write</button></p>
+            <button class="linkish" data-ms-edit="${esc(l.id)}">Open in Write</button>${pageOf(l.id) ? `<button class="linkish" data-ms-hero="${esc(l.id)}">Chapter picture</button>` : ""}</p>
         </header>
         ${msEditing.has(l.id)
           ? `<textarea class="ms-editor" data-ms-ta="${esc(l.id)}" aria-label="Text of chapter ${i + 1}" spellcheck="true">${esc(l.intro || "")}</textarea><p class="ms-hint">Saved as you type. Blank lines start new paragraphs; "- " starts a list item.</p>`
@@ -1941,6 +1941,126 @@
   });
   $("#btn-x-publish").onclick = () => pubDlg.close();
 
+  // ---------- chapter pictures ----------
+  // Chooses the picture at the head of a chapter on the public site (the "hero" in its chapter file),
+  // its crop and its caption, and commits the change with the same GitHub key as Publish. Only pictures
+  // already published qualify: a record's main picture or any photo in its gallery.
+  const heroDlg = $("#hero-dialog"), heroBody = $("#hero-body"), heroFoot = $("#hero-foot");
+  let heroSt = null; // { ch, page, name, current, figures, pick, focus, caption, q }
+  const pageOf = chId => (SEED_CHAPTERS.find(c => c.id === chId) || {}).page;
+  const isCleared = it => ["own", "public-domain"].includes(it.rights) || it.type === "patent";
+  // A record's pictures as the site addresses them: gallery photo n is image n; the main picture is image 0.
+  const picturesOf = it => {
+    if (!it) return [];
+    const ok = src => src && !String(src).startsWith("idb:") && safeUrl(src);
+    const gal = (Array.isArray(it.images) ? it.images : []).filter(g => g && ok(g.src));
+    if (!gal.length) return ok(it.image) ? [{ id: it.id, image: null, src: it.image, caption: "" }] : [];
+    const out = (Array.isArray(it.images) ? it.images : []).map((g, i) => g && ok(g.src) ? { id: it.id, image: i, src: g.src, caption: g.caption || "" } : null).filter(Boolean);
+    if (ok(it.image) && !out.some(p => p.src === it.image)) out.unshift({ id: it.id, image: null, src: it.image, caption: "" });
+    return out;
+  };
+  const picSrc = p => { const it = BASE_BY_ID[p.id]; return p.image == null || !it ? (it ? it.image : "") : ((it.images || [])[p.image] || {}).src || it.image; };
+  const samePic = (a, b) => a && b && a.id === b.id && (a.image || 0) === (b.image || 0);
+  const heroFooter = (primary, extra = "") => { heroFoot.innerHTML = `${extra}<span style="flex:1"></span><button type="button" class="btn" data-hero="close">${primary ? "Cancel" : "Close"}</button>${primary || ""}`; };
+  const openHero = async chId => {
+    const l = S.lists.find(x => x.id === chId), page = pageOf(chId);
+    if (!page) return toast("This chapter has no page on the public site yet.");
+    heroSt = { ch: chId, page, name: l ? l.name : chId, q: "" };
+    $("#hero-title").textContent = `Chapter picture: ${heroSt.name}`;
+    heroDlg.showModal();
+    if (!ghToken.get()) {
+      heroBody.innerHTML = `<p>Changing a chapter's picture saves it straight to the site, so it uses the same GitHub key as Publish. Set that up first, then come back here.</p>`;
+      return heroFooter("", `<button type="button" class="btn primary" data-hero="setup">Set up publishing</button>`);
+    }
+    heroBody.innerHTML = `<p class="pub-status" role="status">Reading the chapter on GitHub…</p>`; heroFooter("");
+    try {
+      const r = await RugPublish.loadHero({ repo: REPO, branch: PUBLISH_BRANCH, token: ghToken.get(), fetchImpl: fetch.bind(window), page });
+      heroSt.current = r.hero; heroSt.figures = r.figures;
+      heroSt.pick = r.hero ? { id: r.hero.record, image: r.hero.image != null ? r.hero.image : null } : null;
+      heroSt.focus = r.hero && r.hero.focus || "50% 50%";
+      heroSt.caption = r.hero && r.hero.caption || "";
+      renderHero();
+    } catch (e) {
+      heroBody.innerHTML = `<p class="pub-err" role="alert">${esc(ghErr(e))}</p>`; heroFooter("");
+    }
+  };
+  const renderHero = () => {
+    const st = heroSt, l = S.lists.find(x => x.id === st.ch);
+    const own = [...new Set([...(st.current ? [st.current.record] : []), ...((l && l.items) || [])])].map(id => BASE_BY_ID[id]).filter(Boolean);
+    const q = st.q.trim().toLowerCase();
+    const pool = q ? BASE.filter(it => [it.title, it.creator, it.institution, it.id].join(" ").toLowerCase().includes(q)) : own;
+    const pics = pool.flatMap(picturesOf).slice(0, 80);
+    const cur = st.pick && BASE_BY_ID[st.pick.id];
+    const src = cur ? picSrc(st.pick) : "";
+    const inText = st.pick && (st.figures || []).some(f => f.id === st.pick.id && (f.image || 0) === (st.pick.image || 0));
+    heroBody.innerHTML = `
+      <div class="hero-grid">
+        <section class="hero-preview" aria-label="Preview">
+          ${src ? `<div class="hero-pick"><img id="hero-img" src="${esc(safeUrl(src))}" alt="" referrerpolicy="no-referrer"><span class="hero-dot" style="left:${esc(st.focus.split(" ")[0])};top:${esc(st.focus.split(" ")[1])}"></span></div>
+            <p class="pub-note">Click the part of the picture that must stay in view; the crops below follow it.</p>
+            <div class="hero-crops"><figure><div class="crop wide"><img src="${esc(safeUrl(src))}" alt="" referrerpolicy="no-referrer" style="object-position:${esc(st.focus)}"></div><figcaption>Wide screen</figcaption></figure>
+              <figure><div class="crop phone"><img src="${esc(safeUrl(src))}" alt="" referrerpolicy="no-referrer" style="object-position:${esc(st.focus)}"></div><figcaption>Phone</figcaption></figure></div>
+            <p class="hero-rec"><strong>${esc(cur.title)}</strong>${st.pick.image ? ` · photo ${st.pick.image + 1}` : ""}</p>
+            ${!isCleared(cur) ? `<p class="pub-note">This picture is awaiting permission: the page will mark it “Permission pending”.</p>` : ""}
+            ${inText ? `<p class="pub-note">This picture also appears in the chapter's text.</p>` : ""}
+            <label class="pub-token">Caption <textarea id="hero-cap" rows="3">${esc(st.caption)}</textarea></label>`
+          : `<p class="pub-note">${st.current ? "The chapter's current picture isn't in the published database." : "This chapter has no picture at its head."} Choose one from the list.</p>`}
+        </section>
+        <section class="hero-choose" aria-label="Choose a picture">
+          <label class="pub-token">Search all records <input id="hero-q" type="search" value="${esc(st.q)}" placeholder="title, maker, museum…" autocomplete="off"></label>
+          <p class="pub-note">${q ? `${pics.length} picture${pics.length === 1 ? "" : "s"} matching “${esc(st.q)}”` : "Pictures from this chapter's sources"}</p>
+          <div class="hero-thumbs">${pics.map(p => `<button type="button" class="hero-thumb" data-hpick="${esc(p.id)}|${p.image == null ? "" : p.image}" aria-pressed="${samePic(p, st.pick)}" title="${esc(BASE_BY_ID[p.id].title)}${p.caption ? " · " + esc(p.caption) : ""}"><img src="${esc(safeUrl(p.src))}" alt="" loading="lazy" referrerpolicy="no-referrer"></button>`).join("") || `<p class="pub-note">No pictures found.</p>`}</div>
+        </section>
+      </div>`;
+    heroFooter(src ? `<button type="button" class="btn primary" data-hero="save">Save to the site</button>` : "", st.current ? `<button type="button" class="link-btn" data-hero="remove">Remove the chapter's picture</button>` : "");
+  };
+  const saveHeroTo = async hero => {
+    heroBody.innerHTML = `<p class="pub-status" role="status">Saving…</p>`; heroFooter("");
+    try {
+      const r = await RugPublish.saveHero({ repo: REPO, branch: PUBLISH_BRANCH, token: ghToken.get(), fetchImpl: fetch.bind(window), page: heroSt.page, hero,
+        message: hero ? `Chapter picture for ${heroSt.page}: ${hero.record}${hero.image ? ` (photo ${hero.image + 1})` : ""}` : `Remove the chapter picture from ${heroSt.page}` });
+      heroBody.innerHTML = r.nothing ? `<p>That is already the chapter's picture: nothing to change.</p>`
+        : `<p><strong>Saved.</strong> <a href="https://www.historyoftuftedrugs.com/chapters/${esc(heroSt.page)}/" target="_blank" rel="noopener">The chapter page</a> updates in about two minutes.</p><p><a href="https://github.com/${REPO}/commit/${esc(r.commit.sha)}" target="_blank" rel="noopener">The commit on GitHub</a></p>`;
+      heroFooter("");
+      if (!r.nothing && typeof checkJobs === "function") setTimeout(checkJobs, 4000);
+    } catch (e) {
+      heroBody.innerHTML = `<p class="pub-err" role="alert">Nothing was saved: ${esc(ghErr(e))}</p>`; heroFooter("");
+    }
+  };
+  heroDlg.addEventListener("click", e => {
+    const t = e.target.closest("[data-hpick]");
+    if (t) {
+      const [id, im] = t.dataset.hpick.split("|"), p = { id, image: im === "" ? null : +im };
+      const pic = picturesOf(BASE_BY_ID[id]).find(x => samePic(x, p));
+      if (!samePic(p, heroSt.pick)) { heroSt.pick = p; heroSt.focus = "50% 50%"; heroSt.caption = (pic && pic.caption) || BASE_BY_ID[id].title; }
+      return renderHero();
+    }
+    const img = e.target.closest("#hero-img");
+    if (img) {
+      const r = img.getBoundingClientRect(), x = Math.round(((e.clientX - r.left) / r.width) * 100), y = Math.round(((e.clientY - r.top) / r.height) * 100);
+      heroSt.focus = `${Math.max(0, Math.min(100, x))}% ${Math.max(0, Math.min(100, y))}%`;
+      heroSt.caption = $("#hero-cap") ? $("#hero-cap").value : heroSt.caption;
+      return renderHero();
+    }
+    const b = e.target.closest("[data-hero]"); if (!b) return;
+    const k = b.dataset.hero;
+    if (k === "close") heroDlg.close();
+    if (k === "setup") { heroDlg.close(); $("#btn-publish").click(); }
+    if (k === "save") {
+      const caption = $("#hero-cap").value.trim();
+      const it = BASE_BY_ID[heroSt.pick.id], im = heroSt.pick.image;
+      // Gallery photo 0 is written out only when it isn't also the record's main picture.
+      const image = im == null || (im === 0 && ((it.images || [])[0] || {}).src === it.image) ? undefined : im;
+      saveHeroTo({ record: heroSt.pick.id, image, focus: heroSt.focus === "50% 50%" ? undefined : heroSt.focus, caption: caption || undefined });
+    }
+    if (k === "remove" && confirm("Remove the picture from the head of this chapter?")) saveHeroTo(null);
+  });
+  heroDlg.addEventListener("input", debounce(e => {
+    if (e.target.id === "hero-q") { heroSt.q = e.target.value; heroSt.caption = $("#hero-cap") ? $("#hero-cap").value : heroSt.caption; renderHero(); const q = $("#hero-q"); q.focus(); q.setSelectionRange(q.value.length, q.value.length); }
+    if (e.target.id === "hero-cap") heroSt.caption = e.target.value;
+  }, 250));
+  $("#btn-x-hero").onclick = () => heroDlg.close();
+
   // add / export menu
   $("#btn-add").onclick = () => openEdit(null);
   const setMenu = open => { $("#export-menu").hidden = !open; $("#btn-export").setAttribute("aria-expanded", String(open)); if (open) $("#export-menu button").focus(); };
@@ -2004,6 +2124,7 @@
   });
   $("#view-manuscript").addEventListener("click", e => {
     const open = e.target.closest("[data-ms-open]"); if (open) return openDrawer(open.dataset.msOpen);
+    const hero = e.target.closest("[data-ms-hero]"); if (hero) return openHero(hero.dataset.msHero);
     const edit = e.target.closest("[data-ms-edit]"); if (edit) { S.activeList = edit.dataset.msEdit; save(); setView("compile"); return; }
     const start = e.target.closest("button[data-ms-text]");
     if (start) { msEditing.add(start.dataset.msText); renderManuscript(); $(`.ms-editor[data-ms-ta="${CSS.escape(start.dataset.msText)}"]`)?.focus(); return; }

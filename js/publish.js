@@ -201,6 +201,59 @@
     throw new Error("The database kept changing on GitHub while publishing. Try again in a minute.");
   }
 
-  const api = { plan, writeItemsFile, writeTranscriptsFile, github, publish, readWindow, clean };
+  // ---------- a chapter's opening picture ----------
+  // Chapters are MDX files with YAML frontmatter; the picture is the "hero" block:
+  //   hero:
+  //     record: <record id>
+  //     image: <gallery index, when not the main picture>
+  //     focus: "<x% y%>"   (the point the crop keeps in view)
+  //     caption: "<text>"
+  const frontmatter = mdx => { const m = String(mdx).match(/^---\n([\s\S]*?)\n---\n/); if (!m) throw new Error("The chapter file has no frontmatter."); return m; };
+  const unquote = v => { v = v.trim(); if (/^"/.test(v)) return JSON.parse(v); if (/^'/.test(v)) return v.slice(1, -1).replace(/''/g, "'"); return v; };
+  function readHero(mdx) {
+    const fm = frontmatter(mdx)[1].split("\n"), i = fm.findIndex(l => /^hero:\s*$/.test(l));
+    if (i < 0) return null;
+    const hero = {};
+    for (let j = i + 1; j < fm.length && /^\s+\S/.test(fm[j]); j++) {
+      const m = fm[j].match(/^\s+(\w+):\s*(.*)$/); if (!m) continue;
+      hero[m[1]] = m[1] === "image" ? Number(m[2]) : unquote(m[2]);
+    }
+    return hero.record ? hero : null;
+  }
+  // Replaces the hero block (or adds one after researchChapter, or removes it when hero is null).
+  function writeHero(mdx, hero) {
+    const m = frontmatter(mdx), lines = m[1].split("\n");
+    let i = lines.findIndex(l => /^hero:\s*$/.test(l)), at = i;
+    if (i >= 0) { let j = i + 1; while (j < lines.length && /^\s+\S/.test(lines[j])) j++; lines.splice(i, j - i); }
+    else at = lines.findIndex(l => /^researchChapter:/.test(l)) + 1 || lines.length;
+    if (hero && hero.record) {
+      const block = ["hero:", `  record: ${hero.record}`];
+      if (hero.image != null && hero.image !== "") block.push(`  image: ${Number(hero.image)}`);
+      if (hero.focus) block.push(`  focus: ${JSON.stringify(hero.focus)}`);
+      if (hero.caption) block.push(`  caption: ${JSON.stringify(hero.caption)}`);
+      lines.splice(at, 0, ...block);
+    }
+    return "---\n" + lines.join("\n") + "\n---\n" + String(mdx).slice(m[0].length);
+  }
+  // Reads the chapter file on GitHub, changes its picture, and commits; retries if the branch moves.
+  async function saveHero({ repo, branch, token, fetchImpl, page, hero, message }) {
+    const gh = github({ repo, branch, token, fetchImpl }), path = `site/src/content/chapters/${page}.mdx`;
+    for (let attempt = 1; attempt <= 3; attempt++) {
+      const parent = await gh.head(), src = await gh.file(path, parent), text = writeHero(src, hero);
+      if (text === src) return { nothing: true };
+      const commit = await gh.write(parent, [{ path, text }], message);
+      if (commit) return { commit };
+    }
+    throw new Error("The chapter kept changing on GitHub while saving. Try again in a minute.");
+  }
+  async function loadHero({ repo, branch, token, fetchImpl, page }) {
+    const gh = github({ repo, branch, token, fetchImpl });
+    const src = await gh.file(`site/src/content/chapters/${page}.mdx`, await gh.head());
+    // Pictures the chapter's text already shows, so the chooser can say so.
+    const figures = [...src.matchAll(/<Figure\b[^>]*?\bid="([^"]+)"[^>]*?>/g)].map(f => ({ id: f[1], image: +((f[0].match(/image=\{(\d+)\}/) || [])[1] || 0) }));
+    return { hero: readHero(src), figures };
+  }
+
+  const api = { readHero, writeHero, saveHero, loadHero, plan, writeItemsFile, writeTranscriptsFile, github, publish, readWindow, clean };
   if (typeof module !== "undefined" && module.exports) module.exports = api; else root.RugPublish = api;
 })(typeof window !== "undefined" ? window : globalThis);
