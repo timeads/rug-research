@@ -12371,7 +12371,7 @@ window.RUG_ITEMS = [
     "region": "Germany",
     "date": "by 2016 (dated used unit); current",
     "dateStart": 2016,
-    "sourceUrl": "https://heimtextil.messefrankfurt.com/frankfurt/en/exhibitor-search.detail.html/efab-gmbh/mf_1_0052756498_5034504_10000000202601.html",
+    "sourceUrl": "https://efab.de/",
     "institution": "EFAB GmbH",
     "description": "EFAB makes the eTuft, sold as Robotuft®, a robotic tufting machine for fashion carpets, rugs, samples and custom artificial grass, for one-off orders or series. The company says all components are sourced, made and assembled in Germany. Its Heimtextil exhibitor listings give up to 1,200 stitches per minute, 3–30 mm gauge and 100–500 stitches per metre. Pile types are U-tuft, J-tuft and loop. Samples are tufted on a removable vertical frame that stays tensioned for back-coating, and mechanical and pneumatic guns can be swapped. Software: eDesigner, eHMI, and a Robotuft add-on that converts raster art to vector tufting paths. A dealer listing for a used 2016 unit (4 × 6 m frame, Korschenbroich) asked €49,900. It gives the pneumatic head up to 60 mm cut pile and 100 mm J-tuft and claims 1–6 m²/hour and up to 2,000 stitches/min. Indian agent A.T.E., which also sells Card-Monroe machines, lists 'Robotic tufting from EFAB, Germany'. The specs are the company's or dealers' own figures, and EFAB's founding date was not found. Sources: https://www.machineseeker.my/efab+gmbh-etuft+robo-tufter/i-21660763 · https://www.textileexcellence.com/single-news/4388/a-t-e-ties-up-with-cmc-to-bring-innovative-carpet-manufacturing-technology-to-india\n\nResearch note (Oct 2026): from search results; pages not opened.",
     "themes": [
@@ -12391,7 +12391,9 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "suggestive",
-    "imageSource": "rejected"
+    "imageSource": "rejected",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-Inmi9FdE96qCCQPksu4EEEX_wnP-dN1lKmWBq9RMPE253eDOvNi4NykZ&s=10",
+    "reviewedAt": "2026-10-29T00:06:57.086Z"
   },
   {
     "id": "co-carpet-sign",
