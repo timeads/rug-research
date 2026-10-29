@@ -48,6 +48,23 @@ for (const [name, path, width, height, full] of SHOTS) {
   await page.screenshot({ path: `research/site-shots/${name}.png`, fullPage: full });
   await page.close();
 }
+// Every chapter's pictures, one small file each, with the caption beside it in the report, so captions
+// can be checked against what the pictures show: research/site-shots/figs/<chapter>-<n>.jpg.
+await mkdir(new URL("../research/site-shots/figs/", import.meta.url), { recursive: true });
+for (const c of ["processes", "before-the-machine", "woven", "dalton", "machine", "nylon", "abroad", "china", "gun", "india", "today", "cnc", "hobby"]) {
+  const page = await browser.newPage({ viewport: { width: 1440, height: 900 } });
+  await page.goto(BASE + `chapters/${c}/`, { waitUntil: "networkidle", timeout: 90000 });
+  await page.evaluate(async () => { for (let y = 0; y < document.body.scrollHeight; y += 600) { scrollTo(0, y); await new Promise(r => setTimeout(r, 120)); } scrollTo(0, 0); });
+  await page.waitForLoadState("networkidle");
+  const figs = await page.$$("figure");
+  for (const [i, fig] of figs.entries()) {
+    const cap = (await fig.$eval("figcaption", e => e.textContent.replace(/\s+/g, " ").trim()).catch(() => "")).slice(0, 300);
+    const ok = await fig.$eval("img", i => i.complete && i.naturalWidth > 0).catch(() => false);
+    report.push(`figs/${c}-${i}.jpg${ok ? "" : " (IMAGE BROKEN)"}: ${cap}`);
+    await fig.screenshot({ path: `research/site-shots/figs/${c}-${i}.jpg`, type: "jpeg", quality: 60 }).catch(e => report.push(`  could not photograph: ${e.message}`));
+  }
+  await page.close();
+}
 await browser.close();
 console.log(report.join("\n"));
 await (await import("node:fs/promises")).writeFile("research/site-shots/report.txt", report.join("\n") + "\n");
