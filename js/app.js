@@ -288,7 +288,7 @@
   };
 
   // facet filters (checkbox state, not persisted)
-  const F = { type: new Set(), theme: new Set(), region: new Set(), conf: new Set(), rights: new Set(), inst: new Set(), flag: new Set(), status: new Set() };
+  const F = { type: new Set(), theme: new Set(), region: new Set(), conf: new Set(), rights: new Set(), gal: new Set(), inst: new Set(), flag: new Set(), status: new Set() };
   const facetValues = {
     type: it => [it.type],
     theme: it => it.themes,
@@ -297,7 +297,8 @@
     status: it => [it.status || "unverified"],
     region: it => [it.region || "(none)"],
     conf: it => [it.confidence || "(none)"],
-    rights: it => it.image ? [it.rights || "not-requested", ...(mentionsPD(it) ? ["likely-public-domain"] : [])] : ["(no image)"]
+    rights: it => it.image ? [it.rights || "not-requested", ...(mentionsPD(it) ? ["likely-public-domain"] : [])] : ["(no image)"],
+    gal: it => it.image ? [it.gallery ? "in" : "out"] : []
   };
   const passFacets = (it, except) => Object.entries(F).every(([k, set]) => k === except || !set.size || facetValues[k](it).some(v => set.has(v)));
 
@@ -439,6 +440,7 @@
       ["conf", "Confidence", v => v === "(none)" ? "Not graded" : CONFIDENCE[v]?.label || v, v => CONFIDENCE[v] ? `<span class="conf-dot conf-${v}"></span>` : ""],
       ["inst", "Held by", v => v === "(none)" ? "No institution" : v],
       ["rights", "Image permission", v => v === "(no image)" ? "No image" : v === "likely-public-domain" ? "Says public domain, not marked" : RIGHTS[v] || v],
+      ["gal", "Site gallery", v => v === "in" ? "In the gallery" : "Not in the gallery"],
       ["status", "Checked", v => v === "verified" ? "Verified at source" : "Not yet verified"]
     ];
     $("#facets").innerHTML = defs.map(([key, title, label, mark]) => {
@@ -619,8 +621,10 @@
 
   // ---------- drawer ----------
   let drawerId = null, drawerReturn = null;
+  let drawerPhoto = 0; // which of the open record's photos is showing (its index in images)
   const openDrawer = id => {
     const it = BY_ID[id]; if (!it) return;
+    drawerPhoto = 0;
     if (!drawerId) drawerReturn = document.activeElement;
     drawerId = id;
     const fl = S.flags[id] || [];
@@ -645,8 +649,9 @@
         <button class="icon-btn" data-close aria-label="Close details">${icon("x")}</button>
       </div>
       ${src ? `<div class="drawer-plate"><a href="${esc(src)}" target="_blank" rel="noopener" aria-label="Open full image">${plateHTML(it, it.title)}</a></div>` : it.type === "finding" ? "" : `<div class="drawer-plate"><div class="plate-board">${boardPlate(it)}</div></div>`}
-      ${gallery.length > 1 ? `<div class="gallery" role="group" aria-label="More photos">${gallery.map((g, i) => `<button class="gthumb" data-gsrc="${esc(photoSrc(g.src))}" data-gcap="${esc(g.caption || "")}" aria-label="${esc(g.caption || `Photo ${i + 1}`)}" aria-pressed="${i === 0}"><img src="${esc(photoSrc(g.src))}" alt="" loading="lazy" referrerpolicy="no-referrer"></button>`).join("")}</div>` : ""}
+      ${gallery.length > 1 ? `<div class="gallery" role="group" aria-label="More photos">${gallery.map((g, i) => `<button class="gthumb" data-gi="${it.images.indexOf(g)}" data-gsrc="${esc(photoSrc(g.src))}" data-gcap="${esc(g.caption || "")}" aria-label="${esc(g.caption || `Photo ${i + 1}`)}" aria-pressed="${i === 0}"><img src="${esc(photoSrc(g.src))}" alt="" loading="lazy" referrerpolicy="no-referrer"></button>`).join("")}</div>` : ""}
       ${src && it.type !== "patent" && it.rights !== "own" ? `<div class="pd-row"><button class="toggle pd" data-pd aria-pressed="${it.rights === "public-domain"}"><span class="flag-dot"></span>Public domain</button><span class="pd-hint">${it.rights === "public-domain" ? "Shown on the site without a permission mark." : mentionsPD(it) ? "The record says this picture is public domain or open access. Mark it to clear it for the site." : "Mark it if the picture is out of copyright or released to the public domain (CC0)."}</span></div>` : ""}
+      ${src ? `<div class="pd-row"><button class="toggle pd gal" data-gal aria-pressed="${!!it.gallery}"><span class="flag-dot"></span>In the site's gallery</button><span class="pd-hint">${it.gallery ? (gallery.length > 1 ? `Shows photo ${(+it.galleryImage || 0) + 1} on the Gallery page.` : "Shown on the site's Gallery page.") : "Add this picture to the Gallery page on the site."}<button class="link-btn" id="gal-use" data-gal-use hidden>Show this photo there instead</button></span></div>` : ""}
       ${src && it.rights && !["own", "public-domain"].includes(it.rights) ? `<p class="credit rights rights-${esc(it.rights)}">${esc(RIGHTS[it.rights] || it.rights)}${it.rights === "not-requested" ? ": shown here for research; ask before publishing" : ""}</p>` : ""}
       ${src && it.imageRole === "illustration" ? `<p class="credit illus">Illustration, not the item described: ${it.imagePage && safeUrl(it.imagePage) ? `<a href="${esc(safeUrl(it.imagePage))}" target="_blank" rel="noopener">${esc(it.imageCaption || "a comparable item")}</a>` : esc(it.imageCaption || "a comparable item")}${credit ? ` · Image: ${esc(credit)}` : ""}</p>`
         : src && (credit || gallery[0]?.caption) ? `<p class="credit" id="gallery-caption">${esc([gallery[0]?.caption, credit && `Image: ${credit}`].filter(Boolean).join(" · "))}</p>` : ""}
@@ -704,6 +709,17 @@
     snapBase(id); S.items[id] = { ...base, rights: on ? "public-domain" : "not-requested" }; touch(id); save();
     refresh();
     toast(on ? "Marked public domain. Publish to update the site." : "Public domain mark taken off");
+  };
+  // Puts a record's picture on the site's Gallery page (or takes it off): the photo showing in the drawer,
+  // or with photo given, switches the gallery to that photo. Published with the Publish button.
+  const setGallery = (id, photo) => {
+    const it = BY_ID[id]; if (!it) return;
+    const rec = { ...(S.items[id] || clean(it)) };
+    const n = photo ?? drawerPhoto, on = photo != null || !rec.gallery;
+    if (on) { rec.gallery = true; if (n) rec.galleryImage = n; else delete rec.galleryImage; }
+    else { delete rec.gallery; delete rec.galleryImage; }
+    snapBase(id); S.items[id] = rec; touch(id); save(); refresh();
+    toast(photo != null ? "Gallery photo changed. Publish to update the site." : on ? "Added to the gallery. Publish to update the site." : "Taken out of the gallery. Publish to update the site.");
   };
   const closeDrawer = () => {
     $("#drawer").hidden = true; $("#scrim").hidden = true; drawerId = null;
@@ -1824,6 +1840,8 @@
       if (main) main.src = gt.dataset.gsrc;
       if (link) link.href = gt.dataset.gsrc;
       $$("#drawer .gthumb").forEach(b => b.setAttribute("aria-pressed", String(b === gt)));
+      drawerPhoto = Math.max(0, +gt.dataset.gi || 0);
+      const it = BY_ID[drawerId], use = $("#gal-use"); if (use) use.hidden = !(it && it.gallery && drawerPhoto !== (+it.galleryImage || 0));
       const cap = $("#gallery-caption"); if (cap) cap.textContent = [gt.dataset.gcap, BY_ID[drawerId]?.imageCredit && `Image: ${BY_ID[drawerId].imageCredit}`].filter(Boolean).join(" · ");
       return;
     }
@@ -1842,6 +1860,8 @@
     const fi = e.target.closest("[data-find-image]"); if (fi) return openImageFinder(fi.dataset.findImage);
     const f = e.target.closest("[data-flag]"); if (f) return toggleFlag(drawerId, f.dataset.flag);
     if (e.target.closest("[data-pd]")) return togglePublicDomain(drawerId);
+    if (e.target.closest("[data-gal]")) return setGallery(drawerId);
+    if (e.target.closest("[data-gal-use]")) return setGallery(drawerId, drawerPhoto);
     const ul = e.target.closest("[data-unlist]"); if (ul) return toggleInList(drawerId, ul.dataset.unlist);
     if (e.target.id === "copy-cite") {
       navigator.clipboard?.writeText(citation(BY_ID[drawerId]).replace(/\*/g, "")).then(() => toast("Citation copied"), () => toast("Copy failed"));

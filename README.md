@@ -40,6 +40,8 @@ Records show the institution's own photograph where one exists. The **Fetch imag
 
 Patent records get their actual drawing sheets from the **Patent drawings** Action (`scripts/patent-drawings.mjs`), stored in `images/patents/`. US patents come from the USPTO and are public domain. Patents from other offices (DE, EP, GB, CN, CH, FR, JP and more; use the Google Patents number, e.g. `DE202015001234U1`) come from the PDF Google Patents mirrors. Those are credited to the issuing office and not marked public domain, so check that office's terms before publishing them beyond the database.
 
+**Gallery.** The public site has a Gallery page: pictures in cascading columns, oldest first, each linking to its record, with a filter by chapter. Under a record's picture in the research tool, **In the site's gallery** puts that picture there (or takes it off); for a record with several photos, pick one in the strip first, or choose **Show this photo there instead** later. Publish the change to update the site. Browse's **Site gallery** filter lists what is in it. The gallery started with every picture the chapters show, patent drawings aside.
+
 **Public domain.** Under a record's picture, the **Public domain** button marks it as out of copyright or released to the public (CC0). Publish the change, and the public site shows a "Public domain" label instead of "Permission pending". To find pictures whose credit or description already says public domain, CC0 or open access but that aren't marked, filter **Image permission → Says public domain, not marked**. US patent drawings count as public domain without the mark.
 
 ### Adding your own things

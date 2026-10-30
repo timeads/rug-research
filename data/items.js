@@ -847,7 +847,8 @@ window.RUG_ITEMS = [
     "imageSource": "auto",
     "region": "United States",
     "rights": "not-requested",
-    "reviewedAt": "2026-10-29T12:30:41.820Z"
+    "reviewedAt": "2026-10-29T12:30:41.820Z",
+    "gallery": true
   },
   {
     "id": "article-nge-carpet-industry",
@@ -928,7 +929,8 @@ window.RUG_ITEMS = [
     "imageCredit": "Winterthur Museum",
     "imageSource": "auto",
     "region": "United States",
-    "rights": "not-requested"
+    "rights": "not-requested",
+    "gallery": true
   },
   {
     "id": "wint-1964-1641",
@@ -959,7 +961,8 @@ window.RUG_ITEMS = [
     "imageCredit": "Winterthur Museum",
     "imageSource": "auto",
     "region": "United States",
-    "rights": "not-requested"
+    "rights": "not-requested",
+    "gallery": true
   },
   {
     "id": "wint-1958-0062-003b",
@@ -1048,7 +1051,8 @@ window.RUG_ITEMS = [
     "imageCredit": "The Metropolitan Museum of Art (Open Access, public domain)",
     "imageSource": "auto",
     "region": "United States",
-    "rights": "public-domain"
+    "rights": "public-domain",
+    "gallery": true
   },
   {
     "id": "hd-packard-1801",
@@ -1245,7 +1249,8 @@ window.RUG_ITEMS = [
     "imageCredit": "Connecticut Historical Society",
     "imageSource": "auto",
     "region": "United States",
-    "rights": "not-requested"
+    "rights": "not-requested",
+    "gallery": true
   },
   {
     "id": "afam-1995-13-2",
@@ -1455,7 +1460,8 @@ window.RUG_ITEMS = [
     "region": "United States",
     "image": "https://collections-media.thehenryford.org/CollectionImages/_detail/photos/thf158112.jpg",
     "imageCredit": "The Henry Ford",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "gallery": true
   },
   {
     "id": "tool-moench-1928",
@@ -1578,7 +1584,8 @@ window.RUG_ITEMS = [
     "imageCredit": "Georgia Archives (Vanishing Georgia)",
     "imageSource": "auto",
     "region": "United States",
-    "rights": "not-requested"
+    "rights": "not-requested",
+    "gallery": true
   },
   {
     "id": "photo-cabin-crafts-arnall",
@@ -2498,7 +2505,8 @@ window.RUG_ITEMS = [
     "creator": "Obeetee",
     "image": "https://www.obeetee.in/cdn/shop/files/1_ae02ef74-a2ea-45e0-9012-45961d7f14e1.jpg?v=1756800495&width=1400",
     "imageCredit": "Obeetee",
-    "reviewedAt": "2026-10-29T00:00:40.030Z"
+    "reviewedAt": "2026-10-29T00:00:40.030Z",
+    "gallery": true
   },
   {
     "id": "ner-in-tariff-2025",
@@ -3096,7 +3104,8 @@ window.RUG_ITEMS = [
     "sourceUrl": "https://shop.elsevier.com/books/advances-in-carpet-manufacture/goswami/978-0-08-101131-7",
     "image": "https://secure-ecsd.elsevier.com/covers/80/Tango2/largest/9780081011317.jpg",
     "imageCredit": "shop.elsevier.com",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "gallery": true
   },
   {
     "id": "ttw-susan-burr",
@@ -3143,7 +3152,8 @@ window.RUG_ITEMS = [
     "imageCredit": "Tuft the World",
     "imageSource": "own",
     "sourceUrl": "https://docs.google.com/spreadsheets/d/1cj3lVGl_GaLrJt1FuzGKVGMVO3G6xLL3V6MIDF-iERM/edit",
-    "rights": "own"
+    "rights": "own",
+    "gallery": true
   },
   {
     "id": "ttw-shuttle-needle",
@@ -3196,7 +3206,8 @@ window.RUG_ITEMS = [
       "date unknown"
     ],
     "status": "verified",
-    "rights": "own"
+    "rights": "own",
+    "gallery": true
   },
   {
     "id": "ttw-ronco-speed-tufting-kit",
@@ -3268,7 +3279,8 @@ window.RUG_ITEMS = [
         "src": "images/tools/ronco-box-shredder.jpg",
         "caption": "Box end: \"Speed-Tufting Kit with Fabric Shredder\""
       }
-    ]
+    ],
+    "gallery": true
   },
   {
     "id": "pat-us463548a",
@@ -4408,7 +4420,8 @@ window.RUG_ITEMS = [
     "dateEnd": 1950,
     "image": "https://www.hagley.org/sites/default/files/pictures/2012.8.2-sv.jpg",
     "imageCredit": "Hagley Museum and Library",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "gallery": true
   },
   {
     "id": "hagley-dichter-954a",
@@ -5236,7 +5249,8 @@ window.RUG_ITEMS = [
     "sourceUrl": "https://en.wikipedia.org/wiki/Bigelow_Carpet_Mill",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Bigelow_Clinton.jpg/1280px-Bigelow_Clinton.jpg",
     "imageCredit": "en.wikipedia.org",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "gallery": true
   },
   {
     "id": "bigelow-broadloom-1877",
@@ -5413,7 +5427,8 @@ window.RUG_ITEMS = [
         "src": "images/own/uploads/langhorne-wilton-mvss21k1-11.jpg"
       }
     ],
-    "reviewedAt": "2026-10-29T00:00:40.030Z"
+    "reviewedAt": "2026-10-29T00:00:40.030Z",
+    "gallery": true
   },
   {
     "id": "philly-encyclopedia-carpet",
@@ -7580,7 +7595,8 @@ window.RUG_ITEMS = [
     "image": "https://digital.hagley.org/cantaloupe/iiif/2/https%3A%2F%2Fdigital.hagley.org%2Fsystem%2Ffiles%2F2024-10%2F31359-Service%2520File.jpg/full/800,/0/default.jpg",
     "imageCredit": "Hagley Museum and Library",
     "imagePage": "https://digital.hagley.org/1984259_121412_004",
-    "rights": "not-requested"
+    "rights": "not-requested",
+    "gallery": true
   },
   {
     "id": "u-mvs379gngi80e",
@@ -7648,7 +7664,8 @@ window.RUG_ITEMS = [
     "image": "https://digital.hagley.org/cantaloupe/iiif/2/https%3A%2F%2Fdigital.hagley.org%2Fsystem%2Ffiles%2F2025-06%2F535052-Service%2520File.jpg/full/800,/0/default.jpg",
     "imageCredit": "Hagley Museum and Library",
     "imagePage": "https://digital.hagley.org/1972341_1333",
-    "rights": "not-requested"
+    "rights": "not-requested",
+    "gallery": true
   },
   {
     "id": "u-mvs37zoguerdx",
@@ -7682,7 +7699,8 @@ window.RUG_ITEMS = [
     "image": "https://digital.hagley.org/cantaloupe/iiif/2/https%3A%2F%2Fdigital.hagley.org%2Fsystem%2Ffiles%2F2025-06%2F535051-Service%2520File.jpg/full/800,/0/default.jpg",
     "imageCredit": "Hagley Museum and Library",
     "imagePage": "https://digital.hagley.org/1972341_1332",
-    "rights": "not-requested"
+    "rights": "not-requested",
+    "gallery": true
   },
   {
     "id": "u-mvs38atad1qhj",
@@ -7712,7 +7730,8 @@ window.RUG_ITEMS = [
     "image": "https://digital.hagley.org/cantaloupe/iiif/2/https%3A%2F%2Fdigital.hagley.org%2Fsystem%2Ffiles%2F2025-06%2F570307-Service%2520File.jpg/full/800,/0/default.jpg",
     "imageCredit": "Hagley Museum and Library",
     "imagePage": "https://digital.hagley.org/dpads_1803_00475",
-    "rights": "not-requested"
+    "rights": "not-requested",
+    "gallery": true
   },
   {
     "id": "u-mvs38eabwvt3b",
@@ -7772,7 +7791,8 @@ window.RUG_ITEMS = [
     "image": "https://digital.hagley.org/cantaloupe/iiif/2/https%3A%2F%2Fdigital.hagley.org%2Fsystem%2Ffiles%2F2025-06%2F570342-Service%2520File.jpg/full/800,/0/default.jpg",
     "imageCredit": "Hagley Museum and Library",
     "imagePage": "https://digital.hagley.org/dpads_1803_00643",
-    "rights": "not-requested"
+    "rights": "not-requested",
+    "gallery": true
   },
   {
     "id": "u-mvs38l6olbged",
@@ -8054,7 +8074,8 @@ window.RUG_ITEMS = [
         "src": "https://digital.hagley.org/cantaloupe/iiif/2/https%3A%2F%2Fdigital.hagley.org%2Fsystem%2Ffiles%2F2025-06%2F535037-Service%2520File.jpg/full/800,/0/default.jpg",
         "caption": "1972341_1373"
       }
-    ]
+    ],
+    "gallery": true
   },
   {
     "id": "u-mvs3lacgfbrui",
@@ -8087,7 +8108,8 @@ window.RUG_ITEMS = [
     "image": "https://digital.hagley.org/cantaloupe/iiif/2/https%3A%2F%2Fdigital.hagley.org%2Fsystem%2Ffiles%2F2024-10%2F26812-Service%2520File.jpg/full/800,/0/default.jpg",
     "imageCredit": "Hagley Museum and Library",
     "imagePage": "https://digital.hagley.org/72430_477",
-    "rights": "not-requested"
+    "rights": "not-requested",
+    "gallery": true
   },
   {
     "id": "u-mvs3riubri1f6",
@@ -8288,7 +8310,9 @@ window.RUG_ITEMS = [
     "imageCredit": "Photo: Tuft the World",
     "imageSource": "own",
     "rights": "own",
-    "collection": "Photo: Tuft the World, taken at the Shaw Floors / Bandy art center, 305 S Depot St, Dalton, Georgia. The photograph is yours; the spreads belong to the center, so check its photo policy before publishing outside the database."
+    "collection": "Photo: Tuft the World, taken at the Shaw Floors / Bandy art center, 305 S Depot St, Dalton, Georgia. The photograph is yours; the spreads belong to the center, so check its photo policy before publishing outside the database.",
+    "gallery": true,
+    "galleryImage": 1
   },
   {
     "id": "own-bandy-chenille-spreads",
@@ -8338,7 +8362,8 @@ window.RUG_ITEMS = [
     "imageCredit": "Photo: Tuft the World",
     "imageSource": "own",
     "rights": "own",
-    "collection": "Photo: Tuft the World, taken at the Shaw Floors / Bandy art center, 305 S Depot St, Dalton, Georgia. The photograph is yours; the spreads belong to the center, so check its photo policy before publishing outside the database."
+    "collection": "Photo: Tuft the World, taken at the Shaw Floors / Bandy art center, 305 S Depot St, Dalton, Georgia. The photograph is yours; the spreads belong to the center, so check its photo policy before publishing outside the database.",
+    "gallery": true
   },
   {
     "id": "own-bandy-sims-chenille-center",
@@ -8377,7 +8402,8 @@ window.RUG_ITEMS = [
     "imageCredit": "Photo: Tuft the World",
     "imageSource": "own",
     "rights": "own",
-    "collection": "Photo: Tuft the World, taken at the Bandy Heritage Center, Dalton State College, Dalton, Georgia. The photograph is yours; the sheets belong to the center, so check its photo policy before publishing outside the database."
+    "collection": "Photo: Tuft the World, taken at the Bandy Heritage Center, Dalton State College, Dalton, Georgia. The photograph is yours; the sheets belong to the center, so check its photo policy before publishing outside the database.",
+    "gallery": true
   },
   {
     "id": "own-spool-axminster-loom",
@@ -8478,7 +8504,8 @@ window.RUG_ITEMS = [
     "rights": "not-requested",
     "image": "https://taiping-development.sgp1.digitaloceanspaces.com/images/Edward-Fields-Heritage-Banner-2.jpg",
     "imageCredit": "Edward Fields",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "gallery": true
   },
   {
     "id": "co-kasthall",
@@ -8510,7 +8537,8 @@ window.RUG_ITEMS = [
     "rights": "not-requested",
     "image": "http://www.kasthall.com/cdn/shop/files/1200x628_Ida.jpg?v=1775663966",
     "imageCredit": "Kasthall",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "gallery": true
   },
   {
     "id": "co-ceadogan",
@@ -8577,7 +8605,8 @@ window.RUG_ITEMS = [
     "rights": "not-requested",
     "image": "https://www.pinton1867.com/wp-content/uploads/2021/07/felletin_photo_archives1.jpg",
     "imageCredit": "Pinton (Ateliers Pinton)",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "gallery": true
   },
   {
     "id": "co-limited-edition",
@@ -8638,7 +8667,8 @@ window.RUG_ITEMS = [
     "rights": "not-requested",
     "image": "https://yamagatadantsu.co.jp/login/wp-content/uploads/2022/04/history_ogp.jpg",
     "imageCredit": "Yamagata Dantsu (Oriental Carpet Mills)",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "gallery": true
   },
   {
     "id": "co-designer-rugs",
@@ -9198,7 +9228,8 @@ window.RUG_ITEMS = [
     "rights": "not-requested",
     "image": "https://d39d6i0wpcpox8.cloudfront.net/assets/images/vcl-static/hero/victoria-history-factory.jpg",
     "imageCredit": "Victoria PLC (Victoria Carpets)",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "gallery": true
   },
   {
     "id": "co-godfrey-hirst",
@@ -10863,7 +10894,8 @@ window.RUG_ITEMS = [
     ],
     "imageSource": "auto",
     "image": "https://framemark.vam.ac.uk/collections/2006AT3471/full/!600,/0/default.jpg",
-    "imageCredit": "Victoria and Albert Museum"
+    "imageCredit": "Victoria and Albert Museum",
+    "gallery": true
   },
   {
     "id": "woven-scotch-kilmarnock",
@@ -11164,7 +11196,8 @@ window.RUG_ITEMS = [
     "rights": "not-requested",
     "imageRole": "illustration",
     "imageCaption": "“Lily” Wilton carpet sample, designed by William Morris 1875, woven by the Wilton Royal Carpet Factory, CIRC.65B-1959",
-    "reviewedAt": "2026-10-28T20:34:50.000Z"
+    "reviewedAt": "2026-10-28T20:34:50.000Z",
+    "gallery": true
   },
   {
     "id": "woven-kidderminster-brussels-1749",
@@ -11247,7 +11280,8 @@ window.RUG_ITEMS = [
     ],
     "imageSource": "auto",
     "image": "https://framemark.vam.ac.uk/collections/2021MY5392/full/!600,/0/default.jpg",
-    "imageCredit": "Victoria and Albert Museum"
+    "imageCredit": "Victoria and Albert Museum",
+    "gallery": true
   },
   {
     "id": "book-christie-1800-carpet-sale",
@@ -11356,7 +11390,8 @@ window.RUG_ITEMS = [
     "image": "https://images.metmuseum.org/CRDImages/es/original/DP-36820-001.jpg",
     "imageCredit": "The Metropolitan Museum of Art (Open Access, public domain)",
     "imageSource": "auto",
-    "rights": "public-domain"
+    "rights": "public-domain",
+    "gallery": true
   },
   {
     "id": "fulham-parisot-1750",
@@ -11575,7 +11610,8 @@ window.RUG_ITEMS = [
       "hand-knotted",
       "Met",
       "via Met API"
-    ]
+    ],
+    "gallery": true
   },
   {
     "id": "drawloom-to-jacquard-carpet",
@@ -12530,7 +12566,8 @@ window.RUG_ITEMS = [
     "confidence": "solid",
     "image": "https://cdn.hackaday.io/images/9350651645120696026.png",
     "imageCredit": "Hackaday.io",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "gallery": true
   },
   {
     "id": "finding-cnc-diy-robot-arm-experiments",
@@ -12666,7 +12703,8 @@ window.RUG_ITEMS = [
         "src": "https://depts.washington.edu/silkroad/museums/shm/hermitagepazyryk7a.jpg",
         "caption": "Drawing of felt appliqué decoration for a carpet or wall hanging: sphinx (\"stag-demon\") and fantastic bird. Barrow no. 5, excavated 1949; preserved piece 110 × 80 cm; Inv. 1687/1"
       }
-    ]
+    ],
+    "gallery": true
   },
   {
     "id": "process-felt-shyrdak",
@@ -12954,7 +12992,8 @@ window.RUG_ITEMS = [
     ],
     "imageSource": "auto",
     "image": "https://collections.penn.museum/collections/assets/058T/589k/589573_800.jpg",
-    "imageCredit": "Penn Museum (University of Pennsylvania Museum of Archaeology and Anthropology)"
+    "imageCredit": "Penn Museum (University of Pennsylvania Museum of Archaeology and Anthropology)",
+    "gallery": true
   },
   {
     "id": "process-flatweave-rolakan",
@@ -13059,7 +13098,8 @@ window.RUG_ITEMS = [
       {
         "src": "https://depts.washington.edu/silkroad/museums/shm/hermitagepazyryk19a.jpg"
       }
-    ]
+    ],
+    "gallery": true
   },
   {
     "id": "process-knotted-knot-types",
@@ -13319,7 +13359,8 @@ window.RUG_ITEMS = [
     "status": "unverified",
     "imageSource": "auto",
     "image": "https://framemark.vam.ac.uk/collections/2018LE8726/full/!600,/0/default.jpg",
-    "imageCredit": "Victoria and Albert Museum"
+    "imageCredit": "Victoria and Albert Museum",
+    "gallery": true
   },
   {
     "id": "process-hooking-origins",
@@ -13496,7 +13537,8 @@ window.RUG_ITEMS = [
     "status": "unverified",
     "imageSource": "auto",
     "image": "https://emuseum.chs.org/emuseum/internal/media/dispatcher/12509/full",
-    "imageCredit": "Connecticut Historical Society"
+    "imageCredit": "Connecticut Historical Society",
+    "gallery": true
   },
   {
     "id": "process-sewn-shirred-hne",
@@ -13910,7 +13952,8 @@ window.RUG_ITEMS = [
       "Hand-tufting tools & the gun",
       "Global diffusion of tufting"
     ],
-    "region": "New Zealand"
+    "region": "New Zealand",
+    "gallery": true
   },
   {
     "creator": "Orville A. Carroll",
@@ -13938,7 +13981,8 @@ window.RUG_ITEMS = [
       "Early tufting: bed rugs & needlework pile",
       "Hooked & handmade rugs"
     ],
-    "region": "United States"
+    "region": "United States",
+    "gallery": true
   },
   {
     "id": "tool-ttw-electric-guns",
@@ -13968,7 +14012,8 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "solid",
-    "reviewedAt": "2026-10-28T21:42:57.297Z"
+    "reviewedAt": "2026-10-28T21:42:57.297Z",
+    "gallery": true
   },
   {
     "id": "tool-ttw-pneumatic-guns",
@@ -15844,7 +15889,8 @@ window.RUG_ITEMS = [
     "image": "images/own/uploads/u-mvss1boffo03b-mvss21k2.jpg",
     "rights": "own",
     "reviewedAt": "2026-10-29T12:30:41.820Z",
-    "description": "Werk machine at Tuft the World, Philadelphia"
+    "description": "Werk machine at Tuft the World, Philadelphia",
+    "gallery": true
   },
   {
     "id": "process-felt-definition",

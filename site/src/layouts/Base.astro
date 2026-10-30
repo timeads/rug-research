@@ -7,7 +7,7 @@ import { BASE, INDEXABLE, RESEARCH_URL } from "../../site.config.mjs";
 // citation_ tags) and schema (structured data describing the page).
 const { title, description = "", shade = "var(--cloth-teal)", current = "", progress = false, image = "", type = "website", scholar = null, schema = null } = Astro.props;
 const url = canonical(Astro.url.pathname.slice(BASE.length));
-const nav = [["", "Chapters", "chapters", ""], ["timeline/", "Timeline", "timeline", ""], ["bibliography/", "Bibliography", "bibliography", ""]];
+const nav = [["", "Chapters", "chapters", ""], ["gallery/", "Gallery", "gallery", ""], ["timeline/", "Timeline", "timeline", ""], ["bibliography/", "Bibliography", "bibliography", ""]];
 ---
 <!doctype html>
 <html lang="en">

@@ -897,3 +897,6 @@ a.linkish { text-decoration: underline; text-underline-offset: .2em; }
 .ins-code { margin: 0; font-size: var(--t-xs); color: var(--ink-3); }
 .ins-code code { display: block; margin-top: 4px; padding: 8px 10px; border-radius: var(--r); background: var(--surface-2); color: var(--ink-2); overflow-wrap: anywhere; white-space: pre-wrap; }
 @media (max-width: 640px) { .ins-chosen { grid-template-columns: minmax(0, 1fr); } }
+.toggle.gal { --c: var(--cloth-navy); }
+.pd-hint .link-btn { margin-left: 8px; }
+.pd-row + .pd-row { padding-top: 6px; }

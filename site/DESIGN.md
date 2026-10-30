@@ -294,6 +294,9 @@ A sheet panel with a 3px corner and 1.5rem 1.75rem padding; a 650 Archivo headin
 ### Chips
 Timeline filters and bibliography jumps: sheet fill, card-edge border, 2px corner, 2.25rem tall, with a small 0.5rem cloth swatch for a chapter filter. Pressed is ink fill with ground text.
 
+### Gallery
+Pictures chosen in the research tool (a record's `gallery` mark, `galleryImage` for one of its photos), oldest first, dealt left to right into up to four columns of about 18rem (CSS columns without scripts). Each picture is mounted on a sheet card with a hairline edge and 2px corner, the record's title (Archivo 600) and date and holder (ink-3) under it, and "Permission pending" where it applies. The card lifts 2px on hover; a picture that fails to load is taken out. Chapter chips above filter by the chapters that cite each record.
+
 ### Chapters Card
 A sheet with a card-edge border and 2px corner; its head (title plus a count of ready and in-preparation chapters) sits over a 2px ink rule; rows divided by hairlines. Hovering a ready row underlines its title.
 

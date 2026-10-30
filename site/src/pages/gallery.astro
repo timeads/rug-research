@@ -1,0 +1,78 @@
+---
+// The gallery: the pictures chosen for it in the research tool (a record's "gallery" mark, with
+// "galleryImage" naming one of its photos), in date order, each linking to its record.
+import Base from "../layouts/Base.astro";
+import { db, imageUrl, imageCleared, base, fmtYear } from "../lib/data.js";
+import { citedIndex } from "../lib/cited.js";
+
+const { items } = db();
+const cited = await citedIndex();
+const pictureOf = it => {
+  const g = Array.isArray(it.images) ? it.images : [];
+  const n = +it.galleryImage || 0;
+  const pic = n && g[n] && g[n].src ? g[n] : null;
+  return { src: pic ? pic.src : it.image, caption: pic ? pic.caption || "" : "" };
+};
+const tiles = items
+  .filter(it => it.gallery && it.image && !String(it.image).startsWith("idb:"))
+  .map(it => ({ it, ...pictureOf(it), chapters: (cited[it.id] || []).map(c => c.number) }))
+  .filter(t => t.src)
+  .sort((a, b) => (a.it.dateStart ?? 1e9) - (b.it.dateStart ?? 1e9) || a.it.title.localeCompare(b.it.title));
+const chapterNos = [...new Set(tiles.flatMap(t => t.chapters))].sort((a, b) => a - b);
+const when = it => it.date || (it.dateStart != null ? fmtYear(it.dateStart) : "");
+---
+<Base title="Gallery · A History of Tufted Rugs" description="Pictures from the research behind A History of Tufted Rugs: rugs, tools, patents, photographs and documents. Each links to its record." current="gallery" shade="var(--ink)">
+  <header class="page-head">
+    <h1>Gallery</h1>
+    <p>Rugs, tools, machines, photographs and documents from the research, oldest first. Choose a picture to see its record and the sources behind it.</p>
+  </header>
+  {chapterNos.length > 1 && (
+    <div class="tl-tools"><div class="in" role="group" aria-label="Show pictures from one chapter">
+      <button class="chip" data-ch="" aria-pressed="true">All pictures</button>
+      {chapterNos.map(n => <button class="chip" data-ch={String(n)} aria-pressed="false">Chapter {n}</button>)}
+    </div></div>
+  )}
+  <div class="gal">
+    {tiles.map(({ it, src, caption, chapters }) => (
+      <a class="g-tile" href={base(`records/${it.id}/`)} data-ch={chapters.join(" ")}>
+        <img src={imageUrl(src, 900)} alt={caption || it.title} loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.closest('.g-tile').remove()" />
+        <span class="g-cap">
+          <span class="t">{it.title}</span>
+          <span class="m">{[when(it), it.institution].filter(Boolean).join(" · ")}</span>
+          {!imageCleared(it) && <span class="pending">Permission pending</span>}
+        </span>
+      </a>
+    ))}
+  </div>
+  {!tiles.length && <p class="g-empty">No pictures have been chosen for the gallery yet.</p>}
+  <script is:inline>
+    (() => {
+      // Deals the pictures into columns left to right, so they read oldest first across each row (CSS
+      // columns, the fallback without scripts, would run down each column instead). Redone when the
+      // width changes the number of columns, or a chapter is chosen.
+      const gal = document.querySelector(".gal"); if (!gal) return;
+      const tiles = [...gal.querySelectorAll(".g-tile")];
+      let cols = 0;
+      const lay = force => {
+        const n = Math.max(1, Math.min(4, Math.floor((gal.clientWidth + 20) / 300)));
+        if (n === cols && !force) return;
+        cols = n;
+        const columns = Array.from({ length: n }, () => Object.assign(document.createElement("div"), { className: "g-col" }));
+        tiles.filter(t => !t.hidden && t.isConnected !== false).forEach((t, i) => columns[i % n].append(t));
+        tiles.filter(t => t.hidden).forEach(t => columns[0].append(t));
+        gal.replaceChildren(...columns); gal.classList.add("dealt");
+      };
+      lay(); addEventListener("resize", () => lay());
+      // A picture that fails to load is taken out, and the columns dealt again.
+      new MutationObserver(() => { const gone = tiles.filter(t => !gal.contains(t)); if (gone.length) { gone.forEach(t => tiles.splice(tiles.indexOf(t), 1)); lay(true); } }).observe(gal, { childList: true, subtree: true });
+      // Chapter filter: show the pictures whose records that chapter cites.
+      const chips = [...document.querySelectorAll(".chip[data-ch]")];
+      chips.forEach(c => c.addEventListener("click", () => {
+        const ch = c.dataset.ch;
+        chips.forEach(x => x.setAttribute("aria-pressed", String(x === c)));
+        tiles.forEach(t => { t.hidden = !!ch && !t.dataset.ch.split(" ").includes(ch); });
+        lay(true);
+      }));
+    })();
+  </script>
+</Base>
