@@ -8099,17 +8099,16 @@ window.RUG_ITEMS = [
       "found by Claude in Chrome",
       "Hagley",
       "for: Woven carpet",
-      "for: Building the machine",
-      "check link"
+      "for: Building the machine"
     ],
     "region": "United States",
-    "description": "Annual report of Mohasco Industries (Mohawk and Alexander Smith carpet lines) for 1957; 19-page pamphlet. Read from Hagley's OCR text (page image 7, \"Products\"): the Mohawk and Alexander Smith lines were \"strengthened during the year by the use of new synthetic fibres\", Chromspun acetate and Acrilan acrylic, while wool remained featured \"exclusively in many of its lines and in blends with nylon in other fabrics\"; and \"New manufacturing techniques materially enhancing the quality and appearance of its tufted and velvet fabric lines ... were perfected during the year, and patents have been received or are pending\". It also notes Mohasco's 20% interest in Bancroft's \"Ban-Lon\" bulking process for nylon. Held, oddly, in the Bancroft Miss America collection.\nWhy it matters: shows an old-line woven-carpet maker (Mohawk/Alexander Smith) already running tufted lines and patenting tufting techniques by 1957, and switching to synthetic fibres. Useful for the woven-to-tufted transition.\nFound: Hagley Digital Archives, search \"Mohasco\", 2026-10-28.\n\nCheck the link: Hagley's other items in this accession (1972.430) are addressed 1972430_…; an address like 72430_477 may be the old-site form (compare 70_200_09067 → 1970200_09067). If it doesn't open, try https://digital.hagley.org/1972430_477.",
+    "description": "Annual report of Mohasco Industries (Mohawk and Alexander Smith carpet lines) for 1957; 19-page pamphlet. Read from Hagley's OCR text (page image 7, \"Products\"): the Mohawk and Alexander Smith lines were \"strengthened during the year by the use of new synthetic fibres\", Chromspun acetate and Acrilan acrylic, while wool remained featured \"exclusively in many of its lines and in blends with nylon in other fabrics\"; and \"New manufacturing techniques materially enhancing the quality and appearance of its tufted and velvet fabric lines ... were perfected during the year, and patents have been received or are pending\". It also notes Mohasco's 20% interest in Bancroft's \"Ban-Lon\" bulking process for nylon. Held, oddly, in the Bancroft Miss America collection.\nWhy it matters: shows an old-line woven-carpet maker (Mohawk/Alexander Smith) already running tufted lines and patenting tufting techniques by 1957, and switching to synthetic fibres. Useful for the woven-to-tufted transition.\nFound: Hagley Digital Archives, search \"Mohasco\", 2026-10-28.",
     "sourceUrl": "https://digital.hagley.org/72430_477",
     "image": "https://digital.hagley.org/cantaloupe/iiif/2/https%3A%2F%2Fdigital.hagley.org%2Fsystem%2Ffiles%2F2024-10%2F26812-Service%2520File.jpg/full/800,/0/default.jpg",
     "imageCredit": "Hagley Museum and Library",
     "imagePage": "https://digital.hagley.org/72430_477",
     "rights": "not-requested",
-    "reviewedAt": "2026-10-30T22:46:55.861Z"
+    "reviewedAt": "2026-10-30T22:49:50.782Z"
   },
   {
     "id": "u-mvs3riubri1f6",
@@ -14053,8 +14052,7 @@ window.RUG_ITEMS = [
     "date": "current (2026); spec sheet marked V2022 (per search excerpt)",
     "place": "Nördlingen, Bavaria",
     "region": "Germany",
-    "description": "From search results; pages not opened. Hofmann's exhibitor listing on Messe Frankfurt's Heimtextil site describes the VML 16 as a hand-tufting gun for cut and loop pile. A needle carries the yarn through the backing; in cut-pile mode \"a blade then cuts through the yarn and a jet of air blows the tuft through\". The listing says \"Changing the pile height or yarn colour is very simply achieved with the Hofmann handtufting gun.\"\n\nA Hofmann specification sheet (marked V2022), posted as an exhibitor download on Messe Frankfurt's site, gives, according to search excerpts: pile height 16–45 mm with the standard 6 mm yarn tunnel (a 5+4 mm option is also listed), down to 12 mm with an exchange kit; speed 0–2,000 stitches per minute; motor 220 V, 400 W; air supply 8 bar at 200 l/min.\n\nThe excerpts say nothing about who the gun is for. The company record (co-hofmann-handtuft) says Hofmann's site describes the VML 16 as used in carpet production worldwide, and lists the SML mini and SML 10-PP loop-pile machines; those models were not checked again here.\n\nSources: https://heimtextil.messefrankfurt.com/frankfurt/en/exhibitor-search.detail.html/hofmann-handtuft-technik-gmbh/mf_1_0010286540_4913646_10000000202601.html · https://exhibitorsearch.messefrankfurt.com/images/original/document_downloads/10000000202601/469619/1760518908425_3827131845.pdf · https://hofmann-handtuft.de/en/ · Research note (Oct 2026): hofmann-handtuft.de could not be opened from the research sandbox (host blocked); the Heimtextil listing and the spec-sheet PDF were seen only as search-result excerpts and were not opened. Check the specifications against the PDF before citing them.",
-    "sourceUrl": "https://heimtextil.messefrankfurt.com/frankfurt/en/exhibitor-search.detail.html/hofmann-handtuft-technik-gmbh/mf_1_0010286540_4913646_10000000202601.html",
+    "description": "Hand made carpets and hand made rugs can be made with a wide range of designs using this hand tufting gun.\n\nWhen operated as a cut pile gun a blade then cuts through the yarn and a jet of air blows the tuft through. After completing the tufting operation the tufts are bound with latex and a secondary backing.\n\nChanging the pile height or yarn colour is very simply achieved with the Hofmann hand tufting gun. The yarn is delivered through a needle that pierces the special backing fabric.\n\nThe Hofmann hand tufting gun has reached it present level of success after many years of development and is now used in industry and education throughout the world.\n\nHofmann offers a full range of equipment and materials for the production of hand made rugs, hand made carpets and wall hangings.\nA Hofmann specification sheet (marked V2022), posted as an exhibitor download on Messe Frankfurt's site, gives, according to search excerpts: pile height 16–45 mm with the standard 6 mm yarn tunnel (a 5+4 mm option is also listed), down to 12 mm with an exchange kit; speed 0–2,000 stitches per minute; motor 220 V, 400 W; air supply 8 bar at 200 l/min.\n\nThe excerpts say nothing about who the gun is for. The company record (co-hofmann-handtuft) says Hofmann's site describes the VML 16 as used in carpet production worldwide, and lists the SML mini and SML 10-PP loop-pile machines; those models were not checked again here.\n\nSources: https://heimtextil.messefrankfurt.com/frankfurt/en/exhibitor-search.detail.html/hofmann-handtuft-technik-gmbh/mf_1_0010286540_4913646_10000000202601.html · https://exhibitorsearch.messefrankfurt.com/images/original/document_downloads/10000000202601/469619/1760518908425_3827131845.pdf · https://hofmann-handtuft.de/en/ · Research note (Oct 2026): hofmann-handtuft.de could not be opened from the research sandbox (host blocked); the Heimtextil listing and the spec-sheet PDF were seen only as search-result excerpts and were not opened. Check the specifications against the PDF before citing them.",
     "rights": "not-requested",
     "themes": [
       "Hand-tufting tools & the gun"
@@ -14069,10 +14067,11 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "suggestive",
-    "reviewedAt": "2026-10-28T21:39:35.308Z",
-    "image": "https://heimtextil.messefrankfurt.com/content/dam/messefrankfurt-redaktion/texpertisenetwork/images/stages-teaser/stage-texpertise.jpg",
-    "imageCredit": "heimtextil.messefrankfurt.com",
-    "imageSource": "auto"
+    "reviewedAt": "2026-10-30T22:49:50.782Z",
+    "image": "https://hofmann-handtuft.de/wp-content/uploads/2020/06/hofmann-vml16-22-slider-980x338.jpg",
+    "imageCredit": "Hofmann",
+    "imageSource": "auto",
+    "dateStart": 2026
   },
   {
     "id": "tool-dayang-guns",
