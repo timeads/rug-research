@@ -8,7 +8,7 @@
 //         "unverified" = gathered from secondary sources / search summaries;
 //                        confirm titles, dates and numbers before citing.
 // Records taken out after being merged from an export, with when; a browser drops its own copy of them.
-window.RUG_REMOVED = {"wc-3126256":"2026-10-28T15:05:57.518Z","met-7405":"2026-10-28T15:05:57.518Z"};
+window.RUG_REMOVED = {"wc-3126256":"2026-10-28T15:05:57.518Z","met-7405":"2026-10-28T15:05:57.518Z","process-felt-definition":"2026-10-30T10:39:48.191Z","pat-gb663196a":"2026-10-30T10:39:48.191Z","map-sims-textile-dalton-1946":"2026-10-30T10:39:48.191Z"};
 window.RUG_ITEMS = [
   {
     "id": "wint-1964-0804",
@@ -546,28 +546,6 @@ window.RUG_ITEMS = [
     "imageCredit": "Bandy Heritage Center",
     "rights": "own",
     "reviewedAt": "2026-10-30T10:27:04.752Z"
-  },
-  {
-    "id": "map-sims-textile-dalton-1946",
-    "type": "archive",
-    "title": "Sims Textile Company map of Dalton",
-    "creator": "Sims Textile Company",
-    "date": "c. 1946",
-    "dateStart": 1946,
-    "institution": "Dalton-Whitfield County Historical Society (per Deaton)",
-    "description": "A map of Dalton issued by Sims Textile, reproduced or cited by Deaton \"courtesy of Dalton-Whitfield County Historical Society\". Likely shows the bedspread businesses at their peak, and ties in with the Sims sheets at the Bandy Heritage Center (own-bandy-sims-chenille-center).\n\nCited in Deaton, Bedspreads to Broadloom (1993), bibliography pp. 209–217 (transcribed in research/deaton-sources.md).",
-    "themes": [
-      "Machine tufting & Dalton",
-      "Chenille & candlewick"
-    ],
-    "tags": [
-      "Deaton bibliography",
-      "primary source",
-      "to find",
-      "Sims"
-    ],
-    "status": "unverified",
-    "region": "United States"
   },
   {
     "id": "archive-bandy-deaton",
@@ -9753,38 +9731,6 @@ window.RUG_ITEMS = [
     "confidence": "suggestive"
   },
   {
-    "id": "pat-gb663196a",
-    "type": "patent",
-    "title": "Melvin Sivyer Hurley, \"A new or improved hand tool for making rugs, carpets and the like with a cut pile\" (GB663196A)",
-    "creator": "Melvin Sivyer Hurley",
-    "date": "priority 10 Dec 1948; published 19 Dec 1951",
-    "dateStart": 1948,
-    "identifier": "GB663196A",
-    "sourceUrl": "https://patents.google.com/patent/GB663196A/en",
-    "region": "United Kingdom",
-    "language": "English",
-    "originalText": "A new or improved hand tool for making rugs, carpets and the like with a cut pile",
-    "translation": "—",
-    "description": "This is the British filing of the cut-pile hand tool that the database already holds as US2605727A (pat-us2605727a). Family members: FR1001038A (\"Outil à main pour la fabrication de carpettes, tapis et articles analogues à poils coupés\", which names Hurley as inventor) and BE492654A. It is classed D05C15/06, and its keywords (scissors, needle, cam, pins) suggest a needle with a built-in cutter. It shows that American hand cut-pile tools were being patented in Europe by 1948–51. Verified Oct 2026 by web search only. patents.google.com and Espacenet could not be opened from the sandbox, so I did not read the document itself. Dates and the inventor come from Google Patents snippets for GB663196A, BE492654A and FR1001038A.\n\nResearch note (Oct 2026): found through search results; the patent document itself wasn't opened. The Patent drawings job fetches the document from Google Patents; if drawings appear on this record, the number is confirmed.",
-    "themes": [
-      "Hand-tufting tools & the gun",
-      "Tools & equipment"
-    ],
-    "tags": [
-      "patent lineage",
-      "UK",
-      "France",
-      "cut pile",
-      "hand tool",
-      "foreign patents 2026",
-      "checked from search results",
-      "number confirmed"
-    ],
-    "status": "unverified",
-    "confidence": "solid",
-    "place": "United Kingdom (US inventor)"
-  },
-  {
     "id": "pat-de1074196b",
     "type": "patent",
     "title": "Madeleine Jeandupeux, \"Pile-knotting needle for making carpets\" (DE1074196B)",
@@ -12675,36 +12621,6 @@ window.RUG_ITEMS = [
     "image": "https://www.kicktraq.com/projects/207408103/craftphilia-worlds-first-fully-automated-tufting-machine/dailychart.png",
     "imageCredit": "Craftphilia",
     "imageSource": "auto"
-  },
-  {
-    "id": "process-felt-definition",
-    "type": "finding",
-    "title": "Felt: fibres matted together with heat, moisture and friction rather than woven",
-    "place": "Central Asia (origin unknown)",
-    "region": "Eurasia",
-    "date": "before weaving (traditional claim); firm evidence from 5th–3rd century BCE (Pazyryk)",
-    "dateStart": -500,
-    "sourceUrl": "https://www.britannica.com/technology/felt",
-    "techniques": [
-      "felting",
-      "fulling"
-    ],
-    "materials": [
-      "wool",
-      "fur",
-      "hair"
-    ],
-    "description": "How it works: Britannica defines felt as fabric made by interlocking wool, fur or some hair fibres under heat, moisture and friction. No adhesive is needed. Other fibres felt only when mixed with wool. In industrial felting the wet batts are first hardened (pressed by a platen or rollers) and then fulled, which can shrink the area by up to about 50 percent. Antiquity: Britannica says non-woven felts are considered the first textile goods produced. A commercial blog (Contrado) says felt is thought to be over 5,000 years old and from Asia, but no archaeological source for that figure turned up. Firm evidence for felt floor and wall coverings in this set is the Pazyryk material (see process-felt-pazyryk-hangings). A search for older excavated felt found none. Sources: https://www.britannica.com/technology/felt · https://www.britannica.com/technology/felting · https://www.contrado.com/blog/what-is-felt\n\nResearch note (Oct 2026): from search results; pages not opened.",
-    "tags": [
-      "process history",
-      "felt",
-      "checked from search results"
-    ],
-    "confidence": "suggestive",
-    "status": "unverified",
-    "themes": [
-      "Rug-making techniques"
-    ]
   },
   {
     "id": "process-felt-pazyryk-hangings",
