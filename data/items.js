@@ -1366,20 +1366,23 @@ window.RUG_ITEMS = [
     "place": "Hartford, Conn.",
     "publisher": "Wadsworth Atheneum",
     "identifier": "OCLC 578197; LCCN 72088680",
-    "description": "80-page catalog of a loan exhibition, 9 Nov.–31 Dec. 1972. The standard survey of American bed rugs; check its object list for Winterthur loans.",
+    "description": "80-page catalog of a loan exhibition, 9 Nov.–31 Dec. 1972. The standard survey of American bed rugs; check its object list for Winterthur loans.\n\nUpdate 2026-10-28 (Claude in Chrome): Winterthur Library holds three circulating copies, call number NK9112 W12 (WinterCat record https://library.winterthur.org/Record/vtls000045194: \"Bed ruggs : 1722-1833\", [Hartford, Connecticut : Wadsworth Atheneum, 1972]; \"Includes bibliography (2 p.)\"). Winterthur's catalogue also lists later bed-rug studies: \"Bed rugs : 18th and early 19th century embroidered bed covers\" (2000, vtls000072324), \"Connecticut blankets, coverlids and bed rugs\" (1999, vtls000059379) and Jan Whitlock, \"American sewn rugs\" (2012, vtls000097047).\nFound: Winterthur Library catalogue, search \"bed ruggs\", 2026-10-28.",
     "sourceUrl": "https://www.nypl.org/research/research-catalog/bib/b10248634",
     "themes": [
       "Early tufting: bed rugs & needlework pile"
     ],
     "tags": [
       "core source",
-      "catalog"
+      "catalog",
+      "found by Claude in Chrome",
+      "Winterthur Library"
     ],
     "status": "unverified",
     "region": "United States",
     "image": "https://covers.openlibrary.org/b/id/10042294-L.jpg",
     "imageCredit": "Cover via Open Library",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "reviewedAt": "2026-10-30T10:39:10.511Z"
   },
   {
     "id": "book-ulrich-age-of-homespun",
@@ -8894,7 +8897,11 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "solid",
-    "rights": "not-requested"
+    "rights": "granted",
+    "image": "images/own/uploads/co-dixie-group-mvuub0s0.jpg",
+    "imageCredit": "DH Home",
+    "imagePage": "https://www.facebook.com/DixieHome/",
+    "reviewedAt": "2026-10-30T10:39:10.511Z"
   },
   {
     "id": "co-engineered-floors",
