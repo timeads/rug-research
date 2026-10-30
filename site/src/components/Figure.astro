@@ -1,7 +1,7 @@
 ---
 // A picture from a record: the record's own image (or one of its gallery images), its caption and
 // credit, a link to the record's page, and a "permission pending" mark until the image is cleared.
-import { record, imageUrl, imageCleared, base } from "../lib/data.js";
+import { record, imageUrl, imageCleared, publicDomainTag, base } from "../lib/data.js";
 const { id, size = "text", caption, image = 0, alt } = Astro.props;
 const it = record(id);
 if (!it) throw new Error(`Figure: no record ${id}`);
@@ -16,6 +16,6 @@ const credit = [it.imageCredit || it.institution, it.identifier].filter(Boolean)
   <a class="frame" href={base(`records/${id}/`)}><img src={imageUrl(src, width)} alt={alt ?? it.title} loading="lazy" decoding="async" referrerpolicy="no-referrer" /></a>
   <figcaption>
     {cap}
-    <span class="credit"><span>{credit}</span><a class="src" href={base(`records/${id}/`)}>Source</a>{!imageCleared(it) && <span class="pending">Permission pending</span>}</span>
+    <span class="credit"><span>{credit}</span><a class="src" href={base(`records/${id}/`)}>Source</a>{!imageCleared(it) && <span class="pending">Permission pending</span>}{publicDomainTag(it, credit) && <span class="pd-tag">Public domain</span>}</span>
   </figcaption>
 </figure>

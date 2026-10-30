@@ -11325,7 +11325,8 @@ window.RUG_ITEMS = [
     ],
     "image": "https://images.metmuseum.org/CRDImages/es/original/DP-36820-001.jpg",
     "imageCredit": "The Metropolitan Museum of Art (Open Access, public domain)",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "rights": "public-domain"
   },
   {
     "id": "fulham-parisot-1750",
@@ -12047,7 +12048,8 @@ window.RUG_ITEMS = [
     "image": "https://patentimages.storage.googleapis.com/d1/b4/eb/aa521eac9c2c9a/US08141505-20120327-D00000.png",
     "imageCredit": "Patent drawing via Google Patents (public domain)",
     "imagePage": "https://patents.google.com/patent/US8141505B2/en",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "rights": "public-domain"
   },
   {
     "id": "pat-us8141505b2",
@@ -12282,7 +12284,8 @@ window.RUG_ITEMS = [
     "image": "https://patentimages.storage.googleapis.com/be/0f/b5/8c71ec5024f14a/US08225727-20120724-D00000.png",
     "imageCredit": "Patent drawing via Google Patents (public domain)",
     "imagePage": "https://patents.google.com/patent/US8225727B2/en",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "rights": "public-domain"
   },
   {
     "id": "finding-cnc-chongqing-pmac-2011",

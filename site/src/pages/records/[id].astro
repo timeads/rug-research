@@ -1,7 +1,7 @@
 ---
 // One page per record: its picture (or a bookcloth plate), the facts, the citation and where it is cited.
 import Base from "../../layouts/Base.astro";
-import { db, cloth, imageUrl, imageCleared, citation, base } from "../../lib/data.js";
+import { db, cloth, imageUrl, imageCleared, publicDomainTag, citation, base } from "../../lib/data.js";
 import { citedIndex } from "../../lib/cited.js";
 
 export async function getStaticPaths() {
@@ -30,7 +30,7 @@ const description = [`${TYPE[it.type] || "Source"}: ${it.title.replace(/^(REFUTE
     <div class="rec-body">
       <div class="rec-id">
       <h1>{it.title}</h1>
-      <p class="kind">{TYPE[it.type] || it.type} · {it.status === "verified" ? "checked at the source" : "not yet checked at the source"}{img && !imageCleared(it) && <> · <span class="pending">Image permission pending</span></>}</p>
+      <p class="kind">{TYPE[it.type] || it.type} · {it.status === "verified" ? "checked at the source" : "not yet checked at the source"}{img && !imageCleared(it) && <> · <span class="pending">Image permission pending</span></>}{img && publicDomainTag(it) && <> · <span class="pd-tag">Image in the public domain</span></>}</p>
       <dl class="facts">{facts.map(([k, v]) => <><dt>{k}</dt><dd>{v}</dd></>)}</dl>
       <div class="btns">
         {it.sourceUrl && <a class="btn primary" href={it.sourceUrl} rel="noopener">View at the source</a>}

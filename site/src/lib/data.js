@@ -57,7 +57,9 @@ export function imageUrl(src, width = 1200) {
   return src.replace(/\/full\/(?:full|max|!?\d*,\d*)\/0\/default\.jpg$/, `/full/${width},/0/default.jpg`);
 }
 // Who may see a picture published: "own" and "public-domain" are clear; anything else is pending.
-export const imageCleared = it => ["own", "public-domain"].includes(it.rights) || it.type === "patent";
+export const imageCleared = it => ["own", "public-domain", "granted"].includes(it.rights) || it.type === "patent";
+// Marks a picture marked public domain in the database, unless its credit line already says so.
+export const publicDomainTag = (it, credit = "") => it.rights === "public-domain" && !/public domain|cc0/i.test(`${credit} ${it.imageCredit || ""}`);
 
 // A citation in the research tool's style (close to Chicago), as HTML.
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);

@@ -6,7 +6,7 @@ import Base from "../../layouts/Base.astro";
 import Milestones from "../../components/Milestones.astro";
 import WoundBand from "../../components/WoundBand.astro";
 import Cite from "../../components/Cite.astro";
-import { db, record, imageUrl, imageCleared, citation, base, canonical, absolute, CHAPTER_CLOTH, clothName } from "../../lib/data.js";
+import { db, record, imageUrl, imageCleared, publicDomainTag, citation, base, canonical, absolute, CHAPTER_CLOTH, clothName } from "../../lib/data.js";
 
 export async function getStaticPaths() {
   // In book order, so each chapter knows the one before and after it.
@@ -54,7 +54,7 @@ const schema = {
     </header>
     {hero && <figure class="ch-hero">
       <img src={imageUrl(heroSrc, 2400)} alt={hero.title} referrerpolicy="no-referrer" fetchpriority="high" style={d.hero.focus ? `object-position:${d.hero.focus}` : undefined} />
-      <figcaption><span>{d.hero.caption ?? hero.title} <a href={base(`records/${hero.id}/`)}>Source</a>{!imageCleared(hero) && <> <span class="pending">Permission pending</span></>}</span></figcaption>
+      <figcaption><span>{d.hero.caption ?? hero.title} <a href={base(`records/${hero.id}/`)}>Source</a>{!imageCleared(hero) && <> <span class="pending">Permission pending</span></>}{publicDomainTag(hero) && <> <span class="pd-tag">Public domain</span></>}</span></figcaption>
     </figure>}
     {d.milestones.length > 0 && <Milestones items={d.milestones} />}
     <div class="reading">

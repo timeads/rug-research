@@ -197,7 +197,8 @@ h1.ch-title { margin: 1.75rem 0 0; font: 680 clamp(2.5rem, 6vw, 4.5rem)/1 var(--
 .fig figcaption .credit { display: flex; flex-wrap: wrap; align-items: center; gap: .25rem .9rem; margin-top: .3rem; color: var(--ink-3); font-size: .8125rem; }
 .fig figcaption .src { font-weight: 650; text-decoration: none; color: var(--shade-ink); }
 .fig figcaption .src:hover { text-decoration: underline; }
-.pending { display: inline-flex; align-items: center; padding: .1em .55em; border: 1px solid var(--rule-2); border-radius: 2px; font: 550 .75rem/1.5 var(--frame); color: var(--ink-2); white-space: nowrap; }
+.pending, .pd-tag { display: inline-flex; align-items: center; padding: .1em .55em; border: 1px solid var(--rule-2); border-radius: 2px; font: 550 .75rem/1.5 var(--frame); color: var(--ink-2); white-space: nowrap; }
+.pd-tag { border-color: color-mix(in oklab, var(--shade), transparent 45%); color: var(--shade-ink); }
 .prose > .margin { float: right; clear: right; width: var(--margin); margin: .3rem 0 1.5rem 1.5rem; }
 .prose > .margin figcaption { font-size: .8125rem; }
 @media (max-width: 1100px) { .prose > .margin { float: none; width: auto; max-width: 22rem; margin: 2em 0; } }

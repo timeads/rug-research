@@ -759,3 +759,18 @@ input[type="search"]::-webkit-search-cancel-button:hover { background: var(--ink
 .tr-edit { margin-top: 10px; }
 .tr-edit textarea { min-height: 240px; }
 .tr-other { margin-top: 18px; }
+
+/* Public domain: a one-click mark under a record's picture (the rights field, published with Publish). */
+.pd-row { display: flex; align-items: center; flex-wrap: wrap; gap: 6px 12px; padding: 10px 22px 0; }
+.toggle.pd { --c: var(--cloth-jade); height: 28px; }
+.pd-hint { font-size: var(--t-xs); color: var(--ink-3); min-width: 0; flex: 1 1 14rem; }
+
+/* Publish review: what each change is, published beside yours. */
+.pub-compare { margin: 0 0 10px 26px; font-size: var(--t-sm); }
+.pub-compare summary { cursor: pointer; color: var(--ink-2); width: max-content; max-width: 100%; }
+.pub-compare .link-btn { margin-top: 6px; }
+.pub-table { overflow-x: auto; margin-top: 6px; }
+.pub-table table { border-collapse: collapse; width: 100%; table-layout: fixed; }
+.pub-table th, .pub-table td { text-align: left; vertical-align: top; padding: 4px 8px 4px 0; border-top: 1px solid var(--line); overflow-wrap: anywhere; }
+.pub-table thead th { color: var(--ink-3); font-weight: 550; border-top: 0; }
+.pub-table tbody th { width: 7rem; color: var(--ink-3); font-weight: 550; }

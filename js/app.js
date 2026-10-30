@@ -50,6 +50,9 @@
     "own": "Own photo", "public-domain": "Public domain", "not-requested": "Permission not yet requested",
     "requested": "Permission requested", "granted": "Permission granted", "declined": "Permission declined"
   };
+  // A picture whose credit or description says it is public domain (or CC0, or open access) but isn't marked so.
+  const mentionsPD = it => it.image && it.rights !== "public-domain" && it.type !== "patent" &&
+    /public[- ]domain|\bcc0\b|open access/i.test([it.imageCredit, it.imageCaption, it.description].join(" "));
   const confBadge = it => it.confidence && CONFIDENCE[it.confidence] ? `<span class="conf conf-${it.confidence}" title="${esc(CONFIDENCE[it.confidence].hint)}">${esc(CONFIDENCE[it.confidence].label)}</span>` : "";
 
   const SEED_CHAPTERS = window.RUG_CHAPTERS || [];
@@ -294,7 +297,7 @@
     status: it => [it.status || "unverified"],
     region: it => [it.region || "(none)"],
     conf: it => [it.confidence || "(none)"],
-    rights: it => it.image ? [it.rights || "not-requested"] : ["(no image)"]
+    rights: it => it.image ? [it.rights || "not-requested", ...(mentionsPD(it) ? ["likely-public-domain"] : [])] : ["(no image)"]
   };
   const passFacets = (it, except) => Object.entries(F).every(([k, set]) => k === except || !set.size || facetValues[k](it).some(v => set.has(v)));
 
@@ -435,7 +438,7 @@
       ["type", "Kinds of record", v => TYPES[v]?.plural || v],
       ["conf", "Confidence", v => v === "(none)" ? "Not graded" : CONFIDENCE[v]?.label || v, v => CONFIDENCE[v] ? `<span class="conf-dot conf-${v}"></span>` : ""],
       ["inst", "Held by", v => v === "(none)" ? "No institution" : v],
-      ["rights", "Image permission", v => v === "(no image)" ? "No image" : RIGHTS[v] || v],
+      ["rights", "Image permission", v => v === "(no image)" ? "No image" : v === "likely-public-domain" ? "Says public domain, not marked" : RIGHTS[v] || v],
       ["status", "Checked", v => v === "verified" ? "Verified at source" : "Not yet verified"]
     ];
     $("#facets").innerHTML = defs.map(([key, title, label, mark]) => {
@@ -643,6 +646,7 @@
       </div>
       ${src ? `<div class="drawer-plate"><a href="${esc(src)}" target="_blank" rel="noopener" aria-label="Open full image">${plateHTML(it, it.title)}</a></div>` : it.type === "finding" ? "" : `<div class="drawer-plate"><div class="plate-board">${boardPlate(it)}</div></div>`}
       ${gallery.length > 1 ? `<div class="gallery" role="group" aria-label="More photos">${gallery.map((g, i) => `<button class="gthumb" data-gsrc="${esc(photoSrc(g.src))}" data-gcap="${esc(g.caption || "")}" aria-label="${esc(g.caption || `Photo ${i + 1}`)}" aria-pressed="${i === 0}"><img src="${esc(photoSrc(g.src))}" alt="" loading="lazy" referrerpolicy="no-referrer"></button>`).join("")}</div>` : ""}
+      ${src && it.type !== "patent" && it.rights !== "own" ? `<div class="pd-row"><button class="toggle pd" data-pd aria-pressed="${it.rights === "public-domain"}"><span class="flag-dot"></span>Public domain</button><span class="pd-hint">${it.rights === "public-domain" ? "Shown on the site without a permission mark." : mentionsPD(it) ? "The record says this picture is public domain or open access. Mark it to clear it for the site." : "Mark it if the picture is out of copyright or released to the public domain (CC0)."}</span></div>` : ""}
       ${src && it.rights && !["own", "public-domain"].includes(it.rights) ? `<p class="credit rights rights-${esc(it.rights)}">${esc(RIGHTS[it.rights] || it.rights)}${it.rights === "not-requested" ? ": shown here for research; ask before publishing" : ""}</p>` : ""}
       ${src && it.imageRole === "illustration" ? `<p class="credit illus">Illustration, not the item described: ${it.imagePage && safeUrl(it.imagePage) ? `<a href="${esc(safeUrl(it.imagePage))}" target="_blank" rel="noopener">${esc(it.imageCaption || "a comparable item")}</a>` : esc(it.imageCaption || "a comparable item")}${credit ? ` · Image: ${esc(credit)}` : ""}</p>`
         : src && (credit || gallery[0]?.caption) ? `<p class="credit" id="gallery-caption">${esc([gallery[0]?.caption, credit && `Image: ${credit}`].filter(Boolean).join(" · "))}</p>` : ""}
@@ -690,6 +694,16 @@
     const wasHidden = $("#drawer").hidden;
     $("#drawer").hidden = false; $("#scrim").hidden = false;
     if (wasHidden) { $("#drawer").scrollTop = 0; $("#drawer").focus({ preventScroll: true }); }
+  };
+  // Marks a record's picture public domain (or takes the mark off): an edit like any other, published with
+  // the Publish button, after which the site shows the picture without "Permission pending".
+  const togglePublicDomain = id => {
+    const it = BY_ID[id]; if (!it) return;
+    const base = S.items[id] || clean(it);
+    const on = base.rights !== "public-domain";
+    snapBase(id); S.items[id] = { ...base, rights: on ? "public-domain" : "not-requested" }; touch(id); save();
+    refresh();
+    toast(on ? "Marked public domain. Publish to update the site." : "Public domain mark taken off");
   };
   const closeDrawer = () => {
     $("#drawer").hidden = true; $("#scrim").hidden = true; drawerId = null;
@@ -1667,6 +1681,7 @@
     if (e.target.closest("[data-tr-remove]") && confirm(PUB_TR[drawerId] ? "Undo your changes to this transcript?" : "Remove this transcript?")) return setTranscript(drawerId, null);
     const fi = e.target.closest("[data-find-image]"); if (fi) return openImageFinder(fi.dataset.findImage);
     const f = e.target.closest("[data-flag]"); if (f) return toggleFlag(drawerId, f.dataset.flag);
+    if (e.target.closest("[data-pd]")) return togglePublicDomain(drawerId);
     const ul = e.target.closest("[data-unlist]"); if (ul) return toggleInList(drawerId, ul.dataset.unlist);
     if (e.target.id === "copy-cite") {
       navigator.clipboard?.writeText(citation(BY_ID[drawerId]).replace(/\*/g, "")).then(() => toast("Citation copied"), () => toast("Copy failed"));
@@ -1862,8 +1877,20 @@
       pubBody.innerHTML = `<p class="pub-err" role="alert">${esc(ghErr(e))}</p>`; return pubFootButtons("", `<button type="button" class="btn" data-pub="retry">Try again</button>`);
     }
     const ch = review.changes, mine = S.items;
+    // What each change is, field by field, with a way to throw away a copy you didn't mean to make.
+    const full = v => v == null || v === "" || (Array.isArray(v) && !v.length) ? "(empty)" : Array.isArray(v) ? v.map(x => typeof x === "object" ? x.src || JSON.stringify(x) : x).join(", ") : typeof v === "object" ? JSON.stringify(v) : String(v);
+    const compare = c => {
+      const m = mine[c.id] || {}, p = review.pub[c.id] || {};
+      const keys = c.kind === "added" ? ["date", "institution", "creator", "sourceUrl", "description"].filter(k => m[k]) : c.fields || [];
+      const rows = keys.map(k => `<tr><th scope="row">${esc(k)}</th>${c.kind === "added" ? "" : `<td>${esc(full(p[k]))}</td>`}<td>${esc(full(m[k]))}</td></tr>`).join("");
+      const tools = c.kind === "deleted" ? `<button type="button" class="link-btn" data-undelete="${esc(c.id)}">Keep this record: undo the deletion</button>` : ["edited", "added"].includes(c.kind) && mine[c.id] ? `<button type="button" class="link-btn" data-discard="${esc(c.id)}">${c.kind === "added" ? "Delete this new record from this browser" : "Discard my copy and keep the published record"}</button>` : "";
+      if (!rows && !tools) return "";
+      return `<details class="pub-compare"><summary>${c.kind === "added" ? "What it is" : c.kind === "deleted" ? "Undo" : "Compare with the published record"}</summary>
+        ${rows ? `<div class="pub-table"><table><thead><tr><th></th>${c.kind === "added" ? "" : "<th>Published</th>"}<th>${c.kind === "added" ? "In this browser" : "Yours"}</th></tr></thead><tbody>${rows}</tbody></table></div>` : ""}
+        ${tools}</details>`;
+    };
     const row = (c, checked, note = "") => `<li class="pub-row"><label><input type="checkbox" data-pick="${c.kind === "transcript" ? "tr:" + esc(c.id) : c.kind === "deleted" ? "del:" + esc(c.id) : esc(c.id)}"${checked ? " checked" : ""}${c.blocked ? " disabled" : ""}>
-      <span><span class="pub-kind">${KIND[c.kind]}</span> <strong>${esc(c.title)}</strong>${c.fields && c.fields.length ? `<span class="pub-fields">${esc(c.fields.join(", "))}</span>` : ""}${c.note ? `<span class="pub-fields">${esc(c.note)}</span>` : ""}${note}</span></label></li>`;
+      <span><span class="pub-kind">${KIND[c.kind]}</span> <strong>${esc(c.title)}</strong>${c.fields && c.fields.length ? `<span class="pub-fields">${esc(c.fields.join(", "))}</span>` : ""}${c.note ? `<span class="pub-fields">${esc(c.note)}</span>` : ""}${note}</span></label>${compare(c)}</li>`;
     const ready = ch.filter(c => ["edited", "added", "transcript"].includes(c.kind) && !c.legacy && (c.kind !== "edited" || c.fields.length || !c.conflicts.length));
     const legacy = ch.filter(c => c.kind === "edited" && c.legacy && c.fields.length);
     const conflicts = ch.filter(c => c.kind === "edited" && c.conflicts && c.conflicts.length);
@@ -1877,7 +1904,7 @@
       ${ready.length ? `<h3>Ready to publish</h3><ul class="pub-list">${ready.map(c => row(c, !c.blocked)).join("")}</ul>` : ""}
       ${conflicts.length ? `<h3>Changed on both sides</h3><p class="pub-note">Since you edited these, the published record has changed the same field. The published version stays unless you tick “Use mine”.</p>
         <ul class="pub-list">${conflicts.flatMap(c => c.conflicts.map(k => `<li class="pub-row"><label><input type="checkbox" data-mine="${esc(c.id)}.${esc(k)}"><span><span class="pub-kind">Use mine</span> <strong>${esc(c.title)}</strong> · ${esc(k)}<span class="pub-fields">Published: ${esc(short(review.pub[c.id]?.[k]))}</span><span class="pub-fields">Yours: ${esc(short(mine[c.id]?.[k]))}</span></span></label></li>`)).join("")}</ul>` : ""}
-      ${legacy.length ? `<h3>Older changes in this browser</h3><p class="pub-note">These were edited here before the Publish button existed, so it can't tell your edits from an out-of-date copy. Tick only the ones you know you changed.</p><ul class="pub-list">${legacy.map(c => row(c, false)).join("")}</ul>` : ""}
+      ${legacy.length ? `<h3>Older changes in this browser</h3><p class="pub-note">These were edited here before the Publish button existed, so it can't tell your edits from an out-of-date copy. Tick only the ones you know you changed; open “Compare” to see the difference.</p><p><button type="button" class="link-btn" data-discard-legacy>Discard all of these older copies</button></p><ul class="pub-list">${legacy.map(c => row(c, false)).join("")}</ul>` : ""}
       ${dels.length ? `<h3>Deleted in this browser</h3><p class="pub-note">Tick to remove these from the database and the public site. A chapter that cites a removed record stops the site from updating until the citation is changed.</p><ul class="pub-list">${dels.map(c => row(c, false)).join("")}</ul>` : ""}
       ${info.length ? `<h3>Not published</h3><ul class="pub-list">${info.map(c => `<li class="pub-row"><span><span class="pub-kind">${KIND[c.kind]}</span> <strong>${esc(c.title)}</strong><span class="pub-fields">${esc(c.note)}</span></span></li>`).join("")}</ul>` : ""}
       <p class="pub-note">Flags, notes and lists stay in this browser; they aren't part of the database.</p>`;
@@ -1924,7 +1951,31 @@
     }
   };
   $("#btn-publish").onclick = () => { pubDlg.showModal(); if (ghToken.get()) reviewView(); else setupView(); };
+  // Throws away this browser's copy of a record, so the published record shows again. A new record that
+  // was never published is deleted outright.
+  const discardCopy = id => {
+    if (!S.items[id]) return;
+    if (!BASE_IDS.has(id)) {
+      for (const src of uploadedSrcs(S.items[id])) { idb.del(src.slice(4)); delete imgCache[src.slice(4)]; }
+      delete S.flags[id]; delete S.notes[id];
+      for (const l of S.lists) l.items = l.items.filter(x => x !== id);
+    }
+    delete S.items[id]; delete S.base[id];
+  };
   pubDlg.addEventListener("click", async e => {
+    const d = e.target.closest("[data-discard]");
+    if (d) {
+      const id = d.dataset.discard, isNew = !BASE_IDS.has(id);
+      if (!confirm(isNew ? "Delete this new record? It has never been published, so it will be gone." : "Discard your copy of this record? The published record will show instead.")) return;
+      discardCopy(id); save(); refresh(); toast(isNew ? "Deleted" : "Your copy discarded"); return reviewView();
+    }
+    const u = e.target.closest("[data-undelete]");
+    if (u) { delete S.deleted[u.dataset.undelete]; save(); refresh(); toast("Deletion undone"); return reviewView(); }
+    if (e.target.closest("[data-discard-legacy]")) {
+      const ids = review.changes.filter(c => c.kind === "edited" && c.legacy && c.fields.length).map(c => c.id);
+      if (!ids.length || !confirm(`Discard ${ids.length} older cop${ids.length === 1 ? "y" : "ies"}? The published records will show instead.`)) return;
+      ids.forEach(discardCopy); save(); refresh(); toast(`${ids.length} older cop${ids.length === 1 ? "y" : "ies"} discarded`); return reviewView();
+    }
     const b = e.target.closest("[data-pub]"); if (!b) return;
     const k = b.dataset.pub;
     if (k === "close") pubDlg.close();
@@ -1948,7 +1999,7 @@
   const heroDlg = $("#hero-dialog"), heroBody = $("#hero-body"), heroFoot = $("#hero-foot");
   let heroSt = null; // { ch, page, name, current, figures, pick, focus, caption, q }
   const pageOf = chId => (SEED_CHAPTERS.find(c => c.id === chId) || {}).page;
-  const isCleared = it => ["own", "public-domain"].includes(it.rights) || it.type === "patent";
+  const isCleared = it => ["own", "public-domain", "granted"].includes(it.rights) || it.type === "patent";
   // A record's pictures as the site addresses them: gallery photo n is image n; the main picture is image 0.
   const picturesOf = it => {
     if (!it) return [];
