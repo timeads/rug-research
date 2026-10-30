@@ -257,17 +257,25 @@ window.RUG_ITEMS = [
     "dateStart": 1984,
     "publisher": "Garland",
     "institution": "Winterthur Library",
-    "description": "Finding aid to Winterthur's trade catalogs, arranged by type of goods and indexed chronologically, geographically and by name. Use the floor coverings entries to build a list of carpet/rug catalogs to request.\n\nLink note (Oct 2026): the bookseller page this cited no longer answers; the link is now the Open Library catalogue record for the book.",
+    "description": "Finding aid to Winterthur's trade catalogs, arranged by type of goods and indexed chronologically, geographically and by name. Use the floor coverings entries to build a list of carpet/rug catalogs to request.\n\nLink note (Oct 2026): the bookseller page this cited no longer answers; the link is now the Open Library catalogue record for the book.\n\nUpdate 2026-10-28 (Claude in Chrome): Winterthur's own catalogue gives the date as 1984: \"Trade catalogues at Winterthur : a guide to the literature of merchandising, 1750 to 1980 / [compiled by] E. Richard McKinstry. New York : Garland Pub., 1984. xv, 438 p., [24] p. of plates : ill. ; 23 cm.\" ISBN 0824089529; Winterthur call number Z7164 C73h (https://library.winterthur.org/Record/vtls000000685). So 1984 is right; Open Library's 1993 is likely a reprint or an error.\nFound: Winterthur Library catalogue, search \"McKinstry trade catalogues\", 2026-10-28.",
     "sourceUrl": "https://openlibrary.org/works/OL2649034W",
     "themes": [
       "Trade catalogs & marketing"
     ],
     "tags": [
       "finding aid",
-      "start here"
+      "start here",
+      "found by Claude in Chrome",
+      "Winterthur Library"
     ],
     "status": "unverified",
-    "region": "United States"
+    "region": "United States",
+    "identifier": "ISBN 0824089529; Winterthur call no. Z7164 C73h",
+    "image": "https://covers.openlibrary.org/b/id/9536750-L.jpg",
+    "imageCredit": "Book cover via Open Library",
+    "imagePage": "https://openlibrary.org/works/OL42017W",
+    "rights": "not-requested",
+    "reviewedAt": "2026-10-30T10:39:37.931Z"
   },
   {
     "id": "book-ames-beyond-necessity",
@@ -771,10 +779,10 @@ window.RUG_ITEMS = [
     "id": "event-bcf-nylon",
     "type": "event",
     "title": "DuPont introduces bulked continuous filament (BCF) nylon for carpet",
-    "date": "1958",
-    "dateStart": 1958,
-    "dateEnd": 1958,
-    "description": "Sources disagree on the date: the New Georgia Encyclopedia says 1957; Material Intelligence says 1959. BCF made tufted nylon carpet resilient and cheap. Confirm against Hagley's Textile Fibers records.\n\nUpdate 2026-10-28 (Claude in Chrome): DuPont's own commemorative booklet \"Nylon: The First 25 Years\" (Textile Fibers Department, 1963; Hagley 1984259_121412_004, https://digital.hagley.org/1984259_121412_004) gives 1958 in its chronology: \"A special bulked continuous filament nylon yarn was developed for carpeting; it soon revolutionized the market for rugs and carpeting by [introducing] nylon filament in loop pile construction\" (read from Hagley's OCR, which is garbled; check the page image, image 2). The database's \"501\" record also gives 1958. Dated 1958 on Tim's review (Oct 2026), following DuPont's own chronology; the secondary sources' 1957 and 1959 are noted above. Still to do: quote the entry from the page image rather than the OCR.",
+    "date": "1957–1959",
+    "dateStart": 1957,
+    "dateEnd": 1959,
+    "description": "Sources disagree on the date: the New Georgia Encyclopedia says 1957; Material Intelligence says 1959. BCF made tufted nylon carpet resilient and cheap. Confirm against Hagley's Textile Fibers records.\n\nUpdate 2026-10-28 (Claude in Chrome): DuPont's own commemorative booklet \"Nylon: The First 25 Years\" (Textile Fibers Department, 1963; Hagley 1984259_121412_004, https://digital.hagley.org/1984259_121412_004) gives 1958 in its chronology: \"A special bulked continuous filament nylon yarn was developed for carpeting; it soon revolutionized the market for rugs and carpeting by [introducing] nylon filament in loop pile construction\" (read from Hagley's OCR, which is garbled; check the page image, image 2). The database's \"501\" record also gives 1958. Date left as written until Tim reviews.",
     "sourceUrl": "https://www.georgiaencyclopedia.org/articles/business-economy/carpet-industry/",
     "themes": [
       "Nylon & synthetic fibers (DuPont)",
@@ -782,14 +790,18 @@ window.RUG_ITEMS = [
     ],
     "tags": [
       "timeline",
+      "date conflict",
       "found by Claude in Chrome",
       "Hagley",
-      "for: Nylon",
-      "date from DuPont chronology"
+      "for: Nylon"
     ],
     "status": "unverified",
-    "imageSource": "rejected",
-    "region": "United States"
+    "imageSource": "auto",
+    "region": "United States",
+    "image": "https://georgiaencyclopedia.org/wp-content/uploads/2021/02/carpet_machine_001-1200x630.jpg",
+    "imageCredit": "georgiaencyclopedia.org",
+    "rights": "not-requested",
+    "reviewedAt": "2026-10-30T10:39:37.931Z"
   },
   {
     "id": "event-whitener-bedspread",
@@ -1153,7 +1165,9 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "region": "United States",
-    "imageSource": "rejected"
+    "imageSource": "rejected",
+    "description": "Image note 2026-10-28 (Claude in Chrome): the museum has an online photograph (see Image page), but its server blocks the image from showing on other sites, so no image link is set.",
+    "reviewedAt": "2026-10-30T10:39:37.931Z"
   },
   {
     "id": "mfah-157589",
@@ -1275,7 +1289,7 @@ window.RUG_ITEMS = [
       "tufting",
       "French knots"
     ],
-    "description": "The museum notes that candlewicking combined flat stitches with dimensional ones, tufting among them, and that candlewick spreads recall the earlier yarn-sewn bed rugs.",
+    "description": "The museum notes that candlewicking combined flat stitches with dimensional ones, tufting among them, and that candlewick spreads recall the earlier yarn-sewn bed rugs.\n\nImage note 2026-10-28 (Claude in Chrome): the museum has an online photograph (see Image page), but its server blocks the image from showing on other sites, so no image link is set.",
     "sourceUrl": "https://collection.folkartmuseum.org/objects/2249/eagle-candlewick-spread",
     "themes": [
       "Early tufting: bed rugs & needlework pile",
@@ -1285,7 +1299,8 @@ window.RUG_ITEMS = [
       "technique evidence"
     ],
     "status": "unverified",
-    "region": "United States"
+    "region": "United States",
+    "reviewedAt": "2026-10-30T10:39:37.931Z"
   },
   {
     "id": "afam-concentric-circles",
@@ -1307,7 +1322,9 @@ window.RUG_ITEMS = [
       "Chenille & candlewick"
     ],
     "status": "unverified",
-    "region": "United States"
+    "region": "United States",
+    "description": "Image note 2026-10-28 (Claude in Chrome): the museum has an online photograph (see Image page), but its server blocks the image from showing on other sites, so no image link is set.",
+    "reviewedAt": "2026-10-30T10:39:37.931Z"
   },
   {
     "id": "afam-great-cover-up",
@@ -1594,7 +1611,7 @@ window.RUG_ITEMS = [
     "title": "Cabin Crafts executives and Gov. Ellis Arnall with a chenille bedspread",
     "institution": "Bandy Heritage Center, Dalton State College",
     "collection": "Thomas Deaton Collection",
-    "description": "Shows R. G. McCamy and Fred L. Westcott. The catalog dates it 1962, but Arnall was governor 1943–47, so check the date.",
+    "description": "Shows R. G. McCamy and Fred L. Westcott. The catalog dates it 1962, but Arnall was governor 1943–47, so check the date.\n\nImage added 2026-10-28 (Claude in Chrome): Bandy Heritage Center photograph 2010.003.0001.",
     "sourceUrl": "https://bandyheritagecenter.pastperfectonline.com/photo/95EA3F4C-3D88-4C76-8BE6-581372259612",
     "themes": [
       "Chenille & candlewick",
@@ -1605,7 +1622,12 @@ window.RUG_ITEMS = [
       "date conflict"
     ],
     "status": "unverified",
-    "region": "United States"
+    "region": "United States",
+    "image": "https://s3.amazonaws.com/pastperfectonline/images/museum_1415/002/20100030001.jpg",
+    "imageCredit": "Bandy Heritage Center, Dalton State College",
+    "imagePage": "https://bandyheritagecenter.pastperfectonline.com/photo/95EA3F4C-3D88-4C76-8BE6-581372259612",
+    "rights": "not-requested",
+    "reviewedAt": "2026-10-30T10:39:37.931Z"
   },
   {
     "id": "ner-nobody-invented",
@@ -2799,7 +2821,7 @@ window.RUG_ITEMS = [
     "type": "book",
     "title": "『日本カーペット工業史』 History of the Japanese Carpet Industry (2008)",
     "region": "Japan",
-    "description": "The definitive Japanese-language source, from hand-woven dantsu to the present. ¥5,000 including shipping; order from the association, 06-6809-2868.\n\nCitation check (Oct 2026, from search results; pages not opened): confirmed.\nQuote and price (税込5,000円, 送料込み) are confirmed; the price page is dated around Jan 2023. Add: it was published April 2008 as the 50th-anniversary project of 日本特殊毛織物等工業組合. The phone number 06-6809-2868 was not verified.\nSource: 組合発行書籍のご案内 (Association publications) – 日本カーペット工業組合, April 2008.\nFound at: http://www.carpet.or.jp/publics/index/95/detail=1/c_id=524/page524=1\nAlso: https://carpet.or.jp/aboutus/\n\nLink note (Oct 2026): the Japan Carpet Manufacturers Association rebuilt its website and this page is gone. The link is now the Internet Archive's copy of 17 Oct 2025; the original address was http://www.carpet.or.jp/publics/index/95/detail=1/c_id=524/page524=1.",
+    "description": "The definitive Japanese-language source, from hand-woven dantsu to the present. ¥5,000 including shipping; order from the association, 06-6809-2868.\n\nCitation check (Oct 2026, from search results; pages not opened): confirmed.\nQuote and price (税込5,000円, 送料込み) are confirmed; the price page is dated around Jan 2023. Add: it was published April 2008 as the 50th-anniversary project of 日本特殊毛織物等工業組合. The phone number 06-6809-2868 was not verified.\nSource: 組合発行書籍のご案内 (Association publications) – 日本カーペット工業組合, April 2008.\nFound at: http://www.carpet.or.jp/publics/index/95/detail=1/c_id=524/page524=1\nAlso: https://carpet.or.jp/aboutus/\n\nLink note (Oct 2026): the Japan Carpet Manufacturers Association rebuilt its website and this page is gone. The link is now the Internet Archive's copy of 17 Oct 2025; the original address was http://www.carpet.or.jp/publics/index/95/detail=1/c_id=524/page524=1.\n\nUpdate 2026-10-28 (Claude in Chrome): CiNii Books record (NCID BA86914987, https://ci.nii.ac.jp/ncid/BA86914987): 『日本カーペット工業史』 日本カーペット工業史編纂委員会編集, 日本カーペット工業組合, [Osaka], 2008.4; 363 p., 27 cm; cloth; chronology pp. 329-344, references pp. 351-352; NDC 586.9. Held by 3 Japanese university libraries: Shiga University Library (6||B||4247010001574), University of Tokyo Economics Library (12:54365512840033), Nagoya Gakuin University (335.4/FB4). The publisher is the 工業組合 (industry union/association); check the English name used in the database. WorldCat not checked (its terms prompt needs Tim to accept).\nFound: CiNii Books, search 日本カーペット工業史, 2026-10-28.",
     "themes": [
       "Global diffusion of tufting"
     ],
@@ -2808,7 +2830,9 @@ window.RUG_ITEMS = [
       "buy",
       "priority",
       "citation checked 2026",
-      "citation: confirmed"
+      "citation: confirmed",
+      "found by Claude in Chrome",
+      "CiNii Books"
     ],
     "status": "unverified",
     "collection": "Tuft the World research brief: The Non-English Record",
@@ -2820,7 +2844,8 @@ window.RUG_ITEMS = [
     "dateStart": 2008,
     "creator": "日本カーペット工業組合",
     "sourceUrl": "https://web.archive.org/web/20251017034058/http://www.carpet.or.jp/publics/index/95/detail=1/c_id=524/page524=1",
-    "imageSource": "rejected"
+    "imageSource": "rejected",
+    "reviewedAt": "2026-10-30T10:39:37.931Z"
   },
   {
     "id": "ner-de-outsiders-1959",
@@ -4111,7 +4136,7 @@ window.RUG_ITEMS = [
     "collection": "DuPont Advertising Dept. records (Acc. 1803), Series I, Box 43, Folder 42, Advertising tearsheets 1967",
     "identifier": "dpads_1803_00680",
     "sourceUrl": "https://digital.hagley.org/dpads_1803_00680",
-    "description": "Magazine advertisement launching Antron as a carpet fiber. Found via search-engine results (Hagley's site blocks automated reading): open the link to confirm and see the image.",
+    "description": "Magazine advertisement launching Antron as a carpet fiber. Found via search-engine results (Hagley's site blocks automated reading): open the link to confirm and see the image.\n\nImage added 2026-10-28 (Claude in Chrome): image is the item's own scan from Hagley Digital Archives (dpads_1803_00680).",
     "region": "United States",
     "themes": [
       "Nylon & synthetic fibers (DuPont)",
@@ -4124,7 +4149,12 @@ window.RUG_ITEMS = [
       "priority"
     ],
     "status": "unverified",
-    "dateStart": 1967
+    "dateStart": 1967,
+    "image": "https://digital.hagley.org/cantaloupe/iiif/2/https%3A%2F%2Fdigital.hagley.org%2Fsystem%2Ffiles%2F2025-07%2F607395-Service%2520File.jpg/full/800,/0/default.jpg",
+    "imageCredit": "Hagley Museum and Library",
+    "imagePage": "https://digital.hagley.org/dpads_1803_00680",
+    "rights": "not-requested",
+    "reviewedAt": "2026-10-30T10:39:37.931Z"
   },
   {
     "id": "hagley-dpads-1803-00709",
@@ -4135,7 +4165,7 @@ window.RUG_ITEMS = [
     "collection": "DuPont Advertising Dept. records (Acc. 1803), Box 43, Advertising tearsheets 1969",
     "identifier": "dpads_1803_00709",
     "sourceUrl": "https://digital.hagley.org/dpads_1803_00709",
-    "description": "Magazine tear sheet; subjects include interior decoration, floor coverings and nylon. Found via search-engine results (Hagley's site blocks automated reading): open the link to confirm and see the image.",
+    "description": "Magazine tear sheet; subjects include interior decoration, floor coverings and nylon. Found via search-engine results (Hagley's site blocks automated reading): open the link to confirm and see the image.\n\nImage added 2026-10-28 (Claude in Chrome): image is the item's own scan from Hagley Digital Archives (dpads_1803_00709).",
     "region": "United States",
     "themes": [
       "Nylon & synthetic fibers (DuPont)",
@@ -4147,7 +4177,12 @@ window.RUG_ITEMS = [
       "advertisement"
     ],
     "status": "unverified",
-    "dateStart": 1969
+    "dateStart": 1969,
+    "image": "https://digital.hagley.org/cantaloupe/iiif/2/https%3A%2F%2Fdigital.hagley.org%2Fsystem%2Ffiles%2F2025-07%2F607421-Service%2520File.jpg/full/800,/0/default.jpg",
+    "imageCredit": "Hagley Museum and Library",
+    "imagePage": "https://digital.hagley.org/dpads_1803_00709",
+    "rights": "not-requested",
+    "reviewedAt": "2026-10-30T10:39:37.931Z"
   },
   {
     "id": "hagley-dpads-1803-00712",
@@ -4158,7 +4193,7 @@ window.RUG_ITEMS = [
     "collection": "DuPont Advertising Dept. records (Acc. 1803), Series I, Box 43, Folder 44, Advertising tearsheets 1969",
     "identifier": "dpads_1803_00712",
     "sourceUrl": "https://digital.hagley.org/dpads_1803_00712",
-    "description": "Magazine tear sheet advertising \"DuPont Antron Carpet Nylon\". Found via search-engine results (Hagley's site blocks automated reading): open the link to confirm and see the image.",
+    "description": "Magazine tear sheet advertising \"DuPont Antron Carpet Nylon\". Found via search-engine results (Hagley's site blocks automated reading): open the link to confirm and see the image.\n\nImage added 2026-10-28 (Claude in Chrome): image is the item's own scan from Hagley Digital Archives (dpads_1803_00712).",
     "region": "United States",
     "themes": [
       "Nylon & synthetic fibers (DuPont)",
@@ -4170,7 +4205,12 @@ window.RUG_ITEMS = [
       "advertisement"
     ],
     "status": "unverified",
-    "dateStart": 1969
+    "dateStart": 1969,
+    "image": "https://digital.hagley.org/cantaloupe/iiif/2/https%3A%2F%2Fdigital.hagley.org%2Fsystem%2Ffiles%2F2025-07%2F607422-Service%2520File.jpg/full/800,/0/default.jpg",
+    "imageCredit": "Hagley Museum and Library",
+    "imagePage": "https://digital.hagley.org/dpads_1803_00712",
+    "rights": "not-requested",
+    "reviewedAt": "2026-10-30T10:39:37.931Z"
   },
   {
     "id": "hagley-pam-20160208",
@@ -4181,7 +4221,7 @@ window.RUG_ITEMS = [
     "collection": "Pamphlets Collection (DuPont Textile Fibers Dept. trade catalog)",
     "identifier": "Pam 2016.0208",
     "sourceUrl": "https://digital.hagley.org/PAM_20160208",
-    "description": "Trade catalog for Antron carpet nylon. Subjects: carpets; nylon; rug and carpet industry. Found via search-engine results (Hagley's site blocks automated reading): open the link to confirm and see the image.",
+    "description": "Trade catalog for Antron carpet nylon. Subjects: carpets; nylon; rug and carpet industry. Found via search-engine results (Hagley's site blocks automated reading): open the link to confirm and see the image.\n\nImage added 2026-10-28 (Claude in Chrome): image is the item's own scan from Hagley Digital Archives (PAM_20160208).",
     "region": "United States",
     "themes": [
       "Nylon & synthetic fibers (DuPont)",
@@ -4194,7 +4234,12 @@ window.RUG_ITEMS = [
       "priority"
     ],
     "status": "unverified",
-    "dateStart": 1965
+    "dateStart": 1965,
+    "image": "https://digital.hagley.org/cantaloupe/iiif/2/https%3A%2F%2Fdigital.hagley.org%2Fsystem%2Ffiles%2F2025-05%2F438326-Service%2520File.jpg/full/800,/0/default.jpg",
+    "imageCredit": "Hagley Museum and Library",
+    "imagePage": "https://digital.hagley.org/PAM_20160208",
+    "rights": "not-requested",
+    "reviewedAt": "2026-10-30T10:39:37.931Z"
   },
   {
     "id": "hagley-film-fc319",
@@ -4323,8 +4368,13 @@ window.RUG_ITEMS = [
       "for: Nylon"
     ],
     "region": "United States",
-    "description": "Photograph: treated carpet clean after vacuuming, untreated part \"dirty and dingy\". An early soil-resistance image for carpet (DuPont Ludox). Found via search-engine results (Hagley's site blocks automated reading): open the link to confirm and see the image.\n\nUpdate 2026-10-28 (Claude in Chrome): item found on Hagley's new site. Catalogue title \"Test strip of carpet partially treated with Ludox collodial silica\" [sic], 1972341_2649, Date Created \"1955 (year approximate)\", Series IX. Fabrics and finishes. Summary: \"This is a test strip of carpet, portions of which have been treated with Ludox collodial silica. After vacuuming, treated areas emerge clean, while untreated portions remain dirty and dingy.\" A companion photograph, \"Carpet treated by Ludox colloidal silica\" (1972341_2692, same date), says Ludox \"is rapidly being adopted by the carpet industry as a soil retardant. It is easily applied at the mill by a multiple spray method, as shown here.\" The earlier number 1972341_1003 was a guess and is wrong.\nFound: Hagley Digital Archives, collection search \"carpet\", 2026-10-28.",
-    "sourceUrl": "https://digital.hagley.org/1972341_2649"
+    "description": "Photograph: treated carpet clean after vacuuming, untreated part \"dirty and dingy\". An early soil-resistance image for carpet (DuPont Ludox). Found via search-engine results (Hagley's site blocks automated reading): open the link to confirm and see the image.\n\nUpdate 2026-10-28 (Claude in Chrome): item found on Hagley's new site. Catalogue title \"Test strip of carpet partially treated with Ludox collodial silica\" [sic], 1972341_2649, Date Created \"1955 (year approximate)\", Series IX. Fabrics and finishes. Summary: \"This is a test strip of carpet, portions of which have been treated with Ludox collodial silica. After vacuuming, treated areas emerge clean, while untreated portions remain dirty and dingy.\" A companion photograph, \"Carpet treated by Ludox colloidal silica\" (1972341_2692, same date), says Ludox \"is rapidly being adopted by the carpet industry as a soil retardant. It is easily applied at the mill by a multiple spray method, as shown here.\" The earlier number 1972341_1003 was a guess and is wrong.\nFound: Hagley Digital Archives, collection search \"carpet\", 2026-10-28.\n\nImage added 2026-10-28 (Claude in Chrome): image is the item's own scan from Hagley Digital Archives (1972341_2649).",
+    "sourceUrl": "https://digital.hagley.org/1972341_2649",
+    "image": "https://digital.hagley.org/cantaloupe/iiif/2/https%3A%2F%2Fdigital.hagley.org%2Fsystem%2Ffiles%2F2025-06%2F534542-Service%2520File.jpg/full/800,/0/default.jpg",
+    "imageCredit": "Hagley Museum and Library",
+    "imagePage": "https://digital.hagley.org/1972341_2649",
+    "rights": "not-requested",
+    "reviewedAt": "2026-10-30T10:39:37.931Z"
   },
   {
     "id": "hagley-1972430-1080",
@@ -4335,7 +4385,7 @@ window.RUG_ITEMS = [
     "collection": "Acc. 1972.430 (photographs)",
     "identifier": "1972430_1080",
     "sourceUrl": "https://digital.hagley.org/1972430_1080",
-    "description": "Room photograph. Wall-to-wall carpet of \"continuous filament nylon in white and beige\" by James Lees & Sons, named \"Happy Day\". Best image found of an installed nylon carpet; fiber maker not named. Found via search-engine results (Hagley's site blocks automated reading): open the link to confirm and see the image.",
+    "description": "Room photograph. Wall-to-wall carpet of \"continuous filament nylon in white and beige\" by James Lees & Sons, named \"Happy Day\". Best image found of an installed nylon carpet; fiber maker not named. Found via search-engine results (Hagley's site blocks automated reading): open the link to confirm and see the image.\n\nImage added 2026-10-28 (Claude in Chrome): image is the item's own scan from Hagley Digital Archives (1972430_1080).",
     "region": "United States",
     "themes": [
       "Nylon & synthetic fibers (DuPont)",
@@ -4349,7 +4399,12 @@ window.RUG_ITEMS = [
       "James Lees"
     ],
     "status": "unverified",
-    "dateStart": 1962
+    "dateStart": 1962,
+    "image": "https://digital.hagley.org/cantaloupe/iiif/2/https%3A%2F%2Fdigital.hagley.org%2Fsystem%2Ffiles%2F2024-10%2F26407-Service%2520File.jpg/full/800,/0/default.jpg",
+    "imageCredit": "Hagley Museum and Library",
+    "imagePage": "https://digital.hagley.org/1972430_1080",
+    "rights": "not-requested",
+    "reviewedAt": "2026-10-30T10:39:37.931Z"
   },
   {
     "id": "hagley-nylon-hooked-rug",
@@ -4551,7 +4606,7 @@ window.RUG_ITEMS = [
     "collection": "Acc. 1970.200",
     "identifier": "1970200_09067 (Hagley Accession 1970.200)",
     "sourceUrl": "https://digital.hagley.org/1970200_09067",
-    "description": "Aerial photograph of a woven-carpet mill (Bloomsburg, Pa.). Context for the pre-tufting industry. Found via search-engine results (Hagley's site blocks automated reading). The link was on Hagley's old site (digital.hagley.org/70_200_09067); the database author found the item at its new address in Oct 2026. Open the link to confirm and see the image.",
+    "description": "Aerial photograph of a woven-carpet mill (Bloomsburg, Pa.). Context for the pre-tufting industry. Found via search-engine results (Hagley's site blocks automated reading). The link was on Hagley's old site (digital.hagley.org/70_200_09067); the database author found the item at its new address in Oct 2026. Open the link to confirm and see the image.\n\nImage added 2026-10-28 (Claude in Chrome): image is the item's own scan from Hagley Digital Archives (1970200_09067).",
     "region": "United States",
     "themes": [
       "Woven carpet"
@@ -4562,7 +4617,12 @@ window.RUG_ITEMS = [
       "mill"
     ],
     "status": "unverified",
-    "dateStart": 1936
+    "dateStart": 1936,
+    "image": "https://digital.hagley.org/cantaloupe/iiif/2/https%3A%2F%2Fdigital.hagley.org%2Fsystem%2Ffiles%2F2024-09%2F14749-Service%2520File.jpg/full/800,/0/default.jpg",
+    "imageCredit": "Hagley Museum and Library",
+    "imagePage": "https://digital.hagley.org/1970200_09067",
+    "rights": "not-requested",
+    "reviewedAt": "2026-10-30T10:39:37.931Z"
   },
   {
     "id": "hagley-gay-sons-1900",
@@ -4573,7 +4633,7 @@ window.RUG_ITEMS = [
     "collection": "Acc. 2002.251",
     "identifier": "2002251_069",
     "sourceUrl": "https://digital.hagley.org/2002251_069",
-    "description": "Photograph of a Philadelphia woven-carpet mill. Context for the pre-tufting industry. Found via search-engine results (Hagley's site blocks automated reading): open the link to confirm and see the image.",
+    "description": "Photograph of a Philadelphia woven-carpet mill. Context for the pre-tufting industry. Found via search-engine results (Hagley's site blocks automated reading): open the link to confirm and see the image.\n\nImage added 2026-10-28 (Claude in Chrome): image is the item's own scan from Hagley Digital Archives (2002251_069).",
     "region": "United States",
     "themes": [
       "Woven carpet"
@@ -4584,7 +4644,12 @@ window.RUG_ITEMS = [
       "mill"
     ],
     "status": "unverified",
-    "dateStart": 1900
+    "dateStart": 1900,
+    "image": "https://digital.hagley.org/cantaloupe/iiif/2/https%3A%2F%2Fdigital.hagley.org%2Fsystem%2Ffiles%2F2024-10%2F32281-Service%2520File.jpg/full/800,/0/default.jpg",
+    "imageCredit": "Hagley Museum and Library",
+    "imagePage": "https://digital.hagley.org/2002251_069",
+    "rights": "not-requested",
+    "reviewedAt": "2026-10-30T10:39:37.931Z"
   },
   {
     "id": "ttw-finding-501-1958",
@@ -5156,7 +5221,7 @@ window.RUG_ITEMS = [
     "id": "si-bigelow-loom-model",
     "type": "object",
     "title": "Bigelow's patent model of a loom (1838)",
-    "description": "Patent model in the Smithsonian's National Museum of American History: an object for the woven side of the race to affordable carpet.",
+    "description": "Patent model in the Smithsonian's National Museum of American History: an object for the woven side of the race to affordable carpet.\n\nImage added 2026-10-28 (Claude in Chrome): NMAH object photograph (NMAH-81-4414).",
     "region": "United States",
     "themes": [
       "Woven carpet",
@@ -5171,7 +5236,12 @@ window.RUG_ITEMS = [
     "date": "1838",
     "sourceUrl": "https://www.si.edu/object/1838-bigelows-patent-model-loom:nmah_1070864",
     "institution": "Smithsonian, National Museum of American History",
-    "identifier": "nmah_1070864"
+    "identifier": "nmah_1070864",
+    "image": "https://ids.si.edu/ids/deliveryService?id=NMAH-81-4414&max=800",
+    "imageCredit": "National Museum of American History, Smithsonian Institution",
+    "imagePage": "https://www.si.edu/object/nmah_1070864",
+    "rights": "not-requested",
+    "reviewedAt": "2026-10-30T10:39:37.931Z"
   },
   {
     "id": "bigelow-mill",
@@ -10966,7 +11036,7 @@ window.RUG_ITEMS = [
     "institution": "Historic New England",
     "identifier": "1959.7B (GUSN-8721)",
     "sourceUrl": "https://www.historicnewengland.org/explore/collections-access/gusn/8721",
-    "description": "Wool ingrain fragment with both selvages and a striped wool binding. Historic New England holds several more: GUSN-8722 (1959.6, 1850–70, strapwork and eight-pointed stars, from Jacob's Farmhouse, Mass.), GUSN-8664 (1993.507, 1850–80, diamond-and-vine), GUSN-24021 (1998.4941.7, Castle Tucker, 1860–90) and an 1899 Chicago ingrain sample (GUSN-8690). The selvages show the narrow loom width that was sewn into room-size carpet. Catalogue date ranges are estimates. Sources: https://www.historicnewengland.org/explore/collections-access/gusn/8721 · https://www.historicnewengland.org/explore/collections-access/gusn/8722 · https://www.historicnewengland.org/explore/collections-access/gusn/8664 · https://www.historicnewengland.org/explore/collections-access/gusn/8690\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "description": "Wool ingrain fragment with both selvages and a striped wool binding. Historic New England holds several more: GUSN-8722 (1959.6, 1850–70, strapwork and eight-pointed stars, from Jacob's Farmhouse, Mass.), GUSN-8664 (1993.507, 1850–80, diamond-and-vine), GUSN-24021 (1998.4941.7, Castle Tucker, 1860–90) and an 1899 Chicago ingrain sample (GUSN-8690). The selvages show the narrow loom width that was sewn into room-size carpet. Catalogue date ranges are estimates. Sources: https://www.historicnewengland.org/explore/collections-access/gusn/8721 · https://www.historicnewengland.org/explore/collections-access/gusn/8722 · https://www.historicnewengland.org/explore/collections-access/gusn/8664 · https://www.historicnewengland.org/explore/collections-access/gusn/8690\n\nResearch note (Oct 2026): from search results; pages not opened.\n\nImage added 2026-10-28 (Claude in Chrome): Historic New England collections photograph.",
     "tags": [
       "pre-Wilton",
       "ingrain",
@@ -10979,7 +11049,12 @@ window.RUG_ITEMS = [
     "status": "unverified",
     "themes": [
       "Woven carpet"
-    ]
+    ],
+    "image": "https://images.historicnewengland.org/iiif/3/422803/full/800,/0/default.jpg",
+    "imageCredit": "Historic New England",
+    "imagePage": "https://www.historicnewengland.org/explore/collections-access/gusn/8721",
+    "rights": "not-requested",
+    "reviewedAt": "2026-10-30T10:39:37.931Z"
   },
   {
     "id": "cw-1976-609-4-scotch",
@@ -10993,7 +11068,7 @@ window.RUG_ITEMS = [
     "institution": "Colonial Williamsburg Foundation",
     "identifier": "1976.609.4",
     "sourceUrl": "https://emuseum.colonialwilliamsburg.org/objects/58853/carpet-scotch",
-    "description": "Reversible length of wool Scotch or ingrain carpeting, bought in 1976 from a dealer in Camden, Ohio. Colonial Williamsburg also holds a Scotch/ingrain fragment dated 1830–60 (object 6860) and a double-cloth piece (1835–80) whose label notes that woven coverlets and ingrain carpeting share materials and weave structures, and that double and triple cloth carpeting is 'a distinctly British (and beginning in the 19th-century, American) textile tradition often referred to as ingrains'. Also comparable: MFA Boston 'piece of ingrain carpeting' (mid-19th c., double cloth, colours reverse on back). Sources: https://emuseum.colonialwilliamsburg.org/objects/58853/carpet-scotch · https://emuseum.colonialwilliamsburg.org/objects/6860/carpet-fragment-scotch-ingrain · https://emuseum.colonialwilliamsburg.org/objects/32763/woven-double-cloth-carpet-or-coverlet-fragment · https://collections.mfa.org/objects/114278\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "description": "Reversible length of wool Scotch or ingrain carpeting, bought in 1976 from a dealer in Camden, Ohio. Colonial Williamsburg also holds a Scotch/ingrain fragment dated 1830–60 (object 6860) and a double-cloth piece (1835–80) whose label notes that woven coverlets and ingrain carpeting share materials and weave structures, and that double and triple cloth carpeting is 'a distinctly British (and beginning in the 19th-century, American) textile tradition often referred to as ingrains'. Also comparable: MFA Boston 'piece of ingrain carpeting' (mid-19th c., double cloth, colours reverse on back). Sources: https://emuseum.colonialwilliamsburg.org/objects/58853/carpet-scotch · https://emuseum.colonialwilliamsburg.org/objects/6860/carpet-fragment-scotch-ingrain · https://emuseum.colonialwilliamsburg.org/objects/32763/woven-double-cloth-carpet-or-coverlet-fragment · https://collections.mfa.org/objects/114278\n\nResearch note (Oct 2026): from search results; pages not opened.\n\nImage added 2026-10-28 (Claude in Chrome): CW eMuseum object photograph.",
     "tags": [
       "pre-Wilton",
       "Scotch carpet",
@@ -11006,7 +11081,12 @@ window.RUG_ITEMS = [
     "status": "unverified",
     "themes": [
       "Woven carpet"
-    ]
+    ],
+    "image": "https://emuseum.colonialwilliamsburg.org/internal/media/dispatcher/245183/preview",
+    "imageCredit": "The Colonial Williamsburg Foundation",
+    "imagePage": "https://emuseum.colonialwilliamsburg.org/objects/58853/carpet-scotch",
+    "rights": "not-requested",
+    "reviewedAt": "2026-10-30T10:39:37.931Z"
   },
   {
     "id": "woven-brussels-wire-loop",
@@ -11891,7 +11971,7 @@ window.RUG_ITEMS = [
     "region": "United States",
     "date": "provisional 27 Nov 1996; filed 26 Nov 1997 (appl. 08/980,045); grant date not seen",
     "dateStart": 1996,
-    "description": "The servo scroll: each set of yarn-feed rolls on a scroll attachment gets its own independently controlled servo motor, plus a computerised design system to handle 'the large numbers of individually controllable design parameters'. This removed the old chain-drive limit of two or three stitch heights per pattern. Family members: US6283053 ('independent single end servo motor driven scroll-type pattern attachment', filed 20 Dec 1999); US6439141 ('Independent single end servo scroll pattern attachment… and computerized design system', a divisional); US6516734; US6877449 and US7089874 (servo-motor-driven scroll attachments). The EP counterpart is EP1132514, which names Tuftco Corporation, Chattanooga, as proprietor. Later patents call these 'the single end servo scroll of Morgante' and set them beside Frost's double-end servo scroll (US6550407, filed Aug 2002). One continuation's text misprints the number as 6,224,203. Verified Oct 2026 by web search only.\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "description": "The servo scroll: each set of yarn-feed rolls on a scroll attachment gets its own independently controlled servo motor, plus a computerised design system to handle 'the large numbers of individually controllable design parameters'. This removed the old chain-drive limit of two or three stitch heights per pattern. Family members: US6283053 ('independent single end servo motor driven scroll-type pattern attachment', filed 20 Dec 1999); US6439141 ('Independent single end servo scroll pattern attachment… and computerized design system', a divisional); US6516734; US6877449 and US7089874 (servo-motor-driven scroll attachments). The EP counterpart is EP1132514, which names Tuftco Corporation, Chattanooga, as proprietor. Later patents call these 'the single end servo scroll of Morgante' and set them beside Frost's double-end servo scroll (US6550407, filed Aug 2002). One continuation's text misprints the number as 6,224,203. Verified Oct 2026 by web search only.\n\nResearch note (Oct 2026): from search results; pages not opened.\n\nImage added 2026-10-28 (Claude in Chrome): patent drawing sheet 3 from Google Patents.",
     "themes": [
       "Machine tufting & Dalton",
       "Tools & equipment"
@@ -11905,7 +11985,12 @@ window.RUG_ITEMS = [
       "checked from search results"
     ],
     "status": "unverified",
-    "confidence": "solid"
+    "confidence": "solid",
+    "image": "https://patentimages.storage.googleapis.com/17/e5/f4/87ab2fadfedb41/US6244203-drawings-page-3.png",
+    "imageCredit": "Google Patents (USPTO drawing, public domain)",
+    "imagePage": "https://patents.google.com/patent/US6244203B1/en",
+    "rights": "not-requested",
+    "reviewedAt": "2026-10-30T10:39:37.931Z"
   },
   {
     "id": "co-tapistron",
@@ -12159,7 +12244,7 @@ window.RUG_ITEMS = [
     "region": "United States",
     "date": "filed 21 Aug 2023 (appl. 18/235,917); published as US20240068144A1; grant date not seen",
     "dateStart": 2023,
-    "description": "A hollow-needle tufting machine for patterned articles in several yarn colours. Knives move between no-cut and cut positions to make loop and cut pile (Justia abstract). Card-Monroe's filings say earlier hollow-needle machines (the Kile, Davis and Tapistron line) used solenoid-controlled air cylinders to pick colours, but needle spacing limited how many colours each needle could take. A continuation is US12546042B2 (appl. 18/955,318), and a later EP application covers artificial turf. Card-Monroe's company timeline lists 'Hollow Needle 2023' (see co-card-monroe), and the August 2023 filing fits it, but no launch news was found. Why it matters: in 2023 the leading broadloom builder returned to the hollow-needle, individually fed yarn idea that Tapistron pioneered around 1990. Verified Oct 2026 by web search only: the filing date is from Justia and the identity from Google Patents snippets.\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "description": "A hollow-needle tufting machine for patterned articles in several yarn colours. Knives move between no-cut and cut positions to make loop and cut pile (Justia abstract). Card-Monroe's filings say earlier hollow-needle machines (the Kile, Davis and Tapistron line) used solenoid-controlled air cylinders to pick colours, but needle spacing limited how many colours each needle could take. A continuation is US12546042B2 (appl. 18/955,318), and a later EP application covers artificial turf. Card-Monroe's company timeline lists 'Hollow Needle 2023' (see co-card-monroe), and the August 2023 filing fits it, but no launch news was found. Why it matters: in 2023 the leading broadloom builder returned to the hollow-needle, individually fed yarn idea that Tapistron pioneered around 1990. Verified Oct 2026 by web search only: the filing date is from Justia and the identity from Google Patents snippets.\n\nResearch note (Oct 2026): from search results; pages not opened.\n\nImage added 2026-10-28 (Claude in Chrome): front-page drawing from Google Patents.",
     "themes": [
       "Machine tufting & Dalton",
       "Tools & equipment"
@@ -12173,7 +12258,12 @@ window.RUG_ITEMS = [
       "checked from search results"
     ],
     "status": "unverified",
-    "confidence": "solid"
+    "confidence": "solid",
+    "image": "https://patentimages.storage.googleapis.com/2d/12/90/2eda7ec1df1e97/US12180632-20241231-D00000.png",
+    "imageCredit": "Google Patents (USPTO drawing)",
+    "imagePage": "https://patents.google.com/patent/US12180632B2/en",
+    "rights": "not-requested",
+    "reviewedAt": "2026-10-30T10:39:37.931Z"
   },
   {
     "id": "pat-us5503092a",
@@ -13371,7 +13461,7 @@ window.RUG_ITEMS = [
       "wool",
       "burlap"
     ],
-    "description": "What it shows: a large (90 × 84 in.) rug of cotton and wool hooked into burlap, the foundation that made the craft widespread. A later canvas backing was added, and the record says neither backing nor binding seems original. Its label says hooking appears to have started in New England and south-east Canada in the 1840s and spread once burlap arrived in the mid-19th century. Museum purchase. Sources: https://emuseum.colonialwilliamsburg.org/objects/59028/hooked-rug\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "description": "What it shows: a large (90 × 84 in.) rug of cotton and wool hooked into burlap, the foundation that made the craft widespread. A later canvas backing was added, and the record says neither backing nor binding seems original. Its label says hooking appears to have started in New England and south-east Canada in the 1840s and spread once burlap arrived in the mid-19th century. Museum purchase. Sources: https://emuseum.colonialwilliamsburg.org/objects/59028/hooked-rug\n\nResearch note (Oct 2026): from search results; pages not opened.\n\nImage added 2026-10-28 (Claude in Chrome): CW eMuseum object photograph.",
     "tags": [
       "process history",
       "hooking",
@@ -13382,7 +13472,12 @@ window.RUG_ITEMS = [
       "Rug-making techniques",
       "Hooked & handmade rugs"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "image": "https://emuseum.colonialwilliamsburg.org/internal/media/dispatcher/5798/preview",
+    "imageCredit": "The Colonial Williamsburg Foundation",
+    "imagePage": "https://emuseum.colonialwilliamsburg.org/objects/59028/hooked-rug",
+    "rights": "not-requested",
+    "reviewedAt": "2026-10-30T10:39:37.931Z"
   },
   {
     "id": "process-hooking-grenfell",
@@ -13510,7 +13605,7 @@ window.RUG_ITEMS = [
     "materials": [
       "wool"
     ],
-    "description": "How it works: in chenille shirring, a fabric strip is stitched lengthwise down the middle and gathered tight into a caterpillar-like strand, which is sewn flat onto the foundation along the pattern. In bias shirring, short bias-cut strips are sewn on edge (Historic New England; Rug Hooking Magazine). Rug Hooking Magazine says shirring was most common in 1820–1850. Conflict: Rugmaker's Homestead dates shirred rugs to about 1870, but museum-dated examples are earlier. This object: polychrome wool on a brown and black ground with a narrow blue border, described with the term 'shirring'. Gift of Bertram K. and Nina Fletcher Little. Other examples: HNE 1991.1519 (shirred, 1825–1850), Winterthur 'Elephant' rug (Rhode Island, 1810–1825, bias and chenille shirring on cotton), and a bias-shirred hearth rug, probably Maine, ca. 1830 (Caputo collection, Colonial Williamsburg exhibition). Sources: https://www.historicnewengland.org/explore/collections-access/gusn/3034 · https://rughookingmagazine.com/Rug-Hooking-Articles/Bias-Chenille-Pleat-Bundle · https://rugmakershomestead.com/shirred.html · https://antiquetrader.com/art/exhibit-of-important-early-american-hooked-rugs-opens\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "description": "How it works: in chenille shirring, a fabric strip is stitched lengthwise down the middle and gathered tight into a caterpillar-like strand, which is sewn flat onto the foundation along the pattern. In bias shirring, short bias-cut strips are sewn on edge (Historic New England; Rug Hooking Magazine). Rug Hooking Magazine says shirring was most common in 1820–1850. Conflict: Rugmaker's Homestead dates shirred rugs to about 1870, but museum-dated examples are earlier. This object: polychrome wool on a brown and black ground with a narrow blue border, described with the term 'shirring'. Gift of Bertram K. and Nina Fletcher Little. Other examples: HNE 1991.1519 (shirred, 1825–1850), Winterthur 'Elephant' rug (Rhode Island, 1810–1825, bias and chenille shirring on cotton), and a bias-shirred hearth rug, probably Maine, ca. 1830 (Caputo collection, Colonial Williamsburg exhibition). Sources: https://www.historicnewengland.org/explore/collections-access/gusn/3034 · https://rughookingmagazine.com/Rug-Hooking-Articles/Bias-Chenille-Pleat-Bundle · https://rugmakershomestead.com/shirred.html · https://antiquetrader.com/art/exhibit-of-important-early-american-hooked-rugs-opens\n\nResearch note (Oct 2026): from search results; pages not opened.\n\nImage added 2026-10-28 (Claude in Chrome): Historic New England collections photograph (HNE titles the object \"Apple Tree Farm\" Hooked Rug; check the technique against this record).",
     "tags": [
       "process history",
       "needle-sewn pile",
@@ -13522,7 +13617,12 @@ window.RUG_ITEMS = [
       "Rug-making techniques",
       "Hooked & handmade rugs"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "image": "https://images.historicnewengland.org/iiif/3/35200/full/800,/0/default.jpg",
+    "imageCredit": "Historic New England",
+    "imagePage": "https://www.historicnewengland.org/explore/collections-access/gusn/3034",
+    "rights": "not-requested",
+    "reviewedAt": "2026-10-30T10:39:37.931Z"
   },
   {
     "id": "process-braided-hne",
@@ -13543,7 +13643,7 @@ window.RUG_ITEMS = [
     "materials": [
       "wool"
     ],
-    "description": "How it works: strips of cloth are folded and plaited into a three-strand braid, and the braid is coiled and sewn edge to edge into a round or oval mat. The Shaker Museum describes heavily fulled wool strips folded and braided in three strands and sewn into an oval (object 1959.11205.1, by Eldress Sarah Collins, South Family, Mount Lebanon; date not seen). Dating: Journal of Antiques says braided mats were common by the late 1700s, and Capel Rugs (a maker) describes settlers tearing old blankets and coats for braids. Both are trade sources, and no museum-dated 18th-century braided rug was found. Firm museum dates in this set begin with this 1860–1890 rug. Commercial braided rugs (e.g. Thorndike Mills, from 1921) are 20th-century. Sources: https://www.historicnewengland.org/explore/collections-access/gusn/18698/ · https://www.shakermuseum.us/object?id=19748 · https://journalofantiques.com/columns/antiques-peek-august-2017/ · https://capelrugs.com/pages/braided-info\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "description": "How it works: strips of cloth are folded and plaited into a three-strand braid, and the braid is coiled and sewn edge to edge into a round or oval mat. The Shaker Museum describes heavily fulled wool strips folded and braided in three strands and sewn into an oval (object 1959.11205.1, by Eldress Sarah Collins, South Family, Mount Lebanon; date not seen). Dating: Journal of Antiques says braided mats were common by the late 1700s, and Capel Rugs (a maker) describes settlers tearing old blankets and coats for braids. Both are trade sources, and no museum-dated 18th-century braided rug was found. Firm museum dates in this set begin with this 1860–1890 rug. Commercial braided rugs (e.g. Thorndike Mills, from 1921) are 20th-century. Sources: https://www.historicnewengland.org/explore/collections-access/gusn/18698/ · https://www.shakermuseum.us/object?id=19748 · https://journalofantiques.com/columns/antiques-peek-august-2017/ · https://capelrugs.com/pages/braided-info\n\nResearch note (Oct 2026): from search results; pages not opened.\n\nImage added 2026-10-28 (Claude in Chrome): Historic New England collections photograph.",
     "tags": [
       "process history",
       "braided",
@@ -13555,7 +13655,12 @@ window.RUG_ITEMS = [
       "Hooked & handmade rugs"
     ],
     "status": "unverified",
-    "imageSource": "rejected"
+    "imageSource": "rejected",
+    "image": "https://images.historicnewengland.org/iiif/3/23480/full/800,/0/default.jpg",
+    "imageCredit": "Historic New England",
+    "imagePage": "https://www.historicnewengland.org/explore/collections-access/gusn/18698/",
+    "rights": "not-requested",
+    "reviewedAt": "2026-10-30T10:39:37.931Z"
   },
   {
     "id": "process-rag-woven-shaker",
