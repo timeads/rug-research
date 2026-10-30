@@ -1,5 +1,5 @@
 ---
-// Every page: the board masthead, the prototype notice, and the foot.
+// Every page: the board masthead and the foot.
 import "../styles/global.css";
 import { base, canonical, absolute } from "../lib/data.js";
 import { BASE, INDEXABLE, RESEARCH_URL } from "../../site.config.mjs";
@@ -7,7 +7,7 @@ import { BASE, INDEXABLE, RESEARCH_URL } from "../../site.config.mjs";
 // citation_ tags) and schema (structured data describing the page).
 const { title, description = "", shade = "var(--cloth-teal)", current = "", progress = false, image = "", type = "website", scholar = null, schema = null } = Astro.props;
 const url = canonical(Astro.url.pathname.slice(BASE.length));
-const nav = [["", "Contents", "chapters", ""], ["timeline/", "Timeline", "timeline", ""], ["bibliography/", "Bibliography", "bibliography", ""]];
+const nav = [["", "Chapters", "chapters", ""], ["timeline/", "Timeline", "timeline", ""], ["bibliography/", "Bibliography", "bibliography", ""]];
 ---
 <!doctype html>
 <html lang="en">
@@ -39,7 +39,6 @@ const nav = [["", "Contents", "chapters", ""], ["timeline/", "Timeline", "timeli
       </div>
       {progress && <span class="progress" aria-hidden="true"></span>}
     </header>
-    <p class="notice"><b>Prototype.</b> Chapter text drafted from the research notes and not yet checked at the archives. Images awaiting permission are marked.</p>
     <main><slot /></main>
     <footer class="foot">
       <div class="in">

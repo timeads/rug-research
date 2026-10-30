@@ -60,8 +60,6 @@ a:hover { text-decoration-color: currentColor; }
   .progress { animation: grow linear both; animation-timeline: scroll(root); }
   @keyframes grow { to { transform: scaleX(1); } }
 }
-.notice { max-width: var(--page); margin: 0 auto; padding: .6rem var(--pad); font: 450 .8125rem/1.45 var(--frame); color: var(--ink-2); border-bottom: 1px solid var(--rule); }
-.notice b { font-weight: 650; color: var(--ink); }
 /* Phones: the title on its own line, the navigation in a compact row under it. */
 @media (max-width: 560px) {
   .mast .in { height: auto; flex-wrap: wrap; gap: 0 1.1rem; padding-top: .8rem; }
@@ -350,7 +348,7 @@ h1.ch-title { margin: 1.75rem 0 0; font: 680 clamp(2.5rem, 6vw, 4.5rem)/1 var(--
 
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition: none !important; animation: none !important; } }
 @media print {
-  .mast, .notice, .tl-tools, .foot { display: none; }
+  .mast, .tl-tools, .foot { display: none; }
   body { background: #fff; }
   .sidenote { display: none; }
 }

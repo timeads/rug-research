@@ -266,11 +266,10 @@ Square-cut card. Corners are almost square: 2px on the contents sheet, chips, bu
 The shade card's yarn: a rectangle of one shade covered in fine parallel strands (1.8 units apart, each 82% of the pitch) laid at a slight slope, alternately lightened with white and darkened with black at up to 21% opacity, with darker bands where the yarn turns over the top, bottom and both ends of the card. Drawn as SVG, stretched to its box, and deterministic: the strand tones come from the shade number, so the same chapter always draws the same band. Heights: 4.5rem at the chapter head (3.5rem under 640px), 2.75rem in a contents row (2rem mobile), 0.5rem for a chapter in preparation. Always paired with its shade number and cloth name.
 
 ### Navigation
-Masthead on the board: the wordmark in Archivo 700 at 84% width, then Contents, Timeline, Bibliography at 500 0.875rem in board-ink-2. The current page goes board-ink with a 2px board-ink underline; hover brightens to board ink. Under 560px the gaps tighten and the wordmark steps to 1rem (0.875rem under 360px). Chapter pages add the 2px shade progress thread along the masthead's bottom edge.
+Masthead on the board: the wordmark in Archivo 700 at 84% width, then Chapters, Timeline, Bibliography at 500 0.875rem in board-ink-2. The current page goes board-ink with a 2px board-ink underline; hover brightens to board ink. Under 560px the gaps tighten and the wordmark steps to 1rem (0.875rem under 360px). Chapter pages add the 2px shade progress thread along the masthead's bottom edge.
 
-### Prototype Notice
-A single line under the masthead, Archivo 0.8125rem in ink-2 over a hairline, opening with a bold "Prototype." It stays until the text is checked at the archives.
-
+### Status notices
+There is no site-wide prototype notice: it was taken down once the chapters had been fact-checked. Status that matters stays where it applies (a picture's "Permission pending", a record's "not yet checked at the source").
 ### Margin Notes and Footnote Markers
 Superscript note numbers in Archivo 650 in the shade ink. The note itself floats into the 14rem margin: bold shade-ink number, a short citation in ink-3, and a "Record" link that opens the record page. Narrow screens show it as a sheet panel (3px radius, 0.875rem) when its number is tapped. Inside a note panel the number links to the full notes instead.
 
@@ -295,7 +294,7 @@ A sheet panel with a 3px corner and 1.5rem 1.75rem padding; a 650 Archivo headin
 ### Chips
 Timeline filters and bibliography jumps: sheet fill, card-edge border, 2px corner, 2.25rem tall, with a small 0.5rem cloth swatch for a chapter filter. Pressed is ink fill with ground text.
 
-### Contents Card
+### Chapters Card
 A sheet with a card-edge border and 2px corner; its head (title plus a count of ready and in-preparation chapters) sits over a 2px ink rule; rows divided by hairlines. Hovering a ready row underlines its title.
 
 ### End Matter
@@ -304,7 +303,7 @@ Full notes as a numbered list on hairlines (a targeted note is tinted with the s
 ### Named Rules
 **The One-Step Rule.** Every note, figure, key date and timeline event links straight to its record page; the record links on to the holding institution.
 
-**The Visible Status Rule.** Prototype, "Permission pending", "checked at the archive" counts, and "not yet checked at the source" are shown in plain words at full legibility, never hidden, greyed out of reach or styled away.
+**The Visible Status Rule.** "Permission pending", "checked at the archive" counts, and "not yet checked at the source" are shown in plain words at full legibility, never hidden, greyed out of reach or styled away.
 
 ## Do's and Don'ts
 

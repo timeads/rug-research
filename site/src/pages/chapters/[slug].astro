@@ -68,10 +68,10 @@ const schema = {
     <nav class="ch-pager" aria-label="Previous and next chapters">
       {prev
         ? <a class="prev" rel="prev" href={base(`chapters/${prev.slug}/`)}><span class="dir">Previous chapter</span><span class="which"><i style={`--c:var(--cloth-${prev.cloth})`}></i><b class="num">Shade {prev.number}</b></span><span class="t">{prev.title}</span></a>
-        : <a class="prev" href={base("")}><span class="dir">Contents</span><span class="t">All the chapters</span></a>}
+        : <a class="prev" href={base("")}><span class="dir">Chapters</span><span class="t">All the chapters</span></a>}
       {next
         ? <a class="next" rel="next" href={base(`chapters/${next.slug}/`)}><span class="dir">Next chapter</span><span class="which"><i style={`--c:var(--cloth-${next.cloth})`}></i><b class="num">Shade {next.number}</b></span><span class="t">{next.title}</span></a>
-        : <a class="next" href={base("")}><span class="dir">Contents</span><span class="t">Back to all the chapters</span></a>}
+        : <a class="next" href={base("")}><span class="dir">Chapters</span><span class="t">Back to all the chapters</span></a>}
     </nav>
     <section class="endmatter">
       <div>
