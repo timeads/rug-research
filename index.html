@@ -46,8 +46,8 @@
       <nav class="tabs" aria-label="Sections">
         <a class="tab" href="#browse" data-view="browse">Browse</a>
         <a class="tab" href="#timeline" data-view="timeline">Timeline</a>
-        <a class="tab" href="#compile" data-view="compile">Write <span class="count-pill" id="list-count"></span></a>
-        <a class="tab" href="#manuscript" data-view="manuscript">Manuscript</a>
+        <a class="tab" href="#book" data-view="manuscript">Book</a>
+        <a class="tab" href="#lists" data-view="compile">Lists <span class="count-pill" id="list-count"></span></a>
         <a class="tab" href="#discover" data-view="discover">Discover</a>
         <a class="tab" href="#sources" data-view="sources">Other archives</a>
       </nav>
@@ -127,10 +127,9 @@
       <header class="view-head row">
         <div class="list-pick">
           <span class="write-kicker" id="write-kicker"></span>
-          <label class="vh" for="list-select">Chapter or list</label>
+          <label class="vh" for="list-select">List</label>
           <select id="list-select" class="h1-select"></select>
           <div class="list-actions">
-            <button class="link-btn" id="btn-new-chapter">New chapter</button>
             <button class="link-btn" id="btn-new-list">New list</button>
             <button class="link-btn" id="btn-rename-list">Rename</button>
             <button class="link-btn" id="btn-chapter-up">Move earlier</button>
@@ -144,7 +143,6 @@
           <button class="btn" data-cexport="csv">CSV</button>
           <button class="btn" data-cexport="json">JSON</button>
           <button class="btn" id="btn-print"><svg class="ic"><use href="#i-print"/></svg>Print or PDF</button>
-          <button class="btn primary" id="btn-manuscript"><svg class="ic"><use href="#i-download"/></svg>Whole manuscript</button>
         </div>
       </header>
       <h2 id="print-title" class="print-only"></h2>

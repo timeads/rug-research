@@ -1141,14 +1141,20 @@
   const fitIntro = () => {
     const ta = $("#list-intro");
     if (!ta.classList.contains("draft")) { ta.style.height = ""; return; }
-    if (!ta.offsetParent) return; // hidden view: fitted when Write is shown
+    if (!ta.offsetParent) return; // hidden view: fitted when Lists is shown
     ta.style.height = "auto"; ta.style.height = ta.scrollHeight + 2 + "px";
   };
   addEventListener("resize", debounce(fitIntro, 150));
   const renderCompile = () => {
+    // Chapters live in Book; Lists holds everything else (a fellowship application, objects to request...).
+    if (isChapter(activeList())) {
+      let other = S.lists.find(x => !isChapter(x));
+      if (!other) { other = { id: "list-" + Date.now().toString(36), name: "My list", intro: "", items: [] }; S.lists.push(other); }
+      S.activeList = other.id; save();
+    }
     const l = activeList();
     const ch = isChapter(l), chapters = S.lists.filter(isChapter), ci = chapters.indexOf(l);
-    $("#list-select").innerHTML = listOptions(() => true, l.id);
+    $("#list-select").innerHTML = listOptions(x => !isChapter(x), l.id);
     $("#write-kicker").textContent = ch ? `Chapter ${ci + 1} of ${chapters.length}` : "List";
     $("#btn-chapter-up").hidden = $("#btn-chapter-down").hidden = !ch;
     $("#btn-chapter-up").disabled = ci <= 0; $("#btn-chapter-down").disabled = ci < 0 || ci >= chapters.length - 1;
@@ -1236,10 +1242,10 @@
   };
   const wordsIn = t => String(t || "").replace(DRAFT_LEAD, "").trim().split(/\s+/).filter(Boolean).length;
   // ---------- the published manuscript ----------
-  // The Manuscript shows each chapter exactly as the public site prints it: the text of its file in
+  // Book shows each chapter exactly as the public site prints it: the text of its file in
   // site/src/content/chapters/. "Edit text" saves straight back to that file, with the GitHub key that
-  // Publish uses, so there is one text of each chapter. The research drafts kept in Write are shown under
-  // each chapter, marked as not published.
+  // Publish uses, so there is one text of each chapter. Beside it are the chapter's sources (sourcesPanel),
+  // and under it the chapter's research notes, which are never published.
   const CH_DIR = "site/src/content/chapters/";
   const PUB_CH = {}; // page -> { src } once loaded, or { error }
   let pubChLoading = false;
@@ -1326,6 +1332,38 @@
     return errs;
   };
   const msDraftOf = l => (S.msDrafts || {})[l.id];
+  // The records a chapter's file uses: citations, pictures, quotations, its picture and key dates.
+  const usedIn = src => {
+    const ids = new Set();
+    for (const [, g] of String(src).matchAll(/\[(@[^\]]+)\]/g)) for (const part of g.split(";")) ids.add(part.trim().replace(/^@/, "").split(",")[0].trim());
+    for (const [, id] of String(src).matchAll(/\b(?:id|from)="([^"]+)"/g)) ids.add(id);
+    for (const [, id] of String(src).matchAll(/\brecord:\s*"?([\w-]+)"?/g)) ids.add(id);
+    return ids;
+  };
+  // Beside each chapter in Book: the sources gathered for it, which of them the text cites, records the
+  // text cites that aren't gathered yet, and a search to add more. While the text is being edited, each
+  // source can be inserted into it as a citation.
+  const bkOpen = {}; // sources panels opened or closed by hand this visit
+  const sourcesPanel = (l, used, editing) => {
+    const items = l.items.map(id => BY_ID[id]).filter(Boolean);
+    const missing = [...used].filter(id => BY_ID[id] && !l.items.includes(id));
+    const nUsed = items.filter(it => used.has(it.id)).length;
+    const row = (it, i) => `<li class="bk-row ${used.has(it.id) ? "is-cited" : "not-cited"}" data-bk-ch="${esc(l.id)}" data-bk-id="${esc(it.id)}">
+        <span class="bk-n">${i + 1}</span>
+        <span class="bk-body"><button class="bk-t" data-ms-open="${esc(it.id)}">${esc(it.title)}</button>
+          <span class="bk-m">${esc([TYPES[it.type]?.label, it.date].filter(Boolean).join(" · "))}</span>
+          <span class="bk-tag">${used.has(it.id) ? "Cited" : "Not cited yet"}</span>${editing ? `<button class="link-btn bk-ins" data-bk-insert="${esc(it.id)}">Insert citation</button>` : ""}</span>
+        <span class="bk-act"><button class="icon-btn" data-bk-move="-1" ${i === 0 ? "disabled" : ""} aria-label="Move up">${icon("up")}</button><button class="icon-btn" data-bk-move="1" ${i === items.length - 1 ? "disabled" : ""} aria-label="Move down">${icon("down")}</button><button class="icon-btn" data-bk-remove aria-label="Remove from this chapter's sources">${icon("x")}</button></span>
+      </li>`;
+    // Open beside the text on wide screens; on narrower ones it sits under the chapter, closed until wanted.
+    const open = l.id in bkOpen ? bkOpen[l.id] : matchMedia("(min-width: 1360px)").matches;
+    return `<details class="bk-side" data-bk-side="${esc(l.id)}"${open ? " open" : ""}>
+      <summary class="bk-side-h">Sources <small>${items.length} gathered · ${nUsed} cited in the text${missing.length ? ` · ${missing.length} cited but not gathered` : ""}</small></summary>
+      ${missing.length ? `<div class="bk-missing"><p><b>Cited but not gathered (${missing.length})</b> The text uses these; add them to keep the list complete.</p><ul>${missing.map(id => `<li><button class="bk-t" data-ms-open="${esc(id)}">${esc(BY_ID[id].title)}</button><button class="link-btn" data-bk-add="${esc(id)}" data-bk-ch="${esc(l.id)}">Add</button></li>`).join("")}</ul>${missing.length > 1 ? `<button class="link-btn" data-bk-addall="${esc(l.id)}">Add all ${missing.length}</button>` : ""}</div>` : ""}
+      ${items.length ? `<ol class="bk-src">${items.map(row).join("")}</ol>` : `<p class="bk-empty">No sources gathered yet. Search below, or use <b>Add to a chapter or list</b> on any record in Browse.</p>`}
+      <div class="bk-find"><label class="vh" for="bk-q-${esc(l.id)}">Add a source to this chapter</label><input type="search" id="bk-q-${esc(l.id)}" data-bk-q="${esc(l.id)}" placeholder="Add a source: title, maker or id" autocomplete="off"><ul class="bk-results" id="bk-r-${esc(l.id)}"></ul></div>
+    </details>`;
+  };
   const renderManuscript = () => {
     const chapters = S.lists.filter(isChapter);
     const texts = chapters.map(l => { const p = pageOf(l.id); return p && PUB_CH[p] && PUB_CH[p].src != null ? splitMdx(PUB_CH[p].src) : null; });
@@ -1346,7 +1384,7 @@
           <p class="ms-ch-meta">${t ? `<span>${proseWords(t.body).toLocaleString()} words</span>` : ""}
             ${page && t && !editing ? `<button class="btn sm" data-ms-text="${esc(l.id)}">${icon("edit")}Edit text</button>` : ""}
             ${page ? `<button class="linkish" data-ms-hero="${esc(l.id)}">Chapter picture</button><a class="linkish" href="https://www.historyoftuftedrugs.com/chapters/${esc(page)}/" target="_blank" rel="noopener">On the site</a>` : ""}
-            <button class="linkish" data-ms-edit="${esc(l.id)}">Sources in Write</button></p>
+</p>
         </header>`;
       let main;
       if (!page) main = `<div class="ms-prose">${(l.intro || "").trim() ? proseHTML(l.intro) : `<p class="ms-empty">Not a chapter of the public site yet.</p>`}</div>`;
@@ -1361,16 +1399,14 @@
         </div>`;
       else if (t) main = `<div class="ms-prose ms-pub" data-ms-text="${esc(l.id)}" title="Double-click to edit">${chapterHTML(t.body)}</div>`;
       else main = `<p class="ms-empty">${st && st.error ? `The published text couldn't be read (${esc(st.error)}). <button class="linkish" data-ms-reload>Try again</button>` : "Loading the published text…"}</p>`;
-      return `<section class="ms-chapter" id="ms-${esc(l.id)}">${head}${main}
-        ${(l.intro || "").trim() && page ? `<details class="ms-sources ms-draft"><summary>Research draft (not published, ${wordsIn(l.intro).toLocaleString()} words)</summary><div class="ms-prose">${proseHTML(l.intro)}</div><p class="ms-hint">Working notes kept with the chapter's sources in Write. The site shows only the text above.</p></details>` : ""}
-        ${items.length ? `<details class="ms-sources"><summary>Sources gathered for this chapter (${items.length})</summary><ol>${items.map(it => {
-          const conf = it.confidence && CONFIDENCE[it.confidence] ? ` <span class="conf conf-${it.confidence}">${esc(CONFIDENCE[it.confidence].label)}</span>` : "";
-          return `<li><button class="ms-cite" data-ms-open="${esc(it.id)}">${mdInline(citation(it))}</button>${conf}</li>`;
-        }).join("")}</ol></details>` : ""}
-        ${todoHTML(l.id)}
+      const used = page && st && st.src != null ? usedIn(editing ? `${splitMdx(st.src).fmText}\n${draft.body}` : st.src) : new Set();
+      const notes = page ? `<details class="ms-sources ms-draft"${(l.intro || "").trim() ? "" : " open"}><summary>Research notes (not published${(l.intro || "").trim() ? `, ${wordsIn(l.intro).toLocaleString()} words` : ""})</summary>
+          <textarea class="bk-notes" data-bk-notes="${esc(l.id)}" spellcheck="true" placeholder="Working notes for this chapter: ideas, evidence to fit in, questions. Saved in this browser as you type; never shown on the site.">${esc(l.intro || "")}</textarea></details>` : "";
+      return `<section class="ms-chapter" id="ms-${esc(l.id)}">${head}
+        <div class="bk-grid${page ? "" : " solo"}"><div class="bk-main">${main}${notes}${todoHTML(l.id)}</div>${page ? sourcesPanel(l, used, editing) : ""}</div>
       </section>`;
-    }).join("") : `<div class="empty"><h2>No chapters yet</h2><p>Create a chapter in the Write tab and it appears here.</p><div class="btns"><a class="btn" href="#compile">Go to Write</a></div></div>`;
-    $$(".ms-editor").forEach(fitMs);
+    }).join("") : `<div class="empty"><h2>No chapters yet</h2><p>The chapters of the public site appear here.</p></div>`;
+    $$(".ms-editor, .bk-notes").forEach(fitMs);
     loadChapterTexts();
   };
   // A chapter's "Still to find" list (data/chapters.js, todo): the author's to-do list, never on the public
@@ -1710,6 +1746,8 @@
 
   // ---------- views ----------
   let currentView = "browse";
+  // Book (the chapters) and Lists keep their older internal names; their addresses are #book and #lists.
+  const VIEW_HASH = { manuscript: "book", compile: "lists" };
   const setView = v => {
     currentView = v;
     $$(".tab").forEach(t => t.dataset.view === v ? t.setAttribute("aria-current", "page") : t.removeAttribute("aria-current"));
@@ -1719,7 +1757,7 @@
     if (v === "manuscript") renderManuscript();
     if (v === "sources") { if (!$("#sq").value) $("#sq").value = parseQuery(S.ui.q).terms.join(" "); renderSources(); }
     if (v === "discover" && !$("#dq").value) $("#dq").value = parseQuery(S.ui.q).terms.join(" ");
-    try { history.replaceState(null, "", "#" + v); } catch {}
+    try { history.replaceState(null, "", "#" + (VIEW_HASH[v] || v)); } catch {}
     window.scrollTo(0, 0);
   };
 
@@ -2253,7 +2291,6 @@
   // compile
   $("#list-select").onchange = e => { S.activeList = e.target.value; save(); renderCompile(); };
   $("#btn-new-list").onclick = () => { if (newList()) renderCompile(); };
-  $("#btn-new-chapter").onclick = () => { if (newChapter()) renderCompile(); };
   const moveChapter = d => {
     const l = activeList(), chapters = S.lists.filter(isChapter), i = chapters.indexOf(l), other = chapters[i + d];
     if (!other) return;
@@ -2262,7 +2299,6 @@
   };
   $("#btn-chapter-up").onclick = () => moveChapter(-1);
   $("#btn-chapter-down").onclick = () => moveChapter(1);
-  $("#btn-manuscript").onclick = exportManuscript;
   $("#ms-download").onclick = exportManuscript;
   $("#ms-print").onclick = () => { document.body.classList.add("print-ms"); window.print(); };
   addEventListener("afterprint", () => document.body.classList.remove("print-ms"));
@@ -2309,7 +2345,7 @@
           const re = new RegExp(`(id: "${chId.replace(/[-]/g, "\\-")}", kind: "chapter", page: "[^"]+",\\n\\s*name: )"(?:[^"\\\\]|\\\\.)*"`);
           if (re.test(chSrc)) files.push({ path: "data/chapters.js", text: chSrc.replace(re, (_, a) => a + JSON.stringify(d.title.trim())) });
         }
-        const commit = await gh.write(head, files, `Edit chapter ${splitMdx(current).fm.number || ""}: ${d.title.trim()}\n\nEdited in the research tool's Manuscript view.`);
+        const commit = await gh.write(head, files, `Edit chapter ${splitMdx(current).fm.number || ""}: ${d.title.trim()}\n\nEdited in the research tool's Book view.`);
         if (!commit) continue; // GitHub moved on meanwhile: read it again
         PUB_CH[page] = { src: next };
         const l = S.lists.find(x => x.id === chId);
@@ -2324,11 +2360,26 @@
       show(`Not saved: ${esc(e.message)}`);
     }
   };
+  // Remembers a sources panel opened or closed by hand (a details element also reports "toggle" when drawn open).
+  $("#view-manuscript").addEventListener("click", e => { const sm = e.target.closest(".bk-side > summary"); if (sm) bkOpen[sm.parentElement.dataset.bkSide] = !sm.parentElement.open; });
   $("#view-manuscript").addEventListener("dblclick", e => {
     const prose = e.target.closest(".ms-pub[data-ms-text]"); if (!prose || e.target.closest("button, a")) return;
     startChapterEdit(prose.dataset.msText);
   });
+  // Finds records to add to a chapter's sources: every word must match its title, maker, place, holder or id.
+  const findSources = (l, q) => {
+    const words = q.toLowerCase().split(/\s+/).filter(Boolean); if (!words.length) return [];
+    return ITEMS.filter(it => !l.items.includes(it.id) && words.every(w => [it.id, it.title, it.creator, it.institution, it.date].join(" ").toLowerCase().includes(w))).slice(0, 8);
+  };
   $("#view-manuscript").addEventListener("input", e => {
+    const q = e.target.closest("[data-bk-q]");
+    if (q) {
+      const l = S.lists.find(x => x.id === q.dataset.bkQ), res = findSources(l, q.value);
+      $(`#bk-r-${CSS.escape(l.id)}`).innerHTML = q.value.trim() ? (res.length ? res.map(it => `<li><button class="bk-t" data-ms-open="${esc(it.id)}">${esc(it.title)}</button><span class="bk-m">${esc([it.date, it.institution].filter(Boolean).join(" · "))}</span><button class="link-btn" data-bk-add="${esc(it.id)}" data-bk-ch="${esc(l.id)}">Add</button></li>`).join("") : `<li class="bk-m">No record matches.</li>`) : "";
+      return;
+    }
+    const nt = e.target.closest("[data-bk-notes]");
+    if (nt) { const l = S.lists.find(x => x.id === nt.dataset.bkNotes); if (l) { l.intro = nt.value; fitMs(nt); saveMsText(); } return; }
     const el = e.target.closest("[data-ms-ta], [data-ms-title], [data-ms-dek]"); if (!el) return;
     const id = el.dataset.msTa || el.dataset.msTitle || el.dataset.msDek, d = (S.msDrafts || {})[id]; if (!d) return;
     if (el.dataset.msTa) { d.body = el.value; fitMs(el); } else if (el.dataset.msTitle) d.title = el.value; else d.dek = el.value;
@@ -2345,12 +2396,26 @@
   $("#view-manuscript").addEventListener("click", e => {
     const open = e.target.closest("[data-ms-open]"); if (open) return openDrawer(open.dataset.msOpen);
     const hero = e.target.closest("[data-ms-hero]"); if (hero) return openHero(hero.dataset.msHero);
-    const edit = e.target.closest("[data-ms-edit]"); if (edit) { S.activeList = edit.dataset.msEdit; save(); setView("compile"); return; }
     const start = e.target.closest("button[data-ms-text]"); if (start) return startChapterEdit(start.dataset.msText);
     const sv = e.target.closest("[data-ms-save]"); if (sv) return saveChapterEdit(sv.dataset.msSave, sv);
     const cancel = e.target.closest("[data-ms-cancel]");
     if (cancel) { if (!confirm("Discard this edit? The published text stays as it is.")) return; delete S.msDrafts[cancel.dataset.msCancel]; save(); renderManuscript(); return; }
     if (e.target.closest("[data-ms-reload]")) return loadChapterTexts(true);
+    const row = e.target.closest(".bk-row"), chOf = id => S.lists.find(x => x.id === id);
+    const mv = e.target.closest("[data-bk-move]");
+    if (mv && row) { const l = chOf(row.dataset.bkCh), i = l.items.indexOf(row.dataset.bkId), j = i + +mv.dataset.bkMove; if (i < 0 || j < 0 || j >= l.items.length) return; [l.items[i], l.items[j]] = [l.items[j], l.items[i]]; save(); return renderManuscript(); }
+    if (e.target.closest("[data-bk-remove]") && row) { const l = chOf(row.dataset.bkCh); l.items = l.items.filter(x => x !== row.dataset.bkId); save(); renderManuscript(); return toast("Removed from the chapter's sources"); }
+    const add = e.target.closest("[data-bk-add]");
+    if (add) { const l = chOf(add.dataset.bkCh); if (l && !l.items.includes(add.dataset.bkAdd)) l.items.push(add.dataset.bkAdd); save(); return renderManuscript(); }
+    const addAll = e.target.closest("[data-bk-addall]");
+    if (addAll) { const l = chOf(addAll.dataset.bkAddall); $$(`[data-bk-add][data-bk-ch="${CSS.escape(l.id)}"]`).forEach(b => { if (!l.items.includes(b.dataset.bkAdd)) l.items.push(b.dataset.bkAdd); }); save(); return renderManuscript(); }
+    const ins = e.target.closest("[data-bk-insert]");
+    if (ins) {
+      const chId = ins.closest(".bk-row").dataset.bkCh, ta = $(`.ms-editor[data-ms-ta="${CSS.escape(chId)}"]`), d = (S.msDrafts || {})[chId]; if (!ta || !d) return;
+      const cite = `[@${ins.dataset.bkInsert}]`, at = ta.selectionStart ?? ta.value.length;
+      ta.value = ta.value.slice(0, at) + cite + ta.value.slice(ta.selectionEnd ?? at); d.body = ta.value; saveMsText();
+      ta.focus(); ta.setSelectionRange(at + cite.length, at + cite.length); return;
+    }
     const jump = e.target.closest("[data-ms-jump]");
     if (jump) { e.preventDefault(); document.getElementById("ms-" + jump.dataset.msJump)?.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" }); }
   });
@@ -2503,7 +2568,7 @@
   save();
   rebuild();
   const VIEWS = ["browse", "timeline", "compile", "manuscript", "discover", "sources"];
-  const viewFromHash = () => { const v = (location.hash || "").slice(1); return VIEWS.includes(v) ? v : "browse"; };
+  const viewFromHash = () => { const h = (location.hash || "").slice(1), v = Object.keys(VIEW_HASH).find(k => VIEW_HASH[k] === h) || h; return VIEWS.includes(v) ? v : "browse"; };
   window.addEventListener("hashchange", () => { if (viewFromHash() !== currentView) setView(viewFromHash()); });
   setView(viewFromHash());
   publishCount();
