@@ -1344,6 +1344,7 @@
   // text cites that aren't gathered yet, and a search to add more. While the text is being edited, each
   // source can be inserted into it as a citation.
   const bkOpen = {}; // sources panels opened or closed by hand this visit
+  const msPreview = new Set(); // chapters whose edit shows a preview under the text
   const sourcesPanel = (l, used, editing) => {
     const items = l.items.map(id => BY_ID[id]).filter(Boolean);
     const missing = [...used].filter(id => BY_ID[id] && !l.items.includes(id));
@@ -1352,7 +1353,7 @@
         <span class="bk-n">${i + 1}</span>
         <span class="bk-body"><button class="bk-t" data-ms-open="${esc(it.id)}">${esc(it.title)}</button>
           <span class="bk-m">${esc([TYPES[it.type]?.label, it.date].filter(Boolean).join(" · "))}</span>
-          <span class="bk-tag">${used.has(it.id) ? "Cited" : "Not cited yet"}</span>${editing ? `<button class="link-btn bk-ins" data-bk-insert="${esc(it.id)}">Insert citation</button>` : ""}</span>
+          <span class="bk-tag">${used.has(it.id) ? "Cited" : "Not cited yet"}</span>${editing ? `<span class="bk-ins"><button class="link-btn" data-bk-insert="${esc(it.id)}">Insert citation</button>${picturesOf(it).length ? `<button class="link-btn" data-ins-open="picture" data-ins-ch="${esc(l.id)}" data-ins-id="${esc(it.id)}">Insert picture</button>` : ""}</span>` : ""}</span>
         <span class="bk-act"><button class="icon-btn" data-bk-move="-1" ${i === 0 ? "disabled" : ""} aria-label="Move up">${icon("up")}</button><button class="icon-btn" data-bk-move="1" ${i === items.length - 1 ? "disabled" : ""} aria-label="Move down">${icon("down")}</button><button class="icon-btn" data-bk-remove aria-label="Remove from this chapter's sources">${icon("x")}</button></span>
       </li>`;
     // Open beside the text on wide screens; on narrower ones it sits under the chapter, closed until wanted.
@@ -1392,8 +1393,18 @@
           ${draft.conflict ? `<p class="ms-errs" role="alert">${esc(draft.conflict)}</p>` : `<p class="ms-hint">Editing the published text. Nothing changes on the site until you save; this edit is kept in this browser until then.</p>`}
           <label class="ms-field">Title <input data-ms-title="${esc(l.id)}" value="${esc(draft.title)}" spellcheck="true"></label>
           <label class="ms-field">Summary line under the title <textarea data-ms-dek="${esc(l.id)}" rows="2" spellcheck="true">${esc(draft.dek)}</textarea></label>
-          <label class="ms-field">Text <textarea class="ms-editor" data-ms-ta="${esc(l.id)}" spellcheck="true">${esc(draft.body)}</textarea></label>
-          <p class="ms-hint">Blank lines start paragraphs; “## ” starts a heading. Cite a record as [@record-id] or [@one; @two], with a page as [@record-id, p. 12]: the id is in each record's Edit form and its address on the site. Pictures: &lt;Figure id="record-id" caption="…" /&gt;, with size="wide" or size="margin". Quotations: &lt;PullQuote from="record-id" who="…"&gt;words&lt;/PullQuote&gt;.</p>
+          <div class="ms-field"><span id="ms-text-label-${esc(l.id)}">Text</span>
+            <div class="ms-tools" role="toolbar" aria-label="Add to the text">
+              <button type="button" class="btn sm" data-ins-open="cite" data-ins-ch="${esc(l.id)}">Cite a record</button>
+              <button type="button" class="btn sm" data-ins-open="picture" data-ins-ch="${esc(l.id)}">Add a picture</button>
+              <button type="button" class="btn sm" data-ins-open="quote" data-ins-ch="${esc(l.id)}">Add a quotation</button>
+              <span class="ms-tools-gap"></span>
+              <button type="button" class="btn sm" data-ms-preview="${esc(l.id)}" aria-pressed="${msPreview.has(l.id)}">Preview</button>
+            </div>
+            <textarea class="ms-editor" data-ms-ta="${esc(l.id)}" aria-labelledby="ms-text-label-${esc(l.id)}" spellcheck="true">${esc(draft.body)}</textarea>
+          </div>
+          ${msPreview.has(l.id) ? `<div class="ms-preview ms-prose ms-pub" id="ms-pv-${esc(l.id)}">${chapterHTML(draft.body)}</div>` : ""}
+          <p class="ms-hint">Blank lines start paragraphs; “## ” starts a heading. The buttons above add citations, pictures and quotations where the cursor is; they appear in the text as [@record-id], &lt;Figure … /&gt; and &lt;PullQuote …&gt;, which can be edited or deleted like any other text.</p>
           <div class="ms-errs" id="ms-errs-${esc(l.id)}" role="alert"></div>
           <div class="btns"><button class="btn primary" data-ms-save="${esc(l.id)}">${icon("check")}Save to the site</button><button class="btn" data-ms-cancel="${esc(l.id)}">Discard this edit</button></div>
         </div>`;
@@ -2360,6 +2371,109 @@
       show(`Not saved: ${esc(e.message)}`);
     }
   };
+  // ---------- adding citations, pictures and quotations to a chapter's text ----------
+  // Opens from the toolbar over the text (or a source's Insert picture). Finds a record, then writes the
+  // right tag at the cursor: a citation inline, a picture or quotation as its own paragraph.
+  const insDlg = $("#ins-dialog"), insBody = $("#ins-body"), insFoot = $("#ins-foot");
+  let insSt = null; // { chId, mode, at, end, q, id, image, size, caption, loc, words, who, gather }
+  const refreshPreview = chId => { const pv = document.getElementById("ms-pv-" + chId), d = (S.msDrafts || {})[chId]; if (pv && d) pv.innerHTML = chapterHTML(d.body); };
+  const isPublished = id => !!BASE_BY_ID[id] && !S.deleted[id];
+  const attrText = v => String(v || "").replace(/"([^"]*)"/g, "“$1”").replace(/"/g, "”").replace(/[{}<>]/g, "").replace(/\s+/g, " ").trim();
+  const defaultCaption = (it, pic) => (pic && pic.caption) || it.imageCaption || [it.title, it.date].filter(Boolean).join(", ");
+  const INS_TITLE = { cite: "Cite a record", picture: "Add a picture", quote: "Add a quotation" };
+  const openInsert = (chId, mode, id) => {
+    const ta = $(`.ms-editor[data-ms-ta="${CSS.escape(chId)}"]`); if (!ta) return;
+    insSt = { chId, mode, at: ta.selectionStart ?? ta.value.length, end: ta.selectionEnd ?? ta.value.length, q: "", size: "text", loc: "", words: "", who: "", gather: true };
+    if (id) pickInsert(id, mode === "picture" ? picturesOf(BY_ID[id])[0] : null);
+    insDlg.showModal(); renderInsert(); setTimeout(() => (id ? $("#ins-caption") || $("#ins-words") : $("#ins-q"))?.focus(), 30);
+  };
+  const pickInsert = (id, pic) => {
+    const it = BY_ID[id]; if (!it) return;
+    Object.assign(insSt, { id, image: pic ? pic.image : null, caption: pic ? defaultCaption(it, pic) : "", who: insSt.who || it.creator || it.institution || "" });
+  };
+  const insCandidates = () => {
+    const l = S.lists.find(x => x.id === insSt.chId), words = insSt.q.toLowerCase().split(/\s+/).filter(Boolean);
+    const pool = words.length ? ITEMS.filter(it => words.every(w => [it.id, it.title, it.creator, it.institution, it.date].join(" ").toLowerCase().includes(w)))
+      : l.items.map(x => BY_ID[x]).filter(Boolean);
+    return (insSt.mode === "picture" ? pool.filter(it => picturesOf(it).length) : pool).slice(0, 30);
+  };
+  const insResult = it => {
+    const pub = isPublished(it.id), chosen = insSt.id === it.id;
+    const meta = `<span class="bk-m">${esc([TYPES[it.type]?.label, it.date, it.institution].filter(Boolean).join(" · "))}${pub ? "" : " · only in this browser: publish it first"}</span>`;
+    if (insSt.mode === "picture") return `<li class="ins-row${chosen ? " on" : ""}"><span class="ins-t">${esc(it.title)}</span>${meta}
+      <span class="ins-pics">${picturesOf(it).map(p => `<button type="button" class="ins-pic" data-ins-pic="${esc(it.id)}" data-ins-n="${p.image == null ? "" : p.image}" aria-pressed="${chosen && (insSt.image ?? null) === p.image}"${pub ? "" : " disabled"} aria-label="${esc(p.caption || it.title)}"><img src="${esc(photoSrc(p.src) || p.src)}" alt="" loading="lazy" referrerpolicy="no-referrer"></button>`).join("")}</span></li>`;
+    return `<li class="ins-row${chosen ? " on" : ""}"><button type="button" class="ins-pick" data-ins-pick="${esc(it.id)}" aria-pressed="${chosen}"${pub ? "" : " disabled"}><span class="ins-t">${esc(it.title)}</span>${meta}</button></li>`;
+  };
+  const insCode = () => {
+    const s = insSt; if (!s.id) return "";
+    if (s.mode === "cite") return `[@${s.id}${s.loc.trim() ? ", " + attrText(s.loc).replace(/[\]\[;]/g, "") : ""}]`;
+    if (s.mode === "picture") return `<Figure id="${s.id}"${s.size !== "text" ? ` size="${s.size}"` : ""}${s.image ? ` image={${s.image}}` : ""} caption="${attrText(s.caption)}" />`;
+    return s.words.trim() ? `<PullQuote from="${s.id}" who="${attrText(s.who)}">${s.words.trim().replace(/[{}<>]/g, "").replace(/\s*\n\s*/g, " ")}</PullQuote>` : "";
+  };
+  const renderInsert = () => {
+    const s = insSt, it = s.id && BY_ID[s.id], l = S.lists.find(x => x.id === s.chId), list = insCandidates();
+    $("#ins-title").textContent = INS_TITLE[s.mode];
+    const pic = it && s.mode === "picture" ? picturesOf(it).find(p => (p.image ?? null) === (s.image ?? null)) : null;
+    const form = !it ? "" : s.mode === "cite" ? `
+        <label class="ms-field">Page or other locator (optional) <input id="ins-loc" value="${esc(s.loc)}" placeholder="p. 12"></label>`
+      : s.mode === "picture" ? `
+        <div class="ins-chosen">${pic ? `<img src="${esc(photoSrc(pic.src) || pic.src)}" alt="" referrerpolicy="no-referrer">` : ""}
+          <div class="ins-chosen-f">
+            <fieldset class="ins-size"><legend>Size on the page</legend>${[["text", "Text width"], ["wide", "Wide"], ["margin", "Small, in the margin"]].map(([v, t]) => `<label><input type="radio" name="ins-size" value="${v}"${s.size === v ? " checked" : ""}> ${t}</label>`).join("")}</fieldset>
+            <label class="ms-field">Caption <textarea id="ins-caption" rows="3">${esc(s.caption)}</textarea></label>
+            <p class="ms-hint">Say only what the record says about the picture. The record's credit and its permission mark are added on the site.</p>
+          </div></div>`
+      : `
+        <label class="ms-field">The words, exactly as the source gives them <textarea id="ins-words" rows="3">${esc(s.words)}</textarea></label>
+        <label class="ms-field">Who said or wrote them <input id="ins-who" value="${esc(s.who)}"></label>`;
+    insBody.innerHTML = `
+      <label class="vh" for="ins-q">Find a record</label>
+      <input type="search" id="ins-q" class="ins-q" value="${esc(s.q)}" placeholder="${s.mode === "picture" ? "Find a picture: title, maker or id" : "Find a record: title, maker or id"}" autocomplete="off">
+      <p class="ms-hint">${s.q.trim() ? "" : `This chapter's sources${s.mode === "picture" ? " that have pictures" : ""}. Type to search every record.`}</p>
+      <ul class="ins-list">${list.length ? list.map(insResult).join("") : `<li class="bk-m">No record matches${s.mode === "picture" ? " with a picture" : ""}.</li>`}</ul>
+      ${it ? `<div class="ins-form"><p class="ins-for">For <b>${esc(it.title)}</b></p>${form}
+        ${l && !l.items.includes(s.id) ? `<label class="ins-gather"><input type="checkbox" id="ins-gather"${s.gather ? " checked" : ""}> Also add it to this chapter's sources</label>` : ""}
+        <p class="ins-code"><span>Goes into the text as</span> <code>${esc(insCode() || "…")}</code></p></div>` : ""}`;
+    insFoot.innerHTML = `<span style="flex:1"></span><button type="button" class="btn" data-ins="close">Cancel</button><button type="button" class="btn primary" data-ins="go"${insCode() ? "" : " disabled"}>Add to the text</button>`;
+  };
+  const doInsert = () => {
+    const s = insSt, code = insCode(), d = (S.msDrafts || {})[s.chId]; if (!code || !d) return;
+    let text = d.body, at = s.at, end = s.end, ins = code;
+    if (s.mode !== "cite") {
+      // A picture or quotation is a paragraph of its own: after the paragraph the cursor is in.
+      const next = text.indexOf("\n\n", end); at = end = next < 0 ? text.length : next;
+      ins = `\n\n${code}`; if (next < 0) ins += "\n";
+    }
+    d.body = text.slice(0, at) + ins + text.slice(end);
+    const l = S.lists.find(x => x.id === s.chId);
+    if (l && s.gather && !l.items.includes(s.id)) l.items.push(s.id);
+    save(); insDlg.close(); renderManuscript();
+    const ta = $(`.ms-editor[data-ms-ta="${CSS.escape(s.chId)}"]`);
+    if (ta) { ta.focus(); ta.setSelectionRange(at + ins.length, at + ins.length); }
+    toast(s.mode === "cite" ? "Citation added" : s.mode === "picture" ? "Picture added: see it with Preview" : "Quotation added");
+  };
+  insDlg.addEventListener("input", e => {
+    const s = insSt; if (!s) return;
+    if (e.target.id === "ins-q") { s.q = e.target.value; const pos = e.target.selectionStart; renderInsert(); const q = $("#ins-q"); q.focus(); q.setSelectionRange(pos, pos); return; }
+    if (e.target.id === "ins-loc") s.loc = e.target.value;
+    if (e.target.id === "ins-caption") s.caption = e.target.value;
+    if (e.target.id === "ins-words") s.words = e.target.value;
+    if (e.target.id === "ins-who") s.who = e.target.value;
+    if (e.target.name === "ins-size") s.size = e.target.value;
+    if (e.target.id === "ins-gather") s.gather = e.target.checked;
+    const c = $(".ins-code code", insBody); if (c) c.textContent = insCode() || "…";
+    $("[data-ins=go]", insFoot).disabled = !insCode();
+  });
+  insDlg.addEventListener("click", e => {
+    const pk = e.target.closest("[data-ins-pick]"); if (pk) { pickInsert(pk.dataset.insPick, null); renderInsert(); return ($("#ins-loc") || $("#ins-words"))?.focus(); }
+    const pc = e.target.closest("[data-ins-pic]");
+    if (pc) { const n = pc.dataset.insN === "" ? null : +pc.dataset.insN; pickInsert(pc.dataset.insPic, picturesOf(BY_ID[pc.dataset.insPic]).find(p => (p.image ?? null) === n)); renderInsert(); return $("#ins-caption")?.focus(); }
+    const b = e.target.closest("[data-ins]"); if (!b) return;
+    if (b.dataset.ins === "close") insDlg.close();
+    if (b.dataset.ins === "go") doInsert();
+  });
+  $("#btn-x-ins").onclick = () => insDlg.close();
+
   // Remembers a sources panel opened or closed by hand (a details element also reports "toggle" when drawn open).
   $("#view-manuscript").addEventListener("click", e => { const sm = e.target.closest(".bk-side > summary"); if (sm) bkOpen[sm.parentElement.dataset.bkSide] = !sm.parentElement.open; });
   $("#view-manuscript").addEventListener("dblclick", e => {
@@ -2382,7 +2496,7 @@
     if (nt) { const l = S.lists.find(x => x.id === nt.dataset.bkNotes); if (l) { l.intro = nt.value; fitMs(nt); saveMsText(); } return; }
     const el = e.target.closest("[data-ms-ta], [data-ms-title], [data-ms-dek]"); if (!el) return;
     const id = el.dataset.msTa || el.dataset.msTitle || el.dataset.msDek, d = (S.msDrafts || {})[id]; if (!d) return;
-    if (el.dataset.msTa) { d.body = el.value; fitMs(el); } else if (el.dataset.msTitle) d.title = el.value; else d.dek = el.value;
+    if (el.dataset.msTa) { d.body = el.value; fitMs(el); refreshPreview(id); } else if (el.dataset.msTitle) d.title = el.value; else d.dek = el.value;
     saveMsText();
   });
   $("#view-manuscript").addEventListener("change", e => {
@@ -2401,6 +2515,9 @@
     const cancel = e.target.closest("[data-ms-cancel]");
     if (cancel) { if (!confirm("Discard this edit? The published text stays as it is.")) return; delete S.msDrafts[cancel.dataset.msCancel]; save(); renderManuscript(); return; }
     if (e.target.closest("[data-ms-reload]")) return loadChapterTexts(true);
+    const io = e.target.closest("[data-ins-open]"); if (io) return openInsert(io.dataset.insCh, io.dataset.insOpen, io.dataset.insId);
+    const pv = e.target.closest("[data-ms-preview]");
+    if (pv) { const id = pv.dataset.msPreview; msPreview.has(id) ? msPreview.delete(id) : msPreview.add(id); return renderManuscript(); }
     const row = e.target.closest(".bk-row"), chOf = id => S.lists.find(x => x.id === id);
     const mv = e.target.closest("[data-bk-move]");
     if (mv && row) { const l = chOf(row.dataset.bkCh), i = l.items.indexOf(row.dataset.bkId), j = i + +mv.dataset.bkMove; if (i < 0 || j < 0 || j >= l.items.length) return; [l.items[i], l.items[j]] = [l.items[j], l.items[i]]; save(); return renderManuscript(); }
