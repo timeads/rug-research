@@ -6,7 +6,7 @@ import Base from "../../layouts/Base.astro";
 import Milestones from "../../components/Milestones.astro";
 import WoundBand from "../../components/WoundBand.astro";
 import Cite from "../../components/Cite.astro";
-import { db, record, imageUrl, imageCleared, publicDomainTag, citation, base, canonical, absolute, CHAPTER_CLOTH, clothName } from "../../lib/data.js";
+import { db, record, imageUrl, imageCleared, publicDomainTag, citation, base, canonical, absolute, CHAPTER_CLOTH } from "../../lib/data.js";
 
 export async function getStaticPaths() {
   // In book order, so each chapter knows the one before and after it.
@@ -47,7 +47,7 @@ const schema = {
 <Base title={`${d.title} · A History of Tufted Rugs`} description={d.dek} shade={shade} current="chapters" progress type="article" image={shareImage} scholar={scholar} schema={schema}>
   <article>
     <header class="ch-head">
-      <div class="ch-band"><WoundBand shade={shade} n={d.number} height={72} /><p class="ch-label"><b class="num">Shade {d.number}</b><span>{clothName(CHAPTER_CLOTH[d.researchChapter] || "grey")}</span>{years && <span class="num">{years}</span>}</p></div>
+      <div class="ch-band"><WoundBand shade={shade} n={d.number} height={72} /><p class="ch-label"><b class="num">Chapter {d.number}</b>{years && <span class="num">{years}</span>}</p></div>
       <h1 class="ch-title">{d.title}</h1>
       <p class="ch-dek">{d.dek}</p>
       <div class="ch-byline"><span>By <b>Tim Eads</b></span><span>{Math.max(1, Math.round(words / 230))} minute read</span><span><span class="num">{notes.length}</span> notes, <span class="num">{cited.length}</span> sources, <span class="num">{verified}</span> checked at the archive</span>{d.status !== "final" && <span>{d.status === "prototype" ? "Prototype draft" : "Draft"}</span>}</div>
@@ -67,10 +67,10 @@ const schema = {
     </div>
     <nav class="ch-pager" aria-label="Previous and next chapters">
       {prev
-        ? <a class="prev" rel="prev" href={base(`chapters/${prev.slug}/`)}><span class="dir">Previous chapter</span><span class="which"><i style={`--c:var(--cloth-${prev.cloth})`}></i><b class="num">Shade {prev.number}</b></span><span class="t">{prev.title}</span></a>
+        ? <a class="prev" rel="prev" href={base(`chapters/${prev.slug}/`)}><span class="dir">Previous chapter</span><span class="which"><i style={`--c:var(--cloth-${prev.cloth})`}></i><b class="num">Chapter {prev.number}</b></span><span class="t">{prev.title}</span></a>
         : <a class="prev" href={base("")}><span class="dir">Chapters</span><span class="t">All the chapters</span></a>}
       {next
-        ? <a class="next" rel="next" href={base(`chapters/${next.slug}/`)}><span class="dir">Next chapter</span><span class="which"><i style={`--c:var(--cloth-${next.cloth})`}></i><b class="num">Shade {next.number}</b></span><span class="t">{next.title}</span></a>
+        ? <a class="next" rel="next" href={base(`chapters/${next.slug}/`)}><span class="dir">Next chapter</span><span class="which"><i style={`--c:var(--cloth-${next.cloth})`}></i><b class="num">Chapter {next.number}</b></span><span class="t">{next.title}</span></a>
         : <a class="next" href={base("")}><span class="dir">Chapters</span><span class="t">Back to all the chapters</span></a>}
     </nav>
     <section class="endmatter">

@@ -3,7 +3,7 @@
 import { getCollection } from "astro:content";
 import Base from "../layouts/Base.astro";
 import WoundBand from "../components/WoundBand.astro";
-import { db, base, canonical, CHAPTER_CLOTH, chapterYears, fmtYear, clothName } from "../lib/data.js";
+import { db, base, canonical, CHAPTER_CLOTH, chapterYears, fmtYear } from "../lib/data.js";
 
 const entries = await getCollection("chapters");
 const published = Object.fromEntries(entries.map(e => [e.data.researchChapter, e.id]));
@@ -14,7 +14,7 @@ const spans = Object.fromEntries(entries.filter(e => e.data.milestones.length).m
 const { chapters, items } = db();
 const rows = chapters.map((c, i) => {
   const ys = chapterYears(c);
-  return { n: i + 1, title: titles[c.id] || c.name, cloth: clothName(CHAPTER_CLOTH[c.id] || "grey"), shade: `var(--cloth-${CHAPTER_CLOTH[c.id] || "grey"})`, years: spans[c.id] || (ys ? `${fmtYear(ys[0])}–${fmtYear(ys[1])}` : ""), slug: published[c.id] };
+  return { n: i + 1, title: titles[c.id] || c.name, shade: `var(--cloth-${CHAPTER_CLOTH[c.id] || "grey"})`, years: spans[c.id] || (ys ? `${fmtYear(ys[0])}–${fmtYear(ys[1])}` : ""), slug: published[c.id] };
 });
 const ready = rows.filter(r => r.slug).length;
 // The history as a book, with the chapters that can be read so far.
@@ -37,7 +37,7 @@ const sources = items.filter(x => ["book", "article", "archive", "trade-catalog"
       <div class="card-head"><h2 id="contents">Chapters</h2><span>{ready === rows.length ? `${ready} chapters` : `${ready} ${ready === 1 ? "chapter" : "chapters"} ready to read, ${rows.length - ready} in preparation`}</span></div>
       <ol class="shades">
         {rows.map(r => {
-          const label = <span class="no"><b class="num">Shade {r.n}</b><span>{r.cloth}</span></span>;
+          const label = <span class="no"><b class="num">Chapter {r.n}</b></span>;
           const text = <span class="tx"><span class="t">{r.title}</span><span class="yrs num">{r.years}</span></span>;
           return (
             <li style={`--shade:${r.shade}`}>

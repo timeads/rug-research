@@ -215,7 +215,7 @@ Dark mode (system preference) keeps the same roles: a near-black ground and shee
 - **Display** (680, clamp(3rem, 8.5vw, 6rem), 0.95, 82% width): the cover title only.
 - **Headline** (680, clamp(2.5rem, 6vw, 4.5rem), 1, 84% width): chapter titles (max 18ch) and page titles (Timeline, Bibliography). Record titles step down to 660 at clamp(1.75rem, 3.5vw, 2.5rem), 90% width.
 - **Title** (660, 1.6rem, 1.15, 90% width): section heads inside the prose. The contents head is 680 1.75rem at 84%; end-matter heads 660 1.375rem.
-- **Shade number** (700, 1.5rem beside the chapter band; 0.9375rem in contents rows; 84% width, tabular): "Shade 6", with the cloth name and years under it in regular Archivo.
+- **Chapter number** (700, 1.5rem beside the chapter band; 0.9375rem in chapter rows; 84% width, tabular): "Chapter 6", with the years under it in regular Archivo. The colour names stay internal: readers see "Chapter 6", never "Shade 6" or "Teal".
 - **Body** (Literata 400, 1.125rem, 1.66, 37rem measure): chapter prose. Deks are Literata 1.3125rem/1.45 in ink-2; the cover scope line 1.25rem/1.5; pull quotes 1.75rem/1.3 at 32ch.
 - **Frame** (Archivo 400, 1rem, 1.55): the default body of the page outside the reading column; captions at 0.875rem/1.5.
 - **Label** (Archivo 500-600, 0.875rem): navigation, buttons, chips, byline. Sentence case, no tracking.
@@ -232,7 +232,7 @@ Dark mode (system preference) keeps the same roles: a near-black ground and shee
 
 Every page shares the masthead's frame: 80rem (`--page`) with a fluid clamp(1.25rem, 3vw, 2rem) side gutter (`--pad`), so content starts under the wordmark and ends under the last nav link. Reading happens in a 53.75rem "wide" block inside it: a 37rem text measure, a 2.75rem gap, and a 14rem margin column. The masthead is sticky at 3.5rem.
 
-**Cover.** Title and scope, then the contents card across the full page width: one bordered sheet whose rows are a band (a third of the row), the shade number and cloth name, the chapter title and years, and the status. A ready chapter's band is full height (2.75rem) and reads "Read the chapter" in shade ink; a chapter in preparation shows a thin 0.5rem band and "In preparation". Below the card, Timeline and Bibliography as two reference links under 2px ink rules. Under 640px each row stacks: band across the top, number at left, title and status at right.
+**Cover.** Title and scope, then the contents card across the full page width: one bordered sheet whose rows are a band (a third of the row), the chapter number, the chapter title and years, and the status. A ready chapter's band is full height (2.75rem) and reads "Read the chapter" in shade ink; a chapter in preparation shows a thin 0.5rem band and "In preparation". Below the card, Timeline and Bibliography as two reference links under 2px ink rules. Under 640px each row stacks: band across the top, number at left, title and status at right.
 
 **Chapter.** The 4.5rem wound band with the shade label beside it in the margin column; the title, dek and a byline between hairlines (author, reading time, note/source/checked counts, draft status); then a full-bleed opening photograph at min(72vh, 46rem). Key dates follow on a horizontal shade thread, each date placed by year and labels alternating above and below; under 900px they become a vertical list on a shade rule. The prose column reserves the margin with right padding so notes and small "margin" figures float into it; wide figures, pull quotes, panels and full-bleed figures span the whole width. After the last paragraph, before the notes, links to the previous and next chapters (each with that chapter's own swatch, shade number and title; the first and last chapters link to the contents instead) let a reader go straight through the book. End matter is a two-column grid: full notes beside "Where the sources are". From 1180px the text, margin and end matter sit at the right of the page, and "In this chapter" (key dates, sections, notes) stays in view in the space to their left, marking the section being read with a 2px shade underline.
 
@@ -310,7 +310,7 @@ Full notes as a numbered list on hairlines (a targeted note is tinted with the s
 ### Do:
 - **Do** set the page ground to Card-Stock Grey (#e6e9e4) and keep the charcoal board (#1e2421) for masthead and foot.
 - **Do** set `--shade` once per page from the chapter's cloth and take every accent (band, threads, note numbers, Source links, focus ring) from it.
-- **Do** show a chapter's shade as a wound band with its shade number and cloth name ("Shade 6, Teal"), never as a bare colour.
+- **Do** show a chapter's shade as a wound band beside its chapter number ("Chapter 6"), never as a bare colour and never with its colour name.
 - **Do** set headings in Archivo at 82-90% width, weight 650-700, and reading text in Literata at a 37rem measure.
 - **Do** put sources in the 14rem margin beside the text and link each to its record in one step.
 - **Do** use tabular numerals for years, shade numbers and counts.
