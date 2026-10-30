@@ -502,7 +502,7 @@ dialog::backdrop { background: rgb(12 15 13 / .5); }
   body:not(.print-ms) #view-compile { display: block !important; }
   body:not(.print-ms) #view-manuscript, body.print-ms #view-compile { display: none !important; }
   body.print-ms #view-manuscript { display: block !important; }
-  .ms-toc, .ms-actions, .ms-ch-meta .linkish { display: none !important; }
+  .ms-toc, .ms-actions, .ms-ch-meta .linkish, .ms-ch-note { display: none !important; }
   .ms-layout { display: block; }
   .ms { max-width: none; font-size: 11pt; }
   .ms-chapter { break-before: page; border: 0; }
@@ -774,3 +774,8 @@ input[type="search"]::-webkit-search-cancel-button:hover { background: var(--ink
 .pub-table th, .pub-table td { text-align: left; vertical-align: top; padding: 4px 8px 4px 0; border-top: 1px solid var(--line); overflow-wrap: anywhere; }
 .pub-table thead th { color: var(--ink-3); font-weight: 550; border-top: 0; }
 .pub-table tbody th { width: 7rem; color: var(--ink-3); font-weight: 550; }
+
+/* Manuscript: where the published text of a chapter lives. */
+.ms-ch-note { margin: -14px 0 22px; font-size: var(--t-xs); color: var(--ink-3); }
+.ms-ch-note code { font-size: inherit; overflow-wrap: anywhere; }
+a.linkish { text-decoration: underline; text-underline-offset: .2em; }

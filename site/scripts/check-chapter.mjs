@@ -32,6 +32,9 @@ if (!m) problems.push("No frontmatter block.");
 const fm = m ? yaml.load(m[1]) : {};
 for (const k of ["number", "title", "dek", "theme", "status", "researchChapter", "published"]) if (fm[k] == null) problems.push(`Frontmatter: missing ${k}.`);
 if (fm.researchChapter && !chapters.some(c => c.id === fm.researchChapter)) problems.push(`Frontmatter: no research chapter ${fm.researchChapter}.`);
+// The research tool names each chapter after its published title (data/chapters.js "name").
+const seed = chapters.find(c => c.id === fm.researchChapter);
+if (seed && fm.title && seed.name !== fm.title) problems.push(`Title: data/chapters.js names ${fm.researchChapter} "${seed.name}"; make it match the title here.`);
 if (fm.status && !["prototype", "draft", "final"].includes(fm.status)) problems.push(`Frontmatter: status must be prototype, draft or final.`);
 if (fm.hero) {
   const it = byId[fm.hero.record];

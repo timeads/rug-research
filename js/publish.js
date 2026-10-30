@@ -24,6 +24,21 @@
   const urlKey = u => String(u || "").toLowerCase().replace(/^https?:\/\/(www\.)?/, "").replace(/[/#?]+$/, "");
   const titleKey = t => String(t || "").toLowerCase().normalize("NFKD").replace(/[^\p{L}\p{N}]+/gu, " ").trim();
 
+  // Which records each chapter of the public site uses: its citations, pictures, quotations, hero and key
+  // dates. chapters: [{ page, src }] (the .mdx files). Returns { id: ["Chapter 4", ...] }.
+  const citedIn = chapters => {
+    const out = {};
+    for (const { page, src } of chapters) {
+      const num = (String(src).match(/^number:\s*(\d+)/m) || [])[1];
+      const label = num ? `Chapter ${num}` : page;
+      const ids = new Set();
+      for (const [, g] of String(src).matchAll(/\[(@[^\]]+)\]/g)) for (const part of g.split(";")) ids.add(part.trim().replace(/^@/, "").split(",")[0].trim());
+      for (const [, id] of String(src).matchAll(/\b(?:id|from)="([^"]+)"/g)) ids.add(id);
+      for (const [, id] of String(src).matchAll(/\brecord:\s*"?([\w-]+)"?/g)) ids.add(id);
+      for (const id of ids) (out[id] = out[id] || []).includes(label) || out[id].push(label);
+    }
+    return out;
+  };
   // Runs a data file (window.X = ...) and returns what it set.
   const readWindow = src => { const w = {}; new Function("window", src)(w); return w; };
 
@@ -94,6 +109,8 @@
 
     for (const id of Object.keys(local.deleted || {})) {
       if (!byId[id]) continue;
+      const usedBy = (published.cited || {})[id];
+      if (usedBy && usedBy.length) { changes.push({ id, title: byId[id].title, kind: "deleted", skipped: true, blocked: true, note: `used in ${usedBy.join(", ")} of the public site: take it out of the chapter first, or keep the record` }); continue; }
       const change = { id, title: byId[id].title, kind: "deleted", skipped: !del.has(id) };
       changes.push(change);
       if (change.skipped) continue;
@@ -160,6 +177,13 @@
       head: async () => (await json(`git/ref/heads/${branch}`)).object.sha,
       file: async (path, ref) => (await call(`contents/${path}?ref=${ref}`, { headers: { Accept: "application/vnd.github.raw+json" } })).text(),
       check: async () => json(`git/ref/heads/${branch}`),
+      // The records the public site's chapters use (see citedIn).
+      cited: async ref => {
+        const dir = await json(`contents/site/src/content/chapters?ref=${ref}`);
+        const files = dir.filter(f => f.type === "file" && f.name.endsWith(".mdx"));
+        const raw = { headers: { Accept: "application/vnd.github.raw+json" } };
+        return citedIn(await Promise.all(files.map(async f => ({ page: f.name.replace(/\.mdx$/, ""), src: await (await call(`contents/${f.path}?ref=${ref}`, raw)).text() }))));
+      },
       // Writes files on top of commit `parent`; returns the new commit, or null if the branch moved meanwhile.
       write: async (parent, files, message) => {
         const tree = (await json(`git/commits/${parent}`)).tree.sha;
@@ -188,6 +212,7 @@
       const [itemsSrc, trSrc] = await Promise.all([gh.file("data/items.js", parent), gh.file("data/transcripts.js", parent)]);
       const w = readWindow(itemsSrc), tw = readWindow(trSrc);
       const published = { items: w.RUG_ITEMS || [], removed: w.RUG_REMOVED || {}, transcripts: tw.RUG_TRANSCRIPTS || {} };
+      if (choose && choose.deletions && choose.deletions.size) published.cited = await gh.cited(parent);
       const p = plan({ local, published, loaded, choose });
       if (onPlan && (await onPlan(p, attempt)) === false) return { cancelled: true, plan: p };
       const live = p.changes.filter(c => !c.skipped && !["duplicate", "gone"].includes(c.kind));
@@ -254,6 +279,6 @@
     return { hero: readHero(src), figures };
   }
 
-  const api = { readHero, writeHero, saveHero, loadHero, plan, writeItemsFile, writeTranscriptsFile, github, publish, readWindow, clean };
+  const api = { readHero, writeHero, saveHero, loadHero, plan, citedIn, writeItemsFile, writeTranscriptsFile, github, publish, readWindow, clean };
   if (typeof module !== "undefined" && module.exports) module.exports = api; else root.RugPublish = api;
 })(typeof window !== "undefined" ? window : globalThis);

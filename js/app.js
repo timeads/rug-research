@@ -1244,7 +1244,8 @@
           <h2>${esc(l.name)}</h2>
           <p class="ms-ch-meta"><span id="ms-wc-${esc(l.id)}">${wordsIn(l.intro).toLocaleString()} words</span> · ${items.length} source${items.length === 1 ? "" : "s"}
             ${msEditing.has(l.id) ? `<button class="btn sm primary" data-ms-done="${esc(l.id)}">${icon("check")}Done</button>` : `<button class="btn sm" data-ms-text="${esc(l.id)}">${icon("edit")}Edit text</button>`}
-            <button class="linkish" data-ms-edit="${esc(l.id)}">Open in Write</button>${pageOf(l.id) ? `<button class="linkish" data-ms-hero="${esc(l.id)}">Chapter picture</button>` : ""}</p>
+            <button class="linkish" data-ms-edit="${esc(l.id)}">Open in Write</button>${pageOf(l.id) ? `<button class="linkish" data-ms-hero="${esc(l.id)}">Chapter picture</button><a class="linkish" href="https://www.historyoftuftedrugs.com/chapters/${esc(pageOf(l.id))}/" target="_blank" rel="noopener">Published chapter</a>` : ""}</p>
+          ${pageOf(l.id) ? `<p class="ms-ch-note">This is the research draft. The published chapter's text is in <code>site/src/content/chapters/${esc(pageOf(l.id))}.mdx</code> on GitHub.</p>` : ""}
         </header>
         ${msEditing.has(l.id)
           ? `<textarea class="ms-editor" data-ms-ta="${esc(l.id)}" aria-label="Text of chapter ${i + 1}" spellcheck="true">${esc(l.intro || "")}</textarea><p class="ms-hint">Saved as you type. Blank lines start new paragraphs; "- " starts a list item.</p>`
@@ -1870,7 +1871,8 @@
       const head = await gh.head();
       const [itemsSrc, trSrc] = await Promise.all([gh.file("data/items.js", head), gh.file("data/transcripts.js", head)]);
       const w = RugPublish.readWindow(itemsSrc), tw = RugPublish.readWindow(trSrc);
-      review = RugPublish.plan({ local: localChanges(), published: { items: w.RUG_ITEMS || [], removed: w.RUG_REMOVED || {}, transcripts: tw.RUG_TRANSCRIPTS || {} }, loaded: BASE_BY_ID });
+      const cited = Object.keys(localChanges().deleted).length ? await gh.cited(head) : {};
+      review = RugPublish.plan({ local: localChanges(), published: { items: w.RUG_ITEMS || [], removed: w.RUG_REMOVED || {}, transcripts: tw.RUG_TRANSCRIPTS || {}, cited }, loaded: BASE_BY_ID });
       review.pub = Object.fromEntries((w.RUG_ITEMS || []).map(x => [x.id, x]));
     } catch (e) {
       if (e.status === 401 || e.status === 403 || e.status === 404) { ghToken.set(""); return setupView(ghErr(e)); }
@@ -2292,6 +2294,13 @@
     const untouched = l.intro === S.seedIntro[c.id] || (RETIRED_INTROS[c.id] || []).includes(introHash(l.intro || ""));
     if (untouched && l.intro !== c.intro) l.intro = c.intro;
     if (l.intro === c.intro) S.seedIntro[c.id] = c.intro;
+  }
+  // A chapter keeps the published chapter's title unless you renamed it yourself.
+  S.seedName = S.seedName || {};
+  for (const c of SEED_CHAPTERS) {
+    const l = S.lists.find(x => x.id === c.id); if (!l) continue;
+    if (l.name !== c.name && (l.name === S.seedName[c.id] || (c.formerNames || []).includes(l.name))) l.name = c.name;
+    if (l.name === c.name) S.seedName[c.id] = c.name;
   }
   // Evidence added to a seeded chapter in later releases reaches existing browsers once; anything you removed stays removed.
   S.seedSeen = S.seedSeen || {};
