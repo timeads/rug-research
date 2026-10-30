@@ -533,7 +533,11 @@ window.RUG_ITEMS = [
       "scholarly"
     ],
     "status": "unverified",
-    "region": "United States"
+    "region": "United States",
+    "image": "images/own/uploads/book-georgia-women-whitener-2014-mvutvgs2.jpg",
+    "imageCredit": "Bandy Heritage Center",
+    "rights": "own",
+    "reviewedAt": "2026-10-30T10:27:04.752Z"
   },
   {
     "id": "map-sims-textile-dalton-1946",
@@ -3774,7 +3778,7 @@ window.RUG_ITEMS = [
     "description": "Labour economics of the hand-tufted bedspread trade.",
     "confidence": "suggestive",
     "region": "United States",
-    "collection": "TTW Script Bank fact-check notes (Claude research, Aug 2026)",
+    "collection": "TTW Script Bank fact-check notes",
     "status": "unverified",
     "themes": [
       "Chenille & candlewick"
@@ -3782,7 +3786,8 @@ window.RUG_ITEMS = [
     "tags": [
       "script fact-check",
       "labour"
-    ]
+    ],
+    "reviewedAt": "2026-10-30T10:27:04.752Z"
   },
   {
     "id": "ttw-excelsior-needle",
@@ -14020,7 +14025,9 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "suggestive",
-    "reviewedAt": "2026-10-28T21:42:57.297Z"
+    "reviewedAt": "2026-10-30T10:27:04.752Z",
+    "dateStart": 2026,
+    "image": "images/own/uploads/tool-dayang-guns-mvutvgs2.jpg"
   },
   {
     "id": "finding-ttw-gun-suppliers",
@@ -15750,8 +15757,9 @@ window.RUG_ITEMS = [
     "sourceUrl": "https://collections.mfa.org/objects/74049",
     "imageCredit": "Photograph © Museum of Fine Arts, Boston",
     "imagePage": "https://collections.mfa.org/objects/74049",
-    "rights": "not-requested",
-    "reviewedAt": "2026-10-28T21:52:11.222Z"
+    "rights": "granted",
+    "reviewedAt": "2026-10-30T10:27:04.752Z",
+    "image": "images/own/uploads/u-mvs5zgbi4f8jd-mvutvgs2.jpg"
   },
   {
     "id": "u-mvs61hug2gmpn",
