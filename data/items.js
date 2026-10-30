@@ -8109,7 +8109,7 @@ window.RUG_ITEMS = [
     "imageCredit": "Hagley Museum and Library",
     "imagePage": "https://digital.hagley.org/72430_477",
     "rights": "not-requested",
-    "gallery": true
+    "reviewedAt": "2026-10-30T22:46:55.861Z"
   },
   {
     "id": "u-mvs3riubri1f6",
@@ -15875,7 +15875,7 @@ window.RUG_ITEMS = [
     "type": "company",
     "status": "unverified",
     "title": "Werk",
-    "institution": "Werk",
+    "institution": "Tuft the World (own collection)",
     "techniques": [
       "cnc"
     ],
@@ -15888,9 +15888,12 @@ window.RUG_ITEMS = [
     "sourceUrl": "https://www.werk.com.cn/",
     "image": "images/own/uploads/u-mvss1boffo03b-mvss21k2.jpg",
     "rights": "own",
-    "reviewedAt": "2026-10-29T12:30:41.820Z",
+    "reviewedAt": "2026-10-30T22:46:55.861Z",
     "description": "Werk machine at Tuft the World, Philadelphia",
-    "gallery": true
+    "gallery": true,
+    "place": "Philadelphia",
+    "region": "China",
+    "confidence": "solid"
   },
   {
     "id": "process-felt-definition",
