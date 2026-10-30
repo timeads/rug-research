@@ -8471,7 +8471,11 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "solid",
-    "rights": "not-requested"
+    "rights": "not-requested",
+    "image": "https://www.architectmagazine.com/wp-content/uploads/sites/5/2025/03/shelley-hutchins-author-bio-headshot.jpg",
+    "imageCredit": "architectmagazine.com (image from architectmagazine.com)",
+    "imagePage": "https://www.architectmagazine.com/practice/exhibition-of-rugs-designed-by-architects_o/",
+    "imageSource": "auto"
   },
   {
     "id": "co-edward-fields",
