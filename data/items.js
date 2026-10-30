@@ -98,7 +98,9 @@ window.RUG_ITEMS = [
     "imageCredit": "Winterthur Museum",
     "imageSource": "auto",
     "region": "United States",
-    "rights": "not-requested"
+    "rights": "not-requested",
+    "gallery": true,
+    "reviewedAt": "2026-10-30T22:56:30.724Z"
   },
   {
     "id": "wint-1964-0808",
@@ -545,7 +547,8 @@ window.RUG_ITEMS = [
     "image": "images/own/uploads/book-georgia-women-whitener-2014-mvutvgs2.jpg",
     "imageCredit": "Bandy Heritage Center",
     "rights": "own",
-    "reviewedAt": "2026-10-30T10:27:04.752Z"
+    "reviewedAt": "2026-10-30T22:56:30.724Z",
+    "gallery": true
   },
   {
     "id": "archive-bandy-deaton",
@@ -893,7 +896,9 @@ window.RUG_ITEMS = [
     "imageCredit": "welikerughooking.com",
     "imageSource": "auto",
     "region": "United States",
-    "rights": "not-requested"
+    "rights": "not-requested",
+    "gallery": true,
+    "reviewedAt": "2026-10-30T22:56:30.724Z"
   },
   {
     "id": "wint-1960-0594",
@@ -1082,7 +1087,9 @@ window.RUG_ITEMS = [
     "imageCredit": "Historic Deerfield",
     "imageSource": "auto",
     "region": "United States",
-    "rights": "not-requested"
+    "rights": "not-requested",
+    "gallery": true,
+    "reviewedAt": "2026-10-30T22:56:30.724Z"
   },
   {
     "id": "hd-blue-white-bed-rug",
@@ -1328,7 +1335,9 @@ window.RUG_ITEMS = [
     "imageCredit": "American Folk Art Museum",
     "imageSource": "auto",
     "region": "United States",
-    "rights": "not-requested"
+    "rights": "not-requested",
+    "gallery": true,
+    "reviewedAt": "2026-10-30T22:56:30.724Z"
   },
   {
     "id": "wadsworth-bed-furnishings-2018",
@@ -1351,7 +1360,9 @@ window.RUG_ITEMS = [
     "imageCredit": "Wadsworth Atheneum Museum of Art",
     "imageSource": "auto",
     "region": "United States",
-    "rights": "not-requested"
+    "rights": "not-requested",
+    "gallery": true,
+    "reviewedAt": "2026-10-30T22:56:30.724Z"
   },
   {
     "id": "book-bed-ruggs-1972",
@@ -1379,7 +1390,8 @@ window.RUG_ITEMS = [
     "image": "https://covers.openlibrary.org/b/id/10042294-L.jpg",
     "imageCredit": "Cover via Open Library",
     "imageSource": "auto",
-    "reviewedAt": "2026-10-30T10:39:10.511Z"
+    "reviewedAt": "2026-10-30T22:56:30.724Z",
+    "gallery": true
   },
   {
     "id": "book-ulrich-age-of-homespun",
@@ -4683,7 +4695,9 @@ window.RUG_ITEMS = [
     "status": "unverified",
     "image": "http://static1.squarespace.com/static/58a21c1486e6c0e601e74867/5d6831971d99db000174179f/647ff318a47016534da12aaf/1688419952009/Screen+Shot+2023-07-03+at+5.08.07+PM.png?format=1500w",
     "imageCredit": "sarah-archer.com",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "gallery": true,
+    "reviewedAt": "2026-10-30T22:56:30.724Z"
   },
   {
     "id": "duke-adviews-caprolan",
@@ -4880,7 +4894,11 @@ window.RUG_ITEMS = [
       "careful wording",
       "priority"
     ],
-    "status": "unverified"
+    "status": "unverified",
+    "image": "images/patents/US1917162-1.png",
+    "imageCredit": "Image from related record: Lawrence P. Smith, \"Motor Operated Tufting Machine\" (US1917162A) (USPTO via Google Patents (public domain))",
+    "gallery": true,
+    "reviewedAt": "2026-10-30T22:56:30.724Z"
   },
   {
     "id": "co-shaw",
@@ -4989,7 +5007,9 @@ window.RUG_ITEMS = [
     "confidence": "solid",
     "image": "https://www.thedesignsheppard.com/wp-content/uploads/2020/12/Camille-Walala-x-FLOOR_STORY.jpg",
     "imageCredit": "FLOOR_STORY",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "gallery": true,
+    "reviewedAt": "2026-10-30T22:56:30.724Z"
   },
   {
     "id": "co-scott-group",
@@ -5015,7 +5035,9 @@ window.RUG_ITEMS = [
     "status": "unverified",
     "image": "https://scottgroupstudio.com/wp-content/uploads/2024/02/803415-Margot-Interior-Rendering-for-web-934x1024.jpg",
     "imageCredit": "Scott Group Studio",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "gallery": true,
+    "reviewedAt": "2026-10-30T22:56:30.724Z"
   },
   {
     "id": "co-creative-accents",
@@ -5039,9 +5061,11 @@ window.RUG_ITEMS = [
       "sewing machine"
     ],
     "status": "unverified",
-    "image": "https://creativeaccents.com/wp-content/uploads/2020/05/ken.jpg",
+    "image": "https://creativeaccents.com/wp-content/uploads/2026/10/Reflection.jpg",
     "imageCredit": "Creative Accents",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "gallery": true,
+    "reviewedAt": "2026-10-30T22:56:30.724Z"
   },
   {
     "id": "co-kramis",
@@ -5069,7 +5093,9 @@ window.RUG_ITEMS = [
     "image": "https://monocle.com/wp-content/uploads/legacy/article/1_rugs-to-riches_kramis-509bfa77c5ab3.jpg?fit=3307%2C2268",
     "imageCredit": "monocle.com (image from monocle.com)",
     "imagePage": "https://monocle.com/business/manufacturing/swiss-carpet-kramis-rugs/",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "gallery": true,
+    "reviewedAt": "2026-10-30T22:56:30.724Z"
   },
   {
     "id": "co-jaipur",
@@ -5096,7 +5122,9 @@ window.RUG_ITEMS = [
     "status": "unverified",
     "image": "https://www.jaipurliving.com/media/wysiwyg/the-craft1.jpg",
     "imageCredit": "Jaipur Living / Jaipur Rugs",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "gallery": true,
+    "reviewedAt": "2026-10-30T22:56:30.724Z"
   },
   {
     "id": "co-tai-ping",
@@ -5427,8 +5455,9 @@ window.RUG_ITEMS = [
         "src": "images/own/uploads/langhorne-wilton-mvss21k1-11.jpg"
       }
     ],
-    "reviewedAt": "2026-10-29T00:00:40.030Z",
-    "gallery": true
+    "reviewedAt": "2026-10-30T22:56:30.724Z",
+    "gallery": true,
+    "galleryImage": 2
   },
   {
     "id": "philly-encyclopedia-carpet",
@@ -5653,7 +5682,9 @@ window.RUG_ITEMS = [
     "sourceUrl": "https://americanainsights.org/essays/hooked-rugs/",
     "image": "https://americanainsights.org/wp-content/uploads/2023/11/hooked-rug-essay-grid.jpg",
     "imageCredit": "americanainsights.org",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "gallery": true,
+    "reviewedAt": "2026-10-30T22:56:30.724Z"
   },
   {
     "id": "pat-us251381a",
@@ -6957,7 +6988,9 @@ window.RUG_ITEMS = [
     ],
     "image": "images/patents/US1831485-1.png",
     "imageCredit": "USPTO via Google Patents (public domain)",
-    "imageSource": "uspto"
+    "imageSource": "uspto",
+    "gallery": true,
+    "reviewedAt": "2026-10-30T22:56:30.724Z"
   },
   {
     "id": "pat-us1970703a",
@@ -7247,7 +7280,9 @@ window.RUG_ITEMS = [
     ],
     "image": "images/patents/US2975736-1.png",
     "imageCredit": "USPTO via Google Patents (public domain)",
-    "imageSource": "uspto"
+    "imageSource": "uspto",
+    "gallery": true,
+    "reviewedAt": "2026-10-30T22:56:30.724Z"
   },
   {
     "id": "pat-us2879731a",
@@ -7331,7 +7366,9 @@ window.RUG_ITEMS = [
     ],
     "image": "images/patents/US2887076-1.png",
     "imageCredit": "USPTO via Google Patents (public domain)",
-    "imageSource": "uspto"
+    "imageSource": "uspto",
+    "gallery": true,
+    "reviewedAt": "2026-10-30T22:56:30.724Z"
   },
   {
     "id": "pat-us3144844a",
@@ -7478,7 +7515,11 @@ window.RUG_ITEMS = [
     "status": "unverified",
     "date": "1964–1968",
     "dateStart": 1964,
-    "dateEnd": 1968
+    "dateEnd": 1968,
+    "image": "images/patents/US3142276-01.png",
+    "imageCredit": "Image from related record: Alfred Schauer, \"Device for Forming Cut Pile Fabrics and the Like\" (US3142276A) (USPTO via Google Patents (public domain))",
+    "gallery": true,
+    "reviewedAt": "2026-10-30T22:56:30.724Z"
   },
   {
     "id": "co-merida",
@@ -7508,7 +7549,9 @@ window.RUG_ITEMS = [
     "image": "https://nehomemag.com/wp-content/uploads/2016/06/john-costa-working.jpg",
     "imageCredit": "nehomemag.com (image from nehomemag.com)",
     "imagePage": "https://nehomemag.com/the-merida-mystique/",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "gallery": true,
+    "reviewedAt": "2026-10-30T22:56:30.724Z"
   },
   {
     "id": "wint-lib-tariff-brussels",
@@ -7822,7 +7865,9 @@ window.RUG_ITEMS = [
     "image": "https://digital.hagley.org/cantaloupe/iiif/2/https%3A%2F%2Fdigital.hagley.org%2Fsystem%2Ffiles%2F2025-06%2F570350-Service%2520File.jpg/full/800,/0/default.jpg",
     "imageCredit": "Hagley Museum and Library",
     "imagePage": "https://digital.hagley.org/dpads_1803_00650",
-    "rights": "not-requested"
+    "rights": "not-requested",
+    "gallery": true,
+    "reviewedAt": "2026-10-30T22:56:30.724Z"
   },
   {
     "id": "u-mvs38omy32ao5",
@@ -7852,7 +7897,9 @@ window.RUG_ITEMS = [
     "image": "https://digital.hagley.org/cantaloupe/iiif/2/https%3A%2F%2Fdigital.hagley.org%2Fsystem%2Ffiles%2F2025-06%2F570355-Service%2520File.jpg/full/800,/0/default.jpg",
     "imageCredit": "Hagley Museum and Library",
     "imagePage": "https://digital.hagley.org/dpads_1803_00655",
-    "rights": "not-requested"
+    "rights": "not-requested",
+    "gallery": true,
+    "reviewedAt": "2026-10-30T22:56:30.724Z"
   },
   {
     "id": "u-mvs3903rv1gjh",
@@ -8574,7 +8621,9 @@ window.RUG_ITEMS = [
     "image": "https://www.ceadogan.ie/wp-content/uploads/2024/04/Ceadogan-Alpaca-Rug-Cushions-Feb-2024-WEB-27.jpg",
     "imageCredit": "ceadogan.ie (image from ceadogan.ie)",
     "imagePage": "https://www.ceadogan.ie/neadaithe/",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "gallery": true,
+    "reviewedAt": "2026-10-30T22:56:30.724Z"
   },
   {
     "id": "co-pinton",
@@ -8703,7 +8752,9 @@ window.RUG_ITEMS = [
     "rights": "not-requested",
     "image": "https://designerrugs.com.au/cdn/shop/files/designer-rugs-house-of-heras-Paloma-lo-01-wr-press-release.jpg?v=1785313534&width=480",
     "imageCredit": "Designer Rugs",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "gallery": true,
+    "reviewedAt": "2026-10-30T22:56:30.724Z"
   },
   {
     "id": "co-roger-oates",
@@ -8734,7 +8785,9 @@ window.RUG_ITEMS = [
     "rights": "not-requested",
     "image": "https://www.rogeroates.com/app/uploads/2024/05/RogerOates-Tide-Rug-1663-3x4-SFW.jpg",
     "imageCredit": "Roger Oates Design",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "gallery": true,
+    "reviewedAt": "2026-10-30T22:56:30.724Z"
   },
   {
     "id": "co-royal-thai",
@@ -9573,7 +9626,9 @@ window.RUG_ITEMS = [
     "rights": "not-requested",
     "image": "http://www.obeetee.in/cdn/shop/files/bm1.jpg?v=1784027392&width=2048",
     "imageCredit": "Obeetee",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "gallery": true,
+    "reviewedAt": "2026-10-30T22:56:30.724Z"
   },
   {
     "id": "co-hands",
@@ -10676,7 +10731,9 @@ window.RUG_ITEMS = [
     "confidence": "solid",
     "image": "http://www.hofmann-handtuft.de/wp-content/uploads/2013/11/showroom-hofmann-handtuft.jpg",
     "imageCredit": "Hofmann Handtuft-Technik GmbH",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "gallery": true,
+    "reviewedAt": "2026-10-30T22:56:30.724Z"
   },
   {
     "id": "pat-us3968758a",
@@ -10788,7 +10845,9 @@ window.RUG_ITEMS = [
     "rights": "own",
     "image": "http://www.chroniclebooks.com/cdn/shop/files/9781797224565_1_1200x1200.jpg?v=1699638681",
     "imageCredit": "Tuft the World",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "gallery": true,
+    "reviewedAt": "2026-10-30T22:56:30.724Z"
   },
   {
     "id": "book-tuft-the-world-2024",
@@ -11573,7 +11632,8 @@ window.RUG_ITEMS = [
     "rights": "public-domain",
     "imageRole": "illustration",
     "imageCaption": "Carpet, ca. 1765, attributed to Thomas Whitty, Axminster (a different carpet), 2025.725",
-    "reviewedAt": "2026-10-28T15:05:57.518Z"
+    "reviewedAt": "2026-10-30T22:56:30.724Z",
+    "gallery": true
   },
   {
     "id": "met-928622",
@@ -12421,7 +12481,9 @@ window.RUG_ITEMS = [
     "confidence": "suggestive",
     "image": "http://img2.chinadaily.com.cn/images/202505/12/682169dda310a04a96783487.jpeg",
     "imageCredit": "China Daily",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "gallery": true,
+    "reviewedAt": "2026-10-30T22:56:30.724Z"
   },
   {
     "id": "finding-cnc-delos-robotic-2013",
@@ -12481,7 +12543,8 @@ window.RUG_ITEMS = [
     "confidence": "suggestive",
     "imageSource": "rejected",
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-Inmi9FdE96qCCQPksu4EEEX_wnP-dN1lKmWBq9RMPE253eDOvNi4NykZ&s=10",
-    "reviewedAt": "2026-10-29T00:06:57.086Z"
+    "reviewedAt": "2026-10-30T22:56:30.724Z",
+    "gallery": true
   },
   {
     "id": "co-carpet-sign",
@@ -12847,7 +12910,8 @@ window.RUG_ITEMS = [
     "rights": "not-requested",
     "imageRole": "illustration",
     "imageCaption": "Carpet (Kilim), late 19th–early 20th century, 1961.388",
-    "reviewedAt": "2026-10-28T15:05:57.518Z"
+    "reviewedAt": "2026-10-30T22:56:30.724Z",
+    "gallery": true
   },
   {
     "id": "process-flatweave-soumak-tm",
@@ -13184,7 +13248,8 @@ window.RUG_ITEMS = [
     "rights": "not-requested",
     "imageRole": "illustration",
     "imageCaption": "Diagram of the single-warp (Spanish) knot",
-    "reviewedAt": "2026-10-28T15:05:57.518Z"
+    "reviewedAt": "2026-10-30T22:56:30.724Z",
+    "gallery": true
   },
   {
     "id": "process-knotted-tibetan",
@@ -13251,7 +13316,9 @@ window.RUG_ITEMS = [
     "status": "unverified",
     "imageSource": "auto",
     "image": "https://framemark.vam.ac.uk/collections/2017KL2153/full/!600,/0/default.jpg",
-    "imageCredit": "Victoria and Albert Museum"
+    "imageCredit": "Victoria and Albert Museum",
+    "gallery": true,
+    "reviewedAt": "2026-10-30T22:56:30.724Z"
   },
   {
     "id": "process-knotted-looms",
@@ -13580,7 +13647,8 @@ window.RUG_ITEMS = [
     "imageCredit": "Historic New England",
     "imagePage": "https://www.historicnewengland.org/explore/collections-access/gusn/3034",
     "rights": "not-requested",
-    "reviewedAt": "2026-10-30T10:39:37.931Z"
+    "reviewedAt": "2026-10-30T22:56:30.724Z",
+    "gallery": true
   },
   {
     "id": "process-braided-hne",
@@ -14071,11 +14139,12 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "suggestive",
-    "reviewedAt": "2026-10-30T22:49:50.782Z",
+    "reviewedAt": "2026-10-30T22:56:30.724Z",
     "image": "https://hofmann-handtuft.de/wp-content/uploads/2020/06/hofmann-vml16-22-slider-980x338.jpg",
     "imageCredit": "Hofmann",
     "imageSource": "auto",
-    "dateStart": 2026
+    "dateStart": 2026,
+    "gallery": true
   },
   {
     "id": "tool-dayang-guns",
@@ -15130,7 +15199,8 @@ window.RUG_ITEMS = [
     "imageCredit": "Bandy Heritage Center, Dalton State College",
     "imagePage": "https://bandyheritagecenter.pastperfectonline.com/photo/0FDE0D89-C7A2-4859-AB7A-223311483185",
     "rights": "not-requested",
-    "reviewedAt": "2026-10-28T21:52:11.222Z"
+    "reviewedAt": "2026-10-30T22:56:30.724Z",
+    "gallery": true
   },
   {
     "id": "u-mvs592jpun3vo",
@@ -15161,7 +15231,8 @@ window.RUG_ITEMS = [
     "imageCredit": "Bandy Heritage Center, Dalton State College",
     "imagePage": "https://bandyheritagecenter.pastperfectonline.com/photo/8AE0F8AF-52B9-4191-ACA6-201636278543",
     "rights": "not-requested",
-    "reviewedAt": "2026-10-28T21:52:11.222Z"
+    "reviewedAt": "2026-10-30T22:56:30.724Z",
+    "gallery": true
   },
   {
     "id": "u-mvs595z4bahu3",
@@ -15194,7 +15265,8 @@ window.RUG_ITEMS = [
     "imageCredit": "Bandy Heritage Center, Dalton State College",
     "imagePage": "https://bandyheritagecenter.pastperfectonline.com/photo/D2663E01-213F-4799-87B2-421448214058",
     "rights": "not-requested",
-    "reviewedAt": "2026-10-28T21:52:11.222Z"
+    "reviewedAt": "2026-10-30T22:56:30.724Z",
+    "gallery": true
   },
   {
     "id": "u-mvs599epnumc6",
@@ -15258,7 +15330,8 @@ window.RUG_ITEMS = [
     "imageCredit": "Bandy Heritage Center, Dalton State College",
     "imagePage": "https://bandyheritagecenter.pastperfectonline.com/photo/FF28A59B-2254-437E-A4D8-944492699483",
     "rights": "not-requested",
-    "reviewedAt": "2026-10-28T21:52:11.222Z"
+    "reviewedAt": "2026-10-30T22:56:30.724Z",
+    "gallery": true
   },
   {
     "id": "u-mvs59g9qd6v9u",
@@ -15871,7 +15944,8 @@ window.RUG_ITEMS = [
     "imageCredit": "The Colonial Williamsburg Foundation",
     "imagePage": "https://emuseum.history.org/objects/8815/bed-rug-by-rebekah-harris",
     "rights": "not-requested",
-    "reviewedAt": "2026-10-28T21:52:11.222Z"
+    "reviewedAt": "2026-10-30T22:56:30.724Z",
+    "gallery": true
   },
   {
     "id": "u-mvss1boffo03b",
