@@ -1152,7 +1152,7 @@
     $("#write-kicker").textContent = ch ? `Chapter ${ci + 1} of ${chapters.length}` : "List";
     $("#btn-chapter-up").hidden = $("#btn-chapter-down").hidden = !ch;
     $("#btn-chapter-up").disabled = ci <= 0; $("#btn-chapter-down").disabled = ci < 0 || ci >= chapters.length - 1;
-    $("#intro-label").textContent = ch ? "Draft" : "Introduction";
+    $("#intro-label").textContent = ch ? "Research draft (not published: the site's text is in Manuscript)" : "Introduction";
     $("#list-intro").classList.toggle("draft", ch);
     $("#list-intro").placeholder = ch ? "Write this chapter here. Saved as you type. Cite evidence by its number below, e.g. [3]." : "Your working argument for this list, e.g. a draft research statement. Saved as you type.";
     $("#evidence-label").textContent = ch ? `Evidence (${l.items.length})` : `Records (${l.items.length})`;
@@ -1188,10 +1188,17 @@
     const chapters = S.lists.filter(isChapter);
     if (!chapters.length) return toast("Add a chapter first.");
     const all = [];
-    const out = ["# A History of Tufted Rugs", "", `*Working manuscript exported ${new Date().toISOString().slice(0, 10)}. Unverified sources are marked.*`, ""];
+    const out = ["# A History of Tufted Rugs", "", `*Manuscript exported ${new Date().toISOString().slice(0, 10)}: each chapter's published text, with the sources gathered for it. Unverified sources are marked.*`, ""];
     chapters.forEach((l, ci) => {
       const items = l.items.map(id => BY_ID[id]).filter(Boolean);
-      out.push(`## ${ci + 1}. ${l.name}`, "", (l.intro || "*No draft yet.*").trim(), "");
+      const st = pageOf(l.id) && PUB_CH[pageOf(l.id)], t = st && st.src != null ? splitMdx(st.src) : null;
+      if (t) {
+        // The published text, with pictures as their captions and quotations as quotations.
+        const md = t.body.replace(/^<\/?Pair>\s*$/gm, "")
+          .replace(/<Figure\b([^>]*?)\/>/g, (_, a) => `*[Picture: ${attr(a, "caption") || attr(a, "id")} (${attr(a, "id")})]*`)
+          .replace(/<PullQuote\b([^>]*)>([\s\S]*?)<\/PullQuote>/g, (_, a, q) => `> ${q.trim()}\n> (${attr(a, "who")})`);
+        out.push(`## ${t.fm.number || ci + 1}. ${t.fm.title || l.name}`, "", t.fm.dek ? `*${t.fm.dek}*` : "", "", md.trim(), "");
+      } else out.push(`## ${ci + 1}. ${l.name}`, "", (l.intro || "*No draft yet.*").trim(), "");
       if (items.length) {
         out.push(`### Evidence for chapter ${ci + 1}`, "");
         items.forEach((it, i) => {
@@ -1227,30 +1234,136 @@
       return `<p>${lines.map(mdInline).join("<br>")}</p>`;
     }).join("");
   };
-  const msEditing = new Set(); // chapters open for editing in the manuscript view
   const wordsIn = t => String(t || "").replace(DRAFT_LEAD, "").trim().split(/\s+/).filter(Boolean).length;
+  // ---------- the published manuscript ----------
+  // The Manuscript shows each chapter exactly as the public site prints it: the text of its file in
+  // site/src/content/chapters/. "Edit text" saves straight back to that file, with the GitHub key that
+  // Publish uses, so there is one text of each chapter. The research drafts kept in Write are shown under
+  // each chapter, marked as not published.
+  const CH_DIR = "site/src/content/chapters/";
+  const PUB_CH = {}; // page -> { src } once loaded, or { error }
+  let pubChLoading = false;
+  const splitMdx = src => {
+    src = String(src || "");
+    const m = src.match(/^---\n([\s\S]*?)\n---\n?/);
+    const fmText = m ? m[1] : "", rest = m ? src.slice(m[0].length) : src;
+    const fm = {};
+    for (const line of fmText.split("\n")) {
+      const f = line.match(/^(\w+):\s*(.+)$/); if (!f) continue;
+      let v = f[2].trim();
+      if (/^".*"$/.test(v)) { try { v = JSON.parse(v); } catch { v = v.slice(1, -1); } }
+      else if (/^'.*'$/.test(v)) v = v.slice(1, -1).replace(/''/g, "'");
+      fm[f[1]] = v;
+    }
+    return { fmText, fm, body: rest.replace(/^import .*\n/gm, "").replace(/^\s+/, "") };
+  };
+  const loadChapterTexts = async (force = false) => {
+    const pages = S.lists.filter(isChapter).map(l => pageOf(l.id)).filter(Boolean).filter(p => force || !PUB_CH[p] || PUB_CH[p].error);
+    if (!pages.length || pubChLoading) return;
+    pubChLoading = true;
+    // With a GitHub key, read the files as they are on GitHub this moment; without one, this site's copy
+    // (which follows GitHub within a minute or two).
+    let read = p => fetch(CH_DIR + p + ".mdx", { cache: "no-store" }).then(r => { if (!r.ok) throw new Error(`the site answered ${r.status}`); return r.text(); });
+    if (ghToken.get()) {
+      try { const gh = RugPublish.github({ repo: REPO, branch: PUBLISH_BRANCH, token: ghToken.get(), fetchImpl: fetch.bind(window) }); const head = await gh.head(); read = p => gh.file(CH_DIR + p + ".mdx", head); } catch { /* this site's copy will do */ }
+    }
+    await Promise.all(pages.map(async p => { try { PUB_CH[p] = { src: await read(p) }; } catch (e) { PUB_CH[p] = { error: e.message || "couldn't be read" }; } }));
+    pubChLoading = false;
+    if (currentView === "manuscript") renderManuscript();
+  };
+  const attr = (a, name) => { const m = String(a).match(new RegExp(`\\b${name}="([^"]*)"`)); return m ? m[1] : ""; };
+  const figureSrc = (it, n) => { const g = Array.isArray(it.images) ? it.images : []; return photoSrc(n && g[n] ? g[n].src : it.image) || imgSrc(it); };
+  // A chapter's text as the reader sees it: headings, paragraphs, pictures, quotations, numbered notes.
+  const chapterHTML = body => {
+    const notes = [];
+    const inline = t => esc(t).replace(/\*([^*\n]+)\*/g, "<em>$1</em>").replace(/\[(@[^\]]+)\]/g, (_, g) => {
+      const ids = g.split(";").map(x => x.trim().replace(/^@/, "").split(",")[0].trim()).filter(Boolean);
+      notes.push(g.split(";").map(x => x.trim().replace(/^@/, "")));
+      return `<sup class="ms-n"><button type="button" data-ms-open="${esc(ids[0])}" title="${esc(ids.map(id => BY_ID[id]?.title || id).join("; "))}">${notes.length}</button></sup>`;
+    });
+    const figure = a => {
+      const id = attr(a, "id"), it = BY_ID[id], n = +((a.match(/image=\{(\d+)\}/) || [])[1] || 0), src = it ? figureSrc(it, n) : "";
+      return `<figure class="ms-fig"><button type="button" data-ms-open="${esc(id)}" aria-label="Open the record">${src ? `<img src="${esc(src)}" alt="" loading="lazy" referrerpolicy="no-referrer">` : `<span class="ms-fig-none">No picture</span>`}</button><figcaption>${inline(attr(a, "caption") || (it ? it.title : id))}</figcaption></figure>`;
+    };
+    const html = String(body).replace(/^<\/?Pair>\s*$/gm, "").split(/\n\s*\n/).map(b => b.trim()).filter(Boolean).map(b => {
+      if (b.startsWith("## ")) return `<h3>${inline(b.slice(3))}</h3>`;
+      if (/^<Figure\b/.test(b)) return `<div class="ms-figs">${[...b.matchAll(/<Figure\b([^>]*?)\/>/g)].map(m => figure(m[1])).join("")}</div>`;
+      const q = b.match(/^<PullQuote\b([^>]*)>([\s\S]*?)<\/PullQuote>/);
+      if (q) return `<blockquote class="ms-pq"><p>${inline(q[2].trim())}</p><cite>${esc(attr(q[1], "who"))}</cite></blockquote>`;
+      if (/^<[A-Z]/.test(b)) return `<pre class="ms-raw">${esc(b)}</pre>`;
+      return `<p>${inline(b.replace(/\n/g, " "))}</p>`;
+    }).join("");
+    const noteList = notes.length ? `<details class="ms-sources"><summary>Notes (${notes.length})</summary><ol>${notes.map(parts => `<li>${parts.map(p => { const [id, ...loc] = p.split(","); const it = BY_ID[id.trim()]; return `<button class="ms-cite" data-ms-open="${esc(id.trim())}">${it ? mdInline(citation(it)) : esc(id.trim()) + " (not in the database)"}</button>${loc.length ? esc("," + loc.join(",")) : ""}`; }).join("; ")}</li>`).join("")}</ol></details>` : "";
+    return html + noteList;
+  };
+  const proseWords = body => String(body || "").replace(/<[A-Z][\s\S]*?(\/>|<\/[A-Z]\w*>)/g, " ").replace(/\[@[^\]]+\]/g, " ").replace(/^## /gm, "").split(/\s+/).filter(Boolean).length;
+  // Checks an edit before it is saved, as the site's own checker does: every citation and picture names a
+  // published record, pictures exist, and nothing in the text would stop the site from building.
+  const checkChapterEdit = d => {
+    const errs = [], published = id => BASE_BY_ID[id] && !S.deleted[id];
+    if (!d.title.trim()) errs.push("The chapter needs a title.");
+    if (/\n/.test(d.dek.trim())) errs.push("Keep the summary line to one paragraph.");
+    const seen = new Set();
+    for (const [, g] of d.body.matchAll(/\[(@[^\]]+)\]/g)) for (const part of g.split(";")) {
+      const id = part.trim().replace(/^@/, "").split(",")[0].trim();
+      if (seen.has(id)) continue; seen.add(id);
+      if (!published(id)) errs.push(S.items[id] ? `[@${id}] is only in this browser so far: publish it first (Publish button), then save.` : `[@${id}]: no record has that id.`);
+    }
+    for (const [, tag, a] of d.body.matchAll(/<(Figure|PullQuote)\b([^>]*)>/g)) {
+      const id = attr(a, tag === "Figure" ? "id" : "from"), n = +((a.match(/image=\{(\d+)\}/) || [])[1] || 0);
+      if (!id) { errs.push(`A ${tag} has no ${tag === "Figure" ? "id" : "from"}.`); continue; }
+      if (!published(id)) { errs.push(`${tag} ${id}: no published record has that id.`); continue; }
+      const it = BASE_BY_ID[id], g = Array.isArray(it.images) ? it.images : [];
+      if (tag === "Figure" && !(n ? g[n] && g[n].src : it.image)) errs.push(`Figure ${id}: that record has no picture${n ? ` number ${n}` : ""}.`);
+    }
+    for (const t of ["PullQuote", "Pair"]) if ((d.body.match(new RegExp(`<${t}\\b`, "g")) || []).length !== (d.body.match(new RegExp(`</${t}>`, "g")) || []).length) errs.push(`A <${t}> is not closed.`);
+    const prose = d.body.replace(/<[A-Z][^>]*>|<\/[A-Z]\w*>/g, "");
+    for (const line of prose.split("\n")) {
+      if (/[{}]/.test(line)) errs.push(`Curly brackets stop the site building: “${line.trim().slice(0, 60)}”.`);
+      if (/</.test(line)) errs.push(`A bare “<” stops the site building (write “less than”): “${line.trim().slice(0, 60)}”.`);
+    }
+    if (/[{}]/.test(d.title + d.dek)) errs.push("Curly brackets in the title or summary stop the site building.");
+    return errs;
+  };
+  const msDraftOf = l => (S.msDrafts || {})[l.id];
   const renderManuscript = () => {
     const chapters = S.lists.filter(isChapter);
-    const total = chapters.reduce((n, l) => n + wordsIn(l.intro), 0);
+    const texts = chapters.map(l => { const p = pageOf(l.id); return p && PUB_CH[p] && PUB_CH[p].src != null ? splitMdx(PUB_CH[p].src) : null; });
+    const loaded = texts.filter(Boolean).length;
+    const total = texts.reduce((n, t) => n + (t ? proseWords(t.body) : 0), 0);
     $("#ms-sub").textContent = chapters.length
-      ? `Working manuscript · ${chapters.length} chapter${chapters.length === 1 ? "" : "s"} · ${total.toLocaleString()} words · updates as you write`
+      ? `As published on www.historyoftuftedrugs.com · ${chapters.length} chapter${chapters.length === 1 ? "" : "s"}${loaded ? ` · ${total.toLocaleString()} words` : ""}${loaded < chapters.filter(l => pageOf(l.id)).length ? " · loading…" : ""}`
       : "No chapters yet.";
-    $("#ms-toc").innerHTML = chapters.map((l, i) => `<li><a href="#ms-${esc(l.id)}" data-ms-jump="${esc(l.id)}"><span>${esc(l.name)}</span><small>${wordsIn(l.intro).toLocaleString()}</small></a></li>`).join("");
+    $("#ms-toc").innerHTML = chapters.map((l, i) => `<li><a href="#ms-${esc(l.id)}" data-ms-jump="${esc(l.id)}"><span>${esc(texts[i]?.fm.title || l.name)}</span><small>${texts[i] ? proseWords(texts[i].body).toLocaleString() : ""}</small></a></li>`).join("");
     $("#ms-body").innerHTML = chapters.length ? chapters.map((l, i) => {
+      const page = pageOf(l.id), t = texts[i], st = page ? PUB_CH[page] : null, draft = msDraftOf(l), editing = !!draft;
       const items = l.items.map(id => BY_ID[id]).filter(Boolean);
-      return `<section class="ms-chapter" id="ms-${esc(l.id)}">
-        <header class="ms-ch-head">
-          <p class="ms-ch-num">Chapter ${i + 1}</p>
-          <h2>${esc(l.name)}</h2>
-          <p class="ms-ch-meta"><span id="ms-wc-${esc(l.id)}">${wordsIn(l.intro).toLocaleString()} words</span> · ${items.length} source${items.length === 1 ? "" : "s"}
-            ${msEditing.has(l.id) ? `<button class="btn sm primary" data-ms-done="${esc(l.id)}">${icon("check")}Done</button>` : `<button class="btn sm" data-ms-text="${esc(l.id)}">${icon("edit")}Edit text</button>`}
-            <button class="linkish" data-ms-edit="${esc(l.id)}">Open in Write</button>${pageOf(l.id) ? `<button class="linkish" data-ms-hero="${esc(l.id)}">Chapter picture</button><a class="linkish" href="https://www.historyoftuftedrugs.com/chapters/${esc(pageOf(l.id))}/" target="_blank" rel="noopener">Published chapter</a>` : ""}</p>
-          ${pageOf(l.id) ? `<p class="ms-ch-note">This is the research draft. The published chapter's text is in <code>site/src/content/chapters/${esc(pageOf(l.id))}.mdx</code> on GitHub.</p>` : ""}
-        </header>
-        ${msEditing.has(l.id)
-          ? `<textarea class="ms-editor" data-ms-ta="${esc(l.id)}" aria-label="Text of chapter ${i + 1}" spellcheck="true">${esc(l.intro || "")}</textarea><p class="ms-hint">Saved as you type. Blank lines start new paragraphs; "- " starts a list item.</p>`
-          : `<div class="ms-prose" data-ms-text="${esc(l.id)}" title="Double-click to edit">${(l.intro || "").trim() ? proseHTML(l.intro) : `<p class="ms-empty">No draft yet. Choose Edit text to start writing.</p>`}</div>`}
-        ${items.length ? `<details class="ms-sources"><summary>Sources (${items.length})</summary><ol>${items.map(it => {
+      const num = t?.fm.number || i + 1;
+      const head = `<header class="ms-ch-head">
+          <p class="ms-ch-num">Chapter ${esc(String(num))}</p>
+          <h2>${esc(t?.fm.title || l.name)}</h2>
+          ${t?.fm.dek ? `<p class="ms-dek">${esc(t.fm.dek)}</p>` : ""}
+          <p class="ms-ch-meta">${t ? `<span>${proseWords(t.body).toLocaleString()} words</span>` : ""}
+            ${page && t && !editing ? `<button class="btn sm" data-ms-text="${esc(l.id)}">${icon("edit")}Edit text</button>` : ""}
+            ${page ? `<button class="linkish" data-ms-hero="${esc(l.id)}">Chapter picture</button><a class="linkish" href="https://www.historyoftuftedrugs.com/chapters/${esc(page)}/" target="_blank" rel="noopener">On the site</a>` : ""}
+            <button class="linkish" data-ms-edit="${esc(l.id)}">Sources in Write</button></p>
+        </header>`;
+      let main;
+      if (!page) main = `<div class="ms-prose">${(l.intro || "").trim() ? proseHTML(l.intro) : `<p class="ms-empty">Not a chapter of the public site yet.</p>`}</div>`;
+      else if (editing) main = `<div class="ms-edit">
+          ${draft.conflict ? `<p class="ms-errs" role="alert">${esc(draft.conflict)}</p>` : `<p class="ms-hint">Editing the published text. Nothing changes on the site until you save; this edit is kept in this browser until then.</p>`}
+          <label class="ms-field">Title <input data-ms-title="${esc(l.id)}" value="${esc(draft.title)}" spellcheck="true"></label>
+          <label class="ms-field">Summary line under the title <textarea data-ms-dek="${esc(l.id)}" rows="2" spellcheck="true">${esc(draft.dek)}</textarea></label>
+          <label class="ms-field">Text <textarea class="ms-editor" data-ms-ta="${esc(l.id)}" spellcheck="true">${esc(draft.body)}</textarea></label>
+          <p class="ms-hint">Blank lines start paragraphs; “## ” starts a heading. Cite a record as [@record-id] or [@one; @two], with a page as [@record-id, p. 12]: the id is in each record's Edit form and its address on the site. Pictures: &lt;Figure id="record-id" caption="…" /&gt;, with size="wide" or size="margin". Quotations: &lt;PullQuote from="record-id" who="…"&gt;words&lt;/PullQuote&gt;.</p>
+          <div class="ms-errs" id="ms-errs-${esc(l.id)}" role="alert"></div>
+          <div class="btns"><button class="btn primary" data-ms-save="${esc(l.id)}">${icon("check")}Save to the site</button><button class="btn" data-ms-cancel="${esc(l.id)}">Discard this edit</button></div>
+        </div>`;
+      else if (t) main = `<div class="ms-prose ms-pub" data-ms-text="${esc(l.id)}" title="Double-click to edit">${chapterHTML(t.body)}</div>`;
+      else main = `<p class="ms-empty">${st && st.error ? `The published text couldn't be read (${esc(st.error)}). <button class="linkish" data-ms-reload>Try again</button>` : "Loading the published text…"}</p>`;
+      return `<section class="ms-chapter" id="ms-${esc(l.id)}">${head}${main}
+        ${(l.intro || "").trim() && page ? `<details class="ms-sources ms-draft"><summary>Research draft (not published, ${wordsIn(l.intro).toLocaleString()} words)</summary><div class="ms-prose">${proseHTML(l.intro)}</div><p class="ms-hint">Working notes kept with the chapter's sources in Write. The site shows only the text above.</p></details>` : ""}
+        ${items.length ? `<details class="ms-sources"><summary>Sources gathered for this chapter (${items.length})</summary><ol>${items.map(it => {
           const conf = it.confidence && CONFIDENCE[it.confidence] ? ` <span class="conf conf-${it.confidence}">${esc(CONFIDENCE[it.confidence].label)}</span>` : "";
           return `<li><button class="ms-cite" data-ms-open="${esc(it.id)}">${mdInline(citation(it))}</button>${conf}</li>`;
         }).join("")}</ol></details>` : ""}
@@ -1258,6 +1371,7 @@
       </section>`;
     }).join("") : `<div class="empty"><h2>No chapters yet</h2><p>Create a chapter in the Write tab and it appears here.</p><div class="btns"><a class="btn" href="#compile">Go to Write</a></div></div>`;
     $$(".ms-editor").forEach(fitMs);
+    loadChapterTexts();
   };
   // A chapter's "Still to find" list (data/chapters.js, todo): the author's to-do list, never on the public
   // site. Record ids in it open the record; ticks are kept in this browser.
@@ -1274,11 +1388,7 @@
     </section>`;
   };
   const fitMs = ta => { ta.style.height = "auto"; ta.style.height = ta.scrollHeight + 2 + "px"; };
-  const msTotals = () => {
-    const chapters = S.lists.filter(isChapter), total = chapters.reduce((n, l) => n + wordsIn(l.intro), 0);
-    $("#ms-sub").textContent = `Working manuscript · ${chapters.length} chapter${chapters.length === 1 ? "" : "s"} · ${total.toLocaleString()} words · updates as you write`;
-    $$("#ms-toc [data-ms-jump]").forEach(a => { const l = S.lists.find(x => x.id === a.dataset.msJump); if (l) a.querySelector("small").textContent = wordsIn(l.intro).toLocaleString(); });
-  };
+  const msTotals = () => {};
   const saveMsText = debounce(() => save(), 400);
 
   const compileExport = fmt => {
@@ -2156,16 +2266,73 @@
   $("#ms-download").onclick = exportManuscript;
   $("#ms-print").onclick = () => { document.body.classList.add("print-ms"); window.print(); };
   addEventListener("afterprint", () => document.body.classList.remove("print-ms"));
+  // Opens a chapter's published text for editing, kept in this browser (S.msDrafts) until it is saved.
+  const startChapterEdit = chId => {
+    const page = pageOf(chId), st = page && PUB_CH[page]; if (!st || st.src == null) return;
+    const t = splitMdx(st.src);
+    S.msDrafts = S.msDrafts || {};
+    S.msDrafts[chId] = { title: t.fm.title || "", dek: t.fm.dek || "", body: t.body.replace(/\s+$/, ""), base: st.src };
+    save(); renderManuscript(); $(`.ms-editor[data-ms-ta="${CSS.escape(chId)}"]`)?.focus();
+  };
+  // The chapter file with the edit applied: its settings (number, picture, key dates) as they are now on
+  // GitHub, the new title and summary line, imports for the components the text uses, and the text.
+  const buildChapterFile = (current, d) => {
+    const fm = splitMdx(current).fmText.replace(/^title:.*$/m, "title: " + JSON.stringify(d.title.trim())).replace(/^dek:.*$/m, "dek: " + JSON.stringify(d.dek.trim()));
+    const imports = ["Figure", "Pair", "PullQuote", "Aside"].filter(c => new RegExp(`<${c}\\b`).test(d.body)).map(c => `import ${c} from "../../components/${c}.astro";`);
+    return `---\n${fm}\n---\n${imports.length ? imports.join("\n") + "\n\n" : ""}${d.body.trim()}\n`;
+  };
+  const saveChapterEdit = async (chId, btn) => {
+    const page = pageOf(chId), d = (S.msDrafts || {})[chId], box = document.getElementById("ms-errs-" + chId);
+    if (!page || !d) return;
+    const show = (msg, list) => { if (box) box.innerHTML = list ? `<p>${esc(msg)}</p><ul>${list.map(x => `<li>${esc(x)}</li>`).join("")}</ul>` : `<p>${msg}</p>`; };
+    const errs = checkChapterEdit(d);
+    if (errs.length) return show("Not saved. Fix these first:", errs);
+    if (!ghToken.get()) return show(`Saving needs the GitHub key that Publish uses. Click <b>Publish</b> in the top bar once to set it up, then save again. Your edit stays here meanwhile.`);
+    btn.disabled = true; show("Saving…");
+    try {
+      const gh = RugPublish.github({ repo: REPO, branch: PUBLISH_BRANCH, token: ghToken.get(), fetchImpl: fetch.bind(window) });
+      for (let attempt = 1; attempt <= 3; attempt++) {
+        const head = await gh.head();
+        const current = await gh.file(CH_DIR + page + ".mdx", head);
+        // Someone changed the text itself since this edit began: don't overwrite it.
+        if (splitMdx(current).body.trim() !== splitMdx(d.base).body.trim()) {
+          PUB_CH[page] = { src: current };
+          d.conflict = "Not saved: this chapter's text was changed on GitHub after you started editing. Your version is below; the version now on GitHub is on the site. Copy what you need, discard this edit, and start again from the new text.";
+          save(); btn.disabled = false; return renderManuscript();
+        }
+        const next = buildChapterFile(current, d);
+        if (next === current) { delete S.msDrafts[chId]; save(); renderManuscript(); return toast("Nothing had changed"); }
+        const files = [{ path: CH_DIR + page + ".mdx", text: next }];
+        // The research tool names the chapter after its published title: keep data/chapters.js in step.
+        if (d.title.trim() !== splitMdx(current).fm.title) {
+          const chSrc = await gh.file("data/chapters.js", head);
+          const re = new RegExp(`(id: "${chId.replace(/[-]/g, "\\-")}", kind: "chapter", page: "[^"]+",\\n\\s*name: )"(?:[^"\\\\]|\\\\.)*"`);
+          if (re.test(chSrc)) files.push({ path: "data/chapters.js", text: chSrc.replace(re, (_, a) => a + JSON.stringify(d.title.trim())) });
+        }
+        const commit = await gh.write(head, files, `Edit chapter ${splitMdx(current).fm.number || ""}: ${d.title.trim()}\n\nEdited in the research tool's Manuscript view.`);
+        if (!commit) continue; // GitHub moved on meanwhile: read it again
+        PUB_CH[page] = { src: next };
+        const l = S.lists.find(x => x.id === chId);
+        if (l && l.name !== d.title.trim()) { l.name = d.title.trim(); S.seedName = S.seedName || {}; S.seedName[chId] = l.name; }
+        delete S.msDrafts[chId]; save(); renderManuscript();
+        return toast("Saved. The chapter on the site updates in about two minutes.");
+      }
+      throw new Error("GitHub kept changing while saving. Try again in a minute.");
+    } catch (e) {
+      btn.disabled = false;
+      if (e.status === 401 || e.status === 403 || e.status === 404) { ghToken.set(""); return show("GitHub didn't accept the key. Click <b>Publish</b> to set up a new one, then save again."); }
+      show(`Not saved: ${esc(e.message)}`);
+    }
+  };
   $("#view-manuscript").addEventListener("dblclick", e => {
-    const prose = e.target.closest(".ms-prose[data-ms-text]"); if (!prose) return;
-    msEditing.add(prose.dataset.msText); renderManuscript(); $(`.ms-editor[data-ms-ta="${CSS.escape(prose.dataset.msText)}"]`)?.focus();
+    const prose = e.target.closest(".ms-pub[data-ms-text]"); if (!prose || e.target.closest("button, a")) return;
+    startChapterEdit(prose.dataset.msText);
   });
   $("#view-manuscript").addEventListener("input", e => {
-    const ta = e.target.closest(".ms-editor"); if (!ta) return;
-    const l = S.lists.find(x => x.id === ta.dataset.msTa); if (!l) return;
-    l.intro = ta.value; fitMs(ta); saveMsText();
-    const wc = document.getElementById("ms-wc-" + l.id); if (wc) wc.textContent = `${wordsIn(l.intro).toLocaleString()} words`;
-    msTotals();
+    const el = e.target.closest("[data-ms-ta], [data-ms-title], [data-ms-dek]"); if (!el) return;
+    const id = el.dataset.msTa || el.dataset.msTitle || el.dataset.msDek, d = (S.msDrafts || {})[id]; if (!d) return;
+    if (el.dataset.msTa) { d.body = el.value; fitMs(el); } else if (el.dataset.msTitle) d.title = el.value; else d.dek = el.value;
+    saveMsText();
   });
   $("#view-manuscript").addEventListener("change", e => {
     const box = e.target.closest("[data-todo]"); if (!box) return;
@@ -2179,9 +2346,11 @@
     const open = e.target.closest("[data-ms-open]"); if (open) return openDrawer(open.dataset.msOpen);
     const hero = e.target.closest("[data-ms-hero]"); if (hero) return openHero(hero.dataset.msHero);
     const edit = e.target.closest("[data-ms-edit]"); if (edit) { S.activeList = edit.dataset.msEdit; save(); setView("compile"); return; }
-    const start = e.target.closest("button[data-ms-text]");
-    if (start) { msEditing.add(start.dataset.msText); renderManuscript(); $(`.ms-editor[data-ms-ta="${CSS.escape(start.dataset.msText)}"]`)?.focus(); return; }
-    const done = e.target.closest("[data-ms-done]"); if (done) { msEditing.delete(done.dataset.msDone); save(); renderManuscript(); return; }
+    const start = e.target.closest("button[data-ms-text]"); if (start) return startChapterEdit(start.dataset.msText);
+    const sv = e.target.closest("[data-ms-save]"); if (sv) return saveChapterEdit(sv.dataset.msSave, sv);
+    const cancel = e.target.closest("[data-ms-cancel]");
+    if (cancel) { if (!confirm("Discard this edit? The published text stays as it is.")) return; delete S.msDrafts[cancel.dataset.msCancel]; save(); renderManuscript(); return; }
+    if (e.target.closest("[data-ms-reload]")) return loadChapterTexts(true);
     const jump = e.target.closest("[data-ms-jump]");
     if (jump) { e.preventDefault(); document.getElementById("ms-" + jump.dataset.msJump)?.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" }); }
   });
