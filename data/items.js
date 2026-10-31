@@ -16235,7 +16235,7 @@ window.RUG_ITEMS = [
     "dateStart": 2021,
     "place": "Vermont",
     "region": "United States",
-    "description": "Unnecessary Inventions is the Vermont designer Matty Benedetto's studio of satirical products that solve problems nobody has, documented in videos on social media (Wikipedia; Seven Days; The Hustle). Its website has a rug-making tutorial on making custom rugs with a tufting gun, including a rug of his Gator Grips (unnecessaryinventions.com/tufting-gun-tutorial), and it has sold rugs such as the ZuckerRug, a bath mat. His 50-foot CVS receipt rug (January 2024) was reproduced by a manufacturer in China from a scan, not tufted in the studio (Retail Brew). A summary of his X account (@mattyxb) mentions a studio rug based on his Pantone colour charts. Instagram: @unnecessaryinventions, the account where Benedetto built his audience after starting in 2019 (search summaries of press coverage; one article counted more than 117,000 followers).\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "description": "Unnecessary Inventions is the Vermont designer Matty Benedetto's studio of satirical products that solve problems nobody has, documented in videos on social media (Wikipedia; Seven Days; The Hustle). Its website has a rug-making tutorial on making custom rugs with a tufting gun, including a rug of his Gator Grips (unnecessaryinventions.com/tufting-gun-tutorial), and it has sold rugs such as the ZuckerRug, a bath mat. His 50-foot CVS receipt rug (January 2024) was reproduced by a manufacturer in China from a scan, not tufted in the studio (Retail Brew). A summary of his X account (@mattyxb) mentions a studio rug based on his Pantone colour charts. Instagram: @unnecessaryinventions, the account where Benedetto built his audience after starting in 2019 (search summaries of press coverage; one article counted more than 117,000 followers); the handle was confirmed by the author on 31 Oct 2026.\n\nResearch note (Oct 2026): from search results; pages not opened.",
     "sourceUrl": "https://unnecessaryinventions.com/tufting-gun-tutorial/",
     "citation": "Unnecessary Inventions, \"The Rug Making Tutorial\"; Retail Brew, 6 Feb 2024; Wikipedia, \"Matty Benedetto\".",
     "themes": [
@@ -16249,7 +16249,7 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "suggestive",
-    "reviewedAt": "2026-10-31T12:12:35.593Z"
+    "reviewedAt": "2026-10-31T12:15:57.649Z"
   },
   {
     "id": "artist-melissa-monroe",
@@ -16260,7 +16260,7 @@ window.RUG_ITEMS = [
     "dateStart": 2024,
     "place": "Portland, Oregon",
     "region": "United States",
-    "description": "A self-taught Portland, Oregon multimedia artist, working full time since 2013, mainly as a painter, who began tufting with rugs and moved to masks and furniture-building techniques (American Craft Council, \"Tufted Joy\", August 2025). Works include Candy Scoop (2024), a vintage chair reupholstered in hand-tufted wool; a lion of tufted wool on a wooden stool; and Double Trouble (2025), a double-headed alligator bench (Craft Council). Featured by OPB (3 Oct 2025) and PBS's Oregon Art Beat. Instagram: @melissamonroeart, as credited in a post by a Portland tufting workshop (@tuftingworkshop); not confirmed on her own profile.\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "description": "A self-taught Portland, Oregon multimedia artist, working full time since 2013, mainly as a painter, who began tufting with rugs and moved to masks and furniture-building techniques (American Craft Council, \"Tufted Joy\", August 2025). Works include Candy Scoop (2024), a vintage chair reupholstered in hand-tufted wool; a lion of tufted wool on a wooden stool; and Double Trouble (2025), a double-headed alligator bench (Craft Council). Featured by OPB (3 Oct 2025) and PBS's Oregon Art Beat. Instagram: @melissamonroeart, as credited in a post by a Portland tufting workshop (@tuftingworkshop), and confirmed by the author on 31 Oct 2026.\n\nResearch note (Oct 2026): from search results; pages not opened.",
     "sourceUrl": "https://craftcouncil.org/articles/tufted-joy/",
     "citation": "American Craft Council, \"Tufted Joy\", Aug 2025; OPB, 3 Oct 2025.",
     "themes": [
@@ -16273,7 +16273,7 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "solid",
-    "reviewedAt": "2026-10-31T12:12:35.593Z"
+    "reviewedAt": "2026-10-31T12:15:57.649Z"
   },
   {
     "id": "artist-qualeasha-wood",
@@ -16319,5 +16319,83 @@ window.RUG_ITEMS = [
     "status": "unverified",
     "confidence": "solid",
     "reviewedAt": "2026-10-31T12:12:35.593Z"
+  },
+  {
+    "id": "artist-madeline-ronzoni",
+    "type": "finding",
+    "title": "Madeline Ronzoni and Happy Rugs (founded 2020)",
+    "creator": "Madeline Ronzoni (Happy Rugs)",
+    "date": "2020 onwards",
+    "dateStart": 2020,
+    "place": "Los Angeles (Rugs.com); Boston (Business of Home)",
+    "region": "United States",
+    "description": "Madeline Ronzoni founded Happy Rugs, a hand-tufted rug brand, in the summer of 2020, just before her final year studying marketing at Bentley University in Massachusetts (Business of Home, \"The Los Angeles creator behind these TikTok-viral rugs\", 27 Jul 2023). Accounts place her in Los Angeles (Rugs.com) or Boston (Business of Home). Her TikTok following is given as nearly half a million (Apartment Therapy) or 1.1 million followers and 37 million likes (a Chinese-language article); neither figure is dated. In May 2025 Rugs.com launched a Happy Rugs collection with her, her first nationwide collection, priced from $49 (Business Wire, 19 May 2025; Home Textiles Today). Instagram: @happy.rugs (Rugs.com blog, \"Meet Happy Rugs by Madeline Ronzoni\").\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "sourceUrl": "https://businessofhome.com/articles/the-los-angeles-creator-behind-these-tiktok-viral-rugs",
+    "citation": "Business of Home, 27 Jul 2023; Rugs.com blog; Business Wire, 19 May 2025.",
+    "themes": [
+      "Companies & modern tufting",
+      "Hand-tufting tools & the gun"
+    ],
+    "tags": [
+      "artist",
+      "social media",
+      "hobby revival",
+      "Instagram"
+    ],
+    "status": "unverified",
+    "confidence": "solid",
+    "reviewedAt": "2026-10-31T12:15:57.649Z"
+  },
+  {
+    "id": "artist-venus-perez",
+    "type": "finding",
+    "title": "Venus Perez: sculpted loop and cut pile, San Diego",
+    "creator": "Venus Perez",
+    "date": "2020s",
+    "dateStart": 2023,
+    "place": "San Diego, California",
+    "region": "United States",
+    "description": "A San Diego fibre artist whose punch-needle work sculpts the pile by trimming loops to cut pile at different heights; she works with Oxford punch needles, a deluxe rug needle and a tufting gun (Punch Needle World, \"Artist Interview: Venus Perez\"). A tufted portrait, \"Frida Kahlo\", by an artist named Venus Perez was shown in Pile Paragons at TuftCon '23 in Philadelphia (WHYY caption; see event-tuftcon-2023); that she is the same artist is likely but not stated by either source. Instagram: @fun.n.rec, as given by the punch-needle artist Andie Solar in Rug Hooking Magazine (\"One of my Instagram friends, venus @fun.n.rec, has been sculpting for a while\"); the author gave the name as func.n.rec, so the spelling is to confirm.\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "sourceUrl": "https://www.punchneedleworld.com/blogs/blog/venus-perez",
+    "citation": "Punch Needle World, \"Artist Interview: Venus Perez\"; WHYY, 2023; Rug Hooking Magazine, interview with Andie Solar.",
+    "themes": [
+      "Companies & modern tufting",
+      "Hand-tufting tools & the gun"
+    ],
+    "tags": [
+      "artist",
+      "punch needle",
+      "sculpting",
+      "Instagram"
+    ],
+    "status": "unverified",
+    "confidence": "suggestive",
+    "reviewedAt": "2026-10-31T12:15:57.649Z"
+  },
+  {
+    "id": "event-tuftcon-2023",
+    "type": "event",
+    "title": "TuftCon '23, Philadelphia's first tufting convention, with the exhibition Pile Paragons (24–26 March 2023)",
+    "creator": "Tim Eads and Tiernan Alexander (Tuft the World)",
+    "date": "24–26 March 2023",
+    "dateStart": 2023,
+    "place": "Philadelphia (Asian Arts Initiative; Bok Building)",
+    "region": "United States",
+    "description": "Philadelphia's first tufting convention, organised by Tim Eads and Tiernan Alexander of Tuft the World, the firm they founded in West Philadelphia in 2018 (the author's own firm). It opened at the Asian Arts Initiative with workshops, demonstrations and lectures, then moved to the Bok Building for an opening reception and Pile Paragons, an exhibition of tufted work curated by Qualeasha Wood (spelled \"Qualesha\" in a WHYY caption). It drew over 100 attendees, and the organisers hoped to hold it every other year and take it to other cities (WHYY, \"'Building a community': Rug-makers and artists to converge at TuftCon in Philly\"; PhillyVoice; Itinerant Pictures). A WHYY photograph shows \"Frida Kahlo\" by Venus Perez in Pile Paragons.\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "sourceUrl": "https://whyy.org/articles/philadelphia-tuftcon-2023-tufting-rug-making/",
+    "citation": "WHYY, 2023; PhillyVoice; Itinerant Pictures, \"Tuft the World\".",
+    "themes": [
+      "Companies & modern tufting",
+      "Hand-tufting tools & the gun"
+    ],
+    "tags": [
+      "own firm",
+      "exhibition",
+      "convention",
+      "hobby revival"
+    ],
+    "status": "unverified",
+    "confidence": "solid",
+    "reviewedAt": "2026-10-31T12:15:57.649Z"
   }
 ];
