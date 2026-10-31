@@ -4978,7 +4978,9 @@ window.RUG_ITEMS = [
     "status": "unverified",
     "image": "https://bunny-wp-pullzone-hdlfyxcoqo.b-cdn.net/wp-content/uploads/2020/02/Powells-Landing_04.jpg",
     "imageCredit": "Delos (The Delos Company)",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "gallery": true,
+    "reviewedAt": "2026-10-31T23:07:57.008Z"
   },
   {
     "id": "co-floor-story",
@@ -8820,7 +8822,9 @@ window.RUG_ITEMS = [
     "rights": "not-requested",
     "image": "https://images.squarespace-cdn.com/content/v1/6814f014b27d3c39c34d192d/1746202786267-VQLW9JQU5G2CIPKSNYXY/InterContinental+Bangkok_Balcony+Lounge_01_web+opt.jpg",
     "imageCredit": "Royal Thai (Thailand Carpet Manufacturing / TCM Corporation)",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "gallery": true,
+    "reviewedAt": "2026-10-31T23:07:57.008Z"
   },
   {
     "id": "co-cabin-crafts",
@@ -10900,7 +10904,9 @@ window.RUG_ITEMS = [
     "confidence": "solid",
     "image": "http://www.paradigmarts.org/cdn/shop/articles/DALL-E-2023-05-29-21.08.13_1024x1024.jpg?v=1688317240",
     "imageCredit": "Paradigm Gallery + Studio",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "gallery": true,
+    "reviewedAt": "2026-10-31T23:07:57.008Z"
   },
   {
     "id": "woven-kidderminster-1735",
@@ -13658,7 +13664,8 @@ window.RUG_ITEMS = [
     "imageCredit": "Historic New England",
     "imagePage": "https://www.historicnewengland.org/explore/collections-access/gusn/18698/",
     "rights": "not-requested",
-    "reviewedAt": "2026-10-30T10:39:37.931Z"
+    "reviewedAt": "2026-10-31T23:07:57.008Z",
+    "gallery": true
   },
   {
     "id": "process-rag-woven-shaker",
@@ -16090,7 +16097,8 @@ window.RUG_ITEMS = [
     "description": "SIMJI is a textile artist, content creator, and \"rugfluencer.\" She shares her popular rug tufting videos with millions of viewers around the world on TikTok, YouTube, and other social media outlets @simjiofficial. Born in South Korea and raised in Los Angeles, SIMJI creates fun and intricate pop culture–inspired pieces, pet portraits, food-related rugs, and much more. Recognizing the need for relatable and entertaining rug-making content, SIMJI pioneered a new approach toward reaching and educating aspiring rug tufters. By combining her passion for rug making with an entertainment-based perspective, SIMJI successfully bridges the gap between artistry and audience, captivating viewers with her unique content and expanding her influence within the industry and beyond.",
     "sourceUrl": "https://simjishop.com/?srsltid=AYCX9vLDpGVp4JsSDOUKziT2_YRZEgvALkj8SJRrJqSk4A0NSgp138Bg",
     "image": "https://simjishop.com/cdn/shop/files/Studio2LASIS0076.jpg?v=1731094827&width=1070",
-    "reviewedAt": "2026-10-31T01:05:24.566Z"
+    "reviewedAt": "2026-10-31T23:07:57.008Z",
+    "gallery": true
   },
   {
     "id": "u-mvvp8s248uf95",
@@ -16224,8 +16232,9 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "suggestive",
-    "reviewedAt": "2026-10-31T20:05:29.469Z",
-    "image": "https://thatwasmadebymatty.com/cdn/shop/files/Pantone_Chart_Rug_Web.jpg?v=1792241056&width=2000"
+    "reviewedAt": "2026-10-31T23:07:57.008Z",
+    "image": "https://thatwasmadebymatty.com/cdn/shop/files/Pantone_Chart_Rug_Web.jpg?v=1792241056&width=2000",
+    "gallery": true
   },
   {
     "id": "artist-melissa-monroe",
@@ -16277,9 +16286,10 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "solid",
-    "reviewedAt": "2026-10-31T20:22:46.506Z",
+    "reviewedAt": "2026-10-31T23:07:57.008Z",
     "image": "https://superfluousthings.com/cdn/shop/files/To_Catch_a_Predator_install_2023.jpg?v=1710184654&width=1920",
-    "imageCredit": "Qualeasha Wood"
+    "imageCredit": "Qualeasha Wood",
+    "gallery": true
   },
   {
     "id": "finding-ttw-artist-relations",
@@ -16378,9 +16388,10 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "solid",
-    "reviewedAt": "2026-10-31T12:15:57.649Z",
+    "reviewedAt": "2026-10-31T23:07:57.008Z",
     "image": "https://d1fw4rghwibahr.cloudfront.net/wp-content/uploads/2023/03/03-23-2023-k-paynter-tuft-the-world-artwork-insert.jpg",
     "imageCredit": "whyy.org",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "gallery": true
   }
 ];
