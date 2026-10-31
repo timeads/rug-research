@@ -784,36 +784,6 @@ a.linkish { text-decoration: underline; text-underline-offset: .2em; }
 .ms-n { font-size: .7em; line-height: 0; }
 .ms-n button { border: 0; background: none; padding: 0 .15em; color: var(--focus); cursor: pointer; font: inherit; font-weight: 650; }
 .ms-n button:hover { text-decoration: underline; }
-.ms-figs { display: flex; flex-wrap: wrap; gap: 14px; margin: 0 0 1.2em; }
-.ms-fig { flex: 1 1 14rem; max-width: 26rem; margin: 0; font-size: var(--t-sm); line-height: 1.45; color: var(--ink-3); }
-.ms-fig > button { display: block; width: 100%; padding: 0; border: 1px solid var(--line); border-radius: var(--r); overflow: hidden; background: var(--surface-2); cursor: pointer; aspect-ratio: 4 / 3; }
-.ms-fig img { width: 100%; height: 100%; object-fit: cover; display: block; }
-.ms-fig-none { display: grid; place-items: center; height: 100%; color: var(--ink-3); }
-.ms-fig figcaption { margin-top: 6px; }
-.ms-pq { margin: 0 0 1.2em; padding: 2px 0 2px 16px; border-left: 3px solid var(--line-strong); }
-.ms-pq p { margin: 0 0 4px; font-style: italic; font-size: 1.125rem; }
-.ms-pq cite { font-size: var(--t-sm); font-style: normal; color: var(--ink-3); }
-.ms-raw { white-space: pre-wrap; font-size: var(--t-sm); color: var(--ink-3); }
-.ms-edit { display: grid; gap: 14px; }
-.ms-field { display: grid; gap: 6px; font-size: var(--t-sm); font-weight: 650; color: var(--ink-2); }
-.ms-field input, .ms-field textarea:not(.ms-editor) { font: inherit; font-weight: 400; font-size: 1rem; padding: 8px 10px; border: 1px solid var(--line-strong); border-radius: var(--r); background: var(--surface); color: var(--ink); }
-.ms-field .ms-editor { font-weight: 400; }
-.ms-errs:empty { display: none; }
-.ms-errs { padding: 10px 14px; border-radius: var(--r); background: color-mix(in srgb, var(--danger) 8%, transparent); color: var(--ink); font-size: var(--t-sm); }
-.ms-errs p { margin: 0; } .ms-errs ul { margin: 6px 0 0; padding-left: 1.2em; }
-.ms-draft .ms-prose { margin-top: 12px; color: var(--ink-2); font-size: 1rem; }
-
-/* Manuscript: the published text of each chapter, and editing it. */
-.ms-dek { margin: 6px 0 0; font-size: 1.125rem; line-height: 1.5; color: var(--ink-2); font-style: italic; max-width: 40em; }
-.ms-pub h3 { margin: 1.6em 0 .6em; font-size: var(--t-lg); line-height: 1.3; }
-.ms-n { font-size: .7em; line-height: 0; }
-.ms-n button { border: 0; background: none; padding: 0 .15em; color: var(--focus); cursor: pointer; font: inherit; font-weight: 650; }
-.ms-n button:hover { text-decoration: underline; }
-.ms-figs { display: flex; flex-wrap: wrap; gap: 14px; margin: 0 0 1.2em; }
-.ms-fig { flex: 1 1 14rem; max-width: 26rem; margin: 0; font-size: var(--t-sm); line-height: 1.45; color: var(--ink-3); }
-.ms-fig > button { display: block; width: 100%; padding: 0; border: 1px solid var(--line); border-radius: var(--r); overflow: hidden; background: var(--surface-2); cursor: pointer; aspect-ratio: 4 / 3; }
-.ms-fig img { width: 100%; height: 100%; object-fit: cover; display: block; }
-.ms-fig-none { display: grid; place-items: center; height: 100%; color: var(--ink-3); }
 .ms-fig figcaption { margin-top: 6px; }
 .ms-pq { margin: 0 0 1.2em; padding: 2px 0 2px 16px; border-left: 3px solid var(--line-strong); }
 .ms-pq p { margin: 0 0 4px; font-style: italic; font-size: 1.125rem; }
@@ -891,7 +861,7 @@ a.linkish { text-decoration: underline; text-underline-offset: .2em; }
 .ins-chosen { display: grid; grid-template-columns: minmax(0, 200px) minmax(0, 1fr); gap: 16px; align-items: start; }
 .ins-chosen img { width: 100%; border-radius: var(--r); border: 1px solid var(--line); }
 .ins-chosen-f { display: grid; gap: 10px; min-width: 0; }
-.ins-size { border: 0; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: var(--t-sm); }
+.ins-size { border: 0; margin: 0; padding: 0; display: grid; gap: 4px; font-size: var(--t-sm); }
 .ins-size legend { font-weight: 650; color: var(--ink-2); padding: 0; margin-bottom: 4px; }
 .ins-gather { font-size: var(--t-sm); display: flex; gap: 8px; align-items: center; }
 .ins-code { margin: 0; font-size: var(--t-xs); color: var(--ink-3); }
@@ -900,3 +870,18 @@ a.linkish { text-decoration: underline; text-underline-offset: .2em; }
 .toggle.gal { --c: var(--cloth-navy); }
 .pd-hint .link-btn { margin-left: 8px; }
 .pd-row + .pd-row { padding-top: 6px; }
+
+/* Book: the chapter laid out as the site lays it out on a wide screen. Text and text-width pictures keep the
+   site's 34.5rem line; a wide picture runs the full width of the column; a margin picture sits small beside
+   the text; pictures keep their own shape. */
+.ms-pub > p, .ms-pub > h3, .ms-pub > .ms-pq, .ms-preview > p, .ms-preview > h3, .ms-preview > .ms-pq { max-width: 34.5rem; }
+.ms-figs { display: flex; flex-wrap: wrap; gap: 14px; margin: 0 0 1.2em; max-width: 34.5rem; }
+.ms-figs:has(.wide, .full) { max-width: none; }
+.ms-figs:has(> .margin:only-child) { float: right; clear: right; width: max(10rem, calc(100% - 36rem)); margin: .3em 0 1em 1.5rem; }
+.ms-figs:has(.wide, .full) { clear: both; }
+.ms-fig { flex: 1 1 0; min-width: min(100%, 12rem); margin: 0; font-size: var(--t-sm); line-height: 1.45; color: var(--ink-3); }
+.ms-fig > button { display: block; width: 100%; padding: 0; border: 1px solid var(--line); border-radius: var(--r); overflow: hidden; background: var(--surface-2); cursor: pointer; }
+.ms-fig img { width: 100%; height: auto; display: block; }
+.ms-fig-none { display: grid; place-items: center; min-height: 8rem; color: var(--ink-3); }
+.ms-pub::after, .ms-preview::after { content: ""; display: block; clear: both; }
+@media (max-width: 900px) { .ms-figs:has(> .margin:only-child) { float: none; width: auto; max-width: 22rem; margin: 0 0 1.2em; } }

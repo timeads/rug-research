@@ -1317,7 +1317,8 @@
     });
     const figure = a => {
       const id = attr(a, "id"), it = BY_ID[id], n = +((a.match(/image=\{(\d+)\}/) || [])[1] || 0), src = it ? figureSrc(it, n) : "";
-      return `<figure class="ms-fig"><button type="button" data-ms-open="${esc(id)}" aria-label="Open the record">${src ? `<img src="${esc(src)}" alt="" loading="lazy" referrerpolicy="no-referrer">` : `<span class="ms-fig-none">No picture</span>`}</button><figcaption>${inline(attr(a, "caption") || (it ? it.title : id))}</figcaption></figure>`;
+      const size = ["wide", "margin", "full"].includes(attr(a, "size")) ? attr(a, "size") : "text";
+      return `<figure class="ms-fig ${size}"><button type="button" data-ms-open="${esc(id)}" aria-label="Open the record">${src ? `<img src="${esc(src)}" alt="" loading="lazy" referrerpolicy="no-referrer">` : `<span class="ms-fig-none">No picture</span>`}</button><figcaption>${inline(attr(a, "caption") || (it ? it.title : id))}</figcaption></figure>`;
     };
     const html = String(body).replace(/^<\/?Pair>\s*$/gm, "").split(/\n\s*\n/).map(b => b.trim()).filter(Boolean).map(b => {
       if (b.startsWith("## ")) return `<h3>${inline(b.slice(3))}</h3>`;
@@ -2462,8 +2463,9 @@
       : s.mode === "picture" ? `
         <div class="ins-chosen">${pic ? `<img src="${esc(photoSrc(pic.src) || pic.src)}" alt="" referrerpolicy="no-referrer">` : ""}
           <div class="ins-chosen-f">
-            <fieldset class="ins-size"><legend>Size on the page</legend>${[["text", "Text width"], ["wide", "Wide"], ["margin", "Small, in the margin"]].map(([v, t]) => `<label><input type="radio" name="ins-size" value="${v}"${s.size === v ? " checked" : ""}> ${t}</label>`).join("")}</fieldset>
+            <fieldset class="ins-size"><legend>Size on the page</legend>${[["text", "Text width: as wide as the text"], ["wide", "Wide: across the text and the notes margin"], ["margin", "Small, beside the text in the notes margin"]].map(([v, t]) => `<label><input type="radio" name="ins-size" value="${v}"${s.size === v ? " checked" : ""}> ${t}</label>`).join("")}</fieldset>
             <label class="ms-field">Caption <textarea id="ins-caption" rows="3">${esc(s.caption)}</textarea></label>
+            <p class="ms-hint">On a phone or a narrow window the notes margin folds away, so wide pictures show at text width and margin pictures sit between paragraphs.</p>
             <p class="ms-hint">Say only what the record says about the picture. The record's credit and its permission mark are added on the site.</p>
           </div></div>`
       : `
