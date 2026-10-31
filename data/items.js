@@ -8,7 +8,7 @@
 //         "unverified" = gathered from secondary sources / search summaries;
 //                        confirm titles, dates and numbers before citing.
 // Records taken out after being merged from an export, with when; a browser drops its own copy of them.
-window.RUG_REMOVED = {"wc-3126256":"2026-10-28T15:05:57.518Z","met-7405":"2026-10-28T15:05:57.518Z"};
+window.RUG_REMOVED = {"wc-3126256":"2026-10-28T15:05:57.518Z","met-7405":"2026-10-28T15:05:57.518Z","finding-cnc-diy-robot-arm-experiments":"2026-10-31T12:23:09.703Z"};
 window.RUG_ITEMS = [
   {
     "id": "wint-1964-0804",
@@ -12634,34 +12634,6 @@ window.RUG_ITEMS = [
     "imageCredit": "Hackaday.io",
     "imageSource": "auto",
     "gallery": true
-  },
-  {
-    "id": "finding-cnc-diy-robot-arm-experiments",
-    "type": "finding",
-    "title": "DIY and academic robot tufting: CoreXY gantries, 6-axis arms and the gun-orientation problem",
-    "creator": "OpenBuilds forum users; University of Applied Arts Vienna diploma; Fabricademy student",
-    "place": "various",
-    "region": "Austria",
-    "date": "2022 onwards (Vienna project undated)",
-    "dateStart": 2022,
-    "sourceUrl": "https://hackaday.com/2022/03/05/robotic-tufting-gun-fires-off-cnc-textiles/",
-    "institution": "OpenBuilds; Universität für angewandte Kunst Wien",
-    "description": "Besides Trueblood (event-trueblood-robotic-tufting-2022), the search found a handful of open experiments but no open-source tufting-CNC repository. (1) OpenBuilds forum, January 2022: a builder proposes putting a tufting gun on a CoreXY 3D-printer-style gantry and asks how to keep the gun facing its direction of travel. This rotation problem is the same one Wilcom solved with a rotating needle. (2) A diploma project at the University of Applied Arts Vienna, 'Tufting – parametric design & robot fabrication', rebuilt a hand tufting gun, fixed it to a 6-axis industrial robot to tuft 3D surfaces on 3D objects for upholstery and acoustic panels, and found contact pressure, speed and orientation the hard parts. Its year was not visible. (3) A 2026 Fabricademy (Textile Academy) assignment motorised a punch needle with a servo and 3D-printed gear. No KUKA or ABB industrial tufting projects or peer-reviewed papers were found. Sources: https://builds.openbuilds.com/posts/137701/ · https://phaidra.bibliothek.uni-ak.ac.at/o:53066 · https://class.textile-academy.org/2026/heaven-whitby/assignments/11.%20Open%20Sourced%20Hardware/\n\nResearch note (Oct 2026): from search results; pages not opened.\n\nLink note (Oct 2026): the OpenBuilds forum address (builds.openbuilds.com) no longer resolves and has no archived copy. Also on robot-arm tufting: Hackaday, 5 Mar 2022, on Owen Trueblood's tufting gun fixed to a robot arm and controlled through an Arduino (page read Oct 2026), now the link here.",
-    "themes": [
-      "Hand-tufting tools & the gun",
-      "Tools & equipment"
-    ],
-    "tags": [
-      "CNC tufting",
-      "DIY",
-      "robot arm",
-      "open source",
-      "hobby CNC",
-      "academic research",
-      "checked from search results"
-    ],
-    "status": "unverified",
-    "confidence": "suggestive"
   },
   {
     "id": "finding-cnc-ttw-cnc-machine",
