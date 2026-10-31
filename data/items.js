@@ -16224,7 +16224,8 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "suggestive",
-    "reviewedAt": "2026-10-31T12:15:57.649Z"
+    "reviewedAt": "2026-10-31T20:05:29.469Z",
+    "image": "https://thatwasmadebymatty.com/cdn/shop/files/Pantone_Chart_Rug_Web.jpg?v=1792241056&width=2000"
   },
   {
     "id": "artist-melissa-monroe",
