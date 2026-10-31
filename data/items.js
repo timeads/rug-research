@@ -16277,7 +16277,9 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "solid",
-    "reviewedAt": "2026-10-31T12:12:35.593Z"
+    "reviewedAt": "2026-10-31T20:22:46.506Z",
+    "image": "https://superfluousthings.com/cdn/shop/files/To_Catch_a_Predator_install_2023.jpg?v=1710184654&width=1920",
+    "imageCredit": "Qualeasha Wood"
   },
   {
     "id": "finding-ttw-artist-relations",
