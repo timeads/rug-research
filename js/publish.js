@@ -39,6 +39,11 @@
     }
     return out;
   };
+  // Takes record ids out of the chapters' "items" lists in data/chapters.js, leaving the rest of the file as it is.
+  const dropFromLists = (src, ids) => String(src).replace(/(\bitems: \[)([^\]]*)(\])/g, (m, a, list, b) => {
+    const kept = list.split(",").map(s => s.trim()).filter(s => s && !ids.includes(s.replace(/^"|"$/g, "")));
+    return a + kept.join(", ") + b;
+  });
   // Runs a data file (window.X = ...) and returns what it set.
   const readWindow = src => { const w = {}; new Function("window", src)(w); return w; };
 
@@ -219,6 +224,13 @@
       if (!live.length) return { nothing: true, plan: p };
       const files = [{ path: "data/items.js", text: writeItemsFile(itemsSrc, p.items, p.removed) }];
       if (live.some(c => c.kind === "transcript")) files.push({ path: "data/transcripts.js", text: writeTranscriptsFile(trSrc, p.transcripts) });
+      // A deleted record also leaves the chapters' source lists (data/chapters.js), which must name only
+      // records that exist (scripts/check-data.cjs).
+      const gone = live.filter(c => c.kind === "deleted").map(c => c.id);
+      if (gone.length) {
+        const chSrc = await gh.file("data/chapters.js", parent), next = dropFromLists(chSrc, gone);
+        if (next !== chSrc) files.push({ path: "data/chapters.js", text: next });
+      }
       for (const ph of p.photos) files.push({ path: ph.path, base64: ph.base64 });
       const commit = await gh.write(parent, files, message(p));
       if (commit) return { commit, plan: p };
@@ -279,6 +291,6 @@
     return { hero: readHero(src), figures };
   }
 
-  const api = { readHero, writeHero, saveHero, loadHero, plan, citedIn, writeItemsFile, writeTranscriptsFile, github, publish, readWindow, clean };
+  const api = { readHero, writeHero, saveHero, loadHero, plan, citedIn, dropFromLists, writeItemsFile, writeTranscriptsFile, github, publish, readWindow, clean };
   if (typeof module !== "undefined" && module.exports) module.exports = api; else root.RugPublish = api;
 })(typeof window !== "undefined" ? window : globalThis);

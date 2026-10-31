@@ -1323,8 +1323,9 @@
   const proseWords = body => String(body || "").replace(/<[A-Z][\s\S]*?(\/>|<\/[A-Z]\w*>)/g, " ").replace(/\[@[^\]]+\]/g, " ").replace(/^## /gm, "").split(/\s+/).filter(Boolean).length;
   // Checks an edit before it is saved, as the site's own checker does: every citation and picture names a
   // published record, pictures exist, and nothing in the text would stop the site from building.
-  const checkChapterEdit = d => {
-    const errs = [], published = id => BASE_BY_ID[id] && !S.deleted[id];
+  // pub: the published records to check against (as on GitHub at save time; as loaded, before that).
+  const checkChapterEdit = (d, pub = BASE_BY_ID) => {
+    const errs = [], published = id => pub[id] && !S.deleted[id];
     if (!d.title.trim()) errs.push("The chapter needs a title.");
     if (/\n/.test(d.dek.trim())) errs.push("Keep the summary line to one paragraph.");
     const seen = new Set();
@@ -1337,8 +1338,12 @@
       const id = attr(a, tag === "Figure" ? "id" : "from"), n = +((a.match(/image=\{(\d+)\}/) || [])[1] || 0);
       if (!id) { errs.push(`A ${tag} has no ${tag === "Figure" ? "id" : "from"}.`); continue; }
       if (!published(id)) { errs.push(`${tag} ${id}: no published record has that id.`); continue; }
-      const it = BASE_BY_ID[id], g = Array.isArray(it.images) ? it.images : [];
-      if (tag === "Figure" && !(n ? g[n] && g[n].src : it.image)) errs.push(`Figure ${id}: that record has no picture${n ? ` number ${n}` : ""}.`);
+      const it = pub[id], g = Array.isArray(it.images) ? it.images : [];
+      if (tag === "Figure" && !(n ? g[n] && g[n].src : it.image)) {
+        // The picture may be in this browser only: it has to be published before the chapter can show it.
+        const mine = S.items[id], mg = mine && Array.isArray(mine.images) ? mine.images : [];
+        errs.push(mine && (n ? mg[n] && mg[n].src : mine.image) ? `Figure ${id}: its picture is only in this browser so far. Publish it first (Publish button), then save.` : `Figure ${id}: that record has no picture${n ? ` number ${n}` : ""}.`);
+      }
     }
     for (const t of ["PullQuote", "Pair"]) if ((d.body.match(new RegExp(`<${t}\\b`, "g")) || []).length !== (d.body.match(new RegExp(`</${t}>`, "g")) || []).length) errs.push(`A <${t}> is not closed.`);
     const prose = d.body.replace(/<[A-Z][^>]*>|<\/[A-Z]\w*>/g, "");
@@ -2354,7 +2359,8 @@
     const page = pageOf(chId), d = (S.msDrafts || {})[chId], box = document.getElementById("ms-errs-" + chId);
     if (!page || !d) return;
     const show = (msg, list) => { if (box) box.innerHTML = list ? `<p>${esc(msg)}</p><ul>${list.map(x => `<li>${esc(x)}</li>`).join("")}</ul>` : `<p>${msg}</p>`; };
-    const errs = checkChapterEdit(d);
+    // Before reaching GitHub, catch what doesn't depend on the published records (they are checked fresh below).
+    const errs = checkChapterEdit(d, new Proxy({}, { get: (_, id) => BASE_BY_ID[id] || S.items[id] }));
     if (errs.length) return show("Not saved. Fix these first:", errs);
     if (!ghToken.get()) return show(`Saving needs the GitHub key that Publish uses. Click <b>Publish</b> in the top bar once to set it up, then save again. Your edit stays here meanwhile.`);
     btn.disabled = true; show("Saving…");
@@ -2362,6 +2368,11 @@
       const gh = RugPublish.github({ repo: REPO, branch: PUBLISH_BRANCH, token: ghToken.get(), fetchImpl: fetch.bind(window) });
       for (let attempt = 1; attempt <= 3; attempt++) {
         const head = await gh.head();
+        // Check the citations and pictures against the records as published now, not as this page loaded
+        // them: something published since (a picture, a new record) counts at once.
+        const fresh = RugPublish.readWindow(await gh.file("data/items.js", head)).RUG_ITEMS || [];
+        const errsNow = checkChapterEdit(d, Object.fromEntries(fresh.map(x => [x.id, x])));
+        if (errsNow.length) { btn.disabled = false; return show("Not saved. Fix these first:", errsNow); }
         const current = await gh.file(CH_DIR + page + ".mdx", head);
         // Someone changed the text itself since this edit began: don't overwrite it.
         if (splitMdx(current).body.trim() !== splitMdx(d.base).body.trim()) {

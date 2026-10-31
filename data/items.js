@@ -16334,7 +16334,7 @@ window.RUG_ITEMS = [
     "dateStart": 2023,
     "place": "San Diego, California",
     "region": "United States",
-    "description": "A San Diego fibre artist whose punch-needle work sculpts the pile by trimming loops to cut pile at different heights; she works with Oxford punch needles, a deluxe rug needle and a tufting gun (Punch Needle World, \"Artist Interview: Venus Perez\"). A tufted portrait, \"Frida Kahlo\", by an artist named Venus Perez was shown in Pile Paragons at TuftCon '23 in Philadelphia (WHYY caption; see event-tuftcon-2023); that she is the same artist is likely but not stated by either source. Instagram: @fun.n.rec, as given by the punch-needle artist Andie Solar in Rug Hooking Magazine (\"One of my Instagram friends, venus @fun.n.rec, has been sculpting for a while\"); the author gave the name as func.n.rec, so the spelling is to confirm.\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "description": "A San Diego fibre artist whose punch-needle work sculpts the pile by trimming loops to cut pile at different heights; she works with Oxford punch needles, a deluxe rug needle and a tufting gun (Punch Needle World, \"Artist Interview: Venus Perez\"). A tufted portrait, \"Frida Kahlo\", by an artist named Venus Perez was shown in Pile Paragons at TuftCon '23 in Philadelphia (WHYY caption; see event-tuftcon-2023); that she is the same artist is likely but not stated by either source. Instagram: @fun.n.rec, as given by the punch-needle artist Andie Solar in Rug Hooking Magazine (\"One of my Instagram friends, venus @fun.n.rec, has been sculpting for a while\"); the author confirmed this handle on 31 Oct 2026.\n\nResearch note (Oct 2026): from search results; pages not opened.",
     "sourceUrl": "https://www.punchneedleworld.com/blogs/blog/venus-perez",
     "citation": "Punch Needle World, \"Artist Interview: Venus Perez\"; WHYY, 2023; Rug Hooking Magazine, interview with Andie Solar.",
     "themes": [
@@ -16349,7 +16349,7 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "suggestive",
-    "reviewedAt": "2026-10-31T12:15:57.649Z"
+    "reviewedAt": "2026-10-31T19:30:51.557Z"
   },
   {
     "id": "event-tuftcon-2023",
