@@ -2464,7 +2464,7 @@
   const INS_TITLE = { cite: "Cite a record", picture: "Add a picture", quote: "Add a quotation" };
   const openInsert = (chId, mode, id) => {
     const ta = $(`.ms-editor[data-ms-ta="${CSS.escape(chId)}"]`); if (!ta) return;
-    insSt = { chId, mode, at: ta.selectionStart ?? ta.value.length, end: ta.selectionEnd ?? ta.value.length, q: "", size: "text", loc: "", words: "", who: "", gather: true };
+    insSt = { chId, mode, at: ta.selectionStart ?? ta.value.length, end: ta.selectionEnd ?? ta.value.length, q: "", size: "text", loc: "", words: "", who: "", gather: true, only: id || "" };
     if (id) pickInsert(id, mode === "picture" ? picturesOf(BY_ID[id])[0] : null);
     insDlg.showModal(); renderInsert(); setTimeout(() => (id ? $("#ins-caption") || $("#ins-words") : $("#ins-q"))?.focus(), 30);
   };
@@ -2474,13 +2474,16 @@
   };
   const insCandidates = () => {
     const l = S.lists.find(x => x.id === insSt.chId), words = insSt.q.toLowerCase().split(/\s+/).filter(Boolean);
+    // Opened for one record (a source's Insert picture): just that record until a search asks for more.
     const pool = words.length ? ITEMS.filter(it => words.every(w => [it.id, it.title, it.creator, it.institution, it.date].join(" ").toLowerCase().includes(w)))
-      : l.items.map(x => BY_ID[x]).filter(Boolean);
+      : insSt.only && BY_ID[insSt.only] ? [BY_ID[insSt.only]] : l.items.map(x => BY_ID[x]).filter(Boolean);
     return (insSt.mode === "picture" ? pool.filter(it => picturesOf(it).length) : pool).slice(0, 30);
   };
   const insResult = it => {
     const pub = isPublished(it.id), chosen = insSt.id === it.id;
     const meta = `<span class="bk-m">${esc([TYPES[it.type]?.label, it.date, it.institution].filter(Boolean).join(" · "))}${pub ? "" : " · only in this browser: publish it first"}</span>`;
+    // The chosen record's pictures are shown in the form below, so its row in the list stays short.
+    if (insSt.mode === "picture" && chosen && picturesOf(it).length > 1) return `<li class="ins-row on"><span class="ins-t">${esc(it.title)}</span>${meta}</li>`;
     if (insSt.mode === "picture") return `<li class="ins-row${chosen ? " on" : ""}"><span class="ins-t">${esc(it.title)}</span>${meta}
       <span class="ins-pics">${picturesOf(it).map(p => `<button type="button" class="ins-pic" data-ins-pic="${esc(it.id)}" data-ins-n="${p.image == null ? "" : p.image}" aria-pressed="${chosen && (insSt.image ?? null) === p.image}"${pub ? "" : " disabled"} aria-label="${esc(p.caption || it.title)}"><img src="${esc(photoSrc(p.src) || p.src)}" alt="" loading="lazy" referrerpolicy="no-referrer"></button>`).join("")}</span></li>`;
     return `<li class="ins-row${chosen ? " on" : ""}"><button type="button" class="ins-pick" data-ins-pick="${esc(it.id)}" aria-pressed="${chosen}"${pub ? "" : " disabled"}><span class="ins-t">${esc(it.title)}</span>${meta}</button></li>`;
@@ -2498,6 +2501,7 @@
     const form = !it ? "" : s.mode === "cite" ? `
         <label class="ms-field">Page or other locator (optional) <input id="ins-loc" value="${esc(s.loc)}" placeholder="p. 12"></label>`
       : s.mode === "picture" ? `
+        ${picturesOf(it).length > 1 ? `<div class="ins-which"><p class="ins-for">Which picture (${picturesOf(it).length})</p><span class="ins-pics">${picturesOf(it).map(p => `<button type="button" class="ins-pic" data-ins-pic="${esc(it.id)}" data-ins-n="${p.image == null ? "" : p.image}" aria-pressed="${(s.image ?? null) === p.image}" aria-label="${esc(p.caption || it.title)}"><img src="${esc(photoSrc(p.src) || p.src)}" alt="" loading="lazy" referrerpolicy="no-referrer"></button>`).join("")}</span></div>` : ""}
         <div class="ins-chosen">${pic ? `<img src="${esc(photoSrc(pic.src) || pic.src)}" alt="" referrerpolicy="no-referrer">` : ""}
           <div class="ins-chosen-f">
             <fieldset class="ins-size"><legend>Size on the page</legend>${[["text", "Text width: as wide as the text"], ["wide", "Wide: across the text and the notes margin"], ["margin", "Small, beside the text in the notes margin"]].map(([v, t]) => `<label><input type="radio" name="ins-size" value="${v}"${s.size === v ? " checked" : ""}> ${t}</label>`).join("")}</fieldset>
@@ -2511,7 +2515,7 @@
     insBody.innerHTML = `
       <label class="vh" for="ins-q">Find a record</label>
       <input type="search" id="ins-q" class="ins-q" value="${esc(s.q)}" placeholder="${s.mode === "picture" ? "Find a picture: title, maker or id" : "Find a record: title, maker or id"}" autocomplete="off">
-      <p class="ms-hint">${s.q.trim() ? "" : `This chapter's sources${s.mode === "picture" ? " that have pictures" : ""}. Type to search every record.`}</p>
+      <p class="ms-hint">${s.q.trim() ? "" : s.only ? "Type to search every record instead." : `This chapter's sources${s.mode === "picture" ? " that have pictures" : ""}. Type to search every record.`}</p>
       <ul class="ins-list">${list.length ? list.map(insResult).join("") : `<li class="bk-m">No record matches${s.mode === "picture" ? " with a picture" : ""}.</li>`}</ul>
       ${it ? `<div class="ins-form"><p class="ins-for">For <b>${esc(it.title)}</b></p>${form}
         ${l && !l.items.includes(s.id) ? `<label class="ins-gather"><input type="checkbox" id="ins-gather"${s.gather ? " checked" : ""}> Also add it to this chapter's sources</label>` : ""}

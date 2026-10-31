@@ -885,3 +885,5 @@ a.linkish { text-decoration: underline; text-underline-offset: .2em; }
 .ms-fig-none { display: grid; place-items: center; min-height: 8rem; color: var(--ink-3); }
 .ms-pub::after, .ms-preview::after { content: ""; display: block; clear: both; }
 @media (max-width: 900px) { .ms-figs:has(> .margin:only-child) { float: none; width: auto; max-width: 22rem; margin: 0 0 1.2em; } }
+.ins-which { display: grid; gap: 6px; }
+.ins-which .ins-pic { width: 104px; height: 80px; }
