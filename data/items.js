@@ -16058,5 +16058,95 @@ window.RUG_ITEMS = [
     "status": "unverified",
     "region": "United States",
     "reviewedAt": "2026-10-30T10:54:57.767Z"
+  },
+  {
+    "id": "u-mvvovv76j85ed",
+    "type": "object",
+    "status": "unverified",
+    "title": "Merida Studio",
+    "creator": "Merida Studio",
+    "image": "https://meridastudio.com/wp-content/uploads/2025/10/Meld-Image-1.jpg",
+    "imageCredit": "Merida Studio",
+    "rights": "public-domain",
+    "citation": "Merida Studio, Fall River, Mass",
+    "gallery": true,
+    "reviewedAt": "2026-10-31T01:05:24.566Z"
+  },
+  {
+    "id": "u-mvvp1gk2clqms",
+    "type": "company",
+    "status": "unverified",
+    "title": "Trish Andersen studio",
+    "institution": "Trish andersen studio",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company"
+    ],
+    "region": "United States",
+    "confidence": "solid",
+    "description": "As an interdisciplinary artist born and raised in Dalton, Georgia \"The Carpet Capital of the World”, Trish Andersen's initial attraction to the process of tufting was a means to reconnect with and explore her roots. Years after attending the Savannah College of Art and Design and moving on to live and work in Brooklyn, New York, she began using the medium as an examination of the notion that a thing or a way of being can run in our blood; that perhaps by observing the characteristics of personal origin and establishing commonality and community around those that reverberate in the present, one may be able to begin unearthing the elusive authentic self. \n\nCombining fibers gathered from field, sheep, and those developed on a factory floor, Andersen proves that there is always room for both the vibrant and the muted, the sleek and the wild, cut and looped, soft and cumulus, the dense and the coarse; the unexpected and varied tactile quality of her work allows the eyes to open to an emotional one. Her work speaks to the truth that whether they are temporal, cultural, geographical, or interpersonal, boundaries inevitably bleed, and the results are often quite stunning.\n\nAccepting commissions worldwide, Trish creates site specific installations, fiber works, and collaborates on product creation for clients such as Coca-Cola, Design Miami, Kimpton Hotels, Google, BlackRock Financial, Shaw Contract, and Ulla Johnson, among many others. She lives in Savannah, Georgia with her husband, artist Michael Porten, their son Walter, four cats, and a few thousand balls of yarn.",
+    "sourceUrl": "https://www.trishandersenstudio.com/?srsltid=AYCX9vIjdQKXOgzp1eIVtjBjNWLcPnHgesmgCfOKSLCPxBJs_VPTTw8w",
+    "image": "https://images.squarespace-cdn.com/content/v1/6116eb49adb34e23b83cc642/a5ba6281-45b0-4791-aec9-b243f8dbd147/SusanLaneyContemporary_WildFrontierDOC_AK27.jpg?format=1500w",
+    "images": [
+      {
+        "src": "https://images.squarespace-cdn.com/content/v1/6116eb49adb34e23b83cc642/a5ba6281-45b0-4791-aec9-b243f8dbd147/SusanLaneyContemporary_WildFrontierDOC_AK27.jpg?format=1500w"
+      },
+      {
+        "src": "https://images.squarespace-cdn.com/content/v1/6116eb49adb34e23b83cc642/2d65f3db-7f95-4c34-9b9b-0dabf0289230/IMG_9344.JPG?format=2500w"
+      },
+      {
+        "src": "https://images.squarespace-cdn.com/content/v1/6116eb49adb34e23b83cc642/bf900791-14b6-47ae-8eb8-1c542df453f5/Fiber+Art+by+Trish+Andersen+Little+by+Little.JPG?format=1500w"
+      }
+    ],
+    "gallery": true,
+    "reviewedAt": "2026-10-31T01:05:24.566Z"
+  },
+  {
+    "id": "u-mvvp4rctc7w6k",
+    "type": "company",
+    "status": "unverified",
+    "title": "Simji",
+    "institution": "Simji shop",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company"
+    ],
+    "description": "SIMJI is a textile artist, content creator, and \"rugfluencer.\" She shares her popular rug tufting videos with millions of viewers around the world on TikTok, YouTube, and other social media outlets @simjiofficial. Born in South Korea and raised in Los Angeles, SIMJI creates fun and intricate pop culture–inspired pieces, pet portraits, food-related rugs, and much more. Recognizing the need for relatable and entertaining rug-making content, SIMJI pioneered a new approach toward reaching and educating aspiring rug tufters. By combining her passion for rug making with an entertainment-based perspective, SIMJI successfully bridges the gap between artistry and audience, captivating viewers with her unique content and expanding her influence within the industry and beyond.",
+    "sourceUrl": "https://simjishop.com/?srsltid=AYCX9vLDpGVp4JsSDOUKziT2_YRZEgvALkj8SJRrJqSk4A0NSgp138Bg",
+    "image": "https://simjishop.com/cdn/shop/files/Studio2LASIS0076.jpg?v=1731094827&width=1070",
+    "reviewedAt": "2026-10-31T01:05:24.566Z"
+  },
+  {
+    "id": "u-mvvp8s248uf95",
+    "type": "company",
+    "status": "unverified",
+    "title": "Rugmatag",
+    "institution": "Rugmatag",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company"
+    ],
+    "region": "Japan",
+    "confidence": "solid",
+    "description": "RUGMATAG is a tufting specialty shop located in Kitahorie, Osaka.\n\nWhether you're trying tufting for the first time, starting a crafting project at home, continuing to create artwork, or working as an artist or for a company, we deliver the tools, materials, techniques, and information necessary for tufting through our shop, studio, online store, and OEM production \n\nRUGMATAGは、大阪・北堀江にあるタフティング専門店です。\n\n初めてタフティングを体験する方、自宅でものづくりを始めたい方、作品づくりを続けている方、アーティストや企業の方まで。ショップ、スタジオ、オンラインストア、OEM制作を通じて、タフティングに必要な道具・材料・技術・情報を届けています。",
+    "sourceUrl": "https://rugmatag.com/",
+    "image": "https://cdn.shopify.com/s/files/1/0565/3531/8667/files/original-ws.jpg?v=1778992169",
+    "imageCredit": "Rugmatag",
+    "images": [
+      {
+        "src": "https://cdn.shopify.com/s/files/1/0565/3531/8667/files/original-ws.jpg?v=1778992169"
+      },
+      {
+        "src": "https://cdn.shopify.com/s/files/1/0565/3531/8667/files/pair-original-workshop3.4.jpg?v=1778992130"
+      }
+    ],
+    "gallery": true,
+    "reviewedAt": "2026-10-31T01:05:24.566Z"
   }
 ];
