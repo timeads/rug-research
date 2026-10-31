@@ -16224,7 +16224,10 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "solid",
-    "reviewedAt": "2026-10-31T12:12:35.593Z"
+    "reviewedAt": "2026-10-31T12:12:35.593Z",
+    "image": "https://cloud.firebrandtech.com/api/v2/image/111/9780760391099/InteriorImage",
+    "imageCredit": "quarto.com",
+    "imageSource": "auto"
   },
   {
     "id": "artist-unnecessary-inventions",
@@ -16396,6 +16399,9 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "solid",
-    "reviewedAt": "2026-10-31T12:15:57.649Z"
+    "reviewedAt": "2026-10-31T12:15:57.649Z",
+    "image": "https://d1fw4rghwibahr.cloudfront.net/wp-content/uploads/2023/03/03-23-2023-k-paynter-tuft-the-world-artwork-insert.jpg",
+    "imageCredit": "whyy.org",
+    "imageSource": "auto"
   }
 ];
