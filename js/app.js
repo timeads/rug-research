@@ -179,6 +179,28 @@
   };
 
   // ---------- items ----------
+  // What this browser published lately, kept until the site's copy of the database catches up. After a
+  // publish, GitHub Pages can go on serving the old data/items.js for a few minutes; a reload in that time
+  // would otherwise show, and check against, the records as they were before.
+  const RECENT_KEY = "rugdb.recentPublish";
+  const readRecent = () => { try { return JSON.parse(localStorage.getItem(RECENT_KEY) || "null"); } catch { return null; } };
+  (() => {
+    const recent = readRecent(); if (!recent) return;
+    let behind = false;
+    if (Date.now() - recent.at < 86400000) {
+      const list = window.RUG_ITEMS = window.RUG_ITEMS || [], removed = window.RUG_REMOVED = window.RUG_REMOVED || {};
+      for (const [id, rec] of Object.entries(recent.items || {})) {
+        const i = list.findIndex(x => x.id === id);
+        if (i < 0) { if (!removed[id]) { list.push(rec); behind = true; } }
+        else if ((list[i].reviewedAt || "") < (rec.reviewedAt || "")) { list[i] = rec; behind = true; }
+      }
+      for (const id of recent.removed || []) {
+        const i = list.findIndex(x => x.id === id);
+        if (i > -1) { list.splice(i, 1); removed[id] = removed[id] || new Date(recent.at).toISOString(); behind = true; }
+      }
+    }
+    if (!behind) try { localStorage.removeItem(RECENT_KEY); } catch { /* storage off */ }
+  })();
   const BASE = (window.RUG_ITEMS || []).map(x => ({ ...x }));
   const BASE_IDS = new Set(BASE.map(x => x.id));
   const BASE_BY_ID = Object.fromEntries(BASE.map(x => [x.id, x]));
@@ -1335,12 +1357,12 @@
   // Checks an edit before it is saved, as the site's own checker does: every citation and picture names a
   // published record, pictures exist, and nothing in the text would stop the site from building.
   // pub: the published records to check against (as on GitHub at save time; as loaded, before that).
-  const checkChapterEdit = (d, pub = BASE_BY_ID) => {
+  const checkChapterEdit = (d, pub = BASE_BY_ID, records = true) => {
     const errs = [], published = id => pub[id] && !S.deleted[id];
     if (!d.title.trim()) errs.push("The chapter needs a title.");
     if (/\n/.test(d.dek.trim())) errs.push("Keep the summary line to one paragraph.");
     const seen = new Set();
-    for (const [, g] of d.body.matchAll(/\[(@[^\]]+)\]/g)) for (const part of g.split(";")) {
+    if (records) for (const [, g] of d.body.matchAll(/\[(@[^\]]+)\]/g)) for (const part of g.split(";")) {
       const id = part.trim().replace(/^@/, "").split(",")[0].trim();
       if (seen.has(id)) continue; seen.add(id);
       if (!published(id)) errs.push(S.items[id] ? `[@${id}] is only in this browser so far: publish it first (Publish button), then save.` : `[@${id}]: no record has that id.`);
@@ -1348,6 +1370,7 @@
     for (const [, tag, a] of d.body.matchAll(/<(Figure|PullQuote)\b([^>]*)>/g)) {
       const id = attr(a, tag === "Figure" ? "id" : "from"), n = +((a.match(/image=\{(\d+)\}/) || [])[1] || 0);
       if (!id) { errs.push(`A ${tag} has no ${tag === "Figure" ? "id" : "from"}.`); continue; }
+      if (!records) continue;
       if (!published(id)) { errs.push(`${tag} ${id}: no published record has that id.`); continue; }
       const it = pub[id], g = Array.isArray(it.images) ? it.images : [];
       if (tag === "Figure" && !(n ? g[n] && g[n].src : it.image)) {
@@ -1943,15 +1966,17 @@
   const renderJobs = () => {
     const btn = $("#btn-jobs"), pop = $("#jobs-pop");
     if (!jobRuns && !jobsError) return;
-    const jobs = jobSummary();
+    // Status older than three minutes that couldn't be refreshed says nothing about now: don't show it as running.
+    const stale = !!jobsError && Date.now() - jobsChecked > 180000;
+    const jobs = stale ? [] : jobSummary();
     const running = jobs.filter(j => j.running.length);
     const failed = jobs.filter(j => !j.running.length && j.done && j.done.conclusion === "failure");
     const live = jobs.find(j => j.k === "pages-build-deployment" && j.done && j.done.conclusion === "success" && Date.parse(j.done.updated_at) > loadedAt);
     const state = running.length ? "running" : failed.length ? "failed" : live ? "new" : "ok";
-    btn.hidden = false; btn.dataset.state = jobsError && !jobRuns ? "unknown" : state;
-    $("#jobs-label").textContent = jobsError && !jobRuns ? "Updates" : running.length ? (running.length === 1 ? "Updating" : `Updating (${running.length})`)
+    btn.hidden = false; btn.dataset.state = jobsError && (!jobRuns || stale) ? "unknown" : state;
+    $("#jobs-label").textContent = jobsError && (!jobRuns || stale) ? "Updates" : running.length ? (running.length === 1 ? "Updating" : `Updating (${running.length})`)
       : failed.length ? "Update failed" : live ? "New data" : "Up to date";
-    btn.title = running.length ? "Running: " + running.map(j => j.name).join(", ") : failed.length ? "Failed: " + failed.map(j => j.name).join(", ") : live ? "New data is live. Reload to see it." : "Background updates: nothing running";
+    btn.title = stale ? jobsError : running.length ? "Running: " + running.map(j => j.name).join(", ") : failed.length ? "Failed: " + failed.map(j => j.name).join(", ") : live ? "New data is live. Reload to see it." : "Background updates: nothing running";
     btn.setAttribute("aria-label", btn.title);
     const row = j => {
       const r = j.running[0];
@@ -1982,7 +2007,8 @@
   const checkJobs = async () => {
     clearTimeout(jobsTimer);
     try {
-      const r = await fetch(`https://api.github.com/repos/${REPO}/actions/runs?per_page=60`, { headers: { Accept: "application/vnd.github+json" } });
+      // With the Publish key the check counts against its own, much larger allowance from GitHub.
+      const r = await fetch(`https://api.github.com/repos/${REPO}/actions/runs?per_page=60`, { cache: "no-store", headers: { Accept: "application/vnd.github+json", ...(ghToken.get() ? { Authorization: `Bearer ${ghToken.get()}` } : {}) } });
       if (r.status === 403 || r.status === 429) {
         const reset = Number(r.headers.get("x-ratelimit-reset")) * 1000;
         jobsError = `GitHub's hourly limit for status checks is used up${reset ? `; checking again at ${new Date(reset).toLocaleTimeString([], { hour: "numeric", minute: "2-digit" })}` : ""}.`;
@@ -2137,6 +2163,16 @@
         if (uploadedSrcs(S.items[c.id]).length && !uploadedSrcs(out[c.id]).length) { S.items[c.id].image = out[c.id].image; if (out[c.id].images) S.items[c.id].images = out[c.id].images; }
         S.base[c.id] = { ...out[c.id] };
       }
+      try {
+        const rec = readRecent() || { items: {}, removed: [] };
+        rec.at = Date.now();
+        for (const c of r.plan.changes) {
+          if (c.skipped) continue;
+          if (["edited", "added"].includes(c.kind) && out[c.id]) rec.items[c.id] = out[c.id];
+          if (c.kind === "deleted" && !rec.removed.includes(c.id)) rec.removed.push(c.id);
+        }
+        localStorage.setItem(RECENT_KEY, JSON.stringify(rec));
+      } catch { /* storage full or off: the site's copy catches up in a few minutes anyway */ }
       save(); refresh();
       const n = r.plan.changes.filter(c => !c.skipped && !["duplicate", "gone"].includes(c.kind)).length;
       pubBody.innerHTML = `<p><strong>Published ${n} change${n === 1 ? "" : "s"}.</strong> The research database and <a href="https://www.historyoftuftedrugs.com/" target="_blank" rel="noopener">www.historyoftuftedrugs.com</a> update in about two minutes. Reload this page after that to see the published copy.</p>
@@ -2371,7 +2407,7 @@
     if (!page || !d) return;
     const show = (msg, list) => { if (box) box.innerHTML = list ? `<p>${esc(msg)}</p><ul>${list.map(x => `<li>${esc(x)}</li>`).join("")}</ul>` : `<p>${msg}</p>`; };
     // Before reaching GitHub, catch what doesn't depend on the published records (they are checked fresh below).
-    const errs = checkChapterEdit(d, new Proxy({}, { get: (_, id) => BASE_BY_ID[id] || S.items[id] }));
+    const errs = checkChapterEdit(d, BASE_BY_ID, false);
     if (errs.length) return show("Not saved. Fix these first:", errs);
     if (!ghToken.get()) return show(`Saving needs the GitHub key that Publish uses. Click <b>Publish</b> in the top bar once to set it up, then save again. Your edit stays here meanwhile.`);
     btn.disabled = true; show("Saving…");
@@ -2406,6 +2442,7 @@
         const l = S.lists.find(x => x.id === chId);
         if (l && l.name !== d.title.trim()) { l.name = d.title.trim(); S.seedName = S.seedName || {}; S.seedName[chId] = l.name; }
         delete S.msDrafts[chId]; save(); renderManuscript();
+        setTimeout(checkJobs, 4000);
         return toast("Saved. The chapter on the site updates in about two minutes.");
       }
       throw new Error("GitHub kept changing while saving. Try again in a minute.");
@@ -2724,7 +2761,10 @@
       continue;
     }
     if (!pub || mine.imageSource === "picked" || mine.imageRole) continue;
-    if (sameText(mine, pub)) delete S.items[id];
+    // Same text, but a picture of its own that the loaded copy doesn't have: keep it (it may be published
+    // already and the site's copy not caught up yet).
+    const ownPicture = (mine.image && mine.image !== pub.image) || (Array.isArray(mine.images) && JSON.stringify(mine.images) !== JSON.stringify(pub.images || []));
+    if (sameText(mine, pub) && !ownPicture) delete S.items[id];
   }
   for (const id of Object.keys(S.base)) if (!S.items[id]) delete S.base[id];
   save();
