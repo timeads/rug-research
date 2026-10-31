@@ -16276,7 +16276,9 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "solid",
-    "reviewedAt": "2026-10-31T12:15:57.649Z"
+    "reviewedAt": "2026-10-31T12:21:13.508Z",
+    "image": "https://craftcouncil.org//wp-content/uploads/2025/07/best-one-melissa_1.jpg",
+    "imageCredit": "Melissa Monroe"
   },
   {
     "id": "artist-qualeasha-wood",
