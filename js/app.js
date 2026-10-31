@@ -1154,11 +1154,21 @@
   // The tab badge counts the active list (e.g. the fellowship list), not chapter evidence.
   const renderListBadge = () => { const l = activeList(), n = isChapter(l) ? 0 : l.items.filter(id => BY_ID[id]).length; $("#list-count").textContent = n || ""; };
   // Chapter drafts grow with their text instead of scrolling inside a small box.
+  // Grows a text box to fit its text without moving the page. Measuring means shrinking the box for a moment;
+  // its parent keeps its height meanwhile, so the page never gets shorter, and the scroll position is put back
+  // after, so browsers that would otherwise jump to keep the cursor in view (Safari, Firefox) stay put.
+  const growToFit = ta => {
+    const x = scrollX, y = scrollY, box = ta.parentElement, hold = box.style.minHeight;
+    box.style.minHeight = box.offsetHeight + "px";
+    ta.style.height = "auto"; ta.style.height = ta.scrollHeight + 2 + "px";
+    box.style.minHeight = hold;
+    if (scrollX !== x || scrollY !== y) scrollTo(x, y);
+  };
   const fitIntro = () => {
     const ta = $("#list-intro");
     if (!ta.classList.contains("draft")) { ta.style.height = ""; return; }
     if (!ta.offsetParent) return; // hidden view: fitted when Lists is shown
-    ta.style.height = "auto"; ta.style.height = ta.scrollHeight + 2 + "px";
+    growToFit(ta);
   };
   addEventListener("resize", debounce(fitIntro, 150));
   const renderCompile = () => {
@@ -1457,7 +1467,7 @@
       <p class="ms-hint">Your research to-do list for this chapter. It isn't shown on the public site. Ticks are kept in this browser.</p>
     </section>`;
   };
-  const fitMs = ta => { ta.style.height = "auto"; ta.style.height = ta.scrollHeight + 2 + "px"; };
+  const fitMs = growToFit;
   const msTotals = () => {};
   const saveMsText = debounce(() => save(), 400);
 
