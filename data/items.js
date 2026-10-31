@@ -16148,5 +16148,176 @@ window.RUG_ITEMS = [
     ],
     "gallery": true,
     "reviewedAt": "2026-10-31T01:05:24.566Z"
+  },
+  {
+    "id": "artist-trish-andersen-press",
+    "type": "finding",
+    "title": "Trish Andersen: from Dalton to tufted rugs and fibre art (press accounts, 2019–2022)",
+    "creator": "Trish Andersen",
+    "date": "2018 onwards",
+    "dateStart": 2018,
+    "place": "Savannah, Georgia (born and raised in Dalton)",
+    "region": "United States",
+    "description": "Press accounts of the Savannah-based fibre artist Trish Andersen, who grew up in Dalton, Georgia. Her grandfather moved to Dalton from Chicago in 1949 to sell latex to the carpet industry (NPR, 2021). She graduated from the Savannah College of Art and Design with a BFA in fibers in 2005 (Simply Buckhead). A friend sent her a viral video of women hand-tufting rugs in 2016 (Simply Buckhead). In 2018 she made a stair runner \"that looked like paint running down the stairs\", and the response on Instagram convinced her to pursue rugs (Business of Home, 18 Nov 2021); Cover Magazine (7 Jan 2022) says her rug output took off when the runner became an online hit in 2018. She launched a rug collection inspired by the runner in September 2021, with designs named Mixy, Pure and Splat (Cover Magazine); her wool rug line is tufted in India through a Dalton-based partner manufacturer, Lapama Rugs (one account). Instagram: @trishandersenart (the handle shown in the post embedded in NPR's 18 April 2021 story \"'Renegade' Rug Makers Create Community, Tufting On TikTok\"). Her studio's own account of her work is in u-mvvp1gk2clqms.\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "sourceUrl": "https://cover-magazine.com/2022/01/07/on-the-wild-side-trish-andersen/",
+    "citation": "Cover Magazine, \"On the wild side: Trish Andersen\", 7 Jan 2022; Business of Home, 18 Nov 2021; Simply Buckhead, \"Magic Carpet\"; NPR, 18 Apr 2021.",
+    "themes": [
+      "Companies & modern tufting",
+      "Hand-tufting tools & the gun"
+    ],
+    "tags": [
+      "artist",
+      "hobby revival",
+      "Dalton",
+      "Instagram"
+    ],
+    "status": "unverified",
+    "confidence": "solid",
+    "reviewedAt": "2026-10-31T12:12:35.593Z"
+  },
+  {
+    "id": "artist-david-nott",
+    "type": "finding",
+    "title": "David Nott: tufted and carved textile works, Boston (from 2021)",
+    "creator": "David Nott",
+    "date": "2021 onwards",
+    "dateStart": 2021,
+    "place": "Boston, Massachusetts",
+    "region": "United States",
+    "description": "A Boston-based textile artist who tufts bold, abstract designs in yarn and then carves the pile with scissors and razors into raised, sculpted pieces (CoolCuration, updated 28 Oct 2026). One profile says he made detailed dotwork portraits before turning to textile art in 2021. Estimates of the time a piece takes differ: 40 to 70 hours (The Inspiration Grid), or 50 to 80 hours and over 100 for the most detailed (CoolCuration). My Modern Met describes a rainbow-road piece commissioned by Sphere Las Vegas for Dead & Company that took 107 hours. Instagram: @davidnott (CoolCuration); My Modern Met gives his TikTok as @davidnottt. Not the war surgeon and author of the same name.\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "sourceUrl": "https://coolcuration.com/?p=18878",
+    "citation": "CoolCuration (updated 28 Oct 2026); My Modern Met, \"David Nott tufting art\"; The Inspiration Grid, \"Mesmerizing textile creations by David Nott\".",
+    "themes": [
+      "Companies & modern tufting",
+      "Hand-tufting tools & the gun"
+    ],
+    "tags": [
+      "artist",
+      "carving",
+      "Instagram"
+    ],
+    "status": "unverified",
+    "confidence": "solid",
+    "reviewedAt": "2026-10-31T12:12:35.593Z"
+  },
+  {
+    "id": "book-rug-tufting-with-simji-2024",
+    "type": "book",
+    "title": "Rug Tufting with SIMJI: Essential Techniques and Creative Projects for Beginners",
+    "creator": "SIMJI",
+    "publisher": "Walter Foster (Quarto)",
+    "date": "November 2024",
+    "dateStart": 2024,
+    "region": "United States",
+    "description": "A 144-page beginners' manual by the tufting artist and content creator SIMJI: tools, a warm-up project and step-by-step projects, with QR codes linking to her YouTube tutorials (reviews). The publisher calls her the \"rugfluencer\" and says she shares her tufting videos with millions of viewers on TikTok, YouTube and other platforms. Born in South Korea and raised in Los Angeles. Handles: @simjiofficial (publisher; her shop gives the same, see u-mvvp4rctc7w6k).\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "sourceUrl": "https://www.quarto.com/books/9780760391099/rug-tufting-with-simji",
+    "identifier": "ISBN 9780760391099",
+    "themes": [
+      "Hand-tufting tools & the gun",
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "hobby revival",
+      "manual",
+      "artist",
+      "social media"
+    ],
+    "status": "unverified",
+    "confidence": "solid",
+    "reviewedAt": "2026-10-31T12:12:35.593Z"
+  },
+  {
+    "id": "artist-unnecessary-inventions",
+    "type": "finding",
+    "title": "Unnecessary Inventions (Matty Benedetto): tufting gun rugs and a Pantone rug, Vermont",
+    "creator": "Matty Benedetto (Unnecessary Inventions)",
+    "date": "2020s",
+    "dateStart": 2021,
+    "place": "Vermont",
+    "region": "United States",
+    "description": "Unnecessary Inventions is the Vermont designer Matty Benedetto's studio of satirical products that solve problems nobody has, documented in videos on social media (Wikipedia; Seven Days; The Hustle). Its website has a rug-making tutorial on making custom rugs with a tufting gun, including a rug of his Gator Grips (unnecessaryinventions.com/tufting-gun-tutorial), and it has sold rugs such as the ZuckerRug, a bath mat. His 50-foot CVS receipt rug (January 2024) was reproduced by a manufacturer in China from a scan, not tufted in the studio (Retail Brew). A summary of his X account (@mattyxb) mentions a studio rug based on his Pantone colour charts. Instagram: @unnecessaryinventions, the account where Benedetto built his audience after starting in 2019 (search summaries of press coverage; one article counted more than 117,000 followers).\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "sourceUrl": "https://unnecessaryinventions.com/tufting-gun-tutorial/",
+    "citation": "Unnecessary Inventions, \"The Rug Making Tutorial\"; Retail Brew, 6 Feb 2024; Wikipedia, \"Matty Benedetto\".",
+    "themes": [
+      "Companies & modern tufting",
+      "Hand-tufting tools & the gun"
+    ],
+    "tags": [
+      "artist",
+      "social media",
+      "Instagram"
+    ],
+    "status": "unverified",
+    "confidence": "suggestive",
+    "reviewedAt": "2026-10-31T12:12:35.593Z"
+  },
+  {
+    "id": "artist-melissa-monroe",
+    "type": "finding",
+    "title": "Melissa Monroe: hand-tufted sculpture and furniture, Portland, Oregon",
+    "creator": "Melissa Monroe",
+    "date": "2013 onwards (tufted works 2024–2025)",
+    "dateStart": 2024,
+    "place": "Portland, Oregon",
+    "region": "United States",
+    "description": "A self-taught Portland, Oregon multimedia artist, working full time since 2013, mainly as a painter, who began tufting with rugs and moved to masks and furniture-building techniques (American Craft Council, \"Tufted Joy\", August 2025). Works include Candy Scoop (2024), a vintage chair reupholstered in hand-tufted wool; a lion of tufted wool on a wooden stool; and Double Trouble (2025), a double-headed alligator bench (Craft Council). Featured by OPB (3 Oct 2025) and PBS's Oregon Art Beat. Instagram: @melissamonroeart, as credited in a post by a Portland tufting workshop (@tuftingworkshop); not confirmed on her own profile.\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "sourceUrl": "https://craftcouncil.org/articles/tufted-joy/",
+    "citation": "American Craft Council, \"Tufted Joy\", Aug 2025; OPB, 3 Oct 2025.",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "artist",
+      "sculpture",
+      "Instagram"
+    ],
+    "status": "unverified",
+    "confidence": "solid",
+    "reviewedAt": "2026-10-31T12:12:35.593Z"
+  },
+  {
+    "id": "artist-qualeasha-wood",
+    "type": "finding",
+    "title": "Qualeasha Wood: tufted and woven tapestries of digital life, New York",
+    "creator": "Qualeasha Wood",
+    "date": "2021 onwards",
+    "dateStart": 2021,
+    "place": "Brooklyn, New York (Hauser & Wirth listing)",
+    "region": "United States",
+    "description": "A textile artist whose tufted and jacquard-woven tapestries combine craft with digital imagery. Her 2023 exhibition \"TL;DR\" at Pippy Houldsworth Gallery, London, included tufted works in wool and acrylic, among them \"Into the Blue\" (2023, 50 by 64 in.), a figure in a bath among pink tiles and rubber ducks, and \"All You Must Hold On To\" (2023, 66 by 68 in.) (Hypebae, June 2023). The Metropolitan Museum acquired her woven tapestry The [Black] Madonna/Whore Complex (2021). Artist in residence at the Studio Museum in Harlem, 2021–2022. Instagram: @qualeasha (artist biography; WePresent).\n\nResearch note (Oct 2026): from search results; pages not opened.",
+    "sourceUrl": "https://hypebae.com/2023/6/qualeasha-wood-tl-dr-tapestries-exhibition-works-details",
+    "citation": "Hypebae, June 2023; Pippy Houldsworth Gallery press; WePresent artist profile.",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "artist",
+      "tapestry",
+      "Instagram"
+    ],
+    "status": "unverified",
+    "confidence": "solid",
+    "reviewedAt": "2026-10-31T12:12:35.593Z"
+  },
+  {
+    "id": "finding-ttw-artist-relations",
+    "type": "finding",
+    "title": "The author's firm's ties to contemporary tufting artists (the author's account)",
+    "creator": "Tim Eads (Tuft the World)",
+    "date": "stated 31 Oct 2026",
+    "dateStart": 2026,
+    "region": "United States",
+    "description": "Tim Eads, a founder of Tuft the World and the author of this history, stated on 31 October 2026 that: Trish Andersen was already tufting when he started, and the two became friends remotely and shared information back and forth; Unnecessary Inventions uses Tuft the World supplies and is making a line of pieces based on the Pantone colour book; and Tuft the World has collaborated with Qualeasha Wood on some work. He also described David Nott's carving and expertise, Simji as an influencer who promotes tufting to a mass audience, and Melissa Monroe's three-dimensional pieces.\n\nSource: Tim Eads, in conversation while drafting this history, 31 Oct 2026. First-hand knowledge; the author's interest should be noted when citing it.",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "own firm",
+      "oral testimony",
+      "artist"
+    ],
+    "status": "unverified",
+    "confidence": "solid",
+    "reviewedAt": "2026-10-31T12:12:35.593Z"
   }
 ];

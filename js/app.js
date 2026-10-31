@@ -1298,7 +1298,9 @@
   // A chapter's text as the reader sees it: headings, paragraphs, pictures, quotations, numbered notes.
   const chapterHTML = body => {
     const notes = [];
-    const inline = t => esc(t).replace(/\*([^*\n]+)\*/g, "<em>$1</em>").replace(/\[(@[^\]]+)\]/g, (_, g) => {
+    const inline = t => esc(t).replace(/\*([^*\n]+)\*/g, "<em>$1</em>")
+      .replace(/\[([^\]@][^\]]*)\]\((https?:\/\/[^)\s]+)\)/g, (_, txt, url) => `<a href="${url}" target="_blank" rel="noopener">${txt}</a>`)
+      .replace(/\[(@[^\]]+)\]/g, (_, g) => {
       const ids = g.split(";").map(x => x.trim().replace(/^@/, "").split(",")[0].trim()).filter(Boolean);
       notes.push(g.split(";").map(x => x.trim().replace(/^@/, "")));
       return `<sup class="ms-n"><button type="button" data-ms-open="${esc(ids[0])}" title="${esc(ids.map(id => BY_ID[id]?.title || id).join("; "))}">${notes.length}</button></sup>`;
