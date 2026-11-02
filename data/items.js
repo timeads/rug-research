@@ -13550,7 +13550,9 @@ window.RUG_ITEMS = [
     ],
     "status": "verified",
     "imageSource": "rejected",
-    "dimensions": "21 1/2 × 31 1/2 in. (54.6 × 80 cm)"
+    "dimensions": "21 1/2 × 31 1/2 in. (54.6 × 80 cm)",
+    "image": "https://artbma.org/wp-content/uploads/resized/2026/08/43106_43163561-2560x0-c-default.jpg",
+    "reviewedAt": "2026-11-02T01:51:14.576Z"
   },
   {
     "id": "process-sewn-yarn-sewn-chs",
