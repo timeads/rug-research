@@ -27,7 +27,7 @@ window.RUG_ITEMS = [
     "techniques": [
       "hooked"
     ],
-    "dimensions": "approx. 62.9 × 228 cm",
+    "dimensions": "approx. 24.75 in x 89.75 in (62.9 cm x 228 cm)",
     "description": "Long hooked runner-format rug. Not on display. Cited in Kenneth L. Ames, Beyond Necessity (1977).",
     "sourceUrl": "https://museumcollection.winterthur.org/object/25734",
     "themes": [
@@ -56,7 +56,7 @@ window.RUG_ITEMS = [
     "techniques": [
       "hooked"
     ],
-    "dimensions": "approx. 57.5 × 118 cm",
+    "dimensions": "approx. 22.75 in x 46.5 in (57.5 cm x 118 cm)",
     "description": "Hooked rug on burlap foundation. Not on display.",
     "sourceUrl": "https://museumcollection.winterthur.org/object/26610",
     "themes": [
@@ -81,7 +81,7 @@ window.RUG_ITEMS = [
     "techniques": [
       "hooked / yarn-sewn (verify)"
     ],
-    "dimensions": "approx. 174 × 234 cm",
+    "dimensions": "approx. 68.5 in x 92.25 in (174 cm x 234 cm)",
     "description": "All-wool rug on display in Spatterware Hall. The record reportedly cites a 2024 tufting manual — check the bibliography; potentially a direct link between historic rugs and modern tufting.",
     "sourceUrl": "https://museumcollection.winterthur.org/object/28352",
     "themes": [
@@ -146,7 +146,7 @@ window.RUG_ITEMS = [
     "techniques": [
       "hooked / sewn (verify)"
     ],
-    "dimensions": "approx. 225 × 293 cm",
+    "dimensions": "approx. 88.5 in x 115.25 in (225 cm x 293 cm)",
     "description": "Large all-wool rug. Not on display.",
     "sourceUrl": "https://museumcollection.winterthur.org/object/42781",
     "themes": [
@@ -173,7 +173,7 @@ window.RUG_ITEMS = [
     "techniques": [
       "hooked"
     ],
-    "dimensions": "approx. 61 × 107 cm",
+    "dimensions": "approx. 24 in x 42.25 in (61 cm x 107 cm)",
     "description": "Gift of Charles K. Davis. Not on display.",
     "sourceUrl": "https://museumcollection.winterthur.org/object/1923",
     "themes": [
@@ -917,7 +917,7 @@ window.RUG_ITEMS = [
       "needleworked pile",
       "embroidered"
     ],
-    "dimensions": "80 × 80.5 in. (fringe 2.25 in.)",
+    "dimensions": "80 in x 80.5 in (203 cm x 204 cm); fringe 2.25 in (5.7 cm)",
     "description": "Bequest of Henry Francis du Pont. Laurel Thatcher Ulrich links it to an \"E.F.\" bed rug (Elizabeth Foote) at the Connecticut Historical Society and an unmarked rug at Historic Deerfield; all three may commemorate the Foot siblings' marriages on 5 November 1778. A dated, named, pre-1800 needle-made pile textile at Winterthur: a strong anchor object for a tufting-lineage argument.",
     "sourceUrl": "https://museumcollection.winterthur.org/object/16695",
     "themes": [
@@ -1011,7 +1011,7 @@ window.RUG_ITEMS = [
     "techniques": [
       "looped running stitch, cut to form pile"
     ],
-    "dimensions": "approx. 102 × 99 in.",
+    "dimensions": "approx. 102 in x 99 in (259 cm x 251 cm)",
     "description": "Rogers Fund, 1913. The Met's notes stress that the pile is needleworked, not hooked, a distinction once misunderstood. That makes it a direct technical ancestor of hand tufting. The Met also holds a 1796 bed rug with an Indian Tree of Life motif shared with a Historic Deerfield rug.",
     "sourceUrl": "https://www.metmuseum.org/art/collection/search?q=13.207",
     "themes": [
@@ -1185,7 +1185,7 @@ window.RUG_ITEMS = [
     "techniques": [
       "candlewick"
     ],
-    "dimensions": "approx. 96 × 83 in.",
+    "dimensions": "approx. 96 in x 83 in (244 cm x 211 cm)",
     "description": "Gift of Dr. Carey Stanton. Not on view.",
     "sourceUrl": "https://collections.lacma.org/object/33639",
     "themes": [
@@ -1455,7 +1455,7 @@ window.RUG_ITEMS = [
     "techniques": [
       "chenille / tufted"
     ],
-    "dimensions": "approx. 33 × 16 in.",
+    "dimensions": "approx. 33 in x 16 in (84 cm x 41 cm)",
     "description": "Red and white handmade rug inscribed \"NEW V-8 FORD 1936\", made as a thank-you gift to Henry Ford. A dated, homemade chenille (tufted) rug from the hand-tufting era, before tufted carpet was industrialized. Not on exhibit.",
     "sourceUrl": "https://www.thehenryford.org/collections/explore/artifact/66143",
     "themes": [
@@ -7689,7 +7689,7 @@ window.RUG_ITEMS = [
     "institution": "Hagley Museum and Library",
     "collection": "DuPont Company Product Information photographs (Accession 1972.341), Series V. Man made fibers, Subseries C. Nylon",
     "identifier": "1972341_1333",
-    "dimensions": "1 photographic print : b&w ; 8 x 10 in. or smaller",
+    "dimensions": "1 photographic print : b&w ; 8 in x 10 in (20 cm x 25 cm) or smaller",
     "techniques": [
       "woven"
     ],
@@ -7724,7 +7724,7 @@ window.RUG_ITEMS = [
     "institution": "Hagley Museum and Library",
     "collection": "DuPont Company Product Information photographs (Accession 1972.341), Series V. Man made fibers, Subseries C. Nylon",
     "identifier": "1972341_1332",
-    "dimensions": "1 photographic print : b&w ; 8 x 10 in. or smaller",
+    "dimensions": "1 photographic print : b&w ; 8 in x 10 in (20 cm x 25 cm) or smaller",
     "techniques": [
       "tufted"
     ],
@@ -8139,7 +8139,7 @@ window.RUG_ITEMS = [
     "institution": "Hagley Museum and Library",
     "collection": "Joseph Bancroft and Sons Company, Miss America collection (Accession 1972.430), Box 3, Folder 13",
     "identifier": "72430_477",
-    "dimensions": "1 color pamphlet (19 pages) ; 8.5 x 11 cm [as catalogued]",
+    "dimensions": "1 color pamphlet (19 pages) ; 3.25 in x 4.25 in (8.5 cm x 11 cm) [as catalogued]",
     "themes": [
       "Woven carpet",
       "Machine tufting & Dalton",
@@ -8172,7 +8172,7 @@ window.RUG_ITEMS = [
     "institution": "Hagley Museum and Library",
     "collection": "Hagley Library, Manuscripts and Archives",
     "identifier": "Accession 1771",
-    "dimensions": "88 linear feet",
+    "dimensions": "88 linear feet (26.8 m)",
     "themes": [
       "Nylon & synthetic fibers (DuPont)",
       "Trade catalogs & marketing"
@@ -8300,7 +8300,7 @@ window.RUG_ITEMS = [
     "institution": "Hagley Museum and Library",
     "collection": "Hagley Library, Manuscripts and Archives",
     "identifier": "Hagley finding aid resources/1631 (accession number not captured)",
-    "dimensions": "3 linear feet",
+    "dimensions": "3 linear feet (0.9 m)",
     "themes": [
       "Nylon & synthetic fibers (DuPont)",
       "Yarn & materials"
@@ -11661,7 +11661,7 @@ window.RUG_ITEMS = [
     "techniques": [
       "hand-knotted"
     ],
-    "dimensions": "17 ft × 14 ft 11 3/4 in. (518.2 × 456.6 cm), irregular rectangle",
+    "dimensions": "204 in x 179.75 in (518.2 cm x 456.6 cm), irregular rectangle",
     "description": "Hand-knotted wool carpet (\"Wool; knotted pile\"), attributed to Thomas Whitty of the Axminster carpet manufactory, ca. 1765 (the Met's date range 1760–1770). Acquired by the Met in 2025: \"Purchase, F.J. Hakimian Gift, in memory of Joseph Hakimian, and Christian Keesee and Anonymous Gifts, in memory of Irene Roosevelt Aitken, 2025\". Gallery 511. Public domain image.\nWhy it matters: a dated Whitty attribution from his first decade at Axminster (his first carpet was finished in 1755), a generation earlier than the Met's other Whitty carpet (57.162, ca. 1780–90).\nSource: Met Collection API, object 928622 (record dated 2026-07-16), saved in research/fetched.",
     "image": "https://images.metmuseum.org/CRDImages/es/web-large/DP-45246-001.jpg",
     "imageCredit": "The Metropolitan Museum of Art",
@@ -13117,7 +13117,7 @@ window.RUG_ITEMS = [
     "imageCredit": "Silk Road Seattle, University of Washington (photographs of the carpet in the State Hermitage Museum)",
     "imagePage": "https://depts.washington.edu/silkroad/museums/shm/shmpazyryk.html",
     "rights": "not-requested",
-    "dimensions": "183 × 200 cm (University of Washington caption)",
+    "dimensions": "72 in x 78.75 in (183 cm x 200 cm), from the University of Washington caption",
     "citation": "Rudenko 1953, pp. 351–356, pl. CXV–CXVI; Rudenko 1968, ch. 2; Rudenko 1970, pp. 298–304, pl. 174–175; Opie, Tribal Rugs, ch. 3 (publications listed in the University of Washington Silk Road caption).",
     "images": [
       {
@@ -13550,7 +13550,7 @@ window.RUG_ITEMS = [
     ],
     "status": "verified",
     "imageSource": "rejected",
-    "dimensions": "21 1/2 × 31 1/2 in. (54.6 × 80 cm)",
+    "dimensions": "21.5 in x 31.5 in (54.6 cm x 80 cm)",
     "image": "https://artbma.org/wp-content/uploads/resized/2026/08/43106_43163561-2560x0-c-default.jpg",
     "reviewedAt": "2026-11-02T01:51:14.576Z"
   },
@@ -14192,7 +14192,7 @@ window.RUG_ITEMS = [
     "identifier": "NK2799 G44a TC",
     "place": "Chicago",
     "publisher": "Gibbs (printed by Auditorium Printing Co., Chicago)",
-    "dimensions": "36, [4] p. : col. ill. ; 10 x 17 cm.",
+    "dimensions": "36, [4] p. : col. ill. ; 4 in x 6.75 in (10 cm x 17 cm)",
     "techniques": [
       "tufted",
       "hooked"
@@ -14225,7 +14225,7 @@ window.RUG_ITEMS = [
     "identifier": "NK2799 G44 TC",
     "place": "Chicago",
     "publisher": "Gibbs",
-    "dimensions": "32 p. : ill. ; 16 cm.",
+    "dimensions": "32 p. : ill. ; 6.25 in (16 cm)",
     "techniques": [
       "hooked",
       "tufted"
@@ -14258,7 +14258,7 @@ window.RUG_ITEMS = [
     "institution": "Winterthur Library",
     "collection": "Decorative Arts Photographic Collection (DAPC), Visual Resources, Winterthur Library",
     "identifier": "DAPC barcode 000054198 (record vtls000047773)",
-    "dimensions": "1 folder (approx. 4 photoprints) : b&w ; 21 x 26 cm. or smaller",
+    "dimensions": "1 folder (approx. 4 photoprints) : b&w ; 8.25 in x 10.25 in (21 cm x 26 cm) or smaller",
     "techniques": [
       "candlewick"
     ],
@@ -14288,7 +14288,7 @@ window.RUG_ITEMS = [
     "institution": "Winterthur Library",
     "identifier": "NK2799 O44a TC",
     "place": "Greenfield, Mass.",
-    "dimensions": "63 p. : ill. (1 col.) ; 29 cm. + 1 brochure ([4] p.)",
+    "dimensions": "63 p. : ill. (1 col.) ; 11.5 in (29 cm) + 1 brochure ([4] p.)",
     "techniques": [
       "hooked"
     ],
@@ -14318,7 +14318,7 @@ window.RUG_ITEMS = [
     "institution": "Winterthur Library",
     "identifier": "TT850 F93 TC",
     "place": "Biddeford, Maine",
-    "dimensions": "12 leaves : ill. ; 13 cm.",
+    "dimensions": "12 leaves : ill. ; 5 in (13 cm)",
     "techniques": [
       "hooked"
     ],
@@ -14348,7 +14348,7 @@ window.RUG_ITEMS = [
     "institution": "Winterthur Library",
     "identifier": "NK2799 R82a TC",
     "place": "Toledo, Ohio",
-    "dimensions": "31 p. : col. ill. ; 11 x 18 cm.",
+    "dimensions": "31 p. : col. ill. ; 4.25 in x 7 in (11 cm x 18 cm)",
     "techniques": [
       "hooked",
       "punch needle"
@@ -14379,7 +14379,7 @@ window.RUG_ITEMS = [
     "institution": "Winterthur Library",
     "identifier": "NK2799 M19 1915 TC*",
     "place": "Bloomsburg, Pa.",
-    "dimensions": "48 pages : color illustrations ; 21 x 25 cm",
+    "dimensions": "48 pages : color illustrations ; 8.25 in x 9.75 in (21 cm x 25 cm)",
     "themes": [
       "Woven carpet",
       "Trade catalogs & marketing"
@@ -14406,7 +14406,7 @@ window.RUG_ITEMS = [
     "institution": "Winterthur Library",
     "identifier": "NK2799 P49 TC",
     "place": "Boston",
-    "dimensions": "8 p. ; 23 cm.",
+    "dimensions": "8 p. ; 9 in (23 cm)",
     "techniques": [
       "Brussels",
       "Wilton"
@@ -14438,7 +14438,7 @@ window.RUG_ITEMS = [
     "collection": "Joseph Downs Collection of Manuscripts and Printed Ephemera (Col. 50)",
     "identifier": "Col. 50, acc. 2017x85.30a-b",
     "place": "Tariffville, Conn.",
-    "dimensions": "2 volumes ; 20 cm",
+    "dimensions": "2 volumes ; 7.75 in (20 cm)",
     "techniques": [
       "Brussels"
     ],
@@ -14470,7 +14470,7 @@ window.RUG_ITEMS = [
     "identifier": "NK2799 S63a TC",
     "place": "New York",
     "publisher": "W. and J. Sloane",
-    "dimensions": "24 p. : col. ill. ; 17 cm.",
+    "dimensions": "24 p. : col. ill. ; 6.75 in (17 cm)",
     "techniques": [
       "chenille Axminster"
     ],
@@ -14501,7 +14501,7 @@ window.RUG_ITEMS = [
     "institution": "Winterthur Library",
     "collection": "Col. 50",
     "identifier": "Col. 50, acc. 65x662.1-.7",
-    "dimensions": "7 v. ; 17 cm. or smaller",
+    "dimensions": "7 v. ; 6.75 in (17 cm) or smaller",
     "themes": [
       "Yarn & materials"
     ],
@@ -15587,7 +15587,7 @@ window.RUG_ITEMS = [
     "dateEnd": 1850,
     "institution": "National Museum of American History, Smithsonian Institution",
     "identifier": "1994.0305.01",
-    "dimensions": "78 in x 98 in (198.12 x 248.92 cm)",
+    "dimensions": "78 in x 98 in (198 cm x 249 cm)",
     "techniques": [
       "woven",
       "tufted",
@@ -15618,7 +15618,7 @@ window.RUG_ITEMS = [
     "dateEnd": 1875,
     "institution": "National Museum of American History, Smithsonian Institution",
     "identifier": "1994.0305.02",
-    "dimensions": "71 in x 80 in (180.34 x 203.2 cm)",
+    "dimensions": "71 in x 80 in (180 cm x 203 cm)",
     "techniques": [
       "woven",
       "tufted",
@@ -15648,7 +15648,7 @@ window.RUG_ITEMS = [
     "dateEnd": 1825,
     "institution": "National Museum of American History, Smithsonian Institution",
     "identifier": "1979.0795.01",
-    "dimensions": "92 in x 66 1/4 in (233.68 x 168.275 cm)",
+    "dimensions": "92 in x 66.25 in (234 cm x 168 cm)",
     "techniques": [
       "embroidered",
       "tufted"
@@ -15678,7 +15678,7 @@ window.RUG_ITEMS = [
     "institution": "National Museum of American History, Smithsonian Institution",
     "identifier": "2016.0080.01",
     "place": "Georgia",
-    "dimensions": "82 3/8 in x 62 3/4 in (209.2 x 159.4 cm)",
+    "dimensions": "82.38 in x 62.75 in (209.2 cm x 159.4 cm)",
     "materials": [
       "chenille"
     ],
@@ -15710,7 +15710,7 @@ window.RUG_ITEMS = [
     "institution": "National Museum of American History, Smithsonian Institution",
     "identifier": "2016.0367.01",
     "place": "Dalton, Georgia",
-    "dimensions": "96 in x 73 in (243.84 x 185.42 cm)",
+    "dimensions": "96 in x 73 in (244 cm x 185 cm)",
     "materials": [
       "chenille"
     ],
@@ -15742,7 +15742,7 @@ window.RUG_ITEMS = [
     "dateEnd": 1934,
     "institution": "National Museum of American History, Smithsonian Institution",
     "identifier": "2001.0312.065 (Patent number: Des. 90793)",
-    "dimensions": "14 in x 11 in (35.56 x 27.94 cm)",
+    "dimensions": "14 in x 11 in (36 cm x 28 cm)",
     "materials": [
       "cardboard"
     ],
@@ -15771,7 +15771,7 @@ window.RUG_ITEMS = [
     "dateEnd": 1812,
     "institution": "Smithsonian Institution",
     "identifier": "TE.T13670",
-    "dimensions": "74 in x 96 in (187.96 x 243.84 cm)",
+    "dimensions": "74 in x 96 in (188 cm x 244 cm)",
     "techniques": [
       "candlewick"
     ],
@@ -15826,7 +15826,7 @@ window.RUG_ITEMS = [
     "institution": "Museum of Fine Arts, Boston",
     "collection": "M. and M. Karolik Collection of American Watercolors and Drawings, 1800–1875",
     "identifier": "60.869 (Karolik cat. no. 1110)",
-    "dimensions": "Sheet: 20.5 x 18.6 cm (8 1/16 x 7 5/16 in.)",
+    "dimensions": "Sheet: 8.06 in x 7.31 in (20.5 cm x 18.6 cm)",
     "materials": [
       "graphite",
       "watercolor",
@@ -15866,7 +15866,7 @@ window.RUG_ITEMS = [
     "collection": "Europe, Fashion and Textiles (Gift of Robert C. Winthrop)",
     "identifier": "01.12",
     "place": "Spain",
-    "dimensions": "284.5 x 212.6 cm (112 x 83 11/16 in.)",
+    "dimensions": "112 in x 83.69 in (284.5 cm x 212.6 cm)",
     "materials": [
       "cotton"
     ],
@@ -15905,7 +15905,7 @@ window.RUG_ITEMS = [
     "collection": "Loan courtesy of Bell Family Properties, LLC",
     "identifier": "2001-60 (L)",
     "place": "New London, Connecticut",
-    "dimensions": "OW: 86\" x OL: 90\"",
+    "dimensions": "86 in x 90 in (218 cm x 229 cm), overall width by overall length",
     "techniques": [
       "hand-tufted",
       "cut pile",
