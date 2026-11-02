@@ -9641,10 +9641,9 @@ window.RUG_ITEMS = [
     "imageCredit": "vandewiele.com (image from vandewiele.com)",
     "imagePage": "https://vandewiele.com/about-vandewiele-group/history-of-vandewiele",
     "imageSource": "auto",
-    "directory": "commercial",
     "listing": "Tufting machines, founded in Chattanooga, now part of Vandewiele, Blackburn",
     "website": "https://www.cobble.co.uk/",
-    "reviewedAt": "2026-11-02T13:37:22.209Z",
+    "reviewedAt": "2026-11-02T13:49:34.975Z",
     "listingCountry": "United Kingdom"
   },
   {
@@ -9676,10 +9675,9 @@ window.RUG_ITEMS = [
     "image": "https://cdn.prod.website-files.com/5f32c9823a88d84a78781478/663d91411dc86f3272be301b_Tuftco%20Domotex%202024%20Large.jpeg",
     "imageCredit": "Tuftco",
     "imageSource": "auto",
-    "directory": "commercial",
     "listing": "Tufting machines, Chattanooga",
     "website": "https://www.tuftco.com/",
-    "reviewedAt": "2026-11-02T13:37:22.209Z"
+    "reviewedAt": "2026-11-02T13:49:34.975Z"
   },
   {
     "id": "co-card-monroe",
@@ -9711,10 +9709,9 @@ window.RUG_ITEMS = [
     "image": "https://cdn.prod.website-files.com/64744a6a3b93e3b39727c509/64f88be5b95f975874ebf4b1_Greg%20Headshot.jpg",
     "imageCredit": "Card-Monroe Corp. (CMC)",
     "imageSource": "auto",
-    "directory": "commercial",
     "listing": "Tufting machines, Chattanooga",
     "website": "https://www.cardmonroe.com/",
-    "reviewedAt": "2026-11-02T13:37:22.209Z"
+    "reviewedAt": "2026-11-02T13:49:34.975Z"
   },
   {
     "id": "co-groz-beckert",
@@ -9742,10 +9739,9 @@ window.RUG_ITEMS = [
     "status": "unverified",
     "confidence": "solid",
     "rights": "not-requested",
-    "directory": "commercial",
     "listing": "Tufting needles and gauge parts, Albstadt",
     "website": "https://www.groz-beckert.com/",
-    "reviewedAt": "2026-11-02T13:37:22.209Z"
+    "reviewedAt": "2026-11-02T13:49:34.975Z"
   },
   {
     "id": "co-obeetee",
@@ -10899,8 +10895,7 @@ window.RUG_ITEMS = [
     "imageCredit": "Hofmann Handtuft-Technik GmbH",
     "imageSource": "auto",
     "gallery": true,
-    "reviewedAt": "2026-11-02T13:37:22.209Z",
-    "directory": "commercial",
+    "reviewedAt": "2026-11-02T13:49:34.975Z",
     "listing": "Hand-tufting guns, Nördlingen",
     "website": "https://hofmann-handtuft.de/"
   },
@@ -11016,8 +11011,7 @@ window.RUG_ITEMS = [
     "imageCredit": "Tuft the World",
     "imageSource": "auto",
     "gallery": true,
-    "reviewedAt": "2026-11-02T13:37:22.209Z",
-    "directory": "commercial",
+    "reviewedAt": "2026-11-02T13:49:34.975Z",
     "listing": "Tufting supplies, workshops and studio, Philadelphia (the author's firm)",
     "website": "https://tufttheworld.com/"
   },
@@ -12717,9 +12711,8 @@ window.RUG_ITEMS = [
     "confidence": "suggestive",
     "imageSource": "rejected",
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-Inmi9FdE96qCCQPksu4EEEX_wnP-dN1lKmWBq9RMPE253eDOvNi4NykZ&s=10",
-    "reviewedAt": "2026-11-02T13:37:22.209Z",
+    "reviewedAt": "2026-11-02T13:49:34.975Z",
     "gallery": true,
-    "directory": "commercial",
     "listing": "Robotic tufting machines (Robotuft)",
     "website": "https://efab.de/"
   },
@@ -16120,13 +16113,12 @@ window.RUG_ITEMS = [
     "sourceUrl": "https://www.werk.com.cn/",
     "image": "images/own/uploads/u-mvss1boffo03b-mvss21k2.jpg",
     "rights": "own",
-    "reviewedAt": "2026-11-02T13:37:22.209Z",
+    "reviewedAt": "2026-11-02T13:49:34.975Z",
     "description": "Werk machine at Tuft the World, Philadelphia",
     "gallery": true,
     "place": "Philadelphia",
     "region": "China",
     "confidence": "solid",
-    "directory": "commercial",
     "listing": "CNC tufting machines",
     "website": "https://www.werk.com.cn/",
     "listingName": "Werk"
@@ -16315,8 +16307,7 @@ window.RUG_ITEMS = [
       }
     ],
     "gallery": true,
-    "reviewedAt": "2026-11-02T13:37:22.209Z",
-    "directory": "commercial",
+    "reviewedAt": "2026-11-02T13:49:34.976Z",
     "listing": "Tufting shop, studio and supplies, Osaka",
     "website": "https://rugmatag.com/",
     "listingName": "Rugmatag"
