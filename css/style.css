@@ -887,3 +887,10 @@ a.linkish { text-decoration: underline; text-underline-offset: .2em; }
 @media (max-width: 900px) { .ms-figs:has(> .margin:only-child) { float: none; width: auto; max-width: 22rem; margin: 0 0 1.2em; } }
 .ins-which { display: grid; gap: 6px; }
 .ins-which .ins-pic { width: 104px; height: 80px; }
+
+/* The record form's "Site directory" group, and the directory line in the drawer. */
+.dir-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 16px; margin: 0; padding: 12px 14px 14px; border: 1px solid var(--line); border-radius: var(--r); }
+.dir-fields legend { padding: 0 6px; font-size: var(--t-sm); font-weight: 650; color: var(--ink-2); }
+@media (max-width: 860px) { .dir-fields { grid-template-columns: 1fr; } .dir-fields .span2 { grid-column: auto; } }
+.dir-line-d { font-size: var(--t-sm); color: var(--ink-2); margin: 10px 0 0; overflow-wrap: anywhere; }
+.dir-line-d .dir-tag { font-weight: 600; color: var(--ink); }

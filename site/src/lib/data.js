@@ -99,3 +99,35 @@ export const base = p => BASE + p.replace(/^\/+/, "");
 // The full address of a page (the public one, once the site has its domain), and of a picture.
 export const canonical = p => CANONICAL + p.replace(/^\/+/, "");
 export const absolute = src => (/^https?:/.test(src) ? src : new URL(src, SITE).href);
+
+// ---------- the directory: firms, studios and artists tufting now ----------
+// A record joins the Directory page when the research tool marks it "commercial" or "artist". Countries
+// come from the record's region (or listingCountry, where a firm now works somewhere else), grouped here.
+const REGION_OF = {
+  "United States": "North America", Canada: "North America", Mexico: "Latin America", Brazil: "Latin America", Argentina: "Latin America", Peru: "Latin America",
+  "United Kingdom": "Europe", Ireland: "Europe", France: "Europe", Belgium: "Europe", Netherlands: "Europe", Germany: "Europe", Switzerland: "Europe", Sweden: "Europe",
+  Denmark: "Europe", Norway: "Europe", Finland: "Europe", Spain: "Europe", Portugal: "Europe", Italy: "Europe", Poland: "Europe", Austria: "Europe",
+  Japan: "Asia", China: "Asia", "Hong Kong": "Asia", Taiwan: "Asia", "South Korea": "Asia", Korea: "Asia", Thailand: "Asia", Vietnam: "Asia", India: "Asia", Nepal: "Asia", Pakistan: "Asia", Indonesia: "Asia", Philippines: "Asia",
+  Australia: "Oceania", "New Zealand": "Oceania",
+  Egypt: "Middle East and Africa", Turkey: "Middle East and Africa", Morocco: "Middle East and Africa", Iran: "Middle East and Africa", "South Africa": "Middle East and Africa", "United Arab Emirates": "Middle East and Africa"
+};
+export const REGION_ORDER = ["North America", "Latin America", "Europe", "Asia", "Oceania", "Middle East and Africa", "Elsewhere"];
+export const DIRECTORY_KINDS = [
+  ["commercial", "Commercial and professional", "Manufacturers, workshops and studios making to order, and the makers of tufting machines, tools and supplies."],
+  ["artist", "Artists and studios", "Artists and small studios working with tufting guns and needles."]
+];
+export const directoryCountry = it => it.listingCountry || it.region || "Not recorded";
+export const directoryRegion = it => REGION_OF[directoryCountry(it)] || "Elsewhere";
+export const directoryName = it => it.listingName || it.title.split(/: | \(/)[0];
+export const slug = s => s.toLowerCase().normalize("NFKD").replace(/[^\w]+/g, "-").replace(/^-|-$/g, "");
+// A social link as words: "Instagram @handle", "TikTok @handle", or the site's name.
+export function socialLabel(url) {
+  let u; try { u = new URL(url); } catch { return url; }
+  const host = u.hostname.replace(/^www\./, ""), first = u.pathname.split("/").filter(Boolean)[0] || "";
+  const NAMES = { "instagram.com": "Instagram", "tiktok.com": "TikTok", "youtube.com": "YouTube", "facebook.com": "Facebook", "linkedin.com": "LinkedIn", "pinterest.com": "Pinterest", "x.com": "X", "twitter.com": "X", "threads.net": "Threads", "vimeo.com": "Vimeo", "behance.net": "Behance" };
+  const name = NAMES[host];
+  if (!name) return host;
+  const h = first.replace(/^@/, "");
+  return h && !["company", "channel", "user", "c", "in"].includes(h) ? `${name} @${h}` : name;
+}
+export const websiteLabel = url => { try { return new URL(url).hostname.replace(/^www\./, ""); } catch { return url; } };

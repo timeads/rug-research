@@ -4926,7 +4926,11 @@ window.RUG_ITEMS = [
     "image": "https://shawfloors.widen.net/content/x2u53obpom/webp/Intricate%20Trace-5E587-00106-River%20Birch-model-v-1.webp?w=2048&position=c&color=ffffffff&quality=80&u=k2mbls",
     "imageCredit": "shawfloors.com (image from shawfloors.com)",
     "imagePage": "https://shawfloors.com/why-shaw/about-us/shaw-timeline",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "directory": "commercial",
+    "listing": "Tufted broadloom carpet and flooring, Dalton, Georgia",
+    "website": "https://shawinc.com/",
+    "reviewedAt": "2026-11-02T13:37:22.208Z"
   },
   {
     "id": "co-mohawk",
@@ -4953,7 +4957,11 @@ window.RUG_ITEMS = [
     "status": "unverified",
     "image": "https://mohawkind.com/_images/about/our-growth-story/hero2.jpg",
     "imageCredit": "Mohawk Industries",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "directory": "commercial",
+    "listing": "Flooring group, from woven carpet to tufted, Calhoun, Georgia",
+    "website": "https://mohawkind.com/",
+    "reviewedAt": "2026-11-02T13:37:22.208Z"
   },
   {
     "id": "co-delos",
@@ -4980,7 +4988,10 @@ window.RUG_ITEMS = [
     "imageCredit": "Delos (The Delos Company)",
     "imageSource": "auto",
     "gallery": true,
-    "reviewedAt": "2026-10-31T23:07:57.008Z"
+    "reviewedAt": "2026-11-02T13:37:22.208Z",
+    "directory": "commercial",
+    "listing": "Custom rugs, robotic and hand-tufted, Calhoun, Georgia",
+    "website": "https://thedeloscompany.com/"
   },
   {
     "id": "co-floor-story",
@@ -5011,7 +5022,10 @@ window.RUG_ITEMS = [
     "imageCredit": "FLOOR_STORY",
     "imageSource": "auto",
     "gallery": true,
-    "reviewedAt": "2026-10-30T22:56:30.724Z"
+    "reviewedAt": "2026-11-02T13:37:22.208Z",
+    "directory": "commercial",
+    "listing": "Rugs made with designers, London",
+    "website": "https://www.floorstory.co.uk/"
   },
   {
     "id": "co-scott-group",
@@ -5039,7 +5053,10 @@ window.RUG_ITEMS = [
     "imageCredit": "Scott Group Studio",
     "imageSource": "auto",
     "gallery": true,
-    "reviewedAt": "2026-10-30T22:56:30.724Z"
+    "reviewedAt": "2026-11-02T13:37:22.208Z",
+    "directory": "commercial",
+    "listing": "Custom hand-tufted carpets and rugs, Grand Rapids, Michigan",
+    "website": "https://scottgroupstudio.com/"
   },
   {
     "id": "co-creative-accents",
@@ -5067,7 +5084,10 @@ window.RUG_ITEMS = [
     "imageCredit": "Creative Accents",
     "imageSource": "auto",
     "gallery": true,
-    "reviewedAt": "2026-10-30T22:56:30.724Z"
+    "reviewedAt": "2026-11-02T13:37:22.208Z",
+    "directory": "commercial",
+    "listing": "Custom hand-tufted rugs, California",
+    "website": "https://creativeaccents.com/"
   },
   {
     "id": "co-kramis",
@@ -5097,7 +5117,10 @@ window.RUG_ITEMS = [
     "imagePage": "https://monocle.com/business/manufacturing/swiss-carpet-kramis-rugs/",
     "imageSource": "auto",
     "gallery": true,
-    "reviewedAt": "2026-10-30T22:56:30.724Z"
+    "reviewedAt": "2026-11-02T13:37:22.209Z",
+    "directory": "commercial",
+    "listing": "Bespoke hand-tufted rugs, Altbüron, Lucerne",
+    "website": "https://www.kramis-teppich.ch/"
   },
   {
     "id": "co-jaipur",
@@ -5126,7 +5149,10 @@ window.RUG_ITEMS = [
     "imageCredit": "Jaipur Living / Jaipur Rugs",
     "imageSource": "auto",
     "gallery": true,
-    "reviewedAt": "2026-10-30T22:56:30.724Z"
+    "reviewedAt": "2026-11-02T13:37:22.209Z",
+    "directory": "commercial",
+    "listing": "Hand-knotted and hand-tufted rugs, Jaipur and Atlanta",
+    "website": "https://www.jaipurliving.com/"
   },
   {
     "id": "co-tai-ping",
@@ -5155,7 +5181,11 @@ window.RUG_ITEMS = [
     "image": "https://taiping-development.sgp1.digitaloceanspaces.com/images/image_2022-04-24-123453_pukq.jpg",
     "imageCredit": "taipingcarpets.com (image from taipingcarpets.com)",
     "imagePage": "https://www.taipingcarpets.com/collections/atelier-by-fang-collection",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "directory": "commercial",
+    "listing": "Hand-tufted and machine-tufted carpet, Hong Kong",
+    "website": "https://www.taipingcarpets.com/",
+    "reviewedAt": "2026-11-02T13:37:22.209Z"
   },
   {
     "id": "wilton-1741",
@@ -7553,7 +7583,10 @@ window.RUG_ITEMS = [
     "imagePage": "https://nehomemag.com/the-merida-mystique/",
     "imageSource": "auto",
     "gallery": true,
-    "reviewedAt": "2026-10-30T22:56:30.724Z"
+    "reviewedAt": "2026-11-02T13:37:22.208Z",
+    "directory": "commercial",
+    "listing": "Natural-fibre rugs, Fall River, Massachusetts",
+    "website": "https://meridastudio.com/"
   },
   {
     "id": "wint-lib-tariff-brussels",
@@ -8558,7 +8591,11 @@ window.RUG_ITEMS = [
     "image": "https://taiping-development.sgp1.digitaloceanspaces.com/images/Edward-Fields-Heritage-Banner-2.jpg",
     "imageCredit": "Edward Fields",
     "imageSource": "auto",
-    "gallery": true
+    "gallery": true,
+    "directory": "commercial",
+    "listing": "Custom hand-tufted carpet, New York",
+    "website": "https://www.edwardfields.com/",
+    "reviewedAt": "2026-11-02T13:37:22.208Z"
   },
   {
     "id": "co-kasthall",
@@ -8591,7 +8628,11 @@ window.RUG_ITEMS = [
     "image": "http://www.kasthall.com/cdn/shop/files/1200x628_Ida.jpg?v=1775663966",
     "imageCredit": "Kasthall",
     "imageSource": "auto",
-    "gallery": true
+    "gallery": true,
+    "directory": "commercial",
+    "listing": "Woven and hand-tufted rugs, Kinna",
+    "website": "https://www.kasthall.com/",
+    "reviewedAt": "2026-11-02T13:37:22.209Z"
   },
   {
     "id": "co-ceadogan",
@@ -8626,7 +8667,10 @@ window.RUG_ITEMS = [
     "imagePage": "https://www.ceadogan.ie/neadaithe/",
     "imageSource": "auto",
     "gallery": true,
-    "reviewedAt": "2026-10-30T22:56:30.724Z"
+    "reviewedAt": "2026-11-02T13:37:22.208Z",
+    "directory": "commercial",
+    "listing": "Hand-tufted rugs, County Wexford",
+    "website": "https://www.ceadogan.ie/"
   },
   {
     "id": "co-pinton",
@@ -8661,7 +8705,11 @@ window.RUG_ITEMS = [
     "image": "https://www.pinton1867.com/wp-content/uploads/2021/07/felletin_photo_archives1.jpg",
     "imageCredit": "Pinton (Ateliers Pinton)",
     "imageSource": "auto",
-    "gallery": true
+    "gallery": true,
+    "directory": "commercial",
+    "listing": "Tapestry and hand-tufted rugs, Felletin, Creuse",
+    "website": "https://www.pinton1867.com/",
+    "reviewedAt": "2026-11-02T13:37:22.208Z"
   },
   {
     "id": "co-limited-edition",
@@ -8689,7 +8737,11 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "solid",
-    "imageSource": "rejected"
+    "imageSource": "rejected",
+    "directory": "commercial",
+    "listing": "Hand-tufted and woven rugs, Mouscron",
+    "website": "https://www.le.be/",
+    "reviewedAt": "2026-11-02T13:37:22.208Z"
   },
   {
     "id": "co-yamagata-dantsu",
@@ -8723,7 +8775,11 @@ window.RUG_ITEMS = [
     "image": "https://yamagatadantsu.co.jp/login/wp-content/uploads/2022/04/history_ogp.jpg",
     "imageCredit": "Yamagata Dantsu (Oriental Carpet Mills)",
     "imageSource": "auto",
-    "gallery": true
+    "gallery": true,
+    "directory": "commercial",
+    "listing": "Hand-woven and hand-tufted carpet, Yamagata",
+    "website": "https://yamagatadantsu.co.jp/",
+    "reviewedAt": "2026-11-02T13:37:22.209Z"
   },
   {
     "id": "co-designer-rugs",
@@ -8757,7 +8813,10 @@ window.RUG_ITEMS = [
     "imageCredit": "Designer Rugs",
     "imageSource": "auto",
     "gallery": true,
-    "reviewedAt": "2026-10-30T22:56:30.724Z"
+    "reviewedAt": "2026-11-02T13:37:22.209Z",
+    "directory": "commercial",
+    "listing": "Hand-tufted rugs, Sydney",
+    "website": "https://designerrugs.com.au/"
   },
   {
     "id": "co-roger-oates",
@@ -8790,7 +8849,10 @@ window.RUG_ITEMS = [
     "imageCredit": "Roger Oates Design",
     "imageSource": "auto",
     "gallery": true,
-    "reviewedAt": "2026-10-30T22:56:30.724Z"
+    "reviewedAt": "2026-11-02T13:37:22.208Z",
+    "directory": "commercial",
+    "listing": "Flatweave runners and hand-tufted rugs, Herefordshire and Devon",
+    "website": "https://www.rogeroates.com/"
   },
   {
     "id": "co-royal-thai",
@@ -8825,7 +8887,10 @@ window.RUG_ITEMS = [
     "imageCredit": "Royal Thai (Thailand Carpet Manufacturing / TCM Corporation)",
     "imageSource": "auto",
     "gallery": true,
-    "reviewedAt": "2026-10-31T23:07:57.008Z"
+    "reviewedAt": "2026-11-02T13:37:22.209Z",
+    "directory": "commercial",
+    "listing": "Hand-tufted carpet, Bangkok",
+    "website": "https://www.royalthai.com/"
   },
   {
     "id": "co-cabin-crafts",
@@ -8943,7 +9008,11 @@ window.RUG_ITEMS = [
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/About-us-family-owned-british-made.jpg/250px-About-us-family-owned-british-made.jpg",
     "imageCredit": "en.wikipedia.org (image from en.wikipedia.org)",
     "imagePage": "https://en.wikipedia.org/wiki/Cormar_Carpets",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "directory": "commercial",
+    "listing": "Tufted carpet, a family firm, Lancashire",
+    "website": "https://www.cormarcarpets.co.uk/",
+    "reviewedAt": "2026-11-02T13:37:22.208Z"
   },
   {
     "id": "co-interface",
@@ -8974,7 +9043,11 @@ window.RUG_ITEMS = [
     "rights": "not-requested",
     "image": "https://media.interface.com/is/image/interfaceprd/factory%204:c1300x716",
     "imageCredit": "Interface",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "directory": "commercial",
+    "listing": "Carpet tiles, LaGrange and Atlanta, Georgia",
+    "website": "https://www.interface.com/",
+    "reviewedAt": "2026-11-02T13:37:22.208Z"
   },
   {
     "id": "co-milliken",
@@ -9005,7 +9078,11 @@ window.RUG_ITEMS = [
     "rights": "not-requested",
     "image": "https://www.milliken.com/en-us/-/media/milliken/corporate/about-us/history/history_full_screen-1865-1920.jpg",
     "imageCredit": "Milliken & Company (floor covering)",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "directory": "commercial",
+    "listing": "Carpet tiles and floor covering, LaGrange, Georgia",
+    "website": "https://www.milliken.com/",
+    "reviewedAt": "2026-11-02T13:37:22.208Z"
   },
   {
     "id": "co-dixie-group",
@@ -9037,7 +9114,10 @@ window.RUG_ITEMS = [
     "image": "images/own/uploads/co-dixie-group-mvuub0s0.jpg",
     "imageCredit": "DH Home",
     "imagePage": "https://www.facebook.com/DixieHome/",
-    "reviewedAt": "2026-10-30T10:39:10.511Z"
+    "reviewedAt": "2026-11-02T13:37:22.208Z",
+    "directory": "commercial",
+    "listing": "Residential carpet, Chattanooga and Dalton",
+    "website": "https://www.dixiegroup.com/"
   },
   {
     "id": "co-engineered-floors",
@@ -9069,7 +9149,11 @@ window.RUG_ITEMS = [
     "rights": "not-requested",
     "image": "https://res.cloudinary.com/engineeredfloors/image/upload/f_auto,q_auto,w_1920,h_650,c_fill/ef-wp-uploads/2024/11/MODEL_133-Titan-399-Luna-Pearl-.-Lifestyle-4003-Caicos-15.webp",
     "imageCredit": "Engineered Floors",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "directory": "commercial",
+    "listing": "Tufted carpet, Dalton and Calhoun, Georgia",
+    "website": "https://www.engineeredfloors.com/",
+    "reviewedAt": "2026-11-02T13:37:22.208Z"
   },
   {
     "id": "co-ege",
@@ -9101,7 +9185,11 @@ window.RUG_ITEMS = [
     "rights": "not-requested",
     "image": "https://media.ffycdn.net/eu/ege-carpets/uE7cxtA3XRAQ9syTSw6Y.jpg?mod=v1/resize=3840/quality=80",
     "imageCredit": "Ege Carpets (Egetæpper)",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "directory": "commercial",
+    "listing": "Woven and tufted carpet, Herning",
+    "website": "https://www.egecarpets.com/",
+    "reviewedAt": "2026-11-02T13:37:22.209Z"
   },
   {
     "id": "co-object-carpet",
@@ -9133,7 +9221,11 @@ window.RUG_ITEMS = [
     "rights": "not-requested",
     "image": "https://www.object-carpet.com/uploads/media/stage/03/8493-object_carpet_forever_young_titel_neon.jpg?v=1-0",
     "imageCredit": "Object Carpet",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "directory": "commercial",
+    "listing": "Contract broadloom and carpet tiles, Denkendorf and Krefeld",
+    "website": "https://www.object-carpet.com/",
+    "reviewedAt": "2026-11-02T13:37:22.208Z"
   },
   {
     "id": "co-vorwerk",
@@ -9162,7 +9254,10 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "unverified",
-    "imageSource": "rejected"
+    "imageSource": "rejected",
+    "directory": "commercial",
+    "listing": "Woven and tufted carpet, now Hamelner Teppichwerke, Hameln",
+    "reviewedAt": "2026-11-02T13:37:22.208Z"
   },
   {
     "id": "co-desso",
@@ -9195,7 +9290,10 @@ window.RUG_ITEMS = [
     "rights": "not-requested",
     "image": "https://media.tarkett-image.com/large-high/IN_DesertAirMaster_9525-9970_cover.jpg",
     "imageCredit": "Desso (Tarkett)",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "directory": "commercial",
+    "listing": "Commercial carpet tiles and rolls, part of Tarkett",
+    "reviewedAt": "2026-11-02T13:37:22.208Z"
   },
   {
     "id": "co-balta",
@@ -9228,7 +9326,11 @@ window.RUG_ITEMS = [
     "rights": "not-requested",
     "image": "https://www.belysse.com/build/images/brand-cta.cbf23ca1.jpg",
     "imageCredit": "Balta (Belysse / Victoria)",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "directory": "commercial",
+    "listing": "Tufted carpet and soft flooring, now Belysse, West Flanders",
+    "website": "https://www.belysse.com/",
+    "reviewedAt": "2026-11-02T13:37:22.208Z"
   },
   {
     "id": "co-beaulieu",
@@ -9256,7 +9358,11 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "solid",
-    "imageSource": "rejected"
+    "imageSource": "rejected",
+    "directory": "commercial",
+    "listing": "Flooring and fibre group, Waregem",
+    "website": "https://www.beaulieu.com/",
+    "reviewedAt": "2026-11-02T13:37:22.208Z"
   },
   {
     "id": "co-victoria",
@@ -9290,7 +9396,11 @@ window.RUG_ITEMS = [
     "image": "https://d39d6i0wpcpox8.cloudfront.net/assets/images/vcl-static/hero/victoria-history-factory.jpg",
     "imageCredit": "Victoria PLC (Victoria Carpets)",
     "imageSource": "auto",
-    "gallery": true
+    "gallery": true,
+    "directory": "commercial",
+    "listing": "Tufted and woven carpet, Worcester",
+    "website": "https://www.victoriacarpets.com/",
+    "reviewedAt": "2026-11-02T13:37:22.208Z"
   },
   {
     "id": "co-godfrey-hirst",
@@ -9322,7 +9432,11 @@ window.RUG_ITEMS = [
     "rights": "not-requested",
     "image": "https://res.cloudinary.com/gh/image/upload/v1/apps/gh-web/pages/products/photography/hero",
     "imageCredit": "Godfrey Hirst",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "directory": "commercial",
+    "listing": "Wool carpet, Geelong",
+    "website": "https://www.godfreyhirst.com/",
+    "reviewedAt": "2026-11-02T13:37:22.209Z"
   },
   {
     "id": "co-suminoe",
@@ -9354,7 +9468,11 @@ window.RUG_ITEMS = [
     "rights": "not-requested",
     "image": "https://cdn.shopify.com/s/files/1/0678/8392/5817/files/img_showroom_OSAKA.jpg?v=20250908",
     "imageCredit": "Suminoe (Suminoe Textile Co.)",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "directory": "commercial",
+    "listing": "Tufted carpet and carpet tiles, Osaka",
+    "website": "https://suminoe.jp/",
+    "reviewedAt": "2026-11-02T13:37:22.209Z"
   },
   {
     "id": "co-oriental-weavers",
@@ -9387,7 +9505,11 @@ window.RUG_ITEMS = [
     "image": "https://www.fcnews.net/wp-content/webpc-passthru.php?src=https://www.fcnews.net/wp-content/uploads/2020/09/Mohamed-Farid-Khamis-Oriental-Weavers-founder.jpg&nocache=1",
     "imageCredit": "fcnews.net (image from fcnews.net)",
     "imagePage": "https://www.fcnews.net/2020/09/obituary-mohamed-farid-khamis-oriental-weavers-founder/",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "directory": "commercial",
+    "listing": "Machine-woven rugs, with tufting through MAC Carpet, near Cairo",
+    "website": "https://orientalweavers.com/",
+    "reviewedAt": "2026-11-02T13:37:22.209Z"
   },
   {
     "id": "co-merinos",
@@ -9446,7 +9568,11 @@ window.RUG_ITEMS = [
     "rights": "not-requested",
     "image": "https://www.hdcarpets.com/u_file/1808/photo/725c28caed.jpg",
     "imageCredit": "Huade Carpet Group",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "directory": "commercial",
+    "listing": "Machine-tufted carpet and carpet tiles, Zhengzhou",
+    "website": "https://www.hdcarpets.com/",
+    "reviewedAt": "2026-11-02T13:37:22.209Z"
   },
   {
     "id": "co-welspun-flooring",
@@ -9477,7 +9603,11 @@ window.RUG_ITEMS = [
     "rights": "not-requested",
     "image": "https://welspunflooring.com/images/about/banner.webp",
     "imageCredit": "Welspun Flooring",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "directory": "commercial",
+    "listing": "Carpet tiles and broadloom, Hyderabad",
+    "website": "https://welspunflooring.com/",
+    "reviewedAt": "2026-11-02T13:37:22.209Z"
   },
   {
     "id": "co-cobble",
@@ -9510,7 +9640,12 @@ window.RUG_ITEMS = [
     "image": "https://vandewiele.com/public/shared/offices/_1200x630_crop_center-center_82_none/17.52.jpg?mtime=1685024426",
     "imageCredit": "vandewiele.com (image from vandewiele.com)",
     "imagePage": "https://vandewiele.com/about-vandewiele-group/history-of-vandewiele",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "directory": "commercial",
+    "listing": "Tufting machines, founded in Chattanooga, now part of Vandewiele, Blackburn",
+    "website": "https://www.cobble.co.uk/",
+    "reviewedAt": "2026-11-02T13:37:22.209Z",
+    "listingCountry": "United Kingdom"
   },
   {
     "id": "co-tuftco",
@@ -9540,7 +9675,11 @@ window.RUG_ITEMS = [
     "rights": "not-requested",
     "image": "https://cdn.prod.website-files.com/5f32c9823a88d84a78781478/663d91411dc86f3272be301b_Tuftco%20Domotex%202024%20Large.jpeg",
     "imageCredit": "Tuftco",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "directory": "commercial",
+    "listing": "Tufting machines, Chattanooga",
+    "website": "https://www.tuftco.com/",
+    "reviewedAt": "2026-11-02T13:37:22.209Z"
   },
   {
     "id": "co-card-monroe",
@@ -9571,7 +9710,11 @@ window.RUG_ITEMS = [
     "rights": "not-requested",
     "image": "https://cdn.prod.website-files.com/64744a6a3b93e3b39727c509/64f88be5b95f975874ebf4b1_Greg%20Headshot.jpg",
     "imageCredit": "Card-Monroe Corp. (CMC)",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "directory": "commercial",
+    "listing": "Tufting machines, Chattanooga",
+    "website": "https://www.cardmonroe.com/",
+    "reviewedAt": "2026-11-02T13:37:22.209Z"
   },
   {
     "id": "co-groz-beckert",
@@ -9598,7 +9741,11 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "solid",
-    "rights": "not-requested"
+    "rights": "not-requested",
+    "directory": "commercial",
+    "listing": "Tufting needles and gauge parts, Albstadt",
+    "website": "https://www.groz-beckert.com/",
+    "reviewedAt": "2026-11-02T13:37:22.209Z"
   },
   {
     "id": "co-obeetee",
@@ -9633,7 +9780,10 @@ window.RUG_ITEMS = [
     "imageCredit": "Obeetee",
     "imageSource": "auto",
     "gallery": true,
-    "reviewedAt": "2026-10-30T22:56:30.724Z"
+    "reviewedAt": "2026-11-02T13:37:22.209Z",
+    "directory": "commercial",
+    "listing": "Hand-knotted and hand-tufted rugs, Mirzapur",
+    "website": "https://www.obeetee.in/"
   },
   {
     "id": "co-hands",
@@ -9666,7 +9816,11 @@ window.RUG_ITEMS = [
     "rights": "not-requested",
     "image": "https://cdn.shopify.com/s/files/1/0755/3017/4762/files/all-carpets-thumb.jpg",
     "imageCredit": "Hands (Hands Carpets / Patodia Exports)",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "directory": "commercial",
+    "listing": "Handmade rugs, Bhadohi",
+    "website": "https://handscarpets.com/",
+    "reviewedAt": "2026-11-02T13:37:22.209Z"
   },
   {
     "id": "co-kaleen-india",
@@ -9695,7 +9849,11 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "solid",
-    "rights": "not-requested"
+    "rights": "not-requested",
+    "directory": "commercial",
+    "listing": "Hand-knotted, hand-tufted and power-loom rugs, Panipat, Mirzapur and Bikaner",
+    "website": "https://www.kaleen.com/",
+    "reviewedAt": "2026-11-02T13:37:22.209Z"
   },
   {
     "id": "co-surya",
@@ -9725,7 +9883,10 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "solid",
-    "imageSource": "rejected"
+    "imageSource": "rejected",
+    "directory": "commercial",
+    "listing": "Hand-tufted, hand-knotted and flatweave rugs, Bhadohi area and Georgia",
+    "reviewedAt": "2026-11-02T13:37:22.209Z"
   },
   {
     "id": "pat-ch214147a",
@@ -10738,7 +10899,10 @@ window.RUG_ITEMS = [
     "imageCredit": "Hofmann Handtuft-Technik GmbH",
     "imageSource": "auto",
     "gallery": true,
-    "reviewedAt": "2026-10-30T22:56:30.724Z"
+    "reviewedAt": "2026-11-02T13:37:22.209Z",
+    "directory": "commercial",
+    "listing": "Hand-tufting guns, Nördlingen",
+    "website": "https://hofmann-handtuft.de/"
   },
   {
     "id": "pat-us3968758a",
@@ -10852,7 +11016,10 @@ window.RUG_ITEMS = [
     "imageCredit": "Tuft the World",
     "imageSource": "auto",
     "gallery": true,
-    "reviewedAt": "2026-10-30T22:56:30.724Z"
+    "reviewedAt": "2026-11-02T13:37:22.209Z",
+    "directory": "commercial",
+    "listing": "Tufting supplies, workshops and studio, Philadelphia (the author's firm)",
+    "website": "https://tufttheworld.com/"
   },
   {
     "id": "book-tuft-the-world-2024",
@@ -12550,8 +12717,11 @@ window.RUG_ITEMS = [
     "confidence": "suggestive",
     "imageSource": "rejected",
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-Inmi9FdE96qCCQPksu4EEEX_wnP-dN1lKmWBq9RMPE253eDOvNi4NykZ&s=10",
-    "reviewedAt": "2026-10-30T22:56:30.724Z",
-    "gallery": true
+    "reviewedAt": "2026-11-02T13:37:22.209Z",
+    "gallery": true,
+    "directory": "commercial",
+    "listing": "Robotic tufting machines (Robotuft)",
+    "website": "https://efab.de/"
   },
   {
     "id": "co-carpet-sign",
@@ -12581,7 +12751,10 @@ window.RUG_ITEMS = [
     "confidence": "solid",
     "image": "https://interiordesign.net/wp-content/uploads/2021/06/special_k_main_image.jpg",
     "imageCredit": "Carpet Sign",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "directory": "commercial",
+    "listing": "Rugs tufted by robot, Asten",
+    "reviewedAt": "2026-11-02T13:37:22.208Z"
   },
   {
     "id": "finding-cnc-european-robotufting-studios",
@@ -15947,12 +16120,16 @@ window.RUG_ITEMS = [
     "sourceUrl": "https://www.werk.com.cn/",
     "image": "images/own/uploads/u-mvss1boffo03b-mvss21k2.jpg",
     "rights": "own",
-    "reviewedAt": "2026-10-30T22:46:55.861Z",
+    "reviewedAt": "2026-11-02T13:37:22.209Z",
     "description": "Werk machine at Tuft the World, Philadelphia",
     "gallery": true,
     "place": "Philadelphia",
     "region": "China",
-    "confidence": "solid"
+    "confidence": "solid",
+    "directory": "commercial",
+    "listing": "CNC tufting machines",
+    "website": "https://www.werk.com.cn/",
+    "listingName": "Werk"
   },
   {
     "id": "process-felt-definition",
@@ -16100,8 +16277,16 @@ window.RUG_ITEMS = [
     "description": "SIMJI is a textile artist, content creator, and \"rugfluencer.\" She shares her popular rug tufting videos with millions of viewers around the world on TikTok, YouTube, and other social media outlets @simjiofficial. Born in South Korea and raised in Los Angeles, SIMJI creates fun and intricate pop culture–inspired pieces, pet portraits, food-related rugs, and much more. Recognizing the need for relatable and entertaining rug-making content, SIMJI pioneered a new approach toward reaching and educating aspiring rug tufters. By combining her passion for rug making with an entertainment-based perspective, SIMJI successfully bridges the gap between artistry and audience, captivating viewers with her unique content and expanding her influence within the industry and beyond.",
     "sourceUrl": "https://simjishop.com/?srsltid=AYCX9vLDpGVp4JsSDOUKziT2_YRZEgvALkj8SJRrJqSk4A0NSgp138Bg",
     "image": "https://simjishop.com/cdn/shop/files/Studio2LASIS0076.jpg?v=1731094827&width=1070",
-    "reviewedAt": "2026-10-31T23:07:57.008Z",
-    "gallery": true
+    "reviewedAt": "2026-11-02T13:37:22.209Z",
+    "gallery": true,
+    "directory": "artist",
+    "listing": "Tufted rugs and tufting videos, Los Angeles",
+    "website": "https://simjishop.com/",
+    "listingName": "SIMJI",
+    "social": [
+      "https://www.instagram.com/simjiofficial/"
+    ],
+    "region": "United States"
   },
   {
     "id": "u-mvvp8s248uf95",
@@ -16130,7 +16315,11 @@ window.RUG_ITEMS = [
       }
     ],
     "gallery": true,
-    "reviewedAt": "2026-10-31T01:05:24.566Z"
+    "reviewedAt": "2026-11-02T13:37:22.209Z",
+    "directory": "commercial",
+    "listing": "Tufting shop, studio and supplies, Osaka",
+    "website": "https://rugmatag.com/",
+    "listingName": "Rugmatag"
   },
   {
     "id": "artist-trish-andersen-press",
@@ -16156,7 +16345,14 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "solid",
-    "reviewedAt": "2026-10-31T12:12:35.593Z"
+    "reviewedAt": "2026-11-02T13:37:22.209Z",
+    "directory": "artist",
+    "listing": "Tufted rugs and fibre art, Savannah, Georgia",
+    "website": "https://www.trishandersenstudio.com/",
+    "listingName": "Trish Andersen",
+    "social": [
+      "https://www.instagram.com/trishandersenart/"
+    ]
   },
   {
     "id": "artist-david-nott",
@@ -16181,7 +16377,13 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "solid",
-    "reviewedAt": "2026-10-31T12:12:35.593Z"
+    "reviewedAt": "2026-11-02T13:37:22.209Z",
+    "directory": "artist",
+    "listing": "Tufted and carved textile works, Boston",
+    "listingName": "David Nott",
+    "social": [
+      "https://www.instagram.com/davidnott/"
+    ]
   },
   {
     "id": "book-rug-tufting-with-simji-2024",
@@ -16235,9 +16437,16 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "suggestive",
-    "reviewedAt": "2026-10-31T23:07:57.008Z",
+    "reviewedAt": "2026-11-02T13:37:22.209Z",
     "image": "https://thatwasmadebymatty.com/cdn/shop/files/Pantone_Chart_Rug_Web.jpg?v=1792241056&width=2000",
-    "gallery": true
+    "gallery": true,
+    "directory": "artist",
+    "listing": "Satirical products and tufted rugs, Vermont",
+    "website": "https://unnecessaryinventions.com/",
+    "listingName": "Unnecessary Inventions (Matty Benedetto)",
+    "social": [
+      "https://www.instagram.com/unnecessaryinventions/"
+    ]
   },
   {
     "id": "artist-melissa-monroe",
@@ -16261,11 +16470,17 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "solid",
-    "reviewedAt": "2026-10-31T19:27:18.397Z",
+    "reviewedAt": "2026-11-02T13:37:22.209Z",
     "image": "images/own/uploads/artist-melissa-monroe-mvwsm1z2.jpg",
     "imageCredit": "Melissa Monroe",
     "gallery": true,
-    "rights": "own"
+    "rights": "own",
+    "directory": "artist",
+    "listing": "Hand-tufted sculpture and furniture, Portland, Oregon",
+    "listingName": "Melissa Monroe",
+    "social": [
+      "https://www.instagram.com/melissamonroeart/"
+    ]
   },
   {
     "id": "artist-qualeasha-wood",
@@ -16289,10 +16504,16 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "solid",
-    "reviewedAt": "2026-10-31T23:07:57.008Z",
+    "reviewedAt": "2026-11-02T13:37:22.209Z",
     "image": "https://superfluousthings.com/cdn/shop/files/To_Catch_a_Predator_install_2023.jpg?v=1710184654&width=1920",
     "imageCredit": "Qualeasha Wood",
-    "gallery": true
+    "gallery": true,
+    "directory": "artist",
+    "listing": "Tufted and woven tapestries, Brooklyn",
+    "listingName": "Qualeasha Wood",
+    "social": [
+      "https://www.instagram.com/qualeasha/"
+    ]
   },
   {
     "id": "finding-ttw-artist-relations",
@@ -16339,7 +16560,13 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "solid",
-    "reviewedAt": "2026-10-31T12:15:57.649Z"
+    "reviewedAt": "2026-11-02T13:37:22.209Z",
+    "directory": "artist",
+    "listing": "Hand-tufted rugs, founded 2020",
+    "listingName": "Madeline Ronzoni, Happy Rugs",
+    "social": [
+      "https://www.instagram.com/happy.rugs/"
+    ]
   },
   {
     "id": "artist-venus-perez",
@@ -16365,7 +16592,13 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "suggestive",
-    "reviewedAt": "2026-10-31T19:30:51.557Z"
+    "reviewedAt": "2026-11-02T13:37:22.209Z",
+    "directory": "artist",
+    "listing": "Sculpted punch-needle and tufted pile, San Diego",
+    "listingName": "Venus Perez",
+    "social": [
+      "https://www.instagram.com/fun.n.rec/"
+    ]
   },
   {
     "id": "event-tuftcon-2023",

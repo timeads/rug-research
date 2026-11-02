@@ -1,0 +1,61 @@
+---
+// The directory: firms, studios and artists tufting now, by kind, then region and country. Each entry is a
+// record marked "commercial" or "artist" in the research tool, with its website and social links.
+import Base from "../layouts/Base.astro";
+import { db, base, REGION_ORDER, DIRECTORY_KINDS, directoryCountry, directoryRegion, directoryName, socialLabel, websiteLabel, slug } from "../lib/data.js";
+
+const { items } = db();
+const kinds = DIRECTORY_KINDS.map(([kind, name, intro]) => {
+  const list = items.filter(it => it.directory === kind);
+  const regions = REGION_ORDER.map(region => {
+    const inRegion = list.filter(it => directoryRegion(it) === region);
+    const countries = [...new Set(inRegion.map(directoryCountry))].sort((a, b) => a.localeCompare(b))
+      .map(country => ({ country, entries: inRegion.filter(it => directoryCountry(it) === country).sort((a, b) => directoryName(a).localeCompare(directoryName(b))) }));
+    return { region, id: `${kind}-${slug(region)}`, count: inRegion.length, countries };
+  }).filter(r => r.count);
+  return { kind, name, intro, count: list.length, regions };
+}).filter(k => k.count);
+const links = it => [
+  ...(it.website ? [{ href: it.website, label: websiteLabel(it.website) }] : []),
+  ...(Array.isArray(it.social) ? it.social : []).filter(Boolean).map(href => ({ href, label: socialLabel(href) }))
+];
+---
+<Base title="Directory · A History of Tufted Rugs" description="Firms, studios and artists tufting today, by region and country, with their websites and social media." current="directory" shade="var(--ink)">
+  <header class="page-head">
+    <h1>Directory</h1>
+    <p>Firms, studios and artists tufting today, by region and country. Each name opens its record and the sources behind it; websites and social media are the makers' own. Tuft the World, listed under the United States, is the author's firm.</p>
+  </header>
+  <div class="wrap bib dir">
+    <nav class="bib-nav" aria-label="Sections of the directory">
+      {kinds.map(k => <>
+        <a class="chip dir-kind" href={`#${k.kind}`}>{k.name} · {k.count}</a>
+        {k.regions.map(r => <a class="chip dir-reg" href={`#${r.id}`}>{r.region} · {r.count}</a>)}
+      </>)}
+    </nav>
+    <div class="bib-list">
+      {kinds.map(k => (
+        <section id={k.kind}>
+          <h2>{k.name} <small>{k.count}</small></h2>
+          <p class="dir-intro">{k.intro}</p>
+          {k.regions.map(r => (
+            <div class="dir-region" id={r.id}>
+              <h3>{r.region}</h3>
+              {r.countries.map(c => (
+                <div class="dir-country">
+                  <h4>{c.country}</h4>
+                  <ol>{c.entries.map(it => (
+                    <li>
+                      <span class="c"><a class="dir-name" href={base(`records/${it.id}/`)}>{directoryName(it)}</a>{it.listing && <span class="dir-line">{it.listing}</span>}</span>
+                      <span class="meta">{links(it).map(l => <a class="more" href={l.href} rel="noopener" target="_blank">{l.label}</a>)}</span>
+                    </li>
+                  ))}</ol>
+                </div>
+              ))}
+            </div>
+          ))}
+        </section>
+      ))}
+      {!kinds.length && <p class="g-empty">No one has been added to the directory yet.</p>}
+    </div>
+  </div>
+</Base>

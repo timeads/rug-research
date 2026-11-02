@@ -297,6 +297,9 @@ Timeline filters and bibliography jumps: sheet fill, card-edge border, 2px corne
 ### Gallery
 Pictures chosen in the research tool (a record's `gallery` mark, `galleryImage` for one of its photos), oldest first, dealt left to right into up to four columns of about 18rem (CSS columns without scripts). Each picture is mounted on a sheet card with a hairline edge and 2px corner, the record's title (Archivo 600) and date and holder (ink-3) under it, and "Permission pending" where it applies. The card lifts 2px on hover; a picture that fails to load is taken out. Chapter chips above filter by the chapters that cite each record.
 
+### Directory
+Firms, studios and artists tufting today, from records marked "commercial" or "artist" in the research tool. Laid out as the bibliography: on wide screens the two kinds and their regions as a list that stays in view to the left; each region (Archivo 650) splits into countries, each under an uppercase Archivo label on a 2px ink rule. An entry is its name (Archivo 620, linking to the record) over one line in Literata, with the website and social links (named from the link: "Instagram @handle") in the margin column. On narrow screens the region chips are hidden and the links sit under the entry. Record pages of listed makers add website, social and "In the directory" buttons.
+
 ### Chapters Card
 A sheet with a card-edge border and 2px corner; its head (title plus a count of ready and in-preparation chapters) sits over a 2px ink rule; rows divided by hairlines. Hovering a ready row underlines its title.
 

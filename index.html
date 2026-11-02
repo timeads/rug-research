@@ -278,6 +278,21 @@
             <option value="refuted">Refuted</option>
           </select>
         </label>
+        <fieldset class="span2 dir-fields">
+          <legend>Site directory</legend>
+          <label>Listed under
+            <select name="directory">
+              <option value="">Not in the directory</option>
+              <option value="commercial">Commercial and professional</option>
+              <option value="artist">Artists and studios</option>
+            </select>
+          </label>
+          <label>Name in the directory <input name="listingName" placeholder="Leave blank to use the title"></label>
+          <label class="span2">One line about them <input name="listing" placeholder="Custom hand-tufted rugs, Grand Rapids, Michigan"><small>Shown under the name. Draw it from the record.</small></label>
+          <label>Website <input name="website" type="url" placeholder="https://"></label>
+          <label>Country, if not the one above <input name="listingCountry" list="dl-region" placeholder="Where they work now"></label>
+          <label class="span2">Social media <textarea name="socialText" rows="2" placeholder="One link per line, e.g. https://www.instagram.com/handle/"></textarea><small>Instagram, TikTok, YouTube and others are named on the site from the link.</small></label>
+        </fieldset>
         <label class="span2">Description <textarea name="description" rows="4"></textarea></label>
         <label class="span2">Quotation in the original language <textarea name="originalText" rows="2"></textarea></label>
         <label>Language code <input name="language" placeholder="ja, zh-Hans, hi, de…"></label>

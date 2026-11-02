@@ -1,7 +1,7 @@
 ---
 // One page per record: its picture (or a bookcloth plate), the facts, the citation and where it is cited.
 import Base from "../../layouts/Base.astro";
-import { db, cloth, imageUrl, imageCleared, publicDomainTag, citation, base } from "../../lib/data.js";
+import { db, cloth, imageUrl, imageCleared, publicDomainTag, citation, base, socialLabel, websiteLabel, directoryRegion, slug } from "../../lib/data.js";
 import { citedIndex } from "../../lib/cited.js";
 
 export async function getStaticPaths() {
@@ -13,6 +13,9 @@ const citedIn = (await citedIndex())[it.id] || [];
 const TYPE = { finding: "Research finding", patent: "Patent", company: "Company", object: "Object", image: "Image", archive: "Archive", article: "Article", book: "Book", event: "Event", film: "Film or audio", "trade-catalog": "Trade catalogue", tool: "Tool", "oral-history": "Oral history", institution: "Institution", yarn: "Yarn" };
 const facts = [["Made by", it.creator], ["Date", it.date], ["Place", it.place], ["Held by", it.institution], ["Collection", it.collection], ["Number", it.identifier], ["Publisher", it.publisher], ["Materials", it.materials.join(", ")], ["Size", it.dimensions], ["Themes", it.themes.join(", ")]].filter(([, v]) => v);
 const shade = cloth(it.themes[0]);
+// Directory entries: the maker's own website and social media, and a way back to the Directory page.
+const social = (Array.isArray(it.social) ? it.social : []).filter(Boolean);
+const dirAnchor = it.directory ? `directory/#${it.directory}-${slug(directoryRegion(it))}` : "";
 const img = it.image && !it.image.startsWith("idb:") ? it.image : "";
 // More photos of the same thing (a tool, its box, its instructions): a strip under the picture.
 const gallery = (Array.isArray(it.images) ? it.images : []).filter(g => g && g.src && !String(g.src).startsWith("idb:"));
@@ -36,6 +39,11 @@ const description = [`${TYPE[it.type] || "Source"}: ${it.title.replace(/^(REFUTE
         {it.sourceUrl && <a class="btn primary" href={it.sourceUrl} rel="noopener">View at the source</a>}
         {citedIn.map(c => <a class="btn" href={base(`chapters/${c.slug}/#ref-${c.ns[0]}`)}>Cited in chapter {c.number}, note{c.ns.length > 1 ? "s" : ""} {c.ns.join(", ")}</a>)}
       </div>
+      {(it.website || social.length || dirAnchor) && <div class="btns rec-links">
+        {it.website && <a class="btn" href={it.website} rel="noopener" target="_blank">Website: {websiteLabel(it.website)}</a>}
+        {social.map(u => <a class="btn" href={u} rel="noopener" target="_blank">{socialLabel(u)}</a>)}
+        {dirAnchor && <a class="btn" href={base(dirAnchor)}>In the directory</a>}
+      </div>}
       </div>
       <div class="rec-read">
       <h2>Cite this source</h2>
