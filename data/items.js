@@ -16394,5 +16394,14 @@ window.RUG_ITEMS = [
     "imageCredit": "whyy.org",
     "imageSource": "auto",
     "gallery": true
+  },
+  {
+    "id": "u-mvyjj0jgz1c5k",
+    "type": "film",
+    "status": "verified",
+    "title": "Marguerite Stewart interview with Burl Jackson “Jack” Bandy and Altha Sue Quinton Gordon (part two)",
+    "sourceUrl": "https://dlg.usg.edu/record/geh_p17222coll18_584",
+    "imageCredit": "John Burrison Georgia Folklore Archives Collection",
+    "reviewedAt": "2026-11-02T00:49:06.198Z"
   }
 ];
