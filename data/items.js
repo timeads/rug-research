@@ -17169,5 +17169,321 @@ window.RUG_ITEMS = [
     "social": [
       "https://www.instagram.com/miyoshirug/"
     ]
+  },
+  {
+    "id": "artist-felicia-murray",
+    "type": "finding",
+    "title": "Felicia Murray: tufted fibre art, rugs and installations, Portland, Oregon",
+    "creator": "Felicia Murray",
+    "place": "Portland, Oregon, United States",
+    "region": "United States",
+    "description": "Fibre artist whose pieces 'employ a variety of techniques including yarn, tufting, needle felting'; taught tufting for Portland Textile Month 2024.\nCaveat: Handle felicia_murray named in a summary, URL not seen.\nFound by web search for the site's Directory (searches of 7 Nov 2026, chosen by the author the same day). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://luxesource.com/oregon-fiber-artist-felicia-murray/ · https://www.textilex.org/event/tufting-workshop-with-felicia-murray-at-elle-gallery-shop/",
+    "sourceUrl": "https://luxesource.com/oregon-fiber-artist-felicia-murray/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "artist",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-07T16:45:47.569Z",
+    "directory": "artist",
+    "listing": "Tufted fibre art, rugs and installations, Portland, Oregon",
+    "listingName": "Felicia Murray"
+  },
+  {
+    "id": "artist-meg-little",
+    "type": "finding",
+    "title": "Meg Little: hand-tufted geometric wool rugs since 1990, Rhode Island",
+    "creator": "Meg Little",
+    "place": "Middletown, Rhode Island, United States",
+    "region": "United States",
+    "description": "Hand tufter since 1990 (Homo Faber 2026): geometric looped-pile wool rugs; learned hand tufting in Cornwall; shows at the American Craft Council and the PMA Craft Show.\nCaveat: Also a history lead: hand-tufting before the gun craze. Handle not found.\nFound by web search for the site's Directory (searches of 7 Nov 2026, chosen by the author the same day). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://www.homofaber.com/en/artisans/meg_little-tufting-middletown_ri · https://www.craftcouncil.org/show/artist/meg-little?show=69770 · https://www.pmacraftshow.org/artist/fiber-decorative/2024/meg-little",
+    "sourceUrl": "https://www.homofaber.com/en/artisans/meg_little-tufting-middletown_ri",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "artist",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-07T16:45:47.569Z",
+    "directory": "artist",
+    "listing": "Hand-tufted geometric wool rugs since 1990, Rhode Island",
+    "listingName": "Meg Little"
+  },
+  {
+    "id": "co-magic-carpets-denver",
+    "type": "company",
+    "title": "Magic Carpets: tufting classes and rugs, Denver",
+    "creator": "Magic Carpets",
+    "place": "Denver, United States",
+    "region": "United States",
+    "description": "Beginner tufting class in the RiNo Art District; 'AJ is the artist and educator behind Magic Carpets'.\nCaveat: Handle not found.\nFound by web search for the site's Directory (searches of 7 Nov 2026, chosen by the author the same day). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://rinoartdistrict.org/do/rug-tufting-workshop",
+    "sourceUrl": "https://rinoartdistrict.org/do/rug-tufting-workshop",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "workshop",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-07T16:45:47.569Z",
+    "directory": "artist",
+    "listing": "Tufting classes and rugs, Denver",
+    "listingName": "Magic Carpets"
+  },
+  {
+    "id": "co-tuftest-class-atlanta",
+    "type": "company",
+    "title": "The Tuftest Class In Town: rug-making classes, Atlanta",
+    "creator": "The Tuftest Class In Town",
+    "place": "Atlanta, United States",
+    "region": "United States",
+    "description": "'Atlanta Rug Making Class', N Highland Ave.\nFound by web search for the site's Directory (searches of 7 Nov 2026, chosen by the author the same day). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://www.instagram.com/thetuftestguyintown/",
+    "sourceUrl": "https://www.instagram.com/thetuftestguyintown/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "workshop",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-07T16:45:47.569Z",
+    "directory": "artist",
+    "listing": "Rug-making classes, Atlanta",
+    "listingName": "The Tuftest Class In Town",
+    "social": [
+      "https://www.instagram.com/thetuftestguyintown/"
+    ]
+  },
+  {
+    "id": "co-vera-art-studio",
+    "type": "company",
+    "title": "Vera Art Studio: rug tufting and craft workshops, Philadelphia",
+    "creator": "Vera Art Studio",
+    "place": "Philadelphia, United States",
+    "region": "United States",
+    "description": "2.5-hour design-and-tuft sessions at Billy Penn Studios, 1516 N 5th St; also mosaic lamps, glass painting and more.\nCaveat: Multi-craft studio; Instagram match inferred.\nFound by web search for the site's Directory (searches of 7 Nov 2026, chosen by the author the same day). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://assets.classbento.com/vera-art-studio · https://www.instagram.com/veraartstudio.us/",
+    "sourceUrl": "https://assets.classbento.com/vera-art-studio",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "workshop",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-07T16:45:47.569Z",
+    "directory": "artist",
+    "listing": "Rug tufting and craft workshops, Philadelphia",
+    "listingName": "Vera Art Studio",
+    "social": [
+      "https://www.instagram.com/veraartstudio.us/"
+    ]
+  },
+  {
+    "id": "co-capel-rugs",
+    "type": "company",
+    "title": "Capel Rugs: hand-tufted, hand-knotted, flatwoven and braided rugs",
+    "creator": "Capel Rugs",
+    "place": "United States",
+    "region": "United States",
+    "description": "Hand-tufted, hand-knotted, flatwoven and braided rugs. Tufting confirmed: Mesa and Persia hand-tufted (High Point 2025).\nTrade shows: High Point Market, 2025 (https://www.rugnews.com/news-archives/capel-showcases-new-dynamic-highvalue-handtufts-at-9512); Las Vegas Market, 2025 (https://www.homeaccentstoday.com/rugs/looking-ahead-to-las-vegas-rug-report).\nFound by web search for the site's Directory (searches of 7 Nov 2026, chosen by the author the same day). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://www.rugnews.com/news-archives/capel-showcases-new-dynamic-highvalue-handtufts-at-9512 · https://www.homeaccentstoday.com/rugs/looking-ahead-to-las-vegas-rug-report",
+    "sourceUrl": "https://www.rugnews.com/news-archives/capel-showcases-new-dynamic-highvalue-handtufts-at-9512",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "trade show",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-07T16:45:47.569Z",
+    "directory": "commercial",
+    "listing": "Hand-tufted, hand-knotted, flatwoven and braided rugs",
+    "listingName": "Capel Rugs"
+  },
+  {
+    "id": "co-carpet-edition",
+    "type": "company",
+    "title": "Carpet Edition: hand-tufted carpets and wall hangings",
+    "creator": "Carpet Edition",
+    "place": "Germany",
+    "region": "Germany",
+    "description": "Hand-tufted carpets and wall hangings; Lustrous collection from the Ken Scott archive. Tufting confirmed: 'a collection of hand-tufted carpets and wall-hangings' (Salone).\nTrade shows: Salone del Mobile.Milano, undated listing (catalogue 'collection 2025') (https://lb.salonemilano.it/en/prodotti/carpet-edition/lustrous-carpets).\nCaveat: Show year to confirm.\nFound by web search for the site's Directory (searches of 7 Nov 2026, chosen by the author the same day). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://lb.salonemilano.it/en/prodotti/carpet-edition/lustrous-carpets",
+    "sourceUrl": "https://lb.salonemilano.it/en/prodotti/carpet-edition/lustrous-carpets",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "trade show",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-07T16:45:47.569Z",
+    "directory": "commercial",
+    "listing": "Hand-tufted carpets and wall hangings",
+    "listingName": "Carpet Edition"
+  },
+  {
+    "id": "co-feizy",
+    "type": "company",
+    "title": "Feizy: area rugs, including hand-tufted collections",
+    "creator": "Feizy",
+    "place": "United States",
+    "region": "United States",
+    "description": "Area rugs. Tufting confirmed: Kawai and Belfort hand-tufted lines.\nTrade shows: Las Vegas Market, 2025 (https://www.rugnews.com/news-archives/the-essential-rug-buyers-guide-to-las-vegas-market-9432); High Point Market, 2025 (https://www.rugnews.com/news-archives/hpmkt-trend-alert-handtufted-rugs-are-having-a-mom-9530).\nFound by web search for the site's Directory (searches of 7 Nov 2026, chosen by the author the same day). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://www.rugnews.com/news-archives/the-essential-rug-buyers-guide-to-las-vegas-market-9432 · https://www.rugnews.com/news-archives/hpmkt-trend-alert-handtufted-rugs-are-having-a-mom-9530",
+    "sourceUrl": "https://www.rugnews.com/news-archives/the-essential-rug-buyers-guide-to-las-vegas-market-9432",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "trade show",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-07T16:45:47.569Z",
+    "directory": "commercial",
+    "listing": "Area rugs, including hand-tufted collections",
+    "listingName": "Feizy"
+  },
+  {
+    "id": "co-gan-rugs",
+    "type": "company",
+    "title": "GAN: design-led handmade rugs, hand-tufted since 1990",
+    "creator": "GAN",
+    "place": "Spain",
+    "region": "Spain",
+    "description": "Handmade design rugs and accessories. Tufting confirmed: GIRO hand-tufted (NYCxDesign Award 2023).\nThe group's timeline dates its 'first collection of hand-tufted rugs' to 1990, made in India; Salone del Mobile 2025 (group stand by Kengo Kuma) and Maison&Objet 2026 (Botanica rugs).\nTrade shows: NYCxDesign Awards, 2023 (https://www.rugnews.com/news-archives/gan-takes-home-2023-nycxdesign-award-in-residentia-8916); HD Expo, 2025 (https://hdexpo.hospitalitydesign.com/?p=148239).\nFound by web search for the site's Directory (searches of 7 Nov 2026, chosen by the author the same day). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://www.rugnews.com/news-archives/gan-takes-home-2023-nycxdesign-award-in-residentia-8916 · https://hdexpo.hospitalitydesign.com/?p=148239 · https://www.gandiablasco.com/en//gandia-blasco-group/ · https://www.bodosperlein.com/journal/maisonobjet2026",
+    "sourceUrl": "https://www.rugnews.com/news-archives/gan-takes-home-2023-nycxdesign-award-in-residentia-8916",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "trade show",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-07T16:45:47.569Z",
+    "directory": "commercial",
+    "listing": "Design-led handmade rugs, hand-tufted since 1990",
+    "listingName": "GAN"
+  },
+  {
+    "id": "co-loloi",
+    "type": "company",
+    "title": "Loloi: area rugs, including hand-tufted collections",
+    "creator": "Loloi",
+    "place": "United States",
+    "region": "United States",
+    "description": "Area rugs and pillows. Tufting confirmed: hand-tufted Penny collection (Rug News, Las Vegas 2025).\nTrade shows: Las Vegas Market, 2025 (https://www.rugnews.com/news-archives/loloi-debuts-nine-new-collections-across-weaves-st-9448); High Point Market, 2025 (https://www.rugnews.com/news-archives/celebrity-designer-leanne-ford-introduces-rugs-by-9645).\nFound by web search for the site's Directory (searches of 7 Nov 2026, chosen by the author the same day). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://www.rugnews.com/news-archives/loloi-debuts-nine-new-collections-across-weaves-st-9448 · https://www.rugnews.com/news-archives/celebrity-designer-leanne-ford-introduces-rugs-by-9645",
+    "sourceUrl": "https://www.rugnews.com/news-archives/loloi-debuts-nine-new-collections-across-weaves-st-9448",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "trade show",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-07T16:45:47.569Z",
+    "directory": "commercial",
+    "listing": "Area rugs, including hand-tufted collections",
+    "listingName": "Loloi"
+  },
+  {
+    "id": "co-nanimarquina",
+    "type": "company",
+    "title": "nanimarquina: design-led handmade rugs, Barcelona",
+    "creator": "nanimarquina",
+    "place": "Barcelona, Spain",
+    "region": "Spain",
+    "description": "Design-led handmade rugs. Tufting confirmed: Lucia Eames collection with 'sculptural tufting'; Tones and Hayon rugs hand-tufted.\nTrade shows: Milan Design Week / Salone, 2026 (https://nanimarquina.com/en/blogs/magazine/nanimarquina-en-milan-design-week).\nFound by web search for the site's Directory (searches of 7 Nov 2026, chosen by the author the same day). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://nanimarquina.com/en/blogs/magazine/nanimarquina-en-milan-design-week · https://hypebeast.com/2026/3/lucia-eames-rugs-collection-nanimarquina-release-info",
+    "sourceUrl": "https://nanimarquina.com/en/blogs/magazine/nanimarquina-en-milan-design-week",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "trade show",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-07T16:45:47.569Z",
+    "directory": "commercial",
+    "listing": "Design-led handmade rugs, Barcelona",
+    "listingName": "nanimarquina",
+    "website": "https://us.nanimarquina.com/"
+  },
+  {
+    "id": "co-stark",
+    "type": "company",
+    "title": "Stark: broadloom and rugs, hand-tufted and hand-knotted, New York",
+    "creator": "Stark",
+    "place": "New York, United States",
+    "region": "United States",
+    "description": "Broadloom and rugs, hand-tufted and hand-knotted; Missoni licence. Tufting confirmed: Missoni Iconic hand-tufted (Rug News).\nTrade shows: COVER Connect New York, 2023 (https://rugnews.com/news-archives/cover-connect-expands-rug-roster-with-at-least-37-8985).\nFound by web search for the site's Directory (searches of 7 Nov 2026, chosen by the author the same day). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://rugnews.com/news-archives/cover-connect-expands-rug-roster-with-at-least-37-8985 · https://www.rugnews.com/news-archives/stark-expands-collaboration-with-fashion-house-mis-9315",
+    "sourceUrl": "https://rugnews.com/news-archives/cover-connect-expands-rug-roster-with-at-least-37-8985",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "trade show",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-07T16:45:47.569Z",
+    "directory": "commercial",
+    "listing": "Broadloom and rugs, hand-tufted and hand-knotted, New York",
+    "listingName": "Stark"
+  },
+  {
+    "id": "co-superfluous-things",
+    "type": "company",
+    "title": "Superfluous Things: custom tufted rugs, Philadelphia",
+    "creator": "Superfluous Things (Tuft the World)",
+    "date": "established 2018 (1stDibs)",
+    "dateStart": 2018,
+    "place": "Philadelphia, Pennsylvania",
+    "region": "United States",
+    "description": "The custom-rug brand of Tuft the World, the author's firm; listed on the site with that disclosure. The 1stDibs dealer page 'Superfluous / Tuft the World' gives it as established in 2018 and a 1stDibs seller since 2025; its listings describe a brand 'started… to carry rugs and other high-quality home goods', made in Philadelphia, among them Bauhaus-inspired wool rugs named after Dessau and Weimar designs.\nFound by web search, 7 Nov 2026; pages not opened. Website from the author.\nSources: https://www.1stdibs.com/dealers/superfluous--tuft-the-world · https://www.1stdibs.com/furniture/rugs-carpets/north-south-american/modern-bauhaus-inspired-rug-geometric-design-pattern-name-dessau-192501/id-f_44739272",
+    "sourceUrl": "https://www.1stdibs.com/dealers/superfluous--tuft-the-world",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "the author's firm",
+      "directory"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-07T16:45:47.569Z",
+    "directory": "commercial",
+    "listing": "Custom tufted rugs, Philadelphia (the author's business)",
+    "listingName": "Superfluous Things",
+    "website": "https://superfluousthings.com/"
   }
 ];
