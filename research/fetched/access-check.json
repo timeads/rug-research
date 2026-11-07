@@ -1,5 +1,5 @@
 {
- "checkedAt": "2026-10-27T21:41:47.296Z",
+ "checkedAt": "2026-11-03T18:09:40.753Z",
  "robots": {
   "https://museumcollection.winterthur.org": {
    "status": "allows",
@@ -19,7 +19,7 @@
   },
   "https://digital.hagley.org": {
    "status": "allows",
-   "aiBlocks": true
+   "aiBlocks": false
   },
   "https://findingaids.hagley.org": {
    "status": "allows",
@@ -85,16 +85,20 @@
    "status": "none (403)",
    "aiBlocks": false
   },
-  "https://origin-www.alibris.com": {
-   "status": "unreachable",
-   "error": "fetch failed"
+  "https://openlibrary.org": {
+   "status": "allows",
+   "aiBlocks": true
   },
   "https://ugapress.org": {
    "status": "disallows all tools",
    "aiBlocks": true
   },
   "https://eh.net": {
-   "status": "allows",
+   "status": "none (502)",
+   "aiBlocks": false
+  },
+  "https://doi.org": {
+   "status": "none (404)",
    "aiBlocks": false
   },
   "https://dcp-production-container.library.cornell.edu": {
@@ -113,7 +117,7 @@
    "status": "allows",
    "aiBlocks": false
   },
-  "https://www.rughookingmagazine.com": {
+  "https://welikerughooking.com": {
    "status": "allows",
    "aiBlocks": false
   },
@@ -153,9 +157,9 @@
    "status": "allows",
    "aiBlocks": false
   },
-  "https://discovery.nypl.org": {
-   "status": "unreachable",
-   "error": "fetch failed"
+  "https://www.nypl.org": {
+   "status": "allows",
+   "aiBlocks": true
   },
   "https://asme.org": {
    "status": "allows",
@@ -190,8 +194,8 @@
    "aiBlocks": false
   },
   "https://www.dhu.edu.cn": {
-   "status": "none (404)",
-   "aiBlocks": false
+   "status": "unreachable",
+   "error": "fetch failed"
   },
   "https://m.chinabgao.com": {
    "status": "allows",
@@ -201,16 +205,16 @@
    "status": "allows",
    "aiBlocks": false
   },
-  "https://www.ihchina.cn": {
-   "status": "unreachable",
-   "error": "fetch failed"
+  "https://web.archive.org": {
+   "status": "none (404)",
+   "aiBlocks": false
   },
   "https://epaper.tianjinwe.com": {
    "status": "none (404)",
    "aiBlocks": false
   },
   "https://www.tianjiangcarpet.com": {
-   "status": "allows",
+   "status": "none (404)",
    "aiBlocks": false
   },
   "https://finance.sina.com.cn": {
@@ -222,8 +226,8 @@
    "aiBlocks": false
   },
   "https://epaper.oeeee.com": {
-   "status": "none (404)",
-   "aiBlocks": false
+   "status": "unreachable",
+   "error": "fetch failed"
   },
   "https://www.hongkongheritage.org": {
    "status": "none (403)",
@@ -301,10 +305,6 @@
    "status": "allows",
    "aiBlocks": false
   },
-  "http://www.carpet.or.jp": {
-   "status": "allows",
-   "aiBlocks": false
-  },
   "https://dewiki.de": {
    "status": "allows",
    "aiBlocks": false
@@ -326,8 +326,8 @@
    "aiBlocks": false
   },
   "https://nkie.nankai.edu.cn": {
-   "status": "none (404)",
-   "aiBlocks": false
+   "status": "unreachable",
+   "error": "fetch failed"
   },
   "https://m.sohu.com": {
    "status": "disallows all tools",
@@ -407,15 +407,11 @@
   },
   "https://wiltoncarpets.com": {
    "status": "allows",
-   "aiBlocks": false
+   "aiBlocks": true
   },
-  "https://gracesguide.co.uk": {
-   "status": "unreachable",
-   "error": "fetch failed"
-  },
-  "https://www.nps.gov": {
+  "https://www.gracesguide.co.uk": {
    "status": "allows",
-   "aiBlocks": false
+   "aiBlocks": true
   },
   "https://www.britannica.com": {
    "status": "allows",
@@ -481,7 +477,7 @@
    "status": "allows",
    "aiBlocks": false
   },
-  "https://materialbank.eu": {
+  "https://www.le.be": {
    "status": "allows",
    "aiBlocks": false
   },
@@ -505,9 +501,9 @@
    "status": "allows",
    "aiBlocks": false
   },
-  "https://cormarcarpets.co.uk": {
-   "status": "unreachable",
-   "error": "fetch failed"
+  "https://www.cormarcarpets.co.uk": {
+   "status": "allows",
+   "aiBlocks": false
   },
   "https://www.interface.com": {
    "status": "allows",
@@ -534,7 +530,7 @@
    "aiBlocks": false
   },
   "https://museumhameln.de": {
-   "status": "none (423)",
+   "status": "allows",
    "aiBlocks": false
   },
   "https://professionals.tarkett.co.uk": {
@@ -621,7 +617,7 @@
    "status": "allows",
    "aiBlocks": false
   },
-  "https://revolutionaryplayers.org.uk": {
+  "https://www.revolutionaryplayers.org.uk": {
    "status": "allows",
    "aiBlocks": false
   },
@@ -661,17 +657,9 @@
    "status": "allows",
    "aiBlocks": false
   },
-  "https://www.nypl.org": {
-   "status": "allows",
-   "aiBlocks": true
-  },
-  "https://prod.british-history.ac.uk": {
-   "status": "none (401)",
-   "aiBlocks": false
-  },
   "https://www.huguenotsofspitalfields.org": {
-   "status": "unreachable",
-   "error": "fetch failed"
+   "status": "allows",
+   "aiBlocks": false
   },
   "https://axminsterheritage.org": {
    "status": "allows",
@@ -701,10 +689,6 @@
    "status": "allows",
    "aiBlocks": false
   },
-  "https://highlights.paper.edu.cn": {
-   "status": "none (502)",
-   "aiBlocks": false
-  },
   "https://global.chinadaily.com.cn": {
    "status": "none (404)",
    "aiBlocks": false
@@ -713,7 +697,7 @@
    "status": "allows",
    "aiBlocks": false
   },
-  "https://heimtextil.messefrankfurt.com": {
+  "https://efab.de": {
    "status": "allows",
    "aiBlocks": false
   },
@@ -729,17 +713,13 @@
    "status": "allows",
    "aiBlocks": false
   },
-  "https://builds.openbuilds.com": {
-   "status": "unreachable",
-   "error": "fetch failed"
-  },
   "https://technical.ly": {
    "status": "allows",
    "aiBlocks": false
   },
-  "https://www.kicktraq.com": {
+  "https://www.baijing.cn": {
    "status": "allows",
-   "aiBlocks": true
+   "aiBlocks": false
   },
   "https://depts.washington.edu": {
    "status": "allows",
@@ -754,8 +734,8 @@
    "aiBlocks": false
   },
   "https://www.famsf.org": {
-   "status": "none (403)",
-   "aiBlocks": false
+   "status": "allows",
+   "aiBlocks": true
   },
   "https://collectionstories.museum.gwu.edu": {
    "status": "allows",
@@ -781,17 +761,13 @@
    "status": "allows",
    "aiBlocks": false
   },
-  "https://historymuseum.ca": {
-   "status": "allows",
-   "aiBlocks": false
-  },
   "https://textilemuseum.ca": {
    "status": "allows",
    "aiBlocks": false
   },
-  "https://collection.artbma.org": {
-   "status": "unreachable",
-   "error": "fetch failed"
+  "https://artbma.org": {
+   "status": "allows",
+   "aiBlocks": true
   },
   "https://shakermuseum.us": {
    "status": "allows",
@@ -805,7 +781,75 @@
    "status": "allows",
    "aiBlocks": false
   },
-  "https://zimmer-austria.com": {
+  "https://commons.wikimedia.org": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://tufttheworld.com": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://www.dayangcm.com": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://album.atlantahistorycenter.com": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://emuseum.history.org": {
+   "status": "none (403)",
+   "aiBlocks": false
+  },
+  "https://www.werk.com.cn": {
+   "status": "unreachable",
+   "error": "fetch failed"
+  },
+  "https://www.trishandersenstudio.com": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://simjishop.com": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://rugmatag.com": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://cover-magazine.com": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://coolcuration.com": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://www.quarto.com": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://unnecessaryinventions.com": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://craftcouncil.org": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://hypebae.com": {
+   "status": "allows",
+   "aiBlocks": true
+  },
+  "https://businessofhome.com": {
+   "status": "allows",
+   "aiBlocks": true
+  },
+  "https://www.punchneedleworld.com": {
+   "status": "allows",
+   "aiBlocks": false
+  },
+  "https://whyy.org": {
    "status": "allows",
    "aiBlocks": false
   }
@@ -1142,11 +1186,12 @@
   },
   {
    "id": "book-mckinstry-trade-catalogues",
-   "title": "Trade Catalogues at Winterthur: A Guide to the Literature of Merchandising, 1750 to 1980",
-   "url": "https://origin-www.alibris.com/Trade-Catlgs-Winterthur-Richard-E-McKinstry/book/11606707",
-   "verdict": "unreachable",
-   "error": "UND_ERR_CONNECT_TIMEOUT",
-   "robots": "unreachable"
+   "title": "Trade Catalogues at Winterthur (1993) by E. Richard McKinstry | Open Library",
+   "url": "https://openlibrary.org/works/OL2649034W",
+   "verdict": "ok (moved)",
+   "status": 200,
+   "moved": "https://openlibrary.org/works/OL2649034W/Trade_Catalogues_at_Winterthur",
+   "robots": "allows"
   },
   {
    "id": "book-patton-carpet-capital",
@@ -1157,11 +1202,63 @@
   },
   {
    "id": "article-patton-ehnet",
-   "title": "",
+   "title": "502 Bad Gateway",
    "url": "https://eh.net/encyclopedia/a-history-of-the-u-s-carpet-industry/",
-   "verdict": "bot check",
-   "status": 202,
+   "verdict": "server error (502)",
+   "status": 502,
+   "robots": "none (502)"
+  },
+  {
+   "id": "book-deaton-bedspreads-broadloom",
+   "title": "Bedspreads to Broadloom (1994) by Deaton | Open Library",
+   "url": "https://openlibrary.org/works/OL8896555W",
+   "verdict": "ok (moved)",
+   "status": 200,
+   "moved": "https://openlibrary.org/works/OL8896555W/Bedspreads_to_Broadloom",
    "robots": "allows"
+  },
+  {
+   "id": "book-reynolds-innovation-1968",
+   "title": "Innovation in the United States Carpet Industry 1947-1963 : william a. reynolds : Free Download, Bor",
+   "url": "https://archive.org/details/innovationinunit0000will",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "book-ewing-norton-broadlooms-1955",
+   "title": "Broadlooms and businessmen : a history of the Bigelow-Sanford Carpet Company : Ewing, John S : Free ",
+   "url": "https://archive.org/details/broadloomsbusine0000ewin",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "article-mcgregor-maxey-1974",
+   "title": "Project MUSE -- Verification required!",
+   "url": "https://doi.org/10.1353/sgo.1974.0010",
+   "verdict": "bot check",
+   "status": 200,
+   "moved": "https://muse.jhu.edu/verify?url=%2Farticle%2F430656&r=3330509",
+   "robots": "none (404)"
+  },
+  {
+   "id": "article-walters-wheeler-1984",
+   "title": "Client Challenge",
+   "url": "https://doi.org/10.2307/214099",
+   "verdict": "ok (moved)",
+   "status": 200,
+   "moved": "https://www.jstor.org/stable/214099?origin=crossref",
+   "robots": "none (404)"
+  },
+  {
+   "id": "book-georgia-women-whitener-2014",
+   "title": "",
+   "url": "https://doi.org/10.1515/9780820376134-006",
+   "verdict": "ok (moved)",
+   "status": 202,
+   "moved": "https://www.degruyterbrill.com/document/doi/10.1515/9780820376134-006/html",
+   "robots": "none (404)"
   },
   {
    "id": "archive-bandy-deaton",
@@ -1287,10 +1384,9 @@
   {
    "id": "article-rughooking-winterthur",
    "title": "Readers Gallery: Hooked Rugs of Winterthur - We Like Rug Hooking",
-   "url": "https://www.rughookingmagazine.com/Rug-Hooking-Articles/Hooked-Rugs-of-Winterthur",
-   "verdict": "ok (moved)",
+   "url": "https://welikerughooking.com/readers-gallery/hooked-rugs-of-winterthur/",
+   "verdict": "ok",
    "status": 200,
-   "moved": "https://welikerughooking.com/readers-gallery/hooked-rugs-of-winterthur/",
    "robots": "allows"
   },
   {
@@ -1423,11 +1519,11 @@
   },
   {
    "id": "book-bed-ruggs-1972",
-   "title": "Bed Ruggs/1722–1833",
-   "url": "https://discovery.nypl.org/research/research-catalog/bib/b10248634",
-   "verdict": "unreachable",
-   "error": "ENOTFOUND",
-   "robots": "unreachable"
+   "title": "Bed ruggs/1722-1833. | Item Details | Research Catalog | NYPL",
+   "url": "https://www.nypl.org/research/research-catalog/bib/b10248634",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
   },
   {
    "id": "book-ulrich-age-of-homespun",
@@ -1446,11 +1542,10 @@
   },
   {
    "id": "hf-00-1510-19",
-   "title": "",
-   "url": "https://www.thehenryford.org/collections-and-research/digital-collections/artifact/66143/",
-   "verdict": "gone (not found)",
-   "status": 404,
-   "moved": "https://www.thehenryford.org/collections/digital-collections/artifact/66143",
+   "title": "Artifact",
+   "url": "https://www.thehenryford.org/collections/explore/artifact/66143",
+   "verdict": "ok",
+   "status": 200,
    "robots": "allows"
   },
   {
@@ -1554,14 +1649,14 @@
    "url": "https://www.dhu.edu.cn/2015/0309/c18935a59358/page.htm",
    "verdict": "unreachable",
    "error": "ETIMEDOUT",
-   "robots": "none (404)"
+   "robots": "unreachable"
   },
   {
    "id": "ner-cn-imports-2025",
-   "title": "2025年03月份簇绒地毯织机进口数据统计(84479011)_报告大厅",
+   "title": "China still imports high-end tufting machines",
    "url": "https://m.chinabgao.com/stat/stats/67490776.html",
-   "verdict": "ok",
-   "status": 200,
+   "verdict": "unreachable",
+   "error": "The operation was aborted due to timeout",
    "robots": "allows"
   },
   {
@@ -1582,11 +1677,12 @@
   },
   {
    "id": "ner-cn-palace-carpet",
-   "title": "Beijing palace carpet weaving: state-listed heritage \"in danger of being lost\"",
-   "url": "https://www.ihchina.cn/project_details/14500",
-   "verdict": "unreachable",
-   "error": "UND_ERR_CONNECT_TIMEOUT",
-   "robots": "unreachable"
+   "title": "地毯织造技艺（北京宫毯织造技艺） - 中国非物质文化遗产网·中国非物质文化遗产数字博物馆 - 中国非物质文化遗产网非遗",
+   "url": "https://web.archive.org/web/20250920054023/https://www.ihchina.cn/project_details/14500",
+   "verdict": "ok (moved)",
+   "status": 200,
+   "moved": "https://web.archive.org/web/20250918005003/https://www.ihchina.cn/project_details/14500",
+   "robots": "none (404)"
   },
   {
    "id": "ner-cn-beijing-export",
@@ -1610,7 +1706,7 @@
    "url": "https://www.tianjiangcarpet.com/news/2017-11-02/217.html",
    "verdict": "ok",
    "status": 200,
-   "robots": "allows"
+   "robots": "none (404)"
   },
   {
    "id": "ner-cn-cuihuangkou",
@@ -1650,7 +1746,7 @@
    "url": "https://epaper.oeeee.com/epaper/G/html/2022-11/14/content_27066.htm",
    "verdict": "ok",
    "status": 200,
-   "robots": "none (404)"
+   "robots": "unreachable"
   },
   {
    "id": "ner-hk-taiping-needle",
@@ -1862,11 +1958,11 @@
   },
   {
    "id": "ner-jp-industry-history-2008",
-   "title": "ページが見つかりませんでした &#8211; 日本カーペット工業組合",
-   "url": "http://www.carpet.or.jp/publics/index/95/detail=1/c_id=524/page524=1",
-   "verdict": "gone (not found)",
-   "status": 404,
-   "robots": "allows"
+   "title": "組合発行書籍のご案内",
+   "url": "https://web.archive.org/web/20251017034058/http://www.carpet.or.jp/publics/index/95/detail=1/c_id=524/page524=1",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "none (404)"
   },
   {
    "id": "ner-de-outsiders-1959",
@@ -1927,11 +2023,11 @@
   },
   {
    "id": "ner-chase-tianjin-primary",
-   "title": "方显廷回忆在南开大学经济研究所的事业与生活",
+   "title": "《天津地毯工業》 Republican-era Chinese primary source (scan)",
    "url": "https://nkie.nankai.edu.cn/2017/0502/c11716a121465/page.htm",
-   "verdict": "ok",
-   "status": 200,
-   "robots": "none (404)"
+   "verdict": "unreachable",
+   "error": "ETIMEDOUT",
+   "robots": "unreachable"
   },
   {
    "id": "ner-chase-sohu-series",
@@ -2014,6 +2110,22 @@
    "id": "pat-us3142276a",
    "title": "US3142276A - Device for forming cut pile fabrics and the like - Google Patents",
    "url": "https://patents.google.com/patent/US3142276A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us3968757a",
+   "title": "US3968757A - Rug-tufting device suitable for home use by hobyists - Google Patents",
+   "url": "https://patents.google.com/patent/US3968757A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-us4011823a",
+   "title": "US4011823A - Tufting tool for even stitching - Google Patents",
+   "url": "https://patents.google.com/patent/US4011823A/en",
    "verdict": "ok",
    "status": 200,
    "robots": "allows"
@@ -2177,19 +2289,19 @@
   {
    "id": "hagley-film-opening-door-1959",
    "title": "Verifying Connection",
-   "url": "https://digital.hagley.org/",
+   "url": "https://digital.hagley.org/FILM_1995300_FC305",
    "verdict": "bot check",
    "status": 200,
-   "moved": "https://digital.hagley.org/challenge?destination=%2F",
+   "moved": "https://digital.hagley.org/challenge?destination=%2FFILM_1995300_FC305",
    "robots": "allows"
   },
   {
    "id": "hagley-1972341-ludox",
    "title": "Verifying Connection",
-   "url": "https://digital.hagley.org/1972341?display=list&page=60",
+   "url": "https://digital.hagley.org/1972341_2649",
    "verdict": "bot check",
    "status": 200,
-   "moved": "https://digital.hagley.org/challenge?destination=%2F1972341%3Fdisplay%3Dlist%26page%3D60",
+   "moved": "https://digital.hagley.org/challenge?destination=%2F1972341_2649",
    "robots": "allows"
   },
   {
@@ -2235,18 +2347,20 @@
   },
   {
    "id": "hagley-oh-mcandrews",
-   "title": "",
+   "title": "Verifying Connection",
    "url": "https://digital.hagley.org/system/files/2025-06/islandora_2599141_obj.pdf",
-   "verdict": "ok",
+   "verdict": "bot check",
    "status": 200,
+   "moved": "https://digital.hagley.org/challenge?destination=%2Fsystem%2Ffiles%2F2025-06%2Fislandora_2599141_obj.pdf",
    "robots": "allows"
   },
   {
    "id": "hagley-oh-culley",
-   "title": "",
+   "title": "Verifying Connection",
    "url": "https://digital.hagley.org/system/files/2025-06/islandora_2615416_obj.pdf",
-   "verdict": "ok",
+   "verdict": "bot check",
    "status": 200,
+   "moved": "https://digital.hagley.org/challenge?destination=%2Fsystem%2Ffiles%2F2025-06%2Fislandora_2615416_obj.pdf",
    "robots": "allows"
   },
   {
@@ -2285,10 +2399,11 @@
   },
   {
    "id": "ttw-finding-501-1958",
-   "title": "",
+   "title": "Verifying Connection",
    "url": "https://digital.hagley.org/system/files/2025-06/islandora_2599141_obj.pdf",
-   "verdict": "ok",
+   "verdict": "bot check",
    "status": 200,
+   "moved": "https://digital.hagley.org/challenge?destination=%2Fsystem%2Ffiles%2F2025-06%2Fislandora_2599141_obj.pdf",
    "robots": "allows"
   },
   {
@@ -2413,20 +2528,19 @@
   },
   {
    "id": "grace-wilton-royal",
-   "title": "Wilton Royal Carpet Factory (Grace's Guide)",
-   "url": "https://gracesguide.co.uk/Wilton_Royal_Carpet_Factory",
-   "verdict": "unreachable",
-   "error": "ERR_TLS_CERT_ALTNAME_INVALID",
-   "robots": "unreachable"
+   "title": "Wilton Royal Carpet Factory - Graces Guide",
+   "url": "https://www.gracesguide.co.uk/Wilton_Royal_Carpet_Factory",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
   },
   {
    "id": "nps-wilton-america",
-   "title": "Park History Program (U.S. National Park Service)",
-   "url": "https://www.nps.gov/parkhistory/online_books/inde/anderson/chap2.htm",
-   "verdict": "ok (moved)",
+   "title": "National Park Service:The Most Splendid Carpet (Chapter 2)",
+   "url": "https://web.archive.org/web/20250206041128/https://www.nps.gov/parkhistory/online_books/inde/anderson/chap2.htm",
+   "verdict": "ok",
    "status": 200,
-   "moved": "https://www.nps.gov/orgs/1220/index.htm",
-   "robots": "allows"
+   "robots": "none (404)"
   },
   {
    "id": "bigelow-power-loom",
@@ -2941,6 +3055,207 @@
    "robots": "allows"
   },
   {
+   "id": "u-mvs3387y549fp",
+   "title": "Verifying Connection",
+   "url": "https://digital.hagley.org/1984259_121412_004",
+   "verdict": "bot check",
+   "status": 200,
+   "moved": "https://digital.hagley.org/challenge?destination=%2F1984259_121412_004",
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs379gngi80e",
+   "title": "Verifying Connection",
+   "url": "https://digital.hagley.org/1984259_010913_162",
+   "verdict": "bot check",
+   "status": 200,
+   "moved": "https://digital.hagley.org/challenge?destination=%2F1984259_010913_162",
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs37wl6gkh9w",
+   "title": "Verifying Connection",
+   "url": "https://digital.hagley.org/1972341_1333",
+   "verdict": "bot check",
+   "status": 200,
+   "moved": "https://digital.hagley.org/challenge?destination=%2F1972341_1333",
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs37zoguerdx",
+   "title": "Verifying Connection",
+   "url": "https://digital.hagley.org/1972341_1332",
+   "verdict": "bot check",
+   "status": 200,
+   "moved": "https://digital.hagley.org/challenge?destination=%2F1972341_1332",
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs38atad1qhj",
+   "title": "Verifying Connection",
+   "url": "https://digital.hagley.org/dpads_1803_00475",
+   "verdict": "bot check",
+   "status": 200,
+   "moved": "https://digital.hagley.org/challenge?destination=%2Fdpads_1803_00475",
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs38eabwvt3b",
+   "title": "Verifying Connection",
+   "url": "https://digital.hagley.org/dpads_1803_00476",
+   "verdict": "bot check",
+   "status": 200,
+   "moved": "https://digital.hagley.org/challenge?destination=%2Fdpads_1803_00476",
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs38hqlyz4s6",
+   "title": "Verifying Connection",
+   "url": "https://digital.hagley.org/dpads_1803_00643",
+   "verdict": "bot check",
+   "status": 200,
+   "moved": "https://digital.hagley.org/challenge?destination=%2Fdpads_1803_00643",
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs38l6olbged",
+   "title": "Verifying Connection",
+   "url": "https://digital.hagley.org/dpads_1803_00650",
+   "verdict": "bot check",
+   "status": 200,
+   "moved": "https://digital.hagley.org/challenge?destination=%2Fdpads_1803_00650",
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs38omy32ao5",
+   "title": "Verifying Connection",
+   "url": "https://digital.hagley.org/dpads_1803_00655",
+   "verdict": "bot check",
+   "status": 200,
+   "moved": "https://digital.hagley.org/challenge?destination=%2Fdpads_1803_00655",
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs3903rv1gjh",
+   "title": "Verifying Connection",
+   "url": "https://digital.hagley.org/FILM_1995300_FC322",
+   "verdict": "bot check",
+   "status": 200,
+   "moved": "https://digital.hagley.org/challenge?destination=%2FFILM_1995300_FC322",
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs393k4f607p",
+   "title": "Verifying Connection",
+   "url": "https://digital.hagley.org/FILM_1995300_FC352",
+   "verdict": "bot check",
+   "status": 200,
+   "moved": "https://digital.hagley.org/challenge?destination=%2FFILM_1995300_FC352",
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs3970mvyiw9",
+   "title": "Verifying Connection",
+   "url": "https://digital.hagley.org/FILM_1995300_FC366",
+   "verdict": "bot check",
+   "status": 200,
+   "moved": "https://digital.hagley.org/challenge?destination=%2FFILM_1995300_FC366",
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs3aug7hh3lv",
+   "title": "Verifying Connection",
+   "url": "https://digital.hagley.org/MSS_2407_042_0954A1",
+   "verdict": "bot check",
+   "status": 200,
+   "moved": "https://digital.hagley.org/challenge?destination=%2FMSS_2407_042_0954A1",
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs3g9dd3zmb0",
+   "title": "Verifying Connection",
+   "url": "https://digital.hagley.org/1984259_010913_168",
+   "verdict": "bot check",
+   "status": 200,
+   "moved": "https://digital.hagley.org/challenge?destination=%2F1984259_010913_168",
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs3hnbq2gjum",
+   "title": "Verifying Connection",
+   "url": "https://digital.hagley.org/VID_1995300_B23_ID02",
+   "verdict": "bot check",
+   "status": 200,
+   "moved": "https://digital.hagley.org/challenge?destination=%2FVID_1995300_B23_ID02",
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs3jcd5g72ua",
+   "title": "Verifying Connection",
+   "url": "https://digital.hagley.org/1972341_1401",
+   "verdict": "bot check",
+   "status": 200,
+   "moved": "https://digital.hagley.org/challenge?destination=%2F1972341_1401",
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs3lacgfbrui",
+   "title": "Verifying Connection",
+   "url": "https://digital.hagley.org/72430_477",
+   "verdict": "bot check",
+   "status": 200,
+   "moved": "https://digital.hagley.org/challenge?destination=%2F72430_477",
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs3riubri1f6",
+   "title": "",
+   "url": "https://findingaids.hagley.org/repositories/3/resources/1278",
+   "verdict": "ok",
+   "status": 202,
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs3rm86ifn5j",
+   "title": "",
+   "url": "https://findingaids.hagley.org/repositories/3/archival_objects/289529",
+   "verdict": "ok",
+   "status": 202,
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs3rpmcr1tkn",
+   "title": "",
+   "url": "https://findingaids.hagley.org/repositories/3/archival_objects/245804",
+   "verdict": "ok",
+   "status": 202,
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs3rt0be77qi",
+   "title": "",
+   "url": "https://findingaids.hagley.org/repositories/3/archival_objects/560954",
+   "verdict": "ok",
+   "status": 202,
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs3rwdznyj3f",
+   "title": "",
+   "url": "https://findingaids.hagley.org/repositories/3/archival_objects/230059",
+   "verdict": "ok",
+   "status": 202,
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs3rzs1i3apg",
+   "title": "",
+   "url": "https://findingaids.hagley.org/repositories/3/resources/1631",
+   "verdict": "ok",
+   "status": 202,
+   "robots": "allows"
+  },
+  {
    "id": "co-vsoske",
    "title": "Stanislav V'Soske - Wikipedia",
    "url": "https://en.wikipedia.org/wiki/Stanislav_V%27Soske",
@@ -2959,10 +3274,9 @@
   {
    "id": "co-kasthall",
    "title": "About Kasthall",
-   "url": "https://www.kasthall.com/about",
-   "verdict": "ok (moved)",
+   "url": "https://www.kasthall.com/en-us/pages/about-kasthall",
+   "verdict": "ok",
    "status": 200,
-   "moved": "https://www.kasthall.com/en-us/pages/about-kasthall",
    "robots": "allows"
   },
   {
@@ -2983,10 +3297,10 @@
   },
   {
    "id": "co-limited-edition",
-   "title": "",
-   "url": "https://materialbank.eu/partner/limitededition",
-   "verdict": "gone (not found)",
-   "status": 404,
+   "title": "Limited Edition: High-end &amp; custom-made rugs",
+   "url": "https://www.le.be/",
+   "verdict": "ok",
+   "status": 200,
    "robots": "allows"
   },
   {
@@ -3032,10 +3346,9 @@
   {
    "id": "co-barwick",
    "title": "LaFayette &#8211; West Georgia Textile Heritage Trail",
-   "url": "https://westgatextiletrail.com/?p=3323",
-   "verdict": "ok (moved)",
+   "url": "https://westgatextiletrail.com/lafayette/",
+   "verdict": "ok",
    "status": 200,
-   "moved": "https://westgatextiletrail.com/lafayette/",
    "robots": "allows"
   },
   {
@@ -3048,11 +3361,11 @@
   },
   {
    "id": "co-cormar",
-   "title": "Cormar Carpets",
-   "url": "https://cormarcarpets.co.uk/about-us/our-history",
-   "verdict": "unreachable",
-   "error": "ECONNRESET",
-   "robots": "unreachable"
+   "title": "History of Cormar Carpets | Cormar Carpets",
+   "url": "https://www.cormarcarpets.co.uk/about-us/our-history/",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
   },
   {
    "id": "co-interface",
@@ -3104,11 +3417,11 @@
   },
   {
    "id": "co-vorwerk",
-   "title": "423 Locked",
+   "title": "Dauerausstellung_engl_20jh67 | museumhameln.de",
    "url": "https://museumhameln.de/dauerausstellung_engl_20jh67/",
-   "verdict": "error (423)",
-   "status": 423,
-   "robots": "none (423)"
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
   },
   {
    "id": "co-desso",
@@ -3161,10 +3474,11 @@
   },
   {
    "id": "co-oriental-weavers",
-   "title": "Just a moment...",
+   "title": "Oriental Weavers",
    "url": "https://orientalweavers.com/history/",
-   "verdict": "bot check",
-   "status": 403,
+   "verdict": "gone (not found)",
+   "status": 404,
+   "moved": "https://orientalweavers.com/en/history",
    "robots": "allows"
   },
   {
@@ -3276,14 +3590,6 @@
    "id": "pat-de854562c",
    "title": "DE854562C - Handgeraet zur Teppichherstellung - Google Patents",
    "url": "https://patents.google.com/patent/DE854562C/de",
-   "verdict": "ok",
-   "status": 200,
-   "robots": "allows"
-  },
-  {
-   "id": "pat-gb663196a",
-   "title": "GB663196A - A new or improved hand tool for making rugs, carpets and the like with a cut pile - Goog",
-   "url": "https://patents.google.com/patent/GB663196A/en",
    "verdict": "ok",
    "status": 200,
    "robots": "allows"
@@ -3523,10 +3829,9 @@
   {
    "id": "woven-kidderminster-1735",
    "title": "The Origins of Carpet Making in Kidderminster - Revolutionary Players",
-   "url": "https://revolutionaryplayers.org.uk/?p=2924",
-   "verdict": "ok (moved)",
+   "url": "https://www.revolutionaryplayers.org.uk/the-origins-of-carpet-making-in-kidderminster/",
+   "verdict": "ok",
    "status": 200,
-   "moved": "https://www.revolutionaryplayers.org.uk/the-origins-of-carpet-making-in-kidderminster/",
    "robots": "allows"
   },
   {
@@ -3555,12 +3860,11 @@
   },
   {
    "id": "woven-scotch-carpet-america-1790",
-   "title": "Park History Program (U.S. National Park Service)",
-   "url": "https://www.nps.gov/parkhistory/online_books/inde/anderson/chap2.htm",
-   "verdict": "ok (moved)",
+   "title": "National Park Service:The Most Splendid Carpet (Chapter 2)",
+   "url": "https://web.archive.org/web/20250206041128/https://www.nps.gov/parkhistory/online_books/inde/anderson/chap2.htm",
+   "verdict": "ok",
    "status": 200,
-   "moved": "https://www.nps.gov/orgs/1220/index.htm",
-   "robots": "allows"
+   "robots": "none (404)"
   },
   {
    "id": "woven-us-ingrain-1820s",
@@ -3629,10 +3933,9 @@
   {
    "id": "woven-kidderminster-brussels-1749",
    "title": "The Origins of Carpet Making in Kidderminster - Revolutionary Players",
-   "url": "https://revolutionaryplayers.org.uk/?p=2927",
-   "verdict": "ok (moved)",
+   "url": "https://www.revolutionaryplayers.org.uk/the-origins-of-carpet-making-in-kidderminster-2/",
+   "verdict": "ok",
    "status": 200,
-   "moved": "https://www.revolutionaryplayers.org.uk/the-origins-of-carpet-making-in-kidderminster-2/",
    "robots": "allows"
   },
   {
@@ -3685,19 +3988,19 @@
   },
   {
    "id": "fulham-parisot-1750",
-   "title": "401 Unauthorized",
-   "url": "https://prod.british-history.ac.uk/node/15310",
-   "verdict": "error (401)",
-   "status": 401,
-   "robots": "none (401)"
+   "title": "Industries: Tapestry | British History Online",
+   "url": "https://www.british-history.ac.uk/vch/middx/vol2/pp138-139",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
   },
   {
    "id": "exeter-passavant-1756",
-   "title": "Claude Passavant's Exeter carpet manufactory (1756–1761): costly knotted carpets, three survivors",
-   "url": "https://www.huguenotsofspitalfields.org/?p=1275",
-   "verdict": "unreachable",
-   "error": "ETIMEDOUT",
-   "robots": "unreachable"
+   "title": "Exeter, Devon - The Huguenots of Spitalfields",
+   "url": "https://www.huguenotsofspitalfields.org/huguenot-towns/exeter/",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
   },
   {
    "id": "axminster-whitty-1755",
@@ -3727,6 +4030,14 @@
    "id": "met-57-162-axminster",
    "title": "Vercel Security Checkpoint",
    "url": "https://www.metmuseum.org/art/collection/search/202045",
+   "verdict": "bot check",
+   "status": 429,
+   "robots": "none (429)"
+  },
+  {
+   "id": "met-928622",
+   "title": "Vercel Security Checkpoint",
+   "url": "https://www.metmuseum.org/art/collection/search/928622",
    "verdict": "bot check",
    "status": 429,
    "robots": "none (429)"
@@ -3838,10 +4149,9 @@
   {
    "id": "event-colorpoint-colortron-2009",
    "title": "FloorTek Expo 2009 Preview - August/September 2009",
-   "url": "https://floordaily.net/?p=20362",
-   "verdict": "ok (moved)",
+   "url": "https://floordaily.net/floorfocus/floortek-expo-2009-preview-augustseptember-2009/",
+   "verdict": "ok",
    "status": 200,
-   "moved": "https://floordaily.net/floorfocus/floortek-expo-2009-preview-augustseptember-2009/",
    "robots": "allows"
   },
   {
@@ -3855,10 +4165,9 @@
   {
    "id": "event-cmc-v-tuftco-2017",
    "title": "Card Monroe Corp. Wins ColorPoint Patent Infringement Case",
-   "url": "https://floordaily.net/?p=26659",
-   "verdict": "ok (moved)",
+   "url": "https://floordaily.net/flooring-news/card-monroe-corp-wins-colorpoint-patent-infringement-case/",
+   "verdict": "ok",
    "status": 200,
-   "moved": "https://floordaily.net/flooring-news/card-monroe-corp-wins-colorpoint-patent-infringement-case/",
    "robots": "allows"
   },
   {
@@ -3903,11 +4212,11 @@
   },
   {
    "id": "finding-cnc-chongqing-pmac-2011",
-   "title": "502 Bad Gateway",
-   "url": "https://highlights.paper.edu.cn/index/paper_detail/4287",
-   "verdict": "server error (502)",
-   "status": 502,
-   "robots": "none (502)"
+   "title": "《中国科技论文在线精品论文》2011年16期出版论文《基于PMAC的簇绒机零编程数控系统研究》",
+   "url": "https://web.archive.org/web/20210411192249/http://highlights.paper.edu.cn/index/paper_detail/4287",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "none (404)"
   },
   {
    "id": "event-yangxin-donghua-robot",
@@ -3927,8 +4236,8 @@
   },
   {
    "id": "co-efab-etuft",
-   "title": "Heimtextil – Exhibitors &amp; Products",
-   "url": "https://heimtextil.messefrankfurt.com/frankfurt/en/exhibitor-search.detail.html/efab-gmbh/mf_1_0052756498_5034504_10000000202601.html",
+   "title": "EFAB GmbH - Tufting solution with advanced carpet design software",
+   "url": "https://efab.de/",
    "verdict": "ok",
    "status": 200,
    "robots": "allows"
@@ -3958,14 +4267,6 @@
    "robots": "allows"
   },
   {
-   "id": "finding-cnc-diy-robot-arm-experiments",
-   "title": "DIY and academic robot tufting: CoreXY gantries, 6-axis arms and the gun-orientation problem",
-   "url": "https://builds.openbuilds.com/posts/137701/",
-   "verdict": "unreachable",
-   "error": "ENOTFOUND",
-   "robots": "unreachable"
-  },
-  {
    "id": "finding-cnc-ttw-cnc-machine",
    "title": "",
    "url": "https://technical.ly/civic-news/cnc-machines-rug-making/",
@@ -3975,18 +4276,10 @@
   },
   {
    "id": "co-craftphilia",
-   "title": "Craftphilia (Hong Kong): a crowdfunded 'fully automated' desktop tufting machine for hobbyists",
-   "url": "https://www.kicktraq.com/projects/207408103/craftphilia-worlds-first-fully-automated-tufting-machine/",
-   "verdict": "unreachable",
-   "error": "The operation was aborted due to timeout",
-   "robots": "allows"
-  },
-  {
-   "id": "process-felt-definition",
-   "title": "Just a moment...",
-   "url": "https://www.britannica.com/technology/felt",
-   "verdict": "bot check",
-   "status": 403,
+   "title": "瞄准海外用户“手搓毛毯”的爱好，国内团队改造CNC上线一周预售300万",
+   "url": "https://www.baijing.cn/article/55772",
+   "verdict": "ok",
+   "status": 200,
    "robots": "allows"
   },
   {
@@ -4028,7 +4321,7 @@
    "url": "https://www.famsf.org/artworks/kilim",
    "verdict": "bot check",
    "status": 403,
-   "robots": "none (403)"
+   "robots": "allows"
   },
   {
    "id": "process-flatweave-soumak-tm",
@@ -4136,12 +4429,11 @@
   },
   {
    "id": "process-hooking-origins",
-   "title": "This page has been removed | Canadian Museum of History",
-   "url": "https://historymuseum.ca/cmc/exhibitions/arts/rugs/rugs02e.html",
-   "verdict": "gone (not found)",
+   "title": "Civilization.ca - Hooked on Rugs",
+   "url": "https://web.archive.org/web/20240319123851/https://www.historymuseum.ca/cmc/exhibitions/arts/rugs/rugs02e.html",
+   "verdict": "ok",
    "status": 200,
-   "moved": "https://www.historymuseum.ca/page-removed",
-   "robots": "allows"
+   "robots": "none (404)"
   },
   {
    "id": "process-hooking-cw-1983-611-1",
@@ -4161,18 +4453,18 @@
   },
   {
    "id": "process-hooking-grenfell-bma",
-   "title": "Grenfell hooked mat 'Polar Bear on Ice Floe', 1929 or c. 1930 (Baltimore Museum of Art 1996.165)",
-   "url": "https://collection.artbma.org/objects/43106/polar-bear-on-ice-floe",
-   "verdict": "unreachable",
-   "error": "ENOTFOUND",
-   "robots": "unreachable"
+   "title": "Attention Required! | Cloudflare",
+   "url": "https://artbma.org/artwork/polar-bear-on-ice-floe",
+   "verdict": "bot check",
+   "status": 403,
+   "robots": "allows"
   },
   {
    "id": "process-sewn-yarn-sewn-chs",
-   "title": "Hearth Rug – Works – eMuseum",
+   "title": "Yarn-sewn hearth rug, 1800–1820 (Connecticut Historical Society 2010.409.0)",
    "url": "https://emuseum.chs.org/emuseum/objects/13050/hearth-rug",
-   "verdict": "ok",
-   "status": 200,
+   "verdict": "unreachable",
+   "error": "UND_ERR_CONNECT_TIMEOUT",
    "robots": "none (404)"
   },
   {
@@ -4217,7 +4509,7 @@
   },
   {
    "id": "process-industrial-needlepunch",
-   "title": "Education Research Nonwoven Needle Punched Nonwovens",
+   "title": "Needle Punched Nonwovens: How Barbed Needles Entangle a Web | Apparel Search",
    "url": "https://www.apparelsearch.com/education/research/nonwoven/2001_kermit_duckett/education_research_nonwoven_needle_punched_nonwovens.htm",
    "verdict": "ok",
    "status": 200,
@@ -4242,27 +4534,627 @@
   {
    "id": "process-industrial-fusion-bonded",
    "title": "Carpet Tile: 50 Years Later - Aug/Sep 2007",
-   "url": "https://floordaily.net/?p=20185",
-   "verdict": "ok (moved)",
+   "url": "https://floordaily.net/floorfocus/carpet-tile-50-years-later-augsep-2007/",
+   "verdict": "ok",
    "status": 200,
-   "moved": "https://floordaily.net/floorfocus/carpet-tile-50-years-later-augsep-2007/",
    "robots": "allows"
   },
   {
    "id": "process-industrial-printed",
-   "title": "404 - Zimmer Austria",
-   "url": "https://zimmer-austria.com/en/node/6296",
-   "verdict": "gone (not found)",
-   "status": 404,
-   "robots": "allows"
+   "title": "Printed carpet: flat-screen (1962) and rotary-screen (1968) printing of pile carpet, then jet dyeing",
+   "url": "https://web.archive.org/web/20230616194018/https://www.zimmer-austria.com/en/node/6296",
+   "verdict": "unreachable",
+   "error": "UND_ERR_CONNECT_TIMEOUT",
+   "robots": "none (404)"
   },
   {
    "id": "process-industrial-carpet-tile",
    "title": "Carpet Tile: 50 Years Later - Aug/Sep 2007",
-   "url": "https://floordaily.net/?p=20185",
+   "url": "https://floordaily.net/floorfocus/carpet-tile-50-years-later-augsep-2007/",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "wc-83070426",
+   "title": "File:Tool, rug-hooking (AM 1932.212-1).jpg - Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Tool,_rug-hooking_(AM_1932.212-1).jpg",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "wc-82212663",
+   "title": "File:Orville A. Carroll, Shaker Tufted Wool Rug, c. 1938, NGA 25792.jpg - Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Orville_A._Carroll,_Shaker_Tufted_Wool_Rug,_c._1938,_NGA_25792.jpg",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "tool-ttw-electric-guns",
+   "title": "The Duo — Cut &amp; Loop Pile Tufting Machine - Tuft the World",
+   "url": "https://tufttheworld.com/products/the-duo",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "tool-ttw-pneumatic-guns",
+   "title": "AK-III Industrial Tufting Machine - Tuft the World",
+   "url": "https://tufttheworld.com/products/rug-tufting-gun-v2-0",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "tool-dayang-guns",
+   "title": "Product category | Guangdong Dayang Carpet machinery Factory Co., Ltd.",
+   "url": "https://www.dayangcm.com/english/product",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs4p4bck1zum",
+   "title": "",
+   "url": "https://library.winterthur.org/Record/vtls000070692",
+   "verdict": "ok",
+   "status": 202,
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs4p7orwsj87",
+   "title": "",
+   "url": "https://library.winterthur.org/Record/vtls000002364",
+   "verdict": "ok",
+   "status": 202,
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs4pb1s6ng8a",
+   "title": "",
+   "url": "https://library.winterthur.org/Record/vtls000047773",
+   "verdict": "ok",
+   "status": 202,
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs4pef470bun",
+   "title": "",
+   "url": "https://library.winterthur.org/Record/vtls000058916",
+   "verdict": "ok",
+   "status": 202,
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs4phsfe457q",
+   "title": "",
+   "url": "https://library.winterthur.org/Record/vtls000084487",
+   "verdict": "ok",
+   "status": 202,
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs4pl5p14k1x",
+   "title": "",
+   "url": "https://library.winterthur.org/Record/vtls000013217",
+   "verdict": "ok",
+   "status": 202,
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs4poiyr3olt",
+   "title": "",
+   "url": "https://library.winterthur.org/Record/vtls000115518",
+   "verdict": "ok",
+   "status": 202,
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs4prvfx7q5z",
+   "title": "",
+   "url": "https://library.winterthur.org/Record/vtls000088506",
+   "verdict": "ok",
+   "status": 202,
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs4pv7vwot2n",
+   "title": "",
+   "url": "https://library.winterthur.org/Record/vtls000110169",
+   "verdict": "ok",
+   "status": 202,
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs4pykd1fa97",
+   "title": "",
+   "url": "https://library.winterthur.org/Record/vtls000024201",
+   "verdict": "ok",
+   "status": 202,
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs4q1wwis111",
+   "title": "",
+   "url": "https://library.winterthur.org/Record/vtls000026059",
+   "verdict": "ok",
+   "status": 202,
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs4x4meam26h",
+   "title": "Cabin Craft Helen Hall - Digital Library of Georgia",
+   "url": "https://dlg.usg.edu/record/dlg_vang_wtf225",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs4x826tb8b2",
+   "title": "[Photograph of a modern tufting plant, Dalton, Whitfield County, Georgia, 1951] - Digital Library of",
+   "url": "https://dlg.usg.edu/record/dlg_vang_wtf152",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs4xbi5obbnz",
+   "title": "[Photograph of family making tufted bedspreads, Gordon County, Georgia, ca. 192-] - Digital Library ",
+   "url": "https://dlg.usg.edu/record/dlg_vang_gor366",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs4xey6wp3mb",
+   "title": "[Photograph of Ethel Partin Stiles making a tufted bedspread, Ringgold, Catoosa County, Georgia, 193",
+   "url": "https://dlg.usg.edu/record/dlg_vang_cat008",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs4xie8j3yg2",
+   "title": "[Photograph of employees of the J. M. Muse Spread Manufacturing Company and truck, Sugar Valley, Gor",
+   "url": "https://dlg.usg.edu/record/dlg_vang_gor290",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs4xltw4y28g",
+   "title": "[1 p.m. 11-18-38 [ . . . ]B] - Digital Library of Georgia",
+   "url": "https://dlg.usg.edu/record/dlg_vang_gor206",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs4xp97zlh0h",
+   "title": "HAND TUFTED BEDSPREADS AND SOUVENIRS U.S. 41, GA. - Digital Library of Georgia",
+   "url": "https://dlg.usg.edu/record/dlg_vang_brt126",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs4xsogzns87",
+   "title": "[Photograph of interior of Cornwells Gifts, Dalton, Whitfield County, Georgia, ca. 195-] - Digital L",
+   "url": "https://dlg.usg.edu/record/dlg_vang_wtf292",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs4xw3te5pqk",
+   "title": "Dalton, Tufted Textile Manufacturing Association - Digital Library of Georgia",
+   "url": "https://dlg.usg.edu/record/gsu_lane_3971",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs4xzj49ap0j",
+   "title": "Cabin Crafts plant, Dalton, Georgia - Digital Library of Georgia",
+   "url": "https://dlg.usg.edu/record/gsu_lane_10910",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs4y2ybakdr0",
+   "title": "Photograph of Evelyn Wall tufting in front of the fireplace in Sunshine Cottage, Mount Berry, Georgi",
+   "url": "https://dlg.usg.edu/record/gbc_photographs_2638",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs4y6dwj1xt5",
+   "title": "Tufting Machine - Digital Library of Georgia",
+   "url": "https://dlg.usg.edu/record/nge_ngen_m-4007",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs4y9t5g4k3g",
+   "title": "CONTENTdm",
+   "url": "https://album.atlantahistorycenter.com/digital/collection/p17222coll18/id/585",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs58ht1gp0h7",
+   "title": "2011.002.0264 - Photograph | Bandy Heritage Center for Northwest Georgia",
+   "url": "https://bandyheritagecenter.pastperfectonline.com/photo/0B4464C0-1568-4AB0-8DCE-861300034362",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs58l9caxfar",
+   "title": "2011.002.0261 - Photograph | Bandy Heritage Center for Northwest Georgia",
+   "url": "https://bandyheritagecenter.pastperfectonline.com/photo/6B7E209F-8265-4352-9A88-132877858892",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs58oq2j5mgp",
+   "title": "2011.002.0265 - Photograph | Bandy Heritage Center for Northwest Georgia",
+   "url": "https://bandyheritagecenter.pastperfectonline.com/photo/15D19585-9771-4D81-93B8-316203478586",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs58s6lwxcnd",
+   "title": "2011.002.0276 - Photograph | Bandy Heritage Center for Northwest Georgia",
+   "url": "https://bandyheritagecenter.pastperfectonline.com/photo/FD78B715-F1A9-4588-96B8-465815209900",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs58vmypbqfc",
+   "title": "2011.002.0270 - Photograph | Bandy Heritage Center for Northwest Georgia",
+   "url": "https://bandyheritagecenter.pastperfectonline.com/photo/8C12285B-F1DC-41DA-87A1-376231087818",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs58z369fy9m",
+   "title": "2020.006.0029 - Photograph | Bandy Heritage Center for Northwest Georgia",
+   "url": "https://bandyheritagecenter.pastperfectonline.com/photo/0FDE0D89-C7A2-4859-AB7A-223311483185",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs592jpun3vo",
+   "title": "2010.003.0095c - Photograph, digital | Bandy Heritage Center for Northwest Georgia",
+   "url": "https://bandyheritagecenter.pastperfectonline.com/photo/8AE0F8AF-52B9-4191-ACA6-201636278543",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs595z4bahu3",
+   "title": "2011.002.0294 - Photograph | Bandy Heritage Center for Northwest Georgia",
+   "url": "https://bandyheritagecenter.pastperfectonline.com/photo/D2663E01-213F-4799-87B2-421448214058",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs599epnumc6",
+   "title": "2011.002.0415 - Photograph | Bandy Heritage Center for Northwest Georgia",
+   "url": "https://bandyheritagecenter.pastperfectonline.com/photo/E4D5CA37-A075-4253-A33A-802810170534",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs59cu4jhjqp",
+   "title": "2010.003.0010 - Photograph | Bandy Heritage Center for Northwest Georgia",
+   "url": "https://bandyheritagecenter.pastperfectonline.com/photo/FF28A59B-2254-437E-A4D8-944492699483",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs59g9qd6v9u",
+   "title": "2010.003.0034 - Photograph Slide | Bandy Heritage Center for Northwest Georgia",
+   "url": "https://bandyheritagecenter.pastperfectonline.com/photo/71A4763F-DE2D-4772-BA3B-637680536424",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs59jpawyul9",
+   "title": "2011.002.0240 - Photograph | Bandy Heritage Center for Northwest Georgia",
+   "url": "https://bandyheritagecenter.pastperfectonline.com/photo/8BE0DFF7-7F9E-4E50-8777-782387115084",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs5jnes48zxl",
+   "title": "Just a moment...",
+   "url": "https://www.loc.gov/resource/sn84022871/1880-07-12/ed-1/?sp=4",
+   "verdict": "bot check",
+   "status": 403,
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs5jqud65ki4",
+   "title": "Just a moment...",
+   "url": "https://www.loc.gov/resource/sn82007642/1919-10-30/ed-1/?sp=2",
+   "verdict": "bot check",
+   "status": 403,
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs5ju9r9mkdw",
+   "title": "Just a moment...",
+   "url": "https://www.loc.gov/resource/sn83020847/1905-07-14/ed-1/?sp=9",
+   "verdict": "bot check",
+   "status": 403,
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs5nxw3dacy5",
+   "title": "Just a moment...",
+   "url": "https://babel.hathitrust.org/cgi/pt?id=coo.31924061333658",
+   "verdict": "bot check",
+   "status": 403,
+   "robots": "none (403)"
+  },
+  {
+   "id": "u-mvs5o1cmqxeq8",
+   "title": "Just a moment...",
+   "url": "https://babel.hathitrust.org/cgi/pt?id=coo.31924127922569",
+   "verdict": "bot check",
+   "status": 403,
+   "robots": "none (403)"
+  },
+  {
+   "id": "u-mvs5o4snsu0sy",
+   "title": "Just a moment...",
+   "url": "https://babel.hathitrust.org/cgi/pt?id=nnc2.ark:/13960/s211wtg9b8r",
+   "verdict": "bot check",
+   "status": 403,
+   "robots": "none (403)"
+  },
+  {
+   "id": "u-mvs5o88tch6g4",
+   "title": "Just a moment...",
+   "url": "https://babel.hathitrust.org/cgi/pt?id=nyp.33433102814658",
+   "verdict": "bot check",
+   "status": 403,
+   "robots": "none (403)"
+  },
+  {
+   "id": "u-mvs5sylk4365x",
+   "title": "Smithsonian request verification",
+   "url": "https://collections.si.edu/search/detail/edanmdm:nmah_1167059",
+   "verdict": "bot check",
+   "status": 403,
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs5t2170sk4e",
+   "title": "Smithsonian request verification",
+   "url": "https://collections.si.edu/search/detail/edanmdm:nmah_1167060",
+   "verdict": "bot check",
+   "status": 403,
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs5t5h8yhw6g",
+   "title": "Smithsonian request verification",
+   "url": "https://collections.si.edu/search/detail/edanmdm:nmah_214214",
+   "verdict": "bot check",
+   "status": 403,
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs5t8xdmkn6q",
+   "title": "Smithsonian request verification",
+   "url": "https://collections.si.edu/search/detail/edanmdm:nmah_1807334",
+   "verdict": "bot check",
+   "status": 403,
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs5tcdfeyml3",
+   "title": "Smithsonian request verification",
+   "url": "https://collections.si.edu/search/detail/edanmdm:nmah_1822500",
+   "verdict": "bot check",
+   "status": 403,
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs5tfti7ccv0",
+   "title": "Smithsonian request verification",
+   "url": "https://collections.si.edu/search/detail/edanmdm:nmah_1028068",
+   "verdict": "bot check",
+   "status": 403,
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs5tj97nlohl",
+   "title": "Smithsonian request verification",
+   "url": "https://collections.si.edu/search/detail/edanmdm:nmah_622063",
+   "verdict": "bot check",
+   "status": 403,
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs5tmorff2tc",
+   "title": "Smithsonian request verification",
+   "url": "https://collections.si.edu/search/detail/edanmdm:nmah_644156",
+   "verdict": "bot check",
+   "status": 403,
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs5zcw5oetn4",
+   "title": "",
+   "url": "https://collections.mfa.org/objects/258811",
+   "verdict": "ok",
+   "status": 202,
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs5zgbi4f8jd",
+   "title": "",
+   "url": "https://collections.mfa.org/objects/74049",
+   "verdict": "ok",
+   "status": 202,
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvs61hug2gmpn",
+   "title": "Attention Required! | Cloudflare",
+   "url": "https://emuseum.history.org/objects/8815",
+   "verdict": "bot check",
+   "status": 403,
+   "moved": "https://emuseum.colonialwilliamsburg.org/",
+   "robots": "none (403)"
+  },
+  {
+   "id": "u-mvss1boffo03b",
+   "title": "Werk",
+   "url": "https://www.werk.com.cn/",
+   "verdict": "unreachable",
+   "error": "DEPTH_ZERO_SELF_SIGNED_CERT",
+   "robots": "unreachable"
+  },
+  {
+   "id": "process-felt-definition",
+   "title": "Just a moment...",
+   "url": "https://www.britannica.com/technology/felt",
+   "verdict": "bot check",
+   "status": 403,
+   "robots": "allows"
+  },
+  {
+   "id": "pat-gb663196a",
+   "title": "GB663196A - A new or improved hand tool for making rugs, carpets and the like with a cut pile - Goog",
+   "url": "https://patents.google.com/patent/GB663196A/en",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvvp1gk2clqms",
+   "title": "Trish Andersen Studio",
+   "url": "https://www.trishandersenstudio.com/?srsltid=AYCX9vIjdQKXOgzp1eIVtjBjNWLcPnHgesmgCfOKSLCPxBJs_VPTTw8w",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvvp4rctc7w6k",
+   "title": "SIMJI - Official SIMJI Shop",
+   "url": "https://simjishop.com/?srsltid=AYCX9vLDpGVp4JsSDOUKziT2_YRZEgvALkj8SJRrJqSk4A0NSgp138Bg",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvvp8s248uf95",
+   "title": "タフティング専門店RUGMATAG｜タフティングガン・毛糸・資材の通販&amp;体験ワークショップ | 大阪 北堀江",
+   "url": "https://rugmatag.com/",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "artist-trish-andersen-press",
+   "title": "On the wild side: Trish Andersen - COVER magazine",
+   "url": "https://cover-magazine.com/2022/01/07/on-the-wild-side-trish-andersen/",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "artist-david-nott",
+   "title": "David Nott Artist: Tufted Yarn Wall Art and Commissions - COOLCURATION",
+   "url": "https://coolcuration.com/?p=18878",
    "verdict": "ok (moved)",
    "status": 200,
-   "moved": "https://floordaily.net/floorfocus/carpet-tile-50-years-later-augsep-2007/",
+   "moved": "https://coolcuration.com/artists/david-nott",
+   "robots": "allows"
+  },
+  {
+   "id": "book-rug-tufting-with-simji-2024",
+   "title": "Rug Tufting with SIMJI by SIMJI | Quarto At A Glance | The Quarto Group",
+   "url": "https://www.quarto.com/books/9780760391099/rug-tufting-with-simji",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "artist-unnecessary-inventions",
+   "title": "Rug Making Tutorial: Matty’s Guide to Rug Tufting",
+   "url": "https://unnecessaryinventions.com/tufting-gun-tutorial/",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "artist-melissa-monroe",
+   "title": "Just a moment...",
+   "url": "https://craftcouncil.org/articles/tufted-joy/",
+   "verdict": "bot check",
+   "status": 403,
+   "robots": "allows"
+  },
+  {
+   "id": "artist-qualeasha-wood",
+   "title": "",
+   "url": "https://hypebae.com/2023/6/qualeasha-wood-tl-dr-tapestries-exhibition-works-details",
+   "verdict": "ok",
+   "status": 202,
+   "robots": "allows"
+  },
+  {
+   "id": "artist-madeline-ronzoni",
+   "title": "The Boston creator behind these TikTok-viral rugs",
+   "url": "https://businessofhome.com/articles/the-los-angeles-creator-behind-these-tiktok-viral-rugs",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "artist-venus-perez",
+   "title": "Artist Interview: Venus Perez | Punch Needle World Blog",
+   "url": "https://www.punchneedleworld.com/blogs/blog/venus-perez",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "event-tuftcon-2023",
+   "title": "Philly TuftCon 2023 to celebrate tufting artists - WHYY",
+   "url": "https://whyy.org/articles/philadelphia-tuftcon-2023-tufting-rug-making/",
+   "verdict": "ok",
+   "status": 200,
+   "robots": "allows"
+  },
+  {
+   "id": "u-mvyjj0jgz1c5k",
+   "title": "CONTENTdm",
+   "url": "https://album.atlantahistorycenter.com/digital/collection/p17222coll18/id/584",
+   "verdict": "ok",
+   "status": 200,
    "robots": "allows"
   }
  ],
@@ -4279,10 +5171,10 @@
     "bot check": 4
    }
   },
-  "origin-www.alibris.com": {
-   "records": 1,
+  "openlibrary.org": {
+   "records": 2,
    "verdicts": {
-    "unreachable": 1
+    "ok (moved)": 2
    }
   },
   "ugapress.org": {
@@ -4294,13 +5186,26 @@
   "eh.net": {
    "records": 1,
    "verdicts": {
-    "bot check": 1
+    "server error (502)": 1
+   }
+  },
+  "archive.org": {
+   "records": 4,
+   "verdicts": {
+    "ok": 4
+   }
+  },
+  "doi.org": {
+   "records": 3,
+   "verdicts": {
+    "bot check": 1,
+    "ok (moved)": 2
    }
   },
   "bandyheritagecenter.pastperfectonline.com": {
-   "records": 3,
+   "records": 15,
    "verdicts": {
-    "ok": 3
+    "ok": 15
    }
   },
   "dcp-production-container.library.cornell.edu": {
@@ -4310,16 +5215,15 @@
    }
   },
   "findingaids.hagley.org": {
-   "records": 9,
+   "records": 15,
    "verdicts": {
-    "ok": 9
+    "ok": 15
    }
   },
   "digital.hagley.org": {
-   "records": 16,
+   "records": 33,
    "verdicts": {
-    "bot check": 13,
-    "ok": 3
+    "bot check": 33
    }
   },
   "marketresearch.amdigital.co.uk": {
@@ -4340,16 +5244,16 @@
     "ok": 2
    }
   },
-  "rughookingmagazine.com": {
+  "welikerughooking.com": {
    "records": 1,
    "verdicts": {
-    "ok (moved)": 1
+    "ok": 1
    }
   },
   "metmuseum.org": {
-   "records": 4,
+   "records": 5,
    "verdicts": {
-    "bot check": 4
+    "bot check": 5
    }
   },
   "historic-deerfield.org": {
@@ -4385,7 +5289,8 @@
   "emuseum.chs.org": {
    "records": 2,
    "verdicts": {
-    "ok": 2
+    "ok": 1,
+    "unreachable": 1
    }
   },
   "collection.folkartmuseum.org": {
@@ -4406,16 +5311,16 @@
     "ok": 1
    }
   },
-  "discovery.nypl.org": {
-   "records": 1,
+  "nypl.org": {
+   "records": 2,
    "verdicts": {
-    "unreachable": 1
+    "ok": 2
    }
   },
   "thehenryford.org": {
    "records": 1,
    "verdicts": {
-    "gone (not found)": 1
+    "ok": 1
    }
   },
   "asme.org": {
@@ -4425,9 +5330,9 @@
    }
   },
   "patents.google.com": {
-   "records": 95,
+   "records": 97,
    "verdicts": {
-    "ok": 95
+    "ok": 97
    }
   },
   "hmdb.org": {
@@ -4481,7 +5386,7 @@
   "m.chinabgao.com": {
    "records": 1,
    "verdicts": {
-    "ok": 1
+    "unreachable": 1
    }
   },
   "163.com": {
@@ -4490,9 +5395,11 @@
     "ok": 2
    }
   },
-  "ihchina.cn": {
-   "records": 1,
+  "web.archive.org": {
+   "records": 7,
    "verdicts": {
+    "ok (moved)": 1,
+    "ok": 5,
     "unreachable": 1
    }
   },
@@ -4629,10 +5536,9 @@
    }
   },
   "carpet.or.jp": {
-   "records": 3,
+   "records": 2,
    "verdicts": {
-    "ok": 2,
-    "gone (not found)": 1
+    "ok": 2
    }
   },
   "jstage.jst.go.jp": {
@@ -4674,7 +5580,7 @@
   "nkie.nankai.edu.cn": {
    "records": 1,
    "verdicts": {
-    "ok": 1
+    "unreachable": 1
    }
   },
   "m.sohu.com": {
@@ -4800,13 +5706,7 @@
   "gracesguide.co.uk": {
    "records": 1,
    "verdicts": {
-    "unreachable": 1
-   }
-  },
-  "nps.gov": {
-   "records": 2,
-   "verdicts": {
-    "ok (moved)": 2
+    "ok": 1
    }
   },
   "britannica.com": {
@@ -4834,12 +5734,6 @@
    }
   },
   "philadelphiaencyclopedia.org": {
-   "records": 2,
-   "verdicts": {
-    "ok": 2
-   }
-  },
-  "archive.org": {
    "records": 2,
    "verdicts": {
     "ok": 2
@@ -4902,7 +5796,7 @@
   "kasthall.com": {
    "records": 1,
    "verdicts": {
-    "ok (moved)": 1
+    "ok": 1
    }
   },
   "ceadogan.ie": {
@@ -4917,10 +5811,10 @@
     "ok": 1
    }
   },
-  "materialbank.eu": {
+  "le.be": {
    "records": 1,
    "verdicts": {
-    "gone (not found)": 1
+    "ok": 1
    }
   },
   "yamagatadantsu.co.jp": {
@@ -4950,13 +5844,13 @@
   "westgatextiletrail.com": {
    "records": 1,
    "verdicts": {
-    "ok (moved)": 1
+    "ok": 1
    }
   },
   "cormarcarpets.co.uk": {
    "records": 1,
    "verdicts": {
-    "unreachable": 1
+    "ok": 1
    }
   },
   "interface.com": {
@@ -4998,7 +5892,7 @@
   "museumhameln.de": {
    "records": 1,
    "verdicts": {
-    "error (423)": 1
+    "ok": 1
    }
   },
   "professionals.tarkett.co.uk": {
@@ -5040,7 +5934,7 @@
   "orientalweavers.com": {
    "records": 1,
    "verdicts": {
-    "bot check": 1
+    "gone (not found)": 1
    }
   },
   "merinos.com.tr": {
@@ -5130,7 +6024,7 @@
   "revolutionaryplayers.org.uk": {
    "records": 2,
    "verdicts": {
-    "ok (moved)": 2
+    "ok": 2
    }
   },
   "collections.vam.ac.uk": {
@@ -5170,9 +6064,9 @@
    }
   },
   "british-history.ac.uk": {
-   "records": 2,
+   "records": 3,
    "verdicts": {
-    "ok": 2
+    "ok": 3
    }
   },
   "wiltontowncouncil.gov.uk": {
@@ -5193,22 +6087,10 @@
     "ok": 1
    }
   },
-  "nypl.org": {
-   "records": 1,
-   "verdicts": {
-    "ok": 1
-   }
-  },
-  "prod.british-history.ac.uk": {
-   "records": 1,
-   "verdicts": {
-    "error (401)": 1
-   }
-  },
   "huguenotsofspitalfields.org": {
    "records": 1,
    "verdicts": {
-    "unreachable": 1
+    "ok": 1
    }
   },
   "axminsterheritage.org": {
@@ -5244,19 +6126,13 @@
   "floordaily.net": {
    "records": 4,
    "verdicts": {
-    "ok (moved)": 4
+    "ok": 4
    }
   },
   "textileworld.com": {
    "records": 2,
    "verdicts": {
     "ok": 2
-   }
-  },
-  "highlights.paper.edu.cn": {
-   "records": 1,
-   "verdicts": {
-    "server error (502)": 1
    }
   },
   "global.chinadaily.com.cn": {
@@ -5271,7 +6147,7 @@
     "ok": 1
    }
   },
-  "heimtextil.messefrankfurt.com": {
+  "efab.de": {
    "records": 1,
    "verdicts": {
     "ok": 1
@@ -5295,22 +6171,16 @@
     "ok": 1
    }
   },
-  "builds.openbuilds.com": {
-   "records": 1,
-   "verdicts": {
-    "unreachable": 1
-   }
-  },
   "technical.ly": {
    "records": 1,
    "verdicts": {
     "ok": 1
    }
   },
-  "kicktraq.com": {
+  "baijing.cn": {
    "records": 1,
    "verdicts": {
-    "unreachable": 1
+    "ok": 1
    }
   },
   "depts.washington.edu": {
@@ -5373,22 +6243,16 @@
     "bot check": 1
    }
   },
-  "historymuseum.ca": {
-   "records": 1,
-   "verdicts": {
-    "gone (not found)": 1
-   }
-  },
   "textilemuseum.ca": {
    "records": 1,
    "verdicts": {
     "ok": 1
    }
   },
-  "collection.artbma.org": {
+  "artbma.org": {
    "records": 1,
    "verdicts": {
-    "unreachable": 1
+    "bot check": 1
    }
   },
   "shakermuseum.us": {
@@ -5409,10 +6273,148 @@
     "ok": 1
    }
   },
-  "zimmer-austria.com": {
+  "commons.wikimedia.org": {
+   "records": 2,
+   "verdicts": {
+    "ok": 2
+   }
+  },
+  "tufttheworld.com": {
+   "records": 2,
+   "verdicts": {
+    "ok": 2
+   }
+  },
+  "dayangcm.com": {
    "records": 1,
    "verdicts": {
-    "gone (not found)": 1
+    "ok": 1
+   }
+  },
+  "library.winterthur.org": {
+   "records": 11,
+   "verdicts": {
+    "ok": 11
+   }
+  },
+  "dlg.usg.edu": {
+   "records": 12,
+   "verdicts": {
+    "ok": 12
+   }
+  },
+  "album.atlantahistorycenter.com": {
+   "records": 2,
+   "verdicts": {
+    "ok": 2
+   }
+  },
+  "loc.gov": {
+   "records": 3,
+   "verdicts": {
+    "bot check": 3
+   }
+  },
+  "babel.hathitrust.org": {
+   "records": 4,
+   "verdicts": {
+    "bot check": 4
+   }
+  },
+  "collections.si.edu": {
+   "records": 8,
+   "verdicts": {
+    "bot check": 8
+   }
+  },
+  "collections.mfa.org": {
+   "records": 2,
+   "verdicts": {
+    "ok": 2
+   }
+  },
+  "emuseum.history.org": {
+   "records": 1,
+   "verdicts": {
+    "bot check": 1
+   }
+  },
+  "werk.com.cn": {
+   "records": 1,
+   "verdicts": {
+    "unreachable": 1
+   }
+  },
+  "trishandersenstudio.com": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "simjishop.com": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "rugmatag.com": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "cover-magazine.com": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "coolcuration.com": {
+   "records": 1,
+   "verdicts": {
+    "ok (moved)": 1
+   }
+  },
+  "quarto.com": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "unnecessaryinventions.com": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "craftcouncil.org": {
+   "records": 1,
+   "verdicts": {
+    "bot check": 1
+   }
+  },
+  "hypebae.com": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "businessofhome.com": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "punchneedleworld.com": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
+   }
+  },
+  "whyy.org": {
+   "records": 1,
+   "verdicts": {
+    "ok": 1
    }
   }
  }

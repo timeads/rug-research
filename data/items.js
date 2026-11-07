@@ -14376,7 +14376,21 @@ window.RUG_ITEMS = [
     "region": "United States",
     "description": "Trade catalogue. WinterCat: published Chicago, Gibbs, [ca.1890] (printer Auditorium Printing Co.); 36, [4] p., col. ill.; \"Yarn list [4] p. at end\"; \"Also manufacturers, wholesale and retail dealers in Turkish rug patterns, rug hooks, clamps, and yarn reels. Fancy rug yarn a specialty.\" Subjects: Rugs, Hooked -- Patterns -- Catalogs. Catalogued with the hooked-rug trade catalogues; the title calls the device a \"fabric tufting machine\". Date is the catalogue's estimate.\nWhy it matters: Hand tools / Before the machine, open question \"a dated punch-needle tool besides Ross's 1886 punch hook\": a named, c. 1890 hand \"tufting machine\" sold for rug making, from the same Chicago firm as the 1887 catalogue of \"rug machines\" (NK2799 G44 TC). One of the earliest uses of \"tufting machine\" for a rug tool found so far. Needs a look at the catalogue to see how the machine works.\nFound: Winterthur Library catalogue (WinterCat), search \"tufting machine\", 2026-10-28.",
     "sourceUrl": "https://library.winterthur.org/Record/vtls000070692",
-    "reviewedAt": "2026-10-28T21:52:11.222Z"
+    "reviewedAt": "2026-11-03T01:12:27.875Z",
+    "image": "images/own/uploads/u-mvs4p4bck1zum-mvzztmub.jpg",
+    "imageCredit": "Tuft the World",
+    "rights": "own",
+    "images": [
+      {
+        "src": "images/own/uploads/u-mvs4p4bck1zum-mvzztmub.jpg"
+      },
+      {
+        "src": "images/own/uploads/u-mvs4p4bck1zum-mvzztmub-2.jpg"
+      },
+      {
+        "src": "images/own/uploads/u-mvs4p4bck1zum-mvzztmub-3.jpg"
+      }
+    ]
   },
   {
     "id": "u-mvs4p7orwsj87",

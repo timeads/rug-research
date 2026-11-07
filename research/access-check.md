@@ -1,6 +1,6 @@
 # Access check
 
-Checked 2026-10-27 from GitHub Actions by scripts/check-access.mjs. A "bot check" or "robots: keep out" site blocks the automatic jobs (image lookup, indexing); people in a browser usually get through. "Gone" links are broken for everyone.
+Checked 2026-11-03 from GitHub Actions by scripts/check-access.mjs. A "bot check" or "robots: keep out" site blocks the automatic jobs (image lookup, indexing); people in a browser usually get through. "Gone" links are broken for everyone.
 
 ## Other archives (37)
 
@@ -44,28 +44,31 @@ Checked 2026-10-27 from GitHub Actions by scripts/check-access.mjs. A "bot check
 | Tufting & industry / Bandy Heritage Center (Dalton) | ok | HTTP 200; “Search Results for carpet / Bandy Heritage Center for Northwest Georgia” |
 | Tufting & industry / Chronicling America (newspapers) | bot check | HTTP 403; “Just a moment...” |
 
-## Record source links (398)
+## Record source links (502)
 
-303 work (14 of them at a new address), 59 hit a bot check, 17 are on sites that ask tools to keep out, 6 are gone, 13 didn't answer.
+379 work (9 of them at a new address), 97 hit a bot check, 17 are on sites that ask tools to keep out, 2 are gone, 7 didn't answer.
 
 ### Sites that block automated tools
 
 | Site | Records | Results |
 |---|---|---|
-| digital.hagley.org | 16 | bot check 13, ok 3 |
+| digital.hagley.org | 33 | bot check 33 |
+| collections.si.edu | 8 | bot check 8 |
 | drive.google.com | 7 | robots: keep out 7 |
 | britannica.com | 6 | bot check 6 |
+| metmuseum.org | 5 | bot check 5 |
 | docs.google.com | 5 | robots: keep out 5 |
 | tradecatalogues.amdigital.co.uk | 4 | bot check 4 |
-| metmuseum.org | 4 | bot check 4 |
+| babel.hathitrust.org | 4 | bot check 4 |
+| doi.org | 3 | bot check 1, ok (moved) 2 |
 | randomhouse.com | 3 | bot check 3 |
 | hongkongheritage.org | 3 | bot check 3 |
 | kids.britannica.com | 3 | bot check 3 |
 | historicnewengland.org | 3 | bot check 3 |
+| loc.gov | 3 | bot check 3 |
 | ugapress.org | 2 | robots: keep out 2 |
 | marketresearch.amdigital.co.uk | 2 | bot check 2 |
 | emuseum.colonialwilliamsburg.org | 2 | bot check 2 |
-| eh.net | 1 | bot check 1 |
 | mfaboston6.emuseum.com | 1 | bot check 1 |
 | emuseum.mfah.org | 1 | bot check 1 |
 | hmdb.org | 1 | bot check 1 |
@@ -77,53 +80,40 @@ Checked 2026-10-27 from GitHub Actions by scripts/check-access.mjs. A "bot check
 | si.edu | 1 | bot check 1 |
 | artic.edu | 1 | bot check 1 |
 | dixiegroup.com | 1 | bot check 1 |
-| orientalweavers.com | 1 | bot check 1 |
 | cc-tapis.com | 1 | bot check 1 |
 | britishmuseum.org | 1 | bot check 1 |
 | collection.cooperhewitt.org | 1 | bot check 1 |
 | famsf.org | 1 | bot check 1 |
 | digitaltmuseum.org | 1 | bot check 1 |
 | iranicaonline.org | 1 | bot check 1 |
+| artbma.org | 1 | bot check 1 |
+| emuseum.history.org | 1 | bot check 1 |
+| craftcouncil.org | 1 | bot check 1 |
 
 ### Broken or unanswered links
 
 | Record | Link | Result |
 |---|---|---|
-| book-mckinstry-trade-catalogues | https://origin-www.alibris.com/Trade-Catlgs-Winterthur-Richard-E-McKinstry/book/11606707 | unreachable (UND_ERR_CONNECT_TIMEOUT) |
-| book-bed-ruggs-1972 | https://discovery.nypl.org/research/research-catalog/bib/b10248634 | unreachable (ENOTFOUND) |
-| hf-00-1510-19 | https://www.thehenryford.org/collections-and-research/digital-collections/artifact/66143/ | gone (not found) (HTTP 404) |
+| article-patton-ehnet | https://eh.net/encyclopedia/a-history-of-the-u-s-carpet-industry/ | server error (502) (HTTP 502) |
 | ner-cn-sun-yize | https://www.dhu.edu.cn/2015/0309/c18935a59358/page.htm | unreachable (ETIMEDOUT) |
-| ner-cn-palace-carpet | https://www.ihchina.cn/project_details/14500 | unreachable (UND_ERR_CONNECT_TIMEOUT) |
+| ner-cn-imports-2025 | https://m.chinabgao.com/stat/stats/67490776.html | unreachable (The operation was aborted due to timeout) |
 | ner-jp-dust-mite | https://online.ibnewsnet.com/sp/hn250526-05.html | gone (not found) (HTTP 404) |
-| ner-jp-industry-history-2008 | http://www.carpet.or.jp/publics/index/95/detail=1/c_id=524/page524=1 | gone (not found) (HTTP 404) |
-| grace-wilton-royal | https://gracesguide.co.uk/Wilton_Royal_Carpet_Factory | unreachable (ERR_TLS_CERT_ALTNAME_INVALID) |
-| co-limited-edition | https://materialbank.eu/partner/limitededition | gone (not found) (HTTP 404) |
-| co-cormar | https://cormarcarpets.co.uk/about-us/our-history | unreachable (ECONNRESET) |
-| co-vorwerk | https://museumhameln.de/dauerausstellung_engl_20jh67/ | error (423) (HTTP 423) |
-| fulham-parisot-1750 | https://prod.british-history.ac.uk/node/15310 | error (401) (HTTP 401) |
-| exeter-passavant-1756 | https://www.huguenotsofspitalfields.org/?p=1275 | unreachable (ETIMEDOUT) |
-| finding-cnc-chongqing-pmac-2011 | https://highlights.paper.edu.cn/index/paper_detail/4287 | server error (502) (HTTP 502) |
-| finding-cnc-diy-robot-arm-experiments | https://builds.openbuilds.com/posts/137701/ | unreachable (ENOTFOUND) |
-| co-craftphilia | https://www.kicktraq.com/projects/207408103/craftphilia-worlds-first-fully-automated-tufting-machine/ | unreachable (The operation was aborted due to timeout) |
-| process-hooking-origins | https://historymuseum.ca/cmc/exhibitions/arts/rugs/rugs02e.html | gone (not found) (HTTP 200) |
-| process-hooking-grenfell-bma | https://collection.artbma.org/objects/43106/polar-bear-on-ice-floe | unreachable (ENOTFOUND) |
-| process-industrial-printed | https://zimmer-austria.com/en/node/6296 | gone (not found) (HTTP 404) |
+| ner-chase-tianjin-primary | https://nkie.nankai.edu.cn/2017/0502/c11716a121465/page.htm | unreachable (ETIMEDOUT) |
+| co-oriental-weavers | https://orientalweavers.com/history/ | gone (not found) (HTTP 404) |
+| process-sewn-yarn-sewn-chs | https://emuseum.chs.org/emuseum/objects/13050/hearth-rug | unreachable (UND_ERR_CONNECT_TIMEOUT) |
+| process-industrial-printed | https://web.archive.org/web/20230616194018/https://www.zimmer-austria.com/en/node/6296 | unreachable (UND_ERR_CONNECT_TIMEOUT) |
+| u-mvss1boffo03b | https://www.werk.com.cn/ | unreachable (DEPTH_ZERO_SELF_SIGNED_CERT) |
 
 ### Links that moved
 
 | Record | Link | Now |
 |---|---|---|
-| article-rughooking-winterthur | https://www.rughookingmagazine.com/Rug-Hooking-Articles/Hooked-Rugs-of-Winterthur | https://welikerughooking.com/readers-gallery/hooked-rugs-of-winterthur/ |
+| book-mckinstry-trade-catalogues | https://openlibrary.org/works/OL2649034W | https://openlibrary.org/works/OL2649034W/Trade_Catalogues_at_Winterthur |
+| book-deaton-bedspreads-broadloom | https://openlibrary.org/works/OL8896555W | https://openlibrary.org/works/OL8896555W/Bedspreads_to_Broadloom |
+| article-walters-wheeler-1984 | https://doi.org/10.2307/214099 | https://www.jstor.org/stable/214099?origin=crossref |
+| book-georgia-women-whitener-2014 | https://doi.org/10.1515/9780820376134-006 | https://www.degruyterbrill.com/document/doi/10.1515/9780820376134-006/html |
+| ner-cn-palace-carpet | https://web.archive.org/web/20250920054023/https://www.ihchina.cn/project_details/14500 | https://web.archive.org/web/20250918005003/https://www.ihchina.cn/project_details/14500 |
 | ner-be-gap | https://carpetyourlife.com/en/about-us/associated-weavers/milestones | https://associated-weavers.com/en/ |
-| nps-wilton-america | https://www.nps.gov/parkhistory/online_books/inde/anderson/chap2.htm | https://www.nps.gov/orgs/1220/index.htm |
-| co-kasthall | https://www.kasthall.com/about | https://www.kasthall.com/en-us/pages/about-kasthall |
-| co-barwick | https://westgatextiletrail.com/?p=3323 | https://westgatextiletrail.com/lafayette/ |
 | co-suminoe | https://suminoe.jp/en/pages/company | https://suminoe.jp/en/pages/message-from-the-president |
 | co-cobble | https://www.cobble.co.uk/en | https://vandewiele.com/textile-solutions/tufting |
-| woven-kidderminster-1735 | https://revolutionaryplayers.org.uk/?p=2924 | https://www.revolutionaryplayers.org.uk/the-origins-of-carpet-making-in-kidderminster/ |
-| woven-scotch-carpet-america-1790 | https://www.nps.gov/parkhistory/online_books/inde/anderson/chap2.htm | https://www.nps.gov/orgs/1220/index.htm |
-| woven-kidderminster-brussels-1749 | https://revolutionaryplayers.org.uk/?p=2927 | https://www.revolutionaryplayers.org.uk/the-origins-of-carpet-making-in-kidderminster-2/ |
-| event-colorpoint-colortron-2009 | https://floordaily.net/?p=20362 | https://floordaily.net/floorfocus/floortek-expo-2009-preview-augustseptember-2009/ |
-| event-cmc-v-tuftco-2017 | https://floordaily.net/?p=26659 | https://floordaily.net/flooring-news/card-monroe-corp-wins-colorpoint-patent-infringement-case/ |
-| process-industrial-fusion-bonded | https://floordaily.net/?p=20185 | https://floordaily.net/floorfocus/carpet-tile-50-years-later-augsep-2007/ |
-| process-industrial-carpet-tile | https://floordaily.net/?p=20185 | https://floordaily.net/floorfocus/carpet-tile-50-years-later-augsep-2007/ |
+| artist-david-nott | https://coolcuration.com/?p=18878 | https://coolcuration.com/artists/david-nott |
