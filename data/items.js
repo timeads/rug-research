@@ -16647,5 +16647,513 @@ window.RUG_ITEMS = [
     ],
     "region": "United States",
     "description": "Part two of the 1974 interview (part one is u-mvs4y9t5g4k3g), from the John Burrison Georgia Folklore Archives at the Atlanta History Center (via the Digital Library of Georgia, https://dlg.usg.edu/record/geh_p17222coll18_584). Atlanta History Center item p17222coll18/584.\nSpeakers: the archive names the interviewer as Marguerite Stewart and the interviewees as Burl Jackson \"Jack\" Bandy (1926-2020) and Altha Sue Quinton Gordon (1928-2011). In the transcripts a woman called \"Joy\" both asks Bandy questions (part one) and answers questions about learning to hand-tuft (part two); she is probably Altha Sue Quinton Gordon, but the recording does not say so. Bandy speaks of his own parents as early spread makers; that he is the Dalton carpet manufacturer for whom the Bandy Heritage Center is named is likely but not stated in the interview. The transcripts were made from the audio and published to the research tool on 2 Nov 2026; part two repeats several passages, apparently transcription artefacts.\n\nFrom the transcript (part two):\n- Bandy: machines were developed to do jobs done by hand; fringes once made mechanically are now done with \"a jet fringe which is by air\".\n- Joy, on learning to hand-tuft: her mother first made spreads for herself; two or three years later \"Mrs. Bandy and Mrs. Bates and a few people here in Dalton\" took it up \"as a cottage type thing\", with sheeting, yarn and stamped patterns; workers brought back the week's work and picked up more.\n- Pay: \"all from cents up to two dollars depending on how much tufting was to be put on them\"; elsewhere \"ten and twelve cents and up to forty cents\"; she made \"three or four dollars a week\". She learned \"out of necessity\".\n- Tools: \"little leather guards for your hands to push the needle through, and another one on your finger to pull it through\", and finger stalls made from old inner tubes, because the thread was strong and heavy. The men did the clipping, kept the scissors sharp and stamped the patterns in the yard.\n- Patterns were \"mostly from nature\": \"a cluster of grapes\", \"a ribbon bow\", and one \"called the double wedding ring\".\n- Spreads were sold \"mostly up North\", some locally; \"almost everybody in Dalton had a tufted spread back then\".\n- Spreads were boiled to shrink the sheeting and hold the tufts; for whiteness they were dipped in homemade soft soap and left on the line for up to a week in the sun, then washed. The first coloured yarn sold as fast colour \"wasn't\", and ran when boiled; later a fast colour was developed.\n- Some spreads carried \"ten or twelve pounds of thread\"; then lighter spreads came, \"And they got to doing it by machine. That's when the hand tufting started going out. That's when it all went into the mills.\""
+  },
+  {
+    "id": "artist-alex-rocca",
+    "type": "finding",
+    "title": "Alex Rocca: tufted textile works and sculpture, Curitiba",
+    "creator": "Alex Rocca",
+    "place": "Curitiba, Brazil",
+    "region": "Brazil",
+    "description": "Visual artist (IG: 'artista visual @wg.galeria ... curitiba'). Elle Brasil names him among six Brazilian tufting artists (studio with 13 tufting guns); Dwell: 'pieces them together with a tufting gun'. OOA Gallery duo show 'Threads of Memory', 5 Sep–11 Oct 2026; solo show at Galeria Alhures, Curitiba, 2025.\nCaveat: IG account matched by name and city; snippet does not mention tufting. Website alex-rocca.com seen as text only.\nFound by web search of Instagram, TikTok and press for the site's Directory (search of 2 Nov 2026, chosen by the author 7 Nov 2026). The profiles themselves were not opened; details come from search-result snippets and the pages listed here.\nSources: https://elle.com.br/?p=12727 · https://ooagallery.com/artists/95-alex-rocca/ · https://www.dwell.com/article/the-dwell-24-alex-rocca-1559e78e",
+    "sourceUrl": "https://elle.com.br/?p=12727",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "artist",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-07T13:00:36.091Z",
+    "directory": "artist",
+    "listing": "Tufted textile works and sculpture, Curitiba",
+    "listingName": "Alex Rocca",
+    "social": [
+      "https://www.instagram.com/__alexrocca/"
+    ]
+  },
+  {
+    "id": "artist-caroline-kaufman",
+    "type": "finding",
+    "title": "Caroline Kaufman: abstract tufted works for wall and floor, New York",
+    "creator": "Caroline Kaufman",
+    "place": "New York, United States",
+    "region": "United States",
+    "description": "\"Textural tufted works composed of abstract elements that seem to float\" (American Craft Council).\nCaveat: Handle not found.\nFound by web search of Instagram, TikTok and press for the site's Directory (search of 2 Nov 2026, chosen by the author 7 Nov 2026). The profiles themselves were not opened; details come from search-result snippets and the pages listed here.\nSources: https://www.cover-magazine.com/2022/03/11/tufted-art-caroline-kaufman/ · https://craftcouncil.org/magazine/article/tufting-magic",
+    "sourceUrl": "https://www.cover-magazine.com/2022/03/11/tufted-art-caroline-kaufman/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "artist",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-07T13:00:36.091Z",
+    "directory": "artist",
+    "listing": "Abstract tufted works for wall and floor, New York",
+    "listingName": "Caroline Kaufman"
+  },
+  {
+    "id": "artist-hanna-eidson",
+    "type": "finding",
+    "title": "Hanna Eidson, H.H. Hooks: tufted rugs, known for her fish rugs, Halifax",
+    "creator": "Hanna Eidson, H.H. Hooks",
+    "place": "Halifax, Canada",
+    "region": "Canada",
+    "description": "Tufting artist; her business H.H. Hooks, known for \"fish rugs\" (SignalHFX).\nFound by web search of Instagram, TikTok and press for the site's Directory (search of 2 Nov 2026, chosen by the author 7 Nov 2026). The profiles themselves were not opened; details come from search-result snippets and the pages listed here.\nSources: https://www.instagram.com/h.h.hooks/ · https://signalhfx.ca/rug-artist-turns-pandemic-passion-into-small-business/",
+    "sourceUrl": "https://www.instagram.com/h.h.hooks/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "artist",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-07T13:00:36.091Z",
+    "directory": "artist",
+    "listing": "Tufted rugs, known for her fish rugs, Halifax",
+    "listingName": "Hanna Eidson, H.H. Hooks",
+    "social": [
+      "https://www.instagram.com/h.h.hooks/"
+    ]
+  },
+  {
+    "id": "artist-molly-kent",
+    "type": "finding",
+    "title": "Molly Kent: tufted and woven textiles on mental and physical health, Edinburgh",
+    "creator": "Molly Kent",
+    "place": "Edinburgh, United Kingdom",
+    "region": "United Kingdom",
+    "description": "Represents 'aspects of mental and physical health through rug tufting and weaving' (The Skinny); tutor of Dovecot Studios' rug tufting experience; show 'Contemporary Anxieties', Hawick, Sept 2026.\nFound by web search of Instagram, TikTok and press for the site's Directory (search of 2 Nov 2026, chosen by the author 7 Nov 2026). The profiles themselves were not opened; details come from search-result snippets and the pages listed here.\nSources: https://www.theskinny.co.uk/art/showcase/local-heroes-rug-tufting-silenzio-molly-kent · https://dovecotstudios.com/whats-on/rug-tufting · https://www.instagram.com/mollyhkent/",
+    "sourceUrl": "https://www.theskinny.co.uk/art/showcase/local-heroes-rug-tufting-silenzio-molly-kent",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "artist",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-07T13:00:36.091Z",
+    "directory": "artist",
+    "listing": "Tufted and woven textiles on mental and physical health, Edinburgh",
+    "listingName": "Molly Kent",
+    "social": [
+      "https://www.instagram.com/mollyhkent/"
+    ]
+  },
+  {
+    "id": "artist-sachiko-janek",
+    "type": "finding",
+    "title": "Sachiko Janek: fibre art made by tufting, Indiana",
+    "creator": "Sachiko Janek",
+    "place": "Indiana (inferred), United States",
+    "region": "United States",
+    "description": "\"Fiber artist who creates her unique works of art by using a process called tufting\" (PBS).\nCaveat: Handle not found.\nFound by web search of Instagram, TikTok and press for the site's Directory (search of 2 Nov 2026, chosen by the author 7 Nov 2026). The profiles themselves were not opened; details come from search-result snippets and the pages listed here.\nSources: https://www.pbs.org/video/fiber-artist-sachiko-janek-painter-bonnie-joann-zfq9x8",
+    "sourceUrl": "https://www.pbs.org/video/fiber-artist-sachiko-janek-painter-bonnie-joann-zfq9x8",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "artist",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-07T13:00:36.091Z",
+    "directory": "artist",
+    "listing": "Fibre art made by tufting, Indiana",
+    "listingName": "Sachiko Janek"
+  },
+  {
+    "id": "artist-simone-elizabeth-saunders",
+    "type": "finding",
+    "title": "Simone Elizabeth Saunders: hand-tufted and punch-needle portraits, Calgary",
+    "creator": "Simone Elizabeth Saunders",
+    "place": "Calgary, Canada",
+    "region": "Canada",
+    "description": "Hand-tufted portraits with tufting gun and punch needle; solo show 'u.n.i.t.y.' at Contemporary Calgary and the Textile Museum of Canada; Claire Oliver Gallery.\nFound by web search of Instagram, TikTok and press for the site's Directory (search of 2 Nov 2026, chosen by the author 7 Nov 2026). The profiles themselves were not opened; details come from search-result snippets and the pages listed here.\nSources: https://www.instagram.com/simoneelizabethsaunders/ · https://textilemuseum.ca/event/simone-elizabeth-saunders/",
+    "sourceUrl": "https://www.instagram.com/simoneelizabethsaunders/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "artist",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-07T13:00:36.091Z",
+    "directory": "artist",
+    "listing": "Hand-tufted and punch-needle portraits, Calgary",
+    "listingName": "Simone Elizabeth Saunders",
+    "social": [
+      "https://www.instagram.com/simoneelizabethsaunders/"
+    ]
+  },
+  {
+    "id": "co-weft-poland",
+    "type": "company",
+    "title": "Weft.: tufted rugs, textiles and furniture, Poland",
+    "creator": "Weft.",
+    "place": "Poland",
+    "region": "Poland",
+    "description": "'Dywany i tuftowane tkaniny' (rugs and tufted textiles); custom tufted furniture and textile art.\nFound by web search of Instagram, TikTok and press for the site's Directory (search of 2 Nov 2026, chosen by the author 7 Nov 2026). The profiles themselves were not opened; details come from search-result snippets and the pages listed here.\nSources: https://www.instagram.com/weft_handcrafted_rugs/",
+    "sourceUrl": "https://www.instagram.com/weft_handcrafted_rugs/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "studio",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-07T13:00:36.091Z",
+    "directory": "artist",
+    "listing": "Tufted rugs, textiles and furniture, Poland",
+    "listingName": "Weft.",
+    "social": [
+      "https://www.instagram.com/weft_handcrafted_rugs/"
+    ]
+  },
+  {
+    "id": "co-la-tactile-lab",
+    "type": "company",
+    "title": "LA Tactile Lab: material lab and school with tufting courses, Los Angeles",
+    "creator": "LA Tactile Lab",
+    "place": "Los Angeles, United States",
+    "region": "United States",
+    "description": "\"Material lab and school\"; multi-week tufting course taught by Liv Aanrud.\nFound by web search of Instagram, TikTok and press for the site's Directory (search of 2 Nov 2026, chosen by the author 7 Nov 2026). The profiles themselves were not opened; details come from search-result snippets and the pages listed here.\nSources: https://www.instagram.com/latactilelab/ · https://textileartsla.org/calendar/lab-tufting",
+    "sourceUrl": "https://www.instagram.com/latactilelab/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "workshop",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-07T13:00:36.091Z",
+    "directory": "artist",
+    "listing": "Material lab and school with tufting courses, Los Angeles",
+    "listingName": "LA Tactile Lab",
+    "social": [
+      "https://www.instagram.com/latactilelab/"
+    ]
+  },
+  {
+    "id": "co-tuft-house-la",
+    "type": "company",
+    "title": "Tuft House LA: tufting studio and school, Los Angeles",
+    "creator": "Tuft House LA",
+    "place": "Los Angeles, United States",
+    "region": "United States",
+    "description": "\"Los Angeles Tufting studio and school\".\nFound by web search of Instagram, TikTok and press for the site's Directory (search of 2 Nov 2026, chosen by the author 7 Nov 2026). The profiles themselves were not opened; details come from search-result snippets and the pages listed here.\nSources: https://www.instagram.com/tufthousela/ · https://assets.classbento.com/tufting-class-los-angeles",
+    "sourceUrl": "https://www.instagram.com/tufthousela/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "workshop",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-07T13:00:36.091Z",
+    "directory": "artist",
+    "listing": "Tufting studio and school, Los Angeles",
+    "listingName": "Tuft House LA",
+    "social": [
+      "https://www.instagram.com/tufthousela/"
+    ]
+  },
+  {
+    "id": "co-rugged-looks",
+    "type": "company",
+    "title": "Rugged Looks: tufting workshops, Williamsburg, Brooklyn",
+    "creator": "Rugged Looks",
+    "place": "Brooklyn, United States",
+    "region": "United States",
+    "description": "\"NYC tufting experience in Williamsburg Brooklyn\".\nFound by web search of Instagram, TikTok and press for the site's Directory (search of 2 Nov 2026, chosen by the author 7 Nov 2026). The profiles themselves were not opened; details come from search-result snippets and the pages listed here.\nSources: https://www.instagram.com/rugged_looks/",
+    "sourceUrl": "https://www.instagram.com/rugged_looks/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "workshop",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-07T13:00:36.091Z",
+    "directory": "artist",
+    "listing": "Tufting workshops, Williamsburg, Brooklyn",
+    "listingName": "Rugged Looks",
+    "social": [
+      "https://www.instagram.com/rugged_looks/"
+    ]
+  },
+  {
+    "id": "co-tuftxpvd",
+    "type": "company",
+    "title": "TuftxPVD: tuft-your-own rug studio, Pawtucket, Rhode Island",
+    "creator": "TuftxPVD",
+    "place": "Pawtucket, Rhode Island, United States",
+    "region": "United States",
+    "description": "\"Rug tufting studio in Rhode Island\"; tuft-your-own business (Boston Globe, 2025).\nFound by web search of Instagram, TikTok and press for the site's Directory (search of 2 Nov 2026, chosen by the author 7 Nov 2026). The profiles themselves were not opened; details come from search-result snippets and the pages listed here.\nSources: https://www.instagram.com/tuftxpvd/ · https://www.bostonglobe.com/2025/02/17/metro/ri-pawtucket-artist-tufting-rug-business",
+    "sourceUrl": "https://www.instagram.com/tuftxpvd/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "workshop",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-07T13:00:36.091Z",
+    "directory": "artist",
+    "listing": "Tuft-your-own rug studio, Pawtucket, Rhode Island",
+    "listingName": "TuftxPVD",
+    "social": [
+      "https://www.instagram.com/tuftxpvd/"
+    ]
+  },
+  {
+    "id": "co-rug-lounge-slc",
+    "type": "company",
+    "title": "Rug Lounge SLC: rug tufting studio and classes, Salt Lake City",
+    "creator": "Rug Lounge SLC",
+    "place": "Salt Lake City, United States",
+    "region": "United States",
+    "description": "\"Salt Lake City's first rug tufting studio\"; opened May 2026.\nCaveat: Handle not found; domain rugloungeslc.com named in a press release.\nFound by web search of Instagram, TikTok and press for the site's Directory (search of 2 Nov 2026, chosen by the author 7 Nov 2026). The profiles themselves were not opened; details come from search-result snippets and the pages listed here.\nSources: https://www.sltrib.com/news/business/2026/05/30/rug-tufting-salt-lake-city-try-it/",
+    "sourceUrl": "https://www.sltrib.com/news/business/2026/05/30/rug-tufting-salt-lake-city-try-it/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "workshop",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-07T13:00:36.091Z",
+    "directory": "artist",
+    "listing": "Rug tufting studio and classes, Salt Lake City",
+    "listingName": "Rug Lounge SLC"
+  },
+  {
+    "id": "co-tuft-tuft-berlin",
+    "type": "company",
+    "title": "Tuft Tuft Berlin: tufting workshops, custom rugs and events, Berlin",
+    "creator": "Tuft Tuft Berlin",
+    "place": "Berlin, Germany",
+    "region": "Germany",
+    "description": "Tufting studio: 'workshops, custom rugs, and events'.\nFound by web search of Instagram, TikTok and press for the site's Directory (search of 2 Nov 2026, chosen by the author 7 Nov 2026). The profiles themselves were not opened; details come from search-result snippets and the pages listed here.\nSources: https://www.instagram.com/tufttuft_berlin/",
+    "sourceUrl": "https://www.instagram.com/tufttuft_berlin/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "workshop",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-07T13:00:36.091Z",
+    "directory": "artist",
+    "listing": "Tufting workshops, custom rugs and events, Berlin",
+    "listingName": "Tuft Tuft Berlin",
+    "social": [
+      "https://www.instagram.com/tufttuft_berlin/"
+    ]
+  },
+  {
+    "id": "co-tufting-studio-keke",
+    "type": "company",
+    "title": "tufting studio KEKE: make-your-own rug workshops, Tokyo",
+    "creator": "tufting studio KEKE",
+    "place": "Tokyo, Japan",
+    "region": "Japan",
+    "description": "'Japan's first workshop where you can make an original rug' (transl.); opened about 2021 with MIYOSHI RUG (Fashionsnap).\nFound by web search of Instagram, TikTok and press for the site's Directory (search of 2 Nov 2026, chosen by the author 7 Nov 2026). The profiles themselves were not opened; details come from search-result snippets and the pages listed here.\nSources: https://www.instagram.com/keke_rug/ · https://www.fashionsnap.com/article/2021-10-29/keke-tuftingstudio/",
+    "sourceUrl": "https://www.instagram.com/keke_rug/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "workshop",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-07T13:00:36.091Z",
+    "directory": "artist",
+    "listing": "Make-your-own rug workshops, Tokyo",
+    "listingName": "tufting studio KEKE",
+    "social": [
+      "https://www.instagram.com/keke_rug/"
+    ]
+  },
+  {
+    "id": "co-tuft-club",
+    "type": "company",
+    "title": "Tuft Club: tufting studio and workshops, Singapore",
+    "creator": "Tuft Club",
+    "place": "Singapore, Singapore",
+    "region": "Singapore",
+    "description": "'The first tufting studio in Singapore' (Time Out); founded by Carl Teh, Izac Tan and Zoey Soh (Vulcan Post).\nCaveat: Handle not found.\nFound by web search of Instagram, TikTok and press for the site's Directory (search of 2 Nov 2026, chosen by the author 7 Nov 2026). The profiles themselves were not opened; details come from search-result snippets and the pages listed here.\nSources: https://www.timeout.com/singapore/art/inside-the-first-tufting-studio-in-singapore-paint-in-yarn · https://vulcanpost.com/814659/tuft-club-rug-tufting-singapore/",
+    "sourceUrl": "https://www.timeout.com/singapore/art/inside-the-first-tufting-studio-in-singapore-paint-in-yarn",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "workshop",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-07T13:00:36.091Z",
+    "directory": "artist",
+    "listing": "Tufting studio and workshops, Singapore",
+    "listingName": "Tuft Club"
+  },
+  {
+    "id": "co-bangalore-tufting-studio",
+    "type": "company",
+    "title": "Bangalore Tufting Studio: tufting workshops and events, Bengaluru",
+    "creator": "Bangalore Tufting Studio",
+    "place": "Bengaluru, India",
+    "region": "India",
+    "description": "'India's second tufting studio'; tuft parties and corporate events.\nFound by web search of Instagram, TikTok and press for the site's Directory (search of 2 Nov 2026, chosen by the author 7 Nov 2026). The profiles themselves were not opened; details come from search-result snippets and the pages listed here.\nSources: https://www.instagram.com/tuftingstudio.blr/",
+    "sourceUrl": "https://www.instagram.com/tuftingstudio.blr/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "workshop",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-07T13:00:36.091Z",
+    "directory": "artist",
+    "listing": "Tufting workshops and events, Bengaluru",
+    "listingName": "Bangalore Tufting Studio",
+    "social": [
+      "https://www.instagram.com/tuftingstudio.blr/"
+    ]
+  },
+  {
+    "id": "co-tufting-mex",
+    "type": "company",
+    "title": "Tufting Mex: tufting courses and custom rugs, Mexico City",
+    "creator": "Tufting Mex",
+    "place": "Mexico City, Mexico",
+    "region": "Mexico",
+    "description": "Tufting courses, custom rugs and supplies (transl.); classes with your own design and two-day intensives (CDMX Secreta).\nFound by web search of Instagram, TikTok and press for the site's Directory (search of 2 Nov 2026, chosen by the author 7 Nov 2026). The profiles themselves were not opened; details come from search-result snippets and the pages listed here.\nSources: https://www.instagram.com/tufting_mex/ · https://cdmxsecreta.com/en/tufting-workshop-in-mexico-city/",
+    "sourceUrl": "https://www.instagram.com/tufting_mex/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "workshop",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-07T13:00:36.091Z",
+    "directory": "artist",
+    "listing": "Tufting courses and custom rugs, Mexico City",
+    "listingName": "Tufting Mex",
+    "social": [
+      "https://www.instagram.com/tufting_mex/"
+    ]
+  },
+  {
+    "id": "co-gio-tufting",
+    "type": "company",
+    "title": "Gio Tufting: tufting courses and custom rugs, Santiago",
+    "creator": "Gio Tufting",
+    "place": "Santiago, Chile",
+    "region": "Chile",
+    "description": "Tufting courses in person and online, and custom rugs (transl.).\nFound by web search of Instagram, TikTok and press for the site's Directory (search of 2 Nov 2026, chosen by the author 7 Nov 2026). The profiles themselves were not opened; details come from search-result snippets and the pages listed here.\nSources: https://www.instagram.com/gio.tufting/",
+    "sourceUrl": "https://www.instagram.com/gio.tufting/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "workshop",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-07T13:00:36.091Z",
+    "directory": "artist",
+    "listing": "Tufting courses and custom rugs, Santiago",
+    "listingName": "Gio Tufting",
+    "social": [
+      "https://www.instagram.com/gio.tufting/"
+    ]
+  },
+  {
+    "id": "co-tufting-maroc",
+    "type": "company",
+    "title": "Tufting Maroc: custom tufted rugs, Morocco",
+    "creator": "Tufting Maroc",
+    "place": "Morocco",
+    "region": "Morocco",
+    "description": "'Créateur de tapis'; 'Personnalise ton tapis / Custom rug'.\nFound by web search of Instagram, TikTok and press for the site's Directory (search of 2 Nov 2026, chosen by the author 7 Nov 2026). The profiles themselves were not opened; details come from search-result snippets and the pages listed here.\nSources: https://www.instagram.com/tufting.maroc/",
+    "sourceUrl": "https://www.instagram.com/tufting.maroc/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "studio",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-07T13:00:36.091Z",
+    "directory": "artist",
+    "listing": "Custom tufted rugs, Morocco",
+    "listingName": "Tufting Maroc",
+    "social": [
+      "https://www.instagram.com/tufting.maroc/"
+    ]
+  },
+  {
+    "id": "co-miyoshi-rug",
+    "type": "company",
+    "title": "MIYOSHI RUG: tufted rugs from a rug factory, Tokushima",
+    "creator": "MIYOSHI RUG",
+    "place": "Tokushima, Japan",
+    "region": "Japan",
+    "description": "Tufted rug brand of a Tokushima rug factory; artist collaborations; store in Tokyo.\nCaveat: A factory brand; could sit with commercial makers.\nFound by web search of Instagram, TikTok and press for the site's Directory (search of 2 Nov 2026, chosen by the author 7 Nov 2026). The profiles themselves were not opened; details come from search-result snippets and the pages listed here.\nSources: https://www.instagram.com/miyoshirug/ · https://www.fashionsnap.com/article/2024-06-15/miyoshirug-popup/",
+    "sourceUrl": "https://www.instagram.com/miyoshirug/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "studio",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-07T13:00:36.091Z",
+    "directory": "commercial",
+    "listing": "Tufted rugs from a rug factory, Tokushima",
+    "listingName": "MIYOSHI RUG",
+    "social": [
+      "https://www.instagram.com/miyoshirug/"
+    ]
   }
 ];

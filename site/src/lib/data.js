@@ -104,17 +104,17 @@ export const absolute = src => (/^https?:/.test(src) ? src : new URL(src, SITE).
 // A record joins the Directory page when the research tool marks it "commercial" or "artist". Countries
 // come from the record's region (or listingCountry, where a firm now works somewhere else), grouped here.
 const REGION_OF = {
-  "United States": "North America", Canada: "North America", Mexico: "Latin America", Brazil: "Latin America", Argentina: "Latin America", Peru: "Latin America",
+  "United States": "North America", Canada: "North America", Mexico: "Latin America", Brazil: "Latin America", Argentina: "Latin America", Peru: "Latin America", Chile: "Latin America", Colombia: "Latin America", Uruguay: "Latin America", Ecuador: "Latin America", "Puerto Rico": "Latin America", Guatemala: "Latin America", "Costa Rica": "Latin America",
   "United Kingdom": "Europe", Ireland: "Europe", France: "Europe", Belgium: "Europe", Netherlands: "Europe", Germany: "Europe", Switzerland: "Europe", Sweden: "Europe",
-  Denmark: "Europe", Norway: "Europe", Finland: "Europe", Spain: "Europe", Portugal: "Europe", Italy: "Europe", Poland: "Europe", Austria: "Europe",
-  Japan: "Asia", China: "Asia", "Hong Kong": "Asia", Taiwan: "Asia", "South Korea": "Asia", Korea: "Asia", Thailand: "Asia", Vietnam: "Asia", India: "Asia", Nepal: "Asia", Pakistan: "Asia", Indonesia: "Asia", Philippines: "Asia",
+  Denmark: "Europe", Norway: "Europe", Finland: "Europe", Spain: "Europe", Portugal: "Europe", Italy: "Europe", Poland: "Europe", Austria: "Europe", Czechia: "Europe", Greece: "Europe", Hungary: "Europe", Romania: "Europe", Ukraine: "Europe", Lithuania: "Europe", Latvia: "Europe", Estonia: "Europe", Slovenia: "Europe", Croatia: "Europe", Iceland: "Europe",
+  Japan: "Asia", China: "Asia", "Hong Kong": "Asia", Taiwan: "Asia", "South Korea": "Asia", Korea: "Asia", Thailand: "Asia", Vietnam: "Asia", India: "Asia", Nepal: "Asia", Pakistan: "Asia", Indonesia: "Asia", Philippines: "Asia", Singapore: "Asia", Malaysia: "Asia", "Sri Lanka": "Asia", Bangladesh: "Asia", Mongolia: "Asia", Kazakhstan: "Asia",
   Australia: "Oceania", "New Zealand": "Oceania",
-  Egypt: "Middle East and Africa", Turkey: "Middle East and Africa", Morocco: "Middle East and Africa", Iran: "Middle East and Africa", "South Africa": "Middle East and Africa", "United Arab Emirates": "Middle East and Africa"
+  Egypt: "Middle East and Africa", Turkey: "Middle East and Africa", Morocco: "Middle East and Africa", Iran: "Middle East and Africa", "South Africa": "Middle East and Africa", "United Arab Emirates": "Middle East and Africa", "Saudi Arabia": "Middle East and Africa", Qatar: "Middle East and Africa", Kuwait: "Middle East and Africa", Israel: "Middle East and Africa", Lebanon: "Middle East and Africa", Jordan: "Middle East and Africa", Nigeria: "Middle East and Africa", Kenya: "Middle East and Africa", Ghana: "Middle East and Africa", Senegal: "Middle East and Africa", Tunisia: "Middle East and Africa"
 };
 export const REGION_ORDER = ["North America", "Latin America", "Europe", "Asia", "Oceania", "Middle East and Africa", "Elsewhere"];
 export const DIRECTORY_KINDS = [
   ["commercial", "Commercial and professional", "Manufacturers, mills, workshops and studios making tufted rugs and carpet."],
-  ["artist", "Artists and studios", "Artists and small studios working with tufting guns and needles."]
+  ["artist", "Artists, studios and workshops", "Artists, small studios and tufting workshops working with tufting guns and needles."]
 ];
 export const directoryCountry = it => it.listingCountry || it.region || "Not recorded";
 export const directoryRegion = it => REGION_OF[directoryCountry(it)] || "Elsewhere";
