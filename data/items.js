@@ -16836,7 +16836,10 @@ window.RUG_ITEMS = [
     "listingName": "Weft.",
     "social": [
       "https://www.instagram.com/weft_handcrafted_rugs/"
-    ]
+    ],
+    "image": "https://static.cdninstagram.com/rsrc.php/v4/yD/r/R0fBIMurK8v.png",
+    "imageCredit": "instagram.com",
+    "imageSource": "auto"
   },
   {
     "id": "co-la-tactile-lab",
@@ -16963,7 +16966,10 @@ window.RUG_ITEMS = [
     "reviewedAt": "2026-11-07T13:00:36.091Z",
     "directory": "artist",
     "listing": "Rug tufting studio and classes, Salt Lake City",
-    "listingName": "Rug Lounge SLC"
+    "listingName": "Rug Lounge SLC",
+    "image": "https://www.sltrib.com/resizer/v2/M7QUAKRM6ZFJHMWMSXHCH7EYI4.jpg?auth=e5e96a565e8a753e8fa8880cb388ec7cda5f3c933dcc6e2853849ded6b5a275b&width=1200&height=630&quality=88&smart=true",
+    "imageCredit": "sltrib.com",
+    "imageSource": "auto"
   },
   {
     "id": "co-tuft-tuft-berlin",
@@ -17038,7 +17044,11 @@ window.RUG_ITEMS = [
     "reviewedAt": "2026-11-07T13:00:36.091Z",
     "directory": "artist",
     "listing": "Tufting studio and workshops, Singapore",
-    "listingName": "Tuft Club"
+    "listingName": "Tuft Club",
+    "image": "https://vulcanpost.com/wp-content/uploads/2023/01/tuftclub-feat.jpg",
+    "imageCredit": "vulcanpost.com (image from vulcanpost.com)",
+    "imagePage": "https://vulcanpost.com/814659/tuft-club-rug-tufting-singapore/",
+    "imageSource": "auto"
   },
   {
     "id": "co-bangalore-tufting-studio",
