@@ -464,7 +464,7 @@
       ["inst", "Held by", v => v === "(none)" ? "No institution" : v],
       ["rights", "Image permission", v => v === "(no image)" ? "No image" : v === "likely-public-domain" ? "Says public domain, not marked" : RIGHTS[v] || v],
       ["gal", "Site gallery", v => v === "in" ? "In the gallery" : "Not in the gallery"],
-      ["dir", "Site directory", v => ({ commercial: "Commercial and professional", artist: "Artists, studios and workshops" })[v] || "Not in the directory"],
+      ["dir", "Site directory", v => ({ commercial: "Commercial and professional", artist: "Artists and studios", workshop: "Workshops and classes" })[v] || "Not in the directory"],
       ["status", "Checked", v => v === "verified" ? "Verified at source" : "Not yet verified"]
     ];
     $("#facets").innerHTML = defs.map(([key, title, label, mark]) => {
@@ -687,7 +687,7 @@
           <button class="btn" id="copy-cite">${icon("copy")}Copy citation</button>
           <button class="btn" data-find-image="${esc(id)}">${icon("search")}${it.image && !it._borrowed ? "Find another image" : "Find an image"}</button>
         </div>
-        ${it.directory || it.website || (it.social || []).length ? `<p class="dir-line-d">${it.directory ? `<span class="dir-tag">Directory: ${it.directory === "artist" ? "Artists, studios and workshops" : "Commercial and professional"}</span> ` : ""}${esc(it.listing || "")}${[it.website, ...(Array.isArray(it.social) ? it.social : [])].filter(u => safeUrl(u)).map(u => ` <a href="${esc(safeUrl(u))}" target="_blank" rel="noopener">${esc(u.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, ""))}</a>`).join(" ·")}</p>` : ""}
+        ${it.directory || it.website || (it.social || []).length ? `<p class="dir-line-d">${it.directory ? `<span class="dir-tag">Directory: ${({ artist: "Artists and studios", workshop: "Workshops and classes" })[it.directory] || "Commercial and professional"}</span> ` : ""}${esc(it.listing || "")}${[it.website, ...(Array.isArray(it.social) ? it.social : [])].filter(u => safeUrl(u)).map(u => ` <a href="${esc(safeUrl(u))}" target="_blank" rel="noopener">${esc(u.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, ""))}</a>`).join(" ·")}</p>` : ""}
         ${it.originalText ? `<figure class="quote"><blockquote lang="${esc(it.language || "")}">${esc(it.originalText)}</blockquote>${it.translation ? `<figcaption>${esc(it.translation)}</figcaption>` : ""}</figure>` : it.translation ? `<p class="desc">${esc(it.translation)}</p>` : ""}
         ${it.confidence && CONFIDENCE[it.confidence] ? `<p class="conf-line">${confBadge(it)} ${esc(CONFIDENCE[it.confidence].hint)}.</p>` : ""}
         ${it.description ? `<p class="desc">${esc(it.description)}</p>` : ""}

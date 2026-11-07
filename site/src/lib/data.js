@@ -113,8 +113,9 @@ const REGION_OF = {
 };
 export const REGION_ORDER = ["North America", "Latin America", "Europe", "Asia", "Oceania", "Middle East and Africa", "Elsewhere"];
 export const DIRECTORY_KINDS = [
-  ["commercial", "Commercial and professional", "Manufacturers, mills, workshops and studios making tufted rugs and carpet."],
-  ["artist", "Artists, studios and workshops", "Artists, small studios and tufting workshops working with tufting guns and needles."]
+  ["commercial", "Commercial and professional", "Manufacturers, mills and design houses making tufted rugs and carpet."],
+  ["artist", "Artists and studios", "Artists and small studios making tufted work and custom rugs."],
+  ["workshop", "Workshops and classes", "Places to take a tufting class: studios that teach the hand gun, by the session or the course."]
 ];
 export const directoryCountry = it => it.listingCountry || it.region || "Not recorded";
 export const directoryRegion = it => REGION_OF[directoryCountry(it)] || "Elsewhere";

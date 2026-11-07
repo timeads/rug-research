@@ -11011,10 +11011,10 @@ window.RUG_ITEMS = [
     "imageCredit": "Tuft the World",
     "imageSource": "auto",
     "gallery": true,
-    "reviewedAt": "2026-11-07T16:51:02.081Z",
+    "reviewedAt": "2026-11-07T23:55:47.500Z",
     "listing": "Tufting workshops, studio and supplies, West Philadelphia (the author's firm)",
     "website": "https://tufttheworld.com/",
-    "directory": "artist",
+    "directory": "workshop",
     "listingName": "Tuft the World",
     "social": [
       "https://www.instagram.com/tuft_the_world/"
@@ -16864,8 +16864,8 @@ window.RUG_ITEMS = [
       "found by web search"
     ],
     "status": "unverified",
-    "reviewedAt": "2026-11-07T13:00:36.091Z",
-    "directory": "artist",
+    "reviewedAt": "2026-11-07T23:55:47.500Z",
+    "directory": "workshop",
     "listing": "Material lab and school with tufting courses, Los Angeles",
     "listingName": "LA Tactile Lab",
     "social": [
@@ -16894,8 +16894,8 @@ window.RUG_ITEMS = [
       "found by web search"
     ],
     "status": "unverified",
-    "reviewedAt": "2026-11-07T13:00:36.091Z",
-    "directory": "artist",
+    "reviewedAt": "2026-11-07T23:55:47.500Z",
+    "directory": "workshop",
     "listing": "Tufting studio and school, Los Angeles",
     "listingName": "Tuft House LA",
     "social": [
@@ -16920,8 +16920,8 @@ window.RUG_ITEMS = [
       "found by web search"
     ],
     "status": "unverified",
-    "reviewedAt": "2026-11-07T13:00:36.091Z",
-    "directory": "artist",
+    "reviewedAt": "2026-11-07T23:55:47.500Z",
+    "directory": "workshop",
     "listing": "Tufting workshops, Williamsburg, Brooklyn",
     "listingName": "Rugged Looks",
     "social": [
@@ -16946,8 +16946,8 @@ window.RUG_ITEMS = [
       "found by web search"
     ],
     "status": "unverified",
-    "reviewedAt": "2026-11-07T13:00:36.091Z",
-    "directory": "artist",
+    "reviewedAt": "2026-11-07T23:55:47.500Z",
+    "directory": "workshop",
     "listing": "Tuft-your-own rug studio, Pawtucket, Rhode Island",
     "listingName": "TuftxPVD",
     "social": [
@@ -16976,8 +16976,8 @@ window.RUG_ITEMS = [
       "found by web search"
     ],
     "status": "unverified",
-    "reviewedAt": "2026-11-07T13:00:36.091Z",
-    "directory": "artist",
+    "reviewedAt": "2026-11-07T23:55:47.500Z",
+    "directory": "workshop",
     "listing": "Rug tufting studio and classes, Salt Lake City",
     "listingName": "Rug Lounge SLC",
     "image": "https://www.sltrib.com/resizer/v2/M7QUAKRM6ZFJHMWMSXHCH7EYI4.jpg?auth=e5e96a565e8a753e8fa8880cb388ec7cda5f3c933dcc6e2853849ded6b5a275b&width=1200&height=630&quality=88&smart=true",
@@ -17002,8 +17002,8 @@ window.RUG_ITEMS = [
       "found by web search"
     ],
     "status": "unverified",
-    "reviewedAt": "2026-11-07T13:00:36.091Z",
-    "directory": "artist",
+    "reviewedAt": "2026-11-07T23:55:47.500Z",
+    "directory": "workshop",
     "listing": "Tufting workshops, custom rugs and events, Berlin",
     "listingName": "Tuft Tuft Berlin",
     "social": [
@@ -17028,8 +17028,8 @@ window.RUG_ITEMS = [
       "found by web search"
     ],
     "status": "unverified",
-    "reviewedAt": "2026-11-07T13:00:36.091Z",
-    "directory": "artist",
+    "reviewedAt": "2026-11-07T23:55:47.500Z",
+    "directory": "workshop",
     "listing": "Make-your-own rug workshops, Tokyo",
     "listingName": "tufting studio KEKE",
     "social": [
@@ -17058,8 +17058,8 @@ window.RUG_ITEMS = [
       "found by web search"
     ],
     "status": "unverified",
-    "reviewedAt": "2026-11-07T13:00:36.091Z",
-    "directory": "artist",
+    "reviewedAt": "2026-11-07T23:55:47.500Z",
+    "directory": "workshop",
     "listing": "Tufting studio and workshops, Singapore",
     "listingName": "Tuft Club",
     "image": "https://vulcanpost.com/wp-content/uploads/2023/01/tuftclub-feat.jpg",
@@ -17085,8 +17085,8 @@ window.RUG_ITEMS = [
       "found by web search"
     ],
     "status": "unverified",
-    "reviewedAt": "2026-11-07T13:00:36.091Z",
-    "directory": "artist",
+    "reviewedAt": "2026-11-07T23:55:47.500Z",
+    "directory": "workshop",
     "listing": "Tufting workshops and events, Bengaluru",
     "listingName": "Bangalore Tufting Studio",
     "social": [
@@ -17111,8 +17111,8 @@ window.RUG_ITEMS = [
       "found by web search"
     ],
     "status": "unverified",
-    "reviewedAt": "2026-11-07T13:00:36.091Z",
-    "directory": "artist",
+    "reviewedAt": "2026-11-07T23:55:47.500Z",
+    "directory": "workshop",
     "listing": "Tufting courses and custom rugs, Mexico City",
     "listingName": "Tufting Mex",
     "social": [
@@ -17137,8 +17137,8 @@ window.RUG_ITEMS = [
       "found by web search"
     ],
     "status": "unverified",
-    "reviewedAt": "2026-11-07T13:00:36.091Z",
-    "directory": "artist",
+    "reviewedAt": "2026-11-07T23:55:47.500Z",
+    "directory": "workshop",
     "listing": "Tufting courses and custom rugs, Santiago",
     "listingName": "Gio Tufting",
     "social": [
@@ -17265,8 +17265,8 @@ window.RUG_ITEMS = [
       "found by web search"
     ],
     "status": "unverified",
-    "reviewedAt": "2026-11-07T16:45:47.569Z",
-    "directory": "artist",
+    "reviewedAt": "2026-11-07T23:55:47.500Z",
+    "directory": "workshop",
     "listing": "Tufting classes and rugs, Denver",
     "listingName": "Magic Carpets",
     "image": "https://img.ctykit.com/cdn/co-rino/images/user1731101577.jpg",
@@ -17291,8 +17291,8 @@ window.RUG_ITEMS = [
       "found by web search"
     ],
     "status": "unverified",
-    "reviewedAt": "2026-11-07T16:45:47.569Z",
-    "directory": "artist",
+    "reviewedAt": "2026-11-07T23:55:47.500Z",
+    "directory": "workshop",
     "listing": "Rug-making classes, Atlanta",
     "listingName": "The Tuftest Class In Town",
     "social": [

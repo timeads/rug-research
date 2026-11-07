@@ -9,7 +9,7 @@ for (const c of window.RUG_CHAPTERS) { const s = new Set(); for (const i of c.it
 for (const x of items) for (const g of x.images || []) if (!/^https?:/.test(g.src) && !fs.existsSync(require("path").resolve(__dirname, "..", g.src))) { console.log("no file", g.src); bad++; }
 // Directory entries: a known kind, and links that are web addresses.
 for (const x of items) {
-  if (x.directory && !["commercial", "artist"].includes(x.directory)) { console.log("bad directory kind", x.id, x.directory); bad++; }
+  if (x.directory && !["commercial", "artist", "workshop"].includes(x.directory)) { console.log("bad directory kind", x.id, x.directory); bad++; }
   for (const u of [x.website, ...(x.social || [])].filter(Boolean)) if (!/^https?:\/\/\S+$/.test(u)) { console.log("bad link", x.id, u); bad++; }
 }
 for (const [id, t] of Object.entries(window.RUG_TRANSCRIPTS || {})) if (!ids.has(id) || typeof t.text !== "string") { console.log("bad transcript", id); bad++; }
