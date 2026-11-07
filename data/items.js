@@ -16865,7 +16865,11 @@ window.RUG_ITEMS = [
     "listingName": "LA Tactile Lab",
     "social": [
       "https://www.instagram.com/latactilelab/"
-    ]
+    ],
+    "image": "http://static1.squarespace.com/static/62b27df12aab6527404409fe/62cfa2e35453117bed9f5ea0/692607f00ca22158377a9c1f/1764100699798/tactile-tufting.jpeg?format=1500w",
+    "imageCredit": "textileartsla.org (image from textileartsla.org)",
+    "imagePage": "https://textileartsla.org/calendar/lab-tufting",
+    "imageSource": "auto"
   },
   {
     "id": "co-tuft-house-la",
@@ -16943,7 +16947,11 @@ window.RUG_ITEMS = [
     "listingName": "TuftxPVD",
     "social": [
       "https://www.instagram.com/tuftxpvd/"
-    ]
+    ],
+    "image": "https://bostonglobe-prod.cdn.arcpublishing.com/resizer/v2/R6NGZXMG2BF7VEKIBJ7A62Y3E4.jpeg?auth=4f831b7934785798630933f470c00bda2bbf2d7580472b10c4d5d3376bc464ed&width=1440",
+    "imageCredit": "bostonglobe.com (image from bostonglobe.com)",
+    "imagePage": "https://www.bostonglobe.com/2025/02/17/metro/ri-pawtucket-artist-tufting-rug-business",
+    "imageSource": "auto"
   },
   {
     "id": "co-rug-lounge-slc",
@@ -17021,7 +17029,11 @@ window.RUG_ITEMS = [
     "listingName": "tufting studio KEKE",
     "social": [
       "https://www.instagram.com/keke_rug/"
-    ]
+    ],
+    "image": "https://fashionsnap-assets.com/asset/format=auto,width=1280,height=670,gravity=auto,fit=pad/article/images/2021/10/keke-tuftingstudio-015.jpg",
+    "imageCredit": "fashionsnap.com (image from fashionsnap.com)",
+    "imagePage": "https://www.fashionsnap.com/article/2021-10-29/keke-tuftingstudio/",
+    "imageSource": "auto"
   },
   {
     "id": "co-tuft-club",
@@ -17178,7 +17190,11 @@ window.RUG_ITEMS = [
     "listingName": "MIYOSHI RUG",
     "social": [
       "https://www.instagram.com/miyoshirug/"
-    ]
+    ],
+    "image": "https://fashionsnap-assets.com/asset/format=auto,width=1280,height=670,gravity=auto,fit=pad/article/images/2024/06/miyoshirug-popup-20240605_004-e4995744-fdde-48c2-be96-3c82265fb865.jpg",
+    "imageCredit": "fashionsnap.com (image from fashionsnap.com)",
+    "imagePage": "https://www.fashionsnap.com/article/2024-06-15/miyoshirug-popup/",
+    "imageSource": "auto"
   },
   {
     "id": "artist-felicia-murray",
@@ -17247,7 +17263,10 @@ window.RUG_ITEMS = [
     "reviewedAt": "2026-11-07T16:45:47.569Z",
     "directory": "artist",
     "listing": "Tufting classes and rugs, Denver",
-    "listingName": "Magic Carpets"
+    "listingName": "Magic Carpets",
+    "image": "https://img.ctykit.com/cdn/co-rino/images/user1731101577.jpg",
+    "imageCredit": "rinoartdistrict.org",
+    "imageSource": "auto"
   },
   {
     "id": "co-tuftest-class-atlanta",
@@ -17299,7 +17318,10 @@ window.RUG_ITEMS = [
     "listingName": "Vera Art Studio",
     "social": [
       "https://www.instagram.com/veraartstudio.us/"
-    ]
+    ],
+    "image": "https://assets.classbento.com/images/class/vitrail-glass-painting-workshop-in-seattle-portrait-big.jpg?v=1793756651",
+    "imageCredit": "classbento.com",
+    "imageSource": "auto"
   },
   {
     "id": "co-capel-rugs",
@@ -17323,7 +17345,10 @@ window.RUG_ITEMS = [
     "reviewedAt": "2026-11-07T16:45:47.569Z",
     "directory": "commercial",
     "listing": "Hand-tufted, hand-knotted, flatwoven and braided rugs",
-    "listingName": "Capel Rugs"
+    "listingName": "Capel Rugs",
+    "image": "https://www.rugnews.com/uploads/public/images/articles/2025/capel-persia-kashan-2605-660.jpg",
+    "imageCredit": "rugnews.com",
+    "imageSource": "auto"
   },
   {
     "id": "co-carpet-edition",
@@ -17371,7 +17396,10 @@ window.RUG_ITEMS = [
     "reviewedAt": "2026-11-07T16:45:47.569Z",
     "directory": "commercial",
     "listing": "Area rugs, including hand-tufted collections",
-    "listingName": "Feizy"
+    "listingName": "Feizy",
+    "image": "https://www.rugnews.com/uploads/public/images/articles/2025/rugnews-las-vegas-market-preview-winter-2025.jpg",
+    "imageCredit": "rugnews.com",
+    "imageSource": "auto"
   },
   {
     "id": "co-gan-rugs",
@@ -17395,7 +17423,10 @@ window.RUG_ITEMS = [
     "reviewedAt": "2026-11-07T16:45:47.569Z",
     "directory": "commercial",
     "listing": "Design-led handmade rugs, hand-tufted since 1990",
-    "listingName": "GAN"
+    "listingName": "GAN",
+    "image": "https://www.rugnews.com/uploads/public/images/articles/article-image/gan-giro-area-rug-nycxdesign-awards.jpg",
+    "imageCredit": "rugnews.com",
+    "imageSource": "auto"
   },
   {
     "id": "co-loloi",
@@ -17419,7 +17450,10 @@ window.RUG_ITEMS = [
     "reviewedAt": "2026-11-07T16:45:47.569Z",
     "directory": "commercial",
     "listing": "Area rugs, including hand-tufted collections",
-    "listingName": "Loloi"
+    "listingName": "Loloi",
+    "image": "https://www.rugnews.com/uploads/public/images/articles/2025/loloi-marcella-mac-01-rug.jpg",
+    "imageCredit": "rugnews.com",
+    "imageSource": "auto"
   },
   {
     "id": "co-nanimarquina",
@@ -17444,7 +17478,10 @@ window.RUG_ITEMS = [
     "directory": "commercial",
     "listing": "Design-led handmade rugs, Barcelona",
     "listingName": "nanimarquina",
-    "website": "https://us.nanimarquina.com/"
+    "website": "https://us.nanimarquina.com/",
+    "image": "http://nanimarquina.com/cdn/shop/articles/Fuori_salone_imagen_web-02_-_creditos_e2d09963-7f62-431e-a642-713e92591a67.jpg?v=1773923478",
+    "imageCredit": "nanimarquina.com",
+    "imageSource": "auto"
   },
   {
     "id": "co-stark",
@@ -17468,7 +17505,10 @@ window.RUG_ITEMS = [
     "reviewedAt": "2026-11-07T16:45:47.569Z",
     "directory": "commercial",
     "listing": "Broadloom and rugs, hand-tufted and hand-knotted, New York",
-    "listingName": "Stark"
+    "listingName": "Stark",
+    "image": "https://www.rugnews.com/uploads/public/images/articles/article-image/rugnewsdotcom-coverconnect-ny-2023-area-rugs-montager.jpg",
+    "imageCredit": "rugnews.com",
+    "imageSource": "auto"
   },
   {
     "id": "co-superfluous-things",
@@ -17494,6 +17534,10 @@ window.RUG_ITEMS = [
     "directory": "commercial",
     "listing": "Custom tufted rugs, Philadelphia (the author's business)",
     "listingName": "Superfluous Things",
-    "website": "https://superfluousthings.com/"
+    "website": "https://superfluousthings.com/",
+    "image": "https://a.1stdibscdn.com/modern-bauhaus-inspired-rug-with-geometric-design-pattern-name-dessau-192501-for-sale/f_104212/f_447392721750878225424/Bahaus_org.jpg?width=768",
+    "imageCredit": "1stdibs.com (image from 1stdibs.com)",
+    "imagePage": "https://www.1stdibs.com/furniture/rugs-carpets/north-south-american/modern-bauhaus-inspired-rug-geometric-design-pattern-name-dessau-192501/id-f_44739272",
+    "imageSource": "auto"
   }
 ];
