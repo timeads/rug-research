@@ -8,7 +8,7 @@
 //         "unverified" = gathered from secondary sources / search summaries;
 //                        confirm titles, dates and numbers before citing.
 // Records taken out after being merged from an export, with when; a browser drops its own copy of them.
-window.RUG_REMOVED = {"wc-3126256":"2026-10-28T15:05:57.518Z","met-7405":"2026-10-28T15:05:57.518Z","finding-cnc-diy-robot-arm-experiments":"2026-10-31T12:23:09.703Z"};
+window.RUG_REMOVED = {"wc-3126256":"2026-10-28T15:05:57.518Z","met-7405":"2026-10-28T15:05:57.518Z","finding-cnc-diy-robot-arm-experiments":"2026-10-31T12:23:09.703Z","co-vera-art-studio":"2026-11-07T16:51:02.081Z"};
 window.RUG_ITEMS = [
   {
     "id": "wint-1964-0804",
@@ -11011,9 +11011,14 @@ window.RUG_ITEMS = [
     "imageCredit": "Tuft the World",
     "imageSource": "auto",
     "gallery": true,
-    "reviewedAt": "2026-11-02T13:49:34.975Z",
-    "listing": "Tufting supplies, workshops and studio, Philadelphia (the author's firm)",
-    "website": "https://tufttheworld.com/"
+    "reviewedAt": "2026-11-07T16:51:02.081Z",
+    "listing": "Tufting workshops, studio and supplies, West Philadelphia (the author's firm)",
+    "website": "https://tufttheworld.com/",
+    "directory": "artist",
+    "listingName": "Tuft the World",
+    "social": [
+      "https://www.instagram.com/tuft_the_world/"
+    ]
   },
   {
     "id": "book-tuft-the-world-2024",
@@ -17293,35 +17298,6 @@ window.RUG_ITEMS = [
     "social": [
       "https://www.instagram.com/thetuftestguyintown/"
     ]
-  },
-  {
-    "id": "co-vera-art-studio",
-    "type": "company",
-    "title": "Vera Art Studio: rug tufting and craft workshops, Philadelphia",
-    "creator": "Vera Art Studio",
-    "place": "Philadelphia, United States",
-    "region": "United States",
-    "description": "2.5-hour design-and-tuft sessions at Billy Penn Studios, 1516 N 5th St; also mosaic lamps, glass painting and more.\nCaveat: Multi-craft studio; Instagram match inferred.\nFound by web search for the site's Directory (searches of 7 Nov 2026, chosen by the author the same day). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://assets.classbento.com/vera-art-studio · https://www.instagram.com/veraartstudio.us/",
-    "sourceUrl": "https://assets.classbento.com/vera-art-studio",
-    "themes": [
-      "Companies & modern tufting"
-    ],
-    "tags": [
-      "workshop",
-      "directory",
-      "found by web search"
-    ],
-    "status": "unverified",
-    "reviewedAt": "2026-11-07T16:45:47.569Z",
-    "directory": "artist",
-    "listing": "Rug tufting and craft workshops, Philadelphia",
-    "listingName": "Vera Art Studio",
-    "social": [
-      "https://www.instagram.com/veraartstudio.us/"
-    ],
-    "image": "https://assets.classbento.com/images/class/vitrail-glass-painting-workshop-in-seattle-portrait-big.jpg?v=1793756651",
-    "imageCredit": "classbento.com",
-    "imageSource": "auto"
   },
   {
     "id": "co-capel-rugs",
