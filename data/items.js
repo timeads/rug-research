@@ -16727,7 +16727,7 @@ window.RUG_ITEMS = [
     "creator": "Hanna Eidson, H.H. Hooks",
     "place": "Halifax, Canada",
     "region": "Canada",
-    "description": "Tufting artist; her business H.H. Hooks, known for \"fish rugs\" (SignalHFX).\nFound by web search of Instagram, TikTok and press for the site's Directory (search of 2 Nov 2026, chosen by the author 7 Nov 2026). The profiles themselves were not opened; details come from search-result snippets and the pages listed here.\nSources: https://www.instagram.com/h.h.hooks/ · https://signalhfx.ca/rug-artist-turns-pandemic-passion-into-small-business/\nCaveat: The author's check of hhhooks.com (Nov 2026) found H.H. Hooks sells hooked rugs and rug-hooking kits; whether she tufts is not confirmed.",
+    "description": "Tufting artist; her business H.H. Hooks, known for \"fish rugs\" (SignalHFX).\nFound by web search of Instagram, TikTok and press for the site's Directory (search of 2 Nov 2026, chosen by the author 7 Nov 2026). The profiles themselves were not opened; details come from search-result snippets and the pages listed here.\nSources: https://www.instagram.com/h.h.hooks/ · https://signalhfx.ca/rug-artist-turns-pandemic-passion-into-small-business/\nNote: H.H. Hooks also sells hooked rugs and rug-hooking kits (hhhooks.com); the author confirmed in Nov 2026 that she works in both punch needle and tufting.",
     "sourceUrl": "https://www.instagram.com/h.h.hooks/",
     "themes": [
       "Companies & modern tufting"
@@ -17030,19 +17030,17 @@ window.RUG_ITEMS = [
     "creator": "tufting studio KEKE",
     "place": "Tokyo, Japan",
     "region": "Japan",
-    "description": "'Japan's first workshop where you can make an original rug' (transl.); opened about 2021 with MIYOSHI RUG (Fashionsnap).\nFound by web search of Instagram, TikTok and press for the site's Directory (search of 2 Nov 2026, chosen by the author 7 Nov 2026). The profiles themselves were not opened; details come from search-result snippets and the pages listed here.\nSources: https://www.instagram.com/keke_rug/ · https://www.fashionsnap.com/article/2021-10-29/keke-tuftingstudio/",
+    "description": "'Japan's first workshop where you can make an original rug' (transl.); opened about 2021 with MIYOSHI RUG (Fashionsnap).\nFound by web search of Instagram, TikTok and press for the site's Directory (search of 2 Nov 2026, chosen by the author 7 Nov 2026). The profiles themselves were not opened; details come from search-result snippets and the pages listed here.\nSources: https://www.instagram.com/keke_rug/ · https://www.fashionsnap.com/article/2021-10-29/keke-tuftingstudio/\nCaveat: Taken out of the directory (8 Nov 2026): the author notes KEKE now only sells rug-tufting supplies.",
     "sourceUrl": "https://www.instagram.com/keke_rug/",
     "themes": [
       "Companies & modern tufting"
     ],
     "tags": [
       "workshop",
-      "directory",
       "found by web search"
     ],
     "status": "unverified",
     "reviewedAt": "2026-11-07T23:55:47.500Z",
-    "directory": "workshop",
     "listing": "Make-your-own rug workshops, Tokyo",
     "listingName": "tufting studio KEKE",
     "social": [
@@ -17383,9 +17381,9 @@ window.RUG_ITEMS = [
     "type": "company",
     "title": "Carpet Edition: hand-tufted carpets and wall hangings",
     "creator": "Carpet Edition",
-    "place": "Germany",
-    "region": "Germany",
-    "description": "Hand-tufted carpets and wall hangings; Lustrous collection from the Ken Scott archive. Tufting confirmed: 'a collection of hand-tufted carpets and wall-hangings' (Salone).\nTrade shows: Salone del Mobile.Milano, undated listing (catalogue 'collection 2025') (https://lb.salonemilano.it/en/prodotti/carpet-edition/lustrous-carpets).\nCaveat: Show year to confirm.\nFound by web search for the site's Directory (searches of 7 Nov 2026, chosen by the author the same day). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://lb.salonemilano.it/en/prodotti/carpet-edition/lustrous-carpets\nCaveat: The author's check of carpetedition.com (Nov 2026) found it describes the firm as Italian, though it was listed here under Germany.",
+    "place": "Italy",
+    "region": "Italy",
+    "description": "Hand-tufted carpets and wall hangings; Lustrous collection from the Ken Scott archive. Tufting confirmed: 'a collection of hand-tufted carpets and wall-hangings' (Salone).\nTrade shows: Salone del Mobile.Milano, undated listing (catalogue 'collection 2025') (https://lb.salonemilano.it/en/prodotti/carpet-edition/lustrous-carpets).\nCaveat: Show year to confirm.\nFound by web search for the site's Directory (searches of 7 Nov 2026, chosen by the author the same day). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://lb.salonemilano.it/en/prodotti/carpet-edition/lustrous-carpets\nNote: Italian, by its own website (checked by the author, Nov 2026); listed under Germany until then.",
     "sourceUrl": "https://lb.salonemilano.it/en/prodotti/carpet-edition/lustrous-carpets",
     "themes": [
       "Companies & modern tufting"
@@ -17882,7 +17880,7 @@ window.RUG_ITEMS = [
     "title": "Ligne Roset: furniture brand with hand-tufted rugs",
     "creator": "Ligne Roset",
     "region": "France",
-    "description": "Tufting: Hand-tufted rugs.\nAlso: Mainly a furniture brand.\nRugs are a side line; optional.\nExhibited at ICFF 2026, booth 1005 (from the author's list of tufted-rug exhibitors at ICFF, NeoCon and COVER Connect, 8 Nov 2026).\nSource: https://www.ligne-roset.com/en/p/rugs/rug-entrelacs-1243",
+    "description": "Tufting: Hand-tufted rugs.\nAlso: Mainly a furniture brand.\nRugs are a side line; optional.\nExhibited at ICFF 2026, booth 1005 (from the author's list of tufted-rug exhibitors at ICFF, NeoCon and COVER Connect, 8 Nov 2026).\nSource: https://www.ligne-roset.com/en/p/rugs/rug-entrelacs-1243\nCaveat: Taken out of the directory (8 Nov 2026): the author notes Ligne Roset sells rugs but does not make them.",
     "sourceUrl": "https://www.ligne-roset.com/en/p/rugs/rug-entrelacs-1243",
     "themes": [
       "Companies & modern tufting"
@@ -17890,12 +17888,10 @@ window.RUG_ITEMS = [
     "tags": [
       "company",
       "trade show",
-      "directory",
       "from the author's list"
     ],
     "status": "unverified",
     "reviewedAt": "2026-11-08T00:09:37.610Z",
-    "directory": "commercial",
     "listing": "Furniture brand with hand-tufted rugs",
     "listingName": "Ligne Roset",
     "website": "https://www.ligne-roset.com/",
@@ -19295,11 +19291,11 @@ window.RUG_ITEMS = [
   {
     "id": "co-allybello",
     "type": "company",
-    "title": "allybello: artist rugs from Alex DelBello's paintings, hand-tufted and hand-knotted",
-    "creator": "allybello",
+    "title": "DelBello Studio (formerly allybello): artist rugs from Alex DelBello's paintings, hand-tufted and hand-knotted",
+    "creator": "DelBello Studio (formerly allybello)",
     "place": "New York, United States",
     "region": "United States",
-    "description": "Artist rugs from Alex DelBello's paintings. Tufting confirmed: hand-tufted and hand-knotted.\nTrade shows: ICFF (Best in Flooring), 2025 (https://www.rugnews.com/news-archives/five-rug-exhibitors-take-home-awards-at-icff-2025-9556); ICFF, 2026 (https://www.cover-magazine.com/2026/05/12/icff-and-nycxdesign-2026-spotlight-design-led-rug-innovation/).\nNote: Small studio.\nFound by web search for the site's Directory (7 Nov 2026), chosen by the author 8 Nov 2026; location, website and Instagram from a follow-up search the same day. Pages were not opened.\nSources: https://www.rugnews.com/news-archives/five-rug-exhibitors-take-home-awards-at-icff-2025-9556 · https://www.cover-magazine.com/2026/05/12/icff-and-nycxdesign-2026-spotlight-design-led-rug-innovation/",
+    "description": "Artist rugs from Alex DelBello's paintings. Tufting confirmed: hand-tufted and hand-knotted.\nTrade shows: ICFF (Best in Flooring), 2025 (https://www.rugnews.com/news-archives/five-rug-exhibitors-take-home-awards-at-icff-2025-9556); ICFF, 2026 (https://www.cover-magazine.com/2026/05/12/icff-and-nycxdesign-2026-spotlight-design-led-rug-innovation/).\nNote: Small studio.\nFound by web search for the site's Directory (7 Nov 2026), chosen by the author 8 Nov 2026; location, website and Instagram from a follow-up search the same day. Pages were not opened.\nSources: https://www.rugnews.com/news-archives/five-rug-exhibitors-take-home-awards-at-icff-2025-9556 · https://www.cover-magazine.com/2026/05/12/icff-and-nycxdesign-2026-spotlight-design-led-rug-innovation/\nNote: allybello.com now leads to DelBello Studio (delbellostudio.com), found by the author in Nov 2026; listed under that name since.",
     "sourceUrl": "https://www.rugnews.com/news-archives/five-rug-exhibitors-take-home-awards-at-icff-2025-9556",
     "themes": [
       "Companies & modern tufting"
@@ -19314,7 +19310,7 @@ window.RUG_ITEMS = [
     "reviewedAt": "2026-11-08T12:10:57.650Z",
     "directory": "commercial",
     "listing": "Artist rugs from Alex DelBello's paintings, hand-tufted and hand-knotted",
-    "listingName": "allybello",
+    "listingName": "DelBello Studio",
     "website": "https://delbellostudio.com/",
     "image": "https://cdn.shopify.com/s/files/1/0590/6703/9882/files/Delbello_studios__Michael_Ken_Stewart_madnames_Studios-04653_8cb5f73e-f029-48e8-8c85-38b053005d61.jpg",
     "imageCredit": "delbellostudio.com",
