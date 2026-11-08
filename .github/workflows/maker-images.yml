@@ -1,0 +1,45 @@
+name: Maker images
+
+# Finds a picture from the maker's own website for directory entries that have none
+# (scripts/maker-images.mjs) and commits the links to data/items.js. On demand only.
+on:
+  workflow_dispatch:
+    inputs:
+      only:
+        description: "Comma-separated record ids (blank = every directory entry with a website and no image)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fetch-images
+  cancel-in-progress: false
+
+jobs:
+  find:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Find pictures and commit
+        env:
+          ONLY: ${{ inputs.only }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898+github-actions[bot]@users.noreply.github.com"
+          for attempt in 1 2 3; do
+            if [ -n "$ONLY" ]; then node scripts/maker-images.mjs --only "$ONLY" | tee "$RUNNER_TEMP/log.txt"; else node scripts/maker-images.mjs | tee "$RUNNER_TEMP/log.txt"; fi
+            git add data/items.js
+            if git diff --cached --quiet; then echo "Nothing new."; exit 0; fi
+            git commit -q -m "Directory: pictures from makers' own websites"
+            if git push origin "HEAD:${GITHUB_REF_NAME}"; then exit 0; fi
+            git fetch -q origin "${GITHUB_REF_NAME}" && git reset -q --hard FETCH_HEAD
+          done
+          exit 1
