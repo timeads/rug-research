@@ -6,7 +6,7 @@ foot: "Tuft the World, which appears in chapters 9 and 13, is the author's firm.
 
 ## In brief
 
-Tufting puts pile yarn into a cloth that already exists, with a needle; a loom makes pile and backing together. Women did this by hand on New England bed rugs from at least 1778 and on candlewick spreads, and in Dalton, Georgia, a girl's bedspread of 1895 grew into a roadside trade and then a machine industry. The tufting machine came out of the sewing machine from 1920, gained many needles and pattern control, and was widened for broadloom carpet, which undercut the woven carpet trade. It left America as a machine to buy, reaching Japan and western Europe between 1954 and 1967 and China later; India's hand-tufting has no dated beginning yet. The hand gun has no single inventor, computers took over the pattern, and after 2018 the gun became a home craft and an artist's tool.
+Tufting puts  yarn into a cloth that already exists, with a needle. Women did this by hand on New England bed rugs from at least 1778 and on candlewick spreads, and in Dalton, Georgia, a girl's bedspread of 1895 grew into a roadside trade and then a machine industry. The tufting machine came out of the sewing machine from 1920, gained many needles and pattern control, and was widened for broadloom carpet, which undercut the woven carpet trade. It left America as a machine to buy, reaching Japan and western Europe between 1954 and 1967 and China later; India's hand-tufting has no dated beginning yet. The hand gun has no single inventor, computers took over the pattern, and after 2018 the gun became a home craft and an artist's tool.
 
 ## What tufting is
 
