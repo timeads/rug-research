@@ -18823,7 +18823,7 @@ window.RUG_ITEMS = [
     "creator": "Loop LAB",
     "place": "Perth, Australia",
     "region": "Australia",
-    "description": "'A design studio based in Perth… creating cozy pieces of art for your walls'; IG 'Loop LAB - tufted art'.\nFound by web search for the site's Directory (searches of 2 and 7 Nov 2026, chosen by the author 8 Nov 2026). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://handmadecanberra.com.au/directory/loop-lab/ · https://www.instagram.com/_loop_lab_/",
+    "description": "'A design studio based in Perth… creating cozy pieces of art for your walls'; IG 'Loop LAB - tufted art'.\nFound by web search for the site's Directory (searches of 2 and 7 Nov 2026, chosen by the author 8 Nov 2026). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://handmadecanberra.com.au/directory/loop-lab/ · https://www.instagram.com/_loop_lab_/\nLocation in Perth confirmed by the author, 8 Nov 2026.",
     "sourceUrl": "https://handmadecanberra.com.au/directory/loop-lab/",
     "themes": [
       "Companies & modern tufting"
@@ -18834,7 +18834,7 @@ window.RUG_ITEMS = [
       "found by web search"
     ],
     "status": "unverified",
-    "reviewedAt": "2026-11-08T01:05:10.642Z",
+    "reviewedAt": "2026-11-08T12:16:29.784Z",
     "directory": "artist",
     "listing": "Tufted wall art, Perth",
     "listingName": "Loop LAB",
