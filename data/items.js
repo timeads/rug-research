@@ -16389,14 +16389,15 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "solid",
-    "reviewedAt": "2026-11-02T13:37:22.209Z",
+    "reviewedAt": "2026-11-08T18:18:43.988Z",
     "directory": "artist",
     "listing": "Tufted rugs and fibre art, Savannah, Georgia",
     "website": "https://www.trishandersenstudio.com/",
     "listingName": "Trish Andersen",
     "social": [
       "https://www.instagram.com/trishandersenart/"
-    ]
+    ],
+    "image": "https://www.trishandersenstudio.com/cdn/shop/products/TrishAndersen_SPLATPOP_DETAIL1_1728x.gif?v=1679353278"
   },
   {
     "id": "artist-david-nott",
@@ -16421,13 +16422,14 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "solid",
-    "reviewedAt": "2026-11-02T13:37:22.209Z",
+    "reviewedAt": "2026-11-08T18:18:43.988Z",
     "directory": "artist",
     "listing": "Tufted and carved textile works, Boston",
     "listingName": "David Nott",
     "social": [
       "https://www.instagram.com/davidnott/"
-    ]
+    ],
+    "image": "https://images.squarespace-cdn.com/content/v1/58d30bec29687fa55ee647e6/bae1c31b-52fb-45f7-81cf-06281023fbee/IMG_3522.jpg?format=750w"
   },
   {
     "id": "book-rug-tufting-with-simji-2024",
@@ -16605,13 +16607,14 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "solid",
-    "reviewedAt": "2026-11-02T13:37:22.209Z",
+    "reviewedAt": "2026-11-08T18:18:43.988Z",
     "directory": "artist",
     "listing": "Hand-tufted rugs, founded 2020",
     "listingName": "Madeline Ronzoni, Happy Rugs",
     "social": [
       "https://www.instagram.com/happy.rugs/"
-    ]
+    ],
+    "image": "https://happyrugs.com/cdn/shop/files/241204-rugs.com-5874_1.jpg?v=1788036148&width=2400"
   },
   {
     "id": "artist-venus-perez",
@@ -16637,13 +16640,14 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "confidence": "suggestive",
-    "reviewedAt": "2026-11-02T13:37:22.209Z",
+    "reviewedAt": "2026-11-08T18:18:43.988Z",
     "directory": "artist",
     "listing": "Sculpted punch-needle and tufted pile, San Diego",
     "listingName": "Venus Perez",
     "social": [
-      "https://www.instagram.com/fun.n.rec/"
-    ]
+      "https://www.instagram.com/func.n.rec/"
+    ],
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkgB9jtSJZs942ANZE_qiemVWL9fi4Rpk3BTLlNyggUbECmdFOvIbnxREQ&s=10"
   },
   {
     "id": "event-tuftcon-2023",
@@ -16720,13 +16724,14 @@ window.RUG_ITEMS = [
       "found by web search"
     ],
     "status": "unverified",
-    "reviewedAt": "2026-11-07T13:00:36.091Z",
+    "reviewedAt": "2026-11-08T18:18:43.988Z",
     "directory": "artist",
     "listing": "Tufted textile works and sculpture, Curitiba",
     "listingName": "Alex Rocca",
     "social": [
       "https://www.instagram.com/__alexrocca/"
-    ]
+    ],
+    "image": "https://cdn.shopify.com/s/files/1/0692/3498/3193/files/topo_2024._anderson.angelico_........_visualartist_textiledesign_artistatextil_artetextil_fiberartist_tapestry_textileoftheday_textileart_contemporaryart.jpg?v=1747758383"
   },
   {
     "id": "artist-caroline-kaufman",
@@ -16746,14 +16751,15 @@ window.RUG_ITEMS = [
       "found by web search"
     ],
     "status": "unverified",
-    "reviewedAt": "2026-11-07T13:00:36.091Z",
+    "reviewedAt": "2026-11-08T18:18:43.988Z",
     "directory": "artist",
     "listing": "Abstract tufted works for wall and floor, New York",
     "listingName": "Caroline Kaufman",
     "website": "https://www.carolinekaufmanstudio.com/",
     "social": [
       "https://www.instagram.com/carolinekaufman/"
-    ]
+    ],
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn3IQe4vqw-pmhHE4rb9fc3Fa9A4oyh0PL5sCEsWyT9UOzlOsntLZ_v3E&s=10"
   },
   {
     "id": "artist-hanna-eidson",
@@ -16835,13 +16841,14 @@ window.RUG_ITEMS = [
       "found by web search"
     ],
     "status": "unverified",
-    "reviewedAt": "2026-11-07T13:00:36.091Z",
+    "reviewedAt": "2026-11-08T18:18:43.988Z",
     "directory": "artist",
     "listing": "Fibre art made by tufting, Indiana",
     "listingName": "Sachiko Janek",
     "social": [
       "https://www.instagram.com/sachi.sometimes/"
-    ]
+    ],
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ7ruR6tDWL1-HR-x_k45MsvsL1fXKeh-0f8ea7-khGZOcHauON8akcCLg&s=10"
   },
   {
     "id": "artist-simone-elizabeth-saunders",
@@ -16892,14 +16899,15 @@ window.RUG_ITEMS = [
       "found by web search"
     ],
     "status": "unverified",
-    "reviewedAt": "2026-11-07T13:00:36.091Z",
+    "reviewedAt": "2026-11-08T18:18:43.988Z",
     "directory": "artist",
     "listing": "Tufted rugs, textiles and furniture, Poland",
     "listingName": "Weft.",
     "social": [
       "https://www.instagram.com/weft_handcrafted_rugs/"
     ],
-    "imageSource": "rejected"
+    "imageSource": "rejected",
+    "image": "https://label-magazine.com/media/thumbnails/b661a535c66ae5df0bcdfc9adb200b0e.webp"
   },
   {
     "id": "co-la-tactile-lab",
@@ -18793,8 +18801,8 @@ window.RUG_ITEMS = [
       "found by web search"
     ],
     "status": "unverified",
-    "reviewedAt": "2026-11-08T12:11:41.149Z",
-    "directory": "artist",
+    "reviewedAt": "2026-11-08T18:18:43.988Z",
+    "directory": "workshop",
     "listing": "'Chaos Tufting' artist and co-founder of Handmayk, Dubai",
     "listingName": "Asad Azizi",
     "website": "https://handmayk.com/",
@@ -21518,13 +21526,14 @@ window.RUG_ITEMS = [
       "approved by the author"
     ],
     "status": "unverified",
-    "reviewedAt": "2026-11-08T13:42:58.015Z",
+    "reviewedAt": "2026-11-08T18:18:43.988Z",
     "directory": "artist",
     "listing": "Tufted rugs and textile art, United States",
     "listingName": "The Rug Dealer",
     "social": [
       "https://www.instagram.com/therugdealer.co/"
-    ]
+    ],
+    "image": "https://therugdealer.co/cdn/shop/files/WaterFall_01.png?v=1731953375&width=990"
   },
   {
     "id": "artist-the-rug-maker-co",
@@ -21640,7 +21649,7 @@ window.RUG_ITEMS = [
       "approved by the author"
     ],
     "status": "unverified",
-    "reviewedAt": "2026-11-08T13:42:58.015Z",
+    "reviewedAt": "2026-11-08T18:18:43.988Z",
     "directory": [
       "artist",
       "workshop"
@@ -21651,7 +21660,7 @@ window.RUG_ITEMS = [
       "https://www.instagram.com/vernon.st.rugs/"
     ],
     "website": "https://vernonstrugs.com",
-    "image": "http://vernonstrugs.com/cdn/shop/files/sketch1635801838582_1200x1200.png?v=1635801877",
+    "image": "https://vernonstrugs.com/cdn/shop/products/IMG_3558_900x.jpg?v=1669675281",
     "imageCredit": "vernonstrugs.com",
     "imagePage": "https://vernonstrugs.com",
     "imageSource": "auto",
