@@ -18977,5 +18977,428 @@ window.RUG_ITEMS = [
     "directory": "artist",
     "listing": "Tufting-gun tapestries by an artistic duo, Galicia",
     "listingName": "Twee Muizen"
+  },
+  {
+    "id": "co-allybello",
+    "type": "company",
+    "title": "allybello: artist rugs from Alex DelBello's paintings, hand-tufted and hand-knotted",
+    "creator": "allybello",
+    "place": "New York, United States",
+    "region": "United States",
+    "description": "Artist rugs from Alex DelBello's paintings. Tufting confirmed: hand-tufted and hand-knotted.\nTrade shows: ICFF (Best in Flooring), 2025 (https://www.rugnews.com/news-archives/five-rug-exhibitors-take-home-awards-at-icff-2025-9556); ICFF, 2026 (https://www.cover-magazine.com/2026/05/12/icff-and-nycxdesign-2026-spotlight-design-led-rug-innovation/).\nNote: Small studio.\nFound by web search for the site's Directory (7 Nov 2026), chosen by the author 8 Nov 2026; location, website and Instagram from a follow-up search the same day. Pages were not opened.\nSources: https://www.rugnews.com/news-archives/five-rug-exhibitors-take-home-awards-at-icff-2025-9556 · https://www.cover-magazine.com/2026/05/12/icff-and-nycxdesign-2026-spotlight-design-led-rug-innovation/",
+    "sourceUrl": "https://www.rugnews.com/news-archives/five-rug-exhibitors-take-home-awards-at-icff-2025-9556",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "trade show",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T12:10:57.650Z",
+    "directory": "commercial",
+    "listing": "Artist rugs from Alex DelBello's paintings, hand-tufted and hand-knotted",
+    "listingName": "allybello",
+    "website": "https://allybello.com"
+  },
+  {
+    "id": "co-amer-rugs",
+    "type": "company",
+    "title": "Amer Rugs: hand-knotted, hand-tufted and hand-loomed rugs, Norcross, Georgia",
+    "creator": "Amer Rugs",
+    "place": "Norcross, Georgia, United States",
+    "region": "United States",
+    "description": "Hand-knotted, hand-tufted and hand-loomed rugs. Tufting confirmed: Alpen, hand-tufted undyed wool (High Point 2025).\nTrade shows: COVER Connect New York, 2024 (https://rugnews.com/news-archives/cover-connect-adds-10-new-area-rug-exhibitors--9317); High Point Market, 2025 (https://www.rugnews.com/news-archives/hpmkt-trend-alert-handtufted-rugs-are-having-a-mom-9530).\nFound by web search for the site's Directory (7 Nov 2026), chosen by the author 8 Nov 2026; location, website and Instagram from a follow-up search the same day. Pages were not opened.\nSources: https://rugnews.com/news-archives/cover-connect-adds-10-new-area-rug-exhibitors--9317 · https://www.rugnews.com/news-archives/hpmkt-trend-alert-handtufted-rugs-are-having-a-mom-9530",
+    "sourceUrl": "https://rugnews.com/news-archives/cover-connect-adds-10-new-area-rug-exhibitors--9317",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "trade show",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T12:10:57.650Z",
+    "directory": "commercial",
+    "listing": "Hand-knotted, hand-tufted and hand-loomed rugs, Norcross, Georgia",
+    "listingName": "Amer Rugs",
+    "website": "https://www.amerrugs.com"
+  },
+  {
+    "id": "co-cella-carpet",
+    "type": "company",
+    "title": "Cella Carpet: rugs and broadloom, New Jersey",
+    "creator": "Cella Carpet",
+    "place": "New Jersey, United States",
+    "region": "United States",
+    "description": "Rugs and broadloom. Tufting unclear.\nTrade shows: COVER Connect Las Vegas, 2025 (https://rugnews.com/news-archives/rug-buyers-turn-out-to-shop-highend-rugs-at-cclv--9464).\nCaveat: Tufting not confirmed by the sources found.\nFound by web search for the site's Directory (7 Nov 2026), chosen by the author 8 Nov 2026; location, website and Instagram from a follow-up search the same day. Pages were not opened.\nSources: https://rugnews.com/news-archives/rug-buyers-turn-out-to-shop-highend-rugs-at-cclv--9464",
+    "sourceUrl": "https://rugnews.com/news-archives/rug-buyers-turn-out-to-shop-highend-rugs-at-cclv--9464",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "trade show",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T12:10:57.650Z",
+    "directory": "commercial",
+    "listing": "Rugs and broadloom, New Jersey",
+    "listingName": "Cella Carpet"
+  },
+  {
+    "id": "co-couristan",
+    "type": "company",
+    "title": "Couristan: area rugs, broadloom and hospitality carpet, Fort Lee, New Jersey",
+    "creator": "Couristan",
+    "place": "Fort Lee, New Jersey, United States",
+    "region": "United States",
+    "description": "Area rugs, broadloom and custom hospitality carpet. Tufting confirmed: hand-tufted design in its Ambergild collection (Rug News, BDNY 2024).\nTrade shows: BDNY, 2024 (https://www.rugnews.com/news-archives/record-lineup-of-rug-exhibitors-eye-hospitality-se-9384); BDNY, 2025 (https://www.rugnews.com/news-archives/exclusive-bdny-rugs-showcase-top-boutique-hospital-9668); Surfaces / TISE, 2025 (https://rugnews.com/news-archives/broadloom-morphs-into-fashion-business-at-surfaces-9470); COVER Connect New York, 2025 (https://www.rugnews.com/news-archives/cover-connect-new-york-expands-highend-rug-lineup-9606).\nFound by web search for the site's Directory (7 Nov 2026), chosen by the author 8 Nov 2026; location, website and Instagram from a follow-up search the same day. Pages were not opened.\nSources: https://www.rugnews.com/news-archives/record-lineup-of-rug-exhibitors-eye-hospitality-se-9384 · https://www.rugnews.com/news-archives/exclusive-bdny-rugs-showcase-top-boutique-hospital-9668 · https://rugnews.com/news-archives/broadloom-morphs-into-fashion-business-at-surfaces-9470 · https://www.rugnews.com/news-archives/cover-connect-new-york-expands-highend-rug-lineup-9606",
+    "sourceUrl": "https://www.rugnews.com/news-archives/record-lineup-of-rug-exhibitors-eye-hospitality-se-9384",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "trade show",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T12:10:57.650Z",
+    "directory": "commercial",
+    "listing": "Area rugs, broadloom and hospitality carpet, Fort Lee, New Jersey",
+    "listingName": "Couristan",
+    "website": "https://www.couristan.com",
+    "social": [
+      "https://www.instagram.com/couristan/"
+    ]
+  },
+  {
+    "id": "co-creative-touch",
+    "type": "company",
+    "title": "Creative Touch: custom hospitality rugs, hand-tufted and robot-tufted, Secaucus, New Jersey",
+    "creator": "Creative Touch",
+    "place": "Secaucus, New Jersey, United States",
+    "region": "United States",
+    "description": "Custom hospitality and commercial rugs. Tufting confirmed: hand-tufting plus a 'state of the art robotic-tufted process' (Rug News).\nTrade shows: BDNY, 2024 (https://www.rugnews.com/news-archives/record-lineup-of-rug-exhibitors-eye-hospitality-se-9384); BDNY, 2025 (https://www.rugnews.com/news-archives/exclusive-bdny-rugs-showcase-top-boutique-hospital-9668).\nNote: Robotic tufting: relevant to chapter 12.\nFound by web search for the site's Directory (7 Nov 2026), chosen by the author 8 Nov 2026; location, website and Instagram from a follow-up search the same day. Pages were not opened.\nSources: https://www.rugnews.com/news-archives/record-lineup-of-rug-exhibitors-eye-hospitality-se-9384 · https://www.rugnews.com/news-archives/exclusive-bdny-rugs-showcase-top-boutique-hospital-9668",
+    "sourceUrl": "https://www.rugnews.com/news-archives/record-lineup-of-rug-exhibitors-eye-hospitality-se-9384",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "trade show",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T12:10:57.650Z",
+    "directory": "commercial",
+    "listing": "Custom hospitality rugs, hand-tufted and robot-tufted, Secaucus, New Jersey",
+    "listingName": "Creative Touch",
+    "website": "https://creativetouchrugs.com",
+    "social": [
+      "https://www.instagram.com/creativetouchrugs/"
+    ]
+  },
+  {
+    "id": "co-crosby-street-studios",
+    "type": "company",
+    "title": "Crosby Street Studios: custom hand-tufted rugs and carpet for the trade, New York",
+    "creator": "Crosby Street Studios",
+    "place": "New York, United States",
+    "region": "United States",
+    "description": "Custom rugs and carpet for the trade. Tufting confirmed: hand-tufted in a proprietary nylon (Interior Design, 2017).\nTrade shows: BDNY, 2024 (https://www.rugnews.com/news-archives/record-lineup-of-rug-exhibitors-eye-hospitality-se-9384).\nFound by web search for the site's Directory (7 Nov 2026), chosen by the author 8 Nov 2026; location, website and Instagram from a follow-up search the same day. Pages were not opened.\nSources: https://www.rugnews.com/news-archives/record-lineup-of-rug-exhibitors-eye-hospitality-se-9384 · https://interiordesign.net/designwire/span-architecture-debuts-carpet-collection-with-crosby-street-studios/",
+    "sourceUrl": "https://www.rugnews.com/news-archives/record-lineup-of-rug-exhibitors-eye-hospitality-se-9384",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "trade show",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T12:10:57.650Z",
+    "directory": "commercial",
+    "listing": "Custom hand-tufted rugs and carpet for the trade, New York",
+    "listingName": "Crosby Street Studios",
+    "website": "https://www.crosbystreetstudios.com/"
+  },
+  {
+    "id": "co-jd-staron",
+    "type": "company",
+    "title": "JD Staron: custom luxury rugs and carpet, Stamford and New York",
+    "creator": "JD Staron",
+    "place": "Stamford, Connecticut, United States",
+    "region": "United States",
+    "description": "Custom luxury rugs and carpet. Tufting confirmed: Debonair hand-tufted (ICFF 2025).\nTrade shows: ICFF (Editors Award), 2023 (https://www.rugnews.com/news-archives/jd-staron-picks-up-best-in-flooring-icff-editors-a-8910); BDNY, 2023 (https://www.rugnews.com/news-archives/bdny-2023-top-rug-carpet-designs-at-busy-fair-9084); ICFF (Editors Award), 2025 (https://www.rugnews.com/news-archives/five-rug-exhibitors-take-home-awards-at-icff-2025-9556).\nFound by web search for the site's Directory (7 Nov 2026), chosen by the author 8 Nov 2026; location, website and Instagram from a follow-up search the same day. Pages were not opened.\nSources: https://www.rugnews.com/news-archives/jd-staron-picks-up-best-in-flooring-icff-editors-a-8910 · https://www.rugnews.com/news-archives/bdny-2023-top-rug-carpet-designs-at-busy-fair-9084 · https://www.rugnews.com/news-archives/five-rug-exhibitors-take-home-awards-at-icff-2025-9556",
+    "sourceUrl": "https://www.rugnews.com/news-archives/jd-staron-picks-up-best-in-flooring-icff-editors-a-8910",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "trade show",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T12:10:57.650Z",
+    "directory": "commercial",
+    "listing": "Custom luxury rugs and carpet, Stamford and New York",
+    "listingName": "JD Staron",
+    "website": "https://www.jdstaron.com/",
+    "social": [
+      "https://www.instagram.com/jdstaron/"
+    ]
+  },
+  {
+    "id": "co-jov",
+    "type": "company",
+    "title": "JOV: handmade rugs from its own atelier in Portugal, Sint-Martens-Latem",
+    "creator": "JOV",
+    "place": "Sint-Martens-Latem, Belgium",
+    "region": "Belgium",
+    "description": "Design rugs. Tufting confirmed: Mirage hand-tufted wool.\nTrade shows: ICFF, 2025 (https://www.rugnews.com/news-archives/rugs-at-nycxdesign-2025-icff-and-beyond-9552).\nCaveat: Tufting not confirmed: the hand-tufted 'Mirage' rug first credited to JOV appears to be a Ligne Roset rug.\nNote: Possible Ligne Roset link unverified.\nFound by web search for the site's Directory (7 Nov 2026), chosen by the author 8 Nov 2026; location, website and Instagram from a follow-up search the same day. Pages were not opened.\nSources: https://www.rugnews.com/news-archives/rugs-at-nycxdesign-2025-icff-and-beyond-9552",
+    "sourceUrl": "https://www.rugnews.com/news-archives/rugs-at-nycxdesign-2025-icff-and-beyond-9552",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "trade show",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T12:10:57.650Z",
+    "directory": "commercial",
+    "listing": "Handmade rugs from its own atelier in Portugal, Sint-Martens-Latem",
+    "listingName": "JOV",
+    "website": "https://jov-design.com/",
+    "social": [
+      "https://www.instagram.com/jovdesign/"
+    ]
+  },
+  {
+    "id": "co-kateha",
+    "type": "company",
+    "title": "Kateha: flatwoven, piled and tufted rugs, Värnamo",
+    "creator": "Kateha",
+    "place": "Värnamo, Sweden",
+    "region": "Sweden",
+    "description": "Flatwoven, piled and tufted rugs. Tufting confirmed: Linhult hand-tufted linen rug.\nTrade shows: 3daysofdesign, 2026 (https://www.rugnews.com/news-archives/cuttingedge-rugs-on-tap-at-3-days-of-design-9844).\nCaveat: Instagram match is medium confidence (not seen linked from the website).\nFound by web search for the site's Directory (7 Nov 2026), chosen by the author 8 Nov 2026; location, website and Instagram from a follow-up search the same day. Pages were not opened.\nSources: https://www.rugnews.com/news-archives/cuttingedge-rugs-on-tap-at-3-days-of-design-9844 · https://pdf.archiexpo.com/pdf/kateha/linhult/130549-272942.html",
+    "sourceUrl": "https://www.rugnews.com/news-archives/cuttingedge-rugs-on-tap-at-3-days-of-design-9844",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "trade show",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T12:10:57.650Z",
+    "directory": "commercial",
+    "listing": "Flatwoven, piled and tufted rugs, Värnamo",
+    "listingName": "Kateha",
+    "website": "https://kateha.se/",
+    "social": [
+      "https://www.instagram.com/kateharugs/"
+    ]
+  },
+  {
+    "id": "co-layered",
+    "type": "company",
+    "title": "Layered: rugs and textiles, including hand-tufted wool, Stockholm",
+    "creator": "Layered",
+    "place": "Stockholm, Sweden",
+    "region": "Sweden",
+    "description": "Scandinavian rugs and textiles. Tufting confirmed: Lozza 'hand-tufted wool rugs'.\nTrade shows: Stockholm Design Week, 2025 (https://interiordesign.net/products/layered-tenth-anniversary-signature-prints-2025/).\nNote: Design Week event, not a confirmed fair stand.\nFound by web search for the site's Directory (7 Nov 2026), chosen by the author 8 Nov 2026; location, website and Instagram from a follow-up search the same day. Pages were not opened.\nSources: https://interiordesign.net/products/layered-tenth-anniversary-signature-prints-2025/",
+    "sourceUrl": "https://interiordesign.net/products/layered-tenth-anniversary-signature-prints-2025/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "trade show",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T12:10:57.650Z",
+    "directory": "commercial",
+    "listing": "Rugs and textiles, including hand-tufted wool, Stockholm",
+    "listingName": "Layered",
+    "website": "https://layered.se/"
+  },
+  {
+    "id": "co-linie-design",
+    "type": "company",
+    "title": "Linie Design: handmade contemporary rugs, Lynge",
+    "creator": "Linie Design",
+    "place": "Lynge, Denmark",
+    "region": "Denmark",
+    "description": "Handmade contemporary rugs since 1980. Tufting confirmed: Fluid Arc 'exclusive hand-tufted rug'; many hand-tufted models in catalogue.\nTrade shows: 3daysofdesign, 2025 (https://www.rugnews.com/news-archives/exclusive-preview-contemporary-highend-area-rug-la-9570).\nFound by web search for the site's Directory (7 Nov 2026), chosen by the author 8 Nov 2026; location, website and Instagram from a follow-up search the same day. Pages were not opened.\nSources: https://www.rugnews.com/news-archives/exclusive-preview-contemporary-highend-area-rug-la-9570 · https://3daysofdesign.dk/exhibition/linie-design · https://www.salonemilano.it/en/prodotti/linie-design/fluid-arc",
+    "sourceUrl": "https://www.rugnews.com/news-archives/exclusive-preview-contemporary-highend-area-rug-la-9570",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "trade show",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T12:10:57.650Z",
+    "directory": "commercial",
+    "listing": "Handmade contemporary rugs, Lynge",
+    "listingName": "Linie Design",
+    "website": "https://www.liniedesign.com",
+    "social": [
+      "https://www.instagram.com/liniedesign/"
+    ]
+  },
+  {
+    "id": "co-massimo-copenhagen",
+    "type": "company",
+    "title": "Massimo Copenhagen: handmade rugs from natural and recycled materials, Copenhagen",
+    "creator": "Massimo Copenhagen",
+    "place": "Copenhagen, Denmark",
+    "region": "Denmark",
+    "description": "Handmade contemporary rugs. Tufting confirmed: Fragments 'hand-tufted by skilled artisans'.\nTrade shows: 3daysofdesign, 2025 (https://www.rugnews.com/news-archives/exclusive-preview-contemporary-highend-area-rug-la-9570).\nFound by web search for the site's Directory (7 Nov 2026), chosen by the author 8 Nov 2026; location, website and Instagram from a follow-up search the same day. Pages were not opened.\nSources: https://www.rugnews.com/news-archives/exclusive-preview-contemporary-highend-area-rug-la-9570 · https://3daysofdesign.dk/exhibition/massimo-copenhagen",
+    "sourceUrl": "https://www.rugnews.com/news-archives/exclusive-preview-contemporary-highend-area-rug-la-9570",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "trade show",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T12:10:57.650Z",
+    "directory": "commercial",
+    "listing": "Handmade rugs from natural and recycled materials, Copenhagen",
+    "listingName": "Massimo Copenhagen",
+    "social": [
+      "https://www.instagram.com/massimocopenhagen/"
+    ]
+  },
+  {
+    "id": "co-nourison",
+    "type": "company",
+    "title": "Nourison: area rugs, broadloom and hospitality carpet, Saddle Brook, New Jersey",
+    "creator": "Nourison",
+    "place": "Saddle Brook, New Jersey, United States",
+    "region": "United States",
+    "description": "Area rugs, broadloom and hospitality carpet. Tufting confirmed: Nourison Hospitality booth showed a hand-tufted rug (Furniture World).\nTrade shows: High Point Market, 2025 (https://www.floortrendsmag.com/articles/113518-nourison-home-unveils-new-rug-collections-at-high-point-market-2025); BDNY, 2024 (https://www.rugnews.com/news-archives/record-lineup-of-rug-exhibitors-eye-hospitality-se-9384).\nFound by web search for the site's Directory (7 Nov 2026), chosen by the author 8 Nov 2026; location, website and Instagram from a follow-up search the same day. Pages were not opened.\nSources: https://www.floortrendsmag.com/articles/113518-nourison-home-unveils-new-rug-collections-at-high-point-market-2025 · https://www.rugnews.com/news-archives/record-lineup-of-rug-exhibitors-eye-hospitality-se-9384 · https://furninfo.com/furniture-industry-news/24256",
+    "sourceUrl": "https://www.floortrendsmag.com/articles/113518-nourison-home-unveils-new-rug-collections-at-high-point-market-2025",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "trade show",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T12:10:57.650Z",
+    "directory": "commercial",
+    "listing": "Area rugs, broadloom and hospitality carpet, Saddle Brook, New Jersey",
+    "listingName": "Nourison",
+    "website": "https://www.nourison.com",
+    "social": [
+      "https://www.instagram.com/nourison/"
+    ]
+  },
+  {
+    "id": "co-rebel-carpets",
+    "type": "company",
+    "title": "Rebel Carpets: area rugs, broadloom and custom sizes",
+    "creator": "Rebel Carpets",
+    "place": "United States",
+    "region": "United States",
+    "description": "Area rugs, broadloom, indoor-outdoor and custom sizes. Tufting confirmed: Abigail, hand-tufted nylon and wool (winter 2026).\nTrade shows: COVER Connect New York, 2023 (https://www.rugnews.com/news-archives/rug-buyers-turn-out-to-shop-innovative-rugs-at-cov-9036); Las Vegas winter shows, 2026 (https://www.rugnews.com/news-archives/broadloom-intros-emphasize-fashion-across-three-la-9748).\nCaveat: Location from a trade-data aggregator only (Stamford, Connecticut); low confidence.\nFound by web search for the site's Directory (7 Nov 2026), chosen by the author 8 Nov 2026; location, website and Instagram from a follow-up search the same day. Pages were not opened.\nSources: https://www.rugnews.com/news-archives/rug-buyers-turn-out-to-shop-innovative-rugs-at-cov-9036 · https://www.rugnews.com/news-archives/broadloom-intros-emphasize-fashion-across-three-la-9748",
+    "sourceUrl": "https://www.rugnews.com/news-archives/rug-buyers-turn-out-to-shop-innovative-rugs-at-cov-9036",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "trade show",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T12:10:57.650Z",
+    "directory": "commercial",
+    "listing": "Area rugs, broadloom and custom sizes",
+    "listingName": "Rebel Carpets"
+  },
+  {
+    "id": "co-rhyme-studio",
+    "type": "company",
+    "title": "Rhyme Studio: hand-tufted rugs in Irish wool, New York and Dublin",
+    "creator": "Rhyme Studio",
+    "place": "Brooklyn, New York, United States",
+    "region": "United States",
+    "description": "Contemporary hand-tufted rugs in Irish wool. Tufting confirmed: 'contemporary hand-tufted rugs crafted of Irish wool'.\nTrade shows: COVER Connect New York, 2023 (https://www.cover-magazine.com/2023/06/28/cover-connect-new-york-2023-brand-preview-part-1/).\nFound by web search for the site's Directory (7 Nov 2026), chosen by the author 8 Nov 2026; location, website and Instagram from a follow-up search the same day. Pages were not opened.\nSources: https://www.cover-magazine.com/2023/06/28/cover-connect-new-york-2023-brand-preview-part-1/",
+    "sourceUrl": "https://www.cover-magazine.com/2023/06/28/cover-connect-new-york-2023-brand-preview-part-1/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "trade show",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T12:10:57.650Z",
+    "directory": "commercial",
+    "listing": "Hand-tufted rugs in Irish wool, New York and Dublin",
+    "listingName": "Rhyme Studio",
+    "social": [
+      "https://www.instagram.com/rhymestudioart/"
+    ]
+  },
+  {
+    "id": "co-rug-society",
+    "type": "company",
+    "title": "Rug'Society: luxury contemporary rugs, hand-tufted and overtufted, Portugal",
+    "creator": "Rug'Society",
+    "place": "Fânzeres, Portugal",
+    "region": "Portugal",
+    "description": "Luxury contemporary rugs in wool and botanical silk. Tufting confirmed: Kotta 'combining hand-tufted and overtufting techniques'.\nTrade shows: Salone del Mobile.Milano, 2025 (https://rugsociety.eu/blog/2025/03/27/salone-del-mobile-2025-a-celebration-of-luxury-with-rugsociety/).\nFound by web search for the site's Directory (7 Nov 2026), chosen by the author 8 Nov 2026; location, website and Instagram from a follow-up search the same day. Pages were not opened.\nSources: https://rugsociety.eu/blog/2025/03/27/salone-del-mobile-2025-a-celebration-of-luxury-with-rugsociety/ · https://www.salonemilano.it/en/prodotti/rug-society/kotta-rug",
+    "sourceUrl": "https://rugsociety.eu/blog/2025/03/27/salone-del-mobile-2025-a-celebration-of-luxury-with-rugsociety/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "trade show",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T12:10:57.650Z",
+    "directory": "commercial",
+    "listing": "Luxury contemporary rugs, hand-tufted and overtufted, Portugal",
+    "listingName": "Rug'Society",
+    "website": "https://rugsociety.eu"
   }
 ];
