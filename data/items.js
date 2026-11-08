@@ -17144,7 +17144,10 @@ window.RUG_ITEMS = [
     "listingName": "Bangalore Tufting Studio",
     "social": [
       "https://www.instagram.com/tuftingstudio.blr/"
-    ]
+    ],
+    "image": "https://static.cdninstagram.com/rsrc.php/v4/yD/r/R0fBIMurK8v.png",
+    "imageCredit": "instagram.com",
+    "imageSource": "auto"
   },
   {
     "id": "co-tufting-mex",
@@ -19857,7 +19860,11 @@ window.RUG_ITEMS = [
     "website": "https://www.therugcompany.com",
     "social": [
       "https://www.instagram.com/therugcompany/"
-    ]
+    ],
+    "image": "https://a.1stdibscdn.com/the-rug-company-chevron-rug-for-sale/f_45102/f_469680521759935281688/f_46968052_1759935282647_bg_processed.jpg",
+    "imageCredit": "1stdibs.com (image from 1stdibs.com)",
+    "imagePage": "https://www.1stdibs.com/creators/the-rug-company/furniture/folk-art/rugs",
+    "imageSource": "auto"
   },
   {
     "id": "co-well-woven",
@@ -19913,7 +19920,11 @@ window.RUG_ITEMS = [
     "website": "https://amini.it/it/",
     "social": [
       "https://www.instagram.com/aminicarpets/"
-    ]
+    ],
+    "image": "https://heimtextil.messefrankfurt.com/content/dam/messefrankfurt-redaktion/texpertisenetwork/images/stages-teaser/stage-texpertise.jpg",
+    "imageCredit": "heimtextil.messefrankfurt.com (image from heimtextil.messefrankfurt.com)",
+    "imagePage": "https://heimtextil.messefrankfurt.com/frankfurt/en/exhibitor-search.detail.html/abc-italia-srl.html",
+    "imageSource": "auto"
   },
   {
     "id": "co-nodus",
@@ -19941,7 +19952,10 @@ window.RUG_ITEMS = [
     "website": "https://nodusrug.it",
     "social": [
       "https://www.instagram.com/nodusrug/"
-    ]
+    ],
+    "image": "https://www.etoffe.com/192652-extra_large/camouflage-micro-rug-nodus.jpg",
+    "imageCredit": "etoffe.com",
+    "imageSource": "auto"
   },
   {
     "id": "co-beiriz",
@@ -19969,7 +19983,10 @@ window.RUG_ITEMS = [
     "website": "https://www.beiriz.com",
     "social": [
       "https://www.instagram.com/beirizrugs/"
-    ]
+    ],
+    "image": "https://www.interiordaily.com/remote/https/agfstorage.blob.core.windows.net/misc/ID_com/2026/07/21/DSCF0779.jpg?preset=ContentFullSmall",
+    "imageCredit": "interiordaily.com",
+    "imageSource": "auto"
   },
   {
     "id": "co-manufacture-de-tapis-de-bourgogne",
@@ -20052,7 +20069,10 @@ window.RUG_ITEMS = [
     "website": "https://www.artandloom.com",
     "social": [
       "https://www.instagram.com/artandloom/"
-    ]
+    ],
+    "image": "https://suzannelovellinc.com/wp-content/uploads/2023/09/c-PersonalSamanthaGallacher__artLoom_1619707428424.jpg",
+    "imageCredit": "suzannelovellinc.com",
+    "imageSource": "auto"
   },
   {
     "id": "co-kaymanta",
@@ -20079,7 +20099,10 @@ window.RUG_ITEMS = [
     "website": "https://www.kaymanta.com/",
     "social": [
       "https://www.instagram.com/kaymanta/"
-    ]
+    ],
+    "image": "https://a.1stdibscdn.com/mid-century-modern-art-rug-hand-tufted-in-wool-for-sale/f_10015/f_348640121687294594419/f_34864012_1687294595355_bg_processed.jpg?width=768",
+    "imageCredit": "1stdibs.com",
+    "imageSource": "auto"
   },
   {
     "id": "co-ruggism",
@@ -20162,7 +20185,10 @@ window.RUG_ITEMS = [
     "website": "https://www.humminghaus.com",
     "social": [
       "https://www.instagram.com/humminghaus/"
-    ]
+    ],
+    "image": "https://akm-img-a-in.tosshub.com/lingo/hrb/images/photo_gallery/202505/681df9feb5c96-artsy-rugs-india-095001319-16x9.png",
+    "imageCredit": "harpersbazaar.in",
+    "imageSource": "auto"
   },
   {
     "id": "co-turnberry-rug-works",
@@ -20218,7 +20244,11 @@ window.RUG_ITEMS = [
     "website": "https://cc-tapis.com",
     "social": [
       "https://www.instagram.com/cc_tapis/"
-    ]
+    ],
+    "image": "https://cc-tapis-media.fra1.cdn.digitaloceanspaces.com/cc-tapis_mdw25_waysofseeing_photobylucacaizzi_07.jpg",
+    "imageCredit": "cc-tapis.com (image from cc-tapis.com)",
+    "imagePage": "https://cc-tapis.com/made-in-milan",
+    "imageSource": "auto"
   },
   {
     "id": "co-jubi",
@@ -20246,7 +20276,10 @@ window.RUG_ITEMS = [
     "website": "https://shop-jubi.com",
     "social": [
       "https://www.instagram.com/jubirugs/"
-    ]
+    ],
+    "image": "http://shop-jubi.com/cdn/shop/files/jubi-rugs-modern-geometric-rugs-hero.webp?v=1775185583&width=900",
+    "imageCredit": "shop-jubi.com",
+    "imageSource": "auto"
   },
   {
     "id": "artist-tufty-co",
@@ -20301,7 +20334,10 @@ window.RUG_ITEMS = [
     "website": "http://www.uglyrugly.com/",
     "social": [
       "https://www.instagram.com/uglyrugly/"
-    ]
+    ],
+    "image": "https://images.garmentory.com/images/5303666/large/PILLAR-TUFTED-VASE-20210720215624.jpg?1626818188",
+    "imageCredit": "garmentory.com",
+    "imageSource": "auto"
   },
   {
     "id": "artist-sam-lao",
@@ -20357,7 +20393,11 @@ window.RUG_ITEMS = [
     "website": "http://www.eriklindstrom.com/",
     "social": [
       "https://www.instagram.com/eriklindstromrugs/"
-    ]
+    ],
+    "image": "https://aspiremetro.com/wp-content/uploads/2019/04/unnamed.jpg",
+    "imageCredit": "aspiremetro.com (image from aspiremetro.com)",
+    "imagePage": "https://aspiremetro.com/habitat-collection-lindstrom-rugs/",
+    "imageSource": "auto"
   },
   {
     "id": "co-food-and-rug-administration",
@@ -20469,7 +20509,10 @@ window.RUG_ITEMS = [
     "website": "http://machinetufting.com/shop/",
     "social": [
       "https://www.instagram.com/tuft.love/"
-    ]
+    ],
+    "image": "https://images.loox.io/uploads/2025/12/14/QUyB1FmDJ.jpg",
+    "imageCredit": "loox.io",
+    "imageSource": "auto"
   },
   {
     "id": "artist-caroline-achaintre",
