@@ -17541,7 +17541,10 @@ window.RUG_ITEMS = [
     "website": "https://ferreiradesa.pt/",
     "social": [
       "https://www.instagram.com/ferreiradesarugs/"
-    ]
+    ],
+    "image": "https://cdn.indesignlive.com/wp-content/uploads/FDS_lo-209.jpg",
+    "imageCredit": "indesignlive.com",
+    "imageSource": "auto"
   },
   {
     "id": "co-apadana",
@@ -17568,7 +17571,10 @@ window.RUG_ITEMS = [
     "website": "https://apadanarugsandcarpets.com/",
     "social": [
       "https://www.instagram.com/apadanarugsandcarpets/"
-    ]
+    ],
+    "image": "http://apadanarugsandcarpets.com/cdn/shop/files/samples-052523.jpg?v=1793807802",
+    "imageCredit": "apadanarugsandcarpets.com",
+    "imageSource": "auto"
   },
   {
     "id": "co-marc-phillips",
@@ -17592,7 +17598,10 @@ window.RUG_ITEMS = [
     "directory": "commercial",
     "listing": "Hand-tufted, hand-knotted and flatweave rugs",
     "listingName": "Marc Phillips",
-    "website": "https://marcphillipsrugs.com/"
+    "website": "https://marcphillipsrugs.com/",
+    "image": "https://marcphillipsrugs.com/media/wysiwyg/showroom_brand_1.jpg",
+    "imageCredit": "marcphillipsrugs.com",
+    "imageSource": "auto"
   },
   {
     "id": "co-warp-and-weft",
@@ -17638,7 +17647,10 @@ window.RUG_ITEMS = [
     "reviewedAt": "2026-11-08T00:08:12.920Z",
     "directory": "commercial",
     "listing": "Hand-tufted and hand-knotted rugs from a design studio, Mumbai",
-    "listingName": "Hatsu"
+    "listingName": "Hatsu",
+    "image": "https://a.1stdibscdn.com/hand-tufted-picknick-rug-by-hatsu-for-sale/1121189/f_326242221675875477823/32624222_datamatics.jpg?width=768",
+    "imageCredit": "1stdibs.com",
+    "imageSource": "auto"
   },
   {
     "id": "co-creative-matters",
@@ -17665,7 +17677,10 @@ window.RUG_ITEMS = [
     "website": "https://creativemattersinc.squarespace.com/",
     "social": [
       "https://www.instagram.com/cmi_design/"
-    ]
+    ],
+    "image": "http://static1.squarespace.com/static/5e7e1fe26cd71b271326e5b3/t/6487c9944cb3e1487f366bb6/1686620564097/creative-matters-custom-rugs.jpg?format=1500w",
+    "imageCredit": "creativemattersinc.squarespace.com",
+    "imageSource": "auto"
   },
   {
     "id": "co-pierre-frey",
@@ -17719,7 +17734,10 @@ window.RUG_ITEMS = [
     "website": "https://www.kravet.com/",
     "social": [
       "https://www.instagram.com/kravet1918/"
-    ]
+    ],
+    "image": "https://cdn.brandfolder.io/XSDLGRW8/at/3svp552z68cmqrtw9r6vmngq/Hucty_Snow_2.auto?width=300&height=300&pad=true",
+    "imageCredit": "kravet.com",
+    "imageSource": "auto"
   },
   {
     "id": "co-patterson-flynn",
@@ -17746,7 +17764,10 @@ window.RUG_ITEMS = [
     "website": "https://pattersonflynn.com/",
     "social": [
       "https://www.instagram.com/pattersonflynn1943/"
-    ]
+    ],
+    "image": "https://a.1stdibscdn.com/schumacher-malachite-area-rug-in-hand-tufted-wool-silk-by-patterson-flynn-martin-for-sale/1121189/f_148102311558644350848/14810231_master.jpg?width=768",
+    "imageCredit": "1stdibs.com",
+    "imageSource": "auto"
   },
   {
     "id": "co-ligne-roset",
