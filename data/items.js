@@ -20136,10 +20136,7 @@ window.RUG_ITEMS = [
     "social": [
       "https://www.instagram.com/ruggismofficial/"
     ],
-    "image": "http://ruggism.com/cdn/shop/files/Ruggism_website_1220x628_3994ffb5-91fa-4924-88c5-f55fd713ddc4.png?v=1721488435",
-    "imageCredit": "ruggism.com",
-    "imagePage": "https://ruggism.com/",
-    "imageSource": "auto",
+    "imageSource": "rejected",
     "rights": "not-requested"
   },
   {
@@ -20451,10 +20448,7 @@ window.RUG_ITEMS = [
     "social": [
       "https://www.instagram.com/food_and_rug_admin/"
     ],
-    "image": "https://superfluousthings.com/cdn/shop/files/ChatGPT_Image_Jun_17_2025_07_09_56_AM.png?v=1750858870&width=2000",
-    "imageCredit": "foodandrugadministration.com",
-    "imagePage": "https://foodandrugadministration.com",
-    "imageSource": "auto",
+    "imageSource": "rejected",
     "rights": "not-requested"
   },
   {
