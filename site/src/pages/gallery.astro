@@ -37,7 +37,7 @@ const meta = t => t.kinds.length && !t.it.gallery
   : [when(t.it), t.it.institution].filter(Boolean).join(" · ");
 const filters = t => [...t.chapters.map(n => `ch${n}`), ...t.kinds].join(" ");
 ---
-<Base title="Gallery · A History of Tufted Rugs" description="Pictures from the research behind A History of Tufted Rugs: rugs, tools, patents, photographs and documents. Each links to its record." current="gallery" shade="var(--ink)">
+<Base title="Gallery · A History of Tufted Rugs" description="Pictures from the research behind A History of Tufted Rugs: rugs, tools, patents, photographs and documents. Each links to its record." current="gallery" shade="var(--ink)" indexed={false}>
   <header class="page-head">
     <h1>Gallery</h1>
     <p>Rugs, tools, machines, photographs and documents from the research, oldest first, then the firms, studios, artists and workshops in the directory. Choose a picture to see its record and the sources behind it.</p>

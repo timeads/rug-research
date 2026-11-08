@@ -5,4 +5,4 @@ const { n, refs } = Astro.props;
 const list = JSON.parse(refs);
 const html = list.map(r => `${shortCitation(record(r.id), { loc: r.loc })} <a href="${base(`records/${r.id}/`)}">Record</a>`).join(" ");
 ---
-<sup class="fn"><a href={`#note-${n}`} id={`ref-${n}`} aria-label={`Note ${n}`}>{n}</a></sup><span class="sidenote" role="note"><b>{n}</b><Fragment set:html={html} /></span>
+<sup class="fn" data-pagefind-ignore><a href={`#note-${n}`} id={`ref-${n}`} aria-label={`Note ${n}`}>{n}</a></sup><span class="sidenote" role="note" data-pagefind-ignore><b>{n}</b><Fragment set:html={html} /></span>

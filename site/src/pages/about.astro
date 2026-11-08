@@ -15,7 +15,7 @@ const photoFile = fm.photo && path.resolve(process.cwd(), "public", fm.photo);
 const photo = photoFile && fs.existsSync(photoFile) ? `${base(fm.photo)}?v=${crypto.createHash("sha1").update(fs.readFileSync(photoFile)).digest("hex").slice(0, 8)}` : "";
 const linked = t => inline(t).replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g, '<a href="$2" rel="noopener">$1</a>');
 ---
-<Base title="About · A History of Tufted Rugs" description="About A History of Tufted Rugs and its author, Tim Eads, and how the book was made." current="about" shade="var(--ink)">
+<Base title="About · A History of Tufted Rugs" description="About A History of Tufted Rugs and its author, Tim Eads, and how the book was made." current="about" shade="var(--ink)" search={false}>
   <article class="about">
     <header class="page-head">
       <h1>{fm.title || "About"}</h1>

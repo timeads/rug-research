@@ -22,7 +22,7 @@ const links = it => [
   ...(Array.isArray(it.social) ? it.social : []).filter(Boolean).map(href => ({ href, label: socialLabel(href) }))
 ];
 ---
-<Base title="Directory · A History of Tufted Rugs" description="Firms, studios and artists tufting today, by region and country, with their websites and social media." current="directory" shade="var(--ink)">
+<Base title="Directory · A History of Tufted Rugs" description="Firms, studios and artists tufting today, by region and country, with their websites and social media." current="directory" shade="var(--ink)" indexed={false}>
   <header class="page-head">
     <h1>Directory</h1>
     <p>Firms, studios and artists tufting today, by region and country. Each name opens its record and the sources behind it; websites and social media are the makers' own. Tuft the World, Superfluous Things and Food and Rug Administration, listed under the United States, are the author's businesses.</p>

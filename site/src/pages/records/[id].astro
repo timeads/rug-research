@@ -23,7 +23,7 @@ const firstCaption = gallery.find(g => g.src === img)?.caption || "";
 // For search results: what the source is, when, and who holds it.
 const description = [`${TYPE[it.type] || "Source"}: ${it.title.replace(/^(REFUTED|UNVERIFIED|CORRECTION)\s*:\s*/i, "")}`, it.date, it.institution].filter(Boolean).join(", ") + ". A source for A History of Tufted Rugs, by Tim Eads.";
 ---
-<Base title={`${it.title} · A History of Tufted Rugs`} description={description} shade={shade} image={img && imageCleared(it) ? imageUrl(img) : ""}>
+<Base title={`${it.title} · A History of Tufted Rugs`} description={description} shade={shade} image={img && imageCleared(it) ? imageUrl(img) : ""} searchKind={directoryKinds(it).length ? "Directory" : "Records"}>
   <div class={`rec ${img ? "" : "noimg"}`}>
     {img && <figure class="plate"><img id="plate-img" src={imageUrl(img, 1400)} alt={it.title} referrerpolicy="no-referrer" />
       {it.imageRole === "illustration" ? <figcaption>Illustration, not the item itself: {it.imageCaption || "a comparable item"}</figcaption>
@@ -34,7 +34,7 @@ const description = [`${TYPE[it.type] || "Source"}: ${it.title.replace(/^(REFUTE
       <div class="rec-id">
       <h1>{it.title}</h1>
       <p class="kind">{TYPE[it.type] || it.type} · {it.status === "verified" ? "checked at the source" : "not yet checked at the source"}{img && !imageCleared(it) && <> · <span class="pending">Image permission pending</span></>}{img && publicDomainTag(it) && <> · <span class="pd-tag">Image in the public domain</span></>}</p>
-      <dl class="facts">{facts.map(([k, v]) => <><dt>{k}</dt><dd>{v}</dd></>)}</dl>
+      <dl class="facts">{facts.map(([k, v]) => <><dt>{k}</dt>{" "}<dd>{v}</dd>{" "}</>)}</dl>
       <div class="btns">
         {it.sourceUrl && <a class="btn primary" href={it.sourceUrl} rel="noopener">View at the source</a>}
         {citedIn.map(c => <a class="btn" href={base(`chapters/${c.slug}/#ref-${c.ns[0]}`)}>Cited in chapter {c.number}, note{c.ns.length > 1 ? "s" : ""} {c.ns.join(", ")}</a>)}
