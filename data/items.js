@@ -21711,5 +21711,23 @@ window.RUG_ITEMS = [
     "imagePage": "https://www.zoeticartstudio.com/imported-products-1/p/custom-tufted-acrylic-rug-or-wall-hanging-25-x-20",
     "imageSource": "auto",
     "rights": "not-requested"
+  },
+  {
+    "id": "u-mw88206mir9qa",
+    "type": "company",
+    "status": "unverified",
+    "title": "Shaggies amsterdam",
+    "institution": "Shaggies amsterdam",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company"
+    ],
+    "directory": "workshop",
+    "website": "https://www.shaggies-amsterdam.com/",
+    "sourceUrl": "https://www.shaggies-amsterdam.com/?srsltid=AYCX9vJSu5w5SaL0KoqdzYVl8hDM-J2EbcNnqwOS614EUsQXIYGTXliZ",
+    "image": "https://static.wixstatic.com/media/ca1c05_41da39e378a347bba340473c3bfdcfcb~mv2.jpg/v1/fill/w_770,h_770,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG20241004172110_edited.jpg",
+    "reviewedAt": "2026-11-08T19:31:09.893Z"
   }
 ];
