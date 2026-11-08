@@ -1,0 +1,32 @@
+---
+// The About page. Its text is src/text/about.md, which the research tool's Book view edits. The photo
+// named in its settings (photo:) is a file in public/; if the file isn't there yet, the page shows none.
+import fs from "node:fs";
+import path from "node:path";
+import Base from "../layouts/Base.astro";
+import { base } from "../lib/data.js";
+import { parseShortVersion, inline } from "../lib/short-version.js";
+import raw from "../text/about.md?raw";
+
+const { fm, sections } = parseShortVersion(raw);
+const photo = fm.photo && fs.existsSync(path.resolve(process.cwd(), "public", fm.photo)) ? base(fm.photo) : "";
+const linked = t => inline(t).replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g, '<a href="$2" rel="noopener">$1</a>');
+---
+<Base title="About · A History of Tufted Rugs" description="About A History of Tufted Rugs and its author, Tim Eads, and how the book was made." current="about" shade="var(--ink)">
+  <article class="about">
+    <header class="page-head">
+      <h1>{fm.title || "About"}</h1>
+      {fm.lede && <p set:html={linked(fm.lede)} />}
+    </header>
+    <div class={`about-body${photo ? "" : " nophoto"}`}>
+      {photo && <figure class="about-photo"><img src={photo} alt={fm.photoAlt || "The author"} width="1500" height="2000" /></figure>}
+      <div class="about-text">
+        {sections.map(s => <section>
+          <h2>{s.heading}</h2>
+          {(s.paras || []).map(p => <p set:html={linked(p)} />)}
+          {s.items && <ul>{s.items.map(t => <li set:html={linked(typeof t === "string" ? t : `${t.when} ${t.text}`)} />)}</ul>}
+        </section>)}
+      </div>
+    </div>
+  </article>
+</Base>
