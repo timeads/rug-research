@@ -4930,7 +4930,11 @@ window.RUG_ITEMS = [
     "directory": "commercial",
     "listing": "Tufted broadloom carpet and flooring, Dalton, Georgia",
     "website": "https://shawinc.com/",
-    "reviewedAt": "2026-11-02T13:37:22.208Z"
+    "reviewedAt": "2026-11-02T13:37:22.208Z",
+    "social": [
+      "https://www.instagram.com/shawfloors/",
+      "https://www.instagram.com/shawcontract/"
+    ]
   },
   {
     "id": "co-mohawk",
@@ -5025,7 +5029,10 @@ window.RUG_ITEMS = [
     "reviewedAt": "2026-11-02T13:37:22.208Z",
     "directory": "commercial",
     "listing": "Rugs made with designers, London",
-    "website": "https://www.floorstory.co.uk/"
+    "website": "https://www.floorstory.co.uk/",
+    "social": [
+      "https://www.instagram.com/floor_story/"
+    ]
   },
   {
     "id": "co-scott-group",
@@ -5120,7 +5127,10 @@ window.RUG_ITEMS = [
     "reviewedAt": "2026-11-02T13:37:22.209Z",
     "directory": "commercial",
     "listing": "Bespoke hand-tufted rugs, Altbüron, Lucerne",
-    "website": "https://www.kramis-teppich.ch/"
+    "website": "https://www.kramis-teppich.ch/",
+    "social": [
+      "https://www.instagram.com/kramis_teppich_design/"
+    ]
   },
   {
     "id": "co-jaipur",
@@ -5152,7 +5162,10 @@ window.RUG_ITEMS = [
     "reviewedAt": "2026-11-02T13:37:22.209Z",
     "directory": "commercial",
     "listing": "Hand-knotted and hand-tufted rugs, Jaipur and Atlanta",
-    "website": "https://www.jaipurliving.com/"
+    "website": "https://www.jaipurliving.com/",
+    "social": [
+      "https://www.instagram.com/jaipurliving/"
+    ]
   },
   {
     "id": "co-tai-ping",
@@ -5185,7 +5198,10 @@ window.RUG_ITEMS = [
     "directory": "commercial",
     "listing": "Hand-tufted and machine-tufted carpet, Hong Kong",
     "website": "https://www.taipingcarpets.com/",
-    "reviewedAt": "2026-11-02T13:37:22.209Z"
+    "reviewedAt": "2026-11-02T13:37:22.209Z",
+    "social": [
+      "https://www.instagram.com/taipingcarpets/"
+    ]
   },
   {
     "id": "wilton-1741",
@@ -8595,7 +8611,10 @@ window.RUG_ITEMS = [
     "directory": "commercial",
     "listing": "Custom hand-tufted carpet, New York",
     "website": "https://www.edwardfields.com/",
-    "reviewedAt": "2026-11-02T13:37:22.208Z"
+    "reviewedAt": "2026-11-02T13:37:22.208Z",
+    "social": [
+      "https://www.instagram.com/efcarpetmakers/"
+    ]
   },
   {
     "id": "co-kasthall",
@@ -8632,7 +8651,10 @@ window.RUG_ITEMS = [
     "directory": "commercial",
     "listing": "Woven and hand-tufted rugs, Kinna",
     "website": "https://www.kasthall.com/",
-    "reviewedAt": "2026-11-02T13:37:22.209Z"
+    "reviewedAt": "2026-11-02T13:37:22.209Z",
+    "social": [
+      "https://www.instagram.com/kasthall/"
+    ]
   },
   {
     "id": "co-ceadogan",
@@ -8670,7 +8692,10 @@ window.RUG_ITEMS = [
     "reviewedAt": "2026-11-02T13:37:22.208Z",
     "directory": "commercial",
     "listing": "Hand-tufted rugs, County Wexford",
-    "website": "https://www.ceadogan.ie/"
+    "website": "https://www.ceadogan.ie/",
+    "social": [
+      "https://www.instagram.com/ceadogan_rugmakers/"
+    ]
   },
   {
     "id": "co-pinton",
@@ -8741,7 +8766,10 @@ window.RUG_ITEMS = [
     "directory": "commercial",
     "listing": "Hand-tufted and woven rugs, Mouscron",
     "website": "https://www.le.be/",
-    "reviewedAt": "2026-11-02T13:37:22.208Z"
+    "reviewedAt": "2026-11-02T13:37:22.208Z",
+    "social": [
+      "https://www.instagram.com/limitededitionrugs/"
+    ]
   },
   {
     "id": "co-yamagata-dantsu",
@@ -8852,7 +8880,10 @@ window.RUG_ITEMS = [
     "reviewedAt": "2026-11-02T13:37:22.208Z",
     "directory": "commercial",
     "listing": "Flatweave runners and hand-tufted rugs, Herefordshire and Devon",
-    "website": "https://www.rogeroates.com/"
+    "website": "https://www.rogeroates.com/",
+    "social": [
+      "https://www.instagram.com/roger_oates/"
+    ]
   },
   {
     "id": "co-royal-thai",
@@ -9816,7 +9847,10 @@ window.RUG_ITEMS = [
     "directory": "commercial",
     "listing": "Handmade rugs, Bhadohi",
     "website": "https://handscarpets.com/",
-    "reviewedAt": "2026-11-02T13:37:22.209Z"
+    "reviewedAt": "2026-11-02T13:37:22.209Z",
+    "social": [
+      "https://www.instagram.com/handscarpets/"
+    ]
   },
   {
     "id": "co-kaleen-india",
@@ -16490,7 +16524,8 @@ window.RUG_ITEMS = [
     "listingName": "Melissa Monroe",
     "social": [
       "https://www.instagram.com/melissamonroeart/"
-    ]
+    ],
+    "website": "https://shop.melissamonroeart.com"
   },
   {
     "id": "artist-qualeasha-wood",
