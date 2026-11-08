@@ -17774,5 +17774,623 @@ window.RUG_ITEMS = [
     "social": [
       "https://www.instagram.com/ligneroset/"
     ]
+  },
+  {
+    "id": "co-aditas-atelier",
+    "type": "company",
+    "title": "Aditas Atelier: rug tufting workshops, Munich",
+    "creator": "Aditas Atelier",
+    "place": "Munich, Germany",
+    "region": "Germany",
+    "description": "4-hour 45–50 cm rug workshop (about €179) and 2.5-hour afterwork class (transl.).\nCaveat: Frequent dates.\nFound by web search for the site's Directory (searches of 7–8 Nov 2026, chosen by the author 8 Nov 2026). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://rausgegangen.de/events/tufting-workshop-4h-in-munchen-teppich-50x50cm-5/ · https://gokonfetti.com/en-us/p/aditas-atelier-xg2nnz",
+    "sourceUrl": "https://rausgegangen.de/events/tufting-workshop-4h-in-munchen-teppich-50x50cm-5/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "workshop",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T00:20:44.622Z",
+    "directory": "workshop",
+    "listing": "Rug tufting workshops, Munich",
+    "listingName": "Aditas Atelier"
+  },
+  {
+    "id": "co-art-moment-arttuft",
+    "type": "company",
+    "title": "Art Moment (ArtTuft): custom rug tufting workshops, Prague",
+    "creator": "Art Moment (ArtTuft)",
+    "place": "Prague, Czechia",
+    "region": "Czechia",
+    "description": "'ArtTuft – Custom Rug Tufting Workshop', 1,990 Kč.\nCaveat: May overlap with Tufting Prague.\nFound by web search for the site's Directory (searches of 7–8 Nov 2026, chosen by the author 8 Nov 2026). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://www.artmoment.cz/en/arttuft/",
+    "sourceUrl": "https://www.artmoment.cz/en/arttuft/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "workshop",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T00:20:44.622Z",
+    "directory": "workshop",
+    "listing": "Custom rug tufting workshops, Prague",
+    "listingName": "Art Moment (ArtTuft)",
+    "website": "https://www.artmoment.cz/en/arttuft/"
+  },
+  {
+    "id": "co-craft-alliance",
+    "type": "company",
+    "title": "Craft Alliance: tufted-rug workshops at a craft centre, St. Louis",
+    "creator": "Craft Alliance",
+    "place": "St. Louis, United States",
+    "region": "United States",
+    "description": "'Making a Tufted Rug' workshop at the Delmar Blvd art centre.\nCaveat: Multi-craft centre; frequency unknown.\nFound by web search for the site's Directory (searches of 7–8 Nov 2026, chosen by the author 8 Nov 2026). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://www.craftalliance.org/?p=12511",
+    "sourceUrl": "https://www.craftalliance.org/?p=12511",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "workshop",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T00:20:44.622Z",
+    "directory": "workshop",
+    "listing": "Tufted-rug workshops at a craft centre, St. Louis",
+    "listingName": "Craft Alliance",
+    "website": "https://craftalliance.org"
+  },
+  {
+    "id": "co-detroit-rug-co",
+    "type": "company",
+    "title": "Detroit Rug Co.: tufting workshops, Detroit",
+    "creator": "Detroit Rug Co.",
+    "place": "Detroit, United States",
+    "region": "United States",
+    "description": "Tufting workshops ('FULLY BOOKED').\nFound by web search for the site's Directory (searches of 7–8 Nov 2026, chosen by the author 8 Nov 2026). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://www.instagram.com/detroitrugcompany/",
+    "sourceUrl": "https://www.instagram.com/detroitrugcompany/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "workshop",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T00:20:44.622Z",
+    "directory": "workshop",
+    "listing": "Tufting workshops, Detroit",
+    "listingName": "Detroit Rug Co.",
+    "social": [
+      "https://www.instagram.com/detroitrugcompany/"
+    ]
+  },
+  {
+    "id": "co-detroit-tuft",
+    "type": "company",
+    "title": "Detroit Tuft: tufting experience and classes, Detroit",
+    "creator": "Detroit Tuft",
+    "place": "Detroit, United States",
+    "region": "United States",
+    "description": "'Detroit Tufting Experience'.\nFound by web search for the site's Directory (searches of 7–8 Nov 2026, chosen by the author 8 Nov 2026). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://www.instagram.com/detroittuft313/",
+    "sourceUrl": "https://www.instagram.com/detroittuft313/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "workshop",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T00:20:44.622Z",
+    "directory": "workshop",
+    "listing": "Tufting experience and classes, Detroit",
+    "listingName": "Detroit Tuft",
+    "social": [
+      "https://www.instagram.com/detroittuft313/"
+    ]
+  },
+  {
+    "id": "co-dovecot-studios",
+    "type": "company",
+    "title": "Dovecot Studios: rug tufting days at the tapestry studio, Edinburgh",
+    "creator": "Dovecot Studios",
+    "place": "Edinburgh, United Kingdom",
+    "region": "United Kingdom",
+    "description": "Tapestry studio running one- and two-day 'Rug Tufting Experience' days with Molly Kent (2024–26).\nCaveat: Venue for Molly Kent's classes (she is already listed as an artist).\nFound by web search for the site's Directory (searches of 7–8 Nov 2026, chosen by the author 8 Nov 2026). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://dovecotstudios.com/whats-on/2-day-rug-tufting-experience · https://www.craftscotland.org/whats-on/event/rug-tufting-experience-3689",
+    "sourceUrl": "https://dovecotstudios.com/whats-on/2-day-rug-tufting-experience",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "workshop",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T00:20:44.622Z",
+    "directory": "workshop",
+    "listing": "Rug tufting days at the tapestry studio, Edinburgh",
+    "listingName": "Dovecot Studios"
+  },
+  {
+    "id": "co-dynamo-zurich",
+    "type": "company",
+    "title": "Dynamo: tufting courses and open tufting space, Zurich",
+    "creator": "Dynamo",
+    "place": "Zurich, Switzerland",
+    "region": "Switzerland",
+    "description": "Youth and culture centre with a tufting course and a 'Mini Tuft' course; open use of the tufting space after.\nCaveat: Multi-craft venue.\nFound by web search for the site's Directory (searches of 7–8 Nov 2026, chosen by the author 8 Nov 2026). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://www.dynamo.ch/kurs/tufting-course · https://www.dynamo.ch/kurs/tufting-course-mini-tuft",
+    "sourceUrl": "https://www.dynamo.ch/kurs/tufting-course",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "workshop",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T00:20:44.622Z",
+    "directory": "workshop",
+    "listing": "Tufting courses and open tufting space, Zurich",
+    "listingName": "Dynamo",
+    "website": "https://www.dynamo.ch/kurs/tufting-course"
+  },
+  {
+    "id": "co-enjoy-studio",
+    "type": "company",
+    "title": "Enjoy Studio: tufting workshops, Kraków",
+    "creator": "Enjoy Studio",
+    "place": "Kraków, Poland",
+    "region": "Poland",
+    "description": "'The first tufting studio in Kraków', founded by Karolina Wolska (Radio Kraków, 2025, transl.).\nCaveat: No address or schedule found.\nFound by web search for the site's Directory (searches of 7–8 Nov 2026, chosen by the author 8 Nov 2026). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://radiokrakow.pl/audycje/pierwsze-studio-tuftingu-w-krakowie-tutaj-mozesz-stworzyc-wlasny-dywan",
+    "sourceUrl": "https://radiokrakow.pl/audycje/pierwsze-studio-tuftingu-w-krakowie-tutaj-mozesz-stworzyc-wlasny-dywan",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "workshop",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T00:20:44.622Z",
+    "directory": "workshop",
+    "listing": "Tufting workshops, Kraków",
+    "listingName": "Enjoy Studio"
+  },
+  {
+    "id": "co-fluus-fraanje",
+    "type": "company",
+    "title": "flüüs&fraanje: tufting studio and workshops, Hamburg",
+    "creator": "flüüs&fraanje",
+    "place": "Hamburg, Germany",
+    "region": "Germany",
+    "description": "Tufting studio in Eimsbüttel run by Antonia Eigel: rugs, cushions and frames with a hand tufting machine, materials included (transl.).\nFound by web search for the site's Directory (searches of 7–8 Nov 2026, chosen by the author 8 Nov 2026). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://rausgegangen.de/en/organizations/tufting-workshops-bei-fluusfraanje/ · https://gokonfetti.com/en-us/p/fluusfraanje-zm9lox/",
+    "sourceUrl": "https://rausgegangen.de/en/organizations/tufting-workshops-bei-fluusfraanje/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "workshop",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T00:20:44.622Z",
+    "directory": "workshop",
+    "listing": "Tufting studio and workshops, Hamburg",
+    "listingName": "flüüs&fraanje"
+  },
+  {
+    "id": "co-fulham-textile-studio",
+    "type": "company",
+    "title": "Fulham Textile Studio: tufting basics and larger-rug classes, London",
+    "creator": "Fulham Textile Studio",
+    "place": "London, United Kingdom",
+    "region": "United Kingdom",
+    "description": "'Tufting Basics', a 3.5-hour beginner class on the cut-pile gun (£135–150), and a 6-hour larger rug class; at most 6–8 people.\nCaveat: Multi-textile studio.\nFound by web search for the site's Directory (searches of 7–8 Nov 2026, chosen by the author 8 Nov 2026). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://classbento.co.uk/tufting-basics-workshop-london · https://www.lbhf.gov.uk/news/2024/11/novices-artists-and-businesses-welcome-fulham-textile-studio-classes",
+    "sourceUrl": "https://classbento.co.uk/tufting-basics-workshop-london",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "workshop",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T00:20:44.622Z",
+    "directory": "workshop",
+    "listing": "Tufting basics and larger-rug classes, London",
+    "listingName": "Fulham Textile Studio"
+  },
+  {
+    "id": "co-habibi-bazaar",
+    "type": "company",
+    "title": "Habibi Bazaar: rug tufting workshops at Sawyer Yards, Houston",
+    "creator": "Habibi Bazaar",
+    "place": "Houston, United States",
+    "region": "United States",
+    "description": "'Rug Tufting Workshop Houston' at Sawyer Yards; owner Pamela El Gergi; covered by Click2Houston and Fox 26.\nCaveat: Also sells tufting supplies.\nFound by web search for the site's Directory (searches of 7–8 Nov 2026, chosen by the author 8 Nov 2026). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://www.instagram.com/habibibazaar/ · https://sawyeryards.com/tenant/habibi-bazaar · https://www.click2houston.com/houston-life/2023/09/19/tuft-your-own-custom-rug-at-habibi-bazaar",
+    "sourceUrl": "https://www.instagram.com/habibibazaar/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "workshop",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T00:20:44.622Z",
+    "directory": "workshop",
+    "listing": "Rug tufting workshops at Sawyer Yards, Houston",
+    "listingName": "Habibi Bazaar",
+    "social": [
+      "https://www.instagram.com/habibibazaar/"
+    ]
+  },
+  {
+    "id": "co-house-of-hobby",
+    "type": "company",
+    "title": "House of Hobby: 'Tea and Tufting' rug workshops, Perth",
+    "creator": "House of Hobby",
+    "place": "Perth, Australia",
+    "region": "Australia",
+    "description": "'Tea and Tufting' 3.5-hour rug workshops in West Perth, $180.\nCaveat: Multi-hobby venue.\nFound by web search for the site's Directory (searches of 7–8 Nov 2026, chosen by the author 8 Nov 2026). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://classbento.com.au/c/wadq",
+    "sourceUrl": "https://classbento.com.au/c/wadq",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "workshop",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T00:20:44.622Z",
+    "directory": "workshop",
+    "listing": "'Tea and Tufting' rug workshops, Perth",
+    "listingName": "House of Hobby"
+  },
+  {
+    "id": "co-omo-diy",
+    "type": "company",
+    "title": "OMO DIY: beginner rug tufting workshops, Bermondsey, London",
+    "creator": "OMO DIY",
+    "place": "London, United Kingdom",
+    "region": "United Kingdom",
+    "description": "3.5-hour beginner workshop for a 50 cm rug at the Biscuit Factory, Bermondsey; Vivi 'discovered tufting during the pandemic and decided to create her own studio'.\nFound by web search for the site's Directory (searches of 7–8 Nov 2026, chosen by the author 8 Nov 2026). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://obby.co.uk/classes/crafts/knitting/london-tufting---handmade-rugs-and-mirrors-1673297475 · https://wecandoo.be/artisan/london-tufter-vivi",
+    "sourceUrl": "https://obby.co.uk/classes/crafts/knitting/london-tufting---handmade-rugs-and-mirrors-1673297475",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "workshop",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T00:20:44.622Z",
+    "directory": "workshop",
+    "listing": "Beginner rug tufting workshops, Bermondsey, London",
+    "listingName": "OMO DIY"
+  },
+  {
+    "id": "co-polisu-art-studio",
+    "type": "company",
+    "title": "Polisu Art Studio: rug tufting classes, Adelaide",
+    "creator": "Polisu Art Studio",
+    "place": "Adelaide, Australia",
+    "region": "Australia",
+    "description": "North Adelaide: 40, 60 and 90 cm rug tufting classes.\nFound by web search for the site's Directory (searches of 7–8 Nov 2026, chosen by the author 8 Nov 2026). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://classbento.com.au/tufting-class-make-a-40x40cm-rug-adelaide",
+    "sourceUrl": "https://classbento.com.au/tufting-class-make-a-40x40cm-rug-adelaide",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "workshop",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T00:20:44.622Z",
+    "directory": "workshop",
+    "listing": "Rug tufting classes, Adelaide",
+    "listingName": "Polisu Art Studio"
+  },
+  {
+    "id": "co-soft-spot-studio",
+    "type": "company",
+    "title": "Soft Spot Studio (Alena Ruth): tufting workshops, Manchester and Salford",
+    "creator": "Soft Spot Studio (Alena Ruth)",
+    "place": "Manchester and Salford, United Kingdom",
+    "region": "United Kingdom",
+    "description": "Rug-tufting artist and tutor running workshops since 2020; 'the rebirth of Manchester Tufting Workshops'; beginner classes at Manchester Craft & Design Centre (£70, 2.5 hours).\nCaveat: New studio being funded; base has been Islington Mill.\nFound by web search for the site's Directory (searches of 7–8 Nov 2026, chosen by the author 8 Nov 2026). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://www.craftanddesign.com/workshops/rug-tufting-workshop/ · https://www.gofundme.com/f/help-to-build-soft-spot-studio · https://festivalofmaking.co.uk/?p=8589",
+    "sourceUrl": "https://www.craftanddesign.com/workshops/rug-tufting-workshop/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "workshop",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T00:20:44.622Z",
+    "directory": "workshop",
+    "listing": "Tufting workshops, Manchester and Salford",
+    "listingName": "Soft Spot Studio (Alena Ruth)"
+  },
+  {
+    "id": "co-studio-knot",
+    "type": "company",
+    "title": "studio knot: design-led tufting workshops, Stuttgart",
+    "creator": "studio knot",
+    "place": "Stuttgart, Germany",
+    "region": "Germany",
+    "description": "Design-led tufting studio, Tübinger Straße 77/1: rug workshop about €249, motif planned before the class (transl.).\nFound by web search for the site's Directory (searches of 7–8 Nov 2026, chosen by the author 8 Nov 2026). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://rausgegangen.de/en/events/tufting-workshop-teppich-16/ · https://gokonfetti.com/en-us/e/tufting-kurs-team-event-stuttgart-w0p455/",
+    "sourceUrl": "https://rausgegangen.de/en/events/tufting-workshop-teppich-16/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "workshop",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T00:20:44.622Z",
+    "directory": "workshop",
+    "listing": "Design-led tufting workshops, Stuttgart",
+    "listingName": "studio knot"
+  },
+  {
+    "id": "co-the-makery-berlin",
+    "type": "company",
+    "title": "The Makery: tufting classes, from small pieces to two-day rugs, Berlin",
+    "creator": "The Makery",
+    "place": "Berlin, Germany",
+    "region": "Germany",
+    "description": "Five tufting classes, from a fluffy artwork to a two-day large rug.\nCaveat: Multi-craft venue; tufting regular.\nFound by web search for the site's Directory (searches of 7–8 Nov 2026, chosen by the author 8 Nov 2026). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://themakery.de/tufting_workshop_create_a_fluffy_artwork/Berlin · https://themakery.de/large_rug_tufting_two_day_workshop/Berlin",
+    "sourceUrl": "https://themakery.de/tufting_workshop_create_a_fluffy_artwork/Berlin",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "workshop",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T00:20:44.622Z",
+    "directory": "workshop",
+    "listing": "Tufting classes, from small pieces to two-day rugs, Berlin",
+    "listingName": "The Makery",
+    "website": "https://themakery.de/tufting_workshop_create_a_fluffy_artwork/Berlin"
+  },
+  {
+    "id": "co-the-tufting-spot-birmingham",
+    "type": "company",
+    "title": "The Tufting Spot: tufting workshops, Birmingham",
+    "creator": "The Tufting Spot",
+    "place": "Birmingham, United Kingdom",
+    "region": "United Kingdom",
+    "description": "Women-owned tufting teacher, 5.0 from 60 ClassBento reviews.\nCaveat: Other Birmingham listings may be hers (unconfirmed).\nFound by web search for the site's Directory (searches of 7–8 Nov 2026, chosen by the author 8 Nov 2026). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://classbento.co.uk/the-tufting-spot",
+    "sourceUrl": "https://classbento.co.uk/the-tufting-spot",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "workshop",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T00:20:44.622Z",
+    "directory": "workshop",
+    "listing": "Tufting workshops, Birmingham",
+    "listingName": "The Tufting Spot"
+  },
+  {
+    "id": "co-touf-touf-cgn",
+    "type": "company",
+    "title": "Touf Touf CGN: tufting workshops, Cologne",
+    "creator": "Touf Touf CGN",
+    "place": "Cologne, Germany",
+    "region": "Germany",
+    "description": "'Tufting Workshop Köln' (business directory).\nCaveat: Weak: directory profile only.\nFound by web search for the site's Directory (searches of 7–8 Nov 2026, chosen by the author 8 Nov 2026). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://sellwerk.de/firmenprofil/touf-touf-cgn--tufting-workshop-koeln",
+    "sourceUrl": "https://sellwerk.de/firmenprofil/touf-touf-cgn--tufting-workshop-koeln",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "workshop",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T00:20:44.622Z",
+    "directory": "workshop",
+    "listing": "Tufting workshops, Cologne",
+    "listingName": "Touf Touf CGN"
+  },
+  {
+    "id": "co-tuft-and-craft",
+    "type": "company",
+    "title": "Tuft & Craft: tufting 101 and other classes, Chippendale, Sydney",
+    "creator": "Tuft & Craft",
+    "place": "Sydney, Australia",
+    "region": "Australia",
+    "description": "Chippendale tufting studio: 'Tufting 101', skate deck and cushion classes.\nCaveat: Handle @tuft.n.craft named, not linked.\nFound by web search for the site's Directory (searches of 7–8 Nov 2026, chosen by the author 8 Nov 2026). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://www.2ser.com/stories/discover-the-art-of-tufting-and-create-your-own-custom-rug-with-tuft-and-craft-in-sydney · https://classbento.com.au/c/7hdz",
+    "sourceUrl": "https://www.2ser.com/stories/discover-the-art-of-tufting-and-create-your-own-custom-rug-with-tuft-and-craft-in-sydney",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "workshop",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T00:20:44.622Z",
+    "directory": "workshop",
+    "listing": "Tufting 101 and other classes, Chippendale, Sydney",
+    "listingName": "Tuft & Craft"
+  },
+  {
+    "id": "co-tufter-studio",
+    "type": "company",
+    "title": "Tufter Studio: make-your-own rug studio, Glasgow",
+    "creator": "Tufter Studio",
+    "place": "Glasgow, United Kingdom",
+    "region": "United Kingdom",
+    "description": "Rug-making studio near Glasgow Central, 'inviting visitors to make their own rug' (Secret Glasgow).\nCaveat: Article undated.\nFound by web search for the site's Directory (searches of 7–8 Nov 2026, chosen by the author 8 Nov 2026). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://secretglasgow.com/tufter-studio/",
+    "sourceUrl": "https://secretglasgow.com/tufter-studio/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "workshop",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T00:20:44.622Z",
+    "directory": "workshop",
+    "listing": "Make-your-own rug studio, Glasgow",
+    "listingName": "Tufter Studio"
+  },
+  {
+    "id": "co-tufting-hamburg",
+    "type": "company",
+    "title": "Tufting Hamburg: mini to maxi rug workshops at Hazel & Beck, Hamburg",
+    "creator": "Tufting Hamburg",
+    "place": "Hamburg, Germany",
+    "region": "Germany",
+    "description": "Mini, medium and maxi rug workshops at Hazel & Beck, Henriettenweg 4; also team events (transl.).\nCaveat: Multi-craft venue (also macramé).\nFound by web search for the site's Directory (searches of 7–8 Nov 2026, chosen by the author 8 Nov 2026). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://www.hamburg-tourism.de/sehen-erleben/veranstaltungen/veranstaltungsorte/tufting-hamburg/ · https://gokonfetti.com/en-us/e/mini-teppich-tuften-in-hamburg-25-25-cm-zvp7og/",
+    "sourceUrl": "https://www.hamburg-tourism.de/sehen-erleben/veranstaltungen/veranstaltungsorte/tufting-hamburg/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "workshop",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T00:20:44.622Z",
+    "directory": "workshop",
+    "listing": "Mini to maxi rug workshops at Hazel & Beck, Hamburg",
+    "listingName": "Tufting Hamburg"
+  },
+  {
+    "id": "co-tufting-studio-crea",
+    "type": "company",
+    "title": "tufting studio CREA: rug tufting near Shimogamo Shrine, Kyoto",
+    "creator": "tufting studio CREA",
+    "place": "Kyoto, Japan",
+    "region": "Japan",
+    "description": "Tufting near Shimogamo Shrine, 60 yarn colours (Jalan, transl.).\nFound by web search for the site's Directory (searches of 7–8 Nov 2026, chosen by the author 8 Nov 2026). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://www.jalan.net/kankou/spt_guide000000219531/",
+    "sourceUrl": "https://www.jalan.net/kankou/spt_guide000000219531/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "workshop",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T00:20:44.622Z",
+    "directory": "workshop",
+    "listing": "Rug tufting near Shimogamo Shrine, Kyoto",
+    "listingName": "tufting studio CREA"
+  },
+  {
+    "id": "co-tufty5studio",
+    "type": "company",
+    "title": "Tufty5studio: tufting workshops in the Sofia Green Gallery, Sofia",
+    "creator": "Tufty5studio",
+    "place": "Sofia, Bulgaria",
+    "region": "Bulgaria",
+    "description": "4-hour tufting workshop in the Sofia Green Gallery, in English.\nFound by web search for the site's Directory (searches of 7–8 Nov 2026, chosen by the author 8 Nov 2026). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://tufty5.tilda.ws/en · https://www.airbnb.com/experiences/6549219",
+    "sourceUrl": "https://tufty5.tilda.ws/en",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "workshop",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T00:20:44.622Z",
+    "directory": "workshop",
+    "listing": "Tufting workshops in the Sofia Green Gallery, Sofia",
+    "listingName": "Tufty5studio",
+    "website": "https://tufty5.tilda.ws/en"
+  },
+  {
+    "id": "co-estudio-tomm",
+    "type": "company",
+    "title": "Estudio Tomm: tufted pieces and made-to-measure rugs, Uruguay",
+    "creator": "Estudio Tomm",
+    "place": "Uruguay",
+    "region": "Uruguay",
+    "description": "'Alfombras y tapices': tufted pieces and made-to-measure rugs (transl.).\nFound by web search for the site's Directory (searches of 7–8 Nov 2026, chosen by the author 8 Nov 2026). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://www.instagram.com/estudiotomm/",
+    "sourceUrl": "https://www.instagram.com/estudiotomm/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "studio",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T00:20:44.622Z",
+    "directory": "artist",
+    "listing": "Tufted pieces and made-to-measure rugs, Uruguay",
+    "listingName": "Estudio Tomm",
+    "social": [
+      "https://www.instagram.com/estudiotomm/"
+    ]
+  },
+  {
+    "id": "co-rug-addicts",
+    "type": "company",
+    "title": "Rug Addicts: tuft studio, Monterrey",
+    "creator": "Rug Addicts",
+    "place": "Monterrey, Mexico",
+    "region": "Mexico",
+    "description": "Tuft studio.\nCaveat: Thin.\nFound by web search for the site's Directory (searches of 7–8 Nov 2026, chosen by the author 8 Nov 2026). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://www.instagram.com/rug_addicts/",
+    "sourceUrl": "https://www.instagram.com/rug_addicts/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "studio",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T00:20:44.622Z",
+    "directory": "artist",
+    "listing": "Tuft studio, Monterrey",
+    "listingName": "Rug Addicts",
+    "social": [
+      "https://www.instagram.com/rug_addicts/"
+    ]
   }
 ];
