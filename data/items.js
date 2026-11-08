@@ -18636,19 +18636,17 @@ window.RUG_ITEMS = [
     "creator": "Estudio Tomm",
     "place": "Uruguay",
     "region": "Uruguay",
-    "description": "'Alfombras y tapices': tufted pieces and made-to-measure rugs (transl.).\nFound by web search for the site's Directory (searches of 7–8 Nov 2026, chosen by the author 8 Nov 2026). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://www.instagram.com/estudiotomm/",
+    "description": "'Alfombras y tapices': tufted pieces and made-to-measure rugs (transl.).\nFound by web search for the site's Directory (searches of 7–8 Nov 2026, chosen by the author 8 Nov 2026). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://www.instagram.com/estudiotomm/\nCaveat: Taken out of the directory (8 Nov 2026): the author found the studio appears to have closed.",
     "sourceUrl": "https://www.instagram.com/estudiotomm/",
     "themes": [
       "Companies & modern tufting"
     ],
     "tags": [
       "studio",
-      "directory",
       "found by web search"
     ],
     "status": "unverified",
     "reviewedAt": "2026-11-08T00:20:44.622Z",
-    "directory": "artist",
     "listing": "Tufted pieces and made-to-measure rugs, Uruguay",
     "listingName": "Estudio Tomm",
     "social": [
