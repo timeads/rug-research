@@ -19009,7 +19009,10 @@ window.RUG_ITEMS = [
     "directory": "commercial",
     "listing": "Artist rugs from Alex DelBello's paintings, hand-tufted and hand-knotted",
     "listingName": "allybello",
-    "website": "https://allybello.com"
+    "website": "https://allybello.com",
+    "image": "https://www.rugnews.com/uploads/public/images/articles/2025/jdstaron-jakub-gosia-icff-2025-award.jpeg",
+    "imageCredit": "rugnews.com",
+    "imageSource": "auto"
   },
   {
     "id": "co-amer-rugs",
@@ -19034,7 +19037,10 @@ window.RUG_ITEMS = [
     "directory": "commercial",
     "listing": "Hand-knotted, hand-tufted and hand-loomed rugs, Norcross, Georgia",
     "listingName": "Amer Rugs",
-    "website": "https://www.amerrugs.com"
+    "website": "https://www.amerrugs.com",
+    "image": "https://www.rugnews.com/uploads/public/images/articles/article-image/ny/cnnyrug_montage2.jpg",
+    "imageCredit": "rugnews.com",
+    "imageSource": "auto"
   },
   {
     "id": "co-cella-carpet",
@@ -19058,7 +19064,10 @@ window.RUG_ITEMS = [
     "reviewedAt": "2026-11-08T12:10:57.650Z",
     "directory": "commercial",
     "listing": "Rugs and broadloom, New Jersey",
-    "listingName": "Cella Carpet"
+    "listingName": "Cella Carpet",
+    "image": "https://www.rugnews.com/uploads/public/images/articles/2025/rugnews-cclv-rug-buyers-2025-montage.jpg",
+    "imageCredit": "rugnews.com",
+    "imageSource": "auto"
   },
   {
     "id": "co-couristan",
@@ -19086,7 +19095,10 @@ window.RUG_ITEMS = [
     "website": "https://www.couristan.com",
     "social": [
       "https://www.instagram.com/couristan/"
-    ]
+    ],
+    "image": "https://www.rugnews.com/uploads/public/images/articles/article-image/ny/rugnews-rugs-bdny-2024.jpg",
+    "imageCredit": "rugnews.com",
+    "imageSource": "auto"
   },
   {
     "id": "co-creative-touch",
@@ -19167,7 +19179,10 @@ window.RUG_ITEMS = [
     "website": "https://www.jdstaron.com/",
     "social": [
       "https://www.instagram.com/jdstaron/"
-    ]
+    ],
+    "image": "https://www.rugnews.com/uploads/public/images/articles/article-image/jd-staron-jakub-and-pure-collection-icff-2023.jpg",
+    "imageCredit": "rugnews.com",
+    "imageSource": "auto"
   },
   {
     "id": "co-jov",
@@ -19195,7 +19210,10 @@ window.RUG_ITEMS = [
     "website": "https://jov-design.com/",
     "social": [
       "https://www.instagram.com/jovdesign/"
-    ]
+    ],
+    "image": "https://www.rugnews.com/uploads/public/images/articles/2025/rugnews-icff-2025-montage.jpg",
+    "imageCredit": "rugnews.com",
+    "imageSource": "auto"
   },
   {
     "id": "co-kateha",
@@ -19223,7 +19241,10 @@ window.RUG_ITEMS = [
     "website": "https://kateha.se/",
     "social": [
       "https://www.instagram.com/kateharugs/"
-    ]
+    ],
+    "image": "https://www.rugnews.com/uploads/public/images/articles/0rugnews1/rugnews-3-days-of-design-copenhagen-2026-montage2.jpg",
+    "imageCredit": "rugnews.com",
+    "imageSource": "auto"
   },
   {
     "id": "co-layered",
@@ -19248,7 +19269,10 @@ window.RUG_ITEMS = [
     "directory": "commercial",
     "listing": "Rugs and textiles, including hand-tufted wool, Stockholm",
     "listingName": "Layered",
-    "website": "https://layered.se/"
+    "website": "https://layered.se/",
+    "image": "https://interiordesign.net/wp-content/uploads/2025/03/idx250401_market25.jpg",
+    "imageCredit": "interiordesign.net",
+    "imageSource": "auto"
   },
   {
     "id": "co-linie-design",
@@ -19276,7 +19300,10 @@ window.RUG_ITEMS = [
     "website": "https://www.liniedesign.com",
     "social": [
       "https://www.instagram.com/liniedesign/"
-    ]
+    ],
+    "image": "https://www.rugnews.com/uploads/public/images/articles/2025/rugnews-3daysofdesign-2025montage.jpg",
+    "imageCredit": "rugnews.com",
+    "imageSource": "auto"
   },
   {
     "id": "co-massimo-copenhagen",
@@ -19355,7 +19382,10 @@ window.RUG_ITEMS = [
     "reviewedAt": "2026-11-08T12:10:57.650Z",
     "directory": "commercial",
     "listing": "Area rugs, broadloom and custom sizes",
-    "listingName": "Rebel Carpets"
+    "listingName": "Rebel Carpets",
+    "image": "https://www.rugnews.com/uploads/public/images/articles/article-image/rugnews-cover-connect-ny-2023-montage.jpg",
+    "imageCredit": "rugnews.com",
+    "imageSource": "auto"
   },
   {
     "id": "co-rhyme-studio",
