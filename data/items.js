@@ -17175,14 +17175,14 @@ window.RUG_ITEMS = [
       "found by web search"
     ],
     "status": "unverified",
-    "reviewedAt": "2026-11-07T23:55:47.500Z",
+    "reviewedAt": "2026-11-08T19:35:13.016Z",
     "directory": "workshop",
     "listing": "Tufting courses and custom rugs, Mexico City",
     "listingName": "Tufting Mex",
     "social": [
       "https://www.instagram.com/tufting_mex/"
     ],
-    "image": "https://static.cdninstagram.com/rsrc.php/v4/yD/r/R0fBIMurK8v.png",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToVmtOMzSwScNuMf0n3Hx6_jnK0TYQbjujDXZkVJwUUQ&s=10",
     "imageCredit": "instagram.com",
     "imageSource": "auto"
   },
