@@ -1,12 +1,12 @@
 ---
 // The directory: firms, studios and artists tufting now, by kind, then region and country. Each entry is a
-// record marked "commercial" or "artist" in the research tool, with its website and social links.
+// record marked "commercial", "artist" or "workshop" (or more than one) in the research tool, with its website and social links.
 import Base from "../layouts/Base.astro";
-import { db, base, REGION_ORDER, DIRECTORY_KINDS, directoryCountry, directoryRegion, directoryName, socialLabel, websiteLabel, slug } from "../lib/data.js";
+import { db, base, REGION_ORDER, DIRECTORY_KINDS, directoryKinds, directoryCountry, directoryRegion, directoryName, socialLabel, websiteLabel, slug } from "../lib/data.js";
 
 const { items } = db();
 const kinds = DIRECTORY_KINDS.map(([kind, name, intro]) => {
-  const list = items.filter(it => it.directory === kind);
+  const list = items.filter(it => directoryKinds(it).includes(kind));
   const regions = REGION_ORDER.map(region => {
     const inRegion = list.filter(it => directoryRegion(it) === region);
     const countries = [...new Set(inRegion.map(directoryCountry))].sort((a, b) => a.localeCompare(b))
@@ -15,6 +15,8 @@ const kinds = DIRECTORY_KINDS.map(([kind, name, intro]) => {
   }).filter(r => r.count);
   return { kind, name, intro, count: list.length, regions };
 }).filter(k => k.count);
+const KIND_NAME = Object.fromEntries(DIRECTORY_KINDS.map(([k, n]) => [k, n]));
+const alsoIn = (it, kind) => directoryKinds(it).filter(k => k !== kind).map(k => ({ name: KIND_NAME[k], href: `#${k}-${slug(directoryRegion(it))}` }));
 const links = it => [
   ...(it.website ? [{ href: it.website, label: websiteLabel(it.website) }] : []),
   ...(Array.isArray(it.social) ? it.social : []).filter(Boolean).map(href => ({ href, label: socialLabel(href) }))
@@ -45,7 +47,7 @@ const links = it => [
                   <h4>{c.country}</h4>
                   <ol>{c.entries.map(it => (
                     <li>
-                      <span class="c"><a class="dir-name" href={base(`records/${it.id}/`)}>{directoryName(it)}</a>{it.listing && <span class="dir-line">{it.listing}</span>}</span>
+                      <span class="c"><a class="dir-name" href={base(`records/${it.id}/`)}>{directoryName(it)}</a>{it.listing && <span class="dir-line">{it.listing}</span>}{alsoIn(it, k.kind).map(a => <span class="dir-also">Also under <a href={a.href}>{a.name}</a></span>)}</span>
                       <span class="meta">{links(it).map(l => <a class="more" href={l.href} rel="noopener" target="_blank">{l.label}</a>)}</span>
                     </li>
                   ))}</ol>

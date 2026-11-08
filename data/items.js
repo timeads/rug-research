@@ -17928,11 +17928,11 @@ window.RUG_ITEMS = [
   {
     "id": "co-dovecot-studios",
     "type": "company",
-    "title": "Dovecot Studios: rug tufting days at the tapestry studio, Edinburgh",
+    "title": "Dovecot Studios: tapestry studio making tufted rugs to commission, with tufting days, Edinburgh",
     "creator": "Dovecot Studios",
     "place": "Edinburgh, United Kingdom",
     "region": "United Kingdom",
-    "description": "Tapestry studio running one- and two-day 'Rug Tufting Experience' days with Molly Kent (2024–26).\nCaveat: Venue for Molly Kent's classes (she is already listed as an artist).\nFound by web search for the site's Directory (searches of 7–8 Nov 2026, chosen by the author 8 Nov 2026). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://dovecotstudios.com/whats-on/2-day-rug-tufting-experience · https://www.craftscotland.org/whats-on/event/rug-tufting-experience-3689",
+    "description": "Tapestry studio in Edinburgh, reportedly founded in 1912 (as the Edinburgh Tapestry Company, by several accounts), which weaves tapestries and, by its own account, has in recent years become a centre for making tufted rugs with artists and designers, on commission. It also runs one- and two-day 'Rug Tufting Experience' days with Molly Kent (2024–26).\nCaveat: Listed under both commercial and workshops: the author notes its rug commissions came before its classes. Venue for Molly Kent's classes (she is already listed as an artist). The founding date comes from search snippets of secondary pages, not the studio's own history page.\nFound by web search for the site's Directory (searches of 7–8 Nov 2026, chosen by the author 8 Nov 2026). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://dovecotstudios.com/tapestry-studio (given by the author, 8 Nov 2026) · https://dovecotstudios.com/whats-on/tuft-loving-recent-rug-making-projects · https://dovecotstudios.com/whats-on/collaborate-21st-century-commissions-creations/ · https://make.works/companies/dovecotstudios · https://journal.bezalel.ac.il/v1/en/book/170 · https://dovecotstudios.com/whats-on/2-day-rug-tufting-experience · https://www.craftscotland.org/whats-on/event/rug-tufting-experience-3689",
     "sourceUrl": "https://dovecotstudios.com/whats-on/2-day-rug-tufting-experience",
     "themes": [
       "Companies & modern tufting"
@@ -17944,8 +17944,12 @@ window.RUG_ITEMS = [
     ],
     "status": "unverified",
     "reviewedAt": "2026-11-08T00:20:44.622Z",
-    "directory": "workshop",
-    "listing": "Rug tufting days at the tapestry studio, Edinburgh",
+    "directory": [
+      "commercial",
+      "workshop"
+    ],
+    "listing": "Tapestry studio making tufted rugs with artists, to commission, and running rug tufting days, Edinburgh",
+    "website": "https://dovecotstudios.com/tapestry-studio",
     "listingName": "Dovecot Studios",
     "image": "https://dovecotstudios.com/i/large/6408adae660e0-lead-image.jpg",
     "imageCredit": "dovecotstudios.com",

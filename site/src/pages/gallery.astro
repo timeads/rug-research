@@ -1,8 +1,10 @@
 ---
 // The gallery: the pictures chosen for it in the research tool (a record's "gallery" mark, with
-// "galleryImage" naming one of its photos), in date order, each linking to its record.
+// "galleryImage" naming one of its photos), in date order, each linking to its record; then the pictures of
+// the people and firms in the directory. Chips filter by chapter (the records a chapter cites) or by
+// directory section.
 import Base from "../layouts/Base.astro";
-import { db, imageUrl, imageCleared, base, fmtYear } from "../lib/data.js";
+import { db, imageUrl, imageCleared, base, fmtYear, DIRECTORY_KINDS, directoryKinds, directoryCountry, directoryName } from "../lib/data.js";
 import { citedIndex } from "../lib/cited.js";
 
 const { items } = db();
@@ -13,36 +15,52 @@ const pictureOf = it => {
   const pic = n && g[n] && g[n].src ? g[n] : null;
   return { src: pic ? pic.src : it.image, caption: pic ? pic.caption || "" : "" };
 };
-const tiles = items
-  .filter(it => it.gallery && it.image && !String(it.image).startsWith("idb:"))
-  .map(it => ({ it, ...pictureOf(it), chapters: (cited[it.id] || []).map(c => c.number) }))
+const usable = it => it.image && !String(it.image).startsWith("idb:");
+const history = items
+  .filter(it => it.gallery && usable(it))
+  .map(it => ({ it, ...pictureOf(it), chapters: (cited[it.id] || []).map(c => c.number), kinds: directoryKinds(it) }))
   .filter(t => t.src)
   .sort((a, b) => (a.it.dateStart ?? 1e9) - (b.it.dateStart ?? 1e9) || a.it.title.localeCompare(b.it.title));
+const inHistory = new Set(history.map(t => t.it.id));
+const today = items
+  .filter(it => !inHistory.has(it.id) && directoryKinds(it).length && usable(it))
+  .map(it => ({ it, ...pictureOf(it), chapters: (cited[it.id] || []).map(c => c.number), kinds: directoryKinds(it) }))
+  .filter(t => t.src)
+  .sort((a, b) => directoryName(a.it).localeCompare(directoryName(b.it)));
+const tiles = [...history, ...today];
 const chapterNos = [...new Set(tiles.flatMap(t => t.chapters))].sort((a, b) => a - b);
+const kindChips = DIRECTORY_KINDS.filter(([k]) => tiles.some(t => t.kinds.includes(k)));
 const when = it => it.date || (it.dateStart != null ? fmtYear(it.dateStart) : "");
+const KIND_NAME = Object.fromEntries(DIRECTORY_KINDS.map(([k, n]) => [k, n]));
+const meta = t => t.kinds.length && !t.it.gallery
+  ? [directoryCountry(t.it), t.kinds.map(k => KIND_NAME[k]).join("; ")].join(" · ")
+  : [when(t.it), t.it.institution].filter(Boolean).join(" · ");
+const filters = t => [...t.chapters.map(n => `ch${n}`), ...t.kinds].join(" ");
 ---
 <Base title="Gallery · A History of Tufted Rugs" description="Pictures from the research behind A History of Tufted Rugs: rugs, tools, patents, photographs and documents. Each links to its record." current="gallery" shade="var(--ink)">
   <header class="page-head">
     <h1>Gallery</h1>
-    <p>Rugs, tools, machines, photographs and documents from the research, oldest first. Choose a picture to see its record and the sources behind it.</p>
+    <p>Rugs, tools, machines, photographs and documents from the research, oldest first, then the firms, studios, artists and workshops in the directory. Choose a picture to see its record and the sources behind it.</p>
   </header>
-  {chapterNos.length > 1 && (
-    <div class="tl-tools"><div class="in" role="group" aria-label="Show pictures from one chapter">
-      <button class="chip" data-ch="" aria-pressed="true">All pictures</button>
-      {chapterNos.map(n => <button class="chip" data-ch={String(n)} aria-pressed="false">Chapter {n}</button>)}
+  {(chapterNos.length > 1 || kindChips.length) && (
+    <div class="tl-tools"><div class="in" role="group" aria-label="Show pictures from one chapter or one part of the directory">
+      <button class="chip" data-f="" aria-pressed="true">All pictures</button>
+      {chapterNos.map(n => <button class="chip" data-f={`ch${n}`} aria-pressed="false">Chapter {n}</button>)}
+      {kindChips.length > 0 && <span class="g-sep" aria-hidden="true">Directory</span>}
+      {kindChips.map(([k, name]) => <button class="chip" data-f={k} aria-pressed="false">{name}</button>)}
     </div></div>
   )}
   <div class="gal">
-    {tiles.map(({ it, src, caption, chapters }) => (
-      <a class="g-tile" href={base(`records/${it.id}/`)} data-ch={chapters.join(" ")}>
+    {tiles.map(t => { const { it, src, caption } = t; return (
+      <a class="g-tile" href={base(`records/${it.id}/`)} data-f={filters(t)}>
         <img src={imageUrl(src, 900)} alt={caption || it.title} loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.closest('.g-tile').remove()" />
         <span class="g-cap">
-          <span class="t">{it.title}</span>
-          <span class="m">{[when(it), it.institution].filter(Boolean).join(" · ")}</span>
+          <span class="t">{it.gallery || !t.kinds.length ? it.title : directoryName(it)}</span>
+          <span class="m">{meta(t)}</span>
           {!imageCleared(it) && <span class="pending">Permission pending</span>}
         </span>
       </a>
-    ))}
+    ); })}
   </div>
   {!tiles.length && <p class="g-empty">No pictures have been chosen for the gallery yet.</p>}
   <script is:inline>
@@ -65,12 +83,12 @@ const when = it => it.date || (it.dateStart != null ? fmtYear(it.dateStart) : ""
       lay(); addEventListener("resize", () => lay());
       // A picture that fails to load is taken out, and the columns dealt again.
       new MutationObserver(() => { const gone = tiles.filter(t => !gal.contains(t)); if (gone.length) { gone.forEach(t => tiles.splice(tiles.indexOf(t), 1)); lay(true); } }).observe(gal, { childList: true, subtree: true });
-      // Chapter filter: show the pictures whose records that chapter cites.
-      const chips = [...document.querySelectorAll(".chip[data-ch]")];
+      // Filters: a chapter shows the pictures whose records it cites; a directory section, its entries.
+      const chips = [...document.querySelectorAll(".chip[data-f]")];
       chips.forEach(c => c.addEventListener("click", () => {
-        const ch = c.dataset.ch;
+        const f = c.dataset.f;
         chips.forEach(x => x.setAttribute("aria-pressed", String(x === c)));
-        tiles.forEach(t => { t.hidden = !!ch && !t.dataset.ch.split(" ").includes(ch); });
+        tiles.forEach(t => { t.hidden = !!f && !t.dataset.f.split(" ").includes(f); });
         lay(true);
       }));
     })();

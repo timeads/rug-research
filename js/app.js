@@ -321,7 +321,7 @@
     conf: it => [it.confidence || "(none)"],
     rights: it => it.image ? [it.rights || "not-requested", ...(mentionsPD(it) ? ["likely-public-domain"] : [])] : ["(no image)"],
     gal: it => it.image ? [it.gallery ? "in" : "out"] : [],
-    dir: it => [it.directory || "(none)"]
+    dir: it => { const k = [].concat(it.directory || []); return k.length ? k : ["(none)"]; }
   };
   const passFacets = (it, except) => Object.entries(F).every(([k, set]) => k === except || !set.size || facetValues[k](it).some(v => set.has(v)));
 
@@ -687,7 +687,7 @@
           <button class="btn" id="copy-cite">${icon("copy")}Copy citation</button>
           <button class="btn" data-find-image="${esc(id)}">${icon("search")}${it.image && !it._borrowed ? "Find another image" : "Find an image"}</button>
         </div>
-        ${it.directory || it.website || (it.social || []).length ? `<p class="dir-line-d">${it.directory ? `<span class="dir-tag">Directory: ${({ artist: "Artists and studios", workshop: "Workshops and classes" })[it.directory] || "Commercial and professional"}</span> ` : ""}${esc(it.listing || "")}${[it.website, ...(Array.isArray(it.social) ? it.social : [])].filter(u => safeUrl(u)).map(u => ` <a href="${esc(safeUrl(u))}" target="_blank" rel="noopener">${esc(u.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, ""))}</a>`).join(" ·")}</p>` : ""}
+        ${it.directory || it.website || (it.social || []).length ? `<p class="dir-line-d">${it.directory ? `<span class="dir-tag">Directory: ${[].concat(it.directory).map(k => ({ commercial: "Commercial and professional", artist: "Artists and studios", workshop: "Workshops and classes" })[k] || k).join("; ")}</span> ` : ""}${esc(it.listing || "")}${[it.website, ...(Array.isArray(it.social) ? it.social : [])].filter(u => safeUrl(u)).map(u => ` <a href="${esc(safeUrl(u))}" target="_blank" rel="noopener">${esc(u.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, ""))}</a>`).join(" ·")}</p>` : ""}
         ${it.originalText ? `<figure class="quote"><blockquote lang="${esc(it.language || "")}">${esc(it.originalText)}</blockquote>${it.translation ? `<figcaption>${esc(it.translation)}</figcaption>` : ""}</figure>` : it.translation ? `<p class="desc">${esc(it.translation)}</p>` : ""}
         ${it.confidence && CONFIDENCE[it.confidence] ? `<p class="conf-line">${confBadge(it)} ${esc(CONFIDENCE[it.confidence].hint)}.</p>` : ""}
         ${it.description ? `<p class="desc">${esc(it.description)}</p>` : ""}
@@ -811,6 +811,7 @@
     for (const el of form.elements) {
       if (!el.name || el.type === "file") continue;
       const v = it[el.name];
+      if (el.type === "checkbox") { el.checked = [].concat(v || []).includes(el.value); continue; }
       el.value = Array.isArray(v) ? v.join(", ") : (v ?? "");
     }
     form.elements.imageFile.value = "";
@@ -896,6 +897,7 @@
     const rec = { id };
     for (const [k, v] of Object.entries(prev || {})) if (!k.startsWith("_") && !shown.has(k) && k !== "images" && k !== "social") rec[k] = v;
     for (const [k, v] of fd.entries()) if (k !== "imageFile" && k !== "imagesText" && k !== "socialText") rec[k] = typeof v === "string" ? v.trim() : v;
+    { const kinds = fd.getAll("directory").map(String); if (kinds.length > 1) rec.directory = kinds; else if (kinds.length) rec.directory = kinds[0]; else delete rec.directory; }
     rec.social = String(fd.get("socialText") || "").split(/\s+/).map(u => u.trim()).filter(u => /^https?:\/\//.test(u));
     const more = parseMore(fd.get("imagesText"));
     if (more.length && !rec.image) rec.image = more.shift().src;

@@ -117,6 +117,8 @@ export const DIRECTORY_KINDS = [
   ["artist", "Artists and studios", "Artists and small studios making tufted work and custom rugs."],
   ["workshop", "Workshops and classes", "Places to take a tufting class: studios that teach the hand gun, by the session or the course."]
 ];
+// A record can be listed under more than one kind: directory is one kind or a list of them.
+export const directoryKinds = it => [].concat(it.directory || []).filter(k => DIRECTORY_KINDS.some(([d]) => d === k));
 export const directoryCountry = it => it.listingCountry || it.region || "Not recorded";
 export const directoryRegion = it => REGION_OF[directoryCountry(it)] || "Elsewhere";
 export const directoryName = it => it.listingName || it.title.split(/: | \(/)[0];

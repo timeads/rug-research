@@ -891,6 +891,10 @@ a.linkish { text-decoration: underline; text-underline-offset: .2em; }
 /* The record form's "Site directory" group, and the directory line in the drawer. */
 .dir-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 16px; margin: 0; padding: 12px 14px 14px; border: 1px solid var(--line); border-radius: var(--r); }
 .dir-fields legend { padding: 0 6px; font-size: var(--t-sm); font-weight: 650; color: var(--ink-2); }
+.dir-kinds { display: flex; flex-wrap: wrap; gap: 6px 18px; align-items: center; }
+.dir-kinds-l { flex-basis: 100%; font-size: var(--t-sm); color: var(--ink-2); }
+.dir-kinds-l small { display: block; color: var(--ink-3, var(--ink-2)); font-weight: 400; }
+.dir-kinds label { display: inline-flex; gap: 6px; align-items: center; font-weight: 400; }
 @media (max-width: 860px) { .dir-fields { grid-template-columns: 1fr; } .dir-fields .span2 { grid-column: auto; } }
 .dir-line-d { font-size: var(--t-sm); color: var(--ink-2); margin: 10px 0 0; overflow-wrap: anywhere; }
 .dir-line-d .dir-tag { font-weight: 600; color: var(--ink); }

@@ -1,7 +1,7 @@
 ---
 // One page per record: its picture (or a bookcloth plate), the facts, the citation and where it is cited.
 import Base from "../../layouts/Base.astro";
-import { db, cloth, imageUrl, imageCleared, publicDomainTag, citation, base, socialLabel, websiteLabel, directoryRegion, slug } from "../../lib/data.js";
+import { db, cloth, imageUrl, imageCleared, publicDomainTag, citation, base, socialLabel, websiteLabel, directoryRegion, directoryKinds, slug } from "../../lib/data.js";
 import { citedIndex } from "../../lib/cited.js";
 
 export async function getStaticPaths() {
@@ -15,7 +15,7 @@ const facts = [["Made by", it.creator], ["Date", it.date], ["Place", it.place], 
 const shade = cloth(it.themes[0]);
 // Directory entries: the maker's own website and social media, and a way back to the Directory page.
 const social = (Array.isArray(it.social) ? it.social : []).filter(Boolean);
-const dirAnchor = it.directory ? `directory/#${it.directory}-${slug(directoryRegion(it))}` : "";
+const dirAnchor = directoryKinds(it).length ? `directory/#${directoryKinds(it)[0]}-${slug(directoryRegion(it))}` : "";
 const img = it.image && !it.image.startsWith("idb:") ? it.image : "";
 // More photos of the same thing (a tool, its box, its instructions): a strip under the picture.
 const gallery = (Array.isArray(it.images) ? it.images : []).filter(g => g && g.src && !String(g.src).startsWith("idb:"));

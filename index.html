@@ -280,14 +280,12 @@
         </label>
         <fieldset class="span2 dir-fields">
           <legend>Site directory</legend>
-          <label>Listed under
-            <select name="directory">
-              <option value="">Not in the directory</option>
-              <option value="commercial">Commercial and professional</option>
-              <option value="artist">Artists and studios</option>
-              <option value="workshop">Workshops and classes</option>
-            </select>
-          </label>
+          <div class="span2 dir-kinds" role="group" aria-label="Listed under">
+            <span class="dir-kinds-l">Listed under <small>Tick every section they belong in; none keeps them out of the directory.</small></span>
+            <label><input type="checkbox" name="directory" value="commercial"> Commercial and professional</label>
+            <label><input type="checkbox" name="directory" value="artist"> Artists and studios</label>
+            <label><input type="checkbox" name="directory" value="workshop"> Workshops and classes</label>
+          </div>
           <label>Name in the directory <input name="listingName" placeholder="Leave blank to use the title"></label>
           <label class="span2">One line about them <input name="listing" placeholder="Custom hand-tufted rugs, Grand Rapids, Michigan"><small>Shown under the name. Draw it from the record.</small></label>
           <label>Website <input name="website" type="url" placeholder="https://"></label>
