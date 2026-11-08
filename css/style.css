@@ -896,3 +896,10 @@ a.linkish { text-decoration: underline; text-underline-offset: .2em; }
 .dir-line-d .dir-tag { font-weight: 600; color: var(--ink); }
 .ms-toc li.ms-toc-sv { counter-increment: none; }
 .ms-toc li.ms-toc-sv a::before { content: ""; }
+/* The About page photo box in the Book view. */
+.doc-photo { display: flex; gap: 16px; align-items: flex-start; margin: 4px 0 18px; padding: 12px; border: 1px solid var(--line); border-radius: var(--r); background: var(--surface); }
+.doc-photo img, .doc-photo-none { flex: none; width: 96px; height: 128px; object-fit: cover; border-radius: var(--r); background: var(--ground); }
+.doc-photo-none { display: grid; place-items: center; font-size: var(--t-xs); color: var(--ink-3); text-align: center; }
+.doc-photo-act { min-width: 0; }
+.doc-photo-title { margin: 0 0 8px; font-weight: 650; font-size: var(--t-sm); }
+.doc-photo-act .ms-hint { margin: 8px 0 0; }

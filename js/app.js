@@ -1399,8 +1399,46 @@
       <header class="ms-ch-head"><p class="ms-ch-num">${esc(cfg.kicker)}</p><h2>${esc(t?.fm.title || cfg.title)}</h2>
         <p class="ms-ch-meta">${t ? `<span>${words.toLocaleString()} words</span>` : ""}${t && !d ? `<button class="btn sm" data-doc-edit="${key}">${icon("edit")}Edit text</button>` : ""}<a class="linkish" href="https://www.historyoftuftedrugs.com/${cfg.url}" target="_blank" rel="noopener">On the site</a></p>
       </header>
-      <div class="bk-grid solo"><div class="bk-main">${main}</div></div>
+      <div class="bk-grid solo"><div class="bk-main">${key === "about" && t ? aboutPhotoBox(t.fm.photo || "about/tim-eads.jpg") : ""}${main}</div></div>
     </section>`;
+  };
+  // The About page's photo: a file in site/public/ named by the page's settings (photo:). Choosing a new
+  // one resizes it in the browser (at most 1600 pixels on the long side) and saves it straight to GitHub
+  // with the Publish key; the page uses it from its next build, about two minutes later.
+  let aboutPhotoT = Date.now();
+  const aboutPhotoBox = photo => `<div class="doc-photo">
+      <img src="site/public/${esc(photo)}?t=${aboutPhotoT}" alt="The About page photo" onerror="this.replaceWith(Object.assign(document.createElement('div'), { className: 'doc-photo-none', textContent: 'No photo yet' }))">
+      <div class="doc-photo-act">
+        <p class="doc-photo-title">About page photo</p>
+        <label class="btn sm">${icon("up")}Choose a photo<input type="file" accept="image/*" data-about-photo="${esc(photo)}" hidden></label>
+        <p class="ms-hint">Upload a new photo here to replace the one on the About page. A portrait (taller than wide) suits the layout best. It goes live about two minutes after it's saved.</p>
+        <p class="ms-hint" id="about-photo-msg" role="status"></p>
+      </div>
+    </div>`;
+  const uploadAboutPhoto = async (file, photo) => {
+    const msg = $("#about-photo-msg"), say = t => { if (msg) msg.textContent = t; };
+    if (!ghToken.get()) return say("Saving needs the GitHub key that Publish uses. Click Publish in the top bar once to set it up, then choose the photo again.");
+    try {
+      say("Preparing the photo…");
+      const bmp = await createImageBitmap(file), k = Math.min(1, 1600 / Math.max(bmp.width, bmp.height));
+      const cv = Object.assign(document.createElement("canvas"), { width: Math.round(bmp.width * k), height: Math.round(bmp.height * k) });
+      cv.getContext("2d").drawImage(bmp, 0, 0, cv.width, cv.height);
+      const blob = await new Promise(r => cv.toBlob(r, "image/jpeg", 0.88));
+      const base64 = await new Promise((res, rej) => { const fr = new FileReader(); fr.onload = () => res(String(fr.result).replace(/^data:[^,]*,/, "")); fr.onerror = rej; fr.readAsDataURL(blob); });
+      say("Saving…");
+      const gh = RugPublish.github({ repo: REPO, branch: PUBLISH_BRANCH, token: ghToken.get(), fetchImpl: fetch.bind(window) });
+      for (let attempt = 1; attempt <= 3; attempt++) {
+        const commit = await gh.write(await gh.head(), [{ path: "site/public/" + photo, base64 }], "Update the About page photo\n\nUploaded in the research tool's Book view.");
+        if (!commit) continue;
+        say(`Saved (${cv.width} × ${cv.height} pixels). The About page shows it in about two minutes.`);
+        setTimeout(checkJobs, 4000);
+        return;
+      }
+      throw new Error("GitHub kept changing while saving. Try again in a minute.");
+    } catch (e) {
+      if (e.status === 401 || e.status === 403 || e.status === 404) { ghToken.set(""); return say("GitHub didn't accept the key. Click Publish to set up a new one, then choose the photo again."); }
+      say("Not saved: " + (e.message || e));
+    }
   };
   const startDocEdit = key => {
     const st = DOC[key]; if (!st || st.src == null) return;
@@ -2702,6 +2740,8 @@
     saveMsText();
   });
   $("#view-manuscript").addEventListener("change", e => {
+    const ph = e.target.closest("[data-about-photo]");
+    if (ph) { const f = ph.files && ph.files[0]; if (f) uploadAboutPhoto(f, ph.dataset.aboutPhoto); ph.value = ""; return; }
     const box = e.target.closest("[data-todo]"); if (!box) return;
     S.todoDone = S.todoDone || {};
     if (box.checked) S.todoDone[box.dataset.todo] = Date.now(); else delete S.todoDone[box.dataset.todo];
