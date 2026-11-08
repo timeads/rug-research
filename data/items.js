@@ -18413,5 +18413,515 @@ window.RUG_ITEMS = [
     "social": [
       "https://www.instagram.com/rug_addicts/"
     ]
+  },
+  {
+    "id": "artist-anna-gravelle",
+    "type": "finding",
+    "title": "Anna Gravelle: tufted wall hangings for homes and interiors, Bristol",
+    "creator": "Anna Gravelle",
+    "place": "Bristol, United Kingdom",
+    "region": "United Kingdom",
+    "description": "Textile wall hangings, 'perhaps best known for her innovative use of tufting' (Crafts Council); 62 Group member; Homo Faber artisan; works on a Venor tufting machine.\nFound by web search for the site's Directory (searches of 2 and 7 Nov 2026, chosen by the author 8 Nov 2026). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://www.craftscouncil.org.uk/directory/anna-gravelle · https://www.homofaber.com/en/artisans/anna-gravelle-3a0nhy · https://www.instagram.com/annagravelle/",
+    "sourceUrl": "https://www.craftscouncil.org.uk/directory/anna-gravelle",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "artist",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T01:05:10.642Z",
+    "directory": "artist",
+    "listing": "Tufted wall hangings for homes and interiors, Bristol",
+    "listingName": "Anna Gravelle",
+    "social": [
+      "https://www.instagram.com/annagravelle/"
+    ]
+  },
+  {
+    "id": "artist-art-by-zo-culture",
+    "type": "finding",
+    "title": "Art By Zo Culture: tufted rugs, fibre art and sculptural objects, Lagos",
+    "creator": "Art By Zo Culture",
+    "place": "Lagos, Nigeria",
+    "region": "Nigeria",
+    "description": "Tufted rugs and fibre art; 'Exploring texture through fibre, rugs, and sculptural objects.'\nFound by web search for the site's Directory (searches of 2 and 7 Nov 2026, chosen by the author 8 Nov 2026). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://www.instagram.com/artbyzoculture/",
+    "sourceUrl": "https://www.instagram.com/artbyzoculture/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "artist",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T01:05:10.642Z",
+    "directory": "artist",
+    "listing": "Tufted rugs, fibre art and sculptural objects, Lagos",
+    "listingName": "Art By Zo Culture",
+    "social": [
+      "https://www.instagram.com/artbyzoculture/"
+    ]
+  },
+  {
+    "id": "artist-asad-azizi",
+    "type": "finding",
+    "title": "Asad Azizi: 'Chaos Tufting' artist and co-founder of Handmayk, Dubai",
+    "creator": "Asad Azizi",
+    "place": "Dubai, United Arab Emirates",
+    "region": "United Arab Emirates",
+    "description": "'Tufting artist, yarn dyer, and screen printer, and co-founder of Handmayk'; 'Chaos Tufting'; curates the Textile Hub at World Art Dubai.\nCaveat: Instagram handle not found. Co-founder of Handmayk (below).\nFound by web search for the site's Directory (searches of 2 and 7 Nov 2026, chosen by the author 8 Nov 2026). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://handmayk.com/products/veiled-not-hidden-by-asad-azizi · https://www.worldartdubai.com/textile-hub",
+    "sourceUrl": "https://handmayk.com/products/veiled-not-hidden-by-asad-azizi",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "artist",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T01:05:10.642Z",
+    "directory": "artist",
+    "listing": "'Chaos Tufting' artist and co-founder of Handmayk, Dubai",
+    "listingName": "Asad Azizi"
+  },
+  {
+    "id": "artist-asha-murray",
+    "type": "finding",
+    "title": "Asha Murray: tufted wool collages, Ireland",
+    "creator": "Asha Murray",
+    "place": "Ireland",
+    "region": "Ireland",
+    "description": "'Wool tufted collages' and short films; taught a tufting masterclass for artists at the RHA, Dublin, 2026; work acquired by Highlanes Gallery.\nCaveat: Instagram match probable, inferred.\nFound by web search for the site's Directory (searches of 2 and 7 Nov 2026, chosen by the author 8 Nov 2026). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://rhagallery.ie/events/masterclasses/asha-murray · https://www.isaartanddesign.com/artworks/2685-asha-murray-because-you-re-worth-it-2024/",
+    "sourceUrl": "https://rhagallery.ie/events/masterclasses/asha-murray",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "artist",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T01:05:10.642Z",
+    "directory": "artist",
+    "listing": "Tufted wool collages, Ireland",
+    "listingName": "Asha Murray",
+    "social": [
+      "https://www.instagram.com/murray_asha/"
+    ]
+  },
+  {
+    "id": "artist-atelier-paolo",
+    "type": "finding",
+    "title": "Atelier Paolo (Guillaume Neves): tufted rugs, objects and teaching, Bordeaux",
+    "creator": "Atelier Paolo (Guillaume Neves)",
+    "place": "Bordeaux, France",
+    "region": "France",
+    "description": "Rugs, objects and illustration; Domestika course 'Tufting Technique for Creating Rugs'; author of the book 'Rug Tufting' (Search Press).\nCaveat: His book competes with the TTW manual.\nFound by web search for the site's Directory (searches of 2 and 7 Nov 2026, chosen by the author 8 Nov 2026). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://www.instagram.com/atelierpaolo/ · https://www.domestika.org/en/courses/3205-tufting-technique-for-creating-rugs · https://www.searchpress.com/book/9780811775748/rug-tufting",
+    "sourceUrl": "https://www.instagram.com/atelierpaolo/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "artist",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T01:05:10.642Z",
+    "directory": "artist",
+    "listing": "Tufted rugs, objects and teaching, Bordeaux",
+    "listingName": "Atelier Paolo (Guillaume Neves)",
+    "social": [
+      "https://www.instagram.com/atelierpaolo/"
+    ]
+  },
+  {
+    "id": "artist-atelier-taftique",
+    "type": "finding",
+    "title": "Atelier Taftique (Jules Vissers): hand-tufted and embroidered tapestries, Florence",
+    "creator": "Atelier Taftique (Jules Vissers)",
+    "place": "Florence, Italy",
+    "region": "Italy",
+    "description": "Hand-tufted and embroidered tapestries; European Textile & Craft Award 2024; Homo Faber artisan.\nFound by web search for the site's Directory (searches of 2 and 7 Nov 2026, chosen by the author 8 Nov 2026). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://www.instagram.com/taftique_textile_art/ · https://www.homofaber.com/en/artisans/jules-vissers-tapestry-making-italy",
+    "sourceUrl": "https://www.instagram.com/taftique_textile_art/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "artist",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T01:05:10.642Z",
+    "directory": "artist",
+    "listing": "Hand-tufted and embroidered tapestries, Florence",
+    "listingName": "Atelier Taftique (Jules Vissers)",
+    "social": [
+      "https://www.instagram.com/taftique_textile_art/"
+    ]
+  },
+  {
+    "id": "artist-audrey-hancock",
+    "type": "finding",
+    "title": "Audrey Hancock: tufted rugs by a graphic designer, Utah",
+    "creator": "Audrey Hancock",
+    "place": "Utah, United States",
+    "region": "United States",
+    "description": "Designer who tufts; first rug a tribute to Gunta Stölzl (AIGA Eye on Design). Article names her account @tuftgal.\nCaveat: @tuftgal profile URL not seen.\nFound by web search for the site's Directory (searches of 2 and 7 Nov 2026, chosen by the author 8 Nov 2026). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://eyeondesign.aiga.org/tufting-has-become-the-designers-coloring-book/",
+    "sourceUrl": "https://eyeondesign.aiga.org/tufting-has-become-the-designers-coloring-book/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "artist",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T01:05:10.642Z",
+    "directory": "artist",
+    "listing": "Tufted rugs by a graphic designer, Utah",
+    "listingName": "Audrey Hancock"
+  },
+  {
+    "id": "artist-bettina-willnauer",
+    "type": "finding",
+    "title": "Bettina Willnauer: tapestries made with tufting guns and punch needles, Vienna",
+    "creator": "Bettina Willnauer",
+    "place": "Vienna, Austria",
+    "region": "Austria",
+    "description": "Tapestries 'created with tufting guns and punch needles'; leads the MAK Vienna rug tufting workshop, 2026.\nCaveat: Handle not found.\nFound by web search for the site's Directory (searches of 2 and 7 Nov 2026, chosen by the author 8 Nov 2026). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://www.mak.at/en/education/mak-it_paradise_rug_tufting_workshop · https://bibliotek.kk.dk/arrangementer/udstillinger/udstilling-mutual-therapeutic-walking-solo-slow-aging",
+    "sourceUrl": "https://www.mak.at/en/education/mak-it_paradise_rug_tufting_workshop",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "artist",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T01:05:10.642Z",
+    "directory": "artist",
+    "listing": "Tapestries made with tufting guns and punch needles, Vienna",
+    "listingName": "Bettina Willnauer"
+  },
+  {
+    "id": "artist-charlita-rae-whitehead",
+    "type": "finding",
+    "title": "Charlita Rae Whitehead: abstract tufted fibre art, Ocala, Florida",
+    "creator": "Charlita Rae Whitehead",
+    "place": "Ocala, Florida, United States",
+    "region": "United States",
+    "description": "\"Self-taught abstract fiber artist\" tufting since 2022; solo show 'Every Fiber of My Being', Appleton Museum of Art.\nCaveat: Handle not found.\nFound by web search for the site's Directory (searches of 2 and 7 Nov 2026, chosen by the author 8 Nov 2026). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://www.appletonmuseum.org/exhibitions/every-fiber-of-my-being/",
+    "sourceUrl": "https://www.appletonmuseum.org/exhibitions/every-fiber-of-my-being/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "artist",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T01:05:10.642Z",
+    "directory": "artist",
+    "listing": "Abstract tufted fibre art, Ocala, Florida",
+    "listingName": "Charlita Rae Whitehead"
+  },
+  {
+    "id": "artist-dekodaka",
+    "type": "finding",
+    "title": "Davide (Dekodaka): pop-culture tufted rugs and tufting tutorials, Rome",
+    "creator": "Davide (Dekodaka)",
+    "place": "Rome, Italy",
+    "region": "Italy",
+    "description": "'DAVIDE | TEXILE ARTIST | ROMA'; custom pop-culture rugs and tufting tutorials (#tuftingitalia).\nCaveat: An Instagram snippet said his studio would close at the end of July (year not given); check it is still running.\nFound by web search for the site's Directory (searches of 2 and 7 Nov 2026, chosen by the author 8 Nov 2026). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://www.instagram.com/dekodaka/ · https://www.tiktok.com/@dekodaka/video/7098056461489556742",
+    "sourceUrl": "https://www.instagram.com/dekodaka/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "artist",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T01:05:10.642Z",
+    "directory": "artist",
+    "listing": "Pop-culture tufted rugs and tufting tutorials, Rome",
+    "listingName": "Davide (Dekodaka)",
+    "social": [
+      "https://www.instagram.com/dekodaka/"
+    ]
+  },
+  {
+    "id": "artist-gabe-lanza",
+    "type": "finding",
+    "title": "Gabe Lanza: tufted textile works, Chicago",
+    "creator": "Gabe Lanza",
+    "place": "Chicago, United States",
+    "region": "United States",
+    "description": "Show 'This Is Not A Rug' of tufted textile work, Chicago, 2019.\nCaveat: No recent activity seen; handle not found.\nFound by web search for the site's Directory (searches of 2 and 7 Nov 2026, chosen by the author 8 Nov 2026). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://thevisualist.org/?p=105283",
+    "sourceUrl": "https://thevisualist.org/?p=105283",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "artist",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T01:05:10.642Z",
+    "directory": "artist",
+    "listing": "Tufted textile works, Chicago",
+    "listingName": "Gabe Lanza"
+  },
+  {
+    "id": "artist-henry-hamilton",
+    "type": "finding",
+    "title": "Henry Hamilton: illustrations and paintings turned into tufted rugs, Cape Town",
+    "creator": "Henry Hamilton",
+    "place": "Cape Town, South Africa",
+    "region": "South Africa",
+    "description": "'Translating my illustrations and paintings into tufted rugs'; tufted wall hangings in 'Hide and Seek', Brutal Curation, Cape Town (Shelflife, 2022).\nCaveat: Instagram handle not found.\nFound by web search for the site's Directory (searches of 2 and 7 Nov 2026, chosen by the author 8 Nov 2026). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://www.shelflife.co.za/magazine/henry-hamilton-s-hide-and-seek-exhibition-interview",
+    "sourceUrl": "https://www.shelflife.co.za/magazine/henry-hamilton-s-hide-and-seek-exhibition-interview",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "artist",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T01:05:10.642Z",
+    "directory": "artist",
+    "listing": "Illustrations and paintings turned into tufted rugs, Cape Town",
+    "listingName": "Henry Hamilton"
+  },
+  {
+    "id": "artist-jennifer-banzaca",
+    "type": "finding",
+    "title": "Jennifer Banzaca: paintings with tufted textile installations, San Francisco",
+    "creator": "Jennifer Banzaca",
+    "place": "San Francisco, United States",
+    "region": "United States",
+    "description": "\"Combines acrylic paintings with tufted textile installations\"; in 'High Pile: Concepts in Tufting' (2026).\nCaveat: Handle not found.\nFound by web search for the site's Directory (searches of 2 and 7 Nov 2026, chosen by the author 8 Nov 2026). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://www.theguardsman.com/jennifer-banzaca-paints-with-yarn-for-vivid-visions/ · https://www.bedfordgallery.org/exhibitions/current-upcoming-exhibitions/high-pile-concepts-in-tufting",
+    "sourceUrl": "https://www.theguardsman.com/jennifer-banzaca-paints-with-yarn-for-vivid-visions/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "artist",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T01:05:10.642Z",
+    "directory": "artist",
+    "listing": "Paintings with tufted textile installations, San Francisco",
+    "listingName": "Jennifer Banzaca"
+  },
+  {
+    "id": "artist-liv-aanrud",
+    "type": "finding",
+    "title": "Liv Aanrud: hand-tufted textiles, Los Angeles",
+    "creator": "Liv Aanrud",
+    "place": "Los Angeles, United States",
+    "region": "United States",
+    "description": "\"Hand-tufted textiles\"; solo show 'Story Spun Slow', UW-Stevens Point, 2026; in Bedford Gallery's 'High Pile: Concepts in Tufting' (2026).\nCaveat: Handle @livaanrud seen only as text; unconfirmed.\nFound by web search for the site's Directory (searches of 2 and 7 Nov 2026, chosen by the author 8 Nov 2026). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://www.uwsp.edu/news/article/carlsten-story-spun-slow/ · https://www.bedfordgallery.org/exhibitions/current-upcoming-exhibitions/high-pile-concepts-in-tufting",
+    "sourceUrl": "https://www.uwsp.edu/news/article/carlsten-story-spun-slow/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "artist",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T01:05:10.642Z",
+    "directory": "artist",
+    "listing": "Hand-tufted textiles, Los Angeles",
+    "listingName": "Liv Aanrud"
+  },
+  {
+    "id": "artist-loop-lab",
+    "type": "finding",
+    "title": "Loop LAB: tufted wall art, Perth",
+    "creator": "Loop LAB",
+    "place": "Perth, Australia",
+    "region": "Australia",
+    "description": "'A design studio based in Perth… creating cozy pieces of art for your walls'; IG 'Loop LAB - tufted art'.\nFound by web search for the site's Directory (searches of 2 and 7 Nov 2026, chosen by the author 8 Nov 2026). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://handmadecanberra.com.au/directory/loop-lab/ · https://www.instagram.com/_loop_lab_/",
+    "sourceUrl": "https://handmadecanberra.com.au/directory/loop-lab/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "artist",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T01:05:10.642Z",
+    "directory": "artist",
+    "listing": "Tufted wall art, Perth",
+    "listingName": "Loop LAB",
+    "social": [
+      "https://www.instagram.com/_loop_lab_/"
+    ]
+  },
+  {
+    "id": "artist-maja-michaelsdotter-eriksson",
+    "type": "finding",
+    "title": "Maja Michaelsdotter Eriksson: tufted sculptures of everyday things, Malmö",
+    "creator": "Maja Michaelsdotter Eriksson",
+    "place": "Malmö, Sweden",
+    "region": "Sweden",
+    "description": "'Specialized in tufting… creates tufted sculptures inspired by everyday life' (Homo Faber 2026).\nCaveat: Instagram match inferred.\nFound by web search for the site's Directory (searches of 2 and 7 Nov 2026, chosen by the author 8 Nov 2026). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://www.homofaber.com/en/artisans/maja-michaelsdotter-eriksson-ctp7yk · https://www.instagram.com/maja_michaelsdotter/",
+    "sourceUrl": "https://www.homofaber.com/en/artisans/maja-michaelsdotter-eriksson-ctp7yk",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "artist",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T01:05:10.642Z",
+    "directory": "artist",
+    "listing": "Tufted sculptures of everyday things, Malmö",
+    "listingName": "Maja Michaelsdotter Eriksson",
+    "social": [
+      "https://www.instagram.com/maja_michaelsdotter/"
+    ]
+  },
+  {
+    "id": "artist-mofu-rug",
+    "type": "finding",
+    "title": "Mofu Rug: tufted rugs by a tufting artist, Japan",
+    "creator": "Mofu Rug",
+    "place": "Yokohama (per summary), Japan",
+    "region": "Japan",
+    "description": "'Mofu Rug モフラグ タフティング 作家' (tufting artist).\nFound by web search for the site's Directory (searches of 2 and 7 Nov 2026, chosen by the author 8 Nov 2026). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://www.instagram.com/mofurug/",
+    "sourceUrl": "https://www.instagram.com/mofurug/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "artist",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T01:05:10.642Z",
+    "directory": "artist",
+    "listing": "Tufted rugs by a tufting artist, Japan",
+    "listingName": "Mofu Rug",
+    "social": [
+      "https://www.instagram.com/mofurug/"
+    ]
+  },
+  {
+    "id": "artist-pakuchi-hitomi",
+    "type": "finding",
+    "title": "Pakuchi Hitomi: bright pop tufted rugs shown as art, Japan",
+    "creator": "Pakuchi Hitomi",
+    "place": "Japan",
+    "region": "Japan",
+    "description": "Pop, bright tufted rugs as art, 'Love yourself'; self-taught in the pandemic with an American kit; solo show at atmos (GINZA, transl.).\nCaveat: The American kit is not named. Handle not found.\nFound by web search for the site's Directory (searches of 2 and 7 Nov 2026, chosen by the author 8 Nov 2026). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://ginzamag.com/culture/tufting_2023",
+    "sourceUrl": "https://ginzamag.com/culture/tufting_2023",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "artist",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T01:05:10.642Z",
+    "directory": "artist",
+    "listing": "Bright pop tufted rugs shown as art, Japan",
+    "listingName": "Pakuchi Hitomi"
+  },
+  {
+    "id": "artist-studio-yarnatak",
+    "type": "finding",
+    "title": "Studio Yarnatak: tufted installations and custom rugs, Haifa",
+    "creator": "Studio Yarnatak",
+    "place": "Haifa, Israel",
+    "region": "Israel",
+    "description": "Founded 2021; 'material research, textile, and contemporary art through tufting techniques and large scale handwork' (Freshpaint). Rugs without animal products, tufted installations, custom rugs (Haaretz).\nCaveat: Instagram handle not found.\nFound by web search for the site's Directory (searches of 2 and 7 Nov 2026, chosen by the author 8 Nov 2026). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://catalog.freshpaint.co.il/en/artist/studio-yarnatak/ · https://www.haaretz.com/haaretz-labels/made-in-israel/2023-12-07/ty-article-labels/studio-yarnatak/0000018c-4458-db23-ad9f-6cd80a3f0000",
+    "sourceUrl": "https://catalog.freshpaint.co.il/en/artist/studio-yarnatak/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "artist",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T01:05:10.642Z",
+    "directory": "artist",
+    "listing": "Tufted installations and custom rugs, Haifa",
+    "listingName": "Studio Yarnatak"
+  },
+  {
+    "id": "artist-sung-young-eun",
+    "type": "finding",
+    "title": "Sung Young-eun (&et): tufted installations and a teaching studio, Heyri Art Village, Paju",
+    "creator": "Sung Young-eun (&et)",
+    "place": "Paju (Heyri Art Village), South Korea",
+    "region": "South Korea",
+    "description": "Fibre artist running the tufting studio &et at Heyri; makes its own guns and yarn; large tufted installation 'MOKA ROOM' at the Hyundai Children's Book Art Museum; teaches (transl.).\nCaveat: Handle not found.\nFound by web search for the site's Directory (searches of 2 and 7 Nov 2026, chosen by the author 8 Nov 2026). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://heypop.kr/n/31596",
+    "sourceUrl": "https://heypop.kr/n/31596",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "artist",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T01:05:10.642Z",
+    "directory": "artist",
+    "listing": "Tufted installations and a teaching studio, Heyri Art Village, Paju",
+    "listingName": "Sung Young-eun (&et)"
+  },
+  {
+    "id": "artist-twee-muizen",
+    "type": "finding",
+    "title": "Twee Muizen: tufting-gun tapestries by an artistic duo, Galicia",
+    "creator": "Twee Muizen",
+    "place": "Galicia, Spain",
+    "region": "Spain",
+    "description": "'Galician artistic duo' (Cris Barrientos and Denís Galocha); tufting-gun tapestries; Hermès window in Madrid.\nCaveat: Handle not found.\nFound by web search for the site's Directory (searches of 2 and 7 Nov 2026, chosen by the author 8 Nov 2026). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://www.katia.com/blog/en/how-to-tuft-a-weaving-videos-creative-process/ · https://thehoffbrand.com/en/blogs/news/twee-muizen",
+    "sourceUrl": "https://www.katia.com/blog/en/how-to-tuft-a-weaving-videos-creative-process/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "artist",
+      "directory",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T01:05:10.642Z",
+    "directory": "artist",
+    "listing": "Tufting-gun tapestries by an artistic duo, Galicia",
+    "listingName": "Twee Muizen"
   }
 ];
