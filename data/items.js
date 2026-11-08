@@ -17181,7 +17181,10 @@ window.RUG_ITEMS = [
     "listingName": "Tufting Mex",
     "social": [
       "https://www.instagram.com/tufting_mex/"
-    ]
+    ],
+    "image": "https://static.cdninstagram.com/rsrc.php/v4/yD/r/R0fBIMurK8v.png",
+    "imageCredit": "instagram.com",
+    "imageSource": "auto"
   },
   {
     "id": "co-gio-tufting",
