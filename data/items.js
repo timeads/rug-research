@@ -8,7 +8,7 @@
 //         "unverified" = gathered from secondary sources / search summaries;
 //                        confirm titles, dates and numbers before citing.
 // Records taken out after being merged from an export, with when; a browser drops its own copy of them.
-window.RUG_REMOVED = {"wc-3126256":"2026-10-28T15:05:57.518Z","met-7405":"2026-10-28T15:05:57.518Z","finding-cnc-diy-robot-arm-experiments":"2026-10-31T12:23:09.703Z","co-vera-art-studio":"2026-11-07T16:51:02.081Z","co-rugged-looks":"2026-11-08T12:28:16.622Z"};
+window.RUG_REMOVED = {"wc-3126256":"2026-10-28T15:05:57.518Z","met-7405":"2026-10-28T15:05:57.518Z","finding-cnc-diy-robot-arm-experiments":"2026-10-31T12:23:09.703Z","co-vera-art-studio":"2026-11-07T16:51:02.081Z","co-rugged-looks":"2026-11-08T12:28:16.622Z","artist-highly-woven":"2026-11-08T19:15:43.672Z","artist-the-rug-maker-co":"2026-11-08T19:15:43.672Z"};
 window.RUG_ITEMS = [
   {
     "id": "wint-1964-0804",
@@ -17349,8 +17349,8 @@ window.RUG_ITEMS = [
       "found by web search"
     ],
     "status": "unverified",
-    "reviewedAt": "2026-11-07T23:55:47.500Z",
-    "directory": "workshop",
+    "reviewedAt": "2026-11-08T19:15:43.672Z",
+    "directory": "artist",
     "listing": "Tufting classes and rugs, Denver",
     "listingName": "Magic Carpets",
     "image": "https://img.ctykit.com/cdn/co-rino/images/user1731101577.jpg",
@@ -20908,34 +20908,6 @@ window.RUG_ITEMS = [
     "website": "https://www.etsy.com/uk/shop/OneOffRugs"
   },
   {
-    "id": "artist-highly-woven",
-    "type": "finding",
-    "title": "Highly Woven: tufted rugs and textile art, New York",
-    "creator": "Highly Woven",
-    "place": "New York, United States",
-    "region": "United States",
-    "description": "Tufted rugs and textile art, New York. Listed at the author's choice: the author, who follows the account on Instagram, approved it as making tufted work and gave its location (8 Nov 2026).\nCaveat: Web searches the same day did not confirm the tufting: Two searches found nothing on this account.",
-    "sourceUrl": "https://www.instagram.com/highlywoven/",
-    "themes": [
-      "Companies & modern tufting"
-    ],
-    "tags": [
-      "artist",
-      "directory",
-      "from the author's follows",
-      "approved by the author"
-    ],
-    "status": "unverified",
-    "reviewedAt": "2026-11-08T13:42:58.015Z",
-    "directory": "artist",
-    "listing": "Tufted rugs and textile art, New York",
-    "listingName": "Highly Woven",
-    "social": [
-      "https://www.instagram.com/highlywoven/",
-      "https://www.tiktok.com/@highlywoven"
-    ]
-  },
-  {
     "id": "co-jiexin-carpet",
     "type": "company",
     "title": "Jiexin Carpet: custom tufted and CNC rugs, Foshan",
@@ -21542,34 +21514,6 @@ window.RUG_ITEMS = [
       "https://www.instagram.com/therugdealer.co/"
     ],
     "image": "https://therugdealer.co/cdn/shop/files/WaterFall_01.png?v=1731953375&width=990"
-  },
-  {
-    "id": "artist-the-rug-maker-co",
-    "type": "finding",
-    "title": "The Rug Maker Co: tufted rugs and textile art, Colorado",
-    "creator": "The Rug Maker Co",
-    "place": "Colorado, United States",
-    "region": "United States",
-    "description": "Tufted rugs and textile art, Colorado. Listed at the author's choice: the author, who follows the account on Instagram, approved it as making tufted work and gave its location (8 Nov 2026).\nCaveat: Web searches the same day did not confirm the tufting: No search result matched this Etsy shop; only unrelated firms with similar names.",
-    "sourceUrl": "https://www.instagram.com/therugmakerco/",
-    "themes": [
-      "Companies & modern tufting"
-    ],
-    "tags": [
-      "artist",
-      "directory",
-      "from the author's follows",
-      "approved by the author"
-    ],
-    "status": "unverified",
-    "reviewedAt": "2026-11-08T13:42:58.015Z",
-    "directory": "artist",
-    "listing": "Tufted rugs and textile art, Colorado",
-    "listingName": "The Rug Maker Co",
-    "social": [
-      "https://www.instagram.com/therugmakerco/"
-    ],
-    "website": "https://therugmakerco.etsy.com/"
   },
   {
     "id": "co-the-rugs-story",
