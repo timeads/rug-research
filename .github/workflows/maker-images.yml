@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
     inputs:
       only:
-        description: "Comma-separated record ids (blank = every directory entry with a website and no image)"
+        description: "Comma-separated record ids (blank = every directory entry with no image)"
         required: false
         default: ""
 

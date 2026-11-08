@@ -1,5 +1,6 @@
 #!/usr/bin/env node
-// Finds a picture for directory entries that have none, from the maker's own website: the page's
+// Finds a picture for directory entries that have none, from the maker's own website (or, with no
+// website, the lead picture of a page the record cites, such as a press feature): the page's
 // share image (og:image) and the large pictures on it and on a few of its own collection, shop or
 // portfolio pages. Logos, icons and banners are passed over by name and by shape (each candidate's
 // size is read from the start of the file), so what is attached is a photograph of their work as far
@@ -89,14 +90,18 @@ const morePages = (html, base) => {
 };
 const clean = u => u.replace(/([?&])(width|w|h|height|format|v)=[^&]*/g, "$1").replace(/[?&]+$/, "");
 
+// Pages to look on: the maker's website, else the non-social pages its record cites.
+const pagesOf = it => it.website ? [it.website] : [...new Set(((it.description || "").match(/https?:\/\/[^\s·)]+/g) || []).map(u => u.replace(/[.;,]+$/, "")))]
+  .filter(u => !/instagram\.com|tiktok\.com|facebook\.com|linktr\.ee|youtube\.com/.test(u)).slice(0, 3);
 async function findFor(it) {
-  const pages = [it.website];
+  const own = !!it.website;
+  const pages = pagesOf(it);
   const seen = new Set(), cands = [];
   for (let p = 0; p < pages.length && p < 4; p++) {
     let html = "";
-    try { const r = await get(pages[p], { headers: { Accept: "text/html" } }); if (!r.ok) continue; html = await r.text(); if (p === 0) pages.push(...morePages(html, r.url || pages[p])); }
+    try { const r = await get(pages[p], { headers: { Accept: "text/html" } }); if (!r.ok) continue; html = await r.text(); if (p === 0 && own) pages.push(...morePages(html, r.url || pages[p])); }
     catch { continue; }
-    for (const c of candidatesIn(html, pages[p])) {
+    for (const c of candidatesIn(html, pages[p]).filter(c => own || c.why === "og")) { // on a press page, only its lead picture
       const key = clean(c.url); if (seen.has(key)) continue; seen.add(key);
       if (LOGO.test(c.url) || LOGO.test(c.alt) || /\.(svg|ico)(\?|$)/i.test(c.url)) continue;
       cands.push({ ...c, page: pages[p], order: cands.length });
@@ -116,16 +121,16 @@ async function findFor(it) {
   return null;
 }
 
-const targets = items.filter(it => ONLY.length ? ONLY.includes(it.id) : (it.directory && it.website && !it.image && it.imageSource !== "rejected"));
+const targets = items.filter(it => ONLY.length ? ONLY.includes(it.id) : (it.directory && !it.image && it.imageSource !== "rejected"));
 const found = [], missed = [];
 for (const it of targets) {
-  if (!it.website) { missed.push(`${it.id} (no website)`); continue; }
+  if (!pagesOf(it).length) { missed.push(`${it.id} (no website or cited page)`); continue; }
   if (it.image && it.imageSource !== "auto") { missed.push(`${it.id} (has a hand-picked image)`); continue; }
   const r = await findFor(it).catch(() => null);
   if (r) {
-    Object.assign(it, { image: r.image, imageCredit: new URL(it.website).hostname.replace(/^www\./, ""), imagePage: r.imagePage, imageSource: "auto", rights: it.rights || "not-requested" });
+    Object.assign(it, { image: r.image, imageCredit: new URL(r.imagePage).hostname.replace(/^www\./, ""), imagePage: r.imagePage, imageSource: "auto", rights: it.rights || "not-requested" });
     found.push(`${it.id}  ${r.w}x${r.h}  ${r.image}`);
-  } else missed.push(`${it.id} (nothing suitable on ${it.website})`);
+  } else missed.push(`${it.id} (nothing suitable on ${pagesOf(it).join(" ")})`);
 }
 await writeFile(FILE, header + "window.RUG_ITEMS = " + JSON.stringify(items, null, 2) + ";\n");
 console.log(`Found ${found.length} of ${targets.length}.\n` + found.join("\n") + "\n\nNone found:\n" + missed.join("\n"));
