@@ -17534,10 +17534,14 @@ window.RUG_ITEMS = [
       "from the author's list"
     ],
     "status": "unverified",
-    "reviewedAt": "2026-11-08T00:08:12.920Z",
+    "reviewedAt": "2026-11-08T00:09:37.610Z",
     "directory": "commercial",
     "listing": "Bespoke hand-tufted rugs since 1946, Espinho",
-    "listingName": "Ferreira de Sá"
+    "listingName": "Ferreira de Sá",
+    "website": "https://ferreiradesa.pt/",
+    "social": [
+      "https://www.instagram.com/ferreiradesarugs/"
+    ]
   },
   {
     "id": "co-apadana",
@@ -17557,10 +17561,14 @@ window.RUG_ITEMS = [
       "from the author's list"
     ],
     "status": "unverified",
-    "reviewedAt": "2026-11-08T00:08:12.920Z",
+    "reviewedAt": "2026-11-08T00:09:37.610Z",
     "directory": "commercial",
     "listing": "Hand-tufted and hand-knotted custom rugs",
-    "listingName": "Apadana"
+    "listingName": "Apadana",
+    "website": "https://apadanarugsandcarpets.com/",
+    "social": [
+      "https://www.instagram.com/apadanarugsandcarpets/"
+    ]
   },
   {
     "id": "co-marc-phillips",
@@ -17580,10 +17588,11 @@ window.RUG_ITEMS = [
       "from the author's list"
     ],
     "status": "unverified",
-    "reviewedAt": "2026-11-08T00:08:12.920Z",
+    "reviewedAt": "2026-11-08T00:09:37.610Z",
     "directory": "commercial",
     "listing": "Hand-tufted, hand-knotted and flatweave rugs",
-    "listingName": "Marc Phillips"
+    "listingName": "Marc Phillips",
+    "website": "https://marcphillipsrugs.com/"
   },
   {
     "id": "co-warp-and-weft",
@@ -17649,10 +17658,14 @@ window.RUG_ITEMS = [
       "from the author's list"
     ],
     "status": "unverified",
-    "reviewedAt": "2026-11-08T00:08:12.920Z",
+    "reviewedAt": "2026-11-08T00:09:37.610Z",
     "directory": "commercial",
     "listing": "Hand-tufted and hand-knotted custom rugs, Toronto",
-    "listingName": "Creative Matters"
+    "listingName": "Creative Matters",
+    "website": "https://creativemattersinc.squarespace.com/",
+    "social": [
+      "https://www.instagram.com/cmi_design/"
+    ]
   },
   {
     "id": "co-pierre-frey",
@@ -17672,10 +17685,14 @@ window.RUG_ITEMS = [
       "from the author's list"
     ],
     "status": "unverified",
-    "reviewedAt": "2026-11-08T00:08:12.920Z",
+    "reviewedAt": "2026-11-08T00:09:37.610Z",
     "directory": "commercial",
     "listing": "Fabric house with hand-tufted rugs, Paris",
-    "listingName": "Pierre Frey"
+    "listingName": "Pierre Frey",
+    "website": "https://www.pierrefrey.com/",
+    "social": [
+      "https://www.instagram.com/lamaisonpierrefrey/"
+    ]
   },
   {
     "id": "co-kravet",
@@ -17695,10 +17712,14 @@ window.RUG_ITEMS = [
       "from the author's list"
     ],
     "status": "unverified",
-    "reviewedAt": "2026-11-08T00:08:12.920Z",
+    "reviewedAt": "2026-11-08T00:09:37.610Z",
     "directory": "commercial",
     "listing": "Hand-tufted rugs and broadloom, among its furnishings",
-    "listingName": "Kravet"
+    "listingName": "Kravet",
+    "website": "https://www.kravet.com/",
+    "social": [
+      "https://www.instagram.com/kravet1918/"
+    ]
   },
   {
     "id": "co-patterson-flynn",
@@ -17718,10 +17739,14 @@ window.RUG_ITEMS = [
       "from the author's list"
     ],
     "status": "unverified",
-    "reviewedAt": "2026-11-08T00:08:12.920Z",
+    "reviewedAt": "2026-11-08T00:09:37.610Z",
     "directory": "commercial",
     "listing": "Hand-tufted, hand-knotted and woven custom rugs",
-    "listingName": "Patterson Flynn (Schumacher)"
+    "listingName": "Patterson Flynn (Schumacher)",
+    "website": "https://pattersonflynn.com/",
+    "social": [
+      "https://www.instagram.com/pattersonflynn1943/"
+    ]
   },
   {
     "id": "co-ligne-roset",
@@ -17741,9 +17766,13 @@ window.RUG_ITEMS = [
       "from the author's list"
     ],
     "status": "unverified",
-    "reviewedAt": "2026-11-08T00:08:12.920Z",
+    "reviewedAt": "2026-11-08T00:09:37.610Z",
     "directory": "commercial",
     "listing": "Furniture brand with hand-tufted rugs",
-    "listingName": "Ligne Roset"
+    "listingName": "Ligne Roset",
+    "website": "https://www.ligne-roset.com/",
+    "social": [
+      "https://www.instagram.com/ligneroset/"
+    ]
   }
 ];
