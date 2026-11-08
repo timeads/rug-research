@@ -8,7 +8,7 @@
 //         "unverified" = gathered from secondary sources / search summaries;
 //                        confirm titles, dates and numbers before citing.
 // Records taken out after being merged from an export, with when; a browser drops its own copy of them.
-window.RUG_REMOVED = {"wc-3126256":"2026-10-28T15:05:57.518Z","met-7405":"2026-10-28T15:05:57.518Z","finding-cnc-diy-robot-arm-experiments":"2026-10-31T12:23:09.703Z","co-vera-art-studio":"2026-11-07T16:51:02.081Z"};
+window.RUG_REMOVED = {"wc-3126256":"2026-10-28T15:05:57.518Z","met-7405":"2026-10-28T15:05:57.518Z","finding-cnc-diy-robot-arm-experiments":"2026-10-31T12:23:09.703Z","co-vera-art-studio":"2026-11-07T16:51:02.081Z","co-rugged-looks":"2026-11-08T12:28:16.622Z"};
 window.RUG_ITEMS = [
   {
     "id": "wint-1964-0804",
@@ -16900,32 +16900,6 @@ window.RUG_ITEMS = [
     "listingName": "Tuft House LA",
     "social": [
       "https://www.instagram.com/tufthousela/"
-    ]
-  },
-  {
-    "id": "co-rugged-looks",
-    "type": "company",
-    "title": "Rugged Looks: tufting workshops, Williamsburg, Brooklyn",
-    "creator": "Rugged Looks",
-    "place": "Brooklyn, United States",
-    "region": "United States",
-    "description": "\"NYC tufting experience in Williamsburg Brooklyn\".\nFound by web search of Instagram, TikTok and press for the site's Directory (search of 2 Nov 2026, chosen by the author 7 Nov 2026). The profiles themselves were not opened; details come from search-result snippets and the pages listed here.\nSources: https://www.instagram.com/rugged_looks/",
-    "sourceUrl": "https://www.instagram.com/rugged_looks/",
-    "themes": [
-      "Companies & modern tufting"
-    ],
-    "tags": [
-      "workshop",
-      "directory",
-      "found by web search"
-    ],
-    "status": "unverified",
-    "reviewedAt": "2026-11-07T23:55:47.500Z",
-    "directory": "workshop",
-    "listing": "Tufting workshops, Williamsburg, Brooklyn",
-    "listingName": "Rugged Looks",
-    "social": [
-      "https://www.instagram.com/rugged_looks/"
     ]
   },
   {
