@@ -17022,11 +17022,11 @@ window.RUG_ITEMS = [
       "found by web search"
     ],
     "status": "unverified",
-    "reviewedAt": "2026-11-07T23:55:47.500Z",
+    "reviewedAt": "2026-11-08T19:19:12.335Z",
     "directory": "workshop",
     "listing": "Rug tufting studio and classes, Salt Lake City",
     "listingName": "Rug Lounge SLC",
-    "image": "https://rugloungeslc.com/img/designs/Abstract%201.jpeg",
+    "image": "https://rugloungeslc.com/img/group.jpg",
     "imageCredit": "rugloungeslc.com",
     "imageSource": "picked",
     "website": "https://rugloungeslc.com/",
