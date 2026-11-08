@@ -16714,7 +16714,11 @@ window.RUG_ITEMS = [
     "reviewedAt": "2026-11-07T13:00:36.091Z",
     "directory": "artist",
     "listing": "Abstract tufted works for wall and floor, New York",
-    "listingName": "Caroline Kaufman"
+    "listingName": "Caroline Kaufman",
+    "website": "https://www.carolinekaufmanstudio.com/",
+    "social": [
+      "https://www.instagram.com/carolinekaufman/"
+    ]
   },
   {
     "id": "artist-hanna-eidson",
@@ -16723,7 +16727,7 @@ window.RUG_ITEMS = [
     "creator": "Hanna Eidson, H.H. Hooks",
     "place": "Halifax, Canada",
     "region": "Canada",
-    "description": "Tufting artist; her business H.H. Hooks, known for \"fish rugs\" (SignalHFX).\nFound by web search of Instagram, TikTok and press for the site's Directory (search of 2 Nov 2026, chosen by the author 7 Nov 2026). The profiles themselves were not opened; details come from search-result snippets and the pages listed here.\nSources: https://www.instagram.com/h.h.hooks/ · https://signalhfx.ca/rug-artist-turns-pandemic-passion-into-small-business/",
+    "description": "Tufting artist; her business H.H. Hooks, known for \"fish rugs\" (SignalHFX).\nFound by web search of Instagram, TikTok and press for the site's Directory (search of 2 Nov 2026, chosen by the author 7 Nov 2026). The profiles themselves were not opened; details come from search-result snippets and the pages listed here.\nSources: https://www.instagram.com/h.h.hooks/ · https://signalhfx.ca/rug-artist-turns-pandemic-passion-into-small-business/\nCaveat: The author's check of hhhooks.com (Nov 2026) found H.H. Hooks sells hooked rugs and rug-hooking kits; whether she tufts is not confirmed.",
     "sourceUrl": "https://www.instagram.com/h.h.hooks/",
     "themes": [
       "Companies & modern tufting"
@@ -16740,7 +16744,12 @@ window.RUG_ITEMS = [
     "listingName": "Hanna Eidson, H.H. Hooks",
     "social": [
       "https://www.instagram.com/h.h.hooks/"
-    ]
+    ],
+    "website": "https://www.hhhooks.com/",
+    "image": "https://images.squarespace-cdn.com/content/v1/5ed1565585c7174bb4581e9b/fe0061f9-b655-477f-a0b7-cd3784eab351/milk+and+sardines.jpg",
+    "imageSource": "picked",
+    "imageCredit": "hhhooks.com",
+    "rights": "not-requested"
   },
   {
     "id": "artist-molly-kent",
@@ -16766,7 +16775,12 @@ window.RUG_ITEMS = [
     "listingName": "Molly Kent",
     "social": [
       "https://www.instagram.com/mollyhkent/"
-    ]
+    ],
+    "website": "https://mollyhkent.com/",
+    "image": "https://images.squarespace-cdn.com/content/v1/6232124e93465770e2a4d830/760d6ed9-a6bf-4c33-aaac-4af45d301f17/Magnetpotre-editmain.jpg",
+    "imageSource": "picked",
+    "imageCredit": "mollyhkent.com",
+    "rights": "not-requested"
   },
   {
     "id": "artist-sachiko-janek",
@@ -16789,7 +16803,10 @@ window.RUG_ITEMS = [
     "reviewedAt": "2026-11-07T13:00:36.091Z",
     "directory": "artist",
     "listing": "Fibre art made by tufting, Indiana",
-    "listingName": "Sachiko Janek"
+    "listingName": "Sachiko Janek",
+    "social": [
+      "https://www.instagram.com/sachi.sometimes/"
+    ]
   },
   {
     "id": "artist-simone-elizabeth-saunders",
@@ -16815,7 +16832,12 @@ window.RUG_ITEMS = [
     "listingName": "Simone Elizabeth Saunders",
     "social": [
       "https://www.instagram.com/simoneelizabethsaunders/"
-    ]
+    ],
+    "website": "https://www.simoneelizabethsaunders.com/",
+    "image": "https://static.wixstatic.com/media/aeca0e_a7d23ecf059a4ba4aa2743d72a4b3534~mv2.jpg",
+    "imageSource": "picked",
+    "imageCredit": "simoneelizabethsaunders.com",
+    "rights": "not-requested"
   },
   {
     "id": "co-weft-poland",
@@ -16842,9 +16864,7 @@ window.RUG_ITEMS = [
     "social": [
       "https://www.instagram.com/weft_handcrafted_rugs/"
     ],
-    "image": "https://static.cdninstagram.com/rsrc.php/v4/yD/r/R0fBIMurK8v.png",
-    "imageCredit": "instagram.com",
-    "imageSource": "auto"
+    "imageSource": "rejected"
   },
   {
     "id": "co-la-tactile-lab",
@@ -16871,10 +16891,12 @@ window.RUG_ITEMS = [
     "social": [
       "https://www.instagram.com/latactilelab/"
     ],
-    "image": "http://static1.squarespace.com/static/62b27df12aab6527404409fe/62cfa2e35453117bed9f5ea0/692607f00ca22158377a9c1f/1764100699798/tactile-tufting.jpeg?format=1500w",
-    "imageCredit": "textileartsla.org (image from textileartsla.org)",
+    "image": "https://static.wixstatic.com/media/80c84e_56a8fdf49d40412690fd1947f0b71fe7~mv2.jpg",
+    "imageCredit": "latactilelab.com",
     "imagePage": "https://textileartsla.org/calendar/lab-tufting",
-    "imageSource": "auto"
+    "imageSource": "picked",
+    "website": "https://www.latactilelab.com/",
+    "rights": "not-requested"
   },
   {
     "id": "co-tuft-house-la",
@@ -16900,7 +16922,12 @@ window.RUG_ITEMS = [
     "listingName": "Tuft House LA",
     "social": [
       "https://www.instagram.com/tufthousela/"
-    ]
+    ],
+    "website": "https://www.tufthousela.com/",
+    "image": "https://images.squarespace-cdn.com/content/v1/612152b5e7e0290017f8c692/80a40087-41e2-4bda-ace4-2f829b69c424/IMG_9140.jpg",
+    "imageSource": "picked",
+    "imageCredit": "tufthousela.com",
+    "rights": "not-requested"
   },
   {
     "id": "co-tuftxpvd",
@@ -16927,10 +16954,12 @@ window.RUG_ITEMS = [
     "social": [
       "https://www.instagram.com/tuftxpvd/"
     ],
-    "image": "https://bostonglobe-prod.cdn.arcpublishing.com/resizer/v2/R6NGZXMG2BF7VEKIBJ7A62Y3E4.jpeg?auth=4f831b7934785798630933f470c00bda2bbf2d7580472b10c4d5d3376bc464ed&width=1440",
-    "imageCredit": "bostonglobe.com (image from bostonglobe.com)",
+    "image": "https://images.squarespace-cdn.com/content/v1/66fefb1f8b0a0a5d1526a800/4afeaac0-e8be-4fa1-b040-e13ab46d109b/IMG_8330.jpeg",
+    "imageCredit": "tuftxpvd.com",
     "imagePage": "https://www.bostonglobe.com/2025/02/17/metro/ri-pawtucket-artist-tufting-rug-business",
-    "imageSource": "auto"
+    "imageSource": "picked",
+    "website": "https://www.tuftxpvd.com/",
+    "rights": "not-requested"
   },
   {
     "id": "co-rug-lounge-slc",
@@ -16954,9 +16983,14 @@ window.RUG_ITEMS = [
     "directory": "workshop",
     "listing": "Rug tufting studio and classes, Salt Lake City",
     "listingName": "Rug Lounge SLC",
-    "image": "https://www.sltrib.com/resizer/v2/M7QUAKRM6ZFJHMWMSXHCH7EYI4.jpg?auth=e5e96a565e8a753e8fa8880cb388ec7cda5f3c933dcc6e2853849ded6b5a275b&width=1200&height=630&quality=88&smart=true",
-    "imageCredit": "sltrib.com",
-    "imageSource": "auto"
+    "image": "https://rugloungeslc.com/img/designs/Abstract%201.jpeg",
+    "imageCredit": "rugloungeslc.com",
+    "imageSource": "picked",
+    "website": "https://rugloungeslc.com/",
+    "social": [
+      "https://www.instagram.com/rug.lounge.slc/"
+    ],
+    "rights": "not-requested"
   },
   {
     "id": "co-tuft-tuft-berlin",
@@ -16982,7 +17016,12 @@ window.RUG_ITEMS = [
     "listingName": "Tuft Tuft Berlin",
     "social": [
       "https://www.instagram.com/tufttuft_berlin/"
-    ]
+    ],
+    "website": "https://www.tufttuft.de/",
+    "image": "https://images.squarespace-cdn.com/content/v1/677ba5f2e98e24476ee39d7e/979e2c5f-f2cb-4ae0-88e5-eff8f3ecde73/generated-two-people-egg-and-ghost-rugs-01.jpg",
+    "imageSource": "picked",
+    "imageCredit": "tufttuft.de",
+    "rights": "not-requested"
   },
   {
     "id": "co-tufting-studio-keke",
@@ -17009,10 +17048,12 @@ window.RUG_ITEMS = [
     "social": [
       "https://www.instagram.com/keke_rug/"
     ],
-    "image": "https://fashionsnap-assets.com/asset/format=auto,width=1280,height=670,gravity=auto,fit=pad/article/images/2021/10/keke-tuftingstudio-015.jpg",
-    "imageCredit": "fashionsnap.com (image from fashionsnap.com)",
+    "image": "https://storage.googleapis.com/production-os-assets/assets/b15bc038-13af-418a-b262-d279543c7a2c",
+    "imageCredit": "kekerug.com",
     "imagePage": "https://www.fashionsnap.com/article/2021-10-29/keke-tuftingstudio/",
-    "imageSource": "auto"
+    "imageSource": "picked",
+    "website": "https://kekerug.com/",
+    "rights": "not-requested"
   },
   {
     "id": "co-tuft-club",
@@ -17036,10 +17077,15 @@ window.RUG_ITEMS = [
     "directory": "workshop",
     "listing": "Tufting studio and workshops, Singapore",
     "listingName": "Tuft Club",
-    "image": "https://vulcanpost.com/wp-content/uploads/2023/01/tuftclub-feat.jpg",
-    "imageCredit": "vulcanpost.com (image from vulcanpost.com)",
+    "image": "https://tuftclub.com/cdn/shop/files/team_building_workshop.jpg",
+    "imageCredit": "tuftclub.com",
     "imagePage": "https://vulcanpost.com/814659/tuft-club-rug-tufting-singapore/",
-    "imageSource": "auto"
+    "imageSource": "picked",
+    "website": "https://tuftclub.com/",
+    "social": [
+      "https://www.instagram.com/tuft.club/"
+    ],
+    "rights": "not-requested"
   },
   {
     "id": "co-bangalore-tufting-studio",
@@ -17116,7 +17162,8 @@ window.RUG_ITEMS = [
     "listing": "Tufting courses and custom rugs, Santiago",
     "listingName": "Gio Tufting",
     "social": [
-      "https://www.instagram.com/gio.tufting/"
+      "https://www.instagram.com/gio.tufting/",
+      "https://www.tiktok.com/@gio.tufting"
     ]
   },
   {
@@ -17170,10 +17217,12 @@ window.RUG_ITEMS = [
     "social": [
       "https://www.instagram.com/miyoshirug/"
     ],
-    "image": "https://fashionsnap-assets.com/asset/format=auto,width=1280,height=670,gravity=auto,fit=pad/article/images/2024/06/miyoshirug-popup-20240605_004-e4995744-fdde-48c2-be96-3c82265fb865.jpg",
-    "imageCredit": "fashionsnap.com (image from fashionsnap.com)",
+    "image": "https://miyoshirug.store/cdn/shop/files/IMG_5303_900x.jpg",
+    "imageCredit": "miyoshirug.store",
     "imagePage": "https://www.fashionsnap.com/article/2024-06-15/miyoshirug-popup/",
-    "imageSource": "auto"
+    "imageSource": "picked",
+    "website": "https://miyoshirug.store/",
+    "rights": "not-requested"
   },
   {
     "id": "artist-felicia-murray",
@@ -17196,7 +17245,16 @@ window.RUG_ITEMS = [
     "reviewedAt": "2026-11-07T16:45:47.569Z",
     "directory": "artist",
     "listing": "Tufted fibre art, rugs and installations, Portland, Oregon",
-    "listingName": "Felicia Murray"
+    "listingName": "Felicia Murray",
+    "website": "https://www.feliciajmurray.com/",
+    "social": [
+      "https://www.instagram.com/felicia_murray/",
+      "https://www.tiktok.com/@felicia_murray"
+    ],
+    "image": "https://www.feliciajmurray.com/cdn/shop/files/IMG_8565_3eb987ee-0b7c-435c-a674-7d6be75b7861.jpg",
+    "imageSource": "picked",
+    "imageCredit": "feliciajmurray.com",
+    "rights": "not-requested"
   },
   {
     "id": "artist-meg-little",
@@ -17219,7 +17277,15 @@ window.RUG_ITEMS = [
     "reviewedAt": "2026-11-07T16:45:47.569Z",
     "directory": "artist",
     "listing": "Hand-tufted geometric wool rugs since 1990, Rhode Island",
-    "listingName": "Meg Little"
+    "listingName": "Meg Little",
+    "website": "https://www.meglittle.com/",
+    "social": [
+      "https://www.instagram.com/meglittle260/"
+    ],
+    "image": "https://static.wixstatic.com/media/c36ae5_6dfca971cccb430f853fffcdfaa69f69~mv2.jpg",
+    "imageSource": "picked",
+    "imageCredit": "meglittle.com",
+    "rights": "not-requested"
   },
   {
     "id": "co-magic-carpets-denver",
@@ -17245,7 +17311,10 @@ window.RUG_ITEMS = [
     "listingName": "Magic Carpets",
     "image": "https://img.ctykit.com/cdn/co-rino/images/user1731101577.jpg",
     "imageCredit": "rinoartdistrict.org",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "social": [
+      "https://www.instagram.com/magiccarpets.co/"
+    ]
   },
   {
     "id": "co-tuftest-class-atlanta",
@@ -17271,7 +17340,12 @@ window.RUG_ITEMS = [
     "listingName": "The Tuftest Class In Town",
     "social": [
       "https://www.instagram.com/thetuftestguyintown/"
-    ]
+    ],
+    "website": "https://www.thetuftestclassintown.com/",
+    "image": "https://static.wixstatic.com/media/ebcabe_d410c227723f40dcb0a30126ca37e283~mv2.jpg",
+    "imageSource": "picked",
+    "imageCredit": "thetuftestclassintown.com",
+    "rights": "not-requested"
   },
   {
     "id": "co-capel-rugs",
@@ -17298,7 +17372,11 @@ window.RUG_ITEMS = [
     "listingName": "Capel Rugs",
     "image": "https://www.rugnews.com/uploads/public/images/articles/2025/capel-persia-kashan-2605-660.jpg",
     "imageCredit": "rugnews.com",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "website": "https://www.capelrugs.com/",
+    "social": [
+      "https://www.instagram.com/capelrugs/"
+    ]
   },
   {
     "id": "co-carpet-edition",
@@ -17307,7 +17385,7 @@ window.RUG_ITEMS = [
     "creator": "Carpet Edition",
     "place": "Germany",
     "region": "Germany",
-    "description": "Hand-tufted carpets and wall hangings; Lustrous collection from the Ken Scott archive. Tufting confirmed: 'a collection of hand-tufted carpets and wall-hangings' (Salone).\nTrade shows: Salone del Mobile.Milano, undated listing (catalogue 'collection 2025') (https://lb.salonemilano.it/en/prodotti/carpet-edition/lustrous-carpets).\nCaveat: Show year to confirm.\nFound by web search for the site's Directory (searches of 7 Nov 2026, chosen by the author the same day). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://lb.salonemilano.it/en/prodotti/carpet-edition/lustrous-carpets",
+    "description": "Hand-tufted carpets and wall hangings; Lustrous collection from the Ken Scott archive. Tufting confirmed: 'a collection of hand-tufted carpets and wall-hangings' (Salone).\nTrade shows: Salone del Mobile.Milano, undated listing (catalogue 'collection 2025') (https://lb.salonemilano.it/en/prodotti/carpet-edition/lustrous-carpets).\nCaveat: Show year to confirm.\nFound by web search for the site's Directory (searches of 7 Nov 2026, chosen by the author the same day). Pages were not opened; details come from search-result snippets and the pages listed here.\nSources: https://lb.salonemilano.it/en/prodotti/carpet-edition/lustrous-carpets\nCaveat: The author's check of carpetedition.com (Nov 2026) found it describes the firm as Italian, though it was listed here under Germany.",
     "sourceUrl": "https://lb.salonemilano.it/en/prodotti/carpet-edition/lustrous-carpets",
     "themes": [
       "Companies & modern tufting"
@@ -17322,7 +17400,15 @@ window.RUG_ITEMS = [
     "reviewedAt": "2026-11-07T16:45:47.569Z",
     "directory": "commercial",
     "listing": "Hand-tufted carpets and wall hangings",
-    "listingName": "Carpet Edition"
+    "listingName": "Carpet Edition",
+    "website": "https://www.carpetedition.com/en",
+    "social": [
+      "https://www.instagram.com/carpetedition/"
+    ],
+    "image": "https://www.carpetedition.com/Resources/carpetedition/collezioni/Tide/carpetedition_tide_phce_1.jpg",
+    "imageSource": "picked",
+    "imageCredit": "carpetedition.com",
+    "rights": "not-requested"
   },
   {
     "id": "co-feizy",
@@ -17347,9 +17433,14 @@ window.RUG_ITEMS = [
     "directory": "commercial",
     "listing": "Area rugs, including hand-tufted collections",
     "listingName": "Feizy",
-    "image": "https://www.rugnews.com/uploads/public/images/articles/2025/rugnews-las-vegas-market-preview-winter-2025.jpg",
-    "imageCredit": "rugnews.com",
-    "imageSource": "auto"
+    "image": "https://www.feizy.com/media/wysiwyg/1.1_new_1.jpg",
+    "imageCredit": "feizy.com",
+    "imageSource": "picked",
+    "website": "https://www.feizy.com/",
+    "social": [
+      "https://www.instagram.com/feizyrugs/"
+    ],
+    "rights": "not-requested"
   },
   {
     "id": "co-gan-rugs",
@@ -17374,9 +17465,14 @@ window.RUG_ITEMS = [
     "directory": "commercial",
     "listing": "Design-led handmade rugs, hand-tufted since 1990",
     "listingName": "GAN",
-    "image": "https://www.rugnews.com/uploads/public/images/articles/article-image/gan-giro-area-rug-nycxdesign-awards.jpg",
-    "imageCredit": "rugnews.com",
-    "imageSource": "auto"
+    "image": "https://images.logicommerce.cloud/244/products/Ascense-aqua-200x320-1_s.jpg",
+    "imageCredit": "gan-rugs.com",
+    "imageSource": "picked",
+    "website": "https://www.gan-rugs.com/en/",
+    "social": [
+      "https://www.instagram.com/gan_rugs/"
+    ],
+    "rights": "not-requested"
   },
   {
     "id": "co-loloi",
@@ -17401,9 +17497,15 @@ window.RUG_ITEMS = [
     "directory": "commercial",
     "listing": "Area rugs, including hand-tufted collections",
     "listingName": "Loloi",
-    "image": "https://www.rugnews.com/uploads/public/images/articles/2025/loloi-marcella-mac-01-rug.jpg",
-    "imageCredit": "rugnews.com",
-    "imageSource": "auto"
+    "image": "https://cdn.accentuate.io/560158408739/4769127989290/Reference-Kitchen_Portrait_V_Final-v1746197792648.jpg",
+    "imageCredit": "loloirugs.com",
+    "imageSource": "picked",
+    "website": "https://www.loloirugs.com/",
+    "social": [
+      "https://www.instagram.com/loloirugs/",
+      "https://www.tiktok.com/@loloirugs"
+    ],
+    "rights": "not-requested"
   },
   {
     "id": "co-nanimarquina",
@@ -17429,9 +17531,13 @@ window.RUG_ITEMS = [
     "listing": "Design-led handmade rugs, Barcelona",
     "listingName": "nanimarquina",
     "website": "https://us.nanimarquina.com/",
-    "image": "http://nanimarquina.com/cdn/shop/articles/Fuori_salone_imagen_web-02_-_creditos_e2d09963-7f62-431e-a642-713e92591a67.jpg?v=1773923478",
-    "imageCredit": "nanimarquina.com",
-    "imageSource": "auto"
+    "image": "https://us.nanimarquina.com/cdn/shop/files/tres-10th-anniv-tres_10th_anniversary_anthracite_940x.jpg",
+    "imageCredit": "us.nanimarquina.com",
+    "imageSource": "picked",
+    "social": [
+      "https://www.instagram.com/nanimarquina_official/"
+    ],
+    "rights": "not-requested"
   },
   {
     "id": "co-stark",
@@ -17456,9 +17562,14 @@ window.RUG_ITEMS = [
     "directory": "commercial",
     "listing": "Broadloom and rugs, hand-tufted and hand-knotted, New York",
     "listingName": "Stark",
-    "image": "https://www.rugnews.com/uploads/public/images/articles/article-image/rugnewsdotcom-coverconnect-ny-2023-area-rugs-montager.jpg",
-    "imageCredit": "rugnews.com",
-    "imageSource": "auto"
+    "image": "https://starkcarpet.com/cdn/shop/files/RUG_NO139815A_0768c676-6676-4569-b8c3-ae0df50c4c49_3000x_copy_copy.jpg",
+    "imageCredit": "starkcarpet.com",
+    "imageSource": "picked",
+    "website": "https://starkcarpet.com/",
+    "social": [
+      "https://www.instagram.com/starkcarpet/"
+    ],
+    "rights": "not-requested"
   },
   {
     "id": "co-superfluous-things",
@@ -17512,13 +17623,14 @@ window.RUG_ITEMS = [
     "directory": "commercial",
     "listing": "Bespoke hand-tufted rugs since 1946, Espinho",
     "listingName": "Ferreira de Sá",
-    "website": "https://ferreiradesa.pt/",
+    "website": "https://ferreiradesa.com/pt",
     "social": [
       "https://www.instagram.com/ferreiradesarugs/"
     ],
-    "image": "https://cdn.indesignlive.com/wp-content/uploads/FDS_lo-209.jpg",
-    "imageCredit": "indesignlive.com",
-    "imageSource": "auto"
+    "image": "https://ferreiradesa.com/files/img_6ab4e5b63b9df8.81657899.webp",
+    "imageCredit": "ferreiradesa.com",
+    "imageSource": "picked",
+    "rights": "not-requested"
   },
   {
     "id": "co-apadana",
@@ -17546,9 +17658,10 @@ window.RUG_ITEMS = [
     "social": [
       "https://www.instagram.com/apadanarugsandcarpets/"
     ],
-    "image": "http://apadanarugsandcarpets.com/cdn/shop/files/samples-052523.jpg?v=1793807802",
+    "image": "http://apadanarugsandcarpets.com/cdn/shop/files/10236391_Copy_2539b702-0947-4b8b-a8a2-26cc94fa0519.jpg",
     "imageCredit": "apadanarugsandcarpets.com",
-    "imageSource": "auto"
+    "imageSource": "picked",
+    "rights": "not-requested"
   },
   {
     "id": "co-marc-phillips",
@@ -17575,7 +17688,11 @@ window.RUG_ITEMS = [
     "website": "https://marcphillipsrugs.com/",
     "image": "https://marcphillipsrugs.com/media/wysiwyg/showroom_brand_1.jpg",
     "imageCredit": "marcphillipsrugs.com",
-    "imageSource": "auto"
+    "imageSource": "picked",
+    "social": [
+      "https://www.instagram.com/marcphillipsrugs/"
+    ],
+    "rights": "not-requested"
   },
   {
     "id": "co-warp-and-weft",
@@ -17598,7 +17715,11 @@ window.RUG_ITEMS = [
     "reviewedAt": "2026-11-08T00:08:12.920Z",
     "directory": "commercial",
     "listing": "Customisable hand-tufted and hand-knotted rugs, New York",
-    "listingName": "Warp & Weft"
+    "listingName": "Warp & Weft",
+    "website": "https://www.warpandweft.com/",
+    "social": [
+      "https://www.instagram.com/warpandweftcarpets/"
+    ]
   },
   {
     "id": "co-hatsu",
@@ -17622,9 +17743,14 @@ window.RUG_ITEMS = [
     "directory": "commercial",
     "listing": "Hand-tufted and hand-knotted rugs from a design studio, Mumbai",
     "listingName": "Hatsu",
-    "image": "https://a.1stdibscdn.com/hand-tufted-picknick-rug-by-hatsu-for-sale/1121189/f_326242221675875477823/32624222_datamatics.jpg?width=768",
-    "imageCredit": "1stdibs.com",
-    "imageSource": "auto"
+    "image": "https://www.hatsu.in/cdn/shop/files/agate_site.jpg",
+    "imageCredit": "hatsu.in",
+    "imageSource": "picked",
+    "website": "https://www.hatsu.in/",
+    "social": [
+      "https://www.instagram.com/hatsuofficial/"
+    ],
+    "rights": "not-requested"
   },
   {
     "id": "co-creative-matters",
@@ -17652,9 +17778,10 @@ window.RUG_ITEMS = [
     "social": [
       "https://www.instagram.com/cmi_design/"
     ],
-    "image": "http://static1.squarespace.com/static/5e7e1fe26cd71b271326e5b3/t/6487c9944cb3e1487f366bb6/1686620564097/creative-matters-custom-rugs.jpg?format=1500w",
+    "image": "http://static1.squarespace.com/static/5e7e1fe26cd71b271326e5b3/t/6487c9944cb3e1487f366bb6/1686620564097/creative-matters-custom-rugs.jpg",
     "imageCredit": "creativemattersinc.squarespace.com",
-    "imageSource": "auto"
+    "imageSource": "picked",
+    "rights": "not-requested"
   },
   {
     "id": "co-pierre-frey",
@@ -17678,10 +17805,14 @@ window.RUG_ITEMS = [
     "directory": "commercial",
     "listing": "Fabric house with hand-tufted rugs, Paris",
     "listingName": "Pierre Frey",
-    "website": "https://www.pierrefrey.com/",
+    "website": "https://www.pierrefrey.com/en/",
     "social": [
       "https://www.instagram.com/lamaisonpierrefrey/"
-    ]
+    ],
+    "image": "https://www.pierrefrey.com/images/media/le-soleil-pour-temoin.webp",
+    "imageSource": "picked",
+    "imageCredit": "pierrefrey.com",
+    "rights": "not-requested"
   },
   {
     "id": "co-kravet",
@@ -17709,9 +17840,10 @@ window.RUG_ITEMS = [
     "social": [
       "https://www.instagram.com/kravet1918/"
     ],
-    "image": "https://cdn.brandfolder.io/XSDLGRW8/at/3svp552z68cmqrtw9r6vmngq/Hucty_Snow_2.auto?width=300&height=300&pad=true",
+    "image": "https://www.kravet.com/media/wysiwyg/hero3_6.jpg",
     "imageCredit": "kravet.com",
-    "imageSource": "auto"
+    "imageSource": "picked",
+    "rights": "not-requested"
   },
   {
     "id": "co-patterson-flynn",
@@ -17735,13 +17867,14 @@ window.RUG_ITEMS = [
     "directory": "commercial",
     "listing": "Hand-tufted, hand-knotted and woven custom rugs",
     "listingName": "Patterson Flynn (Schumacher)",
-    "website": "https://pattersonflynn.com/",
+    "website": "https://www.pattersonflynn.com/",
     "social": [
       "https://www.instagram.com/pattersonflynn1943/"
     ],
-    "image": "https://a.1stdibscdn.com/schumacher-malachite-area-rug-in-hand-tufted-wool-silk-by-patterson-flynn-martin-for-sale/1121189/f_148102311558644350848/14810231_master.jpg?width=768",
-    "imageCredit": "1stdibs.com",
-    "imageSource": "auto"
+    "image": "https://www.pattersonflynn.com/cdn/shop/files/1_1PF_07.30.26_341_c0a23352-f1be-4b9c-b161-78b63593ddaf_720x@2x.png",
+    "imageCredit": "pattersonflynn.com",
+    "imageSource": "picked",
+    "rights": "not-requested"
   },
   {
     "id": "co-ligne-roset",
@@ -17768,7 +17901,11 @@ window.RUG_ITEMS = [
     "website": "https://www.ligne-roset.com/",
     "social": [
       "https://www.instagram.com/ligneroset/"
-    ]
+    ],
+    "image": "https://www.ligne-roset.com/media/ligne_roset_us/100kjm_c.jpg",
+    "imageSource": "picked",
+    "imageCredit": "ligne-roset.com",
+    "rights": "not-requested"
   },
   {
     "id": "co-aditas-atelier",
@@ -17792,9 +17929,14 @@ window.RUG_ITEMS = [
     "directory": "workshop",
     "listing": "Rug tufting workshops, Munich",
     "listingName": "Aditas Atelier",
-    "image": "https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/X00JsIjRZiVLJcLziWq3_whatsapp-image-2025-11-12-at-114946.jpeg?width=1200&height=900&mode=crop",
-    "imageCredit": "rausgegangen.de",
-    "imageSource": "auto"
+    "image": "https://static.wixstatic.com/media/1c5be8_ff7669576bbd4335b8509f74e4cd087d~mv2.jpg",
+    "imageCredit": "aditas-atelier.de",
+    "imageSource": "picked",
+    "website": "https://www.aditas-atelier.de/",
+    "social": [
+      "https://www.instagram.com/aditas_atelier/"
+    ],
+    "rights": "not-requested"
   },
   {
     "id": "co-art-moment-arttuft",
@@ -17819,9 +17961,14 @@ window.RUG_ITEMS = [
     "listing": "Custom rug tufting workshops, Prague",
     "listingName": "Art Moment (ArtTuft)",
     "website": "https://www.artmoment.cz/en/arttuft/",
-    "image": "https://cdn.myshoptet.com/usr/www.artmoment.cz/user/shop/big/958-1_za--z--itky.jpg?ff=1&x=1024&y=768&q=85&ts=6a350dfb&sg=161563f2",
+    "image": "https://cdn.myshoptet.com/usr/www.artmoment.cz/user/shop/big/958-1_za--z--itky.jpg",
     "imageCredit": "artmoment.cz",
-    "imageSource": "auto"
+    "imageSource": "picked",
+    "social": [
+      "https://www.instagram.com/artmoment.cz/",
+      "https://tiktok.com/@artmoment.cz"
+    ],
+    "rights": "not-requested"
   },
   {
     "id": "co-craft-alliance",
@@ -17845,7 +17992,10 @@ window.RUG_ITEMS = [
     "directory": "workshop",
     "listing": "Tufted-rug workshops at a craft centre, St. Louis",
     "listingName": "Craft Alliance",
-    "website": "https://craftalliance.org"
+    "website": "https://www.craftalliance.org/",
+    "social": [
+      "https://www.instagram.com/craftalliance/"
+    ]
   },
   {
     "id": "co-detroit-rug-co",
@@ -17896,8 +18046,14 @@ window.RUG_ITEMS = [
     "listing": "Tufting experience and classes, Detroit",
     "listingName": "Detroit Tuft",
     "social": [
-      "https://www.instagram.com/detroittuft313/"
-    ]
+      "https://www.instagram.com/detroittuft313/",
+      "https://www.tiktok.com/@detroittuft313"
+    ],
+    "website": "https://detroittuft313.com/",
+    "image": "https://img1.wsimg.com/isteam/ip/cc8d5f3e-2fde-47e8-9aa3-d01d511565b2/FB_IMG_1764283958879.jpg",
+    "imageSource": "picked",
+    "imageCredit": "detroittuft313.com",
+    "rights": "not-requested"
   },
   {
     "id": "co-dovecot-studios",
@@ -17927,7 +18083,11 @@ window.RUG_ITEMS = [
     "listingName": "Dovecot Studios",
     "image": "https://dovecotstudios.com/i/large/6408adae660e0-lead-image.jpg",
     "imageCredit": "dovecotstudios.com",
-    "imageSource": "auto"
+    "imageSource": "picked",
+    "social": [
+      "https://www.instagram.com/dovecotstudios/"
+    ],
+    "rights": "not-requested"
   },
   {
     "id": "co-dynamo-zurich",
@@ -17951,7 +18111,15 @@ window.RUG_ITEMS = [
     "directory": "workshop",
     "listing": "Tufting courses and open tufting space, Zurich",
     "listingName": "Dynamo",
-    "website": "https://www.dynamo.ch/kurs/tufting-course"
+    "website": "https://www.dynamo.ch/kurs/tufting-course",
+    "social": [
+      "https://www.instagram.com/dynamo_zuerich/",
+      "https://www.tiktok.com/@dynamo_zuerich"
+    ],
+    "image": "https://dynamo.nodehive.app/sites/default/files/styles/og_image/public/2025-06/fflyer11.jpeg",
+    "imageSource": "picked",
+    "imageCredit": "dynamo.ch",
+    "rights": "not-requested"
   },
   {
     "id": "co-enjoy-studio",
@@ -17975,9 +18143,15 @@ window.RUG_ITEMS = [
     "directory": "workshop",
     "listing": "Tufting workshops, Kraków",
     "listingName": "Enjoy Studio",
-    "image": "https://radiokrakow.pl/media/data/3676730/07d1e93c689c459119d279c2c0a05acbbb5060-edytujnet-2.jpg",
-    "imageCredit": "radiokrakow.pl",
-    "imageSource": "auto"
+    "image": "https://enjoytufting.pl/wp-content/uploads/2026/10/HERO1-opt.webp",
+    "imageCredit": "enjoytufting.pl",
+    "imageSource": "picked",
+    "website": "https://enjoytufting.pl/",
+    "social": [
+      "https://www.instagram.com/enjoytufting/",
+      "https://www.tiktok.com/@enjoytufting"
+    ],
+    "rights": "not-requested"
   },
   {
     "id": "co-fluus-fraanje",
@@ -18001,9 +18175,14 @@ window.RUG_ITEMS = [
     "directory": "workshop",
     "listing": "Tufting studio and workshops, Hamburg",
     "listingName": "flüüs&fraanje",
-    "image": "https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/VA0P5qOTYWilzZdVhxuk_202210antoniacg36.jpg?width=1200&height=900&mode=crop",
-    "imageCredit": "rausgegangen.de",
-    "imageSource": "auto"
+    "image": "https://fluus-fraanje.com/cdn/shop/files/202210_ANTONIA_CG_36.jpg",
+    "imageCredit": "fluus-fraanje.com",
+    "imageSource": "picked",
+    "website": "https://fluus-fraanje.com/",
+    "social": [
+      "https://www.instagram.com/fluusundfraanje/"
+    ],
+    "rights": "not-requested"
   },
   {
     "id": "co-fulham-textile-studio",
@@ -18026,7 +18205,11 @@ window.RUG_ITEMS = [
     "reviewedAt": "2026-11-08T00:20:44.622Z",
     "directory": "workshop",
     "listing": "Tufting basics and larger-rug classes, London",
-    "listingName": "Fulham Textile Studio"
+    "listingName": "Fulham Textile Studio",
+    "website": "https://www.fulhamtextilestudio.com/",
+    "social": [
+      "https://www.instagram.com/fulhamtextilestudio/"
+    ]
   },
   {
     "id": "co-habibi-bazaar",
@@ -18051,12 +18234,15 @@ window.RUG_ITEMS = [
     "listing": "Rug tufting workshops at Sawyer Yards, Houston",
     "listingName": "Habibi Bazaar",
     "social": [
-      "https://www.instagram.com/habibibazaar/"
+      "https://www.instagram.com/habibibazaar/",
+      "https://www.tiktok.com/@habibibazaar"
     ],
-    "image": "https://img.ctykit.com/cdn/tx-sawyer-yards/images/tr:w-900/user1706058654.jpg",
-    "imageCredit": "sawyeryards.com (image from sawyeryards.com)",
+    "image": "https://habibibazaar.com/cdn/shop/files/IMG_0307_720x.jpg",
+    "imageCredit": "habibibazaar.com",
     "imagePage": "https://sawyeryards.com/tenant/habibi-bazaar",
-    "imageSource": "auto"
+    "imageSource": "picked",
+    "website": "https://habibibazaar.com/",
+    "rights": "not-requested"
   },
   {
     "id": "co-house-of-hobby",
@@ -18079,7 +18265,15 @@ window.RUG_ITEMS = [
     "reviewedAt": "2026-11-08T00:20:44.622Z",
     "directory": "workshop",
     "listing": "'Tea and Tufting' rug workshops, Perth",
-    "listingName": "House of Hobby"
+    "listingName": "House of Hobby",
+    "website": "https://www.houseofhobby.net/",
+    "social": [
+      "https://www.instagram.com/houseofhobbyau/"
+    ],
+    "image": "http://static1.squarespace.com/static/594cc96ed1758edb0c0e2f46/5ede23f7ea5e395a857e9d4c/68491618506bc615c0f8bf92/1752039020489/Tea+%26+Tufting+-+House+of+Hobby.jpg",
+    "imageSource": "picked",
+    "imageCredit": "houseofhobby.net",
+    "rights": "not-requested"
   },
   {
     "id": "co-omo-diy",
@@ -18103,9 +18297,15 @@ window.RUG_ITEMS = [
     "directory": "workshop",
     "listing": "Beginner rug tufting workshops, Bermondsey, London",
     "listingName": "OMO DIY",
-    "image": "https://res.cloudinary.com/obby/image/upload/w_500,h_300,c_fill,fl_lossy,q_auto,f_auto/v1673297409/l8pfyfi9jslmd3lkkszq.jpg",
-    "imageCredit": "obby.co.uk",
-    "imageSource": "auto"
+    "image": "https://www.omodiylondon.com/cdn/shop/files/IMG_1652_2.jpg",
+    "imageCredit": "omodiylondon.com",
+    "imageSource": "picked",
+    "website": "https://www.omodiylondon.com/",
+    "social": [
+      "https://www.instagram.com/omo_diy/",
+      "https://www.tiktok.com/@omo_diy"
+    ],
+    "rights": "not-requested"
   },
   {
     "id": "co-polisu-art-studio",
@@ -18129,9 +18329,11 @@ window.RUG_ITEMS = [
     "directory": "workshop",
     "listing": "Rug tufting classes, Adelaide",
     "listingName": "Polisu Art Studio",
-    "image": "https://assets.classbento.com.au/images/class/tufting-class-make-a-40x40cm-rug-adelaide-600.jpg?v=1793541437",
-    "imageCredit": "classbento.com.au",
-    "imageSource": "auto"
+    "image": "https://polisu.au/cdn/shop/files/48dde0bc167bce43d7a460cba2e84a8.jpg",
+    "imageCredit": "polisu.au",
+    "imageSource": "picked",
+    "website": "https://polisu.au/",
+    "rights": "not-requested"
   },
   {
     "id": "co-soft-spot-studio",
@@ -18155,10 +18357,12 @@ window.RUG_ITEMS = [
     "directory": "workshop",
     "listing": "Tufting workshops, Manchester and Salford",
     "listingName": "Soft Spot Studio (Alena Ruth)",
-    "image": "https://images.gofundme.com/DjkB8GMq1frTRmmza-J9y_XEwXc=/1200x900/https://d2g8igdw686xgo.cloudfront.net/108907543_1791745590760318_r.jpg",
-    "imageCredit": "gofundme.com (image from gofundme.com)",
+    "image": "https://images.squarespace-cdn.com/content/v1/6a1465f0ba827128755034b5/0b196e2c-cefe-45e7-b91b-a75ff0aab0a4/IMG_8507.jpeg",
+    "imageCredit": "softspotstudio.co.uk",
     "imagePage": "https://www.gofundme.com/f/help-to-build-soft-spot-studio",
-    "imageSource": "auto"
+    "imageSource": "picked",
+    "website": "https://www.softspotstudio.co.uk/",
+    "rights": "not-requested"
   },
   {
     "id": "co-studio-knot",
@@ -18182,10 +18386,15 @@ window.RUG_ITEMS = [
     "directory": "workshop",
     "listing": "Design-led tufting workshops, Stuttgart",
     "listingName": "studio knot",
-    "image": "https://media.gokonfetti.com/152576/1200x0/women-tufting-canvas-outdoors-45kkqnqn.jpg",
-    "imageCredit": "gokonfetti.com (image from gokonfetti.com)",
+    "image": "https://static.wixstatic.com/media/8c9241_c167bba39241489aab4e477f18f9b000~mv2.jpg",
+    "imageCredit": "studio-knot.de",
     "imagePage": "https://gokonfetti.com/en-us/e/tufting-kurs-team-event-stuttgart-w0p455/",
-    "imageSource": "auto"
+    "imageSource": "picked",
+    "website": "https://www.studio-knot.de/",
+    "social": [
+      "https://www.instagram.com/_studioknot_/"
+    ],
+    "rights": "not-requested"
   },
   {
     "id": "co-the-makery-berlin",
@@ -18212,7 +18421,11 @@ window.RUG_ITEMS = [
     "website": "https://themakery.de/tufting_workshop_create_a_fluffy_artwork/Berlin",
     "image": "https://admin.themakery.de/files/provider/773/30x40tufting4__thumb_1DXGvHM.jpg",
     "imageCredit": "themakery.de",
-    "imageSource": "auto"
+    "imageSource": "picked",
+    "social": [
+      "https://www.instagram.com/themakery.de/"
+    ],
+    "rights": "not-requested"
   },
   {
     "id": "co-the-tufting-spot-birmingham",
@@ -18236,9 +18449,14 @@ window.RUG_ITEMS = [
     "directory": "workshop",
     "listing": "Tufting workshops, Birmingham",
     "listingName": "The Tufting Spot",
-    "image": "https://assets.classbento.co.uk/images/class/starter-tufting-workshop-birmingham-portrait-big.jpg?v=1793678270",
-    "imageCredit": "classbento.co.uk",
-    "imageSource": "auto"
+    "image": "https://www.thetuftingspot.co.uk/wp-content/uploads/2025/11/PXL_20251122_125826735.MP_2.jpg",
+    "imageCredit": "thetuftingspot.co.uk",
+    "imageSource": "picked",
+    "website": "https://www.thetuftingspot.co.uk/",
+    "social": [
+      "https://www.instagram.com/thetuftingspot/"
+    ],
+    "rights": "not-requested"
   },
   {
     "id": "co-touf-touf-cgn",
@@ -18285,10 +18503,15 @@ window.RUG_ITEMS = [
     "directory": "workshop",
     "listing": "Tufting 101 and other classes, Chippendale, Sydney",
     "listingName": "Tuft & Craft",
-    "image": "https://assets.classbento.com.au/images/class/tufted-skate-deck-workshop-sydney-600.jpg?v=1793597152",
-    "imageCredit": "classbento.com.au (image from classbento.com.au)",
+    "image": "https://cdn.shopify.com/s/files/1/0841/8413/7972/files/tuft-craft-studio-home-hero.jpg",
+    "imageCredit": "tuftncraft.com",
     "imagePage": "https://classbento.com.au/c/7hdz",
-    "imageSource": "auto"
+    "imageSource": "picked",
+    "website": "https://tuftncraft.com/",
+    "social": [
+      "https://www.instagram.com/tuft.n.craft/"
+    ],
+    "rights": "not-requested"
   },
   {
     "id": "co-tufter-studio",
@@ -18311,7 +18534,10 @@ window.RUG_ITEMS = [
     "reviewedAt": "2026-11-08T00:20:44.622Z",
     "directory": "workshop",
     "listing": "Make-your-own rug studio, Glasgow",
-    "listingName": "Tufter Studio"
+    "listingName": "Tufter Studio",
+    "social": [
+      "https://www.instagram.com/tufter_studio/"
+    ]
   },
   {
     "id": "co-tufting-hamburg",
@@ -18335,10 +18561,15 @@ window.RUG_ITEMS = [
     "directory": "workshop",
     "listing": "Mini to maxi rug workshops at Hazel & Beck, Hamburg",
     "listingName": "Tufting Hamburg",
-    "image": "https://media.gokonfetti.com/148009/1200x0/punched-bird-artwork-with-tools-25k4kpp0.jpg",
-    "imageCredit": "gokonfetti.com (image from gokonfetti.com)",
+    "image": "https://tufting-hamburg.de/__l5e/assets-v1/28a83817-5cde-4cb0-b9c8-5958cab57cd0/frames-sizes.jpg",
+    "imageCredit": "tufting-hamburg.de",
     "imagePage": "https://gokonfetti.com/en-us/e/mini-teppich-tuften-in-hamburg-25-25-cm-zvp7og/",
-    "imageSource": "auto"
+    "imageSource": "picked",
+    "website": "https://tufting-hamburg.de/",
+    "social": [
+      "https://www.instagram.com/tuftinghamburg/"
+    ],
+    "rights": "not-requested"
   },
   {
     "id": "co-tufting-studio-crea",
@@ -18362,9 +18593,14 @@ window.RUG_ITEMS = [
     "directory": "workshop",
     "listing": "Rug tufting near Shimogamo Shrine, Kyoto",
     "listingName": "tufting studio CREA",
-    "image": "https://cdn.jalan.jp/jalan/img/9/spot/0219/KL/guide000000219531_27.jpg",
-    "imageCredit": "jalan.net",
-    "imageSource": "auto"
+    "image": "https://coubic-images.s3.ap-northeast-1.amazonaws.com/covers/creacarpet_118d45.jpg",
+    "imageCredit": "crea-experience.stores.jp",
+    "imageSource": "picked",
+    "website": "https://crea-experience.stores.jp/reserve/crea_tufting",
+    "social": [
+      "https://www.instagram.com/tufting_crea/"
+    ],
+    "rights": "not-requested"
   },
   {
     "id": "co-tufty5studio",
@@ -18388,11 +18624,14 @@ window.RUG_ITEMS = [
     "directory": "workshop",
     "listing": "Tufting workshops in the Sofia Green Gallery, Sofia",
     "listingName": "Tufty5studio",
-    "website": "https://tufty5.tilda.ws/en",
+    "website": "https://tufty5.com/",
     "image": "https://a0.muscache.com/im/pictures/Mt/MtTemplate-6549219/original/79a6dc3e-646e-470c-a6f5-63c1ef8bb1ad.jpeg?im_w=1200",
     "imageCredit": "airbnb.com (image from airbnb.com)",
     "imagePage": "https://www.airbnb.com/experiences/6549219",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "social": [
+      "https://www.instagram.com/petart_pondev/"
+    ]
   },
   {
     "id": "co-estudio-tomm",
@@ -18418,7 +18657,12 @@ window.RUG_ITEMS = [
     "listingName": "Estudio Tomm",
     "social": [
       "https://www.instagram.com/estudiotomm/"
-    ]
+    ],
+    "website": "https://www.estudiotomm.com/",
+    "image": "https://static.wixstatic.com/media/724bbe_44461e1ae04b40e0aaed17bb8989ec10~mv2.png",
+    "imageSource": "picked",
+    "imageCredit": "estudiotomm.com",
+    "rights": "not-requested"
   },
   {
     "id": "co-rug-addicts",
@@ -18470,7 +18714,8 @@ window.RUG_ITEMS = [
     "listingName": "Anna Gravelle",
     "social": [
       "https://www.instagram.com/annagravelle/"
-    ]
+    ],
+    "website": "https://www.annagravelle.com/"
   },
   {
     "id": "artist-art-by-zo-culture",
@@ -18520,7 +18765,10 @@ window.RUG_ITEMS = [
     "directory": "artist",
     "listing": "'Chaos Tufting' artist and co-founder of Handmayk, Dubai",
     "listingName": "Asad Azizi",
-    "website": "https://handmayk.com/"
+    "website": "https://handmayk.com/",
+    "social": [
+      "https://www.instagram.com/theasadazizi/"
+    ]
   },
   {
     "id": "artist-asha-murray",
@@ -18547,7 +18795,11 @@ window.RUG_ITEMS = [
     "social": [
       "https://www.instagram.com/murray_asha/"
     ],
-    "website": "https://ashamurray.com/"
+    "website": "https://ashamurray.com/",
+    "image": "https://images.squarespace-cdn.com/content/v1/6894f2015ea4cb5bc5d57473/ce3a71d1-8a03-4a50-8413-bc595074f5f2/Asha+Murray_02.jpg",
+    "imageSource": "picked",
+    "imageCredit": "ashamurray.com",
+    "rights": "not-requested"
   },
   {
     "id": "artist-atelier-paolo",
@@ -18573,7 +18825,12 @@ window.RUG_ITEMS = [
     "listingName": "Atelier Paolo (Guillaume Neves)",
     "social": [
       "https://www.instagram.com/atelierpaolo/"
-    ]
+    ],
+    "website": "https://www.atelierpaolo.com/",
+    "image": "http://static1.squarespace.com/static/664b62bf9d760b68328dcf09/t/66a650efd406ea5fdd9d7039/1722175737689/3000.jpg",
+    "imageSource": "picked",
+    "imageCredit": "atelierpaolo.com",
+    "rights": "not-requested"
   },
   {
     "id": "artist-atelier-taftique",
@@ -18599,7 +18856,8 @@ window.RUG_ITEMS = [
     "listingName": "Atelier Taftique (Jules Vissers)",
     "social": [
       "https://www.instagram.com/taftique_textile_art/"
-    ]
+    ],
+    "website": "https://taftique.com/"
   },
   {
     "id": "artist-audrey-hancock",
@@ -18622,10 +18880,7 @@ window.RUG_ITEMS = [
     "reviewedAt": "2026-11-08T12:11:41.149Z",
     "directory": "artist",
     "listing": "Tufted rugs by a graphic designer, Utah",
-    "listingName": "Audrey Hancock",
-    "social": [
-      "https://www.instagram.com/tuftgal/"
-    ]
+    "listingName": "Audrey Hancock"
   },
   {
     "id": "artist-bettina-willnauer",
@@ -18648,7 +18903,15 @@ window.RUG_ITEMS = [
     "reviewedAt": "2026-11-08T01:05:10.642Z",
     "directory": "artist",
     "listing": "Tapestries made with tufting guns and punch needles, Vienna",
-    "listingName": "Bettina Willnauer"
+    "listingName": "Bettina Willnauer",
+    "website": "https://bettinawillnauer.com/",
+    "social": [
+      "https://www.instagram.com/bebtbinat/"
+    ],
+    "image": "https://bettinawillnauer.com/wp-content/uploads/2020/06/021_Yellows-1920x2622.jpg",
+    "imageSource": "picked",
+    "imageCredit": "bettinawillnauer.com",
+    "rights": "not-requested"
   },
   {
     "id": "artist-charlita-rae-whitehead",
@@ -18699,8 +18962,14 @@ window.RUG_ITEMS = [
     "listing": "Pop-culture tufted rugs and tufting tutorials, Rome",
     "listingName": "Davide (Dekodaka)",
     "social": [
-      "https://www.instagram.com/dekodaka/"
-    ]
+      "https://www.instagram.com/dekodaka/",
+      "https://www.tiktok.com/@dekodaka"
+    ],
+    "website": "https://dekodaka.it/",
+    "image": "https://dekodaka.it/cdn/shop/files/Trasformo_idee_in_tappeti_2.png",
+    "imageSource": "picked",
+    "imageCredit": "dekodaka.it",
+    "rights": "not-requested"
   },
   {
     "id": "artist-gabe-lanza",
@@ -18723,7 +18992,11 @@ window.RUG_ITEMS = [
     "reviewedAt": "2026-11-08T01:05:10.642Z",
     "directory": "artist",
     "listing": "Tufted textile works, Chicago",
-    "listingName": "Gabe Lanza"
+    "listingName": "Gabe Lanza",
+    "website": "https://www.gabelanza.com/",
+    "social": [
+      "https://www.instagram.com/robotlover/"
+    ]
   },
   {
     "id": "artist-henry-hamilton",
@@ -18769,7 +19042,15 @@ window.RUG_ITEMS = [
     "reviewedAt": "2026-11-08T01:05:10.642Z",
     "directory": "artist",
     "listing": "Paintings with tufted textile installations, San Francisco",
-    "listingName": "Jennifer Banzaca"
+    "listingName": "Jennifer Banzaca",
+    "website": "https://www.banzaca.com/",
+    "social": [
+      "https://www.instagram.com/jennifer.banzaca/"
+    ],
+    "image": "https://images.squarespace-cdn.com/content/v1/5081ea0584ae11269e70ae8a/4bbbaf88-c1c2-4356-b487-0aee798be4aa/Inflorescence_72.jpg",
+    "imageSource": "picked",
+    "imageCredit": "banzaca.com",
+    "rights": "not-requested"
   },
   {
     "id": "artist-liv-aanrud",
@@ -18792,7 +19073,15 @@ window.RUG_ITEMS = [
     "reviewedAt": "2026-11-08T01:05:10.642Z",
     "directory": "artist",
     "listing": "Hand-tufted textiles, Los Angeles",
-    "listingName": "Liv Aanrud"
+    "listingName": "Liv Aanrud",
+    "website": "https://www.livaanrud.com/",
+    "social": [
+      "https://www.instagram.com/livaanrud/"
+    ],
+    "image": "https://images.squarespace-cdn.com/content/v1/5eced314f7a805199a97c02a/02b1fac8-3625-408a-b229-878e6390ea98/Dottir+peacock+detail+web.jpg",
+    "imageSource": "picked",
+    "imageCredit": "livaanrud.com",
+    "rights": "not-requested"
   },
   {
     "id": "artist-loop-lab",
@@ -18818,7 +19107,12 @@ window.RUG_ITEMS = [
     "listingName": "Loop LAB",
     "social": [
       "https://www.instagram.com/_loop_lab_/"
-    ]
+    ],
+    "website": "https://www.looplab.com.au/",
+    "image": "https://images.squarespace-cdn.com/content/v1/642a572f666ae63f90a0fcf4/ccb8183d-e6c3-45ed-9f47-99ead47cd28f/Melbourne_Collection-27.jpg",
+    "imageSource": "picked",
+    "imageCredit": "looplab.com.au",
+    "rights": "not-requested"
   },
   {
     "id": "artist-maja-michaelsdotter-eriksson",
@@ -18844,7 +19138,8 @@ window.RUG_ITEMS = [
     "listingName": "Maja Michaelsdotter Eriksson",
     "social": [
       "https://www.instagram.com/maja_michaelsdotter/"
-    ]
+    ],
+    "website": "https://majamichaelsdotter.se/"
   },
   {
     "id": "artist-mofu-rug",
@@ -18869,8 +19164,14 @@ window.RUG_ITEMS = [
     "listing": "Tufted rugs by a tufting artist, Japan",
     "listingName": "Mofu Rug",
     "social": [
-      "https://www.instagram.com/mofurug/"
-    ]
+      "https://www.instagram.com/mofurug/",
+      "https://www.tiktok.com/@tenoh8"
+    ],
+    "website": "https://mofurug.jp/",
+    "image": "https://mofurug.jp/wp-content/uploads/2026/06/IMG_3279-e1780659811189.jpg",
+    "imageSource": "picked",
+    "imageCredit": "mofurug.jp",
+    "rights": "not-requested"
   },
   {
     "id": "artist-pakuchi-hitomi",
@@ -18893,7 +19194,10 @@ window.RUG_ITEMS = [
     "reviewedAt": "2026-11-08T01:05:10.642Z",
     "directory": "artist",
     "listing": "Bright pop tufted rugs shown as art, Japan",
-    "listingName": "Pakuchi Hitomi"
+    "listingName": "Pakuchi Hitomi",
+    "social": [
+      "https://www.instagram.com/hitomi_1054/"
+    ]
   },
   {
     "id": "artist-studio-yarnatak",
@@ -18916,7 +19220,15 @@ window.RUG_ITEMS = [
     "reviewedAt": "2026-11-08T12:11:41.149Z",
     "directory": "artist",
     "listing": "Tufted installations and custom rugs, Haifa",
-    "listingName": "Studio Yarnatak"
+    "listingName": "Studio Yarnatak",
+    "website": "https://www.yarnatak.com/",
+    "social": [
+      "https://www.instagram.com/yarnatak/"
+    ],
+    "image": "https://www.yarnatak.com/cdn/shop/files/4ba0c2fdb57d44585873dda110267692.jpg",
+    "imageSource": "picked",
+    "imageCredit": "yarnatak.com",
+    "rights": "not-requested"
   },
   {
     "id": "artist-sung-young-eun",
@@ -18939,7 +19251,15 @@ window.RUG_ITEMS = [
     "reviewedAt": "2026-11-08T01:05:10.642Z",
     "directory": "artist",
     "listing": "Tufted installations and a teaching studio, Heyri Art Village, Paju",
-    "listingName": "Sung Young-eun (&et)"
+    "listingName": "Sung Young-eun (&et)",
+    "website": "https://and-et.com/",
+    "social": [
+      "https://www.instagram.com/and_et/"
+    ],
+    "image": "https://i0.wp.com/and-et.com/wp-content/uploads/2022/09/%ED%84%B0%ED%94%84%ED%8C%85-%EB%92%B7%EB%AA%A8%EC%8A%B5-1-1.jpg",
+    "imageSource": "picked",
+    "imageCredit": "and-et.com",
+    "rights": "not-requested"
   },
   {
     "id": "artist-twee-muizen",
@@ -18962,7 +19282,15 @@ window.RUG_ITEMS = [
     "reviewedAt": "2026-11-08T12:11:41.149Z",
     "directory": "artist",
     "listing": "Tufting-gun tapestries by an artistic duo from Galicia, Barcelona",
-    "listingName": "Twee Muizen"
+    "listingName": "Twee Muizen",
+    "website": "https://shop.tweemuizen.com/",
+    "social": [
+      "https://www.instagram.com/tweemuizen/"
+    ],
+    "image": "https://assets.bigcartel.com/theme_images/158285721/DSC02159.jpeg",
+    "imageSource": "picked",
+    "imageCredit": "shop.tweemuizen.com",
+    "rights": "not-requested"
   },
   {
     "id": "co-allybello",
@@ -18987,10 +19315,14 @@ window.RUG_ITEMS = [
     "directory": "commercial",
     "listing": "Artist rugs from Alex DelBello's paintings, hand-tufted and hand-knotted",
     "listingName": "allybello",
-    "website": "https://allybello.com",
-    "image": "https://www.rugnews.com/uploads/public/images/articles/2025/jdstaron-jakub-gosia-icff-2025-award.jpeg",
-    "imageCredit": "rugnews.com",
-    "imageSource": "auto"
+    "website": "https://delbellostudio.com/",
+    "image": "https://cdn.shopify.com/s/files/1/0590/6703/9882/files/Delbello_studios__Michael_Ken_Stewart_madnames_Studios-04653_8cb5f73e-f029-48e8-8c85-38b053005d61.jpg",
+    "imageCredit": "delbellostudio.com",
+    "imageSource": "picked",
+    "social": [
+      "https://www.instagram.com/delbellostudio/"
+    ],
+    "rights": "not-requested"
   },
   {
     "id": "co-amer-rugs",
@@ -19016,9 +19348,13 @@ window.RUG_ITEMS = [
     "listing": "Hand-knotted, hand-tufted and hand-loomed rugs, Norcross, Georgia",
     "listingName": "Amer Rugs",
     "website": "https://www.amerrugs.com",
-    "image": "https://www.rugnews.com/uploads/public/images/articles/article-image/ny/cnnyrug_montage2.jpg",
-    "imageCredit": "rugnews.com",
-    "imageSource": "auto"
+    "image": "https://d1kcsjdp2vqwp4.cloudfront.net/assets/uploads/home-collection/1683631288-806607826.jpg",
+    "imageCredit": "amerrugs.com",
+    "imageSource": "picked",
+    "social": [
+      "https://www.instagram.com/amerrugs_/"
+    ],
+    "rights": "not-requested"
   },
   {
     "id": "co-cella-carpet",
@@ -19043,9 +19379,11 @@ window.RUG_ITEMS = [
     "directory": "commercial",
     "listing": "Rugs and broadloom, New Jersey",
     "listingName": "Cella Carpet",
-    "image": "https://www.rugnews.com/uploads/public/images/articles/2025/rugnews-cclv-rug-buyers-2025-montage.jpg",
-    "imageCredit": "rugnews.com",
-    "imageSource": "auto"
+    "image": "https://cellacarpet.com/opengraph-image",
+    "imageCredit": "cellacarpet.com",
+    "imageSource": "picked",
+    "website": "https://cellacarpet.com/",
+    "rights": "not-requested"
   },
   {
     "id": "co-couristan",
@@ -19074,9 +19412,10 @@ window.RUG_ITEMS = [
     "social": [
       "https://www.instagram.com/couristan/"
     ],
-    "image": "https://www.rugnews.com/uploads/public/images/articles/article-image/ny/rugnews-rugs-bdny-2024.jpg",
-    "imageCredit": "rugnews.com",
-    "imageSource": "auto"
+    "image": "https://www.couristan.com/wp-content/uploads/2023/05/InspiredbyLife_Blue.jpg",
+    "imageCredit": "couristan.com",
+    "imageSource": "picked",
+    "rights": "not-requested"
   },
   {
     "id": "co-creative-touch",
@@ -19104,7 +19443,11 @@ window.RUG_ITEMS = [
     "website": "https://creativetouchrugs.com",
     "social": [
       "https://www.instagram.com/creativetouchrugs/"
-    ]
+    ],
+    "image": "https://creativetouchrugs.com/img/single-product/small/single-product1.jpg",
+    "imageSource": "picked",
+    "imageCredit": "creativetouchrugs.com",
+    "rights": "not-requested"
   },
   {
     "id": "co-crosby-street-studios",
@@ -19129,7 +19472,14 @@ window.RUG_ITEMS = [
     "directory": "commercial",
     "listing": "Custom hand-tufted rugs and carpet for the trade, New York",
     "listingName": "Crosby Street Studios",
-    "website": "https://www.crosbystreetstudios.com/"
+    "website": "https://www.crosbystreetstudios.com/",
+    "social": [
+      "https://www.instagram.com/crosbystreetstudios/"
+    ],
+    "image": "https://www.crosbystreetstudios.com/wp-content/uploads/2020/06/HERO_Stack_08.jpg",
+    "imageSource": "picked",
+    "imageCredit": "crosbystreetstudios.com",
+    "rights": "not-requested"
   },
   {
     "id": "co-jd-staron",
@@ -19158,9 +19508,10 @@ window.RUG_ITEMS = [
     "social": [
       "https://www.instagram.com/jdstaron/"
     ],
-    "image": "https://www.rugnews.com/uploads/public/images/articles/article-image/jd-staron-jakub-and-pure-collection-icff-2023.jpg",
-    "imageCredit": "rugnews.com",
-    "imageSource": "auto"
+    "image": "https://static.wixstatic.com/media/a034a2_8bc6a32a80f74b758a09995f9caf942e~mv2.jpg",
+    "imageCredit": "jdstaron.com",
+    "imageSource": "picked",
+    "rights": "not-requested"
   },
   {
     "id": "co-jov",
@@ -19189,9 +19540,10 @@ window.RUG_ITEMS = [
     "social": [
       "https://www.instagram.com/jovdesign/"
     ],
-    "image": "https://www.rugnews.com/uploads/public/images/articles/2025/rugnews-icff-2025-montage.jpg",
-    "imageCredit": "rugnews.com",
-    "imageSource": "auto"
+    "image": "https://jov-design.com/admin/uploads/resized/1761750130_REDDUO_CASA13_BANNERWEBSITE.jpg",
+    "imageCredit": "jov-design.com",
+    "imageSource": "picked",
+    "rights": "not-requested"
   },
   {
     "id": "co-kateha",
@@ -19220,9 +19572,10 @@ window.RUG_ITEMS = [
     "social": [
       "https://www.instagram.com/kateharugs/"
     ],
-    "image": "https://www.rugnews.com/uploads/public/images/articles/0rugnews1/rugnews-3-days-of-design-copenhagen-2026-montage2.jpg",
-    "imageCredit": "rugnews.com",
-    "imageSource": "auto"
+    "image": "https://kateha.se/wp-content/uploads/2024/09/Kateha_Bula_nearly_black_setting_Job_10276_300-scaled.jpg",
+    "imageCredit": "kateha.se",
+    "imageSource": "picked",
+    "rights": "not-requested"
   },
   {
     "id": "co-layered",
@@ -19247,10 +19600,14 @@ window.RUG_ITEMS = [
     "directory": "commercial",
     "listing": "Rugs and textiles, including hand-tufted wool, Stockholm",
     "listingName": "Layered",
-    "website": "https://layered.se/",
-    "image": "https://interiordesign.net/wp-content/uploads/2025/03/idx250401_market25.jpg",
-    "imageCredit": "interiordesign.net",
-    "imageSource": "auto"
+    "website": "https://www.layeredinterior.com/",
+    "image": "http://www.layeredinterior.com/cdn/shop/files/brat-mob_36792c9a-e3f7-49e8-9368-cba0ebee7137.jpg",
+    "imageCredit": "layeredinterior.com",
+    "imageSource": "picked",
+    "social": [
+      "https://www.instagram.com/layered_official/"
+    ],
+    "rights": "not-requested"
   },
   {
     "id": "co-linie-design",
@@ -19275,13 +19632,14 @@ window.RUG_ITEMS = [
     "directory": "commercial",
     "listing": "Handmade contemporary rugs, Lynge",
     "listingName": "Linie Design",
-    "website": "https://www.liniedesign.com",
+    "website": "https://liniedesign.com/",
     "social": [
       "https://www.instagram.com/liniedesign/"
     ],
-    "image": "https://www.rugnews.com/uploads/public/images/articles/2025/rugnews-3daysofdesign-2025montage.jpg",
-    "imageCredit": "rugnews.com",
-    "imageSource": "auto"
+    "image": "https://cdn.shopify.com/s/files/1/0670/0331/8576/files/Linie_featured.jpg",
+    "imageCredit": "liniedesign.com",
+    "imageSource": "picked",
+    "rights": "not-requested"
   },
   {
     "id": "co-massimo-copenhagen",
@@ -19308,7 +19666,12 @@ window.RUG_ITEMS = [
     "listingName": "Massimo Copenhagen",
     "social": [
       "https://www.instagram.com/massimocopenhagen/"
-    ]
+    ],
+    "website": "https://massimo.dk/",
+    "image": "http://massimo.dk/cdn/shop/files/MASSIMO_CPH_63_horizontal_e8be1764-3ef3-4abe-87b0-1d1cf60a6d3a.jpg",
+    "imageSource": "picked",
+    "imageCredit": "massimo.dk",
+    "rights": "not-requested"
   },
   {
     "id": "co-nourison",
@@ -19335,8 +19698,13 @@ window.RUG_ITEMS = [
     "listingName": "Nourison",
     "website": "https://www.nourison.com",
     "social": [
-      "https://www.instagram.com/nourison/"
-    ]
+      "https://www.instagram.com/nourison/",
+      "https://www.tiktok.com/@nourison"
+    ],
+    "image": "https://www.nourison.com/media/wysiwyg/SOCIAL_NOUR_TRAVS_1-TRAVSASH__BR1302JT_7189_1X1.jpg",
+    "imageSource": "picked",
+    "imageCredit": "nourison.com",
+    "rights": "not-requested"
   },
   {
     "id": "co-rebel-carpets",
@@ -19361,9 +19729,14 @@ window.RUG_ITEMS = [
     "directory": "commercial",
     "listing": "Area rugs, broadloom and custom sizes",
     "listingName": "Rebel Carpets",
-    "image": "https://www.rugnews.com/uploads/public/images/articles/article-image/rugnews-cover-connect-ny-2023-montage.jpg",
-    "imageCredit": "rugnews.com",
-    "imageSource": "auto"
+    "image": "https://static.wixstatic.com/media/2133a3_536c72f73496474ba862c0ebcfeceebd~mv2.jpg",
+    "imageCredit": "rebelcarpets.com",
+    "imageSource": "picked",
+    "website": "https://www.rebelcarpets.com/",
+    "social": [
+      "https://www.instagram.com/rebelcarpets/"
+    ],
+    "rights": "not-requested"
   },
   {
     "id": "co-rhyme-studio",
@@ -19391,9 +19764,11 @@ window.RUG_ITEMS = [
     "social": [
       "https://www.instagram.com/rhymestudioart/"
     ],
-    "image": "https://www.cover-magazine.com/wp-content/uploads/2026/07/CCNY.jpg",
-    "imageCredit": "cover-magazine.com",
-    "imageSource": "auto"
+    "image": "https://images.squarespace-cdn.com/content/v1/642da25c14d91d13bdc9d88b/83b2d4c8-f183-423f-9580-70a250a0974b/ZigZag-Edit.jpg",
+    "imageCredit": "rhymestudio.com",
+    "imageSource": "picked",
+    "website": "https://www.rhymestudio.com/",
+    "rights": "not-requested"
   },
   {
     "id": "co-rug-society",
@@ -19419,8 +19794,13 @@ window.RUG_ITEMS = [
     "listing": "Luxury contemporary rugs, hand-tufted and overtufted, Portugal",
     "listingName": "Rug'Society",
     "website": "https://rugsociety.eu",
-    "image": "https://rugsociety.eu/blog/wp-content/uploads/2025/03/WhatsApp-Image-2025-03-27-at-18.11.14-1.jpeg",
+    "image": "https://rugsociety.eu/img/2020/homepage/hero/best-sellers-hero-rug-society.jpg",
     "imageCredit": "rugsociety.eu",
-    "imageSource": "auto"
+    "imageSource": "picked",
+    "social": [
+      "https://www.instagram.com/rug_society/",
+      "https://www.tiktok.com/@homes_society"
+    ],
+    "rights": "not-requested"
   }
 ];
