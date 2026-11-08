@@ -19412,7 +19412,10 @@ window.RUG_ITEMS = [
     "listingName": "Rhyme Studio",
     "social": [
       "https://www.instagram.com/rhymestudioart/"
-    ]
+    ],
+    "image": "https://www.cover-magazine.com/wp-content/uploads/2026/07/CCNY.jpg",
+    "imageCredit": "cover-magazine.com",
+    "imageSource": "auto"
   },
   {
     "id": "co-rug-society",
@@ -19437,6 +19440,9 @@ window.RUG_ITEMS = [
     "directory": "commercial",
     "listing": "Luxury contemporary rugs, hand-tufted and overtufted, Portugal",
     "listingName": "Rug'Society",
-    "website": "https://rugsociety.eu"
+    "website": "https://rugsociety.eu",
+    "image": "https://rugsociety.eu/blog/wp-content/uploads/2025/03/WhatsApp-Image-2025-03-27-at-18.11.14-1.jpeg",
+    "imageCredit": "rugsociety.eu",
+    "imageSource": "auto"
   }
 ];
