@@ -21729,5 +21729,19 @@ window.RUG_ITEMS = [
     "sourceUrl": "https://www.shaggies-amsterdam.com/?srsltid=AYCX9vJSu5w5SaL0KoqdzYVl8hDM-J2EbcNnqwOS614EUsQXIYGTXliZ",
     "image": "https://static.wixstatic.com/media/ca1c05_41da39e378a347bba340473c3bfdcfcb~mv2.jpg/v1/fill/w_770,h_770,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG20241004172110_edited.jpg",
     "reviewedAt": "2026-11-08T19:31:09.893Z"
+  },
+  {
+    "id": "u-mw88bgpyboe28",
+    "type": "company",
+    "status": "verified",
+    "title": "I am the Alphabet",
+    "creator": "Janna Savatgy",
+    "directory": "artist",
+    "sourceUrl": "https://www.instagram.com/iamthealphabet/?hl=en",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGh4Gl4t-YKTkxM35raBF87pJTtETQPsMAuo7NzWmLGQb3uTA1jXzzAIg&s=10",
+    "social": [
+      "https://www.instagram.com/iamthealphabet/?hl=en"
+    ],
+    "reviewedAt": "2026-11-08T19:33:26.011Z"
   }
 ];
