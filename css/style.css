@@ -894,3 +894,5 @@ a.linkish { text-decoration: underline; text-underline-offset: .2em; }
 @media (max-width: 860px) { .dir-fields { grid-template-columns: 1fr; } .dir-fields .span2 { grid-column: auto; } }
 .dir-line-d { font-size: var(--t-sm); color: var(--ink-2); margin: 10px 0 0; overflow-wrap: anywhere; }
 .dir-line-d .dir-tag { font-weight: 600; color: var(--ink); }
+.ms-toc li.ms-toc-sv { counter-increment: none; }
+.ms-toc li.ms-toc-sv a::before { content: ""; }

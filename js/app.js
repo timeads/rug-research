@@ -1330,6 +1330,103 @@
     pubChLoading = false;
     if (currentView === "manuscript") renderManuscript();
   };
+  // ---------- the short version ----------
+  // The two-sheet summary of the book (site/src/text/short-version.md) shown above the chapters, with the
+  // same Edit text / Save to the site steps. "## " starts a section, "### Chapter N" a chapter's summary,
+  // "- **year** text" a date; the site page lays the file out from these marks.
+  const SV_PATH = "site/src/text/short-version.md";
+  let SV = null, svLoading = false; // { src } once read, or { error }
+  const loadShortVersion = async (force = false) => {
+    if (svLoading || (SV && SV.src != null && !force)) return;
+    svLoading = true;
+    try {
+      let src;
+      if (ghToken.get()) { try { const gh = RugPublish.github({ repo: REPO, branch: PUBLISH_BRANCH, token: ghToken.get(), fetchImpl: fetch.bind(window) }); src = await gh.file(SV_PATH, await gh.head()); } catch { /* the site's copy will do */ } }
+      if (src == null) { const r = await fetch(SV_PATH, { cache: "no-store" }); if (!r.ok) throw new Error(`the site answered ${r.status}`); src = await r.text(); }
+      SV = { src };
+    } catch (e) { SV = { error: e.message || "couldn't be read" }; }
+    svLoading = false;
+    if (currentView === "manuscript") renderManuscript();
+  };
+  const svInline = t => esc(t).replace(/\*\*(.+?)\*\*/g, "<b>$1</b>").replace(/\*([^*]+)\*/g, "<em>$1</em>");
+  const chapterTitleByNo = n => { for (const l of S.lists.filter(isChapter)) { const p = pageOf(l.id), t = p && PUB_CH[p] && PUB_CH[p].src != null ? splitMdx(PUB_CH[p].src) : null; if (t && +t.fm.number === +n) return t.fm.title; } return ""; };
+  const svBodyHTML = body => {
+    const out = []; let para = [], list = [];
+    const flush = () => { if (para.length) out.push(`<p>${svInline(para.join(" "))}</p>`); para = []; if (list.length) out.push(`<ul>${list.map(t => `<li>${svInline(t)}</li>`).join("")}</ul>`); list = []; };
+    for (const line of String(body || "").split("\n")) {
+      if (/^## /.test(line)) { flush(); out.push(`<h3>${esc(line.slice(3))}</h3>`); }
+      else if (/^### /.test(line)) { flush(); const n = (line.match(/\d+/) || [])[0], t = n && chapterTitleByNo(n); out.push(`<h4>${esc(line.slice(4))}${t ? `: ${esc(t)}` : ""}</h4>`); }
+      else if (/^\s*-\s+/.test(line)) { if (para.length) { out.push(`<p>${svInline(para.join(" "))}</p>`); para = []; } list.push(line.replace(/^\s*-\s+/, "")); }
+      else if (!line.trim()) flush();
+      else para.push(line.trim());
+    }
+    flush(); return out.join("");
+  };
+  const checkShortVersion = d => {
+    const errs = [], known = new Set(S.lists.filter(isChapter).map(l => { const p = pageOf(l.id), t = p && PUB_CH[p] && PUB_CH[p].src != null ? splitMdx(PUB_CH[p].src) : null; return t ? +t.fm.number : null; }).filter(Boolean));
+    for (const m of d.body.matchAll(/^### (.*)$/gm)) { const n = +(m[1].match(/\d+/) || [])[0]; if (!n || (known.size && !known.has(n))) errs.push(`"### ${m[1]}" should name a chapter, like "### Chapter 4".`); }
+    if (/\u2014/.test(d.body + d.lede + d.foot)) errs.push("The text uses an em dash (—); the book's style uses commas, colons or brackets instead.");
+    if (!/^## /m.test(d.body)) errs.push("The text needs at least one section heading starting with \"## \".");
+    return errs;
+  };
+  const svPanel = () => {
+    const d = S.svDraft, st = SV, t = st && st.src != null ? splitMdx(st.src) : null;
+    const words = t ? t.body.replace(/^#+ .*$/gm, " ").split(/\s+/).filter(Boolean).length : 0;
+    let main;
+    if (d) main = `<div class="ms-edit">
+        ${d.conflict ? `<p class="ms-errs" role="alert">${esc(d.conflict)}</p>` : `<p class="ms-hint">Editing the short version. Nothing changes on the site until you save; this edit is kept in this browser until then.</p>`}
+        <label class="ms-field">Line under the title <textarea data-sv-lede rows="2" spellcheck="true">${esc(d.lede)}</textarea></label>
+        <label class="ms-field"><span>Text</span><textarea class="ms-editor" data-sv-ta spellcheck="true">${esc(d.body)}</textarea></label>
+        <label class="ms-field">Closing line <textarea data-sv-foot rows="2" spellcheck="true">${esc(d.foot)}</textarea></label>
+        <p class="ms-hint">“## ” starts a section; “### Chapter 4” starts that chapter's summary, and the site adds the chapter's title and link; “- **1778** text” lines make the dates; other “- ” lines make a list; **bold** and *italic* work. Keep it to two printed sheets: the page's Print button shows how it falls.</p>
+        <div class="ms-errs" id="sv-errs" role="alert"></div>
+        <div class="btns"><button class="btn primary" data-sv-save>${icon("check")}Save to the site</button><button class="btn" data-sv-cancel>Discard this edit</button></div>
+      </div>`;
+    else if (t) main = `<div class="ms-prose ms-pub ms-sv">${t.fm.lede ? `<p class="ms-dek">${svInline(t.fm.lede)}</p>` : ""}${svBodyHTML(t.body)}${t.fm.foot ? `<p class="ms-hint">${svInline(t.fm.foot)}</p>` : ""}</div>`;
+    else main = `<p class="ms-empty">${st && st.error ? `The short version couldn't be read (${esc(st.error)}). <button class="linkish" data-sv-reload>Try again</button>` : "Loading the short version…"}</p>`;
+    return `<section class="ms-chapter" id="ms-short-version">
+      <header class="ms-ch-head"><p class="ms-ch-num">Summary</p><h2>${esc(t?.fm.title || "The short version")}</h2>
+        <p class="ms-ch-meta">${t ? `<span>${words.toLocaleString()} words</span>` : ""}${t && !d ? `<button class="btn sm" data-sv-edit>${icon("edit")}Edit text</button>` : ""}<a class="linkish" href="https://www.historyoftuftedrugs.com/short-version/" target="_blank" rel="noopener">On the site</a></p>
+      </header>
+      <div class="bk-grid solo"><div class="bk-main">${main}</div></div>
+    </section>`;
+  };
+  const startShortVersionEdit = () => {
+    if (!SV || SV.src == null) return;
+    const t = splitMdx(SV.src);
+    S.svDraft = { lede: t.fm.lede || "", foot: t.fm.foot || "", body: t.body.replace(/\s+$/, ""), base: SV.src };
+    save(); renderManuscript(); $("[data-sv-ta]")?.focus();
+  };
+  const buildShortVersionFile = (current, d) => {
+    let fm = splitMdx(current).fmText;
+    for (const [k, v] of [["lede", d.lede.trim()], ["foot", d.foot.trim()]]) fm = new RegExp(`^${k}:.*$`, "m").test(fm) ? fm.replace(new RegExp(`^${k}:.*$`, "m"), `${k}: ${JSON.stringify(v)}`) : fm + `\n${k}: ${JSON.stringify(v)}`;
+    return `---\n${fm}\n---\n\n${d.body.trim()}\n`;
+  };
+  const saveShortVersion = async btn => {
+    const d = S.svDraft, box = $("#sv-errs"); if (!d) return;
+    const show = (msg, list) => { if (box) box.innerHTML = list ? `<p>${esc(msg)}</p><ul>${list.map(x => `<li>${esc(x)}</li>`).join("")}</ul>` : `<p>${msg}</p>`; };
+    const errs = checkShortVersion(d); if (errs.length) return show("Not saved. Fix these first:", errs);
+    if (!ghToken.get()) return show(`Saving needs the GitHub key that Publish uses. Click <b>Publish</b> in the top bar once to set it up, then save again. Your edit stays here meanwhile.`);
+    btn.disabled = true; show("Saving…");
+    try {
+      const gh = RugPublish.github({ repo: REPO, branch: PUBLISH_BRANCH, token: ghToken.get(), fetchImpl: fetch.bind(window) });
+      for (let attempt = 1; attempt <= 3; attempt++) {
+        const head = await gh.head(), current = await gh.file(SV_PATH, head);
+        if (current !== d.base) { SV = { src: current }; d.conflict = "Not saved: the short version was changed on GitHub after you started editing. Your version is below; copy what you need, discard this edit, and start again from the new text."; save(); btn.disabled = false; return renderManuscript(); }
+        const next = buildShortVersionFile(current, d);
+        if (next === current) { delete S.svDraft; save(); renderManuscript(); return toast("Nothing had changed"); }
+        const commit = await gh.write(head, [{ path: SV_PATH, text: next }], "Edit the short version\n\nEdited in the research tool's Book view.");
+        if (!commit) continue;
+        SV = { src: next }; delete S.svDraft; save(); renderManuscript(); setTimeout(checkJobs, 4000);
+        return toast("Saved. The short version on the site updates in about two minutes.");
+      }
+      throw new Error("GitHub kept changing while saving. Try again in a minute.");
+    } catch (e) {
+      btn.disabled = false;
+      if (e.status === 401 || e.status === 403 || e.status === 404) { ghToken.set(""); return show("GitHub didn't accept the key. Click <b>Publish</b> to set up a new one, then save again."); }
+      show(`Not saved: ${esc(e.message)}`);
+    }
+  };
   const attr = (a, name) => { const m = String(a).match(new RegExp(`\\b${name}="([^"]*)"`)); return m ? m[1] : ""; };
   const figureSrc = (it, n) => { const g = Array.isArray(it.images) ? it.images : []; return photoSrc(n && g[n] ? g[n].src : it.image) || imgSrc(it); };
   // A chapter's text as the reader sees it: headings, paragraphs, pictures, quotations, numbered notes.
@@ -1435,8 +1532,8 @@
     $("#ms-sub").textContent = chapters.length
       ? `As published on www.historyoftuftedrugs.com · ${chapters.length} chapter${chapters.length === 1 ? "" : "s"}${loaded ? ` · ${total.toLocaleString()} words` : ""}${loaded < chapters.filter(l => pageOf(l.id)).length ? " · loading…" : ""}`
       : "No chapters yet.";
-    $("#ms-toc").innerHTML = chapters.map((l, i) => `<li><a href="#ms-${esc(l.id)}" data-ms-jump="${esc(l.id)}"><span>${esc(texts[i]?.fm.title || l.name)}</span><small>${texts[i] ? proseWords(texts[i].body).toLocaleString() : ""}</small></a></li>`).join("");
-    $("#ms-body").innerHTML = chapters.length ? chapters.map((l, i) => {
+    $("#ms-toc").innerHTML = `<li class="ms-toc-sv"><a href="#ms-short-version" data-ms-jump="short-version"><span>The short version</span><small>summary</small></a></li>` + chapters.map((l, i) => `<li${i === 0 ? ' value="1"' : ""}><a href="#ms-${esc(l.id)}" data-ms-jump="${esc(l.id)}"><span>${esc(texts[i]?.fm.title || l.name)}</span><small>${texts[i] ? proseWords(texts[i].body).toLocaleString() : ""}</small></a></li>`).join("");
+    $("#ms-body").innerHTML = svPanel() + (chapters.length ? chapters.map((l, i) => {
       const page = pageOf(l.id), t = texts[i], st = page ? PUB_CH[page] : null, draft = msDraftOf(l), editing = !!draft;
       const items = l.items.map(id => BY_ID[id]).filter(Boolean);
       const num = t?.fm.number || i + 1;
@@ -1478,9 +1575,9 @@
       return `<section class="ms-chapter" id="ms-${esc(l.id)}">${head}
         <div class="bk-grid${page ? "" : " solo"}"><div class="bk-main">${main}${notes}${todoHTML(l.id)}</div>${page ? sourcesPanel(l, used, editing) : ""}</div>
       </section>`;
-    }).join("") : `<div class="empty"><h2>No chapters yet</h2><p>The chapters of the public site appear here.</p></div>`;
+    }).join("") : `<div class="empty"><h2>No chapters yet</h2><p>The chapters of the public site appear here.</p></div>`);
     $$(".ms-editor, .bk-notes").forEach(fitMs);
-    loadChapterTexts();
+    loadChapterTexts(); loadShortVersion();
   };
   // A chapter's "Still to find" list (data/chapters.js, todo): the author's to-do list, never on the public
   // site. Record ids in it open the record; ticks are kept in this browser.
@@ -2585,6 +2682,8 @@
     }
     const nt = e.target.closest("[data-bk-notes]");
     if (nt) { const l = S.lists.find(x => x.id === nt.dataset.bkNotes); if (l) { l.intro = nt.value; fitMs(nt); saveMsText(); } return; }
+    const sv = e.target.closest("[data-sv-ta], [data-sv-lede], [data-sv-foot]");
+    if (sv && S.svDraft) { if (sv.dataset.svTa != null) { S.svDraft.body = sv.value; fitMs(sv); } else if (sv.dataset.svLede != null) S.svDraft.lede = sv.value; else S.svDraft.foot = sv.value; saveMsText(); return; }
     const el = e.target.closest("[data-ms-ta], [data-ms-title], [data-ms-dek]"); if (!el) return;
     const id = el.dataset.msTa || el.dataset.msTitle || el.dataset.msDek, d = (S.msDrafts || {})[id]; if (!d) return;
     if (el.dataset.msTa) { d.body = el.value; fitMs(el); refreshPreview(id); } else if (el.dataset.msTitle) d.title = el.value; else d.dek = el.value;
@@ -2602,6 +2701,10 @@
     const open = e.target.closest("[data-ms-open]"); if (open) return openDrawer(open.dataset.msOpen);
     const hero = e.target.closest("[data-ms-hero]"); if (hero) return openHero(hero.dataset.msHero);
     const start = e.target.closest("button[data-ms-text]"); if (start) return startChapterEdit(start.dataset.msText);
+    if (e.target.closest("[data-sv-edit]")) return startShortVersionEdit();
+    const svs = e.target.closest("[data-sv-save]"); if (svs) return saveShortVersion(svs);
+    if (e.target.closest("[data-sv-cancel]")) { if (!confirm("Discard this edit? The published short version stays as it is.")) return; delete S.svDraft; save(); renderManuscript(); return; }
+    if (e.target.closest("[data-sv-reload]")) return loadShortVersion(true);
     const sv = e.target.closest("[data-ms-save]"); if (sv) return saveChapterEdit(sv.dataset.msSave, sv);
     const cancel = e.target.closest("[data-ms-cancel]");
     if (cancel) { if (!confirm("Discard this edit? The published text stays as it is.")) return; delete S.msDrafts[cancel.dataset.msCancel]; save(); renderManuscript(); return; }
