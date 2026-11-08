@@ -17146,14 +17146,14 @@ window.RUG_ITEMS = [
       "found by web search"
     ],
     "status": "unverified",
-    "reviewedAt": "2026-11-07T23:55:47.500Z",
+    "reviewedAt": "2026-11-08T19:21:53.085Z",
     "directory": "workshop",
     "listing": "Tufting workshops and events, Bengaluru",
     "listingName": "Bangalore Tufting Studio",
     "social": [
       "https://www.instagram.com/tuftingstudio.blr/"
     ],
-    "image": "https://static.cdninstagram.com/rsrc.php/v4/yD/r/R0fBIMurK8v.png",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5MpUo_WaT4_d_h7l4sAkfAkESDHAuErkhe2Q_ej8iHg&s=10",
     "imageCredit": "instagram.com",
     "imageSource": "auto"
   },
