@@ -21107,7 +21107,11 @@ window.RUG_ITEMS = [
     "social": [
       "https://www.instagram.com/loominology/"
     ],
-    "website": "http://www.loominology.com/"
+    "website": "http://www.loominology.com/",
+    "image": "https://du85s6yu4vjql.cloudfront.net/1024x384/pictures_brands/image_webps/000/039/190/original/54a4193627264b9c9ca9fb3021d0c47c.webp",
+    "imageCredit": "mom.maison-objet.com (image from mom.maison-objet.com)",
+    "imagePage": "https://mom.maison-objet.com/en/brand/21316/loominology-rugs",
+    "imageSource": "auto"
   },
   {
     "id": "artist-atelier-mathoumatou",
