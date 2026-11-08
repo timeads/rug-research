@@ -20646,5 +20646,979 @@ window.RUG_ITEMS = [
     "social": [
       "https://www.instagram.com/velvetrippyclub/"
     ]
+  },
+  {
+    "id": "co-silver-creek-by-bloomsburg-carpet",
+    "type": "company",
+    "title": "Silver Creek by Bloomsburg Carpet: tufted rugs, Bloomsburg",
+    "creator": "Silver Creek by Bloomsburg Carpet",
+    "place": "Bloomsburg, Pennsylvania, United States",
+    "region": "United States",
+    "description": "Tufted rugs, Bloomsburg. Listed at the author's choice: the author, who follows the account on Instagram, approved it as making tufted work and gave its location (8 Nov 2026).\nCaveat: Web searches the same day did not confirm the tufting: Silver Creek is woven Wilton/velvet; one Bloomsburg rug listing says tufted, not tied to Silver Creek.\nSources: https://floorbiz.com/BizResources/NPPrintItem.asp?ID=1645 · https://goods.jidipi.com/d00102320/en/bloomsburg-in-grain-rug",
+    "sourceUrl": "https://www.instagram.com/bloomsburgcarpet/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "directory",
+      "from the author's follows",
+      "approved by the author"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T13:42:58.015Z",
+    "directory": "commercial",
+    "listing": "Tufted rugs, Bloomsburg",
+    "listingName": "Silver Creek by Bloomsburg Carpet",
+    "social": [
+      "https://www.instagram.com/bloomsburgcarpet/"
+    ]
+  },
+  {
+    "id": "co-bumi-karpet",
+    "type": "company",
+    "title": "Bumi Karpet: tufted rugs, Indonesia",
+    "creator": "Bumi Karpet",
+    "place": "Indonesia",
+    "region": "Indonesia",
+    "description": "Tufted rugs, Indonesia. Listed at the author's choice: the author, who follows the account on Instagram, approved it as making tufted work and gave its location (8 Nov 2026).\nCaveat: Web searches the same day did not confirm the tufting: No search results for this company.",
+    "sourceUrl": "https://www.instagram.com/bumi_karpet/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "directory",
+      "from the author's follows",
+      "approved by the author"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T13:42:58.015Z",
+    "directory": "commercial",
+    "listing": "Tufted rugs, Indonesia",
+    "listingName": "Bumi Karpet",
+    "social": [
+      "https://www.instagram.com/bumi_karpet/"
+    ]
+  },
+  {
+    "id": "co-cahaya-indo-surya",
+    "type": "company",
+    "title": "Cahaya Indo Surya: tufted rugs, Indonesia",
+    "creator": "Cahaya Indo Surya",
+    "place": "Indonesia",
+    "region": "Indonesia",
+    "description": "Tufted rugs, Indonesia. Listed at the author's choice: the author, who follows the account on Instagram, approved it as making tufted work and gave its location (8 Nov 2026).\nCaveat: Web searches the same day did not confirm the tufting: Two searches found nothing on this company (results were for unrelated Surya).",
+    "sourceUrl": "https://www.instagram.com/cahayaindosurya/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "directory",
+      "from the author's follows",
+      "approved by the author"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T13:42:58.015Z",
+    "directory": "commercial",
+    "listing": "Tufted rugs, Indonesia",
+    "listingName": "Cahaya Indo Surya",
+    "social": [
+      "https://www.instagram.com/cahayaindosurya/"
+    ]
+  },
+  {
+    "id": "co-chichi-tapis-paris",
+    "type": "company",
+    "title": "Chichi Tapis Paris: tufted rugs, Paris",
+    "creator": "Chichi Tapis Paris",
+    "place": "Paris, France",
+    "region": "France",
+    "description": "Tufted rugs, Paris. Listed at the author's choice: the author, who follows the account on Instagram, approved it as making tufted work and gave its location (8 Nov 2026).\nCaveat: Web searches the same day did not confirm the tufting: Two searches found nothing on this brand (only antique Caucasian Chichi rugs).",
+    "sourceUrl": "https://www.instagram.com/chichiparis_/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "directory",
+      "from the author's follows",
+      "approved by the author"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T13:42:58.015Z",
+    "directory": "commercial",
+    "listing": "Tufted rugs, Paris",
+    "listingName": "Chichi Tapis Paris",
+    "social": [
+      "https://www.instagram.com/chichiparis_/"
+    ],
+    "website": "https://chichi-paris.com/"
+  },
+  {
+    "id": "artist-cool-ruggings",
+    "type": "finding",
+    "title": "Cool Ruggings: tufted rugs and textile art, Atlanta",
+    "creator": "Cool Ruggings",
+    "place": "Atlanta, United States",
+    "region": "United States",
+    "description": "Tufted rugs and textile art, Atlanta. Listed at the author's choice: the author, who follows the account on Instagram, approved it as making tufted work and gave its location (8 Nov 2026).\nCaveat: Web searches the same day did not confirm the tufting: Nothing found for the name; no link in bio.",
+    "sourceUrl": "https://www.instagram.com/coolruggings/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "artist",
+      "directory",
+      "from the author's follows",
+      "approved by the author"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T13:42:58.015Z",
+    "directory": "artist",
+    "listing": "Tufted rugs and textile art, Atlanta",
+    "listingName": "Cool Ruggings",
+    "social": [
+      "https://www.instagram.com/coolruggings/"
+    ]
+  },
+  {
+    "id": "co-forestcarpet",
+    "type": "company",
+    "title": "Forestcarpet: tufted rugs, China",
+    "creator": "Forestcarpet",
+    "place": "China",
+    "region": "China",
+    "description": "Tufted rugs, China. Listed at the author's choice: the author, who follows the account on Instagram, approved it as making tufted work and gave its location (8 Nov 2026).\nCaveat: Web searches the same day did not confirm the tufting: No search results for this company.",
+    "sourceUrl": "https://www.instagram.com/forestcarpet_factory/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "directory",
+      "from the author's follows",
+      "approved by the author"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T13:42:58.015Z",
+    "directory": "commercial",
+    "listing": "Tufted rugs, China",
+    "listingName": "Forestcarpet",
+    "social": [
+      "https://www.instagram.com/forestcarpet_factory/"
+    ]
+  },
+  {
+    "id": "co-gerry-shaw",
+    "type": "company",
+    "title": "Gerry Shaw: tufted rugs, Scotland",
+    "creator": "Gerry Shaw",
+    "place": "Scotland, United Kingdom",
+    "region": "United Kingdom",
+    "description": "Tufted rugs, Scotland. Listed at the author's choice: the author, who follows the account on Instagram, approved it as making tufted work and gave its location (8 Nov 2026).\nCaveat: Web searches the same day did not confirm the tufting: searched; no result mentions this handle or name (two searches); results only about Shaw Industries.",
+    "sourceUrl": "https://www.instagram.com/gerry.the.tufter/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "directory",
+      "from the author's follows",
+      "approved by the author"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T13:42:58.015Z",
+    "directory": "commercial",
+    "listing": "Tufted rugs, Scotland",
+    "listingName": "Gerry Shaw",
+    "social": [
+      "https://www.instagram.com/gerry.the.tufter/"
+    ],
+    "website": "https://www.etsy.com/uk/shop/OneOffRugs"
+  },
+  {
+    "id": "artist-highly-woven",
+    "type": "finding",
+    "title": "Highly Woven: tufted rugs and textile art, New York",
+    "creator": "Highly Woven",
+    "place": "New York, United States",
+    "region": "United States",
+    "description": "Tufted rugs and textile art, New York. Listed at the author's choice: the author, who follows the account on Instagram, approved it as making tufted work and gave its location (8 Nov 2026).\nCaveat: Web searches the same day did not confirm the tufting: Two searches found nothing on this account.",
+    "sourceUrl": "https://www.instagram.com/highlywoven/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "artist",
+      "directory",
+      "from the author's follows",
+      "approved by the author"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T13:42:58.015Z",
+    "directory": "artist",
+    "listing": "Tufted rugs and textile art, New York",
+    "listingName": "Highly Woven",
+    "social": [
+      "https://www.instagram.com/highlywoven/",
+      "https://www.tiktok.com/@highlywoven"
+    ]
+  },
+  {
+    "id": "co-jiexin-carpet",
+    "type": "company",
+    "title": "Jiexin Carpet: custom tufted and CNC rugs, Foshan",
+    "creator": "Jiexin Carpet",
+    "place": "Foshan, China",
+    "region": "China",
+    "description": "Custom tufted and CNC rugs, Foshan. Listed at the author's choice: the author, who follows the account on Instagram, approved it as making tufted work and gave its location (8 Nov 2026).\nCaveat: Web searches the same day did not confirm the tufting: No search results for this company.",
+    "sourceUrl": "https://www.instagram.com/jiexincarpet/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "directory",
+      "from the author's follows",
+      "approved by the author"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T13:42:58.015Z",
+    "directory": "commercial",
+    "listing": "Custom tufted and CNC rugs, Foshan",
+    "listingName": "Jiexin Carpet",
+    "social": [
+      "https://www.instagram.com/jiexincarpet/",
+      "https://www.facebook.com/1115330464989771"
+    ]
+  },
+  {
+    "id": "co-lab-rugs",
+    "type": "company",
+    "title": "Lab Rugs: hand-tufted and CNC rugs, Portugal",
+    "creator": "Lab Rugs",
+    "place": "Portugal",
+    "region": "Portugal",
+    "description": "Hand-tufted and CNC rugs, Portugal. Listed at the author's choice: the author, who follows the account on Instagram, approved it as making tufted work and gave its location (8 Nov 2026).\nCaveat: Web searches the same day did not confirm the tufting: No result found for lab-rugs.com (results were for The Rug Company's LAB and LAB120 Tufting, both unrelated).",
+    "sourceUrl": "https://www.instagram.com/labrugsfactory/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "directory",
+      "from the author's follows",
+      "approved by the author"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T13:42:58.015Z",
+    "directory": "commercial",
+    "listing": "Hand-tufted and CNC rugs, Portugal",
+    "listingName": "Lab Rugs",
+    "social": [
+      "https://www.instagram.com/labrugsfactory/"
+    ],
+    "website": "http://www.lab-rugs.com/"
+  },
+  {
+    "id": "artist-lala-touffe",
+    "type": "finding",
+    "title": "lala.touffe: tufted rugs and textile art, Paris",
+    "creator": "lala.touffe",
+    "place": "Paris, France",
+    "region": "France",
+    "description": "Tufted rugs and textile art, Paris. Listed at the author's choice: the author, who follows the account on Instagram, approved it as making tufted work and gave its location (8 Nov 2026).\nCaveat: Web searches the same day did not confirm the tufting: searched; no result mentions this handle or name for the exact handle; closest hit is Paraguayan studio 'Oh! Lala Tufting' (La Nación, 2024), not confirmed as this account; bio link is linktr.ee.",
+    "sourceUrl": "https://www.instagram.com/lala.touffe/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "artist",
+      "directory",
+      "from the author's follows",
+      "approved by the author"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T13:42:58.015Z",
+    "directory": "artist",
+    "listing": "Tufted rugs and textile art, Paris",
+    "listingName": "lala.touffe",
+    "social": [
+      "https://www.instagram.com/lala.touffe/"
+    ]
+  },
+  {
+    "id": "artist-lets-punch-design",
+    "type": "finding",
+    "title": "Lets Punch Design (Özge): tufted rugs and textile art, Turkey",
+    "creator": "Lets Punch Design (Özge)",
+    "place": "Turkey",
+    "region": "Turkey",
+    "description": "Tufted rugs and textile art, Turkey. Listed at the author's choice: the author, who follows the account on Instagram, approved it as making tufted work and gave its location (8 Nov 2026).\nCaveat: Web searches the same day did not confirm the tufting: searched; no result mentions this handle or name; name suggests punch needle.",
+    "sourceUrl": "https://www.instagram.com/lets.punch/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "artist",
+      "directory",
+      "from the author's follows",
+      "approved by the author"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T13:42:58.015Z",
+    "directory": "artist",
+    "listing": "Tufted rugs and textile art, Turkey",
+    "listingName": "Lets Punch Design (Özge)",
+    "social": [
+      "https://www.instagram.com/lets.punch/"
+    ]
+  },
+  {
+    "id": "co-l-m-custom-carpets",
+    "type": "company",
+    "title": "L & M Custom Carpets: tufted rugs, Woodcliff Lake",
+    "creator": "L & M Custom Carpets",
+    "place": "Woodcliff Lake, United States",
+    "region": "United States",
+    "description": "Tufted rugs, Woodcliff Lake. Listed at the author's choice: the author, who follows the account on Instagram, approved it as making tufted work and gave its location (8 Nov 2026).\nCaveat: Web searches the same day did not confirm the tufting: Trade custom-rug importer (India and Nepal) founded 2012 by Gary Shafran; no source names tufting.\nSources: https://www.houzz.com/professionals/carpet-dealers/landm-custom-carpet-and-rugs-llc-pfvwus-pf~1477568919",
+    "sourceUrl": "https://www.instagram.com/lmcustomcarpets/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "directory",
+      "from the author's follows",
+      "approved by the author"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T13:42:58.015Z",
+    "directory": "commercial",
+    "listing": "Tufted rugs, Woodcliff Lake",
+    "listingName": "L & M Custom Carpets",
+    "social": [
+      "https://www.instagram.com/lmcustomcarpets/"
+    ],
+    "website": "http://lmcustomcarpets.com/"
+  },
+  {
+    "id": "co-loominology",
+    "type": "company",
+    "title": "Loominology: hand-tufted custom rugs, Istanbul",
+    "creator": "Loominology",
+    "place": "Istanbul, Turkey",
+    "region": "Turkey",
+    "description": "Hand-tufted custom rugs, Istanbul. Listed at the author's choice: the author, who follows the account on Instagram, approved it as making tufted work and gave its location (8 Nov 2026).\nCaveat: Web searches the same day did not confirm the tufting: Custom rug firm; one product named 'Tuft' but construction not stated; knotting quote may belong to a related firm (Hadeks Hali).\nSources: https://materialbank.eu/en/loominology-rugs-weave-002-a-tuft-1977612 · https://mom.maison-objet.com/en/brand/21316/loominology-rugs",
+    "sourceUrl": "https://www.instagram.com/loominology/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "directory",
+      "from the author's follows",
+      "approved by the author"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T13:42:58.015Z",
+    "directory": "commercial",
+    "listing": "Hand-tufted custom rugs, Istanbul",
+    "listingName": "Loominology",
+    "social": [
+      "https://www.instagram.com/loominology/"
+    ],
+    "website": "http://www.loominology.com/"
+  },
+  {
+    "id": "artist-atelier-mathoumatou",
+    "type": "finding",
+    "title": "Atelier Mathoumatou: tufted rugs and textile art, France",
+    "creator": "Atelier Mathoumatou",
+    "place": "France",
+    "region": "France",
+    "description": "Tufted rugs and textile art, France. Listed at the author's choice: the author, who follows the account on Instagram, approved it as making tufted work and gave its location (8 Nov 2026).\nCaveat: Web searches the same day did not confirm the tufting: searched; no result mentions this handle or name (two searches).",
+    "sourceUrl": "https://www.instagram.com/mathoumatou/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "artist",
+      "directory",
+      "from the author's follows",
+      "approved by the author"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T13:42:58.015Z",
+    "directory": "artist",
+    "listing": "Tufted rugs and textile art, France",
+    "listingName": "Atelier Mathoumatou",
+    "social": [
+      "https://www.instagram.com/mathoumatou/"
+    ],
+    "website": "https://mathoumatou.bigcartel.com/"
+  },
+  {
+    "id": "artist-tufting-atolyesi",
+    "type": "finding",
+    "title": "Tufting atölyesi (modern.savan): tufted rugs and textile art, İzmir",
+    "creator": "Tufting atölyesi (modern.savan)",
+    "place": "İzmir, Turkey",
+    "region": "Turkey",
+    "description": "Tufted rugs and textile art, İzmir. Listed at the author's choice: the author, who follows the account on Instagram, approved it as making tufted work and gave its location (8 Nov 2026).\nCaveat: Web searches the same day did not confirm the tufting: searched; no result mentions this handle or name (two searches); account name means 'tufting workshop' in Turkish but no source confirms.",
+    "sourceUrl": "https://www.instagram.com/modern.savan/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "artist",
+      "workshop",
+      "directory",
+      "from the author's follows",
+      "approved by the author"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T13:42:58.015Z",
+    "directory": [
+      "artist",
+      "workshop"
+    ],
+    "listing": "Tufted rugs and textile art, İzmir",
+    "listingName": "Tufting atölyesi (modern.savan)",
+    "social": [
+      "https://www.instagram.com/modern.savan/"
+    ],
+    "website": "https://momiyadreams.com"
+  },
+  {
+    "id": "artist-mooody",
+    "type": "finding",
+    "title": "Mooody: tufted rugs and textile art, Bariloche",
+    "creator": "Mooody",
+    "place": "Bariloche, Argentina",
+    "region": "Argentina",
+    "description": "Tufted rugs and textile art, Bariloche. Listed at the author's choice: the author, who follows the account on Instagram, approved it as making tufted work and gave its location (8 Nov 2026).\nCaveat: Web searches the same day did not confirm the tufting: Two searches found nothing on this brand (only Moooi and Object Carpet).",
+    "sourceUrl": "https://www.instagram.com/mooody.rugs/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "artist",
+      "directory",
+      "from the author's follows",
+      "approved by the author"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T13:42:58.015Z",
+    "directory": "artist",
+    "listing": "Tufted rugs and textile art, Bariloche",
+    "listingName": "Mooody",
+    "social": [
+      "https://www.instagram.com/mooody.rugs/"
+    ],
+    "website": "http://www.mooody.com.ar/"
+  },
+  {
+    "id": "artist-mandy-calderon",
+    "type": "finding",
+    "title": "Mandy Calderón: tufted rugs and textile art, Salt Lake City",
+    "creator": "Mandy Calderón",
+    "place": "Salt Lake City, United States",
+    "region": "United States",
+    "description": "Tufted rugs and textile art, Salt Lake City. Listed at the author's choice: the author, who follows the account on Instagram, approved it as making tufted work and gave its location (8 Nov 2026).\nCaveat: Web searches the same day did not confirm the tufting: searched; no result mentions this handle or name.",
+    "sourceUrl": "https://www.instagram.com/munchnrugz/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "artist",
+      "directory",
+      "from the author's follows",
+      "approved by the author"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T13:42:58.015Z",
+    "directory": "artist",
+    "listing": "Tufted rugs and textile art, Salt Lake City",
+    "listingName": "Mandy Calderón",
+    "social": [
+      "https://www.instagram.com/munchnrugz/"
+    ]
+  },
+  {
+    "id": "artist-not-another-classic-rug",
+    "type": "finding",
+    "title": "Not Another Classic Rug: tufted rugs and textile art, Barcelona",
+    "creator": "Not Another Classic Rug",
+    "place": "Barcelona, Spain",
+    "region": "Spain",
+    "description": "Tufted rugs and textile art, Barcelona. Listed at the author's choice: the author, who follows the account on Instagram, approved it as making tufted work and gave its location (8 Nov 2026).\nCaveat: Web searches the same day did not confirm the tufting: searched; no result mentions this handle or name.",
+    "sourceUrl": "https://www.instagram.com/notanotherclassicrug/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "artist",
+      "directory",
+      "from the author's follows",
+      "approved by the author"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T13:42:58.015Z",
+    "directory": "artist",
+    "listing": "Tufted rugs and textile art, Barcelona",
+    "listingName": "Not Another Classic Rug",
+    "social": [
+      "https://www.instagram.com/notanotherclassicrug/"
+    ]
+  },
+  {
+    "id": "artist-opal-rugs",
+    "type": "finding",
+    "title": "Opal Rugs: tufted rugs and textile art, New Mexico",
+    "creator": "Opal Rugs",
+    "place": "New Mexico, United States",
+    "region": "United States",
+    "description": "Tufted rugs and textile art, New Mexico. Listed at the author's choice: the author, who follows the account on Instagram, approved it as making tufted work and gave its location (8 Nov 2026).\nCaveat: Web searches the same day did not confirm the tufting: Handmade rugs by a New Mexico artist; no source names the technique.\nSources: https://glasstire.com/2026/03/10/queering-classifications-talking-with-alyse-ronayne-about-art-design-abstraction/ · https://kottke.org/24/03/0044237-in-case-anyone-is-ever",
+    "sourceUrl": "https://www.instagram.com/opalrugs/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "artist",
+      "directory",
+      "from the author's follows",
+      "approved by the author"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T13:42:58.015Z",
+    "directory": "artist",
+    "listing": "Tufted rugs and textile art, New Mexico",
+    "listingName": "Opal Rugs",
+    "social": [
+      "https://www.instagram.com/opalrugs/"
+    ],
+    "website": "https://opalrugs.com"
+  },
+  {
+    "id": "co-opuss-hali",
+    "type": "company",
+    "title": "Opuss Hali: tufted rugs, Paris",
+    "creator": "Opuss Hali",
+    "place": "Paris, France",
+    "region": "France",
+    "description": "Tufted rugs, Paris. Listed at the author's choice: the author, who follows the account on Instagram, approved it as making tufted work and gave its location (8 Nov 2026).\nCaveat: Web searches the same day did not confirm the tufting: No search results for this account.",
+    "sourceUrl": "https://www.instagram.com/opusshali/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "directory",
+      "from the author's follows",
+      "approved by the author"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T13:42:58.015Z",
+    "directory": "commercial",
+    "listing": "Tufted rugs, Paris",
+    "listingName": "Opuss Hali",
+    "social": [
+      "https://www.instagram.com/opusshali/"
+    ]
+  },
+  {
+    "id": "artist-rugsoda",
+    "type": "finding",
+    "title": "Rugsoda: tufted rugs and textile art, United States",
+    "creator": "Rugsoda",
+    "place": "United States",
+    "region": "United States",
+    "description": "Tufted rugs and textile art, United States. Listed at the author's choice: the author, who follows the account on Instagram, approved it as making tufted work and gave its location (8 Nov 2026).\nCaveat: Web searches the same day did not confirm the tufting: searched; no result mentions this handle or name.",
+    "sourceUrl": "https://www.instagram.com/rugsoda/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "artist",
+      "directory",
+      "from the author's follows",
+      "approved by the author"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T13:42:58.015Z",
+    "directory": "artist",
+    "listing": "Tufted rugs and textile art, United States",
+    "listingName": "Rugsoda",
+    "social": [
+      "https://www.instagram.com/rugsoda/"
+    ],
+    "website": "http://rugsoda.com/"
+  },
+  {
+    "id": "co-samovar",
+    "type": "company",
+    "title": "Samovar: tufted rugs, Kuwait",
+    "creator": "Samovar",
+    "place": "Kuwait",
+    "region": "Kuwait",
+    "description": "Tufted rugs, Kuwait. Listed at the author's choice: the author, who follows the account on Instagram, approved it as making tufted work and gave its location (8 Nov 2026).\nCaveat: Web searches the same day did not confirm the tufting: Hand-woven and machine-made lines found; no source mentions tufting.\nSources: https://www.downtowndesign.com/news/samovar-carpets-rolls-out-its-finest-handmade",
+    "sourceUrl": "https://www.instagram.com/samovarcarpets/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "directory",
+      "from the author's follows",
+      "approved by the author"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T13:42:58.015Z",
+    "directory": "commercial",
+    "listing": "Tufted rugs, Kuwait",
+    "listingName": "Samovar",
+    "social": [
+      "https://www.instagram.com/samovarcarpets/"
+    ]
+  },
+  {
+    "id": "artist-some-tufthings",
+    "type": "finding",
+    "title": "some tufthings: tufted rugs and textile art, Switzerland",
+    "creator": "some tufthings",
+    "place": "Switzerland",
+    "region": "Switzerland",
+    "description": "Tufted rugs and textile art, Switzerland. Listed at the author's choice: the author, who follows the account on Instagram, approved it as making tufted work and gave its location (8 Nov 2026).\nCaveat: Web searches the same day did not confirm the tufting: searched; no result mentions this handle or name.",
+    "sourceUrl": "https://www.instagram.com/some_tufthings/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "artist",
+      "directory",
+      "from the author's follows",
+      "approved by the author"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T13:42:58.015Z",
+    "directory": "artist",
+    "listing": "Tufted rugs and textile art, Switzerland",
+    "listingName": "some tufthings",
+    "social": [
+      "https://www.instagram.com/some_tufthings/"
+    ]
+  },
+  {
+    "id": "co-soutzoglou-carpets",
+    "type": "company",
+    "title": "Soutzoglou Carpets: tufted rugs, Athens",
+    "creator": "Soutzoglou Carpets",
+    "place": "Athens, Greece",
+    "region": "Greece",
+    "description": "Tufted rugs, Athens. Listed at the author's choice: the author, who follows the account on Instagram, approved it as making tufted work and gave its location (8 Nov 2026).\nCaveat: Web searches the same day did not confirm the tufting: Only product found is hand-knotted; no tufted line found.\nSources: https://www.maisonflaneur.com/products/129050-ta-proikia · https://www.maisonflaneur.com/collections/soutzoglou-carpets?page=2",
+    "sourceUrl": "https://www.instagram.com/soutzoglou_carpets/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "directory",
+      "from the author's follows",
+      "approved by the author"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T13:42:58.015Z",
+    "directory": "commercial",
+    "listing": "Tufted rugs, Athens",
+    "listingName": "Soutzoglou Carpets",
+    "social": [
+      "https://www.instagram.com/soutzoglou_carpets/"
+    ],
+    "website": "https://www.soutzoglou.com/"
+  },
+  {
+    "id": "artist-lisette-van-maurik",
+    "type": "finding",
+    "title": "Lisette van Maurik: tufted rugs and textile art, Netherlands",
+    "creator": "Lisette van Maurik",
+    "place": "Netherlands",
+    "region": "Netherlands",
+    "description": "Tufted rugs and textile art, Netherlands. Listed at the author's choice: the author, who follows the account on Instagram, approved it as making tufted work and gave its location (8 Nov 2026).\nCaveat: Web searches the same day did not confirm the tufting: Two searches found nothing on Steil Studio or her textile work.",
+    "sourceUrl": "https://www.instagram.com/steilstudio/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "artist",
+      "directory",
+      "from the author's follows",
+      "approved by the author"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T13:42:58.015Z",
+    "directory": "artist",
+    "listing": "Tufted rugs and textile art, Netherlands",
+    "listingName": "Lisette van Maurik",
+    "social": [
+      "https://www.instagram.com/steilstudio/"
+    ],
+    "website": "http://www.steil.studio/"
+  },
+  {
+    "id": "co-stitch",
+    "type": "company",
+    "title": "stitch (Aleptex): tufted rugs, Morocco",
+    "creator": "stitch (Aleptex)",
+    "place": "Morocco",
+    "region": "Morocco",
+    "description": "Tufted rugs, Morocco. Listed at the author's choice: the author, who follows the account on Instagram, approved it as making tufted work and gave its location (8 Nov 2026).\nCaveat: Web searches the same day did not confirm the tufting: Two searches found nothing on Aleptex or its stitch line.",
+    "sourceUrl": "https://www.instagram.com/stitch__rugs/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "directory",
+      "from the author's follows",
+      "approved by the author"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T13:42:58.015Z",
+    "directory": "commercial",
+    "listing": "Tufted rugs, Morocco",
+    "listingName": "stitch (Aleptex)",
+    "social": [
+      "https://www.instagram.com/stitch__rugs/"
+    ],
+    "website": "https://www.aleptex.com/pages/stitch"
+  },
+  {
+    "id": "artist-the-rug-dealer",
+    "type": "finding",
+    "title": "The Rug Dealer: tufted rugs and textile art, United States",
+    "creator": "The Rug Dealer",
+    "place": "United States",
+    "region": "United States",
+    "description": "Tufted rugs and textile art, United States. Listed at the author's choice: the author, who follows the account on Instagram, approved it as making tufted work and gave its location (8 Nov 2026).\nCaveat: Web searches the same day did not confirm the tufting: Nothing found for the name; bio link is linktr.ee only.",
+    "sourceUrl": "https://www.instagram.com/therugdealer.co/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "artist",
+      "directory",
+      "from the author's follows",
+      "approved by the author"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T13:42:58.015Z",
+    "directory": "artist",
+    "listing": "Tufted rugs and textile art, United States",
+    "listingName": "The Rug Dealer",
+    "social": [
+      "https://www.instagram.com/therugdealer.co/"
+    ]
+  },
+  {
+    "id": "artist-the-rug-maker-co",
+    "type": "finding",
+    "title": "The Rug Maker Co: tufted rugs and textile art, Colorado",
+    "creator": "The Rug Maker Co",
+    "place": "Colorado, United States",
+    "region": "United States",
+    "description": "Tufted rugs and textile art, Colorado. Listed at the author's choice: the author, who follows the account on Instagram, approved it as making tufted work and gave its location (8 Nov 2026).\nCaveat: Web searches the same day did not confirm the tufting: No search result matched this Etsy shop; only unrelated firms with similar names.",
+    "sourceUrl": "https://www.instagram.com/therugmakerco/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "artist",
+      "directory",
+      "from the author's follows",
+      "approved by the author"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T13:42:58.015Z",
+    "directory": "artist",
+    "listing": "Tufted rugs and textile art, Colorado",
+    "listingName": "The Rug Maker Co",
+    "social": [
+      "https://www.instagram.com/therugmakerco/"
+    ],
+    "website": "https://therugmakerco.etsy.com/"
+  },
+  {
+    "id": "co-the-rugs-story",
+    "type": "company",
+    "title": "The Rugs Story: tufted rugs, New Delhi",
+    "creator": "The Rugs Story",
+    "place": "New Delhi, India",
+    "region": "India",
+    "description": "Tufted rugs, New Delhi. Listed at the author's choice: the author, who follows the account on Instagram, approved it as making tufted work and gave its location (8 Nov 2026).\nCaveat: Web searches the same day did not confirm the tufting: Handmade carpet line (reportedly by Shreedhar Carpets, New Delhi exporter); construction not stated.\nSources: https://www.exporthub.com/therugsstory/profile.html",
+    "sourceUrl": "https://www.instagram.com/therugstory/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "directory",
+      "from the author's follows",
+      "approved by the author"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T13:42:58.015Z",
+    "directory": "commercial",
+    "listing": "Tufted rugs, New Delhi",
+    "listingName": "The Rugs Story",
+    "social": [
+      "https://www.instagram.com/therugstory/"
+    ],
+    "website": "https://www.therugsstory.com"
+  },
+  {
+    "id": "co-tuft-jo",
+    "type": "company",
+    "title": "Tuft.jo: tufting classes, Amman",
+    "creator": "Tuft.jo",
+    "place": "Amman, Jordan",
+    "region": "Jordan",
+    "description": "Tufting classes, Amman. Listed at the author's choice: the author, who follows the account on Instagram, approved it as making tufted work and gave its location (8 Nov 2026).\nCaveat: Web searches the same day did not confirm the tufting: searched; no result mentions this handle or name.",
+    "sourceUrl": "https://www.instagram.com/tuft.jo/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "workshop",
+      "directory",
+      "from the author's follows",
+      "approved by the author"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T13:42:58.015Z",
+    "directory": "workshop",
+    "listing": "Tufting classes, Amman",
+    "listingName": "Tuft.jo",
+    "social": [
+      "https://www.instagram.com/tuft.jo/"
+    ],
+    "website": "https://tuft-jo.com"
+  },
+  {
+    "id": "artist-vernon-st-rugs",
+    "type": "finding",
+    "title": "Vernon St Rugs: tufted rugs and textile art, Los Angeles",
+    "creator": "Vernon St Rugs",
+    "place": "Los Angeles, United States",
+    "region": "United States",
+    "description": "Tufted rugs and textile art, Los Angeles. Listed at the author's choice: the author, who follows the account on Instagram, approved it as making tufted work and gave its location (8 Nov 2026).\nCaveat: Web searches the same day did not confirm the tufting: searched; no result mentions this handle or name; results only unrelated 'Vernon' rug lines.",
+    "sourceUrl": "https://www.instagram.com/vernon.st.rugs/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "artist",
+      "workshop",
+      "directory",
+      "from the author's follows",
+      "approved by the author"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T13:42:58.015Z",
+    "directory": [
+      "artist",
+      "workshop"
+    ],
+    "listing": "Tufted rugs and textile art, Los Angeles",
+    "listingName": "Vernon St Rugs",
+    "social": [
+      "https://www.instagram.com/vernon.st.rugs/"
+    ],
+    "website": "https://vernonstrugs.com"
+  },
+  {
+    "id": "co-yann-carpet",
+    "type": "company",
+    "title": "Yann Carpet (얀카페트): tufted rugs, South Korea",
+    "creator": "Yann Carpet (얀카페트)",
+    "place": "South Korea",
+    "region": "South Korea",
+    "description": "Tufted rugs, South Korea. Listed at the author's choice: the author, who follows the account on Instagram, approved it as making tufted work and gave its location (8 Nov 2026).\nCaveat: Web searches the same day did not confirm the tufting: Korean and English searches found nothing on this maker; bio link is linktr.ee only.",
+    "sourceUrl": "https://www.instagram.com/yanncarpet/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "directory",
+      "from the author's follows",
+      "approved by the author"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T13:42:58.015Z",
+    "directory": "commercial",
+    "listing": "Tufted rugs, South Korea",
+    "listingName": "Yann Carpet (얀카페트)",
+    "social": [
+      "https://www.instagram.com/yanncarpet/"
+    ]
+  },
+  {
+    "id": "co-zenith-rugs",
+    "type": "company",
+    "title": "Zenith Rugs: custom hand-tufted rugs for the hospitality industry, Los Angeles",
+    "creator": "Zenith Rugs",
+    "place": "Los Angeles, United States",
+    "region": "United States",
+    "description": "Custom hand-tufted rugs for the hospitality industry. 'international supplier of hand-tufted, custom, quality rugs for the hospitality industry' and 'produces 100,000 square feet of hand-tufted carpet per month' (fcnews.net, 2014); factory reportedly in southern China.\nCaveat: The only source found is from 2014. Location (Los Angeles) given by the author, who follows the account on Instagram (8 Nov 2026).\nSources: https://www.fcnews.net/2014/06/zenith-raising-the-bar-for-custom-rugs/",
+    "sourceUrl": "https://www.fcnews.net/2014/06/zenith-raising-the-bar-for-custom-rugs/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "directory",
+      "from the author's follows",
+      "approved by the author"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T13:42:58.015Z",
+    "directory": "commercial",
+    "listing": "Custom hand-tufted rugs for the hospitality industry, Los Angeles",
+    "listingName": "Zenith Rugs",
+    "social": [
+      "https://www.instagram.com/zenithrugs/"
+    ],
+    "website": "https://zenithrugs.com/"
+  },
+  {
+    "id": "artist-zoetic-art-studio",
+    "type": "finding",
+    "title": "Zoetic Art Studio: tufted rugs and textile art, United States",
+    "creator": "Zoetic Art Studio",
+    "place": "United States",
+    "region": "United States",
+    "description": "Tufted rugs and textile art, United States. Listed at the author's choice: the author, who follows the account on Instagram, approved it as making tufted work and gave its location (8 Nov 2026).\nCaveat: Web searches the same day did not confirm the tufting: searched; no result mentions this handle or name (two searches); author's list says tufted rugs but no source confirms.",
+    "sourceUrl": "https://www.instagram.com/zoeticartstudio/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "artist",
+      "directory",
+      "from the author's follows",
+      "approved by the author"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T13:42:58.015Z",
+    "directory": "artist",
+    "listing": "Tufted rugs and textile art, United States",
+    "listingName": "Zoetic Art Studio",
+    "social": [
+      "https://www.instagram.com/zoeticartstudio/"
+    ],
+    "website": "https://www.zoeticartstudio.com/"
   }
 ];
