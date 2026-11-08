@@ -18257,7 +18257,10 @@ window.RUG_ITEMS = [
     "reviewedAt": "2026-11-08T00:20:44.622Z",
     "directory": "workshop",
     "listing": "Tufting workshops, Birmingham",
-    "listingName": "The Tufting Spot"
+    "listingName": "The Tufting Spot",
+    "image": "https://assets.classbento.co.uk/images/class/starter-tufting-workshop-birmingham-portrait-big.jpg?v=1793678270",
+    "imageCredit": "classbento.co.uk",
+    "imageSource": "auto"
   },
   {
     "id": "co-touf-touf-cgn",
@@ -18303,7 +18306,11 @@ window.RUG_ITEMS = [
     "reviewedAt": "2026-11-08T00:20:44.622Z",
     "directory": "workshop",
     "listing": "Tufting 101 and other classes, Chippendale, Sydney",
-    "listingName": "Tuft & Craft"
+    "listingName": "Tuft & Craft",
+    "image": "https://assets.classbento.com.au/images/class/tufted-skate-deck-workshop-sydney-600.jpg?v=1793597152",
+    "imageCredit": "classbento.com.au (image from classbento.com.au)",
+    "imagePage": "https://classbento.com.au/c/7hdz",
+    "imageSource": "auto"
   },
   {
     "id": "co-tufter-studio",
