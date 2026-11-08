@@ -21591,7 +21591,10 @@ window.RUG_ITEMS = [
     "social": [
       "https://www.instagram.com/zenithrugs/"
     ],
-    "website": "https://zenithrugs.com/"
+    "website": "https://zenithrugs.com/",
+    "image": "https://www.fcnews.net/wp-content/webpc-passthru.php?src=https://www.fcnews.net/wp-content/uploads/2019/08/people-21.jpg&nocache=1",
+    "imageCredit": "fcnews.net",
+    "imageSource": "auto"
   },
   {
     "id": "artist-zoetic-art-studio",
