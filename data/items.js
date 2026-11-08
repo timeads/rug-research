@@ -20506,14 +20506,15 @@ window.RUG_ITEMS = [
       "found by web search"
     ],
     "status": "unverified",
-    "reviewedAt": "2026-11-08T12:58:27.737Z",
+    "reviewedAt": "2026-11-08T18:24:37.744Z",
     "directory": "artist",
     "listing": "Textile and tufting studio of fibre artist and fashion designer Youkyung Kaycee Woo, Portland, Oregon",
     "listingName": "Mujer Woo",
     "website": "https://www.mujerwoo.com",
     "social": [
       "https://www.instagram.com/mujer_woo/"
-    ]
+    ],
+    "image": "https://static.wixstatic.com/media/e0f42e_e29f129c97ba469ea3d35d3103e4ad05~mv2.jpg/v1/fill/w_2276,h_1624,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/e0f42e_e29f129c97ba469ea3d35d3103e4ad05~mv2.jpg"
   },
   {
     "id": "artist-caroline-achaintre",
@@ -20842,13 +20843,14 @@ window.RUG_ITEMS = [
       "approved by the author"
     ],
     "status": "unverified",
-    "reviewedAt": "2026-11-08T13:42:58.015Z",
+    "reviewedAt": "2026-11-08T18:24:37.744Z",
     "directory": "artist",
     "listing": "Tufted rugs and textile art, Atlanta",
     "listingName": "Cool Ruggings",
     "social": [
       "https://www.instagram.com/coolruggings/"
-    ]
+    ],
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVBwwe8EkkHGZXwdsjkZxVVNJYFtqAd-3QQXJIWRMZrwFgON2gWjNyr_nt&s=10"
   },
   {
     "id": "co-forestcarpet",
@@ -21013,13 +21015,14 @@ window.RUG_ITEMS = [
       "approved by the author"
     ],
     "status": "unverified",
-    "reviewedAt": "2026-11-08T13:42:58.015Z",
+    "reviewedAt": "2026-11-08T18:24:37.744Z",
     "directory": "artist",
     "listing": "Tufted rugs and textile art, Paris",
     "listingName": "lala.touffe",
     "social": [
       "https://www.instagram.com/lala.touffe/"
-    ]
+    ],
+    "image": "https://www.lalatouffe.com/cdn/shop/files/Ledejeunerdanslejardin_2cf6ee36-143a-4f34-9397-7a18e6862c01.jpg?v=1771619691&width=713"
   },
   {
     "id": "artist-lets-punch-design",
@@ -21349,7 +21352,7 @@ window.RUG_ITEMS = [
       "approved by the author"
     ],
     "status": "unverified",
-    "reviewedAt": "2026-11-08T13:42:58.015Z",
+    "reviewedAt": "2026-11-08T18:24:37.744Z",
     "directory": "artist",
     "listing": "Tufted rugs and textile art, United States",
     "listingName": "Rugsoda",
@@ -21357,7 +21360,7 @@ window.RUG_ITEMS = [
       "https://www.instagram.com/rugsoda/"
     ],
     "website": "http://rugsoda.com/",
-    "image": "http://rugsoda.com/cdn/shop/files/SOCKS_PIC.jpg?v=1766387716",
+    "image": "https://rugsoda.com/cdn/shop/files/C14EF18E-A1BD-4F24-88B3-CBF5CA23E544.jpg?v=1733294929&width=960",
     "imageCredit": "rugsoda.com",
     "imagePage": "http://rugsoda.com/",
     "imageSource": "auto",
@@ -21469,14 +21472,15 @@ window.RUG_ITEMS = [
       "approved by the author"
     ],
     "status": "unverified",
-    "reviewedAt": "2026-11-08T13:42:58.015Z",
+    "reviewedAt": "2026-11-08T18:24:37.744Z",
     "directory": "artist",
     "listing": "Tufted rugs and textile art, Netherlands",
     "listingName": "Steil Studio",
     "social": [
       "https://www.instagram.com/steilstudio/"
     ],
-    "website": "http://www.steil.studio/"
+    "website": "http://www.steil.studio/",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3axPfWmnr4CDVVg0iQNbBImjAgGyIE16iyXVY-Ew3RQ3GOOMGT27LW3mc&s=10"
   },
   {
     "id": "co-stitch",
