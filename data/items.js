@@ -19892,7 +19892,12 @@ window.RUG_ITEMS = [
     "website": "https://wellwoven.com",
     "social": [
       "https://www.instagram.com/wellwovenrugs/"
-    ]
+    ],
+    "image": "https://wellwoven.com/collaborations/claire-desjardins/W-CD-02A_Honey-Im-Home_RS01.webp?dpl=dpl_6hXkfwqY7ZgTezRJpgcwCjEPcGwP",
+    "imageCredit": "wellwoven.com",
+    "imagePage": "https://wellwoven.com",
+    "imageSource": "auto",
+    "rights": "not-requested"
   },
   {
     "id": "co-amini",
@@ -20130,7 +20135,12 @@ window.RUG_ITEMS = [
     "website": "https://ruggism.com/",
     "social": [
       "https://www.instagram.com/ruggismofficial/"
-    ]
+    ],
+    "image": "http://ruggism.com/cdn/shop/files/Ruggism_website_1220x628_3994ffb5-91fa-4924-88c5-f55fd713ddc4.png?v=1721488435",
+    "imageCredit": "ruggism.com",
+    "imagePage": "https://ruggism.com/",
+    "imageSource": "auto",
+    "rights": "not-requested"
   },
   {
     "id": "co-hanrad-bespoke-rugs",
@@ -20216,7 +20226,12 @@ window.RUG_ITEMS = [
     "website": "https://www.turnberryrugworks.com/",
     "social": [
       "https://www.instagram.com/turnberryrugworks/"
-    ]
+    ],
+    "image": "https://turnberryrugworks.com/cdn/shop/files/Now_Gallery_London.jpg?v=1782122122&width=900",
+    "imageCredit": "turnberryrugworks.com",
+    "imagePage": "https://www.turnberryrugworks.com/",
+    "imageSource": "auto",
+    "rights": "not-requested"
   },
   {
     "id": "co-cc-tapis",
@@ -20306,7 +20321,12 @@ window.RUG_ITEMS = [
     "listingName": "Tufty & Co (Renee Patterson)",
     "social": [
       "https://www.instagram.com/tuftyco/"
-    ]
+    ],
+    "image": "https://www.thisiscny.com/resizer/v2/67KY7YYR3BDFNPE6FZAK7XX32E.jpg?smart=true&auth=9561b0f52cb51cdbbd04f002efe887f00ffb5f99890428983218cf0706484205&width=1200&height=630",
+    "imageCredit": "thisiscny.com",
+    "imagePage": "https://www.thisiscny.com/living/2025/03/syracuse-teacher-renee-patterson-makes-the-softest-fuzziest-art-youve-ever-seen-video.html",
+    "imageSource": "auto",
+    "rights": "not-requested"
   },
   {
     "id": "co-ugly-rugly",
@@ -20365,7 +20385,12 @@ window.RUG_ITEMS = [
     "website": "https://sammadethat.com",
     "social": [
       "https://www.instagram.com/thesamlao/"
-    ]
+    ],
+    "image": "http://static1.squarespace.com/static/54c5aee8e4b05e6378ceaf8c/t/686c3a605764bc2952020aed/1751923455135/Sam+Lao+%7C%7C+Tufting+Artist+and+Muralist.jpg?format=1500w",
+    "imageCredit": "sammadethat.com",
+    "imagePage": "https://sammadethat.com",
+    "imageSource": "auto",
+    "rights": "not-requested"
   },
   {
     "id": "co-lindstrom-rugs",
@@ -20425,7 +20450,12 @@ window.RUG_ITEMS = [
     "website": "https://foodandrugadministration.com",
     "social": [
       "https://www.instagram.com/food_and_rug_admin/"
-    ]
+    ],
+    "image": "https://superfluousthings.com/cdn/shop/files/ChatGPT_Image_Jun_17_2025_07_09_56_AM.png?v=1750858870&width=2000",
+    "imageCredit": "foodandrugadministration.com",
+    "imagePage": "https://foodandrugadministration.com",
+    "imageSource": "auto",
+    "rights": "not-requested"
   },
   {
     "id": "co-mokette",
@@ -20508,7 +20538,12 @@ window.RUG_ITEMS = [
     "listingName": "Caroline Achaintre",
     "social": [
       "https://www.instagram.com/caroline_achaintre/"
-    ]
+    ],
+    "image": "https://theshowroom.org/media/pages/exhibitions/caroline-achaintre-deedie/dfd66b3738-1695373333/00311-1000x1000-crop-50-50.jpg",
+    "imageCredit": "theshowroom.org",
+    "imagePage": "https://www.theshowroom.org/exhibitions/caroline-achaintre-deedie",
+    "imageSource": "auto",
+    "rights": "not-requested"
   },
   {
     "id": "artist-vanessa-barragao",
@@ -20535,7 +20570,12 @@ window.RUG_ITEMS = [
     "listingName": "Vanessa Barragão",
     "social": [
       "https://www.instagram.com/vanessabarragao_work/"
-    ]
+    ],
+    "image": "http://shop.amirisu.com/cdn/shop/articles/9923LIGHTROOM_7_of_15_3_600x.jpg?v=1716944678",
+    "imageCredit": "shop.amirisu.com",
+    "imagePage": "https://shop.amirisu.com/en/blogs/featured/vanessa-barragaos-upcycled-tapestries-issue-18",
+    "imageSource": "auto",
+    "rights": "not-requested"
   },
   {
     "id": "artist-ina-dyreborg",
@@ -20563,7 +20603,12 @@ window.RUG_ITEMS = [
     "website": "https://www.dyreborgstudio.com",
     "social": [
       "https://www.instagram.com/dyreborgstudio/"
-    ]
+    ],
+    "image": "http://www.dyreborgstudio.com/cdn/shop/files/B3CB28E2-4AEE-4D33-8598-E03D853AC501.jpg?v=1762871847",
+    "imageCredit": "dyreborgstudio.com",
+    "imagePage": "https://www.dyreborgstudio.com",
+    "imageSource": "auto",
+    "rights": "not-requested"
   },
   {
     "id": "artist-sonmun",
@@ -20591,7 +20636,12 @@ window.RUG_ITEMS = [
     "website": "http://www.sonmunstudio.com/",
     "social": [
       "https://www.instagram.com/sonmunstudio/"
-    ]
+    ],
+    "image": "https://images.squarespace-cdn.com/content/v1/62f647a2a339a60f4a04d4ae/cdc48d62-699b-4e58-9052-de5884f83a48/2025-09-27%252011.37.12_VSCO.JPG?format=2500w",
+    "imageCredit": "sonmunstudio.com",
+    "imagePage": "http://www.sonmunstudio.com/",
+    "imageSource": "auto",
+    "rights": "not-requested"
   },
   {
     "id": "co-block-shop-textiles",
@@ -20619,7 +20669,12 @@ window.RUG_ITEMS = [
     "website": "https://www.blockshoptextiles.com",
     "social": [
       "https://www.instagram.com/blockshoptextiles/"
-    ]
+    ],
+    "image": "https://www.blockshoptextiles.com/cdn/shop/files/instagram-image_9899d9b0-fc94-4129-af5a-76dfa89a98e1.jpg?v=1785950084&width=690",
+    "imageCredit": "blockshoptextiles.com",
+    "imagePage": "https://www.blockshoptextiles.com",
+    "imageSource": "auto",
+    "rights": "not-requested"
   },
   {
     "id": "artist-velvet-trippy-club",
@@ -20645,7 +20700,12 @@ window.RUG_ITEMS = [
     "listingName": "Velvet Trippy Club",
     "social": [
       "https://www.instagram.com/velvetrippyclub/"
-    ]
+    ],
+    "image": "https://teletica-static.ray.media/Files/Sizes/2023/6/17/emprendimientos_1119558300_760x520.png",
+    "imageCredit": "teletica.com",
+    "imagePage": "https://www.teletica.com/artesanos-de-la-nada/stickers-ceramica-y-alfombras-creatividad-de-emprendimientos-nacionales-no-tiene-limites_337049",
+    "imageSource": "auto",
+    "rights": "not-requested"
   },
   {
     "id": "co-silver-creek-by-bloomsburg-carpet",
@@ -20754,7 +20814,12 @@ window.RUG_ITEMS = [
     "social": [
       "https://www.instagram.com/chichiparis_/"
     ],
-    "website": "https://chichi-paris.com/"
+    "website": "https://chichi-paris.com/",
+    "image": "http://chichi-paris.com/cdn/shop/collections/tapis_guitarre_01.jpg?v=1750932472",
+    "imageCredit": "chichi-paris.com",
+    "imagePage": "https://chichi-paris.com/collections/tapis-luxe-permanente/Tapis+Tuft%C3%A9",
+    "imageSource": "auto",
+    "rights": "not-requested"
   },
   {
     "id": "artist-cool-ruggings",
@@ -20920,7 +20985,12 @@ window.RUG_ITEMS = [
     "social": [
       "https://www.instagram.com/labrugsfactory/"
     ],
-    "website": "http://www.lab-rugs.com/"
+    "website": "http://www.lab-rugs.com/",
+    "image": "https://lab-rugs.com/wp-content/uploads/2026/03/LAB_RUGS_%C2%A9MVerret_0451-18-1.jpg",
+    "imageCredit": "lab-rugs.com",
+    "imagePage": "https://lab-rugs.com/projects/",
+    "imageSource": "auto",
+    "rights": "not-requested"
   },
   {
     "id": "artist-lala-touffe",
@@ -21002,7 +21072,12 @@ window.RUG_ITEMS = [
     "social": [
       "https://www.instagram.com/lmcustomcarpets/"
     ],
-    "website": "http://lmcustomcarpets.com/"
+    "website": "http://lmcustomcarpets.com/",
+    "image": "https://lmcustomcarpets.com/cdn/shop/files/Left_banner.jpg?v=1789978442&width=1200",
+    "imageCredit": "lmcustomcarpets.com",
+    "imagePage": "http://lmcustomcarpets.com/",
+    "imageSource": "auto",
+    "rights": "not-requested"
   },
   {
     "id": "co-loominology",
@@ -21058,7 +21133,12 @@ window.RUG_ITEMS = [
     "social": [
       "https://www.instagram.com/mathoumatou/"
     ],
-    "website": "https://mathoumatou.bigcartel.com/"
+    "website": "https://mathoumatou.bigcartel.com/",
+    "image": "https://assets.bigcartel.com/account_images/6752761/PROFIL.jpg?auto=format&fit=max&h=1200&w=1200",
+    "imageCredit": "mathoumatou.bigcartel.com",
+    "imagePage": "https://mathoumatou.bigcartel.com/",
+    "imageSource": "auto",
+    "rights": "not-requested"
   },
   {
     "id": "artist-tufting-atolyesi",
@@ -21090,7 +21170,12 @@ window.RUG_ITEMS = [
     "social": [
       "https://www.instagram.com/modern.savan/"
     ],
-    "website": "https://momiyadreams.com"
+    "website": "https://momiyadreams.com",
+    "image": "https://cdn.myikas.com/images/theme-images/07df5a42-cb6d-47a3-9bbb-af0c0f1104b4/image_1080.jpg",
+    "imageCredit": "momiyadreams.com",
+    "imagePage": "https://momiyadreams.com",
+    "imageSource": "auto",
+    "rights": "not-requested"
   },
   {
     "id": "artist-mooody",
@@ -21118,7 +21203,12 @@ window.RUG_ITEMS = [
     "social": [
       "https://www.instagram.com/mooody.rugs/"
     ],
-    "website": "http://www.mooody.com.ar/"
+    "website": "http://www.mooody.com.ar/",
+    "image": "https://d22fxaf9t8d39k.cloudfront.net/ac78d8779de222bb8c0f79b2b1056e819da1039833f8d3eba3e63060874e8b3d47161.jpg",
+    "imageCredit": "mooody.com.ar",
+    "imagePage": "http://www.mooody.com.ar/",
+    "imageSource": "auto",
+    "rights": "not-requested"
   },
   {
     "id": "artist-mandy-calderon",
@@ -21200,7 +21290,12 @@ window.RUG_ITEMS = [
     "social": [
       "https://www.instagram.com/opalrugs/"
     ],
-    "website": "https://opalrugs.com"
+    "website": "https://opalrugs.com",
+    "image": "https://images.squarespace-cdn.com/content/v1/61d377359d824a448c7bf354/443e75fb-a1cd-4d0b-a2f1-f1d04afe8093/678C0915-E4E2-423F-AD46-3E9E3FCA264C+%281%29.jpg?format=2500w",
+    "imageCredit": "opalrugs.com",
+    "imagePage": "https://opalrugs.com",
+    "imageSource": "auto",
+    "rights": "not-requested"
   },
   {
     "id": "co-opuss-hali",
@@ -21255,7 +21350,12 @@ window.RUG_ITEMS = [
     "social": [
       "https://www.instagram.com/rugsoda/"
     ],
-    "website": "http://rugsoda.com/"
+    "website": "http://rugsoda.com/",
+    "image": "http://rugsoda.com/cdn/shop/files/SOCKS_PIC.jpg?v=1766387716",
+    "imageCredit": "rugsoda.com",
+    "imagePage": "http://rugsoda.com/",
+    "imageSource": "auto",
+    "rights": "not-requested"
   },
   {
     "id": "co-samovar",
@@ -21337,7 +21437,12 @@ window.RUG_ITEMS = [
     "social": [
       "https://www.instagram.com/soutzoglou_carpets/"
     ],
-    "website": "https://www.soutzoglou.com/"
+    "website": "https://www.soutzoglou.com/",
+    "image": "https://www.soutzoglou.com/wp-content/uploads/2026/10/IMA4947-560x770.jpg",
+    "imageCredit": "soutzoglou.com",
+    "imagePage": "https://www.soutzoglou.com/product-category/antiques/",
+    "imageSource": "auto",
+    "rights": "not-requested"
   },
   {
     "id": "artist-lisette-van-maurik",
@@ -21393,7 +21498,12 @@ window.RUG_ITEMS = [
     "social": [
       "https://www.instagram.com/stitch__rugs/"
     ],
-    "website": "https://www.aleptex.com/pages/stitch"
+    "website": "https://www.aleptex.com/pages/stitch",
+    "image": "http://www.aleptex.com/cdn/shop/files/isla_500x500.67154425_ihqlc06u.jpg?v=1745236592",
+    "imageCredit": "aleptex.com",
+    "imagePage": "https://www.aleptex.com/products/custom-rug",
+    "imageSource": "auto",
+    "rights": "not-requested"
   },
   {
     "id": "artist-the-rug-dealer",
@@ -21476,7 +21586,12 @@ window.RUG_ITEMS = [
     "social": [
       "https://www.instagram.com/therugstory/"
     ],
-    "website": "https://www.therugsstory.com"
+    "website": "https://www.therugsstory.com",
+    "image": "http://www.therugsstory.com/cdn/shop/collections/traditional-designs-5304307.png?v=1786964235",
+    "imageCredit": "therugsstory.com",
+    "imagePage": "https://www.therugsstory.com/collections/traditional",
+    "imageSource": "auto",
+    "rights": "not-requested"
   },
   {
     "id": "co-tuft-jo",
@@ -21504,7 +21619,12 @@ window.RUG_ITEMS = [
     "social": [
       "https://www.instagram.com/tuft.jo/"
     ],
-    "website": "https://tuft-jo.com"
+    "website": "https://tuft-jo.com",
+    "image": "https://tuft-jo.com/cdn/shop/files/Screenshot_2026-10-18_at_12.45.07_PM.png?v=1792316732&width=1200",
+    "imageCredit": "tuft-jo.com",
+    "imagePage": "https://tuft-jo.com",
+    "imageSource": "auto",
+    "rights": "not-requested"
   },
   {
     "id": "artist-vernon-st-rugs",
@@ -21536,7 +21656,12 @@ window.RUG_ITEMS = [
     "social": [
       "https://www.instagram.com/vernon.st.rugs/"
     ],
-    "website": "https://vernonstrugs.com"
+    "website": "https://vernonstrugs.com",
+    "image": "http://vernonstrugs.com/cdn/shop/files/sketch1635801838582_1200x1200.png?v=1635801877",
+    "imageCredit": "vernonstrugs.com",
+    "imagePage": "https://vernonstrugs.com",
+    "imageSource": "auto",
+    "rights": "not-requested"
   },
   {
     "id": "co-yann-carpet",
@@ -21622,6 +21747,11 @@ window.RUG_ITEMS = [
     "social": [
       "https://www.instagram.com/zoeticartstudio/"
     ],
-    "website": "https://www.zoeticartstudio.com/"
+    "website": "https://www.zoeticartstudio.com/",
+    "image": "http://static1.squarespace.com/static/67ba4f44fa5baf5e493b989c/67e56f203ea9562dbe73a5b8/67e56f3eb9673100d709c9b1/1787966628424/IMG_1157.jpeg?format=1500w",
+    "imageCredit": "zoeticartstudio.com",
+    "imagePage": "https://www.zoeticartstudio.com/imported-products-1/p/custom-tufted-acrylic-rug-or-wall-hanging-25-x-20",
+    "imageSource": "auto",
+    "rights": "not-requested"
   }
 ];
