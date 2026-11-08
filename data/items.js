@@ -17817,7 +17817,10 @@ window.RUG_ITEMS = [
     "reviewedAt": "2026-11-08T00:20:44.622Z",
     "directory": "workshop",
     "listing": "Rug tufting workshops, Munich",
-    "listingName": "Aditas Atelier"
+    "listingName": "Aditas Atelier",
+    "image": "https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/X00JsIjRZiVLJcLziWq3_whatsapp-image-2025-11-12-at-114946.jpeg?width=1200&height=900&mode=crop",
+    "imageCredit": "rausgegangen.de",
+    "imageSource": "auto"
   },
   {
     "id": "co-art-moment-arttuft",
@@ -17841,7 +17844,10 @@ window.RUG_ITEMS = [
     "directory": "workshop",
     "listing": "Custom rug tufting workshops, Prague",
     "listingName": "Art Moment (ArtTuft)",
-    "website": "https://www.artmoment.cz/en/arttuft/"
+    "website": "https://www.artmoment.cz/en/arttuft/",
+    "image": "https://cdn.myshoptet.com/usr/www.artmoment.cz/user/shop/big/958-1_za--z--itky.jpg?ff=1&x=1024&y=768&q=85&ts=6a350dfb&sg=161563f2",
+    "imageCredit": "artmoment.cz",
+    "imageSource": "auto"
   },
   {
     "id": "co-craft-alliance",
@@ -17940,7 +17946,10 @@ window.RUG_ITEMS = [
     "reviewedAt": "2026-11-08T00:20:44.622Z",
     "directory": "workshop",
     "listing": "Rug tufting days at the tapestry studio, Edinburgh",
-    "listingName": "Dovecot Studios"
+    "listingName": "Dovecot Studios",
+    "image": "https://dovecotstudios.com/i/large/6408adae660e0-lead-image.jpg",
+    "imageCredit": "dovecotstudios.com",
+    "imageSource": "auto"
   },
   {
     "id": "co-dynamo-zurich",
@@ -17987,7 +17996,10 @@ window.RUG_ITEMS = [
     "reviewedAt": "2026-11-08T00:20:44.622Z",
     "directory": "workshop",
     "listing": "Tufting workshops, Kraków",
-    "listingName": "Enjoy Studio"
+    "listingName": "Enjoy Studio",
+    "image": "https://radiokrakow.pl/media/data/3676730/07d1e93c689c459119d279c2c0a05acbbb5060-edytujnet-2.jpg",
+    "imageCredit": "radiokrakow.pl",
+    "imageSource": "auto"
   },
   {
     "id": "co-fluus-fraanje",
@@ -18010,7 +18022,10 @@ window.RUG_ITEMS = [
     "reviewedAt": "2026-11-08T00:20:44.622Z",
     "directory": "workshop",
     "listing": "Tufting studio and workshops, Hamburg",
-    "listingName": "flüüs&fraanje"
+    "listingName": "flüüs&fraanje",
+    "image": "https://imageflow.rausgegangen.de/url/https%3A//s3.eu-central-1.amazonaws.com/rausgegangen/VA0P5qOTYWilzZdVhxuk_202210antoniacg36.jpg?width=1200&height=900&mode=crop",
+    "imageCredit": "rausgegangen.de",
+    "imageSource": "auto"
   },
   {
     "id": "co-fulham-textile-studio",
@@ -18059,7 +18074,11 @@ window.RUG_ITEMS = [
     "listingName": "Habibi Bazaar",
     "social": [
       "https://www.instagram.com/habibibazaar/"
-    ]
+    ],
+    "image": "https://img.ctykit.com/cdn/tx-sawyer-yards/images/tr:w-900/user1706058654.jpg",
+    "imageCredit": "sawyeryards.com (image from sawyeryards.com)",
+    "imagePage": "https://sawyeryards.com/tenant/habibi-bazaar",
+    "imageSource": "auto"
   },
   {
     "id": "co-house-of-hobby",
@@ -18105,7 +18124,10 @@ window.RUG_ITEMS = [
     "reviewedAt": "2026-11-08T00:20:44.622Z",
     "directory": "workshop",
     "listing": "Beginner rug tufting workshops, Bermondsey, London",
-    "listingName": "OMO DIY"
+    "listingName": "OMO DIY",
+    "image": "https://res.cloudinary.com/obby/image/upload/w_500,h_300,c_fill,fl_lossy,q_auto,f_auto/v1673297409/l8pfyfi9jslmd3lkkszq.jpg",
+    "imageCredit": "obby.co.uk",
+    "imageSource": "auto"
   },
   {
     "id": "co-polisu-art-studio",
@@ -18128,7 +18150,10 @@ window.RUG_ITEMS = [
     "reviewedAt": "2026-11-08T00:20:44.622Z",
     "directory": "workshop",
     "listing": "Rug tufting classes, Adelaide",
-    "listingName": "Polisu Art Studio"
+    "listingName": "Polisu Art Studio",
+    "image": "https://assets.classbento.com.au/images/class/tufting-class-make-a-40x40cm-rug-adelaide-600.jpg?v=1793541437",
+    "imageCredit": "classbento.com.au",
+    "imageSource": "auto"
   },
   {
     "id": "co-soft-spot-studio",
@@ -18151,7 +18176,11 @@ window.RUG_ITEMS = [
     "reviewedAt": "2026-11-08T00:20:44.622Z",
     "directory": "workshop",
     "listing": "Tufting workshops, Manchester and Salford",
-    "listingName": "Soft Spot Studio (Alena Ruth)"
+    "listingName": "Soft Spot Studio (Alena Ruth)",
+    "image": "https://images.gofundme.com/DjkB8GMq1frTRmmza-J9y_XEwXc=/1200x900/https://d2g8igdw686xgo.cloudfront.net/108907543_1791745590760318_r.jpg",
+    "imageCredit": "gofundme.com (image from gofundme.com)",
+    "imagePage": "https://www.gofundme.com/f/help-to-build-soft-spot-studio",
+    "imageSource": "auto"
   },
   {
     "id": "co-studio-knot",
@@ -18174,7 +18203,11 @@ window.RUG_ITEMS = [
     "reviewedAt": "2026-11-08T00:20:44.622Z",
     "directory": "workshop",
     "listing": "Design-led tufting workshops, Stuttgart",
-    "listingName": "studio knot"
+    "listingName": "studio knot",
+    "image": "https://media.gokonfetti.com/152576/1200x0/women-tufting-canvas-outdoors-45kkqnqn.jpg",
+    "imageCredit": "gokonfetti.com (image from gokonfetti.com)",
+    "imagePage": "https://gokonfetti.com/en-us/e/tufting-kurs-team-event-stuttgart-w0p455/",
+    "imageSource": "auto"
   },
   {
     "id": "co-the-makery-berlin",
@@ -18198,7 +18231,10 @@ window.RUG_ITEMS = [
     "directory": "workshop",
     "listing": "Tufting classes, from small pieces to two-day rugs, Berlin",
     "listingName": "The Makery",
-    "website": "https://themakery.de/tufting_workshop_create_a_fluffy_artwork/Berlin"
+    "website": "https://themakery.de/tufting_workshop_create_a_fluffy_artwork/Berlin",
+    "image": "https://admin.themakery.de/files/provider/773/30x40tufting4__thumb_1DXGvHM.jpg",
+    "imageCredit": "themakery.de",
+    "imageSource": "auto"
   },
   {
     "id": "co-the-tufting-spot-birmingham",
@@ -18313,7 +18349,11 @@ window.RUG_ITEMS = [
     "reviewedAt": "2026-11-08T00:20:44.622Z",
     "directory": "workshop",
     "listing": "Mini to maxi rug workshops at Hazel & Beck, Hamburg",
-    "listingName": "Tufting Hamburg"
+    "listingName": "Tufting Hamburg",
+    "image": "https://media.gokonfetti.com/148009/1200x0/punched-bird-artwork-with-tools-25k4kpp0.jpg",
+    "imageCredit": "gokonfetti.com (image from gokonfetti.com)",
+    "imagePage": "https://gokonfetti.com/en-us/e/mini-teppich-tuften-in-hamburg-25-25-cm-zvp7og/",
+    "imageSource": "auto"
   },
   {
     "id": "co-tufting-studio-crea",
@@ -18336,7 +18376,10 @@ window.RUG_ITEMS = [
     "reviewedAt": "2026-11-08T00:20:44.622Z",
     "directory": "workshop",
     "listing": "Rug tufting near Shimogamo Shrine, Kyoto",
-    "listingName": "tufting studio CREA"
+    "listingName": "tufting studio CREA",
+    "image": "https://cdn.jalan.jp/jalan/img/9/spot/0219/KL/guide000000219531_27.jpg",
+    "imageCredit": "jalan.net",
+    "imageSource": "auto"
   },
   {
     "id": "co-tufty5studio",
@@ -18360,7 +18403,11 @@ window.RUG_ITEMS = [
     "directory": "workshop",
     "listing": "Tufting workshops in the Sofia Green Gallery, Sofia",
     "listingName": "Tufty5studio",
-    "website": "https://tufty5.tilda.ws/en"
+    "website": "https://tufty5.tilda.ws/en",
+    "image": "https://a0.muscache.com/im/pictures/Mt/MtTemplate-6549219/original/79a6dc3e-646e-470c-a6f5-63c1ef8bb1ad.jpeg?im_w=1200",
+    "imageCredit": "airbnb.com (image from airbnb.com)",
+    "imagePage": "https://www.airbnb.com/experiences/6549219",
+    "imageSource": "auto"
   },
   {
     "id": "co-estudio-tomm",
