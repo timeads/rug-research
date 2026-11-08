@@ -17515,5 +17515,235 @@ window.RUG_ITEMS = [
     "imageCredit": "1stdibs.com (image from 1stdibs.com)",
     "imagePage": "https://www.1stdibs.com/furniture/rugs-carpets/north-south-american/modern-bauhaus-inspired-rug-geometric-design-pattern-name-dessau-192501/id-f_44739272",
     "imageSource": "auto"
+  },
+  {
+    "id": "co-ferreira-de-sa",
+    "type": "company",
+    "title": "Ferreira de Sá: bespoke hand-tufted rugs since 1946, Espinho",
+    "creator": "Ferreira de Sá",
+    "region": "Portugal",
+    "description": "Tufting: Hand-tufted (main technique).\nBespoke rug maker since 1946.\nExhibited at ICFF 2026, booth 235 (from the author's list of tufted-rug exhibitors at ICFF, NeoCon and COVER Connect, 8 Nov 2026).\nSource: https://www.indesignlive.com/singapore/happenings/ferreira-de-sa-makes-hand-tufted-tribute-year-pig",
+    "sourceUrl": "https://www.indesignlive.com/singapore/happenings/ferreira-de-sa-makes-hand-tufted-tribute-year-pig",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "trade show",
+      "directory",
+      "from the author's list"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T00:08:12.920Z",
+    "directory": "commercial",
+    "listing": "Bespoke hand-tufted rugs since 1946, Espinho",
+    "listingName": "Ferreira de Sá"
+  },
+  {
+    "id": "co-apadana",
+    "type": "company",
+    "title": "Apadana: hand-tufted and hand-knotted custom rugs",
+    "creator": "Apadana",
+    "region": "United States",
+    "description": "Tufting: Hand-tufted (made-to-order line, made in N. India).\nAlso: Hand-knotted.\nExhibited at ICFF 2026, booth 1341 (from the author's list of tufted-rug exhibitors at ICFF, NeoCon and COVER Connect, 8 Nov 2026).\nSource: https://apadanarugsandcarpets.com/products/modern-free-style-5-wool-custom-rug-1",
+    "sourceUrl": "https://apadanarugsandcarpets.com/products/modern-free-style-5-wool-custom-rug-1",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "trade show",
+      "directory",
+      "from the author's list"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T00:08:12.920Z",
+    "directory": "commercial",
+    "listing": "Hand-tufted and hand-knotted custom rugs",
+    "listingName": "Apadana"
+  },
+  {
+    "id": "co-marc-phillips",
+    "type": "company",
+    "title": "Marc Phillips: hand-tufted, hand-knotted and flatweave rugs",
+    "creator": "Marc Phillips",
+    "region": "United States",
+    "description": "Tufting: Hand-tufted category.\nAlso: Flatweave; hand-knotted; antiques.\nExhibited at ICFF 2026, booth 723 (from the author's list of tufted-rug exhibitors at ICFF, NeoCon and COVER Connect, 8 Nov 2026).\nSource: https://marcphillipsrugs.com/brand",
+    "sourceUrl": "https://marcphillipsrugs.com/brand",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "trade show",
+      "directory",
+      "from the author's list"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T00:08:12.920Z",
+    "directory": "commercial",
+    "listing": "Hand-tufted, hand-knotted and flatweave rugs",
+    "listingName": "Marc Phillips"
+  },
+  {
+    "id": "co-warp-and-weft",
+    "type": "company",
+    "title": "Warp & Weft: customisable hand-tufted and hand-knotted rugs, New York",
+    "creator": "Warp & Weft",
+    "region": "United States",
+    "description": "Tufting: Customizable hand-tufted collections.\nAlso: Hand-knotted.\nNYC D&D Building showroom.\nExhibited at ICFF 2026 (from the author's list of tufted-rug exhibitors at ICFF, NeoCon and COVER Connect, 8 Nov 2026).\nSource: https://floortrendsmag.com/articles/92297-warp-weft-adds-geometriques-to-its-modern-collection-of-rugs",
+    "sourceUrl": "https://floortrendsmag.com/articles/92297-warp-weft-adds-geometriques-to-its-modern-collection-of-rugs",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "trade show",
+      "directory",
+      "from the author's list"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T00:08:12.920Z",
+    "directory": "commercial",
+    "listing": "Customisable hand-tufted and hand-knotted rugs, New York",
+    "listingName": "Warp & Weft"
+  },
+  {
+    "id": "co-hatsu",
+    "type": "company",
+    "title": "Hatsu: hand-tufted and hand-knotted rugs from a design studio, Mumbai",
+    "creator": "Hatsu",
+    "region": "India",
+    "description": "Tufting: Hand-tufted rugs.\nAlso: Hand-knotted; also lighting and furniture.\nMumbai design studio.\nExhibited at ICFF 2026, booth 917 (from the author's list of tufted-rug exhibitors at ICFF, NeoCon and COVER Connect, 8 Nov 2026).\nSource: https://www.1stdibs.com/furniture/rugs-carpets/indian-rugs/hand-tufted-picknick-rug-hatsu/id-f_32624222",
+    "sourceUrl": "https://www.1stdibs.com/furniture/rugs-carpets/indian-rugs/hand-tufted-picknick-rug-hatsu/id-f_32624222",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "trade show",
+      "directory",
+      "from the author's list"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T00:08:12.920Z",
+    "directory": "commercial",
+    "listing": "Hand-tufted and hand-knotted rugs from a design studio, Mumbai",
+    "listingName": "Hatsu"
+  },
+  {
+    "id": "co-creative-matters",
+    "type": "company",
+    "title": "Creative Matters: hand-tufted and hand-knotted custom rugs, Toronto",
+    "creator": "Creative Matters",
+    "region": "Canada",
+    "description": "Tufting: Hand-tufted custom rugs.\nAlso: Hand-knotted (Nepal, Thailand, Afghanistan).\nBased in Toronto.\nExhibited at COVER Connect 2026 (from the author's list of tufted-rug exhibitors at ICFF, NeoCon and COVER Connect, 8 Nov 2026).\nSource: https://creativemattersinc.squarespace.com/custom-rugs",
+    "sourceUrl": "https://creativemattersinc.squarespace.com/custom-rugs",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "trade show",
+      "directory",
+      "from the author's list"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T00:08:12.920Z",
+    "directory": "commercial",
+    "listing": "Hand-tufted and hand-knotted custom rugs, Toronto",
+    "listingName": "Creative Matters"
+  },
+  {
+    "id": "co-pierre-frey",
+    "type": "company",
+    "title": "Pierre Frey: fabric house with hand-tufted rugs, Paris",
+    "creator": "Pierre Frey",
+    "region": "France",
+    "description": "Tufting: Hand-tufted rugs.\nAlso: Other rug constructions; mainly a fabric house.\nRugs are one product line.\nExhibited at NeoCon (from the author's list of tufted-rug exhibitors at ICFF, NeoCon and COVER Connect, 8 Nov 2026).\nSource: https://www.pierrefrey.com/en/carpets-rugs/FT497001-furry",
+    "sourceUrl": "https://www.pierrefrey.com/en/carpets-rugs/FT497001-furry",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "trade show",
+      "directory",
+      "from the author's list"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T00:08:12.920Z",
+    "directory": "commercial",
+    "listing": "Fabric house with hand-tufted rugs, Paris",
+    "listingName": "Pierre Frey"
+  },
+  {
+    "id": "co-kravet",
+    "type": "company",
+    "title": "Kravet: hand-tufted rugs and broadloom, among its furnishings",
+    "creator": "Kravet",
+    "region": "United States",
+    "description": "Tufting: Hand-tufted rugs (made in India).\nAlso: Broadloom and other constructions.\nRugs are one product line.\nExhibited at NeoCon (from the author's list of tufted-rug exhibitors at ICFF, NeoCon and COVER Connect, 8 Nov 2026).\nSource: https://www.kravet.com/hucty-snow-ck-102258-snow",
+    "sourceUrl": "https://www.kravet.com/hucty-snow-ck-102258-snow",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "trade show",
+      "directory",
+      "from the author's list"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T00:08:12.920Z",
+    "directory": "commercial",
+    "listing": "Hand-tufted rugs and broadloom, among its furnishings",
+    "listingName": "Kravet"
+  },
+  {
+    "id": "co-patterson-flynn",
+    "type": "company",
+    "title": "Patterson Flynn (Schumacher): hand-tufted, hand-knotted and woven custom rugs",
+    "creator": "Patterson Flynn (Schumacher)",
+    "region": "United States",
+    "description": "Tufting: Hand-tufted custom rugs.\nAlso: Hand-knotted; woven.\nListed at NeoCon as Schumacher / Patterson Flynn.\nExhibited at NeoCon (from the author's list of tufted-rug exhibitors at ICFF, NeoCon and COVER Connect, 8 Nov 2026).\nSource: https://www.1stdibs.com/furniture/rugs-carpets/chinese-rugs/schumacher-malachite-area-rug-hand-tufted-wool-silk-patterson-flynn/id-f_14810231",
+    "sourceUrl": "https://www.1stdibs.com/furniture/rugs-carpets/chinese-rugs/schumacher-malachite-area-rug-hand-tufted-wool-silk-patterson-flynn/id-f_14810231",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "trade show",
+      "directory",
+      "from the author's list"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T00:08:12.920Z",
+    "directory": "commercial",
+    "listing": "Hand-tufted, hand-knotted and woven custom rugs",
+    "listingName": "Patterson Flynn (Schumacher)"
+  },
+  {
+    "id": "co-ligne-roset",
+    "type": "company",
+    "title": "Ligne Roset: furniture brand with hand-tufted rugs",
+    "creator": "Ligne Roset",
+    "region": "France",
+    "description": "Tufting: Hand-tufted rugs.\nAlso: Mainly a furniture brand.\nRugs are a side line; optional.\nExhibited at ICFF 2026, booth 1005 (from the author's list of tufted-rug exhibitors at ICFF, NeoCon and COVER Connect, 8 Nov 2026).\nSource: https://www.ligne-roset.com/en/p/rugs/rug-entrelacs-1243",
+    "sourceUrl": "https://www.ligne-roset.com/en/p/rugs/rug-entrelacs-1243",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "trade show",
+      "directory",
+      "from the author's list"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T00:08:12.920Z",
+    "directory": "commercial",
+    "listing": "Furniture brand with hand-tufted rugs",
+    "listingName": "Ligne Roset"
   }
 ];
