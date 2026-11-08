@@ -11,15 +11,15 @@ Tim Eads is an artist and master printer, with an MFA from Cranbrook, who has sp
 
 With Alexander he wrote *Tuft the World: An Illustrated Manual to Tufting Gorgeous Rugs, Decor, and More* (Chronicle Books, 2024), and in 2023 they organised TuftCon '23, Philadelphia's first tufting convention. When hand tufting aggravated his carpal tunnel, he took up a robotic tufting machine, and rugs made on it were shown at Paradigm Gallery in 2023. He also makes custom rugs as Superfluous Things.
 
-## Why this book
+## Why this book and directory?
 
-Ten years of tufting left Tim wanting to know where the technique came from. The answers were scattered: in patent drawings, trade papers, museum stores, company histories, films and people's memories. This book gathers them, from needle-made bed rugs of the 1770s to the robot studios and home tufters of today.
+After ten years being immersed in the world of tufting left Tim wanted to compile a central location for the complete history as well as a directory for others to use. The answers were scattered: in patent drawings, trade papers, museum stores, company histories, films and people's memories. This book gathers them, from needle-made bed rugs of the 1770s to the robot studios and home tufters of today.
 
 ## How it was made
 
 The book is built on a research database of more than 600 records: museum objects, patents, trade catalogues, archives, films, oral histories and press. Every factual sentence in the chapters cites one of those records, and every record links to the institution or publication that holds the source, so a reader can check it. Where the sources disagree or run out, the text says so, and each chapter keeps a list of what is still to find.
 
-Pictures are linked from the museums, libraries and archives that hold them, not copied, and are marked where permission is still being sought. The research and drafting were done with the help of Claude, an AI model made by Anthropic, working from the records; Tim chose the sources, checked the text and edited every chapter.
+Pictures are linked from the museums, libraries and archives that hold them, not copied, and are marked where permission is still being sought. The research and drafting were done with the help of AI, working from the records; Tim chose the sources, checked the text and edited every chapter. 
 
 ## A note on interests
 
