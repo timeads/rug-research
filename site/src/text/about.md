@@ -23,4 +23,4 @@ Pictures are linked from the museums, libraries and archives that hold them, not
 
 ## A note on interests
 
-Tuft the World and Superfluous Things are the author's own businesses. They appear in chapters 9, 12 and 13 and in the Directory, and are named as his wherever they do.
+Tuft the World and Superfluous Things are the author's own businesses, as is Food and Rug Administration, which he started with Alexander. Tuft the World and Superfluous Things appear in chapters 9, 12 and 13; all three are in the Directory, and each is named as his wherever it appears.

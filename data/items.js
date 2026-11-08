@@ -19831,5 +19831,782 @@ window.RUG_ITEMS = [
       "https://www.tiktok.com/@homes_society"
     ],
     "rights": "not-requested"
+  },
+  {
+    "id": "co-the-rug-company",
+    "type": "company",
+    "title": "The Rug Company: luxury designer rugs, mostly hand-knotted, with a hand-tufted contract range",
+    "creator": "The Rug Company",
+    "region": "United Kingdom",
+    "description": "Luxury designer rugs, mostly hand-knotted, with a hand-tufted contract range. 'Handtufted Essentials line offers an extensive range of tufted textures and techniques' (lab.therugcompany.com); '100% New Zealand’s Wool Hand-tufted rug' (1stdibs.com).\nCaveat: mainly hand-knotted; the hand-tufted range is from its LAB contract line. City not confirmed in the results.\nFound by web search for an account the author follows on Instagram (the author's list of 8 Nov 2026; searches of 8 Nov 2026). Pages were not opened; details and quoted phrases come from search-result summaries and the pages listed here, and should be checked against them.\nSources: https://lab.therugcompany.com/?p=1662 · https://www.1stdibs.com/creators/the-rug-company/furniture/folk-art/rugs · https://en.wikipedia.org/wiki/The_Rug_Company",
+    "sourceUrl": "https://lab.therugcompany.com/?p=1662",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "directory",
+      "from the author's follows",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T12:58:27.737Z",
+    "directory": "commercial",
+    "listing": "Luxury designer rugs, mostly hand-knotted, with a hand-tufted contract range",
+    "listingName": "The Rug Company",
+    "website": "https://www.therugcompany.com",
+    "social": [
+      "https://www.instagram.com/therugcompany/"
+    ]
+  },
+  {
+    "id": "co-well-woven",
+    "type": "company",
+    "title": "Well Woven: machine-tufted and flatweave area rugs, Easton, Pennsylvania",
+    "creator": "Well Woven",
+    "place": "Easton, United States",
+    "region": "United States",
+    "description": "Machine-tufted and flatweave area rugs, Easton, Pennsylvania. 'Machine Tufted - Cut Pile' (houzz.com); 'a home décor and rug company headquartered in Easton, Pennsylvania' (wellwoven.com).\nFound by web search for an account the author follows on Instagram (the author's list of 8 Nov 2026; searches of 8 Nov 2026). Pages were not opened; details and quoted phrases come from search-result summaries and the pages listed here, and should be checked against them.\nSources: https://www.houzz.com/products/southwestern/area-rugs/manufacturer--joycarpets--wellwoven · https://wellwoven.com/pages/privacy-policy",
+    "sourceUrl": "https://www.houzz.com/products/southwestern/area-rugs/manufacturer--joycarpets--wellwoven",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "directory",
+      "from the author's follows",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T12:58:27.737Z",
+    "directory": "commercial",
+    "listing": "Machine-tufted and flatweave area rugs, Easton, Pennsylvania",
+    "listingName": "Well Woven",
+    "website": "https://wellwoven.com",
+    "social": [
+      "https://www.instagram.com/wellwovenrugs/"
+    ]
+  },
+  {
+    "id": "co-amini",
+    "type": "company",
+    "title": "Amini (ABC Italia): designer and custom rugs, including hand-tufted contract pieces, Milan",
+    "creator": "Amini (ABC Italia)",
+    "place": "Milan, Italy",
+    "region": "Italy",
+    "description": "Designer and custom rugs, including hand-tufted contract pieces, Milan. 'machine-tufted rugs and hand-tufted rugs in wool, silk, and viscose' (heimtextil.messefrankfurt.com); 'best compromise for those looking for quality, precision and speed of implementation' (pdf.archiexpo.com).\nFound by web search for an account the author follows on Instagram (the author's list of 8 Nov 2026; searches of 8 Nov 2026). Pages were not opened; details and quoted phrases come from search-result summaries and the pages listed here, and should be checked against them.\nSources: https://pdf.archiexpo.com/pdf/amini/amini-magazine-2015/148503-274816.html · https://heimtextil.messefrankfurt.com/frankfurt/en/exhibitor-search.detail.html/abc-italia-srl.html",
+    "sourceUrl": "https://pdf.archiexpo.com/pdf/amini/amini-magazine-2015/148503-274816.html",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "directory",
+      "from the author's follows",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T12:58:27.737Z",
+    "directory": "commercial",
+    "listing": "Designer and custom rugs, including hand-tufted contract pieces, Milan",
+    "listingName": "Amini (ABC Italia)",
+    "website": "https://amini.it/it/",
+    "social": [
+      "https://www.instagram.com/aminicarpets/"
+    ]
+  },
+  {
+    "id": "co-nodus",
+    "type": "company",
+    "title": "Nodus: designer and artist collaboration rugs, hand-tufted and hand-knotted, near Milan",
+    "creator": "Nodus",
+    "place": "Varedo, Italy",
+    "region": "Italy",
+    "description": "Designer and artist collaboration rugs, hand-tufted and hand-knotted, near Milan. 'hand-tufted, designed by Artesani, made in India' (etoffe.com); 'Hand-tufted wool, produced in India' (suzannelovellinc.com).\nFound by web search for an account the author follows on Instagram (the author's list of 8 Nov 2026; searches of 8 Nov 2026). Pages were not opened; details and quoted phrases come from search-result summaries and the pages listed here, and should be checked against them.\nSources: https://www.etoffe.com/en/rugs/26479-camouflage-micro-rug-nodus.html · https://suzannelovellinc.com/blog/nodus-leads-way-in-artist-rug-collaborations/ · https://origine-studiolinear.squarespace.com/biography-nodus",
+    "sourceUrl": "https://www.etoffe.com/en/rugs/26479-camouflage-micro-rug-nodus.html",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "directory",
+      "from the author's follows",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T12:58:27.737Z",
+    "directory": "commercial",
+    "listing": "Designer and artist collaboration rugs, hand-tufted and hand-knotted, near Milan",
+    "listingName": "Nodus",
+    "website": "https://nodusrug.it",
+    "social": [
+      "https://www.instagram.com/nodusrug/"
+    ]
+  },
+  {
+    "id": "co-beiriz",
+    "type": "company",
+    "title": "Beiriz: made-to-measure hand-tufted rugs for architects and designers, Póvoa de Varzim",
+    "creator": "Beiriz",
+    "place": "Póvoa de Varzim, Portugal",
+    "region": "Portugal",
+    "description": "Made-to-measure hand-tufted rugs for architects and designers, Póvoa de Varzim. 'Beiriz has built its core business around hand-tufted rugs' (interiordaily.com); 'some of whom have tufted by hand for thirty or forty years' (interiordaily.com).\nFound by web search for an account the author follows on Instagram (the author's list of 8 Nov 2026; searches of 8 Nov 2026). Pages were not opened; details and quoted phrases come from search-result summaries and the pages listed here, and should be checked against them.\nSources: https://www.interiordaily.com/article/9859357/inside-the-loom-beiriz-rugs-where-heritage-meets-contemporary-design/",
+    "sourceUrl": "https://www.interiordaily.com/article/9859357/inside-the-loom-beiriz-rugs-where-heritage-meets-contemporary-design/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "directory",
+      "from the author's follows",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T12:58:27.737Z",
+    "directory": "commercial",
+    "listing": "Made-to-measure hand-tufted rugs for architects and designers, Póvoa de Varzim",
+    "listingName": "Beiriz",
+    "website": "https://www.beiriz.com",
+    "social": [
+      "https://www.instagram.com/beirizrugs/"
+    ]
+  },
+  {
+    "id": "co-manufacture-de-tapis-de-bourgogne",
+    "type": "company",
+    "title": "Manufacture de Tapis de Bourgogne: hand-tufted rugs made in its own Burgundy workshop since the 1970s, Moroges",
+    "creator": "Manufacture de Tapis de Bourgogne",
+    "place": "Moroges, France",
+    "region": "France",
+    "description": "Hand-tufted rugs made in its own Burgundy workshop since the 1970s, Moroges. 'in the 70s, they developed and launched a new process: hand-tufted carpets' (archiexpo.com); 'the carpets have been made entirely by hand in the village of Moroges' (archiexpo.com).\nFound by web search for an account the author follows on Instagram (the author's list of 8 Nov 2026; searches of 8 Nov 2026). Pages were not opened; details and quoted phrases come from search-result summaries and the pages listed here, and should be checked against them.\nSources: https://www.archiexpo.com/soc/manufacture-tapis-bourgogne-150761.html",
+    "sourceUrl": "https://www.archiexpo.com/soc/manufacture-tapis-bourgogne-150761.html",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "directory",
+      "from the author's follows",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T12:58:27.737Z",
+    "directory": "commercial",
+    "listing": "Hand-tufted rugs made in its own Burgundy workshop since the 1970s, Moroges",
+    "listingName": "Manufacture de Tapis de Bourgogne",
+    "website": "http://www.manufacture-tapis-bourgogne.com/",
+    "social": [
+      "https://www.instagram.com/manufacturedetapisdebourgogne/"
+    ]
+  },
+  {
+    "id": "artist-watson-soule",
+    "type": "finding",
+    "title": "Watson Soule: hand-tufted wool rugs from Janna Watson's abstract paintings, Toronto",
+    "creator": "Watson Soule",
+    "place": "Toronto, Canada",
+    "region": "Canada",
+    "description": "Hand-tufted wool rugs from Janna Watson's abstract paintings, Toronto. 'hand-tufted with New Zealand wool' (athomeincanada.ca); 'run by artist Janna Watson and designer Nico Soule' (designlinesmagazine.com).\nNote: larger commissions are reportedly made with a Toronto studio, Weaver & Loom.\nFound by web search for an account the author follows on Instagram (the author's list of 8 Nov 2026; searches of 8 Nov 2026). Pages were not opened; details and quoted phrases come from search-result summaries and the pages listed here, and should be checked against them.\nSources: https://athomeincanada.ca/decorating/magic-carpets · https://www.designlinesmagazine.com/buy-local-watson-soule/",
+    "sourceUrl": "https://athomeincanada.ca/decorating/magic-carpets",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "artist",
+      "directory",
+      "from the author's follows",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T12:58:27.737Z",
+    "directory": "artist",
+    "listing": "Hand-tufted wool rugs from Janna Watson's abstract paintings, Toronto",
+    "listingName": "Watson Soule",
+    "social": [
+      "https://www.instagram.com/watsonsoule/"
+    ]
+  },
+  {
+    "id": "co-art-loom",
+    "type": "company",
+    "title": "Art + Loom: bespoke hand-tufted and hand-knotted designer rugs, Miami",
+    "creator": "Art + Loom",
+    "place": "Miami, United States",
+    "region": "United States",
+    "description": "Bespoke hand-tufted and hand-knotted designer rugs, Miami. 'the design is sent to one of Art + Loom’s factories in either India or Nepal, where it is handwoven or hand-tufted' (suzannelovellinc.com); 'an unconventional custom carpet resource based in Miami' (designerstoday.com).\nFound by web search for an account the author follows on Instagram (the author's list of 8 Nov 2026; searches of 8 Nov 2026). Pages were not opened; details and quoted phrases come from search-result summaries and the pages listed here, and should be checked against them.\nSources: https://suzannelovellinc.com/blog/art-loom/ · https://www.designerstoday.com/news/industry-news/whats-new-in-rugs/",
+    "sourceUrl": "https://suzannelovellinc.com/blog/art-loom/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "directory",
+      "from the author's follows",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T12:58:27.737Z",
+    "directory": "commercial",
+    "listing": "Bespoke hand-tufted and hand-knotted designer rugs, Miami",
+    "listingName": "Art + Loom",
+    "website": "https://www.artandloom.com",
+    "social": [
+      "https://www.instagram.com/artandloom/"
+    ]
+  },
+  {
+    "id": "co-kaymanta",
+    "type": "company",
+    "title": "Kaymanta: handmade luxury rugs, including hand-tufted wool and viscose designs",
+    "creator": "Kaymanta",
+    "region": "Spain",
+    "description": "Handmade luxury rugs, including hand-tufted wool and viscose designs. 'Technique: Hand-tufted' (1stdibs.com); 'Technique: Hand tufted' (wescover.com).\nCaveat: Maison&Objet calls it Spanish; a Kaymanta Inc. is also listed in Florida.\nFound by web search for an account the author follows on Instagram (the author's list of 8 Nov 2026; searches of 8 Nov 2026). Pages were not opened; details and quoted phrases come from search-result summaries and the pages listed here, and should be checked against them.\nSources: https://www.1stdibs.com/furniture/rugs-carpets/western-european-rugs/hand-tufted-wool-rug-boston-design-contemporary-style-9-x-12-ft/id-f_40557792 · https://wescover.com/p/art-design-by-kaymanta--PrJgNYRI5n · https://mom.maison-objet.com/en/brand/13448/kaymanta",
+    "sourceUrl": "https://www.1stdibs.com/furniture/rugs-carpets/western-european-rugs/hand-tufted-wool-rug-boston-design-contemporary-style-9-x-12-ft/id-f_40557792",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "directory",
+      "from the author's follows",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T12:58:27.737Z",
+    "directory": "commercial",
+    "listing": "Handmade luxury rugs, including hand-tufted wool and viscose designs",
+    "listingName": "Kaymanta",
+    "website": "https://www.kaymanta.com/",
+    "social": [
+      "https://www.instagram.com/kaymanta/"
+    ]
+  },
+  {
+    "id": "co-ruggism",
+    "type": "company",
+    "title": "Ruggism: artist-driven bespoke hand-tufted and hand-knotted rugs, Panipat",
+    "creator": "Ruggism",
+    "place": "Panipat, India",
+    "region": "India",
+    "description": "Artist-driven bespoke hand-tufted and hand-knotted rugs, Panipat. 'Ruggism is a high-end rug brand specializing in bespoke, artist-driven designs for luxury residential and hospitality projects across the US and Europe. With a focus on hand-knotted and hand-tufted rugs' (thehouseofthings.com); 'Panipat, India' (theartling.com).\nCaveat: its hand-tufting comes from a retailer's description, seen only in a search summary.\nFound by web search for an account the author follows on Instagram (the author's list of 8 Nov 2026; searches of 8 Nov 2026). Pages were not opened; details and quoted phrases come from search-result summaries and the pages listed here, and should be checked against them.\nSources: https://thehouseofthings.com/outre-rug.html · https://theartling.com/en/designer/ruggism",
+    "sourceUrl": "https://thehouseofthings.com/outre-rug.html",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "directory",
+      "from the author's follows",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T12:58:27.737Z",
+    "directory": "commercial",
+    "listing": "Artist-driven bespoke hand-tufted and hand-knotted rugs, Panipat",
+    "listingName": "Ruggism",
+    "website": "https://ruggism.com/",
+    "social": [
+      "https://www.instagram.com/ruggismofficial/"
+    ]
+  },
+  {
+    "id": "co-hanrad-bespoke-rugs",
+    "type": "company",
+    "title": "HANRAD Bespoke Rugs: bespoke hand-tufted rugs translated from original artwork, Hamilton",
+    "creator": "HANRAD Bespoke Rugs",
+    "place": "Hamilton, New Zealand",
+    "region": "New Zealand",
+    "description": "Bespoke hand-tufted rugs translated from original artwork, Hamilton. 'tuft in any direction, enabling us to capture the dynamism and energy of the original artwork' (archipro.co.nz); 'All HANRAD rugs are bespoke, made specifically for an individual client in the design, colour, size, and material that best suits their needs.' (archipro.com.au).\nFound by web search for an account the author follows on Instagram (the author's list of 8 Nov 2026; searches of 8 Nov 2026). Pages were not opened; details and quoted phrases come from search-result summaries and the pages listed here, and should be checked against them.\nSources: https://archipro.co.nz/article/works-of-art-how-these-bespoke-new-zealand-rug-makers-turn-artwork-into-rugs-hanrad · https://archipro.com.au/professional/hanrad",
+    "sourceUrl": "https://archipro.co.nz/article/works-of-art-how-these-bespoke-new-zealand-rug-makers-turn-artwork-into-rugs-hanrad",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "directory",
+      "from the author's follows",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T12:58:27.737Z",
+    "directory": "commercial",
+    "listing": "Bespoke hand-tufted rugs translated from original artwork, Hamilton",
+    "listingName": "HANRAD Bespoke Rugs",
+    "website": "https://www.hanrad.com",
+    "social": [
+      "https://www.instagram.com/hanrad_bespoke_rugs/"
+    ]
+  },
+  {
+    "id": "co-humminghaus",
+    "type": "company",
+    "title": "HummingHaus: hand-tufted wool carpets and custom rugs, India",
+    "creator": "HummingHaus",
+    "region": "India",
+    "description": "Hand-tufted wool carpets and custom rugs, India. 'HummingHaus Wool Handtufted Carpet _ Vintage Whirl, ₹35,999' (harpersbazaar.in); 'Elan Woollen Handtufted Carpet' (thehouseofthings.com).\nFound by web search for an account the author follows on Instagram (the author's list of 8 Nov 2026; searches of 8 Nov 2026). Pages were not opened; details and quoted phrases come from search-result summaries and the pages listed here, and should be checked against them.\nSources: https://www.harpersbazaar.in/amp/fashion/photo/artsy-rugs-that-double-as-masterpieces-for-your-home-interiors-1211169-2025-05-11 · https://thehouseofthings.com/elan-woollen-handtufted-carpet.html",
+    "sourceUrl": "https://www.harpersbazaar.in/amp/fashion/photo/artsy-rugs-that-double-as-masterpieces-for-your-home-interiors-1211169-2025-05-11",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "directory",
+      "from the author's follows",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T12:58:27.737Z",
+    "directory": "commercial",
+    "listing": "Hand-tufted wool carpets and custom rugs, India",
+    "listingName": "HummingHaus",
+    "website": "https://www.humminghaus.com",
+    "social": [
+      "https://www.instagram.com/humminghaus/"
+    ]
+  },
+  {
+    "id": "co-turnberry-rug-works",
+    "type": "company",
+    "title": "Turnberry Rug Works: bespoke hand-tufted rugs in natural fibres, near Turnberry, South Ayrshire",
+    "creator": "Turnberry Rug Works",
+    "place": "Girvan, United Kingdom",
+    "region": "United Kingdom",
+    "description": "Bespoke hand-tufted rugs in natural fibres, near Turnberry, South Ayrshire. 'merino wool, hand-tufting and dyers' (make.works); '£100/m2 - £400/m2' (make.works).\nFound by web search for an account the author follows on Instagram (the author's list of 8 Nov 2026; searches of 8 Nov 2026). Pages were not opened; details and quoted phrases come from search-result summaries and the pages listed here, and should be checked against them.\nSources: https://make.works/companies/TurnberryRugWorks",
+    "sourceUrl": "https://make.works/companies/TurnberryRugWorks",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "directory",
+      "from the author's follows",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T12:58:27.737Z",
+    "directory": "commercial",
+    "listing": "Bespoke hand-tufted rugs in natural fibres, near Turnberry, South Ayrshire",
+    "listingName": "Turnberry Rug Works",
+    "website": "https://www.turnberryrugworks.com/",
+    "social": [
+      "https://www.instagram.com/turnberryrugworks/"
+    ]
+  },
+  {
+    "id": "co-cc-tapis",
+    "type": "company",
+    "title": "cc-tapis: design-led rugs, mainly hand-knotted, with hand-tufted and robot-tufted lines, Milan",
+    "creator": "cc-tapis",
+    "place": "Milan, Italy",
+    "region": "Italy",
+    "description": "Design-led rugs, mainly hand-knotted, with hand-tufted and robot-tufted lines, Milan. 'production time from 6 to 14 weeks, depending on the size of the rug' (cc-tapis.com); 'made completely by hand, allowing the flexibility to use a variety of materials' (cc-tapis.com).\nAlso in this database: its robot-tufting alongside handmade production (record finding-cnc-european-robotufting-studios).\nFound by web search for an account the author follows on Instagram (the author's list of 8 Nov 2026; searches of 8 Nov 2026). Pages were not opened; details and quoted phrases come from search-result summaries and the pages listed here, and should be checked against them.\nSources: https://cc-tapis.com/materials · https://cc-tapis.com/made-in-milan",
+    "sourceUrl": "https://cc-tapis.com/materials",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "directory",
+      "from the author's follows",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T12:58:27.737Z",
+    "directory": "commercial",
+    "listing": "Design-led rugs, mainly hand-knotted, with hand-tufted and robot-tufted lines, Milan",
+    "listingName": "cc-tapis",
+    "website": "https://cc-tapis.com",
+    "social": [
+      "https://www.instagram.com/cc_tapis/"
+    ]
+  },
+  {
+    "id": "co-jubi",
+    "type": "company",
+    "title": "JUBI: made-to-order hand-tufted wool rugs, designed in New York, made in Bhadohi, India",
+    "creator": "JUBI",
+    "place": "New York, United States",
+    "region": "United States",
+    "description": "Made-to-order hand-tufted wool rugs, designed in New York, made in Bhadohi, India. 'hand-tufted to order in Jubi’s Bhadohi studio' (shop-jubi.com); 'Tufted Rugs' (shop-jubi.com).\nFound by web search for an account the author follows on Instagram (the author's list of 8 Nov 2026; searches of 8 Nov 2026). Pages were not opened; details and quoted phrases come from search-result summaries and the pages listed here, and should be checked against them.\nSources: https://shop-jubi.com/pages/our-process · https://shop-jubi.com/collections/tufted-rugs",
+    "sourceUrl": "https://shop-jubi.com/pages/our-process",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "directory",
+      "from the author's follows",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T12:58:27.737Z",
+    "directory": "commercial",
+    "listing": "Made-to-order hand-tufted wool rugs, designed in New York, made in Bhadohi, India",
+    "listingName": "JUBI",
+    "website": "https://shop-jubi.com",
+    "social": [
+      "https://www.instagram.com/jubirugs/"
+    ]
+  },
+  {
+    "id": "artist-tufty-co",
+    "type": "finding",
+    "title": "Tufty & Co (Renee Patterson): hand-tufted rugs and wall hangings, Central New York",
+    "creator": "Tufty & Co (Renee Patterson)",
+    "place": "Syracuse, United States",
+    "region": "United States",
+    "description": "Hand-tufted rugs and wall hangings, Central New York. 'Tufty & Co' (syracuse.makerfaire.com); 'Intro to Tufting' (everson.org).\nFound by web search for an account the author follows on Instagram (the author's list of 8 Nov 2026; searches of 8 Nov 2026). Pages were not opened; details and quoted phrases come from search-result summaries and the pages listed here, and should be checked against them.\nSources: https://syracuse.makerfaire.com/maker/entry/124 · https://everson.org/?p=8708 · https://www.thisiscny.com/living/2025/03/syracuse-teacher-renee-patterson-makes-the-softest-fuzziest-art-youve-ever-seen-video.html",
+    "sourceUrl": "https://syracuse.makerfaire.com/maker/entry/124",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "artist",
+      "directory",
+      "from the author's follows",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T12:58:27.737Z",
+    "directory": "artist",
+    "listing": "Hand-tufted rugs and wall hangings, Central New York",
+    "listingName": "Tufty & Co (Renee Patterson)",
+    "social": [
+      "https://www.instagram.com/tuftyco/"
+    ]
+  },
+  {
+    "id": "co-ugly-rugly",
+    "type": "company",
+    "title": "Ugly Rugly: rugs and tufted vases from a husband-and-wife design studio, Brooklyn",
+    "creator": "Ugly Rugly",
+    "place": "Brooklyn, United States",
+    "region": "United States",
+    "description": "Rugs and tufted vases from a husband-and-wife design studio, Brooklyn. 'Pillar Tufted Vase' (garmentory.com); 'The Brand Behind UO’s Quirky-Cool Rugs Is Releasing an Equally Cuddly Vase' (domino.com).\nCaveat: the snippets seen describe its tufted vases; that its rugs are hand-tufted comes only from a search summary.\nFound by web search for an account the author follows on Instagram (the author's list of 8 Nov 2026; searches of 8 Nov 2026). Pages were not opened; details and quoted phrases come from search-result summaries and the pages listed here, and should be checked against them.\nSources: https://www.garmentory.com/sale/ugly-rugly/all/1258967-pillar-tufted-vase · https://www.domino.com/content/ugly-rugly-tufted-vase/",
+    "sourceUrl": "https://www.garmentory.com/sale/ugly-rugly/all/1258967-pillar-tufted-vase",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "directory",
+      "from the author's follows",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T12:58:27.737Z",
+    "directory": "commercial",
+    "listing": "Rugs and tufted vases from a husband-and-wife design studio, Brooklyn",
+    "listingName": "Ugly Rugly",
+    "website": "http://www.uglyrugly.com/",
+    "social": [
+      "https://www.instagram.com/uglyrugly/"
+    ]
+  },
+  {
+    "id": "artist-sam-lao",
+    "type": "finding",
+    "title": "Sam Lao: multidisciplinary artist who teaches rug tufting, Dallas",
+    "creator": "Sam Lao",
+    "place": "Dallas, United States",
+    "region": "United States",
+    "description": "Multidisciplinary artist who teaches rug tufting, Dallas. 'Sam Lao is a multidisciplinary artist based in Dallas, TX.' (cedarsunion.org); 'Each applicant will leave the course with a completed work of art (22″ x 22″)' (cedarsunion.org).\nCaveat: her tufting is confirmed only by the listing of a rug-tufting course she taught.\nFound by web search for an account the author follows on Instagram (the author's list of 8 Nov 2026; searches of 8 Nov 2026). Pages were not opened; details and quoted phrases come from search-result summaries and the pages listed here, and should be checked against them.\nSources: https://www.cedarsunion.org/event/rug-tufting-w-sam-lao/",
+    "sourceUrl": "https://www.cedarsunion.org/event/rug-tufting-w-sam-lao/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "artist",
+      "directory",
+      "from the author's follows",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T12:58:27.737Z",
+    "directory": "artist",
+    "listing": "Multidisciplinary artist who teaches rug tufting, Dallas",
+    "listingName": "Sam Lao",
+    "website": "https://sammadethat.com",
+    "social": [
+      "https://www.instagram.com/thesamlao/"
+    ]
+  },
+  {
+    "id": "co-lindstrom-rugs",
+    "type": "company",
+    "title": "Lindstrom Rugs (Erik Lindstrom): hand-knotted and hand-tufted designer and custom rugs, Los Angeles",
+    "creator": "Lindstrom Rugs (Erik Lindstrom)",
+    "place": "Los Angeles, United States",
+    "region": "United States",
+    "description": "Hand-knotted and hand-tufted designer and custom rugs, Los Angeles. 'The Los Angeles company’s rugs are hand-knotted in Nepal and hand-tufted in Thailand, and each is GoodWeave certified' (palmspringslife.com); 'handtufted wool patterns designed by Erik Lindstrom, which join his Geometric Collection' (businessofhome.com).\nFound by web search for an account the author follows on Instagram (the author's list of 8 Nov 2026; searches of 8 Nov 2026). Pages were not opened; details and quoted phrases come from search-result summaries and the pages listed here, and should be checked against them.\nSources: https://www.palmspringslife.com/step-on-it/ · https://businessofhome.com/collections/winter-2020-2021-erik-lindstrom · https://aspiremetro.com/habitat-collection-lindstrom-rugs/",
+    "sourceUrl": "https://www.palmspringslife.com/step-on-it/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "directory",
+      "from the author's follows",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T12:58:27.737Z",
+    "directory": "commercial",
+    "listing": "Hand-knotted and hand-tufted designer and custom rugs, Los Angeles",
+    "listingName": "Lindstrom Rugs (Erik Lindstrom)",
+    "website": "http://www.eriklindstrom.com/",
+    "social": [
+      "https://www.instagram.com/eriklindstromrugs/"
+    ]
+  },
+  {
+    "id": "co-food-and-rug-administration",
+    "type": "company",
+    "title": "Food and Rug Administration: food-themed rugs made on a robotic tufting machine, from the Tuft the World team, Philadelphia",
+    "creator": "Food and Rug Administration",
+    "place": "Philadelphia, United States",
+    "region": "United States",
+    "description": "Food-themed rugs made on a robotic tufting machine, from the Tuft the World team, Philadelphia. 'The Food and Rug Administration was started by Tiernan Alexander and Tim Eads of Tuft the World' (faire.com); 'tufting donuts, pasta, fruits and more for food lovers around the world' (faire.com).\nDisclosure: the author's business, started with Tiernan Alexander of Tuft the World.\nFound by web search for an account the author follows on Instagram (the author's list of 8 Nov 2026; searches of 8 Nov 2026). Pages were not opened; details and quoted phrases come from search-result summaries and the pages listed here, and should be checked against them.\nSources: https://www.faire.com/brand/b_q7jrwd8mqf",
+    "sourceUrl": "https://www.faire.com/brand/b_q7jrwd8mqf",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "directory",
+      "from the author's follows",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T12:58:27.737Z",
+    "directory": "commercial",
+    "listing": "Food-themed rugs made on a robotic tufting machine, from the Tuft the World team, Philadelphia",
+    "listingName": "Food and Rug Administration",
+    "website": "https://foodandrugadministration.com",
+    "social": [
+      "https://www.instagram.com/food_and_rug_admin/"
+    ]
+  },
+  {
+    "id": "co-mokette",
+    "type": "company",
+    "title": "Mokette: tufting workshops making small tufted rugs, wall pieces and plant-pot covers, Lille",
+    "creator": "Mokette",
+    "place": "Lille, France",
+    "region": "France",
+    "description": "Tufting workshops making small tufted rugs, wall pieces and plant-pot covers, Lille. 'Mokette et Louise, la tufteuse, vous accueillent pour un atelier de 1h30 à Lille' (funbooker.com); 'un tapis tufté coloré et texturé (30x30 cm) en utilisant des pelotes de laine acrylique et des tissus recyclés' (funbooker.com).\nFound by web search for an account the author follows on Instagram (the author's list of 8 Nov 2026; searches of 8 Nov 2026). Pages were not opened; details and quoted phrases come from search-result summaries and the pages listed here, and should be checked against them.\nSources: https://www.funbooker.com/fr/category/atelier-tufting/lille",
+    "sourceUrl": "https://www.funbooker.com/fr/category/atelier-tufting/lille",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "workshop",
+      "directory",
+      "from the author's follows",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T12:58:27.737Z",
+    "directory": "workshop",
+    "listing": "Tufting workshops making small tufted rugs, wall pieces and plant-pot covers, Lille",
+    "listingName": "Mokette",
+    "website": "https://www.mokette.fr/",
+    "social": [
+      "https://www.instagram.com/_mokette/"
+    ]
+  },
+  {
+    "id": "artist-mujer-woo",
+    "type": "finding",
+    "title": "Mujer Woo: textile and tufting studio of fibre artist and fashion designer Youkyung Kaycee Woo, Portland, Oregon",
+    "creator": "Mujer Woo",
+    "place": "Portland, United States",
+    "region": "United States",
+    "description": "Textile and tufting studio of fibre artist and fashion designer Youkyung Kaycee Woo, Portland, Oregon. 'Mujer Woo is a textile and tufting studio founded by Youkyung Kaycee Woo' (eventbrite.co.uk).\nFound by web search for an account the author follows on Instagram (the author's list of 8 Nov 2026; searches of 8 Nov 2026). Pages were not opened; details and quoted phrases come from search-result summaries and the pages listed here, and should be checked against them.\nSources: https://www.eventbrite.co.uk/o/mujer-woo-103110338081",
+    "sourceUrl": "https://www.eventbrite.co.uk/o/mujer-woo-103110338081",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "artist",
+      "directory",
+      "from the author's follows",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T12:58:27.737Z",
+    "directory": "artist",
+    "listing": "Textile and tufting studio of fibre artist and fashion designer Youkyung Kaycee Woo, Portland, Oregon",
+    "listingName": "Mujer Woo",
+    "website": "https://www.mujerwoo.com",
+    "social": [
+      "https://www.instagram.com/mujer_woo/"
+    ]
+  },
+  {
+    "id": "co-tuft-love",
+    "type": "company",
+    "title": "Tuft Love: tufting machines and group tufting classes, Superior, Colorado",
+    "creator": "Tuft Love",
+    "place": "Superior, United States",
+    "region": "United States",
+    "description": "Tufting machines and group tufting classes, Superior, Colorado. 'Tuft Love Group Tufting Classes (Superior, CO)' (loox.io); 'The Spider — Cut & Loop Pile Tufting Machine' (loox.io).\nCaveat: matched to the Instagram account through the author's list, which gives machinetufting.com as its link.\nFound by web search for an account the author follows on Instagram (the author's list of 8 Nov 2026; searches of 8 Nov 2026). Pages were not opened; details and quoted phrases come from search-result summaries and the pages listed here, and should be checked against them.\nSources: https://loox.io/s/EylWU71bHa?page=2",
+    "sourceUrl": "https://loox.io/s/EylWU71bHa?page=2",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "workshop",
+      "directory",
+      "from the author's follows",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T12:58:27.737Z",
+    "directory": "workshop",
+    "listing": "Tufting machines and group tufting classes, Superior, Colorado",
+    "listingName": "Tuft Love",
+    "website": "http://machinetufting.com/shop/",
+    "social": [
+      "https://www.instagram.com/tuft.love/"
+    ]
+  },
+  {
+    "id": "artist-caroline-achaintre",
+    "type": "finding",
+    "title": "Caroline Achaintre: hand-tufted wool wall hangings and tapestries alongside ceramics, London",
+    "creator": "Caroline Achaintre",
+    "place": "London, United Kingdom",
+    "region": "United Kingdom",
+    "description": "Hand-tufted wool wall hangings and tapestries alongside ceramics, London. 'new hand-tufted wall hangings alongside ceramics and drawings' (fondazionegiuliani.org); 'large hand-tufted rugs made to respond to the gallery’s architecture' (theshowroom.org).\nFound by web search for an account the author follows on Instagram (the author's list of 8 Nov 2026; searches of 8 Nov 2026). Pages were not opened; details and quoted phrases come from search-result summaries and the pages listed here, and should be checked against them.\nSources: https://fondazionegiuliani.org/exhibitions/permanente/?lang=en · https://www.theshowroom.org/exhibitions/caroline-achaintre-deedie · https://www.creativeboom.com/work/caroline-achaintres-witty-ceramic-sculptures-and-wall-hangings-that-resemble-masks/",
+    "sourceUrl": "https://fondazionegiuliani.org/exhibitions/permanente/?lang=en",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "artist",
+      "directory",
+      "from the author's follows",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T12:58:27.737Z",
+    "directory": "artist",
+    "listing": "Hand-tufted wool wall hangings and tapestries alongside ceramics, London",
+    "listingName": "Caroline Achaintre",
+    "social": [
+      "https://www.instagram.com/caroline_achaintre/"
+    ]
+  },
+  {
+    "id": "artist-vanessa-barragao",
+    "type": "finding",
+    "title": "Vanessa Barragão: reef-inspired textile art, hand-tufted, latch-hooked and crocheted from recycled yarn, Portugal",
+    "creator": "Vanessa Barragão",
+    "place": "Portugal",
+    "region": "Portugal",
+    "description": "Reef-inspired textile art, hand-tufted, latch-hooked and crocheted from recycled yarn, Portugal. 'combine hand tufting, latch hooking, crocheting and weaving techniques, all on one surface' (irenebrination.com); 'She uses only recycled organic materials and traditional craftsmanship techniques like hand tufting and crocheting' (shop.amirisu.com).\nNote: born in Albufeira, in the south of Portugal; studio founded 2014 (Colossal).\nFound by web search for an account the author follows on Instagram (the author's list of 8 Nov 2026; searches of 8 Nov 2026). Pages were not opened; details and quoted phrases come from search-result summaries and the pages listed here, and should be checked against them.\nSources: https://www.irenebrination.com/2019/12/15/vanessa-barragao-textiles-tapestries/ · https://shop.amirisu.com/en/blogs/featured/vanessa-barragaos-upcycled-tapestries-issue-18 · https://www.thisiscolossal.com/2023/06/vanessa-barragao-textiles/",
+    "sourceUrl": "https://www.irenebrination.com/2019/12/15/vanessa-barragao-textiles-tapestries/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "artist",
+      "directory",
+      "from the author's follows",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T12:58:27.737Z",
+    "directory": "artist",
+    "listing": "Reef-inspired textile art, hand-tufted, latch-hooked and crocheted from recycled yarn, Portugal",
+    "listingName": "Vanessa Barragão",
+    "social": [
+      "https://www.instagram.com/vanessabarragao_work/"
+    ]
+  },
+  {
+    "id": "artist-ina-dyreborg",
+    "type": "finding",
+    "title": "Ina Dyreborg (Dyreborg Studio): hand-tufted rugs and wall pieces of masks and animal faces, Denmark",
+    "creator": "Ina Dyreborg (Dyreborg Studio)",
+    "place": "Denmark",
+    "region": "Denmark",
+    "description": "Hand-tufted rugs and wall pieces of masks and animal faces, Denmark. 'tufted art ina dyreborg' (boredpanda.com); 'Ina Dyreborg is a Danish textile artist known for her vibrant and playful artistic world' (boredpanda.com).\nFound by web search for an account the author follows on Instagram (the author's list of 8 Nov 2026; searches of 8 Nov 2026). Pages were not opened; details and quoted phrases come from search-result summaries and the pages listed here, and should be checked against them.\nSources: https://www.boredpanda.com/tufted-art-ina-dyreborg/",
+    "sourceUrl": "https://www.boredpanda.com/tufted-art-ina-dyreborg/",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "artist",
+      "directory",
+      "from the author's follows",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T12:58:27.737Z",
+    "directory": "artist",
+    "listing": "Hand-tufted rugs and wall pieces of masks and animal faces, Denmark",
+    "listingName": "Ina Dyreborg (Dyreborg Studio)",
+    "website": "https://www.dyreborgstudio.com",
+    "social": [
+      "https://www.instagram.com/dyreborgstudio/"
+    ]
+  },
+  {
+    "id": "artist-sonmun",
+    "type": "finding",
+    "title": "SÖNMUN: tufted textured decor pieces drawn from Emilie's illustrations, Algarve",
+    "creator": "SÖNMUN",
+    "place": "Algarve, Portugal",
+    "region": "Portugal",
+    "description": "Tufted textured decor pieces drawn from Emilie's illustrations, Algarve. 'conceptual interior decoration brand that combines tufting by Marcos with the drawings of his wife Emilie' (barlavento.pt).\nCaveat: the quotation is the search tool's English rendering of a Portuguese article.\nFound by web search for an account the author follows on Instagram (the author's list of 8 Nov 2026; searches of 8 Nov 2026). Pages were not opened; details and quoted phrases come from search-result summaries and the pages listed here, and should be checked against them.\nSources: https://www.barlavento.pt/?p=253361",
+    "sourceUrl": "https://www.barlavento.pt/?p=253361",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "artist",
+      "directory",
+      "from the author's follows",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T12:58:27.737Z",
+    "directory": "artist",
+    "listing": "Tufted textured decor pieces drawn from Emilie's illustrations, Algarve",
+    "listingName": "SÖNMUN",
+    "website": "http://www.sonmunstudio.com/",
+    "social": [
+      "https://www.instagram.com/sonmunstudio/"
+    ]
+  },
+  {
+    "id": "co-block-shop-textiles",
+    "type": "company",
+    "title": "Block Shop Textiles: textile studio with hand-tufted wool rugs made by makers in India, Los Angeles",
+    "creator": "Block Shop Textiles",
+    "place": "Los Angeles, United States",
+    "region": "United States",
+    "description": "Textile studio with hand-tufted wool rugs made by makers in India, Los Angeles. 'first line of hand-tufted wool rugs' (surfacemag.com); 'a brand-new rug series in hand-tufted wool' (sightunseen.com).\nFound by web search for an account the author follows on Instagram (the author's list of 8 Nov 2026; searches of 8 Nov 2026). Pages were not opened; details and quoted phrases come from search-result summaries and the pages listed here, and should be checked against them.\nSources: https://surfacemag.com/?p=68084 · https://www.sightunseen.com/?p=78989",
+    "sourceUrl": "https://surfacemag.com/?p=68084",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company",
+      "directory",
+      "from the author's follows",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T12:58:27.737Z",
+    "directory": "commercial",
+    "listing": "Textile studio with hand-tufted wool rugs made by makers in India, Los Angeles",
+    "listingName": "Block Shop Textiles",
+    "website": "https://www.blockshoptextiles.com",
+    "social": [
+      "https://www.instagram.com/blockshoptextiles/"
+    ]
   }
 ];
