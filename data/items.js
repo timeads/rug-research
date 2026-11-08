@@ -20484,37 +20484,6 @@ window.RUG_ITEMS = [
     ]
   },
   {
-    "id": "co-tuft-love",
-    "type": "company",
-    "title": "Tuft Love: tufting machines and group tufting classes, Superior, Colorado",
-    "creator": "Tuft Love",
-    "place": "Superior, United States",
-    "region": "United States",
-    "description": "Tufting machines and group tufting classes, Superior, Colorado. 'Tuft Love Group Tufting Classes (Superior, CO)' (loox.io); 'The Spider — Cut & Loop Pile Tufting Machine' (loox.io).\nCaveat: matched to the Instagram account through the author's list, which gives machinetufting.com as its link.\nFound by web search for an account the author follows on Instagram (the author's list of 8 Nov 2026; searches of 8 Nov 2026). Pages were not opened; details and quoted phrases come from search-result summaries and the pages listed here, and should be checked against them.\nSources: https://loox.io/s/EylWU71bHa?page=2",
-    "sourceUrl": "https://loox.io/s/EylWU71bHa?page=2",
-    "themes": [
-      "Companies & modern tufting"
-    ],
-    "tags": [
-      "workshop",
-      "directory",
-      "from the author's follows",
-      "found by web search"
-    ],
-    "status": "unverified",
-    "reviewedAt": "2026-11-08T12:58:27.737Z",
-    "directory": "workshop",
-    "listing": "Tufting machines and group tufting classes, Superior, Colorado",
-    "listingName": "Tuft Love",
-    "website": "http://machinetufting.com/shop/",
-    "social": [
-      "https://www.instagram.com/tuft.love/"
-    ],
-    "image": "https://images.loox.io/uploads/2025/12/14/QUyB1FmDJ.jpg",
-    "imageCredit": "loox.io",
-    "imageSource": "auto"
-  },
-  {
     "id": "artist-caroline-achaintre",
     "type": "finding",
     "title": "Caroline Achaintre: hand-tufted wool wall hangings and tapestries alongside ceramics, London",
@@ -20650,6 +20619,32 @@ window.RUG_ITEMS = [
     "website": "https://www.blockshoptextiles.com",
     "social": [
       "https://www.instagram.com/blockshoptextiles/"
+    ]
+  },
+  {
+    "id": "artist-velvet-trippy-club",
+    "type": "finding",
+    "title": "Velvet Trippy Club: rugs, including made-to-order designs, Costa Rica",
+    "creator": "Velvet Trippy Club",
+    "region": "Costa Rica",
+    "description": "Rug studio in Costa Rica. 'Velvet Trippy Club ofrece alfombras principalmente, desde los 50x50 cm hasta 100x140 cm. Se pueden realizar pedidos personalizados' (teletica.com, 2023): mainly rugs, from 20 in x 20 in (50 cm x 50 cm) to 39 in x 55 in (100 cm x 140 cm), with custom orders.\nCaveat: A search summary said the article mentions the studio buying a tufting machine; that wording was not seen. Listed at the author's choice (8 Nov 2026), from an account the author follows on Instagram.\nFound by web search, 8 Nov 2026. Pages were not opened; details come from search-result summaries and the page listed here.\nSources: https://www.teletica.com/artesanos-de-la-nada/stickers-ceramica-y-alfombras-creatividad-de-emprendimientos-nacionales-no-tiene-limites_337049",
+    "sourceUrl": "https://www.teletica.com/artesanos-de-la-nada/stickers-ceramica-y-alfombras-creatividad-de-emprendimientos-nacionales-no-tiene-limites_337049",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "artist",
+      "directory",
+      "from the author's follows",
+      "found by web search"
+    ],
+    "status": "unverified",
+    "reviewedAt": "2026-11-08T13:09:22.009Z",
+    "directory": "artist",
+    "listing": "Rugs, including made-to-order designs, Costa Rica",
+    "listingName": "Velvet Trippy Club",
+    "social": [
+      "https://www.instagram.com/velvetrippyclub/"
     ]
   }
 ];
