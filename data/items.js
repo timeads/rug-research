@@ -21342,8 +21342,8 @@ window.RUG_ITEMS = [
   {
     "id": "artist-lisette-van-maurik",
     "type": "finding",
-    "title": "Lisette van Maurik: tufted rugs and textile art, Netherlands",
-    "creator": "Lisette van Maurik",
+    "title": "Steil Studio (Lisette van Maurik): tufted rugs and textile art, Netherlands",
+    "creator": "Steil Studio (Lisette van Maurik)",
     "place": "Netherlands",
     "region": "Netherlands",
     "description": "Tufted rugs and textile art, Netherlands. Listed at the author's choice: the author, who follows the account on Instagram, approved it as making tufted work and gave its location (8 Nov 2026).\nCaveat: Web searches the same day did not confirm the tufting: Two searches found nothing on Steil Studio or her textile work.",
@@ -21361,7 +21361,7 @@ window.RUG_ITEMS = [
     "reviewedAt": "2026-11-08T13:42:58.015Z",
     "directory": "artist",
     "listing": "Tufted rugs and textile art, Netherlands",
-    "listingName": "Lisette van Maurik",
+    "listingName": "Steil Studio",
     "social": [
       "https://www.instagram.com/steilstudio/"
     ],
