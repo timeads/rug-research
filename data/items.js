@@ -17253,7 +17253,10 @@ window.RUG_ITEMS = [
     "listingName": "Tufting Maroc",
     "social": [
       "https://www.instagram.com/tufting.maroc/"
-    ]
+    ],
+    "image": "https://static.cdninstagram.com/rsrc.php/v4/yD/r/R0fBIMurK8v.png",
+    "imageCredit": "instagram.com",
+    "imageSource": "auto"
   },
   {
     "id": "co-miyoshi-rug",
