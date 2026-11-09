@@ -17175,16 +17175,14 @@ window.RUG_ITEMS = [
       "found by web search"
     ],
     "status": "unverified",
-    "reviewedAt": "2026-11-08T19:35:13.016Z",
+    "reviewedAt": "2026-11-09T00:10:59.939Z",
     "directory": "workshop",
     "listing": "Tufting courses and custom rugs, Mexico City",
     "listingName": "Tufting Mex",
     "social": [
       "https://www.instagram.com/tufting_mex/"
     ],
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToVmtOMzSwScNuMf0n3Hx6_jnK0TYQbjujDXZkVJwUUQ&s=10",
-    "imageCredit": "instagram.com",
-    "imageSource": "auto"
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToVmtOMzSwScNuMf0n3Hx6_jnK0TYQbjujDXZkVJwUUQ&s=10"
   },
   {
     "id": "co-gio-tufting",
@@ -19929,7 +19927,7 @@ window.RUG_ITEMS = [
       "found by web search"
     ],
     "status": "unverified",
-    "reviewedAt": "2026-11-08T12:58:27.737Z",
+    "reviewedAt": "2026-11-09T00:10:59.939Z",
     "directory": "commercial",
     "listing": "Designer and custom rugs, including hand-tufted contract pieces, Milan",
     "listingName": "Amini (ABC Italia)",
@@ -19937,9 +19935,7 @@ window.RUG_ITEMS = [
     "social": [
       "https://www.instagram.com/aminicarpets/"
     ],
-    "image": "https://heimtextil.messefrankfurt.com/content/dam/messefrankfurt-redaktion/texpertisenetwork/images/stages-teaser/stage-texpertise.jpg",
-    "imageCredit": "heimtextil.messefrankfurt.com (image from heimtextil.messefrankfurt.com)",
-    "imagePage": "https://heimtextil.messefrankfurt.com/frankfurt/en/exhibitor-search.detail.html/abc-italia-srl.html",
+    "image": "https://img.archiexpo.com/images_ae/photo-mg/148503-10131079.webp",
     "imageSource": "auto"
   },
   {
