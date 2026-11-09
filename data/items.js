@@ -21620,7 +21620,7 @@ window.RUG_ITEMS = [
       "approved by the author"
     ],
     "status": "unverified",
-    "reviewedAt": "2026-11-08T13:42:58.015Z",
+    "reviewedAt": "2026-11-09T00:31:38.390Z",
     "directory": "commercial",
     "listing": "Custom hand-tufted rugs for the hospitality industry, Los Angeles",
     "listingName": "Zenith Rugs",
@@ -21628,7 +21628,7 @@ window.RUG_ITEMS = [
       "https://www.instagram.com/zenithrugs/"
     ],
     "website": "https://zenithrugs.com/",
-    "image": "https://www.fcnews.net/wp-content/webpc-passthru.php?src=https://www.fcnews.net/wp-content/uploads/2019/08/people-21.jpg&nocache=1",
+    "image": "https://zenithrugs.com/wp-content/uploads/2020/10/Slider-image-1.png",
     "imageCredit": "fcnews.net",
     "imageSource": "auto"
   },
