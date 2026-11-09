@@ -8,7 +8,7 @@
 //         "unverified" = gathered from secondary sources / search summaries;
 //                        confirm titles, dates and numbers before citing.
 // Records taken out after being merged from an export, with when; a browser drops its own copy of them.
-window.RUG_REMOVED = {"wc-3126256":"2026-10-28T15:05:57.518Z","met-7405":"2026-10-28T15:05:57.518Z","finding-cnc-diy-robot-arm-experiments":"2026-10-31T12:23:09.703Z","co-vera-art-studio":"2026-11-07T16:51:02.081Z","co-rugged-looks":"2026-11-08T12:28:16.622Z","artist-highly-woven":"2026-11-08T19:15:43.672Z","artist-the-rug-maker-co":"2026-11-08T19:15:43.672Z","co-creative-touch":"2026-11-09T00:13:44.220Z"};
+window.RUG_REMOVED = {"wc-3126256":"2026-10-28T15:05:57.518Z","met-7405":"2026-10-28T15:05:57.518Z","finding-cnc-diy-robot-arm-experiments":"2026-10-31T12:23:09.703Z","co-vera-art-studio":"2026-11-07T16:51:02.081Z","co-rugged-looks":"2026-11-08T12:28:16.622Z","artist-highly-woven":"2026-11-08T19:15:43.672Z","artist-the-rug-maker-co":"2026-11-08T19:15:43.672Z","co-creative-touch":"2026-11-09T00:13:44.220Z","co-well-woven":"2026-11-09T00:24:01.931Z"};
 window.RUG_ITEMS = [
   {
     "id": "wint-1964-0804",
@@ -19861,39 +19861,6 @@ window.RUG_ITEMS = [
     "imageCredit": "1stdibs.com (image from 1stdibs.com)",
     "imagePage": "https://www.1stdibs.com/creators/the-rug-company/furniture/folk-art/rugs",
     "imageSource": "auto"
-  },
-  {
-    "id": "co-well-woven",
-    "type": "company",
-    "title": "Well Woven: machine-tufted and flatweave area rugs, Easton, Pennsylvania",
-    "creator": "Well Woven",
-    "place": "Easton, United States",
-    "region": "United States",
-    "description": "Machine-tufted and flatweave area rugs, Easton, Pennsylvania. 'Machine Tufted - Cut Pile' (houzz.com); 'a home décor and rug company headquartered in Easton, Pennsylvania' (wellwoven.com).\nFound by web search for an account the author follows on Instagram (the author's list of 8 Nov 2026; searches of 8 Nov 2026). Pages were not opened; details and quoted phrases come from search-result summaries and the pages listed here, and should be checked against them.\nSources: https://www.houzz.com/products/southwestern/area-rugs/manufacturer--joycarpets--wellwoven · https://wellwoven.com/pages/privacy-policy",
-    "sourceUrl": "https://www.houzz.com/products/southwestern/area-rugs/manufacturer--joycarpets--wellwoven",
-    "themes": [
-      "Companies & modern tufting"
-    ],
-    "tags": [
-      "company",
-      "directory",
-      "from the author's follows",
-      "found by web search"
-    ],
-    "status": "unverified",
-    "reviewedAt": "2026-11-08T12:58:27.737Z",
-    "directory": "commercial",
-    "listing": "Machine-tufted and flatweave area rugs, Easton, Pennsylvania",
-    "listingName": "Well Woven",
-    "website": "https://wellwoven.com",
-    "social": [
-      "https://www.instagram.com/wellwovenrugs/"
-    ],
-    "image": "https://wellwoven.com/collaborations/claire-desjardins/W-CD-02A_Honey-Im-Home_RS01.webp?dpl=dpl_6hXkfwqY7ZgTezRJpgcwCjEPcGwP",
-    "imageCredit": "wellwoven.com",
-    "imagePage": "https://wellwoven.com",
-    "imageSource": "auto",
-    "rights": "not-requested"
   },
   {
     "id": "co-amini",
