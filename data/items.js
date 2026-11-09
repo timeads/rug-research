@@ -8,7 +8,7 @@
 //         "unverified" = gathered from secondary sources / search summaries;
 //                        confirm titles, dates and numbers before citing.
 // Records taken out after being merged from an export, with when; a browser drops its own copy of them.
-window.RUG_REMOVED = {"wc-3126256":"2026-10-28T15:05:57.518Z","met-7405":"2026-10-28T15:05:57.518Z","finding-cnc-diy-robot-arm-experiments":"2026-10-31T12:23:09.703Z","co-vera-art-studio":"2026-11-07T16:51:02.081Z","co-rugged-looks":"2026-11-08T12:28:16.622Z","artist-highly-woven":"2026-11-08T19:15:43.672Z","artist-the-rug-maker-co":"2026-11-08T19:15:43.672Z"};
+window.RUG_REMOVED = {"wc-3126256":"2026-10-28T15:05:57.518Z","met-7405":"2026-10-28T15:05:57.518Z","finding-cnc-diy-robot-arm-experiments":"2026-10-31T12:23:09.703Z","co-vera-art-studio":"2026-11-07T16:51:02.081Z","co-rugged-looks":"2026-11-08T12:28:16.622Z","artist-highly-woven":"2026-11-08T19:15:43.672Z","artist-the-rug-maker-co":"2026-11-08T19:15:43.672Z","co-creative-touch":"2026-11-09T00:13:44.220Z"};
 window.RUG_ITEMS = [
   {
     "id": "wint-1964-0804",
@@ -19456,38 +19456,6 @@ window.RUG_ITEMS = [
     "image": "https://www.couristan.com/wp-content/uploads/2023/05/InspiredbyLife_Blue.jpg",
     "imageCredit": "couristan.com",
     "imageSource": "picked",
-    "rights": "not-requested"
-  },
-  {
-    "id": "co-creative-touch",
-    "type": "company",
-    "title": "Creative Touch: custom hospitality rugs, hand-tufted and robot-tufted, Secaucus, New Jersey",
-    "creator": "Creative Touch",
-    "place": "Secaucus, New Jersey, United States",
-    "region": "United States",
-    "description": "Custom hospitality and commercial rugs. Tufting confirmed: hand-tufting plus a 'state of the art robotic-tufted process' (Rug News).\nTrade shows: BDNY, 2024 (https://www.rugnews.com/news-archives/record-lineup-of-rug-exhibitors-eye-hospitality-se-9384); BDNY, 2025 (https://www.rugnews.com/news-archives/exclusive-bdny-rugs-showcase-top-boutique-hospital-9668).\nNote: Robotic tufting: relevant to chapter 12.\nFound by web search for the site's Directory (7 Nov 2026), chosen by the author 8 Nov 2026; location, website and Instagram from a follow-up search the same day. Pages were not opened.\nSources: https://www.rugnews.com/news-archives/record-lineup-of-rug-exhibitors-eye-hospitality-se-9384 · https://www.rugnews.com/news-archives/exclusive-bdny-rugs-showcase-top-boutique-hospital-9668",
-    "sourceUrl": "https://www.rugnews.com/news-archives/record-lineup-of-rug-exhibitors-eye-hospitality-se-9384",
-    "themes": [
-      "Companies & modern tufting"
-    ],
-    "tags": [
-      "company",
-      "trade show",
-      "directory",
-      "found by web search"
-    ],
-    "status": "unverified",
-    "reviewedAt": "2026-11-08T12:10:57.650Z",
-    "directory": "commercial",
-    "listing": "Custom hospitality rugs, hand-tufted and robot-tufted, Secaucus, New Jersey",
-    "listingName": "Creative Touch",
-    "website": "https://creativetouchrugs.com",
-    "social": [
-      "https://www.instagram.com/creativetouchrugs/"
-    ],
-    "image": "https://creativetouchrugs.com/img/single-product/small/single-product1.jpg",
-    "imageSource": "picked",
-    "imageCredit": "creativetouchrugs.com",
     "rights": "not-requested"
   },
   {
