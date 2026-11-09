@@ -21429,7 +21429,7 @@ window.RUG_ITEMS = [
       "approved by the author"
     ],
     "status": "unverified",
-    "reviewedAt": "2026-11-08T13:42:58.015Z",
+    "reviewedAt": "2026-11-09T00:40:29.227Z",
     "directory": "commercial",
     "listing": "Tufted rugs, Morocco",
     "listingName": "stitch (Aleptex)",
@@ -21437,7 +21437,7 @@ window.RUG_ITEMS = [
       "https://www.instagram.com/stitch__rugs/"
     ],
     "website": "https://www.aleptex.com/pages/stitch",
-    "image": "http://www.aleptex.com/cdn/shop/files/isla_500x500.67154425_ihqlc06u.jpg?v=1745236592",
+    "image": "https://scontent-phl2-1.xx.fbcdn.net/v/t1.6435-9/59784941_2634856016589040_2150900419038019584_n.jpg?stp=dst-jpg_tt6&cstp=mx1440x1440&ctp=s1440x1440&_nc_cat=104&ccb=1-7&_nc_sid=0b6b33&_nc_ohc=KsXX_91GXPAQ7kNvwHtsqQG&_nc_oc=Adq8Jzddlj_unaGxsGARRrSB-s2t1nWiVIj1wWRyD2ve_A0iTWhGilfAUHdIxcSyYLCr9YFqdTGi9hoqcXPLjnK4&_nc_zt=23&_nc_ht=scontent-phl2-1.xx&_nc_gid=MRAA7CPVaEOIzGTFBpLNpg&_nc_ss=7b2a8&oh=00_AQTHn7K8B-Hk7bQCWb-R17QUPg0c1u03Gd9xiDk896f4Sg&oe=6B187236",
     "imageCredit": "aleptex.com",
     "imagePage": "https://www.aleptex.com/products/custom-rug",
     "imageSource": "auto",
