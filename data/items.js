@@ -17219,7 +17219,7 @@ window.RUG_ITEMS = [
       "found by web search"
     ],
     "status": "unverified",
-    "reviewedAt": "2026-11-07T23:55:47.500Z",
+    "reviewedAt": "2026-11-09T00:22:22.872Z",
     "directory": "workshop",
     "listing": "Tufting courses and custom rugs, Santiago",
     "listingName": "Gio Tufting",
@@ -17227,7 +17227,7 @@ window.RUG_ITEMS = [
       "https://www.instagram.com/gio.tufting/",
       "https://www.tiktok.com/@gio.tufting"
     ],
-    "image": "https://static.cdninstagram.com/rsrc.php/v4/yD/r/R0fBIMurK8v.png",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROP2OTp5od-tAmd3wSrlj9XcoMyzGon5nT88MZJzqPDq6d9io5e2a00Jdg&s=10",
     "imageCredit": "instagram.com",
     "imageSource": "auto"
   },
@@ -21727,5 +21727,28 @@ window.RUG_ITEMS = [
       "https://www.instagram.com/iamthealphabet/?hl=en"
     ],
     "reviewedAt": "2026-11-08T19:33:26.011Z"
+  },
+  {
+    "id": "u-mw8imrqyvd6e7",
+    "type": "company",
+    "status": "unverified",
+    "title": "Pieces home",
+    "institution": "Pieces home",
+    "themes": [
+      "Companies & modern tufting"
+    ],
+    "tags": [
+      "company"
+    ],
+    "directory": "commercial",
+    "website": "https://pieceshome.com/",
+    "listingCountry": "United States",
+    "sourceUrl": "https://pieceshome.com/?srsltid=AYCX9vJrpO2zEpTdqzeD3O6ZZrsBcV6w029q2JuxrLCuW9YUG1XDgrVU",
+    "image": "https://pieceshome.com/cdn/shop/files/CESPARROS_PIECES-PLAID-CAMPAIGN_2025_9322-_FINAL_1000x.jpg?v=1753908315",
+    "rights": "not-requested",
+    "social": [
+      "https://www.instagram.com/pieceshome"
+    ],
+    "reviewedAt": "2026-11-09T00:22:22.872Z"
   }
 ];
