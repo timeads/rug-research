@@ -17219,7 +17219,7 @@ window.RUG_ITEMS = [
       "found by web search"
     ],
     "status": "unverified",
-    "reviewedAt": "2026-11-09T00:22:22.872Z",
+    "reviewedAt": "2026-11-09T00:23:24.789Z",
     "directory": "workshop",
     "listing": "Tufting courses and custom rugs, Santiago",
     "listingName": "Gio Tufting",
@@ -17227,9 +17227,7 @@ window.RUG_ITEMS = [
       "https://www.instagram.com/gio.tufting/",
       "https://www.tiktok.com/@gio.tufting"
     ],
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROP2OTp5od-tAmd3wSrlj9XcoMyzGon5nT88MZJzqPDq6d9io5e2a00Jdg&s=10",
-    "imageCredit": "instagram.com",
-    "imageSource": "auto"
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROP2OTp5od-tAmd3wSrlj9XcoMyzGon5nT88MZJzqPDq6d9io5e2a00Jdg&s=10"
   },
   {
     "id": "co-tufting-maroc",
@@ -17656,7 +17654,7 @@ window.RUG_ITEMS = [
       "directory"
     ],
     "status": "unverified",
-    "reviewedAt": "2026-11-07T16:45:47.569Z",
+    "reviewedAt": "2026-11-09T00:23:24.789Z",
     "directory": "commercial",
     "listing": "Custom tufted rugs, Philadelphia (the author's business)",
     "listingName": "Superfluous Things",
@@ -17664,7 +17662,8 @@ window.RUG_ITEMS = [
     "image": "https://a.1stdibscdn.com/modern-bauhaus-inspired-rug-with-geometric-design-pattern-name-dessau-192501-for-sale/f_104212/f_447392721750878225424/Bahaus_org.jpg?width=768",
     "imageCredit": "1stdibs.com (image from 1stdibs.com)",
     "imagePage": "https://www.1stdibs.com/furniture/rugs-carpets/north-south-american/modern-bauhaus-inspired-rug-geometric-design-pattern-name-dessau-192501/id-f_44739272",
-    "imageSource": "auto"
+    "imageSource": "auto",
+    "rights": "granted"
   },
   {
     "id": "co-ferreira-de-sa",
