@@ -17209,7 +17209,10 @@ window.RUG_ITEMS = [
     "social": [
       "https://www.instagram.com/gio.tufting/",
       "https://www.tiktok.com/@gio.tufting"
-    ]
+    ],
+    "image": "https://static.cdninstagram.com/rsrc.php/v4/yD/r/R0fBIMurK8v.png",
+    "imageCredit": "instagram.com",
+    "imageSource": "auto"
   },
   {
     "id": "co-tufting-maroc",
