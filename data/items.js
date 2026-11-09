@@ -9533,14 +9533,14 @@ window.RUG_ITEMS = [
     "status": "unverified",
     "confidence": "solid",
     "rights": "not-requested",
-    "image": "https://www.fcnews.net/wp-content/webpc-passthru.php?src=https://www.fcnews.net/wp-content/uploads/2020/09/Mohamed-Farid-Khamis-Oriental-Weavers-founder.jpg&nocache=1",
+    "image": "https://maccarpet.com/cdn/shop/files/90-ls_1.jpg?v=1773043807&width=1160",
     "imageCredit": "fcnews.net (image from fcnews.net)",
     "imagePage": "https://www.fcnews.net/2020/09/obituary-mohamed-farid-khamis-oriental-weavers-founder/",
     "imageSource": "auto",
     "directory": "commercial",
     "listing": "Machine-woven rugs, with tufting through MAC Carpet, near Cairo",
     "website": "https://orientalweavers.com/",
-    "reviewedAt": "2026-11-02T13:37:22.209Z"
+    "reviewedAt": "2026-11-09T00:28:10.103Z"
   },
   {
     "id": "co-merinos",
