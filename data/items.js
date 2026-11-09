@@ -11025,7 +11025,6 @@ window.RUG_ITEMS = [
     "region": "United States",
     "date": "founded 2018",
     "dateStart": 2018,
-    "sourceUrl": "https://www.chroniclebooks.com/products/tuft-the-world",
     "institution": "Tuft the World",
     "description": "Tufting supply company and studio founded in 2018 by Tiernan Alexander and Tim Eads, artists who live and work in West Philadelphia. It sells tufting tools, materials and instruction, runs workshops, and says its aim is to make tufting accessible, with a focus on equity and sustainability. Alexander holds an MA from the Winterthur Program in American Material Culture and an MFA from the University of the Arts; Eads is a master printer with an MFA from Cranbrook.\n\nWhy it matters for the history: part of the hand-gun revival after 2018. In this database's citation check (see ner-cn-pokepoke), 2022 Chinese press reports credit overseas social media and the artist Tim Eads (2018) as sparks for China's 戳戳秀 (\"poke-poke\") tufting trend. That attribution is the press's, not a measured influence.\n\nAlso: the book Tuft the World (Chronicle Books, 2024); the TTW Editions show at Paradigm Gallery (2023), where a large robotic tufting machine made rugs; a lecture and workshop at The Fabric Workshop and Museum (March 2024).\n\nThis is the database author's own firm: note the interest when citing it.\n\nSources: https://papress.com/products/tuft-the-world · https://fabricworkshopandmuseum.org/event/tuft-the-world-lecture-and-rug-tufting-workshop/ · https://www.paradigmarts.org/blogs/news/tuft-the-world-ttf-editions",
     "themes": [
@@ -11041,17 +11040,35 @@ window.RUG_ITEMS = [
     "status": "unverified",
     "confidence": "solid",
     "rights": "own",
-    "image": "http://www.chroniclebooks.com/cdn/shop/files/9781797224565_1_1200x1200.jpg?v=1699638681",
+    "image": "https://tufttheworld.com/cdn/shop/files/Tuft_the_World_tufting_workshops_2048x.jpg?v=1783824023",
     "imageCredit": "Tuft the World",
     "imageSource": "auto",
     "gallery": true,
-    "reviewedAt": "2026-11-07T23:55:47.500Z",
+    "reviewedAt": "2026-11-09T00:17:40.212Z",
     "listing": "Tufting workshops, studio and supplies, West Philadelphia (the author's firm)",
     "website": "https://tufttheworld.com/",
-    "directory": "workshop",
+    "directory": [
+      "commercial",
+      "artist",
+      "workshop"
+    ],
     "listingName": "Tuft the World",
     "social": [
       "https://www.instagram.com/tuft_the_world/"
+    ],
+    "images": [
+      {
+        "src": "https://tufttheworld.com/cdn/shop/files/Tuft_the_World_tufting_workshops_2048x.jpg?v=1783824023"
+      },
+      {
+        "src": "images/own/uploads/co-tuft-the-world-mw8iia2d.jpg"
+      },
+      {
+        "src": "https://superfluousthings.com/cdn/shop/files/ChatGPT_Image_Jun_17_2025_07_09_56_AM.png?v=1750858870&width=2000"
+      },
+      {
+        "src": "https://superfluousthings.com/cdn/shop/files/20250621_0937_Modern_Living_Room_View_remix_01jy9b6je5fw9rygjjf674sxfp.png?v=1750678133&width=1920"
+      }
     ]
   },
   {
