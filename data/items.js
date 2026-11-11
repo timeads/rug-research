@@ -21719,5 +21719,23 @@ window.RUG_ITEMS = [
       "https://www.instagram.com/pieceshome"
     ],
     "reviewedAt": "2026-11-09T00:22:22.872Z"
+  },
+  {
+    "id": "u-mwbi2ve2esqnl",
+    "type": "book",
+    "status": "verified",
+    "title": "Atelier Tufting",
+    "creator": "Julie Robert",
+    "date": "2022",
+    "dateStart": 2022,
+    "publisher": "Marabout",
+    "techniques": [
+      "tufting"
+    ],
+    "description": "Atelier Tufting",
+    "originalText": "Découvrez le tufting, la nouvelle tendance pour fabriquer tapis et tapisseries à base de laine. Une technique facile, ludique et accessible à tous, l’essentiel est d’avoir un bon pistolet à tufter !\nTapis, coussins, tenture, veste, sac cabas, sans oublier panier, miroir, cache-pot… Laissez-vous guider pas à pas par Julie Robert, créez 22 modèles chics et originaux.",
+    "language": "fr",
+    "image": "https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T4/images/I/818rd+-J5kL._SL1500_.jpg",
+    "reviewedAt": "2026-11-11T02:30:57.966Z"
   }
 ];
